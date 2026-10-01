@@ -1,0 +1,2794 @@
+{
+ "contract_version": "1.7",
+ "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
+ "procedure_file": "extraction_procedure_social_addendum_v1.2_social science Classes 6-10 on top of procedure v2.md",
+ "machine_name": "soc-10-10_questions",
+ "version": 1,
+ "changelog": "v1 extraction — batch-02 — class-10-social",
+ "amendments_applied": [],
+ "unit_state": "EXTRACTED",
+ "review_ready": false,
+ "count_gate": {
+  "reference": 30,
+  "reference_source": "audited",
+  "extracted": 30,
+  "paired": 30,
+  "flagged": 2,
+  "gaps": [],
+  "duplicated_numbers": [],
+  "quota_table": "difficulty_only",
+  "second_method": {
+   "method": "printed difficulty distribution table",
+   "extracted": 30,
+   "agrees": true
+  },
+  "pass": true,
+  "note": "printed difficulty table 9/16/5=30 DISAGREES with per-question tags 9/15/6 (source defect, tags win v2 §6; register difficulty-table-vs-tags); flagged counts answer-level/diagram flags (q29,q30 answer_diagram); all 30 carry the structural marks flag (addendum §4.5)."
+ },
+ "extraction": {
+  "source_file": "10thSS-EM-LBA-Revised_1786620693.pdf",
+  "source_ref_prefix": "10thSS-EM-LBA-Revised_1786620693.pdf",
+  "pdf_pages": [
+   35,
+   36,
+   90,
+   91,
+   92
+  ],
+  "printed_page_offset": -12,
+  "method_notes": [
+   "offset -12; question side pdf 35-36 (q1-21 on 35, q22-30 on 36); answer side pdf 90-92 (q1-12 on 90 [after ch24 tail], q13-28 on 91, q28 last bullet spills to 92, map answers q29-30 on 92)",
+   "SECTION-LABEL DEFECT (register section-heading-unmatched): question side prints labels I / III / III / IV — section II is mislabelled 'III' and 'III' is repeated for the 2/3-sentence block; answer side is correctly numbered I / II / III / IV. section_signal records the question-side printed label as-is (I, III, III, IV); -sN- id order is the printed order (s1 mcq, s2 vsa, s3 sa, s4 map)",
+   "section-I keys are TEXT-ONLY on the answer side (no letter printed) -> matched to option by normalised two-pass match (v2 §3); all 5 matched (1=Wide=B, 2=In the Greater Himalaya=B, 3=Mount Godwin Austin / K2=A, 4=Peninsular Plateau=D, 5=Nepal and Tibet=C); opt C of q1 prints 'Stee' (source typo for Steep, not the key)",
+   "q23 prints the first answer point inline on the number line (' The Northern Mountains.') then 3 bullets -> included as solution_step 1 (addendum §5.1); 4 steps total",
+   "q25 is a 2-column comparison TABLE (Western Ghats vs Eastern Ghats, 1 header row + 4 data rows) -> represented as solution_steps, one step per printed row, cells joined ' | ' (gate log v6 §1); header row is step 1; answer.kind stays text, no space-padded run in value",
+   "q27 first bullet wraps across two printed lines ('...Indian ocean in the' / 'south.') -> merged into one solution_step (continuation, not a new point); 4 steps",
+   "q28 fourth bullet ('These hills have narrow strips... Dunes') is printed at the top of pdf 92 (page spill) -> 4 steps",
+   "map questions q29, q30 (section IV) are NOT built here — added in a separate map-crop-first pass (relay 10 §3): answer-map crops committed as their own commit before the features list",
+   "key-lines self-count (relay 10): q22 printed 6 = stored 6; q23 inline 1 + bullets 3 = 4 = stored 4; q24 4=4; q25 table header+4 rows = 5 printed rows = stored 5 steps; q26 7=7; q27 printed 5 lines, first bullet wraps = 4 logical = stored 4; q28 4 (last on pdf 92) = 4; vsa 6-21 single-value; mcq 1-5 option keys; no drops",
+   "DIFFICULTY-TABLE-VS-TAGS defect (register): printed distribution table says Easy 9 / Average 16 / Difficult 5 / Total 30, but per-question tags are Easy 9 / Average 15 / Difficult 6 — table has 1 extra Average and 1 fewer Difficult; tags win (v2 §6)",
+   "sections I and vsa-III print no marks figure; sa-III prints '(2/3/4 marks questions)'; section IV map per-question '(Average)' only -> all 30 marks null+flag (addendum §4.5)"
+  ],
+  "notation_summary": {
+   "render_tokens": 0,
+   "latex_tokens": 0,
+   "damage_flags": []
+  },
+  "excluded_objects": [],
+  "inline_excluded_count": 0,
+  "figure_references": []
+ },
+ "stimuli": [],
+ "questions": [
+  {
+   "id": "soc-10-10-s1-q001",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-10",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The Eastern Coastal Plain is",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s1-q001",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s1-q001",
+     "pdf_page": 35,
+     "printed_page": 23,
+     "y": 400.214,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s1-q001-key",
+     "pdf_page": 90,
+     "printed_page": 78,
+     "y": 626.074,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T00:18:40+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T00:18:40+05:30",
+   "text_as_printed": "The Eastern Coastal Plain is (SLP 2020) (Average)",
+   "section_signal": "I",
+   "prior_appearances": [
+    {
+     "as_printed": "SLP 2020",
+     "year": "2020"
+    }
+   ],
+   "options": [
+    {
+     "id": "A",
+     "text": "Straight"
+    },
+    {
+     "id": "B",
+     "text": "Wide"
+    },
+    {
+     "id": "C",
+     "text": "Stee"
+    },
+    {
+     "id": "D",
+     "text": "Narrow"
+    }
+   ],
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_as_printed": "Wide",
+   "source_corrections": [
+    {
+     "field": "answer",
+     "printed": "Wide",
+     "corrected": "B",
+     "basis": "pass 1"
+    }
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T00:18:40+05:30",
+    "basis": "section-I text-only key matched to option by pass 1 normalised match (v2 §3)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "bed9fbaea2981cd2e9aa37dc29554025323827e59b08cbfd958b97e468ace1ea"
+  },
+  {
+   "id": "soc-10-10-s1-q002",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-10",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Ladakh Plateau is found",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s1-q002",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s1-q002",
+     "pdf_page": 35,
+     "printed_page": 23,
+     "y": 427.814,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s1-q002-key",
+     "pdf_page": 90,
+     "printed_page": 78,
+     "y": 639.904,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T00:18:40+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T00:18:40+05:30",
+   "text_as_printed": "Ladakh Plateau is found (SLP 2023) (Difficult)",
+   "section_signal": "I",
+   "prior_appearances": [
+    {
+     "as_printed": "SLP 2023",
+     "year": "2023"
+    }
+   ],
+   "options": [
+    {
+     "id": "A",
+     "text": "In the Central Himalaya"
+    },
+    {
+     "id": "B",
+     "text": "In the Greater Himalaya"
+    },
+    {
+     "id": "C",
+     "text": "In the Siwalik range"
+    },
+    {
+     "id": "D",
+     "text": "In the Peninsular Plateau"
+    }
+   ],
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_as_printed": "In the Greater Himalaya",
+   "source_corrections": [
+    {
+     "field": "answer",
+     "printed": "In the Greater Himalaya",
+     "corrected": "B",
+     "basis": "pass 1"
+    }
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T00:18:40+05:30",
+    "basis": "section-I text-only key matched to option by pass 1 normalised match (v2 §3)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "61e480927c8cee78b586f4a1cf2e0750e00ce07f2e6195e5c212e05517cdede6"
+  },
+  {
+   "id": "soc-10-10-s1-q003",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-10",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Highest mountain peak of India",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s1-q003",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s1-q003",
+     "pdf_page": 35,
+     "printed_page": 23,
+     "y": 469.234,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s1-q003-key",
+     "pdf_page": 90,
+     "printed_page": 78,
+     "y": 653.704,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T00:18:40+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T00:18:40+05:30",
+   "text_as_printed": "Highest mountain peak of India (June-2019) (Easy)",
+   "section_signal": "I",
+   "prior_appearances": [
+    {
+     "as_printed": "June-2019",
+     "year": "2019"
+    }
+   ],
+   "options": [
+    {
+     "id": "A",
+     "text": "Mount Godwin Austin / K2"
+    },
+    {
+     "id": "B",
+     "text": "Mount Everest"
+    },
+    {
+     "id": "C",
+     "text": "Anaimudi"
+    },
+    {
+     "id": "D",
+     "text": "Guru Shikhara"
+    }
+   ],
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_as_printed": "Mount Godwin Austin / K2",
+   "source_corrections": [
+    {
+     "field": "answer",
+     "printed": "Mount Godwin Austin / K2",
+     "corrected": "A",
+     "basis": "pass 1"
+    }
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T00:18:40+05:30",
+    "basis": "section-I text-only key matched to option by pass 1 normalised match (v2 §3)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "7e8333a7e27dc75c765c9be30c97031129b18bdaae879888a6d7ffa3c554e2ba"
+  },
+  {
+   "id": "soc-10-10-s1-q004",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-10",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The largest geographical division of India is",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s1-q004",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s1-q004",
+     "pdf_page": 35,
+     "printed_page": 23,
+     "y": 496.834,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s1-q004-key",
+     "pdf_page": 90,
+     "printed_page": 78,
+     "y": 667.504,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T00:18:40+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T00:18:40+05:30",
+   "text_as_printed": "The largest geographical division of India is (Average)",
+   "section_signal": "I",
+   "options": [
+    {
+     "id": "A",
+     "text": "Northern greater Plain"
+    },
+    {
+     "id": "B",
+     "text": "Himalayan mountains"
+    },
+    {
+     "id": "C",
+     "text": "Coastal Plain and Islands"
+    },
+    {
+     "id": "D",
+     "text": "Peninsular Plateau"
+    }
+   ],
+   "answer": {
+    "kind": "option",
+    "option_id": "D"
+   },
+   "answer_as_printed": "Peninsular Plateau",
+   "source_corrections": [
+    {
+     "field": "answer",
+     "printed": "Peninsular Plateau",
+     "corrected": "D",
+     "basis": "pass 1"
+    }
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T00:18:40+05:30",
+    "basis": "section-I text-only key matched to option by pass 1 normalised match (v2 §3)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "9cb0f1289573d409abeaab49981af3245b26a6afe87761877b028d957526e4ad"
+  },
+  {
+   "id": "soc-10-10-s1-q005",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-10",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Mount Everest lies between",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s1-q005",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s1-q005",
+     "pdf_page": 35,
+     "printed_page": 23,
+     "y": 538.234,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s1-q005-key",
+     "pdf_page": 90,
+     "printed_page": 78,
+     "y": 681.304,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T00:18:40+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T00:18:40+05:30",
+   "text_as_printed": "Mount Everest lies between (Average)",
+   "section_signal": "I",
+   "options": [
+    {
+     "id": "A",
+     "text": "India and Pakistan"
+    },
+    {
+     "id": "B",
+     "text": "India and China"
+    },
+    {
+     "id": "C",
+     "text": "Nepal and Tibet"
+    },
+    {
+     "id": "D",
+     "text": "Nepal and Bhutan"
+    }
+   ],
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_as_printed": "Nepal and Tibet",
+   "source_corrections": [
+    {
+     "field": "answer",
+     "printed": "Nepal and Tibet",
+     "corrected": "C",
+     "basis": "pass 1"
+    }
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T00:18:40+05:30",
+    "basis": "section-I text-only key matched to option by pass 1 normalised match (v2 §3)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "847a9652f0e6b3dc96c4b8507ee5d8114433f05bc877c6a7c102a95697798361"
+  },
+  {
+   "id": "soc-10-10-s2-q006",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-10",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Where do the Eastern and Western Ghats meet?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s2-q006",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s2-q006",
+     "pdf_page": 35,
+     "printed_page": 23,
+     "y": 594.514,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s2-q006-key",
+     "pdf_page": 90,
+     "printed_page": 78,
+     "y": 708.904,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T00:18:40+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T00:18:40+05:30",
+   "text_as_printed": "Where do the Eastern and Western Ghats meet? (Mar/April 2022) (Easy)",
+   "section_signal": "III",
+   "prior_appearances": [
+    {
+     "as_printed": "Mar"
+    },
+    {
+     "as_printed": "April 2022",
+     "year": "2022"
+    }
+   ],
+   "answer": {
+    "kind": "text",
+    "value": "Nilgiri Hills"
+   },
+   "answer_as_printed": "Nilgiri Hills",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T00:18:40+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "0888ddf680620e6a73d0af197c169f0c552787094064dd4bf4fac995ef3f6b06"
+  },
+  {
+   "id": "soc-10-10-s2-q007",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-10",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Why is the North Indian Plain called the “Deposition plain”?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s2-q007",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s2-q007",
+     "pdf_page": 35,
+     "printed_page": 23,
+     "y": 608.314,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s2-q007-key",
+     "pdf_page": 90,
+     "printed_page": 78,
+     "y": 722.704,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T00:18:40+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T00:18:40+05:30",
+   "text_as_printed": "Why is the North Indian Plain called the “Deposition plain”? (MQP 2022) (Difficult)",
+   "section_signal": "III",
+   "prior_appearances": [
+    {
+     "as_printed": "MQP 2022",
+     "year": "2022"
+    }
+   ],
+   "answer": {
+    "kind": "text",
+    "value": "The plain of North India is formed by the deposition of alluvial soils brought by the rivers of Himalayas."
+   },
+   "answer_as_printed": "The plain of North India is formed by the deposition of alluvial soils brought by the rivers of Himalayas.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T00:18:40+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "0e48cf03f96a190d4fdf9cfaa296a978f030827283b15e4b72670b5a0d9531f1"
+  },
+  {
+   "id": "soc-10-10-s2-q008",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-10",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What are Dunes?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s2-q008",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s2-q008",
+     "pdf_page": 35,
+     "printed_page": 23,
+     "y": 285.134,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s2-q008-key",
+     "pdf_page": 90,
+     "printed_page": 78,
+     "y": 736.5,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T00:18:40+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T00:18:40+05:30",
+   "text_as_printed": "What are Dunes? (Easy)",
+   "section_signal": "III",
+   "answer": {
+    "kind": "text",
+    "value": "Foothills’ hills have narrow strips of plains or valleys which are called “Dunes”."
+   },
+   "answer_as_printed": "Foothills’ hills have narrow strips of plains or valleys which are called “Dunes”.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T00:18:40+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "2aa4b66f078cebdf372d3714a25419d5e5c67e867655934832c31887b2b4834f"
+  },
+  {
+   "id": "soc-10-10-s2-q009",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-10",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Which is the oldest physiographic division of India?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s2-q009",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s2-q009",
+     "pdf_page": 35,
+     "printed_page": 23,
+     "y": 635.944,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s2-q009-key",
+     "pdf_page": 90,
+     "printed_page": 78,
+     "y": 750.3,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T00:18:40+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T00:18:40+05:30",
+   "text_as_printed": "Which is the oldest physiographic division of India? (Average)",
+   "section_signal": "III",
+   "answer": {
+    "kind": "text",
+    "value": "Peninsular Plateau"
+   },
+   "answer_as_printed": "Peninsular Plateau",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T00:18:40+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "4971ae9eab822ca678c2967f0f0a99858c87d73f5323b79a2d5b2845ffae01bb"
+  },
+  {
+   "id": "soc-10-10-s2-q010",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-10",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Why are the Greater Himalayas called Himadri?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s2-q010",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s2-q010",
+     "pdf_page": 35,
+     "printed_page": 23,
+     "y": 649.744,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s2-q010-key",
+     "pdf_page": 90,
+     "printed_page": 78,
+     "y": 764.1,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T00:18:40+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T00:18:40+05:30",
+   "text_as_printed": "Why are the Greater Himalayas called Himadri? (Easy)",
+   "section_signal": "III",
+   "answer": {
+    "kind": "text",
+    "value": "They are completely covered with snow"
+   },
+   "answer_as_printed": "They are completely covered with snow",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T00:18:40+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "e7544b5b8239071ed8ceeaeabb9b9e287b382d3ac06d92f0669cc36d3cf6e5d2"
+  },
+  {
+   "id": "soc-10-10-s2-q011",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-10",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Which is the highest mountain peak in South India?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s2-q011",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s2-q011",
+     "pdf_page": 35,
+     "printed_page": 23,
+     "y": 663.544,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s2-q011-key",
+     "pdf_page": 90,
+     "printed_page": 78,
+     "y": 777.9,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T00:18:40+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T00:18:40+05:30",
+   "text_as_printed": "Which is the highest mountain peak in South India? (Easy)",
+   "section_signal": "III",
+   "answer": {
+    "kind": "text",
+    "value": "Anaimudi"
+   },
+   "answer_as_printed": "Anaimudi",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T00:18:40+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "34009da8d98ca03e633a341895063475cdb7c32577755a1b996fd22e1932b51b"
+  },
+  {
+   "id": "soc-10-10-s2-q012",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-10",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Which is the extreme southern tip of India?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s2-q012",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s2-q012",
+     "pdf_page": 35,
+     "printed_page": 23,
+     "y": 677.344,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s2-q012-key",
+     "pdf_page": 90,
+     "printed_page": 78,
+     "y": 791.7,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T00:18:40+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T00:18:40+05:30",
+   "text_as_printed": "Which is the extreme southern tip of India? (Easy)",
+   "section_signal": "III",
+   "answer": {
+    "kind": "text",
+    "value": "Indira Point"
+   },
+   "answer_as_printed": "Indira Point",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T00:18:40+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "7da2508059277fabe308347c8c4f7ccd52dbd104422d039c43e78d457f20ce14"
+  },
+  {
+   "id": "soc-10-10-s2-q013",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-10",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "On which longitude is the Indian Standard Time based?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s2-q013",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s2-q013",
+     "pdf_page": 35,
+     "printed_page": 23,
+     "y": 691.144,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s2-q013-key",
+     "pdf_page": 91,
+     "printed_page": 79,
+     "y": 38.604,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T00:18:40+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T00:18:40+05:30",
+   "text_as_printed": "On which longitude is the Indian Standard Time based? (Average)",
+   "section_signal": "III",
+   "answer": {
+    "kind": "text",
+    "value": "82o.30l East longitude"
+   },
+   "answer_as_printed": "82o.30l East longitude",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T00:18:40+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "07897297cac4020790b329180aac4f3f171467db6dc08b79b38b6c556759e288"
+  },
+  {
+   "id": "soc-10-10-s2-q014",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-10",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "By what name are the Western Ghats called in Maharashtra and Karnataka?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s2-q014",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s2-q014",
+     "pdf_page": 35,
+     "printed_page": 23,
+     "y": 704.944,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s2-q014-key",
+     "pdf_page": 91,
+     "printed_page": 79,
+     "y": 52.404,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T00:18:40+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T00:18:40+05:30",
+   "text_as_printed": "By what name are the Western Ghats called in Maharashtra and Karnataka? (Difficult)",
+   "section_signal": "III",
+   "answer": {
+    "kind": "text",
+    "value": "Sahyadri Ranges"
+   },
+   "answer_as_printed": "Sahyadri Ranges",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T00:18:40+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "753fa056d07611278c7a8d9dbb4edadfa6572c60b77f318deca1551ae86548e3"
+  },
+  {
+   "id": "soc-10-10-s2-q015",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-10",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "From which river does the name India derived?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s2-q015",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s2-q015",
+     "pdf_page": 35,
+     "printed_page": 23,
+     "y": 718.744,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s2-q015-key",
+     "pdf_page": 91,
+     "printed_page": 79,
+     "y": 66.204,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T00:18:40+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T00:18:40+05:30",
+   "text_as_printed": "From which river does the name India derived? (Average)",
+   "section_signal": "III",
+   "answer": {
+    "kind": "text",
+    "value": "Indus river"
+   },
+   "answer_as_printed": "Indus river",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T00:18:40+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "fc9484944fab6fa8f3f118beb6c5540b416ee42306a0d3fd41c41902700bb870"
+  },
+  {
+   "id": "soc-10-10-s2-q016",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-10",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is the total area of India?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s2-q016",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s2-q016",
+     "pdf_page": 35,
+     "printed_page": 23,
+     "y": 732.544,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s2-q016-key",
+     "pdf_page": 91,
+     "printed_page": 79,
+     "y": 80.004,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T00:18:40+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T00:18:40+05:30",
+   "text_as_printed": "What is the total area of India? (Average)",
+   "section_signal": "III",
+   "answer": {
+    "kind": "text",
+    "value": "32,87,263 Sq. Km"
+   },
+   "answer_as_printed": "32,87,263 Sq. Km",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T00:18:40+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "eb33f934f3c4728deb4f993dcb4859594f04f064d8a9be8e5a3b390d411987c9"
+  },
+  {
+   "id": "soc-10-10-s2-q017",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-10",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Which latitude passes through the middle of India?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s2-q017",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s2-q017",
+     "pdf_page": 35,
+     "printed_page": 23,
+     "y": 746.34,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s2-q017-key",
+     "pdf_page": 91,
+     "printed_page": 79,
+     "y": 93.824,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T00:18:40+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T00:18:40+05:30",
+   "text_as_printed": "Which latitude passes through the middle of India? (Average)",
+   "section_signal": "III",
+   "answer": {
+    "kind": "text",
+    "value": "Tropic of Cancer(230.30INL)"
+   },
+   "answer_as_printed": "Tropic of Cancer(230.30INL)",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T00:18:40+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "d9fa395ee6f83fc92b4428ec0e36313b53cdea34e36b6725ef090f16e1c26717"
+  },
+  {
+   "id": "soc-10-10-s2-q018",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-10",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is the total length of the coastline of the mainland of India?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s2-q018",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s2-q018",
+     "pdf_page": 35,
+     "printed_page": 23,
+     "y": 760.14,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s2-q018-key",
+     "pdf_page": 91,
+     "printed_page": 79,
+     "y": 107.624,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T00:18:40+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T00:18:40+05:30",
+   "text_as_printed": "What is the total length of the coastline of the mainland of India? (Easy)",
+   "section_signal": "III",
+   "answer": {
+    "kind": "text",
+    "value": "6100km"
+   },
+   "answer_as_printed": "6100km",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T00:18:40+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "8d95fee9db94ac92fe81ef243dd07bab23682b29b629d26636396590bc1d1ecd"
+  },
+  {
+   "id": "soc-10-10-s2-q019",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-10",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Which is the highest mountain peak in the world?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s2-q019",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s2-q019",
+     "pdf_page": 35,
+     "printed_page": 23,
+     "y": 773.94,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s2-q019-key",
+     "pdf_page": 91,
+     "printed_page": 79,
+     "y": 121.424,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T00:18:40+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T00:18:40+05:30",
+   "text_as_printed": "Which is the highest mountain peak in the world? (Easy)",
+   "section_signal": "III",
+   "answer": {
+    "kind": "text",
+    "value": "Mount Everest."
+   },
+   "answer_as_printed": "Mount Everest.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T00:18:40+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "6a55881be798aaa8a1cc4253b8175085d63ff4acadf56733ce243c8994f384f3"
+  },
+  {
+   "id": "soc-10-10-s2-q020",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-10",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "In which part of the Asian continent is India situated?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s2-q020",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s2-q020",
+     "pdf_page": 35,
+     "printed_page": 23,
+     "y": 38.724,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s2-q020-key",
+     "pdf_page": 91,
+     "printed_page": 79,
+     "y": 135.224,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T00:18:40+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T00:18:40+05:30",
+   "text_as_printed": "In which part of the Asian continent is India situated? (Average)",
+   "section_signal": "III",
+   "answer": {
+    "kind": "text",
+    "value": "South East part"
+   },
+   "answer_as_printed": "South East part",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T00:18:40+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "1d87a164b02ee07e17781085ce36f9328b9705cef0a45bef354d01a02ae54d6d"
+  },
+  {
+   "id": "soc-10-10-s2-q021",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-10",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "In which hemisphere of the earth is India located?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s2-q021",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s2-q021",
+     "pdf_page": 35,
+     "printed_page": 23,
+     "y": 71.724,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s2-q021-key",
+     "pdf_page": 91,
+     "printed_page": 79,
+     "y": 149.024,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T00:18:40+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T00:18:40+05:30",
+   "text_as_printed": "In which hemisphere of the earth is India located? (Average)",
+   "section_signal": "III",
+   "answer": {
+    "kind": "text",
+    "value": "Northern Hemisphere"
+   },
+   "answer_as_printed": "Northern Hemisphere",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T00:18:40+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "dbe27b466d85da1138e0d8a8f1856e73504b1dd4dac3be44bf202b62fc010ec8"
+  },
+  {
+   "id": "soc-10-10-s3-q022",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-10",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Name the hill stations of Himachal/Middle Himalayas.",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s3-q022",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s3-q022",
+     "pdf_page": 36,
+     "printed_page": 24,
+     "y": 53.604,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s3-q022-key",
+     "pdf_page": 91,
+     "printed_page": 79,
+     "y": 176.624,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T00:18:40+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T00:18:40+05:30",
+   "text_as_printed": "Name the hill stations of Himachal/Middle Himalayas. (Difficult)",
+   "section_signal": "III",
+   "answer": {
+    "kind": "text",
+    "value": "Shimla,\nMussorie,\nNainital,\nRanikhet,\nChakrata\nDarjeeling"
+   },
+   "answer_as_printed": "Shimla,\nMussorie,\nNainital,\nRanikhet,\nChakrata\nDarjeeling",
+   "solution_steps": [
+    "Shimla,",
+    "Mussorie,",
+    "Nainital,",
+    "Ranikhet,",
+    "Chakrata",
+    "Darjeeling"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T00:18:40+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — (2/3/4 marks questions)"
+    }
+   ],
+   "content_hash": "149456f3a9bc265dfde3b5e8ebd5762116b988167410b8f9ff17b984e7c22f48"
+  },
+  {
+   "id": "soc-10-10-s3-q023",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-10",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Which are the major Physical divisions of India?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s3-q023",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s3-q023",
+     "pdf_page": 36,
+     "printed_page": 24,
+     "y": 67.404,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s3-q023-key",
+     "pdf_page": 91,
+     "printed_page": 79,
+     "y": 273.254,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T00:18:40+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T00:18:40+05:30",
+   "text_as_printed": "Which are the major Physical divisions of India? (Difficult)",
+   "section_signal": "III",
+   "answer": {
+    "kind": "text",
+    "value": "The Northern Mountains.\nThe Northern Great Plain.\nThe Peninsular Plateau.\nThe Coastal Plains & Islands."
+   },
+   "answer_as_printed": "The Northern Mountains.\nThe Northern Great Plain.\nThe Peninsular Plateau.\nThe Coastal Plains & Islands.",
+   "solution_steps": [
+    "The Northern Mountains.",
+    "The Northern Great Plain.",
+    "The Peninsular Plateau.",
+    "The Coastal Plains & Islands."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T00:18:40+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — (2/3/4 marks questions)"
+    }
+   ],
+   "content_hash": "1b9e4c21ead0aaba6b80755e1a06840f3d5a10bf36dfb376de449caf6a1dafb2"
+  },
+  {
+   "id": "soc-10-10-s3-q024",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-10",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "How does the peninsular plateau play an important role in the economic development of the country?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s3-q024",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s3-q024",
+     "pdf_page": 36,
+     "printed_page": 24,
+     "y": 81.204,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s3-q024-key",
+     "pdf_page": 91,
+     "printed_page": 79,
+     "y": 343.094,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T00:18:40+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T00:18:40+05:30",
+   "text_as_printed": "How does the peninsular plateau play an important role in the economic development of the country? (Easy)",
+   "section_signal": "III",
+   "answer": {
+    "kind": "text",
+    "value": "Largest physiographic divisions of India.\nIt has rich deposit of Minerals.\nRivers forms many waterfalls\nHelpful Hydro-Electric power generation."
+   },
+   "answer_as_printed": "Largest physiographic divisions of India.\nIt has rich deposit of Minerals.\nRivers forms many waterfalls\nHelpful Hydro-Electric power generation.",
+   "solution_steps": [
+    "Largest physiographic divisions of India.",
+    "It has rich deposit of Minerals.",
+    "Rivers forms many waterfalls",
+    "Helpful Hydro-Electric power generation."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T00:18:40+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — (2/3/4 marks questions)"
+    }
+   ],
+   "content_hash": "8b447715a3509b7766a76412ceb86d877437f704f8f82e493bae3ebcd740b6db"
+  },
+  {
+   "id": "soc-10-10-s3-q025",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-10",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What are the difference between Eastern and Western Ghats?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s3-q025",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s3-q025",
+     "pdf_page": 36,
+     "printed_page": 24,
+     "y": 108.824,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s3-q025-key",
+     "pdf_page": 91,
+     "printed_page": 79,
+     "y": 412.094,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T00:18:40+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T00:18:40+05:30",
+   "text_as_printed": "What are the difference between Eastern and Western Ghats? (Average)",
+   "section_signal": "III",
+   "answer": {
+    "kind": "text",
+    "value": "Western Ghats | Eastern Ghats\nWestern ghats are tall/height | Eastern Ghats are not height\nThey are continuous | They are separated by river valleys\nLocated to the West of Deccan plateau | Located to the East of Deccan plateau\nThey are straight | They are not straight"
+   },
+   "answer_as_printed": "Western Ghats | Eastern Ghats\nWestern ghats are tall/height | Eastern Ghats are not height\nThey are continuous | They are separated by river valleys\nLocated to the West of Deccan plateau | Located to the East of Deccan plateau\nThey are straight | They are not straight",
+   "solution_steps": [
+    "Western Ghats | Eastern Ghats",
+    "Western ghats are tall/height | Eastern Ghats are not height",
+    "They are continuous | They are separated by river valleys",
+    "Located to the West of Deccan plateau | Located to the East of Deccan plateau",
+    "They are straight | They are not straight"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T00:18:40+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — (2/3/4 marks questions)"
+    }
+   ],
+   "content_hash": "09d9b3f03cf6d76522f02632d7c1766b21eaf4f2974ac2dcc544b89b450798bd"
+  },
+  {
+   "id": "soc-10-10-s3-q026",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-10",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "How are the Himalayas useful for Indians? OR The Himalayan mountains have influenced the life of Indians to a greater extent “Justify this statement”?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s3-q026",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s3-q026",
+     "pdf_page": 36,
+     "printed_page": 24,
+     "y": 122.624,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s3-q026-key",
+     "pdf_page": 91,
+     "printed_page": 79,
+     "y": 564.754,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T00:18:40+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T00:18:40+05:30",
+   "text_as_printed": "How are the Himalayas useful for Indians? OR The Himalayan mountains have influenced the life of Indians to a greater extent “Justify this statement”? (SLP 2020 June 2023) (Average)",
+   "section_signal": "III",
+   "prior_appearances": [
+    {
+     "as_printed": "SLP 2020 June 2023",
+     "year": "2020"
+    }
+   ],
+   "answer": {
+    "kind": "text",
+    "value": "Influenced the life of Indians.\nObstructing the cold winds from the North Asian regions.\nThey are the birth-place of many rivers.\nFacilitate hydro-electric power generation\nHome to many types of plants & animals\nTreasure-house of minerals.\nSignificant for tourism & religious centre."
+   },
+   "answer_as_printed": "Influenced the life of Indians.\nObstructing the cold winds from the North Asian regions.\nThey are the birth-place of many rivers.\nFacilitate hydro-electric power generation\nHome to many types of plants & animals\nTreasure-house of minerals.\nSignificant for tourism & religious centre.",
+   "solution_steps": [
+    "Influenced the life of Indians.",
+    "Obstructing the cold winds from the North Asian regions.",
+    "They are the birth-place of many rivers.",
+    "Facilitate hydro-electric power generation",
+    "Home to many types of plants & animals",
+    "Treasure-house of minerals.",
+    "Significant for tourism & religious centre."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T00:18:40+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — (2/3/4 marks questions)"
+    }
+   ],
+   "content_hash": "df5020a95d940747ca507b1140761ef3d97544d564d17ad8a94814249c0f65f9"
+  },
+  {
+   "id": "soc-10-10-s3-q027",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-10",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Explain the extent of the peninsular plateau?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s3-q027",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s3-q027",
+     "pdf_page": 36,
+     "printed_page": 24,
+     "y": 150.224,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s3-q027-key",
+     "pdf_page": 91,
+     "printed_page": 79,
+     "y": 675.064,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T00:18:40+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T00:18:40+05:30",
+   "text_as_printed": "Explain the extent of the peninsular plateau? (Difficult)",
+   "section_signal": "III",
+   "answer": {
+    "kind": "text",
+    "value": "The Peninsular Plateau stretches from the south of the Sutlej-Ganga plains to the Indian ocean in the south.\nIts total area is 16 lakhs sq.km.\nThis peninsular Plateau is formed in triangular shape.\nIt is broad in the north and narrow towards the south."
+   },
+   "answer_as_printed": "The Peninsular Plateau stretches from the south of the Sutlej-Ganga plains to the Indian ocean in the south.\nIts total area is 16 lakhs sq.km.\nThis peninsular Plateau is formed in triangular shape.\nIt is broad in the north and narrow towards the south.",
+   "solution_steps": [
+    "The Peninsular Plateau stretches from the south of the Sutlej-Ganga plains to the Indian ocean in the south.",
+    "Its total area is 16 lakhs sq.km.",
+    "This peninsular Plateau is formed in triangular shape.",
+    "It is broad in the north and narrow towards the south."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T00:18:40+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — (2/3/4 marks questions)"
+    }
+   ],
+   "content_hash": "b70b734a3162ff96f237ef08eb3bc80469a862fa054dfa89e0e145fc68418759"
+  },
+  {
+   "id": "soc-10-10-s3-q028",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-10",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Write about the Shivalik range.",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s3-q028",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s3-q028",
+     "pdf_page": 36,
+     "printed_page": 24,
+     "y": 163.904,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s3-q028-key",
+     "pdf_page": 91,
+     "printed_page": 79,
+     "y": 757.86,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T00:18:40+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T00:18:40+05:30",
+   "text_as_printed": "Write about the Shivalik range. (Average)",
+   "section_signal": "III",
+   "answer": {
+    "kind": "text",
+    "value": "Siwalik hills are most recent formations.\nThese are located in the south of Himalayas.\nThey have lesser height.so, called ‘the Foothills of the Himalayas.\nThese hills have narrow strips of plains or valleys which are called “Dunes”."
+   },
+   "answer_as_printed": "Siwalik hills are most recent formations.\nThese are located in the south of Himalayas.\nThey have lesser height.so, called ‘the Foothills of the Himalayas.\nThese hills have narrow strips of plains or valleys which are called “Dunes”.",
+   "solution_steps": [
+    "Siwalik hills are most recent formations.",
+    "These are located in the south of Himalayas.",
+    "They have lesser height.so, called ‘the Foothills of the Himalayas.",
+    "These hills have narrow strips of plains or valleys which are called “Dunes”."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T00:18:40+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — (2/3/4 marks questions)"
+    }
+   ],
+   "content_hash": "b5e42c20d092b049f9d518881059f54ea87477c9ba0e724af6e2367421ec615d"
+  },
+  {
+   "id": "soc-10-10-s4-q029",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-10",
+   "syllabus_map_version": "pending",
+   "audience": "teacher",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Mark the following in the map of India provided to you. A) Indira Col. B) Nilgiri hills C) Bay of Bengal D) 82o.30lEast longitude E) Tropic of Cancer / 230.30l North latitudes F) Indira Point G) Palk Strait",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s4-q029",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s4-q029",
+     "pdf_page": 36,
+     "printed_page": 24,
+     "y": 178.36832,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s4-q029-key",
+     "pdf_page": 92,
+     "printed_page": 80,
+     "y": 74.4,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T00:24:51+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T00:24:51+05:30",
+   "text_as_printed": "Mark the following in the map of India provided to you. (Average) A) Indira Col. (SLP 2020, June 2025) B) Nilgiri hills (MQP-1. 21-22) C) Bay of Bengal D) 82o.30lEast longitude (June 22 Mar/Apl 23. Mar/Apl 2025 June2025) E) Tropic of Cancer / 230.30l North latitudes (April 2022, June2024, Aug 2024) F) Indira Point G) Palk Strait",
+   "section_signal": "IV",
+   "answer": {
+    "kind": "text",
+    "value": "[diagram answer — see page image]"
+   },
+   "assets": [
+    {
+     "id": "a29",
+     "type": "image",
+     "ref": "images/soc-10-10/p92-q29-india-physical-map.png",
+     "role": "answer_diagram",
+     "source_px": {
+      "w": 744,
+      "h": 846
+     },
+     "quality": "ok",
+     "caption": "India – Location: answer map for Q29, pdf 92",
+     "pdf_page": 92,
+     "crop_bbox": {
+      "pdf_page": 92,
+      "x0": 32.0,
+      "y0": 74.4,
+      "x1": 300.0,
+      "y1": 379.1
+     }
+    }
+   ],
+   "map": {
+    "subject": "location and boundary features",
+    "instruction": "Mark the following in the map of India provided to you.",
+    "region": "India",
+    "features": [
+     {
+      "id": "indira-col",
+      "name": "Indira Col.",
+      "name_as_printed": "Indira Col.",
+      "category": "point",
+      "position": null,
+      "position_source": "unset"
+     },
+     {
+      "id": "nilgiri-hills",
+      "name": "Nilgiri hills",
+      "name_as_printed": "Nilgiri hills",
+      "category": "hills",
+      "position": null,
+      "position_source": "unset"
+     },
+     {
+      "id": "bay-of-bengal",
+      "name": "Bay of Bengal",
+      "name_as_printed": "Bay of Bengal",
+      "category": "water_body",
+      "position": null,
+      "position_source": "unset"
+     },
+     {
+      "id": "longitude-82-30-e",
+      "name": "82°30' East longitude",
+      "name_as_printed": "82o.30lEast longitude",
+      "category": "longitude",
+      "position": null,
+      "position_source": "unset"
+     },
+     {
+      "id": "tropic-of-cancer-23-30-n",
+      "name": "Tropic of Cancer / 23°30' North latitudes",
+      "name_as_printed": "Tropic of Cancer / 230.30l North latitudes",
+      "category": "latitude",
+      "position": null,
+      "position_source": "unset"
+     },
+     {
+      "id": "indira-point",
+      "name": "Indira Point",
+      "name_as_printed": "Indira Point",
+      "category": "point",
+      "position": null,
+      "position_source": "unset"
+     },
+     {
+      "id": "palk-strait",
+      "name": "Palk Strait",
+      "name_as_printed": "Palk Strait",
+      "category": "strait",
+      "position": null,
+      "position_source": "unset"
+     }
+    ]
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T00:24:51+05:30",
+    "basis": "answer is the printed completed map on pdf 92; region render 200 dpi, labels legible, viewed (addendum §6)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "answer is a diagram — completed map 'India- Location' (pdf 92) marking Indira Col, 82½° East longitude, Tropic of Cancer / 23½° North latitude, Palk Strait, Indira Point; Bay of Bengal and Nilgiri hills are asked but not labelled on the provided answer map (source gap)"
+    }
+   ],
+   "prior_appearances": [
+    {
+     "as_printed": "SLP 2020",
+     "year": "2020"
+    },
+    {
+     "as_printed": "June 2025",
+     "year": "2025"
+    },
+    {
+     "as_printed": "MQP-1. 21-22"
+    },
+    {
+     "as_printed": "June 22 Mar"
+    },
+    {
+     "as_printed": "Apl 23. Mar"
+    },
+    {
+     "as_printed": "Apl 2025 June2025",
+     "year": "2025"
+    },
+    {
+     "as_printed": "April 2022",
+     "year": "2022"
+    },
+    {
+     "as_printed": "June2024",
+     "year": "2024"
+    },
+    {
+     "as_printed": "Aug 2024",
+     "year": "2024"
+    }
+   ],
+   "content_hash": "2773f6c857872e43c20d3f764e064bc7d130666c6070d8716ef597004470ccf6"
+  },
+  {
+   "id": "soc-10-10-s4-q030",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-10",
+   "syllabus_map_version": "pending",
+   "audience": "teacher",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Mark the following in the map of India provided to you. A) Vindhyan Mountain Ranges B) Aravalli hills C) Konkan Coast D) Coromandel Coast E) K2 Mountain / Mt. Godwin Austin F) Malabar coast G) Utkal coast",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s4-q030",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s4-q030",
+     "pdf_page": 36,
+     "printed_page": 24,
+     "y": 248.56832,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-10-s4-q030-key",
+     "pdf_page": 92,
+     "printed_page": 80,
+     "y": 74.4,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T00:24:51+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T00:24:51+05:30",
+   "text_as_printed": "Mark the following in the map of India provided to you. (Average) A) Vindhyan Mountain Ranges (SLP 2020) B) Aravalli hills C) Konkan Coast (Mar/ April 2024) D) Coromandel Coast (SLP 2025) E) K2 Mountain / Mt. Godwin Austin F) Malabar coast (model 2, 21-22) G) Utkal coast",
+   "section_signal": "IV",
+   "answer": {
+    "kind": "text",
+    "value": "[diagram answer — see page image]"
+   },
+   "assets": [
+    {
+     "id": "a30",
+     "type": "image",
+     "ref": "images/soc-10-10/p92-q30-india-physical-map.png",
+     "role": "answer_diagram",
+     "source_px": {
+      "w": 734,
+      "h": 847
+     },
+     "quality": "ok",
+     "caption": "India – Location & Physical features: answer map for Q30, pdf 92",
+     "pdf_page": 92,
+     "crop_bbox": {
+      "pdf_page": 92,
+      "x0": 300.8,
+      "y0": 74.4,
+      "x1": 565.1,
+      "y1": 379.2
+     }
+    }
+   ],
+   "map": {
+    "subject": "physical features",
+    "instruction": "Mark the following in the map of India provided to you.",
+    "region": "India",
+    "features": [
+     {
+      "id": "vindhyan-mountain-ranges",
+      "name": "Vindhyan Mountain Ranges",
+      "name_as_printed": "Vindhyan Mountain Ranges",
+      "category": "mountain_range",
+      "position": null,
+      "position_source": "unset"
+     },
+     {
+      "id": "aravalli-hills",
+      "name": "Aravalli hills",
+      "name_as_printed": "Aravalli hills",
+      "category": "hills",
+      "position": null,
+      "position_source": "unset"
+     },
+     {
+      "id": "konkan-coast",
+      "name": "Konkan Coast",
+      "name_as_printed": "Konkan Coast",
+      "category": "coast",
+      "position": null,
+      "position_source": "unset"
+     },
+     {
+      "id": "coromandel-coast",
+      "name": "Coromandel Coast",
+      "name_as_printed": "Coromandel Coast",
+      "category": "coast",
+      "position": null,
+      "position_source": "unset"
+     },
+     {
+      "id": "k2-godwin-austin",
+      "name": "K2 Mountain / Mt. Godwin Austin",
+      "name_as_printed": "K2 Mountain / Mt. Godwin Austin",
+      "category": "mountain",
+      "position": null,
+      "position_source": "unset"
+     },
+     {
+      "id": "malabar-coast",
+      "name": "Malabar coast",
+      "name_as_printed": "Malabar coast",
+      "category": "coast",
+      "position": null,
+      "position_source": "unset"
+     },
+     {
+      "id": "utkal-coast",
+      "name": "Utkal coast",
+      "name_as_printed": "Utkal coast",
+      "category": "coast",
+      "position": null,
+      "position_source": "unset"
+     }
+    ]
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T00:24:51+05:30",
+    "basis": "answer is the printed completed map on pdf 92; region render 200 dpi, labels legible, viewed (addendum §6)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "answer is a diagram — completed map 'India-Location & Physical features' (pdf 92) marking Vindhya Mountains, Aravalli hills, Konkan coast, Coromandal coast, K2 / Mt. Goodwin Austin, Malabar coast, Utkal coast (also shows Trans Himalayas, Satpuras, Western Ghats, Eastern Ghats as reference geography)"
+    }
+   ],
+   "prior_appearances": [
+    {
+     "as_printed": "SLP 2020",
+     "year": "2020"
+    },
+    {
+     "as_printed": "Mar"
+    },
+    {
+     "as_printed": "April 2024",
+     "year": "2024"
+    },
+    {
+     "as_printed": "SLP 2025",
+     "year": "2025"
+    },
+    {
+     "as_printed": "model 2"
+    },
+    {
+     "as_printed": "21-22"
+    }
+   ],
+   "content_hash": "60e2c9b83360c354932497d2d62d50a99d9ac89d6ee15bdcde2f5d8593c29955"
+  }
+ ],
+ "pending_summary": {}
+}
