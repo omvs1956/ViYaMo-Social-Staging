@@ -1,0 +1,2452 @@
+{
+ "contract_version": "1.7",
+ "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
+ "procedure_file": "extraction_procedure_social_addendum_v1.2_social science Classes 6-10 on top of procedure v2.md",
+ "machine_name": "soc-10-11_questions",
+ "version": 1,
+ "changelog": "v1 extraction — batch-02 — class-10-social",
+ "amendments_applied": [],
+ "unit_state": "EXTRACTED",
+ "review_ready": false,
+ "count_gate": {
+  "reference": 28,
+  "reference_source": "audited",
+  "extracted": 28,
+  "paired": 28,
+  "flagged": 1,
+  "gaps": [],
+  "duplicated_numbers": [],
+  "quota_table": "difficulty_only",
+  "second_method": {
+   "method": "printed difficulty distribution table",
+   "extracted": 28,
+   "agrees": true
+  },
+  "pass": true,
+  "note": "printed difficulty table 3/17/8=28 DISAGREES with per-question tags 3/16/8; the single Average gap is q4 (prints no difficulty tag -> null; the table counts it Average). register no-difficulty-tag (q4). tags win (v2 §6). flagged counts answer-level/diagram flags (q28 answer_diagram); all 28 carry the structural marks flag (addendum §4.5)."
+ },
+ "extraction": {
+  "source_file": "10thSS-EM-LBA-Revised_1786620693.pdf",
+  "source_ref_prefix": "10thSS-EM-LBA-Revised_1786620693.pdf",
+  "pdf_pages": [
+   36,
+   37,
+   92,
+   93
+  ],
+  "printed_page_offset": -12,
+  "method_notes": [
+   "offset -12; question side pdf 36-37 (q1-7 on 36, q8-28 on 37); answer side pdf 92-93 (q1-22 on 92, q23 starts 92 and spills to 93, q24-28 on 93)",
+   "section labels I/II/III/IV sequential (no defect); answer side cleanly numbered 1-28, pairs by printed number (no shift)",
+   "section-I keys are letter+text -> option by printed letter (addendum §4.1); all 8 letters valid, text agrees (no typo)",
+   "NO-DIFFICULTY-TAG defect (register): q4 prints no difficulty tag (parallel to q3/q5/q6 which are Average; the printed distribution table implies Average) -> difficulty null + flag 'no difficulty tag' + difficulty_source unassigned; extraction does not infer difficulty (review assigns). This is the single-count gap below.",
+   "difficulty perq 3/16/8 vs printed table 3/17/8: the 1-count Average gap is exactly q4's missing tag (table counts q4 as Average); not a table miscount — register no-difficulty-tag on q4, table total 28 agrees",
+   "q26 is a single flowing sentence listing regions (not bulleted) -> SINGLE one-line answer; 'Nico- bar' rejoined to 'Nicobar' (line-wrap hyphenation, not a real hyphen)",
+   "q27 bullet 3 'The South-West monsoons control the / agriculture of India.' wraps across two printed lines -> merged into one solution_step; 7 steps",
+   "q28 (section IV) is NOT built here — added in the map-crop-first pass (relay 10 §3 / §6.2 shape as soc-10-10@18e8080): answer-map crop committed first (bare message)",
+   "key-lines self-count (relay 10): q23 4=4, q24 6=6, q25 6=6, q26 single-sentence, q27 printed 8 lines (bullet 3 wraps) = 7 logical = stored 7; vsa 9-22 single-value; mcq 1-8 option keys; no drops",
+   "all sections print no marks figure -> all 28 marks null+flag (addendum §4.5)"
+  ],
+  "notation_summary": {
+   "render_tokens": 0,
+   "latex_tokens": 0,
+   "damage_flags": []
+  },
+  "excluded_objects": [],
+  "inline_excluded_count": 0,
+  "figure_references": []
+ },
+ "stimuli": [],
+ "questions": [
+  {
+   "id": "soc-10-11-s1-q001",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The eastern parts of western ghats get less rainfall than the western parts because",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s1-q001",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s1-q001",
+     "pdf_page": 36,
+     "printed_page": 24,
+     "y": 515.674,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s1-q001-key",
+     "pdf_page": 92,
+     "printed_page": 80,
+     "y": 445.934,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T01:24:38+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T01:24:38+05:30",
+   "text_as_printed": "The eastern parts of western ghats get less rainfall than the western parts because (Difficult)",
+   "options": [
+    {
+     "id": "A",
+     "text": "It is in the windward side"
+    },
+    {
+     "id": "B",
+     "text": "They are in rain shadow regions"
+    },
+    {
+     "id": "C",
+     "text": "They get heavy snow fall"
+    },
+    {
+     "id": "D",
+     "text": "There is desert"
+    }
+   ],
+   "answer_as_printed": "B) They are in rain shadow regions",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T01:24:38+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "876eec9549e12a2bba62686211f9d9d151d1e8c92f68496763875e2c04d50f06"
+  },
+  {
+   "id": "soc-10-11-s1-q002",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "During the Retreating Monsoon season cyclones occur in the Bay of Bengal due to",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s1-q002",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s1-q002",
+     "pdf_page": 36,
+     "printed_page": 24,
+     "y": 559.114,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s1-q002-key",
+     "pdf_page": 92,
+     "printed_page": 80,
+     "y": 459.754,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T01:24:38+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T01:24:38+05:30",
+   "text_as_printed": "During the Retreating Monsoon season cyclones occur in the Bay of Bengal due to (Difficult)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Difference in temperature and pressure between land and sea"
+    },
+    {
+     "id": "B",
+     "text": "Vertical rays of sun cause increase in temperature in the northern hemisphere"
+    },
+    {
+     "id": "C",
+     "text": "These areas lie high from the sea level"
+    },
+    {
+     "id": "D",
+     "text": "North Indian areas are far away from the sea"
+    }
+   ],
+   "answer_as_printed": "A) Difference in temperature and pressure between land and sea",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T01:24:38+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "4e6e872054e15b3a20259e1341413f17b1b30a5e21ec4e689c4a194ce93731f4"
+  },
+  {
+   "id": "soc-10-11-s1-q003",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The rain fall that occurs due to the local temperature and conventional currents during April and May in West Bengal is called",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s1-q003",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s1-q003",
+     "pdf_page": 36,
+     "printed_page": 24,
+     "y": 617.074,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s1-q003-key",
+     "pdf_page": 92,
+     "printed_page": 80,
+     "y": 473.554,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T01:24:38+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T01:24:38+05:30",
+   "text_as_printed": "The rain fall that occurs due to the local temperature and conventional currents during April and May in West Bengal is called (Average)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Andhis"
+    },
+    {
+     "id": "B",
+     "text": "Kala Baisakhi"
+    },
+    {
+     "id": "C",
+     "text": "Coffee Blossoms"
+    },
+    {
+     "id": "D",
+     "text": "Mango Showers"
+    }
+   ],
+   "answer_as_printed": "B) Kala Baisakhi",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T01:24:38+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "513e592a51468029be3c416e6375027bb64a628829da8dbf5e20a96c3bdc66bb"
+  },
+  {
+   "id": "soc-10-11-s1-q004",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The rain fall which occurs due to the local temperature and conventional currents during April and May in Uttar Pradesh is called",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s1-q004",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s1-q004",
+     "pdf_page": 36,
+     "printed_page": 24,
+     "y": 660.544,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s1-q004-key",
+     "pdf_page": 92,
+     "printed_page": 80,
+     "y": 487.354,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T01:24:38+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T01:24:38+05:30",
+   "options": [
+    {
+     "id": "A",
+     "text": "Andhis"
+    },
+    {
+     "id": "B",
+     "text": "Kala Baisakhi"
+    },
+    {
+     "id": "C",
+     "text": "Coffee Blossoms"
+    },
+    {
+     "id": "D",
+     "text": "Mango Showers"
+    }
+   ],
+   "answer_as_printed": "A) Andhis",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T01:24:38+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the question prints no difficulty tag; assigning one needs subject judgement — left unassigned for review",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "f53df865572b586a963ff4b7c8f00de75b82e1ef81e9db232cf76a054d2b892c"
+  },
+  {
+   "id": "soc-10-11-s1-q005",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The rain fall which occurs due to the local temperature and conventional currents during April and May in Kerala is called",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s1-q005",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s1-q005",
+     "pdf_page": 36,
+     "printed_page": 24,
+     "y": 703.984,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s1-q005-key",
+     "pdf_page": 92,
+     "printed_page": 80,
+     "y": 501.154,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T01:24:38+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T01:24:38+05:30",
+   "text_as_printed": "The rain fall which occurs due to the local temperature and conventional currents during April and May in Kerala is called (Average)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Andhis"
+    },
+    {
+     "id": "B",
+     "text": "Kala Baisakhi"
+    },
+    {
+     "id": "C",
+     "text": "Coffee Blossoms"
+    },
+    {
+     "id": "D",
+     "text": "Mango Showers"
+    }
+   ],
+   "answer_as_printed": "D) Mango Showers",
+   "answer": {
+    "kind": "option",
+    "option_id": "D"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T01:24:38+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "fa5e1cb6454caa808afe021bc32c66e23fd7a35ea59f5b59f8578fb845283368"
+  },
+  {
+   "id": "soc-10-11-s1-q006",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The rain fall which occurs due to the local temperature and conventional currents during April and May in Karnataka is called",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s1-q006",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s1-q006",
+     "pdf_page": 36,
+     "printed_page": 24,
+     "y": 747.42,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s1-q006-key",
+     "pdf_page": 92,
+     "printed_page": 80,
+     "y": 514.954,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T01:24:38+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T01:24:38+05:30",
+   "text_as_printed": "The rain fall which occurs due to the local temperature and conventional currents during April and May in Karnataka is called (Average)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Andhis"
+    },
+    {
+     "id": "B",
+     "text": "Kala Baisakhi"
+    },
+    {
+     "id": "C",
+     "text": "Coffee Blossoms"
+    },
+    {
+     "id": "D",
+     "text": "Mango Showers"
+    }
+   ],
+   "answer_as_printed": "C) Coffee Blossoms",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T01:24:38+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "8230e8d71c4d025f9ee0a6c115c4fd1691fb13acee26fff125632feac3154f2a"
+  },
+  {
+   "id": "soc-10-11-s1-q007",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The period of Retreating Monsoons season in India",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s1-q007",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s1-q007",
+     "pdf_page": 36,
+     "printed_page": 24,
+     "y": 790.98,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s1-q007-key",
+     "pdf_page": 92,
+     "printed_page": 80,
+     "y": 528.754,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T01:24:38+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T01:24:38+05:30",
+   "text_as_printed": "The period of Retreating Monsoons season in India (Average)",
+   "options": [
+    {
+     "id": "A",
+     "text": "March - May"
+    },
+    {
+     "id": "B",
+     "text": "June- September"
+    },
+    {
+     "id": "C",
+     "text": "October- November"
+    },
+    {
+     "id": "D",
+     "text": "December- February"
+    }
+   ],
+   "answer_as_printed": "C) October- November",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T01:24:38+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "61add206d3bdaa5b6da22ab4583e99417ec7f3ebfe1c3660b9cbfbc918529293"
+  },
+  {
+   "id": "soc-10-11-s1-q008",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The average annual rainfall that India receives is",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s1-q008",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s1-q008",
+     "pdf_page": 37,
+     "printed_page": 25,
+     "y": 53.124,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s1-q008-key",
+     "pdf_page": 92,
+     "printed_page": 80,
+     "y": 542.554,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T01:24:38+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T01:24:38+05:30",
+   "text_as_printed": "The average annual rainfall that India receives is (Difficult)",
+   "options": [
+    {
+     "id": "A",
+     "text": "75 cms"
+    },
+    {
+     "id": "B",
+     "text": "118 cms"
+    },
+    {
+     "id": "C",
+     "text": "250 cms"
+    },
+    {
+     "id": "D",
+     "text": "50 cms"
+    }
+   ],
+   "answer_as_printed": "B) 118 cms",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T01:24:38+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "f756211b4fa4fa8e97f243a96fe1b4626571f13f3961de95aafe79c78ddf210d"
+  },
+  {
+   "id": "soc-10-11-s2-q009",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is the reason for the high temperature in North India during summer?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s2-q009",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s2-q009",
+     "pdf_page": 37,
+     "printed_page": 25,
+     "y": 97.784,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s2-q009-key",
+     "pdf_page": 92,
+     "printed_page": 80,
+     "y": 570.154,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T01:24:38+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T01:24:38+05:30",
+   "text_as_printed": "What is the reason for the high temperature in North India during summer? (Average)",
+   "answer": {
+    "kind": "text",
+    "value": "The sun rays fall vertically on the northern hemisphere during summer and its away from the sea"
+   },
+   "answer_as_printed": "The sun rays fall vertically on the northern hemisphere during summer and its away from the sea",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T01:24:38+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "b7d22fcb6312a9c710d973082a71fb3b3abded7738326adf7812205ab970688e"
+  },
+  {
+   "id": "soc-10-11-s2-q010",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is the reason for the conventional rainfall that occurs in the month of April and May?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s2-q010",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s2-q010",
+     "pdf_page": 37,
+     "printed_page": 25,
+     "y": 112.304,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s2-q010-key",
+     "pdf_page": 92,
+     "printed_page": 80,
+     "y": 583.954,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T01:24:38+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T01:24:38+05:30",
+   "text_as_printed": "What is the reason for the conventional rainfall that occurs in the month of April and May? (April-2023) (Difficult)",
+   "prior_appearances": [
+    {
+     "as_printed": "April-2023",
+     "year": "2023"
+    }
+   ],
+   "answer": {
+    "kind": "text",
+    "value": "Due to local temperature, Conventional current and winds"
+   },
+   "answer_as_printed": "Due to local temperature, Conventional current and winds",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T01:24:38+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "a1e715c3e2375c86e89e9ab9ba53c8ed807c710e50184964322a1fdf6ec93187"
+  },
+  {
+   "id": "soc-10-11-s2-q011",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Mention the cooler regions in India during Summer season.",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s2-q011",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s2-q011",
+     "pdf_page": 37,
+     "printed_page": 25,
+     "y": 141.224,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s2-q011-key",
+     "pdf_page": 92,
+     "printed_page": 80,
+     "y": 597.754,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T01:24:38+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T01:24:38+05:30",
+   "text_as_printed": "Mention the cooler regions in India during Summer season. (Average)",
+   "answer": {
+    "kind": "text",
+    "value": "The North Indians Mountain regions and Peninsular plateau"
+   },
+   "answer_as_printed": "The North Indians Mountain regions and Peninsular plateau",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T01:24:38+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "5146dc80d875ee7337d07e00fdb8400d3480d94002be2900ab1619fac0bf9fef"
+  },
+  {
+   "id": "soc-10-11-s2-q012",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Which are the two branches of the Southwest monsoons?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s2-q012",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s2-q012",
+     "pdf_page": 37,
+     "printed_page": 25,
+     "y": 155.744,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s2-q012-key",
+     "pdf_page": 92,
+     "printed_page": 80,
+     "y": 611.554,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T01:24:38+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T01:24:38+05:30",
+   "text_as_printed": "Which are the two branches of the Southwest monsoons? (June-2015) (Average)",
+   "prior_appearances": [
+    {
+     "as_printed": "June-2015",
+     "year": "2015"
+    }
+   ],
+   "answer": {
+    "kind": "text",
+    "value": "Arabian Sea branch and Bay of Bengal branch"
+   },
+   "answer_as_printed": "Arabian Sea branch and Bay of Bengal branch",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T01:24:38+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "11f5a8efee5710889ff52d1ef8437e4c1adc68e5086ba1c2bef90e6a17648e4b"
+  },
+  {
+   "id": "soc-10-11-s2-q013",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Which state does not receive rain during the Southwest monsoon season?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s2-q013",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s2-q013",
+     "pdf_page": 37,
+     "printed_page": 25,
+     "y": 170.264,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s2-q013-key",
+     "pdf_page": 92,
+     "printed_page": 80,
+     "y": 625.354,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T01:24:38+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T01:24:38+05:30",
+   "text_as_printed": "Which state does not receive rain during the Southwest monsoon season? (Average)",
+   "answer": {
+    "kind": "text",
+    "value": "Tamil Nadu"
+   },
+   "answer_as_printed": "Tamil Nadu",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T01:24:38+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "d515f8463ded3f18217b82900822adeb6c2169a73fae99d79e1ef3488bc16652"
+  },
+  {
+   "id": "soc-10-11-s2-q014",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Which is the season of lowest rainfall in India?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s2-q014",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s2-q014",
+     "pdf_page": 37,
+     "printed_page": 25,
+     "y": 184.664,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s2-q014-key",
+     "pdf_page": 92,
+     "printed_page": 80,
+     "y": 639.184,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T01:24:38+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T01:24:38+05:30",
+   "text_as_printed": "Which is the season of lowest rainfall in India? (Average)",
+   "answer": {
+    "kind": "text",
+    "value": "Winter Season"
+   },
+   "answer_as_printed": "Winter Season",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T01:24:38+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "eb43fcded2083f26fb7ab6141ad1ab8fbb1a0618bad520e74450dfb47f6a2b7c"
+  },
+  {
+   "id": "soc-10-11-s2-q015",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Why does western sides of western ghats receive heavy rain fall?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s2-q015",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s2-q015",
+     "pdf_page": 37,
+     "printed_page": 25,
+     "y": 199.184,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s2-q015-key",
+     "pdf_page": 92,
+     "printed_page": 80,
+     "y": 652.984,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T01:24:38+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T01:24:38+05:30",
+   "text_as_printed": "Why does western sides of western ghats receive heavy rain fall? (Difficult)",
+   "answer": {
+    "kind": "text",
+    "value": "Monsoon winds are obstructed by the western side of Western Ghats and receives heavy Rain"
+   },
+   "answer_as_printed": "Monsoon winds are obstructed by the western side of Western Ghats and receives heavy Rain",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T01:24:38+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "612c4d91fa51b4e44def45c8c81e8b859108bb028df7ebc9903c69b339bcb969"
+  },
+  {
+   "id": "soc-10-11-s2-q016",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Which place of India has recorded highest temperature?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s2-q016",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s2-q016",
+     "pdf_page": 37,
+     "printed_page": 25,
+     "y": 213.704,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s2-q016-key",
+     "pdf_page": 92,
+     "printed_page": 80,
+     "y": 666.784,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T01:24:38+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T01:24:38+05:30",
+   "text_as_printed": "Which place of India has recorded highest temperature? (Easy)",
+   "answer": {
+    "kind": "text",
+    "value": "Ganganagar (Rajasthan)"
+   },
+   "answer_as_printed": "Ganganagar (Rajasthan)",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T01:24:38+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "7c169c12010bb80bad9ded9c680ecdff349e4080d18c4f5438e7a8e65d6e1e2c"
+  },
+  {
+   "id": "soc-10-11-s2-q017",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Which place in India receives the highest rainfall?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s2-q017",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s2-q017",
+     "pdf_page": 37,
+     "printed_page": 25,
+     "y": 228.224,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s2-q017-key",
+     "pdf_page": 92,
+     "printed_page": 80,
+     "y": 680.584,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T01:24:38+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T01:24:38+05:30",
+   "text_as_printed": "Which place in India receives the highest rainfall? (Easy)",
+   "answer": {
+    "kind": "text",
+    "value": "Mawsynram (Meghalaya)"
+   },
+   "answer_as_printed": "Mawsynram (Meghalaya)",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T01:24:38+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "31a6560e6c5b885af25c48ef5b31a444533fa94d934068f6d0c9cbef6fb87a80"
+  },
+  {
+   "id": "soc-10-11-s2-q018",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Which region receives the lowest rainfall in India?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s2-q018",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s2-q018",
+     "pdf_page": 37,
+     "printed_page": 25,
+     "y": 242.624,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s2-q018-key",
+     "pdf_page": 92,
+     "printed_page": 80,
+     "y": 694.384,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T01:24:38+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T01:24:38+05:30",
+   "text_as_printed": "Which region receives the lowest rainfall in India? (June-2023) (Easy)",
+   "prior_appearances": [
+    {
+     "as_printed": "June-2023",
+     "year": "2023"
+    }
+   ],
+   "answer": {
+    "kind": "text",
+    "value": "Ruyli (Rajasthan)"
+   },
+   "answer_as_printed": "Ruyli (Rajasthan)",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T01:24:38+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "9a1bdea8fd9bc8e24ff5ccbdf38e8bd3d45b7d002ab804312c134e751ad2ec0a"
+  },
+  {
+   "id": "soc-10-11-s2-q019",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is the reason for cyclones that occur in Arabian sea and Bay of Bengal during the retreating monsoon season?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s2-q019",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s2-q019",
+     "pdf_page": 37,
+     "printed_page": 25,
+     "y": 257.144,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s2-q019-key",
+     "pdf_page": 92,
+     "printed_page": 80,
+     "y": 708.184,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T01:24:38+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T01:24:38+05:30",
+   "text_as_printed": "What is the reason for cyclones that occur in Arabian sea and Bay of Bengal during the retreating monsoon season? (Difficult)",
+   "answer": {
+    "kind": "text",
+    "value": "Due to the differences in temperature and pressure of land and sea"
+   },
+   "answer_as_printed": "Due to the differences in temperature and pressure of land and sea",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T01:24:38+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "81122379a1e14bbe4dd67d04eebd2a348e697c4413837f80fb75869551fbe5a0"
+  },
+  {
+   "id": "soc-10-11-s2-q020",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "‘The temperature is lower in South India than in North India during Summer season’ why?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s2-q020",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s2-q020",
+     "pdf_page": 37,
+     "printed_page": 25,
+     "y": 300.614,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s2-q020-key",
+     "pdf_page": 92,
+     "printed_page": 80,
+     "y": 721.984,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T01:24:38+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T01:24:38+05:30",
+   "text_as_printed": "‘The temperature is lower in South India than in North India during Summer season’ why? (Difficult)",
+   "answer": {
+    "kind": "text",
+    "value": "South India is surrounded by water bodies in three sides"
+   },
+   "answer_as_printed": "South India is surrounded by water bodies in three sides",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T01:24:38+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "7baf4bf5548b12ed9e3b038078450cb591b44de9cb40cae88be5b3b7084a42f9"
+  },
+  {
+   "id": "soc-10-11-s2-q021",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Which type of climate India experiences? /What type of climate India has?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s2-q021",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s2-q021",
+     "pdf_page": 37,
+     "printed_page": 25,
+     "y": 315.134,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s2-q021-key",
+     "pdf_page": 92,
+     "printed_page": 80,
+     "y": 735.78,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T01:24:38+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T01:24:38+05:30",
+   "text_as_printed": "Which type of climate India experiences? /What type of climate India has? (Average)",
+   "answer": {
+    "kind": "text",
+    "value": "India has tropical monsoon type of climate"
+   },
+   "answer_as_printed": "India has tropical monsoon type of climate",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T01:24:38+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "7149965eaac67060ff6d8678dbc34926a9b57e00dd4617bda238be1bcd4eba64"
+  },
+  {
+   "id": "soc-10-11-s2-q022",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Which rainfall occurs due to the local temperature and convectional current?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s2-q022",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s2-q022",
+     "pdf_page": 37,
+     "printed_page": 25,
+     "y": 329.654,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s2-q022-key",
+     "pdf_page": 92,
+     "printed_page": 80,
+     "y": 749.58,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T01:24:38+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T01:24:38+05:30",
+   "text_as_printed": "Which rainfall occurs due to the local temperature and convectional current? (Average)",
+   "answer": {
+    "kind": "text",
+    "value": "Conventional Rainfall occur due to local temperature and conventional current"
+   },
+   "answer_as_printed": "Conventional Rainfall occur due to local temperature and conventional current",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T01:24:38+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "fd2f49f0905675bd2a66b164900b1874c104dd946373e6d802e09932bbc7e965"
+  },
+  {
+   "id": "soc-10-11-s3-q023",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Which are the main climatic seasons of India?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s3-q023",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s3-q023",
+     "pdf_page": 37,
+     "printed_page": 25,
+     "y": 358.574,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s3-q023-key",
+     "pdf_page": 92,
+     "printed_page": 80,
+     "y": 777.18,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T01:24:38+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T01:24:38+05:30",
+   "text_as_printed": "Which are the main climatic seasons of India? (April-2022) (Average)",
+   "prior_appearances": [
+    {
+     "as_printed": "April-2022",
+     "year": "2022"
+    }
+   ],
+   "answer": {
+    "kind": "text",
+    "value": "Summer season (March - May)\nSouthwest monsoon season (June - September)\nRetreating monsoon season (October - November)\nWinter season (December - February)"
+   },
+   "answer_as_printed": "Summer season (March - May)\nSouthwest monsoon season (June - September)\nRetreating monsoon season (October - November)\nWinter season (December - February)",
+   "solution_steps": [
+    "Summer season (March - May)",
+    "Southwest monsoon season (June - September)",
+    "Retreating monsoon season (October - November)",
+    "Winter season (December - February)"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T01:24:38+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "3a2db7089181a10dd20b0a16c35bddfd400674a13d766eab8217f2d1c6e603ae"
+  },
+  {
+   "id": "soc-10-11-s3-q024",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Which factors mainly influence the climate of India?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s3-q024",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s3-q024",
+     "pdf_page": 37,
+     "printed_page": 25,
+     "y": 373.094,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s3-q024-key",
+     "pdf_page": 93,
+     "printed_page": 81,
+     "y": 80.004,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T01:24:38+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T01:24:38+05:30",
+   "text_as_printed": "Which factors mainly influence the climate of India? (June-2018) (Average)",
+   "prior_appearances": [
+    {
+     "as_printed": "June-2018",
+     "year": "2018"
+    }
+   ],
+   "answer": {
+    "kind": "text",
+    "value": "Latitude,\nHeight from the sea level,\nDistance from the sea,\nDirection of the winds,\nMountain ranges,\nOcean currents etc"
+   },
+   "answer_as_printed": "Latitude,\nHeight from the sea level,\nDistance from the sea,\nDirection of the winds,\nMountain ranges,\nOcean currents etc",
+   "solution_steps": [
+    "Latitude,",
+    "Height from the sea level,",
+    "Distance from the sea,",
+    "Direction of the winds,",
+    "Mountain ranges,",
+    "Ocean currents etc"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T01:24:38+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "f645a5e3248391c3959b17fd3a7510fd7fb35622329547c9553197f4545d8359"
+  },
+  {
+   "id": "soc-10-11-s3-q025",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What are the reasons for the South West monsoons to recede in October?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s3-q025",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s3-q025",
+     "pdf_page": 37,
+     "printed_page": 25,
+     "y": 387.614,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s3-q025-key",
+     "pdf_page": 93,
+     "printed_page": 81,
+     "y": 176.624,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T01:24:38+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T01:24:38+05:30",
+   "text_as_printed": "What are the reasons for the South West monsoons to recede in October? (Difficult)",
+   "answer": {
+    "kind": "text",
+    "value": "Because of the Wide-spread South-West Monsoon rains,\nThere is a decrease in the temperature.\nDuring this season, the sun rays fall Vertically on the Southern hemisphere.\nAs a result, there is a drop in the temperature in the Northern hemisphere.\nHence this area becomes an area of high pressure.\nThe South-West monsoon winds start receeding."
+   },
+   "answer_as_printed": "Because of the Wide-spread South-West Monsoon rains,\nThere is a decrease in the temperature.\nDuring this season, the sun rays fall Vertically on the Southern hemisphere.\nAs a result, there is a drop in the temperature in the Northern hemisphere.\nHence this area becomes an area of high pressure.\nThe South-West monsoon winds start receeding.",
+   "solution_steps": [
+    "Because of the Wide-spread South-West Monsoon rains,",
+    "There is a decrease in the temperature.",
+    "During this season, the sun rays fall Vertically on the Southern hemisphere.",
+    "As a result, there is a drop in the temperature in the Northern hemisphere.",
+    "Hence this area becomes an area of high pressure.",
+    "The South-West monsoon winds start receeding."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T01:24:38+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "b41896fcb4e5d41d8c563a58c44f22cec26c7eab301f717461bfdb4d6810ca16"
+  },
+  {
+   "id": "soc-10-11-s3-q026",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Which are the regions that receive heavy rainfall in India?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s3-q026",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s3-q026",
+     "pdf_page": 37,
+     "printed_page": 25,
+     "y": 402.134,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s3-q026-key",
+     "pdf_page": 93,
+     "printed_page": 81,
+     "y": 273.254,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T01:24:38+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T01:24:38+05:30",
+   "text_as_printed": "Which are the regions that receive heavy rainfall in India? (Average)",
+   "answer": {
+    "kind": "text",
+    "value": "Western part of the Western Ghats, West Bengal, Assam and North eastern states, Andaman and Nicobar."
+   },
+   "answer_as_printed": "Western part of the Western Ghats, West Bengal, Assam and North eastern states, Andaman and Nicobar.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T01:24:38+05:30",
+    "basis": "printed one-line answer, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "e2239115e4e48705b365255fea6e357ef36ee49ebb34c94ad621bf7db7b1e82c"
+  },
+  {
+   "id": "soc-10-11-s3-q027",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "“Indian agriculture is a gambling with the monsoons” Justify.",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s3-q027",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s3-q027",
+     "pdf_page": 37,
+     "printed_page": 25,
+     "y": 414.038,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s3-q027-key",
+     "pdf_page": 93,
+     "printed_page": 81,
+     "y": 300.854,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T01:24:38+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T01:24:38+05:30",
+   "text_as_printed": "“Indian agriculture is a gambling with the monsoons” Justify. (April-2015, 2017, 2018, June-2017) (Average)",
+   "prior_appearances": [
+    {
+     "as_printed": "April-2015",
+     "year": "2015"
+    },
+    {
+     "as_printed": "2017",
+     "year": "2017"
+    },
+    {
+     "as_printed": "2018",
+     "year": "2018"
+    },
+    {
+     "as_printed": "June-2017",
+     "year": "2017"
+    }
+   ],
+   "answer": {
+    "kind": "text",
+    "value": "Agriculture is the main occupation.\nClimatic has a great influence on the economy.\nThe South-West monsoons control the agriculture of India.\nFailure of rainfall leads to drought.\nHeavy rainfall leads floods.\nThey cause destruction to life and property.\nHence it is said that Indian agriculture is a “Gamble with the monsoons”."
+   },
+   "answer_as_printed": "Agriculture is the main occupation.\nClimatic has a great influence on the economy.\nThe South-West monsoons control the agriculture of India.\nFailure of rainfall leads to drought.\nHeavy rainfall leads floods.\nThey cause destruction to life and property.\nHence it is said that Indian agriculture is a “Gamble with the monsoons”.",
+   "solution_steps": [
+    "Agriculture is the main occupation.",
+    "Climatic has a great influence on the economy.",
+    "The South-West monsoons control the agriculture of India.",
+    "Failure of rainfall leads to drought.",
+    "Heavy rainfall leads floods.",
+    "They cause destruction to life and property.",
+    "Hence it is said that Indian agriculture is a “Gamble with the monsoons”."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T01:24:38+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "ff4b17e429bf9d2966e27e2a7c56c0a57af914183dfd978e79f61085984bb4cd"
+  },
+  {
+   "id": "soc-10-11-s4-q028",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Mark the following in the map of India provided to you. A) Thar desert B) Ruyli C) Ganga Nagar D) Mawsynram",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s4-q028",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s4-q028",
+     "pdf_page": 37,
+     "printed_page": 25,
+     "y": 445.814,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-11-s4-q028-key",
+     "pdf_page": 93,
+     "printed_page": 81,
+     "y": 430.5,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T01:25:28+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T01:25:28+05:30",
+   "text_as_printed": "Mark the following in the map of India provided to you. (Average) A) Thar desert B) Ruyli C) Ganga Nagar D) Mawsynram",
+   "section_signal": "IV",
+   "answer": {
+    "kind": "text",
+    "value": "[diagram answer — see page image]"
+   },
+   "assets": [
+    {
+     "id": "a28",
+     "type": "image",
+     "ref": "images/soc-10-11/p93-q28-india-seasons-map.png",
+     "role": "answer_diagram",
+     "source_px": {
+      "w": 701,
+      "h": 726
+     },
+     "quality": "ok",
+     "caption": "India – Seasons: answer map for Q28, pdf 93",
+     "pdf_page": 93,
+     "crop_bbox": {
+      "pdf_page": 93,
+      "x0": 171.0,
+      "y0": 430.5,
+      "x1": 423.5,
+      "y1": 692.0
+     }
+    }
+   ],
+   "map": {
+    "subject": "seasons / rainfall places",
+    "instruction": "Mark the following in the map of India provided to you.",
+    "region": "India",
+    "features_source": "stem",
+    "features": [
+     {
+      "id": "A",
+      "name": "Thar desert",
+      "category": "other",
+      "position": null,
+      "position_source": "unset"
+     },
+     {
+      "id": "B",
+      "name": "Ruyli",
+      "category": null,
+      "position": null,
+      "position_source": "unset"
+     },
+     {
+      "id": "C",
+      "name": "Ganga Nagar",
+      "category": null,
+      "position": null,
+      "position_source": "unset"
+     },
+     {
+      "id": "D",
+      "name": "Mawsynram",
+      "category": null,
+      "position": null,
+      "position_source": "unset"
+     }
+    ],
+    "answer_map_asset_id": "a28"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T01:25:28+05:30",
+    "basis": "answer is the printed completed map on pdf 93; region render 200 dpi, labels legible, viewed (addendum §6)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "answer is a diagram — completed map of India (pdf 93) marking Thar desert, Ruyli, Ganganagar, Mawsynram; all four asked features labelled"
+    }
+   ],
+   "content_hash": "6855a104a4a5f6ceae546403b044aad4ab07ada8a66c999045c1cb0707f3f697"
+  }
+ ],
+ "pending_summary": {}
+}
