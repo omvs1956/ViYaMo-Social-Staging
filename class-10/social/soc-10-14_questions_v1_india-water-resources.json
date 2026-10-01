@@ -1,0 +1,2574 @@
+{
+ "contract_version": "1.7",
+ "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
+ "procedure_file": "extraction_procedure_social_addendum_v1.2_social science Classes 6-10 on top of procedure v2.md",
+ "machine_name": "soc-10-14_questions",
+ "version": 1,
+ "changelog": "v1 extraction — batch-02 — class-10-social",
+ "amendments_applied": [],
+ "unit_state": "EXTRACTED",
+ "review_ready": false,
+ "count_gate": {
+  "reference": 28,
+  "reference_source": "audited",
+  "extracted": 28,
+  "paired": 28,
+  "flagged": 4,
+  "gaps": [],
+  "duplicated_numbers": [],
+  "quota_table": "difficulty_only",
+  "second_method": {
+   "method": "printed difficulty distribution table",
+   "extracted": 28,
+   "agrees": true
+  },
+  "pass": true,
+  "note": "printed difficulty table 9/13/6=28 DISAGREES with per-question tags 8/14/6 (table has 1 extra Easy, 1 fewer Average; total 28 agrees); tags win (v2 §6); register difficulty-table-vs-tags. flagged counts answer-level/diagram + key-typo flags (q3/q5/q6 typo, q28 answer_diagram); all 28 carry the structural marks flag (addendum §4.5)."
+ },
+ "extraction": {
+  "source_file": "10thSS-EM-LBA-Revised_1786620693.pdf",
+  "source_ref_prefix": "10thSS-EM-LBA-Revised_1786620693.pdf",
+  "pdf_pages": [
+   39,
+   40,
+   41,
+   98,
+   99
+  ],
+  "printed_page_offset": -12,
+  "method_notes": [
+   "offset -12; question side pdf 39-41 (header on 39, questions on 40, q28 features g/h spill to 41); answer side pdf 98-99 (q1-24 on 98, q24 tail + q25-28 on 99)",
+   "section labels I/II/III/IV sequential (no defect); answer side cleanly numbered, pairs by printed number (no shift)",
+   "section-I keys letter+text -> option by printed letter (addendum §4.1); q3 'b) Damodar River' vs option 'Damodar', q5 'b) Kosi River' vs option 'River Kosi' (word order), q6 'B) Krishna River' vs option 'Krishna' -> key text differs from option by a printed typo (adds/reorders 'River'); letter kept, flagged (v2 §1). q1,q2,q4,q7,q8,q9 agree",
+   "q22 2-column TABLE (Perennial Canals | Flood canals): header + 2 rows (printed row ordinals '1.'/'2.' dropped as row markers) -> cells joined ' | ', 3 steps",
+   "q24 answer spans pdf 98-99 (Alamatti last on 98; Kali/Supa Kadra/Kodasalli on 99); 'Supa, Kadra,' is one printed bullet -> 8 bullets",
+   "DIFFICULTY-TABLE-VS-TAGS defect (register): printed table Easy 9 / Average 13 / Difficult 6; per-question tags Easy 8 / Average 14 / Difficult 6 (total 28 agrees). table has 1 extra Easy and 1 fewer Average; tags win (v2 §6)",
+   "q28 (section IV map, 8 features a-h) NOT built here -> map-crop-first pass (bare commit message; §6.2 shape)",
+   "key-lines self-count (relay 10): q20 3=3, q21 4=4, q22 table 3 rows=3, q23 6=6, q24 8=8; vsa 10-19 single-value; mcq 1-9 option keys; no drops",
+   "sections I/II/III no marks, IV '(3/4 marks questions)' -> all 28 marks null+flag (addendum §4.5)"
+  ],
+  "notation_summary": {
+   "render_tokens": 0,
+   "latex_tokens": 0,
+   "damage_flags": []
+  },
+  "excluded_objects": [],
+  "inline_excluded_count": 0,
+  "figure_references": []
+ },
+ "stimuli": [],
+ "questions": [
+  {
+   "id": "soc-10-14-s1-q001",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-14",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The country that has largest irrigated area in the world",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s1-q001",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s1-q001",
+     "pdf_page": 40,
+     "printed_page": 28,
+     "y": 150.464,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s1-q001-key",
+     "pdf_page": 98,
+     "printed_page": 86,
+     "y": 98.384,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T01:44:05+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T01:44:05+05:30",
+   "text_as_printed": "The country that has largest irrigated area in the world (Average)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Russia"
+    },
+    {
+     "id": "B",
+     "text": "China"
+    },
+    {
+     "id": "C",
+     "text": "India"
+    },
+    {
+     "id": "D",
+     "text": "United states of America"
+    }
+   ],
+   "answer_as_printed": "c) India",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T01:44:05+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "58fd7e0bddb2a5de365746cb61c1f899724f797f2206154eee5824273ae14d8d"
+  },
+  {
+   "id": "soc-10-14-s1-q002",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-14",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The state which has largest tank irrigation in India",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s1-q002",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s1-q002",
+     "pdf_page": 40,
+     "printed_page": 28,
+     "y": 178.064,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s1-q002-key",
+     "pdf_page": 98,
+     "printed_page": 86,
+     "y": 112.184,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T01:44:05+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T01:44:05+05:30",
+   "text_as_printed": "The state which has largest tank irrigation in India (Average)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Tamil Nadu"
+    },
+    {
+     "id": "B",
+     "text": "Karnataka"
+    },
+    {
+     "id": "C",
+     "text": "Bihar"
+    },
+    {
+     "id": "D",
+     "text": "Andhra Pradesh"
+    }
+   ],
+   "answer_as_printed": "d) Andhra Pradesh",
+   "answer": {
+    "kind": "option",
+    "option_id": "D"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T01:44:05+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "67cd560750a76b03a72d81177dbf30d18443b31e1f73c28dd141855285289a16"
+  },
+  {
+   "id": "soc-10-14-s1-q003",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-14",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "First multipurpose river valley project of independent India",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s1-q003",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s1-q003",
+     "pdf_page": 40,
+     "printed_page": 28,
+     "y": 205.664,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s1-q003-key",
+     "pdf_page": 98,
+     "printed_page": 86,
+     "y": 125.984,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T01:44:05+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T01:44:05+05:30",
+   "text_as_printed": "First multipurpose river valley project of independent India (Average)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Bhakra Nangal"
+    },
+    {
+     "id": "B",
+     "text": "Damodar"
+    },
+    {
+     "id": "C",
+     "text": "Kosi"
+    },
+    {
+     "id": "D",
+     "text": "Hirakud"
+    }
+   ],
+   "answer_as_printed": "b) Damodar River",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T01:44:05+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text differs from option by a printed typo",
+     "why_not_corrected": "letter B kept (addendum §4.1); key text 'Damodar River' vs option B 'Damodar' differ by a source typo; spelling needs subject knowledge (v2 §1)",
+     "suggested": "B (letter kept)"
+    }
+   ],
+   "content_hash": "08f68c121628946d4c5df915489f0a36e85f270514db8df5e4c609d3d02cf9f7"
+  },
+  {
+   "id": "soc-10-14-s1-q004",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-14",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The dam built across river Mahanadi is",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s1-q004",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s1-q004",
+     "pdf_page": 40,
+     "printed_page": 28,
+     "y": 233.264,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s1-q004-key",
+     "pdf_page": 98,
+     "printed_page": 86,
+     "y": 139.784,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T01:44:05+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T01:44:05+05:30",
+   "text_as_printed": "The dam built across river Mahanadi is (Average)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Hirakud"
+    },
+    {
+     "id": "B",
+     "text": "Bhakra Nangal"
+    },
+    {
+     "id": "C",
+     "text": "Tehri"
+    },
+    {
+     "id": "D",
+     "text": "Nagarjuna Sagar"
+    }
+   ],
+   "answer_as_printed": "a) Hirakud",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T01:44:05+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "1f3dcd6f3c2df1823c87cf0149d0551971288f35233d43c11b219423b1bf332f"
+  },
+  {
+   "id": "soc-10-14-s1-q005",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-14",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The river which was known as the “Sorrow of Bihar”",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s1-q005",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s1-q005",
+     "pdf_page": 40,
+     "printed_page": 28,
+     "y": 260.864,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s1-q005-key",
+     "pdf_page": 98,
+     "printed_page": 86,
+     "y": 153.584,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T01:44:05+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T01:44:05+05:30",
+   "text_as_printed": "The river which was known as the “Sorrow of Bihar” (Easy)",
+   "options": [
+    {
+     "id": "A",
+     "text": "River Sutlej"
+    },
+    {
+     "id": "B",
+     "text": "River Kosi"
+    },
+    {
+     "id": "C",
+     "text": "River Krishna"
+    },
+    {
+     "id": "D",
+     "text": "River Mahanadi"
+    }
+   ],
+   "answer_as_printed": "b) Kosi River",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T01:44:05+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text differs from option by a printed typo",
+     "why_not_corrected": "letter B kept (addendum §4.1); key text 'Kosi River' vs option B 'River Kosi' differ by a source typo; spelling needs subject knowledge (v2 §1)",
+     "suggested": "B (letter kept)"
+    }
+   ],
+   "content_hash": "faebd36c32cdbcb7a04544c5745a935b5879d290fc9563e287b017dd6fb0c655"
+  },
+  {
+   "id": "soc-10-14-s1-q006",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-14",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Nagarjuna Sagar Dam has been built across the river",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s1-q006",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s1-q006",
+     "pdf_page": 40,
+     "printed_page": 28,
+     "y": 288.494,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s1-q006-key",
+     "pdf_page": 98,
+     "printed_page": 86,
+     "y": 167.384,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T01:44:05+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T01:44:05+05:30",
+   "text_as_printed": "Nagarjuna Sagar Dam has been built across the river (Average)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Damodar"
+    },
+    {
+     "id": "B",
+     "text": "Krishna"
+    },
+    {
+     "id": "C",
+     "text": "Kosi"
+    },
+    {
+     "id": "D",
+     "text": "Tungabhadra"
+    }
+   ],
+   "answer_as_printed": "B) Krishna River",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T01:44:05+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text differs from option by a printed typo",
+     "why_not_corrected": "letter B kept (addendum §4.1); key text 'Krishna River' vs option B 'Krishna' differ by a source typo; spelling needs subject knowledge (v2 §1)",
+     "suggested": "B (letter kept)"
+    }
+   ],
+   "content_hash": "0d029fbc7acd01449eec4e179b4baaeb20978d973509dee7f459975a877d818d"
+  },
+  {
+   "id": "soc-10-14-s1-q007",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-14",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The major multipurpose river valley project in Odisha",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s1-q007",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s1-q007",
+     "pdf_page": 40,
+     "printed_page": 28,
+     "y": 316.094,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s1-q007-key",
+     "pdf_page": 98,
+     "printed_page": 86,
+     "y": 181.184,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T01:44:05+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T01:44:05+05:30",
+   "text_as_printed": "The major multipurpose river valley project in Odisha (June-2021) (Average)",
+   "prior_appearances": [
+    {
+     "as_printed": "June-2021",
+     "year": "2021"
+    }
+   ],
+   "options": [
+    {
+     "id": "A",
+     "text": "Hirakud"
+    },
+    {
+     "id": "B",
+     "text": "Bhakra Nangal"
+    },
+    {
+     "id": "C",
+     "text": "Kosi"
+    },
+    {
+     "id": "D",
+     "text": "Nagarjuna Sagar"
+    }
+   ],
+   "answer_as_printed": "A) Hirakud",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T01:44:05+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "7c104ff6a62198311b8e16d1caf44b854e0f574832c518fb95113674bd6e7ff8"
+  },
+  {
+   "id": "soc-10-14-s1-q008",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-14",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Multipurpose river valley project built across Sutlej River",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s1-q008",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s1-q008",
+     "pdf_page": 40,
+     "printed_page": 28,
+     "y": 46.164,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s1-q008-key",
+     "pdf_page": 98,
+     "printed_page": 86,
+     "y": 194.984,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T01:44:05+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T01:44:05+05:30",
+   "text_as_printed": "Multipurpose river valley project built across Sutlej River (Jun-2023) (Average)",
+   "prior_appearances": [
+    {
+     "as_printed": "Jun-2023",
+     "year": "2023"
+    }
+   ],
+   "options": [
+    {
+     "id": "A",
+     "text": "Bhakra Nangal"
+    },
+    {
+     "id": "B",
+     "text": "Hirakud"
+    },
+    {
+     "id": "C",
+     "text": "Kosi"
+    },
+    {
+     "id": "D",
+     "text": "Nagarjuna Sagar"
+    }
+   ],
+   "answer_as_printed": "A) Bhakra Nangal",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T01:44:05+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "20e8d320e71b833e3d5ac0d40c84fa04253708daeb795d34f85459241631db95"
+  },
+  {
+   "id": "soc-10-14-s1-q009",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-14",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "National Power Grid has been established with an intention to",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s1-q009",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s1-q009",
+     "pdf_page": 40,
+     "printed_page": 28,
+     "y": 371.294,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s1-q009-key",
+     "pdf_page": 98,
+     "printed_page": 86,
+     "y": 208.784,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T01:44:05+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T01:44:05+05:30",
+   "text_as_printed": "National Power Grid has been established with an intention to (Difficult)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Provide electricity to poor people"
+    },
+    {
+     "id": "B",
+     "text": "Supply electricity to industries"
+    },
+    {
+     "id": "C",
+     "text": "Supply power from surplus states to deficit states"
+    },
+    {
+     "id": "D",
+     "text": "Import electricity"
+    }
+   ],
+   "answer_as_printed": "C) Supply power from surplus states to deficit states",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T01:44:05+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "80f55fe14cbccaee86df8cebb862b1cc59cfe7c6edfd2ed97ef29426a16fb201"
+  },
+  {
+   "id": "soc-10-14-s2-q010",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-14",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is irrigation?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s2-q010",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s2-q010",
+     "pdf_page": 40,
+     "printed_page": 28,
+     "y": 427.694,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s2-q010-key",
+     "pdf_page": 98,
+     "printed_page": 86,
+     "y": 236.384,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T01:44:05+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T01:44:05+05:30",
+   "text_as_printed": "What is irrigation? (Easy)",
+   "answer": {
+    "kind": "text",
+    "value": "Supply of water to agriculture from canals, wells and tanks artificially."
+   },
+   "answer_as_printed": "Supply of water to agriculture from canals, wells and tanks artificially.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T01:44:05+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "5e9944ffc2f0c0a2b7e5b6e2eefd7e42ea13cb39e19cb94ca5be6ad59ed53a70"
+  },
+  {
+   "id": "soc-10-14-s2-q011",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-14",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Which is the highest dam in India?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s2-q011",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s2-q011",
+     "pdf_page": 40,
+     "printed_page": 28,
+     "y": 441.494,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s2-q011-key",
+     "pdf_page": 98,
+     "printed_page": 86,
+     "y": 250.184,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T01:44:05+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T01:44:05+05:30",
+   "text_as_printed": "Which is the highest dam in India? (Easy)",
+   "answer": {
+    "kind": "text",
+    "value": "Theri dam"
+   },
+   "answer_as_printed": "Theri dam",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T01:44:05+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "72d23fcda42067f5d692258359274d133c106b47df176ab5990160fd1f52bed9"
+  },
+  {
+   "id": "soc-10-14-s2-q012",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-14",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Which is the joint multi-purpose river valley project of India and Nepal?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s2-q012",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s2-q012",
+     "pdf_page": 40,
+     "printed_page": 28,
+     "y": 455.314,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s2-q012-key",
+     "pdf_page": 98,
+     "printed_page": 86,
+     "y": 263.984,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T01:44:05+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T01:44:05+05:30",
+   "text_as_printed": "Which is the joint multi-purpose river valley project of India and Nepal? (Easy)",
+   "answer": {
+    "kind": "text",
+    "value": "Kosi Project"
+   },
+   "answer_as_printed": "Kosi Project",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T01:44:05+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "bd485a5335f8231d479770af84cbe6c23125cf3eefd4d027483613b67231ea3f"
+  },
+  {
+   "id": "soc-10-14-s2-q013",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-14",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is rain water harvesting?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s2-q013",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s2-q013",
+     "pdf_page": 40,
+     "printed_page": 28,
+     "y": 469.114,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s2-q013-key",
+     "pdf_page": 98,
+     "printed_page": 86,
+     "y": 277.814,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T01:44:05+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T01:44:05+05:30",
+   "text_as_printed": "What is rain water harvesting? (Mar-2024) (Easy)",
+   "prior_appearances": [
+    {
+     "as_printed": "Mar-2024",
+     "year": "2024"
+    }
+   ],
+   "answer": {
+    "kind": "text",
+    "value": "Collection of rain water is called Rain Water Harvesting."
+   },
+   "answer_as_printed": "Collection of rain water is called Rain Water Harvesting.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T01:44:05+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "39d4874a12b2eb3c85b588c2a63b0bf2a54b1ae8c9344389bcdb5a4c97f21f2c"
+  },
+  {
+   "id": "soc-10-14-s2-q014",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-14",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "How can be under groundwater recharged?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s2-q014",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s2-q014",
+     "pdf_page": 40,
+     "printed_page": 28,
+     "y": 482.914,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s2-q014-key",
+     "pdf_page": 98,
+     "printed_page": 86,
+     "y": 291.614,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T01:44:05+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T01:44:05+05:30",
+   "text_as_printed": "How can be under groundwater recharged? (Difficult)",
+   "answer": {
+    "kind": "text",
+    "value": "Preventing the flow of water and allowing it to percolate to increase the ground water table. This is called recharging."
+   },
+   "answer_as_printed": "Preventing the flow of water and allowing it to percolate to increase the ground water table. This is called recharging.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T01:44:05+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "9e12513b8593140453c55b7f88651122acfa3422b7da5ee49372a53c431b689e"
+  },
+  {
+   "id": "soc-10-14-s2-q015",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-14",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Why was River Damodar called the sorrow of Bengal?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s2-q015",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s2-q015",
+     "pdf_page": 40,
+     "printed_page": 28,
+     "y": 496.714,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s2-q015-key",
+     "pdf_page": 98,
+     "printed_page": 86,
+     "y": 333.014,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T01:44:05+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T01:44:05+05:30",
+   "text_as_printed": "Why was River Damodar called the sorrow of Bengal? (Average)",
+   "answer": {
+    "kind": "text",
+    "value": "Because it causing large scale destruction to life and property in West Bengal."
+   },
+   "answer_as_printed": "Because it causing large scale destruction to life and property in West Bengal.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T01:44:05+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "bd985c95c742f53d8de2c704d7dec857425b23e90568614bc9c942f12ca3856a"
+  },
+  {
+   "id": "soc-10-14-s2-q016",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-14",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is National Power Grid?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s2-q016",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s2-q016",
+     "pdf_page": 40,
+     "printed_page": 28,
+     "y": 510.514,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s2-q016-key",
+     "pdf_page": 98,
+     "printed_page": 86,
+     "y": 346.814,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T01:44:05+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T01:44:05+05:30",
+   "text_as_printed": "What is National Power Grid? (Difficult)",
+   "answer": {
+    "kind": "text",
+    "value": "Supply of the power from surplus states to deficit states, is called as National Power Grid."
+   },
+   "answer_as_printed": "Supply of the power from surplus states to deficit states, is called as National Power Grid.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T01:44:05+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "04637231731535f0fe0f3215564d651587b2524f4b2a8f252542a01175066b6b"
+  },
+  {
+   "id": "soc-10-14-s2-q017",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-14",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Which river was known as ‘Sorrow of West Bengal’?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s2-q017",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s2-q017",
+     "pdf_page": 40,
+     "printed_page": 28,
+     "y": 524.314,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s2-q017-key",
+     "pdf_page": 98,
+     "printed_page": 86,
+     "y": 360.614,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T01:44:05+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T01:44:05+05:30",
+   "text_as_printed": "Which river was known as ‘Sorrow of West Bengal’? (Easy)",
+   "answer": {
+    "kind": "text",
+    "value": "Damodar"
+   },
+   "answer_as_printed": "Damodar",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T01:44:05+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "d6395d13e7a42c810fbf446420b9eafc4334aa3024e4d60146f6909b9a5f366a"
+  },
+  {
+   "id": "soc-10-14-s2-q018",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-14",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Which is the major multi-Purpose river valley project of Karnataka.",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s2-q018",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s2-q018",
+     "pdf_page": 40,
+     "printed_page": 28,
+     "y": 538.114,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s2-q018-key",
+     "pdf_page": 98,
+     "printed_page": 86,
+     "y": 374.414,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T01:44:05+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T01:44:05+05:30",
+   "text_as_printed": "Which is the major multi-Purpose river valley project of Karnataka. (Easy)",
+   "answer": {
+    "kind": "text",
+    "value": "Upper Krishna"
+   },
+   "answer_as_printed": "Upper Krishna",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T01:44:05+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "b8fec38bc599040a54f4d125ca3e9820682c42825e8cc96167aff2d03fc79899"
+  },
+  {
+   "id": "soc-10-14-s2-q019",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-14",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "In which district of Karnataka is the Pampasagara Reservoir located?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s2-q019",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s2-q019",
+     "pdf_page": 40,
+     "printed_page": 28,
+     "y": 551.914,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s2-q019-key",
+     "pdf_page": 98,
+     "printed_page": 86,
+     "y": 388.214,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T01:44:05+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T01:44:05+05:30",
+   "text_as_printed": "In which district of Karnataka is the Pampasagara Reservoir located? (Average)",
+   "answer": {
+    "kind": "text",
+    "value": "Hospet in Vijayanagara district."
+   },
+   "answer_as_printed": "Hospet in Vijayanagara district.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T01:44:05+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "fd0c9495469514deded6ed648f3ebd09d36bdee0596cf37cbf22789fd49cd697"
+  },
+  {
+   "id": "soc-10-14-s3-q020",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-14",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Which are the types of irrigation?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s3-q020",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s3-q020",
+     "pdf_page": 40,
+     "printed_page": 28,
+     "y": 580.594,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s3-q020-key",
+     "pdf_page": 98,
+     "printed_page": 86,
+     "y": 415.814,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T01:44:05+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T01:44:05+05:30",
+   "text_as_printed": "Which are the types of irrigation? (Easy)",
+   "answer": {
+    "kind": "text",
+    "value": "Well irrigation\nTank irrigation\nCanal irrigation"
+   },
+   "answer_as_printed": "Well irrigation\nTank irrigation\nCanal irrigation",
+   "solution_steps": [
+    "Well irrigation",
+    "Tank irrigation",
+    "Canal irrigation"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T01:44:05+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "b9ab71ffc3eb5fd8e24c230629ece10c56e2fec78ccb557c22b0c4ea5a23da79"
+  },
+  {
+   "id": "soc-10-14-s3-q021",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-14",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Why is Well irrigation the most important irrigation system?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s3-q021",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s3-q021",
+     "pdf_page": 40,
+     "printed_page": 28,
+     "y": 594.394,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s3-q021-key",
+     "pdf_page": 98,
+     "printed_page": 86,
+     "y": 473.674,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T01:44:05+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T01:44:05+05:30",
+   "text_as_printed": "Why is Well irrigation the most important irrigation system? (Difficult)",
+   "answer": {
+    "kind": "text",
+    "value": "Provides irrigation facility to more of the areas.\nMore useful in areas with low rainfall\nConstruction and maintenance of wells is easy\nNecessary in areas without irrigation facility."
+   },
+   "answer_as_printed": "Provides irrigation facility to more of the areas.\nMore useful in areas with low rainfall\nConstruction and maintenance of wells is easy\nNecessary in areas without irrigation facility.",
+   "solution_steps": [
+    "Provides irrigation facility to more of the areas.",
+    "More useful in areas with low rainfall",
+    "Construction and maintenance of wells is easy",
+    "Necessary in areas without irrigation facility."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T01:44:05+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "c35ffcb3bd43d2381003c83c2df8fa748bd3747dda30767f71b73b8c9984a8d0"
+  },
+  {
+   "id": "soc-10-14-s3-q022",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-14",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What are the differences between perennial canals and flood canals?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s3-q022",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s3-q022",
+     "pdf_page": 40,
+     "printed_page": 28,
+     "y": 608.194,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s3-q022-key",
+     "pdf_page": 98,
+     "printed_page": 86,
+     "y": 546.034,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T01:44:05+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T01:44:05+05:30",
+   "text_as_printed": "What are the differences between perennial canals and flood canals? (Difficult)",
+   "answer": {
+    "kind": "text",
+    "value": "Perennial Canals | Flood canals\nDams are constructed across the rivers & water is stored in the reservoirs. | Water is drawn directly from the river through canals without help of dams.\nWater is provided for agriculture through canals called Perennial canals. | When the river level is high the excess water passes through the canals."
+   },
+   "answer_as_printed": "Perennial Canals | Flood canals\nDams are constructed across the rivers & water is stored in the reservoirs. | Water is drawn directly from the river through canals without help of dams.\nWater is provided for agriculture through canals called Perennial canals. | When the river level is high the excess water passes through the canals.",
+   "solution_steps": [
+    "Perennial Canals | Flood canals",
+    "Dams are constructed across the rivers & water is stored in the reservoirs. | Water is drawn directly from the river through canals without help of dams.",
+    "Water is provided for agriculture through canals called Perennial canals. | When the river level is high the excess water passes through the canals."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T01:44:05+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "c209cb2bd6945e0e9e2a9a6053af8bc330808fa8153986b0c7b706e127038c5b"
+  },
+  {
+   "id": "soc-10-14-s3-q023",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-14",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Why is rainwater harvesting mandatory?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s3-q023",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s3-q023",
+     "pdf_page": 40,
+     "printed_page": 28,
+     "y": 621.994,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s3-q023-key",
+     "pdf_page": 98,
+     "printed_page": 86,
+     "y": 630.904,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T01:44:05+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T01:44:05+05:30",
+   "text_as_printed": "Why is rainwater harvesting mandatory? (Average)",
+   "answer": {
+    "kind": "text",
+    "value": "Water is very precious.\nIndia has vast water resource,\nIt is most unevenly distributed.\nRainfall is confined to the rainy season.\nEven in areas of heavy rainfall, water shortage is seen during the summers.\nThe only solution to the drought condition is ‘Rain Water Harvesting’."
+   },
+   "answer_as_printed": "Water is very precious.\nIndia has vast water resource,\nIt is most unevenly distributed.\nRainfall is confined to the rainy season.\nEven in areas of heavy rainfall, water shortage is seen during the summers.\nThe only solution to the drought condition is ‘Rain Water Harvesting’.",
+   "solution_steps": [
+    "Water is very precious.",
+    "India has vast water resource,",
+    "It is most unevenly distributed.",
+    "Rainfall is confined to the rainy season.",
+    "Even in areas of heavy rainfall, water shortage is seen during the summers.",
+    "The only solution to the drought condition is ‘Rain Water Harvesting’."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T01:44:05+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "c7975d972c633b9c474178205444f5794c50bd2489ac40616abc3fd2f3504a90"
+  },
+  {
+   "id": "soc-10-14-s3-q024",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-14",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Name the hydroelectric power projects of Karnataka.",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s3-q024",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s3-q024",
+     "pdf_page": 40,
+     "printed_page": 28,
+     "y": 635.824,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s3-q024-key",
+     "pdf_page": 98,
+     "printed_page": 86,
+     "y": 727.504,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T01:44:05+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T01:44:05+05:30",
+   "text_as_printed": "Name the hydroelectric power projects of Karnataka. (Average)",
+   "answer": {
+    "kind": "text",
+    "value": "Shivanasamudra,\nTungabhadra,\nJog,\nBhadra,\nAlamatti,\nKali,\nSupa, Kadra,\nKodasalli Dam."
+   },
+   "answer_as_printed": "Shivanasamudra,\nTungabhadra,\nJog,\nBhadra,\nAlamatti,\nKali,\nSupa, Kadra,\nKodasalli Dam.",
+   "solution_steps": [
+    "Shivanasamudra,",
+    "Tungabhadra,",
+    "Jog,",
+    "Bhadra,",
+    "Alamatti,",
+    "Kali,",
+    "Supa, Kadra,",
+    "Kodasalli Dam."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T01:44:05+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "f068eda87b50f845ecdc719b399dee98a1575ccfa9ca7edc90d6aa4c8626672b"
+  },
+  {
+   "id": "soc-10-14-s4-q025",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-14",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What are the methods of rainwater harvesting?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s4-q025",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s4-q025",
+     "pdf_page": 40,
+     "printed_page": 28,
+     "y": 664.624,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s4-q025-key",
+     "pdf_page": 99,
+     "printed_page": 87,
+     "y": 93.824,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T01:44:05+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T01:44:05+05:30",
+   "text_as_printed": "What are the methods of rainwater harvesting? (Average)",
+   "answer": {
+    "kind": "text",
+    "value": "Collection of water at place of rainfall. Eg. roof tops of houses and buildings\nCollection of flowing rainwater. Eg. Building bunds and collecting water."
+   },
+   "answer_as_printed": "Collection of water at place of rainfall. Eg. roof tops of houses and buildings\nCollection of flowing rainwater. Eg. Building bunds and collecting water.",
+   "solution_steps": [
+    "Collection of water at place of rainfall. Eg. roof tops of houses and buildings",
+    "Collection of flowing rainwater. Eg. Building bunds and collecting water."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T01:44:05+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — (3/4 marks questions)"
+    }
+   ],
+   "content_hash": "971533d48637a0dcced4c4de763e05230901c2a5930fd5c5e40480e7e3e7c891"
+  },
+  {
+   "id": "soc-10-14-s4-q026",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-14",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Why is irrigation necessary in India?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s4-q026",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s4-q026",
+     "pdf_page": 40,
+     "printed_page": 28,
+     "y": 678.424,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s4-q026-key",
+     "pdf_page": 99,
+     "printed_page": 87,
+     "y": 149.024,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T01:44:05+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T01:44:05+05:30",
+   "text_as_printed": "Why is irrigation necessary in India? (March-2019) (Difficult)",
+   "prior_appearances": [
+    {
+     "as_printed": "March-2019",
+     "year": "2019"
+    }
+   ],
+   "answer": {
+    "kind": "text",
+    "value": "Availability of water varies from region to region and time to time.\nRainfall in India is uncertain.\nUnequally distribution of rainfall.\nIrrigation is very essential in the regions of low rainfall."
+   },
+   "answer_as_printed": "Availability of water varies from region to region and time to time.\nRainfall in India is uncertain.\nUnequally distribution of rainfall.\nIrrigation is very essential in the regions of low rainfall.",
+   "solution_steps": [
+    "Availability of water varies from region to region and time to time.",
+    "Rainfall in India is uncertain.",
+    "Unequally distribution of rainfall.",
+    "Irrigation is very essential in the regions of low rainfall."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T01:44:05+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — (3/4 marks questions)"
+    }
+   ],
+   "content_hash": "94c3f3558b172a35a5a8dae07e890330a4b5abb0b790c8fd78229e8e15369fe5"
+  },
+  {
+   "id": "soc-10-14-s4-q027",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-14",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What are the objectives of multi-purpose river valley projects?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s4-q027",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s4-q027",
+     "pdf_page": 40,
+     "printed_page": 28,
+     "y": 692.224,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s4-q027-key",
+     "pdf_page": 99,
+     "printed_page": 87,
+     "y": 218.024,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T01:44:05+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T01:44:05+05:30",
+   "text_as_printed": "What are the objectives of multi-purpose river valley projects? (Average)",
+   "answer": {
+    "kind": "text",
+    "value": "To provide irrigation facilities.\nTo generate hydroelectric power.\nTo control the floods in rivers.\nTo provide navigation facilities.\nTo provide water for domestic use and industries.\nTo control soil erosion.\nTo develop fisheries.\nTo increase forest wealth."
+   },
+   "answer_as_printed": "To provide irrigation facilities.\nTo generate hydroelectric power.\nTo control the floods in rivers.\nTo provide navigation facilities.\nTo provide water for domestic use and industries.\nTo control soil erosion.\nTo develop fisheries.\nTo increase forest wealth.",
+   "solution_steps": [
+    "To provide irrigation facilities.",
+    "To generate hydroelectric power.",
+    "To control the floods in rivers.",
+    "To provide navigation facilities.",
+    "To provide water for domestic use and industries.",
+    "To control soil erosion.",
+    "To develop fisheries.",
+    "To increase forest wealth."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T01:44:05+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — (3/4 marks questions)"
+    }
+   ],
+   "content_hash": "ff6059d692159710e06dab68e0869987298ee4e01940bd962a31a2343cd5bd7b"
+  },
+  {
+   "id": "soc-10-14-s4-q028",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-14",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 8,
+     "text_as_printed": "Describes India’s location, Indian geographical features, natural resources, climate, transport, and the resources of national development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Mark the following River valley projects in the map of India provided to you. a) Bhakra Nangal / Govinda Sagara b) Kosi River valley Project / Hanuman Nagar c) Narmada Project d) Hirakud Project e) Damodar Project f) Upper Krishna Project Lal Bahadur Shastri reservoir /Basavasagara g) Tungabhadra/ Pampasagara h) Nagarjunasagar Project",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s4-q028",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s4-q028",
+     "pdf_page": 40,
+     "printed_page": 28,
+     "y": 706.68832,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-14-s4-q028-key",
+     "pdf_page": 99,
+     "printed_page": 87,
+     "y": 347.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T01:45:28+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T01:45:28+05:30",
+   "text_as_printed": "Mark the following River valley projects in the map of India provided to you. (Average) a) Bhakra Nangal / Govinda Sagara (June-2021) b) Kosi River valley Project / Hanuman Nagar (A- 2016,2017) c) Narmada Project (A-2016, June-2020) d) Hirakud Project (W-2 2024, W-3 2024) e) Damodar Project (June-2015,2023) f) Upper Krishna Project Lal Bahadur Shastri reservoir /Basavasagara g) Tungabhadra/ Pampasagara (Ma- 2021A 2022) h) Nagarjunasagar Project (A 2015, 2018)",
+   "section_signal": "IV",
+   "answer": {
+    "kind": "text",
+    "value": "[diagram answer — see page image]"
+   },
+   "assets": [
+    {
+     "id": "a28",
+     "type": "image",
+     "ref": "images/soc-10-14/p99-q28-india-river-valley-projects-map.png",
+     "role": "answer_diagram",
+     "source_px": {
+      "w": 828,
+      "h": 844
+     },
+     "quality": "ok",
+     "caption": "India – Multi-purpose river valley projects: answer map for Q28, pdf 99",
+     "pdf_page": 99,
+     "crop_bbox": {
+      "pdf_page": 99,
+      "x0": 149.0,
+      "y0": 347.0,
+      "x1": 447.0,
+      "y1": 651.0
+     }
+    }
+   ],
+   "map": {
+    "subject": "river valley projects",
+    "instruction": "Mark the following River valley projects in the map of India provided to you.",
+    "region": "India",
+    "features_source": "stem",
+    "features": [
+     {
+      "id": "a",
+      "name": "Bhakra Nangal / Govinda Sagara",
+      "category": null,
+      "prior_appearances": [
+       {
+        "as_printed": "June-2021",
+        "year": "2021"
+       }
+      ],
+      "position": null,
+      "position_source": "unset"
+     },
+     {
+      "id": "b",
+      "name": "Kosi River valley Project / Hanuman Nagar",
+      "category": "other",
+      "prior_appearances": [
+       {
+        "as_printed": "A- 2016",
+        "year": "2016"
+       },
+       {
+        "as_printed": "2017",
+        "year": "2017"
+       }
+      ],
+      "position": null,
+      "position_source": "unset"
+     },
+     {
+      "id": "c",
+      "name": "Narmada Project",
+      "category": "other",
+      "prior_appearances": [
+       {
+        "as_printed": "A-2016",
+        "year": "2016"
+       },
+       {
+        "as_printed": "June-2020",
+        "year": "2020"
+       }
+      ],
+      "position": null,
+      "position_source": "unset"
+     },
+     {
+      "id": "d",
+      "name": "Hirakud Project",
+      "category": "other",
+      "prior_appearances": [
+       {
+        "as_printed": "W-2 2024",
+        "year": "2024"
+       },
+       {
+        "as_printed": "W-3 2024",
+        "year": "2024"
+       }
+      ],
+      "position": null,
+      "position_source": "unset"
+     },
+     {
+      "id": "e",
+      "name": "Damodar Project",
+      "category": "other",
+      "prior_appearances": [
+       {
+        "as_printed": "June-2015",
+        "year": "2015"
+       },
+       {
+        "as_printed": "2023",
+        "year": "2023"
+       }
+      ],
+      "position": null,
+      "position_source": "unset"
+     },
+     {
+      "id": "f",
+      "name": "Upper Krishna Project Lal Bahadur Shastri reservoir / Basavasagara",
+      "category": "other",
+      "position": null,
+      "position_source": "unset"
+     },
+     {
+      "id": "g",
+      "name": "Tungabhadra / Pampasagara",
+      "category": null,
+      "prior_appearances": [
+       {
+        "as_printed": "Ma- 2021",
+        "year": "2021"
+       },
+       {
+        "as_printed": "A 2022",
+        "year": "2022"
+       }
+      ],
+      "position": null,
+      "position_source": "unset"
+     },
+     {
+      "id": "h",
+      "name": "Nagarjunasagar Project",
+      "category": "other",
+      "prior_appearances": [
+       {
+        "as_printed": "A 2015",
+        "year": "2015"
+       },
+       {
+        "as_printed": "2018",
+        "year": "2018"
+       }
+      ],
+      "position": null,
+      "position_source": "unset"
+     }
+    ],
+    "answer_map_asset_id": "a28"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T01:45:28+05:30",
+    "basis": "answer is the printed completed map on pdf 99; region render 200 dpi, labels legible, viewed (addendum §6)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "answer is a diagram — completed map 'Multi-purpose river valley projects of India' (pdf 99) marking Bhakra-Nangal, Kosi, Narmada, Hirakud, Damodar, Upper Krishna, Tungabhadra, Nagarjuna Sagar; all eight asked projects labelled"
+    }
+   ],
+   "content_hash": "e5046c08a5356a117ba81c6910420858e261ff8944ea3878cb56b5032f223893"
+  }
+ ],
+ "pending_summary": {}
+}
