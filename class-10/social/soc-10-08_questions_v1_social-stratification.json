@@ -1,0 +1,1528 @@
+{
+ "contract_version": "1.7",
+ "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
+ "procedure_file": "extraction_procedure_social_addendum_v1.2_social science Classes 6-10 on top of procedure v2.md",
+ "machine_name": "soc-10-08_questions",
+ "version": 1,
+ "changelog": "v1 extraction — batch-02 — class-10-social",
+ "amendments_applied": [],
+ "unit_state": "EXTRACTED",
+ "review_ready": false,
+ "count_gate": {
+  "reference": 16,
+  "reference_source": "audited",
+  "extracted": 16,
+  "paired": 16,
+  "flagged": 1,
+  "gaps": [],
+  "duplicated_numbers": [],
+  "quota_table": "difficulty_only",
+  "second_method": {
+   "method": "printed difficulty distribution table",
+   "extracted": 16,
+   "agrees": true
+  },
+  "pass": true,
+  "note": "printed difficulty table 3/10/3=16 AGREES with per-question tags; flagged counts answer-level flags; all carry the structural marks flag (addendum §4.5)."
+ },
+ "extraction": {
+  "source_file": "10thSS-EM-LBA-Revised_1786620693.pdf",
+  "source_ref_prefix": "10thSS-EM-LBA-Revised_1786620693.pdf",
+  "pdf_pages": [
+   30,
+   31,
+   82,
+   83
+  ],
+  "printed_page_offset": -12,
+  "method_notes": [
+   "offset -12; question side pdf 30-31 (q1-12 on 30, q13-16 on 31); answer side pdf 82-83 (q1-5 on 82 [after ch22 tail], q6-16 on 83)",
+   "section id -sN- = printed order I/II/III (labels sequential, no defect); answer side cleanly numbered 1-16, pairs by printed number (no shift). Subject-map section guess 'I:1-7;II:8-16' was imprecise: actual printed sections are I:1-7, II:8-10, III:11-16 (total 16 unchanged)",
+   "section-I keys letter+text -> option by printed letter (addendum §4.1); q3 key 'C) Mahatma Gandhi' vs option C 'Mahatma Gandhiji' (missing 'ji') -> typo flag, letter C kept (register garbled-key-text); q1,2,4-7 valid",
+   "q11 answer is a lead line + a 1.-7. numbered sub-list -> SUB: lead in answer.value, the 7 factors as solution_steps (numeric list markers dropped, as with bullets); q12-16 plain bullets",
+   "key-lines self-count (relay 10): q11 printed = heading + 7 items (stored 7, heading excluded); q12-16 printed==stored; vsa 8-10 single-value; no drops",
+   "sections I/II no marks, III '(3/4 marks questions)' -> all 16 marks null+flag (addendum §4.5)"
+  ],
+  "notation_summary": {
+   "render_tokens": 0,
+   "latex_tokens": 0,
+   "damage_flags": []
+  },
+  "excluded_objects": [],
+  "inline_excluded_count": 0,
+  "figure_references": []
+ },
+ "stimuli": [],
+ "questions": [
+  {
+   "id": "soc-10-08-s1-q001",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-08",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 14,
+     "text_as_printed": "Expresses his/her own solutions and reform measures to overcome societal problems."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The article of our Constitution which prohibits the practice of untouchability",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-08-s1-q001",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-08-s1-q001",
+     "pdf_page": 30,
+     "printed_page": 18,
+     "y": 439.694,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-08-s1-q001-key",
+     "pdf_page": 82,
+     "printed_page": 70,
+     "y": 742.14,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-01T23:05:13+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-01T23:05:13+05:30",
+   "text_as_printed": "The article of our Constitution which prohibits the practice of untouchability (June 2015, September 2021) (Easy)",
+   "prior_appearances": [
+    {
+     "as_printed": "June 2015",
+     "year": "2015"
+    },
+    {
+     "as_printed": "September 2021",
+     "year": "2021"
+    }
+   ],
+   "options": [
+    {
+     "id": "A",
+     "text": "Article 24"
+    },
+    {
+     "id": "B",
+     "text": "Article 42"
+    },
+    {
+     "id": "C",
+     "text": "Article 17"
+    },
+    {
+     "id": "D",
+     "text": "Article 30"
+    }
+   ],
+   "answer_as_printed": "C) Article 17",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-01T23:05:13+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "3a1375daac7ba6f9c1af7576947c232147307db979f5438393b638362904a29e"
+  },
+  {
+   "id": "soc-10-08-s1-q002",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-08",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 14,
+     "text_as_printed": "Expresses his/her own solutions and reform measures to overcome societal problems."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Who said that 'Truly, the whole mankind is one'",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-08-s1-q002",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-08-s1-q002",
+     "pdf_page": 30,
+     "printed_page": 18,
+     "y": 494.914,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-08-s1-q002-key",
+     "pdf_page": 82,
+     "printed_page": 70,
+     "y": 755.94,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-01T23:05:13+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-01T23:05:13+05:30",
+   "text_as_printed": "Who said that 'Truly, the whole mankind is one' (A 2015, A 2017, A 2023) (Easy)",
+   "prior_appearances": [
+    {
+     "as_printed": "A 2015",
+     "year": "2015"
+    },
+    {
+     "as_printed": "A 2017",
+     "year": "2017"
+    },
+    {
+     "as_printed": "A 2023",
+     "year": "2023"
+    }
+   ],
+   "options": [
+    {
+     "id": "A",
+     "text": "Pampa"
+    },
+    {
+     "id": "B",
+     "text": "Janna"
+    },
+    {
+     "id": "C",
+     "text": "Ranna"
+    },
+    {
+     "id": "D",
+     "text": "Dr. B R Ambedkar"
+    }
+   ],
+   "answer_as_printed": "A) Pampa",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-01T23:05:13+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "a98bd06f5a882effcb34fc51d1f2d579d3d333f11b48370b9cf9bad8ff27e853"
+  },
+  {
+   "id": "soc-10-08-s1-q003",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-08",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 14,
+     "text_as_printed": "Expresses his/her own solutions and reform measures to overcome societal problems."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "‘Untouchability is a stigma on the Hindu society’ is said by",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-08-s1-q003",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-08-s1-q003",
+     "pdf_page": 30,
+     "printed_page": 18,
+     "y": 520.018,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-08-s1-q003-key",
+     "pdf_page": 82,
+     "printed_page": 70,
+     "y": 769.74,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-01T23:05:13+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-01T23:05:13+05:30",
+   "text_as_printed": "‘Untouchability is a stigma on the Hindu society’ is said by (2016, June 2023) (Easy)",
+   "prior_appearances": [
+    {
+     "as_printed": "2016",
+     "year": "2016"
+    },
+    {
+     "as_printed": "June 2023",
+     "year": "2023"
+    }
+   ],
+   "options": [
+    {
+     "id": "A",
+     "text": "Dr. B. R. Ambedkar"
+    },
+    {
+     "id": "B",
+     "text": "Jyotibha Phule"
+    },
+    {
+     "id": "C",
+     "text": "Mahatma Gandhiji"
+    },
+    {
+     "id": "D",
+     "text": "Swami Vivekananda"
+    }
+   ],
+   "answer_as_printed": "C) Mahatma Gandhi",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-01T23:05:13+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text differs from option by a printed typo",
+     "why_not_corrected": "letter C kept (addendum §4.1); key text 'Mahatma Gandhi' vs option C 'Mahatma Gandhiji' differ by a source typo; spelling needs subject knowledge (v2 §1)",
+     "suggested": "C (letter kept)"
+    }
+   ],
+   "content_hash": "570648b51939114ff0710d4c737db5e68f9667a6a2d62e8f1a3c9a85fe91b43b"
+  },
+  {
+   "id": "soc-10-08-s1-q004",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-08",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 14,
+     "text_as_printed": "Expresses his/her own solutions and reform measures to overcome societal problems."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Untouchability Crime Act was changed as Civil Rights Protection Act in the year",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-08-s1-q004",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-08-s1-q004",
+     "pdf_page": 30,
+     "printed_page": 18,
+     "y": 563.914,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-08-s1-q004-key",
+     "pdf_page": 82,
+     "printed_page": 70,
+     "y": 783.54,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-01T23:05:13+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-01T23:05:13+05:30",
+   "text_as_printed": "Untouchability Crime Act was changed as Civil Rights Protection Act in the year (Average)",
+   "options": [
+    {
+     "id": "A",
+     "text": "1989"
+    },
+    {
+     "id": "B",
+     "text": "1976"
+    },
+    {
+     "id": "C",
+     "text": "1955"
+    },
+    {
+     "id": "D",
+     "text": "1950"
+    }
+   ],
+   "answer_as_printed": "B) 1976",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-01T23:05:13+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "9bc1e29f16e1f4a911ee978c49c22438fe06a2f9a18e23331fbea7329ae72956"
+  },
+  {
+   "id": "soc-10-08-s1-q005",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-08",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 14,
+     "text_as_printed": "Expresses his/her own solutions and reform measures to overcome societal problems."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The year in which the Untouchability Crime Act came into force",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-08-s1-q005",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-08-s1-q005",
+     "pdf_page": 30,
+     "printed_page": 18,
+     "y": 591.514,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-08-s1-q005-key",
+     "pdf_page": 82,
+     "printed_page": 70,
+     "y": 386.294,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-01T23:05:13+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-01T23:05:13+05:30",
+   "text_as_printed": "The year in which the Untouchability Crime Act came into force (Average)",
+   "options": [
+    {
+     "id": "A",
+     "text": "1976"
+    },
+    {
+     "id": "B",
+     "text": "1955"
+    },
+    {
+     "id": "C",
+     "text": "1989"
+    },
+    {
+     "id": "D",
+     "text": "1996"
+    }
+   ],
+   "answer_as_printed": "B) 1955",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-01T23:05:13+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "9bd0efb7417db9a7287a3623158c50e88c8fe48d83c25fbcd27611d1a81e79b2"
+  },
+  {
+   "id": "soc-10-08-s1-q006",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-08",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 14,
+     "text_as_printed": "Expresses his/her own solutions and reform measures to overcome societal problems."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The significance of Article 17 of the Constitution of India",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-08-s1-q006",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-08-s1-q006",
+     "pdf_page": 30,
+     "printed_page": 18,
+     "y": 619.114,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-08-s1-q006-key",
+     "pdf_page": 83,
+     "printed_page": 71,
+     "y": 38.604,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-01T23:05:13+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-01T23:05:13+05:30",
+   "text_as_printed": "The significance of Article 17 of the Constitution of India (April 2023, P 2024) (Average)",
+   "prior_appearances": [
+    {
+     "as_printed": "April 2023",
+     "year": "2023"
+    },
+    {
+     "as_printed": "P 2024",
+     "year": "2024"
+    }
+   ],
+   "options": [
+    {
+     "id": "A",
+     "text": "Prohibition of child labour"
+    },
+    {
+     "id": "B",
+     "text": "Elimination of illiteracy"
+    },
+    {
+     "id": "C",
+     "text": "Prohibition of untouchability"
+    },
+    {
+     "id": "D",
+     "text": "Prohibition of dowry"
+    }
+   ],
+   "answer_as_printed": "C) Prohibition of untouchability",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-01T23:05:13+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "bb023747c3cf9d13b5bf610d60102e2f16ea3e45c691e5856edc4eb3aa4539c5"
+  },
+  {
+   "id": "soc-10-08-s1-q007",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-08",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 14,
+     "text_as_printed": "Expresses his/her own solutions and reform measures to overcome societal problems."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Social Stratification in India can be seen in",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-08-s1-q007",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-08-s1-q007",
+     "pdf_page": 30,
+     "printed_page": 18,
+     "y": 660.544,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-08-s1-q007-key",
+     "pdf_page": 83,
+     "printed_page": 71,
+     "y": 52.404,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-01T23:05:13+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-01T23:05:13+05:30",
+   "text_as_printed": "Social Stratification in India can be seen in (Average)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Apartheid"
+    },
+    {
+     "id": "B",
+     "text": "Slavery"
+    },
+    {
+     "id": "C",
+     "text": "Caste system"
+    },
+    {
+     "id": "D",
+     "text": "Plebians and Patricians"
+    }
+   ],
+   "answer_as_printed": "C) Caste system",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-01T23:05:13+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "4266b8c2bbbc410988f4ec0fb806fc809485c40cfc17a22f6bf4154b48f43711"
+  },
+  {
+   "id": "soc-10-08-s2-q008",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-08",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 14,
+     "text_as_printed": "Expresses his/her own solutions and reform measures to overcome societal problems."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is social stratification?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-08-s2-q008",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-08-s2-q008",
+     "pdf_page": 30,
+     "printed_page": 18,
+     "y": 703.024,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-08-s2-q008-key",
+     "pdf_page": 83,
+     "printed_page": 71,
+     "y": 80.004,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-01T23:05:13+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-01T23:05:13+05:30",
+   "text_as_printed": "What is social stratification? (March 1, March 2, June 2016, P 2024) (Average)",
+   "prior_appearances": [
+    {
+     "as_printed": "March 1"
+    },
+    {
+     "as_printed": "March 2"
+    },
+    {
+     "as_printed": "June 2016",
+     "year": "2016"
+    },
+    {
+     "as_printed": "P 2024",
+     "year": "2024"
+    }
+   ],
+   "answer": {
+    "kind": "text",
+    "value": "Stratification is the classification of people as upper and lower classes on the basis of income, education, caste, colour, gender, occupation, intelligence etc."
+   },
+   "answer_as_printed": "Stratification is the classification of people as upper and lower classes on the basis of income, education, caste, colour, gender, occupation, intelligence etc.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-01T23:05:13+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "366a88a16541b4ad4066fc65f3501259b9d4cffac7047680973ad76192285555"
+  },
+  {
+   "id": "soc-10-08-s2-q009",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-08",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 14,
+     "text_as_printed": "Expresses his/her own solutions and reform measures to overcome societal problems."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is prejudice?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-08-s2-q009",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-08-s2-q009",
+     "pdf_page": 30,
+     "printed_page": 18,
+     "y": 716.824,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-08-s2-q009-key",
+     "pdf_page": 83,
+     "printed_page": 71,
+     "y": 107.624,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-01T23:05:13+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-01T23:05:13+05:30",
+   "text_as_printed": "What is prejudice? (April 2023, March 2024) (Average)",
+   "prior_appearances": [
+    {
+     "as_printed": "April 2023",
+     "year": "2023"
+    },
+    {
+     "as_printed": "March 2024",
+     "year": "2024"
+    }
+   ],
+   "answer": {
+    "kind": "text",
+    "value": "Opinion a person forms about another person or community even before he gets to know them."
+   },
+   "answer_as_printed": "Opinion a person forms about another person or community even before he gets to know them.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-01T23:05:13+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "77d7c72e953c4a0e1031a8272ac0905fb882949c41cc691fba95b4c30ee27c44"
+  },
+  {
+   "id": "soc-10-08-s2-q010",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-08",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 14,
+     "text_as_printed": "Expresses his/her own solutions and reform measures to overcome societal problems."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Which legislation has given special responsibilities for the eradication of untouchability to the state governments?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-08-s2-q010",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-08-s2-q010",
+     "pdf_page": 30,
+     "printed_page": 18,
+     "y": 730.624,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-08-s2-q010-key",
+     "pdf_page": 83,
+     "printed_page": 71,
+     "y": 121.424,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-01T23:05:13+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-01T23:05:13+05:30",
+   "text_as_printed": "Which legislation has given special responsibilities for the eradication of untouchability to the state governments? (Average)",
+   "answer": {
+    "kind": "text",
+    "value": "The Regulation of 1989"
+   },
+   "answer_as_printed": "The Regulation of 1989",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-01T23:05:13+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "14944edeb2fd8d430a5589bb362881898074f287c445161c531aa734e213fce0"
+  },
+  {
+   "id": "soc-10-08-s3-q011",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-08",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 14,
+     "text_as_printed": "Expresses his/her own solutions and reform measures to overcome societal problems."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "How has social stratification emerged?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-08-s3-q011",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-08-s3-q011",
+     "pdf_page": 30,
+     "printed_page": 18,
+     "y": 773.22,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-08-s3-q011-key",
+     "pdf_page": 83,
+     "printed_page": 71,
+     "y": 149.024,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-01T23:05:13+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-01T23:05:13+05:30",
+   "text_as_printed": "How has social stratification emerged? (Average)",
+   "answer": {
+    "kind": "text",
+    "value": "Social stratification is created on the basis of\nIncome\nEducation\nCaste\nColour\nGender\nEmployment\nIntelligence of people etc."
+   },
+   "answer_as_printed": "Social stratification is created on the basis of\nIncome\nEducation\nCaste\nColour\nGender\nEmployment\nIntelligence of people etc.",
+   "solution_steps": [
+    "Income",
+    "Education",
+    "Caste",
+    "Colour",
+    "Gender",
+    "Employment",
+    "Intelligence of people etc."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-01T23:05:13+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — (3/4 marks questions)"
+    }
+   ],
+   "content_hash": "9bb5d6e9b7174708a9e3ed21c18e32cfe43fc325cd0ae1ea45c6ba3b9dd3815e"
+  },
+  {
+   "id": "soc-10-08-s3-q012",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-08",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 14,
+     "text_as_printed": "Expresses his/her own solutions and reform measures to overcome societal problems."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Social stratification differs from time to time and from country to country. Explain.",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-08-s3-q012",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-08-s3-q012",
+     "pdf_page": 30,
+     "printed_page": 18,
+     "y": 787.02,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-08-s3-q012-key",
+     "pdf_page": 83,
+     "printed_page": 71,
+     "y": 273.374,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-01T23:05:13+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-01T23:05:13+05:30",
+   "text_as_printed": "Social stratification differs from time to time and from country to country. Explain. (April 2023) (Difficult)",
+   "prior_appearances": [
+    {
+     "as_printed": "April 2023",
+     "year": "2023"
+    }
+   ],
+   "answer": {
+    "kind": "text",
+    "value": "Various kind of social stratification can be seen in different periods\nIt is different in countries\nIn India it is in the form of caste system\nIn America it is in the form of Black and Whites\nIn modern society it is in the form of haves and have nots"
+   },
+   "answer_as_printed": "Various kind of social stratification can be seen in different periods\nIt is different in countries\nIn India it is in the form of caste system\nIn America it is in the form of Black and Whites\nIn modern society it is in the form of haves and have nots",
+   "solution_steps": [
+    "Various kind of social stratification can be seen in different periods",
+    "It is different in countries",
+    "In India it is in the form of caste system",
+    "In America it is in the form of Black and Whites",
+    "In modern society it is in the form of haves and have nots"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-01T23:05:13+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — (3/4 marks questions)"
+    }
+   ],
+   "content_hash": "ae5431c915e01a4f298aabd11c4e3e019093c60d0f902b31d2dd5fd07305389a"
+  },
+  {
+   "id": "soc-10-08-s3-q013",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-08",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 14,
+     "text_as_printed": "Expresses his/her own solutions and reform measures to overcome societal problems."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What are the constitutional and legislative measures taken to eradicate untouchability? How is India trying to eradicate untouchability? How are the rights of Untouchables protected in India? Recently in India untouchability is decreasing Justify.",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-08-s3-q013",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-08-s3-q013",
+     "pdf_page": 31,
+     "printed_page": 19,
+     "y": 38.604,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-08-s3-q013-key",
+     "pdf_page": 83,
+     "printed_page": 71,
+     "y": 369.974,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-01T23:05:13+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-01T23:05:13+05:30",
+   "text_as_printed": "What are the constitutional and legislative measures taken to eradicate untouchability? How is India trying to eradicate untouchability? How are the rights of Untouchables protected in India? Recently in India untouchability is decreasing Justify. (April 2015, April 2016 April 2017 June 2017 2018 April 2018 June 2018 April 2019 June 2019 Mar-1 2021 Sep-2020 April 2022 June 2022 Model 2023 2024 P-3 2024) (Average)",
+   "prior_appearances": [
+    {
+     "as_printed": "April 2015",
+     "year": "2015"
+    },
+    {
+     "as_printed": "April 2016 April 2017 June 2017 2018 April 2018 June 2018 April 2019 June 2019 Mar-1 2021 Sep-2020 April 2022 June 2022 Model 2023 2024 P-3 2024",
+     "year": "2016"
+    }
+   ],
+   "answer": {
+    "kind": "text",
+    "value": "Section 17 prohibits the practice of untouchability\nUntouchability Offences Act’ in 1955\n‘Citizens’ Rights Protection Act’-1976\nPractice of untouchability is a punishable offence\nRight to equality have been guaranteed\nReservation to backward castes and scheduled castes\nSpecial responsibilities to the state to eradicate of untouchability"
+   },
+   "answer_as_printed": "Section 17 prohibits the practice of untouchability\nUntouchability Offences Act’ in 1955\n‘Citizens’ Rights Protection Act’-1976\nPractice of untouchability is a punishable offence\nRight to equality have been guaranteed\nReservation to backward castes and scheduled castes\nSpecial responsibilities to the state to eradicate of untouchability",
+   "solution_steps": [
+    "Section 17 prohibits the practice of untouchability",
+    "Untouchability Offences Act’ in 1955",
+    "‘Citizens’ Rights Protection Act’-1976",
+    "Practice of untouchability is a punishable offence",
+    "Right to equality have been guaranteed",
+    "Reservation to backward castes and scheduled castes",
+    "Special responsibilities to the state to eradicate of untouchability"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-01T23:05:13+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — (3/4 marks questions)"
+    }
+   ],
+   "content_hash": "3eebd74d75989075d15f6a21daf37dc1e3ba0b852996936bad9dd588c0da608c"
+  },
+  {
+   "id": "soc-10-08-s3-q014",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-08",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 14,
+     "text_as_printed": "Expresses his/her own solutions and reform measures to overcome societal problems."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Untouchability is a social evil. Explain.",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-08-s3-q014",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-08-s3-q014",
+     "pdf_page": 31,
+     "printed_page": 19,
+     "y": 121.424,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-08-s3-q014-key",
+     "pdf_page": 83,
+     "printed_page": 71,
+     "y": 480.394,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-01T23:05:13+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-01T23:05:13+05:30",
+   "text_as_printed": "Untouchability is a social evil. Explain. (Difficult)",
+   "answer": {
+    "kind": "text",
+    "value": "Untouchables lowest rung in society\nIt is an inhuman practice of our society\nMahatma Gandhi called it a ‘stigma’ on the Hindu society\nPeople are deprived of social facilities and opportunities\nThey were not allowed to take water from public wells or lakes\nNot allowed to enter temples\nNot allowed in public place\nUntouchables were exploited"
+   },
+   "answer_as_printed": "Untouchables lowest rung in society\nIt is an inhuman practice of our society\nMahatma Gandhi called it a ‘stigma’ on the Hindu society\nPeople are deprived of social facilities and opportunities\nThey were not allowed to take water from public wells or lakes\nNot allowed to enter temples\nNot allowed in public place\nUntouchables were exploited",
+   "solution_steps": [
+    "Untouchables lowest rung in society",
+    "It is an inhuman practice of our society",
+    "Mahatma Gandhi called it a ‘stigma’ on the Hindu society",
+    "People are deprived of social facilities and opportunities",
+    "They were not allowed to take water from public wells or lakes",
+    "Not allowed to enter temples",
+    "Not allowed in public place",
+    "Untouchables were exploited"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-01T23:05:13+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — (3/4 marks questions)"
+    }
+   ],
+   "content_hash": "1d52b816186bc8dfe257ea2be7d1351287e23619e6421cd1577c90ba86e7238e"
+  },
+  {
+   "id": "soc-10-08-s3-q015",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-08",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 14,
+     "text_as_printed": "Expresses his/her own solutions and reform measures to overcome societal problems."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What are your suggestions to eradicate untouchability?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-08-s3-q015",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-08-s3-q015",
+     "pdf_page": 31,
+     "printed_page": 19,
+     "y": 135.224,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-08-s3-q015-key",
+     "pdf_page": 83,
+     "printed_page": 71,
+     "y": 604.594,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-01T23:05:13+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-01T23:05:13+05:30",
+   "text_as_printed": "What are your suggestions to eradicate untouchability? (Average)",
+   "answer": {
+    "kind": "text",
+    "value": "Create awareness among people through mass media\nEnforcing strict laws\nBring the untouchables into the mainstream of society\nProviding more facilities\nDevelop secular ideas among children and people\nProvide equal opportunities\nReservation for exploited common"
+   },
+   "answer_as_printed": "Create awareness among people through mass media\nEnforcing strict laws\nBring the untouchables into the mainstream of society\nProviding more facilities\nDevelop secular ideas among children and people\nProvide equal opportunities\nReservation for exploited common",
+   "solution_steps": [
+    "Create awareness among people through mass media",
+    "Enforcing strict laws",
+    "Bring the untouchables into the mainstream of society",
+    "Providing more facilities",
+    "Develop secular ideas among children and people",
+    "Provide equal opportunities",
+    "Reservation for exploited common"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-01T23:05:13+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — (3/4 marks questions)"
+    }
+   ],
+   "content_hash": "288294b7081520a3c33148613857f022f785bf27c6b49bf60ef33ace39aaac37"
+  },
+  {
+   "id": "soc-10-08-s3-q016",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-08",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 14,
+     "text_as_printed": "Expresses his/her own solutions and reform measures to overcome societal problems."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Prejudice created by discrimination leads to negative feelings.’ Justify.",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-08-s3-q016",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-08-s3-q016",
+     "pdf_page": 31,
+     "printed_page": 19,
+     "y": 149.024,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-08-s3-q016-key",
+     "pdf_page": 83,
+     "printed_page": 71,
+     "y": 715.024,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-01T23:05:13+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-01T23:05:13+05:30",
+   "text_as_printed": "Prejudice created by discrimination leads to negative feelings.’ Justify. (Difficult)",
+   "answer": {
+    "kind": "text",
+    "value": "Develops impatience\nContempt\nDisrespect\nHatred-feelings developed\nSocial inequality increases\nLeads to social conflicts"
+   },
+   "answer_as_printed": "Develops impatience\nContempt\nDisrespect\nHatred-feelings developed\nSocial inequality increases\nLeads to social conflicts",
+   "solution_steps": [
+    "Develops impatience",
+    "Contempt",
+    "Disrespect",
+    "Hatred-feelings developed",
+    "Social inequality increases",
+    "Leads to social conflicts"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-01T23:05:13+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — (3/4 marks questions)"
+    }
+   ],
+   "content_hash": "80ea9522e0f30184aee6cbb79f283afe56f56885108840d6c85c2dff305b87fb"
+  }
+ ],
+ "pending_summary": {}
+}
