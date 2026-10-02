@@ -1,0 +1,2114 @@
+{
+ "contract_version": "1.7",
+ "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
+ "procedure_file": "extraction_procedure_social_addendum_v1.2_social science Classes 6-10 on top of procedure v2.md",
+ "machine_name": "soc-10-16_questions",
+ "version": 1,
+ "changelog": "v1 extraction — batch-02 — class-10-social",
+ "amendments_applied": [],
+ "unit_state": "EXTRACTED",
+ "review_ready": false,
+ "count_gate": {
+  "reference": 23,
+  "reference_source": "audited",
+  "extracted": 23,
+  "paired": 23,
+  "flagged": 0,
+  "gaps": [],
+  "duplicated_numbers": [],
+  "quota_table": "difficulty_only",
+  "second_method": {
+   "method": "printed difficulty distribution table",
+   "extracted": 23,
+   "agrees": true
+  },
+  "pass": true,
+  "note": "printed difficulty table 6/14/3=23 DISAGREES with per-question tags 5/15/3 (source defect, tags win v2 §6; register difficulty-table-vs-tags); flagged counts answer-level flags; all carry the structural marks flag (addendum §4.5)."
+ },
+ "extraction": {
+  "source_file": "10thSS-EM-LBA-Revised_1786620693.pdf",
+  "source_ref_prefix": "10thSS-EM-LBA-Revised_1786620693.pdf",
+  "pdf_pages": [
+   51,
+   117,
+   118
+  ],
+  "printed_page_offset": -12,
+  "method_notes": [
+   "offset -12; ch16 is printed adjacent to ch31 (both Economics). Question side: all 23 Q on pdf 51 (printed 39). Answer side pdf 117-118 (q1-20 on 117 [folio 105], q21-23 on 118 [folio 106]); q20 bullets span 117->118 but its number prints on 117.",
+   "sections I mcq(1-10) / II vsa(11-17) / III la(18-23, '3/4 marks questions'). labels I/II/III sequential — no section-label defect.",
+   "section-I keys are letter+text -> option by printed letter (addendum §4.1); all 10 valid. caps-only differences key-vs-option: q3 'Savings Account' vs 'Savings account', q4 'Recurring Deposit Account' vs 'Recurring deposit account', q6 'Current Account' vs 'Current account' — cosmetic, letter kept.",
+   "q1 (Italian->Banco/C) and q9 (French->Banque/B) are distinct questions with distinct stems and answers (both about origin of 'bank').",
+   "q18 'characteristics of banks' is printed as a TWO-COLUMN bullet list (6 left + 5 right = 11 items); stored in column-major reading order (down the left column, then the right). Unordered set — order carries no meaning.",
+   "q20 functions: 10 bullets (4 on pdf117 before folio 105, 6 on pdf118).",
+   "q22 steps printed '1) ... 7)' -> 7 solution_steps, list markers stripped (order implicit in step index).",
+   "q23 Savings vs Current two-heading comparison -> SUB (2 headings, 4+4=8 steps).",
+   "q20/q23 stems contain '/' alternative phrasings in the QUESTION text (outside any paren) -> kept verbatim; strip_markers only strips parentheticals.",
+   "DIFFICULTY-TABLE-VS-TAGS defect (register): printed table Easy 6 / Average 14 / Difficult 3 (total 23); per-question tags Easy 5 / Average 15 / Difficult 3. differs on 1 question (-1 Easy, +1 Average); tags win (v2 §6).",
+   "key-lines self-count (relay 10): mcq 1-10 option keys; vsa 11-17 single-value; q18 11, q19 6, q20 10, q21 7 bullets; q22 7 steps; q23 SUB 2 headings + 8; no drops.",
+   "sections I/II no marks, III '(3/4 marks questions)' -> all 23 marks null+flag (addendum §4.5)."
+  ],
+  "notation_summary": {
+   "render_tokens": 0,
+   "latex_tokens": 0,
+   "damage_flags": []
+  },
+  "excluded_objects": [],
+  "inline_excluded_count": 0,
+  "figure_references": []
+ },
+ "stimuli": [],
+ "questions": [
+  {
+   "id": "soc-10-16-s1-q001",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-16",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the forms of money, financial institutions, and the role of finance in development; Also participate themselves (e.g., opening a bank account, etc.)."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The word 'bank' is derived from the Italian word",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s1-q001",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s1-q001",
+     "pdf_page": 51,
+     "printed_page": 39,
+     "y": 104.384,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s1-q001-key",
+     "pdf_page": 117,
+     "printed_page": 105,
+     "y": 162.824,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T08:04:07+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T08:04:07+05:30",
+   "text_as_printed": "The word 'bank' is derived from the Italian word (Average)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Banker"
+    },
+    {
+     "id": "B",
+     "text": "Banque"
+    },
+    {
+     "id": "C",
+     "text": "Banco"
+    },
+    {
+     "id": "D",
+     "text": "Bench"
+    }
+   ],
+   "answer_as_printed": "C) Banco",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T08:04:07+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "f9c19a73d14aac50796876770cdfc7355628a43b82911479b062fbe48ffd27b6"
+  },
+  {
+   "id": "soc-10-16-s1-q002",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-16",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the forms of money, financial institutions, and the role of finance in development; Also participate themselves (e.g., opening a bank account, etc.)."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The bank which is called as the central bank of India is",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s1-q002",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s1-q002",
+     "pdf_page": 51,
+     "printed_page": 39,
+     "y": 131.984,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s1-q002-key",
+     "pdf_page": 117,
+     "printed_page": 105,
+     "y": 176.624,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T08:04:07+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T08:04:07+05:30",
+   "text_as_printed": "The bank which is called as the central bank of India is (Average)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Reserve Bank of India"
+    },
+    {
+     "id": "B",
+     "text": "Syndicate Bank"
+    },
+    {
+     "id": "C",
+     "text": "State Bank of India"
+    },
+    {
+     "id": "D",
+     "text": "Commercial Bank"
+    }
+   ],
+   "answer_as_printed": "A) Reserve Bank of India",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T08:04:07+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "4cd12656ca9b5342b102e8e3f4a29d05ee74be9969b90f8b7aebad9c733cd56b"
+  },
+  {
+   "id": "soc-10-16-s1-q003",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-16",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the forms of money, financial institutions, and the role of finance in development; Also participate themselves (e.g., opening a bank account, etc.)."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The bank account usually opened by Senior citizens and pensioners",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s1-q003",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s1-q003",
+     "pdf_page": 51,
+     "printed_page": 39,
+     "y": 159.584,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s1-q003-key",
+     "pdf_page": 117,
+     "printed_page": 105,
+     "y": 190.424,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T08:04:07+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T08:04:07+05:30",
+   "text_as_printed": "The bank account usually opened by Senior citizens and pensioners (Easy)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Savings account"
+    },
+    {
+     "id": "B",
+     "text": "Current account"
+    },
+    {
+     "id": "C",
+     "text": "Recurring deposit account"
+    },
+    {
+     "id": "D",
+     "text": "Fixed deposit account"
+    }
+   ],
+   "answer_as_printed": "A) Savings Account",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T08:04:07+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "f5147909b5a8f897c1772d176b719a04996fe9a62bf92b41563643db3ba48916"
+  },
+  {
+   "id": "soc-10-16-s1-q004",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-16",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the forms of money, financial institutions, and the role of finance in development; Also participate themselves (e.g., opening a bank account, etc.)."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "An account that can be opened for future needs such as children's marriage, purchase of valuables, land, car, etc.",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s1-q004",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s1-q004",
+     "pdf_page": 51,
+     "printed_page": 39,
+     "y": 187.184,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s1-q004-key",
+     "pdf_page": 117,
+     "printed_page": 105,
+     "y": 333.614,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T08:04:07+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T08:04:07+05:30",
+   "text_as_printed": "An account that can be opened for future needs such as children's marriage, purchase of valuables, land, car, etc. (June-2024) (Easy)",
+   "prior_appearances": [
+    {
+     "as_printed": "June-2024",
+     "year": "2024"
+    }
+   ],
+   "options": [
+    {
+     "id": "A",
+     "text": "Fixed deposit account"
+    },
+    {
+     "id": "B",
+     "text": "Recurring deposit account"
+    },
+    {
+     "id": "C",
+     "text": "Current account"
+    },
+    {
+     "id": "D",
+     "text": "Savings account"
+    }
+   ],
+   "answer_as_printed": "B) Recurring Deposit Account",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T08:04:07+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "7e7540f6607a5b1858892445aeac8ac201edde0fa2aea9e371fc7f9381c19e96"
+  },
+  {
+   "id": "soc-10-16-s1-q005",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-16",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the forms of money, financial institutions, and the role of finance in development; Also participate themselves (e.g., opening a bank account, etc.)."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The department that issues National Savings Certificates",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s1-q005",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s1-q005",
+     "pdf_page": 51,
+     "printed_page": 39,
+     "y": 228.584,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s1-q005-key",
+     "pdf_page": 117,
+     "printed_page": 105,
+     "y": 347.294,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T08:04:07+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T08:04:07+05:30",
+   "text_as_printed": "The department that issues National Savings Certificates (June-2023) (Average)",
+   "prior_appearances": [
+    {
+     "as_printed": "June-2023",
+     "year": "2023"
+    }
+   ],
+   "options": [
+    {
+     "id": "A",
+     "text": "Postal Department"
+    },
+    {
+     "id": "B",
+     "text": "Agriculture Department"
+    },
+    {
+     "id": "C",
+     "text": "Financial Department"
+    },
+    {
+     "id": "D",
+     "text": "Education Department"
+    }
+   ],
+   "answer_as_printed": "A) Postal Department",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T08:04:07+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "25413893de681550833743b6182c8e086217f2c0431df96b74f6641cda871e3f"
+  },
+  {
+   "id": "soc-10-16-s1-q006",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-16",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the forms of money, financial institutions, and the role of finance in development; Also participate themselves (e.g., opening a bank account, etc.)."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The bank account that allows depositing and withdrawing money as many times as necessary in a day",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s1-q006",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s1-q006",
+     "pdf_page": 51,
+     "printed_page": 39,
+     "y": 256.184,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s1-q006-key",
+     "pdf_page": 117,
+     "printed_page": 105,
+     "y": 361.094,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T08:04:07+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T08:04:07+05:30",
+   "text_as_printed": "The bank account that allows depositing and withdrawing money as many times as necessary in a day (June-2022) (Easy)",
+   "prior_appearances": [
+    {
+     "as_printed": "June-2022",
+     "year": "2022"
+    }
+   ],
+   "options": [
+    {
+     "id": "A",
+     "text": "Current account"
+    },
+    {
+     "id": "B",
+     "text": "Savings account"
+    },
+    {
+     "id": "C",
+     "text": "Recurring deposit account"
+    },
+    {
+     "id": "D",
+     "text": "Fixed deposit account"
+    }
+   ],
+   "answer_as_printed": "A) Current Account",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T08:04:07+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "2ac1272b1be4176215e3d8b01e484cd0bdb90922dba770bc7ffd5c912eb99c9c"
+  },
+  {
+   "id": "soc-10-16-s1-q007",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-16",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the forms of money, financial institutions, and the role of finance in development; Also participate themselves (e.g., opening a bank account, etc.)."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The bank account that does not pay interest on deposits and charges a service fees for its services",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s1-q007",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s1-q007",
+     "pdf_page": 51,
+     "printed_page": 39,
+     "y": 297.614,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s1-q007-key",
+     "pdf_page": 117,
+     "printed_page": 105,
+     "y": 374.894,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T08:04:07+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T08:04:07+05:30",
+   "text_as_printed": "The bank account that does not pay interest on deposits and charges a service fees for its services (2023) (Average)",
+   "prior_appearances": [
+    {
+     "as_printed": "2023",
+     "year": "2023"
+    }
+   ],
+   "options": [
+    {
+     "id": "A",
+     "text": "Current account"
+    },
+    {
+     "id": "B",
+     "text": "Fixed deposit account"
+    },
+    {
+     "id": "C",
+     "text": "Recurring deposit account"
+    },
+    {
+     "id": "D",
+     "text": "Savings account"
+    }
+   ],
+   "answer_as_printed": "A) Current Account",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T08:04:07+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "0bfa987057f4142c37d75af8bec98488d1412b22d1f8bbc1de2ee2517eb404b7"
+  },
+  {
+   "id": "soc-10-16-s1-q008",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-16",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the forms of money, financial institutions, and the role of finance in development; Also participate themselves (e.g., opening a bank account, etc.)."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Generally, the type of bank account opened by students is",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s1-q008",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s1-q008",
+     "pdf_page": 51,
+     "printed_page": 39,
+     "y": 339.014,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s1-q008-key",
+     "pdf_page": 117,
+     "printed_page": 105,
+     "y": 388.694,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T08:04:07+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T08:04:07+05:30",
+   "text_as_printed": "Generally, the type of bank account opened by students is (Easy)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Recurring deposit account"
+    },
+    {
+     "id": "B",
+     "text": "Fixed deposit account"
+    },
+    {
+     "id": "C",
+     "text": "Current account"
+    },
+    {
+     "id": "D",
+     "text": "Savings account"
+    }
+   ],
+   "answer_as_printed": "D) Savings account",
+   "answer": {
+    "kind": "option",
+    "option_id": "D"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T08:04:07+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "2fba188b23665237a39bb3fdfa685dd1d1af79fcb2b8d447d5a21a1513206702"
+  },
+  {
+   "id": "soc-10-16-s1-q009",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-16",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the forms of money, financial institutions, and the role of finance in development; Also participate themselves (e.g., opening a bank account, etc.)."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The word ‘Bank’ has been derived from the French word",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s1-q009",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s1-q009",
+     "pdf_page": 51,
+     "printed_page": 39,
+     "y": 364.118,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s1-q009-key",
+     "pdf_page": 117,
+     "printed_page": 105,
+     "y": 402.494,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T08:04:07+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T08:04:07+05:30",
+   "text_as_printed": "The word ‘Bank’ has been derived from the French word (Average)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Banker"
+    },
+    {
+     "id": "B",
+     "text": "Banque"
+    },
+    {
+     "id": "C",
+     "text": "Banco"
+    },
+    {
+     "id": "D",
+     "text": "Bench"
+    }
+   ],
+   "answer_as_printed": "B) Banque",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T08:04:07+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "41dd79c055f52f7c3841d634d5842581c6a4edd5eab3493584b415c8df84ba81"
+  },
+  {
+   "id": "soc-10-16-s1-q010",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-16",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the forms of money, financial institutions, and the role of finance in development; Also participate themselves (e.g., opening a bank account, etc.)."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The deposits for a fixed term can be deposited in",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s1-q010",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s1-q010",
+     "pdf_page": 51,
+     "printed_page": 39,
+     "y": 394.214,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s1-q010-key",
+     "pdf_page": 117,
+     "printed_page": 105,
+     "y": 416.294,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T08:04:07+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T08:04:07+05:30",
+   "text_as_printed": "The deposits for a fixed term can be deposited in (Average)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Recurring deposit account"
+    },
+    {
+     "id": "B",
+     "text": "Term deposit account"
+    },
+    {
+     "id": "C",
+     "text": "Current account"
+    },
+    {
+     "id": "D",
+     "text": "Saving account"
+    }
+   ],
+   "answer_as_printed": "B) Term deposit account",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T08:04:07+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "7b2c8537e8e3b4bb3d824a71187e6d92f7fb0f8dad56dea33fe93e1ea5548cf7"
+  },
+  {
+   "id": "soc-10-16-s2-q011",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-16",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the forms of money, financial institutions, and the role of finance in development; Also participate themselves (e.g., opening a bank account, etc.)."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Which bank controls the activities of all banks in India?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s2-q011",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s2-q011",
+     "pdf_page": 51,
+     "printed_page": 39,
+     "y": 436.814,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s2-q011-key",
+     "pdf_page": 117,
+     "printed_page": 105,
+     "y": 443.894,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T08:04:07+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T08:04:07+05:30",
+   "text_as_printed": "Which bank controls the activities of all banks in India? (Average)",
+   "answer": {
+    "kind": "text",
+    "value": "Reserve Bank of India"
+   },
+   "answer_as_printed": "Reserve Bank of India",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T08:04:07+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "ce6b8d4800e59f71324ac8602e41064b8586b202c4276690bb90fceb2605486e"
+  },
+  {
+   "id": "soc-10-16-s2-q012",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-16",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the forms of money, financial institutions, and the role of finance in development; Also participate themselves (e.g., opening a bank account, etc.)."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is the service that people get from banks to protect their jewellery and valuables?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s2-q012",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s2-q012",
+     "pdf_page": 51,
+     "printed_page": 39,
+     "y": 450.634,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s2-q012-key",
+     "pdf_page": 117,
+     "printed_page": 105,
+     "y": 457.714,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T08:04:07+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T08:04:07+05:30",
+   "text_as_printed": "What is the service that people get from banks to protect their jewellery and valuables? (June-2023) (Average)",
+   "prior_appearances": [
+    {
+     "as_printed": "June-2023",
+     "year": "2023"
+    }
+   ],
+   "answer": {
+    "kind": "text",
+    "value": "Provide Safe deposit locker services"
+   },
+   "answer_as_printed": "Provide Safe deposit locker services",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T08:04:07+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "36c4c0ead26dedbb499a05dc79f9481308fba26dd567568de15bc601054ee019"
+  },
+  {
+   "id": "soc-10-16-s2-q013",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-16",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the forms of money, financial institutions, and the role of finance in development; Also participate themselves (e.g., opening a bank account, etc.)."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Write the expanded form of the ATM",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s2-q013",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s2-q013",
+     "pdf_page": 51,
+     "printed_page": 39,
+     "y": 478.114,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s2-q013-key",
+     "pdf_page": 117,
+     "printed_page": 105,
+     "y": 471.514,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T08:04:07+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T08:04:07+05:30",
+   "text_as_printed": "Write the expanded form of the ATM (Average)",
+   "answer": {
+    "kind": "text",
+    "value": "Automated Teller Machine"
+   },
+   "answer_as_printed": "Automated Teller Machine",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T08:04:07+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "b2d181915b333693ccd8fcb148221931baf7f7f100260e1d328d5a960daddfff"
+  },
+  {
+   "id": "soc-10-16-s2-q014",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-16",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the forms of money, financial institutions, and the role of finance in development; Also participate themselves (e.g., opening a bank account, etc.)."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Why is RBI called ‘Bank of banks?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s2-q014",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s2-q014",
+     "pdf_page": 51,
+     "printed_page": 39,
+     "y": 489.418,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s2-q014-key",
+     "pdf_page": 117,
+     "printed_page": 105,
+     "y": 485.314,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T08:04:07+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T08:04:07+05:30",
+   "text_as_printed": "Why is RBI called ‘Bank of banks? (Difficult)",
+   "answer": {
+    "kind": "text",
+    "value": "Because all the banking transactions in India are controlled by the reserve Bank of India."
+   },
+   "answer_as_printed": "Because all the banking transactions in India are controlled by the reserve Bank of India.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T08:04:07+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "e20bc32103951edbc90c9e968abc6c69ee6b4df89754c3449503fbc185b00aa5"
+  },
+  {
+   "id": "soc-10-16-s2-q015",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-16",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the forms of money, financial institutions, and the role of finance in development; Also participate themselves (e.g., opening a bank account, etc.)."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "How do banks link depositor and borrower?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s2-q015",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s2-q015",
+     "pdf_page": 51,
+     "printed_page": 39,
+     "y": 505.714,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s2-q015-key",
+     "pdf_page": 117,
+     "printed_page": 105,
+     "y": 499.114,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T08:04:07+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T08:04:07+05:30",
+   "text_as_printed": "How do banks link depositor and borrower? (Difficult)",
+   "answer": {
+    "kind": "text",
+    "value": "Bank accepts deposits from the depositor and lends it to borrower who need it in the form of loans."
+   },
+   "answer_as_printed": "Bank accepts deposits from the depositor and lends it to borrower who need it in the form of loans.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T08:04:07+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "0fda358b63ddfe2a17e17bfdd86e474cd5eb57b8f3d25a5357298bde3f04aa6b"
+  },
+  {
+   "id": "soc-10-16-s2-q016",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-16",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the forms of money, financial institutions, and the role of finance in development; Also participate themselves (e.g., opening a bank account, etc.)."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is a Bank?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s2-q016",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s2-q016",
+     "pdf_page": 51,
+     "printed_page": 39,
+     "y": 519.514,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s2-q016-key",
+     "pdf_page": 117,
+     "printed_page": 105,
+     "y": 234.944,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T08:04:07+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T08:04:07+05:30",
+   "text_as_printed": "What is a Bank? (Average)",
+   "answer": {
+    "kind": "text",
+    "value": "Banks collect surplus money of the customers and lend the same to those who are in need of money."
+   },
+   "answer_as_printed": "Banks collect surplus money of the customers and lend the same to those who are in need of money.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T08:04:07+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "bbe6a11870c37eb7499945c54a02aa52b5989edf29306d148459dac71c91276d"
+  },
+  {
+   "id": "soc-10-16-s2-q017",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-16",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the forms of money, financial institutions, and the role of finance in development; Also participate themselves (e.g., opening a bank account, etc.)."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Give an example for Nationalised bank.",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s2-q017",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s2-q017",
+     "pdf_page": 51,
+     "printed_page": 39,
+     "y": 533.314,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s2-q017-key",
+     "pdf_page": 117,
+     "printed_page": 105,
+     "y": 526.714,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T08:04:07+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T08:04:07+05:30",
+   "text_as_printed": "Give an example for Nationalised bank. (Average)",
+   "answer": {
+    "kind": "text",
+    "value": "State Bank of India."
+   },
+   "answer_as_printed": "State Bank of India.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T08:04:07+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "565938200bde214896c7e127cfe1f2efab2b8a1e9a6db0652946275b0c83d935"
+  },
+  {
+   "id": "soc-10-16-s3-q018",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-16",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the forms of money, financial institutions, and the role of finance in development; Also participate themselves (e.g., opening a bank account, etc.)."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What are the characteristics of banks?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s3-q018",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s3-q018",
+     "pdf_page": 51,
+     "printed_page": 39,
+     "y": 562.114,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s3-q018-key",
+     "pdf_page": 117,
+     "printed_page": 105,
+     "y": 540.514,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T08:04:07+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T08:04:07+05:30",
+   "text_as_printed": "What are the characteristics of banks? (Easy)",
+   "answer": {
+    "kind": "text",
+    "value": "Dealing with Money\nIndividual/Firm/Company\nAcceptance of Deposits\nLending Loans\nPayment and Withdrawal\nAgency and Utility Services\nProfit and Service Orientation\nEver Increasing Functions\nConnecting Link\nBanking Business\nName Identity"
+   },
+   "answer_as_printed": "Dealing with Money\nIndividual/Firm/Company\nAcceptance of Deposits\nLending Loans\nPayment and Withdrawal\nAgency and Utility Services\nProfit and Service Orientation\nEver Increasing Functions\nConnecting Link\nBanking Business\nName Identity",
+   "solution_steps": [
+    "Dealing with Money",
+    "Individual/Firm/Company",
+    "Acceptance of Deposits",
+    "Lending Loans",
+    "Payment and Withdrawal",
+    "Agency and Utility Services",
+    "Profit and Service Orientation",
+    "Ever Increasing Functions",
+    "Connecting Link",
+    "Banking Business",
+    "Name Identity"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T08:04:07+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — (3/4 marks questions)"
+    }
+   ],
+   "content_hash": "c5d01da8ce81ca95f22ad85446183aa6ab9f71ce114509cadd80feb49a3e2746"
+  },
+  {
+   "id": "soc-10-16-s3-q019",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-16",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the forms of money, financial institutions, and the role of finance in development; Also participate themselves (e.g., opening a bank account, etc.)."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Mention the types of banks.",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s3-q019",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s3-q019",
+     "pdf_page": 51,
+     "printed_page": 39,
+     "y": 575.914,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s3-q019-key",
+     "pdf_page": 117,
+     "printed_page": 105,
+     "y": 638.344,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T08:04:07+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T08:04:07+05:30",
+   "text_as_printed": "Mention the types of banks. (Average)",
+   "answer": {
+    "kind": "text",
+    "value": "Central Bank / Reserve Bank of India\nCommercial banks\nIndustrial development banks\nLand development or agricultural banks\nIndigenous Banks (Money lenders/Sahukars)\nCooperative banks"
+   },
+   "answer_as_printed": "Central Bank / Reserve Bank of India\nCommercial banks\nIndustrial development banks\nLand development or agricultural banks\nIndigenous Banks (Money lenders/Sahukars)\nCooperative banks",
+   "solution_steps": [
+    "Central Bank / Reserve Bank of India",
+    "Commercial banks",
+    "Industrial development banks",
+    "Land development or agricultural banks",
+    "Indigenous Banks (Money lenders/Sahukars)",
+    "Cooperative banks"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T08:04:07+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — (3/4 marks questions)"
+    }
+   ],
+   "content_hash": "db9f5c89e7f73bf6b4886ab8028ee36f320324743066bf485af80adf2f817ba8"
+  },
+  {
+   "id": "soc-10-16-s3-q020",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-16",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the forms of money, financial institutions, and the role of finance in development; Also participate themselves (e.g., opening a bank account, etc.)."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What are the functions of bank? / services of banks? / advantages of opening a bank account?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s3-q020",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s3-q020",
+     "pdf_page": 51,
+     "printed_page": 39,
+     "y": 589.714,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s3-q020-key",
+     "pdf_page": 117,
+     "printed_page": 105,
+     "y": 736.14,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T08:04:07+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T08:04:07+05:30",
+   "text_as_printed": "What are the functions of bank? / services of banks? / advantages of opening a bank account? (June-2022, September-2022, April-2023, June-2024, August-2024, April-2025, June-2025) (Average)",
+   "prior_appearances": [
+    {
+     "as_printed": "June-2022",
+     "year": "2022"
+    },
+    {
+     "as_printed": "September-2022",
+     "year": "2022"
+    },
+    {
+     "as_printed": "April-2023",
+     "year": "2023"
+    },
+    {
+     "as_printed": "June-2024",
+     "year": "2024"
+    },
+    {
+     "as_printed": "August-2024",
+     "year": "2024"
+    },
+    {
+     "as_printed": "April-2025",
+     "year": "2025"
+    },
+    {
+     "as_printed": "June-2025",
+     "year": "2025"
+    }
+   ],
+   "answer": {
+    "kind": "text",
+    "value": "Accepting deposits from public.\nLending loans to public.\nTransferring money from one place to another.\nCollecting on cheques, drafts and bills.\nDiscounting of bills.\nHiring safe deposit lockers.\nConducting foreign exchange.\nKeeping valuables in safe custody.\nIssuing letters of credit.\nConducting government transactions"
+   },
+   "answer_as_printed": "Accepting deposits from public.\nLending loans to public.\nTransferring money from one place to another.\nCollecting on cheques, drafts and bills.\nDiscounting of bills.\nHiring safe deposit lockers.\nConducting foreign exchange.\nKeeping valuables in safe custody.\nIssuing letters of credit.\nConducting government transactions",
+   "solution_steps": [
+    "Accepting deposits from public.",
+    "Lending loans to public.",
+    "Transferring money from one place to another.",
+    "Collecting on cheques, drafts and bills.",
+    "Discounting of bills.",
+    "Hiring safe deposit lockers.",
+    "Conducting foreign exchange.",
+    "Keeping valuables in safe custody.",
+    "Issuing letters of credit.",
+    "Conducting government transactions"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T08:04:07+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — (3/4 marks questions)"
+    }
+   ],
+   "content_hash": "0e6ec99d313224333755aa4a4eb3f1ecd2cc5660ddf72f97d2b0da2cba66c70f"
+  },
+  {
+   "id": "soc-10-16-s3-q021",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-16",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the forms of money, financial institutions, and the role of finance in development; Also participate themselves (e.g., opening a bank account, etc.)."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What are the financial services provided by post offices?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s3-q021",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s3-q021",
+     "pdf_page": 51,
+     "printed_page": 39,
+     "y": 631.144,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s3-q021-key",
+     "pdf_page": 118,
+     "printed_page": 106,
+     "y": 135.224,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T08:04:07+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T08:04:07+05:30",
+   "text_as_printed": "What are the financial services provided by post offices? (June-2020, April-2024) (Average)",
+   "prior_appearances": [
+    {
+     "as_printed": "June-2020",
+     "year": "2020"
+    },
+    {
+     "as_printed": "April-2024",
+     "year": "2024"
+    }
+   ],
+   "answer": {
+    "kind": "text",
+    "value": "Post Office Savings Bank.\nNational Savings Certificate\nKissan Vikas Patra\nMonthly Recurring deposits\nPostal Life Insurance\nPension payment\nMoney transfer"
+   },
+   "answer_as_printed": "Post Office Savings Bank.\nNational Savings Certificate\nKissan Vikas Patra\nMonthly Recurring deposits\nPostal Life Insurance\nPension payment\nMoney transfer",
+   "solution_steps": [
+    "Post Office Savings Bank.",
+    "National Savings Certificate",
+    "Kissan Vikas Patra",
+    "Monthly Recurring deposits",
+    "Postal Life Insurance",
+    "Pension payment",
+    "Money transfer"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T08:04:07+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — (3/4 marks questions)"
+    }
+   ],
+   "content_hash": "6c881be622addbe0474211b43eb75f97ddb89198d24d547e132c2ee910738ed9"
+  },
+  {
+   "id": "soc-10-16-s3-q022",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-16",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the forms of money, financial institutions, and the role of finance in development; Also participate themselves (e.g., opening a bank account, etc.)."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Explain the steps of opening a bank account. / How can we open a bank account?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s3-q022",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s3-q022",
+     "pdf_page": 51,
+     "printed_page": 39,
+     "y": 644.944,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s3-q022-key",
+     "pdf_page": 118,
+     "printed_page": 106,
+     "y": 245.624,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T08:04:07+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T08:04:07+05:30",
+   "text_as_printed": "Explain the steps of opening a bank account. / How can we open a bank account? (2020, 2022, 2023) (Difficult)",
+   "prior_appearances": [
+    {
+     "as_printed": "2020",
+     "year": "2020"
+    },
+    {
+     "as_printed": "2022",
+     "year": "2022"
+    },
+    {
+     "as_printed": "2023",
+     "year": "2023"
+    }
+   ],
+   "answer": {
+    "kind": "text",
+    "value": "Decide the type of account which you want to open\nApproach the bank of your choice and meet its office\nFill up account form or proposal form\nGive reference for opening your account\nSubmit the Bank account form duly filled\nOfficer will verify all the particulars submitted\nInitial Deposit to be made."
+   },
+   "answer_as_printed": "Decide the type of account which you want to open\nApproach the bank of your choice and meet its office\nFill up account form or proposal form\nGive reference for opening your account\nSubmit the Bank account form duly filled\nOfficer will verify all the particulars submitted\nInitial Deposit to be made.",
+   "solution_steps": [
+    "Decide the type of account which you want to open",
+    "Approach the bank of your choice and meet its office",
+    "Fill up account form or proposal form",
+    "Give reference for opening your account",
+    "Submit the Bank account form duly filled",
+    "Officer will verify all the particulars submitted",
+    "Initial Deposit to be made."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T08:04:07+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — (3/4 marks questions)"
+    }
+   ],
+   "content_hash": "e26aa6f38d9b0b028ca82101a2d8dde9439c35718f242ccb60f0a1f51c58af90"
+  },
+  {
+   "id": "soc-10-16-s3-q023",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-16",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the forms of money, financial institutions, and the role of finance in development; Also participate themselves (e.g., opening a bank account, etc.)."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What are the differences between savings account and current account? / How is Savings account different from current account?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s3-q023",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s3-q023",
+     "pdf_page": 51,
+     "printed_page": 39,
+     "y": 672.544,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-16-s3-q023-key",
+     "pdf_page": 118,
+     "printed_page": 106,
+     "y": 356.054,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T08:04:07+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T08:04:07+05:30",
+   "text_as_printed": "What are the differences between savings account and current account? / How is Savings account different from current account? (Average)",
+   "answer": {
+    "kind": "text",
+    "value": "Savings account\nOpened by salaried persons / persons who have a fixed regular income.\nThere is no restriction on the number of deposits.\nIt’s given to the students, senior citizens, pensioners.\nThere is a small amount of interest for our savings.\nCurrent account\nOpened by businessmen who have a large number of regular transactions.\nDeposited or withdrawn any number of times in a day\nOpened by only businessmen.\nConsumers have to pay service charges for their deposits"
+   },
+   "answer_as_printed": "Savings account\nOpened by salaried persons / persons who have a fixed regular income.\nThere is no restriction on the number of deposits.\nIt’s given to the students, senior citizens, pensioners.\nThere is a small amount of interest for our savings.\nCurrent account\nOpened by businessmen who have a large number of regular transactions.\nDeposited or withdrawn any number of times in a day\nOpened by only businessmen.\nConsumers have to pay service charges for their deposits",
+   "solution_steps": [
+    "Opened by salaried persons / persons who have a fixed regular income.",
+    "There is no restriction on the number of deposits.",
+    "It’s given to the students, senior citizens, pensioners.",
+    "There is a small amount of interest for our savings.",
+    "Opened by businessmen who have a large number of regular transactions.",
+    "Deposited or withdrawn any number of times in a day",
+    "Opened by only businessmen.",
+    "Consumers have to pay service charges for their deposits"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T08:04:07+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — (3/4 marks questions)"
+    }
+   ],
+   "content_hash": "c0116d6f7e6742516c35109df45d0d6d869bdffda7f09f258074e85bf7dfa714"
+  }
+ ],
+ "pending_summary": {}
+}
