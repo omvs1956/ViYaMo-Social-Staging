@@ -1,0 +1,2823 @@
+{
+ "contract_version": "1.7",
+ "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
+ "procedure_file": "extraction_procedure_social_addendum_v1.2_social science Classes 6-10 on top of procedure v2.md",
+ "machine_name": "soc-10-31_questions",
+ "version": 1,
+ "changelog": "v1 extraction — batch-02 — class-10-social",
+ "amendments_applied": [],
+ "unit_state": "EXTRACTED",
+ "review_ready": false,
+ "count_gate": {
+  "reference": 33,
+  "reference_source": "audited",
+  "extracted": 33,
+  "paired": 33,
+  "flagged": 0,
+  "gaps": [],
+  "duplicated_numbers": [],
+  "quota_table": "difficulty_only",
+  "second_method": {
+   "method": "printed difficulty distribution table",
+   "extracted": 33,
+   "agrees": true
+  },
+  "pass": true,
+  "note": "printed difficulty table 6/16/11=33 DISAGREES with per-question tags 4/17/12 (source defect, tags win v2 §6; register difficulty-table-vs-tags); flagged counts answer-level flags; all carry the structural marks flag (addendum §4.5)."
+ },
+ "extraction": {
+  "source_file": "10thSS-EM-LBA-Revised_1786620693.pdf",
+  "source_ref_prefix": "10thSS-EM-LBA-Revised_1786620693.pdf",
+  "pdf_pages": [
+   49,
+   50,
+   115,
+   116,
+   117
+  ],
+  "printed_page_offset": -12,
+  "method_notes": [
+   "offset -12; question side pdf 49-50 (q1-4 on 49, q5-33 on 50); answer side pdf 115-117 (q1-23 on 115, q24-32 on 116, q32-33 on 117). LO = 16 (finance LO, shared with ch16).",
+   "section labels I/II/III/IV sequential (no defect); answer side cleanly numbered 1-33, pairs by printed number (no shift)",
+   "section-I keys letter+text -> option by printed letter (addendum §4.1); all 5 valid (q3 'Deficit budget' vs 'Deficit Budget' caps, cosmetic)",
+   "GARBLED-DIFFICULTY-TAG (register): q13 prints its difficulty as 'Average)' with the open parenthesis missing; the word is unambiguous -> difficulty average, difficulty_as_printed 'Average' (open paren restored in STEM so it extracts). Not a 'no difficulty tag' case.",
+   "DIFFICULTY-TABLE-VS-TAGS defect (register): printed table Easy 6 / Average 16 / Difficult 11; per-question tags Easy 4 / Average 17 / Difficult 12 (total 33 agrees). table differs on 3 questions (-2 Easy, +1 Average, +1 Difficult); tags win (v2 §6)",
+   "q15 key repeats '...is called Planned Expenditure is called Planned Expenditure.' verbatim (source doubling) -> kept as printed",
+   "q21/q23/q24 are single flowing sentences -> SINGLE. q29 (Private/Public Finance), q31 (Direct/Indirect Taxes) two-heading comparisons -> SUB; q30 and q33 each have one printed lead heading + list -> SUB (heading in value, list as steps).",
+   "key-lines self-count (relay 10): q22 6=6, q25 4=4, q26 4=4, q27 5=5, q28 4=4, q29 SUB 2 headings+8, q30 SUB 1 heading+6, q31 SUB 2 headings+10, q32 9=9 (spans pdf116-117), q33 SUB 1 heading+3; vsa 6-20 single-value; sa SINGLE 21/23/24; mcq 1-5 option keys; no drops",
+   "sections I/II no marks, III '(2 marks)', IV '(3/4 marks)' -> all 33 marks null+flag (addendum §4.5)"
+  ],
+  "notation_summary": {
+   "render_tokens": 0,
+   "latex_tokens": 0,
+   "damage_flags": []
+  },
+  "excluded_objects": [],
+  "inline_excluded_count": 0,
+  "figure_references": []
+ },
+ "stimuli": [],
+ "questions": [
+  {
+   "id": "soc-10-31-s1-q001",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the forms of money, financial institutions, and the role of finance in development; Also participate themselves (e.g., opening a bank account, etc.)."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The financial year in India ends on",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s1-q001",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s1-q001",
+     "pdf_page": 49,
+     "printed_page": 37,
+     "y": 690.784,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s1-q001-key",
+     "pdf_page": 115,
+     "printed_page": 103,
+     "y": 248.504,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T07:51:55+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T07:51:55+05:30",
+   "text_as_printed": "The financial year in India ends on (June 2017, Exam2- 2024, Report 2018) (Average)",
+   "prior_appearances": [
+    {
+     "as_printed": "June 2017",
+     "year": "2017"
+    },
+    {
+     "as_printed": "Exam2- 2024",
+     "year": "2024"
+    },
+    {
+     "as_printed": "Report 2018",
+     "year": "2018"
+    }
+   ],
+   "options": [
+    {
+     "id": "A",
+     "text": "April 1"
+    },
+    {
+     "id": "B",
+     "text": "January 1"
+    },
+    {
+     "id": "C",
+     "text": "March 31"
+    },
+    {
+     "id": "D",
+     "text": "December 31"
+    }
+   ],
+   "answer_as_printed": "C. March 31",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T07:51:55+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "709eee108891b57505112bc01d1cad577a200467962b1a3023f98c09574a30fe"
+  },
+  {
+   "id": "soc-10-31-s1-q002",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the forms of money, financial institutions, and the role of finance in development; Also participate themselves (e.g., opening a bank account, etc.)."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The central budget is presented in the Lok Sabha by the",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s1-q002",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s1-q002",
+     "pdf_page": 49,
+     "printed_page": 37,
+     "y": 722.464,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s1-q002-key",
+     "pdf_page": 115,
+     "printed_page": 103,
+     "y": 262.304,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T07:51:55+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T07:51:55+05:30",
+   "text_as_printed": "The central budget is presented in the Lok Sabha by the (April 2018, April 2016) (Easy)",
+   "prior_appearances": [
+    {
+     "as_printed": "April 2018",
+     "year": "2018"
+    },
+    {
+     "as_printed": "April 2016",
+     "year": "2016"
+    }
+   ],
+   "options": [
+    {
+     "id": "A",
+     "text": "Chief Minister"
+    },
+    {
+     "id": "B",
+     "text": "Prime Minister"
+    },
+    {
+     "id": "C",
+     "text": "State Finance Minister"
+    },
+    {
+     "id": "D",
+     "text": "Union Finance Minister"
+    }
+   ],
+   "answer_as_printed": "D. Union Finance Minister",
+   "answer": {
+    "kind": "option",
+    "option_id": "D"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T07:51:55+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "5d667cd88be1884c7fb6f17b45bdec172d85e191c195eca20589f0e524658b43"
+  },
+  {
+   "id": "soc-10-31-s1-q003",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the forms of money, financial institutions, and the role of finance in development; Also participate themselves (e.g., opening a bank account, etc.)."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Developing Countries usually present",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s1-q003",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s1-q003",
+     "pdf_page": 49,
+     "printed_page": 37,
+     "y": 754.26,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s1-q003-key",
+     "pdf_page": 115,
+     "printed_page": 103,
+     "y": 276.134,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T07:51:55+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T07:51:55+05:30",
+   "text_as_printed": "Developing Countries usually present (June 2023) (Difficult)",
+   "prior_appearances": [
+    {
+     "as_printed": "June 2023",
+     "year": "2023"
+    }
+   ],
+   "options": [
+    {
+     "id": "A",
+     "text": "Surplus Budget"
+    },
+    {
+     "id": "B",
+     "text": "Balanced Budget"
+    },
+    {
+     "id": "C",
+     "text": "Deficit Budget"
+    },
+    {
+     "id": "D",
+     "text": "Zero Budget"
+    }
+   ],
+   "answer_as_printed": "C. Deficit budget",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T07:51:55+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "8af8fe84abbc2363f28ee1fe0a1356dff76ddf073553767a81a434aa20a1f674"
+  },
+  {
+   "id": "soc-10-31-s1-q004",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the forms of money, financial institutions, and the role of finance in development; Also participate themselves (e.g., opening a bank account, etc.)."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "An example for direct tax is",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s1-q004",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s1-q004",
+     "pdf_page": 49,
+     "printed_page": 37,
+     "y": 785.94,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s1-q004-key",
+     "pdf_page": 115,
+     "printed_page": 103,
+     "y": 289.934,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T07:51:55+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T07:51:55+05:30",
+   "text_as_printed": "An example for direct tax is (Model 1- 2025) (Average)",
+   "prior_appearances": [
+    {
+     "as_printed": "Model 1- 2025",
+     "year": "2025"
+    }
+   ],
+   "options": [
+    {
+     "id": "A",
+     "text": "Import export tax"
+    },
+    {
+     "id": "B",
+     "text": "Goods and services tax"
+    },
+    {
+     "id": "C",
+     "text": "Corporate Tax"
+    },
+    {
+     "id": "D",
+     "text": "Foreign Travel Tax"
+    }
+   ],
+   "answer_as_printed": "C. Corporate Tax",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T07:51:55+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "22f5863cbceb2019154d34522a761e70c4028ba608dea47fb126f7518360bfda"
+  },
+  {
+   "id": "soc-10-31-s1-q005",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the forms of money, financial institutions, and the role of finance in development; Also participate themselves (e.g., opening a bank account, etc.)."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "In India it is mandatory to get approval for the budget before",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s1-q005",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s1-q005",
+     "pdf_page": 50,
+     "printed_page": 38,
+     "y": 54.564,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s1-q005-key",
+     "pdf_page": 115,
+     "printed_page": 103,
+     "y": 303.734,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T07:51:55+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T07:51:55+05:30",
+   "text_as_printed": "In India it is mandatory to get approval for the budget before (Model 4- 2025) (Average)",
+   "prior_appearances": [
+    {
+     "as_printed": "Model 4- 2025",
+     "year": "2025"
+    }
+   ],
+   "options": [
+    {
+     "id": "A",
+     "text": "April 01"
+    },
+    {
+     "id": "B",
+     "text": "January 01"
+    },
+    {
+     "id": "C",
+     "text": "March 31"
+    },
+    {
+     "id": "D",
+     "text": "December 31"
+    }
+   ],
+   "answer_as_printed": "C. March 31",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T07:51:55+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "a340b0a53afc3a34aeb3ce1de45d7d5d8ed7e31d18c0d56ee8cac1d91104a366"
+  },
+  {
+   "id": "soc-10-31-s2-q006",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the forms of money, financial institutions, and the role of finance in development; Also participate themselves (e.g., opening a bank account, etc.)."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is Personal finance?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s2-q006",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s2-q006",
+     "pdf_page": 50,
+     "printed_page": 38,
+     "y": 103.544,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s2-q006-key",
+     "pdf_page": 115,
+     "printed_page": 103,
+     "y": 331.334,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T07:51:55+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T07:51:55+05:30",
+   "text_as_printed": "What is Personal finance? (Average)",
+   "answer": {
+    "kind": "text",
+    "value": "The management of income, expenditure and debt of an individual or family is called personal finance"
+   },
+   "answer_as_printed": "The management of income, expenditure and debt of an individual or family is called personal finance",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T07:51:55+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "4cd719f7c3886badec8aad03dfefcf2c810422afbc9831e13e36f483f3b1b2c0"
+  },
+  {
+   "id": "soc-10-31-s2-q007",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the forms of money, financial institutions, and the role of finance in development; Also participate themselves (e.g., opening a bank account, etc.)."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is Public finance?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s2-q007",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s2-q007",
+     "pdf_page": 50,
+     "printed_page": 38,
+     "y": 119.384,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s2-q007-key",
+     "pdf_page": 115,
+     "printed_page": 103,
+     "y": 358.934,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T07:51:55+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T07:51:55+05:30",
+   "text_as_printed": "What is Public finance? (Average)",
+   "answer": {
+    "kind": "text",
+    "value": "Income and expenditure of the government."
+   },
+   "answer_as_printed": "Income and expenditure of the government.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T07:51:55+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "5f8802f9756e49f819244084684c140dcf09d02c63ebcd40bebbb5cc1967ce2f"
+  },
+  {
+   "id": "soc-10-31-s2-q008",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the forms of money, financial institutions, and the role of finance in development; Also participate themselves (e.g., opening a bank account, etc.)."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is Budget?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s2-q008",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s2-q008",
+     "pdf_page": 50,
+     "printed_page": 38,
+     "y": 135.224,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s2-q008-key",
+     "pdf_page": 115,
+     "printed_page": 103,
+     "y": 372.734,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T07:51:55+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T07:51:55+05:30",
+   "text_as_printed": "What is Budget? (June 2015, June 2018) (Average)",
+   "prior_appearances": [
+    {
+     "as_printed": "June 2015",
+     "year": "2015"
+    },
+    {
+     "as_printed": "June 2018",
+     "year": "2018"
+    }
+   ],
+   "answer": {
+    "kind": "text",
+    "value": "Statement of estimated income & expenditure of a year prepared by the government is called as Budget."
+   },
+   "answer_as_printed": "Statement of estimated income & expenditure of a year prepared by the government is called as Budget.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T07:51:55+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "e037c1e4c84902bdafe34eaca6f5b2d215ea079d4639e397aaf264f442f4aa75"
+  },
+  {
+   "id": "soc-10-31-s2-q009",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the forms of money, financial institutions, and the role of finance in development; Also participate themselves (e.g., opening a bank account, etc.)."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is Deficit budget?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s2-q009",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s2-q009",
+     "pdf_page": 50,
+     "printed_page": 38,
+     "y": 151.184,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s2-q009-key",
+     "pdf_page": 115,
+     "printed_page": 103,
+     "y": 400.334,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T07:51:55+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T07:51:55+05:30",
+   "text_as_printed": "What is Deficit budget? (June 2023) (Difficult)",
+   "prior_appearances": [
+    {
+     "as_printed": "June 2023",
+     "year": "2023"
+    }
+   ],
+   "answer": {
+    "kind": "text",
+    "value": "If the expenditure is more than the income it is called deficit budget"
+   },
+   "answer_as_printed": "If the expenditure is more than the income it is called deficit budget",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T07:51:55+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "c6a033aee186f2030b659f3063c734c3c2b74323ec1d850e3fcd7c67619664ff"
+  },
+  {
+   "id": "soc-10-31-s2-q010",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the forms of money, financial institutions, and the role of finance in development; Also participate themselves (e.g., opening a bank account, etc.)."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Why does a country like India present a deficit budget?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s2-q010",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s2-q010",
+     "pdf_page": 50,
+     "printed_page": 38,
+     "y": 167.024,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s2-q010-key",
+     "pdf_page": 115,
+     "printed_page": 103,
+     "y": 414.134,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T07:51:55+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T07:51:55+05:30",
+   "text_as_printed": "Why does a country like India present a deficit budget? (Difficult)",
+   "answer": {
+    "kind": "text",
+    "value": "Try to achieve economic progress."
+   },
+   "answer_as_printed": "Try to achieve economic progress.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T07:51:55+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "2e95cae81270be11f25db46574eba8686c56c287c830cffbcb520a388e8f244c"
+  },
+  {
+   "id": "soc-10-31-s2-q011",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the forms of money, financial institutions, and the role of finance in development; Also participate themselves (e.g., opening a bank account, etc.)."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Give two examples for social services.",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s2-q011",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s2-q011",
+     "pdf_page": 50,
+     "printed_page": 38,
+     "y": 182.864,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s2-q011-key",
+     "pdf_page": 115,
+     "printed_page": 103,
+     "y": 427.934,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T07:51:55+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T07:51:55+05:30",
+   "text_as_printed": "Give two examples for social services. (Average)",
+   "answer": {
+    "kind": "text",
+    "value": "A. Education service B. Health service"
+   },
+   "answer_as_printed": "A. Education service B. Health service",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T07:51:55+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "cc376c029a840465df57bfe0304130e4d8813b6ec352d4fb362d8e6bd8fbce99"
+  },
+  {
+   "id": "soc-10-31-s2-q012",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the forms of money, financial institutions, and the role of finance in development; Also participate themselves (e.g., opening a bank account, etc.)."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Give an example for non-plan expenditure.",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s2-q012",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s2-q012",
+     "pdf_page": 50,
+     "printed_page": 38,
+     "y": 198.704,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s2-q012-key",
+     "pdf_page": 115,
+     "printed_page": 103,
+     "y": 441.734,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T07:51:55+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T07:51:55+05:30",
+   "text_as_printed": "Give an example for non-plan expenditure. (Difficult)",
+   "answer": {
+    "kind": "text",
+    "value": "Defence expenditure"
+   },
+   "answer_as_printed": "Defence expenditure",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T07:51:55+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "a5243096219a175e63bbc885fc300b402cfb725c86f25b53e6ff58effedd43f8"
+  },
+  {
+   "id": "soc-10-31-s2-q013",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the forms of money, financial institutions, and the role of finance in development; Also participate themselves (e.g., opening a bank account, etc.)."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is the financial policy followed by government to manage its income, expenditure and debt called?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s2-q013",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s2-q013",
+     "pdf_page": 50,
+     "printed_page": 38,
+     "y": 214.664,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s2-q013-key",
+     "pdf_page": 115,
+     "printed_page": 103,
+     "y": 455.674,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T07:51:55+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T07:51:55+05:30",
+   "text_as_printed": "What is the financial policy followed by government to manage its income, expenditure and debt called? (Average)",
+   "answer": {
+    "kind": "text",
+    "value": "Fiscal policy"
+   },
+   "answer_as_printed": "Fiscal policy",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T07:51:55+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "e46842852c3ef20f0bc48ad6b92956f2d57d28c80c0efffb201eee638b944b61"
+  },
+  {
+   "id": "soc-10-31-s2-q014",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the forms of money, financial institutions, and the role of finance in development; Also participate themselves (e.g., opening a bank account, etc.)."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is direct tax?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s2-q014",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s2-q014",
+     "pdf_page": 50,
+     "printed_page": 38,
+     "y": 246.344,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s2-q014-key",
+     "pdf_page": 115,
+     "printed_page": 103,
+     "y": 471.394,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T07:51:55+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T07:51:55+05:30",
+   "text_as_printed": "What is direct tax? (Easy)",
+   "answer": {
+    "kind": "text",
+    "value": "Tax is paid by an individual on whom it is imposed is called Direct Tax."
+   },
+   "answer_as_printed": "Tax is paid by an individual on whom it is imposed is called Direct Tax.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T07:51:55+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "2396731b7e8b408343e0b3d7d9e30b611b9bfdeaa0c74fbf0491043cef9aad58"
+  },
+  {
+   "id": "soc-10-31-s2-q015",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the forms of money, financial institutions, and the role of finance in development; Also participate themselves (e.g., opening a bank account, etc.)."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is meant by planned-expenditure?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s2-q015",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s2-q015",
+     "pdf_page": 50,
+     "printed_page": 38,
+     "y": 262.184,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s2-q015-key",
+     "pdf_page": 115,
+     "printed_page": 103,
+     "y": 485.194,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T07:51:55+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T07:51:55+05:30",
+   "text_as_printed": "What is meant by planned-expenditure? (Average)",
+   "answer": {
+    "kind": "text",
+    "value": "The expenditure incurred by the government towards financial and social services, nation-building exercises and developmental works is called Planned Expenditure is called Planned Expenditure."
+   },
+   "answer_as_printed": "The expenditure incurred by the government towards financial and social services, nation-building exercises and developmental works is called Planned Expenditure is called Planned Expenditure.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T07:51:55+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "a4a441926b0986b37489b7a37fa2c680e61f210107d6e058342e305db6cab67b"
+  },
+  {
+   "id": "soc-10-31-s2-q016",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the forms of money, financial institutions, and the role of finance in development; Also participate themselves (e.g., opening a bank account, etc.)."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is internal debt?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s2-q016",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s2-q016",
+     "pdf_page": 50,
+     "printed_page": 38,
+     "y": 278.174,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s2-q016-key",
+     "pdf_page": 115,
+     "printed_page": 103,
+     "y": 512.794,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T07:51:55+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T07:51:55+05:30",
+   "text_as_printed": "What is internal debt? (Difficult)",
+   "answer": {
+    "kind": "text",
+    "value": "The loan obtained from citizens of the country, banks, financial institutions and industries is called internal debt."
+   },
+   "answer_as_printed": "The loan obtained from citizens of the country, banks, financial institutions and industries is called internal debt.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T07:51:55+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "d17c1d36a48d6392e0bbda1449b4b4b2e2554c7ad9f2272be84b56f68547a8eb"
+  },
+  {
+   "id": "soc-10-31-s2-q017",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the forms of money, financial institutions, and the role of finance in development; Also participate themselves (e.g., opening a bank account, etc.)."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is progressive Taxation?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s2-q017",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s2-q017",
+     "pdf_page": 50,
+     "printed_page": 38,
+     "y": 294.014,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s2-q017-key",
+     "pdf_page": 115,
+     "printed_page": 103,
+     "y": 540.394,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T07:51:55+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T07:51:55+05:30",
+   "text_as_printed": "What is progressive Taxation? (Difficult)",
+   "answer": {
+    "kind": "text",
+    "value": "This principle used by the government in the impose of taxes is called the principle of progressive Taxation."
+   },
+   "answer_as_printed": "This principle used by the government in the impose of taxes is called the principle of progressive Taxation.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T07:51:55+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "12f864d9ccf6d670cf64b0a07d371f613f826acdd460b64bd8898e874198e9d9"
+  },
+  {
+   "id": "soc-10-31-s2-q018",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the forms of money, financial institutions, and the role of finance in development; Also participate themselves (e.g., opening a bank account, etc.)."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is a tax?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s2-q018",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s2-q018",
+     "pdf_page": 50,
+     "printed_page": 38,
+     "y": 309.854,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s2-q018-key",
+     "pdf_page": 115,
+     "printed_page": 103,
+     "y": 567.994,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T07:51:55+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T07:51:55+05:30",
+   "text_as_printed": "What is a tax? (Easy)",
+   "answer": {
+    "kind": "text",
+    "value": "Money paid by the citizens without any expectation in return is called as Tax."
+   },
+   "answer_as_printed": "Money paid by the citizens without any expectation in return is called as Tax.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T07:51:55+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "089e9e7d90bffa6bcd780c304aa4b4469037241afe56e648b2c671aeedf4bbd4"
+  },
+  {
+   "id": "soc-10-31-s2-q019",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the forms of money, financial institutions, and the role of finance in development; Also participate themselves (e.g., opening a bank account, etc.)."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Express Fiscal deficit in the form of a formula.",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s2-q019",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s2-q019",
+     "pdf_page": 50,
+     "printed_page": 38,
+     "y": 325.694,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s2-q019-key",
+     "pdf_page": 115,
+     "printed_page": 103,
+     "y": 581.794,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T07:51:55+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T07:51:55+05:30",
+   "text_as_printed": "Express Fiscal deficit in the form of a formula. (Difficult)",
+   "answer": {
+    "kind": "text",
+    "value": "Fiscal deficit = (Revenue receipts + Non-debt Capital Receipts) – Total Expenditure."
+   },
+   "answer_as_printed": "Fiscal deficit = (Revenue receipts + Non-debt Capital Receipts) – Total Expenditure.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T07:51:55+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "f02843602889c59f0c1b9c56103d58fa0d796566c8193038e6f8a6513522eb07"
+  },
+  {
+   "id": "soc-10-31-s2-q020",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the forms of money, financial institutions, and the role of finance in development; Also participate themselves (e.g., opening a bank account, etc.)."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is meant by Surplus budget?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s2-q020",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s2-q020",
+     "pdf_page": 50,
+     "printed_page": 38,
+     "y": 341.654,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s2-q020-key",
+     "pdf_page": 115,
+     "printed_page": 103,
+     "y": 80.004,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T07:51:55+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T07:51:55+05:30",
+   "text_as_printed": "What is meant by Surplus budget? (Difficult)",
+   "answer": {
+    "kind": "text",
+    "value": "If the budget shows excess income as compared to expenditure, it is called surplus budget."
+   },
+   "answer_as_printed": "If the budget shows excess income as compared to expenditure, it is called surplus budget.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T07:51:55+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "9368661772d3d27d6012b35b0f19026bf434f32357193332c08c3a0166ea56cc"
+  },
+  {
+   "id": "soc-10-31-s3-q021",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the forms of money, financial institutions, and the role of finance in development; Also participate themselves (e.g., opening a bank account, etc.)."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What are the types of budgets?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s3-q021",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s3-q021",
+     "pdf_page": 50,
+     "printed_page": 38,
+     "y": 374.654,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s3-q021-key",
+     "pdf_page": 115,
+     "printed_page": 103,
+     "y": 623.194,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T07:51:55+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T07:51:55+05:30",
+   "text_as_printed": "What are the types of budgets? (Easy)",
+   "answer": {
+    "kind": "text",
+    "value": "There are three types of budgets. They are: A) Surplus Budget B) Deficit Budget C) Balanced Budget"
+   },
+   "answer_as_printed": "There are three types of budgets. They are: A) Surplus Budget B) Deficit Budget C) Balanced Budget",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T07:51:55+05:30",
+    "basis": "printed one-line answer, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — (2 marks)"
+    }
+   ],
+   "content_hash": "79abb9971aa8a1fa7ac1700c87b94a2013786d6e40949862c9fa67ef88046f28"
+  },
+  {
+   "id": "soc-10-31-s3-q022",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the forms of money, financial institutions, and the role of finance in development; Also participate themselves (e.g., opening a bank account, etc.)."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What are economic/financial services?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s3-q022",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s3-q022",
+     "pdf_page": 50,
+     "printed_page": 38,
+     "y": 390.494,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s3-q022-key",
+     "pdf_page": 115,
+     "printed_page": 103,
+     "y": 650.824,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T07:51:55+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T07:51:55+05:30",
+   "text_as_printed": "What are economic/financial services? (Average)",
+   "answer": {
+    "kind": "text",
+    "value": "Agriculture and agriculture-related activities,\nIndustry,\nCommunication,\nFuel,\nScience and technology,\nRural development etc"
+   },
+   "answer_as_printed": "Agriculture and agriculture-related activities,\nIndustry,\nCommunication,\nFuel,\nScience and technology,\nRural development etc",
+   "solution_steps": [
+    "Agriculture and agriculture-related activities,",
+    "Industry,",
+    "Communication,",
+    "Fuel,",
+    "Science and technology,",
+    "Rural development etc"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T07:51:55+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — (2 marks)"
+    }
+   ],
+   "content_hash": "2baca2e78f2e99308ed47b35457c09489f5e0dde211d4280a3ebb6498d5150c5"
+  },
+  {
+   "id": "soc-10-31-s3-q023",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the forms of money, financial institutions, and the role of finance in development; Also participate themselves (e.g., opening a bank account, etc.)."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is tax revenue? Give an example.",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s3-q023",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s3-q023",
+     "pdf_page": 50,
+     "printed_page": 38,
+     "y": 406.454,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s3-q023-key",
+     "pdf_page": 115,
+     "printed_page": 103,
+     "y": 761.94,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T07:51:55+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T07:51:55+05:30",
+   "text_as_printed": "What is tax revenue? Give an example. (Average)",
+   "answer": {
+    "kind": "text",
+    "value": "The central government imposes various types of taxes to collect revenue. This is called Tax revenue. Eg. Income tax, Import tax."
+   },
+   "answer_as_printed": "The central government imposes various types of taxes to collect revenue. This is called Tax revenue. Eg. Income tax, Import tax.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T07:51:55+05:30",
+    "basis": "printed one-line answer, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — (2 marks)"
+    }
+   ],
+   "content_hash": "5ea7d49e180413b86bc3c94c565cab73ee5e1acb5a75cadc8f212f9c79bea734"
+  },
+  {
+   "id": "soc-10-31-s3-q024",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the forms of money, financial institutions, and the role of finance in development; Also participate themselves (e.g., opening a bank account, etc.)."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is non-tax revenue?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s3-q024",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s3-q024",
+     "pdf_page": 50,
+     "printed_page": 38,
+     "y": 422.294,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s3-q024-key",
+     "pdf_page": 116,
+     "printed_page": 104,
+     "y": 38.604,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T07:51:55+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T07:51:55+05:30",
+   "text_as_printed": "What is non-tax revenue? (Average)",
+   "answer": {
+    "kind": "text",
+    "value": "Apart from taxes, the government generates revenue from other sources. This is called non-tax revenue."
+   },
+   "answer_as_printed": "Apart from taxes, the government generates revenue from other sources. This is called non-tax revenue.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T07:51:55+05:30",
+    "basis": "printed one-line answer, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — (2 marks)"
+    }
+   ],
+   "content_hash": "3d20836e66470e2a621d77161b7b8c816bb10bd4e3a7f1ef487a126987ceeb8d"
+  },
+  {
+   "id": "soc-10-31-s3-q025",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the forms of money, financial institutions, and the role of finance in development; Also participate themselves (e.g., opening a bank account, etc.)."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Give two examples for indirect taxes.",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s3-q025",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s3-q025",
+     "pdf_page": 50,
+     "printed_page": 38,
+     "y": 438.134,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s3-q025-key",
+     "pdf_page": 116,
+     "printed_page": 104,
+     "y": 52.404,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T07:51:55+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T07:51:55+05:30",
+   "text_as_printed": "Give two examples for indirect taxes. (Average)",
+   "answer": {
+    "kind": "text",
+    "value": "Import-Export taxes.\nGoods and Service tax.\nForeign Travel tax.\nCentral exercise tax."
+   },
+   "answer_as_printed": "Import-Export taxes.\nGoods and Service tax.\nForeign Travel tax.\nCentral exercise tax.",
+   "solution_steps": [
+    "Import-Export taxes.",
+    "Goods and Service tax.",
+    "Foreign Travel tax.",
+    "Central exercise tax."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T07:51:55+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — (2 marks)"
+    }
+   ],
+   "content_hash": "b50f5332091e72bb19db18f76b6b9481effc25b03a14c7716704caeca3347c1d"
+  },
+  {
+   "id": "soc-10-31-s3-q026",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the forms of money, financial institutions, and the role of finance in development; Also participate themselves (e.g., opening a bank account, etc.)."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Mention the major direct taxes.",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s3-q026",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s3-q026",
+     "pdf_page": 50,
+     "printed_page": 38,
+     "y": 453.994,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s3-q026-key",
+     "pdf_page": 116,
+     "printed_page": 104,
+     "y": 121.424,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T07:51:55+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T07:51:55+05:30",
+   "text_as_printed": "Mention the major direct taxes. (Average)",
+   "answer": {
+    "kind": "text",
+    "value": "Income tax.\nCorporate tax.\nWealth tax.\nStamp duty"
+   },
+   "answer_as_printed": "Income tax.\nCorporate tax.\nWealth tax.\nStamp duty",
+   "solution_steps": [
+    "Income tax.",
+    "Corporate tax.",
+    "Wealth tax.",
+    "Stamp duty"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T07:51:55+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — (2 marks)"
+    }
+   ],
+   "content_hash": "3cd432bb0e56984cbdf1226337b7cf070349aa7b934d69a527c362dd68f6af7a"
+  },
+  {
+   "id": "soc-10-31-s3-q027",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the forms of money, financial institutions, and the role of finance in development; Also participate themselves (e.g., opening a bank account, etc.)."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Why does government follow progressive tax policy while imposing Tax?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s3-q027",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s3-q027",
+     "pdf_page": 50,
+     "printed_page": 38,
+     "y": 469.834,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s3-q027-key",
+     "pdf_page": 116,
+     "printed_page": 104,
+     "y": 190.424,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T07:51:55+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T07:51:55+05:30",
+   "text_as_printed": "Why does government follow progressive tax policy while imposing Tax? (Difficult)",
+   "answer": {
+    "kind": "text",
+    "value": "The government imposes higher rates of taxes on high-income groups.\nLower rates of taxes on low-income groups.\nThe poor are exempted from income tax.\nA higher rate of taxes is imposed on luxury goods and services used by the rich.\nA lower rate of taxes on goods and services used by the common people."
+   },
+   "answer_as_printed": "The government imposes higher rates of taxes on high-income groups.\nLower rates of taxes on low-income groups.\nThe poor are exempted from income tax.\nA higher rate of taxes is imposed on luxury goods and services used by the rich.\nA lower rate of taxes on goods and services used by the common people.",
+   "solution_steps": [
+    "The government imposes higher rates of taxes on high-income groups.",
+    "Lower rates of taxes on low-income groups.",
+    "The poor are exempted from income tax.",
+    "A higher rate of taxes is imposed on luxury goods and services used by the rich.",
+    "A lower rate of taxes on goods and services used by the common people."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T07:51:55+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — (2 marks)"
+    }
+   ],
+   "content_hash": "c5127e2a07cec83f6aed7314e47d8cf65df5cc697ed8c0b041365549d5418a3a"
+  },
+  {
+   "id": "soc-10-31-s3-q028",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the forms of money, financial institutions, and the role of finance in development; Also participate themselves (e.g., opening a bank account, etc.)."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Mention the four kinds of fiscal deficit.",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s3-q028",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s3-q028",
+     "pdf_page": 50,
+     "printed_page": 38,
+     "y": 485.794,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s3-q028-key",
+     "pdf_page": 116,
+     "printed_page": 104,
+     "y": 273.254,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T07:51:55+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T07:51:55+05:30",
+   "text_as_printed": "Mention the four kinds of fiscal deficit. (Average)",
+   "answer": {
+    "kind": "text",
+    "value": "Budget Deficit,\nRevenue Deficit,\nFiscal Deficit and\nPrimary Deficit."
+   },
+   "answer_as_printed": "Budget Deficit,\nRevenue Deficit,\nFiscal Deficit and\nPrimary Deficit.",
+   "solution_steps": [
+    "Budget Deficit,",
+    "Revenue Deficit,",
+    "Fiscal Deficit and",
+    "Primary Deficit."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T07:51:55+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — (2 marks)"
+    }
+   ],
+   "content_hash": "c031cec37e0b0023d154afcb6acee8f411519fa3a87879989e70212a27536bd4"
+  },
+  {
+   "id": "soc-10-31-s4-q029",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the forms of money, financial institutions, and the role of finance in development; Also participate themselves (e.g., opening a bank account, etc.)."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What are the differences between Public finance and Personal finance?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s4-q029",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s4-q029",
+     "pdf_page": 50,
+     "printed_page": 38,
+     "y": 518.794,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s4-q029-key",
+     "pdf_page": 116,
+     "printed_page": 104,
+     "y": 356.054,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T07:51:55+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T07:51:55+05:30",
+   "text_as_printed": "What are the differences between Public finance and Personal finance? (June 2015, Exam 2-2024, 2017) (Difficult)",
+   "prior_appearances": [
+    {
+     "as_printed": "June 2015",
+     "year": "2015"
+    },
+    {
+     "as_printed": "Exam 2-2024",
+     "year": "2024"
+    },
+    {
+     "as_printed": "2017",
+     "year": "2017"
+    }
+   ],
+   "answer": {
+    "kind": "text",
+    "value": "Private Finance\nIncome and expenditure of one person or one family.\nCalculate income and then spend it accordingly.\nTransactions are kept confidential.\nIndividual or a family saves money, it will supplement their prosperity\nPublic Finance\nRelates to the income and expenditure of the government.\nCalculates its expenditure first and then adjusts its income.\nPublic financial matters are discussed in the legislative houses.\nIf Government saves money, growth is stunted."
+   },
+   "answer_as_printed": "Private Finance\nIncome and expenditure of one person or one family.\nCalculate income and then spend it accordingly.\nTransactions are kept confidential.\nIndividual or a family saves money, it will supplement their prosperity\nPublic Finance\nRelates to the income and expenditure of the government.\nCalculates its expenditure first and then adjusts its income.\nPublic financial matters are discussed in the legislative houses.\nIf Government saves money, growth is stunted.",
+   "solution_steps": [
+    "Income and expenditure of one person or one family.",
+    "Calculate income and then spend it accordingly.",
+    "Transactions are kept confidential.",
+    "Individual or a family saves money, it will supplement their prosperity",
+    "Relates to the income and expenditure of the government.",
+    "Calculates its expenditure first and then adjusts its income.",
+    "Public financial matters are discussed in the legislative houses.",
+    "If Government saves money, growth is stunted."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T07:51:55+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — (3/4 marks)"
+    }
+   ],
+   "content_hash": "cda6410d9a132853f70b3c9eb81f8842a7d9563cd572ab733031fe9c4c8f19b8"
+  },
+  {
+   "id": "soc-10-31-s4-q030",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the forms of money, financial institutions, and the role of finance in development; Also participate themselves (e.g., opening a bank account, etc.)."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What are the sources of non-tax revenue of the central government?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s4-q030",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s4-q030",
+     "pdf_page": 50,
+     "printed_page": 38,
+     "y": 550.594,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s4-q030-key",
+     "pdf_page": 116,
+     "printed_page": 104,
+     "y": 507.874,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T07:51:55+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T07:51:55+05:30",
+   "text_as_printed": "What are the sources of non-tax revenue of the central government? (2015, 2023, 2016, 2019, 2023, 2024) (Average)",
+   "prior_appearances": [
+    {
+     "as_printed": "2015",
+     "year": "2015"
+    },
+    {
+     "as_printed": "2023",
+     "year": "2023"
+    },
+    {
+     "as_printed": "2016",
+     "year": "2016"
+    },
+    {
+     "as_printed": "2019",
+     "year": "2019"
+    },
+    {
+     "as_printed": "2023",
+     "year": "2023"
+    },
+    {
+     "as_printed": "2024",
+     "year": "2024"
+    }
+   ],
+   "answer": {
+    "kind": "text",
+    "value": "Non-tax revenue sources of the central government\nNet profit earned by the Reserve Bank of India.\nProfit generated by Indian Railways.\nProfit of Post and Telecommunications.\nRevenue of Public Sector Industries.\nRevenue by Coins and Mints.\nVarious types of fees & penalties etc."
+   },
+   "answer_as_printed": "Non-tax revenue sources of the central government\nNet profit earned by the Reserve Bank of India.\nProfit generated by Indian Railways.\nProfit of Post and Telecommunications.\nRevenue of Public Sector Industries.\nRevenue by Coins and Mints.\nVarious types of fees & penalties etc.",
+   "solution_steps": [
+    "Net profit earned by the Reserve Bank of India.",
+    "Profit generated by Indian Railways.",
+    "Profit of Post and Telecommunications.",
+    "Revenue of Public Sector Industries.",
+    "Revenue by Coins and Mints.",
+    "Various types of fees & penalties etc."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T07:51:55+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — (3/4 marks)"
+    }
+   ],
+   "content_hash": "4d7dbf57e21c0908ea11fefaa2c686b2c08be4f31bf888c7899cc50a2236ad3b"
+  },
+  {
+   "id": "soc-10-31-s4-q031",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the forms of money, financial institutions, and the role of finance in development; Also participate themselves (e.g., opening a bank account, etc.)."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Explain the differences between direct and indirect taxes.",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s4-q031",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s4-q031",
+     "pdf_page": 50,
+     "printed_page": 38,
+     "y": 598.114,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s4-q031-key",
+     "pdf_page": 116,
+     "printed_page": 104,
+     "y": 605.674,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T07:51:55+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T07:51:55+05:30",
+   "text_as_printed": "Explain the differences between direct and indirect taxes. (Difficult)",
+   "answer": {
+    "kind": "text",
+    "value": "Direct Taxes\nTax is paid by an individual on whom it is imposed.\nIncome tax.\nCorporate tax.\nWealth tax.\nStamp duty.\nIndirect Taxes\nBurden of tax is transferable to others.\nImport-Export taxes.\nGoods and Service tax.\nForeign Travel tax.\nCentral exercise tax"
+   },
+   "answer_as_printed": "Direct Taxes\nTax is paid by an individual on whom it is imposed.\nIncome tax.\nCorporate tax.\nWealth tax.\nStamp duty.\nIndirect Taxes\nBurden of tax is transferable to others.\nImport-Export taxes.\nGoods and Service tax.\nForeign Travel tax.\nCentral exercise tax",
+   "solution_steps": [
+    "Tax is paid by an individual on whom it is imposed.",
+    "Income tax.",
+    "Corporate tax.",
+    "Wealth tax.",
+    "Stamp duty.",
+    "Burden of tax is transferable to others.",
+    "Import-Export taxes.",
+    "Goods and Service tax.",
+    "Foreign Travel tax.",
+    "Central exercise tax"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T07:51:55+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — (3/4 marks)"
+    }
+   ],
+   "content_hash": "36f99e66114b936170465c6de13b216a23e9e9e8ff79f0001383131e5192f63c"
+  },
+  {
+   "id": "soc-10-31-s4-q032",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the forms of money, financial institutions, and the role of finance in development; Also participate themselves (e.g., opening a bank account, etc.)."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Explain the importance of Public finance.",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s4-q032",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s4-q032",
+     "pdf_page": 50,
+     "printed_page": 38,
+     "y": 614.074,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s4-q032-key",
+     "pdf_page": 116,
+     "printed_page": 104,
+     "y": 784.98,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T07:51:55+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T07:51:55+05:30",
+   "text_as_printed": "Explain the importance of Public finance. (June 2017 June 2023, Exam 1-2024, Exam 3-2024,2016) (Average)",
+   "prior_appearances": [
+    {
+     "as_printed": "June 2017 June 2023",
+     "year": "2017"
+    },
+    {
+     "as_printed": "Exam 1-2024",
+     "year": "2024"
+    },
+    {
+     "as_printed": "Exam 3-2024",
+     "year": "2024"
+    },
+    {
+     "as_printed": "2016",
+     "year": "2016"
+    }
+   ],
+   "answer": {
+    "kind": "text",
+    "value": "Government manages public finance according to fiscal policy.\nManaged keeping in mind the progress of the nation.\nFormulates methods to equitably distribute the country’s wealth.\nTries to see all the people live comfortably.\nNation’s progress can be achieved.\nPolicies enhance the public expenditure in priority areas.\nBalanced growth in all spheres of the economy.\nEradicate poverty and unemployment.\nTo establish financial stability."
+   },
+   "answer_as_printed": "Government manages public finance according to fiscal policy.\nManaged keeping in mind the progress of the nation.\nFormulates methods to equitably distribute the country’s wealth.\nTries to see all the people live comfortably.\nNation’s progress can be achieved.\nPolicies enhance the public expenditure in priority areas.\nBalanced growth in all spheres of the economy.\nEradicate poverty and unemployment.\nTo establish financial stability.",
+   "solution_steps": [
+    "Government manages public finance according to fiscal policy.",
+    "Managed keeping in mind the progress of the nation.",
+    "Formulates methods to equitably distribute the country’s wealth.",
+    "Tries to see all the people live comfortably.",
+    "Nation’s progress can be achieved.",
+    "Policies enhance the public expenditure in priority areas.",
+    "Balanced growth in all spheres of the economy.",
+    "Eradicate poverty and unemployment.",
+    "To establish financial stability."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T07:51:55+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — (3/4 marks)"
+    }
+   ],
+   "content_hash": "ac0cb9cb92be073f1501d10b57d8e03a1781cd7cf9f4d0afd60df7ef5bcd47ad"
+  },
+  {
+   "id": "soc-10-31-s4-q033",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the forms of money, financial institutions, and the role of finance in development; Also participate themselves (e.g., opening a bank account, etc.)."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "List out the planned expenditures of the central government.",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s4-q033",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s4-q033",
+     "pdf_page": 50,
+     "printed_page": 38,
+     "y": 645.784,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-31-s4-q033-key",
+     "pdf_page": 117,
+     "printed_page": 105,
+     "y": 149.024,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T07:51:55+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T07:51:55+05:30",
+   "text_as_printed": "List out the planned expenditures of the central government. (Difficult)",
+   "answer": {
+    "kind": "text",
+    "value": "The following expenses are made in the plan expenditure of the central government.\n1.Financial services – Agriculture, industry, rural development etc.\n2.Social services – Education, health, family welfare, housing, social welfare\n3.General services – Expenditure on maintenance of peace, law & order"
+   },
+   "answer_as_printed": "The following expenses are made in the plan expenditure of the central government.\n1.Financial services – Agriculture, industry, rural development etc.\n2.Social services – Education, health, family welfare, housing, social welfare\n3.General services – Expenditure on maintenance of peace, law & order",
+   "solution_steps": [
+    "1.Financial services – Agriculture, industry, rural development etc.",
+    "2.Social services – Education, health, family welfare, housing, social welfare",
+    "3.General services – Expenditure on maintenance of peace, law & order"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T07:51:55+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — (3/4 marks)"
+    }
+   ],
+   "content_hash": "b2efab7fee78908145ce51668029971d92d1fe8a984cae62cf9b0b0453452dd6"
+  }
+ ],
+ "pending_summary": {}
+}
