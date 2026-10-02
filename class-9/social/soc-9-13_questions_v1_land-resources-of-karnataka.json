@@ -1,0 +1,1840 @@
+{
+ "contract_version": "1.7",
+ "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
+ "procedure_file": "extraction_procedure_social_addendum_v1.3_social science Classes 6-10 on top of procedure v2.md",
+ "machine_name": "soc-9-13_questions",
+ "version": 1,
+ "changelog": "v1 extraction — batch-01 — class-9-social",
+ "amendments_applied": [],
+ "unit_state": "EXTRACTED",
+ "review_ready": false,
+ "count_gate": {
+  "reference": 21,
+  "reference_source": "audited",
+  "extracted": 21,
+  "paired": 21,
+  "flagged": 3,
+  "gaps": [],
+  "duplicated_numbers": [],
+  "quota_table": "difficulty_only",
+  "second_method": {
+   "method": "printed difficulty distribution table",
+   "extracted": 21,
+   "agrees": true
+  },
+  "pass": true,
+  "note": "printed difficulty table 6/10/5=21 DISAGREES with per-question tags 6/9/5 (source defect, tags win v2 §6; register difficulty-table-vs-tags); flagged counts answer-level flags; all carry the structural marks flag (addendum §4.5)."
+ },
+ "extraction": {
+  "source_file": "9thSS-EM-LBARevised_1787047914.pdf",
+  "source_ref_prefix": "9thSS-EM-LBARevised_1787047914.pdf",
+  "pdf_pages": [
+   39,
+   40,
+   116,
+   117
+  ],
+  "printed_page_offset": -13,
+  "method_notes": [
+   "Offset -13. Q: q1-4 pdf39 (folio26, shared w/ ch12 tail IV), q5-21 pdf40 (folio27). A: q1-15 pdf116 (folio103, shares head with ch12 q23 map), q16-21 pdf117 (folio104, tail-> ch14 Economics).",
+   "Sections I mcq(1-8) / II vsa(9-14) / III sa(15-21). 21 questions. NO MAP in ch13 (difficulty table 21 = q1-21).",
+   "SUBJECT-MAP CORRECTION: subject_map_class-9_v1.csv has has_map=yes for ch13 -- INCORRECT. ch13 has no 'Locate on map'/section IV; the 'IV. Locate' on shared pdf39 belongs to ch12. pdf117 has 0 images. Only ch12 is a map chapter in this run.",
+   "DIFFICULTY: per-q tags E6/A9/D5 + q13 UNTAGGED vs printed table E6/A10/D5 (q13 would be the 10th average). Tags win; q13 'no difficulty tag' flag. register difficulty-table-vs-tags.",
+   "q11/q12 KEY CONTENT WATCH: q11 asks sugarcane factors but key names 'coffee and areca nut'; q12 asks coffee requirements but key names 'tea and rubber'. Factors are plausible but the example crops named don't match the stem's crop. Stored verbatim by number; flagged for review (see SRCFLAG, confirmed by blind read).",
+   "q15 answer heading 'Importance of Agriculture:' + 8 points (points 4 & 7 both foreign-exchange -> source redundancy, verbatim). q16 lead + 5 land-use patterns. q21 table->SUB (4 agriculture types + examples).",
+   "PRINTED TYPOS verbatim (render-confirmed pdf39/40): q2 'forthis' (merged), q6 'the the' (dup), q8 'lorgest' (largest), q19 'importantant' (important).",
+   "MCQ reworded keys (auto 'printed typo' flag): q2 'Commercial Agriculture'~opt C 'Commercial crop'; q3 'November - December'~'November-December'; q5 'Rich in Nutrients'~opt A 'It is highly nutritious'. Letters kept.",
+   "MARKS: none printed -> all null+unassigned+structural flag (§4.5)."
+  ],
+  "notation_summary": {
+   "render_tokens": 0,
+   "latex_tokens": 0,
+   "damage_flags": []
+  },
+  "excluded_objects": [],
+  "inline_excluded_count": 0,
+  "figure_references": []
+ },
+ "stimuli": [],
+ "questions": [
+  {
+   "id": "soc-9-13-s1-q001",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 7,
+     "text_as_printed": "Lists Karnataka's geographical location, physical divisions, diversity, and resources. Provides a comprehensive picture of sources of development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The district with the highest cultivated land in the state is:",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s1-q001",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s1-q001",
+     "pdf_page": 39,
+     "printed_page": 26,
+     "y": 590.568556,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s1-q001-key",
+     "pdf_page": 116,
+     "printed_page": 103,
+     "y": 71.92803,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-02T21:56:46+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-02T21:56:46+05:30",
+   "text_as_printed": "The district with the highest cultivated land in the state is: (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Vijayapura"
+    },
+    {
+     "id": "B",
+     "text": "Tumakuru"
+    },
+    {
+     "id": "C",
+     "text": "Belagavi"
+    },
+    {
+     "id": "D",
+     "text": "Kalaburagi"
+    }
+   ],
+   "answer_as_printed": "D) Kalaburagi",
+   "answer": {
+    "kind": "option",
+    "option_id": "D"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-02T21:56:46+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "763ba0f7ceae3294e1f4c90c399ff35b7d65a329484e787603029a6912e1df3b"
+  },
+  {
+   "id": "soc-9-13-s1-q002",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 7,
+     "text_as_printed": "Lists Karnataka's geographical location, physical divisions, diversity, and resources. Provides a comprehensive picture of sources of development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Cotton is an example forthis type of agriculture",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s1-q002",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s1-q002",
+     "pdf_page": 39,
+     "printed_page": 26,
+     "y": 620.448576,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s1-q002-key",
+     "pdf_page": 116,
+     "printed_page": 103,
+     "y": 86.808027,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-02T21:56:46+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-02T21:56:46+05:30",
+   "text_as_printed": "Cotton is an example forthis type of agriculture (A)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Food crop"
+    },
+    {
+     "id": "B",
+     "text": "Plantation crop"
+    },
+    {
+     "id": "C",
+     "text": "Commercial crop"
+    },
+    {
+     "id": "D",
+     "text": "Mixed crop"
+    }
+   ],
+   "answer_as_printed": "C) Commercial Agriculture",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-02T21:56:46+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text differs from option by a printed typo",
+     "why_not_corrected": "letter C kept (addendum §4.1); key text 'Commercial Agriculture' vs option C 'Commercial crop' differ by a source typo; spelling needs subject knowledge (v2 §1)",
+     "suggested": "C (letter kept)"
+    }
+   ],
+   "content_hash": "4b2949b19f2e7f80723dde441d6db0539172ed55d76e8975ae7ed714aca188ed"
+  },
+  {
+   "id": "soc-9-13-s1-q003",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "D",
+   "learning_outcomes": [
+    {
+     "number": 7,
+     "text_as_printed": "Lists Karnataka's geographical location, physical divisions, diversity, and resources. Provides a comprehensive picture of sources of development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The period of Rabi Crop is",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s1-q003",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s1-q003",
+     "pdf_page": 39,
+     "printed_page": 26,
+     "y": 650.20857,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s1-q003-key",
+     "pdf_page": 116,
+     "printed_page": 103,
+     "y": 101.688036,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-02T21:56:46+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-02T21:56:46+05:30",
+   "text_as_printed": "The period of Rabi Crop is (D)",
+   "options": [
+    {
+     "id": "A",
+     "text": "August- September"
+    },
+    {
+     "id": "B",
+     "text": "March-April"
+    },
+    {
+     "id": "C",
+     "text": "November-December"
+    },
+    {
+     "id": "D",
+     "text": "February-June"
+    }
+   ],
+   "answer_as_printed": "C) November - December",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-02T21:56:46+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text differs from option by a printed typo",
+     "why_not_corrected": "letter C kept (addendum §4.1); key text 'November - December' vs option C 'November-December' differ by a source typo; spelling needs subject knowledge (v2 §1)",
+     "suggested": "C (letter kept)"
+    }
+   ],
+   "content_hash": "f92eedf7a31dda8f2e1d4cd2b640660251ea84ec85bb83bf645d3d621775ab32"
+  },
+  {
+   "id": "soc-9-13-s1-q004",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 7,
+     "text_as_printed": "Lists Karnataka's geographical location, physical divisions, diversity, and resources. Provides a comprehensive picture of sources of development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The grain known as the 'Queen of Grains' is:",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s1-q004",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s1-q004",
+     "pdf_page": 39,
+     "printed_page": 26,
+     "y": 680.088545,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s1-q004-key",
+     "pdf_page": 116,
+     "printed_page": 103,
+     "y": 116.688036,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-02T21:56:46+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-02T21:56:46+05:30",
+   "text_as_printed": "The grain known as the 'Queen of Grains' is: (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Jowar"
+    },
+    {
+     "id": "B",
+     "text": "Maize"
+    },
+    {
+     "id": "C",
+     "text": "Ragi"
+    },
+    {
+     "id": "D",
+     "text": "Wheat"
+    }
+   ],
+   "answer_as_printed": "B) Maize",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-02T21:56:46+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "23b8df76ccc7dc16a905b5b23325454b1458dc97f4a1839f46cd82eadb6c8b8e"
+  },
+  {
+   "id": "soc-9-13-s1-q005",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "D",
+   "learning_outcomes": [
+    {
+     "number": 7,
+     "text_as_printed": "Lists Karnataka's geographical location, physical divisions, diversity, and resources. Provides a comprehensive picture of sources of development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Recently people are increasingly using ragi because:",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s1-q005",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s1-q005",
+     "pdf_page": 40,
+     "printed_page": 27,
+     "y": 27.048564,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s1-q005-key",
+     "pdf_page": 116,
+     "printed_page": 103,
+     "y": 315.648023,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-02T21:56:46+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-02T21:56:46+05:30",
+   "text_as_printed": "Recently people are increasingly using ragi because: (D)",
+   "options": [
+    {
+     "id": "A",
+     "text": "It is highly nutritious"
+    },
+    {
+     "id": "B",
+     "text": "It is available at a low price"
+    },
+    {
+     "id": "C",
+     "text": "It is grown extensively"
+    },
+    {
+     "id": "D",
+     "text": "It is available everywhere"
+    }
+   ],
+   "answer_as_printed": "A) Rich in Nutrients",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-02T21:56:46+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text differs from option by a printed typo",
+     "why_not_corrected": "letter A kept (addendum §4.1); key text 'Rich in Nutrients' vs option A 'It is highly nutritious' differ by a source typo; spelling needs subject knowledge (v2 §1)",
+     "suggested": "A (letter kept)"
+    }
+   ],
+   "content_hash": "d1c5df08909f15aa6bcc3d147b5eff2ab7e4fce58e3c0a2516fe8680e8a400ca"
+  },
+  {
+   "id": "soc-9-13-s1-q006",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 7,
+     "text_as_printed": "Lists Karnataka's geographical location, physical divisions, diversity, and resources. Provides a comprehensive picture of sources of development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Which district is the the largest producer of sugarcane in Karnataka",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s1-q006",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s1-q006",
+     "pdf_page": 40,
+     "printed_page": 27,
+     "y": 71.808567,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s1-q006-key",
+     "pdf_page": 116,
+     "printed_page": 103,
+     "y": 330.528021,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-02T21:56:46+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-02T21:56:46+05:30",
+   "text_as_printed": "Which district is the the largest producer of sugarcane in Karnataka (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Bagalkot"
+    },
+    {
+     "id": "B",
+     "text": "Belagavi"
+    },
+    {
+     "id": "C",
+     "text": "Mandya"
+    },
+    {
+     "id": "D",
+     "text": "Vijayapura"
+    }
+   ],
+   "answer_as_printed": "B) Belagavi",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-02T21:56:46+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "0bd70e3ea32a141d9df651ae7ce4a29e5e1823b71f5e872d52faebbeaaea51a9"
+  },
+  {
+   "id": "soc-9-13-s1-q007",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 7,
+     "text_as_printed": "Lists Karnataka's geographical location, physical divisions, diversity, and resources. Provides a comprehensive picture of sources of development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Which Crop that contains an intoxicating substance 'Nicotine'",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s1-q007",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s1-q007",
+     "pdf_page": 40,
+     "printed_page": 27,
+     "y": 116.68857,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s1-q007-key",
+     "pdf_page": 116,
+     "printed_page": 103,
+     "y": 345.40804,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-02T21:56:46+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-02T21:56:46+05:30",
+   "text_as_printed": "Which Crop that contains an intoxicating substance 'Nicotine' (A)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Tobacco"
+    },
+    {
+     "id": "B",
+     "text": "Coffee"
+    },
+    {
+     "id": "C",
+     "text": "Sugarcane"
+    },
+    {
+     "id": "D",
+     "text": "Jowar"
+    }
+   ],
+   "answer_as_printed": "A) Tobacco",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-02T21:56:46+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "6de56de4f75406e462245e750615f190b3f15f3db29eb0e8b7a26cef865f1416"
+  },
+  {
+   "id": "soc-9-13-s1-q008",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 7,
+     "text_as_printed": "Lists Karnataka's geographical location, physical divisions, diversity, and resources. Provides a comprehensive picture of sources of development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Which district that grows the lorgest producer of cotton in Karnataka",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s1-q008",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s1-q008",
+     "pdf_page": 40,
+     "printed_page": 27,
+     "y": 146.448564,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s1-q008-key",
+     "pdf_page": 116,
+     "printed_page": 103,
+     "y": 360.40804,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-02T21:56:46+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-02T21:56:46+05:30",
+   "text_as_printed": "Which district that grows the lorgest producer of cotton in Karnataka (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Dharwad"
+    },
+    {
+     "id": "B",
+     "text": "Haveri"
+    },
+    {
+     "id": "C",
+     "text": "Gadag"
+    },
+    {
+     "id": "D",
+     "text": "Ballari"
+    }
+   ],
+   "answer_as_printed": "B) Haveri",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-02T21:56:46+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "e55bc20aaed3f95b0b823714c47c2dddafef6323902ce9616495824608114aa9"
+  },
+  {
+   "id": "soc-9-13-s2-q009",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 7,
+     "text_as_printed": "Lists Karnataka's geographical location, physical divisions, diversity, and resources. Provides a comprehensive picture of sources of development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Which crop is called 'the traditional crop of Old Mysore'?",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s2-q009",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s2-q009",
+     "pdf_page": 40,
+     "printed_page": 27,
+     "y": 206.088568,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s2-q009-key",
+     "pdf_page": 116,
+     "printed_page": 103,
+     "y": 405.048032,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-02T21:56:46+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-02T21:56:46+05:30",
+   "text_as_printed": "Which crop is called 'the traditional crop of Old Mysore'? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "Ragi: Ragi is a major millet crop grown in Karnataka, known for its high nutritional value."
+   },
+   "answer_as_printed": "Ragi: Ragi is a major millet crop grown in Karnataka, known for its high nutritional value.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-02T21:56:46+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "50a7bf1f1810c207b00d8e4fae495c6f47edb30dfa6d4dddff963c32f9f555af"
+  },
+  {
+   "id": "soc-9-13-s2-q010",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "D",
+   "learning_outcomes": [
+    {
+     "number": 7,
+     "text_as_printed": "Lists Karnataka's geographical location, physical divisions, diversity, and resources. Provides a comprehensive picture of sources of development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What are the major challenges of growing cotton?",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s2-q010",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s2-q010",
+     "pdf_page": 40,
+     "printed_page": 27,
+     "y": 220.968565,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s2-q010-key",
+     "pdf_page": 116,
+     "printed_page": 103,
+     "y": 434.928052,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-02T21:56:46+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-02T21:56:46+05:30",
+   "text_as_printed": "What are the major challenges of growing cotton? (D)",
+   "answer": {
+    "kind": "text",
+    "value": "Pest and Disease Control: Integrated pest management and organic methods are used to control pests and diseases in agriculture."
+   },
+   "answer_as_printed": "Pest and Disease Control: Integrated pest management and organic methods are used to control pests and diseases in agriculture.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-02T21:56:46+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "e6912a027f74a378f8ebf840e3d9d7b8a6cd749712a3ee304df79bd9bd338eb9"
+  },
+  {
+   "id": "soc-9-13-s2-q011",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 7,
+     "text_as_printed": "Lists Karnataka's geographical location, physical divisions, diversity, and resources. Provides a comprehensive picture of sources of development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Mention the natural factors required for the cultivation of sugarcane.",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s2-q011",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s2-q011",
+     "pdf_page": 40,
+     "printed_page": 27,
+     "y": 235.968565,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s2-q011-key",
+     "pdf_page": 116,
+     "printed_page": 103,
+     "y": 464.688047,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-02T21:56:46+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-02T21:56:46+05:30",
+   "text_as_printed": "Mention the natural factors required for the cultivation of sugarcane. (A)",
+   "answer": {
+    "kind": "text",
+    "value": "Sandy Loam, Red Soil, High Temperature, Heavy Rainfall: These conditions are ideal for growing crops like coffee and areca nut in Karnataka."
+   },
+   "answer_as_printed": "Sandy Loam, Red Soil, High Temperature, Heavy Rainfall: These conditions are ideal for growing crops like coffee and areca nut in Karnataka.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-02T21:56:46+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text does not address question",
+     "why_not_corrected": "q11 asks the natural factors for SUGARCANE cultivation, but the printed key states the conditions are 'ideal for growing crops like coffee and areca nut' — it names coffee/areca, not sugarcane. Stored verbatim by number; the key's stated crops do not match the stem's crop (independent blind read confirmed).",
+     "suggested": "review — printed key gives factors attributed to coffee/areca nut, not the sugarcane the stem asks"
+    }
+   ],
+   "content_hash": "82da4eb22ce42e5f8ed2ae07e3dbee228d7bbea67aba95414b294ea50b6c89c3"
+  },
+  {
+   "id": "soc-9-13-s2-q012",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 7,
+     "text_as_printed": "Lists Karnataka's geographical location, physical divisions, diversity, and resources. Provides a comprehensive picture of sources of development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Identify the specific requirements of Coffee plantation.",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s2-q012",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s2-q012",
+     "pdf_page": 40,
+     "printed_page": 27,
+     "y": 250.848562,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s2-q012-key",
+     "pdf_page": 116,
+     "printed_page": 103,
+     "y": 494.688047,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-02T21:56:46+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-02T21:56:46+05:30",
+   "text_as_printed": "Identify the specific requirements of Coffee plantation. (A)",
+   "answer": {
+    "kind": "text",
+    "value": "Clayey Soil, Slopes, Shady Trees, High Density of Trees: These are suitable for plantation crops like tea and rubber."
+   },
+   "answer_as_printed": "Clayey Soil, Slopes, Shady Trees, High Density of Trees: These are suitable for plantation crops like tea and rubber.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-02T21:56:46+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text does not address question",
+     "why_not_corrected": "q12 asks the specific requirements of COFFEE plantation, but the printed key says the conditions are 'suitable for plantation crops like tea and rubber' — it names tea/rubber, not coffee. Stored verbatim by number; the factors (clayey soil, slopes, shady trees) fit coffee but the key names the wrong example crops (independent blind read confirmed).",
+     "suggested": "review — printed key names tea/rubber, not the coffee the stem asks"
+    }
+   ],
+   "content_hash": "20a9e40aef1c22481abca2d382bce147b8032de22f0abd280fa187fe2065749b"
+  },
+  {
+   "id": "soc-9-13-s2-q013",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": 7,
+     "text_as_printed": "Lists Karnataka's geographical location, physical divisions, diversity, and resources. Provides a comprehensive picture of sources of development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Explain, why Karnataka is known as the 'Land of Coffee'.",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s2-q013",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s2-q013",
+     "pdf_page": 40,
+     "printed_page": 27,
+     "y": 265.72856,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s2-q013-key",
+     "pdf_page": 116,
+     "printed_page": 103,
+     "y": 524.448042,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-02T21:56:46+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-02T21:56:46+05:30",
+   "answer": {
+    "kind": "text",
+    "value": "Karnataka grows very high-quality coffee, which is well known for its taste and aroma. Because of this, it has a good market both within the country and abroad. Hence, Karnataka is famous as the “Land of Coffee.”"
+   },
+   "answer_as_printed": "Karnataka grows very high-quality coffee, which is well known for its taste and aroma. Because of this, it has a good market both within the country and abroad. Hence, Karnataka is famous as the “Land of Coffee.”",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-02T21:56:46+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the question prints no difficulty tag; assigning one needs subject judgement — left unassigned for review",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "8e2335e98aff437a00b941f4e4cc5748f41bf2f31bd5bf5bc3b4dd9ec66fe5db"
+  },
+  {
+   "id": "soc-9-13-s2-q014",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 7,
+     "text_as_printed": "Lists Karnataka's geographical location, physical divisions, diversity, and resources. Provides a comprehensive picture of sources of development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Which market is Nippani in Belagavi district famous for?",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s2-q014",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s2-q014",
+     "pdf_page": 40,
+     "printed_page": 27,
+     "y": 280.608557,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s2-q014-key",
+     "pdf_page": 116,
+     "printed_page": 103,
+     "y": 569.208036,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-02T21:56:46+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-02T21:56:46+05:30",
+   "text_as_printed": "Which market is Nippani in Belagavi district famous for? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "Nippani in Belagavi district is very famous in the country for the beedi tobacco market."
+   },
+   "answer_as_printed": "Nippani in Belagavi district is very famous in the country for the beedi tobacco market.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-02T21:56:46+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "d60029f64344cfc946af71e47597d66a45d11e5e1d2c54572f4302a309c91289"
+  },
+  {
+   "id": "soc-9-13-s3-q015",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "D",
+   "learning_outcomes": [
+    {
+     "number": 7,
+     "text_as_printed": "Lists Karnataka's geographical location, physical divisions, diversity, and resources. Provides a comprehensive picture of sources of development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "'Agriculture is the backbone of economic development'. Analyse.",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s3-q015",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s3-q015",
+     "pdf_page": 40,
+     "printed_page": 27,
+     "y": 325.488554,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s3-q015-key",
+     "pdf_page": 116,
+     "printed_page": 103,
+     "y": 642.048032,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-02T21:56:46+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-02T21:56:46+05:30",
+   "text_as_printed": "'Agriculture is the backbone of economic development'. Analyse. (D)",
+   "answer": {
+    "kind": "text",
+    "value": "Importance of Agriculture:\nIt is an ancient primary occupation.\nIt is a livelihood-based activity.\nIt generates employment opportunities.\nIt increases foreign exchange earnings.\nIt serves as a source of income.\nIt supplies raw materials to industries.\nIt contributes to foreign exchange earnings.\nIt supports economic progress."
+   },
+   "answer_as_printed": "Importance of Agriculture:\nIt is an ancient primary occupation.\nIt is a livelihood-based activity.\nIt generates employment opportunities.\nIt increases foreign exchange earnings.\nIt serves as a source of income.\nIt supplies raw materials to industries.\nIt contributes to foreign exchange earnings.\nIt supports economic progress.",
+   "solution_steps": [
+    "It is an ancient primary occupation.",
+    "It is a livelihood-based activity.",
+    "It generates employment opportunities.",
+    "It increases foreign exchange earnings.",
+    "It serves as a source of income.",
+    "It supplies raw materials to industries.",
+    "It contributes to foreign exchange earnings.",
+    "It supports economic progress."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-02T21:56:46+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "b7881ef6fe0f6b177660c004ce2af1c5bc47181a5eb3df7e4106905aa298fd62"
+  },
+  {
+   "id": "soc-9-13-s3-q016",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 7,
+     "text_as_printed": "Lists Karnataka's geographical location, physical divisions, diversity, and resources. Provides a comprehensive picture of sources of development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Explain land use? Describe the patterns of land use.",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s3-q016",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s3-q016",
+     "pdf_page": 40,
+     "printed_page": 27,
+     "y": 340.368574,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s3-q016-key",
+     "pdf_page": 117,
+     "printed_page": 104,
+     "y": 79.368563,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-02T21:56:46+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-02T21:56:46+05:30",
+   "text_as_printed": "Explain land use? Describe the patterns of land use. (A)",
+   "answer": {
+    "kind": "text",
+    "value": "The use of land for different purposes is called “land use.”\nNet sown area\nForest area\nLand not available for cultivation\nOther uncultivated land\nFallow land"
+   },
+   "answer_as_printed": "The use of land for different purposes is called “land use.”\nNet sown area\nForest area\nLand not available for cultivation\nOther uncultivated land\nFallow land",
+   "solution_steps": [
+    "The use of land for different purposes is called “land use.”",
+    "Net sown area",
+    "Forest area",
+    "Land not available for cultivation",
+    "Other uncultivated land",
+    "Fallow land"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-02T21:56:46+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "1f95f31ff3d1c8858d0e46625c651a9cefa697c5cae3f3d36e119cde3c4c041d"
+  },
+  {
+   "id": "soc-9-13-s3-q017",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 7,
+     "text_as_printed": "Lists Karnataka's geographical location, physical divisions, diversity, and resources. Provides a comprehensive picture of sources of development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Write a note about maize, the “Queen of grains”.",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s3-q017",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s3-q017",
+     "pdf_page": 40,
+     "printed_page": 27,
+     "y": 355.368574,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s3-q017-key",
+     "pdf_page": 117,
+     "printed_page": 104,
+     "y": 223.248572,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-02T21:56:46+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-02T21:56:46+05:30",
+   "text_as_printed": "Write a note about maize, the “Queen of grains”. (A)",
+   "answer": {
+    "kind": "text",
+    "value": "Maize, known globally as the “Queen of Cereals,” is an important food crop of South Karnataka and is also grown as fodder for cattle. It is a tropical crop and requires moderate rainfall, dry climate, and black, red, and loamy mixed soil."
+   },
+   "answer_as_printed": "Maize, known globally as the “Queen of Cereals,” is an important food crop of South Karnataka and is also grown as fodder for cattle. It is a tropical crop and requires moderate rainfall, dry climate, and black, red, and loamy mixed soil.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-02T21:56:46+05:30",
+    "basis": "printed one-line answer, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "7e6034b92623fc5aad573a4597cfdb7979e3e1e29be194aaba0119ccf338656b"
+  },
+  {
+   "id": "soc-9-13-s3-q018",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 7,
+     "text_as_printed": "Lists Karnataka's geographical location, physical divisions, diversity, and resources. Provides a comprehensive picture of sources of development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Explain, the main characteristics of mixed farming.",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s3-q018",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s3-q018",
+     "pdf_page": 40,
+     "printed_page": 27,
+     "y": 370.248572,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s3-q018-key",
+     "pdf_page": 117,
+     "printed_page": 104,
+     "y": 309.288573,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-02T21:56:46+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-02T21:56:46+05:30",
+   "text_as_printed": "Explain, the main characteristics of mixed farming. (A)",
+   "answer": {
+    "kind": "text",
+    "value": "Along with growing crops, activities like animal husbandry, sericulture, sheep rearing, poultry farming, beekeeping, and fishing are carried out—these are the characteristics of mixed farming."
+   },
+   "answer_as_printed": "Along with growing crops, activities like animal husbandry, sericulture, sheep rearing, poultry farming, beekeeping, and fishing are carried out—these are the characteristics of mixed farming.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-02T21:56:46+05:30",
+    "basis": "printed one-line answer, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "62a7370cead3f24cbcb3e5f0aa6408dacd9f452f38cd2efe2df25b111595ca58"
+  },
+  {
+   "id": "soc-9-13-s3-q019",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 7,
+     "text_as_printed": "Lists Karnataka's geographical location, physical divisions, diversity, and resources. Provides a comprehensive picture of sources of development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "List the importantant geographical factors needed to grow Paddy",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s3-q019",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s3-q019",
+     "pdf_page": 40,
+     "printed_page": 27,
+     "y": 385.128569,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s3-q019-key",
+     "pdf_page": 117,
+     "printed_page": 104,
+     "y": 395.20857,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-02T21:56:46+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-02T21:56:46+05:30",
+   "text_as_printed": "List the importantant geographical factors needed to grow Paddy (A)",
+   "answer": {
+    "kind": "text",
+    "value": "It is a tropical crop\nRequires temperature of 27°C and rainfall of 150 to 200 cm\nLoamy and clayey mixed soil\nLevel land"
+   },
+   "answer_as_printed": "It is a tropical crop\nRequires temperature of 27°C and rainfall of 150 to 200 cm\nLoamy and clayey mixed soil\nLevel land",
+   "solution_steps": [
+    "It is a tropical crop",
+    "Requires temperature of 27°C and rainfall of 150 to 200 cm",
+    "Loamy and clayey mixed soil",
+    "Level land"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-02T21:56:46+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "5009df7b0e9d776b96b5f7b1b4ddfd84799792fbcff02fae2e03bada9ca78d2c"
+  },
+  {
+   "id": "soc-9-13-s3-q020",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "D",
+   "learning_outcomes": [
+    {
+     "number": 7,
+     "text_as_printed": "Lists Karnataka's geographical location, physical divisions, diversity, and resources. Provides a comprehensive picture of sources of development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Describe the geographical conditions required for Ragi cultivation.",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s3-q020",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s3-q020",
+     "pdf_page": 40,
+     "printed_page": 27,
+     "y": 400.008543,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s3-q020-key",
+     "pdf_page": 117,
+     "printed_page": 104,
+     "y": 496.128569,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-02T21:56:46+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-02T21:56:46+05:30",
+   "text_as_printed": "Describe the geographical conditions required for Ragi cultivation. (D)",
+   "answer": {
+    "kind": "text",
+    "value": "Ragi is an important tropical food crop. It requires high temperature (25 to 30°C) and moderate rainfall (50 to 100 cm). It grows well in red soil, sandy mixed soil, and clayey soil. The southern plateau region of Karnataka is famous for ragi cultivation."
+   },
+   "answer_as_printed": "Ragi is an important tropical food crop. It requires high temperature (25 to 30°C) and moderate rainfall (50 to 100 cm). It grows well in red soil, sandy mixed soil, and clayey soil. The southern plateau region of Karnataka is famous for ragi cultivation.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-02T21:56:46+05:30",
+    "basis": "printed one-line answer, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "35f0a4f6dee7c9572164cc6f2bc947475af5bce7f8aed64760cffe1dfad6401d"
+  },
+  {
+   "id": "soc-9-13-s3-q021",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 7,
+     "text_as_printed": "Lists Karnataka's geographical location, physical divisions, diversity, and resources. Provides a comprehensive picture of sources of development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Fill the following table with appropriate information (Sl. No. / Types of Agriculture / Examples of Crops):",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s3-q021",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s3-q021",
+     "pdf_page": 40,
+     "printed_page": 27,
+     "y": 414.888564,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-13-s3-q021-key",
+     "pdf_page": 117,
+     "printed_page": 104,
+     "y": 582.168547,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-02T21:56:46+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-02T21:56:46+05:30",
+   "text_as_printed": "Fill the following table with appropriate information (Sl. No. / Types of Agriculture / Examples of Crops): (A)",
+   "answer": {
+    "kind": "text",
+    "value": "Subsistence Agriculture\nPaddy, Ragi, Jowar, Wheat\nPlantation Agriculture\nCoffee, Tea, Rubber\nCommercial Agriculture\nTobacco, Cotton, Sugarcane, Flax\nMixed Agriculture\nCrops along with sheep, poultry, beekeeping, etc."
+   },
+   "answer_as_printed": "Subsistence Agriculture\nPaddy, Ragi, Jowar, Wheat\nPlantation Agriculture\nCoffee, Tea, Rubber\nCommercial Agriculture\nTobacco, Cotton, Sugarcane, Flax\nMixed Agriculture\nCrops along with sheep, poultry, beekeeping, etc.",
+   "solution_steps": [
+    "Paddy, Ragi, Jowar, Wheat",
+    "Coffee, Tea, Rubber",
+    "Tobacco, Cotton, Sugarcane, Flax",
+    "Crops along with sheep, poultry, beekeeping, etc."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-02T21:56:46+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "a48c8cc3176e8641a5080f6af6bb2c3ec0e86b9bab2bf7c528aa68a7c3a4593d"
+  }
+ ],
+ "pending_summary": {}
+}
