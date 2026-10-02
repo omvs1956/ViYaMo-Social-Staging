@@ -1,0 +1,1852 @@
+{
+ "contract_version": "1.7",
+ "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
+ "procedure_file": "extraction_procedure_social_addendum_v1.2_social science Classes 6-10 on top of procedure v2.md",
+ "machine_name": "soc-10-33_questions",
+ "version": 1,
+ "changelog": "v1 extraction — batch-02 — class-10-social",
+ "amendments_applied": [],
+ "unit_state": "EXTRACTED",
+ "review_ready": false,
+ "count_gate": {
+  "reference": 21,
+  "reference_source": "audited",
+  "extracted": 21,
+  "paired": 21,
+  "flagged": 3,
+  "gaps": [],
+  "duplicated_numbers": [],
+  "quota_table": "difficulty_only",
+  "second_method": {
+   "method": "printed difficulty distribution table",
+   "extracted": 21,
+   "agrees": true
+  },
+  "pass": true,
+  "note": "printed difficulty table 5/11/5=21 DISAGREES with per-question tags 3/14/4 (source defect, tags win v2 §6; register difficulty-table-vs-tags); flagged counts answer-level flags; all carry the structural marks flag (addendum §4.5)."
+ },
+ "extraction": {
+  "source_file": "10thSS-EM-LBA-Revised_1786620693.pdf",
+  "source_ref_prefix": "10thSS-EM-LBA-Revised_1786620693.pdf",
+  "pdf_pages": [
+   52,
+   53,
+   120,
+   121
+  ],
+  "printed_page_offset": -12,
+  "method_notes": [
+   "offset -12; ch33 is the LAST question chapter. Question side: q1-2 on pdf52 (folio 40), q3-21 on pdf53 (folio 41). Answer side at the very end, pdf 120-121 (I q1-4, II q5-12, III q13-16 on 120 [q16 bullets span to 121]; q17-21 on 121).",
+   "sections I mcq(1-4) / II vsa(5-12, 'a sentence each') / III sa(13-18, 'four sentences') / IV la(19-21, '(2/3 marks questions)'). labels I/II/III/IV sequential — no section-label defect.",
+   "KEY-LETTER-TEXT-DISAGREEMENT (review-blocking, q2): printed key 'A) District Consumer disputes Redressal Commission' — letter A names option A ('State...') but the key text matches option D ('District...') exactly. social §4.1 (letter governs) vs key-letter-text rule (text governs) conflict -> builder asserts NO answer, pending unclassified, coordinator call. Correct answer by content is District (<1 crore -> District Commission, cf q17) i.e. option D; letter A is the misprint.",
+   "q1 key 'D) March 15' vs option D '15th March' (date-format difference) and q4 key 'C) Mumbai (1965)' vs option C 'Mumbai' (extra year) -> letter kept (addendum §4.1), flagged 'key text differs from option by a printed typo'. q3 clean.",
+   "DUPLICATE ANSWER TEXT (note, not a gate issue): q6 ('need of consumer protection') and q10 ('main aim of the Consumer Movement') print the IDENTICAL key 'Protection to consumers against exploitation by the producers and traders.' Distinct question text -> distinct content_hash; answers kept verbatim as printed for both.",
+   "q14 answer: 2 top-level bullets + 4 indented sub-items (Kennedy's four rights under the 2nd bullet) -> flattened to 6 sequential solution_steps in reading order (nesting not modelled; content/order preserved).",
+   "q16 answer spans pdf120->121 (first 2 bullets on 120, remaining 3 on 121) = 5 bullets.",
+   "DIFFICULTY-TABLE-VS-TAGS defect (register): printed table Easy 5 / Average 11 / Difficult 5 (total 21); per-question tags Easy 3 / Average 14 / Difficult 4. differs on several (-2 E, +3 A, -1 D); tags win (v2 §6).",
+   "key-lines self-count (relay 10): mcq 1-4 option keys; vsa 5-12 single-value; q13 5, q14 6 (2+4 nested), q15 4, q16 5, q17 3, q18 4, q19 6, q20 8, q21 9 bullets; no drops.",
+   "sections I/II/III no marks, IV '(2/3 marks questions)' -> all 21 marks null+flag (addendum §4.5)."
+  ],
+  "notation_summary": {
+   "render_tokens": 0,
+   "latex_tokens": 0,
+   "damage_flags": []
+  },
+  "excluded_objects": [],
+  "inline_excluded_count": 0,
+  "figure_references": []
+ },
+ "stimuli": [],
+ "questions": [
+  {
+   "id": "soc-10-33-s1-q001",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-33",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Understands consumer protection laws and the protection of consumer rights. Lists various consumer forums."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "World Consumer Day is celebrated every year on",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s1-q001",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s1-q001",
+     "pdf_page": 52,
+     "printed_page": 40,
+     "y": 141.704,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s1-q001-key",
+     "pdf_page": 120,
+     "printed_page": 108,
+     "y": 329.174,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T08:13:39+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T08:13:39+05:30",
+   "text_as_printed": "World Consumer Day is celebrated every year on (April-2024, June-2024) (Easy)",
+   "prior_appearances": [
+    {
+     "as_printed": "April-2024",
+     "year": "2024"
+    },
+    {
+     "as_printed": "June-2024",
+     "year": "2024"
+    }
+   ],
+   "options": [
+    {
+     "id": "A",
+     "text": "15th September"
+    },
+    {
+     "id": "B",
+     "text": "15th January"
+    },
+    {
+     "id": "C",
+     "text": "15th December"
+    },
+    {
+     "id": "D",
+     "text": "15th March"
+    }
+   ],
+   "answer_as_printed": "D) March 15",
+   "answer": {
+    "kind": "option",
+    "option_id": "D"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T08:13:39+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text differs from option by a printed typo",
+     "why_not_corrected": "letter D kept (addendum §4.1); key text 'March 15' vs option D '15th March' differ by a source typo; spelling needs subject knowledge (v2 §1)",
+     "suggested": "D (letter kept)"
+    }
+   ],
+   "content_hash": "271c9580fa2118ee0d02668fa1fda27b128daf4b481ae211fa5ce008ac100110"
+  },
+  {
+   "id": "soc-10-33-s1-q002",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-33",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Understands consumer protection laws and the protection of consumer rights. Lists various consumer forums."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Complaints where the compensation amount is less than one crore should be filed in",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s1-q002",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s1-q002",
+     "pdf_page": 52,
+     "printed_page": 40,
+     "y": 157.664,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s1-q002-key",
+     "pdf_page": 120,
+     "printed_page": 108,
+     "y": 342.974,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T08:13:39+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T08:13:39+05:30",
+   "text_as_printed": "Complaints where the compensation amount is less than one crore should be filed in (2024, 2025) (Average)",
+   "prior_appearances": [
+    {
+     "as_printed": "2024",
+     "year": "2024"
+    },
+    {
+     "as_printed": "2025",
+     "year": "2025"
+    }
+   ],
+   "options": [
+    {
+     "id": "A",
+     "text": "State Consumer disputes Redressal Commission"
+    },
+    {
+     "id": "B",
+     "text": "National Consumer disputes Redressal Commission"
+    },
+    {
+     "id": "C",
+     "text": "Taluk Consumer disputes Redressal Commission"
+    },
+    {
+     "id": "D",
+     "text": "District Consumer disputes Redressal Commission"
+    }
+   ],
+   "answer_as_printed": "A) District Consumer disputes Redressal Commission",
+   "answer": {
+    "kind": "option",
+    "option_id": "D"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "f66693dfe06b468998be93306987e2e6c5f0159f5a67589a7a93a950a762a122",
+   "source_corrections": [
+    {
+     "field": "answer",
+     "printed": "A) District Consumer disputes Redressal Commission",
+     "corrected": "D",
+     "basis": "letter+text key: printed letter A names option A ('State...') but the key text matches option D ('District...') verbatim; content confirms D (complaints < 1 crore -> District Commission, cf this chapter's q17 key); resolved to the text-named option, printed letter A recorded as a source misprint; coordinator to confirm letter-vs-text governance (social §4.1 letter-governs conflicts)"
+    }
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T08:13:39+05:30",
+    "basis": "letter/text disagreement resolved to the option named verbatim by the key text (option D); printed letter A treated as source misprint; coordinator to confirm governance"
+   }
+  },
+  {
+   "id": "soc-10-33-s1-q003",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-33",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Understands consumer protection laws and the protection of consumer rights. Lists various consumer forums."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The king of the market is",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s1-q003",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s1-q003",
+     "pdf_page": 53,
+     "printed_page": 41,
+     "y": 70.404,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s1-q003-key",
+     "pdf_page": 120,
+     "printed_page": 108,
+     "y": 356.774,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T08:13:39+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T08:13:39+05:30",
+   "text_as_printed": "The king of the market is (Average)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Consumer"
+    },
+    {
+     "id": "B",
+     "text": "Producer"
+    },
+    {
+     "id": "C",
+     "text": "Supplier"
+    },
+    {
+     "id": "D",
+     "text": "Distributor"
+    }
+   ],
+   "answer_as_printed": "A) Consumer",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T08:13:39+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "39e8cefb4bb4da5900b96d6665f6d45bd661a40b6e1489399f41684be26c5435"
+  },
+  {
+   "id": "soc-10-33-s1-q004",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-33",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Understands consumer protection laws and the protection of consumer rights. Lists various consumer forums."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "‘AWARE’ movement was first started at",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s1-q004",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s1-q004",
+     "pdf_page": 53,
+     "printed_page": 41,
+     "y": 99.728,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s1-q004-key",
+     "pdf_page": 120,
+     "printed_page": 108,
+     "y": 370.574,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T08:13:39+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T08:13:39+05:30",
+   "text_as_printed": "‘AWARE’ movement was first started at (Average)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Chennai"
+    },
+    {
+     "id": "B",
+     "text": "Kolkata"
+    },
+    {
+     "id": "C",
+     "text": "Mumbai"
+    },
+    {
+     "id": "D",
+     "text": "Bengaluru"
+    }
+   ],
+   "answer_as_printed": "C) Mumbai (1965)",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T08:13:39+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text differs from option by a printed typo",
+     "why_not_corrected": "letter C kept (addendum §4.1); key text 'Mumbai (1965)' vs option C 'Mumbai' differ by a source typo; spelling needs subject knowledge (v2 §1)",
+     "suggested": "C (letter kept)"
+    }
+   ],
+   "content_hash": "d07200359fcb5c162a5cb8a877b2eff2600c79228b21315e28c85865af1f498c"
+  },
+  {
+   "id": "soc-10-33-s2-q005",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-33",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Understands consumer protection laws and the protection of consumer rights. Lists various consumer forums."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is teleshopping?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s2-q005",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s2-q005",
+     "pdf_page": 53,
+     "printed_page": 41,
+     "y": 151.184,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s2-q005-key",
+     "pdf_page": 120,
+     "printed_page": 108,
+     "y": 398.174,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T08:13:39+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T08:13:39+05:30",
+   "text_as_printed": "What is teleshopping? (April-2024) (Average)",
+   "prior_appearances": [
+    {
+     "as_printed": "April-2024",
+     "year": "2024"
+    }
+   ],
+   "answer": {
+    "kind": "text",
+    "value": "The consumer can sit at home and directly buy the goods from the traders is called `Teleshopping'"
+   },
+   "answer_as_printed": "The consumer can sit at home and directly buy the goods from the traders is called `Teleshopping'",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T08:13:39+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "985f9cc892348f9e7239fda335f334e4e0417841b687b2c8eece469d8c46ec15"
+  },
+  {
+   "id": "soc-10-33-s2-q006",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-33",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Understands consumer protection laws and the protection of consumer rights. Lists various consumer forums."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is the need of consumer protection?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s2-q006",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s2-q006",
+     "pdf_page": 53,
+     "printed_page": 41,
+     "y": 167.024,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s2-q006-key",
+     "pdf_page": 120,
+     "printed_page": 108,
+     "y": 411.974,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T08:13:39+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T08:13:39+05:30",
+   "text_as_printed": "What is the need of consumer protection? (Difficult)",
+   "answer": {
+    "kind": "text",
+    "value": "Protection to consumers against exploitation by the producers and traders."
+   },
+   "answer_as_printed": "Protection to consumers against exploitation by the producers and traders.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T08:13:39+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "b999f2f1ece77d8c3a77a9bdb96d9b7b100a920b96a44d83cb52f09f5f273d25"
+  },
+  {
+   "id": "soc-10-33-s2-q007",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-33",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Understands consumer protection laws and the protection of consumer rights. Lists various consumer forums."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Who appoints the Chairman of the District Consumer Commission?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s2-q007",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s2-q007",
+     "pdf_page": 53,
+     "printed_page": 41,
+     "y": 182.864,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s2-q007-key",
+     "pdf_page": 120,
+     "printed_page": 108,
+     "y": 425.774,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T08:13:39+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T08:13:39+05:30",
+   "text_as_printed": "Who appoints the Chairman of the District Consumer Commission? (Average)",
+   "answer": {
+    "kind": "text",
+    "value": "State Government"
+   },
+   "answer_as_printed": "State Government",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T08:13:39+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "22cbe3441bd69f3a3959cf794b7dc2fe6fbbd2c169556838a91d34e2588b7a0a"
+  },
+  {
+   "id": "soc-10-33-s2-q008",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-33",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Understands consumer protection laws and the protection of consumer rights. Lists various consumer forums."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "In which year did the Consumer Protection Act come into force?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s2-q008",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s2-q008",
+     "pdf_page": 53,
+     "printed_page": 41,
+     "y": 198.704,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s2-q008-key",
+     "pdf_page": 120,
+     "printed_page": 108,
+     "y": 439.574,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T08:13:39+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T08:13:39+05:30",
+   "text_as_printed": "In which year did the Consumer Protection Act come into force? (September-2022) (Average)",
+   "prior_appearances": [
+    {
+     "as_printed": "September-2022",
+     "year": "2022"
+    }
+   ],
+   "answer": {
+    "kind": "text",
+    "value": "1986 (Now it’s not in existence)"
+   },
+   "answer_as_printed": "1986 (Now it’s not in existence)",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T08:13:39+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "6c78bf9f4048305742ff78d2eb15e0ee5abe64d07dc53bc4d51890e57b0673a4"
+  },
+  {
+   "id": "soc-10-33-s2-q009",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-33",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Understands consumer protection laws and the protection of consumer rights. Lists various consumer forums."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Who is called a consumer?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s2-q009",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s2-q009",
+     "pdf_page": 53,
+     "printed_page": 41,
+     "y": 214.664,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s2-q009-key",
+     "pdf_page": 120,
+     "printed_page": 108,
+     "y": 453.394,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T08:13:39+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T08:13:39+05:30",
+   "text_as_printed": "Who is called a consumer? (Easy)",
+   "answer": {
+    "kind": "text",
+    "value": "Those who use the goods and services are called consumer."
+   },
+   "answer_as_printed": "Those who use the goods and services are called consumer.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T08:13:39+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "48143f238ec327e0d01528c063eca8a86c41e0d1ff42e2fd17839058cc1a3358"
+  },
+  {
+   "id": "soc-10-33-s2-q010",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-33",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Understands consumer protection laws and the protection of consumer rights. Lists various consumer forums."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is the main aim of the Consumer Movement?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s2-q010",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s2-q010",
+     "pdf_page": 53,
+     "printed_page": 41,
+     "y": 230.504,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s2-q010-key",
+     "pdf_page": 120,
+     "printed_page": 108,
+     "y": 467.194,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T08:13:39+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T08:13:39+05:30",
+   "text_as_printed": "What is the main aim of the Consumer Movement? (Difficult)",
+   "answer": {
+    "kind": "text",
+    "value": "Protection to consumers against exploitation by the producers and traders."
+   },
+   "answer_as_printed": "Protection to consumers against exploitation by the producers and traders.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T08:13:39+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "04783eb737f94926e335be8edfff667bef8f93c7b56c404082d682bbe9d35391"
+  },
+  {
+   "id": "soc-10-33-s2-q011",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-33",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Understands consumer protection laws and the protection of consumer rights. Lists various consumer forums."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is the Right of every Consumer?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s2-q011",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s2-q011",
+     "pdf_page": 53,
+     "printed_page": 41,
+     "y": 246.344,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s2-q011-key",
+     "pdf_page": 120,
+     "printed_page": 108,
+     "y": 480.994,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T08:13:39+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T08:13:39+05:30",
+   "text_as_printed": "What is the Right of every Consumer? (Easy)",
+   "answer": {
+    "kind": "text",
+    "value": "Safeguard interests of consumers and protect their rights."
+   },
+   "answer_as_printed": "Safeguard interests of consumers and protect their rights.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T08:13:39+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "94e9e4a3e0c9b0c4b373fbabb65dbf0d30f1dfbd369eab06905a2ede0d5218f5"
+  },
+  {
+   "id": "soc-10-33-s2-q012",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-33",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Understands consumer protection laws and the protection of consumer rights. Lists various consumer forums."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What do you call a person who gives goods or services for money?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s2-q012",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s2-q012",
+     "pdf_page": 53,
+     "printed_page": 41,
+     "y": 262.184,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s2-q012-key",
+     "pdf_page": 120,
+     "printed_page": 108,
+     "y": 494.794,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T08:13:39+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T08:13:39+05:30",
+   "text_as_printed": "What do you call a person who gives goods or services for money? (Average)",
+   "answer": {
+    "kind": "text",
+    "value": "Provider/Producer."
+   },
+   "answer_as_printed": "Provider/Producer.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T08:13:39+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "64f6ab3b49bd254c50633fc57b5f4b32121072f73512b60479fc4f7cd3865fed"
+  },
+  {
+   "id": "soc-10-33-s3-q013",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-33",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Understands consumer protection laws and the protection of consumer rights. Lists various consumer forums."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What are the reasons for exploitation of consumers?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s3-q013",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s3-q013",
+     "pdf_page": 53,
+     "printed_page": 41,
+     "y": 295.334,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s3-q013-key",
+     "pdf_page": 120,
+     "printed_page": 108,
+     "y": 522.394,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T08:13:39+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T08:13:39+05:30",
+   "text_as_printed": "What are the reasons for exploitation of consumers? (Average)",
+   "answer": {
+    "kind": "text",
+    "value": "Role played of middlemen.\nPrice fixation of goods by middlemen.\nGap between consumer and producer.\nTele shopping\nNo direct trade between consumer and producer"
+   },
+   "answer_as_printed": "Role played of middlemen.\nPrice fixation of goods by middlemen.\nGap between consumer and producer.\nTele shopping\nNo direct trade between consumer and producer",
+   "solution_steps": [
+    "Role played of middlemen.",
+    "Price fixation of goods by middlemen.",
+    "Gap between consumer and producer.",
+    "Tele shopping",
+    "No direct trade between consumer and producer"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T08:13:39+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "69c2fa2d9d7fb21363e1e810ae0da92abf0eb2ca00f136e1eb181e49f4ce4bc1"
+  },
+  {
+   "id": "soc-10-33-s3-q014",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-33",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Understands consumer protection laws and the protection of consumer rights. Lists various consumer forums."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Why is World Consumer Rights Day celebrated every year on 15th March?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s3-q014",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s3-q014",
+     "pdf_page": 53,
+     "printed_page": 41,
+     "y": 311.174,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s3-q014-key",
+     "pdf_page": 120,
+     "printed_page": 108,
+     "y": 605.194,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T08:13:39+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T08:13:39+05:30",
+   "text_as_printed": "Why is World Consumer Rights Day celebrated every year on 15th March? (June-2024, June- 2020) (Average)",
+   "prior_appearances": [
+    {
+     "as_printed": "June-2024",
+     "year": "2024"
+    },
+    {
+     "as_printed": "June- 2020",
+     "year": "2020"
+    }
+   ],
+   "answer": {
+    "kind": "text",
+    "value": "In the history of World Consumers’ Movement, March 15, 1962 is an important day.\nIn that day, the president John F. Kennedy gave the American consumers four basic rights:\nRight to safety,\nRight to choose,\nRight to information,\nRight to be heard"
+   },
+   "answer_as_printed": "In the history of World Consumers’ Movement, March 15, 1962 is an important day.\nIn that day, the president John F. Kennedy gave the American consumers four basic rights:\nRight to safety,\nRight to choose,\nRight to information,\nRight to be heard",
+   "solution_steps": [
+    "In the history of World Consumers’ Movement, March 15, 1962 is an important day.",
+    "In that day, the president John F. Kennedy gave the American consumers four basic rights:",
+    "Right to safety,",
+    "Right to choose,",
+    "Right to information,",
+    "Right to be heard"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T08:13:39+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "9a2d1c589c4e235f8c0c70491de2e9bea3bcfb1ee5964a76baf572810000dfa1"
+  },
+  {
+   "id": "soc-10-33-s3-q015",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-33",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Understands consumer protection laws and the protection of consumer rights. Lists various consumer forums."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Name the four basic rights given by John F. Kennedy to consumers of America?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s3-q015",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s3-q015",
+     "pdf_page": 53,
+     "printed_page": 41,
+     "y": 342.974,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s3-q015-key",
+     "pdf_page": 120,
+     "printed_page": 108,
+     "y": 52.404,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T08:13:39+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T08:13:39+05:30",
+   "text_as_printed": "Name the four basic rights given by John F. Kennedy to consumers of America? (Difficult)",
+   "answer": {
+    "kind": "text",
+    "value": "Right to safety\nRight to Choose\nRight to Information\nRight to be heard."
+   },
+   "answer_as_printed": "Right to safety\nRight to Choose\nRight to Information\nRight to be heard.",
+   "solution_steps": [
+    "Right to safety",
+    "Right to Choose",
+    "Right to Information",
+    "Right to be heard."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T08:13:39+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "2ebbcaeafe882bf423b480e13e4ce9d99f10fd0a42dba5254c6e5b3dfdfb82de"
+  },
+  {
+   "id": "soc-10-33-s3-q016",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-33",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Understands consumer protection laws and the protection of consumer rights. Lists various consumer forums."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What are the problems faced by consumer?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s3-q016",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s3-q016",
+     "pdf_page": 53,
+     "printed_page": 41,
+     "y": 358.814,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s3-q016-key",
+     "pdf_page": 120,
+     "printed_page": 108,
+     "y": 770.82,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T08:13:39+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T08:13:39+05:30",
+   "text_as_printed": "What are the problems faced by consumer? (Average)",
+   "answer": {
+    "kind": "text",
+    "value": "Charging excess to the commodities\nFalse weight and measures\nSelling of adulterated commodities\nCreation of artificial scarcity.\nIllegal hoarding."
+   },
+   "answer_as_printed": "Charging excess to the commodities\nFalse weight and measures\nSelling of adulterated commodities\nCreation of artificial scarcity.\nIllegal hoarding.",
+   "solution_steps": [
+    "Charging excess to the commodities",
+    "False weight and measures",
+    "Selling of adulterated commodities",
+    "Creation of artificial scarcity.",
+    "Illegal hoarding."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T08:13:39+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "c0d3433beb8c2b555b61ce5d7e305eb0def278fba1efbc54c9bfc31546b0681b"
+  },
+  {
+   "id": "soc-10-33-s3-q017",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-33",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Understands consumer protection laws and the protection of consumer rights. Lists various consumer forums."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Mention three stages of Consumer Disputes Redressal Commission.",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s3-q017",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s3-q017",
+     "pdf_page": 53,
+     "printed_page": 41,
+     "y": 374.654,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s3-q017-key",
+     "pdf_page": 121,
+     "printed_page": 109,
+     "y": 80.004,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T08:13:39+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T08:13:39+05:30",
+   "text_as_printed": "Mention three stages of Consumer Disputes Redressal Commission. (Difficult)",
+   "answer": {
+    "kind": "text",
+    "value": "District Commission. (Value of goods less than Rs. One Crore)\nState Commission. (More than One crore and less than Ten crores)\nNational Commission. (Complaints claim more than Ten crores)"
+   },
+   "answer_as_printed": "District Commission. (Value of goods less than Rs. One Crore)\nState Commission. (More than One crore and less than Ten crores)\nNational Commission. (Complaints claim more than Ten crores)",
+   "solution_steps": [
+    "District Commission. (Value of goods less than Rs. One Crore)",
+    "State Commission. (More than One crore and less than Ten crores)",
+    "National Commission. (Complaints claim more than Ten crores)"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T08:13:39+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "9505216effe34f94823a9d50d0a16d00512a19749f8b87ade07cbf0777031f08"
+  },
+  {
+   "id": "soc-10-33-s3-q018",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-33",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Understands consumer protection laws and the protection of consumer rights. Lists various consumer forums."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Write about the structure of District Consumer Disputes Redressal Commission?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s3-q018",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s3-q018",
+     "pdf_page": 53,
+     "printed_page": 41,
+     "y": 390.494,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s3-q018-key",
+     "pdf_page": 121,
+     "printed_page": 109,
+     "y": 135.224,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T08:13:39+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T08:13:39+05:30",
+   "text_as_printed": "Write about the structure of District Consumer Disputes Redressal Commission? (Average)",
+   "answer": {
+    "kind": "text",
+    "value": "There shall be a forum in each district.\nA qualified district judge nominated by the state government presides over the deliberations.\nIt entertains the complaints value of goods less than Rs. One Crore.\nThere shall be two members of whom one shall be a woman."
+   },
+   "answer_as_printed": "There shall be a forum in each district.\nA qualified district judge nominated by the state government presides over the deliberations.\nIt entertains the complaints value of goods less than Rs. One Crore.\nThere shall be two members of whom one shall be a woman.",
+   "solution_steps": [
+    "There shall be a forum in each district.",
+    "A qualified district judge nominated by the state government presides over the deliberations.",
+    "It entertains the complaints value of goods less than Rs. One Crore.",
+    "There shall be two members of whom one shall be a woman."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T08:13:39+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "c128dc4ac5569b69e761d23a3ec3bc2ac9c2cd158bd7e9a2fbaab3d2e9d2b1fd"
+  },
+  {
+   "id": "soc-10-33-s4-q019",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-33",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Understands consumer protection laws and the protection of consumer rights. Lists various consumer forums."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What are the main objectives of the Consumer Protection Act?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s4-q019",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s4-q019",
+     "pdf_page": 53,
+     "printed_page": 41,
+     "y": 423.614,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s4-q019-key",
+     "pdf_page": 121,
+     "printed_page": 109,
+     "y": 218.024,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T08:13:39+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T08:13:39+05:30",
+   "text_as_printed": "What are the main objectives of the Consumer Protection Act? (August-2024, June-2022, June-2023) (Average)",
+   "prior_appearances": [
+    {
+     "as_printed": "August-2024",
+     "year": "2024"
+    },
+    {
+     "as_printed": "June-2022",
+     "year": "2022"
+    },
+    {
+     "as_printed": "June-2023",
+     "year": "2023"
+    }
+   ],
+   "answer": {
+    "kind": "text",
+    "value": "Act accords importance for safety and quality.\nAvoiding production and sale of dangerous goods.\nPrevention of Trade Malpractices in the market.\nSupervision on Quality, Weights, Measures and Price.\nCompensating the Consumers in case of any problem arising.\nCreating awareness through Consumer Education."
+   },
+   "answer_as_printed": "Act accords importance for safety and quality.\nAvoiding production and sale of dangerous goods.\nPrevention of Trade Malpractices in the market.\nSupervision on Quality, Weights, Measures and Price.\nCompensating the Consumers in case of any problem arising.\nCreating awareness through Consumer Education.",
+   "solution_steps": [
+    "Act accords importance for safety and quality.",
+    "Avoiding production and sale of dangerous goods.",
+    "Prevention of Trade Malpractices in the market.",
+    "Supervision on Quality, Weights, Measures and Price.",
+    "Compensating the Consumers in case of any problem arising.",
+    "Creating awareness through Consumer Education."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T08:13:39+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — (2/3 marks questions)"
+    }
+   ],
+   "content_hash": "be6238075624de276a42c1f519a643d4c98ec164a85482d5a205fbf140d49dc4"
+  },
+  {
+   "id": "soc-10-33-s4-q020",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-33",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Understands consumer protection laws and the protection of consumer rights. Lists various consumer forums."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What are the rights given by Consumers Protection Act to the consumers? / How is consumers protection act protecting the rights of consumers?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s4-q020",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s4-q020",
+     "pdf_page": 53,
+     "printed_page": 41,
+     "y": 455.314,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s4-q020-key",
+     "pdf_page": 121,
+     "printed_page": 109,
+     "y": 314.654,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T08:13:39+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T08:13:39+05:30",
+   "text_as_printed": "What are the rights given by Consumers Protection Act to the consumers? / How is consumers protection act protecting the rights of consumers? (Average)",
+   "answer": {
+    "kind": "text",
+    "value": "Right to Protect against the marketing of hazardous to life and property.\nRight to Information.\nRight to Choice.\nRight to be Heard.\nRight to seek Redressal.\nRight to Consumer Education.\nRight to stop exploitation.\nRight to healthy environment to enhance the quality of life."
+   },
+   "answer_as_printed": "Right to Protect against the marketing of hazardous to life and property.\nRight to Information.\nRight to Choice.\nRight to be Heard.\nRight to seek Redressal.\nRight to Consumer Education.\nRight to stop exploitation.\nRight to healthy environment to enhance the quality of life.",
+   "solution_steps": [
+    "Right to Protect against the marketing of hazardous to life and property.",
+    "Right to Information.",
+    "Right to Choice.",
+    "Right to be Heard.",
+    "Right to seek Redressal.",
+    "Right to Consumer Education.",
+    "Right to stop exploitation.",
+    "Right to healthy environment to enhance the quality of life."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T08:13:39+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — (2/3 marks questions)"
+    }
+   ],
+   "content_hash": "350dd8390b206b4f0448e66b0845465a9b9776bbd68efd8ba03a2be2681fcf1d"
+  },
+  {
+   "id": "soc-10-33-s4-q021",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-33",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Understands consumer protection laws and the protection of consumer rights. Lists various consumer forums."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Mention the methods to be followed to file a case in a consumer commission/court?",
+   "source": "lba",
+   "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s4-q021",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s4-q021",
+     "pdf_page": 53,
+     "printed_page": 41,
+     "y": 502.954,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "10thSS-EM-LBA-Revised_1786620693.pdf#soc-10-33-s4-q021-key",
+     "pdf_page": 121,
+     "printed_page": 109,
+     "y": 438.854,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-02T08:13:39+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-02T08:13:39+05:30",
+   "text_as_printed": "Mention the methods to be followed to file a case in a consumer commission/court? (Average)",
+   "answer": {
+    "kind": "text",
+    "value": "There is no prescribed proforma to file a case.\nComplaint may be a typed one or hand written.\nComplaint should include the name of the person (complainant), Full address and Telephone Number.\nPerson or organisation against whom the complaint is made should be mentioned clearly with address.\nParticulars of the goods, the amount of loss should be specified clearly.\nThe bill or receipt should be enclosed.\nThere is no fees or stamp duty for the complaint.\nNo advocate or lawyer is required.\nThe consumer himself/ herself can argue."
+   },
+   "answer_as_printed": "There is no prescribed proforma to file a case.\nComplaint may be a typed one or hand written.\nComplaint should include the name of the person (complainant), Full address and Telephone Number.\nPerson or organisation against whom the complaint is made should be mentioned clearly with address.\nParticulars of the goods, the amount of loss should be specified clearly.\nThe bill or receipt should be enclosed.\nThere is no fees or stamp duty for the complaint.\nNo advocate or lawyer is required.\nThe consumer himself/ herself can argue.",
+   "solution_steps": [
+    "There is no prescribed proforma to file a case.",
+    "Complaint may be a typed one or hand written.",
+    "Complaint should include the name of the person (complainant), Full address and Telephone Number.",
+    "Person or organisation against whom the complaint is made should be mentioned clearly with address.",
+    "Particulars of the goods, the amount of loss should be specified clearly.",
+    "The bill or receipt should be enclosed.",
+    "There is no fees or stamp duty for the complaint.",
+    "No advocate or lawyer is required.",
+    "The consumer himself/ herself can argue."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-02T08:13:39+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — (2/3 marks questions)"
+    }
+   ],
+   "content_hash": "2c8abf64dda07234ceed59feac6d9407fd8507177e76a8c5ce5c89e0ef2298bb"
+  }
+ ],
+ "pending_summary": {}
+}
