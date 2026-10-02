@@ -1,0 +1,2679 @@
+{
+ "contract_version": "1.7",
+ "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
+ "procedure_file": "extraction_procedure_social_addendum_v1.3_social science Classes 6-10 on top of procedure v2.md",
+ "machine_name": "soc-9-23_questions",
+ "version": 1,
+ "changelog": "v1 extraction — batch-01 — class-9-social",
+ "amendments_applied": [],
+ "unit_state": "EXTRACTED",
+ "review_ready": false,
+ "count_gate": {
+  "reference": 31,
+  "reference_source": "audited",
+  "extracted": 31,
+  "paired": 31,
+  "flagged": 4,
+  "gaps": [],
+  "duplicated_numbers": [],
+  "quota_table": "difficulty_only",
+  "second_method": {
+   "method": "printed difficulty distribution table",
+   "extracted": 31,
+   "agrees": true
+  },
+  "pass": true,
+  "note": "printed difficulty table 9/7/15=31 DISAGREES with per-question tags 14/2/15 (source defect, tags win v2 §6; register difficulty-table-vs-tags); flagged counts answer-level flags; all carry the structural marks flag (addendum §4.5)."
+ },
+ "extraction": {
+  "source_file": "9thSS-EM-LBARevised_1787047914.pdf",
+  "source_ref_prefix": "9thSS-EM-LBARevised_1787047914.pdf",
+  "pdf_pages": [
+   60,
+   61,
+   147,
+   148,
+   149
+  ],
+  "printed_page_offset": -13,
+  "method_notes": [
+   "Offset -13. Q: q1-9 pdf60 (folio47), q10-31 pdf61 (folio48). A: q1-24 pdf147 (folio134, a-page shared with ch22 tail), q25-30 pdf148 (folio135), q31 pdf148->149 (q31 label on pdf148, content runs onto pdf149 head, shared with ch24 head). NO MAP (LO table no map-row; a-pages 147-149 0 images — re-verified per relay 06b). LO table text is copied from ch22 (national defense wording) though chapter is National Integration.",
+   "Sections I mcq(1-11)/II vsa(12-24)/III sa(25-28)/IV la(29-30)/V la(31). 31 questions. CLEAN question numbering (printed labels 1-31 sequential; ids = printed numbers).",
+   "DIFFICULTY: per-q tags E14/A2/D15 vs printed table E9/A7/D15 (D agrees; E+5, A-5 — large disagreement). tags win (v2 §6); register difficulty-table-vs-tags. All tags single-letter (E)/(A)/(D), clearly printed.",
+   "q2 KEY-LETTER-TEXT-DISAGREEMENT (§13.6, review-blocking, auto): printed key 'B) Republic Day' — letter B = option B 'Kannada Rajyotsava', but text 'Republic Day' = option A exactly. No answer asserted; reviewer decides (Republic Day = option A is the national festival; printed LETTER B is wrong).",
+   "DUPLICATE STEM q25 == q28 (conflicting keys, both kept by number): identical stem 'What are the factors that determine nationality?'. q25 key = factors list (on-topic, SUB); q28 key = definition of nationalism (SINGLE; does not list factors). Both flagged unclassified->category:duplicate-stem-conflicting-keys; q28 also key-text-does-not-address-question. Detected by stem cross-check.",
+   "MCQ key-text variants (letter kept, auto §4.1 flag; not registered): q3 'Nationals'~opt A 'Nationalists'; q10 'Sarva Dharma Samabhava (Equal respect for all religions)'~opt B 'Harmony of all religions' (synonym); q11 'Independence Day'~opt B 'Independence Day celebration'. q6/q7 case-only -> no flag.",
+   "STEM de-glue (text-layer dropped spaces; text de-glued, text_as_printed VERBATIM incl marker, hash recomputed — rev12): q25 'factorsthatdeterminenationality'->'factors that determine nationality'. Answer bullet markers 'o ' dropped from q26 steps (printed as 'o India is a secular nation.' -> 'India is a secular nation.').",
+   "ANSWER FORMS: MCQ 1-11 letter+text (q2 §13.6 null). VSA 12-24 single lines. III: 25/26/27 SUB, q28 SINGLE. IV: 29/30 SUB. V: 31 SUB.",
+   "MARKS: none printed -> all null+unassigned+structural flag (§4.5)."
+  ],
+  "notation_summary": {
+   "render_tokens": 0,
+   "latex_tokens": 0,
+   "damage_flags": []
+  },
+  "excluded_objects": [],
+  "inline_excluded_count": 0,
+  "figure_references": []
+ },
+ "stimuli": [],
+ "questions": [
+  {
+   "id": "soc-9-23-s1-q001",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-23",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Understands and describes the need for national defense and security, and demonstrates national unity."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The national bird of India is:",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s1-q001",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s1-q001",
+     "pdf_page": 60,
+     "printed_page": 47,
+     "y": 333.16857,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s1-q001-key",
+     "pdf_page": 147,
+     "printed_page": 134,
+     "y": 303.048567,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T01:03:46+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T01:03:46+05:30",
+   "text_as_printed": "The national bird of India is: (E)",
+   "section_signal": "I",
+   "options": [
+    {
+     "id": "A",
+     "text": "Peacock"
+    },
+    {
+     "id": "B",
+     "text": "Dove"
+    },
+    {
+     "id": "C",
+     "text": "Cuckoo"
+    },
+    {
+     "id": "D",
+     "text": "Parrot"
+    }
+   ],
+   "answer_as_printed": "A) Peacock",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-03T01:03:46+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "119f053d9fe115be87136f0b56f0e8aec17419f176dec19767f7ec149f1d2fee"
+  },
+  {
+   "id": "soc-9-23-s1-q002",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-23",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Understands and describes the need for national defense and security, and demonstrates national unity."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The national festival of India among the following is:",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s1-q002",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s1-q002",
+     "pdf_page": 60,
+     "printed_page": 47,
+     "y": 363.16857,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s1-q002-key",
+     "pdf_page": 147,
+     "printed_page": 134,
+     "y": 318.048567,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T01:03:46+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T01:03:46+05:30",
+   "text_as_printed": "The national festival of India among the following is: (E)",
+   "section_signal": "I",
+   "options": [
+    {
+     "id": "A",
+     "text": "Republic Day"
+    },
+    {
+     "id": "B",
+     "text": "Kannada Rajyotsava"
+    },
+    {
+     "id": "C",
+     "text": "Valmiki Jayanti"
+    },
+    {
+     "id": "D",
+     "text": "Teachers' Day"
+    }
+   ],
+   "answer_as_printed": "B) Republic Day",
+   "answer": {
+    "kind": "option",
+    "option_id": null
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text not among options",
+     "why_not_corrected": "the printed key is '2. B) Republic Day'. Letter B = option B 'Kannada Rajyotsava', but the key text names option A 'Republic Day' (exact match). Letter and key text name different options; no answer is asserted (key-letter-text-disagreement vocab 'key text not among options'); the reviewer decides which governs (addendum §13.6).",
+     "suggested": "A (by text; printed letter B='Kannada Rajyotsava' disagrees) — review"
+    }
+   ],
+   "content_hash": "68c1c4401be6ba9a4c97834266abfde59260badaeca6480e930e53f87ae3e7c7"
+  },
+  {
+   "id": "soc-9-23-s1-q003",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-23",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "D",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Understands and describes the need for national defense and security, and demonstrates national unity."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "People who consider the land they live in as their motherland, who have a sense of brotherhood and share equally in the happiness and sorrows of the nation are called",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s1-q003",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s1-q003",
+     "pdf_page": 60,
+     "printed_page": 47,
+     "y": 392.928587,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s1-q003-key",
+     "pdf_page": 147,
+     "printed_page": 134,
+     "y": 332.928564,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T01:03:46+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T01:03:46+05:30",
+   "text_as_printed": "People who consider the land they live in as their motherland, who have a sense of brotherhood and share equally in the happiness and sorrows of the nation are called (D)",
+   "section_signal": "I",
+   "options": [
+    {
+     "id": "A",
+     "text": "Nationalists"
+    },
+    {
+     "id": "B",
+     "text": "Internationalists"
+    },
+    {
+     "id": "C",
+     "text": "Regionalists"
+    },
+    {
+     "id": "D",
+     "text": "Indigenous"
+    }
+   ],
+   "answer_as_printed": "A) Nationals",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-03T01:03:46+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text differs from option by a printed typo",
+     "why_not_corrected": "letter A kept (addendum §4.1); key text 'Nationals' vs option A 'Nationalists' differ by a source typo; spelling needs subject knowledge (v2 §1)",
+     "suggested": "A (letter kept)"
+    }
+   ],
+   "content_hash": "f48bba1fdee369d24cef6ef758b79e74cf3cbb39a2c80d2268b5b4f6c62b348e"
+  },
+  {
+   "id": "soc-9-23-s1-q004",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-23",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Understands and describes the need for national defense and security, and demonstrates national unity."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Interfaith harmony is called",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s1-q004",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s1-q004",
+     "pdf_page": 60,
+     "printed_page": 47,
+     "y": 452.568556,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s1-q004-key",
+     "pdf_page": 147,
+     "printed_page": 134,
+     "y": 347.808561,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T01:03:46+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T01:03:46+05:30",
+   "text_as_printed": "Interfaith harmony is called (E)",
+   "section_signal": "I",
+   "options": [
+    {
+     "id": "A",
+     "text": "Nationalism"
+    },
+    {
+     "id": "B",
+     "text": "Secularism"
+    },
+    {
+     "id": "C",
+     "text": "Religious unity"
+    },
+    {
+     "id": "D",
+     "text": "National unity"
+    }
+   ],
+   "answer_as_printed": "B) Secularism",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-03T01:03:46+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "468314f9aafb031bc74aee740e239c1757cd368f7f129da98bb29a8f57429b85"
+  },
+  {
+   "id": "soc-9-23-s1-q005",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-23",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Understands and describes the need for national defense and security, and demonstrates national unity."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "National flower of India is",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s1-q005",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s1-q005",
+     "pdf_page": 60,
+     "printed_page": 47,
+     "y": 482.448576,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s1-q005-key",
+     "pdf_page": 147,
+     "printed_page": 134,
+     "y": 362.808561,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T01:03:46+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T01:03:46+05:30",
+   "text_as_printed": "National flower of India is (E)",
+   "section_signal": "I",
+   "options": [
+    {
+     "id": "A",
+     "text": "Rose"
+    },
+    {
+     "id": "B",
+     "text": "Sampige"
+    },
+    {
+     "id": "C",
+     "text": "Lotus"
+    },
+    {
+     "id": "D",
+     "text": "Dundumalige"
+    }
+   ],
+   "answer_as_printed": "C) Lotus",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-03T01:03:46+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "cfd242cda10b64815496e3671eedf0978452c6210b52aa3fd6665643ac865715"
+  },
+  {
+   "id": "soc-9-23-s1-q006",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-23",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Understands and describes the need for national defense and security, and demonstrates national unity."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Factors that enhance national unity",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s1-q006",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s1-q006",
+     "pdf_page": 60,
+     "printed_page": 47,
+     "y": 512.20857,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s1-q006-key",
+     "pdf_page": 147,
+     "printed_page": 134,
+     "y": 377.688582,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T01:03:46+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T01:03:46+05:30",
+   "text_as_printed": "Factors that enhance national unity (E)",
+   "section_signal": "I",
+   "options": [
+    {
+     "id": "A",
+     "text": "Religious conflicts"
+    },
+    {
+     "id": "B",
+     "text": "Separatist movements"
+    },
+    {
+     "id": "C",
+     "text": "Secularism and democracy"
+    },
+    {
+     "id": "D",
+     "text": "Communalism"
+    }
+   ],
+   "answer_as_printed": "C) Secularism and Democracy",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-03T01:03:46+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "4e4422c5185cd3442507508ff5430e38a3e7a9efd36dbb172e81651ba6ff1c8d"
+  },
+  {
+   "id": "soc-9-23-s1-q007",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-23",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Understands and describes the need for national defense and security, and demonstrates national unity."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The factors that disturbs national unity are",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s1-q007",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s1-q007",
+     "pdf_page": 60,
+     "printed_page": 47,
+     "y": 556.968565,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s1-q007-key",
+     "pdf_page": 147,
+     "printed_page": 134,
+     "y": 392.568556,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T01:03:46+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T01:03:46+05:30",
+   "text_as_printed": "The factors that disturbs national unity are (E)",
+   "section_signal": "I",
+   "options": [
+    {
+     "id": "A",
+     "text": "Celebration of national festivals"
+    },
+    {
+     "id": "B",
+     "text": "Strong central government"
+    },
+    {
+     "id": "C",
+     "text": "Single citizenship"
+    },
+    {
+     "id": "D",
+     "text": "Regionalism and communalism"
+    }
+   ],
+   "answer_as_printed": "D) Regionalism and Communalism",
+   "answer": {
+    "kind": "option",
+    "option_id": "D"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-03T01:03:46+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "cbc07cbdf06a8d538d764a484a6a8b938b532dc48af0642289d70efc5c5e9bd3"
+  },
+  {
+   "id": "soc-9-23-s1-q008",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-23",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "D",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Understands and describes the need for national defense and security, and demonstrates national unity."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The Constitution of India ensures national unity in the following ways",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s1-q008",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s1-q008",
+     "pdf_page": 60,
+     "printed_page": 47,
+     "y": 601.848585,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s1-q008-key",
+     "pdf_page": 147,
+     "printed_page": 134,
+     "y": 407.448576,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T01:03:46+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T01:03:46+05:30",
+   "text_as_printed": "The Constitution of India ensures national unity in the following ways (D)",
+   "section_signal": "I",
+   "options": [
+    {
+     "id": "A",
+     "text": "By providing equal rights and a uniform legal system"
+    },
+    {
+     "id": "B",
+     "text": "By favoring one region over another"
+    },
+    {
+     "id": "C",
+     "text": "By restricting cultural expression"
+    },
+    {
+     "id": "D",
+     "text": "By prohibiting diversity"
+    }
+   ],
+   "answer_as_printed": "A) By providing equal rights and a uniform legal system",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-03T01:03:46+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "dceb02899222e50e234f08a2bd31de8d7a30a49666d30e7993186d4b2a829505"
+  },
+  {
+   "id": "soc-9-23-s1-q009",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-23",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Understands and describes the need for national defense and security, and demonstrates national unity."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "We celebrate the day the Constitution came into force as follows.",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s1-q009",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s1-q009",
+     "pdf_page": 60,
+     "printed_page": 47,
+     "y": 676.368574,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s1-q009-key",
+     "pdf_page": 147,
+     "printed_page": 134,
+     "y": 422.448576,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T01:03:46+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T01:03:46+05:30",
+   "text_as_printed": "We celebrate the day the Constitution came into force as follows. (E)",
+   "section_signal": "I",
+   "options": [
+    {
+     "id": "A",
+     "text": "Constitution Day celebration"
+    },
+    {
+     "id": "B",
+     "text": "Independence Day celebration"
+    },
+    {
+     "id": "C",
+     "text": "Republic Day"
+    },
+    {
+     "id": "D",
+     "text": "The day the Constitution was promulgated"
+    }
+   ],
+   "answer_as_printed": "C) Republic Day",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-03T01:03:46+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "4539eca91c6d1ea9667b0514eb0efbee56dd4152b61e895fb67a6796cdb7362d"
+  },
+  {
+   "id": "soc-9-23-s1-q010",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-23",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Understands and describes the need for national defense and security, and demonstrates national unity."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "This factor is helpful in creating religious unity in India",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s1-q010",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s1-q010",
+     "pdf_page": 61,
+     "printed_page": 48,
+     "y": 41.928564,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s1-q010-key",
+     "pdf_page": 147,
+     "printed_page": 134,
+     "y": 437.32855,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T01:03:46+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T01:03:46+05:30",
+   "text_as_printed": "This factor is helpful in creating religious unity in India (E)",
+   "section_signal": "I",
+   "options": [
+    {
+     "id": "A",
+     "text": "Recognition of different languages"
+    },
+    {
+     "id": "B",
+     "text": "Harmony of all religions"
+    },
+    {
+     "id": "C",
+     "text": "Commonality in food and lifestyle"
+    },
+    {
+     "id": "D",
+     "text": "Commonality in different languages"
+    }
+   ],
+   "answer_as_printed": "B) Sarva Dharma Samabhava (Equal respect for all religions)",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-03T01:03:46+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text differs from option by a printed typo",
+     "why_not_corrected": "letter B kept (addendum §4.1); key text 'Sarva Dharma Samabhava (Equal respect for all religions)' vs option B 'Harmony of all religions' differ by a source typo; spelling needs subject knowledge (v2 §1)",
+     "suggested": "B (letter kept)"
+    }
+   ],
+   "content_hash": "2b431b72b2973e446c7df61a0ea131bb26742cc48dc8cb5cc5715ca75a85081f"
+  },
+  {
+   "id": "soc-9-23-s1-q011",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-23",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Understands and describes the need for national defense and security, and demonstrates national unity."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The national festival of India celebrated on 15th August is",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s1-q011",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s1-q011",
+     "pdf_page": 61,
+     "printed_page": 48,
+     "y": 86.808561,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s1-q011-key",
+     "pdf_page": 147,
+     "printed_page": 134,
+     "y": 452.20857,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T01:03:46+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T01:03:46+05:30",
+   "text_as_printed": "The national festival of India celebrated on 15th August is (E)",
+   "section_signal": "I",
+   "options": [
+    {
+     "id": "A",
+     "text": "Gandhi Jayanti"
+    },
+    {
+     "id": "B",
+     "text": "Independence Day celebration"
+    },
+    {
+     "id": "C",
+     "text": "Republic Day celebration"
+    },
+    {
+     "id": "D",
+     "text": "The following day celebration"
+    }
+   ],
+   "answer_as_printed": "B) Independence Day",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-03T01:03:46+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text differs from option by a printed typo",
+     "why_not_corrected": "letter B kept (addendum §4.1); key text 'Independence Day' vs option B 'Independence Day celebration' differ by a source typo; spelling needs subject knowledge (v2 §1)",
+     "suggested": "B (letter kept)"
+    }
+   ],
+   "content_hash": "ddd42692a69a512bbd549355b39bf9676178536195bee6c9a7beaabc14fb261f"
+  },
+  {
+   "id": "soc-9-23-s2-q012",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-23",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Understands and describes the need for national defense and security, and demonstrates national unity."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Which is national animal of India?",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s2-q012",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s2-q012",
+     "pdf_page": 61,
+     "printed_page": 48,
+     "y": 161.328562,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s2-q012-key",
+     "pdf_page": 147,
+     "printed_page": 134,
+     "y": 482.088545,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T01:03:46+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T01:03:46+05:30",
+   "text_as_printed": "Which is national animal of India? (E)",
+   "section_signal": "II",
+   "answer": {
+    "kind": "text",
+    "value": "Tiger"
+   },
+   "answer_as_printed": "Tiger",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-03T01:03:46+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "a448f91e6f105c6136b861f88ee1f93dcebede424272a580c1b48e11a1cd251b"
+  },
+  {
+   "id": "soc-9-23-s2-q013",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-23",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Understands and describes the need for national defense and security, and demonstrates national unity."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is national integration?",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s2-q013",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s2-q013",
+     "pdf_page": 61,
+     "printed_page": 48,
+     "y": 176.328562,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s2-q013-key",
+     "pdf_page": 147,
+     "printed_page": 134,
+     "y": 496.968565,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T01:03:46+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T01:03:46+05:30",
+   "text_as_printed": "What is national integration? (E)",
+   "section_signal": "II",
+   "answer": {
+    "kind": "text",
+    "value": "The feeling among a nation's people that they are all one."
+   },
+   "answer_as_printed": "The feeling among a nation's people that they are all one.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-03T01:03:46+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "eaed09be6be932547972a3adfb93a113f066fbbf8597aab99bdcccc7c4de50d0"
+  },
+  {
+   "id": "soc-9-23-s2-q014",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-23",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "D",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Understands and describes the need for national defense and security, and demonstrates national unity."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is the significance of the 8th Schedule of Indian Constitution?",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s2-q014",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s2-q014",
+     "pdf_page": 61,
+     "printed_page": 48,
+     "y": 191.20857,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s2-q014-key",
+     "pdf_page": 147,
+     "printed_page": 134,
+     "y": 511.848585,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T01:03:46+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T01:03:46+05:30",
+   "text_as_printed": "What is the significance of the 8th Schedule of Indian Constitution? (D)",
+   "section_signal": "II",
+   "answer": {
+    "kind": "text",
+    "value": "The Indian Constitution recognizes 22 languages as official/scheduled languages."
+   },
+   "answer_as_printed": "The Indian Constitution recognizes 22 languages as official/scheduled languages.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-03T01:03:46+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "5e91c5115b46ff09d64cb9296cb2461b775791fa309153bb705fc222c456e4ec"
+  },
+  {
+   "id": "soc-9-23-s2-q015",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-23",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Understands and describes the need for national defense and security, and demonstrates national unity."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Name the national festivals of India.",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s2-q015",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s2-q015",
+     "pdf_page": 61,
+     "printed_page": 48,
+     "y": 206.088568,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s2-q015-key",
+     "pdf_page": 147,
+     "printed_page": 134,
+     "y": 526.72856,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T01:03:46+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T01:03:46+05:30",
+   "text_as_printed": "Name the national festivals of India. (E)",
+   "section_signal": "II",
+   "answer": {
+    "kind": "text",
+    "value": "Swatantrata, Gantantrata, Gandhian ideology"
+   },
+   "answer_as_printed": "Swatantrata, Gantantrata, Gandhian ideology",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-03T01:03:46+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "0c9a4153ded32ea89e5c6277530a6c8c58c6d8603e2178ff4ea512eb6c704ec3"
+  },
+  {
+   "id": "soc-9-23-s2-q016",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-23",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Understands and describes the need for national defense and security, and demonstrates national unity."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Which event on Republic Day is a symbol of national unity?",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s2-q016",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s2-q016",
+     "pdf_page": 61,
+     "printed_page": 48,
+     "y": 220.968565,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s2-q016-key",
+     "pdf_page": 147,
+     "printed_page": 134,
+     "y": 541.72856,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T01:03:46+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T01:03:46+05:30",
+   "text_as_printed": "Which event on Republic Day is a symbol of national unity? (E)",
+   "section_signal": "II",
+   "answer": {
+    "kind": "text",
+    "value": "The Republic Day parade held at Kartavya Path in New Delhi."
+   },
+   "answer_as_printed": "The Republic Day parade held at Kartavya Path in New Delhi.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-03T01:03:46+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "1468cf8127e471b94056ea8959f6324b157e971605f863b9664a5c6d4a53f3b3"
+  },
+  {
+   "id": "soc-9-23-s2-q017",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-23",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Understands and describes the need for national defense and security, and demonstrates national unity."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Why India is called a secular country?",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s2-q017",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s2-q017",
+     "pdf_page": 61,
+     "printed_page": 48,
+     "y": 235.968565,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s2-q017-key",
+     "pdf_page": 147,
+     "printed_page": 134,
+     "y": 556.72856,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T01:03:46+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T01:03:46+05:30",
+   "text_as_printed": "Why India is called a secular country? (E)",
+   "section_signal": "II",
+   "answer": {
+    "kind": "text",
+    "value": "Every citizen of the nation has the religious right to practice their own religion; there is equal respect for all religions (secularism)."
+   },
+   "answer_as_printed": "Every citizen of the nation has the religious right to practice their own religion; there is equal respect for all religions (secularism).",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-03T01:03:46+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "935c5b34437b8f0f7fb669791f3501ba3f4a1ec00cb06823b986a72e7d9bfb07"
+  },
+  {
+   "id": "soc-9-23-s2-q018",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-23",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "D",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Understands and describes the need for national defense and security, and demonstrates national unity."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Why is linguistic diversity not a obstacle to the unity of India?",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s2-q018",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s2-q018",
+     "pdf_page": 61,
+     "printed_page": 48,
+     "y": 250.848562,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s2-q018-key",
+     "pdf_page": 147,
+     "printed_page": 134,
+     "y": 586.488554,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T01:03:46+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T01:03:46+05:30",
+   "text_as_printed": "Why is linguistic diversity not a obstacle to the unity of India? (D)",
+   "section_signal": "II",
+   "answer": {
+    "kind": "text",
+    "value": "People respect different languages; Hindi and English function as link languages."
+   },
+   "answer_as_printed": "People respect different languages; Hindi and English function as link languages.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-03T01:03:46+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "a729c2b55c04068a2afdfe4e5d4e73def095239a85624eacc90aa38cb4eedcc4"
+  },
+  {
+   "id": "soc-9-23-s2-q019",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-23",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "D",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Understands and describes the need for national defense and security, and demonstrates national unity."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is the impact of national festivals on unity?",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s2-q019",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s2-q019",
+     "pdf_page": 61,
+     "printed_page": 48,
+     "y": 265.72856,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s2-q019-key",
+     "pdf_page": 147,
+     "printed_page": 134,
+     "y": 601.368574,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T01:03:46+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T01:03:46+05:30",
+   "text_as_printed": "What is the impact of national festivals on unity? (D)",
+   "section_signal": "II",
+   "answer": {
+    "kind": "text",
+    "value": "National festivals are celebrated without favoring any one language or culture, reminding us of one nationality."
+   },
+   "answer_as_printed": "National festivals are celebrated without favoring any one language or culture, reminding us of one nationality.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-03T01:03:46+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "e9d40405e4691966012feaf0854b4614bf1c0a1a7a33222bd44b069443384a81"
+  },
+  {
+   "id": "soc-9-23-s2-q020",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-23",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "D",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Understands and describes the need for national defense and security, and demonstrates national unity."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What are the political factors that affect national unity?",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s2-q020",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s2-q020",
+     "pdf_page": 61,
+     "printed_page": 48,
+     "y": 280.608557,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s2-q020-key",
+     "pdf_page": 147,
+     "printed_page": 134,
+     "y": 631.248549,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T01:03:46+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T01:03:46+05:30",
+   "text_as_printed": "What are the political factors that affect national unity? (D)",
+   "section_signal": "II",
+   "answer": {
+    "kind": "text",
+    "value": "One Constitution, single citizenship, uniform laws, common education system, integrated judiciary, and a strong central government."
+   },
+   "answer_as_printed": "One Constitution, single citizenship, uniform laws, common education system, integrated judiciary, and a strong central government.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-03T01:03:46+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "bb765668c133291ad6e2f16c8536784dca28724f0e9a1acbdc25ffd06de4a497"
+  },
+  {
+   "id": "soc-9-23-s2-q021",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-23",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "D",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Understands and describes the need for national defense and security, and demonstrates national unity."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "How does economic interdependence promote national integration?",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s2-q021",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s2-q021",
+     "pdf_page": 61,
+     "printed_page": 48,
+     "y": 295.608557,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s2-q021-key",
+     "pdf_page": 147,
+     "printed_page": 134,
+     "y": 661.008543,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T01:03:46+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T01:03:46+05:30",
+   "text_as_printed": "How does economic interdependence promote national integration? (D)",
+   "section_signal": "II",
+   "answer": {
+    "kind": "text",
+    "value": "Different states of India depend on each other for resources, which strengthens unity."
+   },
+   "answer_as_printed": "Different states of India depend on each other for resources, which strengthens unity.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-03T01:03:46+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "f8967b8d0250c9c9365c93955764b2db0838411bce9efe17189a2fec5831c314"
+  },
+  {
+   "id": "soc-9-23-s2-q022",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-23",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "D",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Understands and describes the need for national defense and security, and demonstrates national unity."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What are the major challenges to national unity in India?",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s2-q022",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s2-q022",
+     "pdf_page": 61,
+     "printed_page": 48,
+     "y": 310.608557,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s2-q022-key",
+     "pdf_page": 147,
+     "printed_page": 134,
+     "y": 676.008543,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T01:03:46+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T01:03:46+05:30",
+   "text_as_printed": "What are the major challenges to national unity in India? (D)",
+   "section_signal": "II",
+   "answer": {
+    "kind": "text",
+    "value": "Regionalism and communalism are major challenges to national integration."
+   },
+   "answer_as_printed": "Regionalism and communalism are major challenges to national integration.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-03T01:03:46+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "da4102fe50ad6ab91b8c56336680236eef7e62d7b88233572c93aab0d99094ff"
+  },
+  {
+   "id": "soc-9-23-s2-q023",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-23",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "D",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Understands and describes the need for national defense and security, and demonstrates national unity."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What role does the mass media play in national unity?",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s2-q023",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s2-q023",
+     "pdf_page": 61,
+     "printed_page": 48,
+     "y": 325.488554,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s2-q023-key",
+     "pdf_page": 147,
+     "printed_page": 134,
+     "y": 690.888564,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T01:03:46+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T01:03:46+05:30",
+   "text_as_printed": "What role does the mass media play in national unity? (D)",
+   "section_signal": "II",
+   "answer": {
+    "kind": "text",
+    "value": "It creates awareness among people and promotes national unity through communication."
+   },
+   "answer_as_printed": "It creates awareness among people and promotes national unity through communication.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-03T01:03:46+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "62d6840b3d1281b4a81e47416e00088dcafc78b8b4daa5a78a2813c676c56603"
+  },
+  {
+   "id": "soc-9-23-s2-q024",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-23",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "D",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Understands and describes the need for national defense and security, and demonstrates national unity."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Why is democracy important for national unity?",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s2-q024",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s2-q024",
+     "pdf_page": 61,
+     "printed_page": 48,
+     "y": 340.368574,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s2-q024-key",
+     "pdf_page": 147,
+     "printed_page": 134,
+     "y": 705.768583,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T01:03:46+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T01:03:46+05:30",
+   "text_as_printed": "Why is democracy important for national unity? (D)",
+   "section_signal": "II",
+   "answer": {
+    "kind": "text",
+    "value": "It ensures equal rights for all citizens and their participation in progress."
+   },
+   "answer_as_printed": "It ensures equal rights for all citizens and their participation in progress.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-03T01:03:46+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "a34524b0f767b57a419f6b8d80351bb6be70e88b279bac667fea1989bcee6d49"
+  },
+  {
+   "id": "soc-9-23-s3-q025",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-23",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Understands and describes the need for national defense and security, and demonstrates national unity."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What are the factors that determine nationality?",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s3-q025",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s3-q025",
+     "pdf_page": 61,
+     "printed_page": 48,
+     "y": 385.128569,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s3-q025-key",
+     "pdf_page": 148,
+     "printed_page": 135,
+     "y": 41.928564,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T01:03:46+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T01:03:46+05:30",
+   "text_as_printed": "What are the factorsthatdeterminenationality? (A)",
+   "section_signal": "III",
+   "answer": {
+    "kind": "text",
+    "value": "Factors determining nationality:\nThe feeling of belonging to a common motherland.\nPride in shared culture and emotional attachment to historical and natural heritage."
+   },
+   "answer_as_printed": "Factors determining nationality:\nThe feeling of belonging to a common motherland.\nPride in shared culture and emotional attachment to historical and natural heritage.",
+   "solution_steps": [
+    "The feeling of belonging to a common motherland.",
+    "Pride in shared culture and emotional attachment to historical and natural heritage."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-03T01:03:46+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "duplicate stem — keys differ soc-9-23-s3-q028",
+     "why_not_corrected": "q25 and q28 print the identical stem 'What are the factors that determine nationality?' (q25 with text-layer joins, de-glued). The two printed keys differ: q25's key lists the factors (addresses the stem); q28's key defines a nation/nationality. Both kept by printed number; subject reviewer (Yash) to reconcile.",
+     "suggested": "q25 key = factors (on-topic); q28 key = a definition of nationalism"
+    }
+   ],
+   "content_hash": "48359f323d0315dd780fc36b78e8cc5efc1e0ddb79a74f1daa22f4ff45cf2c44"
+  },
+  {
+   "id": "soc-9-23-s3-q026",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-23",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "D",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Understands and describes the need for national defense and security, and demonstrates national unity."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "How does secularism promote national integration?",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s3-q026",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s3-q026",
+     "pdf_page": 61,
+     "printed_page": 48,
+     "y": 400.008543,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s3-q026-key",
+     "pdf_page": 148,
+     "printed_page": 135,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T01:03:46+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T01:03:46+05:30",
+   "text_as_printed": "How does secularism promote national integration? (D)",
+   "section_signal": "III",
+   "answer": {
+    "kind": "text",
+    "value": "How secularism promotes national unity:\nIndia is a secular nation.\nEvery citizen enjoys the right to follow their religion freely.\nSecularism ensures equality of all religions.\nThis promotes national unity by fostering harmony."
+   },
+   "answer_as_printed": "How secularism promotes national unity:\nIndia is a secular nation.\nEvery citizen enjoys the right to follow their religion freely.\nSecularism ensures equality of all religions.\nThis promotes national unity by fostering harmony.",
+   "solution_steps": [
+    "India is a secular nation.",
+    "Every citizen enjoys the right to follow their religion freely.",
+    "Secularism ensures equality of all religions.",
+    "This promotes national unity by fostering harmony."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-03T01:03:46+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "6287a317f6c6352e40a547d80700b7884b0c7c6decd4361af64b8a1924143032"
+  },
+  {
+   "id": "soc-9-23-s3-q027",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-23",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "D",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Understands and describes the need for national defense and security, and demonstrates national unity."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "\"India has a foundation of unity amidst diversity.\" Justify",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s3-q027",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s3-q027",
+     "pdf_page": 61,
+     "printed_page": 48,
+     "y": 414.888564,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s3-q027-key",
+     "pdf_page": 148,
+     "printed_page": 135,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T01:03:46+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T01:03:46+05:30",
+   "text_as_printed": "\"India has a foundation of unity amidst diversity.\" Justify (D)",
+   "section_signal": "III",
+   "answer": {
+    "kind": "text",
+    "value": "\"India has unity amidst diversity\" because:\nDespite geographical, social, linguistic, traditional, political, religious, ethnic, and cultural diversity, there is unity in the Indian way of life from the Himalayas to Kanyakumari.\nUniform governance, accessible communication, modern education, and legal systems contribute to this unity."
+   },
+   "answer_as_printed": "\"India has unity amidst diversity\" because:\nDespite geographical, social, linguistic, traditional, political, religious, ethnic, and cultural diversity, there is unity in the Indian way of life from the Himalayas to Kanyakumari.\nUniform governance, accessible communication, modern education, and legal systems contribute to this unity.",
+   "solution_steps": [
+    "Despite geographical, social, linguistic, traditional, political, religious, ethnic, and cultural diversity, there is unity in the Indian way of life from the Himalayas to Kanyakumari.",
+    "Uniform governance, accessible communication, modern education, and legal systems contribute to this unity."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-03T01:03:46+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "bc92ba30d2cadbb3028ae4f259a16f2061d70a55682ffc749df227896fc99f5f"
+  },
+  {
+   "id": "soc-9-23-s3-q028",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-23",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "D",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Understands and describes the need for national defense and security, and demonstrates national unity."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What are the factors that determine nationality?",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s3-q028",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s3-q028",
+     "pdf_page": 61,
+     "printed_page": 48,
+     "y": 429.888564,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s3-q028-key",
+     "pdf_page": 148,
+     "printed_page": 135,
+     "y": 295.608557,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T01:03:46+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T01:03:46+05:30",
+   "text_as_printed": "What are the factors that determine nationality? (D)",
+   "section_signal": "III",
+   "answer": {
+    "kind": "text",
+    "value": "A group of people who consider the land in which they live as their motherland, and among whom there exists a feeling of brotherhood as well as a sense of sharing equally in the joys and sorrows of the nation, this feeling is called nationalism."
+   },
+   "answer_as_printed": "A group of people who consider the land in which they live as their motherland, and among whom there exists a feeling of brotherhood as well as a sense of sharing equally in the joys and sorrows of the nation, this feeling is called nationalism.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-03T01:03:46+05:30",
+    "basis": "printed one-line answer, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "duplicate stem — keys differ soc-9-23-s3-q025",
+     "why_not_corrected": "q28 stem is identical to q25 ('What are the factors that determine nationality?'). q28's printed key defines a nation ('A group of people who consider the land... this feeling is called nationalism') rather than listing the factors the stem asks for; q25's key supplies the factors. Both kept by printed number; subject reviewer (Yash) to reconcile.",
+     "suggested": "q28 key is a definition, not the factors asked; reconcile with q25"
+    }
+   ],
+   "content_hash": "48359f323d0315dd780fc36b78e8cc5efc1e0ddb79a74f1daa22f4ff45cf2c44"
+  },
+  {
+   "id": "soc-9-23-s4-q029",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-23",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "D",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Understands and describes the need for national defense and security, and demonstrates national unity."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "How can you say that there is mutual harmony among different parts of India?",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s4-q029",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s4-q029",
+     "pdf_page": 61,
+     "printed_page": 48,
+     "y": 474.528578,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s4-q029-key",
+     "pdf_page": 148,
+     "printed_page": 135,
+     "y": 370.248572,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T01:03:46+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T01:03:46+05:30",
+   "text_as_printed": "How can you say that there is mutual harmony among different parts of India? (D)",
+   "section_signal": "IV",
+   "answer": {
+    "kind": "text",
+    "value": "Interdependence among various regions of India:\nCentral and state governments work toward common goals.\nEach region depends on others economically.\nRegional products contribute to economic growth.\nFor example, coffee from Karnataka and saffron from Jammu and Kashmir.\nNo region is entirely self-sufficient.\nThis interdependence reinforces national unity."
+   },
+   "answer_as_printed": "Interdependence among various regions of India:\nCentral and state governments work toward common goals.\nEach region depends on others economically.\nRegional products contribute to economic growth.\nFor example, coffee from Karnataka and saffron from Jammu and Kashmir.\nNo region is entirely self-sufficient.\nThis interdependence reinforces national unity.",
+   "solution_steps": [
+    "Central and state governments work toward common goals.",
+    "Each region depends on others economically.",
+    "Regional products contribute to economic growth.",
+    "For example, coffee from Karnataka and saffron from Jammu and Kashmir.",
+    "No region is entirely self-sufficient.",
+    "This interdependence reinforces national unity."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-03T01:03:46+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "86984bca7c2b0365b6930d4de5912ea4d560c843fe0bb4a7e152d88b86be6d9d"
+  },
+  {
+   "id": "soc-9-23-s4-q030",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-23",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "D",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Understands and describes the need for national defense and security, and demonstrates national unity."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "\"Several factors enhance national integration in India.\" Illustrate.",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s4-q030",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s4-q030",
+     "pdf_page": 61,
+     "printed_page": 48,
+     "y": 489.528578,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s4-q030-key",
+     "pdf_page": 148,
+     "printed_page": 135,
+     "y": 489.528578,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T01:03:46+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T01:03:46+05:30",
+   "text_as_printed": "\"Several factors enhance national integration in India.\" Illustrate. (D)",
+   "section_signal": "IV",
+   "answer": {
+    "kind": "text",
+    "value": "Factors enhancing national unity in India:\nSecularism\nDemocracy\nNational festivals\nNational symbols\nInterdependence\nCommunication systems\nMass media"
+   },
+   "answer_as_printed": "Factors enhancing national unity in India:\nSecularism\nDemocracy\nNational festivals\nNational symbols\nInterdependence\nCommunication systems\nMass media",
+   "solution_steps": [
+    "Secularism",
+    "Democracy",
+    "National festivals",
+    "National symbols",
+    "Interdependence",
+    "Communication systems",
+    "Mass media"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-03T01:03:46+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "4139dd534439a9240c39f44119fb47b4ae0e7610fe85431a6748a3254ebcc212"
+  },
+  {
+   "id": "soc-9-23-s5-q031",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-23",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Understands and describes the need for national defense and security, and demonstrates national unity."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What are the factors that foster unity in diversity in India?",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s5-q031",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s5-q031",
+     "pdf_page": 61,
+     "printed_page": 48,
+     "y": 534.288573,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-23-s5-q031-key",
+     "pdf_page": 148,
+     "printed_page": 135,
+     "y": 623.808561,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T01:03:46+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T01:03:46+05:30",
+   "text_as_printed": "What are the factors that foster unity in diversity in India? (A)",
+   "section_signal": "V",
+   "answer": {
+    "kind": "text",
+    "value": "Factors fostering unity amidst India's diversity:\nGeographical unity: From the Himalayas to Kanyakumari, India's diverse landscapes unite its people.\nPolitical unity: A single constitution, democracy, legal system, and education framework bind the nation.\nReligious unity: India is home to various religions like Hinduism, Islam, Christianity, Sikhism, Jainism, and others, fostering inclusivity.\nLinguistic unity: Despite diverse languages, Hindi and English serve as link languages, and people across India speak multiple languages.\nCultural unity: Shared traditions and festivals strengthen national bonds."
+   },
+   "answer_as_printed": "Factors fostering unity amidst India's diversity:\nGeographical unity: From the Himalayas to Kanyakumari, India's diverse landscapes unite its people.\nPolitical unity: A single constitution, democracy, legal system, and education framework bind the nation.\nReligious unity: India is home to various religions like Hinduism, Islam, Christianity, Sikhism, Jainism, and others, fostering inclusivity.\nLinguistic unity: Despite diverse languages, Hindi and English serve as link languages, and people across India speak multiple languages.\nCultural unity: Shared traditions and festivals strengthen national bonds.",
+   "solution_steps": [
+    "Geographical unity: From the Himalayas to Kanyakumari, India's diverse landscapes unite its people.",
+    "Political unity: A single constitution, democracy, legal system, and education framework bind the nation.",
+    "Religious unity: India is home to various religions like Hinduism, Islam, Christianity, Sikhism, Jainism, and others, fostering inclusivity.",
+    "Linguistic unity: Despite diverse languages, Hindi and English serve as link languages, and people across India speak multiple languages.",
+    "Cultural unity: Shared traditions and festivals strengthen national bonds."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-03T01:03:46+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "a4e75d96f655bcb2eca2d210649efa21952b368f200645a6d6655ea119c280dd"
+  }
+ ],
+ "pending_summary": {}
+}
