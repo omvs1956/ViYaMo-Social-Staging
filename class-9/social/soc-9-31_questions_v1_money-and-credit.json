@@ -1,0 +1,3138 @@
+{
+ "contract_version": "1.7",
+ "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
+ "procedure_file": "extraction_procedure_social_addendum_v1.3_social science Classes 6-10 on top of procedure v2.md",
+ "machine_name": "soc-9-31_questions",
+ "version": 1,
+ "changelog": "v1 extraction — batch-01 — class-9-social",
+ "amendments_applied": [],
+ "unit_state": "EXTRACTED",
+ "review_ready": false,
+ "count_gate": {
+  "reference": 37,
+  "reference_source": "audited",
+  "extracted": 37,
+  "paired": 37,
+  "flagged": 15,
+  "gaps": [],
+  "duplicated_numbers": [],
+  "quota_table": "difficulty_only",
+  "second_method": {
+   "method": "printed difficulty distribution table",
+   "extracted": 37,
+   "agrees": true
+  },
+  "pass": true,
+  "note": "printed difficulty table 9/23/5=37 AGREES with per-question tags; flagged counts answer-level flags; all carry the structural marks flag (addendum §4.5)."
+ },
+ "extraction": {
+  "source_file": "9thSS-EM-LBARevised_1787047914.pdf",
+  "source_ref_prefix": "9thSS-EM-LBARevised_1787047914.pdf",
+  "pdf_pages": [
+   74,
+   75,
+   160,
+   161
+  ],
+  "printed_page_offset": -13,
+  "method_notes": [
+   "Offset -13. Q: q1-9 pdf74 (folio61, q-page head shares LO/difficulty table), q10-37 pdf75 (folio62). A: keys 1-14 pdf160 (folio147, a-page head shared with ch30 tail), key15 + §II keys + orphan '1)' pdf161 (folio148), staircase keys 28-35 continue pdf161-162 (folio148-149; a-page 162 tail shared with ch32 head). Sections I mcq(1-15)/II vsa(16-25)/III sa(26-31)/IV la(32-34)/V la(35-37). 37 questions.",
+   "** ANSWER-KEY NUMBERING DEFECT (coordinator rev18 / relay 10, coordinator read pdf160-162): 36 printed keys for 37 questions. ** §I keys 1-15 = q1-q15 (ALIGNED). §II keys 16-24 = q16-q24 (ALIGNED); q25's answer ('Bank of banks, Central Bank, Mother of Banks' = names of RBI) printed under an ORPHAN label '1)' immediately after key 24. §III-V = ONE STAIRCASE band, EMPTY + 'shifted numbering — see key N', NEVER content-aligned (procedure §4.2; coordinator verifies each pair -> verified_shifts): q26->key25, q27->key26, q28->key27 (step N-1); q29 -> NO KEY (no answer printed); q30->key28, q31->key29, q32->key30, q33->key31, q34->key32, q35->key33, q36->key34, q37->key35 (step N-2).",
+   "q25 ORPHAN: answer printed under label '1)' (a restart), not label 25. EMPTY + pointer to the orphan; label recorded in extraction.orphan_keys. (post-process disambiguates the pointer so it is not confused with MCQ key 1.)",
+   "q2 KEY-TEXT TYPO (rev18 ruling 4): key printed 'B) Rupee'; 'Rupee' names no option (options Rupa/Rupya/Rashtra/Rupay) and is a spelling variant of option B 'Rupya' -> assert B with 'key text differs from option by a printed typo' (§4.1), NOT null. (post-process enforces assert-B if soc_build defaults to 'key text not among options'.)",
+   "q1 KEY-TEXT VARIANT: key 'Bartering goods for goods' ~ opt B 'Exchanging goods for goods' (barter = exchanging goods for goods; letter B factually correct). Handled as §4.1 (letter kept). q12 is a clean near-duplicate of q2 (key A 'Sanskrit Rupya' aligned).",
+   "DIFFICULTY: per-q tags E9/A23/D5 = printed table E9/A23/D5 EXACTLY (perq_match TRUE). E: q2,4,5,9,12,15,17,19,22; D: q1,11,24,26,31; A: rest (23).",
+   "STEM verbatim oddities kept (no dropped-space word-glue): q13 'Cheques is an instruments from______' (grammar + fill-blank, verbatim), q14/q15/q12 fill-blank underscores verbatim. text strips the trailing (E/A/D) marker; text_as_printed verbatim.",
+   "ANSWER FORMS: §I mcq 1-15 letter+text (q2 §4.1 typo, q1 §4.1 variant). §II vsa 16-24 single lines; q25 SHIFT(orphan). §III q26-28 SHIFT, q29 NOANS, q30-31 SHIFT. §IV q32-34 SHIFT. §V q35-37 SHIFT.",
+   "MARKS: none printed -> all null+unassigned+structural flag (§4.5).",
+   "ANSWER-KEY STAIRCASE BAND (rev18): 36 printed keys for 37 questions. Shape 'staircase'. Steps: §I 1-15 aligned; §II 16-24 aligned; q25 under orphan label '1)'; q26-q28 key N-1; q29 NO KEY (no answer printed); q30-q37 key N-2. Extraction leaves every displaced answer EMPTY + 'shifted numbering — see key N'; coordinator verifies each pair by content -> verified_shifts. NEVER content-aligned (procedure §4.2).",
+   "count_gate: reference 37 (audited physical). second_method = printed difficulty distribution table (E9/A23/D5 = 37, agrees). DEFECT recorded: the printed answer key holds only 36 answers for 37 questions (q29 'Name the primary functions of money' has no printed key)."
+  ],
+  "notation_summary": {
+   "render_tokens": 0,
+   "latex_tokens": 0,
+   "damage_flags": []
+  },
+  "excluded_objects": [],
+  "inline_excluded_count": 0,
+  "figure_references": [],
+  "orphan_keys": [
+   {
+    "printed_label": "1)",
+    "location": "answer side, immediately after key 24 (§II tail), pdf161",
+    "holds": "q25 answer (names of the Reserve Bank of India)",
+    "content": "Bank of banks, Central Bank, Mother of Banks"
+   }
+  ]
+ },
+ "stimuli": [],
+ "questions": [
+  {
+   "id": "soc-9-31-s1-q001",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "D",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Understands financial literacy and money management. Expresses the importance of labour, capital, and employment in economic development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The barter system is",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s1-q001",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s1-q001",
+     "pdf_page": 74,
+     "printed_page": 61,
+     "y": 320.088568,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s1-q001-key",
+     "pdf_page": 160,
+     "printed_page": 147,
+     "y": 511.848585,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T08:03:52+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T08:03:52+05:30",
+   "text_as_printed": "The barter system is (D)",
+   "section_signal": "I",
+   "options": [
+    {
+     "id": "A",
+     "text": "Buying and selling with money"
+    },
+    {
+     "id": "B",
+     "text": "Exchanging goods for goods"
+    },
+    {
+     "id": "C",
+     "text": "Using paper money"
+    },
+    {
+     "id": "D",
+     "text": "Conducting banking transactions"
+    }
+   ],
+   "answer_as_printed": "B) Bartering goods for goods",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-03T08:03:52+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text differs from option by a printed typo",
+     "why_not_corrected": "letter B kept (addendum §4.1); key text 'Bartering goods for goods' vs option B 'Exchanging goods for goods' differ by a source typo; spelling needs subject knowledge (v2 §1)",
+     "suggested": "B (letter kept)"
+    }
+   ],
+   "content_hash": "2fcd2e9c47365c619283d9fd0d6555a869f2db4afad6510db3c1b8d4701416e1"
+  },
+  {
+   "id": "soc-9-31-s1-q002",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Understands financial literacy and money management. Expresses the importance of labour, capital, and employment in economic development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Indian rupee originates from this Sanskrit word:",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s1-q002",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s1-q002",
+     "pdf_page": 74,
+     "printed_page": 61,
+     "y": 364.848562,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s1-q002-key",
+     "pdf_page": 160,
+     "printed_page": 147,
+     "y": 526.72856,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T08:03:52+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T08:03:52+05:30",
+   "text_as_printed": "Indian rupee originates from this Sanskrit word: (E)",
+   "section_signal": "I",
+   "options": [
+    {
+     "id": "A",
+     "text": "Rupa"
+    },
+    {
+     "id": "B",
+     "text": "Rupya"
+    },
+    {
+     "id": "C",
+     "text": "Rashtra"
+    },
+    {
+     "id": "D",
+     "text": "Rupay"
+    }
+   ],
+   "answer_as_printed": "B) Rupee",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-03T08:03:52+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text differs from option by a printed typo",
+     "why_not_corrected": "letter B kept (addendum §4.1); printed key text 'Rupee' is the English currency name — it names no option (options Rupa/Rupya/Rashtra/Rupay) and is a spelling variant of option B 'Rupya'; the Sanskrit spelling needs subject knowledge (v2 §1). Coordinator rev18 ruling 4.",
+     "suggested": "B (letter kept)"
+    }
+   ],
+   "content_hash": "55919c5a5e8f8db7000e6b6f527b61651c73dc042527856206ca7332431b4687"
+  },
+  {
+   "id": "soc-9-31-s1-q003",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Understands financial literacy and money management. Expresses the importance of labour, capital, and employment in economic development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The primary function of money is",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s1-q003",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s1-q003",
+     "pdf_page": 74,
+     "printed_page": 61,
+     "y": 394.72856,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s1-q003-key",
+     "pdf_page": 160,
+     "printed_page": 147,
+     "y": 541.72856,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T08:03:52+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T08:03:52+05:30",
+   "text_as_printed": "The primary function of money is (A)",
+   "section_signal": "I",
+   "options": [
+    {
+     "id": "A",
+     "text": "Providing entertainment"
+    },
+    {
+     "id": "B",
+     "text": "Causing inflation"
+    },
+    {
+     "id": "C",
+     "text": "Medium of exchange"
+    },
+    {
+     "id": "D",
+     "text": "None of the above"
+    }
+   ],
+   "answer_as_printed": "C) Medium of exchange",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-03T08:03:52+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "258b537c3f0e39f978b4281adf83504c5ea41465fe0196872f44b6bdc7aef26c"
+  },
+  {
+   "id": "soc-9-31-s1-q004",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Understands financial literacy and money management. Expresses the importance of labour, capital, and employment in economic development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "An example for metallic money is:",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s1-q004",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s1-q004",
+     "pdf_page": 74,
+     "printed_page": 61,
+     "y": 439.488554,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s1-q004-key",
+     "pdf_page": 160,
+     "printed_page": 147,
+     "y": 556.72856,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T08:03:52+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T08:03:52+05:30",
+   "text_as_printed": "An example for metallic money is: (E)",
+   "section_signal": "I",
+   "options": [
+    {
+     "id": "A",
+     "text": "Debit card"
+    },
+    {
+     "id": "B",
+     "text": "Gold coins"
+    },
+    {
+     "id": "C",
+     "text": "Currency notes"
+    },
+    {
+     "id": "D",
+     "text": "Cheques"
+    }
+   ],
+   "answer_as_printed": "B) Gold coins",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-03T08:03:52+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "1558cecfb8898561caac6fca8f0377870b2fe3b27074dfe0f385dbc92402291d"
+  },
+  {
+   "id": "soc-9-31-s1-q005",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Understands financial literacy and money management. Expresses the importance of labour, capital, and employment in economic development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The sole authority for issuing currency notes in India is",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s1-q005",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s1-q005",
+     "pdf_page": 74,
+     "printed_page": 61,
+     "y": 469.248549,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s1-q005-key",
+     "pdf_page": 160,
+     "printed_page": 147,
+     "y": 571.60858,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T08:03:52+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T08:03:52+05:30",
+   "text_as_printed": "The sole authority for issuing currency notes in India is (E)",
+   "section_signal": "I",
+   "options": [
+    {
+     "id": "A",
+     "text": "State Bank of India"
+    },
+    {
+     "id": "B",
+     "text": "Reserve Bank of India"
+    },
+    {
+     "id": "C",
+     "text": "Commercial banks"
+    },
+    {
+     "id": "D",
+     "text": "Central Government"
+    }
+   ],
+   "answer_as_printed": "B) Reserve Bank of India",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-03T08:03:52+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "2f5200ddf8db06b11e9cd187c9d37a76edb097650564b616ab1e57dca973b048"
+  },
+  {
+   "id": "soc-9-31-s1-q006",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Understands financial literacy and money management. Expresses the importance of labour, capital, and employment in economic development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Bank cheques, credit cards, and debit cards are examples for this kind of money",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s1-q006",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s1-q006",
+     "pdf_page": 74,
+     "printed_page": 61,
+     "y": 514.008543,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s1-q006-key",
+     "pdf_page": 160,
+     "printed_page": 147,
+     "y": 586.488554,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T08:03:52+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T08:03:52+05:30",
+   "text_as_printed": "Bank cheques, credit cards, and debit cards are examples for this kind of money (A)",
+   "section_signal": "I",
+   "options": [
+    {
+     "id": "A",
+     "text": "Commodity money"
+    },
+    {
+     "id": "B",
+     "text": "Paper money"
+    },
+    {
+     "id": "C",
+     "text": "Bank money"
+    },
+    {
+     "id": "D",
+     "text": "Metallic money"
+    }
+   ],
+   "answer_as_printed": "C) Bank money",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-03T08:03:52+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "7ff924e5233fa6b7b196c3a127d72cc353e9c7a67110a381d64129c25af6100f"
+  },
+  {
+   "id": "soc-9-31-s1-q007",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Understands financial literacy and money management. Expresses the importance of labour, capital, and employment in economic development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "NABARD primarily provides financial assistance to this sector:",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s1-q007",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s1-q007",
+     "pdf_page": 74,
+     "printed_page": 61,
+     "y": 558.768583,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s1-q007-key",
+     "pdf_page": 160,
+     "printed_page": 147,
+     "y": 601.368574,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T08:03:52+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T08:03:52+05:30",
+   "text_as_printed": "NABARD primarily provides financial assistance to this sector: (A)",
+   "section_signal": "I",
+   "options": [
+    {
+     "id": "A",
+     "text": "Agriculture"
+    },
+    {
+     "id": "B",
+     "text": "Banking"
+    },
+    {
+     "id": "C",
+     "text": "Information technology"
+    },
+    {
+     "id": "D",
+     "text": "Industry"
+    }
+   ],
+   "answer_as_printed": "A) Agriculture",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-03T08:03:52+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "990e895aa72a0354da6875adeaffdf844213c4867e946ca22eac7f22fb0689a1"
+  },
+  {
+   "id": "soc-9-31-s1-q008",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Understands financial literacy and money management. Expresses the importance of labour, capital, and employment in economic development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The deposit which is offered the highest rate of interest by the banks is:",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s1-q008",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s1-q008",
+     "pdf_page": 74,
+     "printed_page": 61,
+     "y": 603.528578,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s1-q008-key",
+     "pdf_page": 160,
+     "printed_page": 147,
+     "y": 616.368574,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T08:03:52+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T08:03:52+05:30",
+   "text_as_printed": "The deposit which is offered the highest rate of interest by the banks is: (A)",
+   "section_signal": "I",
+   "options": [
+    {
+     "id": "A",
+     "text": "Current account"
+    },
+    {
+     "id": "B",
+     "text": "Savings account"
+    },
+    {
+     "id": "C",
+     "text": "Fixed deposit account"
+    },
+    {
+     "id": "D",
+     "text": "Recurring deposit account"
+    }
+   ],
+   "answer_as_printed": "C) Fixed deposit account",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-03T08:03:52+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "7b09b4b75f9767ba8da71ee0d64f6df91e16a2977f19e36ba670c6009cb2ad05"
+  },
+  {
+   "id": "soc-9-31-s1-q009",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Understands financial literacy and money management. Expresses the importance of labour, capital, and employment in economic development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The year in which the Reserve Bank of India was nationalized is:",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s1-q009",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s1-q009",
+     "pdf_page": 74,
+     "printed_page": 61,
+     "y": 648.288573,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s1-q009-key",
+     "pdf_page": 160,
+     "printed_page": 147,
+     "y": 631.248549,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T08:03:52+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T08:03:52+05:30",
+   "text_as_printed": "The year in which the Reserve Bank of India was nationalized is: (E)",
+   "section_signal": "I",
+   "options": [
+    {
+     "id": "A",
+     "text": "1935"
+    },
+    {
+     "id": "B",
+     "text": "1949"
+    },
+    {
+     "id": "C",
+     "text": "1980"
+    },
+    {
+     "id": "D",
+     "text": "1969"
+    }
+   ],
+   "answer_as_printed": "B) 1949",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-03T08:03:52+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "fd0b4583ed41fda36649b789957afe11a3d3dee0c5709f39f49dc8d830478aae"
+  },
+  {
+   "id": "soc-9-31-s1-q010",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Understands financial literacy and money management. Expresses the importance of labour, capital, and employment in economic development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The one that supervises and regulates the banking system of India is:",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s1-q010",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s1-q010",
+     "pdf_page": 75,
+     "printed_page": 62,
+     "y": 27.048564,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s1-q010-key",
+     "pdf_page": 160,
+     "printed_page": 147,
+     "y": 646.128569,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T08:03:52+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T08:03:52+05:30",
+   "text_as_printed": "The one that supervises and regulates the banking system of India is: (A)",
+   "section_signal": "I",
+   "options": [
+    {
+     "id": "A",
+     "text": "Finance Department"
+    },
+    {
+     "id": "B",
+     "text": "State Government"
+    },
+    {
+     "id": "C",
+     "text": "Reserve Bank of India"
+    },
+    {
+     "id": "D",
+     "text": "Planning Commission"
+    }
+   ],
+   "answer_as_printed": "C) Reserve Bank of India",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-03T08:03:52+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "8f59ec87259cedce558852244145ff2059fbd21353f5da348eff65074041105a"
+  },
+  {
+   "id": "soc-9-31-s1-q011",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "D",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Understands financial literacy and money management. Expresses the importance of labour, capital, and employment in economic development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "This is not included among the function of Reserve Bank of India",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s1-q011",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s1-q011",
+     "pdf_page": 75,
+     "printed_page": 62,
+     "y": 71.808567,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s1-q011-key",
+     "pdf_page": 160,
+     "printed_page": 147,
+     "y": 661.008543,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T08:03:52+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T08:03:52+05:30",
+   "text_as_printed": "This is not included among the function of Reserve Bank of India (D)",
+   "section_signal": "I",
+   "options": [
+    {
+     "id": "A",
+     "text": "Issuing currency notes"
+    },
+    {
+     "id": "B",
+     "text": "Regulating credit"
+    },
+    {
+     "id": "C",
+     "text": "Conducting foreign trade"
+    },
+    {
+     "id": "D",
+     "text": "Regulating banks"
+    }
+   ],
+   "answer_as_printed": "C) Conducting foreign trade",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-03T08:03:52+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "9c9b54b789224d750ed64fdc8e32c15ed10673d5ed5974f94a6572a747746650"
+  },
+  {
+   "id": "soc-9-31-s1-q012",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Understands financial literacy and money management. Expresses the importance of labour, capital, and employment in economic development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The Indian rupee is derived from the word ___________",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s1-q012",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s1-q012",
+     "pdf_page": 75,
+     "printed_page": 62,
+     "y": 116.68857,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s1-q012-key",
+     "pdf_page": 160,
+     "printed_page": 147,
+     "y": 676.008543,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T08:03:52+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T08:03:52+05:30",
+   "text_as_printed": "The Indian rupee is derived from the word ___________ (E)",
+   "section_signal": "I",
+   "options": [
+    {
+     "id": "A",
+     "text": "Sanskrit Rupya"
+    },
+    {
+     "id": "B",
+     "text": "Sanskrit dupya"
+    },
+    {
+     "id": "C",
+     "text": "Sanskrit upya"
+    },
+    {
+     "id": "D",
+     "text": "Sanskrit piya"
+    }
+   ],
+   "answer_as_printed": "A) Sanskrit Rupya",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-03T08:03:52+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "8571251e5284cfc0901c530c5e81a3545219a801a4d04068154cfc8dd61eb46c"
+  },
+  {
+   "id": "soc-9-31-s1-q013",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Understands financial literacy and money management. Expresses the importance of labour, capital, and employment in economic development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Cheques is an instruments from______",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s1-q013",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s1-q013",
+     "pdf_page": 75,
+     "printed_page": 62,
+     "y": 166.008566,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s1-q013-key",
+     "pdf_page": 160,
+     "printed_page": 147,
+     "y": 690.888564,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T08:03:52+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T08:03:52+05:30",
+   "text_as_printed": "Cheques is an instruments from______ (A)",
+   "section_signal": "I",
+   "options": [
+    {
+     "id": "A",
+     "text": "Paper"
+    },
+    {
+     "id": "B",
+     "text": "Bank"
+    },
+    {
+     "id": "C",
+     "text": "Digital"
+    },
+    {
+     "id": "D",
+     "text": "Post Office"
+    }
+   ],
+   "answer_as_printed": "B) Bank",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-03T08:03:52+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "f74105e10706c2de2140aa7d8663ab63ab7ec4ed0cdbadeddaf48588db49c3fc"
+  },
+  {
+   "id": "soc-9-31-s1-q014",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Understands financial literacy and money management. Expresses the importance of labour, capital, and employment in economic development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The banks which deal with foreign currency are called __________",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s1-q014",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s1-q014",
+     "pdf_page": 75,
+     "printed_page": 62,
+     "y": 195.888564,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s1-q014-key",
+     "pdf_page": 160,
+     "printed_page": 147,
+     "y": 705.768583,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T08:03:52+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T08:03:52+05:30",
+   "text_as_printed": "The banks which deal with foreign currency are called __________ (A)",
+   "section_signal": "I",
+   "options": [
+    {
+     "id": "A",
+     "text": "Foreign bank"
+    },
+    {
+     "id": "B",
+     "text": "International bank"
+    },
+    {
+     "id": "C",
+     "text": "Exchange bank"
+    },
+    {
+     "id": "D",
+     "text": "None"
+    }
+   ],
+   "answer_as_printed": "C) Exchange bank",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-03T08:03:52+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "313948a7ecb153d5893c3776fd8f5d33bf6968eeece22fb80ca80abe7752fb56"
+  },
+  {
+   "id": "soc-9-31-s1-q015",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Understands financial literacy and money management. Expresses the importance of labour, capital, and employment in economic development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The money of Japan is__________",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s1-q015",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s1-q015",
+     "pdf_page": 75,
+     "printed_page": 62,
+     "y": 240.648558,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s1-q015-key",
+     "pdf_page": 161,
+     "printed_page": 148,
+     "y": 27.048564,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T08:03:52+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T08:03:52+05:30",
+   "text_as_printed": "The money of Japan is__________ (E)",
+   "section_signal": "I",
+   "options": [
+    {
+     "id": "A",
+     "text": "Yen"
+    },
+    {
+     "id": "B",
+     "text": "Taka"
+    },
+    {
+     "id": "C",
+     "text": "Dollar"
+    },
+    {
+     "id": "D",
+     "text": "Rupee"
+    }
+   ],
+   "answer_as_printed": "A) Yen",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-03T08:03:52+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "b439b14d498cea09c655b2133dc7d88ba0ace1bd0f6f461dd754d4567bae1b83"
+  },
+  {
+   "id": "soc-9-31-s2-q016",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Understands financial literacy and money management. Expresses the importance of labour, capital, and employment in economic development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Define the concept of money.",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s2-q016",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s2-q016",
+     "pdf_page": 75,
+     "printed_page": 62,
+     "y": 300.288573,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s2-q016-key",
+     "pdf_page": 161,
+     "printed_page": 148,
+     "y": 56.928564,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T08:03:52+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T08:03:52+05:30",
+   "text_as_printed": "Define the concept of money. (A)",
+   "section_signal": "II",
+   "answer": {
+    "kind": "text",
+    "value": "Money is a widely accepted medium used for payments for goods or settling business debts."
+   },
+   "answer_as_printed": "Money is a widely accepted medium used for payments for goods or settling business debts.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-03T08:03:52+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "07770f29dd6d26289085b68077fef2d2f74cbec3ec87900f1610aaaa54db0e54"
+  },
+  {
+   "id": "soc-9-31-s2-q017",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Understands financial literacy and money management. Expresses the importance of labour, capital, and employment in economic development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is barter system?",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s2-q017",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s2-q017",
+     "pdf_page": 75,
+     "printed_page": 62,
+     "y": 315.16857,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s2-q017-key",
+     "pdf_page": 161,
+     "printed_page": 148,
+     "y": 86.808561,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T08:03:52+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T08:03:52+05:30",
+   "text_as_printed": "What is barter system? (E)",
+   "section_signal": "II",
+   "answer": {
+    "kind": "text",
+    "value": "In ancient times, people exchanged goods without using money, known as the barter system."
+   },
+   "answer_as_printed": "In ancient times, people exchanged goods without using money, known as the barter system.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-03T08:03:52+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "3035091efbb0f8f489fded0e51d870f26f5ef1cd0621b359c6da85a52c6c4b5a"
+  },
+  {
+   "id": "soc-9-31-s2-q018",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Understands financial literacy and money management. Expresses the importance of labour, capital, and employment in economic development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Write examples for bank money.",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s2-q018",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s2-q018",
+     "pdf_page": 75,
+     "printed_page": 62,
+     "y": 330.048567,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s2-q018-key",
+     "pdf_page": 161,
+     "printed_page": 148,
+     "y": 116.68857,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T08:03:52+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T08:03:52+05:30",
+   "text_as_printed": "Write examples for bank money. (A)",
+   "section_signal": "II",
+   "answer": {
+    "kind": "text",
+    "value": "Cheque, Demand Draft, Credit Card, Debit Card."
+   },
+   "answer_as_printed": "Cheque, Demand Draft, Credit Card, Debit Card.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-03T08:03:52+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "15f7022108119c8699c476b2ac154b6acf57bf17995db3c303168d7f345dc538"
+  },
+  {
+   "id": "soc-9-31-s2-q019",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Understands financial literacy and money management. Expresses the importance of labour, capital, and employment in economic development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is the name of the central bank of India?",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s2-q019",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s2-q019",
+     "pdf_page": 75,
+     "printed_page": 62,
+     "y": 345.048567,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s2-q019-key",
+     "pdf_page": 161,
+     "printed_page": 148,
+     "y": 131.568567,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T08:03:52+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T08:03:52+05:30",
+   "text_as_printed": "What is the name of the central bank of India? (E)",
+   "section_signal": "II",
+   "answer": {
+    "kind": "text",
+    "value": "Reserve Bank of India."
+   },
+   "answer_as_printed": "Reserve Bank of India.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-03T08:03:52+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "2f380a01ea1a7a40da048513b9c4dd555abaa352b9c92ca54f715cdbf3ecaaf2"
+  },
+  {
+   "id": "soc-9-31-s2-q020",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Understands financial literacy and money management. Expresses the importance of labour, capital, and employment in economic development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Name the financial institutions that provide long-term loans to the industries.",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s2-q020",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s2-q020",
+     "pdf_page": 75,
+     "printed_page": 62,
+     "y": 359.928564,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s2-q020-key",
+     "pdf_page": 161,
+     "printed_page": 148,
+     "y": 146.448564,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T08:03:52+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T08:03:52+05:30",
+   "text_as_printed": "Name the financial institutions that provide long-term loans to the industries. (A)",
+   "section_signal": "II",
+   "answer": {
+    "kind": "text",
+    "value": "Industrial Development Bank of India, Industrial Credit and Investment Corporation, and Industrial Finance Corporation."
+   },
+   "answer_as_printed": "Industrial Development Bank of India, Industrial Credit and Investment Corporation, and Industrial Finance Corporation.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-03T08:03:52+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "bfe6717c67f7291c241c4cda51ddd41982a3a90f11687f361c635ebdf50b336d"
+  },
+  {
+   "id": "soc-9-31-s2-q021",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Understands financial literacy and money management. Expresses the importance of labour, capital, and employment in economic development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "In which year the banks in India were nationalized?",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s2-q021",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s2-q021",
+     "pdf_page": 75,
+     "printed_page": 62,
+     "y": 374.808561,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s2-q021-key",
+     "pdf_page": 161,
+     "printed_page": 148,
+     "y": 176.328562,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T08:03:52+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T08:03:52+05:30",
+   "text_as_printed": "In which year the banks in India were nationalized? (A)",
+   "section_signal": "II",
+   "answer": {
+    "kind": "text",
+    "value": "14 banks were nationalized in 1969, and 6 banks in 1980."
+   },
+   "answer_as_printed": "14 banks were nationalized in 1969, and 6 banks in 1980.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-03T08:03:52+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "03a4f135b568d3c89c6eb2daaa417669bf5df69e68984e5a30f0f30ddd07de81"
+  },
+  {
+   "id": "soc-9-31-s2-q022",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Understands financial literacy and money management. Expresses the importance of labour, capital, and employment in economic development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "When was the Reserve Bank of India established?",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s2-q022",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s2-q022",
+     "pdf_page": 75,
+     "printed_page": 62,
+     "y": 389.688582,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s2-q022-key",
+     "pdf_page": 161,
+     "printed_page": 148,
+     "y": 191.20857,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T08:03:52+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T08:03:52+05:30",
+   "text_as_printed": "When was the Reserve Bank of India established? (E)",
+   "section_signal": "II",
+   "answer": {
+    "kind": "text",
+    "value": "1935."
+   },
+   "answer_as_printed": "1935.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-03T08:03:52+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "f48e5c64b24718d632fd15eeae7cf95f2ec082f6ecde15061546d0779267edb4"
+  },
+  {
+   "id": "soc-9-31-s2-q023",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Understands financial literacy and money management. Expresses the importance of labour, capital, and employment in economic development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Write examples for savings banks in India.",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s2-q023",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s2-q023",
+     "pdf_page": 75,
+     "printed_page": 62,
+     "y": 404.688582,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s2-q023-key",
+     "pdf_page": 161,
+     "printed_page": 148,
+     "y": 206.088568,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T08:03:52+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T08:03:52+05:30",
+   "text_as_printed": "Write examples for savings banks in India. (A)",
+   "section_signal": "II",
+   "answer": {
+    "kind": "text",
+    "value": "Commercial banks and post offices."
+   },
+   "answer_as_printed": "Commercial banks and post offices.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-03T08:03:52+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "0c08eca9f8693bc2cf343103e324d1e5d7b750dd6125fcbea685a264c2fe22f4"
+  },
+  {
+   "id": "soc-9-31-s2-q024",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "D",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Understands financial literacy and money management. Expresses the importance of labour, capital, and employment in economic development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is the specialty of a current account?",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s2-q024",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s2-q024",
+     "pdf_page": 75,
+     "printed_page": 62,
+     "y": 419.568556,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s2-q024-key",
+     "pdf_page": 161,
+     "printed_page": 148,
+     "y": 220.968565,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T08:03:52+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T08:03:52+05:30",
+   "text_as_printed": "What is the specialty of a current account? (D)",
+   "section_signal": "II",
+   "answer": {
+    "kind": "text",
+    "value": "Business institutions, traders, and public authorities open current accounts, allowing unlimited deposits and withdrawals daily."
+   },
+   "answer_as_printed": "Business institutions, traders, and public authorities open current accounts, allowing unlimited deposits and withdrawals daily.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-03T08:03:52+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "3a5bcac584b95af851b702835c85c31eb72e530da5d0aa2cdf23724f49d27928"
+  },
+  {
+   "id": "soc-9-31-s2-q025",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Understands financial literacy and money management. Expresses the importance of labour, capital, and employment in economic development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Name the various names of the Reserve Bank of India.",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s2-q025",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s2-q025",
+     "pdf_page": 75,
+     "printed_page": 62,
+     "y": 434.568556,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s2-q025-key",
+     "pdf_page": 161,
+     "printed_page": 148,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T08:03:52+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T08:03:52+05:30",
+   "text_as_printed": "Name the various names of the Reserve Bank of India. (A)",
+   "section_signal": "II",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "shifted numbering — see key 1",
+     "why_not_corrected": "answer-side numbering is displaced in this band; extraction does not shift-align (procedure §4.2) — answer left empty, coordinator verifies the pair by content in review",
+     "suggested": "key 1 — the ORPHAN key printed as \"1)\" immediately after key 24 (§II tail), holding q25’s answer (RBI names: Bank of banks, Central Bank, Mother of Banks). NOT MCQ key 1."
+    }
+   ],
+   "content_hash": "1a6758461034930cbbc1dd7b84906dcbc676c0628345b33a0bba84e8de89888e"
+  },
+  {
+   "id": "soc-9-31-s3-q026",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "D",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Understands financial literacy and money management. Expresses the importance of labour, capital, and employment in economic development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Explain the concept of money.",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s3-q026",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s3-q026",
+     "pdf_page": 75,
+     "printed_page": 62,
+     "y": 479.32855,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s3-q026-key",
+     "pdf_page": 161,
+     "printed_page": 148,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T08:03:52+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T08:03:52+05:30",
+   "text_as_printed": "Explain the concept of money. (D)",
+   "section_signal": "III",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "shifted numbering — see key 25",
+     "why_not_corrected": "answer-side numbering is displaced in this band; extraction does not shift-align (procedure §4.2) — answer left empty, coordinator verifies the pair by content in review",
+     "suggested": "key 25 (this unit's answer side prints Q26's answer under printed label 25)"
+    }
+   ],
+   "content_hash": "7747144082caa7570bd15f6746eb681d991f025415911d29213fdc11df9fce41"
+  },
+  {
+   "id": "soc-9-31-s3-q027",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Understands financial literacy and money management. Expresses the importance of labour, capital, and employment in economic development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "List out the disadvantages of barter system.",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s3-q027",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s3-q027",
+     "pdf_page": 75,
+     "printed_page": 62,
+     "y": 494.20857,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s3-q027-key",
+     "pdf_page": 161,
+     "printed_page": 148,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T08:03:52+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T08:03:52+05:30",
+   "text_as_printed": "List out the disadvantages of barter system. (A)",
+   "section_signal": "III",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "shifted numbering — see key 26",
+     "why_not_corrected": "answer-side numbering is displaced in this band; extraction does not shift-align (procedure §4.2) — answer left empty, coordinator verifies the pair by content in review",
+     "suggested": "key 26 (this unit's answer side prints Q27's answer under printed label 26)"
+    }
+   ],
+   "content_hash": "19ec3e99c2cf64e0242b92fe59c9bf1e88ec372bbbf81c63d0a4d9b5213a314c"
+  },
+  {
+   "id": "soc-9-31-s3-q028",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Understands financial literacy and money management. Expresses the importance of labour, capital, and employment in economic development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "How is a credit card different from a debit card?",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s3-q028",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s3-q028",
+     "pdf_page": 75,
+     "printed_page": 62,
+     "y": 509.088545,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s3-q028-key",
+     "pdf_page": 161,
+     "printed_page": 148,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T08:03:52+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T08:03:52+05:30",
+   "text_as_printed": "How is a credit card different from a debit card? (A)",
+   "section_signal": "III",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "shifted numbering — see key 27",
+     "why_not_corrected": "answer-side numbering is displaced in this band; extraction does not shift-align (procedure §4.2) — answer left empty, coordinator verifies the pair by content in review",
+     "suggested": "key 27 (this unit's answer side prints Q28's answer under printed label 27)"
+    }
+   ],
+   "content_hash": "46dd3454c95d25d1752c599faac70dc00c2f9230712f46add2df163d30dd8df1"
+  },
+  {
+   "id": "soc-9-31-s3-q029",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Understands financial literacy and money management. Expresses the importance of labour, capital, and employment in economic development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Name the primary functions of money.",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s3-q029",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s3-q029",
+     "pdf_page": 75,
+     "printed_page": 62,
+     "y": 524.088545,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s3-q029-key",
+     "pdf_page": 161,
+     "printed_page": 148,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T08:03:52+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T08:03:52+05:30",
+   "text_as_printed": "Name the primary functions of money. (A)",
+   "section_signal": "III",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no answer printed",
+     "why_not_corrected": "the printed answer key has no entry for this question number — the answer-side numbering skips it (see the shifted band in extraction.method_notes)",
+     "suggested": "key absent — review"
+    }
+   ],
+   "content_hash": "b74c2f28cd224524fc587f6d24b9c230cd661e31a1f0062f9a6567e624a0f9ae"
+  },
+  {
+   "id": "soc-9-31-s3-q030",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Understands financial literacy and money management. Expresses the importance of labour, capital, and employment in economic development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is credit? Name the types of credit.",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s3-q030",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s3-q030",
+     "pdf_page": 75,
+     "printed_page": 62,
+     "y": 538.968565,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s3-q030-key",
+     "pdf_page": 161,
+     "printed_page": 148,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T08:03:52+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T08:03:52+05:30",
+   "text_as_printed": "What is credit? Name the types of credit. (A)",
+   "section_signal": "III",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "shifted numbering — see key 28",
+     "why_not_corrected": "answer-side numbering is displaced in this band; extraction does not shift-align (procedure §4.2) — answer left empty, coordinator verifies the pair by content in review",
+     "suggested": "key 28 (this unit's answer side prints Q30's answer under printed label 28)"
+    }
+   ],
+   "content_hash": "9fbba5243a4f6497d8034200b0df577d3103eedd7d94f3f1b25236b4a40031d2"
+  },
+  {
+   "id": "soc-9-31-s3-q031",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "D",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Understands financial literacy and money management. Expresses the importance of labour, capital, and employment in economic development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is the role of RBI as the government’s bank?",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s3-q031",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s3-q031",
+     "pdf_page": 75,
+     "printed_page": 62,
+     "y": 553.848585,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s3-q031-key",
+     "pdf_page": 161,
+     "printed_page": 148,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T08:03:52+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T08:03:52+05:30",
+   "text_as_printed": "What is the role of RBI as the government’s bank? (D)",
+   "section_signal": "III",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "shifted numbering — see key 29",
+     "why_not_corrected": "answer-side numbering is displaced in this band; extraction does not shift-align (procedure §4.2) — answer left empty, coordinator verifies the pair by content in review",
+     "suggested": "key 29 (this unit's answer side prints Q31's answer under printed label 29)"
+    }
+   ],
+   "content_hash": "e68fe817cfbea0e9423e4e8f170e0be8f98bbc0f47d98da5ed917d9761196562"
+  },
+  {
+   "id": "soc-9-31-s4-q032",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Understands financial literacy and money management. Expresses the importance of labour, capital, and employment in economic development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Write about the importance of banks in the economy.",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s4-q032",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s4-q032",
+     "pdf_page": 75,
+     "printed_page": 62,
+     "y": 598.60858,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s4-q032-key",
+     "pdf_page": 161,
+     "printed_page": 148,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T08:03:52+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T08:03:52+05:30",
+   "text_as_printed": "Write about the importance of banks in the economy. (A)",
+   "section_signal": "IV",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "shifted numbering — see key 30",
+     "why_not_corrected": "answer-side numbering is displaced in this band; extraction does not shift-align (procedure §4.2) — answer left empty, coordinator verifies the pair by content in review",
+     "suggested": "key 30 (this unit's answer side prints Q32's answer under printed label 30)"
+    }
+   ],
+   "content_hash": "e3fdc4552f092cc738e2a17b4b7f5201ce7a8b45cd7b95f08dbe4d345239d98a"
+  },
+  {
+   "id": "soc-9-31-s4-q033",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Understands financial literacy and money management. Expresses the importance of labour, capital, and employment in economic development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "List out the types of banks in India.",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s4-q033",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s4-q033",
+     "pdf_page": 75,
+     "printed_page": 62,
+     "y": 613.488554,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s4-q033-key",
+     "pdf_page": 161,
+     "printed_page": 148,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T08:03:52+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T08:03:52+05:30",
+   "text_as_printed": "List out the types of banks in India. (A)",
+   "section_signal": "IV",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "shifted numbering — see key 31",
+     "why_not_corrected": "answer-side numbering is displaced in this band; extraction does not shift-align (procedure §4.2) — answer left empty, coordinator verifies the pair by content in review",
+     "suggested": "key 31 (this unit's answer side prints Q33's answer under printed label 31)"
+    }
+   ],
+   "content_hash": "496dc5f23cf1be1dd03f539e9c86822f115f4d7d812eb02246726b356c1adc47"
+  },
+  {
+   "id": "soc-9-31-s4-q034",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Understands financial literacy and money management. Expresses the importance of labour, capital, and employment in economic development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Name the various types of accounts that can be opened in banks.",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s4-q034",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s4-q034",
+     "pdf_page": 75,
+     "printed_page": 62,
+     "y": 628.368574,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s4-q034-key",
+     "pdf_page": 161,
+     "printed_page": 148,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T08:03:52+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T08:03:52+05:30",
+   "text_as_printed": "Name the various types of accounts that can be opened in banks. (A)",
+   "section_signal": "IV",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "shifted numbering — see key 32",
+     "why_not_corrected": "answer-side numbering is displaced in this band; extraction does not shift-align (procedure §4.2) — answer left empty, coordinator verifies the pair by content in review",
+     "suggested": "key 32 (this unit's answer side prints Q34's answer under printed label 32)"
+    }
+   ],
+   "content_hash": "5700ffa4b1d9c619ca363ef34b36d84b34b4aadebb8f65723cf10ff89f046bd7"
+  },
+  {
+   "id": "soc-9-31-s5-q035",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Understands financial literacy and money management. Expresses the importance of labour, capital, and employment in economic development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Mention the various stages of the evolution of money.",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s5-q035",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s5-q035",
+     "pdf_page": 75,
+     "printed_page": 62,
+     "y": 673.248549,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s5-q035-key",
+     "pdf_page": 161,
+     "printed_page": 148,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T08:03:52+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T08:03:52+05:30",
+   "text_as_printed": "Mention the various stages of the evolution of money. (A)",
+   "section_signal": "V",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "shifted numbering — see key 33",
+     "why_not_corrected": "answer-side numbering is displaced in this band; extraction does not shift-align (procedure §4.2) — answer left empty, coordinator verifies the pair by content in review",
+     "suggested": "key 33 (this unit's answer side prints Q35's answer under printed label 33)"
+    }
+   ],
+   "content_hash": "e1908deb0ffc15ab98e1cb35ebc4a30eff65e5db83847dc29e721d164d1fc7ff"
+  },
+  {
+   "id": "soc-9-31-s5-q036",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Understands financial literacy and money management. Expresses the importance of labour, capital, and employment in economic development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "List out the functions of money.",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s5-q036",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s5-q036",
+     "pdf_page": 75,
+     "printed_page": 62,
+     "y": 688.128569,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s5-q036-key",
+     "pdf_page": 161,
+     "printed_page": 148,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T08:03:52+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T08:03:52+05:30",
+   "text_as_printed": "List out the functions of money. (A)",
+   "section_signal": "V",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "shifted numbering — see key 34",
+     "why_not_corrected": "answer-side numbering is displaced in this band; extraction does not shift-align (procedure §4.2) — answer left empty, coordinator verifies the pair by content in review",
+     "suggested": "key 34 (this unit's answer side prints Q36's answer under printed label 34)"
+    }
+   ],
+   "content_hash": "4ee5bc6f3c32c220b21b9d94b5542059941112ab0233cfbc01b691a4b8f7b29d"
+  },
+  {
+   "id": "soc-9-31-s5-q037",
+   "class": "9",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-9-31",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Understands financial literacy and money management. Expresses the importance of labour, capital, and employment in economic development."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What are the functions of Reserve Bank of India?",
+   "source": "lba",
+   "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s5-q037",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s5-q037",
+     "pdf_page": 75,
+     "printed_page": 62,
+     "y": 703.008543,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "9thSS-EM-LBARevised_1787047914.pdf#soc-9-31-s5-q037-key",
+     "pdf_page": 161,
+     "printed_page": 148,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "extraction",
+     "at": "2026-10-03T08:03:52+05:30"
+    }
+   ],
+   "created_by": "class-9-social",
+   "created_at": "2026-10-03T08:03:52+05:30",
+   "text_as_printed": "What are the functions of Reserve Bank of India? (A)",
+   "section_signal": "V",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "shifted numbering — see key 35",
+     "why_not_corrected": "answer-side numbering is displaced in this band; extraction does not shift-align (procedure §4.2) — answer left empty, coordinator verifies the pair by content in review",
+     "suggested": "key 35 (this unit's answer side prints Q37's answer under printed label 35)"
+    }
+   ],
+   "content_hash": "f0034401ce678ef570badcf342a7ea56bf7863244af75a62084a4780481475e4"
+  }
+ ],
+ "pending_summary": {}
+}
