@@ -1,0 +1,4232 @@
+{
+ "contract_version": "1.7",
+ "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
+ "procedure_file": "extraction_procedure_social_addendum_v1.3_social science Classes 6-10 on top of procedure v2.md",
+ "machine_name": "soc-7-01_questions",
+ "version": 1,
+ "changelog": "v1 extraction — batch-01 — class-7-social",
+ "amendments_applied": [],
+ "unit_state": "EXTRACTED",
+ "review_ready": false,
+ "count_gate": {
+  "reference": 49,
+  "reference_source": "audited",
+  "extracted": 49,
+  "paired": 49,
+  "flagged": 2,
+  "gaps": [],
+  "duplicated_numbers": [],
+  "quota_table": "difficulty_only",
+  "second_method": {
+   "method": "printed difficulty distribution table",
+   "extracted": 49,
+   "agrees": true
+  },
+  "pass": true,
+  "note": "printed difficulty table 10/31/8=49 DISAGREES with per-question tags 8/30/7 (source defect, tags win v2 §6; register difficulty-table-vs-tags); flagged counts answer-level flags; all carry the structural marks flag (addendum §4.5)."
+ },
+ "extraction": {
+  "source_file": "7thSS-EM-LBARevised_1787048371.pdf",
+  "source_ref_prefix": "7thSS-EM-LBARevised_1787048371.pdf",
+  "pdf_pages": [
+   15,
+   16,
+   17,
+   18,
+   160,
+   161,
+   162,
+   163,
+   164
+  ],
+  "printed_page_offset": -14,
+  "method_notes": [
+   "Offset -14 (pdf 15 = printed folio 1; pdf 160 = printed 146, MODEL ANSWERS). Q side: q1-6 pdf15, q7-23 pdf16, q24-43 pdf17, q44-49 pdf18. A side: q1-20 pdf160, q21-36 pdf161, q37-44 pdf162, q45-48 pdf163, q49 pdf164.",
+   "Sections (printed order, lettered): A mcq q1-10 (s1); B fill-in-the-blank q11-18 (s2, type fill, answer kind text = printed key word(s)); C analogy/relationship q19-23 (s3, one-word answer -> vsa); D one-sentence q24-34 (s4, vsa); E two-to-three sentences q35-39 (s5, sa); F 'write a note' q40-43 (s6, sa); G 'four sentences' q44-48 (s7, sa); H 'six sentences' q49 (s8, la). section_signal keeps the printed letter.",
+   "NEW FORMS vs class-9 ch1: fill-in-the-blank (section B) -> type 'fill' per schema 1.7 and prompt types; analogy (section C) treated as one-word vsa. Builder 'fill' branch added (authorised parser work; no contract/rule change).",
+   "DIFFICULTY-TABLE-VS-TAGS defect (tags win, v2 §6): printed table 10/31/8 (total 49); per-question tags 8/30/7 with 4 untagged (q40-43). TOTAL agrees (49 questions) -> count_gate second_method agrees on total. Register difficulty-table-vs-tags.",
+   "q40-43 (section F) UNTAGGED per question; section F header prints '(Difficult )'. Left difficulty null + 'no difficulty tag' + SRCFLAG suggesting 'section F header: Difficult' for the review phase (section-sourced difficulty is a procedure change, not extraction's to make — control-file §4).",
+   "STRAY LABEL q44 (class-9 ruling, folded): the Jesus-Christ answer runs printed 148->149; a spurious '45.' is printed at its continuation on printed 149 before the REAL q45 (Life of Prophet Muhammad). Stray label folded into q44; no renumbering.",
+   "MCQ letter-governs (addendum §4.1): q1 'B. Pope' vs option B 'Popes' (variant); q3 'B. Timor' vs option B 'Timur' (printed typo) -> letter kept, benign flag. Options kept verbatim incl. printed punctuation noise (q1 'Muhammad,', q10 'Moses,').",
+   "fill/vsa q11-34 answer.value = printed key verbatim, no solution_steps. Prose descriptive q37-45 -> SINGLE (answer.value prose, no steps). Sub-headed keys q35,36,46,47,48,49 -> SUB (heading in value, solution_steps = answer points only, headings not steps; addendum §5.2).",
+   "key-lines self-count (addendum §13.3): q35=5, q36=4, q37-45 prose single (0 steps), q46=5, q47=8, q48=1, q49=3 solution_steps; headings excluded as steps; no drops.",
+   "MARKS: no marks printed in any section -> every q marks null, marks_source unassigned, structural flag (addendum §4.5). Register section-marks-not-printed."
+  ],
+  "notation_summary": {
+   "render_tokens": 0,
+   "latex_tokens": 0,
+   "damage_flags": []
+  },
+  "excluded_objects": [],
+  "inline_excluded_count": 0,
+  "figure_references": []
+ },
+ "stimuli": [],
+ "questions": [
+  {
+   "id": "soc-7-01-s1-q001",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 2,
+     "text_as_printed": "Analyzes the teachings of Prophet Muhammad and Jesus Christ, the Bhakti Movement, Dasas, Sufi Saints, and the common values and principles found in different religions."
+    },
+    {
+     "number": 3,
+     "text_as_printed": "Explains, with examples, the impact of the expansion of foreign empires and the contributions of foreign countries (including the Arabs) in literature and science on the cultural life of India."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The supreme teachers of Christianity are called.",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s1-q001",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s1-q001",
+     "pdf_page": 15,
+     "printed_page": 1,
+     "y": 469.858,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s1-q001-key",
+     "pdf_page": 160,
+     "printed_page": 146,
+     "y": 166.728,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:54:27+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-07T23:54:27+05:30",
+   "text_as_printed": "The supreme teachers of Christianity are called. (Average )",
+   "section_signal": "A",
+   "options": [
+    {
+     "id": "A",
+     "text": "Caliphs"
+    },
+    {
+     "id": "B",
+     "text": "Popes"
+    },
+    {
+     "id": "C",
+     "text": "Muhammad,"
+    },
+    {
+     "id": "D",
+     "text": "Priests"
+    }
+   ],
+   "answer_as_printed": "B. Pope",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-07T23:54:27+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text differs from option by a printed typo",
+     "why_not_corrected": "letter B kept (addendum §4.1); key text 'Pope' vs option B 'Popes' differ by a source typo; spelling needs subject knowledge (v2 §1)",
+     "suggested": "B (letter kept)"
+    }
+   ],
+   "content_hash": "8eb84f8efa2afee370bf3986b432f5c070e0da1c39dcbff689b3d26648f248f8"
+  },
+  {
+   "id": "soc-7-01-s1-q002",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 2,
+     "text_as_printed": "Analyzes the teachings of Prophet Muhammad and Jesus Christ, the Bhakti Movement, Dasas, Sufi Saints, and the common values and principles found in different religions."
+    },
+    {
+     "number": 3,
+     "text_as_printed": "Explains, with examples, the impact of the expansion of foreign empires and the contributions of foreign countries (including the Arabs) in literature and science on the cultural life of India."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The messages of the Prophet Muhammad are collected in this book.",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s1-q002",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s1-q002",
+     "pdf_page": 15,
+     "printed_page": 1,
+     "y": 527.258,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s1-q002-key",
+     "pdf_page": 160,
+     "printed_page": 146,
+     "y": 195.428,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:54:27+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-07T23:54:27+05:30",
+   "text_as_printed": "The messages of the Prophet Muhammad are collected in this book. (Easy )",
+   "section_signal": "A",
+   "options": [
+    {
+     "id": "A",
+     "text": "Guru Granth Sahib"
+    },
+    {
+     "id": "B",
+     "text": "Quran"
+    },
+    {
+     "id": "C",
+     "text": "Bible"
+    },
+    {
+     "id": "D",
+     "text": "Bhagavad Gita"
+    }
+   ],
+   "answer_as_printed": "B. Quran",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-07T23:54:27+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "1a0a2ee0e225f134da5b920a75403b515c3bd4c27780df21d9ba38d8c6f17ce6"
+  },
+  {
+   "id": "soc-7-01-s1-q003",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 2,
+     "text_as_printed": "Analyzes the teachings of Prophet Muhammad and Jesus Christ, the Bhakti Movement, Dasas, Sufi Saints, and the common values and principles found in different religions."
+    },
+    {
+     "number": 3,
+     "text_as_printed": "Explains, with examples, the impact of the expansion of foreign empires and the contributions of foreign countries (including the Arabs) in literature and science on the cultural life of India."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Who rebuilt the empire of Kublai Khan, which had declined over time?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s1-q003",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s1-q003",
+     "pdf_page": 15,
+     "printed_page": 1,
+     "y": 584.678,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s1-q003-key",
+     "pdf_page": 160,
+     "printed_page": 146,
+     "y": 224.128,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:54:27+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-07T23:54:27+05:30",
+   "text_as_printed": "Who rebuilt the empire of Kublai Khan, which had declined over time? (Average )",
+   "section_signal": "A",
+   "options": [
+    {
+     "id": "A",
+     "text": "Babur"
+    },
+    {
+     "id": "B",
+     "text": "Timur"
+    },
+    {
+     "id": "C",
+     "text": "Genghis Khan"
+    },
+    {
+     "id": "D",
+     "text": "Mao Tse-tung"
+    }
+   ],
+   "answer_as_printed": "B. Timor",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-07T23:54:27+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text differs from option by a printed typo",
+     "why_not_corrected": "letter B kept (addendum §4.1); key text 'Timor' vs option B 'Timur' differ by a source typo; spelling needs subject knowledge (v2 §1)",
+     "suggested": "B (letter kept)"
+    }
+   ],
+   "content_hash": "9ca2a1427539e86c99512bb456ccca7e1d979bc38b88cc20d5e8d865ffa71e77"
+  },
+  {
+   "id": "soc-7-01-s1-q004",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 2,
+     "text_as_printed": "Analyzes the teachings of Prophet Muhammad and Jesus Christ, the Bhakti Movement, Dasas, Sufi Saints, and the common values and principles found in different religions."
+    },
+    {
+     "number": 3,
+     "text_as_printed": "Explains, with examples, the impact of the expansion of foreign empires and the contributions of foreign countries (including the Arabs) in literature and science on the cultural life of India."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The military state called Ottoman was founded by:",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s1-q004",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s1-q004",
+     "pdf_page": 15,
+     "printed_page": 1,
+     "y": 642.078,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s1-q004-key",
+     "pdf_page": 160,
+     "printed_page": 146,
+     "y": 252.828,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:54:27+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-07T23:54:27+05:30",
+   "text_as_printed": "The military state called Ottoman was founded by: (Average )",
+   "section_signal": "A",
+   "options": [
+    {
+     "id": "A",
+     "text": "Arabs"
+    },
+    {
+     "id": "B",
+     "text": "Persians"
+    },
+    {
+     "id": "C",
+     "text": "Greeks"
+    },
+    {
+     "id": "D",
+     "text": "Turks"
+    }
+   ],
+   "answer_as_printed": "D. Turks",
+   "answer": {
+    "kind": "option",
+    "option_id": "D"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-07T23:54:27+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "d9941b283ac3d6d2ab0614d03306f34df98d23752c659234cb02c577deef12ca"
+  },
+  {
+   "id": "soc-7-01-s1-q005",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 2,
+     "text_as_printed": "Analyzes the teachings of Prophet Muhammad and Jesus Christ, the Bhakti Movement, Dasas, Sufi Saints, and the common values and principles found in different religions."
+    },
+    {
+     "number": 3,
+     "text_as_printed": "Explains, with examples, the impact of the expansion of foreign empires and the contributions of foreign countries (including the Arabs) in literature and science on the cultural life of India."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Who was the grandson of Genghis Khan?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s1-q005",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s1-q005",
+     "pdf_page": 15,
+     "printed_page": 1,
+     "y": 691.488,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s1-q005-key",
+     "pdf_page": 160,
+     "printed_page": 146,
+     "y": 281.528,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:54:27+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-07T23:54:27+05:30",
+   "text_as_printed": "Who was the grandson of Genghis Khan? (Average )",
+   "section_signal": "A",
+   "options": [
+    {
+     "id": "A",
+     "text": "Kublai Khan"
+    },
+    {
+     "id": "B",
+     "text": "Timur"
+    },
+    {
+     "id": "C",
+     "text": "Babur"
+    },
+    {
+     "id": "D",
+     "text": "Mao Tse Tung"
+    }
+   ],
+   "answer_as_printed": "A. Kublai Khan",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-07T23:54:27+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "a75e19fa85cfb249b3f1bf1de97bb56a91560540c3ae534056130a6b01906c33"
+  },
+  {
+   "id": "soc-7-01-s1-q006",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 2,
+     "text_as_printed": "Analyzes the teachings of Prophet Muhammad and Jesus Christ, the Bhakti Movement, Dasas, Sufi Saints, and the common values and principles found in different religions."
+    },
+    {
+     "number": 3,
+     "text_as_printed": "Explains, with examples, the impact of the expansion of foreign empires and the contributions of foreign countries (including the Arabs) in literature and science on the cultural life of India."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "This city is the capital of Palestine.",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s1-q006",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s1-q006",
+     "pdf_page": 15,
+     "printed_page": 1,
+     "y": 740.883,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s1-q006-key",
+     "pdf_page": 160,
+     "printed_page": 146,
+     "y": 310.228,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:54:27+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-07T23:54:27+05:30",
+   "text_as_printed": "This city is the capital of Palestine. (Easy)",
+   "section_signal": "A",
+   "options": [
+    {
+     "id": "A",
+     "text": "Kabul"
+    },
+    {
+     "id": "B",
+     "text": "Jerusalem"
+    },
+    {
+     "id": "C",
+     "text": "Baghdad"
+    },
+    {
+     "id": "D",
+     "text": "Vatican City"
+    }
+   ],
+   "answer_as_printed": "B. Jerusalem",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-07T23:54:27+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "555e368a5e2097141160aa78c3b099836db866d460848ffb71c8900434bc638f"
+  },
+  {
+   "id": "soc-7-01-s1-q007",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 2,
+     "text_as_printed": "Analyzes the teachings of Prophet Muhammad and Jesus Christ, the Bhakti Movement, Dasas, Sufi Saints, and the common values and principles found in different religions."
+    },
+    {
+     "number": 3,
+     "text_as_printed": "Explains, with examples, the impact of the expansion of foreign empires and the contributions of foreign countries (including the Arabs) in literature and science on the cultural life of India."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The founder of Christianity, one of the world's major religionS.",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s1-q007",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s1-q007",
+     "pdf_page": 16,
+     "printed_page": 2,
+     "y": 93.308,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s1-q007-key",
+     "pdf_page": 160,
+     "printed_page": 146,
+     "y": 338.928,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:54:27+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-07T23:54:27+05:30",
+   "text_as_printed": "The founder of Christianity, one of the world's major religionS. (Easy)",
+   "section_signal": "A",
+   "options": [
+    {
+     "id": "A",
+     "text": "Jesus Christ"
+    },
+    {
+     "id": "B",
+     "text": "Vardhamana Mahavira"
+    },
+    {
+     "id": "C",
+     "text": "Prophet Muhammad"
+    },
+    {
+     "id": "D",
+     "text": "Guru Nanak"
+    }
+   ],
+   "answer_as_printed": "A. Jesus Christ",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-07T23:54:27+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "cdbc1ce6ada36361b89522740944b1c1eb7834bd7ac1a867d98477f3c690c153"
+  },
+  {
+   "id": "soc-7-01-s1-q008",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 2,
+     "text_as_printed": "Analyzes the teachings of Prophet Muhammad and Jesus Christ, the Bhakti Movement, Dasas, Sufi Saints, and the common values and principles found in different religions."
+    },
+    {
+     "number": 3,
+     "text_as_printed": "Explains, with examples, the impact of the expansion of foreign empires and the contributions of foreign countries (including the Arabs) in literature and science on the cultural life of India."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Who founded Islam?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s1-q008",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s1-q008",
+     "pdf_page": 16,
+     "printed_page": 2,
+     "y": 142.728,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s1-q008-key",
+     "pdf_page": 160,
+     "printed_page": 146,
+     "y": 367.658,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:54:27+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-07T23:54:27+05:30",
+   "text_as_printed": "Who founded Islam? (Easy )",
+   "section_signal": "A",
+   "options": [
+    {
+     "id": "A",
+     "text": "Jesus Christ"
+    },
+    {
+     "id": "B",
+     "text": "Prophet Muhammad"
+    },
+    {
+     "id": "C",
+     "text": "Dalai Lama"
+    },
+    {
+     "id": "D",
+     "text": "Caliphs"
+    }
+   ],
+   "answer_as_printed": "B. Prophet Muhammad",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-07T23:54:27+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "3e200c730fb0daa3d983fbc6ede7a3425ec612a80673faed47562876548a172c"
+  },
+  {
+   "id": "soc-7-01-s1-q009",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 2,
+     "text_as_printed": "Analyzes the teachings of Prophet Muhammad and Jesus Christ, the Bhakti Movement, Dasas, Sufi Saints, and the common values and principles found in different religions."
+    },
+    {
+     "number": 3,
+     "text_as_printed": "Explains, with examples, the impact of the expansion of foreign empires and the contributions of foreign countries (including the Arabs) in literature and science on the cultural life of India."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The holy book of Christianity containing the teachings of Jesus Christ is:",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s1-q009",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s1-q009",
+     "pdf_page": 16,
+     "printed_page": 2,
+     "y": 192.128,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s1-q009-key",
+     "pdf_page": 160,
+     "printed_page": 146,
+     "y": 396.358,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:54:27+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-07T23:54:27+05:30",
+   "text_as_printed": "The holy book of Christianity containing the teachings of Jesus Christ is: (Easy )",
+   "section_signal": "A",
+   "options": [
+    {
+     "id": "A",
+     "text": "Bhagavad Gita"
+    },
+    {
+     "id": "B",
+     "text": "Quran"
+    },
+    {
+     "id": "C",
+     "text": "Bible"
+    },
+    {
+     "id": "D",
+     "text": "Granth Saheb"
+    }
+   ],
+   "answer_as_printed": "C. Bible",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-07T23:54:27+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "e118413e666947f9d5a9cddde405694872eac18bd54873764e7873be4032e7b4"
+  },
+  {
+   "id": "soc-7-01-s1-q010",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 2,
+     "text_as_printed": "Analyzes the teachings of Prophet Muhammad and Jesus Christ, the Bhakti Movement, Dasas, Sufi Saints, and the common values and principles found in different religions."
+    },
+    {
+     "number": 3,
+     "text_as_printed": "Explains, with examples, the impact of the expansion of foreign empires and the contributions of foreign countries (including the Arabs) in literature and science on the cultural life of India."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Mother name of Jesus Christ is.",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s1-q010",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s1-q010",
+     "pdf_page": 16,
+     "printed_page": 2,
+     "y": 249.528,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s1-q010-key",
+     "pdf_page": 160,
+     "printed_page": 146,
+     "y": 425.058,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:54:27+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-07T23:54:27+05:30",
+   "text_as_printed": "Mother name of Jesus Christ is. (Easy )",
+   "section_signal": "A",
+   "options": [
+    {
+     "id": "A",
+     "text": "Marilyn"
+    },
+    {
+     "id": "B",
+     "text": "Moses,"
+    },
+    {
+     "id": "C",
+     "text": "Amina"
+    },
+    {
+     "id": "D",
+     "text": "Mary"
+    }
+   ],
+   "answer_as_printed": "D. Mary",
+   "answer": {
+    "kind": "option",
+    "option_id": "D"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-07T23:54:27+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "27bf551f0df00f09828b2d274526ec769928de7f636221921bf3a79689c2c653"
+  },
+  {
+   "id": "soc-7-01-s2-q011",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 2,
+     "text_as_printed": "Analyzes the teachings of Prophet Muhammad and Jesus Christ, the Bhakti Movement, Dasas, Sufi Saints, and the common values and principles found in different religions."
+    },
+    {
+     "number": 3,
+     "text_as_printed": "Explains, with examples, the impact of the expansion of foreign empires and the contributions of foreign countries (including the Arabs) in literature and science on the cultural life of India."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Bethlehem is the birthplace of ------.",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s2-q011",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s2-q011",
+     "pdf_page": 16,
+     "printed_page": 2,
+     "y": 337.428,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s2-q011-key",
+     "pdf_page": 160,
+     "printed_page": 146,
+     "y": 453.758,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:54:27+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-07T23:54:27+05:30",
+   "text_as_printed": "Bethlehem is the birthplace of ------. (Average )",
+   "section_signal": "B",
+   "answer": {
+    "kind": "text",
+    "value": "Jesus Christ"
+   },
+   "answer_as_printed": "Jesus Christ",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-07T23:54:27+05:30",
+    "basis": "printed fill-in-the-blank key word(s), verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "1436544e39e26047de3fc35b393e9f96db8a3f0a7063627d93c4e7165045a11a"
+  },
+  {
+   "id": "soc-7-01-s2-q012",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 2,
+     "text_as_printed": "Analyzes the teachings of Prophet Muhammad and Jesus Christ, the Bhakti Movement, Dasas, Sufi Saints, and the common values and principles found in different religions."
+    },
+    {
+     "number": 3,
+     "text_as_printed": "Explains, with examples, the impact of the expansion of foreign empires and the contributions of foreign countries (including the Arabs) in literature and science on the cultural life of India."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "A famous church in Rome, Italy, is -----",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s2-q012",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s2-q012",
+     "pdf_page": 16,
+     "printed_page": 2,
+     "y": 366.158,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s2-q012-key",
+     "pdf_page": 160,
+     "printed_page": 146,
+     "y": 482.458,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:54:27+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-07T23:54:27+05:30",
+   "text_as_printed": "A famous church in Rome, Italy, is ----- (Average )",
+   "section_signal": "B",
+   "answer": {
+    "kind": "text",
+    "value": "Roman catholic charch"
+   },
+   "answer_as_printed": "Roman catholic charch",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-07T23:54:27+05:30",
+    "basis": "printed fill-in-the-blank key word(s), verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "9fedf91f244e9c5d5b7b4be7842673a6df835d71e6a93a1646e707e7c45483ec"
+  },
+  {
+   "id": "soc-7-01-s2-q013",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 2,
+     "text_as_printed": "Analyzes the teachings of Prophet Muhammad and Jesus Christ, the Bhakti Movement, Dasas, Sufi Saints, and the common values and principles found in different religions."
+    },
+    {
+     "number": 3,
+     "text_as_printed": "Explains, with examples, the impact of the expansion of foreign empires and the contributions of foreign countries (including the Arabs) in literature and science on the cultural life of India."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "A prophet is one who preaches the -------- of God.",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s2-q013",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s2-q013",
+     "pdf_page": 16,
+     "printed_page": 2,
+     "y": 394.858,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s2-q013-key",
+     "pdf_page": 160,
+     "printed_page": 146,
+     "y": 511.158,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:54:27+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-07T23:54:27+05:30",
+   "text_as_printed": "A prophet is one who preaches the -------- of God. (Average )",
+   "section_signal": "B",
+   "answer": {
+    "kind": "text",
+    "value": "Message"
+   },
+   "answer_as_printed": "Message",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-07T23:54:27+05:30",
+    "basis": "printed fill-in-the-blank key word(s), verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "4a87575f0b36766f7952332e677edffbc784466fde772d82a10c25cf9934b18a"
+  },
+  {
+   "id": "soc-7-01-s2-q014",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 2,
+     "text_as_printed": "Analyzes the teachings of Prophet Muhammad and Jesus Christ, the Bhakti Movement, Dasas, Sufi Saints, and the common values and principles found in different religions."
+    },
+    {
+     "number": 3,
+     "text_as_printed": "Explains, with examples, the impact of the expansion of foreign empires and the contributions of foreign countries (including the Arabs) in literature and science on the cultural life of India."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The successors of Muhammad are called --------",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s2-q014",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s2-q014",
+     "pdf_page": 16,
+     "printed_page": 2,
+     "y": 423.558,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s2-q014-key",
+     "pdf_page": 160,
+     "printed_page": 146,
+     "y": 539.858,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:54:27+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-07T23:54:27+05:30",
+   "text_as_printed": "The successors of Muhammad are called -------- (Average )",
+   "section_signal": "B",
+   "answer": {
+    "kind": "text",
+    "value": "The Caliph"
+   },
+   "answer_as_printed": "The Caliph",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-07T23:54:27+05:30",
+    "basis": "printed fill-in-the-blank key word(s), verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "5f5d796e579ea2304e98de4215acb31db92e85cf886e47a5acd636ed0fe1293d"
+  },
+  {
+   "id": "soc-7-01-s2-q015",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 2,
+     "text_as_printed": "Analyzes the teachings of Prophet Muhammad and Jesus Christ, the Bhakti Movement, Dasas, Sufi Saints, and the common values and principles found in different religions."
+    },
+    {
+     "number": 3,
+     "text_as_printed": "Explains, with examples, the impact of the expansion of foreign empires and the contributions of foreign countries (including the Arabs) in literature and science on the cultural life of India."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The city of ------------ in Italy grew into a major religious center for Christians",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s2-q015",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s2-q015",
+     "pdf_page": 16,
+     "printed_page": 2,
+     "y": 452.158,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s2-q015-key",
+     "pdf_page": 160,
+     "printed_page": 146,
+     "y": 568.558,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:54:27+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-07T23:54:27+05:30",
+   "text_as_printed": "The city of ------------ in Italy grew into a major religious center for Christians (Average )",
+   "section_signal": "B",
+   "answer": {
+    "kind": "text",
+    "value": "Rome"
+   },
+   "answer_as_printed": "Rome",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-07T23:54:27+05:30",
+    "basis": "printed fill-in-the-blank key word(s), verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "6bae28240793bf7919d9fc3833994ca7b0e2052bc3ba5a7bf49251dea97a5b67"
+  },
+  {
+   "id": "soc-7-01-s2-q016",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 2,
+     "text_as_printed": "Analyzes the teachings of Prophet Muhammad and Jesus Christ, the Bhakti Movement, Dasas, Sufi Saints, and the common values and principles found in different religions."
+    },
+    {
+     "number": 3,
+     "text_as_printed": "Explains, with examples, the impact of the expansion of foreign empires and the contributions of foreign countries (including the Arabs) in literature and science on the cultural life of India."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The Muslim era began in the year___ when Prophet migrated from Mecca to Medina",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s2-q016",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s2-q016",
+     "pdf_page": 16,
+     "printed_page": 2,
+     "y": 480.858,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s2-q016-key",
+     "pdf_page": 160,
+     "printed_page": 146,
+     "y": 597.288,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:54:27+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-07T23:54:27+05:30",
+   "text_as_printed": "The Muslim era began in the year___ when Prophet migrated from Mecca to Medina (Average )",
+   "section_signal": "B",
+   "answer": {
+    "kind": "text",
+    "value": "786 A.D"
+   },
+   "answer_as_printed": "786 A.D",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-07T23:54:27+05:30",
+    "basis": "printed fill-in-the-blank key word(s), verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "b08f51e8331bffd7270b714d457deca61ca897b9b1c5fcc4ea28c68c65658122"
+  },
+  {
+   "id": "soc-7-01-s2-q017",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 2,
+     "text_as_printed": "Analyzes the teachings of Prophet Muhammad and Jesus Christ, the Bhakti Movement, Dasas, Sufi Saints, and the common values and principles found in different religions."
+    },
+    {
+     "number": 3,
+     "text_as_printed": "Explains, with examples, the impact of the expansion of foreign empires and the contributions of foreign countries (including the Arabs) in literature and science on the cultural life of India."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Jesus was falsely accused of being a traitor and was raised to --------",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s2-q017",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s2-q017",
+     "pdf_page": 16,
+     "printed_page": 2,
+     "y": 509.558,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s2-q017-key",
+     "pdf_page": 160,
+     "printed_page": 146,
+     "y": 625.988,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:54:27+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-07T23:54:27+05:30",
+   "text_as_printed": "Jesus was falsely accused of being a traitor and was raised to -------- (Average )",
+   "section_signal": "B",
+   "answer": {
+    "kind": "text",
+    "value": "crucified"
+   },
+   "answer_as_printed": "crucified",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-07T23:54:27+05:30",
+    "basis": "printed fill-in-the-blank key word(s), verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "3c88cc628b8b11ff239918a99c23eb46253e49cdadeaa5e6edeb48dc5373159e"
+  },
+  {
+   "id": "soc-7-01-s2-q018",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 2,
+     "text_as_printed": "Analyzes the teachings of Prophet Muhammad and Jesus Christ, the Bhakti Movement, Dasas, Sufi Saints, and the common values and principles found in different religions."
+    },
+    {
+     "number": 3,
+     "text_as_printed": "Explains, with examples, the impact of the expansion of foreign empires and the contributions of foreign countries (including the Arabs) in literature and science on the cultural life of India."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The birthplace of the Prophet Muhammad is ----------",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s2-q018",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s2-q018",
+     "pdf_page": 16,
+     "printed_page": 2,
+     "y": 538.258,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s2-q018-key",
+     "pdf_page": 160,
+     "printed_page": 146,
+     "y": 654.678,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:54:27+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-07T23:54:27+05:30",
+   "text_as_printed": "The birthplace of the Prophet Muhammad is ---------- (Average )",
+   "section_signal": "B",
+   "answer": {
+    "kind": "text",
+    "value": "Mecca"
+   },
+   "answer_as_printed": "Mecca",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-07T23:54:27+05:30",
+    "basis": "printed fill-in-the-blank key word(s), verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "575f75d7242edc42169c39ba9152b7f6c535c437563554db7b42a31c13a2e36f"
+  },
+  {
+   "id": "soc-7-01-s3-q019",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 2,
+     "text_as_printed": "Analyzes the teachings of Prophet Muhammad and Jesus Christ, the Bhakti Movement, Dasas, Sufi Saints, and the common values and principles found in different religions."
+    },
+    {
+     "number": 3,
+     "text_as_printed": "Explains, with examples, the impact of the expansion of foreign empires and the contributions of foreign countries (including the Arabs) in literature and science on the cultural life of India."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Quran: Islam:: Bible -----------",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s3-q019",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s3-q019",
+     "pdf_page": 16,
+     "printed_page": 2,
+     "y": 619.878,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s3-q019-key",
+     "pdf_page": 160,
+     "printed_page": 146,
+     "y": 712.088,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:54:27+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-07T23:54:27+05:30",
+   "text_as_printed": "Quran: Islam :: Bible ----------- (Average)",
+   "section_signal": "C",
+   "answer": {
+    "kind": "text",
+    "value": "Christian"
+   },
+   "answer_as_printed": "Christian",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-07T23:54:27+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "07b3f069145e54f1e173f65f098b4608dd3d100f25a0c66d0e104ccf89e9ba03"
+  },
+  {
+   "id": "soc-7-01-s3-q020",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 2,
+     "text_as_printed": "Analyzes the teachings of Prophet Muhammad and Jesus Christ, the Bhakti Movement, Dasas, Sufi Saints, and the common values and principles found in different religions."
+    },
+    {
+     "number": 3,
+     "text_as_printed": "Explains, with examples, the impact of the expansion of foreign empires and the contributions of foreign countries (including the Arabs) in literature and science on the cultural life of India."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Jesus: Yesu:: Christ: ---------",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s3-q020",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s3-q020",
+     "pdf_page": 16,
+     "printed_page": 2,
+     "y": 648.578,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s3-q020-key",
+     "pdf_page": 160,
+     "printed_page": 146,
+     "y": 740.783,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:54:27+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-07T23:54:27+05:30",
+   "text_as_printed": "Jesus : Yesu : : Christ: --------- (Average)",
+   "section_signal": "C",
+   "answer": {
+    "kind": "text",
+    "value": "Saviour"
+   },
+   "answer_as_printed": "Saviour",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-07T23:54:27+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "bc5a64f84b0cddf48f82ba63abd9b05ab5fd6301bf19dc10dcaa7b41fb66bf96"
+  },
+  {
+   "id": "soc-7-01-s3-q021",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 2,
+     "text_as_printed": "Analyzes the teachings of Prophet Muhammad and Jesus Christ, the Bhakti Movement, Dasas, Sufi Saints, and the common values and principles found in different religions."
+    },
+    {
+     "number": 3,
+     "text_as_printed": "Explains, with examples, the impact of the expansion of foreign empires and the contributions of foreign countries (including the Arabs) in literature and science on the cultural life of India."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Prophet Muhammad: Amina:: Jesus Christ------",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s3-q021",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s3-q021",
+     "pdf_page": 16,
+     "printed_page": 2,
+     "y": 677.278,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s3-q021-key",
+     "pdf_page": 161,
+     "printed_page": 147,
+     "y": 64.608,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:54:27+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-07T23:54:27+05:30",
+   "text_as_printed": "Prophet Muhammad: Amina :: Jesus Christ------ (Average)",
+   "section_signal": "C",
+   "answer": {
+    "kind": "text",
+    "value": "Mary"
+   },
+   "answer_as_printed": "Mary",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-07T23:54:27+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "99201689b524564bdf64ea95f45f836b032fc47d471870698942e7eda2a34e4f"
+  },
+  {
+   "id": "soc-7-01-s3-q022",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 2,
+     "text_as_printed": "Analyzes the teachings of Prophet Muhammad and Jesus Christ, the Bhakti Movement, Dasas, Sufi Saints, and the common values and principles found in different religions."
+    },
+    {
+     "number": 3,
+     "text_as_printed": "Explains, with examples, the impact of the expansion of foreign empires and the contributions of foreign countries (including the Arabs) in literature and science on the cultural life of India."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Muslim: Those who submit to God:: Islam------",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s3-q022",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s3-q022",
+     "pdf_page": 16,
+     "printed_page": 2,
+     "y": 705.978,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s3-q022-key",
+     "pdf_page": 161,
+     "printed_page": 147,
+     "y": 93.308,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:54:27+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-07T23:54:27+05:30",
+   "text_as_printed": "Muslim: Those who submit to God :: Islam------ (Average )",
+   "section_signal": "C",
+   "answer": {
+    "kind": "text",
+    "value": "Surrender to God"
+   },
+   "answer_as_printed": "Surrender to God",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-07T23:54:27+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "671f9be0acbde2614ca0ba32518215160412ce7d0c34bb1ea2fad6f2071c3e91"
+  },
+  {
+   "id": "soc-7-01-s3-q023",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 2,
+     "text_as_printed": "Analyzes the teachings of Prophet Muhammad and Jesus Christ, the Bhakti Movement, Dasas, Sufi Saints, and the common values and principles found in different religions."
+    },
+    {
+     "number": 3,
+     "text_as_printed": "Explains, with examples, the impact of the expansion of foreign empires and the contributions of foreign countries (including the Arabs) in literature and science on the cultural life of India."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Ayurveda: Indians:: Unani------",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s3-q023",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s3-q023",
+     "pdf_page": 16,
+     "printed_page": 2,
+     "y": 734.683,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s3-q023-key",
+     "pdf_page": 161,
+     "printed_page": 147,
+     "y": 122.028,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:54:27+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-07T23:54:27+05:30",
+   "text_as_printed": "Ayurveda: Indians :: Unani------ (Average )",
+   "section_signal": "C",
+   "answer": {
+    "kind": "text",
+    "value": "Arabs"
+   },
+   "answer_as_printed": "Arabs",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-07T23:54:27+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "c4fc75ca7c6b082de4ae69db877e938200d97eaba4b95aaac6a6be3e83260829"
+  },
+  {
+   "id": "soc-7-01-s4-q024",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 2,
+     "text_as_printed": "Analyzes the teachings of Prophet Muhammad and Jesus Christ, the Bhakti Movement, Dasas, Sufi Saints, and the common values and principles found in different religions."
+    },
+    {
+     "number": 3,
+     "text_as_printed": "Explains, with examples, the impact of the expansion of foreign empires and the contributions of foreign countries (including the Arabs) in literature and science on the cultural life of India."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Which kingdom first accepted Christianity as its official religion?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s4-q024",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s4-q024",
+     "pdf_page": 17,
+     "printed_page": 3,
+     "y": 95.108,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s4-q024-key",
+     "pdf_page": 161,
+     "printed_page": 147,
+     "y": 179.428,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:54:27+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-07T23:54:27+05:30",
+   "text_as_printed": "Which kingdom first accepted Christianity as its official religion? (Easy )",
+   "section_signal": "D",
+   "answer": {
+    "kind": "text",
+    "value": "Roman Empire"
+   },
+   "answer_as_printed": "Roman Empire",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-07T23:54:27+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "88e356d10ffdcf1bf080276570a90ea3ad1cb999cb52443d34e6650fe2b994e9"
+  },
+  {
+   "id": "soc-7-01-s4-q025",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 2,
+     "text_as_printed": "Analyzes the teachings of Prophet Muhammad and Jesus Christ, the Bhakti Movement, Dasas, Sufi Saints, and the common values and principles found in different religions."
+    },
+    {
+     "number": 3,
+     "text_as_printed": "Explains, with examples, the impact of the expansion of foreign empires and the contributions of foreign countries (including the Arabs) in literature and science on the cultural life of India."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "How many of his disciples propagated the teachings of Jesus?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s4-q025",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s4-q025",
+     "pdf_page": 17,
+     "printed_page": 3,
+     "y": 123.828,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s4-q025-key",
+     "pdf_page": 161,
+     "printed_page": 147,
+     "y": 208.128,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:54:27+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-07T23:54:27+05:30",
+   "text_as_printed": "How many of his disciples propagated the teachings of Jesus? (Average )",
+   "section_signal": "D",
+   "answer": {
+    "kind": "text",
+    "value": "12 people"
+   },
+   "answer_as_printed": "12 people",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-07T23:54:27+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "a385aa7c6d74141555ba5d5f9e65fdd52914574c97b8a3c24500f0af0635bdc7"
+  },
+  {
+   "id": "soc-7-01-s4-q026",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 2,
+     "text_as_printed": "Analyzes the teachings of Prophet Muhammad and Jesus Christ, the Bhakti Movement, Dasas, Sufi Saints, and the common values and principles found in different religions."
+    },
+    {
+     "number": 3,
+     "text_as_printed": "Explains, with examples, the impact of the expansion of foreign empires and the contributions of foreign countries (including the Arabs) in literature and science on the cultural life of India."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What was the name of the wife of the Prophet Muhammad?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s4-q026",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s4-q026",
+     "pdf_page": 17,
+     "printed_page": 3,
+     "y": 152.528,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s4-q026-key",
+     "pdf_page": 161,
+     "printed_page": 147,
+     "y": 236.828,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:54:27+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-07T23:54:27+05:30",
+   "text_as_printed": "What was the name of the wife of the Prophet Muhammad? (Average )",
+   "section_signal": "D",
+   "answer": {
+    "kind": "text",
+    "value": "Khadija"
+   },
+   "answer_as_printed": "Khadija",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-07T23:54:27+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "faba768d07a32e469bcef1076909be272141680002b924b8f63950d11a42d952"
+  },
+  {
+   "id": "soc-7-01-s4-q027",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 2,
+     "text_as_printed": "Analyzes the teachings of Prophet Muhammad and Jesus Christ, the Bhakti Movement, Dasas, Sufi Saints, and the common values and principles found in different religions."
+    },
+    {
+     "number": 3,
+     "text_as_printed": "Explains, with examples, the impact of the expansion of foreign empires and the contributions of foreign countries (including the Arabs) in literature and science on the cultural life of India."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The works 'Rubayat and Shahnama' are the greatest works of which language?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s4-q027",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s4-q027",
+     "pdf_page": 17,
+     "printed_page": 3,
+     "y": 181.228,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s4-q027-key",
+     "pdf_page": 161,
+     "printed_page": 147,
+     "y": 265.528,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:54:27+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-07T23:54:27+05:30",
+   "text_as_printed": "The works 'Rubayat and Shahnama' are the greatest works of which language? (Average )",
+   "section_signal": "D",
+   "answer": {
+    "kind": "text",
+    "value": "Persian Language"
+   },
+   "answer_as_printed": "Persian Language",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-07T23:54:27+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "e21cf071502d033b2a368d7e52502dbd8d90a9d6ed6eaae611fc9eb2027ef22a"
+  },
+  {
+   "id": "soc-7-01-s4-q028",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 2,
+     "text_as_printed": "Analyzes the teachings of Prophet Muhammad and Jesus Christ, the Bhakti Movement, Dasas, Sufi Saints, and the common values and principles found in different religions."
+    },
+    {
+     "number": 3,
+     "text_as_printed": "Explains, with examples, the impact of the expansion of foreign empires and the contributions of foreign countries (including the Arabs) in literature and science on the cultural life of India."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What was the name of the father of the Prophet Muhammad?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s4-q028",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s4-q028",
+     "pdf_page": 17,
+     "printed_page": 3,
+     "y": 209.928,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s4-q028-key",
+     "pdf_page": 161,
+     "printed_page": 147,
+     "y": 294.228,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:54:27+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-07T23:54:27+05:30",
+   "text_as_printed": "What was the name of the father of the Prophet Muhammad? (Average )",
+   "section_signal": "D",
+   "answer": {
+    "kind": "text",
+    "value": "Abdulla"
+   },
+   "answer_as_printed": "Abdulla",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-07T23:54:27+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "cbb26a6dff256e1ca001a3411a868103e566f7ba01c88122a2a94e4f4795fe56"
+  },
+  {
+   "id": "soc-7-01-s4-q029",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 2,
+     "text_as_printed": "Analyzes the teachings of Prophet Muhammad and Jesus Christ, the Bhakti Movement, Dasas, Sufi Saints, and the common values and principles found in different religions."
+    },
+    {
+     "number": 3,
+     "text_as_printed": "Explains, with examples, the impact of the expansion of foreign empires and the contributions of foreign countries (including the Arabs) in literature and science on the cultural life of India."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is the origin of the Turks?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s4-q029",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s4-q029",
+     "pdf_page": 17,
+     "printed_page": 3,
+     "y": 238.628,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s4-q029-key",
+     "pdf_page": 161,
+     "printed_page": 147,
+     "y": 322.928,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:54:27+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-07T23:54:27+05:30",
+   "text_as_printed": "What is the origin of the Turks? (Average )",
+   "section_signal": "D",
+   "answer": {
+    "kind": "text",
+    "value": "Turkistan of Middle East (Turk Manistan)"
+   },
+   "answer_as_printed": "Turkistan of Middle East (Turk Manistan)",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-07T23:54:27+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "2a3e9b85451244375ce773e893d6538d294ccfc0d9bcad7ebb5d6c5f56e3ec04"
+  },
+  {
+   "id": "soc-7-01-s4-q030",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 2,
+     "text_as_printed": "Analyzes the teachings of Prophet Muhammad and Jesus Christ, the Bhakti Movement, Dasas, Sufi Saints, and the common values and principles found in different religions."
+    },
+    {
+     "number": 3,
+     "text_as_printed": "Explains, with examples, the impact of the expansion of foreign empires and the contributions of foreign countries (including the Arabs) in literature and science on the cultural life of India."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "In which cave did the Prophet Muhammad receive prophethood while praying and meditating?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s4-q030",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s4-q030",
+     "pdf_page": 17,
+     "printed_page": 3,
+     "y": 267.328,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s4-q030-key",
+     "pdf_page": 161,
+     "printed_page": 147,
+     "y": 351.658,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:54:27+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-07T23:54:27+05:30",
+   "text_as_printed": "In which cave did the Prophet Muhammad receive prophethood while praying and meditating? (Difficult )",
+   "section_signal": "D",
+   "answer": {
+    "kind": "text",
+    "value": "Hira"
+   },
+   "answer_as_printed": "Hira",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-07T23:54:27+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "59dc8660f79d030a5165f53e343498cd2d9ba055d20f622485cf339c1822898f"
+  },
+  {
+   "id": "soc-7-01-s4-q031",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 2,
+     "text_as_printed": "Analyzes the teachings of Prophet Muhammad and Jesus Christ, the Bhakti Movement, Dasas, Sufi Saints, and the common values and principles found in different religions."
+    },
+    {
+     "number": 3,
+     "text_as_printed": "Explains, with examples, the impact of the expansion of foreign empires and the contributions of foreign countries (including the Arabs) in literature and science on the cultural life of India."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is the origin of the Mongols?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s4-q031",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s4-q031",
+     "pdf_page": 17,
+     "printed_page": 3,
+     "y": 316.728,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s4-q031-key",
+     "pdf_page": 161,
+     "printed_page": 147,
+     "y": 380.358,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:54:27+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-07T23:54:27+05:30",
+   "text_as_printed": "What is the origin of the Mongols? (Average )",
+   "section_signal": "D",
+   "answer": {
+    "kind": "text",
+    "value": "Middle East"
+   },
+   "answer_as_printed": "Middle East",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-07T23:54:27+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "89d45799086bd3fb6c2a9248049984554c7fbb6b971ebb49cf74253cc4ff3d54"
+  },
+  {
+   "id": "soc-7-01-s4-q032",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 2,
+     "text_as_printed": "Analyzes the teachings of Prophet Muhammad and Jesus Christ, the Bhakti Movement, Dasas, Sufi Saints, and the common values and principles found in different religions."
+    },
+    {
+     "number": 3,
+     "text_as_printed": "Explains, with examples, the impact of the expansion of foreign empires and the contributions of foreign countries (including the Arabs) in literature and science on the cultural life of India."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What was the main profession of the Mongols?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s4-q032",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s4-q032",
+     "pdf_page": 17,
+     "printed_page": 3,
+     "y": 345.458,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s4-q032-key",
+     "pdf_page": 161,
+     "printed_page": 147,
+     "y": 409.058,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:54:27+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-07T23:54:27+05:30",
+   "text_as_printed": "What was the main profession of the Mongols? (Average )",
+   "section_signal": "D",
+   "answer": {
+    "kind": "text",
+    "value": "Animal rearing"
+   },
+   "answer_as_printed": "Animal rearing",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-07T23:54:27+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "6f6d0b20e537a0385089123a23b6db1e6114d19aaa7d69585e761d805ae64cd7"
+  },
+  {
+   "id": "soc-7-01-s4-q033",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 2,
+     "text_as_printed": "Analyzes the teachings of Prophet Muhammad and Jesus Christ, the Bhakti Movement, Dasas, Sufi Saints, and the common values and principles found in different religions."
+    },
+    {
+     "number": 3,
+     "text_as_printed": "Explains, with examples, the impact of the expansion of foreign empires and the contributions of foreign countries (including the Arabs) in literature and science on the cultural life of India."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is history?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s4-q033",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s4-q033",
+     "pdf_page": 17,
+     "printed_page": 3,
+     "y": 374.158,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s4-q033-key",
+     "pdf_page": 161,
+     "printed_page": 147,
+     "y": 437.758,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:54:27+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-07T23:54:27+05:30",
+   "text_as_printed": "What is history? (Easy )",
+   "section_signal": "D",
+   "answer": {
+    "kind": "text",
+    "value": "History is the study of past events"
+   },
+   "answer_as_printed": "History is the study of past events",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-07T23:54:27+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "3db103c66873f29e40f90ab28497160df19a3d84c8026a1f87eabc9ab14efa61"
+  },
+  {
+   "id": "soc-7-01-s4-q034",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 2,
+     "text_as_printed": "Analyzes the teachings of Prophet Muhammad and Jesus Christ, the Bhakti Movement, Dasas, Sufi Saints, and the common values and principles found in different religions."
+    },
+    {
+     "number": 3,
+     "text_as_printed": "Explains, with examples, the impact of the expansion of foreign empires and the contributions of foreign countries (including the Arabs) in literature and science on the cultural life of India."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is the origin of the nomadic Turks?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s4-q034",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s4-q034",
+     "pdf_page": 17,
+     "printed_page": 3,
+     "y": 402.858,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s4-q034-key",
+     "pdf_page": 161,
+     "printed_page": 147,
+     "y": 466.458,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:54:27+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-07T23:54:27+05:30",
+   "text_as_printed": "What is the origin of the nomadic Turks? (Average )",
+   "section_signal": "D",
+   "answer": {
+    "kind": "text",
+    "value": "Turkstan"
+   },
+   "answer_as_printed": "Turkstan",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-07T23:54:27+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "3d36ed98d0c9b15aa400718679ea3de6a47405370be332e6cf493eb65a254a20"
+  },
+  {
+   "id": "soc-7-01-s5-q035",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 2,
+     "text_as_printed": "Analyzes the teachings of Prophet Muhammad and Jesus Christ, the Bhakti Movement, Dasas, Sufi Saints, and the common values and principles found in different religions."
+    },
+    {
+     "number": 3,
+     "text_as_printed": "Explains, with examples, the impact of the expansion of foreign empires and the contributions of foreign countries (including the Arabs) in literature and science on the cultural life of India."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "List out the teachings of Jesus.",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s5-q035",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s5-q035",
+     "pdf_page": 17,
+     "printed_page": 3,
+     "y": 461.958,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s5-q035-key",
+     "pdf_page": 161,
+     "printed_page": 147,
+     "y": 495.158,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:54:27+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-07T23:54:27+05:30",
+   "text_as_printed": "List out the teachings of Jesus. (Average )",
+   "section_signal": "E",
+   "answer": {
+    "kind": "text",
+    "value": "Teachings of Jesus Christ\nWe are all children of God\nJesus said that we are all brothers and sisters\nJesus preached we should lead pure life without sin\nJesus said love your neighbours as you love yourself.\nJesus said human service is God's service."
+   },
+   "answer_as_printed": "Teachings of Jesus Christ\nWe are all children of God\nJesus said that we are all brothers and sisters\nJesus preached we should lead pure life without sin\nJesus said love your neighbours as you love yourself.\nJesus said human service is God's service.",
+   "solution_steps": [
+    "We are all children of God",
+    "Jesus said that we are all brothers and sisters",
+    "Jesus preached we should lead pure life without sin",
+    "Jesus said love your neighbours as you love yourself.",
+    "Jesus said human service is God's service."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-07T23:54:27+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "ecd38c9740d4c4cb8ee47be2695abc10b4a6297e8b86ab5d32a002ecd9cfe0f9"
+  },
+  {
+   "id": "soc-7-01-s5-q036",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 2,
+     "text_as_printed": "Analyzes the teachings of Prophet Muhammad and Jesus Christ, the Bhakti Movement, Dasas, Sufi Saints, and the common values and principles found in different religions."
+    },
+    {
+     "number": 3,
+     "text_as_printed": "Explains, with examples, the impact of the expansion of foreign empires and the contributions of foreign countries (including the Arabs) in literature and science on the cultural life of India."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What are the teachings of Islam?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s5-q036",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s5-q036",
+     "pdf_page": 17,
+     "printed_page": 3,
+     "y": 490.658,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s5-q036-key",
+     "pdf_page": 161,
+     "printed_page": 147,
+     "y": 671.378,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:54:27+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-07T23:54:27+05:30",
+   "text_as_printed": "What are the teachings of Islam? (Average )",
+   "section_signal": "E",
+   "answer": {
+    "kind": "text",
+    "value": "Teachings of Islam\nThe core teaching of Islam is 'God is One', and we should worship him.\nProphet Mohammad is the messenger of God.\nIslam teaches that God is invisible.\nEach Muslim should promise that they should serve God."
+   },
+   "answer_as_printed": "Teachings of Islam\nThe core teaching of Islam is 'God is One', and we should worship him.\nProphet Mohammad is the messenger of God.\nIslam teaches that God is invisible.\nEach Muslim should promise that they should serve God.",
+   "solution_steps": [
+    "The core teaching of Islam is 'God is One', and we should worship him.",
+    "Prophet Mohammad is the messenger of God.",
+    "Islam teaches that God is invisible.",
+    "Each Muslim should promise that they should serve God."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-07T23:54:27+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "e5b4e5772ffad2850205e34dd2d22841448311cbac8ebb4bb47b5e39d79519b8"
+  },
+  {
+   "id": "soc-7-01-s5-q037",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 2,
+     "text_as_printed": "Analyzes the teachings of Prophet Muhammad and Jesus Christ, the Bhakti Movement, Dasas, Sufi Saints, and the common values and principles found in different religions."
+    },
+    {
+     "number": 3,
+     "text_as_printed": "Explains, with examples, the impact of the expansion of foreign empires and the contributions of foreign countries (including the Arabs) in literature and science on the cultural life of India."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What were the causes of the Crusades?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s5-q037",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s5-q037",
+     "pdf_page": 17,
+     "printed_page": 3,
+     "y": 519.358,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s5-q037-key",
+     "pdf_page": 162,
+     "printed_page": 148,
+     "y": 94.108,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:54:27+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-07T23:54:27+05:30",
+   "text_as_printed": "What were the causes of the Crusades? (Difficult)",
+   "section_signal": "E",
+   "answer": {
+    "kind": "text",
+    "value": "Causes for the crusade. For a long time, the Christians undertook pilgrimage to their holy places in Palestine. However when Palestine came under the Turks, they stopped the entry of the Christians into Palestine. This was the main cause of the Crusades."
+   },
+   "answer_as_printed": "Causes for the crusade. For a long time, the Christians undertook pilgrimage to their holy places in Palestine. However when Palestine came under the Turks, they stopped the entry of the Christians into Palestine. This was the main cause of the Crusades.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-07T23:54:27+05:30",
+    "basis": "printed one-line answer, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "e8f806824eeac1e6d20c5ec3a2ed659213151481e7d17db2f84ddc4eef6638c7"
+  },
+  {
+   "id": "soc-7-01-s5-q038",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 2,
+     "text_as_printed": "Analyzes the teachings of Prophet Muhammad and Jesus Christ, the Bhakti Movement, Dasas, Sufi Saints, and the common values and principles found in different religions."
+    },
+    {
+     "number": 3,
+     "text_as_printed": "Explains, with examples, the impact of the expansion of foreign empires and the contributions of foreign countries (including the Arabs) in literature and science on the cultural life of India."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "List out the consequences of the Crusades.",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s5-q038",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s5-q038",
+     "pdf_page": 17,
+     "printed_page": 3,
+     "y": 548.058,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s5-q038-key",
+     "pdf_page": 162,
+     "printed_page": 148,
+     "y": 156.228,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:54:27+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-07T23:54:27+05:30",
+   "text_as_printed": "List out the consequences of the Crusades. (Difficult)",
+   "section_signal": "E",
+   "answer": {
+    "kind": "text",
+    "value": "Result of the crusade. On the whole, the Christians failed to gain control over the holy land. However, the Crusades led to more contacts and trade relations between Europe and Asia."
+   },
+   "answer_as_printed": "Result of the crusade. On the whole, the Christians failed to gain control over the holy land. However, the Crusades led to more contacts and trade relations between Europe and Asia.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-07T23:54:27+05:30",
+    "basis": "printed one-line answer, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "bc30fa82ad9a7c88050a152487da5269d4dba07fddea7db80487149a453a7550"
+  },
+  {
+   "id": "soc-7-01-s5-q039",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 2,
+     "text_as_printed": "Analyzes the teachings of Prophet Muhammad and Jesus Christ, the Bhakti Movement, Dasas, Sufi Saints, and the common values and principles found in different religions."
+    },
+    {
+     "number": 3,
+     "text_as_printed": "Explains, with examples, the impact of the expansion of foreign empires and the contributions of foreign countries (including the Arabs) in literature and science on the cultural life of India."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Which wars are called the Crusades?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s5-q039",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s5-q039",
+     "pdf_page": 17,
+     "printed_page": 3,
+     "y": 576.758,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s5-q039-key",
+     "pdf_page": 162,
+     "printed_page": 148,
+     "y": 205.628,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:54:27+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-07T23:54:27+05:30",
+   "text_as_printed": "Which wars are called the Crusades? (Average )",
+   "section_signal": "E",
+   "answer": {
+    "kind": "text",
+    "value": "Religious war of the crusade. The fourth Crusade was the most tragic one. About 50,000 children from Europe participated in it. But a large number of children died on the way to Jerusalem. Hundreds were taken captive and sold as slaves."
+   },
+   "answer_as_printed": "Religious war of the crusade. The fourth Crusade was the most tragic one. About 50,000 children from Europe participated in it. But a large number of children died on the way to Jerusalem. Hundreds were taken captive and sold as slaves.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-07T23:54:27+05:30",
+    "basis": "printed one-line answer, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "8044f5eeecfbc4df16fd5a64415d26d2c0c09fc21f786caacba990a56471d01c"
+  },
+  {
+   "id": "soc-7-01-s6-q040",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": 2,
+     "text_as_printed": "Analyzes the teachings of Prophet Muhammad and Jesus Christ, the Bhakti Movement, Dasas, Sufi Saints, and the common values and principles found in different religions."
+    },
+    {
+     "number": 3,
+     "text_as_printed": "Explains, with examples, the impact of the expansion of foreign empires and the contributions of foreign countries (including the Arabs) in literature and science on the cultural life of India."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Genghis Khan",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s6-q040",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s6-q040",
+     "pdf_page": 17,
+     "printed_page": 3,
+     "y": 634.178,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s6-q040-key",
+     "pdf_page": 162,
+     "printed_page": 148,
+     "y": 296.428,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:54:27+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-07T23:54:27+05:30",
+   "section_signal": "F",
+   "answer": {
+    "kind": "text",
+    "value": "Genghis Khan: The credit for unifying the Mongols and establishing a mighty Asian empire goes to a Mongol by name Genghis Khan. He was notorious for his violent deeds."
+   },
+   "answer_as_printed": "Genghis Khan: The credit for unifying the Mongols and establishing a mighty Asian empire goes to a Mongol by name Genghis Khan. He was notorious for his violent deeds.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-07T23:54:27+05:30",
+    "basis": "printed one-line answer, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the question prints no per-question difficulty tag; a section-header difficulty is section-sourced and a procedure change, not extraction's to make (control-file §4) — left unassigned for review",
+     "suggested": "section F header: Difficult"
+    }
+   ],
+   "content_hash": "c19e5e806595db5a2f4eeb4a3124e01057b03831bde69f458ede0cd37c5a6f5f"
+  },
+  {
+   "id": "soc-7-01-s6-q041",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": 2,
+     "text_as_printed": "Analyzes the teachings of Prophet Muhammad and Jesus Christ, the Bhakti Movement, Dasas, Sufi Saints, and the common values and principles found in different religions."
+    },
+    {
+     "number": 3,
+     "text_as_printed": "Explains, with examples, the impact of the expansion of foreign empires and the contributions of foreign countries (including the Arabs) in literature and science on the cultural life of India."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Ottoman Turks",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s6-q041",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s6-q041",
+     "pdf_page": 17,
+     "printed_page": 3,
+     "y": 662.878,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s6-q041-key",
+     "pdf_page": 162,
+     "printed_page": 148,
+     "y": 345.858,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:54:27+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-07T23:54:27+05:30",
+   "section_signal": "F",
+   "answer": {
+    "kind": "text",
+    "value": "Ottoman Turk : The Turks belonged to a nomadic tribe of Turkistan (in Central Asia). They accepted Islamic faith. After the decline of Qublai Khan's empire, the Turks founded a military kingdom called the Ottoman. By conquering the neighbouring regions they enlarged their kingdom. The Ottoman Turks invaded India several times, looted enormous wealth and caused considerable loss and suffering to the people."
+   },
+   "answer_as_printed": "Ottoman Turk : The Turks belonged to a nomadic tribe of Turkistan (in Central Asia). They accepted Islamic faith. After the decline of Qublai Khan's empire, the Turks founded a military kingdom called the Ottoman. By conquering the neighbouring regions they enlarged their kingdom. The Ottoman Turks invaded India several times, looted enormous wealth and caused considerable loss and suffering to the people.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-07T23:54:27+05:30",
+    "basis": "printed one-line answer, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the question prints no per-question difficulty tag; a section-header difficulty is section-sourced and a procedure change, not extraction's to make (control-file §4) — left unassigned for review",
+     "suggested": "section F header: Difficult"
+    }
+   ],
+   "content_hash": "37cf5e57b5d276e0271cb881c7f49414f0b42b79346a2328428e43b78df292dc"
+  },
+  {
+   "id": "soc-7-01-s6-q042",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": 2,
+     "text_as_printed": "Analyzes the teachings of Prophet Muhammad and Jesus Christ, the Bhakti Movement, Dasas, Sufi Saints, and the common values and principles found in different religions."
+    },
+    {
+     "number": 3,
+     "text_as_printed": "Explains, with examples, the impact of the expansion of foreign empires and the contributions of foreign countries (including the Arabs) in literature and science on the cultural life of India."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Timur",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s6-q042",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s6-q042",
+     "pdf_page": 17,
+     "printed_page": 3,
+     "y": 691.578,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s6-q042-key",
+     "pdf_page": 162,
+     "printed_page": 148,
+     "y": 457.358,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:54:27+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-07T23:54:27+05:30",
+   "section_signal": "F",
+   "answer": {
+    "kind": "text",
+    "value": "Timur: After the decline of the empire built by Qublai Khan, his successor Timur once again established its reputation. He was an extremely cruel ruler. He built a vast empire by conquering Persia, Iraq, Syria, Afghanistan and many parts of Russia. Timur also invaded India. Babur, who founded the Mughal rule in India, belonged to the lineage of Timur."
+   },
+   "answer_as_printed": "Timur: After the decline of the empire built by Qublai Khan, his successor Timur once again established its reputation. He was an extremely cruel ruler. He built a vast empire by conquering Persia, Iraq, Syria, Afghanistan and many parts of Russia. Timur also invaded India. Babur, who founded the Mughal rule in India, belonged to the lineage of Timur.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-07T23:54:27+05:30",
+    "basis": "printed one-line answer, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the question prints no per-question difficulty tag; a section-header difficulty is section-sourced and a procedure change, not extraction's to make (control-file §4) — left unassigned for review",
+     "suggested": "section F header: Difficult"
+    }
+   ],
+   "content_hash": "314d3c18c6f2b3f8e96181ff900235ea586c392bbb5382dcab96556ad25a23d2"
+  },
+  {
+   "id": "soc-7-01-s6-q043",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": 2,
+     "text_as_printed": "Analyzes the teachings of Prophet Muhammad and Jesus Christ, the Bhakti Movement, Dasas, Sufi Saints, and the common values and principles found in different religions."
+    },
+    {
+     "number": 3,
+     "text_as_printed": "Explains, with examples, the impact of the expansion of foreign empires and the contributions of foreign countries (including the Arabs) in literature and science on the cultural life of India."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Kublai Khan",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s6-q043",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s6-q043",
+     "pdf_page": 17,
+     "printed_page": 3,
+     "y": 720.278,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s6-q043-key",
+     "pdf_page": 162,
+     "printed_page": 148,
+     "y": 548.158,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:54:27+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-07T23:54:27+05:30",
+   "section_signal": "F",
+   "answer": {
+    "kind": "text",
+    "value": "Qublai Khan: Qublai Khan was the grandson of Genghis Khan. He was a great warrior. He overthrew the ruler of China and became the emperor of China. A good administrator and a kind ruler, he undertook several public works to promote the welfare of the people. He fed the hungry during periods of famine. He encouraged scholars and artists. Influenced by the religion and culture of China, he accepted Buddhism. He adopted the Chinese way of life and values."
+   },
+   "answer_as_printed": "Qublai Khan: Qublai Khan was the grandson of Genghis Khan. He was a great warrior. He overthrew the ruler of China and became the emperor of China. A good administrator and a kind ruler, he undertook several public works to promote the welfare of the people. He fed the hungry during periods of famine. He encouraged scholars and artists. Influenced by the religion and culture of China, he accepted Buddhism. He adopted the Chinese way of life and values.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-07T23:54:27+05:30",
+    "basis": "printed one-line answer, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the question prints no per-question difficulty tag; a section-header difficulty is section-sourced and a procedure change, not extraction's to make (control-file §4) — left unassigned for review",
+     "suggested": "section F header: Difficult"
+    }
+   ],
+   "content_hash": "cf387ecee21bcdd278bb06ab8850accdc222ef92396b4a97880f16afb2905844"
+  },
+  {
+   "id": "soc-7-01-s7-q044",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 2,
+     "text_as_printed": "Analyzes the teachings of Prophet Muhammad and Jesus Christ, the Bhakti Movement, Dasas, Sufi Saints, and the common values and principles found in different religions."
+    },
+    {
+     "number": 3,
+     "text_as_printed": "Explains, with examples, the impact of the expansion of foreign empires and the contributions of foreign countries (including the Arabs) in literature and science on the cultural life of India."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Tell about the life of Jesus.",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s7-q044",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s7-q044",
+     "pdf_page": 18,
+     "printed_page": 4,
+     "y": 93.308,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s7-q044-key",
+     "pdf_page": 162,
+     "printed_page": 148,
+     "y": 709.078,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:54:27+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-07T23:54:27+05:30",
+   "text_as_printed": "Tell about the life of Jesus. (Difficult )",
+   "section_signal": "G",
+   "answer": {
+    "kind": "text",
+    "value": "Life of Jesus Christ: Jesus was born in Bethlehem (in Israel). His mother was Mary. When he was about 30 years old he left his home and moved from place to place serving the weak and the poor. For him compassion was the essence of religious life. He preached through parables. Influenced by the teachings of Jesus a large number of people followed him. At the same time, the religious leaders opposed him. They accused him of treason. Soon Jesus was crucified. (Crucifixion was the punishment given to criminals in those days)"
+   },
+   "answer_as_printed": "Life of Jesus Christ: Jesus was born in Bethlehem (in Israel). His mother was Mary. When he was about 30 years old he left his home and moved from place to place serving the weak and the poor. For him compassion was the essence of religious life. He preached through parables. Influenced by the teachings of Jesus a large number of people followed him. At the same time, the religious leaders opposed him. They accused him of treason. Soon Jesus was crucified. (Crucifixion was the punishment given to criminals in those days)",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-07T23:54:27+05:30",
+    "basis": "printed one-line answer, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "6a18a3c1dd9d210abbf44d79a8d16d401dabf81e96d17886fd3d1ef81980996e"
+  },
+  {
+   "id": "soc-7-01-s7-q045",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 2,
+     "text_as_printed": "Analyzes the teachings of Prophet Muhammad and Jesus Christ, the Bhakti Movement, Dasas, Sufi Saints, and the common values and principles found in different religions."
+    },
+    {
+     "number": 3,
+     "text_as_printed": "Explains, with examples, the impact of the expansion of foreign empires and the contributions of foreign countries (including the Arabs) in literature and science on the cultural life of India."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Tell about the life of Prophet Muhammad.",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s7-q045",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s7-q045",
+     "pdf_page": 18,
+     "printed_page": 4,
+     "y": 122.028,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s7-q045-key",
+     "pdf_page": 163,
+     "printed_page": 149,
+     "y": 77.308,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:54:27+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-07T23:54:27+05:30",
+   "text_as_printed": "Tell about the life of Prophet Muhammad. (Difficult )",
+   "section_signal": "G",
+   "answer": {
+    "kind": "text",
+    "value": "Life of Prophet Muhammad: Muhammad's father was Abdullah and mother Aminah. He had lost his father before his birth. In early stage he helped his uncle in business. A rich widow by name Khadijah gave him a job. Impressed by his simplicity and honesty she married him. From the age of 40, Muhammad used to engage himself in prayer and meditation. In course of time he began to preach the messages of God. The Koran (Quran), the holy book of the Muslims, contains such messages. It is in Arabic language."
+   },
+   "answer_as_printed": "Life of Prophet Muhammad: Muhammad's father was Abdullah and mother Aminah. He had lost his father before his birth. In early stage he helped his uncle in business. A rich widow by name Khadijah gave him a job. Impressed by his simplicity and honesty she married him. From the age of 40, Muhammad used to engage himself in prayer and meditation. In course of time he began to preach the messages of God. The Koran (Quran), the holy book of the Muslims, contains such messages. It is in Arabic language.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-07T23:54:27+05:30",
+    "basis": "printed one-line answer, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "cba067236a1268249b9e107a0d7288bc54b70d395642876cc4627963615eaee6"
+  },
+  {
+   "id": "soc-7-01-s7-q046",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 2,
+     "text_as_printed": "Analyzes the teachings of Prophet Muhammad and Jesus Christ, the Bhakti Movement, Dasas, Sufi Saints, and the common values and principles found in different religions."
+    },
+    {
+     "number": 3,
+     "text_as_printed": "Explains, with examples, the impact of the expansion of foreign empires and the contributions of foreign countries (including the Arabs) in literature and science on the cultural life of India."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What are the five pillars of Islam?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s7-q046",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s7-q046",
+     "pdf_page": 18,
+     "printed_page": 4,
+     "y": 150.728,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s7-q046-key",
+     "pdf_page": 163,
+     "printed_page": 149,
+     "y": 284.328,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:54:27+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-07T23:54:27+05:30",
+   "text_as_printed": "What are the five pillars of Islam? (Difficult )",
+   "section_signal": "G",
+   "answer": {
+    "kind": "text",
+    "value": "The 5 Pillars of Islam\n1. Shahada (Declaration of Faith): Affirming that there is no god but Allah and that Muhammad is His messenger.\n2. Salat (Prayer): Performing the five daily prayers, facing towards the holy city of Mecca.\n3. Zakat (Charity): Giving a portion of one's wealth to those in need, promoting social justice and compassion.\n4. Sawm (Fasting during Ramadan): Fasting from dawn to sunset during the month of Ramadan, fostering self-reflection and empathy.\n5. Hajj (Pilgrimage to Mecca): Making the pilgrimage to Mecca at least once in a lifetime, if physically and financially possible, to unite with Muslims worldwide."
+   },
+   "answer_as_printed": "The 5 Pillars of Islam\n1. Shahada (Declaration of Faith): Affirming that there is no god but Allah and that Muhammad is His messenger.\n2. Salat (Prayer): Performing the five daily prayers, facing towards the holy city of Mecca.\n3. Zakat (Charity): Giving a portion of one's wealth to those in need, promoting social justice and compassion.\n4. Sawm (Fasting during Ramadan): Fasting from dawn to sunset during the month of Ramadan, fostering self-reflection and empathy.\n5. Hajj (Pilgrimage to Mecca): Making the pilgrimage to Mecca at least once in a lifetime, if physically and financially possible, to unite with Muslims worldwide.",
+   "solution_steps": [
+    "1. Shahada (Declaration of Faith): Affirming that there is no god but Allah and that Muhammad is His messenger.",
+    "2. Salat (Prayer): Performing the five daily prayers, facing towards the holy city of Mecca.",
+    "3. Zakat (Charity): Giving a portion of one's wealth to those in need, promoting social justice and compassion.",
+    "4. Sawm (Fasting during Ramadan): Fasting from dawn to sunset during the month of Ramadan, fostering self-reflection and empathy.",
+    "5. Hajj (Pilgrimage to Mecca): Making the pilgrimage to Mecca at least once in a lifetime, if physically and financially possible, to unite with Muslims worldwide."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-07T23:54:27+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "0fcf233e6648eb888e68bf6f87a6190b5894106af0ae81224be3c894e17ece82"
+  },
+  {
+   "id": "soc-7-01-s7-q047",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 2,
+     "text_as_printed": "Analyzes the teachings of Prophet Muhammad and Jesus Christ, the Bhakti Movement, Dasas, Sufi Saints, and the common values and principles found in different religions."
+    },
+    {
+     "number": 3,
+     "text_as_printed": "Explains, with examples, the impact of the expansion of foreign empires and the contributions of foreign countries (including the Arabs) in literature and science on the cultural life of India."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "List out the different religions found in India.",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s7-q047",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s7-q047",
+     "pdf_page": 18,
+     "printed_page": 4,
+     "y": 179.428,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s7-q047-key",
+     "pdf_page": 163,
+     "printed_page": 149,
+     "y": 491.358,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:54:27+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-07T23:54:27+05:30",
+   "text_as_printed": "List out the different religions found in India. (Average)",
+   "section_signal": "G",
+   "answer": {
+    "kind": "text",
+    "value": "India is a land of religious harmony where people of many religions live together peacefully. The major religions are:\n1. Hinduism\n2. Islam\n3. Christianity\n4. Sikhism\n5. Buddhism\n6. Jainism\n7. Zoroastrianism (Parsi Religion)\n8. Judaism"
+   },
+   "answer_as_printed": "India is a land of religious harmony where people of many religions live together peacefully. The major religions are:\n1. Hinduism\n2. Islam\n3. Christianity\n4. Sikhism\n5. Buddhism\n6. Jainism\n7. Zoroastrianism (Parsi Religion)\n8. Judaism",
+   "solution_steps": [
+    "1. Hinduism",
+    "2. Islam",
+    "3. Christianity",
+    "4. Sikhism",
+    "5. Buddhism",
+    "6. Jainism",
+    "7. Zoroastrianism (Parsi Religion)",
+    "8. Judaism"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-07T23:54:27+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "526fb3f940e47a9759ecafc7eb6b7e7270e4e80240c417ab80e0e9f87675f799"
+  },
+  {
+   "id": "soc-7-01-s7-q048",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 2,
+     "text_as_printed": "Analyzes the teachings of Prophet Muhammad and Jesus Christ, the Bhakti Movement, Dasas, Sufi Saints, and the common values and principles found in different religions."
+    },
+    {
+     "number": 3,
+     "text_as_printed": "Explains, with examples, the impact of the expansion of foreign empires and the contributions of foreign countries (including the Arabs) in literature and science on the cultural life of India."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "List out the different religious festivals that are shown in your home or school calendar.",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s7-q048",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s7-q048",
+     "pdf_page": 18,
+     "printed_page": 4,
+     "y": 208.128,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s7-q048-key",
+     "pdf_page": 163,
+     "printed_page": 149,
+     "y": 712.378,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:54:27+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-07T23:54:27+05:30",
+   "text_as_printed": "List out the different religious festivals that are shown in your home or school calendar. (Average)",
+   "section_signal": "G",
+   "answer": {
+    "kind": "text",
+    "value": "Some of the religious festivals commonly found in home or school calendars are:\nUgadi / Makara Sankranti ,Ganesh Chaturthi ,Dussehra (Vijayadashami) ,Deepavali (Diwali) Maha Shivaratri ,Krishna Janmashtami ,Eid-ul-Fitr (Ramzan) ,Muharram , Christmas (Birthday of Jesus Christ) , Good Friday etc."
+   },
+   "answer_as_printed": "Some of the religious festivals commonly found in home or school calendars are:\nUgadi / Makara Sankranti ,Ganesh Chaturthi ,Dussehra (Vijayadashami) ,Deepavali (Diwali) Maha Shivaratri ,Krishna Janmashtami ,Eid-ul-Fitr (Ramzan) ,Muharram , Christmas (Birthday of Jesus Christ) , Good Friday etc.",
+   "solution_steps": [
+    "Ugadi / Makara Sankranti ,Ganesh Chaturthi ,Dussehra (Vijayadashami) ,Deepavali (Diwali) Maha Shivaratri ,Krishna Janmashtami ,Eid-ul-Fitr (Ramzan) ,Muharram , Christmas (Birthday of Jesus Christ) , Good Friday etc."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-07T23:54:27+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "8cc3c7047199115be8ce62782a43cf89792d870de023d33c14f72c0cc9e32e5f"
+  },
+  {
+   "id": "soc-7-01-s8-q049",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 2,
+     "text_as_printed": "Analyzes the teachings of Prophet Muhammad and Jesus Christ, the Bhakti Movement, Dasas, Sufi Saints, and the common values and principles found in different religions."
+    },
+    {
+     "number": 3,
+     "text_as_printed": "Explains, with examples, the impact of the expansion of foreign empires and the contributions of foreign countries (including the Arabs) in literature and science on the cultural life of India."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Explain how the contributions of Arab scholars in mathematics, medicine and science continue to influence modern life.",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s8-q049",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s8-q049",
+     "pdf_page": 18,
+     "printed_page": 4,
+     "y": 286.228,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-01-s8-q049-key",
+     "pdf_page": 164,
+     "printed_page": 150,
+     "y": 204.128,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:54:27+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-07T23:54:27+05:30",
+   "text_as_printed": "Explain how the contributions of Arab scholars in mathematics, medicine and science continue to influence modern life. (Difficult )",
+   "section_signal": "H",
+   "answer": {
+    "kind": "text",
+    "value": "Contributions of the Arabs\nThe Arabs were greatly influenced by the arts and sciences of the Greek, the Roman and the Indian civilizations. They freely borrowed them and evolved a rich civilization of their own. The city of Baghdad was a famous centre of learning.\nThe Arabs made their own contributions to the literature. The Arabs made significant contributions to algebra, chemistry and astronomy. They borrowed from India the use of numbers including zero, and passed them on to the western world.\nThe Arabs constructed impressive palaces, mosques, libraries and hospitals. Their magnificent mosques are at Mecca, Madina, Baghdad, Jerusalem and Damascus. The medical system known as Unani is an Arab contribution."
+   },
+   "answer_as_printed": "Contributions of the Arabs\nThe Arabs were greatly influenced by the arts and sciences of the Greek, the Roman and the Indian civilizations. They freely borrowed them and evolved a rich civilization of their own. The city of Baghdad was a famous centre of learning.\nThe Arabs made their own contributions to the literature. The Arabs made significant contributions to algebra, chemistry and astronomy. They borrowed from India the use of numbers including zero, and passed them on to the western world.\nThe Arabs constructed impressive palaces, mosques, libraries and hospitals. Their magnificent mosques are at Mecca, Madina, Baghdad, Jerusalem and Damascus. The medical system known as Unani is an Arab contribution.",
+   "solution_steps": [
+    "The Arabs were greatly influenced by the arts and sciences of the Greek, the Roman and the Indian civilizations. They freely borrowed them and evolved a rich civilization of their own. The city of Baghdad was a famous centre of learning.",
+    "The Arabs made their own contributions to the literature. The Arabs made significant contributions to algebra, chemistry and astronomy. They borrowed from India the use of numbers including zero, and passed them on to the western world.",
+    "The Arabs constructed impressive palaces, mosques, libraries and hospitals. Their magnificent mosques are at Mecca, Madina, Baghdad, Jerusalem and Damascus. The medical system known as Unani is an Arab contribution."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-07T23:54:27+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "482e544efd8fff9ee5ca46e44e4b5253fa594022d07b6318c0d458134ab2fb83"
+  }
+ ],
+ "pending_summary": {}
+}
