@@ -1,2656 +1,2738 @@
 {
- "contract_version": "1.7",
- "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
- "procedure_file": "extraction_procedure_social_addendum_v1.3_social science Classes 6-10 on top of procedure v2.md",
- "machine_name": "soc-8-28_questions",
- "version": 1,
- "changelog": "v1 extraction — batch-01 — class-8-social",
- "amendments_applied": [],
- "unit_state": "EXTRACTED",
- "review_ready": false,
- "count_gate": {
-  "reference": 31,
-  "reference_source": "audited",
-  "extracted": 31,
-  "paired": 31,
-  "flagged": 2,
-  "gaps": [],
-  "duplicated_numbers": [
-   11
+  "contract_version": "1.7",
+  "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
+  "procedure_file": "extraction_procedure_social_addendum_v1.3_social science Classes 6-10 on top of procedure v2.md",
+  "machine_name": "soc-8-28_questions",
+  "version": 1,
+  "changelog": "v1 extraction — batch-01 — class-8-social",
+  "amendments_applied": [],
+  "unit_state": "EXTRACTED",
+  "review_ready": false,
+  "count_gate": {
+    "reference": 32,
+    "reference_source": "audited",
+    "extracted": 32,
+    "paired": 32,
+    "flagged": 4,
+    "gaps": [],
+    "duplicated_numbers": [
+      11
+    ],
+    "quota_table": "difficulty_only",
+    "second_method": {
+      "method": "question-side printed question-stem recount",
+      "extracted": 32,
+      "agrees": true,
+      "note": "32 printed question-stems on the question side: dup printed '11' (MCQ q011 + VSA q011b) and dup 'What is time utility?' printed 14 & 15 (q014/q015). The printed difficulty table totals 31 because it counts the re-printed time-utility stem once (source anomaly — FINDINGS_soc-8-28)."
+    },
+    "pass": true,
+    "note": "32 question-stems printed on the question side (dup '11' -> q011/q011b; dup time-utility printed 14&15 -> q014/q015, id rule forbids merging). Printed difficulty table 12/13/6=31 counts the time-utility stem once; reference audited at 32. flagged counts answer-level flags."
+  },
+  "extraction": {
+    "source_file": "8thSS-EM-LBARevised_1787048180.pdf",
+    "source_ref_prefix": "8thSS-EM-LBARevised_1787048180.pdf",
+    "pdf_pages": [
+      71,
+      72,
+      143,
+      144,
+      145
+    ],
+    "printed_page_offset": -11,
+    "method_notes": [
+      "Offset -11 (pdf 71 = folio 60; pdf 143 = folio 132). Q: q1-8 pdf71, q9-31 pdf72. A: keys 1-22 pdf143, 23-27 pdf144, 28-31 pdf145. Figure-free. SEE FINDINGS_soc-8-28_numbering.",
+      "NUMBERING ANOMALIES: (a) printed '11' used TWICE on the question side - MCQ 11 (id q011) + VSA 11 (id q011b, letter suffix); DUPNUMS=[11]. (b) the question side REDUNDANTLY RE-PRINTS the time-utility question: printed '14. What is time utility?' and printed '15. What is time utility? (Short)' - identical stem, and the answer key has ONLY ONE time-utility answer; the printed difficulty table and key both count 31 (not the re-print). Treated as ONE question (id q014); the spurious re-print (printed '15') is NOT a separate question (id 015 absent). (c) key-side section III prints '29' twice and omits '30': q30 (id q030, role of national income) populated from the second '29' + duplicate-question-number flag.",
+      "Internal n aligned to KEY labels (1-11 MCQ, 12-22 VSA, 23-31 SA) so answer locators are correct; IDMAP maps to the printed question-side ids (VSA q011b/012/013/014/016..022 skips 015). Question-side VSA locator y is off-by-one (documented). q3 MCQ KEYNULL (key 'D) Saving' - text no option; correct = Farming D). MCQ benign: q4 'Mental effort'~'Mental labour'.",
+      "Section III 'Answer Briefly' -> la. VSA q12-22 content verbatim from keys 12-22. SA/LA SUB/BUL per content; q30 from key '29'(2nd).",
+      "Difficulty tags E12/A13/D6=31 AGREE table (duplicate time-utility re-print excluded, matching the source's own count). MARKS none printed -> unassigned + structural flag."
+    ],
+    "notation_summary": {
+      "render_tokens": 0,
+      "latex_tokens": 0,
+      "damage_flags": []
+    },
+    "excluded_objects": [],
+    "inline_excluded_count": 0,
+    "figure_references": []
+  },
+  "stimuli": [],
+  "questions": [
+    {
+      "id": "soc-8-28-s1-q001",
+      "class": "8",
+      "subject": "social",
+      "language": "en",
+      "chapter_id": "soc-8-28",
+      "syllabus_map_version": "none",
+      "audience": "student",
+      "type": "mcq",
+      "marks": null,
+      "marks_source": "unassigned",
+      "difficulty": "easy",
+      "difficulty_source": "printed",
+      "difficulty_as_printed": "E",
+      "learning_outcomes": [
+        {
+          "number": 14,
+          "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
+        }
+      ],
+      "lo_source": "all_questions_row",
+      "out_of_syllabus": false,
+      "text": "The condition of production at the time of increase in the demand is",
+      "source": "lba",
+      "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q001",
+      "locators": [
+        {
+          "role": "question",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q001",
+          "pdf_page": 71,
+          "printed_page": 60,
+          "y": 348.743203,
+          "derived_from": "text_layer"
+        },
+        {
+          "role": "answer",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q001-key",
+          "pdf_page": 143,
+          "printed_page": 132,
+          "y": 103.103188,
+          "derived_from": "text_layer"
+        }
+      ],
+      "revision": 1,
+      "status": "draft",
+      "status_history": [
+        {
+          "from": "none",
+          "to": "draft",
+          "by": "class-8-social",
+          "role": "extraction",
+          "at": "2026-10-08T03:20:11+05:30"
+        }
+      ],
+      "created_by": "class-8-social",
+      "created_at": "2026-10-08T03:20:11+05:30",
+      "text_as_printed": "The condition of production at the time of increase in the demand is (E)",
+      "options": [
+        {
+          "id": "A",
+          "text": "Decreases"
+        },
+        {
+          "id": "B",
+          "text": "Becomes neutral"
+        },
+        {
+          "id": "C",
+          "text": "Remains balanced"
+        },
+        {
+          "id": "D",
+          "text": "Increases"
+        }
+      ],
+      "answer_as_printed": "D) Increases",
+      "answer": {
+        "kind": "option",
+        "option_id": "D"
+      },
+      "answer_provenance": {
+        "by": "printed",
+        "actor": "class-8-social",
+        "at": "2026-10-08T03:20:11+05:30",
+        "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+      },
+      "source_flags": [
+        {
+          "issue": "marks ambiguous in source — no marks printed"
+        }
+      ],
+      "content_hash": "3152019b6381f85a036a514409551653006fbfaabda2478a36e41bf61e3544a4"
+    },
+    {
+      "id": "soc-8-28-s1-q002",
+      "class": "8",
+      "subject": "social",
+      "language": "en",
+      "chapter_id": "soc-8-28",
+      "syllabus_map_version": "none",
+      "audience": "student",
+      "type": "mcq",
+      "marks": null,
+      "marks_source": "unassigned",
+      "difficulty": "easy",
+      "difficulty_source": "printed",
+      "difficulty_as_printed": "E",
+      "learning_outcomes": [
+        {
+          "number": 14,
+          "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
+        }
+      ],
+      "lo_source": "all_questions_row",
+      "out_of_syllabus": false,
+      "text": "Using goods and services to satisfy desires is called",
+      "source": "lba",
+      "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q002",
+      "locators": [
+        {
+          "role": "question",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q002",
+          "pdf_page": 71,
+          "printed_page": 60,
+          "y": 400.943184,
+          "derived_from": "text_layer"
+        },
+        {
+          "role": "answer",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q002-key",
+          "pdf_page": 143,
+          "printed_page": 132,
+          "y": 120.503197,
+          "derived_from": "text_layer"
+        }
+      ],
+      "revision": 1,
+      "status": "draft",
+      "status_history": [
+        {
+          "from": "none",
+          "to": "draft",
+          "by": "class-8-social",
+          "role": "extraction",
+          "at": "2026-10-08T03:20:11+05:30"
+        }
+      ],
+      "created_by": "class-8-social",
+      "created_at": "2026-10-08T03:20:11+05:30",
+      "text_as_printed": "Using goods and services to satisfy desires is called (E)",
+      "options": [
+        {
+          "id": "A",
+          "text": "Consumption"
+        },
+        {
+          "id": "B",
+          "text": "Production"
+        },
+        {
+          "id": "C",
+          "text": "Demand"
+        },
+        {
+          "id": "D",
+          "text": "Supply"
+        }
+      ],
+      "answer_as_printed": "A) Consumption",
+      "answer": {
+        "kind": "option",
+        "option_id": "A"
+      },
+      "answer_provenance": {
+        "by": "printed",
+        "actor": "class-8-social",
+        "at": "2026-10-08T03:20:11+05:30",
+        "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+      },
+      "source_flags": [
+        {
+          "issue": "marks ambiguous in source — no marks printed"
+        }
+      ],
+      "content_hash": "1293147a92b4a924582af56fbb1ea1754dedece241e307c321c8715915cce4b0"
+    },
+    {
+      "id": "soc-8-28-s1-q003",
+      "class": "8",
+      "subject": "social",
+      "language": "en",
+      "chapter_id": "soc-8-28",
+      "syllabus_map_version": "none",
+      "audience": "student",
+      "type": "mcq",
+      "marks": null,
+      "marks_source": "unassigned",
+      "difficulty": "average",
+      "difficulty_source": "printed",
+      "difficulty_as_printed": "A",
+      "learning_outcomes": [
+        {
+          "number": 14,
+          "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
+        }
+      ],
+      "lo_source": "all_questions_row",
+      "out_of_syllabus": false,
+      "text": "An example of physical labour is",
+      "source": "lba",
+      "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q003",
+      "locators": [
+        {
+          "role": "question",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q003",
+          "pdf_page": 71,
+          "printed_page": 60,
+          "y": 436.703179,
+          "derived_from": "text_layer"
+        },
+        {
+          "role": "answer",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q003-key",
+          "pdf_page": 143,
+          "printed_page": 132,
+          "y": 137.783193,
+          "derived_from": "text_layer"
+        }
+      ],
+      "revision": 1,
+      "status": "draft",
+      "status_history": [
+        {
+          "from": "none",
+          "to": "draft",
+          "by": "class-8-social",
+          "role": "extraction",
+          "at": "2026-10-08T03:20:11+05:30"
+        }
+      ],
+      "created_by": "class-8-social",
+      "created_at": "2026-10-08T03:20:11+05:30",
+      "text_as_printed": "An example of physical labour is (A)",
+      "options": [
+        {
+          "id": "A",
+          "text": "Teacher"
+        },
+        {
+          "id": "B",
+          "text": "Doctor"
+        },
+        {
+          "id": "C",
+          "text": "Scientist"
+        },
+        {
+          "id": "D",
+          "text": "Farming"
+        }
+      ],
+      "answer_as_printed": "D) Saving",
+      "answer": {
+        "kind": "option",
+        "option_id": null
+      },
+      "source_flags": [
+        {
+          "issue": "marks ambiguous in source — no marks printed"
+        },
+        {
+          "issue": "key text not among options",
+          "why_not_corrected": "the printed key is '3. D) Saving'. Letter D = option D 'Farming', but the key text 'Saving' matches no option (an example of physical labour is Farming = option D). Letter and key text disagree; no answer asserted.",
+          "suggested": "D by content (Farming); key text 'Saving' matches no option - review"
+        }
+      ],
+      "content_hash": "a61b15db1857d46a37b9e981be45a9ea0b8699ce18f365a33723fe369d963500"
+    },
+    {
+      "id": "soc-8-28-s1-q004",
+      "class": "8",
+      "subject": "social",
+      "language": "en",
+      "chapter_id": "soc-8-28",
+      "syllabus_map_version": "none",
+      "audience": "student",
+      "type": "mcq",
+      "marks": null,
+      "marks_source": "unassigned",
+      "difficulty": "average",
+      "difficulty_source": "printed",
+      "difficulty_as_printed": "A",
+      "learning_outcomes": [
+        {
+          "number": 14,
+          "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
+        }
+      ],
+      "lo_source": "all_questions_row",
+      "out_of_syllabus": false,
+      "text": "lawyer is an example for labour of",
+      "source": "lba",
+      "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q004",
+      "locators": [
+        {
+          "role": "question",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q004",
+          "pdf_page": 71,
+          "printed_page": 60,
+          "y": 478.223214,
+          "derived_from": "text_layer"
+        },
+        {
+          "role": "answer",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q004-key",
+          "pdf_page": 143,
+          "printed_page": 132,
+          "y": 155.18319,
+          "derived_from": "text_layer"
+        }
+      ],
+      "revision": 1,
+      "status": "draft",
+      "status_history": [
+        {
+          "from": "none",
+          "to": "draft",
+          "by": "class-8-social",
+          "role": "extraction",
+          "at": "2026-10-08T03:20:11+05:30"
+        }
+      ],
+      "created_by": "class-8-social",
+      "created_at": "2026-10-08T03:20:11+05:30",
+      "text_as_printed": "lawyer is an example for labour of (A)",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mental labour"
+        },
+        {
+          "id": "B",
+          "text": "Physical labour"
+        },
+        {
+          "id": "C",
+          "text": "Psycho-physical labour"
+        },
+        {
+          "id": "D",
+          "text": "Primary labour"
+        }
+      ],
+      "answer_as_printed": "A) Mental effort",
+      "answer": {
+        "kind": "option",
+        "option_id": "A"
+      },
+      "answer_provenance": {
+        "by": "printed",
+        "actor": "class-8-social",
+        "at": "2026-10-08T03:20:11+05:30",
+        "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+      },
+      "source_flags": [
+        {
+          "issue": "marks ambiguous in source — no marks printed"
+        },
+        {
+          "issue": "key text differs from option by a printed typo",
+          "why_not_corrected": "letter A kept (addendum §4.1); key text 'Mental effort' vs option A 'Mental labour' differ by a source typo; spelling needs subject knowledge (v2 §1)",
+          "suggested": "A (letter kept)"
+        }
+      ],
+      "content_hash": "c07e76d646be7ebc4d1f2145608c704044f69db772de371d2ef939db25ee2e66"
+    },
+    {
+      "id": "soc-8-28-s1-q005",
+      "class": "8",
+      "subject": "social",
+      "language": "en",
+      "chapter_id": "soc-8-28",
+      "syllabus_map_version": "none",
+      "audience": "student",
+      "type": "mcq",
+      "marks": null,
+      "marks_source": "unassigned",
+      "difficulty": "easy",
+      "difficulty_source": "printed",
+      "difficulty_as_printed": "E",
+      "learning_outcomes": [
+        {
+          "number": 14,
+          "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
+        }
+      ],
+      "lo_source": "all_questions_row",
+      "out_of_syllabus": false,
+      "text": "Generally, when prices increase, all demand",
+      "source": "lba",
+      "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q005",
+      "locators": [
+        {
+          "role": "question",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q005",
+          "pdf_page": 71,
+          "printed_page": 60,
+          "y": 530.543175,
+          "derived_from": "text_layer"
+        },
+        {
+          "role": "answer",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q005-key",
+          "pdf_page": 143,
+          "printed_page": 132,
+          "y": 172.70319,
+          "derived_from": "text_layer"
+        }
+      ],
+      "revision": 1,
+      "status": "draft",
+      "status_history": [
+        {
+          "from": "none",
+          "to": "draft",
+          "by": "class-8-social",
+          "role": "extraction",
+          "at": "2026-10-08T03:20:11+05:30"
+        }
+      ],
+      "created_by": "class-8-social",
+      "created_at": "2026-10-08T03:20:11+05:30",
+      "text_as_printed": "Generally, when prices increase, all demand (E)",
+      "options": [
+        {
+          "id": "A",
+          "text": "Decreases"
+        },
+        {
+          "id": "B",
+          "text": "Increases"
+        },
+        {
+          "id": "C",
+          "text": "Remains same"
+        },
+        {
+          "id": "D",
+          "text": "No change"
+        }
+      ],
+      "answer_as_printed": "A) Decreases",
+      "answer": {
+        "kind": "option",
+        "option_id": "A"
+      },
+      "answer_provenance": {
+        "by": "printed",
+        "actor": "class-8-social",
+        "at": "2026-10-08T03:20:11+05:30",
+        "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+      },
+      "source_flags": [
+        {
+          "issue": "marks ambiguous in source — no marks printed"
+        }
+      ],
+      "content_hash": "cd02ac1ccbe1424525cc251aa98ca60098833f598a2ca794719c33c27c7c277f"
+    },
+    {
+      "id": "soc-8-28-s1-q006",
+      "class": "8",
+      "subject": "social",
+      "language": "en",
+      "chapter_id": "soc-8-28",
+      "syllabus_map_version": "none",
+      "audience": "student",
+      "type": "mcq",
+      "marks": null,
+      "marks_source": "unassigned",
+      "difficulty": "average",
+      "difficulty_source": "printed",
+      "difficulty_as_printed": "A",
+      "learning_outcomes": [
+        {
+          "number": 14,
+          "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
+        }
+      ],
+      "lo_source": "all_questions_row",
+      "out_of_syllabus": false,
+      "text": "Considered as a symbol of a nation's progress",
+      "source": "lba",
+      "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q006",
+      "locators": [
+        {
+          "role": "question",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q006",
+          "pdf_page": 71,
+          "printed_page": 60,
+          "y": 565.343193,
+          "derived_from": "text_layer"
+        },
+        {
+          "role": "answer",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q006-key",
+          "pdf_page": 143,
+          "printed_page": 132,
+          "y": 190.103188,
+          "derived_from": "text_layer"
+        }
+      ],
+      "revision": 1,
+      "status": "draft",
+      "status_history": [
+        {
+          "from": "none",
+          "to": "draft",
+          "by": "class-8-social",
+          "role": "extraction",
+          "at": "2026-10-08T03:20:11+05:30"
+        }
+      ],
+      "created_by": "class-8-social",
+      "created_at": "2026-10-08T03:20:11+05:30",
+      "text_as_printed": "Considered as a symbol of a nation's progress (A)",
+      "options": [
+        {
+          "id": "A",
+          "text": "Supply"
+        },
+        {
+          "id": "B",
+          "text": "Demand"
+        },
+        {
+          "id": "C",
+          "text": "Consumption"
+        },
+        {
+          "id": "D",
+          "text": "Labour"
+        }
+      ],
+      "answer_as_printed": "B) Demand",
+      "answer": {
+        "kind": "option",
+        "option_id": "B"
+      },
+      "answer_provenance": {
+        "by": "printed",
+        "actor": "class-8-social",
+        "at": "2026-10-08T03:20:11+05:30",
+        "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+      },
+      "source_flags": [
+        {
+          "issue": "marks ambiguous in source — no marks printed"
+        }
+      ],
+      "content_hash": "8c85115ff7abdd29dcbcbf2a181700c810192317d3b75b12e86d618f0ebd6906"
+    },
+    {
+      "id": "soc-8-28-s1-q007",
+      "class": "8",
+      "subject": "social",
+      "language": "en",
+      "chapter_id": "soc-8-28",
+      "syllabus_map_version": "none",
+      "audience": "student",
+      "type": "mcq",
+      "marks": null,
+      "marks_source": "unassigned",
+      "difficulty": "average",
+      "difficulty_source": "printed",
+      "difficulty_as_printed": "A",
+      "learning_outcomes": [
+        {
+          "number": 14,
+          "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
+        }
+      ],
+      "lo_source": "all_questions_row",
+      "out_of_syllabus": false,
+      "text": "The two basic pillars of market activities",
+      "source": "lba",
+      "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q007",
+      "locators": [
+        {
+          "role": "question",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q007",
+          "pdf_page": 71,
+          "printed_page": 60,
+          "y": 600.143212,
+          "derived_from": "text_layer"
+        },
+        {
+          "role": "answer",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q007-key",
+          "pdf_page": 143,
+          "printed_page": 132,
+          "y": 207.383195,
+          "derived_from": "text_layer"
+        }
+      ],
+      "revision": 1,
+      "status": "draft",
+      "status_history": [
+        {
+          "from": "none",
+          "to": "draft",
+          "by": "class-8-social",
+          "role": "extraction",
+          "at": "2026-10-08T03:20:11+05:30"
+        }
+      ],
+      "created_by": "class-8-social",
+      "created_at": "2026-10-08T03:20:11+05:30",
+      "text_as_printed": "The two basic pillars of market activities (A)",
+      "options": [
+        {
+          "id": "A",
+          "text": "Demand and production"
+        },
+        {
+          "id": "B",
+          "text": "Demand and consumption"
+        },
+        {
+          "id": "C",
+          "text": "Demand and supply"
+        },
+        {
+          "id": "D",
+          "text": "Demand and distribution"
+        }
+      ],
+      "answer_as_printed": "C) Demand and Supply",
+      "answer": {
+        "kind": "option",
+        "option_id": "C"
+      },
+      "answer_provenance": {
+        "by": "printed",
+        "actor": "class-8-social",
+        "at": "2026-10-08T03:20:11+05:30",
+        "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+      },
+      "source_flags": [
+        {
+          "issue": "marks ambiguous in source — no marks printed"
+        }
+      ],
+      "content_hash": "c6e6b32b9382a478b2b7d81581dacec01f12949a9a91e45a9f2e07d25e9eda24"
+    },
+    {
+      "id": "soc-8-28-s1-q008",
+      "class": "8",
+      "subject": "social",
+      "language": "en",
+      "chapter_id": "soc-8-28",
+      "syllabus_map_version": "none",
+      "audience": "student",
+      "type": "mcq",
+      "marks": null,
+      "marks_source": "unassigned",
+      "difficulty": "average",
+      "difficulty_source": "printed",
+      "difficulty_as_printed": "A",
+      "learning_outcomes": [
+        {
+          "number": 14,
+          "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
+        }
+      ],
+      "lo_source": "all_questions_row",
+      "out_of_syllabus": false,
+      "text": "Value expressed in terms of money is called",
+      "source": "lba",
+      "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q008",
+      "locators": [
+        {
+          "role": "question",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q008",
+          "pdf_page": 71,
+          "printed_page": 60,
+          "y": 652.343193,
+          "derived_from": "text_layer"
+        },
+        {
+          "role": "answer",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q008-key",
+          "pdf_page": 143,
+          "printed_page": 132,
+          "y": 224.903184,
+          "derived_from": "text_layer"
+        }
+      ],
+      "revision": 1,
+      "status": "draft",
+      "status_history": [
+        {
+          "from": "none",
+          "to": "draft",
+          "by": "class-8-social",
+          "role": "extraction",
+          "at": "2026-10-08T03:20:11+05:30"
+        }
+      ],
+      "created_by": "class-8-social",
+      "created_at": "2026-10-08T03:20:11+05:30",
+      "text_as_printed": "Value expressed in terms of money is called (A)",
+      "options": [
+        {
+          "id": "A",
+          "text": "Demand"
+        },
+        {
+          "id": "B",
+          "text": "Supply"
+        },
+        {
+          "id": "C",
+          "text": "Consumption"
+        },
+        {
+          "id": "D",
+          "text": "Price"
+        }
+      ],
+      "answer_as_printed": "D) Price",
+      "answer": {
+        "kind": "option",
+        "option_id": "D"
+      },
+      "answer_provenance": {
+        "by": "printed",
+        "actor": "class-8-social",
+        "at": "2026-10-08T03:20:11+05:30",
+        "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+      },
+      "source_flags": [
+        {
+          "issue": "marks ambiguous in source — no marks printed"
+        }
+      ],
+      "content_hash": "420e670fedbf04439e26b9aeadd4b6b57ff217d66b4dd7cc7ff221ce21e98c11"
+    },
+    {
+      "id": "soc-8-28-s1-q009",
+      "class": "8",
+      "subject": "social",
+      "language": "en",
+      "chapter_id": "soc-8-28",
+      "syllabus_map_version": "none",
+      "audience": "student",
+      "type": "mcq",
+      "marks": null,
+      "marks_source": "unassigned",
+      "difficulty": "average",
+      "difficulty_source": "printed",
+      "difficulty_as_printed": "A",
+      "learning_outcomes": [
+        {
+          "number": 14,
+          "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
+        }
+      ],
+      "lo_source": "all_questions_row",
+      "out_of_syllabus": false,
+      "text": "The reward earned by a producer for the services rendered in production is",
+      "source": "lba",
+      "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q009",
+      "locators": [
+        {
+          "role": "question",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q009",
+          "pdf_page": 72,
+          "printed_page": 61,
+          "y": 68.18319,
+          "derived_from": "text_layer"
+        },
+        {
+          "role": "answer",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q009-key",
+          "pdf_page": 143,
+          "printed_page": 132,
+          "y": 242.303193,
+          "derived_from": "text_layer"
+        }
+      ],
+      "revision": 1,
+      "status": "draft",
+      "status_history": [
+        {
+          "from": "none",
+          "to": "draft",
+          "by": "class-8-social",
+          "role": "extraction",
+          "at": "2026-10-08T03:20:11+05:30"
+        }
+      ],
+      "created_by": "class-8-social",
+      "created_at": "2026-10-08T03:20:11+05:30",
+      "text_as_printed": "The reward earned by a producer for the services rendered in production is (A)",
+      "options": [
+        {
+          "id": "A",
+          "text": "Rent"
+        },
+        {
+          "id": "B",
+          "text": "Wages"
+        },
+        {
+          "id": "C",
+          "text": "Interest"
+        },
+        {
+          "id": "D",
+          "text": "Profit"
+        }
+      ],
+      "answer_as_printed": "D) Profit",
+      "answer": {
+        "kind": "option",
+        "option_id": "D"
+      },
+      "answer_provenance": {
+        "by": "printed",
+        "actor": "class-8-social",
+        "at": "2026-10-08T03:20:11+05:30",
+        "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+      },
+      "source_flags": [
+        {
+          "issue": "marks ambiguous in source — no marks printed"
+        }
+      ],
+      "content_hash": "1d1e3061cec97653374ff0798f9df6838e45b347917903ace933ba3ab0d3d2d8"
+    },
+    {
+      "id": "soc-8-28-s1-q010",
+      "class": "8",
+      "subject": "social",
+      "language": "en",
+      "chapter_id": "soc-8-28",
+      "syllabus_map_version": "none",
+      "audience": "student",
+      "type": "mcq",
+      "marks": null,
+      "marks_source": "unassigned",
+      "difficulty": "average",
+      "difficulty_source": "printed",
+      "difficulty_as_printed": "A",
+      "learning_outcomes": [
+        {
+          "number": 14,
+          "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
+        }
+      ],
+      "lo_source": "all_questions_row",
+      "out_of_syllabus": false,
+      "text": "When the national income is divided by the total population of a country, we get",
+      "source": "lba",
+      "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q010",
+      "locators": [
+        {
+          "role": "question",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q010",
+          "pdf_page": 72,
+          "printed_page": 61,
+          "y": 103.103188,
+          "derived_from": "text_layer"
+        },
+        {
+          "role": "answer",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q010-key",
+          "pdf_page": 143,
+          "printed_page": 132,
+          "y": 259.703202,
+          "derived_from": "text_layer"
+        }
+      ],
+      "revision": 1,
+      "status": "draft",
+      "status_history": [
+        {
+          "from": "none",
+          "to": "draft",
+          "by": "class-8-social",
+          "role": "extraction",
+          "at": "2026-10-08T03:20:11+05:30"
+        }
+      ],
+      "created_by": "class-8-social",
+      "created_at": "2026-10-08T03:20:11+05:30",
+      "text_as_printed": "When the national income is divided by the total population of a country, we get (A)",
+      "options": [
+        {
+          "id": "A",
+          "text": "National income"
+        },
+        {
+          "id": "B",
+          "text": "Per capita income"
+        },
+        {
+          "id": "C",
+          "text": "Standard of living"
+        },
+        {
+          "id": "D",
+          "text": "Purchasing power"
+        }
+      ],
+      "answer_as_printed": "B) Per Capita Income",
+      "answer": {
+        "kind": "option",
+        "option_id": "B"
+      },
+      "answer_provenance": {
+        "by": "printed",
+        "actor": "class-8-social",
+        "at": "2026-10-08T03:20:11+05:30",
+        "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+      },
+      "source_flags": [
+        {
+          "issue": "marks ambiguous in source — no marks printed"
+        }
+      ],
+      "content_hash": "e298d851252d016d86c8a83e6540a9c2b388ad4a5bc99b7cc001769687a675aa"
+    },
+    {
+      "id": "soc-8-28-s1-q011",
+      "class": "8",
+      "subject": "social",
+      "language": "en",
+      "chapter_id": "soc-8-28",
+      "syllabus_map_version": "none",
+      "audience": "student",
+      "type": "mcq",
+      "marks": null,
+      "marks_source": "unassigned",
+      "difficulty": "easy",
+      "difficulty_source": "printed",
+      "difficulty_as_printed": "E",
+      "learning_outcomes": [
+        {
+          "number": 14,
+          "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
+        }
+      ],
+      "lo_source": "all_questions_row",
+      "out_of_syllabus": false,
+      "text": "Teaching done by a teacher to students in a school is a type of",
+      "source": "lba",
+      "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q011",
+      "locators": [
+        {
+          "role": "question",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q011",
+          "pdf_page": 72,
+          "printed_page": 61,
+          "y": 172.70319,
+          "derived_from": "text_layer"
+        },
+        {
+          "role": "answer",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q011-key",
+          "pdf_page": 143,
+          "printed_page": 132,
+          "y": 276.983185,
+          "derived_from": "text_layer"
+        }
+      ],
+      "revision": 1,
+      "status": "draft",
+      "status_history": [
+        {
+          "from": "none",
+          "to": "draft",
+          "by": "class-8-social",
+          "role": "extraction",
+          "at": "2026-10-08T03:20:11+05:30"
+        }
+      ],
+      "created_by": "class-8-social",
+      "created_at": "2026-10-08T03:20:11+05:30",
+      "text_as_printed": "Teaching done by a teacher to students in a school is a type of (E)",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mental labour"
+        },
+        {
+          "id": "B",
+          "text": "Productive labour"
+        },
+        {
+          "id": "C",
+          "text": "Unproductive labour"
+        },
+        {
+          "id": "D",
+          "text": "Physical labour"
+        }
+      ],
+      "answer_as_printed": "A) Mental Labour",
+      "answer": {
+        "kind": "option",
+        "option_id": "A"
+      },
+      "answer_provenance": {
+        "by": "printed",
+        "actor": "class-8-social",
+        "at": "2026-10-08T03:20:11+05:30",
+        "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+      },
+      "source_flags": [
+        {
+          "issue": "marks ambiguous in source — no marks printed"
+        }
+      ],
+      "content_hash": "8677977a8b97b591086e287673cc453d7b767f71bc280659e1e7b8f4294e0418"
+    },
+    {
+      "id": "soc-8-28-s2-q011b",
+      "class": "8",
+      "subject": "social",
+      "language": "en",
+      "chapter_id": "soc-8-28",
+      "syllabus_map_version": "none",
+      "audience": "student",
+      "type": "vsa",
+      "marks": null,
+      "marks_source": "unassigned",
+      "difficulty": "easy",
+      "difficulty_source": "printed",
+      "difficulty_as_printed": "E",
+      "learning_outcomes": [
+        {
+          "number": 14,
+          "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
+        }
+      ],
+      "lo_source": "all_questions_row",
+      "out_of_syllabus": false,
+      "text": "What is demand?",
+      "source": "lba",
+      "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q011b",
+      "locators": [
+        {
+          "role": "question",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q011b",
+          "pdf_page": 72,
+          "printed_page": 61,
+          "y": 259.703202,
+          "derived_from": "text_layer"
+        },
+        {
+          "role": "answer",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q011b-key",
+          "pdf_page": 143,
+          "printed_page": 132,
+          "y": 311.903184,
+          "derived_from": "text_layer"
+        }
+      ],
+      "revision": 1,
+      "status": "draft",
+      "status_history": [
+        {
+          "from": "none",
+          "to": "draft",
+          "by": "class-8-social",
+          "role": "extraction",
+          "at": "2026-10-08T03:20:11+05:30"
+        }
+      ],
+      "created_by": "class-8-social",
+      "created_at": "2026-10-08T03:20:11+05:30",
+      "text_as_printed": "What is demand? (E)",
+      "answer": {
+        "kind": "text",
+        "value": "The purchasing power for goods and services is called demand."
+      },
+      "answer_as_printed": "The purchasing power for goods and services is called demand.",
+      "answer_provenance": {
+        "by": "printed",
+        "actor": "class-8-social",
+        "at": "2026-10-08T03:20:11+05:30",
+        "basis": "printed VSA key, verbatim (v2 §4)"
+      },
+      "source_flags": [
+        {
+          "issue": "marks ambiguous in source — no marks printed"
+        }
+      ],
+      "content_hash": "8d091b15a8f4b0b0f05b15f704fe636597ee4c5549652ac7aeef75b6e3cbb75f"
+    },
+    {
+      "id": "soc-8-28-s2-q012",
+      "class": "8",
+      "subject": "social",
+      "language": "en",
+      "chapter_id": "soc-8-28",
+      "syllabus_map_version": "none",
+      "audience": "student",
+      "type": "vsa",
+      "marks": null,
+      "marks_source": "unassigned",
+      "difficulty": "easy",
+      "difficulty_source": "printed",
+      "difficulty_as_printed": "E",
+      "learning_outcomes": [
+        {
+          "number": 14,
+          "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
+        }
+      ],
+      "lo_source": "all_questions_row",
+      "out_of_syllabus": false,
+      "text": "What is per capita income?",
+      "source": "lba",
+      "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q012",
+      "locators": [
+        {
+          "role": "question",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q012",
+          "pdf_page": 72,
+          "printed_page": 61,
+          "y": 276.983185,
+          "derived_from": "text_layer"
+        },
+        {
+          "role": "answer",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q012-key",
+          "pdf_page": 143,
+          "printed_page": 132,
+          "y": 329.303193,
+          "derived_from": "text_layer"
+        }
+      ],
+      "revision": 1,
+      "status": "draft",
+      "status_history": [
+        {
+          "from": "none",
+          "to": "draft",
+          "by": "class-8-social",
+          "role": "extraction",
+          "at": "2026-10-08T03:20:11+05:30"
+        }
+      ],
+      "created_by": "class-8-social",
+      "created_at": "2026-10-08T03:20:11+05:30",
+      "text_as_printed": "What is per capita income? (E)",
+      "answer": {
+        "kind": "text",
+        "value": "Per capita income is obtained by dividing the total income of the nation by its population."
+      },
+      "answer_as_printed": "Per capita income is obtained by dividing the total income of the nation by its population.",
+      "answer_provenance": {
+        "by": "printed",
+        "actor": "class-8-social",
+        "at": "2026-10-08T03:20:11+05:30",
+        "basis": "printed VSA key, verbatim (v2 §4)"
+      },
+      "source_flags": [
+        {
+          "issue": "marks ambiguous in source — no marks printed"
+        }
+      ],
+      "content_hash": "dbe6ca397fe2054a0237bf7553e056e4b7da3e03b7028a7f62ed84b3162196e5"
+    },
+    {
+      "id": "soc-8-28-s2-q013",
+      "class": "8",
+      "subject": "social",
+      "language": "en",
+      "chapter_id": "soc-8-28",
+      "syllabus_map_version": "none",
+      "audience": "student",
+      "type": "vsa",
+      "marks": null,
+      "marks_source": "unassigned",
+      "difficulty": "easy",
+      "difficulty_source": "printed",
+      "difficulty_as_printed": "E",
+      "learning_outcomes": [
+        {
+          "number": 14,
+          "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
+        }
+      ],
+      "lo_source": "all_questions_row",
+      "out_of_syllabus": false,
+      "text": "What is the quantity of goods and services available for sale at a known price in the market?",
+      "source": "lba",
+      "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q013",
+      "locators": [
+        {
+          "role": "question",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q013",
+          "pdf_page": 72,
+          "printed_page": 61,
+          "y": 311.903184,
+          "derived_from": "text_layer"
+        },
+        {
+          "role": "answer",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q013-key",
+          "pdf_page": 143,
+          "printed_page": 132,
+          "y": 364.103188,
+          "derived_from": "text_layer"
+        }
+      ],
+      "revision": 1,
+      "status": "draft",
+      "status_history": [
+        {
+          "from": "none",
+          "to": "draft",
+          "by": "class-8-social",
+          "role": "extraction",
+          "at": "2026-10-08T03:20:11+05:30"
+        }
+      ],
+      "created_by": "class-8-social",
+      "created_at": "2026-10-08T03:20:11+05:30",
+      "text_as_printed": "What is the quantity of goods and services available for sale at a known price in the market? (E)",
+      "answer": {
+        "kind": "text",
+        "value": "The goods and services to be provided to the customer is called as Supply."
+      },
+      "answer_as_printed": "The goods and services to be provided to the customer is called as Supply.",
+      "answer_provenance": {
+        "by": "printed",
+        "actor": "class-8-social",
+        "at": "2026-10-08T03:20:11+05:30",
+        "basis": "printed VSA key, verbatim (v2 §4)"
+      },
+      "source_flags": [
+        {
+          "issue": "marks ambiguous in source — no marks printed"
+        }
+      ],
+      "content_hash": "8112367a75a6fc3260e2f831e0ac926b1631eea0f1f1bd622c8e7e5bea82a511"
+    },
+    {
+      "id": "soc-8-28-s2-q014",
+      "class": "8",
+      "subject": "social",
+      "language": "en",
+      "chapter_id": "soc-8-28",
+      "syllabus_map_version": "none",
+      "audience": "student",
+      "type": "vsa",
+      "marks": null,
+      "marks_source": "unassigned",
+      "difficulty": "easy",
+      "difficulty_source": "printed",
+      "difficulty_as_printed": "E",
+      "learning_outcomes": [
+        {
+          "number": 14,
+          "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
+        }
+      ],
+      "lo_source": "all_questions_row",
+      "out_of_syllabus": false,
+      "text": "What is time utility?",
+      "source": "lba",
+      "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q014",
+      "locators": [
+        {
+          "role": "question",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q014",
+          "pdf_page": 72,
+          "printed_page": 61,
+          "y": 329.303193,
+          "derived_from": "text_layer"
+        },
+        {
+          "role": "answer",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q014-key",
+          "pdf_page": 143,
+          "printed_page": 132,
+          "y": 381.503197,
+          "derived_from": "text_layer"
+        }
+      ],
+      "revision": 1,
+      "status": "draft",
+      "status_history": [
+        {
+          "from": "none",
+          "to": "draft",
+          "by": "class-8-social",
+          "role": "extraction",
+          "at": "2026-10-08T03:20:11+05:30"
+        }
+      ],
+      "created_by": "class-8-social",
+      "created_at": "2026-10-08T03:20:11+05:30",
+      "text_as_printed": "What is time utility? (E)",
+      "answer": {
+        "kind": "text",
+        "value": "Storing goods when they are abundant and supplying them when scarce. For example, storing raw mangoes during their season and supplying them in another season in the form of pickles."
+      },
+      "answer_as_printed": "Storing goods when they are abundant and supplying them when scarce. For example, storing raw mangoes during their season and supplying them in another season in the form of pickles.",
+      "answer_provenance": {
+        "by": "printed",
+        "actor": "class-8-social",
+        "at": "2026-10-08T03:20:11+05:30",
+        "basis": "printed VSA key, verbatim (v2 §4)"
+      },
+      "source_flags": [
+        {
+          "issue": "marks ambiguous in source — no marks printed"
+        },
+        {
+          "issue": "duplicate of soc-8-28-s2-q015"
+        }
+      ],
+      "content_hash": "9f5e7282a547564ddfd0eccbbb693d86d41e363ad5d336b3c70099ba4fcd6e15"
+    },
+    {
+      "id": "soc-8-28-s2-q015",
+      "class": "8",
+      "subject": "social",
+      "language": "en",
+      "chapter_id": "soc-8-28",
+      "syllabus_map_version": "none",
+      "audience": "student",
+      "type": "vsa",
+      "marks": null,
+      "marks_source": "unassigned",
+      "difficulty": "easy",
+      "difficulty_source": "printed",
+      "difficulty_as_printed": "E",
+      "learning_outcomes": [
+        {
+          "number": 14,
+          "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
+        }
+      ],
+      "lo_source": "all_questions_row",
+      "out_of_syllabus": false,
+      "text": "What is time utility?",
+      "source": "lba",
+      "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q015",
+      "locators": [
+        {
+          "role": "question",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q015",
+          "pdf_page": 72,
+          "printed_page": 61,
+          "y": 343.0,
+          "derived_from": "text_layer"
+        },
+        {
+          "role": "answer",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q014-key",
+          "pdf_page": 143,
+          "printed_page": 132,
+          "y": 381.503197,
+          "derived_from": "text_layer"
+        }
+      ],
+      "revision": 1,
+      "status": "draft",
+      "status_history": [
+        {
+          "from": "none",
+          "to": "draft",
+          "by": "class-8-social",
+          "role": "extraction",
+          "at": "2026-10-08T03:20:11+05:30"
+        }
+      ],
+      "created_by": "class-8-social",
+      "created_at": "2026-10-08T03:20:11+05:30",
+      "text_as_printed": "What is time utility? (Short) (E)",
+      "answer": {
+        "kind": "text",
+        "value": "Storing goods when they are abundant and supplying them when scarce. For example, storing raw mangoes during their season and supplying them in another season in the form of pickles."
+      },
+      "answer_as_printed": "Storing goods when they are abundant and supplying them when scarce. For example, storing raw mangoes during their season and supplying them in another season in the form of pickles.",
+      "answer_provenance": {
+        "by": "printed",
+        "actor": "class-8-social",
+        "at": "2026-10-08T03:20:11+05:30",
+        "basis": "printed VSA key for q014, copied (stem re-printed, key printed once)"
+      },
+      "source_flags": [
+        {
+          "issue": "marks ambiguous in source — no marks printed"
+        },
+        {
+          "issue": "duplicate of soc-8-28-s2-q014 — stem re-printed; key printed once, copied"
+        }
+      ],
+      "content_hash": "9f5e7282a547564ddfd0eccbbb693d86d41e363ad5d336b3c70099ba4fcd6e15"
+    },
+    {
+      "id": "soc-8-28-s2-q016",
+      "class": "8",
+      "subject": "social",
+      "language": "en",
+      "chapter_id": "soc-8-28",
+      "syllabus_map_version": "none",
+      "audience": "student",
+      "type": "vsa",
+      "marks": null,
+      "marks_source": "unassigned",
+      "difficulty": "average",
+      "difficulty_source": "printed",
+      "difficulty_as_printed": "A",
+      "learning_outcomes": [
+        {
+          "number": 14,
+          "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
+        }
+      ],
+      "lo_source": "all_questions_row",
+      "out_of_syllabus": false,
+      "text": "How is price determined?",
+      "source": "lba",
+      "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q016",
+      "locators": [
+        {
+          "role": "question",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q016",
+          "pdf_page": 72,
+          "printed_page": 61,
+          "y": 346.583199,
+          "derived_from": "text_layer"
+        },
+        {
+          "role": "answer",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q016-key",
+          "pdf_page": 143,
+          "printed_page": 132,
+          "y": 433.703179,
+          "derived_from": "text_layer"
+        }
+      ],
+      "revision": 1,
+      "status": "draft",
+      "status_history": [
+        {
+          "from": "none",
+          "to": "draft",
+          "by": "class-8-social",
+          "role": "extraction",
+          "at": "2026-10-08T03:20:11+05:30"
+        }
+      ],
+      "created_by": "class-8-social",
+      "created_at": "2026-10-08T03:20:11+05:30",
+      "text_as_printed": "How is price determined? (A)",
+      "answer": {
+        "kind": "text",
+        "value": "Price is determined based on the demand and supply of goods."
+      },
+      "answer_as_printed": "Price is determined based on the demand and supply of goods.",
+      "answer_provenance": {
+        "by": "printed",
+        "actor": "class-8-social",
+        "at": "2026-10-08T03:20:11+05:30",
+        "basis": "printed VSA key, verbatim (v2 §4)"
+      },
+      "source_flags": [
+        {
+          "issue": "marks ambiguous in source — no marks printed"
+        }
+      ],
+      "content_hash": "a0f730e52f755e25fbf6a23b741aa7c4466c9885b284d049b9d1b4599d0eeb0b"
+    },
+    {
+      "id": "soc-8-28-s2-q017",
+      "class": "8",
+      "subject": "social",
+      "language": "en",
+      "chapter_id": "soc-8-28",
+      "syllabus_map_version": "none",
+      "audience": "student",
+      "type": "vsa",
+      "marks": null,
+      "marks_source": "unassigned",
+      "difficulty": "average",
+      "difficulty_source": "printed",
+      "difficulty_as_printed": "A",
+      "learning_outcomes": [
+        {
+          "number": 14,
+          "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
+        }
+      ],
+      "lo_source": "all_questions_row",
+      "out_of_syllabus": false,
+      "text": "What is utility in economics?",
+      "source": "lba",
+      "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q017",
+      "locators": [
+        {
+          "role": "question",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q017",
+          "pdf_page": 72,
+          "printed_page": 61,
+          "y": 364.103188,
+          "derived_from": "text_layer"
+        },
+        {
+          "role": "answer",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q017-key",
+          "pdf_page": 143,
+          "printed_page": 132,
+          "y": 451.103188,
+          "derived_from": "text_layer"
+        }
+      ],
+      "revision": 1,
+      "status": "draft",
+      "status_history": [
+        {
+          "from": "none",
+          "to": "draft",
+          "by": "class-8-social",
+          "role": "extraction",
+          "at": "2026-10-08T03:20:11+05:30"
+        }
+      ],
+      "created_by": "class-8-social",
+      "created_at": "2026-10-08T03:20:11+05:30",
+      "text_as_printed": "What is utility in economics? (A)",
+      "answer": {
+        "kind": "text",
+        "value": "Utility is the power to satisfy human wants."
+      },
+      "answer_as_printed": "Utility is the power to satisfy human wants.",
+      "answer_provenance": {
+        "by": "printed",
+        "actor": "class-8-social",
+        "at": "2026-10-08T03:20:11+05:30",
+        "basis": "printed VSA key, verbatim (v2 §4)"
+      },
+      "source_flags": [
+        {
+          "issue": "marks ambiguous in source — no marks printed"
+        }
+      ],
+      "content_hash": "eea2832d46b8203baccf764fc6b5bb0417783a625e1d31cbca21450db09c2a39"
+    },
+    {
+      "id": "soc-8-28-s2-q018",
+      "class": "8",
+      "subject": "social",
+      "language": "en",
+      "chapter_id": "soc-8-28",
+      "syllabus_map_version": "none",
+      "audience": "student",
+      "type": "vsa",
+      "marks": null,
+      "marks_source": "unassigned",
+      "difficulty": "average",
+      "difficulty_source": "printed",
+      "difficulty_as_printed": "A",
+      "learning_outcomes": [
+        {
+          "number": 14,
+          "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
+        }
+      ],
+      "lo_source": "all_questions_row",
+      "out_of_syllabus": false,
+      "text": "What is principle utility?",
+      "source": "lba",
+      "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q018",
+      "locators": [
+        {
+          "role": "question",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q018",
+          "pdf_page": 72,
+          "printed_page": 61,
+          "y": 381.503197,
+          "derived_from": "text_layer"
+        },
+        {
+          "role": "answer",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q018-key",
+          "pdf_page": 143,
+          "printed_page": 132,
+          "y": 468.503197,
+          "derived_from": "text_layer"
+        }
+      ],
+      "revision": 1,
+      "status": "draft",
+      "status_history": [
+        {
+          "from": "none",
+          "to": "draft",
+          "by": "class-8-social",
+          "role": "extraction",
+          "at": "2026-10-08T03:20:11+05:30"
+        }
+      ],
+      "created_by": "class-8-social",
+      "created_at": "2026-10-08T03:20:11+05:30",
+      "text_as_printed": "What is principle utility? (A)",
+      "answer": {
+        "kind": "text",
+        "value": "Goods and services that can be used in their original form have primary utility. For example, water, fruits, eggs, etc."
+      },
+      "answer_as_printed": "Goods and services that can be used in their original form have primary utility. For example, water, fruits, eggs, etc.",
+      "answer_provenance": {
+        "by": "printed",
+        "actor": "class-8-social",
+        "at": "2026-10-08T03:20:11+05:30",
+        "basis": "printed VSA key, verbatim (v2 §4)"
+      },
+      "source_flags": [
+        {
+          "issue": "marks ambiguous in source — no marks printed"
+        }
+      ],
+      "content_hash": "d37369a29015db1ffe7b867d9015d8bdf03fa438a5235063f086a0d4984728c4"
+    },
+    {
+      "id": "soc-8-28-s2-q019",
+      "class": "8",
+      "subject": "social",
+      "language": "en",
+      "chapter_id": "soc-8-28",
+      "syllabus_map_version": "none",
+      "audience": "student",
+      "type": "vsa",
+      "marks": null,
+      "marks_source": "unassigned",
+      "difficulty": "average",
+      "difficulty_source": "printed",
+      "difficulty_as_printed": "A",
+      "learning_outcomes": [
+        {
+          "number": 14,
+          "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
+        }
+      ],
+      "lo_source": "all_questions_row",
+      "out_of_syllabus": false,
+      "text": "What is form utility?",
+      "source": "lba",
+      "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q019",
+      "locators": [
+        {
+          "role": "question",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q019",
+          "pdf_page": 72,
+          "printed_page": 61,
+          "y": 398.903207,
+          "derived_from": "text_layer"
+        },
+        {
+          "role": "answer",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q019-key",
+          "pdf_page": 143,
+          "printed_page": 132,
+          "y": 503.30317,
+          "derived_from": "text_layer"
+        }
+      ],
+      "revision": 1,
+      "status": "draft",
+      "status_history": [
+        {
+          "from": "none",
+          "to": "draft",
+          "by": "class-8-social",
+          "role": "extraction",
+          "at": "2026-10-08T03:20:11+05:30"
+        }
+      ],
+      "created_by": "class-8-social",
+      "created_at": "2026-10-08T03:20:11+05:30",
+      "text_as_printed": "What is form utility? (A)",
+      "answer": {
+        "kind": "text",
+        "value": "Form utility is created by giving shape to goods provided by nature and making them suitable for use. For example, a sculptor giving shape to a stone as a statue, a carpenter making a chair or table from wood."
+      },
+      "answer_as_printed": "Form utility is created by giving shape to goods provided by nature and making them suitable for use. For example, a sculptor giving shape to a stone as a statue, a carpenter making a chair or table from wood.",
+      "answer_provenance": {
+        "by": "printed",
+        "actor": "class-8-social",
+        "at": "2026-10-08T03:20:11+05:30",
+        "basis": "printed VSA key, verbatim (v2 §4)"
+      },
+      "source_flags": [
+        {
+          "issue": "marks ambiguous in source — no marks printed"
+        }
+      ],
+      "content_hash": "b5e75ee461f72480560f77ded31d3a6c6b0702ac68bc4f4089469a24ff899025"
+    },
+    {
+      "id": "soc-8-28-s2-q020",
+      "class": "8",
+      "subject": "social",
+      "language": "en",
+      "chapter_id": "soc-8-28",
+      "syllabus_map_version": "none",
+      "audience": "student",
+      "type": "vsa",
+      "marks": null,
+      "marks_source": "unassigned",
+      "difficulty": "average",
+      "difficulty_source": "printed",
+      "difficulty_as_printed": "A",
+      "learning_outcomes": [
+        {
+          "number": 14,
+          "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
+        }
+      ],
+      "lo_source": "all_questions_row",
+      "out_of_syllabus": false,
+      "text": "What is place utility?",
+      "source": "lba",
+      "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q020",
+      "locators": [
+        {
+          "role": "question",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q020",
+          "pdf_page": 72,
+          "printed_page": 61,
+          "y": 416.30317,
+          "derived_from": "text_layer"
+        },
+        {
+          "role": "answer",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q020-key",
+          "pdf_page": 143,
+          "printed_page": 132,
+          "y": 555.503197,
+          "derived_from": "text_layer"
+        }
+      ],
+      "revision": 1,
+      "status": "draft",
+      "status_history": [
+        {
+          "from": "none",
+          "to": "draft",
+          "by": "class-8-social",
+          "role": "extraction",
+          "at": "2026-10-08T03:20:11+05:30"
+        }
+      ],
+      "created_by": "class-8-social",
+      "created_at": "2026-10-08T03:20:11+05:30",
+      "text_as_printed": "What is place utility? (A)",
+      "answer": {
+        "kind": "text",
+        "value": "Place utility is created by transporting goods available in abundance at one place to distant places so that consumers can access them. For example, apples from Shimla and oranges from Kodagu being made available in Bengaluru."
+      },
+      "answer_as_printed": "Place utility is created by transporting goods available in abundance at one place to distant places so that consumers can access them. For example, apples from Shimla and oranges from Kodagu being made available in Bengaluru.",
+      "answer_provenance": {
+        "by": "printed",
+        "actor": "class-8-social",
+        "at": "2026-10-08T03:20:11+05:30",
+        "basis": "printed VSA key, verbatim (v2 §4)"
+      },
+      "source_flags": [
+        {
+          "issue": "marks ambiguous in source — no marks printed"
+        }
+      ],
+      "content_hash": "bd4517747a63c85b66d7e54586959b644666a05f800b81ea5b8160ec69606b98"
+    },
+    {
+      "id": "soc-8-28-s2-q021",
+      "class": "8",
+      "subject": "social",
+      "language": "en",
+      "chapter_id": "soc-8-28",
+      "syllabus_map_version": "none",
+      "audience": "student",
+      "type": "vsa",
+      "marks": null,
+      "marks_source": "unassigned",
+      "difficulty": "easy",
+      "difficulty_source": "printed",
+      "difficulty_as_printed": "E",
+      "learning_outcomes": [
+        {
+          "number": 14,
+          "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
+        }
+      ],
+      "lo_source": "all_questions_row",
+      "out_of_syllabus": false,
+      "text": "What is the basic motto of cooperation?",
+      "source": "lba",
+      "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q021",
+      "locators": [
+        {
+          "role": "question",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q021",
+          "pdf_page": 72,
+          "printed_page": 61,
+          "y": 433.703179,
+          "derived_from": "text_layer"
+        },
+        {
+          "role": "answer",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q021-key",
+          "pdf_page": 143,
+          "printed_page": 132,
+          "y": 625.103188,
+          "derived_from": "text_layer"
+        }
+      ],
+      "revision": 1,
+      "status": "draft",
+      "status_history": [
+        {
+          "from": "none",
+          "to": "draft",
+          "by": "class-8-social",
+          "role": "extraction",
+          "at": "2026-10-08T03:20:11+05:30"
+        }
+      ],
+      "created_by": "class-8-social",
+      "created_at": "2026-10-08T03:20:11+05:30",
+      "text_as_printed": "What is the basic motto of cooperation? (E)",
+      "answer": {
+        "kind": "text",
+        "value": "“All for each and each for all” is the motto of cooperation."
+      },
+      "answer_as_printed": "“All for each and each for all” is the motto of cooperation.",
+      "answer_provenance": {
+        "by": "printed",
+        "actor": "class-8-social",
+        "at": "2026-10-08T03:20:11+05:30",
+        "basis": "printed VSA key, verbatim (v2 §4)"
+      },
+      "source_flags": [
+        {
+          "issue": "marks ambiguous in source — no marks printed"
+        }
+      ],
+      "content_hash": "3a0a5d7ac0bccd91d6651df1cb4d0ccdad0d3e711ef00266fc33946508c292f6"
+    },
+    {
+      "id": "soc-8-28-s2-q022",
+      "class": "8",
+      "subject": "social",
+      "language": "en",
+      "chapter_id": "soc-8-28",
+      "syllabus_map_version": "none",
+      "audience": "student",
+      "type": "vsa",
+      "marks": null,
+      "marks_source": "unassigned",
+      "difficulty": "easy",
+      "difficulty_source": "printed",
+      "difficulty_as_printed": "E",
+      "learning_outcomes": [
+        {
+          "number": 14,
+          "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
+        }
+      ],
+      "lo_source": "all_questions_row",
+      "out_of_syllabus": false,
+      "text": "What is national income?",
+      "source": "lba",
+      "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q022",
+      "locators": [
+        {
+          "role": "question",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q022",
+          "pdf_page": 72,
+          "printed_page": 61,
+          "y": 451.103188,
+          "derived_from": "text_layer"
+        },
+        {
+          "role": "answer",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q022-key",
+          "pdf_page": 143,
+          "printed_page": 132,
+          "y": 642.503197,
+          "derived_from": "text_layer"
+        }
+      ],
+      "revision": 1,
+      "status": "draft",
+      "status_history": [
+        {
+          "from": "none",
+          "to": "draft",
+          "by": "class-8-social",
+          "role": "extraction",
+          "at": "2026-10-08T03:20:11+05:30"
+        }
+      ],
+      "created_by": "class-8-social",
+      "created_at": "2026-10-08T03:20:11+05:30",
+      "text_as_printed": "What is national income? (E)",
+      "answer": {
+        "kind": "text",
+        "value": "The total value of goods and services produced in a country in one year is called national income."
+      },
+      "answer_as_printed": "The total value of goods and services produced in a country in one year is called national income.",
+      "answer_provenance": {
+        "by": "printed",
+        "actor": "class-8-social",
+        "at": "2026-10-08T03:20:11+05:30",
+        "basis": "printed VSA key, verbatim (v2 §4)"
+      },
+      "source_flags": [
+        {
+          "issue": "marks ambiguous in source — no marks printed"
+        }
+      ],
+      "content_hash": "a19aa3df72a8ee39e532aa33d2781bf11df51d901d79ed5570c4dae207e3535f"
+    },
+    {
+      "id": "soc-8-28-s3-q023",
+      "class": "8",
+      "subject": "social",
+      "language": "en",
+      "chapter_id": "soc-8-28",
+      "syllabus_map_version": "none",
+      "audience": "student",
+      "type": "la",
+      "marks": null,
+      "marks_source": "unassigned",
+      "difficulty": "difficult",
+      "difficulty_source": "printed",
+      "difficulty_as_printed": "D",
+      "learning_outcomes": [
+        {
+          "number": 14,
+          "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
+        }
+      ],
+      "lo_source": "all_questions_row",
+      "out_of_syllabus": false,
+      "text": "“Demand is a symbol of a nation's progress.” Justify the statement",
+      "source": "lba",
+      "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s3-q023",
+      "locators": [
+        {
+          "role": "question",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s3-q023",
+          "pdf_page": 72,
+          "printed_page": 61,
+          "y": 485.903207,
+          "derived_from": "text_layer"
+        },
+        {
+          "role": "answer",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s3-q023-key",
+          "pdf_page": 144,
+          "printed_page": 133,
+          "y": 85.583188,
+          "derived_from": "text_layer"
+        }
+      ],
+      "revision": 1,
+      "status": "draft",
+      "status_history": [
+        {
+          "from": "none",
+          "to": "draft",
+          "by": "class-8-social",
+          "role": "extraction",
+          "at": "2026-10-08T03:20:11+05:30"
+        }
+      ],
+      "created_by": "class-8-social",
+      "created_at": "2026-10-08T03:20:11+05:30",
+      "text_as_printed": "“Demand is a symbol of a nation's progress.” Justify the statement (D)",
+      "answer": {
+        "kind": "text",
+        "value": "Impact of Demand on Production:\nDemand significantly affects the production sector.\nIncreased demand leads to higher production, employment, income, and supply.\nIt improves people's standard of living.\nIt leads to increase the national income and progress of country\nThe decrease in the demand reduces the production, income, and employment, lowering living standards and national progress.\nThus, demand is a symbol of national progress."
+      },
+      "answer_as_printed": "Impact of Demand on Production:\nDemand significantly affects the production sector.\nIncreased demand leads to higher production, employment, income, and supply.\nIt improves people's standard of living.\nIt leads to increase the national income and progress of country\nThe decrease in the demand reduces the production, income, and employment, lowering living standards and national progress.\nThus, demand is a symbol of national progress.",
+      "solution_steps": [
+        "Demand significantly affects the production sector.",
+        "Increased demand leads to higher production, employment, income, and supply.",
+        "It improves people's standard of living.",
+        "It leads to increase the national income and progress of country",
+        "The decrease in the demand reduces the production, income, and employment, lowering living standards and national progress.",
+        "Thus, demand is a symbol of national progress."
+      ],
+      "answer_provenance": {
+        "by": "printed",
+        "actor": "class-8-social",
+        "at": "2026-10-08T03:20:11+05:30",
+        "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+      },
+      "source_flags": [
+        {
+          "issue": "marks ambiguous in source — no marks printed"
+        }
+      ],
+      "content_hash": "c43ea3ab451b60b2536848a834cd344d356b0a1479f56164051ee037fa2bd1d9"
+    },
+    {
+      "id": "soc-8-28-s3-q024",
+      "class": "8",
+      "subject": "social",
+      "language": "en",
+      "chapter_id": "soc-8-28",
+      "syllabus_map_version": "none",
+      "audience": "student",
+      "type": "la",
+      "marks": null,
+      "marks_source": "unassigned",
+      "difficulty": "difficult",
+      "difficulty_source": "printed",
+      "difficulty_as_printed": "D",
+      "learning_outcomes": [
+        {
+          "number": 14,
+          "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
+        }
+      ],
+      "lo_source": "all_questions_row",
+      "out_of_syllabus": false,
+      "text": "“Labour is crucial in nation-building.” Justify the statement",
+      "source": "lba",
+      "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s3-q024",
+      "locators": [
+        {
+          "role": "question",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s3-q024",
+          "pdf_page": 72,
+          "printed_page": 61,
+          "y": 503.30317,
+          "derived_from": "text_layer"
+        },
+        {
+          "role": "answer",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s3-q024-key",
+          "pdf_page": 144,
+          "printed_page": 133,
+          "y": 242.303193,
+          "derived_from": "text_layer"
+        }
+      ],
+      "revision": 1,
+      "status": "draft",
+      "status_history": [
+        {
+          "from": "none",
+          "to": "draft",
+          "by": "class-8-social",
+          "role": "extraction",
+          "at": "2026-10-08T03:20:11+05:30"
+        }
+      ],
+      "created_by": "class-8-social",
+      "created_at": "2026-10-08T03:20:11+05:30",
+      "text_as_printed": "“Labour is crucial in nation-building.” Justify the statement (D)",
+      "answer": {
+        "kind": "text",
+        "value": "Importance of Physical and Mental Labor:\nBoth physical and mental labor is vital for a progress of the country\nA shortage of physical labor hampers the production.\nMental labor drives national development.\nEveryone should be willing to perform physical labor.\nSociety should not discriminate between physical and mental labor.\nPhysical labor is essential for operating machines and tasks machines cannot perform."
+      },
+      "answer_as_printed": "Importance of Physical and Mental Labor:\nBoth physical and mental labor is vital for a progress of the country\nA shortage of physical labor hampers the production.\nMental labor drives national development.\nEveryone should be willing to perform physical labor.\nSociety should not discriminate between physical and mental labor.\nPhysical labor is essential for operating machines and tasks machines cannot perform.",
+      "solution_steps": [
+        "Both physical and mental labor is vital for a progress of the country",
+        "A shortage of physical labor hampers the production.",
+        "Mental labor drives national development.",
+        "Everyone should be willing to perform physical labor.",
+        "Society should not discriminate between physical and mental labor.",
+        "Physical labor is essential for operating machines and tasks machines cannot perform."
+      ],
+      "answer_provenance": {
+        "by": "printed",
+        "actor": "class-8-social",
+        "at": "2026-10-08T03:20:11+05:30",
+        "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+      },
+      "source_flags": [
+        {
+          "issue": "marks ambiguous in source — no marks printed"
+        }
+      ],
+      "content_hash": "a3570f68e7e49c498c2e8fd2a3695840a61ae9e6585289a2e8ec817ca1782e56"
+    },
+    {
+      "id": "soc-8-28-s3-q025",
+      "class": "8",
+      "subject": "social",
+      "language": "en",
+      "chapter_id": "soc-8-28",
+      "syllabus_map_version": "none",
+      "audience": "student",
+      "type": "la",
+      "marks": null,
+      "marks_source": "unassigned",
+      "difficulty": "easy",
+      "difficulty_source": "printed",
+      "difficulty_as_printed": "E",
+      "learning_outcomes": [
+        {
+          "number": 14,
+          "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
+        }
+      ],
+      "lo_source": "all_questions_row",
+      "out_of_syllabus": false,
+      "text": "Prepare a list of physical labour activities performed by your family members",
+      "source": "lba",
+      "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s3-q025",
+      "locators": [
+        {
+          "role": "question",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s3-q025",
+          "pdf_page": 72,
+          "printed_page": 61,
+          "y": 520.703179,
+          "derived_from": "text_layer"
+        },
+        {
+          "role": "answer",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s3-q025-key",
+          "pdf_page": 144,
+          "printed_page": 133,
+          "y": 381.503197,
+          "derived_from": "text_layer"
+        }
+      ],
+      "revision": 1,
+      "status": "draft",
+      "status_history": [
+        {
+          "from": "none",
+          "to": "draft",
+          "by": "class-8-social",
+          "role": "extraction",
+          "at": "2026-10-08T03:20:11+05:30"
+        }
+      ],
+      "created_by": "class-8-social",
+      "created_at": "2026-10-08T03:20:11+05:30",
+      "text_as_printed": "Prepare a list of physical labour activities performed by your family members (E)",
+      "answer": {
+        "kind": "text",
+        "value": "Examples of Physical Labor:\nFarming, Masonry, Animal husbandry, Pottery, Basket weaving, Brick making, Construction activity"
+      },
+      "answer_as_printed": "Examples of Physical Labor:\nFarming, Masonry, Animal husbandry, Pottery, Basket weaving, Brick making, Construction activity",
+      "solution_steps": [
+        "Farming, Masonry, Animal husbandry, Pottery, Basket weaving, Brick making, Construction activity"
+      ],
+      "answer_provenance": {
+        "by": "printed",
+        "actor": "class-8-social",
+        "at": "2026-10-08T03:20:11+05:30",
+        "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+      },
+      "source_flags": [
+        {
+          "issue": "marks ambiguous in source — no marks printed"
+        }
+      ],
+      "content_hash": "5506987dbf232a06abd5d677293eccefe8a16eca2939706f5830a8716c2aedb6"
+    },
+    {
+      "id": "soc-8-28-s3-q026",
+      "class": "8",
+      "subject": "social",
+      "language": "en",
+      "chapter_id": "soc-8-28",
+      "syllabus_map_version": "none",
+      "audience": "student",
+      "type": "la",
+      "marks": null,
+      "marks_source": "unassigned",
+      "difficulty": "easy",
+      "difficulty_source": "printed",
+      "difficulty_as_printed": "E",
+      "learning_outcomes": [
+        {
+          "number": 14,
+          "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
+        }
+      ],
+      "lo_source": "all_questions_row",
+      "out_of_syllabus": false,
+      "text": "What is consumption? Explain its types.",
+      "source": "lba",
+      "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s3-q026",
+      "locators": [
+        {
+          "role": "question",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s3-q026",
+          "pdf_page": 72,
+          "printed_page": 61,
+          "y": 555.503197,
+          "derived_from": "text_layer"
+        },
+        {
+          "role": "answer",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s3-q026-key",
+          "pdf_page": 144,
+          "printed_page": 133,
+          "y": 442.343193,
+          "derived_from": "text_layer"
+        }
+      ],
+      "revision": 1,
+      "status": "draft",
+      "status_history": [
+        {
+          "from": "none",
+          "to": "draft",
+          "by": "class-8-social",
+          "role": "extraction",
+          "at": "2026-10-08T03:20:11+05:30"
+        }
+      ],
+      "created_by": "class-8-social",
+      "created_at": "2026-10-08T03:20:11+05:30",
+      "text_as_printed": "What is consumption? Explain its types. (E)",
+      "answer": {
+        "kind": "text",
+        "value": "Consumption is the use of goods and services by a person for his satisfaction.\nThere are two types of consumption:\nUsing goods and services for production\nUsing ready-made goods and services for the satisfaction of wants"
+      },
+      "answer_as_printed": "Consumption is the use of goods and services by a person for his satisfaction.\nThere are two types of consumption:\nUsing goods and services for production\nUsing ready-made goods and services for the satisfaction of wants",
+      "solution_steps": [
+        "Consumption is the use of goods and services by a person for his satisfaction.",
+        "Using goods and services for production",
+        "Using ready-made goods and services for the satisfaction of wants"
+      ],
+      "answer_provenance": {
+        "by": "printed",
+        "actor": "class-8-social",
+        "at": "2026-10-08T03:20:11+05:30",
+        "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+      },
+      "source_flags": [
+        {
+          "issue": "marks ambiguous in source — no marks printed"
+        }
+      ],
+      "content_hash": "192ad5641ee36fe48c78cbc6f43dc237907e9c09b824b666e911ca0a9264507d"
+    },
+    {
+      "id": "soc-8-28-s3-q027",
+      "class": "8",
+      "subject": "social",
+      "language": "en",
+      "chapter_id": "soc-8-28",
+      "syllabus_map_version": "none",
+      "audience": "student",
+      "type": "la",
+      "marks": null,
+      "marks_source": "unassigned",
+      "difficulty": "difficult",
+      "difficulty_source": "printed",
+      "difficulty_as_printed": "D",
+      "learning_outcomes": [
+        {
+          "number": 14,
+          "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
+        }
+      ],
+      "lo_source": "all_questions_row",
+      "out_of_syllabus": false,
+      "text": "Explain the relationship between utility and satisfaction.",
+      "source": "lba",
+      "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s3-q027",
+      "locators": [
+        {
+          "role": "question",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s3-q027",
+          "pdf_page": 72,
+          "printed_page": 61,
+          "y": 572.903207,
+          "derived_from": "text_layer"
+        },
+        {
+          "role": "answer",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s3-q027-key",
+          "pdf_page": 144,
+          "printed_page": 133,
+          "y": 535.703179,
+          "derived_from": "text_layer"
+        }
+      ],
+      "revision": 1,
+      "status": "draft",
+      "status_history": [
+        {
+          "from": "none",
+          "to": "draft",
+          "by": "class-8-social",
+          "role": "extraction",
+          "at": "2026-10-08T03:20:11+05:30"
+        }
+      ],
+      "created_by": "class-8-social",
+      "created_at": "2026-10-08T03:20:11+05:30",
+      "text_as_printed": "Explain the relationship between utility and satisfaction. (D)",
+      "answer": {
+        "kind": "text",
+        "value": "Utility is not satisfaction; it is the power to give satisfaction.\nSatisfaction is the result of utility; that is, goods and services having utility give us satisfaction.\nUtility is not related to usefulness.\nThough both words are often used in the same sense, it is not correct.\nFor example, intoxicating substances may have no benefit, yet they possess utility.\nPrimary utility, form utility, time utility, and place utility."
+      },
+      "answer_as_printed": "Utility is not satisfaction; it is the power to give satisfaction.\nSatisfaction is the result of utility; that is, goods and services having utility give us satisfaction.\nUtility is not related to usefulness.\nThough both words are often used in the same sense, it is not correct.\nFor example, intoxicating substances may have no benefit, yet they possess utility.\nPrimary utility, form utility, time utility, and place utility.",
+      "solution_steps": [
+        "Utility is not satisfaction; it is the power to give satisfaction.",
+        "Satisfaction is the result of utility; that is, goods and services having utility give us satisfaction.",
+        "Utility is not related to usefulness.",
+        "Though both words are often used in the same sense, it is not correct.",
+        "For example, intoxicating substances may have no benefit, yet they possess utility.",
+        "Primary utility, form utility, time utility, and place utility."
+      ],
+      "answer_provenance": {
+        "by": "printed",
+        "actor": "class-8-social",
+        "at": "2026-10-08T03:20:11+05:30",
+        "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+      },
+      "source_flags": [
+        {
+          "issue": "marks ambiguous in source — no marks printed"
+        }
+      ],
+      "content_hash": "fef2f5efd980ffbd10cc186c07abc67790d4be346d94109e96b8adce670530b9"
+    },
+    {
+      "id": "soc-8-28-s3-q028",
+      "class": "8",
+      "subject": "social",
+      "language": "en",
+      "chapter_id": "soc-8-28",
+      "syllabus_map_version": "none",
+      "audience": "student",
+      "type": "la",
+      "marks": null,
+      "marks_source": "unassigned",
+      "difficulty": "difficult",
+      "difficulty_source": "printed",
+      "difficulty_as_printed": "D",
+      "learning_outcomes": [
+        {
+          "number": 14,
+          "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
+        }
+      ],
+      "lo_source": "all_questions_row",
+      "out_of_syllabus": false,
+      "text": "Explain the importance of profit in the economic field.",
+      "source": "lba",
+      "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s3-q028",
+      "locators": [
+        {
+          "role": "question",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s3-q028",
+          "pdf_page": 72,
+          "printed_page": 61,
+          "y": 590.30317,
+          "derived_from": "text_layer"
+        },
+        {
+          "role": "answer",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s3-q028-key",
+          "pdf_page": 145,
+          "printed_page": 134,
+          "y": 68.18319,
+          "derived_from": "text_layer"
+        }
+      ],
+      "revision": 1,
+      "status": "draft",
+      "status_history": [
+        {
+          "from": "none",
+          "to": "draft",
+          "by": "class-8-social",
+          "role": "extraction",
+          "at": "2026-10-08T03:20:11+05:30"
+        }
+      ],
+      "created_by": "class-8-social",
+      "created_at": "2026-10-08T03:20:11+05:30",
+      "text_as_printed": "Explain the importance of profit in the economic field. (D)",
+      "answer": {
+        "kind": "text",
+        "value": "Profit has great importance in the economic field.\nThe main aim of all economic activities is to earn profit.\nAs profit increases, economic activities also increase.\nThe progress of the nation becomes rapid.\nAs profit decreases, economic activities decline.\nThe progress of the nation slows down, and economic recession arises."
+      },
+      "answer_as_printed": "Profit has great importance in the economic field.\nThe main aim of all economic activities is to earn profit.\nAs profit increases, economic activities also increase.\nThe progress of the nation becomes rapid.\nAs profit decreases, economic activities decline.\nThe progress of the nation slows down, and economic recession arises.",
+      "solution_steps": [
+        "Profit has great importance in the economic field.",
+        "The main aim of all economic activities is to earn profit.",
+        "As profit increases, economic activities also increase.",
+        "The progress of the nation becomes rapid.",
+        "As profit decreases, economic activities decline.",
+        "The progress of the nation slows down, and economic recession arises."
+      ],
+      "answer_provenance": {
+        "by": "printed",
+        "actor": "class-8-social",
+        "at": "2026-10-08T03:20:11+05:30",
+        "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+      },
+      "source_flags": [
+        {
+          "issue": "marks ambiguous in source — no marks printed"
+        }
+      ],
+      "content_hash": "87fac620f94a9f5db84f77052bced9f2abc5722d7d6f0b5ff8cb07ca2106ec7d"
+    },
+    {
+      "id": "soc-8-28-s3-q029",
+      "class": "8",
+      "subject": "social",
+      "language": "en",
+      "chapter_id": "soc-8-28",
+      "syllabus_map_version": "none",
+      "audience": "student",
+      "type": "la",
+      "marks": null,
+      "marks_source": "unassigned",
+      "difficulty": "difficult",
+      "difficulty_source": "printed",
+      "difficulty_as_printed": "D",
+      "learning_outcomes": [
+        {
+          "number": 14,
+          "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
+        }
+      ],
+      "lo_source": "all_questions_row",
+      "out_of_syllabus": false,
+      "text": "Cooperative system is a good system in the economy. Why?",
+      "source": "lba",
+      "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s3-q029",
+      "locators": [
+        {
+          "role": "question",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s3-q029",
+          "pdf_page": 72,
+          "printed_page": 61,
+          "y": 607.823205,
+          "derived_from": "text_layer"
+        },
+        {
+          "role": "answer",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s3-q029-key",
+          "pdf_page": 145,
+          "printed_page": 134,
+          "y": 190.103188,
+          "derived_from": "text_layer"
+        }
+      ],
+      "revision": 1,
+      "status": "draft",
+      "status_history": [
+        {
+          "from": "none",
+          "to": "draft",
+          "by": "class-8-social",
+          "role": "extraction",
+          "at": "2026-10-08T03:20:11+05:30"
+        }
+      ],
+      "created_by": "class-8-social",
+      "created_at": "2026-10-08T03:20:11+05:30",
+      "text_as_printed": "Cooperative system is a good system in the economy. Why? (D)",
+      "answer": {
+        "kind": "text",
+        "value": "The cooperative system is a unique system in which people voluntarily come together and work on the basis of equality to protect their economic interests; its main aim is self-help. There is no scope for competition here.\nAll transactions are managed by the members themselves; profits are shared, suitable dividends are given on shares, and bonus is given based on the purchases made by members. There is no place for middlemen. There is no scope for exploitation.\nElected directors manage the affairs of the institution.\nHere, members are both owners and workers."
+      },
+      "answer_as_printed": "The cooperative system is a unique system in which people voluntarily come together and work on the basis of equality to protect their economic interests; its main aim is self-help. There is no scope for competition here.\nAll transactions are managed by the members themselves; profits are shared, suitable dividends are given on shares, and bonus is given based on the purchases made by members. There is no place for middlemen. There is no scope for exploitation.\nElected directors manage the affairs of the institution.\nHere, members are both owners and workers.",
+      "solution_steps": [
+        "The cooperative system is a unique system in which people voluntarily come together and work on the basis of equality to protect their economic interests; its main aim is self-help. There is no scope for competition here.",
+        "All transactions are managed by the members themselves; profits are shared, suitable dividends are given on shares, and bonus is given based on the purchases made by members. There is no place for middlemen. There is no scope for exploitation.",
+        "Elected directors manage the affairs of the institution.",
+        "Here, members are both owners and workers."
+      ],
+      "answer_provenance": {
+        "by": "printed",
+        "actor": "class-8-social",
+        "at": "2026-10-08T03:20:11+05:30",
+        "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+      },
+      "source_flags": [
+        {
+          "issue": "marks ambiguous in source — no marks printed"
+        }
+      ],
+      "content_hash": "cb930ba8eea79d8e4afdb3ac59df95b88c0fde72485b121704e3034a7d4ea037"
+    },
+    {
+      "id": "soc-8-28-s3-q030",
+      "class": "8",
+      "subject": "social",
+      "language": "en",
+      "chapter_id": "soc-8-28",
+      "syllabus_map_version": "none",
+      "audience": "student",
+      "type": "la",
+      "marks": null,
+      "marks_source": "unassigned",
+      "difficulty": "average",
+      "difficulty_source": "printed",
+      "difficulty_as_printed": "A",
+      "learning_outcomes": [
+        {
+          "number": 14,
+          "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
+        }
+      ],
+      "lo_source": "all_questions_row",
+      "out_of_syllabus": false,
+      "text": "Explain the role of national income in a country's economy.",
+      "source": "lba",
+      "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s3-q030",
+      "locators": [
+        {
+          "role": "question",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s3-q030",
+          "pdf_page": 72,
+          "printed_page": 61,
+          "y": 625.103188,
+          "derived_from": "text_layer"
+        },
+        {
+          "role": "answer",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s3-q030-key",
+          "pdf_page": 145,
+          "printed_page": 134,
+          "y": 0.0,
+          "derived_from": "text_layer"
+        }
+      ],
+      "revision": 1,
+      "status": "draft",
+      "status_history": [
+        {
+          "from": "none",
+          "to": "draft",
+          "by": "class-8-social",
+          "role": "extraction",
+          "at": "2026-10-08T03:20:11+05:30"
+        }
+      ],
+      "created_by": "class-8-social",
+      "created_at": "2026-10-08T03:20:11+05:30",
+      "text_as_printed": "Explain the role of national income in a country's economy. (A)",
+      "answer": {
+        "kind": "text",
+        "value": "The size of national income depends on production.\nIf production increases, national income increases (based on population).\nIncreasing national income indicates the development of the nation and the standard of living of the people.\nRising national income is a sign of a country's economic progress.\nDeclining national income shows the country's poor economic condition and the low standard of living of its people.\nFor this reason, all countries continuously strive to increase their national income."
+      },
+      "answer_as_printed": "The size of national income depends on production.\nIf production increases, national income increases (based on population).\nIncreasing national income indicates the development of the nation and the standard of living of the people.\nRising national income is a sign of a country's economic progress.\nDeclining national income shows the country's poor economic condition and the low standard of living of its people.\nFor this reason, all countries continuously strive to increase their national income.",
+      "solution_steps": [
+        "The size of national income depends on production.",
+        "If production increases, national income increases (based on population).",
+        "Increasing national income indicates the development of the nation and the standard of living of the people.",
+        "Rising national income is a sign of a country's economic progress.",
+        "Declining national income shows the country's poor economic condition and the low standard of living of its people.",
+        "For this reason, all countries continuously strive to increase their national income."
+      ],
+      "answer_provenance": {
+        "by": "printed",
+        "actor": "class-8-social",
+        "at": "2026-10-08T03:20:11+05:30",
+        "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+      },
+      "source_flags": [
+        {
+          "issue": "marks ambiguous in source — no marks printed"
+        },
+        {
+          "field": "answer",
+          "issue": "duplicate question number — the printed answer key labels this (Q30, role of national income) answer with the number '29' (the section III key prints '29' twice and prints no '30'); the answer corresponds continuously to Q30 and is populated. Key-side numbering misprint; question-side number is 30.",
+          "why_not_corrected": "key-side label is a source misprint; extraction keeps the question-side number as the id and records the key label here",
+          "suggested": "review — key labels Q30's answer '29'; content (national income role) matches Q30"
+        }
+      ],
+      "content_hash": "e212eaf0cbeecd2e52d02159f0781912236ae3af1afcf2eaeb52979a2b166686"
+    },
+    {
+      "id": "soc-8-28-s3-q031",
+      "class": "8",
+      "subject": "social",
+      "language": "en",
+      "chapter_id": "soc-8-28",
+      "syllabus_map_version": "none",
+      "audience": "student",
+      "type": "la",
+      "marks": null,
+      "marks_source": "unassigned",
+      "difficulty": "difficult",
+      "difficulty_source": "printed",
+      "difficulty_as_printed": "D",
+      "learning_outcomes": [
+        {
+          "number": 14,
+          "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
+        }
+      ],
+      "lo_source": "all_questions_row",
+      "out_of_syllabus": false,
+      "text": "Per capita income determines the economic condition of a country. How?",
+      "source": "lba",
+      "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s3-q031",
+      "locators": [
+        {
+          "role": "question",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s3-q031",
+          "pdf_page": 72,
+          "printed_page": 61,
+          "y": 642.503197,
+          "derived_from": "text_layer"
+        },
+        {
+          "role": "answer",
+          "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s3-q031-key",
+          "pdf_page": 145,
+          "printed_page": 134,
+          "y": 538.223214,
+          "derived_from": "text_layer"
+        }
+      ],
+      "revision": 1,
+      "status": "draft",
+      "status_history": [
+        {
+          "from": "none",
+          "to": "draft",
+          "by": "class-8-social",
+          "role": "extraction",
+          "at": "2026-10-08T03:20:11+05:30"
+        }
+      ],
+      "created_by": "class-8-social",
+      "created_at": "2026-10-08T03:20:11+05:30",
+      "text_as_printed": "Per capita income determines the economic condition of a country. How? (D)",
+      "answer": {
+        "kind": "text",
+        "value": "Per capita income is obtained by dividing the national income of a country by its total population. If national income is high, per capita income will also be high.\nThe standard of living of the people will be good, and as a result, people lead a comfortable life.\nWhen national income is low, per capita income also decreases.\nThe standard of living of the people becomes low.\nPoverty and diseases spread, and people struggle to lead their lives.\nBy comparing the per capita income of people in different countries, the economic condition of a country is determined."
+      },
+      "answer_as_printed": "Per capita income is obtained by dividing the national income of a country by its total population. If national income is high, per capita income will also be high.\nThe standard of living of the people will be good, and as a result, people lead a comfortable life.\nWhen national income is low, per capita income also decreases.\nThe standard of living of the people becomes low.\nPoverty and diseases spread, and people struggle to lead their lives.\nBy comparing the per capita income of people in different countries, the economic condition of a country is determined.",
+      "solution_steps": [
+        "Per capita income is obtained by dividing the national income of a country by its total population. If national income is high, per capita income will also be high.",
+        "The standard of living of the people will be good, and as a result, people lead a comfortable life.",
+        "When national income is low, per capita income also decreases.",
+        "The standard of living of the people becomes low.",
+        "Poverty and diseases spread, and people struggle to lead their lives.",
+        "By comparing the per capita income of people in different countries, the economic condition of a country is determined."
+      ],
+      "answer_provenance": {
+        "by": "printed",
+        "actor": "class-8-social",
+        "at": "2026-10-08T03:20:11+05:30",
+        "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+      },
+      "source_flags": [
+        {
+          "issue": "marks ambiguous in source — no marks printed"
+        }
+      ],
+      "content_hash": "83cd8f729142b81abf28163b38a190017ec7b5adbd015003b3712b8052af2ed4"
+    }
   ],
-  "quota_table": "difficulty_only",
-  "second_method": {
-   "method": "printed difficulty distribution table",
-   "extracted": 31,
-   "agrees": true
-  },
-  "pass": true,
-  "note": "printed difficulty table 12/13/6=31 AGREES with per-question tags; flagged counts answer-level flags; all carry the structural marks flag (addendum §4.5)."
- },
- "extraction": {
-  "source_file": "8thSS-EM-LBARevised_1787048180.pdf",
-  "source_ref_prefix": "8thSS-EM-LBARevised_1787048180.pdf",
-  "pdf_pages": [
-   71,
-   72,
-   143,
-   144,
-   145
-  ],
-  "printed_page_offset": -11,
-  "method_notes": [
-   "Offset -11 (pdf 71 = folio 60; pdf 143 = folio 132). Q: q1-8 pdf71, q9-31 pdf72. A: keys 1-22 pdf143, 23-27 pdf144, 28-31 pdf145. Figure-free. SEE FINDINGS_soc-8-28_numbering.",
-   "NUMBERING ANOMALIES: (a) printed '11' used TWICE on the question side - MCQ 11 (id q011) + VSA 11 (id q011b, letter suffix); DUPNUMS=[11]. (b) the question side REDUNDANTLY RE-PRINTS the time-utility question: printed '14. What is time utility?' and printed '15. What is time utility? (Short)' - identical stem, and the answer key has ONLY ONE time-utility answer; the printed difficulty table and key both count 31 (not the re-print). Treated as ONE question (id q014); the spurious re-print (printed '15') is NOT a separate question (id 015 absent). (c) key-side section III prints '29' twice and omits '30': q30 (id q030, role of national income) populated from the second '29' + duplicate-question-number flag.",
-   "Internal n aligned to KEY labels (1-11 MCQ, 12-22 VSA, 23-31 SA) so answer locators are correct; IDMAP maps to the printed question-side ids (VSA q011b/012/013/014/016..022 skips 015). Question-side VSA locator y is off-by-one (documented). q3 MCQ KEYNULL (key 'D) Saving' - text no option; correct = Farming D). MCQ benign: q4 'Mental effort'~'Mental labour'.",
-   "Section III 'Answer Briefly' -> la. VSA q12-22 content verbatim from keys 12-22. SA/LA SUB/BUL per content; q30 from key '29'(2nd).",
-   "Difficulty tags E12/A13/D6=31 AGREE table (duplicate time-utility re-print excluded, matching the source's own count). MARKS none printed -> unassigned + structural flag."
-  ],
-  "notation_summary": {
-   "render_tokens": 0,
-   "latex_tokens": 0,
-   "damage_flags": []
-  },
-  "excluded_objects": [],
-  "inline_excluded_count": 0,
-  "figure_references": []
- },
- "stimuli": [],
- "questions": [
-  {
-   "id": "soc-8-28-s1-q001",
-   "class": "8",
-   "subject": "social",
-   "language": "en",
-   "chapter_id": "soc-8-28",
-   "syllabus_map_version": "none",
-   "audience": "student",
-   "type": "mcq",
-   "marks": null,
-   "marks_source": "unassigned",
-   "difficulty": "easy",
-   "difficulty_source": "printed",
-   "difficulty_as_printed": "E",
-   "learning_outcomes": [
-    {
-     "number": 14,
-     "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
-    }
-   ],
-   "lo_source": "all_questions_row",
-   "out_of_syllabus": false,
-   "text": "The condition of production at the time of increase in the demand is",
-   "source": "lba",
-   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q001",
-   "locators": [
-    {
-     "role": "question",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q001",
-     "pdf_page": 71,
-     "printed_page": 60,
-     "y": 348.743203,
-     "derived_from": "text_layer"
-    },
-    {
-     "role": "answer",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q001-key",
-     "pdf_page": 143,
-     "printed_page": 132,
-     "y": 103.103188,
-     "derived_from": "text_layer"
-    }
-   ],
-   "revision": 1,
-   "status": "draft",
-   "status_history": [
-    {
-     "from": "none",
-     "to": "draft",
-     "by": "class-8-social",
-     "role": "extraction",
-     "at": "2026-10-08T03:20:11+05:30"
-    }
-   ],
-   "created_by": "class-8-social",
-   "created_at": "2026-10-08T03:20:11+05:30",
-   "text_as_printed": "The condition of production at the time of increase in the demand is (E)",
-   "options": [
-    {
-     "id": "A",
-     "text": "Decreases"
-    },
-    {
-     "id": "B",
-     "text": "Becomes neutral"
-    },
-    {
-     "id": "C",
-     "text": "Remains balanced"
-    },
-    {
-     "id": "D",
-     "text": "Increases"
-    }
-   ],
-   "answer_as_printed": "D) Increases",
-   "answer": {
-    "kind": "option",
-    "option_id": "D"
-   },
-   "answer_provenance": {
-    "by": "printed",
-    "actor": "class-8-social",
-    "at": "2026-10-08T03:20:11+05:30",
-    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
-   },
-   "source_flags": [
-    {
-     "issue": "marks ambiguous in source — no marks printed"
-    }
-   ],
-   "content_hash": "3152019b6381f85a036a514409551653006fbfaabda2478a36e41bf61e3544a4"
-  },
-  {
-   "id": "soc-8-28-s1-q002",
-   "class": "8",
-   "subject": "social",
-   "language": "en",
-   "chapter_id": "soc-8-28",
-   "syllabus_map_version": "none",
-   "audience": "student",
-   "type": "mcq",
-   "marks": null,
-   "marks_source": "unassigned",
-   "difficulty": "easy",
-   "difficulty_source": "printed",
-   "difficulty_as_printed": "E",
-   "learning_outcomes": [
-    {
-     "number": 14,
-     "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
-    }
-   ],
-   "lo_source": "all_questions_row",
-   "out_of_syllabus": false,
-   "text": "Using goods and services to satisfy desires is called",
-   "source": "lba",
-   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q002",
-   "locators": [
-    {
-     "role": "question",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q002",
-     "pdf_page": 71,
-     "printed_page": 60,
-     "y": 400.943184,
-     "derived_from": "text_layer"
-    },
-    {
-     "role": "answer",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q002-key",
-     "pdf_page": 143,
-     "printed_page": 132,
-     "y": 120.503197,
-     "derived_from": "text_layer"
-    }
-   ],
-   "revision": 1,
-   "status": "draft",
-   "status_history": [
-    {
-     "from": "none",
-     "to": "draft",
-     "by": "class-8-social",
-     "role": "extraction",
-     "at": "2026-10-08T03:20:11+05:30"
-    }
-   ],
-   "created_by": "class-8-social",
-   "created_at": "2026-10-08T03:20:11+05:30",
-   "text_as_printed": "Using goods and services to satisfy desires is called (E)",
-   "options": [
-    {
-     "id": "A",
-     "text": "Consumption"
-    },
-    {
-     "id": "B",
-     "text": "Production"
-    },
-    {
-     "id": "C",
-     "text": "Demand"
-    },
-    {
-     "id": "D",
-     "text": "Supply"
-    }
-   ],
-   "answer_as_printed": "A) Consumption",
-   "answer": {
-    "kind": "option",
-    "option_id": "A"
-   },
-   "answer_provenance": {
-    "by": "printed",
-    "actor": "class-8-social",
-    "at": "2026-10-08T03:20:11+05:30",
-    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
-   },
-   "source_flags": [
-    {
-     "issue": "marks ambiguous in source — no marks printed"
-    }
-   ],
-   "content_hash": "1293147a92b4a924582af56fbb1ea1754dedece241e307c321c8715915cce4b0"
-  },
-  {
-   "id": "soc-8-28-s1-q003",
-   "class": "8",
-   "subject": "social",
-   "language": "en",
-   "chapter_id": "soc-8-28",
-   "syllabus_map_version": "none",
-   "audience": "student",
-   "type": "mcq",
-   "marks": null,
-   "marks_source": "unassigned",
-   "difficulty": "average",
-   "difficulty_source": "printed",
-   "difficulty_as_printed": "A",
-   "learning_outcomes": [
-    {
-     "number": 14,
-     "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
-    }
-   ],
-   "lo_source": "all_questions_row",
-   "out_of_syllabus": false,
-   "text": "An example of physical labour is",
-   "source": "lba",
-   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q003",
-   "locators": [
-    {
-     "role": "question",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q003",
-     "pdf_page": 71,
-     "printed_page": 60,
-     "y": 436.703179,
-     "derived_from": "text_layer"
-    },
-    {
-     "role": "answer",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q003-key",
-     "pdf_page": 143,
-     "printed_page": 132,
-     "y": 137.783193,
-     "derived_from": "text_layer"
-    }
-   ],
-   "revision": 1,
-   "status": "draft",
-   "status_history": [
-    {
-     "from": "none",
-     "to": "draft",
-     "by": "class-8-social",
-     "role": "extraction",
-     "at": "2026-10-08T03:20:11+05:30"
-    }
-   ],
-   "created_by": "class-8-social",
-   "created_at": "2026-10-08T03:20:11+05:30",
-   "text_as_printed": "An example of physical labour is (A)",
-   "options": [
-    {
-     "id": "A",
-     "text": "Teacher"
-    },
-    {
-     "id": "B",
-     "text": "Doctor"
-    },
-    {
-     "id": "C",
-     "text": "Scientist"
-    },
-    {
-     "id": "D",
-     "text": "Farming"
-    }
-   ],
-   "answer_as_printed": "D) Saving",
-   "answer": {
-    "kind": "option",
-    "option_id": null
-   },
-   "source_flags": [
-    {
-     "issue": "marks ambiguous in source — no marks printed"
-    },
-    {
-     "issue": "key text not among options",
-     "why_not_corrected": "the printed key is '3. D) Saving'. Letter D = option D 'Farming', but the key text 'Saving' matches no option (an example of physical labour is Farming = option D). Letter and key text disagree; no answer asserted.",
-     "suggested": "D by content (Farming); key text 'Saving' matches no option - review"
-    }
-   ],
-   "content_hash": "a61b15db1857d46a37b9e981be45a9ea0b8699ce18f365a33723fe369d963500"
-  },
-  {
-   "id": "soc-8-28-s1-q004",
-   "class": "8",
-   "subject": "social",
-   "language": "en",
-   "chapter_id": "soc-8-28",
-   "syllabus_map_version": "none",
-   "audience": "student",
-   "type": "mcq",
-   "marks": null,
-   "marks_source": "unassigned",
-   "difficulty": "average",
-   "difficulty_source": "printed",
-   "difficulty_as_printed": "A",
-   "learning_outcomes": [
-    {
-     "number": 14,
-     "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
-    }
-   ],
-   "lo_source": "all_questions_row",
-   "out_of_syllabus": false,
-   "text": "lawyer is an example for labour of",
-   "source": "lba",
-   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q004",
-   "locators": [
-    {
-     "role": "question",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q004",
-     "pdf_page": 71,
-     "printed_page": 60,
-     "y": 478.223214,
-     "derived_from": "text_layer"
-    },
-    {
-     "role": "answer",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q004-key",
-     "pdf_page": 143,
-     "printed_page": 132,
-     "y": 155.18319,
-     "derived_from": "text_layer"
-    }
-   ],
-   "revision": 1,
-   "status": "draft",
-   "status_history": [
-    {
-     "from": "none",
-     "to": "draft",
-     "by": "class-8-social",
-     "role": "extraction",
-     "at": "2026-10-08T03:20:11+05:30"
-    }
-   ],
-   "created_by": "class-8-social",
-   "created_at": "2026-10-08T03:20:11+05:30",
-   "text_as_printed": "lawyer is an example for labour of (A)",
-   "options": [
-    {
-     "id": "A",
-     "text": "Mental labour"
-    },
-    {
-     "id": "B",
-     "text": "Physical labour"
-    },
-    {
-     "id": "C",
-     "text": "Psycho-physical labour"
-    },
-    {
-     "id": "D",
-     "text": "Primary labour"
-    }
-   ],
-   "answer_as_printed": "A) Mental effort",
-   "answer": {
-    "kind": "option",
-    "option_id": "A"
-   },
-   "answer_provenance": {
-    "by": "printed",
-    "actor": "class-8-social",
-    "at": "2026-10-08T03:20:11+05:30",
-    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
-   },
-   "source_flags": [
-    {
-     "issue": "marks ambiguous in source — no marks printed"
-    },
-    {
-     "issue": "key text differs from option by a printed typo",
-     "why_not_corrected": "letter A kept (addendum §4.1); key text 'Mental effort' vs option A 'Mental labour' differ by a source typo; spelling needs subject knowledge (v2 §1)",
-     "suggested": "A (letter kept)"
-    }
-   ],
-   "content_hash": "c07e76d646be7ebc4d1f2145608c704044f69db772de371d2ef939db25ee2e66"
-  },
-  {
-   "id": "soc-8-28-s1-q005",
-   "class": "8",
-   "subject": "social",
-   "language": "en",
-   "chapter_id": "soc-8-28",
-   "syllabus_map_version": "none",
-   "audience": "student",
-   "type": "mcq",
-   "marks": null,
-   "marks_source": "unassigned",
-   "difficulty": "easy",
-   "difficulty_source": "printed",
-   "difficulty_as_printed": "E",
-   "learning_outcomes": [
-    {
-     "number": 14,
-     "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
-    }
-   ],
-   "lo_source": "all_questions_row",
-   "out_of_syllabus": false,
-   "text": "Generally, when prices increase, all demand",
-   "source": "lba",
-   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q005",
-   "locators": [
-    {
-     "role": "question",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q005",
-     "pdf_page": 71,
-     "printed_page": 60,
-     "y": 530.543175,
-     "derived_from": "text_layer"
-    },
-    {
-     "role": "answer",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q005-key",
-     "pdf_page": 143,
-     "printed_page": 132,
-     "y": 172.70319,
-     "derived_from": "text_layer"
-    }
-   ],
-   "revision": 1,
-   "status": "draft",
-   "status_history": [
-    {
-     "from": "none",
-     "to": "draft",
-     "by": "class-8-social",
-     "role": "extraction",
-     "at": "2026-10-08T03:20:11+05:30"
-    }
-   ],
-   "created_by": "class-8-social",
-   "created_at": "2026-10-08T03:20:11+05:30",
-   "text_as_printed": "Generally, when prices increase, all demand (E)",
-   "options": [
-    {
-     "id": "A",
-     "text": "Decreases"
-    },
-    {
-     "id": "B",
-     "text": "Increases"
-    },
-    {
-     "id": "C",
-     "text": "Remains same"
-    },
-    {
-     "id": "D",
-     "text": "No change"
-    }
-   ],
-   "answer_as_printed": "A) Decreases",
-   "answer": {
-    "kind": "option",
-    "option_id": "A"
-   },
-   "answer_provenance": {
-    "by": "printed",
-    "actor": "class-8-social",
-    "at": "2026-10-08T03:20:11+05:30",
-    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
-   },
-   "source_flags": [
-    {
-     "issue": "marks ambiguous in source — no marks printed"
-    }
-   ],
-   "content_hash": "cd02ac1ccbe1424525cc251aa98ca60098833f598a2ca794719c33c27c7c277f"
-  },
-  {
-   "id": "soc-8-28-s1-q006",
-   "class": "8",
-   "subject": "social",
-   "language": "en",
-   "chapter_id": "soc-8-28",
-   "syllabus_map_version": "none",
-   "audience": "student",
-   "type": "mcq",
-   "marks": null,
-   "marks_source": "unassigned",
-   "difficulty": "average",
-   "difficulty_source": "printed",
-   "difficulty_as_printed": "A",
-   "learning_outcomes": [
-    {
-     "number": 14,
-     "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
-    }
-   ],
-   "lo_source": "all_questions_row",
-   "out_of_syllabus": false,
-   "text": "Considered as a symbol of a nation's progress",
-   "source": "lba",
-   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q006",
-   "locators": [
-    {
-     "role": "question",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q006",
-     "pdf_page": 71,
-     "printed_page": 60,
-     "y": 565.343193,
-     "derived_from": "text_layer"
-    },
-    {
-     "role": "answer",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q006-key",
-     "pdf_page": 143,
-     "printed_page": 132,
-     "y": 190.103188,
-     "derived_from": "text_layer"
-    }
-   ],
-   "revision": 1,
-   "status": "draft",
-   "status_history": [
-    {
-     "from": "none",
-     "to": "draft",
-     "by": "class-8-social",
-     "role": "extraction",
-     "at": "2026-10-08T03:20:11+05:30"
-    }
-   ],
-   "created_by": "class-8-social",
-   "created_at": "2026-10-08T03:20:11+05:30",
-   "text_as_printed": "Considered as a symbol of a nation's progress (A)",
-   "options": [
-    {
-     "id": "A",
-     "text": "Supply"
-    },
-    {
-     "id": "B",
-     "text": "Demand"
-    },
-    {
-     "id": "C",
-     "text": "Consumption"
-    },
-    {
-     "id": "D",
-     "text": "Labour"
-    }
-   ],
-   "answer_as_printed": "B) Demand",
-   "answer": {
-    "kind": "option",
-    "option_id": "B"
-   },
-   "answer_provenance": {
-    "by": "printed",
-    "actor": "class-8-social",
-    "at": "2026-10-08T03:20:11+05:30",
-    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
-   },
-   "source_flags": [
-    {
-     "issue": "marks ambiguous in source — no marks printed"
-    }
-   ],
-   "content_hash": "8c85115ff7abdd29dcbcbf2a181700c810192317d3b75b12e86d618f0ebd6906"
-  },
-  {
-   "id": "soc-8-28-s1-q007",
-   "class": "8",
-   "subject": "social",
-   "language": "en",
-   "chapter_id": "soc-8-28",
-   "syllabus_map_version": "none",
-   "audience": "student",
-   "type": "mcq",
-   "marks": null,
-   "marks_source": "unassigned",
-   "difficulty": "average",
-   "difficulty_source": "printed",
-   "difficulty_as_printed": "A",
-   "learning_outcomes": [
-    {
-     "number": 14,
-     "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
-    }
-   ],
-   "lo_source": "all_questions_row",
-   "out_of_syllabus": false,
-   "text": "The two basic pillars of market activities",
-   "source": "lba",
-   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q007",
-   "locators": [
-    {
-     "role": "question",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q007",
-     "pdf_page": 71,
-     "printed_page": 60,
-     "y": 600.143212,
-     "derived_from": "text_layer"
-    },
-    {
-     "role": "answer",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q007-key",
-     "pdf_page": 143,
-     "printed_page": 132,
-     "y": 207.383195,
-     "derived_from": "text_layer"
-    }
-   ],
-   "revision": 1,
-   "status": "draft",
-   "status_history": [
-    {
-     "from": "none",
-     "to": "draft",
-     "by": "class-8-social",
-     "role": "extraction",
-     "at": "2026-10-08T03:20:11+05:30"
-    }
-   ],
-   "created_by": "class-8-social",
-   "created_at": "2026-10-08T03:20:11+05:30",
-   "text_as_printed": "The two basic pillars of market activities (A)",
-   "options": [
-    {
-     "id": "A",
-     "text": "Demand and production"
-    },
-    {
-     "id": "B",
-     "text": "Demand and consumption"
-    },
-    {
-     "id": "C",
-     "text": "Demand and supply"
-    },
-    {
-     "id": "D",
-     "text": "Demand and distribution"
-    }
-   ],
-   "answer_as_printed": "C) Demand and Supply",
-   "answer": {
-    "kind": "option",
-    "option_id": "C"
-   },
-   "answer_provenance": {
-    "by": "printed",
-    "actor": "class-8-social",
-    "at": "2026-10-08T03:20:11+05:30",
-    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
-   },
-   "source_flags": [
-    {
-     "issue": "marks ambiguous in source — no marks printed"
-    }
-   ],
-   "content_hash": "c6e6b32b9382a478b2b7d81581dacec01f12949a9a91e45a9f2e07d25e9eda24"
-  },
-  {
-   "id": "soc-8-28-s1-q008",
-   "class": "8",
-   "subject": "social",
-   "language": "en",
-   "chapter_id": "soc-8-28",
-   "syllabus_map_version": "none",
-   "audience": "student",
-   "type": "mcq",
-   "marks": null,
-   "marks_source": "unassigned",
-   "difficulty": "average",
-   "difficulty_source": "printed",
-   "difficulty_as_printed": "A",
-   "learning_outcomes": [
-    {
-     "number": 14,
-     "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
-    }
-   ],
-   "lo_source": "all_questions_row",
-   "out_of_syllabus": false,
-   "text": "Value expressed in terms of money is called",
-   "source": "lba",
-   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q008",
-   "locators": [
-    {
-     "role": "question",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q008",
-     "pdf_page": 71,
-     "printed_page": 60,
-     "y": 652.343193,
-     "derived_from": "text_layer"
-    },
-    {
-     "role": "answer",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q008-key",
-     "pdf_page": 143,
-     "printed_page": 132,
-     "y": 224.903184,
-     "derived_from": "text_layer"
-    }
-   ],
-   "revision": 1,
-   "status": "draft",
-   "status_history": [
-    {
-     "from": "none",
-     "to": "draft",
-     "by": "class-8-social",
-     "role": "extraction",
-     "at": "2026-10-08T03:20:11+05:30"
-    }
-   ],
-   "created_by": "class-8-social",
-   "created_at": "2026-10-08T03:20:11+05:30",
-   "text_as_printed": "Value expressed in terms of money is called (A)",
-   "options": [
-    {
-     "id": "A",
-     "text": "Demand"
-    },
-    {
-     "id": "B",
-     "text": "Supply"
-    },
-    {
-     "id": "C",
-     "text": "Consumption"
-    },
-    {
-     "id": "D",
-     "text": "Price"
-    }
-   ],
-   "answer_as_printed": "D) Price",
-   "answer": {
-    "kind": "option",
-    "option_id": "D"
-   },
-   "answer_provenance": {
-    "by": "printed",
-    "actor": "class-8-social",
-    "at": "2026-10-08T03:20:11+05:30",
-    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
-   },
-   "source_flags": [
-    {
-     "issue": "marks ambiguous in source — no marks printed"
-    }
-   ],
-   "content_hash": "420e670fedbf04439e26b9aeadd4b6b57ff217d66b4dd7cc7ff221ce21e98c11"
-  },
-  {
-   "id": "soc-8-28-s1-q009",
-   "class": "8",
-   "subject": "social",
-   "language": "en",
-   "chapter_id": "soc-8-28",
-   "syllabus_map_version": "none",
-   "audience": "student",
-   "type": "mcq",
-   "marks": null,
-   "marks_source": "unassigned",
-   "difficulty": "average",
-   "difficulty_source": "printed",
-   "difficulty_as_printed": "A",
-   "learning_outcomes": [
-    {
-     "number": 14,
-     "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
-    }
-   ],
-   "lo_source": "all_questions_row",
-   "out_of_syllabus": false,
-   "text": "The reward earned by a producer for the services rendered in production is",
-   "source": "lba",
-   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q009",
-   "locators": [
-    {
-     "role": "question",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q009",
-     "pdf_page": 72,
-     "printed_page": 61,
-     "y": 68.18319,
-     "derived_from": "text_layer"
-    },
-    {
-     "role": "answer",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q009-key",
-     "pdf_page": 143,
-     "printed_page": 132,
-     "y": 242.303193,
-     "derived_from": "text_layer"
-    }
-   ],
-   "revision": 1,
-   "status": "draft",
-   "status_history": [
-    {
-     "from": "none",
-     "to": "draft",
-     "by": "class-8-social",
-     "role": "extraction",
-     "at": "2026-10-08T03:20:11+05:30"
-    }
-   ],
-   "created_by": "class-8-social",
-   "created_at": "2026-10-08T03:20:11+05:30",
-   "text_as_printed": "The reward earned by a producer for the services rendered in production is (A)",
-   "options": [
-    {
-     "id": "A",
-     "text": "Rent"
-    },
-    {
-     "id": "B",
-     "text": "Wages"
-    },
-    {
-     "id": "C",
-     "text": "Interest"
-    },
-    {
-     "id": "D",
-     "text": "Profit"
-    }
-   ],
-   "answer_as_printed": "D) Profit",
-   "answer": {
-    "kind": "option",
-    "option_id": "D"
-   },
-   "answer_provenance": {
-    "by": "printed",
-    "actor": "class-8-social",
-    "at": "2026-10-08T03:20:11+05:30",
-    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
-   },
-   "source_flags": [
-    {
-     "issue": "marks ambiguous in source — no marks printed"
-    }
-   ],
-   "content_hash": "1d1e3061cec97653374ff0798f9df6838e45b347917903ace933ba3ab0d3d2d8"
-  },
-  {
-   "id": "soc-8-28-s1-q010",
-   "class": "8",
-   "subject": "social",
-   "language": "en",
-   "chapter_id": "soc-8-28",
-   "syllabus_map_version": "none",
-   "audience": "student",
-   "type": "mcq",
-   "marks": null,
-   "marks_source": "unassigned",
-   "difficulty": "average",
-   "difficulty_source": "printed",
-   "difficulty_as_printed": "A",
-   "learning_outcomes": [
-    {
-     "number": 14,
-     "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
-    }
-   ],
-   "lo_source": "all_questions_row",
-   "out_of_syllabus": false,
-   "text": "When the national income is divided by the total population of a country, we get",
-   "source": "lba",
-   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q010",
-   "locators": [
-    {
-     "role": "question",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q010",
-     "pdf_page": 72,
-     "printed_page": 61,
-     "y": 103.103188,
-     "derived_from": "text_layer"
-    },
-    {
-     "role": "answer",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q010-key",
-     "pdf_page": 143,
-     "printed_page": 132,
-     "y": 259.703202,
-     "derived_from": "text_layer"
-    }
-   ],
-   "revision": 1,
-   "status": "draft",
-   "status_history": [
-    {
-     "from": "none",
-     "to": "draft",
-     "by": "class-8-social",
-     "role": "extraction",
-     "at": "2026-10-08T03:20:11+05:30"
-    }
-   ],
-   "created_by": "class-8-social",
-   "created_at": "2026-10-08T03:20:11+05:30",
-   "text_as_printed": "When the national income is divided by the total population of a country, we get (A)",
-   "options": [
-    {
-     "id": "A",
-     "text": "National income"
-    },
-    {
-     "id": "B",
-     "text": "Per capita income"
-    },
-    {
-     "id": "C",
-     "text": "Standard of living"
-    },
-    {
-     "id": "D",
-     "text": "Purchasing power"
-    }
-   ],
-   "answer_as_printed": "B) Per Capita Income",
-   "answer": {
-    "kind": "option",
-    "option_id": "B"
-   },
-   "answer_provenance": {
-    "by": "printed",
-    "actor": "class-8-social",
-    "at": "2026-10-08T03:20:11+05:30",
-    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
-   },
-   "source_flags": [
-    {
-     "issue": "marks ambiguous in source — no marks printed"
-    }
-   ],
-   "content_hash": "e298d851252d016d86c8a83e6540a9c2b388ad4a5bc99b7cc001769687a675aa"
-  },
-  {
-   "id": "soc-8-28-s1-q011",
-   "class": "8",
-   "subject": "social",
-   "language": "en",
-   "chapter_id": "soc-8-28",
-   "syllabus_map_version": "none",
-   "audience": "student",
-   "type": "mcq",
-   "marks": null,
-   "marks_source": "unassigned",
-   "difficulty": "easy",
-   "difficulty_source": "printed",
-   "difficulty_as_printed": "E",
-   "learning_outcomes": [
-    {
-     "number": 14,
-     "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
-    }
-   ],
-   "lo_source": "all_questions_row",
-   "out_of_syllabus": false,
-   "text": "Teaching done by a teacher to students in a school is a type of",
-   "source": "lba",
-   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q011",
-   "locators": [
-    {
-     "role": "question",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q011",
-     "pdf_page": 72,
-     "printed_page": 61,
-     "y": 172.70319,
-     "derived_from": "text_layer"
-    },
-    {
-     "role": "answer",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s1-q011-key",
-     "pdf_page": 143,
-     "printed_page": 132,
-     "y": 276.983185,
-     "derived_from": "text_layer"
-    }
-   ],
-   "revision": 1,
-   "status": "draft",
-   "status_history": [
-    {
-     "from": "none",
-     "to": "draft",
-     "by": "class-8-social",
-     "role": "extraction",
-     "at": "2026-10-08T03:20:11+05:30"
-    }
-   ],
-   "created_by": "class-8-social",
-   "created_at": "2026-10-08T03:20:11+05:30",
-   "text_as_printed": "Teaching done by a teacher to students in a school is a type of (E)",
-   "options": [
-    {
-     "id": "A",
-     "text": "Mental labour"
-    },
-    {
-     "id": "B",
-     "text": "Productive labour"
-    },
-    {
-     "id": "C",
-     "text": "Unproductive labour"
-    },
-    {
-     "id": "D",
-     "text": "Physical labour"
-    }
-   ],
-   "answer_as_printed": "A) Mental Labour",
-   "answer": {
-    "kind": "option",
-    "option_id": "A"
-   },
-   "answer_provenance": {
-    "by": "printed",
-    "actor": "class-8-social",
-    "at": "2026-10-08T03:20:11+05:30",
-    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
-   },
-   "source_flags": [
-    {
-     "issue": "marks ambiguous in source — no marks printed"
-    }
-   ],
-   "content_hash": "8677977a8b97b591086e287673cc453d7b767f71bc280659e1e7b8f4294e0418"
-  },
-  {
-   "id": "soc-8-28-s2-q011b",
-   "class": "8",
-   "subject": "social",
-   "language": "en",
-   "chapter_id": "soc-8-28",
-   "syllabus_map_version": "none",
-   "audience": "student",
-   "type": "vsa",
-   "marks": null,
-   "marks_source": "unassigned",
-   "difficulty": "easy",
-   "difficulty_source": "printed",
-   "difficulty_as_printed": "E",
-   "learning_outcomes": [
-    {
-     "number": 14,
-     "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
-    }
-   ],
-   "lo_source": "all_questions_row",
-   "out_of_syllabus": false,
-   "text": "What is demand?",
-   "source": "lba",
-   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q011b",
-   "locators": [
-    {
-     "role": "question",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q011b",
-     "pdf_page": 72,
-     "printed_page": 61,
-     "y": 259.703202,
-     "derived_from": "text_layer"
-    },
-    {
-     "role": "answer",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q011b-key",
-     "pdf_page": 143,
-     "printed_page": 132,
-     "y": 311.903184,
-     "derived_from": "text_layer"
-    }
-   ],
-   "revision": 1,
-   "status": "draft",
-   "status_history": [
-    {
-     "from": "none",
-     "to": "draft",
-     "by": "class-8-social",
-     "role": "extraction",
-     "at": "2026-10-08T03:20:11+05:30"
-    }
-   ],
-   "created_by": "class-8-social",
-   "created_at": "2026-10-08T03:20:11+05:30",
-   "text_as_printed": "What is demand? (E)",
-   "answer": {
-    "kind": "text",
-    "value": "The purchasing power for goods and services is called demand."
-   },
-   "answer_as_printed": "The purchasing power for goods and services is called demand.",
-   "answer_provenance": {
-    "by": "printed",
-    "actor": "class-8-social",
-    "at": "2026-10-08T03:20:11+05:30",
-    "basis": "printed VSA key, verbatim (v2 §4)"
-   },
-   "source_flags": [
-    {
-     "issue": "marks ambiguous in source — no marks printed"
-    }
-   ],
-   "content_hash": "8d091b15a8f4b0b0f05b15f704fe636597ee4c5549652ac7aeef75b6e3cbb75f"
-  },
-  {
-   "id": "soc-8-28-s2-q012",
-   "class": "8",
-   "subject": "social",
-   "language": "en",
-   "chapter_id": "soc-8-28",
-   "syllabus_map_version": "none",
-   "audience": "student",
-   "type": "vsa",
-   "marks": null,
-   "marks_source": "unassigned",
-   "difficulty": "easy",
-   "difficulty_source": "printed",
-   "difficulty_as_printed": "E",
-   "learning_outcomes": [
-    {
-     "number": 14,
-     "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
-    }
-   ],
-   "lo_source": "all_questions_row",
-   "out_of_syllabus": false,
-   "text": "What is per capita income?",
-   "source": "lba",
-   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q012",
-   "locators": [
-    {
-     "role": "question",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q012",
-     "pdf_page": 72,
-     "printed_page": 61,
-     "y": 276.983185,
-     "derived_from": "text_layer"
-    },
-    {
-     "role": "answer",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q012-key",
-     "pdf_page": 143,
-     "printed_page": 132,
-     "y": 329.303193,
-     "derived_from": "text_layer"
-    }
-   ],
-   "revision": 1,
-   "status": "draft",
-   "status_history": [
-    {
-     "from": "none",
-     "to": "draft",
-     "by": "class-8-social",
-     "role": "extraction",
-     "at": "2026-10-08T03:20:11+05:30"
-    }
-   ],
-   "created_by": "class-8-social",
-   "created_at": "2026-10-08T03:20:11+05:30",
-   "text_as_printed": "What is per capita income? (E)",
-   "answer": {
-    "kind": "text",
-    "value": "Per capita income is obtained by dividing the total income of the nation by its population."
-   },
-   "answer_as_printed": "Per capita income is obtained by dividing the total income of the nation by its population.",
-   "answer_provenance": {
-    "by": "printed",
-    "actor": "class-8-social",
-    "at": "2026-10-08T03:20:11+05:30",
-    "basis": "printed VSA key, verbatim (v2 §4)"
-   },
-   "source_flags": [
-    {
-     "issue": "marks ambiguous in source — no marks printed"
-    }
-   ],
-   "content_hash": "dbe6ca397fe2054a0237bf7553e056e4b7da3e03b7028a7f62ed84b3162196e5"
-  },
-  {
-   "id": "soc-8-28-s2-q013",
-   "class": "8",
-   "subject": "social",
-   "language": "en",
-   "chapter_id": "soc-8-28",
-   "syllabus_map_version": "none",
-   "audience": "student",
-   "type": "vsa",
-   "marks": null,
-   "marks_source": "unassigned",
-   "difficulty": "easy",
-   "difficulty_source": "printed",
-   "difficulty_as_printed": "E",
-   "learning_outcomes": [
-    {
-     "number": 14,
-     "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
-    }
-   ],
-   "lo_source": "all_questions_row",
-   "out_of_syllabus": false,
-   "text": "What is the quantity of goods and services available for sale at a known price in the market?",
-   "source": "lba",
-   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q013",
-   "locators": [
-    {
-     "role": "question",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q013",
-     "pdf_page": 72,
-     "printed_page": 61,
-     "y": 311.903184,
-     "derived_from": "text_layer"
-    },
-    {
-     "role": "answer",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q013-key",
-     "pdf_page": 143,
-     "printed_page": 132,
-     "y": 364.103188,
-     "derived_from": "text_layer"
-    }
-   ],
-   "revision": 1,
-   "status": "draft",
-   "status_history": [
-    {
-     "from": "none",
-     "to": "draft",
-     "by": "class-8-social",
-     "role": "extraction",
-     "at": "2026-10-08T03:20:11+05:30"
-    }
-   ],
-   "created_by": "class-8-social",
-   "created_at": "2026-10-08T03:20:11+05:30",
-   "text_as_printed": "What is the quantity of goods and services available for sale at a known price in the market? (E)",
-   "answer": {
-    "kind": "text",
-    "value": "The goods and services to be provided to the customer is called as Supply."
-   },
-   "answer_as_printed": "The goods and services to be provided to the customer is called as Supply.",
-   "answer_provenance": {
-    "by": "printed",
-    "actor": "class-8-social",
-    "at": "2026-10-08T03:20:11+05:30",
-    "basis": "printed VSA key, verbatim (v2 §4)"
-   },
-   "source_flags": [
-    {
-     "issue": "marks ambiguous in source — no marks printed"
-    }
-   ],
-   "content_hash": "8112367a75a6fc3260e2f831e0ac926b1631eea0f1f1bd622c8e7e5bea82a511"
-  },
-  {
-   "id": "soc-8-28-s2-q014",
-   "class": "8",
-   "subject": "social",
-   "language": "en",
-   "chapter_id": "soc-8-28",
-   "syllabus_map_version": "none",
-   "audience": "student",
-   "type": "vsa",
-   "marks": null,
-   "marks_source": "unassigned",
-   "difficulty": "easy",
-   "difficulty_source": "printed",
-   "difficulty_as_printed": "E",
-   "learning_outcomes": [
-    {
-     "number": 14,
-     "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
-    }
-   ],
-   "lo_source": "all_questions_row",
-   "out_of_syllabus": false,
-   "text": "What is time utility?",
-   "source": "lba",
-   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q014",
-   "locators": [
-    {
-     "role": "question",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q014",
-     "pdf_page": 72,
-     "printed_page": 61,
-     "y": 329.303193,
-     "derived_from": "text_layer"
-    },
-    {
-     "role": "answer",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q014-key",
-     "pdf_page": 143,
-     "printed_page": 132,
-     "y": 381.503197,
-     "derived_from": "text_layer"
-    }
-   ],
-   "revision": 1,
-   "status": "draft",
-   "status_history": [
-    {
-     "from": "none",
-     "to": "draft",
-     "by": "class-8-social",
-     "role": "extraction",
-     "at": "2026-10-08T03:20:11+05:30"
-    }
-   ],
-   "created_by": "class-8-social",
-   "created_at": "2026-10-08T03:20:11+05:30",
-   "text_as_printed": "What is time utility? (E)",
-   "answer": {
-    "kind": "text",
-    "value": "Storing goods when they are abundant and supplying them when scarce. For example, storing raw mangoes during their season and supplying them in another season in the form of pickles."
-   },
-   "answer_as_printed": "Storing goods when they are abundant and supplying them when scarce. For example, storing raw mangoes during their season and supplying them in another season in the form of pickles.",
-   "answer_provenance": {
-    "by": "printed",
-    "actor": "class-8-social",
-    "at": "2026-10-08T03:20:11+05:30",
-    "basis": "printed VSA key, verbatim (v2 §4)"
-   },
-   "source_flags": [
-    {
-     "issue": "marks ambiguous in source — no marks printed"
-    }
-   ],
-   "content_hash": "9f5e7282a547564ddfd0eccbbb693d86d41e363ad5d336b3c70099ba4fcd6e15"
-  },
-  {
-   "id": "soc-8-28-s2-q016",
-   "class": "8",
-   "subject": "social",
-   "language": "en",
-   "chapter_id": "soc-8-28",
-   "syllabus_map_version": "none",
-   "audience": "student",
-   "type": "vsa",
-   "marks": null,
-   "marks_source": "unassigned",
-   "difficulty": "average",
-   "difficulty_source": "printed",
-   "difficulty_as_printed": "A",
-   "learning_outcomes": [
-    {
-     "number": 14,
-     "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
-    }
-   ],
-   "lo_source": "all_questions_row",
-   "out_of_syllabus": false,
-   "text": "How is price determined?",
-   "source": "lba",
-   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q016",
-   "locators": [
-    {
-     "role": "question",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q016",
-     "pdf_page": 72,
-     "printed_page": 61,
-     "y": 346.583199,
-     "derived_from": "text_layer"
-    },
-    {
-     "role": "answer",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q016-key",
-     "pdf_page": 143,
-     "printed_page": 132,
-     "y": 433.703179,
-     "derived_from": "text_layer"
-    }
-   ],
-   "revision": 1,
-   "status": "draft",
-   "status_history": [
-    {
-     "from": "none",
-     "to": "draft",
-     "by": "class-8-social",
-     "role": "extraction",
-     "at": "2026-10-08T03:20:11+05:30"
-    }
-   ],
-   "created_by": "class-8-social",
-   "created_at": "2026-10-08T03:20:11+05:30",
-   "text_as_printed": "How is price determined? (A)",
-   "answer": {
-    "kind": "text",
-    "value": "Price is determined based on the demand and supply of goods."
-   },
-   "answer_as_printed": "Price is determined based on the demand and supply of goods.",
-   "answer_provenance": {
-    "by": "printed",
-    "actor": "class-8-social",
-    "at": "2026-10-08T03:20:11+05:30",
-    "basis": "printed VSA key, verbatim (v2 §4)"
-   },
-   "source_flags": [
-    {
-     "issue": "marks ambiguous in source — no marks printed"
-    }
-   ],
-   "content_hash": "a0f730e52f755e25fbf6a23b741aa7c4466c9885b284d049b9d1b4599d0eeb0b"
-  },
-  {
-   "id": "soc-8-28-s2-q017",
-   "class": "8",
-   "subject": "social",
-   "language": "en",
-   "chapter_id": "soc-8-28",
-   "syllabus_map_version": "none",
-   "audience": "student",
-   "type": "vsa",
-   "marks": null,
-   "marks_source": "unassigned",
-   "difficulty": "average",
-   "difficulty_source": "printed",
-   "difficulty_as_printed": "A",
-   "learning_outcomes": [
-    {
-     "number": 14,
-     "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
-    }
-   ],
-   "lo_source": "all_questions_row",
-   "out_of_syllabus": false,
-   "text": "What is utility in economics?",
-   "source": "lba",
-   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q017",
-   "locators": [
-    {
-     "role": "question",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q017",
-     "pdf_page": 72,
-     "printed_page": 61,
-     "y": 364.103188,
-     "derived_from": "text_layer"
-    },
-    {
-     "role": "answer",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q017-key",
-     "pdf_page": 143,
-     "printed_page": 132,
-     "y": 451.103188,
-     "derived_from": "text_layer"
-    }
-   ],
-   "revision": 1,
-   "status": "draft",
-   "status_history": [
-    {
-     "from": "none",
-     "to": "draft",
-     "by": "class-8-social",
-     "role": "extraction",
-     "at": "2026-10-08T03:20:11+05:30"
-    }
-   ],
-   "created_by": "class-8-social",
-   "created_at": "2026-10-08T03:20:11+05:30",
-   "text_as_printed": "What is utility in economics? (A)",
-   "answer": {
-    "kind": "text",
-    "value": "Utility is the power to satisfy human wants."
-   },
-   "answer_as_printed": "Utility is the power to satisfy human wants.",
-   "answer_provenance": {
-    "by": "printed",
-    "actor": "class-8-social",
-    "at": "2026-10-08T03:20:11+05:30",
-    "basis": "printed VSA key, verbatim (v2 §4)"
-   },
-   "source_flags": [
-    {
-     "issue": "marks ambiguous in source — no marks printed"
-    }
-   ],
-   "content_hash": "eea2832d46b8203baccf764fc6b5bb0417783a625e1d31cbca21450db09c2a39"
-  },
-  {
-   "id": "soc-8-28-s2-q018",
-   "class": "8",
-   "subject": "social",
-   "language": "en",
-   "chapter_id": "soc-8-28",
-   "syllabus_map_version": "none",
-   "audience": "student",
-   "type": "vsa",
-   "marks": null,
-   "marks_source": "unassigned",
-   "difficulty": "average",
-   "difficulty_source": "printed",
-   "difficulty_as_printed": "A",
-   "learning_outcomes": [
-    {
-     "number": 14,
-     "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
-    }
-   ],
-   "lo_source": "all_questions_row",
-   "out_of_syllabus": false,
-   "text": "What is principle utility?",
-   "source": "lba",
-   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q018",
-   "locators": [
-    {
-     "role": "question",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q018",
-     "pdf_page": 72,
-     "printed_page": 61,
-     "y": 381.503197,
-     "derived_from": "text_layer"
-    },
-    {
-     "role": "answer",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q018-key",
-     "pdf_page": 143,
-     "printed_page": 132,
-     "y": 468.503197,
-     "derived_from": "text_layer"
-    }
-   ],
-   "revision": 1,
-   "status": "draft",
-   "status_history": [
-    {
-     "from": "none",
-     "to": "draft",
-     "by": "class-8-social",
-     "role": "extraction",
-     "at": "2026-10-08T03:20:11+05:30"
-    }
-   ],
-   "created_by": "class-8-social",
-   "created_at": "2026-10-08T03:20:11+05:30",
-   "text_as_printed": "What is principle utility? (A)",
-   "answer": {
-    "kind": "text",
-    "value": "Goods and services that can be used in their original form have primary utility. For example, water, fruits, eggs, etc."
-   },
-   "answer_as_printed": "Goods and services that can be used in their original form have primary utility. For example, water, fruits, eggs, etc.",
-   "answer_provenance": {
-    "by": "printed",
-    "actor": "class-8-social",
-    "at": "2026-10-08T03:20:11+05:30",
-    "basis": "printed VSA key, verbatim (v2 §4)"
-   },
-   "source_flags": [
-    {
-     "issue": "marks ambiguous in source — no marks printed"
-    }
-   ],
-   "content_hash": "d37369a29015db1ffe7b867d9015d8bdf03fa438a5235063f086a0d4984728c4"
-  },
-  {
-   "id": "soc-8-28-s2-q019",
-   "class": "8",
-   "subject": "social",
-   "language": "en",
-   "chapter_id": "soc-8-28",
-   "syllabus_map_version": "none",
-   "audience": "student",
-   "type": "vsa",
-   "marks": null,
-   "marks_source": "unassigned",
-   "difficulty": "average",
-   "difficulty_source": "printed",
-   "difficulty_as_printed": "A",
-   "learning_outcomes": [
-    {
-     "number": 14,
-     "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
-    }
-   ],
-   "lo_source": "all_questions_row",
-   "out_of_syllabus": false,
-   "text": "What is form utility?",
-   "source": "lba",
-   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q019",
-   "locators": [
-    {
-     "role": "question",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q019",
-     "pdf_page": 72,
-     "printed_page": 61,
-     "y": 398.903207,
-     "derived_from": "text_layer"
-    },
-    {
-     "role": "answer",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q019-key",
-     "pdf_page": 143,
-     "printed_page": 132,
-     "y": 503.30317,
-     "derived_from": "text_layer"
-    }
-   ],
-   "revision": 1,
-   "status": "draft",
-   "status_history": [
-    {
-     "from": "none",
-     "to": "draft",
-     "by": "class-8-social",
-     "role": "extraction",
-     "at": "2026-10-08T03:20:11+05:30"
-    }
-   ],
-   "created_by": "class-8-social",
-   "created_at": "2026-10-08T03:20:11+05:30",
-   "text_as_printed": "What is form utility? (A)",
-   "answer": {
-    "kind": "text",
-    "value": "Form utility is created by giving shape to goods provided by nature and making them suitable for use. For example, a sculptor giving shape to a stone as a statue, a carpenter making a chair or table from wood."
-   },
-   "answer_as_printed": "Form utility is created by giving shape to goods provided by nature and making them suitable for use. For example, a sculptor giving shape to a stone as a statue, a carpenter making a chair or table from wood.",
-   "answer_provenance": {
-    "by": "printed",
-    "actor": "class-8-social",
-    "at": "2026-10-08T03:20:11+05:30",
-    "basis": "printed VSA key, verbatim (v2 §4)"
-   },
-   "source_flags": [
-    {
-     "issue": "marks ambiguous in source — no marks printed"
-    }
-   ],
-   "content_hash": "b5e75ee461f72480560f77ded31d3a6c6b0702ac68bc4f4089469a24ff899025"
-  },
-  {
-   "id": "soc-8-28-s2-q020",
-   "class": "8",
-   "subject": "social",
-   "language": "en",
-   "chapter_id": "soc-8-28",
-   "syllabus_map_version": "none",
-   "audience": "student",
-   "type": "vsa",
-   "marks": null,
-   "marks_source": "unassigned",
-   "difficulty": "average",
-   "difficulty_source": "printed",
-   "difficulty_as_printed": "A",
-   "learning_outcomes": [
-    {
-     "number": 14,
-     "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
-    }
-   ],
-   "lo_source": "all_questions_row",
-   "out_of_syllabus": false,
-   "text": "What is place utility?",
-   "source": "lba",
-   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q020",
-   "locators": [
-    {
-     "role": "question",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q020",
-     "pdf_page": 72,
-     "printed_page": 61,
-     "y": 416.30317,
-     "derived_from": "text_layer"
-    },
-    {
-     "role": "answer",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q020-key",
-     "pdf_page": 143,
-     "printed_page": 132,
-     "y": 555.503197,
-     "derived_from": "text_layer"
-    }
-   ],
-   "revision": 1,
-   "status": "draft",
-   "status_history": [
-    {
-     "from": "none",
-     "to": "draft",
-     "by": "class-8-social",
-     "role": "extraction",
-     "at": "2026-10-08T03:20:11+05:30"
-    }
-   ],
-   "created_by": "class-8-social",
-   "created_at": "2026-10-08T03:20:11+05:30",
-   "text_as_printed": "What is place utility? (A)",
-   "answer": {
-    "kind": "text",
-    "value": "Place utility is created by transporting goods available in abundance at one place to distant places so that consumers can access them. For example, apples from Shimla and oranges from Kodagu being made available in Bengaluru."
-   },
-   "answer_as_printed": "Place utility is created by transporting goods available in abundance at one place to distant places so that consumers can access them. For example, apples from Shimla and oranges from Kodagu being made available in Bengaluru.",
-   "answer_provenance": {
-    "by": "printed",
-    "actor": "class-8-social",
-    "at": "2026-10-08T03:20:11+05:30",
-    "basis": "printed VSA key, verbatim (v2 §4)"
-   },
-   "source_flags": [
-    {
-     "issue": "marks ambiguous in source — no marks printed"
-    }
-   ],
-   "content_hash": "bd4517747a63c85b66d7e54586959b644666a05f800b81ea5b8160ec69606b98"
-  },
-  {
-   "id": "soc-8-28-s2-q021",
-   "class": "8",
-   "subject": "social",
-   "language": "en",
-   "chapter_id": "soc-8-28",
-   "syllabus_map_version": "none",
-   "audience": "student",
-   "type": "vsa",
-   "marks": null,
-   "marks_source": "unassigned",
-   "difficulty": "easy",
-   "difficulty_source": "printed",
-   "difficulty_as_printed": "E",
-   "learning_outcomes": [
-    {
-     "number": 14,
-     "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
-    }
-   ],
-   "lo_source": "all_questions_row",
-   "out_of_syllabus": false,
-   "text": "What is the basic motto of cooperation?",
-   "source": "lba",
-   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q021",
-   "locators": [
-    {
-     "role": "question",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q021",
-     "pdf_page": 72,
-     "printed_page": 61,
-     "y": 433.703179,
-     "derived_from": "text_layer"
-    },
-    {
-     "role": "answer",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q021-key",
-     "pdf_page": 143,
-     "printed_page": 132,
-     "y": 625.103188,
-     "derived_from": "text_layer"
-    }
-   ],
-   "revision": 1,
-   "status": "draft",
-   "status_history": [
-    {
-     "from": "none",
-     "to": "draft",
-     "by": "class-8-social",
-     "role": "extraction",
-     "at": "2026-10-08T03:20:11+05:30"
-    }
-   ],
-   "created_by": "class-8-social",
-   "created_at": "2026-10-08T03:20:11+05:30",
-   "text_as_printed": "What is the basic motto of cooperation? (E)",
-   "answer": {
-    "kind": "text",
-    "value": "“All for each and each for all” is the motto of cooperation."
-   },
-   "answer_as_printed": "“All for each and each for all” is the motto of cooperation.",
-   "answer_provenance": {
-    "by": "printed",
-    "actor": "class-8-social",
-    "at": "2026-10-08T03:20:11+05:30",
-    "basis": "printed VSA key, verbatim (v2 §4)"
-   },
-   "source_flags": [
-    {
-     "issue": "marks ambiguous in source — no marks printed"
-    }
-   ],
-   "content_hash": "3a0a5d7ac0bccd91d6651df1cb4d0ccdad0d3e711ef00266fc33946508c292f6"
-  },
-  {
-   "id": "soc-8-28-s2-q022",
-   "class": "8",
-   "subject": "social",
-   "language": "en",
-   "chapter_id": "soc-8-28",
-   "syllabus_map_version": "none",
-   "audience": "student",
-   "type": "vsa",
-   "marks": null,
-   "marks_source": "unassigned",
-   "difficulty": "easy",
-   "difficulty_source": "printed",
-   "difficulty_as_printed": "E",
-   "learning_outcomes": [
-    {
-     "number": 14,
-     "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
-    }
-   ],
-   "lo_source": "all_questions_row",
-   "out_of_syllabus": false,
-   "text": "What is national income?",
-   "source": "lba",
-   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q022",
-   "locators": [
-    {
-     "role": "question",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q022",
-     "pdf_page": 72,
-     "printed_page": 61,
-     "y": 451.103188,
-     "derived_from": "text_layer"
-    },
-    {
-     "role": "answer",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s2-q022-key",
-     "pdf_page": 143,
-     "printed_page": 132,
-     "y": 642.503197,
-     "derived_from": "text_layer"
-    }
-   ],
-   "revision": 1,
-   "status": "draft",
-   "status_history": [
-    {
-     "from": "none",
-     "to": "draft",
-     "by": "class-8-social",
-     "role": "extraction",
-     "at": "2026-10-08T03:20:11+05:30"
-    }
-   ],
-   "created_by": "class-8-social",
-   "created_at": "2026-10-08T03:20:11+05:30",
-   "text_as_printed": "What is national income? (E)",
-   "answer": {
-    "kind": "text",
-    "value": "The total value of goods and services produced in a country in one year is called national income."
-   },
-   "answer_as_printed": "The total value of goods and services produced in a country in one year is called national income.",
-   "answer_provenance": {
-    "by": "printed",
-    "actor": "class-8-social",
-    "at": "2026-10-08T03:20:11+05:30",
-    "basis": "printed VSA key, verbatim (v2 §4)"
-   },
-   "source_flags": [
-    {
-     "issue": "marks ambiguous in source — no marks printed"
-    }
-   ],
-   "content_hash": "a19aa3df72a8ee39e532aa33d2781bf11df51d901d79ed5570c4dae207e3535f"
-  },
-  {
-   "id": "soc-8-28-s3-q023",
-   "class": "8",
-   "subject": "social",
-   "language": "en",
-   "chapter_id": "soc-8-28",
-   "syllabus_map_version": "none",
-   "audience": "student",
-   "type": "la",
-   "marks": null,
-   "marks_source": "unassigned",
-   "difficulty": "difficult",
-   "difficulty_source": "printed",
-   "difficulty_as_printed": "D",
-   "learning_outcomes": [
-    {
-     "number": 14,
-     "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
-    }
-   ],
-   "lo_source": "all_questions_row",
-   "out_of_syllabus": false,
-   "text": "“Demand is a symbol of a nation's progress.” Justify the statement",
-   "source": "lba",
-   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s3-q023",
-   "locators": [
-    {
-     "role": "question",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s3-q023",
-     "pdf_page": 72,
-     "printed_page": 61,
-     "y": 485.903207,
-     "derived_from": "text_layer"
-    },
-    {
-     "role": "answer",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s3-q023-key",
-     "pdf_page": 144,
-     "printed_page": 133,
-     "y": 85.583188,
-     "derived_from": "text_layer"
-    }
-   ],
-   "revision": 1,
-   "status": "draft",
-   "status_history": [
-    {
-     "from": "none",
-     "to": "draft",
-     "by": "class-8-social",
-     "role": "extraction",
-     "at": "2026-10-08T03:20:11+05:30"
-    }
-   ],
-   "created_by": "class-8-social",
-   "created_at": "2026-10-08T03:20:11+05:30",
-   "text_as_printed": "“Demand is a symbol of a nation's progress.” Justify the statement (D)",
-   "answer": {
-    "kind": "text",
-    "value": "Impact of Demand on Production:\nDemand significantly affects the production sector.\nIncreased demand leads to higher production, employment, income, and supply.\nIt improves people's standard of living.\nIt leads to increase the national income and progress of country\nThe decrease in the demand reduces the production, income, and employment, lowering living standards and national progress.\nThus, demand is a symbol of national progress."
-   },
-   "answer_as_printed": "Impact of Demand on Production:\nDemand significantly affects the production sector.\nIncreased demand leads to higher production, employment, income, and supply.\nIt improves people's standard of living.\nIt leads to increase the national income and progress of country\nThe decrease in the demand reduces the production, income, and employment, lowering living standards and national progress.\nThus, demand is a symbol of national progress.",
-   "solution_steps": [
-    "Demand significantly affects the production sector.",
-    "Increased demand leads to higher production, employment, income, and supply.",
-    "It improves people's standard of living.",
-    "It leads to increase the national income and progress of country",
-    "The decrease in the demand reduces the production, income, and employment, lowering living standards and national progress.",
-    "Thus, demand is a symbol of national progress."
-   ],
-   "answer_provenance": {
-    "by": "printed",
-    "actor": "class-8-social",
-    "at": "2026-10-08T03:20:11+05:30",
-    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
-   },
-   "source_flags": [
-    {
-     "issue": "marks ambiguous in source — no marks printed"
-    }
-   ],
-   "content_hash": "c43ea3ab451b60b2536848a834cd344d356b0a1479f56164051ee037fa2bd1d9"
-  },
-  {
-   "id": "soc-8-28-s3-q024",
-   "class": "8",
-   "subject": "social",
-   "language": "en",
-   "chapter_id": "soc-8-28",
-   "syllabus_map_version": "none",
-   "audience": "student",
-   "type": "la",
-   "marks": null,
-   "marks_source": "unassigned",
-   "difficulty": "difficult",
-   "difficulty_source": "printed",
-   "difficulty_as_printed": "D",
-   "learning_outcomes": [
-    {
-     "number": 14,
-     "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
-    }
-   ],
-   "lo_source": "all_questions_row",
-   "out_of_syllabus": false,
-   "text": "“Labour is crucial in nation-building.” Justify the statement",
-   "source": "lba",
-   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s3-q024",
-   "locators": [
-    {
-     "role": "question",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s3-q024",
-     "pdf_page": 72,
-     "printed_page": 61,
-     "y": 503.30317,
-     "derived_from": "text_layer"
-    },
-    {
-     "role": "answer",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s3-q024-key",
-     "pdf_page": 144,
-     "printed_page": 133,
-     "y": 242.303193,
-     "derived_from": "text_layer"
-    }
-   ],
-   "revision": 1,
-   "status": "draft",
-   "status_history": [
-    {
-     "from": "none",
-     "to": "draft",
-     "by": "class-8-social",
-     "role": "extraction",
-     "at": "2026-10-08T03:20:11+05:30"
-    }
-   ],
-   "created_by": "class-8-social",
-   "created_at": "2026-10-08T03:20:11+05:30",
-   "text_as_printed": "“Labour is crucial in nation-building.” Justify the statement (D)",
-   "answer": {
-    "kind": "text",
-    "value": "Importance of Physical and Mental Labor:\nBoth physical and mental labor is vital for a progress of the country\nA shortage of physical labor hampers the production.\nMental labor drives national development.\nEveryone should be willing to perform physical labor.\nSociety should not discriminate between physical and mental labor.\nPhysical labor is essential for operating machines and tasks machines cannot perform."
-   },
-   "answer_as_printed": "Importance of Physical and Mental Labor:\nBoth physical and mental labor is vital for a progress of the country\nA shortage of physical labor hampers the production.\nMental labor drives national development.\nEveryone should be willing to perform physical labor.\nSociety should not discriminate between physical and mental labor.\nPhysical labor is essential for operating machines and tasks machines cannot perform.",
-   "solution_steps": [
-    "Both physical and mental labor is vital for a progress of the country",
-    "A shortage of physical labor hampers the production.",
-    "Mental labor drives national development.",
-    "Everyone should be willing to perform physical labor.",
-    "Society should not discriminate between physical and mental labor.",
-    "Physical labor is essential for operating machines and tasks machines cannot perform."
-   ],
-   "answer_provenance": {
-    "by": "printed",
-    "actor": "class-8-social",
-    "at": "2026-10-08T03:20:11+05:30",
-    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
-   },
-   "source_flags": [
-    {
-     "issue": "marks ambiguous in source — no marks printed"
-    }
-   ],
-   "content_hash": "a3570f68e7e49c498c2e8fd2a3695840a61ae9e6585289a2e8ec817ca1782e56"
-  },
-  {
-   "id": "soc-8-28-s3-q025",
-   "class": "8",
-   "subject": "social",
-   "language": "en",
-   "chapter_id": "soc-8-28",
-   "syllabus_map_version": "none",
-   "audience": "student",
-   "type": "la",
-   "marks": null,
-   "marks_source": "unassigned",
-   "difficulty": "easy",
-   "difficulty_source": "printed",
-   "difficulty_as_printed": "E",
-   "learning_outcomes": [
-    {
-     "number": 14,
-     "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
-    }
-   ],
-   "lo_source": "all_questions_row",
-   "out_of_syllabus": false,
-   "text": "Prepare a list of physical labour activities performed by your family members",
-   "source": "lba",
-   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s3-q025",
-   "locators": [
-    {
-     "role": "question",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s3-q025",
-     "pdf_page": 72,
-     "printed_page": 61,
-     "y": 520.703179,
-     "derived_from": "text_layer"
-    },
-    {
-     "role": "answer",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s3-q025-key",
-     "pdf_page": 144,
-     "printed_page": 133,
-     "y": 381.503197,
-     "derived_from": "text_layer"
-    }
-   ],
-   "revision": 1,
-   "status": "draft",
-   "status_history": [
-    {
-     "from": "none",
-     "to": "draft",
-     "by": "class-8-social",
-     "role": "extraction",
-     "at": "2026-10-08T03:20:11+05:30"
-    }
-   ],
-   "created_by": "class-8-social",
-   "created_at": "2026-10-08T03:20:11+05:30",
-   "text_as_printed": "Prepare a list of physical labour activities performed by your family members (E)",
-   "answer": {
-    "kind": "text",
-    "value": "Examples of Physical Labor:\nFarming, Masonry, Animal husbandry, Pottery, Basket weaving, Brick making, Construction activity"
-   },
-   "answer_as_printed": "Examples of Physical Labor:\nFarming, Masonry, Animal husbandry, Pottery, Basket weaving, Brick making, Construction activity",
-   "solution_steps": [
-    "Farming, Masonry, Animal husbandry, Pottery, Basket weaving, Brick making, Construction activity"
-   ],
-   "answer_provenance": {
-    "by": "printed",
-    "actor": "class-8-social",
-    "at": "2026-10-08T03:20:11+05:30",
-    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
-   },
-   "source_flags": [
-    {
-     "issue": "marks ambiguous in source — no marks printed"
-    }
-   ],
-   "content_hash": "5506987dbf232a06abd5d677293eccefe8a16eca2939706f5830a8716c2aedb6"
-  },
-  {
-   "id": "soc-8-28-s3-q026",
-   "class": "8",
-   "subject": "social",
-   "language": "en",
-   "chapter_id": "soc-8-28",
-   "syllabus_map_version": "none",
-   "audience": "student",
-   "type": "la",
-   "marks": null,
-   "marks_source": "unassigned",
-   "difficulty": "easy",
-   "difficulty_source": "printed",
-   "difficulty_as_printed": "E",
-   "learning_outcomes": [
-    {
-     "number": 14,
-     "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
-    }
-   ],
-   "lo_source": "all_questions_row",
-   "out_of_syllabus": false,
-   "text": "What is consumption? Explain its types.",
-   "source": "lba",
-   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s3-q026",
-   "locators": [
-    {
-     "role": "question",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s3-q026",
-     "pdf_page": 72,
-     "printed_page": 61,
-     "y": 555.503197,
-     "derived_from": "text_layer"
-    },
-    {
-     "role": "answer",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s3-q026-key",
-     "pdf_page": 144,
-     "printed_page": 133,
-     "y": 442.343193,
-     "derived_from": "text_layer"
-    }
-   ],
-   "revision": 1,
-   "status": "draft",
-   "status_history": [
-    {
-     "from": "none",
-     "to": "draft",
-     "by": "class-8-social",
-     "role": "extraction",
-     "at": "2026-10-08T03:20:11+05:30"
-    }
-   ],
-   "created_by": "class-8-social",
-   "created_at": "2026-10-08T03:20:11+05:30",
-   "text_as_printed": "What is consumption? Explain its types. (E)",
-   "answer": {
-    "kind": "text",
-    "value": "Consumption is the use of goods and services by a person for his satisfaction.\nThere are two types of consumption:\nUsing goods and services for production\nUsing ready-made goods and services for the satisfaction of wants"
-   },
-   "answer_as_printed": "Consumption is the use of goods and services by a person for his satisfaction.\nThere are two types of consumption:\nUsing goods and services for production\nUsing ready-made goods and services for the satisfaction of wants",
-   "solution_steps": [
-    "Consumption is the use of goods and services by a person for his satisfaction.",
-    "Using goods and services for production",
-    "Using ready-made goods and services for the satisfaction of wants"
-   ],
-   "answer_provenance": {
-    "by": "printed",
-    "actor": "class-8-social",
-    "at": "2026-10-08T03:20:11+05:30",
-    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
-   },
-   "source_flags": [
-    {
-     "issue": "marks ambiguous in source — no marks printed"
-    }
-   ],
-   "content_hash": "192ad5641ee36fe48c78cbc6f43dc237907e9c09b824b666e911ca0a9264507d"
-  },
-  {
-   "id": "soc-8-28-s3-q027",
-   "class": "8",
-   "subject": "social",
-   "language": "en",
-   "chapter_id": "soc-8-28",
-   "syllabus_map_version": "none",
-   "audience": "student",
-   "type": "la",
-   "marks": null,
-   "marks_source": "unassigned",
-   "difficulty": "difficult",
-   "difficulty_source": "printed",
-   "difficulty_as_printed": "D",
-   "learning_outcomes": [
-    {
-     "number": 14,
-     "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
-    }
-   ],
-   "lo_source": "all_questions_row",
-   "out_of_syllabus": false,
-   "text": "Explain the relationship between utility and satisfaction.",
-   "source": "lba",
-   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s3-q027",
-   "locators": [
-    {
-     "role": "question",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s3-q027",
-     "pdf_page": 72,
-     "printed_page": 61,
-     "y": 572.903207,
-     "derived_from": "text_layer"
-    },
-    {
-     "role": "answer",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s3-q027-key",
-     "pdf_page": 144,
-     "printed_page": 133,
-     "y": 535.703179,
-     "derived_from": "text_layer"
-    }
-   ],
-   "revision": 1,
-   "status": "draft",
-   "status_history": [
-    {
-     "from": "none",
-     "to": "draft",
-     "by": "class-8-social",
-     "role": "extraction",
-     "at": "2026-10-08T03:20:11+05:30"
-    }
-   ],
-   "created_by": "class-8-social",
-   "created_at": "2026-10-08T03:20:11+05:30",
-   "text_as_printed": "Explain the relationship between utility and satisfaction. (D)",
-   "answer": {
-    "kind": "text",
-    "value": "Utility is not satisfaction; it is the power to give satisfaction.\nSatisfaction is the result of utility; that is, goods and services having utility give us satisfaction.\nUtility is not related to usefulness.\nThough both words are often used in the same sense, it is not correct.\nFor example, intoxicating substances may have no benefit, yet they possess utility.\nPrimary utility, form utility, time utility, and place utility."
-   },
-   "answer_as_printed": "Utility is not satisfaction; it is the power to give satisfaction.\nSatisfaction is the result of utility; that is, goods and services having utility give us satisfaction.\nUtility is not related to usefulness.\nThough both words are often used in the same sense, it is not correct.\nFor example, intoxicating substances may have no benefit, yet they possess utility.\nPrimary utility, form utility, time utility, and place utility.",
-   "solution_steps": [
-    "Utility is not satisfaction; it is the power to give satisfaction.",
-    "Satisfaction is the result of utility; that is, goods and services having utility give us satisfaction.",
-    "Utility is not related to usefulness.",
-    "Though both words are often used in the same sense, it is not correct.",
-    "For example, intoxicating substances may have no benefit, yet they possess utility.",
-    "Primary utility, form utility, time utility, and place utility."
-   ],
-   "answer_provenance": {
-    "by": "printed",
-    "actor": "class-8-social",
-    "at": "2026-10-08T03:20:11+05:30",
-    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
-   },
-   "source_flags": [
-    {
-     "issue": "marks ambiguous in source — no marks printed"
-    }
-   ],
-   "content_hash": "fef2f5efd980ffbd10cc186c07abc67790d4be346d94109e96b8adce670530b9"
-  },
-  {
-   "id": "soc-8-28-s3-q028",
-   "class": "8",
-   "subject": "social",
-   "language": "en",
-   "chapter_id": "soc-8-28",
-   "syllabus_map_version": "none",
-   "audience": "student",
-   "type": "la",
-   "marks": null,
-   "marks_source": "unassigned",
-   "difficulty": "difficult",
-   "difficulty_source": "printed",
-   "difficulty_as_printed": "D",
-   "learning_outcomes": [
-    {
-     "number": 14,
-     "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
-    }
-   ],
-   "lo_source": "all_questions_row",
-   "out_of_syllabus": false,
-   "text": "Explain the importance of profit in the economic field.",
-   "source": "lba",
-   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s3-q028",
-   "locators": [
-    {
-     "role": "question",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s3-q028",
-     "pdf_page": 72,
-     "printed_page": 61,
-     "y": 590.30317,
-     "derived_from": "text_layer"
-    },
-    {
-     "role": "answer",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s3-q028-key",
-     "pdf_page": 145,
-     "printed_page": 134,
-     "y": 68.18319,
-     "derived_from": "text_layer"
-    }
-   ],
-   "revision": 1,
-   "status": "draft",
-   "status_history": [
-    {
-     "from": "none",
-     "to": "draft",
-     "by": "class-8-social",
-     "role": "extraction",
-     "at": "2026-10-08T03:20:11+05:30"
-    }
-   ],
-   "created_by": "class-8-social",
-   "created_at": "2026-10-08T03:20:11+05:30",
-   "text_as_printed": "Explain the importance of profit in the economic field. (D)",
-   "answer": {
-    "kind": "text",
-    "value": "Profit has great importance in the economic field.\nThe main aim of all economic activities is to earn profit.\nAs profit increases, economic activities also increase.\nThe progress of the nation becomes rapid.\nAs profit decreases, economic activities decline.\nThe progress of the nation slows down, and economic recession arises."
-   },
-   "answer_as_printed": "Profit has great importance in the economic field.\nThe main aim of all economic activities is to earn profit.\nAs profit increases, economic activities also increase.\nThe progress of the nation becomes rapid.\nAs profit decreases, economic activities decline.\nThe progress of the nation slows down, and economic recession arises.",
-   "solution_steps": [
-    "Profit has great importance in the economic field.",
-    "The main aim of all economic activities is to earn profit.",
-    "As profit increases, economic activities also increase.",
-    "The progress of the nation becomes rapid.",
-    "As profit decreases, economic activities decline.",
-    "The progress of the nation slows down, and economic recession arises."
-   ],
-   "answer_provenance": {
-    "by": "printed",
-    "actor": "class-8-social",
-    "at": "2026-10-08T03:20:11+05:30",
-    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
-   },
-   "source_flags": [
-    {
-     "issue": "marks ambiguous in source — no marks printed"
-    }
-   ],
-   "content_hash": "87fac620f94a9f5db84f77052bced9f2abc5722d7d6f0b5ff8cb07ca2106ec7d"
-  },
-  {
-   "id": "soc-8-28-s3-q029",
-   "class": "8",
-   "subject": "social",
-   "language": "en",
-   "chapter_id": "soc-8-28",
-   "syllabus_map_version": "none",
-   "audience": "student",
-   "type": "la",
-   "marks": null,
-   "marks_source": "unassigned",
-   "difficulty": "difficult",
-   "difficulty_source": "printed",
-   "difficulty_as_printed": "D",
-   "learning_outcomes": [
-    {
-     "number": 14,
-     "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
-    }
-   ],
-   "lo_source": "all_questions_row",
-   "out_of_syllabus": false,
-   "text": "Cooperative system is a good system in the economy. Why?",
-   "source": "lba",
-   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s3-q029",
-   "locators": [
-    {
-     "role": "question",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s3-q029",
-     "pdf_page": 72,
-     "printed_page": 61,
-     "y": 607.823205,
-     "derived_from": "text_layer"
-    },
-    {
-     "role": "answer",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s3-q029-key",
-     "pdf_page": 145,
-     "printed_page": 134,
-     "y": 190.103188,
-     "derived_from": "text_layer"
-    }
-   ],
-   "revision": 1,
-   "status": "draft",
-   "status_history": [
-    {
-     "from": "none",
-     "to": "draft",
-     "by": "class-8-social",
-     "role": "extraction",
-     "at": "2026-10-08T03:20:11+05:30"
-    }
-   ],
-   "created_by": "class-8-social",
-   "created_at": "2026-10-08T03:20:11+05:30",
-   "text_as_printed": "Cooperative system is a good system in the economy. Why? (D)",
-   "answer": {
-    "kind": "text",
-    "value": "The cooperative system is a unique system in which people voluntarily come together and work on the basis of equality to protect their economic interests; its main aim is self-help. There is no scope for competition here.\nAll transactions are managed by the members themselves; profits are shared, suitable dividends are given on shares, and bonus is given based on the purchases made by members. There is no place for middlemen. There is no scope for exploitation.\nElected directors manage the affairs of the institution.\nHere, members are both owners and workers."
-   },
-   "answer_as_printed": "The cooperative system is a unique system in which people voluntarily come together and work on the basis of equality to protect their economic interests; its main aim is self-help. There is no scope for competition here.\nAll transactions are managed by the members themselves; profits are shared, suitable dividends are given on shares, and bonus is given based on the purchases made by members. There is no place for middlemen. There is no scope for exploitation.\nElected directors manage the affairs of the institution.\nHere, members are both owners and workers.",
-   "solution_steps": [
-    "The cooperative system is a unique system in which people voluntarily come together and work on the basis of equality to protect their economic interests; its main aim is self-help. There is no scope for competition here.",
-    "All transactions are managed by the members themselves; profits are shared, suitable dividends are given on shares, and bonus is given based on the purchases made by members. There is no place for middlemen. There is no scope for exploitation.",
-    "Elected directors manage the affairs of the institution.",
-    "Here, members are both owners and workers."
-   ],
-   "answer_provenance": {
-    "by": "printed",
-    "actor": "class-8-social",
-    "at": "2026-10-08T03:20:11+05:30",
-    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
-   },
-   "source_flags": [
-    {
-     "issue": "marks ambiguous in source — no marks printed"
-    }
-   ],
-   "content_hash": "cb930ba8eea79d8e4afdb3ac59df95b88c0fde72485b121704e3034a7d4ea037"
-  },
-  {
-   "id": "soc-8-28-s3-q030",
-   "class": "8",
-   "subject": "social",
-   "language": "en",
-   "chapter_id": "soc-8-28",
-   "syllabus_map_version": "none",
-   "audience": "student",
-   "type": "la",
-   "marks": null,
-   "marks_source": "unassigned",
-   "difficulty": "average",
-   "difficulty_source": "printed",
-   "difficulty_as_printed": "A",
-   "learning_outcomes": [
-    {
-     "number": 14,
-     "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
-    }
-   ],
-   "lo_source": "all_questions_row",
-   "out_of_syllabus": false,
-   "text": "Explain the role of national income in a country's economy.",
-   "source": "lba",
-   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s3-q030",
-   "locators": [
-    {
-     "role": "question",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s3-q030",
-     "pdf_page": 72,
-     "printed_page": 61,
-     "y": 625.103188,
-     "derived_from": "text_layer"
-    },
-    {
-     "role": "answer",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s3-q030-key",
-     "pdf_page": 145,
-     "printed_page": 134,
-     "y": 0.0,
-     "derived_from": "text_layer"
-    }
-   ],
-   "revision": 1,
-   "status": "draft",
-   "status_history": [
-    {
-     "from": "none",
-     "to": "draft",
-     "by": "class-8-social",
-     "role": "extraction",
-     "at": "2026-10-08T03:20:11+05:30"
-    }
-   ],
-   "created_by": "class-8-social",
-   "created_at": "2026-10-08T03:20:11+05:30",
-   "text_as_printed": "Explain the role of national income in a country's economy. (A)",
-   "answer": {
-    "kind": "text",
-    "value": "The size of national income depends on production.\nIf production increases, national income increases (based on population).\nIncreasing national income indicates the development of the nation and the standard of living of the people.\nRising national income is a sign of a country's economic progress.\nDeclining national income shows the country's poor economic condition and the low standard of living of its people.\nFor this reason, all countries continuously strive to increase their national income."
-   },
-   "answer_as_printed": "The size of national income depends on production.\nIf production increases, national income increases (based on population).\nIncreasing national income indicates the development of the nation and the standard of living of the people.\nRising national income is a sign of a country's economic progress.\nDeclining national income shows the country's poor economic condition and the low standard of living of its people.\nFor this reason, all countries continuously strive to increase their national income.",
-   "solution_steps": [
-    "The size of national income depends on production.",
-    "If production increases, national income increases (based on population).",
-    "Increasing national income indicates the development of the nation and the standard of living of the people.",
-    "Rising national income is a sign of a country's economic progress.",
-    "Declining national income shows the country's poor economic condition and the low standard of living of its people.",
-    "For this reason, all countries continuously strive to increase their national income."
-   ],
-   "answer_provenance": {
-    "by": "printed",
-    "actor": "class-8-social",
-    "at": "2026-10-08T03:20:11+05:30",
-    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
-   },
-   "source_flags": [
-    {
-     "issue": "marks ambiguous in source — no marks printed"
-    },
-    {
-     "field": "answer",
-     "issue": "duplicate question number — the printed answer key labels this (Q30, role of national income) answer with the number '29' (the section III key prints '29' twice and prints no '30'); the answer corresponds continuously to Q30 and is populated. Key-side numbering misprint; question-side number is 30.",
-     "why_not_corrected": "key-side label is a source misprint; extraction keeps the question-side number as the id and records the key label here",
-     "suggested": "review — key labels Q30's answer '29'; content (national income role) matches Q30"
-    }
-   ],
-   "content_hash": "e212eaf0cbeecd2e52d02159f0781912236ae3af1afcf2eaeb52979a2b166686"
-  },
-  {
-   "id": "soc-8-28-s3-q031",
-   "class": "8",
-   "subject": "social",
-   "language": "en",
-   "chapter_id": "soc-8-28",
-   "syllabus_map_version": "none",
-   "audience": "student",
-   "type": "la",
-   "marks": null,
-   "marks_source": "unassigned",
-   "difficulty": "difficult",
-   "difficulty_source": "printed",
-   "difficulty_as_printed": "D",
-   "learning_outcomes": [
-    {
-     "number": 14,
-     "text_as_printed": "Understands and explains the importance of Economics and the relationship between basic economic concepts."
-    }
-   ],
-   "lo_source": "all_questions_row",
-   "out_of_syllabus": false,
-   "text": "Per capita income determines the economic condition of a country. How?",
-   "source": "lba",
-   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s3-q031",
-   "locators": [
-    {
-     "role": "question",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s3-q031",
-     "pdf_page": 72,
-     "printed_page": 61,
-     "y": 642.503197,
-     "derived_from": "text_layer"
-    },
-    {
-     "role": "answer",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-28-s3-q031-key",
-     "pdf_page": 145,
-     "printed_page": 134,
-     "y": 538.223214,
-     "derived_from": "text_layer"
-    }
-   ],
-   "revision": 1,
-   "status": "draft",
-   "status_history": [
-    {
-     "from": "none",
-     "to": "draft",
-     "by": "class-8-social",
-     "role": "extraction",
-     "at": "2026-10-08T03:20:11+05:30"
-    }
-   ],
-   "created_by": "class-8-social",
-   "created_at": "2026-10-08T03:20:11+05:30",
-   "text_as_printed": "Per capita income determines the economic condition of a country. How? (D)",
-   "answer": {
-    "kind": "text",
-    "value": "Per capita income is obtained by dividing the national income of a country by its total population. If national income is high, per capita income will also be high.\nThe standard of living of the people will be good, and as a result, people lead a comfortable life.\nWhen national income is low, per capita income also decreases.\nThe standard of living of the people becomes low.\nPoverty and diseases spread, and people struggle to lead their lives.\nBy comparing the per capita income of people in different countries, the economic condition of a country is determined."
-   },
-   "answer_as_printed": "Per capita income is obtained by dividing the national income of a country by its total population. If national income is high, per capita income will also be high.\nThe standard of living of the people will be good, and as a result, people lead a comfortable life.\nWhen national income is low, per capita income also decreases.\nThe standard of living of the people becomes low.\nPoverty and diseases spread, and people struggle to lead their lives.\nBy comparing the per capita income of people in different countries, the economic condition of a country is determined.",
-   "solution_steps": [
-    "Per capita income is obtained by dividing the national income of a country by its total population. If national income is high, per capita income will also be high.",
-    "The standard of living of the people will be good, and as a result, people lead a comfortable life.",
-    "When national income is low, per capita income also decreases.",
-    "The standard of living of the people becomes low.",
-    "Poverty and diseases spread, and people struggle to lead their lives.",
-    "By comparing the per capita income of people in different countries, the economic condition of a country is determined."
-   ],
-   "answer_provenance": {
-    "by": "printed",
-    "actor": "class-8-social",
-    "at": "2026-10-08T03:20:11+05:30",
-    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
-   },
-   "source_flags": [
-    {
-     "issue": "marks ambiguous in source — no marks printed"
-    }
-   ],
-   "content_hash": "83cd8f729142b81abf28163b38a190017ec7b5adbd015003b3712b8052af2ed4"
-  }
- ],
- "pending_summary": {}
+  "pending_summary": {}
 }
