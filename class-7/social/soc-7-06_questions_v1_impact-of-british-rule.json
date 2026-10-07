@@ -1,0 +1,3282 @@
+{
+ "contract_version": "1.7",
+ "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
+ "procedure_file": "extraction_procedure_social_addendum_v1.3_social science Classes 6-10 on top of procedure v2.md",
+ "machine_name": "soc-7-06_questions",
+ "version": 1,
+ "changelog": "v1 extraction — batch-01 — class-7-social",
+ "amendments_applied": [],
+ "unit_state": "EXTRACTED",
+ "review_ready": false,
+ "count_gate": {
+  "reference": 35,
+  "reference_source": "audited",
+  "extracted": 35,
+  "paired": 35,
+  "flagged": 1,
+  "gaps": [],
+  "duplicated_numbers": [],
+  "quota_table": "difficulty_only",
+  "second_method": {
+   "method": "printed difficulty distribution table",
+   "extracted": 35,
+   "agrees": true
+  },
+  "pass": true,
+  "note": "printed difficulty table 15/14/6=35 DISAGREES with per-question tags 14/13/8 (source defect, tags win v2 §6; register difficulty-table-vs-tags); flagged counts answer-level flags; all carry the structural marks flag (addendum §4.5)."
+ },
+ "extraction": {
+  "source_file": "7thSS-EM-LBARevised_1787048371.pdf",
+  "source_ref_prefix": "7thSS-EM-LBARevised_1787048371.pdf",
+  "pdf_pages": [
+   44,
+   45,
+   46,
+   47,
+   185,
+   186,
+   187,
+   188,
+   189
+  ],
+  "printed_page_offset": -14,
+  "method_notes": [
+   "ch6 single numbering 1-35; sections A mcq(1-8) B match(9) C vsa(10-19) D sa(20-27) E sa(28-32) F la(33-34) G draw-map(35) = s1-s7.",
+   "q35 = DRAW-MAP (G): printed stem + answer_diagram asset (the printed sample map on pdf189, Kannada labels: Punjab/Uttar Pradesh/Calcutta/Mumbai/Madras) — crop committed FIRST (Staging bare msg 'soc-7-06 crop'). Post-step sets answer kind text empty + 'answer is a diagram' flag + answer_diagram asset. No Kannada in JSON (class-9 ruling).",
+   "SOURCE KEY ERRORS (asserted verbatim + flag, review-method-v1.3): q2 (Permanent Settlement key B Hastings; correct Cornwallis not even an option), q4 (provinces key C '1 and 3'; correct B '1,2,3').",
+   "match q9 printed as label pairs (1.C 2.D 3.E 4.A 5.F) -> resolved by label, flag 'match key in label form'. q13 printed answer truncated (ellipsis) -> flag.",
+   "section E '(3 marks)' section-level mark flagged; marks null (pending marks ruling). all difficulty per-question tagged. 3 LO rows (05 revenue, 06 society, 01 map-skills->q35)."
+  ],
+  "notation_summary": {
+   "render_tokens": 0,
+   "latex_tokens": 0,
+   "damage_flags": []
+  },
+  "excluded_objects": [],
+  "inline_excluded_count": 0,
+  "figure_references": []
+ },
+ "stimuli": [],
+ "questions": [
+  {
+   "id": "soc-7-06-s1-q001",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-06",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the different land revenue systems and lists their advantages and disadvantages."
+    },
+    {
+     "number": 6,
+     "text_as_printed": "Analyzes the impact of British rule on society."
+    },
+    {
+     "number": 1,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The British introduced land revenue policies in India. The main objective of this was.",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s1-q001",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s1-q001",
+     "pdf_page": 44,
+     "printed_page": 30,
+     "y": 341.467,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s1-q001-key",
+     "pdf_page": 185,
+     "printed_page": 171,
+     "y": 151.228,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T02:17:24+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T02:17:24+05:30",
+   "text_as_printed": "The British introduced land revenue policies in India. The main objective of this was. (Easy)",
+   "section_signal": "A",
+   "options": [
+    {
+     "id": "A",
+     "text": "To ensure a fixed income to the government treasury"
+    },
+    {
+     "id": "B",
+     "text": "To finance the cost of wars in India"
+    },
+    {
+     "id": "C",
+     "text": "To pay the salaries of British officials"
+    },
+    {
+     "id": "D",
+     "text": "All of the above"
+    }
+   ],
+   "answer_as_printed": "D)",
+   "answer": {
+    "kind": "option",
+    "option_id": "D"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T02:17:24+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "34eed02577df2145a80b659c6f75cf10f01f930cbce9d7b997761f84a9024db4"
+  },
+  {
+   "id": "soc-7-06-s1-q002",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-06",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the different land revenue systems and lists their advantages and disadvantages."
+    },
+    {
+     "number": 6,
+     "text_as_printed": "Analyzes the impact of British rule on society."
+    },
+    {
+     "number": 1,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "He introduced the Permanent Settlement for revenue collection.",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s1-q002",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s1-q002",
+     "pdf_page": 44,
+     "printed_page": 30,
+     "y": 365.267,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s1-q002-key",
+     "pdf_page": 185,
+     "printed_page": 171,
+     "y": 151.228,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T02:17:24+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T02:17:24+05:30",
+   "text_as_printed": "He introduced the Permanent Settlement for revenue collection. (Average )",
+   "section_signal": "A",
+   "options": [
+    {
+     "id": "A",
+     "text": "Robert Clive"
+    },
+    {
+     "id": "B",
+     "text": "Warren Hastings"
+    },
+    {
+     "id": "C",
+     "text": "Lord Dalhousie"
+    },
+    {
+     "id": "D",
+     "text": "Lord Wellesley"
+    }
+   ],
+   "answer_as_printed": "B)",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T02:17:24+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text does not address question",
+     "why_not_corrected": "printed MCQ key B 'Warren Hastings' for 'who introduced the Permanent Settlement' is wrong (it was Lord Cornwallis, 1793 — not among the printed options A Clive/B Hastings/C Dalhousie/D Wellesley; the question itself omits the correct answer); printed letter asserted verbatim",
+     "suggested": "review (source answer-key error)"
+    }
+   ],
+   "content_hash": "94443d2ab6260513c5effddad23e2c43f676c93d1d74024e1e473cb2102037b0"
+  },
+  {
+   "id": "soc-7-06-s1-q003",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-06",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the different land revenue systems and lists their advantages and disadvantages."
+    },
+    {
+     "number": 6,
+     "text_as_printed": "Analyzes the impact of British rule on society."
+    },
+    {
+     "number": 1,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The agreement made by Lord Cornwallis with the Zamindars regarding revenue collection is called:",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s1-q003",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s1-q003",
+     "pdf_page": 44,
+     "printed_page": 30,
+     "y": 389.067,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s1-q003-key",
+     "pdf_page": 185,
+     "printed_page": 171,
+     "y": 290.928,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T02:17:24+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T02:17:24+05:30",
+   "text_as_printed": "The agreement made by Lord Cornwallis with the Zamindars regarding revenue collection is called: (Average )",
+   "section_signal": "A",
+   "options": [
+    {
+     "id": "A",
+     "text": "Subsidiary Alliance"
+    },
+    {
+     "id": "B",
+     "text": "Ryotwari system"
+    },
+    {
+     "id": "C",
+     "text": "Permanent Settlement (Permanent Zamindari system)"
+    },
+    {
+     "id": "D",
+     "text": "Mahalwari system"
+    }
+   ],
+   "answer_as_printed": "C)",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T02:17:24+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "67e503ee65e20ad714d87f2d485a58d982fb2dcb875e63b53944dd2236e22a91"
+  },
+  {
+   "id": "soc-7-06-s1-q004",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-06",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the different land revenue systems and lists their advantages and disadvantages."
+    },
+    {
+     "number": 6,
+     "text_as_printed": "Analyzes the impact of British rule on society."
+    },
+    {
+     "number": 1,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The correct option for the provinces where the Permanent Zamindari System was introduced: [1. Bengal; 2. Bihar; 3. Orissa; 4. Punjab]",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s1-q004",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s1-q004",
+     "pdf_page": 45,
+     "printed_page": 31,
+     "y": 122.028,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s1-q004-key",
+     "pdf_page": 185,
+     "printed_page": 171,
+     "y": 311.628,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T02:17:24+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T02:17:24+05:30",
+   "text_as_printed": "The correct option for the provinces where the Permanent Zamindari System was introduced: [1. Bengal; 2. Bihar; 3. Orissa; 4. Punjab] (Difficult )",
+   "section_signal": "A",
+   "options": [
+    {
+     "id": "A",
+     "text": "Only 1 is correct"
+    },
+    {
+     "id": "B",
+     "text": "1, 2, and 3 are correct"
+    },
+    {
+     "id": "C",
+     "text": "1 and 3 are correct"
+    },
+    {
+     "id": "D",
+     "text": "All are correct"
+    }
+   ],
+   "answer_as_printed": "C)",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T02:17:24+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text does not address question",
+     "why_not_corrected": "printed MCQ key C '1 and 3' for the Permanent-Zamindari provinces is wrong; it was Bengal, Bihar AND Orissa = option B '1,2,3' (per the chapter's own q33/q41 answers); printed letter asserted verbatim",
+     "suggested": "review (source answer-key error)"
+    }
+   ],
+   "content_hash": "958bfb62d0dfe5a1730d7b247c667cbe55e6878dec69c0fa15f8acb8ba15a994"
+  },
+  {
+   "id": "soc-7-06-s1-q005",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-06",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the different land revenue systems and lists their advantages and disadvantages."
+    },
+    {
+     "number": 6,
+     "text_as_printed": "Analyzes the impact of British rule on society."
+    },
+    {
+     "number": 1,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The Ryotwari system was introduced in India in this region:",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s1-q005",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s1-q005",
+     "pdf_page": 45,
+     "printed_page": 31,
+     "y": 343.658,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s1-q005-key",
+     "pdf_page": 185,
+     "printed_page": 171,
+     "y": 177.628,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T02:17:24+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T02:17:24+05:30",
+   "text_as_printed": "The Ryotwari system was introduced in India in this region: (Average )",
+   "section_signal": "A",
+   "options": [
+    {
+     "id": "A",
+     "text": "Western and Northern India"
+    },
+    {
+     "id": "B",
+     "text": "Eastern and Northern India"
+    },
+    {
+     "id": "C",
+     "text": "Western and Southern India"
+    },
+    {
+     "id": "D",
+     "text": "Eastern and Northern India"
+    }
+   ],
+   "answer_as_printed": "C)",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T02:17:24+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "ffd0a84a6e9b4e8222b004fcd52544b40e6f57731d098f4828203be8a5dff0cb"
+  },
+  {
+   "id": "soc-7-06-s1-q006",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-06",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the different land revenue systems and lists their advantages and disadvantages."
+    },
+    {
+     "number": 6,
+     "text_as_printed": "Analyzes the impact of British rule on society."
+    },
+    {
+     "number": 1,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Who introduced the Ryotwari system in the Madras Presidency?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s1-q006",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s1-q006",
+     "pdf_page": 45,
+     "printed_page": 31,
+     "y": 487.158,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s1-q006-key",
+     "pdf_page": 185,
+     "printed_page": 171,
+     "y": 177.628,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T02:17:24+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T02:17:24+05:30",
+   "text_as_printed": "Who introduced the Ryotwari system in the Madras Presidency? (Average )",
+   "section_signal": "A",
+   "options": [
+    {
+     "id": "A",
+     "text": "Warren Hastings"
+    },
+    {
+     "id": "B",
+     "text": "Cornwallis"
+    },
+    {
+     "id": "C",
+     "text": "William Bentinck"
+    },
+    {
+     "id": "D",
+     "text": "Thomas Munro"
+    }
+   ],
+   "answer_as_printed": "D)",
+   "answer": {
+    "kind": "option",
+    "option_id": "D"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T02:17:24+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "f7f75435a0e59d2234aa7073817f15bcfe4025c728621803ad6eee2857cc6b6e"
+  },
+  {
+   "id": "soc-7-06-s1-q007",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-06",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the different land revenue systems and lists their advantages and disadvantages."
+    },
+    {
+     "number": 6,
+     "text_as_printed": "Analyzes the impact of British rule on society."
+    },
+    {
+     "number": 1,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The Mahalwari system, introduced in the 19th century, was implemented in the following regions:",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s1-q007",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s1-q007",
+     "pdf_page": 45,
+     "printed_page": 31,
+     "y": 573.258,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s1-q007-key",
+     "pdf_page": 185,
+     "printed_page": 171,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T02:17:24+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T02:17:24+05:30",
+   "text_as_printed": "The Mahalwari system, introduced in the 19th century, was implemented in the following regions: (Difficult )",
+   "section_signal": "A",
+   "options": [
+    {
+     "id": "A",
+     "text": "Uttar Pradesh, Madhya Pradesh, Punjab"
+    },
+    {
+     "id": "B",
+     "text": "Uttar Pradesh, Madhya Pradesh, Rajasthan"
+    },
+    {
+     "id": "C",
+     "text": "Rajasthan, Uttar Pradesh, Karnataka"
+    },
+    {
+     "id": "D",
+     "text": "Madhya Pradesh, Uttar Pradesh, Karnataka"
+    }
+   ],
+   "answer_as_printed": "A)",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T02:17:24+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "a355ca546c4e2720ce4eddbe4ab4b547babb085ecec08bf7a2ff719a7ee80c42"
+  },
+  {
+   "id": "soc-7-06-s1-q008",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-06",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the different land revenue systems and lists their advantages and disadvantages."
+    },
+    {
+     "number": 6,
+     "text_as_printed": "Analyzes the impact of British rule on society."
+    },
+    {
+     "number": 1,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "In 1833, William Bentinck introduced the Mahalwari system. What does 'Mahal' mean",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s1-q008",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s1-q008",
+     "pdf_page": 46,
+     "printed_page": 32,
+     "y": 64.608,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s1-q008-key",
+     "pdf_page": 185,
+     "printed_page": 171,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T02:17:24+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T02:17:24+05:30",
+   "text_as_printed": "In 1833, William Bentinck introduced the Mahalwari system. What does 'Mahal' mean (Average )",
+   "section_signal": "A",
+   "options": [
+    {
+     "id": "A",
+     "text": "Village or Estate"
+    },
+    {
+     "id": "B",
+     "text": "Village or Town"
+    },
+    {
+     "id": "C",
+     "text": "Town or Estate"
+    },
+    {
+     "id": "D",
+     "text": "Taluka or District"
+    }
+   ],
+   "answer_as_printed": "A)",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T02:17:24+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "1e75ec7c13df3a3ef8d4bee030cafd1d015c6c937f4e5a061a03d0d43036bcbd"
+  },
+  {
+   "id": "soc-7-06-s2-q009",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-06",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "match",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the different land revenue systems and lists their advantages and disadvantages."
+    },
+    {
+     "number": 6,
+     "text_as_printed": "Analyzes the impact of British rule on society."
+    },
+    {
+     "number": 1,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Match the following 'A' list with 'B' list and write in the 'C' list. A-list: 1. Permanent Zamindari System; 2. Ryotwari System; 3. Mahalwari System; 4. English Education; 5. Regulating Act",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s2-q009",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s2-q009",
+     "pdf_page": 46,
+     "printed_page": 32,
+     "y": 208.128,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s2-q009-key",
+     "pdf_page": 185,
+     "printed_page": 171,
+     "y": 249.528,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T02:17:24+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T02:17:24+05:30",
+   "text_as_printed": "Match the following 'A' list with 'B' list and write in the 'C' list. (Average )  A-list: 1. Permanent Zamindari System; 2. Ryotwari System; 3. Mahalwari System; 4. English Education; 5. Regulating Act",
+   "section_signal": "B",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "Permanent Zamindari System",
+      "right": "Cornwallis"
+     },
+     {
+      "left": "Ryotwari System",
+      "right": "Thomas Munro"
+     },
+     {
+      "left": "Mahalwari System",
+      "right": "1833 AD"
+     },
+     {
+      "left": "English Education",
+      "right": "Lord Macaulay and Charles Wood"
+     },
+     {
+      "left": "Regulating Act",
+      "right": "1773 AD"
+     }
+    ]
+   },
+   "answer_as_printed": "Permanent Zamindari System -- Cornwallis; Ryotwari System -- Thomas Munro; Mahalwari System -- 1833 AD; English Education -- Lord Macaulay and Charles Wood; Regulating Act -- 1773 AD",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T02:17:24+05:30",
+    "basis": "printed match key; left/right pairs verbatim (rev-2 §MATCH)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "4ac6233d1090a050570cf191ad72ef6d10128af8a4240287be5a02a8d961d0af"
+  },
+  {
+   "id": "soc-7-06-s3-q010",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-06",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the different land revenue systems and lists their advantages and disadvantages."
+    },
+    {
+     "number": 6,
+     "text_as_printed": "Analyzes the impact of British rule on society."
+    },
+    {
+     "number": 1,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is the Permanent Zamindari System?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s3-q010",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s3-q010",
+     "pdf_page": 46,
+     "printed_page": 32,
+     "y": 466.458,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s3-q010-key",
+     "pdf_page": 185,
+     "printed_page": 171,
+     "y": 389.758,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T02:17:24+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T02:17:24+05:30",
+   "text_as_printed": "What is the Permanent Zamindari System? (Easy )",
+   "section_signal": "C",
+   "answer": {
+    "kind": "text",
+    "value": "The agreement where the British collected land revenue permanently through zamindars is known as the Permanent Zamindari System."
+   },
+   "answer_as_printed": "The agreement where the British collected land revenue permanently through zamindars is known as the Permanent Zamindari System.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T02:17:24+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "a08f7869a73259e41cde929d734d7adb6de21d31abaeecefb50f8cca9599dca4"
+  },
+  {
+   "id": "soc-7-06-s3-q011",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-06",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the different land revenue systems and lists their advantages and disadvantages."
+    },
+    {
+     "number": 6,
+     "text_as_printed": "Analyzes the impact of British rule on society."
+    },
+    {
+     "number": 1,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is the Ryotwari System?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s3-q011",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s3-q011",
+     "pdf_page": 46,
+     "printed_page": 32,
+     "y": 495.158,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s3-q011-key",
+     "pdf_page": 185,
+     "printed_page": 171,
+     "y": 439.158,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T02:17:24+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T02:17:24+05:30",
+   "text_as_printed": "What is the Ryotwari System? (Easy )",
+   "section_signal": "C",
+   "answer": {
+    "kind": "text",
+    "value": "The system where the ryot (cultivator) directly pays revenue to the government without the help of intermediaries is known as the Ryotwari System."
+   },
+   "answer_as_printed": "The system where the ryot (cultivator) directly pays revenue to the government without the help of intermediaries is known as the Ryotwari System.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T02:17:24+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "6c91ebbe9f362dd158e1221e8f979a4da93fe298729f5fcc289d65eabe20ef9e"
+  },
+  {
+   "id": "soc-7-06-s3-q012",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-06",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the different land revenue systems and lists their advantages and disadvantages."
+    },
+    {
+     "number": 6,
+     "text_as_printed": "Analyzes the impact of British rule on society."
+    },
+    {
+     "number": 1,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "In which year did English become the language of administration?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s3-q012",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s3-q012",
+     "pdf_page": 46,
+     "printed_page": 32,
+     "y": 523.858,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s3-q012-key",
+     "pdf_page": 185,
+     "printed_page": 171,
+     "y": 488.558,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T02:17:24+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T02:17:24+05:30",
+   "text_as_printed": "In which year did English become the language of administration? (Easy )",
+   "section_signal": "C",
+   "answer": {
+    "kind": "text",
+    "value": "1844 AD"
+   },
+   "answer_as_printed": "1844 AD",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T02:17:24+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "68f2cf9013199cfac7bd94ce6f33adf085e5fc7f85c0a5d43dcf0aeb379e42e4"
+  },
+  {
+   "id": "soc-7-06-s3-q013",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-06",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the different land revenue systems and lists their advantages and disadvantages."
+    },
+    {
+     "number": 6,
+     "text_as_printed": "Analyzes the impact of British rule on society."
+    },
+    {
+     "number": 1,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Why did India become a poor country during British rule?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s3-q013",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s3-q013",
+     "pdf_page": 46,
+     "printed_page": 32,
+     "y": 552.558,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s3-q013-key",
+     "pdf_page": 185,
+     "printed_page": 171,
+     "y": 517.258,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T02:17:24+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T02:17:24+05:30",
+   "text_as_printed": "Why did India become a poor country during British rule? (Average )",
+   "section_signal": "C",
+   "answer": {
+    "kind": "text",
+    "value": "Because India's wealth was drained to England..."
+   },
+   "answer_as_printed": "Because India's wealth was drained to England...",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T02:17:24+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "answer truncated in source",
+     "why_not_corrected": "the printed answer ends with an ellipsis ('...drained to England...'); recorded verbatim as printed",
+     "suggested": "review — answer incomplete in source"
+    }
+   ],
+   "content_hash": "8dad2785072afa5e6644bda12bbd2bff6d18e563b0a8b9a2241fc8f66fbfd933"
+  },
+  {
+   "id": "soc-7-06-s3-q014",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-06",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the different land revenue systems and lists their advantages and disadvantages."
+    },
+    {
+     "number": 6,
+     "text_as_printed": "Analyzes the impact of British rule on society."
+    },
+    {
+     "number": 1,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Adam Smith described the British rule in India as ___.",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s3-q014",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s3-q014",
+     "pdf_page": 46,
+     "printed_page": 32,
+     "y": 581.288,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s3-q014-key",
+     "pdf_page": 185,
+     "printed_page": 171,
+     "y": 545.958,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T02:17:24+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T02:17:24+05:30",
+   "text_as_printed": "Adam Smith described the British rule in India as ___.(Easy )",
+   "section_signal": "C",
+   "answer": {
+    "kind": "text",
+    "value": "Drainers / Exploiters"
+   },
+   "answer_as_printed": "Drainers / Exploiters",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T02:17:24+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "d2d930c10c3a3b54a6da0a25a4d03708c463febdd79935f6f1350da26cad62bc"
+  },
+  {
+   "id": "soc-7-06-s3-q015",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-06",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the different land revenue systems and lists their advantages and disadvantages."
+    },
+    {
+     "number": 6,
+     "text_as_printed": "Analyzes the impact of British rule on society."
+    },
+    {
+     "number": 1,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Who propounded the theory of \"Drain of Wealth\"?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s3-q015",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s3-q015",
+     "pdf_page": 46,
+     "printed_page": 32,
+     "y": 609.978,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s3-q015-key",
+     "pdf_page": 185,
+     "printed_page": 171,
+     "y": 574.658,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T02:17:24+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T02:17:24+05:30",
+   "text_as_printed": "Who propounded the theory of \"Drain of Wealth\"?(Easy )",
+   "section_signal": "C",
+   "answer": {
+    "kind": "text",
+    "value": "Dadabhai Naoroji"
+   },
+   "answer_as_printed": "Dadabhai Naoroji",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T02:17:24+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "b8ed0ec48f84ce23d396b9dc48927dbfc5b758224b529b2ff8da1b62b22a7e23"
+  },
+  {
+   "id": "soc-7-06-s3-q016",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-06",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the different land revenue systems and lists their advantages and disadvantages."
+    },
+    {
+     "number": 6,
+     "text_as_printed": "Analyzes the impact of British rule on society."
+    },
+    {
+     "number": 1,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Which British Prime Minister introduced Pitt's India Act in 1784?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s3-q016",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s3-q016",
+     "pdf_page": 46,
+     "printed_page": 32,
+     "y": 638.678,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s3-q016-key",
+     "pdf_page": 185,
+     "printed_page": 171,
+     "y": 603.378,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T02:17:24+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T02:17:24+05:30",
+   "text_as_printed": "Which British Prime Minister introduced Pitt's India Act in 1784? (Easy )",
+   "section_signal": "C",
+   "answer": {
+    "kind": "text",
+    "value": "1784 AD"
+   },
+   "answer_as_printed": "1784 AD",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T02:17:24+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text does not address question",
+     "why_not_corrected": "printed answer '1784 AD' is a year; stem asks WHICH British PM introduced Pitt's India Act (expected William Pitt the Younger); printed answer recorded verbatim",
+     "suggested": "review (source answer-key error)"
+    }
+   ],
+   "content_hash": "19a2ed075280b19b159add0f00dcb3778c599855279e831b20b67066d6ca414a"
+  },
+  {
+   "id": "soc-7-06-s3-q017",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-06",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the different land revenue systems and lists their advantages and disadvantages."
+    },
+    {
+     "number": 6,
+     "text_as_printed": "Analyzes the impact of British rule on society."
+    },
+    {
+     "number": 1,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "How much money was allocated for Indian education in the Charter Act of 1813?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s3-q017",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s3-q017",
+     "pdf_page": 46,
+     "printed_page": 32,
+     "y": 667.378,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s3-q017-key",
+     "pdf_page": 185,
+     "printed_page": 171,
+     "y": 632.078,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T02:17:24+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T02:17:24+05:30",
+   "text_as_printed": "How much money was allocated for Indian education in the Charter Act of 1813? (Easy )",
+   "section_signal": "C",
+   "answer": {
+    "kind": "text",
+    "value": "1 lakh rupees"
+   },
+   "answer_as_printed": "1 lakh rupees",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T02:17:24+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "223ee25d6582dc6298cc928a9c035f8c0109e76462666177c67cfe74b78c906b"
+  },
+  {
+   "id": "soc-7-06-s3-q018",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-06",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the different land revenue systems and lists their advantages and disadvantages."
+    },
+    {
+     "number": 6,
+     "text_as_printed": "Analyzes the impact of British rule on society."
+    },
+    {
+     "number": 1,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Who introduced the Zamindari System?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s3-q018",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s3-q018",
+     "pdf_page": 46,
+     "printed_page": 32,
+     "y": 696.078,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s3-q018-key",
+     "pdf_page": 185,
+     "printed_page": 171,
+     "y": 660.778,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T02:17:24+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T02:17:24+05:30",
+   "text_as_printed": "Who introduced the Zamindari System? (Easy )",
+   "section_signal": "C",
+   "answer": {
+    "kind": "text",
+    "value": "Lord Cornwallis introduced the Zamindari System in 1793."
+   },
+   "answer_as_printed": "Lord Cornwallis introduced the Zamindari System in 1793.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T02:17:24+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "241928dc81405722d2f079722c24f4f14a57f49d30514c92d36857f5486d951b"
+  },
+  {
+   "id": "soc-7-06-s3-q019",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-06",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the different land revenue systems and lists their advantages and disadvantages."
+    },
+    {
+     "number": 6,
+     "text_as_printed": "Analyzes the impact of British rule on society."
+    },
+    {
+     "number": 1,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Who introduced the Regulating Act in India, and when?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s3-q019",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s3-q019",
+     "pdf_page": 46,
+     "printed_page": 32,
+     "y": 716.788,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s3-q019-key",
+     "pdf_page": 185,
+     "printed_page": 171,
+     "y": 689.488,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T02:17:24+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T02:17:24+05:30",
+   "text_as_printed": "Who introduced the Regulating Act in India, and when? (Easy )",
+   "section_signal": "C",
+   "answer": {
+    "kind": "text",
+    "value": "The Regulating Act was passed by the British Parliament in 1773 during the reign of King George III. It was introduced to regulate the affairs of the British East India Company in India."
+   },
+   "answer_as_printed": "The Regulating Act was passed by the British Parliament in 1773 during the reign of King George III. It was introduced to regulate the affairs of the British East India Company in India.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T02:17:24+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "ea88bc15298d3b7f9306b39290eb881669cb03d5d5ef0e91e2d6feaa04683dba"
+  },
+  {
+   "id": "soc-7-06-s4-q020",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-06",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the different land revenue systems and lists their advantages and disadvantages."
+    },
+    {
+     "number": 6,
+     "text_as_printed": "Analyzes the impact of British rule on society."
+    },
+    {
+     "number": 1,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Which universities were established in India in 1857?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s4-q020",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s4-q020",
+     "pdf_page": 47,
+     "printed_page": 33,
+     "y": 93.308,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s4-q020-key",
+     "pdf_page": 186,
+     "printed_page": 172,
+     "y": 113.428,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T02:17:24+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T02:17:24+05:30",
+   "text_as_printed": "Which universities were established in India in 1857? (Easy )",
+   "section_signal": "D",
+   "answer": {
+    "kind": "text",
+    "value": "Mumbai, Calcutta, Madras"
+   },
+   "answer_as_printed": "Mumbai, Calcutta, Madras",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T02:17:24+05:30",
+    "basis": "printed one-line answer, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "46bd5b12b3169a77bf5b4ed75fb9c493782836eadf3d10c39f1c657688308bab"
+  },
+  {
+   "id": "soc-7-06-s4-q021",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-06",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the different land revenue systems and lists their advantages and disadvantages."
+    },
+    {
+     "number": 6,
+     "text_as_printed": "Analyzes the impact of British rule on society."
+    },
+    {
+     "number": 1,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is the purpose of introducing land revenue policy?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s4-q021",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s4-q021",
+     "pdf_page": 47,
+     "printed_page": 33,
+     "y": 122.028,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s4-q021-key",
+     "pdf_page": 186,
+     "printed_page": 172,
+     "y": 142.128,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T02:17:24+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T02:17:24+05:30",
+   "text_as_printed": "What is the purpose of introducing land revenue policy? (Average )",
+   "section_signal": "D",
+   "answer": {
+    "kind": "text",
+    "value": "Objectives of the land revenue policy introduced by the British in India:\nTo meet the expenses of wars in India\nTo pay the salaries of British officials\nTo meet financial requirements"
+   },
+   "answer_as_printed": "Objectives of the land revenue policy introduced by the British in India:\nTo meet the expenses of wars in India\nTo pay the salaries of British officials\nTo meet financial requirements",
+   "solution_steps": [
+    "To meet the expenses of wars in India",
+    "To pay the salaries of British officials",
+    "To meet financial requirements"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T02:17:24+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "98cf56dfbdcf184ddae2d09bcf9f86056675d8e69756decec354e424477522a3"
+  },
+  {
+   "id": "soc-7-06-s4-q022",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-06",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the different land revenue systems and lists their advantages and disadvantages."
+    },
+    {
+     "number": 6,
+     "text_as_printed": "Analyzes the impact of British rule on society."
+    },
+    {
+     "number": 1,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What are the three revenue systems introduced by the British?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s4-q022",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s4-q022",
+     "pdf_page": 47,
+     "printed_page": 33,
+     "y": 150.728,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s4-q022-key",
+     "pdf_page": 186,
+     "printed_page": 172,
+     "y": 256.928,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T02:17:24+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T02:17:24+05:30",
+   "text_as_printed": "What are the three revenue systems introduced by the British? (Easy )",
+   "section_signal": "D",
+   "answer": {
+    "kind": "text",
+    "value": "Three revenue systems introduced by the British:\nPermanent Zamindari System\nRyotwari System\nMahalwari System"
+   },
+   "answer_as_printed": "Three revenue systems introduced by the British:\nPermanent Zamindari System\nRyotwari System\nMahalwari System",
+   "solution_steps": [
+    "Permanent Zamindari System",
+    "Ryotwari System",
+    "Mahalwari System"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T02:17:24+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "2ec52e6dbbe1db2abb68bc6cad116c0e3ae424ffffdb22c23eacddb40497ac48"
+  },
+  {
+   "id": "soc-7-06-s4-q023",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-06",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the different land revenue systems and lists their advantages and disadvantages."
+    },
+    {
+     "number": 6,
+     "text_as_printed": "Analyzes the impact of British rule on society."
+    },
+    {
+     "number": 1,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What are the consequences of land revenue systems?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s4-q023",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s4-q023",
+     "pdf_page": 47,
+     "printed_page": 33,
+     "y": 179.428,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s4-q023-key",
+     "pdf_page": 186,
+     "printed_page": 172,
+     "y": 371.758,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T02:17:24+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T02:17:24+05:30",
+   "text_as_printed": "What are the consequences of land revenue systems? (Difficult )",
+   "section_signal": "D",
+   "answer": {
+    "kind": "text",
+    "value": "Consequences of the land revenue system:\nThe British converted land into a commodity.\nCases of land auction and sale increased.\nThe importance of money increased as land revenue had to be paid in cash."
+   },
+   "answer_as_printed": "Consequences of the land revenue system:\nThe British converted land into a commodity.\nCases of land auction and sale increased.\nThe importance of money increased as land revenue had to be paid in cash.",
+   "solution_steps": [
+    "The British converted land into a commodity.",
+    "Cases of land auction and sale increased.",
+    "The importance of money increased as land revenue had to be paid in cash."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T02:17:24+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "348afcd9b4275e53bd314dec034e7b90211e59e88f1b5866727dc8ccfe05845b"
+  },
+  {
+   "id": "soc-7-06-s4-q024",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-06",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the different land revenue systems and lists their advantages and disadvantages."
+    },
+    {
+     "number": 6,
+     "text_as_printed": "Analyzes the impact of British rule on society."
+    },
+    {
+     "number": 1,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What was the impact of the Industrial Revolution in England on the Indian economy?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s4-q024",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s4-q024",
+     "pdf_page": 47,
+     "printed_page": 33,
+     "y": 208.128,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s4-q024-key",
+     "pdf_page": 186,
+     "printed_page": 172,
+     "y": 486.558,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T02:17:24+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T02:17:24+05:30",
+   "text_as_printed": "What was the impact of the Industrial Revolution in England on the Indian economy? (Average )",
+   "section_signal": "D",
+   "answer": {
+    "kind": "text",
+    "value": "Impact of the Industrial Revolution in England on the Indian economy:\nThe British company acquired a monopoly over trade and commerce.\nIndia's wealth flowed to England."
+   },
+   "answer_as_printed": "Impact of the Industrial Revolution in England on the Indian economy:\nThe British company acquired a monopoly over trade and commerce.\nIndia's wealth flowed to England.",
+   "solution_steps": [
+    "The British company acquired a monopoly over trade and commerce.",
+    "India's wealth flowed to England."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T02:17:24+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "6cc6ce980b91e5d7455ae4767b5f78119cadd4a09bfb12c1f5680e34c92e04d6"
+  },
+  {
+   "id": "soc-7-06-s4-q025",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-06",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the different land revenue systems and lists their advantages and disadvantages."
+    },
+    {
+     "number": 6,
+     "text_as_printed": "Analyzes the impact of British rule on society."
+    },
+    {
+     "number": 1,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Mention the major legislative reforms in India.",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s4-q025",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s4-q025",
+     "pdf_page": 47,
+     "printed_page": 33,
+     "y": 236.828,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s4-q025-key",
+     "pdf_page": 186,
+     "printed_page": 172,
+     "y": 572.658,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T02:17:24+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T02:17:24+05:30",
+   "text_as_printed": "Mention the major legislative reforms in India. (Easy )",
+   "section_signal": "D",
+   "answer": {
+    "kind": "text",
+    "value": "Major legislative reforms in India:\nRegulating Act (1773 AD)\nPitt's India Act (1784 AD)\nMorley-Minto Reforms\nMontagu-Chelmsford Reforms (1919 AD)\nGovernment of India Act 1935"
+   },
+   "answer_as_printed": "Major legislative reforms in India:\nRegulating Act (1773 AD)\nPitt's India Act (1784 AD)\nMorley-Minto Reforms\nMontagu-Chelmsford Reforms (1919 AD)\nGovernment of India Act 1935",
+   "solution_steps": [
+    "Regulating Act (1773 AD)",
+    "Pitt's India Act (1784 AD)",
+    "Morley-Minto Reforms",
+    "Montagu-Chelmsford Reforms (1919 AD)",
+    "Government of India Act 1935"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T02:17:24+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "ccdfe7ccae9c85d8cc512d2db43a5b56f1b02822cfb47feb887f473abce6de62"
+  },
+  {
+   "id": "soc-7-06-s4-q026",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-06",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the different land revenue systems and lists their advantages and disadvantages."
+    },
+    {
+     "number": 6,
+     "text_as_printed": "Analyzes the impact of British rule on society."
+    },
+    {
+     "number": 1,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "How did Dadabhai Naoroji explain that Britain was using Indian tax revenues and raw materials to enrich England at India's expense??",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s4-q026",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s4-q026",
+     "pdf_page": 47,
+     "printed_page": 33,
+     "y": 265.528,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s4-q026-key",
+     "pdf_page": 187,
+     "printed_page": 173,
+     "y": 64.608,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T02:17:24+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T02:17:24+05:30",
+   "text_as_printed": "How did Dadabhai Naoroji explain that Britain was using Indian tax revenues and raw materials to enrich England at India's expense?? (Difficult )",
+   "section_signal": "D",
+   "answer": {
+    "kind": "text",
+    "value": "Consequences of the Drain of Wealth in India:\nIndia became a poor nation.\nCapital scarcity arose in British India.\nIndia's industrial development was hindered."
+   },
+   "answer_as_printed": "Consequences of the Drain of Wealth in India:\nIndia became a poor nation.\nCapital scarcity arose in British India.\nIndia's industrial development was hindered.",
+   "solution_steps": [
+    "India became a poor nation.",
+    "Capital scarcity arose in British India.",
+    "India's industrial development was hindered."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T02:17:24+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "83cdec10c53a55349cbe635cf64a210eaebd1687aa2c8105e639004839837140"
+  },
+  {
+   "id": "soc-7-06-s4-q027",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-06",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the different land revenue systems and lists their advantages and disadvantages."
+    },
+    {
+     "number": 6,
+     "text_as_printed": "Analyzes the impact of British rule on society."
+    },
+    {
+     "number": 1,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What changes were brought about by the Government of India Act of 1935?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s4-q027",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s4-q027",
+     "pdf_page": 47,
+     "printed_page": 33,
+     "y": 314.928,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s4-q027-key",
+     "pdf_page": 187,
+     "printed_page": 173,
+     "y": 179.428,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T02:17:24+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T02:17:24+05:30",
+   "text_as_printed": "What changes were brought about by the Government of India Act of 1935? (Average )",
+   "section_signal": "D",
+   "answer": {
+    "kind": "text",
+    "value": "Changes brought about by the Government of India Act of 1935:\nA federal structure was established in India.\nDyarchy (Dual Government) system was introduced."
+   },
+   "answer_as_printed": "Changes brought about by the Government of India Act of 1935:\nA federal structure was established in India.\nDyarchy (Dual Government) system was introduced.",
+   "solution_steps": [
+    "A federal structure was established in India.",
+    "Dyarchy (Dual Government) system was introduced."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T02:17:24+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "9f55e364e27fb31c38a4f7f7930997313705e17e63f2df9753972711a584a84d"
+  },
+  {
+   "id": "soc-7-06-s5-q028",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-06",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the different land revenue systems and lists their advantages and disadvantages."
+    },
+    {
+     "number": 6,
+     "text_as_printed": "Analyzes the impact of British rule on society."
+    },
+    {
+     "number": 1,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What were the impacts of the Permanent Zamindari System on farmers?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s5-q028",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s5-q028",
+     "pdf_page": 47,
+     "printed_page": 33,
+     "y": 372.358,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s5-q028-key",
+     "pdf_page": 187,
+     "printed_page": 173,
+     "y": 294.228,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T02:17:24+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T02:17:24+05:30",
+   "text_as_printed": "What were the impacts of the Permanent Zamindari System on farmers? (Difficult )",
+   "section_signal": "E",
+   "answer": {
+    "kind": "text",
+    "value": "Impact of the Permanent Zamindari System on Farmers:\nZamindars exploited farmers.\nLandlords showed no interest in increasing agricultural production.\nFarmers had to pay rent even if crops failed.\nAgriculture declined.\nFarmers were forced to grow commercial crops, making them poorer.\nBonded labor system grew extensively."
+   },
+   "answer_as_printed": "Impact of the Permanent Zamindari System on Farmers:\nZamindars exploited farmers.\nLandlords showed no interest in increasing agricultural production.\nFarmers had to pay rent even if crops failed.\nAgriculture declined.\nFarmers were forced to grow commercial crops, making them poorer.\nBonded labor system grew extensively.",
+   "solution_steps": [
+    "Zamindars exploited farmers.",
+    "Landlords showed no interest in increasing agricultural production.",
+    "Farmers had to pay rent even if crops failed.",
+    "Agriculture declined.",
+    "Farmers were forced to grow commercial crops, making them poorer.",
+    "Bonded labor system grew extensively."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T02:17:24+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section E header prints '(3 marks)'"
+    }
+   ],
+   "content_hash": "c246a10bca3b6867c9548f9f4fce146be36736736ad7970438b3a74b7db3cb0a"
+  },
+  {
+   "id": "soc-7-06-s5-q029",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-06",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the different land revenue systems and lists their advantages and disadvantages."
+    },
+    {
+     "number": 6,
+     "text_as_printed": "Analyzes the impact of British rule on society."
+    },
+    {
+     "number": 1,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "How did Lord Macaulay's decision in 1835 to introduce English education in India create a class of English-educated Indians?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s5-q029",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s5-q029",
+     "pdf_page": 47,
+     "printed_page": 33,
+     "y": 401.058,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s5-q029-key",
+     "pdf_page": 187,
+     "printed_page": 173,
+     "y": 495.158,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T02:17:24+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T02:17:24+05:30",
+   "text_as_printed": "How did Lord Macaulay's decision in 1835 to introduce English education in India create a class of English-educated Indians? (Average )",
+   "section_signal": "E",
+   "answer": {
+    "kind": "text",
+    "value": "Impact of Western Education on India:\nThe traditional education system declined.\nPeople speaking different languages could communicate with each other in English.\nIt helped foster nationalism among Indians.\nIt influenced Indian literature.\nIt helped understand India's social and political conditions scientifically.\nEuropean ideas entered Indian society."
+   },
+   "answer_as_printed": "Impact of Western Education on India:\nThe traditional education system declined.\nPeople speaking different languages could communicate with each other in English.\nIt helped foster nationalism among Indians.\nIt influenced Indian literature.\nIt helped understand India's social and political conditions scientifically.\nEuropean ideas entered Indian society.",
+   "solution_steps": [
+    "The traditional education system declined.",
+    "People speaking different languages could communicate with each other in English.",
+    "It helped foster nationalism among Indians.",
+    "It influenced Indian literature.",
+    "It helped understand India's social and political conditions scientifically.",
+    "European ideas entered Indian society."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T02:17:24+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section E header prints '(3 marks)'"
+    }
+   ],
+   "content_hash": "3f0da03a274b95eb99ff4942ec27039d1e6434590541da4418b489e4e79781b8"
+  },
+  {
+   "id": "soc-7-06-s5-q030",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-06",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the different land revenue systems and lists their advantages and disadvantages."
+    },
+    {
+     "number": 6,
+     "text_as_printed": "Analyzes the impact of British rule on society."
+    },
+    {
+     "number": 1,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What were the terms of the Ryotwari System?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s5-q030",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s5-q030",
+     "pdf_page": 47,
+     "printed_page": 33,
+     "y": 450.458,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s5-q030-key",
+     "pdf_page": 188,
+     "printed_page": 174,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T02:17:24+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T02:17:24+05:30",
+   "text_as_printed": "What were the terms of the Ryotwari System? (Average )",
+   "section_signal": "E",
+   "answer": {
+    "kind": "text",
+    "value": "Conditions of the Ryotwari System:\nThe ryot (farmer) had to pay revenue directly to the government.\nLand revenue was fixed based on the fertility of the land after measurement.\nRevenue had to be paid even if crops failed due to famine or floods.\nRevenue was fixed based on irrigation facilities."
+   },
+   "answer_as_printed": "Conditions of the Ryotwari System:\nThe ryot (farmer) had to pay revenue directly to the government.\nLand revenue was fixed based on the fertility of the land after measurement.\nRevenue had to be paid even if crops failed due to famine or floods.\nRevenue was fixed based on irrigation facilities.",
+   "solution_steps": [
+    "The ryot (farmer) had to pay revenue directly to the government.",
+    "Land revenue was fixed based on the fertility of the land after measurement.",
+    "Revenue had to be paid even if crops failed due to famine or floods.",
+    "Revenue was fixed based on irrigation facilities."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T02:17:24+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section E header prints '(3 marks)'"
+    }
+   ],
+   "content_hash": "71e2d80b922f45d2e1bf188a6b8c313c23017243b7dfbf4f5ce1266f53680e91"
+  },
+  {
+   "id": "soc-7-06-s5-q031",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-06",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the different land revenue systems and lists their advantages and disadvantages."
+    },
+    {
+     "number": 6,
+     "text_as_printed": "Analyzes the impact of British rule on society."
+    },
+    {
+     "number": 1,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is the Mahalwari System? Which regions did it cover?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s5-q031",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s5-q031",
+     "pdf_page": 47,
+     "printed_page": 33,
+     "y": 479.158,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s5-q031-key",
+     "pdf_page": 188,
+     "printed_page": 174,
+     "y": 118.628,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T02:17:24+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T02:17:24+05:30",
+   "text_as_printed": "What is the Mahalwari System? Which regions did it cover? (Easy )",
+   "section_signal": "E",
+   "answer": {
+    "kind": "text",
+    "value": "Mahalwari System:\nMahal means a village or estate, and revenue was fixed for each mahal.\nThis system was introduced in certain regions, including Uttar Pradesh, Madhya Pradesh, and Punjab."
+   },
+   "answer_as_printed": "Mahalwari System:\nMahal means a village or estate, and revenue was fixed for each mahal.\nThis system was introduced in certain regions, including Uttar Pradesh, Madhya Pradesh, and Punjab.",
+   "solution_steps": [
+    "Mahal means a village or estate, and revenue was fixed for each mahal.",
+    "This system was introduced in certain regions, including Uttar Pradesh, Madhya Pradesh, and Punjab."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T02:17:24+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section E header prints '(3 marks)'"
+    }
+   ],
+   "content_hash": "d80cc68036efce49f79fcfe53e2ab565c0bdeb6f86698870332d7f9c1bc6d6d4"
+  },
+  {
+   "id": "soc-7-06-s5-q032",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-06",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the different land revenue systems and lists their advantages and disadvantages."
+    },
+    {
+     "number": 6,
+     "text_as_printed": "Analyzes the impact of British rule on society."
+    },
+    {
+     "number": 1,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Write a note on the Montagu-Chelmsford Reforms.",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s5-q032",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s5-q032",
+     "pdf_page": 47,
+     "printed_page": 33,
+     "y": 507.858,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s5-q032-key",
+     "pdf_page": 188,
+     "printed_page": 174,
+     "y": 225.428,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T02:17:24+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T02:17:24+05:30",
+   "text_as_printed": "Write a note on the Montagu-Chelmsford Reforms. (Average )",
+   "section_signal": "E",
+   "answer": {
+    "kind": "text",
+    "value": "Montagu-Chelmsford Reforms:\nThe Morley-Minto Reforms did not satisfy Indians.\nMontagu, the Secretary of State, made a declaration.\nThe reforms aimed to: Give Indians a greater role in administration; foster self-governing institutions; increase the number of Indian members in the Council of the Secretary of State for India; appoint a High Commissioner for India in London."
+   },
+   "answer_as_printed": "Montagu-Chelmsford Reforms:\nThe Morley-Minto Reforms did not satisfy Indians.\nMontagu, the Secretary of State, made a declaration.\nThe reforms aimed to: Give Indians a greater role in administration; foster self-governing institutions; increase the number of Indian members in the Council of the Secretary of State for India; appoint a High Commissioner for India in London.",
+   "solution_steps": [
+    "The Morley-Minto Reforms did not satisfy Indians.",
+    "Montagu, the Secretary of State, made a declaration.",
+    "The reforms aimed to: Give Indians a greater role in administration; foster self-governing institutions; increase the number of Indian members in the Council of the Secretary of State for India; appoint a High Commissioner for India in London."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T02:17:24+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section E header prints '(3 marks)'"
+    }
+   ],
+   "content_hash": "4a0d549fd0c48d201e9edd4bb2cd5b3abe975ad0e4a5ce954e73e1930ad8c89b"
+  },
+  {
+   "id": "soc-7-06-s6-q033",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-06",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the different land revenue systems and lists their advantages and disadvantages."
+    },
+    {
+     "number": 6,
+     "text_as_printed": "Analyzes the impact of British rule on society."
+    },
+    {
+     "number": 1,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Write a note on the Permanent Zamindari System.",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s6-q033",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s6-q033",
+     "pdf_page": 47,
+     "printed_page": 33,
+     "y": 565.258,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s6-q033-key",
+     "pdf_page": 188,
+     "printed_page": 174,
+     "y": 483.758,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T02:17:24+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T02:17:24+05:30",
+   "text_as_printed": "Write a note on the Permanent Zamindari System. (Difficult )",
+   "section_signal": "F",
+   "answer": {
+    "kind": "text",
+    "value": "Permanent Zamindari System (1793 AD):\nIntroduced by Governor-General Cornwallis.\nImplemented in Bengal, Bihar, and Orissa, where zamindars were contracted to collect revenue.\nZamindars became agents of the British government.\nThe company's share of revenue was fixed permanently.\nThe cost of revenue collection decreased.\nZamindars supported the British government.\nThe British created new classes to support and justify their rule."
+   },
+   "answer_as_printed": "Permanent Zamindari System (1793 AD):\nIntroduced by Governor-General Cornwallis.\nImplemented in Bengal, Bihar, and Orissa, where zamindars were contracted to collect revenue.\nZamindars became agents of the British government.\nThe company's share of revenue was fixed permanently.\nThe cost of revenue collection decreased.\nZamindars supported the British government.\nThe British created new classes to support and justify their rule.",
+   "solution_steps": [
+    "Introduced by Governor-General Cornwallis.",
+    "Implemented in Bengal, Bihar, and Orissa, where zamindars were contracted to collect revenue.",
+    "Zamindars became agents of the British government.",
+    "The company's share of revenue was fixed permanently.",
+    "The cost of revenue collection decreased.",
+    "Zamindars supported the British government.",
+    "The British created new classes to support and justify their rule."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T02:17:24+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "32361ca61f34c79e3603997fc38ca95c80c5888a063fb3e491b646b5ed4ad8d0"
+  },
+  {
+   "id": "soc-7-06-s6-q034",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-06",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the different land revenue systems and lists their advantages and disadvantages."
+    },
+    {
+     "number": 6,
+     "text_as_printed": "Analyzes the impact of British rule on society."
+    },
+    {
+     "number": 1,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Write about the Morley-Minto Reforms.",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s6-q034",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s6-q034",
+     "pdf_page": 47,
+     "printed_page": 33,
+     "y": 593.978,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s6-q034-key",
+     "pdf_page": 189,
+     "printed_page": 175,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T02:17:24+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T02:17:24+05:30",
+   "text_as_printed": "Write about the Morley-Minto Reforms. (Difficult )",
+   "section_signal": "F",
+   "answer": {
+    "kind": "text",
+    "value": "Morley-Minto Reforms:\nIntroduced by Lord Minto in India.\nEnacted in response to the Swadeshi Movement and revolutionary activities.\nKey features: Increased the number of members in the Imperial Legislative Council; expanded provincial legislative councils; however, the reforms did not bring about radical changes."
+   },
+   "answer_as_printed": "Morley-Minto Reforms:\nIntroduced by Lord Minto in India.\nEnacted in response to the Swadeshi Movement and revolutionary activities.\nKey features: Increased the number of members in the Imperial Legislative Council; expanded provincial legislative councils; however, the reforms did not bring about radical changes.",
+   "solution_steps": [
+    "Introduced by Lord Minto in India.",
+    "Enacted in response to the Swadeshi Movement and revolutionary activities.",
+    "Key features: Increased the number of members in the Imperial Legislative Council; expanded provincial legislative councils; however, the reforms did not bring about radical changes."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T02:17:24+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "0ffc8e18bfcaabced8816ee6b745e4409ddd583c8279a442b63a8adbdae64bc2"
+  },
+  {
+   "id": "soc-7-06-s7-q035",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-06",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the different land revenue systems and lists their advantages and disadvantages."
+    },
+    {
+     "number": 6,
+     "text_as_printed": "Analyzes the impact of British rule on society."
+    },
+    {
+     "number": 1,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Draw a map of India and mark the following places A) Calcutta B) Mumbai / Bombay C) Madras D) Uttar Pradesh E) Punjab",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s7-q035",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s7-q035",
+     "pdf_page": 47,
+     "printed_page": 33,
+     "y": 622.678,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-06-s7-q035-key",
+     "pdf_page": 189,
+     "printed_page": 175,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T02:17:24+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T02:17:24+05:30",
+   "text_as_printed": "Draw a map of India and mark the following places (Difficult )  A) Calcutta B) Mumbai / Bombay C) Madras D) Uttar Pradesh E) Punjab",
+   "section_signal": "G",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "answer is a diagram",
+     "why_not_corrected": "q35 is a draw-the-map question; the printed answer is a sample outline map of India (pdf189) with the 5 places marked in Kannada; stored as an answer_diagram asset; English place names in answer_map_label (no Kannada in JSON, class-9 ruling)",
+     "suggested": "-"
+    }
+   ],
+   "content_hash": "b87e8eb8a7c39e116ea3c1519c1b4db76df7000a247ffa642d6e43fa3050677c",
+   "assets": [
+    {
+     "id": "a_ansmap",
+     "type": "image",
+     "ref": "images/soc-7-06/soc-7-06-q35-answermap.png",
+     "role": "answer_diagram",
+     "pdf_page": 189,
+     "source_px": {
+      "w": 501,
+      "h": 579
+     },
+     "quality": "ok",
+     "sha256": "e7167fa4e7b8b2a08b15b8a432e4204bc3320446491084982f1490909fc818e6"
+    }
+   ],
+   "answer_map_label": "Calcutta, Mumbai (Bombay), Madras, Uttar Pradesh, Punjab"
+  }
+ ],
+ "pending_summary": {}
+}
