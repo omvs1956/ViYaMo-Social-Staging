@@ -1,0 +1,1836 @@
+{
+ "contract_version": "1.7",
+ "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
+ "procedure_file": "extraction_procedure_social_addendum_v1.3_social science Classes 6-10 on top of procedure v2.md",
+ "machine_name": "soc-8-02_questions",
+ "version": 1,
+ "changelog": "v1 extraction — batch-01 — class-8-social",
+ "amendments_applied": [],
+ "unit_state": "EXTRACTED",
+ "review_ready": false,
+ "count_gate": {
+  "reference": 21,
+  "reference_source": "audited",
+  "extracted": 21,
+  "paired": 21,
+  "flagged": 3,
+  "gaps": [],
+  "duplicated_numbers": [],
+  "quota_table": "difficulty_only",
+  "second_method": {
+   "method": "printed difficulty distribution table",
+   "extracted": 21,
+   "agrees": true
+  },
+  "pass": true,
+  "note": "printed difficulty table 14/5/2=21 AGREES with per-question tags; flagged counts answer-level flags; all carry the structural marks flag (addendum §4.5)."
+ },
+ "extraction": {
+  "source_file": "8thSS-EM-LBARevised_1787048180.pdf",
+  "source_ref_prefix": "8thSS-EM-LBARevised_1787048180.pdf",
+  "pdf_pages": [
+   14,
+   15,
+   79,
+   80
+  ],
+  "printed_page_offset": -11,
+  "method_notes": [
+   "Offset -11 (pdf 14 = folio 3; pdf 79 = folio 68). Q side: q1-7 pdf14 (folio3, Section I), q8-21 pdf15 (folio4). A side: keys 1-17 pdf79 (folio68), keys 18-21 pdf80 (folio69). KEY monotonic 1-21, no shift/insert/map.",
+   "Sections (q side): I MCQ q1-8 ('I. . Multiple Choice' double-period typo kept as print, not content); II one word/sentence q9-13 (vsa); III two/three sentences q14-18 (sa); IV five/six sentences q19-21 (la). Answer side same order; pairing by number trivial.",
+   "DIFFICULTY tags E14/A5/D2 = printed table 14/5/2 (AGREES). quota_table difficulty_only, second_method total agrees.",
+   "MCQ benign flags (letter kept, answer asserted, addendum §4.1): q1 key '7,100 kilometers' vs option '7100 kilometers' (comma); q5 'Southern Region' vs option 'Southern part' (synonym); q8 'Microliths' vs option 'Microlithic tools' (same referent). q2/q3/q4(case)/q6/q7 clean.",
+   "VSA q9-13 answer.value = sentence, no steps (ruling 3d). Descriptive: q14-18 single-paragraph keys -> BUL one step per paragraph (q16/q17 are 2-sentence single paragraphs = 1 step each); q19 SUB (heading 'Stages of Stone Age are:' non-step + 6 printed lines as steps); q20 BUL first point un-bulleted on key line (stray leading '.' stripped) + 3 bullets = 4 steps; q21 BUL 7 bullets.",
+   "ORPHAN KEY (v2 §4.5): an unnumbered line 'The period when humans made and used stone weapons is called the Stone Age.' prints after key 18, before the 'IV.' heading. It answers no section-III question (q14-18 are subcontinent/borders/prehistory/industrial-sites/invasion-passes) and sits outside the numbered sequence -> extraction.orphan_keys, displaces nothing, attached to no question. Coordinator review.",
+   "MARKS none printed -> all null/unassigned + structural flag (§4.5). Register section-marks-not-printed.",
+   "extraction.orphan_keys: one unnumbered line after key 18 (Stone Age definition), outside the sequence, displaces nothing (v2 §4.5); attached to no question."
+  ],
+  "notation_summary": {
+   "render_tokens": 0,
+   "latex_tokens": 0,
+   "damage_flags": []
+  },
+  "excluded_objects": [],
+  "inline_excluded_count": 0,
+  "figure_references": [],
+  "orphan_keys": [
+   "The period when humans made and used stone weapons is called the Stone Age."
+  ]
+ },
+ "stimuli": [],
+ "questions": [
+  {
+   "id": "soc-8-02-s1-q001",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-02",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 3,
+     "text_as_printed": "Explains the influence of India's diverse geographical features on human lifestyle in prehistoric times."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The length of coastline of India is",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s1-q001",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s1-q001",
+     "pdf_page": 14,
+     "printed_page": 3,
+     "y": 350.903184,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s1-q001-key",
+     "pdf_page": 79,
+     "printed_page": 68,
+     "y": 137.783193,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:11:12+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:11:12+05:30",
+   "text_as_printed": "The length of coastline of India is (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "7100 kilometers"
+    },
+    {
+     "id": "B",
+     "text": "6800 kilometers"
+    },
+    {
+     "id": "C",
+     "text": "6100 kilometers"
+    },
+    {
+     "id": "D",
+     "text": "8500 kilometers"
+    }
+   ],
+   "answer_as_printed": "A) 7,100 kilometers",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:11:12+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text differs from option by a printed typo",
+     "why_not_corrected": "letter A kept (addendum §4.1); key text '7,100 kilometers' vs option A '7100 kilometers' differ by a source typo; spelling needs subject knowledge (v2 §1)",
+     "suggested": "A (letter kept)"
+    }
+   ],
+   "content_hash": "7ff6f9d2b0eab4f6375345a1ef5f178cc9fa06153c5928ec80eb3bb0d7ee946e"
+  },
+  {
+   "id": "soc-8-02-s1-q002",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-02",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 3,
+     "text_as_printed": "Explains the influence of India's diverse geographical features on human lifestyle in prehistoric times."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The river that divides India into two equal parts is",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s1-q002",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s1-q002",
+     "pdf_page": 14,
+     "printed_page": 3,
+     "y": 403.103188,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s1-q002-key",
+     "pdf_page": 79,
+     "printed_page": 68,
+     "y": 155.18319,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:11:12+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:11:12+05:30",
+   "text_as_printed": "The river that divides India into two equal parts is (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Yamuna River"
+    },
+    {
+     "id": "B",
+     "text": "Ganga River"
+    },
+    {
+     "id": "C",
+     "text": "Indus River"
+    },
+    {
+     "id": "D",
+     "text": "Narmada River"
+    }
+   ],
+   "answer_as_printed": "D) Narmada River",
+   "answer": {
+    "kind": "option",
+    "option_id": "D"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:11:12+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "c80f9268882812690e2f74d4bd57fd615680ae1f1c86715dfde8de3818c7aa73"
+  },
+  {
+   "id": "soc-8-02-s1-q003",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-02",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 3,
+     "text_as_printed": "Explains the influence of India's diverse geographical features on human lifestyle in prehistoric times."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The neighboring country to the south of India is",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s1-q003",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s1-q003",
+     "pdf_page": 14,
+     "printed_page": 3,
+     "y": 138.743191,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s1-q003-key",
+     "pdf_page": 79,
+     "printed_page": 68,
+     "y": 172.70319,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:11:12+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:11:12+05:30",
+   "text_as_printed": "The neighboring country to the south of India is (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Sri Lanka"
+    },
+    {
+     "id": "B",
+     "text": "Pakistan"
+    },
+    {
+     "id": "C",
+     "text": "Bangladesh"
+    },
+    {
+     "id": "D",
+     "text": "Bhutan"
+    }
+   ],
+   "answer_as_printed": "A) Sri Lanka",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:11:12+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "f13656e78eef241e8f0cbd5503f050c47cd8bd7f741ca721072cc7fbc368aaf6"
+  },
+  {
+   "id": "soc-8-02-s1-q004",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-02",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 3,
+     "text_as_printed": "Explains the influence of India's diverse geographical features on human lifestyle in prehistoric times."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Indian foreign trade in ancient times was carried through",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s1-q004",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s1-q004",
+     "pdf_page": 14,
+     "printed_page": 3,
+     "y": 507.503197,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s1-q004-key",
+     "pdf_page": 79,
+     "printed_page": 68,
+     "y": 190.103188,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:11:12+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:11:12+05:30",
+   "text_as_printed": "Indian foreign trade in ancient times was carried through (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Land route"
+    },
+    {
+     "id": "B",
+     "text": "Sea route"
+    },
+    {
+     "id": "C",
+     "text": "Air route"
+    },
+    {
+     "id": "D",
+     "text": "Rail route"
+    }
+   ],
+   "answer_as_printed": "B) Sea Route",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:11:12+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "d4087f143aaa51869e8c84bc8e422cb52c33645c1830ac131ddd2f1907936282"
+  },
+  {
+   "id": "soc-8-02-s1-q005",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-02",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 3,
+     "text_as_printed": "Explains the influence of India's diverse geographical features on human lifestyle in prehistoric times."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "India is located in this part of the Asian continent",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s1-q005",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s1-q005",
+     "pdf_page": 14,
+     "printed_page": 3,
+     "y": 559.703179,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s1-q005-key",
+     "pdf_page": 79,
+     "printed_page": 68,
+     "y": 207.383195,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:11:12+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:11:12+05:30",
+   "text_as_printed": "India is located in this part of the Asian continent (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Southern part"
+    },
+    {
+     "id": "B",
+     "text": "Northern part"
+    },
+    {
+     "id": "C",
+     "text": "Eastern part"
+    },
+    {
+     "id": "D",
+     "text": "Western part"
+    }
+   ],
+   "answer_as_printed": "A) Southern Region",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:11:12+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text differs from option by a printed typo",
+     "why_not_corrected": "letter A kept (addendum §4.1); key text 'Southern Region' vs option A 'Southern part' differ by a source typo; spelling needs subject knowledge (v2 §1)",
+     "suggested": "A (letter kept)"
+    }
+   ],
+   "content_hash": "c1d2d17e46dce40985f7d3b5743ad43fcf58b9769e91e2d354559aaa33909494"
+  },
+  {
+   "id": "soc-8-02-s1-q006",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-02",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 3,
+     "text_as_printed": "Explains the influence of India's diverse geographical features on human lifestyle in prehistoric times."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Traces of ash of the prehistoric period were found at",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s1-q006",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s1-q006",
+     "pdf_page": 14,
+     "printed_page": 3,
+     "y": 611.903207,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s1-q006-key",
+     "pdf_page": 79,
+     "printed_page": 68,
+     "y": 224.903184,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:11:12+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:11:12+05:30",
+   "text_as_printed": "Traces of ash of the prehistoric period were found at (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Hunasagi"
+    },
+    {
+     "id": "B",
+     "text": "Kurnool"
+    },
+    {
+     "id": "C",
+     "text": "Harappa"
+    },
+    {
+     "id": "D",
+     "text": "Lothal"
+    }
+   ],
+   "answer_as_printed": "B) Kurnool",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:11:12+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "d06e127e95253414391724617f4741a968dd53b326bd09b97ea27a48b412c0d0"
+  },
+  {
+   "id": "soc-8-02-s1-q007",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-02",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 3,
+     "text_as_printed": "Explains the influence of India's diverse geographical features on human lifestyle in prehistoric times."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Geographically, India is a subcontinent and a ______ island",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s1-q007",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s1-q007",
+     "pdf_page": 14,
+     "printed_page": 3,
+     "y": 664.223214,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s1-q007-key",
+     "pdf_page": 79,
+     "printed_page": 68,
+     "y": 242.303193,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:11:12+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:11:12+05:30",
+   "text_as_printed": "Geographically, India is a subcontinent and a ______ island (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Mountain"
+    },
+    {
+     "id": "B",
+     "text": "Alternative continent"
+    },
+    {
+     "id": "C",
+     "text": "Peninsula"
+    },
+    {
+     "id": "D",
+     "text": "Desert"
+    }
+   ],
+   "answer_as_printed": "C) Peninsula",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:11:12+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "dda4c4c53d229f0f07613468189787b395abaa6c27a908ed4bb37a969c1bd359"
+  },
+  {
+   "id": "soc-8-02-s1-q008",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-02",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 3,
+     "text_as_printed": "Explains the influence of India's diverse geographical features on human lifestyle in prehistoric times."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The tools of the Middle Stone Age are called",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s1-q008",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s1-q008",
+     "pdf_page": 15,
+     "printed_page": 4,
+     "y": 68.18319,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s1-q008-key",
+     "pdf_page": 79,
+     "printed_page": 68,
+     "y": 259.703202,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:11:12+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:11:12+05:30",
+   "text_as_printed": "The tools of the Middle Stone Age are called (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Megalithic tools"
+    },
+    {
+     "id": "B",
+     "text": "Microlithic tools"
+    },
+    {
+     "id": "C",
+     "text": "Iron tools"
+    },
+    {
+     "id": "D",
+     "text": "Copper tools"
+    }
+   ],
+   "answer_as_printed": "B) Microliths",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:11:12+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text differs from option by a printed typo",
+     "why_not_corrected": "letter B kept (addendum §4.1); key text 'Microliths' vs option B 'Microlithic tools' differ by a source typo; spelling needs subject knowledge (v2 §1)",
+     "suggested": "B (letter kept)"
+    }
+   ],
+   "content_hash": "3202c7b146bbb2bf96ab3b0b47501a7ab848c1d12f092256fd53f33d52fd10b9"
+  },
+  {
+   "id": "soc-8-02-s2-q009",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-02",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 3,
+     "text_as_printed": "Explains the influence of India's diverse geographical features on human lifestyle in prehistoric times."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is prehistoric period?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s2-q009",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s2-q009",
+     "pdf_page": 15,
+     "printed_page": 4,
+     "y": 137.783193,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s2-q009-key",
+     "pdf_page": 79,
+     "printed_page": 68,
+     "y": 307.583199,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:11:12+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:11:12+05:30",
+   "text_as_printed": "What is prehistoric period? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "The period before humans invented the art of writing is called the prehistoric period."
+   },
+   "answer_as_printed": "The period before humans invented the art of writing is called the prehistoric period.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:11:12+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "4457c8fefa7eb6e5f3e90dae2ef417c5b4827b1734a6818481a5862a4f795c72"
+  },
+  {
+   "id": "soc-8-02-s2-q010",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-02",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 3,
+     "text_as_printed": "Explains the influence of India's diverse geographical features on human lifestyle in prehistoric times."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "How many states and union territories are there in India?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s2-q010",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s2-q010",
+     "pdf_page": 15,
+     "printed_page": 4,
+     "y": 155.18319,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s2-q010-key",
+     "pdf_page": 79,
+     "printed_page": 68,
+     "y": 342.503197,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:11:12+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:11:12+05:30",
+   "text_as_printed": "How many states and union territories are there in India? (A)",
+   "answer": {
+    "kind": "text",
+    "value": "India has 28 states and 8 union territories, including the capital territory of Delhi."
+   },
+   "answer_as_printed": "India has 28 states and 8 union territories, including the capital territory of Delhi.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:11:12+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "f2df36d77cac37d19b8645e76e848db408e9dbde5f1b6928a087a1641bc82251"
+  },
+  {
+   "id": "soc-8-02-s2-q011",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-02",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 3,
+     "text_as_printed": "Explains the influence of India's diverse geographical features on human lifestyle in prehistoric times."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Which mountain range has the highest peaks in the world?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s2-q011",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s2-q011",
+     "pdf_page": 15,
+     "printed_page": 4,
+     "y": 172.70319,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s2-q011-key",
+     "pdf_page": 79,
+     "printed_page": 68,
+     "y": 377.18319,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:11:12+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:11:12+05:30",
+   "text_as_printed": "Which mountain range has the highest peaks in the world? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "The Himalayan mountain range is the highest mountain range in the world."
+   },
+   "answer_as_printed": "The Himalayan mountain range is the highest mountain range in the world.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:11:12+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "2247ff6a2c4711c93b5e11f21526a1149bfcf9dfb13fa0a8e2783fb8dde6c161"
+  },
+  {
+   "id": "soc-8-02-s2-q012",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-02",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 3,
+     "text_as_printed": "Explains the influence of India's diverse geographical features on human lifestyle in prehistoric times."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Name the banks of river that ancient Vedic civilizations were emerged.",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s2-q012",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s2-q012",
+     "pdf_page": 15,
+     "printed_page": 4,
+     "y": 190.103188,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s2-q012-key",
+     "pdf_page": 79,
+     "printed_page": 68,
+     "y": 412.103188,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:11:12+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:11:12+05:30",
+   "text_as_printed": "Name the banks of river that ancient Vedic civilizations were emerged. (E)",
+   "answer": {
+    "kind": "text",
+    "value": "Ancient Vedic civilizations originated along the banks of the Indus-Ganga rivers."
+   },
+   "answer_as_printed": "Ancient Vedic civilizations originated along the banks of the Indus-Ganga rivers.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:11:12+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "d46a7d94616c51b686e8276eb2cb89399d4b8932d4081da13739f0ffb233802f"
+  },
+  {
+   "id": "soc-8-02-s2-q013",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-02",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 3,
+     "text_as_printed": "Explains the influence of India's diverse geographical features on human lifestyle in prehistoric times."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Which powerful states were rose due to the development of ports?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s2-q013",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s2-q013",
+     "pdf_page": 15,
+     "printed_page": 4,
+     "y": 207.383195,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s2-q013-key",
+     "pdf_page": 79,
+     "printed_page": 68,
+     "y": 446.903207,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:11:12+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:11:12+05:30",
+   "text_as_printed": "Which powerful states were rose due to the development of ports? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "The development of port cities led to the rise of the Pandya, Chera, and Chola dynasties."
+   },
+   "answer_as_printed": "The development of port cities led to the rise of the Pandya, Chera, and Chola dynasties.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:11:12+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "98f3bb446e5577de78001fe624ee4ebaf062549ec1d75b217bd0a1e054ddafff"
+  },
+  {
+   "id": "soc-8-02-s3-q014",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-02",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 3,
+     "text_as_printed": "Explains the influence of India's diverse geographical features on human lifestyle in prehistoric times."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "India is a subcontinent mention the reason.",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s3-q014",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s3-q014",
+     "pdf_page": 15,
+     "printed_page": 4,
+     "y": 259.703202,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s3-q014-key",
+     "pdf_page": 79,
+     "printed_page": 68,
+     "y": 516.503197,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:11:12+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:11:12+05:30",
+   "text_as_printed": "India is a subcontinent mention the reason. (A)",
+   "answer": {
+    "kind": "text",
+    "value": "India is called a sub-continent because it encompasses diverse geographical features, cultures, languages, and religions."
+   },
+   "answer_as_printed": "India is called a sub-continent because it encompasses diverse geographical features, cultures, languages, and religions.",
+   "solution_steps": [
+    "India is called a sub-continent because it encompasses diverse geographical features, cultures, languages, and religions."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:11:12+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "611bf0f3d918bffcdfd71113791365a0e2cfd12e00e032ad3dcc66c721e7cfed"
+  },
+  {
+   "id": "soc-8-02-s3-q015",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-02",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 3,
+     "text_as_printed": "Explains the influence of India's diverse geographical features on human lifestyle in prehistoric times."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Which are countries that were shared land borders with India?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s3-q015",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s3-q015",
+     "pdf_page": 15,
+     "printed_page": 4,
+     "y": 276.983185,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s3-q015-key",
+     "pdf_page": 79,
+     "printed_page": 68,
+     "y": 551.30317,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:11:12+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:11:12+05:30",
+   "text_as_printed": "Which are countries that were shared land borders with India? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "India shares its land borders with Pakistan, Afghanistan, China, Nepal, Bhutan, Bangladesh and Myanmar."
+   },
+   "answer_as_printed": "India shares its land borders with Pakistan, Afghanistan, China, Nepal, Bhutan, Bangladesh and Myanmar.",
+   "solution_steps": [
+    "India shares its land borders with Pakistan, Afghanistan, China, Nepal, Bhutan, Bangladesh and Myanmar."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:11:12+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "7459146448ea653a1f62405498ea6719b9f9383183ad9f817971c056b07eb3c6"
+  },
+  {
+   "id": "soc-8-02-s3-q016",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-02",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 3,
+     "text_as_printed": "Explains the influence of India's diverse geographical features on human lifestyle in prehistoric times."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "\"The prehistoric period\" is called as prehistory period, Why?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s3-q016",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s3-q016",
+     "pdf_page": 15,
+     "printed_page": 4,
+     "y": 294.503197,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s3-q016-key",
+     "pdf_page": 79,
+     "printed_page": 68,
+     "y": 586.103188,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:11:12+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:11:12+05:30",
+   "text_as_printed": "\"The prehistoric period\" is called as prehistory period, Why? (A)",
+   "answer": {
+    "kind": "text",
+    "value": "The period before invention of the writing is called the prehistoric period. Due to the lack of evidence about language development and script usage, this period is also referred to as the pre-historic era."
+   },
+   "answer_as_printed": "The period before invention of the writing is called the prehistoric period. Due to the lack of evidence about language development and script usage, this period is also referred to as the pre-historic era.",
+   "solution_steps": [
+    "The period before invention of the writing is called the prehistoric period. Due to the lack of evidence about language development and script usage, this period is also referred to as the pre-historic era."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:11:12+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "36e7dc14fef44e9989f6ddab5daa6bc9661cc12a9831d2059f658efaa35c2ed3"
+  },
+  {
+   "id": "soc-8-02-s3-q017",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-02",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "D",
+   "learning_outcomes": [
+    {
+     "number": 3,
+     "text_as_printed": "Explains the influence of India's diverse geographical features on human lifestyle in prehistoric times."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "How did the ancient industrial sites emerge?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s3-q017",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s3-q017",
+     "pdf_page": 15,
+     "printed_page": 4,
+     "y": 311.903184,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s3-q017-key",
+     "pdf_page": 79,
+     "printed_page": 68,
+     "y": 638.30317,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:11:12+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:11:12+05:30",
+   "text_as_printed": "How did the ancient industrial sites emerge? (D)",
+   "answer": {
+    "kind": "text",
+    "value": "Stone tools were essential for human survival in ancient times, leading them to settle in areas with suitable stones. Humans crafted tools from stones, and such areas are considered as industrial sites."
+   },
+   "answer_as_printed": "Stone tools were essential for human survival in ancient times, leading them to settle in areas with suitable stones. Humans crafted tools from stones, and such areas are considered as industrial sites.",
+   "solution_steps": [
+    "Stone tools were essential for human survival in ancient times, leading them to settle in areas with suitable stones. Humans crafted tools from stones, and such areas are considered as industrial sites."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:11:12+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "73eae258b76def29228b68848bbecd568410dde9dcaf16c58e11610b2e9b4224"
+  },
+  {
+   "id": "soc-8-02-s3-q018",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-02",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 3,
+     "text_as_printed": "Explains the influence of India's diverse geographical features on human lifestyle in prehistoric times."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Name the valleys that were invasions mostly occurred on India",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s3-q018",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s3-q018",
+     "pdf_page": 15,
+     "printed_page": 4,
+     "y": 329.303193,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s3-q018-key",
+     "pdf_page": 80,
+     "printed_page": 69,
+     "y": 85.583188,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:11:12+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:11:12+05:30",
+   "text_as_printed": "Name the valleys that were invasions mostly occurred on India (E)",
+   "answer": {
+    "kind": "text",
+    "value": "Invasions in India primarily occurred through the Khyber and Bolan passes."
+   },
+   "answer_as_printed": "Invasions in India primarily occurred through the Khyber and Bolan passes.",
+   "solution_steps": [
+    "Invasions in India primarily occurred through the Khyber and Bolan passes."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:11:12+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "179f936a41b2a5fe43b1bdbd788d4030a5591e1c1cd060b74594d751711e8c5d"
+  },
+  {
+   "id": "soc-8-02-s4-q019",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-02",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 3,
+     "text_as_printed": "Explains the influence of India's diverse geographical features on human lifestyle in prehistoric times."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Explain about the Stone Age?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s4-q019",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s4-q019",
+     "pdf_page": 15,
+     "printed_page": 4,
+     "y": 381.503197,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s4-q019-key",
+     "pdf_page": 80,
+     "printed_page": 69,
+     "y": 155.18319,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:11:12+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:11:12+05:30",
+   "text_as_printed": "Explain about the Stone Age? (A)",
+   "answer": {
+    "kind": "text",
+    "value": "Stages of Stone Age are:\nThe earliest phase is called the Paleolithic or Old Stone Age, dating back about two million years.\nIt extended until around 12,000 years ago.\nThis period is divided into three stages such as\nEarly Paleolithic\nMiddle Paleolithic\nLate Paleolithic"
+   },
+   "answer_as_printed": "Stages of Stone Age are:\nThe earliest phase is called the Paleolithic or Old Stone Age, dating back about two million years.\nIt extended until around 12,000 years ago.\nThis period is divided into three stages such as\nEarly Paleolithic\nMiddle Paleolithic\nLate Paleolithic",
+   "solution_steps": [
+    "The earliest phase is called the Paleolithic or Old Stone Age, dating back about two million years.",
+    "It extended until around 12,000 years ago.",
+    "This period is divided into three stages such as",
+    "Early Paleolithic",
+    "Middle Paleolithic",
+    "Late Paleolithic"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:11:12+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "1111b07e674e441161e57a7ffd302cd49c47e4b23c28f61296b9caf93a99f405"
+  },
+  {
+   "id": "soc-8-02-s4-q020",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-02",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 3,
+     "text_as_printed": "Explains the influence of India's diverse geographical features on human lifestyle in prehistoric times."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Briefly explain the geographical features of India.",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s4-q020",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s4-q020",
+     "pdf_page": 15,
+     "printed_page": 4,
+     "y": 398.903207,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s4-q020-key",
+     "pdf_page": 80,
+     "printed_page": 69,
+     "y": 317.543199,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:11:12+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:11:12+05:30",
+   "text_as_printed": "Briefly explain the geographical features of India. (A)",
+   "answer": {
+    "kind": "text",
+    "value": "The Himalayan mountain ranges in the north\nThe flat Indo-Gangetic plain\nThe Deccan Plateau in the south\nThe coastal regions"
+   },
+   "answer_as_printed": "The Himalayan mountain ranges in the north\nThe flat Indo-Gangetic plain\nThe Deccan Plateau in the south\nThe coastal regions",
+   "solution_steps": [
+    "The Himalayan mountain ranges in the north",
+    "The flat Indo-Gangetic plain",
+    "The Deccan Plateau in the south",
+    "The coastal regions"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:11:12+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "daba8ca211480c276aec9f01e1f91c0c5b0efa42947b4f83171a75a2e27238b3"
+  },
+  {
+   "id": "soc-8-02-s4-q021",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-02",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "D",
+   "learning_outcomes": [
+    {
+     "number": 3,
+     "text_as_printed": "Explains the influence of India's diverse geographical features on human lifestyle in prehistoric times."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "How did animal husbandry and dairy farming begin?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s4-q021",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s4-q021",
+     "pdf_page": 15,
+     "printed_page": 4,
+     "y": 416.30317,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-02-s4-q021-key",
+     "pdf_page": 80,
+     "printed_page": 69,
+     "y": 387.143212,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:11:12+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:11:12+05:30",
+   "text_as_printed": "How did animal husbandry and dairy farming begin? (D)",
+   "answer": {
+    "kind": "text",
+    "value": "About 12,000 years ago, there were changes in the world's environment\nThe temperature of the earth increased\nThe population of animals and birds increased\nAlong with these developments, animals like deer, cattle, goats, sheep, and others began to thrive in grassland regions\nHumans, who earlier hunted these animals, began to understand their nature, food habits, and reproduction\nGradually, humans started capturing and domesticating some of these animals\nThus, animal husbandry and dairy farming began"
+   },
+   "answer_as_printed": "About 12,000 years ago, there were changes in the world's environment\nThe temperature of the earth increased\nThe population of animals and birds increased\nAlong with these developments, animals like deer, cattle, goats, sheep, and others began to thrive in grassland regions\nHumans, who earlier hunted these animals, began to understand their nature, food habits, and reproduction\nGradually, humans started capturing and domesticating some of these animals\nThus, animal husbandry and dairy farming began",
+   "solution_steps": [
+    "About 12,000 years ago, there were changes in the world's environment",
+    "The temperature of the earth increased",
+    "The population of animals and birds increased",
+    "Along with these developments, animals like deer, cattle, goats, sheep, and others began to thrive in grassland regions",
+    "Humans, who earlier hunted these animals, began to understand their nature, food habits, and reproduction",
+    "Gradually, humans started capturing and domesticating some of these animals",
+    "Thus, animal husbandry and dairy farming began"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:11:12+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "ae0a0ec9a18887c3c8a5310ce61299bde97030d546bfdd6ec4f4889c77e5ff7a"
+  }
+ ],
+ "pending_summary": {}
+}
