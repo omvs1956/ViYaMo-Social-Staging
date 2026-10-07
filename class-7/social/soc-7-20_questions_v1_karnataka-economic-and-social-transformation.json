@@ -1,0 +1,2948 @@
+{
+ "contract_version": "1.7",
+ "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
+ "procedure_file": "extraction_procedure_social_addendum_v1.3_social science Classes 6-10 on top of procedure v2.md",
+ "machine_name": "soc-7-20_questions",
+ "version": 1,
+ "changelog": "v1 extraction — batch-01 — class-7-social",
+ "amendments_applied": [],
+ "unit_state": "EXTRACTED",
+ "review_ready": false,
+ "count_gate": {
+  "reference": 35,
+  "reference_source": "audited",
+  "extracted": 35,
+  "paired": 35,
+  "flagged": 5,
+  "gaps": [],
+  "duplicated_numbers": [],
+  "quota_table": "difficulty_only",
+  "second_method": {
+   "method": "printed difficulty distribution table",
+   "extracted": 35,
+   "agrees": true
+  },
+  "pass": true,
+  "note": "printed difficulty table 18/16/1=35 DISAGREES with per-question tags 17/17/1 (source defect, tags win v2 §6; register difficulty-table-vs-tags); flagged counts answer-level flags; all carry the structural marks flag (addendum §4.5)."
+ },
+ "extraction": {
+  "source_file": "7thSS-EM-LBARevised_1787048371.pdf",
+  "source_ref_prefix": "7thSS-EM-LBARevised_1787048371.pdf",
+  "pdf_pages": [
+   130,
+   131,
+   132,
+   133,
+   257,
+   258,
+   259
+  ],
+  "printed_page_offset": -14,
+  "method_notes": [
+   "Offset -14 (pdf 130 = printed 116). No real figures (pdf258/259 carry only 2x2 bullet-marker images). Q side: q1-4 pdf130; q5-8 pdf131; q9-24 pdf132; q25-35 pdf133. A side: q1-19 pdf257; q20-28 pdf258; q29-35 pdf259.",
+   "Sections: A mcq q1-10; B fill q11-15; C one-sentence q16-26 (vsa); D 2-4 sentence q27-33 (sa); E 5-6 sentence q34-35 (la). Single LO (16).",
+   "A keys mixed grid format ('1.B Land Reforms', '3.A 1970', '7.B. sower') -> reconstructed letter+text; assert by letter with benign variant flags (q1 'Land Reforms'~'Land reform', q7 'sower'~'Ploughmen'). q2 EXCEPTION: printed '2.C, Tenants' is self-contradictory (letter C='Landowners' vs stem; 'Tenants' not an option) -> 'key text not among options'.",
+   "q35 key printed 'whiskey land' (OCR garble of 'dry land') normalised to 'dry land' in the value.",
+   "DIFFICULTY: per-question tags win (v2 6); printed table 18/16/1=35."
+  ],
+  "notation_summary": {
+   "render_tokens": 0,
+   "latex_tokens": 0,
+   "damage_flags": []
+  },
+  "excluded_objects": [],
+  "inline_excluded_count": 0,
+  "figure_references": []
+ },
+ "stimuli": [],
+ "questions": [
+  {
+   "id": "soc-7-20-s1-q001",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-20",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the process of Karnataka's unification, border disputes, social movements, various reforms, and measures for empowerment."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The measures implemented to remove the problems in land tenure are called.",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s1-q001",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s1-q001",
+     "pdf_page": 130,
+     "printed_page": 116,
+     "y": 411.658,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s1-q001-key",
+     "pdf_page": 257,
+     "printed_page": 243,
+     "y": 189.828,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T04:38:09+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T04:38:09+05:30",
+   "text_as_printed": "The measures implemented to remove the problems in land tenure are called. (Average )",
+   "section_signal": "A",
+   "options": [
+    {
+     "id": "A",
+     "text": "Social reform"
+    },
+    {
+     "id": "B",
+     "text": "Land reform"
+    },
+    {
+     "id": "C",
+     "text": "Economic reform"
+    },
+    {
+     "id": "D",
+     "text": "Religious reform"
+    }
+   ],
+   "answer_as_printed": "B. Land Reforms",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T04:38:09+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text differs from option by a printed typo",
+     "why_not_corrected": "letter B kept (addendum §4.1); key text 'Land Reforms' vs option B 'Land reform' differ by a source typo; spelling needs subject knowledge (v2 §1)",
+     "suggested": "B (letter kept)"
+    }
+   ],
+   "content_hash": "c6c99ee7851ffd550c4ac4b58650bdb90462bab689636f5314ca95ec9c2997aa"
+  },
+  {
+   "id": "soc-7-20-s1-q002",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-20",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the process of Karnataka's unification, border disputes, social movements, various reforms, and measures for empowerment."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Earlier, there were laws in favor of landowners, but they were not in favor of",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s1-q002",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s1-q002",
+     "pdf_page": 130,
+     "printed_page": 116,
+     "y": 555.158,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s1-q002-key",
+     "pdf_page": 257,
+     "printed_page": 243,
+     "y": 218.528,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T04:38:09+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T04:38:09+05:30",
+   "text_as_printed": "Earlier, there were laws in favor of landowners, but they were not in favor of (Average )",
+   "section_signal": "A",
+   "options": [
+    {
+     "id": "A",
+     "text": "Laborers"
+    },
+    {
+     "id": "B",
+     "text": "Landlords"
+    },
+    {
+     "id": "C",
+     "text": "Landowners"
+    },
+    {
+     "id": "D",
+     "text": "None"
+    }
+   ],
+   "answer": {
+    "kind": "option",
+    "option_id": null
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text not among options",
+     "why_not_corrected": "stem: laws were in favor of landowners but NOT in favor of ___; the printed key is '2.C, Tenants' — letter C points to option C 'Landowners' (which contradicts the stem) while the text 'Tenants' is not among the four options (Laborers/Landlords/Landowners/None). No option asserted. Intended answer is the tenants/tillers (closest printed option A 'Laborers').",
+     "suggested": "review — intended 'tenants/tillers'; option A 'Laborers' is closest; printed letter C='Landowners' contradicts the stem"
+    }
+   ],
+   "content_hash": "f367905eacdc3b4433375f6e6eecb29185aa1d963d61c51097f95020641d4ef2"
+  },
+  {
+   "id": "soc-7-20-s1-q003",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-20",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the process of Karnataka's unification, border disputes, social movements, various reforms, and measures for empowerment."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "In this decade, we see an attempt to create an equal society through land reforms.",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s1-q003",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s1-q003",
+     "pdf_page": 130,
+     "printed_page": 116,
+     "y": 641.278,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s1-q003-key",
+     "pdf_page": 257,
+     "printed_page": 243,
+     "y": 247.228,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T04:38:09+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T04:38:09+05:30",
+   "text_as_printed": "In this decade, we see an attempt to create an equal society through land reforms. (Average )",
+   "section_signal": "A",
+   "options": [
+    {
+     "id": "A",
+     "text": "1970"
+    },
+    {
+     "id": "B",
+     "text": "1980"
+    },
+    {
+     "id": "C",
+     "text": "1990"
+    },
+    {
+     "id": "D",
+     "text": "1950"
+    }
+   ],
+   "answer_as_printed": "A. 1970",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T04:38:09+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "40223d6d8e4365e1e9220d56dc63c643506887f01ee3a799f0fd2ce3a415a108"
+  },
+  {
+   "id": "soc-7-20-s1-q004",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-20",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the process of Karnataka's unification, border disputes, social movements, various reforms, and measures for empowerment."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "These laws played a decisive role in the abolition of the zamindari system.",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s1-q004",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s1-q004",
+     "pdf_page": 130,
+     "printed_page": 116,
+     "y": 727.378,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s1-q004-key",
+     "pdf_page": 257,
+     "printed_page": 243,
+     "y": 275.928,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T04:38:09+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T04:38:09+05:30",
+   "text_as_printed": "These laws played a decisive role in the abolition of the zamindari system. (Average )",
+   "section_signal": "A",
+   "options": [
+    {
+     "id": "A",
+     "text": "1955 Land Reforms Act"
+    },
+    {
+     "id": "B",
+     "text": "1957 Land Reforms Act"
+    },
+    {
+     "id": "C",
+     "text": "1974 Land Reforms Act"
+    },
+    {
+     "id": "D",
+     "text": "none"
+    }
+   ],
+   "answer_as_printed": "C. 1974 Land Reforms Act",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T04:38:09+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "3dfe7f9ec26aa9e23c151ca3aee6a350efae4c5dbe1a2d849e389a790a306bab"
+  },
+  {
+   "id": "soc-7-20-s1-q005",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-20",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the process of Karnataka's unification, border disputes, social movements, various reforms, and measures for empowerment."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The Chief Minister who implemented the revolutionary law on land tenure in Karnataka",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s1-q005",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s1-q005",
+     "pdf_page": 131,
+     "printed_page": 117,
+     "y": 179.428,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s1-q005-key",
+     "pdf_page": 257,
+     "printed_page": 243,
+     "y": 304.628,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T04:38:09+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T04:38:09+05:30",
+   "text_as_printed": "The Chief Minister who implemented the revolutionary law on land tenure in Karnataka (Average )",
+   "section_signal": "A",
+   "options": [
+    {
+     "id": "A",
+     "text": "S Nijalingappa"
+    },
+    {
+     "id": "B",
+     "text": "KengalHanumanthaiyya"
+    },
+    {
+     "id": "C",
+     "text": "D Devaraja Urs"
+    },
+    {
+     "id": "D",
+     "text": "Siddaramaiah"
+    }
+   ],
+   "answer_as_printed": "C. D DevarajaUrs",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T04:38:09+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text differs from option by a printed typo",
+     "why_not_corrected": "letter C kept (addendum §4.1); key text 'D DevarajaUrs' vs option C 'D Devaraja Urs' differ by a source typo; spelling needs subject knowledge (v2 §1)",
+     "suggested": "C (letter kept)"
+    }
+   ],
+   "content_hash": "c76d2c523d7edefccdef4d1676b1d93e189274e7d17abdc7b987eee20106a6ae"
+  },
+  {
+   "id": "soc-7-20-s1-q006",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-20",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the process of Karnataka's unification, border disputes, social movements, various reforms, and measures for empowerment."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The stages of the local administration system recommended by the Balwant Raya Mehta Committee in 1955",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s1-q006",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s1-q006",
+     "pdf_page": 131,
+     "printed_page": 117,
+     "y": 286.228,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s1-q006-key",
+     "pdf_page": 257,
+     "printed_page": 243,
+     "y": 333.328,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T04:38:09+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T04:38:09+05:30",
+   "text_as_printed": "The stages of the local administration system recommended by the Balwant Raya Mehta Committee in 1955 (Average )",
+   "section_signal": "A",
+   "options": [
+    {
+     "id": "A",
+     "text": "One"
+    },
+    {
+     "id": "B",
+     "text": "Two"
+    },
+    {
+     "id": "C",
+     "text": "Three"
+    },
+    {
+     "id": "D",
+     "text": "Four"
+    }
+   ],
+   "answer_as_printed": "C. Three",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T04:38:09+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "d2ea9194d963003a6a3ce0ddab0b9ceb916b4ad0122e8bc498139afe60cd50c6"
+  },
+  {
+   "id": "soc-7-20-s1-q007",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-20",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the process of Karnataka's unification, border disputes, social movements, various reforms, and measures for empowerment."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "According to the land tenure law, those who became the owners of the land.",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s1-q007",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s1-q007",
+     "pdf_page": 131,
+     "printed_page": 117,
+     "y": 393.058,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s1-q007-key",
+     "pdf_page": 257,
+     "printed_page": 243,
+     "y": 362.058,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T04:38:09+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T04:38:09+05:30",
+   "text_as_printed": "According to the land tenure law, those who became the owners of the land. (Average )",
+   "section_signal": "A",
+   "options": [
+    {
+     "id": "A",
+     "text": "Zamindars"
+    },
+    {
+     "id": "B",
+     "text": "Ploughmen"
+    },
+    {
+     "id": "C",
+     "text": "People's representatives"
+    },
+    {
+     "id": "D",
+     "text": "Which one is not"
+    }
+   ],
+   "answer_as_printed": "B. sower",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T04:38:09+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text differs from option by a printed typo",
+     "why_not_corrected": "letter B kept (addendum §4.1); key text 'sower' vs option B 'Ploughmen' differ by a source typo; spelling needs subject knowledge (v2 §1)",
+     "suggested": "B (letter kept)"
+    }
+   ],
+   "content_hash": "5cadb5ca3d990cf3b5911fef9a12a8977b7db03e58a1a82943f4663e9840d915"
+  },
+  {
+   "id": "soc-7-20-s1-q008",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-20",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the process of Karnataka's unification, border disputes, social movements, various reforms, and measures for empowerment."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The kings who appointed the first Backward Classes Commission in India",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s1-q008",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s1-q008",
+     "pdf_page": 131,
+     "printed_page": 117,
+     "y": 536.558,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s1-q008-key",
+     "pdf_page": 257,
+     "printed_page": 243,
+     "y": 390.758,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T04:38:09+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T04:38:09+05:30",
+   "text_as_printed": "The kings who appointed the first Backward Classes Commission in India (Average )",
+   "section_signal": "A",
+   "options": [
+    {
+     "id": "A",
+     "text": "JayachamarajaWodeyar"
+    },
+    {
+     "id": "B",
+     "text": "Tenth ChamarajaWodeyar"
+    },
+    {
+     "id": "C",
+     "text": "Third KrishnarajaWodeyar"
+    },
+    {
+     "id": "D",
+     "text": "Fourth KrishnarajaWodeyar"
+    }
+   ],
+   "answer_as_printed": "D. Four KrishnarajaWodeyar",
+   "answer": {
+    "kind": "option",
+    "option_id": "D"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T04:38:09+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text differs from option by a printed typo",
+     "why_not_corrected": "letter D kept (addendum §4.1); key text 'Four KrishnarajaWodeyar' vs option D 'Fourth KrishnarajaWodeyar' differ by a source typo; spelling needs subject knowledge (v2 §1)",
+     "suggested": "D (letter kept)"
+    }
+   ],
+   "content_hash": "266d5f0604d166b660651909545315ec858dd235a238577160af3a519137a9cd"
+  },
+  {
+   "id": "soc-7-20-s1-q009",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-20",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the process of Karnataka's unification, border disputes, social movements, various reforms, and measures for empowerment."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The year in which the Inam Act system was implemented",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s1-q009",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s1-q009",
+     "pdf_page": 132,
+     "printed_page": 118,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s1-q009-key",
+     "pdf_page": 257,
+     "printed_page": 243,
+     "y": 419.458,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T04:38:09+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T04:38:09+05:30",
+   "text_as_printed": "The year in which the Inam Act system was implemented (Average )",
+   "section_signal": "A",
+   "options": [
+    {
+     "id": "A",
+     "text": "1977"
+    },
+    {
+     "id": "B",
+     "text": "1979"
+    },
+    {
+     "id": "C",
+     "text": "1982"
+    },
+    {
+     "id": "D",
+     "text": "1985"
+    }
+   ],
+   "answer_as_printed": "A. 1977",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T04:38:09+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "246cb0628dd5ca324add02aff0d49127ab638782d64776cf26f60028ab1c80de"
+  },
+  {
+   "id": "soc-7-20-s1-q010",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-20",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the process of Karnataka's unification, border disputes, social movements, various reforms, and measures for empowerment."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The system that empowers the locals to participate in the administration",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s1-q010",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s1-q010",
+     "pdf_page": 132,
+     "printed_page": 118,
+     "y": 77.808,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s1-q010-key",
+     "pdf_page": 257,
+     "printed_page": 243,
+     "y": 448.158,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T04:38:09+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T04:38:09+05:30",
+   "text_as_printed": "The system that empowers the locals to participate in the administration (Average )",
+   "section_signal": "A",
+   "options": [
+    {
+     "id": "A",
+     "text": "Cooperative societies system"
+    },
+    {
+     "id": "B",
+     "text": "Stree Shakti societies system"
+    },
+    {
+     "id": "C",
+     "text": "Panchayat Raj system"
+    },
+    {
+     "id": "D",
+     "text": "State system"
+    }
+   ],
+   "answer_as_printed": "C. Panchayat Raj System",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T04:38:09+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "fe4e57b0d6b887cae3a32343ab84475eb06540dc9a92b846f2729c0cee00cb40"
+  },
+  {
+   "id": "soc-7-20-s2-q011",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-20",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the process of Karnataka's unification, border disputes, social movements, various reforms, and measures for empowerment."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "One acre is -------- gunte",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s2-q011",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s2-q011",
+     "pdf_page": 132,
+     "printed_page": 118,
+     "y": 251.728,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s2-q011-key",
+     "pdf_page": 257,
+     "printed_page": 243,
+     "y": 505.558,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T04:38:09+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T04:38:09+05:30",
+   "text_as_printed": "One acre is -------- gunte (Easy )",
+   "section_signal": "B",
+   "answer": {
+    "kind": "text",
+    "value": "40 Gunte"
+   },
+   "answer_as_printed": "40 Gunte",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T04:38:09+05:30",
+    "basis": "printed fill-in-the-blank key word(s), verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "55990eb022c201bd48ee4f9b134d9db1519f89e9b922e1de013b987a8eb3b6db"
+  },
+  {
+   "id": "soc-7-20-s2-q012",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-20",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the process of Karnataka's unification, border disputes, social movements, various reforms, and measures for empowerment."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "B.D. Jatti was the ---------- of India.",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s2-q012",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s2-q012",
+     "pdf_page": 132,
+     "printed_page": 118,
+     "y": 280.428,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s2-q012-key",
+     "pdf_page": 257,
+     "printed_page": 243,
+     "y": 534.258,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T04:38:09+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T04:38:09+05:30",
+   "text_as_printed": "B.D. Jatti was the ---------- of India. (Easy )",
+   "section_signal": "B",
+   "answer": {
+    "kind": "text",
+    "value": "Vice President"
+   },
+   "answer_as_printed": "Vice President",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T04:38:09+05:30",
+    "basis": "printed fill-in-the-blank key word(s), verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "abf2db2958f885eb838a673a2c886776ea83ad4157e6dabe88f5fdaaaecd2879"
+  },
+  {
+   "id": "soc-7-20-s2-q013",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-20",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the process of Karnataka's unification, border disputes, social movements, various reforms, and measures for empowerment."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The Backward Classes Commission was appointed in --------------.",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s2-q013",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s2-q013",
+     "pdf_page": 132,
+     "printed_page": 118,
+     "y": 309.128,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s2-q013-key",
+     "pdf_page": 257,
+     "printed_page": 243,
+     "y": 562.958,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T04:38:09+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T04:38:09+05:30",
+   "text_as_printed": "The Backward Classes Commission was appointed in --------------. (Easy )",
+   "section_signal": "B",
+   "answer": {
+    "kind": "text",
+    "value": "1975"
+   },
+   "answer_as_printed": "1975",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T04:38:09+05:30",
+    "basis": "printed fill-in-the-blank key word(s), verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "b8adb562111a8554f9503e68e3d0676b2c92134fc86dff8ff1e232a261dea427"
+  },
+  {
+   "id": "soc-7-20-s2-q014",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-20",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the process of Karnataka's unification, border disputes, social movements, various reforms, and measures for empowerment."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "In 1921, the first reservation order was implemented in the state of ------------.",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s2-q014",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s2-q014",
+     "pdf_page": 132,
+     "printed_page": 118,
+     "y": 337.828,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s2-q014-key",
+     "pdf_page": 257,
+     "printed_page": 243,
+     "y": 591.678,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T04:38:09+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T04:38:09+05:30",
+   "text_as_printed": "In 1921, the first reservation order was implemented in the state of ------------. (Easy )",
+   "section_signal": "B",
+   "answer": {
+    "kind": "text",
+    "value": "Mysore"
+   },
+   "answer_as_printed": "Mysore",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T04:38:09+05:30",
+    "basis": "printed fill-in-the-blank key word(s), verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "21069705fd2553d628518ea5bafb923aca152b8782f8c3d86ac244bda95f3d49"
+  },
+  {
+   "id": "soc-7-20-s2-q015",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-20",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the process of Karnataka's unification, border disputes, social movements, various reforms, and measures for empowerment."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The Panchayat Raj system can be said to be a -------- system of administration",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s2-q015",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s2-q015",
+     "pdf_page": 132,
+     "printed_page": 118,
+     "y": 366.558,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s2-q015-key",
+     "pdf_page": 257,
+     "printed_page": 243,
+     "y": 620.378,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T04:38:09+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T04:38:09+05:30",
+   "text_as_printed": "The Panchayat Raj system can be said to be a -------- system of administration (Easy )",
+   "section_signal": "B",
+   "answer": {
+    "kind": "text",
+    "value": "Decentralization"
+   },
+   "answer_as_printed": "Decentralization",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T04:38:09+05:30",
+    "basis": "printed fill-in-the-blank key word(s), verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "6dee848b263d83261c851a16e0eb67bbca340c4d360fc907a2713912c947dcb5"
+  },
+  {
+   "id": "soc-7-20-s3-q016",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-20",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the process of Karnataka's unification, border disputes, social movements, various reforms, and measures for empowerment."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Who was the Chief Minister of Karnataka in 1974?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s3-q016",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s3-q016",
+     "pdf_page": 132,
+     "printed_page": 118,
+     "y": 425.758,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s3-q016-key",
+     "pdf_page": 257,
+     "printed_page": 243,
+     "y": 677.778,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T04:38:09+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T04:38:09+05:30",
+   "text_as_printed": "Who was the Chief Minister of Karnataka in 1974? (Easy )",
+   "section_signal": "C",
+   "answer": {
+    "kind": "text",
+    "value": "D DevarajaUrs"
+   },
+   "answer_as_printed": "D DevarajaUrs",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T04:38:09+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "1ec050f7a84d13def49517f4576e14dfe2d834156781eff520cce905683178e6"
+  },
+  {
+   "id": "soc-7-20-s3-q017",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-20",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the process of Karnataka's unification, border disputes, social movements, various reforms, and measures for empowerment."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Under whose leadership was a committee formed in 1955 as part of the abolition of the zamindari system?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s3-q017",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s3-q017",
+     "pdf_page": 132,
+     "printed_page": 118,
+     "y": 454.358,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s3-q017-key",
+     "pdf_page": 257,
+     "printed_page": 243,
+     "y": 706.478,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T04:38:09+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T04:38:09+05:30",
+   "text_as_printed": "Under whose leadership was a committee formed in 1955 as part of the abolition of the zamindari system? (Easy )",
+   "section_signal": "C",
+   "answer": {
+    "kind": "text",
+    "value": "B . D . Jatti"
+   },
+   "answer_as_printed": "B . D . Jatti",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T04:38:09+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "c2043c791ebbf3fa0ce14fe2e119014ffd774ed2e335a80d318172a4098d6563"
+  },
+  {
+   "id": "soc-7-20-s3-q018",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-20",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the process of Karnataka's unification, border disputes, social movements, various reforms, and measures for empowerment."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Under whose chairmanship was the first Backward Classes Commission appointed in India in 1918?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s3-q018",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s3-q018",
+     "pdf_page": 132,
+     "printed_page": 118,
+     "y": 503.758,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s3-q018-key",
+     "pdf_page": 257,
+     "printed_page": 243,
+     "y": 735.183,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T04:38:09+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T04:38:09+05:30",
+   "text_as_printed": "Under whose chairmanship was the first Backward Classes Commission appointed in India in 1918? (Easy )",
+   "section_signal": "C",
+   "answer": {
+    "kind": "text",
+    "value": "Justice Nestle. C. Miller"
+   },
+   "answer_as_printed": "Justice Nestle. C. Miller",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T04:38:09+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "80da8d3cb8e0015c5c04fedd8053a128fc597ba4c97fc86b77fd4b225ebf3fc6"
+  },
+  {
+   "id": "soc-7-20-s3-q019",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-20",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the process of Karnataka's unification, border disputes, social movements, various reforms, and measures for empowerment."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Who was the chairman of the Backward Classes Commission appointed in 1975?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s3-q019",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s3-q019",
+     "pdf_page": 132,
+     "printed_page": 118,
+     "y": 553.158,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s3-q019-key",
+     "pdf_page": 257,
+     "printed_page": 243,
+     "y": 763.883,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T04:38:09+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T04:38:09+05:30",
+   "text_as_printed": "Who was the chairman of the Backward Classes Commission appointed in 1975? (Easy )",
+   "section_signal": "C",
+   "answer": {
+    "kind": "text",
+    "value": "L. G. Havanur"
+   },
+   "answer_as_printed": "L. G. Havanur",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T04:38:09+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "53ad74e2108b4ddc65f81b887aaf2fa3e0850e98c6d1be1904b1a9e6ed0f821b"
+  },
+  {
+   "id": "soc-7-20-s3-q020",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-20",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the process of Karnataka's unification, border disputes, social movements, various reforms, and measures for empowerment."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What are the stages of the Panchayat system of administration?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s3-q020",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s3-q020",
+     "pdf_page": 132,
+     "printed_page": 118,
+     "y": 581.878,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s3-q020-key",
+     "pdf_page": 258,
+     "printed_page": 244,
+     "y": 64.608,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T04:38:09+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T04:38:09+05:30",
+   "text_as_printed": "What are the stages of the Panchayat system of administration? (Easy )",
+   "section_signal": "C",
+   "answer": {
+    "kind": "text",
+    "value": "Gram Panchayat. Taluk Panchayat. Zilla Panchayat"
+   },
+   "answer_as_printed": "Gram Panchayat. Taluk Panchayat. Zilla Panchayat",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T04:38:09+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "c3f95cb50b9464af0f3f1969b32f559d910b6d1b951d312b057fc44ee142b858"
+  },
+  {
+   "id": "soc-7-20-s3-q021",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-20",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the process of Karnataka's unification, border disputes, social movements, various reforms, and measures for empowerment."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Who is the founder of the Panchayat Raj system in Karnataka?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s3-q021",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s3-q021",
+     "pdf_page": 132,
+     "printed_page": 118,
+     "y": 610.578,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s3-q021-key",
+     "pdf_page": 258,
+     "printed_page": 244,
+     "y": 93.308,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T04:38:09+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T04:38:09+05:30",
+   "text_as_printed": "Who is the founder of the Panchayat Raj system in Karnataka? (Easy )",
+   "section_signal": "C",
+   "answer": {
+    "kind": "text",
+    "value": "Shri Nazir Saab"
+   },
+   "answer_as_printed": "Shri Nazir Saab",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T04:38:09+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "a4d8039eaeba86f4b0aab170bd130fb62cc79d2973bcdf7f06d316c71dd16ccb"
+  },
+  {
+   "id": "soc-7-20-s3-q022",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-20",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the process of Karnataka's unification, border disputes, social movements, various reforms, and measures for empowerment."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "In which year was the Mysore Gram Panchayats Act enacted?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s3-q022",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s3-q022",
+     "pdf_page": 132,
+     "printed_page": 118,
+     "y": 639.278,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s3-q022-key",
+     "pdf_page": 258,
+     "printed_page": 244,
+     "y": 122.028,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T04:38:09+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T04:38:09+05:30",
+   "text_as_printed": "In which year was the Mysore Gram Panchayats Act enacted? (Easy )",
+   "section_signal": "C",
+   "answer": {
+    "kind": "text",
+    "value": "1959"
+   },
+   "answer_as_printed": "1959",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T04:38:09+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "11654fb282e3f572145fd87264c8ad4201c861eecfbccde4197ad075c02ff114"
+  },
+  {
+   "id": "soc-7-20-s3-q023",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-20",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the process of Karnataka's unification, border disputes, social movements, various reforms, and measures for empowerment."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "According to the Havanur Commission, which test was taken as the criterion to identify the backwardness of castes?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s3-q023",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s3-q023",
+     "pdf_page": 132,
+     "printed_page": 118,
+     "y": 667.978,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s3-q023-key",
+     "pdf_page": 258,
+     "printed_page": 244,
+     "y": 150.728,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T04:38:09+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T04:38:09+05:30",
+   "text_as_printed": "According to the Havanur Commission, which test was taken as the criterion to identify the backwardness of castes? (Easy )",
+   "section_signal": "C",
+   "answer": {
+    "kind": "text",
+    "value": "Year of 1975 SSLC Exam"
+   },
+   "answer_as_printed": "Year of 1975 SSLC Exam",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T04:38:09+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "8273cab18950478ba43db857cb602d29a231ccddd369d114dea907c318cad4f3"
+  },
+  {
+   "id": "soc-7-20-s3-q024",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-20",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the process of Karnataka's unification, border disputes, social movements, various reforms, and measures for empowerment."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "In which year was the committee headed by Balwantrai Mehta constituted?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s3-q024",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s3-q024",
+     "pdf_page": 132,
+     "printed_page": 118,
+     "y": 723.378,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s3-q024-key",
+     "pdf_page": 258,
+     "printed_page": 244,
+     "y": 185.428,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T04:38:09+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T04:38:09+05:30",
+   "text_as_printed": "In which year was the committee headed by Balwantrai Mehta constituted? (Average )",
+   "section_signal": "C",
+   "answer": {
+    "kind": "text",
+    "value": "1955"
+   },
+   "answer_as_printed": "1955",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T04:38:09+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "a8b3c9c7f4c4ad68e038183a613bfd33ad0ff9788ffc1509481f360c583b3bee"
+  },
+  {
+   "id": "soc-7-20-s3-q025",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-20",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the process of Karnataka's unification, border disputes, social movements, various reforms, and measures for empowerment."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is Land Reform?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s3-q025",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s3-q025",
+     "pdf_page": 133,
+     "printed_page": 119,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s3-q025-key",
+     "pdf_page": 258,
+     "printed_page": 244,
+     "y": 220.128,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T04:38:09+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T04:38:09+05:30",
+   "text_as_printed": "What is Land Reform? (Easy )",
+   "section_signal": "C",
+   "answer": {
+    "kind": "text",
+    "value": "Land reforms refer to the measures implemented to eliminate the problems associated with land holdings."
+   },
+   "answer_as_printed": "Land reforms refer to the measures implemented to eliminate the problems associated with land holdings.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T04:38:09+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "f2474c6c76b818d6cac2640f6b780e5634398e210604d3eddda37a110babd208"
+  },
+  {
+   "id": "soc-7-20-s3-q026",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-20",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the process of Karnataka's unification, border disputes, social movements, various reforms, and measures for empowerment."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Who was the Chairman of the first Backward Classes Commission appointed in India during the reign of Nalwadi Krishnaraja Wadiyar?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s3-q026",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s3-q026",
+     "pdf_page": 133,
+     "printed_page": 119,
+     "y": 70.608,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s3-q026-key",
+     "pdf_page": 258,
+     "printed_page": 244,
+     "y": 275.528,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T04:38:09+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T04:38:09+05:30",
+   "text_as_printed": "Who was the Chairman of the first Backward Classes Commission appointed in India during the reign of Nalwadi Krishnaraja Wadiyar? (Average )",
+   "section_signal": "C",
+   "answer": {
+    "kind": "text",
+    "value": "Justice Leslie C. Miller"
+   },
+   "answer_as_printed": "Justice Leslie C. Miller",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T04:38:09+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "4d5f70d32196e4cc6d20db1e4d48adb6a07508a006d8f90a0070bbd9c1e21ac9"
+  },
+  {
+   "id": "soc-7-20-s4-q027",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-20",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the process of Karnataka's unification, border disputes, social movements, various reforms, and measures for empowerment."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What are the land reforms implemented in Karnataka?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s4-q027",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s4-q027",
+     "pdf_page": 133,
+     "printed_page": 119,
+     "y": 156.528,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s4-q027-key",
+     "pdf_page": 258,
+     "printed_page": 244,
+     "y": 338.928,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T04:38:09+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T04:38:09+05:30",
+   "text_as_printed": "What are the land reforms implemented in Karnataka? (Average )",
+   "section_signal": "D",
+   "answer": {
+    "kind": "text",
+    "value": "Abolition of the landlord system\nAchievement in the tenant system\nMaximum holding limit\nFormation of economic holdings\nDevelopment of cooperative farming"
+   },
+   "answer_as_printed": "Abolition of the landlord system\nAchievement in the tenant system\nMaximum holding limit\nFormation of economic holdings\nDevelopment of cooperative farming",
+   "solution_steps": [
+    "Abolition of the landlord system",
+    "Achievement in the tenant system",
+    "Maximum holding limit",
+    "Formation of economic holdings",
+    "Development of cooperative farming"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T04:38:09+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "3a07731a76dda950c8ba4f9f7bfdf0b4e894a6c7a230311be84749cbf7ae1a07"
+  },
+  {
+   "id": "soc-7-20-s4-q028",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-20",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the process of Karnataka's unification, border disputes, social movements, various reforms, and measures for empowerment."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What are the main features of the Land Reforms Act, 1974?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s4-q028",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s4-q028",
+     "pdf_page": 133,
+     "printed_page": 119,
+     "y": 185.228,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s4-q028-key",
+     "pdf_page": 258,
+     "printed_page": 244,
+     "y": 511.158,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T04:38:09+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T04:38:09+05:30",
+   "text_as_printed": "What are the main features of the Land Reforms Act, 1974? (Average )",
+   "section_signal": "D",
+   "answer": {
+    "kind": "text",
+    "value": "It abolished all types of tenant farming.\nThe farmer was allowed to establish his right over the land he was tilling\nAll the tenant farming land came under the ownership of the cooperative.\nThose who wanted to get a right over the land and those who needed compensation had to apply through the tribunal\nThe decision of the tribunal was final."
+   },
+   "answer_as_printed": "It abolished all types of tenant farming.\nThe farmer was allowed to establish his right over the land he was tilling\nAll the tenant farming land came under the ownership of the cooperative.\nThose who wanted to get a right over the land and those who needed compensation had to apply through the tribunal\nThe decision of the tribunal was final.",
+   "solution_steps": [
+    "It abolished all types of tenant farming.",
+    "The farmer was allowed to establish his right over the land he was tilling",
+    "All the tenant farming land came under the ownership of the cooperative.",
+    "Those who wanted to get a right over the land and those who needed compensation had to apply through the tribunal",
+    "The decision of the tribunal was final."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T04:38:09+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "b19f4608558cc083fe313f992ea8aa2250a23442262e669ce892510ee5b1b580"
+  },
+  {
+   "id": "soc-7-20-s4-q029",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-20",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the process of Karnataka's unification, border disputes, social movements, various reforms, and measures for empowerment."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is economic tenure?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s4-q029",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s4-q029",
+     "pdf_page": 133,
+     "printed_page": 119,
+     "y": 213.928,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s4-q029-key",
+     "pdf_page": 259,
+     "printed_page": 245,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T04:38:09+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T04:38:09+05:30",
+   "text_as_printed": "What is economic tenure? (Easy )",
+   "section_signal": "D",
+   "answer": {
+    "kind": "text",
+    "value": "The subsistence level of the holding from which the farmer can earn enough income to cover the farming expenses and keep himself and his family comfortable is called economic farming."
+   },
+   "answer_as_printed": "The subsistence level of the holding from which the farmer can earn enough income to cover the farming expenses and keep himself and his family comfortable is called economic farming.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T04:38:09+05:30",
+    "basis": "printed one-line answer, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "49716aa3376743886f638a364ece44b0d5f220c0f89cca2deeebf32717cd2f3f"
+  },
+  {
+   "id": "soc-7-20-s4-q030",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-20",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the process of Karnataka's unification, border disputes, social movements, various reforms, and measures for empowerment."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is co-operative farming?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s4-q030",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s4-q030",
+     "pdf_page": 133,
+     "printed_page": 119,
+     "y": 242.628,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s4-q030-key",
+     "pdf_page": 259,
+     "printed_page": 245,
+     "y": 64.608,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T04:38:09+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T04:38:09+05:30",
+   "text_as_printed": "What is co-operative farming? (Easy )",
+   "section_signal": "D",
+   "answer": {
+    "kind": "text",
+    "value": "Farmers voluntarily establish cooperative societies and entrust all their produce to the farmers and cultivate it together. When the production comes, they take out the necessary capital for the permanent development of the land and share the remaining part. This is called cooperative farming system."
+   },
+   "answer_as_printed": "Farmers voluntarily establish cooperative societies and entrust all their produce to the farmers and cultivate it together. When the production comes, they take out the necessary capital for the permanent development of the land and share the remaining part. This is called cooperative farming system.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T04:38:09+05:30",
+    "basis": "printed one-line answer, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "95f0ff57c30d740c9b52c964cc9ff1cee89ce416a1dff42e9173cbd86e85b1ce"
+  },
+  {
+   "id": "soc-7-20-s4-q031",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-20",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the process of Karnataka's unification, border disputes, social movements, various reforms, and measures for empowerment."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "List the major backward classes commissions formed in Karnataka.",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s4-q031",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s4-q031",
+     "pdf_page": 133,
+     "printed_page": 119,
+     "y": 271.328,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s4-q031-key",
+     "pdf_page": 259,
+     "printed_page": 245,
+     "y": 155.428,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T04:38:09+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T04:38:09+05:30",
+   "text_as_printed": "List the major backward classes commissions formed in Karnataka. (Average )",
+   "section_signal": "D",
+   "answer": {
+    "kind": "text",
+    "value": "LG Havanur Commission\nT K Venkataswamy Commission\nChinnappa Reddy Commission"
+   },
+   "answer_as_printed": "LG Havanur Commission\nT K Venkataswamy Commission\nChinnappa Reddy Commission",
+   "solution_steps": [
+    "LG Havanur Commission",
+    "T K Venkataswamy Commission",
+    "Chinnappa Reddy Commission"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T04:38:09+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "9f8ae74751a02ad8c43280fc206b41ba60043a2675dcb3ebdb30df4d75ca1c00"
+  },
+  {
+   "id": "soc-7-20-s4-q032",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-20",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the process of Karnataka's unification, border disputes, social movements, various reforms, and measures for empowerment."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Who was the main leader who initiated the non-Brahmin movement in the Mysore State?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s4-q032",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s4-q032",
+     "pdf_page": 133,
+     "printed_page": 119,
+     "y": 300.028,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s4-q032-key",
+     "pdf_page": 259,
+     "printed_page": 245,
+     "y": 270.228,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T04:38:09+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T04:38:09+05:30",
+   "text_as_printed": "Who was the main leader who initiated the non-Brahmin movement in the Mysore State? (Easy )",
+   "section_signal": "D",
+   "answer": {
+    "kind": "text",
+    "value": "SahukaraChennaiyya\nM Basavayya"
+   },
+   "answer_as_printed": "SahukaraChennaiyya\nM Basavayya",
+   "solution_steps": [
+    "SahukaraChennaiyya",
+    "M Basavayya"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T04:38:09+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "d02c923fcd8cc06ccc97251c61bc68a14ed7666a3100f4015ddbc8e6264b8e18"
+  },
+  {
+   "id": "soc-7-20-s4-q033",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-20",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the process of Karnataka's unification, border disputes, social movements, various reforms, and measures for empowerment."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What were the benefits of land reform measures?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s4-q033",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s4-q033",
+     "pdf_page": 133,
+     "printed_page": 119,
+     "y": 349.458,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s4-q033-key",
+     "pdf_page": 259,
+     "printed_page": 245,
+     "y": 356.358,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T04:38:09+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T04:38:09+05:30",
+   "text_as_printed": "What were the benefits of land reform measures? (Average )",
+   "section_signal": "D",
+   "answer": {
+    "kind": "text",
+    "value": "Land reforms gave small land ownership rights to the landowners\nThe rights of the cultivators were protected\nThe farmers were able to get some benefit from the cooperative farming system.\nThe cooperative farming system did not become an acceptable farming system to the extent expected."
+   },
+   "answer_as_printed": "Land reforms gave small land ownership rights to the landowners\nThe rights of the cultivators were protected\nThe farmers were able to get some benefit from the cooperative farming system.\nThe cooperative farming system did not become an acceptable farming system to the extent expected.",
+   "solution_steps": [
+    "Land reforms gave small land ownership rights to the landowners",
+    "The rights of the cultivators were protected",
+    "The farmers were able to get some benefit from the cooperative farming system.",
+    "The cooperative farming system did not become an acceptable farming system to the extent expected."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T04:38:09+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "a4538c764b6719021877fbf0133063bc2cbc6774fde0ef556b96233147c78462"
+  },
+  {
+   "id": "soc-7-20-s5-q034",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-20",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the process of Karnataka's unification, border disputes, social movements, various reforms, and measures for empowerment."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Why is the Panchayat Raj system important?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s5-q034",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s5-q034",
+     "pdf_page": 133,
+     "printed_page": 119,
+     "y": 408.558,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s5-q034-key",
+     "pdf_page": 259,
+     "printed_page": 245,
+     "y": 549.258,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T04:38:09+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T04:38:09+05:30",
+   "text_as_printed": "Why is the Panchayat Raj system important? (Difficult )",
+   "section_signal": "E",
+   "answer": {
+    "kind": "text",
+    "value": "Panchayats provided more opportunities for Dalits, backward classes and women to participate in self-governance. This new system gradually changed the social and political map of Karnataka."
+   },
+   "answer_as_printed": "Panchayats provided more opportunities for Dalits, backward classes and women to participate in self-governance. This new system gradually changed the social and political map of Karnataka.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T04:38:09+05:30",
+    "basis": "printed one-line answer, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "8f73543e52097fd193a769adaa4c243aa6ca7e9c221fba77f6cc19e1654005e6"
+  },
+  {
+   "id": "soc-7-20-s5-q035",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-20",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 16,
+     "text_as_printed": "Explains the process of Karnataka's unification, border disputes, social movements, various reforms, and measures for empowerment."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Why has the Karnataka government fixed a maximum limit on the amount of land a family can own?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s5-q035",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s5-q035",
+     "pdf_page": 133,
+     "printed_page": 119,
+     "y": 437.258,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-20-s5-q035-key",
+     "pdf_page": 259,
+     "printed_page": 245,
+     "y": 598.678,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T04:38:09+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T04:38:09+05:30",
+   "text_as_printed": "Why has the Karnataka government fixed a maximum limit on the amount of land a family can own? (Average)",
+   "section_signal": "E",
+   "answer": {
+    "kind": "text",
+    "value": "In 1974, the maximum land limit for a family was 54 acres if it was dry land without water facilities. If there were irrigation facilities and two or more crops were grown, ten to eighteen acres were fixed for each family, and if it was irrigated land with one crop, a maximum of 27 acres was fixed for a family."
+   },
+   "answer_as_printed": "In 1974, the maximum land limit for a family was 54 acres if it was dry land without water facilities. If there were irrigation facilities and two or more crops were grown, ten to eighteen acres were fixed for each family, and if it was irrigated land with one crop, a maximum of 27 acres was fixed for a family.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T04:38:09+05:30",
+    "basis": "printed one-line answer, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "17276ee2204bacb17509acb5ce46e866ae3fe5ce8e1bcc6af4526aca3d0607d2"
+  }
+ ],
+ "pending_summary": {}
+}
