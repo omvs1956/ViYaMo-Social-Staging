@@ -1,0 +1,4056 @@
+{
+ "contract_version": "1.7",
+ "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
+ "procedure_file": "extraction_procedure_social_addendum_v1.3_social science Classes 6-10 on top of procedure v2.md",
+ "machine_name": "soc-8-12_questions",
+ "version": 1,
+ "changelog": "v1 extraction — batch-01 — class-8-social",
+ "amendments_applied": [],
+ "unit_state": "EXTRACTED",
+ "review_ready": false,
+ "count_gate": {
+  "reference": 48,
+  "reference_source": "audited",
+  "extracted": 48,
+  "paired": 48,
+  "flagged": 10,
+  "gaps": [],
+  "duplicated_numbers": [],
+  "quota_table": "difficulty_only",
+  "second_method": {
+   "method": "printed difficulty distribution table",
+   "extracted": 48,
+   "agrees": true
+  },
+  "pass": true,
+  "note": "printed difficulty table 27/17/4=48 DISAGREES with per-question tags 26/17/4 (total 48). tags win (v2 §6); table easy=27 vs tags easy=26 differ by exactly q31 (no printed difficulty tag, left unassigned). q48 is a draw-and-label DIAGRAM answer (answer_diagram a48, §6; no map/features). Key-side numbering misprints recorded on q40 (key '39') and q42 (key '41'). flagged = 5 mcq benign key-text + q40/q42 duplicate-number + q25/q38 duplicate-stem + q48 answer_diagram; all carry structural marks flag (§4.5)."
+ },
+ "extraction": {
+  "source_file": "8thSS-EM-LBARevised_1787048180.pdf",
+  "source_ref_prefix": "8thSS-EM-LBARevised_1787048180.pdf",
+  "pdf_pages": [
+   35,
+   36,
+   37,
+   100,
+   101,
+   102,
+   103
+  ],
+  "printed_page_offset": -11,
+  "method_notes": [
+   "Offset -11 (pdf 35 = folio 24; pdf 100 = folio 89). Q: q1-6 pdf35, q7-26 pdf36, q27-48 pdf37. A: keys 1-28 pdf100, 29-41 pdf101, 42-47 pdf102, q48 diagram pdf103. q48 is a DRAW-DIAGRAM (appended by add_diagram_12; crop-first commit p103-q48_answer-diagram.png already pushed).",
+   "Sections: I MCQ q1-14; II one word/sentence q15-32 (vsa); III two/three q33-40 (sa); IV five/six q41-45 (la); V seven/eight q46-48 (la). Second LO (LO 2 map/skill) tags q48 only (set in add_diagram).",
+   "KEY-SIDE NUMBERING MISPRINT (two bands, question side is clean 1-48, ids = question-side number): section III key prints '39' twice (q39 'four types of chemical weathering' and q40 'rivers landforms') and omits '40'; section IV key prints '41' twice (q41 'chemical disintegration' and q42 'glaciers') and omits '42'. Answers correspond continuously -> populated to q40 and q42; each carries a 'duplicate question number' flag naming the key label. DUPNUMS=[] (no question-side duplicate -> no id letter suffix).",
+   "MCQ benign 'key text differs from option by a printed typo' (letter kept, addendum 4.1): q1 ('Fungus, Crust, Sand Dune, Loess Plain' vs option A 'Mushroom rocks, rock pedestals, sand dunes, loess plains' - garbled restatement), q7 ('Gutenberg' vs 'Gutenberg discontinuity'), q8 ('Metamorphic rock' vs 'Metamorphic rocks'), q9 ('In Australia' vs 'Australia'), q14 ('Surface waves' vs 'L-wave (Surface wave)'). q2-6,10-13 exact.",
+   "q31 prints NO difficulty tag on the question side -> difficulty unassigned + 'no difficulty tag' flag. Printed table easy=27 implies q31 is easy; table-vs-tags disagree by exactly q31 (left unassigned, v2 6).",
+   "VSA q15-32 answer.value = single sentence, no steps. q19 question asks 'intrusive igneous rock'; key says 'an igneous rock is granite' (granite is intrusive) - kept verbatim. q21 'riverbed', q31 'river mouth' kept verbatim.",
+   "SA/LA: SUB heading (non-step) + steps. Single-paragraph SUB = 1 step: q34,q35,q36,q37,q38,q41,q42. Multi-step SUB: q39 (4 type names), q43 (4 spring types), q44 (3), q45 (3), q46 (6), q47 (7). BUL single: q33, q40. q44 key heading 'Biological Weathering' = the question's 'organic weathering' (synonym; kept).",
+   "MARKS none printed -> all null/unassigned + structural flag (4.5)."
+  ],
+  "notation_summary": {
+   "render_tokens": 0,
+   "latex_tokens": 0,
+   "damage_flags": []
+  },
+  "excluded_objects": [],
+  "inline_excluded_count": 0,
+  "figure_references": []
+ },
+ "stimuli": [],
+ "questions": [
+  {
+   "id": "soc-8-12-s1-q001",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-12",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "D",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The landforms formed by the denudation of the wind are",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s1-q001",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s1-q001",
+     "pdf_page": 35,
+     "printed_page": 24,
+     "y": 442.343193,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s1-q001-key",
+     "pdf_page": 100,
+     "printed_page": 89,
+     "y": 120.503197,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:28:21+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:28:21+05:30",
+   "text_as_printed": "The landforms formed by the denudation of the wind are (D)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Mushroom rocks, rock pedestals, sand dunes, loess plains"
+    },
+    {
+     "id": "B",
+     "text": "V-shaped valleys, waterfalls, flood plains, meanders"
+    },
+    {
+     "id": "C",
+     "text": "U-shaped valleys, mountain peaks, rock terraces, hanging valleys"
+    },
+    {
+     "id": "D",
+     "text": "Stalactites, sinkholes, underground caves, descending caves"
+    }
+   ],
+   "answer_as_printed": "A) Fungus, Crust, Sand Dune, Loess Plain",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:28:21+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text differs from option by a printed typo",
+     "why_not_corrected": "letter A kept (addendum §4.1); key text 'Fungus, Crust, Sand Dune, Loess Plain' vs option A 'Mushroom rocks, rock pedestals, sand dunes, loess plains' differ by a source typo; spelling needs subject knowledge (v2 §1)",
+     "suggested": "A (letter kept)"
+    }
+   ],
+   "content_hash": "5397ae6e16c72e3028b353b5d1a56ff8c13a56f583268cfc628b90abed8ab162"
+  },
+  {
+   "id": "soc-8-12-s1-q002",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-12",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Kolar Gold Fields (KGF) is located in the state of",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s1-q002",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s1-q002",
+     "pdf_page": 35,
+     "printed_page": 24,
+     "y": 191.423196,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s1-q002-key",
+     "pdf_page": 100,
+     "printed_page": 89,
+     "y": 137.783193,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:28:21+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:28:21+05:30",
+   "text_as_printed": "Kolar Gold Fields (KGF) is located in the state of (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Karnataka"
+    },
+    {
+     "id": "B",
+     "text": "Andhra Pradesh"
+    },
+    {
+     "id": "C",
+     "text": "Goa"
+    },
+    {
+     "id": "D",
+     "text": "Maharashtra"
+    }
+   ],
+   "answer_as_printed": "A) Karnataka",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:28:21+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "8c99ae33514a6a53c714c29df1e914ff57618e01a5186d1fe889afaa964fbc9e"
+  },
+  {
+   "id": "soc-8-12-s1-q003",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-12",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The sedimentary rock formed due to chemical weathering is",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s1-q003",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s1-q003",
+     "pdf_page": 35,
+     "printed_page": 24,
+     "y": 564.143212,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s1-q003-key",
+     "pdf_page": 100,
+     "printed_page": 89,
+     "y": 155.18319,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:28:21+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:28:21+05:30",
+   "text_as_printed": "The sedimentary rock formed due to chemical weathering is (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Graphite"
+    },
+    {
+     "id": "B",
+     "text": "Garnet"
+    },
+    {
+     "id": "C",
+     "text": "Gypsum"
+    },
+    {
+     "id": "D",
+     "text": "Limestone"
+    }
+   ],
+   "answer_as_printed": "C) Gypsum",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:28:21+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "38283c573a0b70c846cb218e2dc2f0a1ccc2f5225164586970101a04761553f5"
+  },
+  {
+   "id": "soc-8-12-s1-q004",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-12",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The famous volcano of Italy is",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s1-q004",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s1-q004",
+     "pdf_page": 35,
+     "printed_page": 24,
+     "y": 598.943184,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s1-q004-key",
+     "pdf_page": 100,
+     "printed_page": 89,
+     "y": 172.70319,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:28:21+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:28:21+05:30",
+   "text_as_printed": "The famous volcano of Italy is (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Mount Krakatoa"
+    },
+    {
+     "id": "B",
+     "text": "Mount Pelee"
+    },
+    {
+     "id": "C",
+     "text": "Mount Vesuvius"
+    },
+    {
+     "id": "D",
+     "text": "Mount Fuji"
+    }
+   ],
+   "answer_as_printed": "C) Mount Vesuvius",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:28:21+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "fe3982026137c6edcfd390b2502490bdb77162946291ee409d090c5cd3b8a2d6"
+  },
+  {
+   "id": "soc-8-12-s1-q005",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-12",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The earthquake monitoring center in Karnataka is located at",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s1-q005",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s1-q005",
+     "pdf_page": 35,
+     "printed_page": 24,
+     "y": 651.143212,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s1-q005-key",
+     "pdf_page": 100,
+     "printed_page": 89,
+     "y": 190.103188,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:28:21+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:28:21+05:30",
+   "text_as_printed": "The earthquake monitoring center in Karnataka is located at (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Hyderabad"
+    },
+    {
+     "id": "B",
+     "text": "Dehradun"
+    },
+    {
+     "id": "C",
+     "text": "Pune"
+    },
+    {
+     "id": "D",
+     "text": "Gauribidanur"
+    }
+   ],
+   "answer_as_printed": "D) Gauribidanur",
+   "answer": {
+    "kind": "option",
+    "option_id": "D"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:28:21+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "38e1a33a5c85ac3ccb1ab314aed3d199c4ac78352572976797eee4ffadef9d37"
+  },
+  {
+   "id": "soc-8-12-s1-q006",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-12",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The Belum and Behera limestone caves are located in",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s1-q006",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s1-q006",
+     "pdf_page": 35,
+     "printed_page": 24,
+     "y": 685.943184,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s1-q006-key",
+     "pdf_page": 100,
+     "printed_page": 89,
+     "y": 207.383195,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:28:21+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:28:21+05:30",
+   "text_as_printed": "The Belum and Behera limestone caves are located in (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Karnataka"
+    },
+    {
+     "id": "B",
+     "text": "Andhra Pradesh"
+    },
+    {
+     "id": "C",
+     "text": "Kerala"
+    },
+    {
+     "id": "D",
+     "text": "Rajasthan"
+    }
+   ],
+   "answer_as_printed": "B) Andhra Pradesh",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:28:21+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "d4b1ddd120831205f2aaac8ebce00bf8b098977105738d36c986ec26da9f4e8f"
+  },
+  {
+   "id": "soc-8-12-s1-q007",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-12",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The boundary separating the mantle and the core",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s1-q007",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s1-q007",
+     "pdf_page": 36,
+     "printed_page": 25,
+     "y": 68.18319,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s1-q007-key",
+     "pdf_page": 100,
+     "printed_page": 89,
+     "y": 224.903184,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:28:21+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:28:21+05:30",
+   "text_as_printed": "The boundary separating the mantle and the core (A)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Gutenberg discontinuity"
+    },
+    {
+     "id": "B",
+     "text": "Mohorovicic discontinuity"
+    },
+    {
+     "id": "C",
+     "text": "Lithosphere"
+    },
+    {
+     "id": "D",
+     "text": "Asthenosphere"
+    }
+   ],
+   "answer_as_printed": "A) Gutenberg",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:28:21+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text differs from option by a printed typo",
+     "why_not_corrected": "letter A kept (addendum §4.1); key text 'Gutenberg' vs option A 'Gutenberg discontinuity' differ by a source typo; spelling needs subject knowledge (v2 §1)",
+     "suggested": "A (letter kept)"
+    }
+   ],
+   "content_hash": "572db0f0e184a924aa1e6e7398eca7eab7ce9779dbb76855f65f90ec30842a8e"
+  },
+  {
+   "id": "soc-8-12-s1-q008",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-12",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Diamond, ruby and emerald are ______ rocks",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s1-q008",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s1-q008",
+     "pdf_page": 36,
+     "printed_page": 25,
+     "y": 120.503197,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s1-q008-key",
+     "pdf_page": 100,
+     "printed_page": 89,
+     "y": 242.303193,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:28:21+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:28:21+05:30",
+   "text_as_printed": "Diamond, ruby and emerald are ______ rocks (A)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Metamorphic rocks"
+    },
+    {
+     "id": "B",
+     "text": "Organic sedimentary rocks"
+    },
+    {
+     "id": "C",
+     "text": "Igneous rocks"
+    },
+    {
+     "id": "D",
+     "text": "Sandy rocks"
+    }
+   ],
+   "answer_as_printed": "A) Metamorphic rock",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:28:21+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text differs from option by a printed typo",
+     "why_not_corrected": "letter A kept (addendum §4.1); key text 'Metamorphic rock' vs option A 'Metamorphic rocks' differ by a source typo; spelling needs subject knowledge (v2 §1)",
+     "suggested": "A (letter kept)"
+    }
+   ],
+   "content_hash": "9ea4548a187473813120bc120f152e263316bf107ea2551843a0eda167e680c1"
+  },
+  {
+   "id": "soc-8-12-s1-q009",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-12",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Artesian wells are mostly found in",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s1-q009",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s1-q009",
+     "pdf_page": 36,
+     "printed_page": 25,
+     "y": 172.70319,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s1-q009-key",
+     "pdf_page": 100,
+     "printed_page": 89,
+     "y": 259.703202,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:28:21+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:28:21+05:30",
+   "text_as_printed": "Artesian wells are mostly found in (A)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Europe"
+    },
+    {
+     "id": "B",
+     "text": "Antarctica"
+    },
+    {
+     "id": "C",
+     "text": "South Africa"
+    },
+    {
+     "id": "D",
+     "text": "Australia"
+    }
+   ],
+   "answer_as_printed": "D) In Australia",
+   "answer": {
+    "kind": "option",
+    "option_id": "D"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:28:21+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text differs from option by a printed typo",
+     "why_not_corrected": "letter D kept (addendum §4.1); key text 'In Australia' vs option D 'Australia' differ by a source typo; spelling needs subject knowledge (v2 §1)",
+     "suggested": "D (letter kept)"
+    }
+   ],
+   "content_hash": "f5c5219848fd5320831a37d8d06a455821dd1d51984d30f092b4fc3b53356d1e"
+  },
+  {
+   "id": "soc-8-12-s1-q010",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-12",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The process in which rocks break into pieces without any chemical change",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s1-q010",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s1-q010",
+     "pdf_page": 36,
+     "printed_page": 25,
+     "y": 207.383195,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s1-q010-key",
+     "pdf_page": 100,
+     "printed_page": 89,
+     "y": 276.983185,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:28:21+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:28:21+05:30",
+   "text_as_printed": "The process in which rocks break into pieces without any chemical change (A)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Chemical weathering"
+    },
+    {
+     "id": "B",
+     "text": "Denudation"
+    },
+    {
+     "id": "C",
+     "text": "Oxidation"
+    },
+    {
+     "id": "D",
+     "text": "Physical weathering"
+    }
+   ],
+   "answer_as_printed": "D) Physical weathering",
+   "answer": {
+    "kind": "option",
+    "option_id": "D"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:28:21+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "d04702db66a2bd75381744e9bd3b8acc02aef19a6dd64a007c68b859ebb506cc"
+  },
+  {
+   "id": "soc-8-12-s1-q011",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-12",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The upper layer of the oceanic crust is called",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s1-q011",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s1-q011",
+     "pdf_page": 36,
+     "printed_page": 25,
+     "y": 276.983185,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s1-q011-key",
+     "pdf_page": 100,
+     "printed_page": 89,
+     "y": 294.503197,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:28:21+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:28:21+05:30",
+   "text_as_printed": "The upper layer of the oceanic crust is called (A)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Sial"
+    },
+    {
+     "id": "B",
+     "text": "Sima"
+    },
+    {
+     "id": "C",
+     "text": "Mantle"
+    },
+    {
+     "id": "D",
+     "text": "Core"
+    }
+   ],
+   "answer_as_printed": "B) Sima",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:28:21+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "4126784045bd27720e66fc1695ac9f854c3ecf834aa6a7e14f8b96711fe8b15d"
+  },
+  {
+   "id": "soc-8-12-s1-q012",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-12",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Rocks formed when magma cools and solidifies below the Earth's surface before reaching it",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s1-q012",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s1-q012",
+     "pdf_page": 36,
+     "printed_page": 25,
+     "y": 311.903184,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s1-q012-key",
+     "pdf_page": 100,
+     "printed_page": 89,
+     "y": 311.903184,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:28:21+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:28:21+05:30",
+   "text_as_printed": "Rocks formed when magma cools and solidifies below the Earth's surface before reaching it (A)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Sedimentary rock"
+    },
+    {
+     "id": "B",
+     "text": "Metamorphic rocks"
+    },
+    {
+     "id": "C",
+     "text": "Intrusive rocks"
+    },
+    {
+     "id": "D",
+     "text": "Extrusive rocks"
+    }
+   ],
+   "answer_as_printed": "C) Intrusive rocks",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:28:21+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "aab9b39d3f0469fc0419fcb965ffbfcd65b4d1d8eb043f2e572ec6c424a0c09e"
+  },
+  {
+   "id": "soc-8-12-s1-q013",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-12",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "A wide, low volcanic opening is called",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s1-q013",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s1-q013",
+     "pdf_page": 36,
+     "printed_page": 25,
+     "y": 381.503197,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s1-q013-key",
+     "pdf_page": 100,
+     "printed_page": 89,
+     "y": 329.303193,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:28:21+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:28:21+05:30",
+   "text_as_printed": "A wide, low volcanic opening is called (A)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Vent"
+    },
+    {
+     "id": "B",
+     "text": "Volcanic crater"
+    },
+    {
+     "id": "C",
+     "text": "Caldera"
+    },
+    {
+     "id": "D",
+     "text": "Magma"
+    }
+   ],
+   "answer_as_printed": "C) Caldera",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:28:21+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "5c0bbd7f5f252d5852eb16523577faedcf6fa2a6649d2b6ef9821dc15506822b"
+  },
+  {
+   "id": "soc-8-12-s1-q014",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-12",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The most destructive earthquake wave is",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s1-q014",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s1-q014",
+     "pdf_page": 36,
+     "printed_page": 25,
+     "y": 433.703179,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s1-q014-key",
+     "pdf_page": 100,
+     "printed_page": 89,
+     "y": 346.583199,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:28:21+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:28:21+05:30",
+   "text_as_printed": "The most destructive earthquake wave is (A)",
+   "options": [
+    {
+     "id": "A",
+     "text": "P-wave"
+    },
+    {
+     "id": "B",
+     "text": "S-wave"
+    },
+    {
+     "id": "C",
+     "text": "L-wave (Surface wave)"
+    },
+    {
+     "id": "D",
+     "text": "Secondary wave"
+    }
+   ],
+   "answer_as_printed": "D) Surface waves",
+   "answer": {
+    "kind": "option",
+    "option_id": null
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text not among options",
+     "why_not_corrected": "the printed key is '14. D) Surface waves'. Letter D = option D 'Secondary wave', but the key text 'Surface waves' names the surface wave = option C 'L-wave (Surface wave)' (no exact string match to any option). Letter and key text name different options; no answer asserted. (The most destructive earthquake wave is the surface/L-wave.)",
+     "suggested": "C by text ('Surface waves' = 'L-wave (Surface wave)'); printed letter D 'Secondary wave' disagrees - review (addendum 13.6)"
+    }
+   ],
+   "content_hash": "831f0a6c7a2fd693c44c1efcb3f0714e55122bcdf0666a75c9e1c4643f154086"
+  },
+  {
+   "id": "soc-8-12-s2-q015",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-12",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is lithosphere?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s2-q015",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s2-q015",
+     "pdf_page": 36,
+     "printed_page": 25,
+     "y": 503.30317,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s2-q015-key",
+     "pdf_page": 100,
+     "printed_page": 89,
+     "y": 398.903207,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:28:21+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:28:21+05:30",
+   "text_as_printed": "What is lithosphere? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "The outermost solid layer of the Earth is called as lithosphere."
+   },
+   "answer_as_printed": "The outermost solid layer of the Earth is called as lithosphere.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:28:21+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "c1520cf5511349a8baf3c24ebeda63eaf919f9848a0b0b35b9d95c4a361e70ef"
+  },
+  {
+   "id": "soc-8-12-s2-q016",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-12",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "How old is the Earth?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s2-q016",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s2-q016",
+     "pdf_page": 36,
+     "printed_page": 25,
+     "y": 520.703179,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s2-q016-key",
+     "pdf_page": 100,
+     "printed_page": 89,
+     "y": 416.30317,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:28:21+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:28:21+05:30",
+   "text_as_printed": "How old is the Earth? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "The Earth is 4.6 billion years old."
+   },
+   "answer_as_printed": "The Earth is 4.6 billion years old.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:28:21+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "fa738e4fc6e3d11fc9b5f3fe11b46349be449ce697fed7262fe10b4e11efe819"
+  },
+  {
+   "id": "soc-8-12-s2-q017",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-12",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Explain the primary composition of crust of the Earth?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s2-q017",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s2-q017",
+     "pdf_page": 36,
+     "printed_page": 25,
+     "y": 538.223214,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s2-q017-key",
+     "pdf_page": 100,
+     "printed_page": 89,
+     "y": 433.703179,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:28:21+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:28:21+05:30",
+   "text_as_printed": "Explain the primary composition of crust of the Earth? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "The Earth's crust is composed of silica, aluminum, and magnesium."
+   },
+   "answer_as_printed": "The Earth's crust is composed of silica, aluminum, and magnesium.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:28:21+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "98766a34461df7b3dc3d92112b02dcc61f8cbe6eb6fad10a654cc50fe6c5f251"
+  },
+  {
+   "id": "soc-8-12-s2-q018",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-12",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Name the zone that the crust meets the mantle",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s2-q018",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s2-q018",
+     "pdf_page": 36,
+     "printed_page": 25,
+     "y": 555.503197,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s2-q018-key",
+     "pdf_page": 100,
+     "printed_page": 89,
+     "y": 451.103188,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:28:21+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:28:21+05:30",
+   "text_as_printed": "Name the zone that the crust meets the mantle (E)",
+   "answer": {
+    "kind": "text",
+    "value": "The zone where the crust and mantle meet is called as Moho zone."
+   },
+   "answer_as_printed": "The zone where the crust and mantle meet is called as Moho zone.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:28:21+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "ed9ff6b5c54a5fc46095ab9f9ff2bf65e00b9ffd2bc3b0ea560ffe7b0684fba1"
+  },
+  {
+   "id": "soc-8-12-s2-q019",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-12",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Give an example of intrusive igneous rock.",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s2-q019",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s2-q019",
+     "pdf_page": 36,
+     "printed_page": 25,
+     "y": 572.903207,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s2-q019-key",
+     "pdf_page": 100,
+     "printed_page": 89,
+     "y": 468.503197,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:28:21+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:28:21+05:30",
+   "text_as_printed": "Give an example of intrusive igneous rock. (A)",
+   "answer": {
+    "kind": "text",
+    "value": "An example of an igneous rock is granite."
+   },
+   "answer_as_printed": "An example of an igneous rock is granite.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:28:21+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "ebc689208eceef3d1d332606707b507a201450f1925852f43ac5be1db0478599"
+  },
+  {
+   "id": "soc-8-12-s2-q020",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-12",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is magma?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s2-q020",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s2-q020",
+     "pdf_page": 36,
+     "printed_page": 25,
+     "y": 590.30317,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s2-q020-key",
+     "pdf_page": 100,
+     "printed_page": 89,
+     "y": 485.903207,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:28:21+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:28:21+05:30",
+   "text_as_printed": "What is magma? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "Molten or semi-molten rock material inside the Earth is called magma."
+   },
+   "answer_as_printed": "Molten or semi-molten rock material inside the Earth is called magma.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:28:21+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "af82d8ad5411b6ee23e20bbe9b0370061420a28fca1d830bac4fe36dceafbd91"
+  },
+  {
+   "id": "soc-8-12-s2-q021",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-12",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is the path of a river called?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s2-q021",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s2-q021",
+     "pdf_page": 36,
+     "printed_page": 25,
+     "y": 607.823205,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s2-q021-key",
+     "pdf_page": 100,
+     "printed_page": 89,
+     "y": 503.30317,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:28:21+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:28:21+05:30",
+   "text_as_printed": "What is the path of a river called? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "The path of a river's flow is called as riverbed."
+   },
+   "answer_as_printed": "The path of a river's flow is called as riverbed.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:28:21+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "95c7e910626cdc07040add7accdbac2c09bb45dc2c5d71150bf4da706e99a08f"
+  },
+  {
+   "id": "soc-8-12-s2-q022",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-12",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is water pollution?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s2-q022",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s2-q022",
+     "pdf_page": 36,
+     "printed_page": 25,
+     "y": 625.103188,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s2-q022-key",
+     "pdf_page": 100,
+     "printed_page": 89,
+     "y": 520.703179,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:28:21+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:28:21+05:30",
+   "text_as_printed": "What is water pollution? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "Water pollution is also called as aquatic pollution."
+   },
+   "answer_as_printed": "Water pollution is also called as aquatic pollution.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:28:21+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "d6456e175ff79d0c26da455bbad27cc3332e2b05d50d7ee8fcc7bacfe24b0a08"
+  },
+  {
+   "id": "soc-8-12-s2-q023",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-12",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is a Volcanic Crater?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s2-q023",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s2-q023",
+     "pdf_page": 36,
+     "printed_page": 25,
+     "y": 642.503197,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s2-q023-key",
+     "pdf_page": 100,
+     "printed_page": 89,
+     "y": 538.223214,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:28:21+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:28:21+05:30",
+   "text_as_printed": "What is a Volcanic Crater? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "The cone-shaped mouth of a volcano is called a volcanic crater."
+   },
+   "answer_as_printed": "The cone-shaped mouth of a volcano is called a volcanic crater.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:28:21+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "3b2f49b7b7620ef01ed3d6109a7106f3eb6a2a184002fed98b34cc93b9bd4cf5"
+  },
+  {
+   "id": "soc-8-12-s2-q024",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-12",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Name the scale used to measure the intensity of earthquakes.",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s2-q024",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s2-q024",
+     "pdf_page": 36,
+     "printed_page": 25,
+     "y": 659.903207,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s2-q024-key",
+     "pdf_page": 100,
+     "printed_page": 89,
+     "y": 555.503197,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:28:21+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:28:21+05:30",
+   "text_as_printed": "Name the scale used to measure the intensity of earthquakes. (E)",
+   "answer": {
+    "kind": "text",
+    "value": "The intensity of an earthquake is measured using the Richter scale."
+   },
+   "answer_as_printed": "The intensity of an earthquake is measured using the Richter scale.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:28:21+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "75e9cf76093013dedc01c207b20bda9a3afd81bb068c4f2bc1f2609a16c6e7a5"
+  },
+  {
+   "id": "soc-8-12-s2-q025",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-12",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is weathering?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s2-q025",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s2-q025",
+     "pdf_page": 36,
+     "printed_page": 25,
+     "y": 677.30317,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s2-q025-key",
+     "pdf_page": 100,
+     "printed_page": 89,
+     "y": 572.903207,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:28:21+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:28:21+05:30",
+   "text_as_printed": "What is weathering? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "The natural process in which rocks break, disintegrate, and decay is called weathering."
+   },
+   "answer_as_printed": "The natural process in which rocks break, disintegrate, and decay is called weathering.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:28:21+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "field": "text",
+     "issue": "duplicate stem — keys differ: identical stem 'What is weathering?' also appears as q38 (section III, SA); q25 is section II VSA. Printed keys differ, both kept as printed. partner soc-8-12-s3-q038",
+     "why_not_corrected": "both stems printed verbatim; duplication is a source feature and keys differ",
+     "suggested": "review — identical stem across sections, keys differ"
+    }
+   ],
+   "content_hash": "aa4ac8d88550fcb42436036ee14e84b6949757ae91f40d4bb92b49e7fb6bcaad"
+  },
+  {
+   "id": "soc-8-12-s2-q026",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-12",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is a tsunami?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s2-q026",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s2-q026",
+     "pdf_page": 36,
+     "printed_page": 25,
+     "y": 694.703179,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s2-q026-key",
+     "pdf_page": 100,
+     "printed_page": 89,
+     "y": 607.823205,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:28:21+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:28:21+05:30",
+   "text_as_printed": "What is a tsunami? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "Huge, high, and destructive waves generated by earthquakes occurring on the sea or ocean floor, which strike the coast, are called tsunamis."
+   },
+   "answer_as_printed": "Huge, high, and destructive waves generated by earthquakes occurring on the sea or ocean floor, which strike the coast, are called tsunamis.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:28:21+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "2884d82250eb619a23eb9dc9d1501e3da86e87901cf93c36d4bc4d1e9a2fadb8"
+  },
+  {
+   "id": "soc-8-12-s2-q027",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-12",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What are the rock layers through which groundwater cannot pass called?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s2-q027",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s2-q027",
+     "pdf_page": 37,
+     "printed_page": 26,
+     "y": 68.18319,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s2-q027-key",
+     "pdf_page": 100,
+     "printed_page": 89,
+     "y": 642.503197,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:28:21+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:28:21+05:30",
+   "text_as_printed": "What are the rock layers through which groundwater cannot pass called? (A)",
+   "answer": {
+    "kind": "text",
+    "value": "Rock layers through which groundwater cannot pass are called impermeable rocks."
+   },
+   "answer_as_printed": "Rock layers through which groundwater cannot pass are called impermeable rocks.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:28:21+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "2957620757608ecfd3146cd18e4f5750e03175d42ffa4216fb03b2eac360642a"
+  },
+  {
+   "id": "soc-8-12-s2-q028",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-12",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is a spring?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s2-q028",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s2-q028",
+     "pdf_page": 37,
+     "printed_page": 26,
+     "y": 103.103188,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s2-q028-key",
+     "pdf_page": 100,
+     "printed_page": 89,
+     "y": 677.30317,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:28:21+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:28:21+05:30",
+   "text_as_printed": "What is a spring? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "The natural outflow of groundwater to the surface is called springs."
+   },
+   "answer_as_printed": "The natural outflow of groundwater to the surface is called springs.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:28:21+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "937ba9e344ef1a30bc38c277c7baccbf9f620b0fac802f2adc6b575faa32daa1"
+  },
+  {
+   "id": "soc-8-12-s2-q029",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-12",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "How are igneous rocks formed?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s2-q029",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s2-q029",
+     "pdf_page": 37,
+     "printed_page": 26,
+     "y": 120.503197,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s2-q029-key",
+     "pdf_page": 101,
+     "printed_page": 90,
+     "y": 68.18319,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:28:21+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:28:21+05:30",
+   "text_as_printed": "How are igneous rocks formed? (A)",
+   "answer": {
+    "kind": "text",
+    "value": "Igneous rocks are formed when molten material (magma) from the interior of the Earth comes out and cools and solidifies on the surface."
+   },
+   "answer_as_printed": "Igneous rocks are formed when molten material (magma) from the interior of the Earth comes out and cools and solidifies on the surface.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:28:21+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "30d448e253f40d88419c8e2039413ebc74a9a552f4e1b2000162fb8402d892a8"
+  },
+  {
+   "id": "soc-8-12-s2-q030",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-12",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is groundwater?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s2-q030",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s2-q030",
+     "pdf_page": 37,
+     "printed_page": 26,
+     "y": 137.783193,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s2-q030-key",
+     "pdf_page": 101,
+     "printed_page": 90,
+     "y": 103.103188,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:28:21+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:28:21+05:30",
+   "text_as_printed": "What is groundwater? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "A small portion of rainwater falling on the Earth infiltrates into the ground and gets stored in the inner layers; this stored water is called groundwater."
+   },
+   "answer_as_printed": "A small portion of rainwater falling on the Earth infiltrates into the ground and gets stored in the inner layers; this stored water is called groundwater.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:28:21+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "634083e1f26e297423de95cc8ed5d32a28803f5375a5443d58c575d126fe5c98"
+  },
+  {
+   "id": "soc-8-12-s2-q031",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-12",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is the place where a river ends and flows into the sea called?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s2-q031",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s2-q031",
+     "pdf_page": 37,
+     "printed_page": 26,
+     "y": 155.18319,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s2-q031-key",
+     "pdf_page": 101,
+     "printed_page": 90,
+     "y": 137.783193,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:28:21+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:28:21+05:30",
+   "answer": {
+    "kind": "text",
+    "value": "The place where a river ends and joins the sea is called the river mouth."
+   },
+   "answer_as_printed": "The place where a river ends and joins the sea is called the river mouth.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:28:21+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the question prints no difficulty tag; assigning one needs subject judgement — left unassigned for review",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "55bae026ea198c3bbf95a3d82b804a51f7919ad412e540192017bfbb334fd377"
+  },
+  {
+   "id": "soc-8-12-s2-q032",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-12",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is seismology?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s2-q032",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s2-q032",
+     "pdf_page": 37,
+     "printed_page": 26,
+     "y": 172.70319,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s2-q032-key",
+     "pdf_page": 101,
+     "printed_page": 90,
+     "y": 155.18319,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:28:21+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:28:21+05:30",
+   "text_as_printed": "What is seismology? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "The scientific study of earthquakes is called seismology."
+   },
+   "answer_as_printed": "The scientific study of earthquakes is called seismology.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:28:21+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "45f493c8edaeecf1027d449cece6da65462498f54b4d76a8bdc9e2c64ec49514"
+  },
+  {
+   "id": "soc-8-12-s3-q033",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-12",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Name the different layers of the Earth's interior.",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s3-q033",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s3-q033",
+     "pdf_page": 37,
+     "printed_page": 26,
+     "y": 224.903184,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s3-q033-key",
+     "pdf_page": 101,
+     "printed_page": 90,
+     "y": 207.383195,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:28:21+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:28:21+05:30",
+   "text_as_printed": "Name the different layers of the Earth's interior. (E)",
+   "answer": {
+    "kind": "text",
+    "value": "Layers of the Earth's Interior are the crust, mantle, and core."
+   },
+   "answer_as_printed": "Layers of the Earth's Interior are the crust, mantle, and core.",
+   "solution_steps": [
+    "Layers of the Earth's Interior are the crust, mantle, and core."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:28:21+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "d4a01da0c33325323f5a004d61faca1df044e41a24db9ac320ea83f1baf16e69"
+  },
+  {
+   "id": "soc-8-12-s3-q034",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-12",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is the mantle? What are its two parts?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s3-q034",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s3-q034",
+     "pdf_page": 37,
+     "printed_page": 26,
+     "y": 242.303193,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s3-q034-key",
+     "pdf_page": 101,
+     "printed_page": 90,
+     "y": 224.903184,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:28:21+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:28:21+05:30",
+   "text_as_printed": "What is the mantle? What are its two parts? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "Mantle Layers:\nThe second layer of the Earth's interior is the mantle, divided into the asthenosphere and mesosphere."
+   },
+   "answer_as_printed": "Mantle Layers:\nThe second layer of the Earth's interior is the mantle, divided into the asthenosphere and mesosphere.",
+   "solution_steps": [
+    "The second layer of the Earth's interior is the mantle, divided into the asthenosphere and mesosphere."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:28:21+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "c1dc80808f9ba6d0398164cc2bbff0fde909b15c0503b759d6f8bcc97f6cff2a"
+  },
+  {
+   "id": "soc-8-12-s3-q035",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-12",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What are the types of rock?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s3-q035",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s3-q035",
+     "pdf_page": 37,
+     "printed_page": 26,
+     "y": 259.703202,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s3-q035-key",
+     "pdf_page": 101,
+     "printed_page": 90,
+     "y": 276.983185,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:28:21+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:28:21+05:30",
+   "text_as_printed": "What are the types of rock? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "Types of Rocks:\nRocks are classified into three types: igneous, sedimentary, and metamorphic rocks."
+   },
+   "answer_as_printed": "Types of Rocks:\nRocks are classified into three types: igneous, sedimentary, and metamorphic rocks.",
+   "solution_steps": [
+    "Rocks are classified into three types: igneous, sedimentary, and metamorphic rocks."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:28:21+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "23682a0ac84c2347bd7bf5ad0ee107114afba06d92dc58234dffff71f743df7c"
+  },
+  {
+   "id": "soc-8-12-s3-q036",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-12",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "D",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Explain the forces thatreacting on the Earth's crust.",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s3-q036",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s3-q036",
+     "pdf_page": 37,
+     "printed_page": 26,
+     "y": 276.983185,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s3-q036-key",
+     "pdf_page": 101,
+     "printed_page": 90,
+     "y": 329.303193,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:28:21+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:28:21+05:30",
+   "text_as_printed": "Explain the forces thatreacting on the Earth's crust. (D)",
+   "answer": {
+    "kind": "text",
+    "value": "Forces of the Earth's Crust:\nThe two forces affecting the Earth's crust are endogenic (internal) and exogenic (external) forces."
+   },
+   "answer_as_printed": "Forces of the Earth's Crust:\nThe two forces affecting the Earth's crust are endogenic (internal) and exogenic (external) forces.",
+   "solution_steps": [
+    "The two forces affecting the Earth's crust are endogenic (internal) and exogenic (external) forces."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:28:21+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "55afba2cf7b04431bf33ad14ff5fe67ae6d57caa168508e856aba095cd3fb1a3"
+  },
+  {
+   "id": "soc-8-12-s3-q037",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-12",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is an active volcano? Give an example.",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s3-q037",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s3-q037",
+     "pdf_page": 37,
+     "printed_page": 26,
+     "y": 294.503197,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s3-q037-key",
+     "pdf_page": 101,
+     "printed_page": 90,
+     "y": 381.503197,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:28:21+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:28:21+05:30",
+   "text_as_printed": "What is an active volcano? Give an example. (A)",
+   "answer": {
+    "kind": "text",
+    "value": "Active Volcanoes:\nVolcanoes that erupt repeatedly are called active volcanoes. Example: Mauna Loa in the Hawaiian Islands."
+   },
+   "answer_as_printed": "Active Volcanoes:\nVolcanoes that erupt repeatedly are called active volcanoes. Example: Mauna Loa in the Hawaiian Islands.",
+   "solution_steps": [
+    "Volcanoes that erupt repeatedly are called active volcanoes. Example: Mauna Loa in the Hawaiian Islands."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:28:21+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "dca60797ebe74d3b8647f74a089621480284d91ac0c80bd1c47933be9be13b67"
+  },
+  {
+   "id": "soc-8-12-s3-q038",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-12",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is weathering?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s3-q038",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s3-q038",
+     "pdf_page": 37,
+     "printed_page": 26,
+     "y": 311.903184,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s3-q038-key",
+     "pdf_page": 101,
+     "printed_page": 90,
+     "y": 433.703179,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:28:21+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:28:21+05:30",
+   "text_as_printed": "What is weathering? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "Weathering:\nThe natural process of rocks breaking and disintegrating is called weathering."
+   },
+   "answer_as_printed": "Weathering:\nThe natural process of rocks breaking and disintegrating is called weathering.",
+   "solution_steps": [
+    "The natural process of rocks breaking and disintegrating is called weathering."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:28:21+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "field": "text",
+     "issue": "duplicate stem — keys differ: identical stem 'What is weathering?' also appears as q25 (section II, VSA); q38 is section III SA. Printed keys differ, both kept as printed. partner soc-8-12-s2-q025",
+     "why_not_corrected": "both stems printed verbatim; duplication is a source feature and keys differ",
+     "suggested": "review — identical stem across sections, keys differ"
+    }
+   ],
+   "content_hash": "aa4ac8d88550fcb42436036ee14e84b6949757ae91f40d4bb92b49e7fb6bcaad"
+  },
+  {
+   "id": "soc-8-12-s3-q039",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-12",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What are the four types of chemical weathering?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s3-q039",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s3-q039",
+     "pdf_page": 37,
+     "printed_page": 26,
+     "y": 329.303193,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s3-q039-key",
+     "pdf_page": 101,
+     "printed_page": 90,
+     "y": 485.903207,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:28:21+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:28:21+05:30",
+   "text_as_printed": "What are the four types of chemical weathering? (A)",
+   "answer": {
+    "kind": "text",
+    "value": "Four types of chemical weathering:\nOxidation\nCarbonation\nHydration\nSolution"
+   },
+   "answer_as_printed": "Four types of chemical weathering:\nOxidation\nCarbonation\nHydration\nSolution",
+   "solution_steps": [
+    "Oxidation",
+    "Carbonation",
+    "Hydration",
+    "Solution"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:28:21+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "de7f2e5477644901fdcf2c8ed664e0568d960a831c37014deebd3cefa8c7cd7c"
+  },
+  {
+   "id": "soc-8-12-s3-q040",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-12",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Name the landforms created by rivers as agents of Denudation.",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s3-q040",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s3-q040",
+     "pdf_page": 37,
+     "printed_page": 26,
+     "y": 346.583199,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s3-q040-key",
+     "pdf_page": 101,
+     "printed_page": 90,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:28:21+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:28:21+05:30",
+   "text_as_printed": "Name the landforms created by rivers as agents of Denudation. (A)",
+   "answer": {
+    "kind": "text",
+    "value": "Rivers perform three functions—erosion, transportation, and deposition—and create distinctive landforms on the Earth's surface."
+   },
+   "answer_as_printed": "Rivers perform three functions—erosion, transportation, and deposition—and create distinctive landforms on the Earth's surface.",
+   "solution_steps": [
+    "Rivers perform three functions—erosion, transportation, and deposition—and create distinctive landforms on the Earth's surface."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:28:21+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "field": "answer",
+     "issue": "duplicate question number — the printed answer key labels this (Q40) answer with the number '39' (section III prints '39' twice and prints no '40'); the answer corresponds continuously to Q40 and is populated. Key-side numbering misprint; question-side number is 40.",
+     "why_not_corrected": "key-side label is a source misprint; extraction keeps the question-side number as the id and records the key label here (ID rule: never key-side renumbering)",
+     "suggested": "review — key-side label misprint, answer content matches Q40"
+    }
+   ],
+   "content_hash": "7356fe3b468f671f9add409b9b7ea390777a704b6f2aeb59c6c4d6032b7e67f4"
+  },
+  {
+   "id": "soc-8-12-s4-q041",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-12",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is chemical weathering? Name four types.",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s4-q041",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s4-q041",
+     "pdf_page": 37,
+     "printed_page": 26,
+     "y": 381.503197,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s4-q041-key",
+     "pdf_page": 101,
+     "printed_page": 90,
+     "y": 642.503197,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:28:21+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:28:21+05:30",
+   "text_as_printed": "What is chemical weathering? Name four types. (E)",
+   "answer": {
+    "kind": "text",
+    "value": "Chemical disintegration:\nThe process where rainwater combines with atmospheric gases to break down rocks is called chemical disintegration. The four types are oxidation, hydration, solution, and carbonation."
+   },
+   "answer_as_printed": "Chemical disintegration:\nThe process where rainwater combines with atmospheric gases to break down rocks is called chemical disintegration. The four types are oxidation, hydration, solution, and carbonation.",
+   "solution_steps": [
+    "The process where rainwater combines with atmospheric gases to break down rocks is called chemical disintegration. The four types are oxidation, hydration, solution, and carbonation."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:28:21+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "7105cf60bc5efde220a2e16b873d39eb3fb0e8014a467a627215f40c8f50b2c1"
+  },
+  {
+   "id": "soc-8-12-s4-q042",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-12",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is a glacier? What are its main types?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s4-q042",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s4-q042",
+     "pdf_page": 37,
+     "printed_page": 26,
+     "y": 398.903207,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s4-q042-key",
+     "pdf_page": 102,
+     "printed_page": 91,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:28:21+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:28:21+05:30",
+   "text_as_printed": "What is a glacier? What are its main types? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "Glaciers:\nGlaciers are masses of ice sliding down slopes in high mountain regions or polar areas. Their main types are continental glaciers and valley glaciers."
+   },
+   "answer_as_printed": "Glaciers:\nGlaciers are masses of ice sliding down slopes in high mountain regions or polar areas. Their main types are continental glaciers and valley glaciers.",
+   "solution_steps": [
+    "Glaciers are masses of ice sliding down slopes in high mountain regions or polar areas. Their main types are continental glaciers and valley glaciers."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:28:21+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "field": "answer",
+     "issue": "duplicate question number — the printed answer key labels this (Q42) answer with the number '41' (section IV prints '41' twice and prints no '42'); the answer corresponds continuously to Q42 and is populated. Key-side numbering misprint; question-side number is 42.",
+     "why_not_corrected": "key-side label is a source misprint; extraction keeps the question-side number as the id and records the key label here (ID rule: never key-side renumbering)",
+     "suggested": "review — key-side label misprint, answer content matches Q42"
+    }
+   ],
+   "content_hash": "4000d5de47682a972ec2fe317dd5db64565495f2e753ab94a5a35330b0e4693d"
+  },
+  {
+   "id": "soc-8-12-s4-q043",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-12",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Name the types of springs.",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s4-q043",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s4-q043",
+     "pdf_page": 37,
+     "printed_page": 26,
+     "y": 416.30317,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s4-q043-key",
+     "pdf_page": 102,
+     "printed_page": 91,
+     "y": 133.583188,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:28:21+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:28:21+05:30",
+   "text_as_printed": "Name the types of springs. (E)",
+   "answer": {
+    "kind": "text",
+    "value": "Types of Springs:\nPerennial springs\nPeriodic springs\nHot water springs\nArtesian wells"
+   },
+   "answer_as_printed": "Types of Springs:\nPerennial springs\nPeriodic springs\nHot water springs\nArtesian wells",
+   "solution_steps": [
+    "Perennial springs",
+    "Periodic springs",
+    "Hot water springs",
+    "Artesian wells"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:28:21+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "d343581e8f1e87f7b99ce38d21fa73f734c66a829bde42ca2d6273f8d2bb0e56"
+  },
+  {
+   "id": "soc-8-12-s4-q044",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-12",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Explain the organic weathering.",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s4-q044",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s4-q044",
+     "pdf_page": 37,
+     "printed_page": 26,
+     "y": 433.703179,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s4-q044-key",
+     "pdf_page": 102,
+     "printed_page": 91,
+     "y": 237.983185,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:28:21+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:28:21+05:30",
+   "text_as_printed": "Explain the organic weathering. (A)",
+   "answer": {
+    "kind": "text",
+    "value": "Biological Weathering:\nBiological weathering occurs when rocks are broken down by plants, animals, and human activities.\nIt involves both physical and chemical processes.\nRoots of plants growing and thickening, burrowing animals, mining, and construction activities contribute to biological weathering."
+   },
+   "answer_as_printed": "Biological Weathering:\nBiological weathering occurs when rocks are broken down by plants, animals, and human activities.\nIt involves both physical and chemical processes.\nRoots of plants growing and thickening, burrowing animals, mining, and construction activities contribute to biological weathering.",
+   "solution_steps": [
+    "Biological weathering occurs when rocks are broken down by plants, animals, and human activities.",
+    "It involves both physical and chemical processes.",
+    "Roots of plants growing and thickening, burrowing animals, mining, and construction activities contribute to biological weathering."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:28:21+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "7d2cfda99e37f25f800098ca133be08816c849e232b4e891b0b5cb4442ba9bc4"
+  },
+  {
+   "id": "soc-8-12-s4-q045",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-12",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Name the major earthquake zones of the world.",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s4-q045",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s4-q045",
+     "pdf_page": 37,
+     "printed_page": 26,
+     "y": 451.103188,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s4-q045-key",
+     "pdf_page": 102,
+     "printed_page": 91,
+     "y": 359.783181,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:28:21+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:28:21+05:30",
+   "text_as_printed": "Name the major earthquake zones of the world. (A)",
+   "answer": {
+    "kind": "text",
+    "value": "Major earthquake zones of the world:\nThe coastal regions surrounding the Pacific Ocean: This includes areas such as New Zealand, the Philippines, the U.S.A., Japan, Peru, etc.\nThe coastal regions around the Mediterranean Sea\nThe Himalayan mountain region of India (Shiwalik region)"
+   },
+   "answer_as_printed": "Major earthquake zones of the world:\nThe coastal regions surrounding the Pacific Ocean: This includes areas such as New Zealand, the Philippines, the U.S.A., Japan, Peru, etc.\nThe coastal regions around the Mediterranean Sea\nThe Himalayan mountain region of India (Shiwalik region)",
+   "solution_steps": [
+    "The coastal regions surrounding the Pacific Ocean: This includes areas such as New Zealand, the Philippines, the U.S.A., Japan, Peru, etc.",
+    "The coastal regions around the Mediterranean Sea",
+    "The Himalayan mountain region of India (Shiwalik region)"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:28:21+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "64e23c772c1a5db99997276479dc1f172d39831b557ebc02e15a108325653606"
+  },
+  {
+   "id": "soc-8-12-s5-q046",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-12",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "D",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Justify how human activities play a major role in causing the natural disasters.",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s5-q046",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s5-q046",
+     "pdf_page": 37,
+     "printed_page": 26,
+     "y": 503.30317,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s5-q046-key",
+     "pdf_page": 102,
+     "printed_page": 91,
+     "y": 498.983208,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:28:21+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:28:21+05:30",
+   "text_as_printed": "Justify how human activities play a major role in causing the natural disasters. (D)",
+   "answer": {
+    "kind": "text",
+    "value": "Human Activities Causing Natural Disasters:\nPopulation growth leads to increased pressure on natural resources.\nIndustrialization and urbanization degrade the environment.\nDeforestation, excessive rainfall, and drought disrupt ecosystems.\nMining alters the Earth's surface.\nEnvironmental pollution, including land, water and air pollution, exacerbates natural disasters.\nThese human activities increase the frequency of natural calamities."
+   },
+   "answer_as_printed": "Human Activities Causing Natural Disasters:\nPopulation growth leads to increased pressure on natural resources.\nIndustrialization and urbanization degrade the environment.\nDeforestation, excessive rainfall, and drought disrupt ecosystems.\nMining alters the Earth's surface.\nEnvironmental pollution, including land, water and air pollution, exacerbates natural disasters.\nThese human activities increase the frequency of natural calamities.",
+   "solution_steps": [
+    "Population growth leads to increased pressure on natural resources.",
+    "Industrialization and urbanization degrade the environment.",
+    "Deforestation, excessive rainfall, and drought disrupt ecosystems.",
+    "Mining alters the Earth's surface.",
+    "Environmental pollution, including land, water and air pollution, exacerbates natural disasters.",
+    "These human activities increase the frequency of natural calamities."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:28:21+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "5054e120f3dbc294ffe6411325c9058d16c346785066725d720447c1fc2d51b3"
+  },
+  {
+   "id": "soc-8-12-s5-q047",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-12",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "D",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Suggest precautionary measures to prevent the adverse effects of earthquakes.",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s5-q047",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s5-q047",
+     "pdf_page": 37,
+     "printed_page": 26,
+     "y": 538.223214,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s5-q047-key",
+     "pdf_page": 102,
+     "printed_page": 91,
+     "y": 638.18319,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:28:21+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:28:21+05:30",
+   "text_as_printed": "Suggest precautionary measures to prevent the adverse effects of earthquakes. (D)",
+   "answer": {
+    "kind": "text",
+    "value": "Preventing Earthquake Damage:\nIssue early warnings about potential earthquakes.\nKeep residential areas away from earthquake-prone zones.\nConstruct earthquake-resistant buildings.\nStay safe indoors during an earthquake.\nAvoid living in hazardous areas.\nStay cautious near windows, glass or walls during an earthquake.\nAvoid damaged bridges and roads post-earthquake."
+   },
+   "answer_as_printed": "Preventing Earthquake Damage:\nIssue early warnings about potential earthquakes.\nKeep residential areas away from earthquake-prone zones.\nConstruct earthquake-resistant buildings.\nStay safe indoors during an earthquake.\nAvoid living in hazardous areas.\nStay cautious near windows, glass or walls during an earthquake.\nAvoid damaged bridges and roads post-earthquake.",
+   "solution_steps": [
+    "Issue early warnings about potential earthquakes.",
+    "Keep residential areas away from earthquake-prone zones.",
+    "Construct earthquake-resistant buildings.",
+    "Stay safe indoors during an earthquake.",
+    "Avoid living in hazardous areas.",
+    "Stay cautious near windows, glass or walls during an earthquake.",
+    "Avoid damaged bridges and roads post-earthquake."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:28:21+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "97932f0465b71b9023a006ac06d2aa3993647095a921109e5d06cdb0f962bf31"
+  },
+  {
+   "id": "soc-8-12-s5-q048",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-12",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 2,
+     "text_as_printed": "Social Science Skills: Map drawing, locating places on maps, and the skills of constructing, analyzing, explaining, and critically evaluating graphs are applicable to this lesson"
+    }
+   ],
+   "lo_source": "q48_row_LO2",
+   "out_of_syllabus": false,
+   "text": "Draw a diagram of the interior of the Earth and label its parts.",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s5-q048",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s5-q048",
+     "pdf_page": 37,
+     "printed_page": 26,
+     "y": 572.903207,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-12-s5-q048-key",
+     "pdf_page": 103,
+     "printed_page": 92,
+     "y": 137.783193,
+     "derived_from": "render_measured"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:28:22+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:28:22+05:30",
+   "text_as_printed": "Draw a diagram of the interior of the Earth and label its parts. (A)",
+   "section_signal": "V",
+   "answer": {
+    "kind": "text",
+    "value": "[diagram answer — see page image]"
+   },
+   "assets": [
+    {
+     "id": "a48",
+     "type": "image",
+     "ref": "images/soc-8-12/p103-q48_answer-diagram.png",
+     "role": "answer_diagram",
+     "source_px": {
+      "w": 703,
+      "h": 1422
+     },
+     "quality": "ok",
+     "caption": "Labelled cross-section diagram of the interior of the Earth (crust, mantle, core), q48 answer, pdf 103",
+     "pdf_page": 103,
+     "crop_bbox": {
+      "pdf_page": 103,
+      "x0": 212.0,
+      "y0": 152.0,
+      "x1": 465.0,
+      "y1": 664.0
+     }
+    }
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:28:22+05:30",
+    "basis": "answer is the printed labelled cross-section diagram of the Earth's interior on pdf 103 (raster 290x584), cropped as answer_diagram a48; draw-and-label question, no locate-on-map features (addendum §6; soc-9-14 draw-diagram pattern)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "answer is a diagram — q48 asks to draw and label a diagram of the interior of the Earth; the printed answer (pdf 103) is a labelled cross-section diagram of the Earth's interior (raster 290x584, cropped as answer_diagram a48). Draw-and-label question (not a locate-on-map), so no map block or feature list; the diagram's printed labels (crust/mantle/core and sub-layers) are not transcribed. REVIEWER verifies the diagram image against the crop.",
+     "why_not_corrected": "draw-diagram answer is an image; extraction stores the crop as answer_diagram and leaves transcription of in-figure labels to review (addendum §6, soc-9-14 pattern)",
+     "suggested": "reviewer: confirm the cross-section crop is complete and legible"
+    }
+   ],
+   "content_hash": "ffb6482d436f24d41036e97ae1ccc4f3462500d7c0f3e950ffe4b7480f20acca"
+  }
+ ],
+ "pending_summary": {}
+}
