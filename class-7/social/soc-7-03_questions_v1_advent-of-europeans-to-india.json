@@ -1,0 +1,3150 @@
+{
+ "contract_version": "1.7",
+ "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
+ "procedure_file": "extraction_procedure_social_addendum_v1.3_social science Classes 6-10 on top of procedure v2.md",
+ "machine_name": "soc-7-03_questions",
+ "version": 1,
+ "changelog": "v1 extraction — batch-01 — class-7-social",
+ "amendments_applied": [],
+ "unit_state": "EXTRACTED",
+ "review_ready": false,
+ "count_gate": {
+  "reference": 36,
+  "reference_source": "audited",
+  "extracted": 36,
+  "paired": 36,
+  "flagged": 3,
+  "gaps": [],
+  "duplicated_numbers": [],
+  "quota_table": "difficulty_only",
+  "second_method": {
+   "method": "printed difficulty distribution table",
+   "extracted": 36,
+   "agrees": true
+  },
+  "pass": true,
+  "note": "printed difficulty table 6/22/8=36 DISAGREES with per-question tags 6/19/11 (source defect, tags win v2 §6; register difficulty-table-vs-tags); flagged counts answer-level flags; all carry the structural marks flag (addendum §4.5)."
+ },
+ "extraction": {
+  "source_file": "7thSS-EM-LBARevised_1787048371.pdf",
+  "source_ref_prefix": "7thSS-EM-LBARevised_1787048371.pdf",
+  "pdf_pages": [
+   28,
+   29,
+   30,
+   31,
+   172,
+   173,
+   174,
+   175
+  ],
+  "printed_page_offset": -14,
+  "method_notes": [
+   "ch3 single numbering 1-36, sections A-I = s1-s9. Section C (q11-15) 'chronological order': answer side renumbers the 5 events into chronological sequence; each key names its event -> paired by named event (flag on q11). Section D q16 and q12/q13 analogy etc.",
+   "Section A keys are TEXT-ONLY (no option letter): q1 'May 17, 1498', q2 '1602 AD', q3 'Queen Elizabeth', q4 'French', q5 'Francisco de Almeida'. Two-pass normalised match resolves q4(D French)/q5(A Almeida); q1/q2/q3 do not match an option verbatim (phrasing differs) -> 'key text not among options' review-blocking (builder auto; extraction does not force-match).",
+   "Section-header difficulty: C and D print '(Difficult)' with no per-question tag -> difficulty_source section_header (control rev 3).",
+   "Section B header prints '(1 mark)' -> marks flag text records it; marks left null (assigning marks is a procedure change, not extraction's).",
+   "q36 (section I) references a PRINTED MAP on the question page (pdf31) -> question-side stimulus (schema 1.7), attached as stimuli[] by the post-step; answer is the trading-centres list.",
+   "2 LO rows (09 main; 02 map-skills applies to q36). marks not printed except section B note. difficulty per-question tags win."
+  ],
+  "notation_summary": {
+   "render_tokens": 0,
+   "latex_tokens": 0,
+   "damage_flags": []
+  },
+  "excluded_objects": [],
+  "inline_excluded_count": 0,
+  "figure_references": [
+   {
+    "stimulus_id": "st1",
+    "pdf_page": 31,
+    "ref": "images/soc-7-03/soc-7-03-q36-map.png"
+   }
+  ]
+ },
+ "stimuli": [
+  {
+   "id": "st1",
+   "kind": "map",
+   "text": "Printed map of India (1765) showing European trading centres, with a legend keying Portuguese (P), French (Fr), Dutch (Du) and British (Br) locations. Map title and legend are printed in Kannada; used by question 36.",
+   "locators": [
+    {
+     "role": "stimulus",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-st1",
+     "pdf_page": 31,
+     "printed_page": 17,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "note": "I. 36. Using the map below, list the trading posts of the Europeans."
+  }
+ ],
+ "questions": [
+  {
+   "id": "soc-7-03-s1-q001",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 9,
+     "text_as_printed": "Critically examines the arrival of the Europeans in India and analyzes the reasons for their establishment and settlement in the country."
+    },
+    {
+     "number": 2,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The year and date on which Vasco da Gama discovered the new sea route to India is:",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s1-q001",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s1-q001",
+     "pdf_page": 28,
+     "printed_page": 14,
+     "y": 303.137,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s1-q001-key",
+     "pdf_page": 172,
+     "printed_page": 158,
+     "y": 154.228,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:24:33+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T01:24:33+05:30",
+   "text_as_printed": "The year and date on which Vasco da Gama discovered the new sea route to India is: (Easy)",
+   "section_signal": "A",
+   "options": [
+    {
+     "id": "A",
+     "text": "17 May 1498 AD"
+    },
+    {
+     "id": "B",
+     "text": "16 May 1498 AD"
+    },
+    {
+     "id": "C",
+     "text": "18 May 1516 AD"
+    },
+    {
+     "id": "D",
+     "text": "20 May 1600 AD"
+    }
+   ],
+   "answer": {
+    "kind": "option",
+    "option_id": null
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text not among options",
+     "why_not_corrected": "text-only key; two-pass normalised match found no option (v2 §3)",
+     "suggested": "? (review)"
+    }
+   ],
+   "content_hash": "fd6bb4d95a6ee5a544a2e7f82d2422994cb2152427d3911f91c0c1350ac37318"
+  },
+  {
+   "id": "soc-7-03-s1-q002",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 9,
+     "text_as_printed": "Critically examines the arrival of the Europeans in India and analyzes the reasons for their establishment and settlement in the country."
+    },
+    {
+     "number": 2,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The year in which the “Dutch East India Company” was established _____",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s1-q002",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s1-q002",
+     "pdf_page": 28,
+     "printed_page": 14,
+     "y": 324.537,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s1-q002-key",
+     "pdf_page": 172,
+     "printed_page": 158,
+     "y": 182.928,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:24:33+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T01:24:33+05:30",
+   "text_as_printed": "The year in which the “Dutch East India Company” was established _____(Average )",
+   "section_signal": "A",
+   "options": [
+    {
+     "id": "A",
+     "text": "1498"
+    },
+    {
+     "id": "B",
+     "text": "1600"
+    },
+    {
+     "id": "C",
+     "text": "1602"
+    },
+    {
+     "id": "D",
+     "text": "1961"
+    }
+   ],
+   "answer": {
+    "kind": "option",
+    "option_id": null
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text not among options",
+     "why_not_corrected": "text-only key; two-pass normalised match found no option (v2 §3)",
+     "suggested": "? (review)"
+    }
+   ],
+   "content_hash": "4c8e642d70899bffc75e71e3f56d2c9f74a5bdeb02fa2526fe8e3339b2fd26bf"
+  },
+  {
+   "id": "soc-7-03-s1-q003",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 9,
+     "text_as_printed": "Critically examines the arrival of the Europeans in India and analyzes the reasons for their establishment and settlement in the country."
+    },
+    {
+     "number": 2,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The British Queen who granted permission to the British East India Company to trade with the East was _____",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s1-q003",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s1-q003",
+     "pdf_page": 28,
+     "printed_page": 14,
+     "y": 345.867,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s1-q003-key",
+     "pdf_page": 172,
+     "printed_page": 158,
+     "y": 211.628,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:24:33+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T01:24:33+05:30",
+   "text_as_printed": "The British Queen who granted permission to the British East India Company to trade with the East was _____ (Easy )",
+   "section_signal": "A",
+   "options": [
+    {
+     "id": "A",
+     "text": "Elizabeth"
+    },
+    {
+     "id": "B",
+     "text": "Victoria"
+    },
+    {
+     "id": "C",
+     "text": "Pampado"
+    },
+    {
+     "id": "D",
+     "text": "Antoinette"
+    }
+   ],
+   "answer": {
+    "kind": "option",
+    "option_id": null
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text not among options",
+     "why_not_corrected": "text-only key; two-pass normalised match found no option (v2 §3)",
+     "suggested": "? (review)"
+    }
+   ],
+   "content_hash": "1e18658d552d76a454c7f122bb6add92673119c0435ac395fd6b1430773fc65d"
+  },
+  {
+   "id": "soc-7-03-s1-q004",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 9,
+     "text_as_printed": "Critically examines the arrival of the Europeans in India and analyzes the reasons for their establishment and settlement in the country."
+    },
+    {
+     "number": 2,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The last of the Europeans to come to India was_________",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s1-q004",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s1-q004",
+     "pdf_page": 29,
+     "printed_page": 15,
+     "y": 64.608,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s1-q004-key",
+     "pdf_page": 172,
+     "printed_page": 158,
+     "y": 240.328,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:24:33+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T01:24:33+05:30",
+   "text_as_printed": "The last of the Europeans to come to India was_________ (Easy )",
+   "section_signal": "A",
+   "options": [
+    {
+     "id": "A",
+     "text": "British"
+    },
+    {
+     "id": "B",
+     "text": "Dutch"
+    },
+    {
+     "id": "C",
+     "text": "Portuguese"
+    },
+    {
+     "id": "D",
+     "text": "French"
+    }
+   ],
+   "answer": {
+    "kind": "option",
+    "option_id": "D"
+   },
+   "answer_as_printed": "French",
+   "source_corrections": [
+    {
+     "field": "answer",
+     "printed": "French",
+     "corrected": "D",
+     "basis": "pass 1"
+    }
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T01:24:33+05:30",
+    "basis": "section-I text-only key matched to option by pass 1 normalised match (v2 §3)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "51b0f475184a4c24fa7abd065cf7cfe8d16b913027d8615776894df1621ec181"
+  },
+  {
+   "id": "soc-7-03-s1-q005",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 9,
+     "text_as_printed": "Critically examines the arrival of the Europeans in India and analyzes the reasons for their establishment and settlement in the country."
+    },
+    {
+     "number": 2,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The first Portuguese Viceroy to come to India was _______",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s1-q005",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s1-q005",
+     "pdf_page": 29,
+     "printed_page": 15,
+     "y": 150.728,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s1-q005-key",
+     "pdf_page": 172,
+     "printed_page": 158,
+     "y": 269.028,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:24:33+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T01:24:33+05:30",
+   "text_as_printed": "The first Portuguese Viceroy to come to India was _______ (Easy )",
+   "section_signal": "A",
+   "options": [
+    {
+     "id": "A",
+     "text": "Francisco de Almeida"
+    },
+    {
+     "id": "B",
+     "text": "Robert Clive"
+    },
+    {
+     "id": "C",
+     "text": "Dupleix"
+    },
+    {
+     "id": "D",
+     "text": "Albuquerque"
+    }
+   ],
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_as_printed": "Francisco de Almeida",
+   "source_corrections": [
+    {
+     "field": "answer",
+     "printed": "Francisco de Almeida",
+     "corrected": "A",
+     "basis": "pass 1"
+    }
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T01:24:33+05:30",
+    "basis": "section-I text-only key matched to option by pass 1 normalised match (v2 §3)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "8cfce8ef90250f14ef41e509c08bc951ac58e99898b6d0bda174fa2191a6e237"
+  },
+  {
+   "id": "soc-7-03-s2-q006",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 9,
+     "text_as_printed": "Critically examines the arrival of the Europeans in India and analyzes the reasons for their establishment and settlement in the country."
+    },
+    {
+     "number": 2,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Portuguese: Goa:: French: ____",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s2-q006",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s2-q006",
+     "pdf_page": 29,
+     "printed_page": 15,
+     "y": 350.558,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s2-q006-key",
+     "pdf_page": 172,
+     "printed_page": 158,
+     "y": 326.428,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:24:33+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T01:24:33+05:30",
+   "text_as_printed": "Portuguese: Goa :: French: ____(Average )",
+   "section_signal": "B",
+   "answer": {
+    "kind": "text",
+    "value": "French settlement in India: Pondicherry"
+   },
+   "answer_as_printed": "French settlement in India: Pondicherry",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T01:24:33+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section B header prints '(1 mark)'"
+    }
+   ],
+   "content_hash": "2db2a22a8e655fa8de402d3a6fd49eba52ab740e7d47757faa8897736f4d4210"
+  },
+  {
+   "id": "soc-7-03-s2-q007",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 9,
+     "text_as_printed": "Critically examines the arrival of the Europeans in India and analyzes the reasons for their establishment and settlement in the country."
+    },
+    {
+     "number": 2,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "British: Calcutta:: Dutch: _____",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s2-q007",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s2-q007",
+     "pdf_page": 29,
+     "printed_page": 15,
+     "y": 379.258,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s2-q007-key",
+     "pdf_page": 172,
+     "printed_page": 158,
+     "y": 355.158,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:24:33+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T01:24:33+05:30",
+   "text_as_printed": "British: Calcutta :: Dutch: _____(Average )",
+   "section_signal": "B",
+   "answer": {
+    "kind": "text",
+    "value": "Dutch settlement in India: Pullicat"
+   },
+   "answer_as_printed": "Dutch settlement in India: Pullicat",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T01:24:33+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section B header prints '(1 mark)'"
+    }
+   ],
+   "content_hash": "d7e83aaf06a6c126626879b95b8fcb1468e31b23064c11ddb8cfec666ce550ee"
+  },
+  {
+   "id": "soc-7-03-s2-q008",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 9,
+     "text_as_printed": "Critically examines the arrival of the Europeans in India and analyzes the reasons for their establishment and settlement in the country."
+    },
+    {
+     "number": 2,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Jahangir: British:: Zamorin: _____",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s2-q008",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s2-q008",
+     "pdf_page": 29,
+     "printed_page": 15,
+     "y": 407.958,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s2-q008-key",
+     "pdf_page": 172,
+     "printed_page": 158,
+     "y": 383.858,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:24:33+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T01:24:33+05:30",
+   "text_as_printed": "Jahangir: British:: Zamorin: _____(Average )",
+   "section_signal": "B",
+   "answer": {
+    "kind": "text",
+    "value": "European power that established trade relations in India: Portuguese"
+   },
+   "answer_as_printed": "European power that established trade relations in India: Portuguese",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T01:24:33+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section B header prints '(1 mark)'"
+    }
+   ],
+   "content_hash": "ea58465daf2c99e56d61001c70e337ee006fedce2f0298ac4cd530f913c438d9"
+  },
+  {
+   "id": "soc-7-03-s2-q009",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 9,
+     "text_as_printed": "Critically examines the arrival of the Europeans in India and analyzes the reasons for their establishment and settlement in the country."
+    },
+    {
+     "number": 2,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "France: French:: Dutch: _______",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s2-q009",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s2-q009",
+     "pdf_page": 29,
+     "printed_page": 15,
+     "y": 436.658,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s2-q009-key",
+     "pdf_page": 172,
+     "printed_page": 158,
+     "y": 412.558,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:24:33+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T01:24:33+05:30",
+   "text_as_printed": "France: French:: Dutch: _______(Average )",
+   "section_signal": "B",
+   "answer": {
+    "kind": "text",
+    "value": "European power that established trade relations in India: Netherlands"
+   },
+   "answer_as_printed": "European power that established trade relations in India: Netherlands",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T01:24:33+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section B header prints '(1 mark)'"
+    }
+   ],
+   "content_hash": "273912c6362d8237a1802c420ae70c161856addfde8dbe0ff9c30fcc79ea6925"
+  },
+  {
+   "id": "soc-7-03-s2-q010",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 9,
+     "text_as_printed": "Critically examines the arrival of the Europeans in India and analyzes the reasons for their establishment and settlement in the country."
+    },
+    {
+     "number": 2,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Albuquerque: Portuguese:: Dupleix: _____",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s2-q010",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s2-q010",
+     "pdf_page": 29,
+     "printed_page": 15,
+     "y": 465.358,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s2-q010-key",
+     "pdf_page": 172,
+     "printed_page": 158,
+     "y": 441.258,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:24:33+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T01:24:33+05:30",
+   "text_as_printed": "Albuquerque: Portuguese:: Dupleix: _____(Average )",
+   "section_signal": "B",
+   "answer": {
+    "kind": "text",
+    "value": "European power that established trade relations in India: French"
+   },
+   "answer_as_printed": "European power that established trade relations in India: French",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T01:24:33+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section B header prints '(1 mark)'"
+    }
+   ],
+   "content_hash": "ef44c51a84fad9e3198229ae47b222c7be1ef1252bb2c42ba72bdca029d28c48"
+  },
+  {
+   "id": "soc-7-03-s3-q011",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 9,
+     "text_as_printed": "Critically examines the arrival of the Europeans in India and analyzes the reasons for their establishment and settlement in the country."
+    },
+    {
+     "number": 2,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Establishment of the Dutch East India Company",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s3-q011",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s3-q011",
+     "pdf_page": 29,
+     "printed_page": 15,
+     "y": 526.258,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s3-q011-key",
+     "pdf_page": 172,
+     "printed_page": 158,
+     "y": 498.658,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:24:33+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T01:24:33+05:30",
+   "section_signal": "C",
+   "answer": {
+    "kind": "text",
+    "value": "Establishment of Dutch East India Company: 1609"
+   },
+   "answer_as_printed": "Establishment of Dutch East India Company: 1609",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T01:24:33+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "inline answer pairing ambiguous — chronological-order section",
+     "why_not_corrected": "Section C asks to arrange 5 events in chronological order; the answer side lists the SAME events renumbered into chronological sequence (keys 11-15 = 1510/1600/1609/1664/1961). Each key explicitly NAMES its event, so this question is paired to its key by the named event, not by position.",
+     "suggested": "review — confirm chronological pairing"
+    }
+   ],
+   "content_hash": "41d6a9cf824006f8508cf622b3d62cb353679b1bfb3a486138c3b74a5ec5f189"
+  },
+  {
+   "id": "soc-7-03-s3-q012",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 9,
+     "text_as_printed": "Critically examines the arrival of the Europeans in India and analyzes the reasons for their establishment and settlement in the country."
+    },
+    {
+     "number": 2,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Establishment of the French East India Company",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s3-q012",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s3-q012",
+     "pdf_page": 29,
+     "printed_page": 15,
+     "y": 554.958,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s3-q012-key",
+     "pdf_page": 172,
+     "printed_page": 158,
+     "y": 527.358,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:24:33+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T01:24:33+05:30",
+   "section_signal": "C",
+   "answer": {
+    "kind": "text",
+    "value": "Establishment of French East India Company: 1664"
+   },
+   "answer_as_printed": "Establishment of French East India Company: 1664",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T01:24:33+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "4208c9d1465310001b8d0b36b3dce10e25b37d6ff9fe242e50c925cfb4c7e9e8"
+  },
+  {
+   "id": "soc-7-03-s3-q013",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 9,
+     "text_as_printed": "Critically examines the arrival of the Europeans in India and analyzes the reasons for their establishment and settlement in the country."
+    },
+    {
+     "number": 2,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Goa was liberated from the Portuguese",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s3-q013",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s3-q013",
+     "pdf_page": 29,
+     "printed_page": 15,
+     "y": 583.678,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s3-q013-key",
+     "pdf_page": 172,
+     "printed_page": 158,
+     "y": 556.058,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:24:33+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T01:24:33+05:30",
+   "section_signal": "C",
+   "answer": {
+    "kind": "text",
+    "value": "Liberation of Goa from Portuguese rule: 1961"
+   },
+   "answer_as_printed": "Liberation of Goa from Portuguese rule: 1961",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T01:24:33+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "1dd852cd6ea0e82ef97c5b20401caecb082e7f01c6b7ea978cbf421f9573e904"
+  },
+  {
+   "id": "soc-7-03-s3-q014",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 9,
+     "text_as_printed": "Critically examines the arrival of the Europeans in India and analyzes the reasons for their establishment and settlement in the country."
+    },
+    {
+     "number": 2,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Albuquerque captured Goa from the Sultan of Bijapur",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s3-q014",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s3-q014",
+     "pdf_page": 29,
+     "printed_page": 15,
+     "y": 612.378,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s3-q014-key",
+     "pdf_page": 172,
+     "printed_page": 158,
+     "y": 584.778,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:24:33+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T01:24:33+05:30",
+   "section_signal": "C",
+   "answer": {
+    "kind": "text",
+    "value": "Albuquerque captured Goa from the Sultan of Bijpur: 1510"
+   },
+   "answer_as_printed": "Albuquerque captured Goa from the Sultan of Bijpur: 1510",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T01:24:33+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "568378af6cb8d268e1c098c42010e59db02bf3e8ab6d049c6b18ffbd44d247ac"
+  },
+  {
+   "id": "soc-7-03-s3-q015",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 9,
+     "text_as_printed": "Critically examines the arrival of the Europeans in India and analyzes the reasons for their establishment and settlement in the country."
+    },
+    {
+     "number": 2,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Year the British East India Company was established",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s3-q015",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s3-q015",
+     "pdf_page": 29,
+     "printed_page": 15,
+     "y": 641.078,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s3-q015-key",
+     "pdf_page": 172,
+     "printed_page": 158,
+     "y": 613.478,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:24:33+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T01:24:33+05:30",
+   "section_signal": "C",
+   "answer": {
+    "kind": "text",
+    "value": "Establishment of British East India Company: 1600"
+   },
+   "answer_as_printed": "Establishment of British East India Company: 1600",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T01:24:33+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "e1a0d0743cf3322983d1c5bed529f364b649a3e2b2bbbe97898ed1dbdeecca41"
+  },
+  {
+   "id": "soc-7-03-s4-q016",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "match",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 9,
+     "text_as_printed": "Critically examines the arrival of the Europeans in India and analyzes the reasons for their establishment and settlement in the country."
+    },
+    {
+     "number": 2,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Match the following words. A-list: 1. Portuguese; 2. Dutch; 3. French; 4. British",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s4-q016",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s4-q016",
+     "pdf_page": 29,
+     "printed_page": 15,
+     "y": 669.896,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s4-q016-key",
+     "pdf_page": 172,
+     "printed_page": 158,
+     "y": 642.178,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:24:33+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T01:24:33+05:30",
+   "text_as_printed": "Match the following words. (Difficult )  A-list: 1. Portuguese; 2. Dutch; 3. French; 4. British",
+   "section_signal": "D",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "Portuguese",
+      "right": "Goa"
+     },
+     {
+      "left": "Dutch",
+      "right": "Pulicat"
+     },
+     {
+      "left": "French",
+      "right": "Pondicherry"
+     },
+     {
+      "left": "British",
+      "right": "Kolkata"
+     }
+    ]
+   },
+   "answer_as_printed": "Portuguese -- Goa; Dutch -- Pulicat; French -- Pondicherry; British -- Kolkata",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T01:24:33+05:30",
+    "basis": "printed match key; left/right pairs verbatim (rev-2 §MATCH)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "4d18ba7e86aa294d5c68f79c8709e663583005fc72e450e5f4db1bd6a6b8af9e"
+  },
+  {
+   "id": "soc-7-03-s5-q017",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 9,
+     "text_as_printed": "Critically examines the arrival of the Europeans in India and analyzes the reasons for their establishment and settlement in the country."
+    },
+    {
+     "number": 2,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What are 'Dastaks'?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s5-q017",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s5-q017",
+     "pdf_page": 30,
+     "printed_page": 16,
+     "y": 154.228,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s5-q017-key",
+     "pdf_page": 173,
+     "printed_page": 159,
+     "y": 93.308,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:24:33+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T01:24:33+05:30",
+   "text_as_printed": "What are 'Dastaks'? (Average )",
+   "section_signal": "E",
+   "answer": {
+    "kind": "text",
+    "value": "Dastaks: Documents that granted the British exemption from paying customs duties"
+   },
+   "answer_as_printed": "Dastaks: Documents that granted the British exemption from paying customs duties",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T01:24:33+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "45eba942b3e6e2435c2fe7d9f526da59598a5411413ef5e2f18494dc656accc5"
+  },
+  {
+   "id": "soc-7-03-s5-q018",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 9,
+     "text_as_printed": "Critically examines the arrival of the Europeans in India and analyzes the reasons for their establishment and settlement in the country."
+    },
+    {
+     "number": 2,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Name the French trading centers in India?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s5-q018",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s5-q018",
+     "pdf_page": 30,
+     "printed_page": 16,
+     "y": 182.928,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s5-q018-key",
+     "pdf_page": 173,
+     "printed_page": 159,
+     "y": 122.028,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:24:33+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T01:24:33+05:30",
+   "text_as_printed": "Name the French trading centers in India? (Average )",
+   "section_signal": "E",
+   "answer": {
+    "kind": "text",
+    "value": "French settlements in India: Pondicherry, Machilipatnam, Calicut, Karaikal, and Chandernagore"
+   },
+   "answer_as_printed": "French settlements in India: Pondicherry, Machilipatnam, Calicut, Karaikal, and Chandernagore",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T01:24:33+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "b7c8e5bdc42041e5054fe278ae7cc5707d3d84c0a3be076eb2c0acf9e089131e"
+  },
+  {
+   "id": "soc-7-03-s5-q019",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 9,
+     "text_as_printed": "Critically examines the arrival of the Europeans in India and analyzes the reasons for their establishment and settlement in the country."
+    },
+    {
+     "number": 2,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Who were the Carnatic Wars fought between?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s5-q019",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s5-q019",
+     "pdf_page": 30,
+     "printed_page": 16,
+     "y": 211.628,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s5-q019-key",
+     "pdf_page": 173,
+     "printed_page": 159,
+     "y": 150.728,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:24:33+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T01:24:33+05:30",
+   "text_as_printed": "Who were the Carnatic Wars fought between? (Average )",
+   "section_signal": "E",
+   "answer": {
+    "kind": "text",
+    "value": "Carnatic Wars: Wars fought between the French and the British in India"
+   },
+   "answer_as_printed": "Carnatic Wars: Wars fought between the French and the British in India",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T01:24:33+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "0bd43443758040c0c9304b6f124abc8d3f27b2ddb7f9c3a8d525aa278b53cac6"
+  },
+  {
+   "id": "soc-7-03-s5-q020",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 9,
+     "text_as_printed": "Critically examines the arrival of the Europeans in India and analyzes the reasons for their establishment and settlement in the country."
+    },
+    {
+     "number": 2,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What was the main reason for the British to establish political sovereignty in India?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s5-q020",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s5-q020",
+     "pdf_page": 30,
+     "printed_page": 16,
+     "y": 240.328,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s5-q020-key",
+     "pdf_page": 173,
+     "printed_page": 159,
+     "y": 179.428,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:24:33+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T01:24:33+05:30",
+   "text_as_printed": "What was the main reason for the British to establish political sovereignty in India? (Average )",
+   "section_signal": "E",
+   "answer": {
+    "kind": "text",
+    "value": "Reason for British establishing political supremacy in India: Deteriorating political situation in India"
+   },
+   "answer_as_printed": "Reason for British establishing political supremacy in India: Deteriorating political situation in India",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T01:24:33+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "92c59439873ac29e76d778ce75ef1561725539758508e245444f758409707338"
+  },
+  {
+   "id": "soc-7-03-s5-q021",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 9,
+     "text_as_printed": "Critically examines the arrival of the Europeans in India and analyzes the reasons for their establishment and settlement in the country."
+    },
+    {
+     "number": 2,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Which Mughal emperor issued 'Dastaks' (tax-free trade permits) to the British?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s5-q021",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s5-q021",
+     "pdf_page": 30,
+     "printed_page": 16,
+     "y": 269.028,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s5-q021-key",
+     "pdf_page": 173,
+     "printed_page": 159,
+     "y": 228.828,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:24:33+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T01:24:33+05:30",
+   "text_as_printed": "Which Mughal emperor issued 'Dastaks' (tax-free trade permits) to the British? (Average )",
+   "section_signal": "E",
+   "answer": {
+    "kind": "text",
+    "value": "Mughal Emperor who granted Dastaks to the British: Farrukhsiyar"
+   },
+   "answer_as_printed": "Mughal Emperor who granted Dastaks to the British: Farrukhsiyar",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T01:24:33+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "ef0505f679f55aff38a0d94dae66b0561c61fe0cecdf7f2eec313d26c8d6a528"
+  },
+  {
+   "id": "soc-7-03-s5-q022",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 9,
+     "text_as_printed": "Critically examines the arrival of the Europeans in India and analyzes the reasons for their establishment and settlement in the country."
+    },
+    {
+     "number": 2,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Who were the first Europeans to arrive in India by sea for trade?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s5-q022",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s5-q022",
+     "pdf_page": 30,
+     "printed_page": 16,
+     "y": 297.728,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s5-q022-key",
+     "pdf_page": 173,
+     "printed_page": 159,
+     "y": 257.528,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:24:33+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T01:24:33+05:30",
+   "text_as_printed": "Who were the first Europeans to arrive in India by sea for trade? (Easy )",
+   "section_signal": "E",
+   "answer": {
+    "kind": "text",
+    "value": "The Portuguese."
+   },
+   "answer_as_printed": "The Portuguese.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T01:24:33+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "dbf0ba70dc361eb2bd31dea82bbef41a9dbc1d376418f374dc30dd2b3fd61d4b"
+  },
+  {
+   "id": "soc-7-03-s5-q023",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 9,
+     "text_as_printed": "Critically examines the arrival of the Europeans in India and analyzes the reasons for their establishment and settlement in the country."
+    },
+    {
+     "number": 2,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Who discovered the sea route to India?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s5-q023",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s5-q023",
+     "pdf_page": 30,
+     "printed_page": 16,
+     "y": 318.428,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s5-q023-key",
+     "pdf_page": 173,
+     "printed_page": 159,
+     "y": 286.228,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:24:33+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T01:24:33+05:30",
+   "text_as_printed": "Who discovered the sea route to India? (Average )",
+   "section_signal": "E",
+   "answer": {
+    "kind": "text",
+    "value": "Vasco da Gama."
+   },
+   "answer_as_printed": "Vasco da Gama.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T01:24:33+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "10375836f3795b435fccaf327070c5337c89d969119bc19b481ef602013fa5b4"
+  },
+  {
+   "id": "soc-7-03-s5-q024",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 9,
+     "text_as_printed": "Critically examines the arrival of the Europeans in India and analyzes the reasons for their establishment and settlement in the country."
+    },
+    {
+     "number": 2,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "When was the British East India Company established?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s5-q024",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s5-q024",
+     "pdf_page": 30,
+     "printed_page": 16,
+     "y": 339.128,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s5-q024-key",
+     "pdf_page": 173,
+     "printed_page": 159,
+     "y": 314.928,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:24:33+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T01:24:33+05:30",
+   "text_as_printed": "When was the British East India Company established? (Average )",
+   "section_signal": "E",
+   "answer": {
+    "kind": "text",
+    "value": "1600 AD (31 December 1600)."
+   },
+   "answer_as_printed": "1600 AD (31 December 1600).",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T01:24:33+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "e6a5faee05ca26fe969a267121eb256ddeb2b241e578871adba8d160c7f1add1"
+  },
+  {
+   "id": "soc-7-03-s5-q025",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 9,
+     "text_as_printed": "Critically examines the arrival of the Europeans in India and analyzes the reasons for their establishment and settlement in the country."
+    },
+    {
+     "number": 2,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Name the trading centres of the French in India.",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s5-q025",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s5-q025",
+     "pdf_page": 30,
+     "printed_page": 16,
+     "y": 359.858,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s5-q025-key",
+     "pdf_page": 173,
+     "printed_page": 159,
+     "y": 343.658,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:24:33+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T01:24:33+05:30",
+   "text_as_printed": "Name the trading centres of the French in India. (Easy )",
+   "section_signal": "E",
+   "answer": {
+    "kind": "text",
+    "value": "Pondicherry, Machilipatnam, Calicut, Karaikal, and Chandernagore."
+   },
+   "answer_as_printed": "Pondicherry, Machilipatnam, Calicut, Karaikal, and Chandernagore.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T01:24:33+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "39459e7e5d8bf1a87056ce2561c69a982b1c92ae7414f1c10419f7aa38edbf33"
+  },
+  {
+   "id": "soc-7-03-s6-q026",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 9,
+     "text_as_printed": "Critically examines the arrival of the Europeans in India and analyzes the reasons for their establishment and settlement in the country."
+    },
+    {
+     "number": 2,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Where did the British establish trading posts in India?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s6-q026",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s6-q026",
+     "pdf_page": 30,
+     "printed_page": 16,
+     "y": 420.658,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s6-q026-key",
+     "pdf_page": 173,
+     "printed_page": 159,
+     "y": 401.058,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:24:33+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T01:24:33+05:30",
+   "text_as_printed": "Where did the British establish trading posts in India? (Average)",
+   "section_signal": "F",
+   "answer": {
+    "kind": "text",
+    "value": "British trade centers in India: Madras, Calcutta, Bombay, Ahmedabad, Agra, Broach, etc."
+   },
+   "answer_as_printed": "British trade centers in India: Madras, Calcutta, Bombay, Ahmedabad, Agra, Broach, etc.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T01:24:33+05:30",
+    "basis": "printed one-line answer, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "3c234a203375fe0c5966e4a055152e585f2cf4870d516438ec58b02d7a88be1e"
+  },
+  {
+   "id": "soc-7-03-s6-q027",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 9,
+     "text_as_printed": "Critically examines the arrival of the Europeans in India and analyzes the reasons for their establishment and settlement in the country."
+    },
+    {
+     "number": 2,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Name the major Spice Islands of Southeast Asia (Indonesia) traded by the Dutch.?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s6-q027",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s6-q027",
+     "pdf_page": 30,
+     "printed_page": 16,
+     "y": 449.358,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s6-q027-key",
+     "pdf_page": 173,
+     "printed_page": 159,
+     "y": 429.758,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:24:33+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T01:24:33+05:30",
+   "text_as_printed": "Name the major Spice Islands of Southeast Asia (Indonesia) traded by the Dutch.? (Average )",
+   "section_signal": "F",
+   "answer": {
+    "kind": "text",
+    "value": "Major islands in Southeast Asia: Indonesia, Maluku, Thailand, Philippines, Cambodia"
+   },
+   "answer_as_printed": "Major islands in Southeast Asia: Indonesia, Maluku, Thailand, Philippines, Cambodia",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T01:24:33+05:30",
+    "basis": "printed one-line answer, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "8dd057470da2d6496266054a40dfdd34fadd6d09ad57dc318fd2f9ec7c109d8d"
+  },
+  {
+   "id": "soc-7-03-s6-q028",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 9,
+     "text_as_printed": "Critically examines the arrival of the Europeans in India and analyzes the reasons for their establishment and settlement in the country."
+    },
+    {
+     "number": 2,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What were the main goals of the Europeans?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s6-q028",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s6-q028",
+     "pdf_page": 30,
+     "printed_page": 16,
+     "y": 498.758,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s6-q028-key",
+     "pdf_page": 173,
+     "printed_page": 159,
+     "y": 458.458,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:24:33+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T01:24:33+05:30",
+   "text_as_printed": "What were the main goals of the Europeans? (Average )",
+   "section_signal": "F",
+   "answer": {
+    "kind": "text",
+    "value": "Main objectives of European powers:\nMonopolizing trade with Eastern countries\nEstablishing colonial empires\nSpreading Christianity"
+   },
+   "answer_as_printed": "Main objectives of European powers:\nMonopolizing trade with Eastern countries\nEstablishing colonial empires\nSpreading Christianity",
+   "solution_steps": [
+    "Monopolizing trade with Eastern countries",
+    "Establishing colonial empires",
+    "Spreading Christianity"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T01:24:33+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "7fe6cefeb059c28f26e8121018c71d2168ecaeae220836322bac3e1bf75e4bac"
+  },
+  {
+   "id": "soc-7-03-s6-q029",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 9,
+     "text_as_printed": "Critically examines the arrival of the Europeans in India and analyzes the reasons for their establishment and settlement in the country."
+    },
+    {
+     "number": 2,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What were the reasons for the prosperity of the Portuguese?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s6-q029",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s6-q029",
+     "pdf_page": 30,
+     "printed_page": 16,
+     "y": 527.458,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s6-q029-key",
+     "pdf_page": 173,
+     "printed_page": 159,
+     "y": 573.258,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:24:33+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T01:24:33+05:30",
+   "text_as_printed": "What were the reasons for the prosperity of the Portuguese? (Average)",
+   "section_signal": "F",
+   "answer": {
+    "kind": "text",
+    "value": "Reasons for the rise of the Portuguese:\nZamorin's permission: The ruler of Calicut, Zamorin, allowed Vasco da Gama to trade in his kingdom.\nCapture of Goa: Albuquerque captured Goa from the Sultan of Bijapur.\nEstablishment of settlements: Albuquerque's successors established settlements in Diu, Daman, Mumbai, Salsette, and Bassein."
+   },
+   "answer_as_printed": "Reasons for the rise of the Portuguese:\nZamorin's permission: The ruler of Calicut, Zamorin, allowed Vasco da Gama to trade in his kingdom.\nCapture of Goa: Albuquerque captured Goa from the Sultan of Bijapur.\nEstablishment of settlements: Albuquerque's successors established settlements in Diu, Daman, Mumbai, Salsette, and Bassein.",
+   "solution_steps": [
+    "Zamorin's permission: The ruler of Calicut, Zamorin, allowed Vasco da Gama to trade in his kingdom.",
+    "Capture of Goa: Albuquerque captured Goa from the Sultan of Bijapur.",
+    "Establishment of settlements: Albuquerque's successors established settlements in Diu, Daman, Mumbai, Salsette, and Bassein."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T01:24:33+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "f20ad4c29163741ecc74312a525be90aac8bd16d0eb18bf4aa73969b90e5fa45"
+  },
+  {
+   "id": "soc-7-03-s6-q030",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 9,
+     "text_as_printed": "Critically examines the arrival of the Europeans in India and analyzes the reasons for their establishment and settlement in the country."
+    },
+    {
+     "number": 2,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Write the achievements of Dupleix?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s6-q030",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s6-q030",
+     "pdf_page": 30,
+     "printed_page": 16,
+     "y": 556.158,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s6-q030-key",
+     "pdf_page": 173,
+     "printed_page": 159,
+     "y": 729.488,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:24:33+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T01:24:33+05:30",
+   "text_as_printed": "Write the achievements of Dupleix? (Average)",
+   "section_signal": "F",
+   "answer": {
+    "kind": "text",
+    "value": "Achievements of Dupleix:\nDupleix's governance: Dupleix was a skilled governor who increased French influence in the states of Hyderabad and Carnatic.\nFrench expansion: He expanded French control in India."
+   },
+   "answer_as_printed": "Achievements of Dupleix:\nDupleix's governance: Dupleix was a skilled governor who increased French influence in the states of Hyderabad and Carnatic.\nFrench expansion: He expanded French control in India.",
+   "solution_steps": [
+    "Dupleix's governance: Dupleix was a skilled governor who increased French influence in the states of Hyderabad and Carnatic.",
+    "French expansion: He expanded French control in India."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T01:24:33+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "ff24e095f7e9fd79eda7ff20d75a734ed243ba255160d4fef8fc8777bb52a6c0"
+  },
+  {
+   "id": "soc-7-03-s7-q031",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 9,
+     "text_as_printed": "Critically examines the arrival of the Europeans in India and analyzes the reasons for their establishment and settlement in the country."
+    },
+    {
+     "number": 2,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "List the reasons for the decline of the Portuguese in India?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s7-q031",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s7-q031",
+     "pdf_page": 30,
+     "printed_page": 16,
+     "y": 617.078,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s7-q031-key",
+     "pdf_page": 174,
+     "printed_page": 160,
+     "y": 122.028,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:24:33+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T01:24:33+05:30",
+   "text_as_printed": "List the reasons for the decline of the Portuguese in India? (Difficult )",
+   "section_signal": "G",
+   "answer": {
+    "kind": "text",
+    "value": "Reasons for the decline of the Portuguese:\nSuperior naval power: The Dutch and English had stronger naval forces than the Portuguese.\nCorruption: Portuguese officials were corrupt.\nLoss of loyalty: Portuguese employees lost their loyalty to the crown.\nForced conversions: The Portuguese forced people to convert to Christianity.\nDecline of Vijayanagara Empire: The decline of the Vijayanagara Empire led to a decline in Portuguese trade."
+   },
+   "answer_as_printed": "Reasons for the decline of the Portuguese:\nSuperior naval power: The Dutch and English had stronger naval forces than the Portuguese.\nCorruption: Portuguese officials were corrupt.\nLoss of loyalty: Portuguese employees lost their loyalty to the crown.\nForced conversions: The Portuguese forced people to convert to Christianity.\nDecline of Vijayanagara Empire: The decline of the Vijayanagara Empire led to a decline in Portuguese trade.",
+   "solution_steps": [
+    "Superior naval power: The Dutch and English had stronger naval forces than the Portuguese.",
+    "Corruption: Portuguese officials were corrupt.",
+    "Loss of loyalty: Portuguese employees lost their loyalty to the crown.",
+    "Forced conversions: The Portuguese forced people to convert to Christianity.",
+    "Decline of Vijayanagara Empire: The decline of the Vijayanagara Empire led to a decline in Portuguese trade."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T01:24:33+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "e00c963bbfb703e487dff4039d94ba0dc7965b5a75b6332199fedd881530caae"
+  },
+  {
+   "id": "soc-7-03-s7-q032",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 9,
+     "text_as_printed": "Critically examines the arrival of the Europeans in India and analyzes the reasons for their establishment and settlement in the country."
+    },
+    {
+     "number": 2,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Write about the trading centers of the Dutch in India?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s7-q032",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s7-q032",
+     "pdf_page": 30,
+     "printed_page": 16,
+     "y": 645.778,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s7-q032-key",
+     "pdf_page": 174,
+     "printed_page": 160,
+     "y": 314.928,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:24:33+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T01:24:33+05:30",
+   "text_as_printed": "Write about the trading centers of the Dutch in India? (Difficult )",
+   "section_signal": "G",
+   "answer": {
+    "kind": "text",
+    "value": "Dutch trading centers:\nThe Dutch were one of the major European powers to arrive in India after the Portuguese.\nThey established the Dutch East India Company in 1602 and monopolized trade with the East.\nThey established their capital at Pulicat and set up trading centers in various parts of India, including Agra, Machilipatnam, Surat, Karaikal, Nagapattinam, and Kochi."
+   },
+   "answer_as_printed": "Dutch trading centers:\nThe Dutch were one of the major European powers to arrive in India after the Portuguese.\nThey established the Dutch East India Company in 1602 and monopolized trade with the East.\nThey established their capital at Pulicat and set up trading centers in various parts of India, including Agra, Machilipatnam, Surat, Karaikal, Nagapattinam, and Kochi.",
+   "solution_steps": [
+    "The Dutch were one of the major European powers to arrive in India after the Portuguese.",
+    "They established the Dutch East India Company in 1602 and monopolized trade with the East.",
+    "They established their capital at Pulicat and set up trading centers in various parts of India, including Agra, Machilipatnam, Surat, Karaikal, Nagapattinam, and Kochi."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T01:24:33+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "949bbae39b620a9c8489d4d3e730a977fa706f2d74c5971c93f99762651d9a9c"
+  },
+  {
+   "id": "soc-7-03-s7-q033",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 9,
+     "text_as_printed": "Critically examines the arrival of the Europeans in India and analyzes the reasons for their establishment and settlement in the country."
+    },
+    {
+     "number": 2,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What were the reasons for the decline of the French in India?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s7-q033",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s7-q033",
+     "pdf_page": 30,
+     "printed_page": 16,
+     "y": 674.478,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s7-q033-key",
+     "pdf_page": 174,
+     "printed_page": 160,
+     "y": 450.458,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:24:33+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T01:24:33+05:30",
+   "text_as_printed": "What were the reasons for the decline of the French in India? (Difficult )",
+   "section_signal": "G",
+   "answer": {
+    "kind": "text",
+    "value": "Reasons for the decline of the French:\nThe French government did not provide full support to the French in India.\nPolitical instability and revolutions in France contributed to their decline.\nThe British naval forces were stronger than the French naval forces."
+   },
+   "answer_as_printed": "Reasons for the decline of the French:\nThe French government did not provide full support to the French in India.\nPolitical instability and revolutions in France contributed to their decline.\nThe British naval forces were stronger than the French naval forces.",
+   "solution_steps": [
+    "The French government did not provide full support to the French in India.",
+    "Political instability and revolutions in France contributed to their decline.",
+    "The British naval forces were stronger than the French naval forces."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T01:24:33+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "937e873a136629afde3f0a8972c6af12cc272c7ee3e9fd395bfd78c4074c1f62"
+  },
+  {
+   "id": "soc-7-03-s8-q034",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 9,
+     "text_as_printed": "Critically examines the arrival of the Europeans in India and analyzes the reasons for their establishment and settlement in the country."
+    },
+    {
+     "number": 2,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "How did the British East India Company transform from a simple trading firm in 1600 into a political power that ruled India?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s8-q034",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s8-q034",
+     "pdf_page": 30,
+     "printed_page": 16,
+     "y": 735.283,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s8-q034-key",
+     "pdf_page": 174,
+     "printed_page": 160,
+     "y": 593.978,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:24:33+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T01:24:33+05:30",
+   "text_as_printed": "How did the British East India Company transform from a simple trading firm in 1600 into a political power that ruled India? (Difficult )",
+   "section_signal": "H",
+   "answer": {
+    "kind": "text",
+    "value": "East India Company:\nThe East India Company was a British private company established in 1600 to trade with the East.\nQueen Elizabeth granted the company permission to trade in India.\nThe company's ships docked at the port of Surat.\nThomas Roe visited the court of Jahangir and obtained permission to trade in Surat.\nThe company established trading centers in Agra, Broach, and other parts of India.\nThe company's profits increased, and they obtained dastaks (documents granting exemption from customs duties) from Farrukhsiyar.\nThe British built fortifications for protection and maintained a strong military presence."
+   },
+   "answer_as_printed": "East India Company:\nThe East India Company was a British private company established in 1600 to trade with the East.\nQueen Elizabeth granted the company permission to trade in India.\nThe company's ships docked at the port of Surat.\nThomas Roe visited the court of Jahangir and obtained permission to trade in Surat.\nThe company established trading centers in Agra, Broach, and other parts of India.\nThe company's profits increased, and they obtained dastaks (documents granting exemption from customs duties) from Farrukhsiyar.\nThe British built fortifications for protection and maintained a strong military presence.",
+   "solution_steps": [
+    "The East India Company was a British private company established in 1600 to trade with the East.",
+    "Queen Elizabeth granted the company permission to trade in India.",
+    "The company's ships docked at the port of Surat.",
+    "Thomas Roe visited the court of Jahangir and obtained permission to trade in Surat.",
+    "The company established trading centers in Agra, Broach, and other parts of India.",
+    "The company's profits increased, and they obtained dastaks (documents granting exemption from customs duties) from Farrukhsiyar.",
+    "The British built fortifications for protection and maintained a strong military presence."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T01:24:33+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "e54e11c9dfde855fb11bcdbd7dc89e5d944bd0d66eef4c4c38a427d80255421c"
+  },
+  {
+   "id": "soc-7-03-s8-q035",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 9,
+     "text_as_printed": "Critically examines the arrival of the Europeans in India and analyzes the reasons for their establishment and settlement in the country."
+    },
+    {
+     "number": 2,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "How did their focus on controlling the profitable spice monopoly in Southeast Asia shape their trade operations in India?",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s8-q035",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s8-q035",
+     "pdf_page": 30,
+     "printed_page": 16,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s8-q035-key",
+     "pdf_page": 175,
+     "printed_page": 161,
+     "y": 142.728,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:24:33+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T01:24:33+05:30",
+   "text_as_printed": "How did their focus on controlling the profitable spice monopoly in Southeast Asia shape their trade operations in India? (Difficult )",
+   "section_signal": "H",
+   "answer": {
+    "kind": "text",
+    "value": "Dutch East India Company:\nThe Dutch East India Company was established in 1602 and gained a monopoly over trade in India.\nTheir capital was at Pulicat, and they established trading centers in Agra, Machilipatnam, Surat, Karaikal, Nagapattinam, and Kochi.\nDue to competition from the English, the Dutch focused on the Southeast Asian islands."
+   },
+   "answer_as_printed": "Dutch East India Company:\nThe Dutch East India Company was established in 1602 and gained a monopoly over trade in India.\nTheir capital was at Pulicat, and they established trading centers in Agra, Machilipatnam, Surat, Karaikal, Nagapattinam, and Kochi.\nDue to competition from the English, the Dutch focused on the Southeast Asian islands.",
+   "solution_steps": [
+    "The Dutch East India Company was established in 1602 and gained a monopoly over trade in India.",
+    "Their capital was at Pulicat, and they established trading centers in Agra, Machilipatnam, Surat, Karaikal, Nagapattinam, and Kochi.",
+    "Due to competition from the English, the Dutch focused on the Southeast Asian islands."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T01:24:33+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "cb673bb5102a042f798374e757835e761224a57b68490c4fb797a470d4251492"
+  },
+  {
+   "id": "soc-7-03-s9-q036",
+   "class": "7",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-7-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 9,
+     "text_as_printed": "Critically examines the arrival of the Europeans in India and analyzes the reasons for their establishment and settlement in the country."
+    },
+    {
+     "number": 2,
+     "text_as_printed": "Demonstrates the skills of drawing maps, locating places on maps, preparing, analyzing, interpreting, and evaluating diagrams/charts. This learning outcome is applicable to all lessons."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Using the map below, list the trading posts of the Europeans.",
+   "source": "lba",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s9-q036",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s9-q036",
+     "pdf_page": 31,
+     "printed_page": 17,
+     "y": 114.146,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-03-s9-q036-key",
+     "pdf_page": 175,
+     "printed_page": 161,
+     "y": 306.928,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:24:33+05:30"
+    }
+   ],
+   "created_by": "class-7-social",
+   "created_at": "2026-10-08T01:24:33+05:30",
+   "text_as_printed": "Using the map below, list the trading posts of the Europeans. (Average)",
+   "section_signal": "I",
+   "answer": {
+    "kind": "text",
+    "value": "Portuguese trading centres: Goa - Diu - Daman - Salsette - Mumbai (Bombay) - Bassein - Chaul - San Thome - Hooghly\nDutch trading centres: Agra - Machilipatnam - Surat - Karaikal - Nagapattinam - Kochi (Cochin)\nFrench trading centres: Pondicherry - Machilipatnam - Calicut - Mahe - Karaikal - Chandernagore\nBritish trading centres: Surat - Agra - Ahmedabad - Broach - Madras - Calcutta - Mumbai (Bombay)"
+   },
+   "answer_as_printed": "Portuguese trading centres: Goa - Diu - Daman - Salsette - Mumbai (Bombay) - Bassein - Chaul - San Thome - Hooghly\nDutch trading centres: Agra - Machilipatnam - Surat - Karaikal - Nagapattinam - Kochi (Cochin)\nFrench trading centres: Pondicherry - Machilipatnam - Calicut - Mahe - Karaikal - Chandernagore\nBritish trading centres: Surat - Agra - Ahmedabad - Broach - Madras - Calcutta - Mumbai (Bombay)",
+   "solution_steps": [
+    "Portuguese trading centres: Goa - Diu - Daman - Salsette - Mumbai (Bombay) - Bassein - Chaul - San Thome - Hooghly",
+    "Dutch trading centres: Agra - Machilipatnam - Surat - Karaikal - Nagapattinam - Kochi (Cochin)",
+    "French trading centres: Pondicherry - Machilipatnam - Calicut - Mahe - Karaikal - Chandernagore",
+    "British trading centres: Surat - Agra - Ahmedabad - Broach - Madras - Calcutta - Mumbai (Bombay)"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-7-social",
+    "at": "2026-10-08T01:24:33+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "01cefba43580f7b50a0f5655318dbddabed06b92a7bcc24195a64d02dc9708f8",
+   "stimulus_id": "st1",
+   "assets": [
+    {
+     "id": "a_map",
+     "type": "image",
+     "ref": "images/soc-7-03/soc-7-03-q36-map.png",
+     "role": "figure",
+     "pdf_page": 31,
+     "source_px": {
+      "w": 330,
+      "h": 334
+     },
+     "quality": "ok",
+     "sha256": "1e4b8117c0d17f7ed030bc1b8804b82f1bdede8aefd44e6f73cb37ab5a43cb69"
+    }
+   ]
+  }
+ ],
+ "pending_summary": {}
+}
