@@ -1,0 +1,1265 @@
+{
+ "contract_version": "1.7",
+ "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
+ "procedure_file": "extraction_procedure_social_addendum_v1.3_social science Classes 6-10 on top of procedure v2.md",
+ "machine_name": "soc-8-07_questions",
+ "version": 1,
+ "changelog": "v1 extraction — batch-01 — class-8-social",
+ "amendments_applied": [],
+ "unit_state": "EXTRACTED",
+ "review_ready": false,
+ "count_gate": {
+  "reference": 15,
+  "reference_source": "audited",
+  "extracted": 15,
+  "paired": 15,
+  "flagged": 4,
+  "gaps": [],
+  "duplicated_numbers": [],
+  "quota_table": "difficulty_only",
+  "second_method": {
+   "method": "printed difficulty distribution table",
+   "extracted": 15,
+   "agrees": true
+  },
+  "pass": true,
+  "note": "printed difficulty table 9/5/1=15 AGREES with per-question tags; flagged counts answer-level flags; all carry the structural marks flag (addendum §4.5)."
+ },
+ "extraction": {
+  "source_file": "8thSS-EM-LBARevised_1787048180.pdf",
+  "source_ref_prefix": "8thSS-EM-LBARevised_1787048180.pdf",
+  "pdf_pages": [
+   24,
+   25,
+   90,
+   91
+  ],
+  "printed_page_offset": -11,
+  "method_notes": [
+   "Offset -11 (pdf 24 = folio 13; pdf 90 = folio 79). Q: q1-9 pdf24, q10-15 pdf25. A: keys 1-13 pdf90, 14-15 pdf91 (ch8 key also begins on pdf91, below key 15).",
+   "Sections: I MCQ q1-4; II one word/sentence q5-9 (vsa); III two/three q10-12 (sa); IV five/six q13-14 (la); V seven/eight q15 (la). DIFFICULTY tags E9/A5/D1 = printed table 9/5/1 (AGREES).",
+   "q1 KEY-LETTER-TEXT DISAGREEMENT (§13.6): printed '1. A) Aristotle' — letter A = option A 'Herodotus', but text 'Aristotle' = option B. Letter and text name different options -> NO answer asserted (option_id null), 'key text not among options', review-blocking; reviewer decides (content clearly intends Aristotle=B).",
+   "SA/LA REORDER BAND keys 12-14 (3-cycle content displacement): by-number pairing kept (v2 §4.1), each flagged 'key text does not address question'. Content remap (proposal for reviewer): q12 (Greek thinkers) <- key 14; q13 (subjects studied) <- key 12 (Scope); q14 (contributions) <- key 13 (Greek Contributions). Extraction never re-pairs by content.",
+   "VSA q5-9 answer.value = sentence, no steps (3d). SUB (heading non-step): q10 2 steps, q15 8 steps (lead + 7); q12/q13/q14 carry their BY-NUMBER key content (flagged). BUL q11 1 step.",
+   "De-glue: key10 'Political Scienceis:' -> 'Political Science is:'. MARKS none printed -> all null/unassigned + structural flag (§4.5)."
+  ],
+  "notation_summary": {
+   "render_tokens": 0,
+   "latex_tokens": 0,
+   "damage_flags": []
+  },
+  "excluded_objects": [],
+  "inline_excluded_count": 0,
+  "figure_references": []
+ },
+ "stimuli": [],
+ "questions": [
+  {
+   "id": "soc-8-07-s1-q001",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-07",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Analyzes the meaning and importance of Political Science, understands one's rights and duties as a citizen and develops the ability to actively participate in the democratic process."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The father of political science is",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-07-s1-q001",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-07-s1-q001",
+     "pdf_page": 24,
+     "printed_page": 13,
+     "y": 396.743203,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-07-s1-q001-key",
+     "pdf_page": 90,
+     "printed_page": 79,
+     "y": 120.503197,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:36:45+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:36:45+05:30",
+   "text_as_printed": "The father of political science is (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Herodotus"
+    },
+    {
+     "id": "B",
+     "text": "Aristotle"
+    },
+    {
+     "id": "C",
+     "text": "Plato"
+    },
+    {
+     "id": "D",
+     "text": "Socrates"
+    }
+   ],
+   "answer_as_printed": "A) Aristotle",
+   "answer": {
+    "kind": "option",
+    "option_id": null
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text not among options",
+     "why_not_corrected": "the printed key is '1. A) Aristotle'. Letter A = option A 'Herodotus', but the key text names option B 'Aristotle' (exact match). Letter and key text name different options; no answer is asserted (key-letter-text-disagreement vocab 'key text not among options'); the reviewer decides which governs (addendum §13.6).",
+     "suggested": "B (by text; printed letter A='Herodotus' disagrees) — review"
+    }
+   ],
+   "content_hash": "06a5486f3ce091f21247313c334074b594fa7320730e3da50dd683fc09d957df"
+  },
+  {
+   "id": "soc-8-07-s1-q002",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-07",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Analyzes the meaning and importance of Political Science, understands one's rights and duties as a citizen and develops the ability to actively participate in the democratic process."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The book \"Republic\" was written by",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-07-s1-q002",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-07-s1-q002",
+     "pdf_page": 24,
+     "printed_page": 13,
+     "y": 431.543175,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-07-s1-q002-key",
+     "pdf_page": 90,
+     "printed_page": 79,
+     "y": 137.783193,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:36:45+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:36:45+05:30",
+   "text_as_printed": "The book \"Republic\" was written by (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Socrates"
+    },
+    {
+     "id": "B",
+     "text": "Aristotle"
+    },
+    {
+     "id": "C",
+     "text": "Plato"
+    },
+    {
+     "id": "D",
+     "text": "Herodotus"
+    }
+   ],
+   "answer_as_printed": "C) Plato",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:36:45+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "c8c72cce5bb0e2ed4ee7e313574cd57e8e2fe50ae554470a9e2714b6046361c4"
+  },
+  {
+   "id": "soc-8-07-s1-q003",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-07",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Analyzes the meaning and importance of Political Science, understands one's rights and duties as a citizen and develops the ability to actively participate in the democratic process."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The book authored by Kautilya is",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-07-s1-q003",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-07-s1-q003",
+     "pdf_page": 24,
+     "printed_page": 13,
+     "y": 466.343193,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-07-s1-q003-key",
+     "pdf_page": 90,
+     "printed_page": 79,
+     "y": 155.18319,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:36:45+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:36:45+05:30",
+   "text_as_printed": "The book authored by Kautilya is (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Arthashastra"
+    },
+    {
+     "id": "B",
+     "text": "Political Science"
+    },
+    {
+     "id": "C",
+     "text": "Sociology"
+    },
+    {
+     "id": "D",
+     "text": "Mathematics"
+    }
+   ],
+   "answer_as_printed": "A) Arthashastra",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:36:45+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "e5fef38dc1242325eded9d9629aa220c5bba462ffe0d498a34e76d8ab455f430"
+  },
+  {
+   "id": "soc-8-07-s1-q004",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-07",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Analyzes the meaning and importance of Political Science, understands one's rights and duties as a citizen and develops the ability to actively participate in the democratic process."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Aristotle's work on Political Science is",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-07-s1-q004",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-07-s1-q004",
+     "pdf_page": 24,
+     "printed_page": 13,
+     "y": 518.543175,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-07-s1-q004-key",
+     "pdf_page": 90,
+     "printed_page": 79,
+     "y": 172.70319,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:36:45+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:36:45+05:30",
+   "text_as_printed": "Aristotle's work on Political Science is (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Biology"
+    },
+    {
+     "id": "B",
+     "text": "Politics"
+    },
+    {
+     "id": "C",
+     "text": "Sociology"
+    },
+    {
+     "id": "D",
+     "text": "Republic"
+    }
+   ],
+   "answer_as_printed": "B) Politics",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:36:45+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "f2e67104cd8cbf082e552fce3296da2d881677f1f60cfd507f5424aa93b3d3a8"
+  },
+  {
+   "id": "soc-8-07-s2-q005",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-07",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Analyzes the meaning and importance of Political Science, understands one's rights and duties as a citizen and develops the ability to actively participate in the democratic process."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Mention the origin of the word \"politics\"",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-07-s2-q005",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-07-s2-q005",
+     "pdf_page": 24,
+     "printed_page": 13,
+     "y": 588.143212,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-07-s2-q005-key",
+     "pdf_page": 90,
+     "printed_page": 79,
+     "y": 207.383195,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:36:45+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:36:45+05:30",
+   "text_as_printed": "Mention the origin of the word \"politics\" (E)",
+   "answer": {
+    "kind": "text",
+    "value": "The root of the word \"politics\" is polis."
+   },
+   "answer_as_printed": "The root of the word \"politics\" is polis.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:36:45+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "7307307e515e53978ea2e1e2b2e712f8e344c97c0f248100ac9e22280d705ac8"
+  },
+  {
+   "id": "soc-8-07-s2-q006",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-07",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Analyzes the meaning and importance of Political Science, understands one's rights and duties as a citizen and develops the ability to actively participate in the democratic process."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Who gave the status of independent study to political science?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-07-s2-q006",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-07-s2-q006",
+     "pdf_page": 24,
+     "printed_page": 13,
+     "y": 605.663201,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-07-s2-q006-key",
+     "pdf_page": 90,
+     "printed_page": 79,
+     "y": 224.903184,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:36:45+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:36:45+05:30",
+   "text_as_printed": "Who gave the status of independent study to political science? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "The Greeks gave political science the status of an independent discipline."
+   },
+   "answer_as_printed": "The Greeks gave political science the status of an independent discipline.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:36:45+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "427f97fc1afea78e0bc76b9092d9c67ae375426303108922c140cf4250381276"
+  },
+  {
+   "id": "soc-8-07-s2-q007",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-07",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Analyzes the meaning and importance of Political Science, understands one's rights and duties as a citizen and develops the ability to actively participate in the democratic process."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is Political Science?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-07-s2-q007",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-07-s2-q007",
+     "pdf_page": 24,
+     "printed_page": 13,
+     "y": 622.943184,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-07-s2-q007-key",
+     "pdf_page": 90,
+     "printed_page": 79,
+     "y": 242.303193,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:36:45+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:36:45+05:30",
+   "text_as_printed": "What is Political Science? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "Political science studies the state and human political activities."
+   },
+   "answer_as_printed": "Political science studies the state and human political activities.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:36:45+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "e1c46aee81d532f2d6f5aebfa4ae28b0df8d54005d8a9f657ba24de21ba07652"
+  },
+  {
+   "id": "soc-8-07-s2-q008",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-07",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Analyzes the meaning and importance of Political Science, understands one's rights and duties as a citizen and develops the ability to actively participate in the democratic process."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Why Aristotle is called as the father of political science?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-07-s2-q008",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-07-s2-q008",
+     "pdf_page": 24,
+     "printed_page": 13,
+     "y": 640.343193,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-07-s2-q008-key",
+     "pdf_page": 90,
+     "printed_page": 79,
+     "y": 259.703202,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:36:45+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:36:45+05:30",
+   "text_as_printed": "Why Aristotle is called as the father of political science? (A)",
+   "answer": {
+    "kind": "text",
+    "value": "Aristotle systemized the study of political science and is called as the \"Father of Political Science\""
+   },
+   "answer_as_printed": "Aristotle systemized the study of political science and is called as the \"Father of Political Science\"",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:36:45+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "e5a1a37cf0d780ce2984addf72897e624d3b74315e5dda1801037ce5ec82ddab"
+  },
+  {
+   "id": "soc-8-07-s2-q009",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-07",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Analyzes the meaning and importance of Political Science, understands one's rights and duties as a citizen and develops the ability to actively participate in the democratic process."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Who started the systematic study of Political Science?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-07-s2-q009",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-07-s2-q009",
+     "pdf_page": 24,
+     "printed_page": 13,
+     "y": 657.743203,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-07-s2-q009-key",
+     "pdf_page": 90,
+     "printed_page": 79,
+     "y": 294.503197,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:36:45+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:36:45+05:30",
+   "text_as_printed": "Who started the systematic study of Political Science? (A)",
+   "answer": {
+    "kind": "text",
+    "value": "Aristotle"
+   },
+   "answer_as_printed": "Aristotle",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:36:45+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "54eb470fe1cd94df7cad0cbef01dd0078aae2bce85ee2c16714b3f814197865f"
+  },
+  {
+   "id": "soc-8-07-s3-q010",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-07",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Analyzes the meaning and importance of Political Science, understands one's rights and duties as a citizen and develops the ability to actively participate in the democratic process."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Mention the importance of political science.",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-07-s3-q010",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-07-s3-q010",
+     "pdf_page": 25,
+     "printed_page": 14,
+     "y": 85.583188,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-07-s3-q010-key",
+     "pdf_page": 90,
+     "printed_page": 79,
+     "y": 329.303193,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:36:45+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:36:45+05:30",
+   "text_as_printed": "Mention the importance of political science. (E)",
+   "answer": {
+    "kind": "text",
+    "value": "Importance of Political Science is:\nIt helps understand the origin and development of the state.\nIt provides information about the structure and functions of state and central Governments."
+   },
+   "answer_as_printed": "Importance of Political Science is:\nIt helps understand the origin and development of the state.\nIt provides information about the structure and functions of state and central Governments.",
+   "solution_steps": [
+    "It helps understand the origin and development of the state.",
+    "It provides information about the structure and functions of state and central Governments."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:36:45+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "36b68fb4cd99e5244ce0fbc496389ca8c476a1090a08e4640eca557924f25b3a"
+  },
+  {
+   "id": "soc-8-07-s3-q011",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-07",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Analyzes the meaning and importance of Political Science, understands one's rights and duties as a citizen and develops the ability to actively participate in the democratic process."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Which topics are discussed in the book \"Politics\"?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-07-s3-q011",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-07-s3-q011",
+     "pdf_page": 25,
+     "printed_page": 14,
+     "y": 103.103188,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-07-s3-q011-key",
+     "pdf_page": 90,
+     "printed_page": 79,
+     "y": 398.903207,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:36:45+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:36:45+05:30",
+   "text_as_printed": "Which topics are discussed in the book \"Politics\"? (A)",
+   "answer": {
+    "kind": "text",
+    "value": "The book Politics discusses the origin, development, and functions of the state."
+   },
+   "answer_as_printed": "The book Politics discusses the origin, development, and functions of the state.",
+   "solution_steps": [
+    "The book Politics discusses the origin, development, and functions of the state."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:36:45+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "c4e14653f1edbef1fea4abc23e41c9e2ff2c307b268eb06bafd983049dd63b64"
+  },
+  {
+   "id": "soc-8-07-s3-q012",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-07",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Analyzes the meaning and importance of Political Science, understands one's rights and duties as a citizen and develops the ability to actively participate in the democratic process."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Name the Greek thinkers related to Political Science.",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-07-s3-q012",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-07-s3-q012",
+     "pdf_page": 25,
+     "printed_page": 14,
+     "y": 120.503197,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-07-s3-q012-key",
+     "pdf_page": 90,
+     "printed_page": 79,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:36:45+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:36:45+05:30",
+   "text_as_printed": "Name the Greek thinkers related to Political Science. (A)",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "shifted numbering — see key 14",
+     "why_not_corrected": "answer-side numbering is displaced in this band; extraction does not shift-align (procedure §4.2) — answer left empty, coordinator verifies the pair by content in review",
+     "suggested": "key 14 (this unit's answer side prints Q12's answer under printed label 14)"
+    }
+   ],
+   "content_hash": "de6f75790502531813283c71fe3b008703658b26ddf534867467407080e722b3"
+  },
+  {
+   "id": "soc-8-07-s4-q013",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-07",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Analyzes the meaning and importance of Political Science, understands one's rights and duties as a citizen and develops the ability to actively participate in the democratic process."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Name the subjects studied in political science.",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-07-s4-q013",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-07-s4-q013",
+     "pdf_page": 25,
+     "printed_page": 14,
+     "y": 172.70319,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-07-s4-q013-key",
+     "pdf_page": 90,
+     "printed_page": 79,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:36:45+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:36:45+05:30",
+   "text_as_printed": "Name the subjects studied in political science. (E)",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "shifted numbering — see key 12",
+     "why_not_corrected": "answer-side numbering is displaced in this band; extraction does not shift-align (procedure §4.2) — answer left empty, coordinator verifies the pair by content in review",
+     "suggested": "key 12 (this unit's answer side prints Q13's answer under printed label 12)"
+    }
+   ],
+   "content_hash": "2cf3061f285d3b406ae0885be47791ffb16359db060d04873be9a5627f68361c"
+  },
+  {
+   "id": "soc-8-07-s4-q014",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-07",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Analyzes the meaning and importance of Political Science, understands one's rights and duties as a citizen and develops the ability to actively participate in the democratic process."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Explain the contributions of Greeks to political science.",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-07-s4-q014",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-07-s4-q014",
+     "pdf_page": 25,
+     "printed_page": 14,
+     "y": 190.103188,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-07-s4-q014-key",
+     "pdf_page": 91,
+     "printed_page": 80,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:36:45+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:36:45+05:30",
+   "text_as_printed": "Explain the contributions of Greeks to political science. (A)",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "shifted numbering — see key 13",
+     "why_not_corrected": "answer-side numbering is displaced in this band; extraction does not shift-align (procedure §4.2) — answer left empty, coordinator verifies the pair by content in review",
+     "suggested": "key 13 (this unit's answer side prints Q14's answer under printed label 13)"
+    }
+   ],
+   "content_hash": "89d9e62bc4ebf2177e57f938579fe40bc7c18a6605d4113de822847886217219"
+  },
+  {
+   "id": "soc-8-07-s5-q015",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-07",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "D",
+   "learning_outcomes": [
+    {
+     "number": 12,
+     "text_as_printed": "Analyzes the meaning and importance of Political Science, understands one's rights and duties as a citizen and develops the ability to actively participate in the democratic process."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The knowledge of political science is essential for everyone, Justify",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-07-s5-q015",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-07-s5-q015",
+     "pdf_page": 25,
+     "printed_page": 14,
+     "y": 242.303193,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-07-s5-q015-key",
+     "pdf_page": 91,
+     "printed_page": 80,
+     "y": 120.503197,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:36:45+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:36:45+05:30",
+   "text_as_printed": "The knowledge of political science is essential for everyone, Justify (D)",
+   "answer": {
+    "kind": "text",
+    "value": "The Knowledge of Political Science is Essential because\nIt helps understand the origin and development of the state.\nIt educates about concepts like sovereignty, liberty, law and equality.\nIt provides insights into good governance, war, and peace.\nIt informs about the functioning of central and state governments.\nIt fosters political awareness for establishing a modern welfare state.\nIt develops qualities of citizenship and leadership.\nIt enhances understanding of international relations."
+   },
+   "answer_as_printed": "The Knowledge of Political Science is Essential because\nIt helps understand the origin and development of the state.\nIt educates about concepts like sovereignty, liberty, law and equality.\nIt provides insights into good governance, war, and peace.\nIt informs about the functioning of central and state governments.\nIt fosters political awareness for establishing a modern welfare state.\nIt develops qualities of citizenship and leadership.\nIt enhances understanding of international relations.",
+   "solution_steps": [
+    "It helps understand the origin and development of the state.",
+    "It educates about concepts like sovereignty, liberty, law and equality.",
+    "It provides insights into good governance, war, and peace.",
+    "It informs about the functioning of central and state governments.",
+    "It fosters political awareness for establishing a modern welfare state.",
+    "It develops qualities of citizenship and leadership.",
+    "It enhances understanding of international relations."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:36:45+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "09bdf29dfd23f539648a035c5333c626c3355a10a4edb22ac573421caa03f9b8"
+  }
+ ],
+ "pending_summary": {}
+}
