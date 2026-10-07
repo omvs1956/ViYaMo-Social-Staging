@@ -1,0 +1,2194 @@
+{
+ "contract_version": "1.7",
+ "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
+ "procedure_file": "extraction_procedure_social_addendum_v1.3_social science Classes 6-10 on top of procedure v2.md",
+ "machine_name": "soc-8-03_questions",
+ "version": 1,
+ "changelog": "v1 extraction — batch-01 — class-8-social",
+ "amendments_applied": [],
+ "unit_state": "EXTRACTED",
+ "review_ready": false,
+ "count_gate": {
+  "reference": 26,
+  "reference_source": "audited",
+  "extracted": 26,
+  "paired": 26,
+  "flagged": 3,
+  "gaps": [],
+  "duplicated_numbers": [],
+  "quota_table": "difficulty_only",
+  "second_method": {
+   "method": "printed difficulty distribution table",
+   "extracted": 26,
+   "agrees": true
+  },
+  "pass": true,
+  "note": "printed difficulty table 14/9/3=26 AGREES with per-question tags; flagged counts answer-level flags; all carry the structural marks flag (addendum §4.5)."
+ },
+ "extraction": {
+  "source_file": "8thSS-EM-LBARevised_1787048180.pdf",
+  "source_ref_prefix": "8thSS-EM-LBARevised_1787048180.pdf",
+  "pdf_pages": [
+   16,
+   17,
+   81,
+   82,
+   83
+  ],
+  "printed_page_offset": -11,
+  "method_notes": [
+   "Offset -11 (pdf 16 = folio 5; pdf 81 = folio 70). Q side: q1-5 pdf16 (folio5), q6-26 pdf17 (folio6). A side: keys 1-20 pdf81 (folio70), 21-24 pdf82 (folio71), 25 + 27 pdf83 (folio72).",
+   "Sections: I MCQ q1-6; II one-sentence q7-16 (vsa); III two/three sentences q17-20 (sa); IV five/six q21-23 (la); V seven/eight q24-26 (la).",
+   "DIFFICULTY tags E14/A9/D3 = printed table 14/9/3 (AGREES). q21 tag printed UNCLOSED '(A' (missing ')'); read as average per v2 §6 (missing bracket accepted); STEM supplies '(A)' so it is tagged, source form noted here.",
+   "KEY GAP / DISPLACED (coordinator relay 2026-10-07, closeout §6): answer side prints keys ...24, 25, then 27 — NO key 26. q-side ends at q26; key 27 content (agriculture/trade/crafts of Indus-Saraswati) answers q26 (which asks about their crafts). End-of-chapter off-by-one. q26 -> SHIFT: answer EMPTY + 'shifted numbering — see key 27' (extraction never shift-aligns, §4.2); coordinator verifies the pair by content. Keys 1-25 pair by number (clean).",
+   "MCQ benign flags (letter kept, answer asserted §4.1): q3 'Kalibangan' vs option A 'Kalibangan and Lothal' (key abbreviates); q6 'Pictograph' vs option D 'Pictographic script'. q1/q2/q4/q5 clean.",
+   "VSA q7-16 answer.value = sentence, no steps (3d). q14 key prints a lead + 2 bullets ('Major world civilizations include: • Egyptian • Mesopotamian'); flattened to a one-line VSA value to avoid a multi-line-no-steps WARN — DECISION for coordinator (keep as VSA line, or re-type as SA steps).",
+   "Descriptive keys SUB (heading 'X:' non-step, §5.2): q17 4 bullets, q18 4, q19 3, q20 4, q21 6, q22 5, q24 8; q25 sub-headed (main + 'Early Vedic Period:' + 'Later Vedic Period:' = 3 non-step headings, 8 bullet steps). q23 BUL (no heading, 5 bullets).",
+   "De-glue: q4 stem 'systemduring'->'system during'; key16 'Punjabprovinces'->'Punjab provinces'. Source typos kept verbatim: q21 stem 'of the of', key25 'marriage has practiced', key20 'it called as citadel'.",
+   "MARKS none printed -> all null/unassigned + structural flag (§4.5)."
+  ],
+  "notation_summary": {
+   "render_tokens": 0,
+   "latex_tokens": 0,
+   "damage_flags": []
+  },
+  "excluded_objects": [],
+  "inline_excluded_count": 0,
+  "figure_references": []
+ },
+ "stimuli": [],
+ "questions": [
+  {
+   "id": "soc-8-03-s1-q001",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the special features of the Sindhu-Saraswati civilization with present-day life, Explains the role of rivers in the emergence of ancient civilizations"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The Indus Valley Civilization was found in the year of",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s1-q001",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s1-q001",
+     "pdf_page": 16,
+     "printed_page": 5,
+     "y": 385.823205,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s1-q001-key",
+     "pdf_page": 81,
+     "printed_page": 70,
+     "y": 120.503197,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:17:12+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:17:12+05:30",
+   "text_as_printed": "The Indus Valley Civilization was found in the year of (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "1920-1921"
+    },
+    {
+     "id": "B",
+     "text": "1925-1926"
+    },
+    {
+     "id": "C",
+     "text": "1911-1912"
+    },
+    {
+     "id": "D",
+     "text": "1947-1948"
+    }
+   ],
+   "answer_as_printed": "A) 1920-1921",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:17:12+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "098bb1aa5b70997462e0caed3eaca061fb218743a29db119def634a5dbbe1571"
+  },
+  {
+   "id": "soc-8-03-s1-q002",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the special features of the Sindhu-Saraswati civilization with present-day life, Explains the role of rivers in the emergence of ancient civilizations"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The person who led the excavation of India's ancient civilization was",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s1-q002",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s1-q002",
+     "pdf_page": 16,
+     "printed_page": 5,
+     "y": 437.903207,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s1-q002-key",
+     "pdf_page": 81,
+     "printed_page": 70,
+     "y": 137.783193,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:17:12+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:17:12+05:30",
+   "text_as_printed": "The person who led the excavation of India's ancient civilization was (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Dayaram Sahani"
+    },
+    {
+     "id": "B",
+     "text": "R.D. Banerjee"
+    },
+    {
+     "id": "C",
+     "text": "John Marshall"
+    },
+    {
+     "id": "D",
+     "text": "Cunningham"
+    }
+   ],
+   "answer_as_printed": "C) John Marshall",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:17:12+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "588790af7cf970e4710b4d4066ccca709373a6c6c1c729ab5c6265e68ca1349c"
+  },
+  {
+   "id": "soc-8-03-s1-q003",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the special features of the Sindhu-Saraswati civilization with present-day life, Explains the role of rivers in the emergence of ancient civilizations"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Fire altars were found at",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s1-q003",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s1-q003",
+     "pdf_page": 16,
+     "printed_page": 5,
+     "y": 490.103188,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s1-q003-key",
+     "pdf_page": 81,
+     "printed_page": 70,
+     "y": 68.18319,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:17:12+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:17:12+05:30",
+   "text_as_printed": "Fire altars were found at (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Kalibangan and Lothal"
+    },
+    {
+     "id": "B",
+     "text": "Mohenjo-Daro"
+    },
+    {
+     "id": "C",
+     "text": "Harappa"
+    },
+    {
+     "id": "D",
+     "text": "None of these"
+    }
+   ],
+   "answer_as_printed": "A) Kalibangan",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:17:12+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text differs from option by a printed typo",
+     "why_not_corrected": "letter A kept (addendum §4.1); key text 'Kalibangan' vs option A 'Kalibangan and Lothal' differ by a source typo; spelling needs subject knowledge (v2 §1)",
+     "suggested": "A (letter kept)"
+    }
+   ],
+   "content_hash": "3903b7a70825d0893596409d7396e81e5a6ac61e2ce01994bdb5da545d27686a"
+  },
+  {
+   "id": "soc-8-03-s1-q004",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the special features of the Sindhu-Saraswati civilization with present-day life, Explains the role of rivers in the emergence of ancient civilizations"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The site that had an efficient rainwater harvesting system during Indus valley Civilization",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s1-q004",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s1-q004",
+     "pdf_page": 16,
+     "printed_page": 5,
+     "y": 542.30317,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s1-q004-key",
+     "pdf_page": 81,
+     "printed_page": 70,
+     "y": 172.70319,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:17:12+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:17:12+05:30",
+   "text_as_printed": "The site that had an efficient rainwater harvesting system during Indus valley Civilization (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Kalibangan"
+    },
+    {
+     "id": "B",
+     "text": "Dholavira"
+    },
+    {
+     "id": "C",
+     "text": "Lothal"
+    },
+    {
+     "id": "D",
+     "text": "Harappa"
+    }
+   ],
+   "answer_as_printed": "B) Dholavira",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:17:12+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "7179a4c1a58ff5fd1d3f20fb22482867700d48e4d0c3f13b37478df938a0e9b5"
+  },
+  {
+   "id": "soc-8-03-s1-q005",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the special features of the Sindhu-Saraswati civilization with present-day life, Explains the role of rivers in the emergence of ancient civilizations"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "A large dockyard was found at ________ during Indus Valley Civilization",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s1-q005",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s1-q005",
+     "pdf_page": 16,
+     "printed_page": 5,
+     "y": 156.263192,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s1-q005-key",
+     "pdf_page": 81,
+     "printed_page": 70,
+     "y": 190.103188,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:17:12+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:17:12+05:30",
+   "text_as_printed": "A large dockyard was found at ________ during Indus Valley Civilization (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Dholavira"
+    },
+    {
+     "id": "B",
+     "text": "Lothal"
+    },
+    {
+     "id": "C",
+     "text": "Kalibangan"
+    },
+    {
+     "id": "D",
+     "text": "Mohenjo-Daro"
+    }
+   ],
+   "answer_as_printed": "B) Lothal",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:17:12+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "cda92ded16664874d4f455a3d9e7fa4f7f90611c3150e91c26ef4bb2ae556fbe"
+  },
+  {
+   "id": "soc-8-03-s1-q006",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the special features of the Sindhu-Saraswati civilization with present-day life, Explains the role of rivers in the emergence of ancient civilizations"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The script found on the seals of the Indus–Saraswati Civilization is called by the scholars as",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s1-q006",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s1-q006",
+     "pdf_page": 17,
+     "printed_page": 6,
+     "y": 68.18319,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s1-q006-key",
+     "pdf_page": 81,
+     "printed_page": 70,
+     "y": 207.383195,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:17:12+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:17:12+05:30",
+   "text_as_printed": "The script found on the seals of the Indus–Saraswati Civilization is called by the scholars as (A)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Brahmi script"
+    },
+    {
+     "id": "B",
+     "text": "Devanagari script"
+    },
+    {
+     "id": "C",
+     "text": "Kharosthi script"
+    },
+    {
+     "id": "D",
+     "text": "Pictographic script"
+    }
+   ],
+   "answer_as_printed": "D) Pictograph",
+   "answer": {
+    "kind": "option",
+    "option_id": "D"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:17:12+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text differs from option by a printed typo",
+     "why_not_corrected": "letter D kept (addendum §4.1); key text 'Pictograph' vs option D 'Pictographic script' differ by a source typo; spelling needs subject knowledge (v2 §1)",
+     "suggested": "D (letter kept)"
+    }
+   ],
+   "content_hash": "2b31d87e57da9e0a818d40ce2a051550ff178e309ab2f97c7393d8716faae52b"
+  },
+  {
+   "id": "soc-8-03-s2-q007",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the special features of the Sindhu-Saraswati civilization with present-day life, Explains the role of rivers in the emergence of ancient civilizations"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Who declared the \"Harappan Civilization\" for the first time?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s2-q007",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s2-q007",
+     "pdf_page": 17,
+     "printed_page": 6,
+     "y": 155.18319,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s2-q007-key",
+     "pdf_page": 81,
+     "printed_page": 70,
+     "y": 242.303193,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:17:12+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:17:12+05:30",
+   "text_as_printed": "Who declared the \"Harappan Civilization\" for the first time? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "John Marshall was the first person to declare it as \"Harappa Civilization.\""
+   },
+   "answer_as_printed": "John Marshall was the first person to declare it as \"Harappa Civilization.\"",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:17:12+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "a173d3ec4be6a73dc2fd9c395de2d16a4c39f23858d81101baf87294fe8751b9"
+  },
+  {
+   "id": "soc-8-03-s2-q008",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the special features of the Sindhu-Saraswati civilization with present-day life, Explains the role of rivers in the emergence of ancient civilizations"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Mention the period of the Vedic civilization.",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s2-q008",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s2-q008",
+     "pdf_page": 17,
+     "printed_page": 6,
+     "y": 172.70319,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s2-q008-key",
+     "pdf_page": 81,
+     "printed_page": 70,
+     "y": 259.703202,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:17:12+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:17:12+05:30",
+   "text_as_printed": "Mention the period of the Vedic civilization. (E)",
+   "answer": {
+    "kind": "text",
+    "value": "The Vedic period spans from 1500 BCE to 700 BCE."
+   },
+   "answer_as_printed": "The Vedic period spans from 1500 BCE to 700 BCE.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:17:12+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "662088ce36a88af9874696d90ea6ac9bbd24abfce0dff8c41ffc098013a8e831"
+  },
+  {
+   "id": "soc-8-03-s2-q009",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the special features of the Sindhu-Saraswati civilization with present-day life, Explains the role of rivers in the emergence of ancient civilizations"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "State the origin of the term Veda",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s2-q009",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s2-q009",
+     "pdf_page": 17,
+     "printed_page": 6,
+     "y": 190.103188,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s2-q009-key",
+     "pdf_page": 81,
+     "printed_page": 70,
+     "y": 276.983185,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:17:12+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:17:12+05:30",
+   "text_as_printed": "State the origin of the term Veda (A)",
+   "answer": {
+    "kind": "text",
+    "value": "The word \"Veda\" means knowledge (vid)."
+   },
+   "answer_as_printed": "The word \"Veda\" means knowledge (vid).",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:17:12+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "5dafc78601f54a0e692e020fcb962bc09c54bae060a50957cb13f474c3c13af7"
+  },
+  {
+   "id": "soc-8-03-s2-q010",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the special features of the Sindhu-Saraswati civilization with present-day life, Explains the role of rivers in the emergence of ancient civilizations"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Which was the most ancient Veda?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s2-q010",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s2-q010",
+     "pdf_page": 17,
+     "printed_page": 6,
+     "y": 207.383195,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s2-q010-key",
+     "pdf_page": 81,
+     "printed_page": 70,
+     "y": 294.503197,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:17:12+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:17:12+05:30",
+   "text_as_printed": "Which was the most ancient Veda? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "The oldest Veda is the Rigveda."
+   },
+   "answer_as_printed": "The oldest Veda is the Rigveda.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:17:12+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "48c89c393218278e48f5a4957b0138071ebc705e11f8ba54bb6fb21f1335aa76"
+  },
+  {
+   "id": "soc-8-03-s2-q011",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the special features of the Sindhu-Saraswati civilization with present-day life, Explains the role of rivers in the emergence of ancient civilizations"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Which was the mandala and sukta of the Rigveda that was the caste system mentioned?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s2-q011",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s2-q011",
+     "pdf_page": 17,
+     "printed_page": 6,
+     "y": 224.903184,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s2-q011-key",
+     "pdf_page": 81,
+     "printed_page": 70,
+     "y": 311.903184,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:17:12+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:17:12+05:30",
+   "text_as_printed": "Which was the mandala and sukta of the Rigveda that was the caste system mentioned? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "The Purusha Sukta in the Rigveda mentions the varna system."
+   },
+   "answer_as_printed": "The Purusha Sukta in the Rigveda mentions the varna system.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:17:12+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "4c89ed4fbe8d6d2929e72d892fcc7c0bbcbb0ca59241e4af82162a1b64b1e375"
+  },
+  {
+   "id": "soc-8-03-s2-q012",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the special features of the Sindhu-Saraswati civilization with present-day life, Explains the role of rivers in the emergence of ancient civilizations"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Name the main occupation during the later Vedic period.",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s2-q012",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s2-q012",
+     "pdf_page": 17,
+     "printed_page": 6,
+     "y": 259.703202,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s2-q012-key",
+     "pdf_page": 81,
+     "printed_page": 70,
+     "y": 329.303193,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:17:12+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:17:12+05:30",
+   "text_as_printed": "Name the main occupation during the later Vedic period. (E)",
+   "answer": {
+    "kind": "text",
+    "value": "The primary occupation during the Later Vedic period was agriculture."
+   },
+   "answer_as_printed": "The primary occupation during the Later Vedic period was agriculture.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:17:12+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "7793f6b1bc9c4f625b41c7aa454852c69ada857b53dd458e778d52ebb514d352"
+  },
+  {
+   "id": "soc-8-03-s2-q013",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the special features of the Sindhu-Saraswati civilization with present-day life, Explains the role of rivers in the emergence of ancient civilizations"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "How many hymns are there in the Rigveda?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s2-q013",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s2-q013",
+     "pdf_page": 17,
+     "printed_page": 6,
+     "y": 276.983185,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s2-q013-key",
+     "pdf_page": 81,
+     "printed_page": 70,
+     "y": 346.583199,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:17:12+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:17:12+05:30",
+   "text_as_printed": "How many hymns are there in the Rigveda? (A)",
+   "answer": {
+    "kind": "text",
+    "value": "The Rigveda contains 1,028 hymns."
+   },
+   "answer_as_printed": "The Rigveda contains 1,028 hymns.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:17:12+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "d044c8759b80dec5d9712b3b22fb882bd22e28806376953f2140d7e8df700318"
+  },
+  {
+   "id": "soc-8-03-s2-q014",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the special features of the Sindhu-Saraswati civilization with present-day life, Explains the role of rivers in the emergence of ancient civilizations"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Name two major civilizations of the world.",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s2-q014",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s2-q014",
+     "pdf_page": 17,
+     "printed_page": 6,
+     "y": 294.503197,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s2-q014-key",
+     "pdf_page": 81,
+     "printed_page": 70,
+     "y": 364.103188,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:17:12+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:17:12+05:30",
+   "text_as_printed": "Name two major civilizations of the world. (E)",
+   "answer": {
+    "kind": "text",
+    "value": "Major world civilizations include: Egyptian civilization, Mesopotamian civilization"
+   },
+   "answer_as_printed": "Major world civilizations include: Egyptian civilization, Mesopotamian civilization",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:17:12+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "a95eb5f9747c0d16f5056c16c32fc9adc38e67401fa59ce325228981530ab2a3"
+  },
+  {
+   "id": "soc-8-03-s2-q015",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the special features of the Sindhu-Saraswati civilization with present-day life, Explains the role of rivers in the emergence of ancient civilizations"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "How Saraswathi river was called?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s2-q015",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s2-q015",
+     "pdf_page": 17,
+     "printed_page": 6,
+     "y": 311.903184,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s2-q015-key",
+     "pdf_page": 81,
+     "printed_page": 70,
+     "y": 398.903207,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:17:12+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:17:12+05:30",
+   "text_as_printed": "How Saraswathi river was called? (A)",
+   "answer": {
+    "kind": "text",
+    "value": "The Saraswati River is called Guptagamini."
+   },
+   "answer_as_printed": "The Saraswati River is called Guptagamini.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:17:12+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "4b50da5e9ea848b072cfef40a38a0b3ebe031ef3185d69b67a84f879065fbd07"
+  },
+  {
+   "id": "soc-8-03-s2-q016",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the special features of the Sindhu-Saraswati civilization with present-day life, Explains the role of rivers in the emergence of ancient civilizations"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Where is the most of the ruins of the Indus-Saraswati Civilization found?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s2-q016",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s2-q016",
+     "pdf_page": 17,
+     "printed_page": 6,
+     "y": 329.303193,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s2-q016-key",
+     "pdf_page": 81,
+     "printed_page": 70,
+     "y": 416.30317,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:17:12+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:17:12+05:30",
+   "text_as_printed": "Where is the most of the ruins of the Indus-Saraswati Civilization found? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "Traces of the Indus-Saraswati civilization is mostly found in Sindh and Punjab provinces."
+   },
+   "answer_as_printed": "Traces of the Indus-Saraswati civilization is mostly found in Sindh and Punjab provinces.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:17:12+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "3b5995ae2f92c70ed978da00077a673ec361398a593780d3b6424c463bb32112"
+  },
+  {
+   "id": "soc-8-03-s3-q017",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the special features of the Sindhu-Saraswati civilization with present-day life, Explains the role of rivers in the emergence of ancient civilizations"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What was the ancient civilization of India called?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s3-q017",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s3-q017",
+     "pdf_page": 17,
+     "printed_page": 6,
+     "y": 381.503197,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s3-q017-key",
+     "pdf_page": 81,
+     "printed_page": 70,
+     "y": 468.503197,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:17:12+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:17:12+05:30",
+   "text_as_printed": "What was the ancient civilization of India called? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "Names of the Civilizations are :\nIndus Valley Civilization\nIndus-Saraswati Civilization\nHarappa Civilization\nMohenjo-Daro Civilization"
+   },
+   "answer_as_printed": "Names of the Civilizations are :\nIndus Valley Civilization\nIndus-Saraswati Civilization\nHarappa Civilization\nMohenjo-Daro Civilization",
+   "solution_steps": [
+    "Indus Valley Civilization",
+    "Indus-Saraswati Civilization",
+    "Harappa Civilization",
+    "Mohenjo-Daro Civilization"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:17:12+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "697083132ae577677f17e5bb2a893973d25f44da625543c49e64da059d4b9063"
+  },
+  {
+   "id": "soc-8-03-s3-q018",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the special features of the Sindhu-Saraswati civilization with present-day life, Explains the role of rivers in the emergence of ancient civilizations"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Name the Vedas.",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s3-q018",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s3-q018",
+     "pdf_page": 17,
+     "printed_page": 6,
+     "y": 398.903207,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s3-q018-key",
+     "pdf_page": 81,
+     "printed_page": 70,
+     "y": 520.703179,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:17:12+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:17:12+05:30",
+   "text_as_printed": "Name the Vedas. (E)",
+   "answer": {
+    "kind": "text",
+    "value": "The four Vedas are :\nRigveda\nYajurveda\nSamaveda\nAtharvaveda"
+   },
+   "answer_as_printed": "The four Vedas are :\nRigveda\nYajurveda\nSamaveda\nAtharvaveda",
+   "solution_steps": [
+    "Rigveda",
+    "Yajurveda",
+    "Samaveda",
+    "Atharvaveda"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:17:12+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "5ea5c9c296f4c265a75f659532c061341b80e2a3563617aa54b5b2df6a096c38"
+  },
+  {
+   "id": "soc-8-03-s3-q019",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "D",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the special features of the Sindhu-Saraswati civilization with present-day life, Explains the role of rivers in the emergence of ancient civilizations"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "How did civilizations originate?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s3-q019",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s3-q019",
+     "pdf_page": 17,
+     "printed_page": 6,
+     "y": 416.30317,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s3-q019-key",
+     "pdf_page": 81,
+     "printed_page": 70,
+     "y": 555.503197,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:17:12+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:17:12+05:30",
+   "text_as_printed": "How did civilizations originate? (D)",
+   "answer": {
+    "kind": "text",
+    "value": "Origin and Development of Civilizations:\nThe origin and development of civilizations are fascinating.\nNomadic communities settled and built permanent homes.\nThey began producing food and learned animal husbandry."
+   },
+   "answer_as_printed": "Origin and Development of Civilizations:\nThe origin and development of civilizations are fascinating.\nNomadic communities settled and built permanent homes.\nThey began producing food and learned animal husbandry.",
+   "solution_steps": [
+    "The origin and development of civilizations are fascinating.",
+    "Nomadic communities settled and built permanent homes.",
+    "They began producing food and learned animal husbandry."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:17:12+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "18efb4e21e6a54942bbe378cd6f0a243392008f091338d912ff46c0cd0d588f1"
+  },
+  {
+   "id": "soc-8-03-s3-q020",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "D",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the special features of the Sindhu-Saraswati civilization with present-day life, Explains the role of rivers in the emergence of ancient civilizations"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Describe the town planning of Harappa.",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s3-q020",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s3-q020",
+     "pdf_page": 17,
+     "printed_page": 6,
+     "y": 433.703179,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s3-q020-key",
+     "pdf_page": 81,
+     "printed_page": 70,
+     "y": 625.103188,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:17:12+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:17:12+05:30",
+   "text_as_printed": "Describe the town planning of Harappa. (D)",
+   "answer": {
+    "kind": "text",
+    "value": "Structures of Harappan civilization:\nHarappa had two or more divisions.\nThe western part was smaller and elevated and it called as citadel.\nThe eastern part was larger and lower, referred to as the village.\nEach section was surrounded by walls of burnt bricks, making them sturdy."
+   },
+   "answer_as_printed": "Structures of Harappan civilization:\nHarappa had two or more divisions.\nThe western part was smaller and elevated and it called as citadel.\nThe eastern part was larger and lower, referred to as the village.\nEach section was surrounded by walls of burnt bricks, making them sturdy.",
+   "solution_steps": [
+    "Harappa had two or more divisions.",
+    "The western part was smaller and elevated and it called as citadel.",
+    "The eastern part was larger and lower, referred to as the village.",
+    "Each section was surrounded by walls of burnt bricks, making them sturdy."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:17:12+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "5423a64834c57b087c3cbca2f1a9d3773087f7ef7b06559ee9a2dd86fee30cba"
+  },
+  {
+   "id": "soc-8-03-s4-q021",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the special features of the Sindhu-Saraswati civilization with present-day life, Explains the role of rivers in the emergence of ancient civilizations"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Explain the significance of the of Great Bath of Mohenjo-Daro.",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s4-q021",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s4-q021",
+     "pdf_page": 17,
+     "printed_page": 6,
+     "y": 468.503197,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s4-q021-key",
+     "pdf_page": 82,
+     "printed_page": 71,
+     "y": 85.583188,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:17:12+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:17:12+05:30",
+   "text_as_printed": "Explain the significance of the of Great Bath of Mohenjo-Daro. (A)",
+   "answer": {
+    "kind": "text",
+    "value": "The structure of Great Bath :\nIt was built with burnt bricks.\nCare was taken to prevent water leakage from the bath.\nIt had steps on both sides for access.\nThere were rooms around the bath.\nWater was supplied to the bath from a well.\nA system was in place to drain used water, likely used by important individuals for bathing."
+   },
+   "answer_as_printed": "The structure of Great Bath :\nIt was built with burnt bricks.\nCare was taken to prevent water leakage from the bath.\nIt had steps on both sides for access.\nThere were rooms around the bath.\nWater was supplied to the bath from a well.\nA system was in place to drain used water, likely used by important individuals for bathing.",
+   "solution_steps": [
+    "It was built with burnt bricks.",
+    "Care was taken to prevent water leakage from the bath.",
+    "It had steps on both sides for access.",
+    "There were rooms around the bath.",
+    "Water was supplied to the bath from a well.",
+    "A system was in place to drain used water, likely used by important individuals for bathing."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:17:12+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "ac84c412e554662f14d5d6def7ebeeaa1b3ede310fd182c6bcbeff4e9ffd1751"
+  },
+  {
+   "id": "soc-8-03-s4-q022",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the special features of the Sindhu-Saraswati civilization with present-day life, Explains the role of rivers in the emergence of ancient civilizations"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Describe the unique features of the production of daily-use items in the Indus Valley Civilization.",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s4-q022",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s4-q022",
+     "pdf_page": 17,
+     "printed_page": 6,
+     "y": 485.903207,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s4-q022-key",
+     "pdf_page": 82,
+     "printed_page": 71,
+     "y": 224.903184,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:17:12+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:17:12+05:30",
+   "text_as_printed": "Describe the unique features of the production of daily-use items in the Indus Valley Civilization. (A)",
+   "answer": {
+    "kind": "text",
+    "value": "Crafts and Industries of Harappa civilization:\nHarappan people wove using cotton and silk.\nThey carved on stones and ivory.\nThey produced wool.\nThey made furniture.\nThey crafted tools like chisels and axes from bronze."
+   },
+   "answer_as_printed": "Crafts and Industries of Harappa civilization:\nHarappan people wove using cotton and silk.\nThey carved on stones and ivory.\nThey produced wool.\nThey made furniture.\nThey crafted tools like chisels and axes from bronze.",
+   "solution_steps": [
+    "Harappan people wove using cotton and silk.",
+    "They carved on stones and ivory.",
+    "They produced wool.",
+    "They made furniture.",
+    "They crafted tools like chisels and axes from bronze."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:17:12+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "402d44a34a532ee03d0a6d897a17814fa7bc09c8d4eae8dc526dcf2ae354391b"
+  },
+  {
+   "id": "soc-8-03-s4-q023",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the special features of the Sindhu-Saraswati civilization with present-day life, Explains the role of rivers in the emergence of ancient civilizations"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "List the sources available to understand the cultural details of the Indus–Saraswati Civilization.",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s4-q023",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s4-q023",
+     "pdf_page": 17,
+     "printed_page": 6,
+     "y": 520.703179,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s4-q023-key",
+     "pdf_page": 82,
+     "printed_page": 71,
+     "y": 342.503197,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:17:12+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:17:12+05:30",
+   "text_as_printed": "List the sources available to understand the cultural details of the Indus–Saraswati Civilization. (A)",
+   "answer": {
+    "kind": "text",
+    "value": "Beads\nSeals\nPottery\nBangles made of metals, shells, and other materials\nFemale figurines"
+   },
+   "answer_as_printed": "Beads\nSeals\nPottery\nBangles made of metals, shells, and other materials\nFemale figurines",
+   "solution_steps": [
+    "Beads",
+    "Seals",
+    "Pottery",
+    "Bangles made of metals, shells, and other materials",
+    "Female figurines"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:17:12+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "a7b913251482718dcdcc6d1eb267bc9759a55684bca90f2e098425eefd78d782"
+  },
+  {
+   "id": "soc-8-03-s5-q024",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the special features of the Sindhu-Saraswati civilization with present-day life, Explains the role of rivers in the emergence of ancient civilizations"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "List out the unique features of the town planning of the Indus-Saraswati Civilization.",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s5-q024",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s5-q024",
+     "pdf_page": 17,
+     "printed_page": 6,
+     "y": 570.623177,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s5-q024-key",
+     "pdf_page": 82,
+     "printed_page": 71,
+     "y": 459.983208,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:17:12+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:17:12+05:30",
+   "text_as_printed": "List out the unique features of the town planning of the Indus-Saraswati Civilization. (A)",
+   "answer": {
+    "kind": "text",
+    "value": "Urban Planning in Harappa:\nThe lower area was a residential zone.\nHouses were built systematically.\nRoads and drainage systems were constructed.\nHouses had one or two stories.\nBurnt bricks were used for construction.\nHouse doors faced side lanes, with no windows facing the roads.\nWells and bathrooms were present in every house.\nDomestic wastewater flowed into the drainage system, with manholes for cleaning and dedicated officials to oversee maintenance."
+   },
+   "answer_as_printed": "Urban Planning in Harappa:\nThe lower area was a residential zone.\nHouses were built systematically.\nRoads and drainage systems were constructed.\nHouses had one or two stories.\nBurnt bricks were used for construction.\nHouse doors faced side lanes, with no windows facing the roads.\nWells and bathrooms were present in every house.\nDomestic wastewater flowed into the drainage system, with manholes for cleaning and dedicated officials to oversee maintenance.",
+   "solution_steps": [
+    "The lower area was a residential zone.",
+    "Houses were built systematically.",
+    "Roads and drainage systems were constructed.",
+    "Houses had one or two stories.",
+    "Burnt bricks were used for construction.",
+    "House doors faced side lanes, with no windows facing the roads.",
+    "Wells and bathrooms were present in every house.",
+    "Domestic wastewater flowed into the drainage system, with manholes for cleaning and dedicated officials to oversee maintenance."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:17:12+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "55a1cd89cd8dd107e805e7478e0d047aef3769aa99d7e6b1743bea847931b7bc"
+  },
+  {
+   "id": "soc-8-03-s5-q025",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the special features of the Sindhu-Saraswati civilization with present-day life, Explains the role of rivers in the emergence of ancient civilizations"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Describe the social and political systems of the Vedic period.",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s5-q025",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s5-q025",
+     "pdf_page": 17,
+     "printed_page": 6,
+     "y": 600.863183,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s5-q025-key",
+     "pdf_page": 83,
+     "printed_page": 72,
+     "y": 68.18319,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:17:12+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:17:12+05:30",
+   "text_as_printed": "Describe the social and political systems of the Vedic period. (A)",
+   "answer": {
+    "kind": "text",
+    "value": "Vedic Period Social Structure:\nEarly Vedic Period:\nThe Rigveda's tenth mandala mentions the varna system.\nSociety had four varnas: Brahmins, Kshatriyas, Vaishyas, and Shudras, determined by occupation.\nWomen held a high status, and marriage has practiced.\nThe king was called \"Rajan,\" supported by institutions like Sabha, Samiti, and Vidhata.\nLater Vedic Period:\nThe caste system became hereditary and more complex.\nWomen lost their social status, and practices like widow remarriage were banned.\nChild marriage and dowry systems emerged.\nThe Vidhata institution disappeared, reducing the king's advisory bodies."
+   },
+   "answer_as_printed": "Vedic Period Social Structure:\nEarly Vedic Period:\nThe Rigveda's tenth mandala mentions the varna system.\nSociety had four varnas: Brahmins, Kshatriyas, Vaishyas, and Shudras, determined by occupation.\nWomen held a high status, and marriage has practiced.\nThe king was called \"Rajan,\" supported by institutions like Sabha, Samiti, and Vidhata.\nLater Vedic Period:\nThe caste system became hereditary and more complex.\nWomen lost their social status, and practices like widow remarriage were banned.\nChild marriage and dowry systems emerged.\nThe Vidhata institution disappeared, reducing the king's advisory bodies.",
+   "solution_steps": [
+    "The Rigveda's tenth mandala mentions the varna system.",
+    "Society had four varnas: Brahmins, Kshatriyas, Vaishyas, and Shudras, determined by occupation.",
+    "Women held a high status, and marriage has practiced.",
+    "The king was called \"Rajan,\" supported by institutions like Sabha, Samiti, and Vidhata.",
+    "The caste system became hereditary and more complex.",
+    "Women lost their social status, and practices like widow remarriage were banned.",
+    "Child marriage and dowry systems emerged.",
+    "The Vidhata institution disappeared, reducing the king's advisory bodies."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:17:12+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "a8342a3f156cf47d702e96c9c46270f4315087248c2a1adc0b44a2d3dbd94b78"
+  },
+  {
+   "id": "soc-8-03-s5-q026",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-03",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "D",
+   "learning_outcomes": [
+    {
+     "number": 5,
+     "text_as_printed": "Compares the special features of the Sindhu-Saraswati civilization with present-day life, Explains the role of rivers in the emergence of ancient civilizations"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The people of the Indus–Saraswati Civilization were engaged in various crafts. Explain.",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s5-q026",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s5-q026",
+     "pdf_page": 17,
+     "printed_page": 6,
+     "y": 615.419683,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-03-s5-q026-key",
+     "pdf_page": 83,
+     "printed_page": 72,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:17:12+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:17:12+05:30",
+   "text_as_printed": "The people of the Indus–Saraswati Civilization were engaged in various crafts. Explain. (D)",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "shifted numbering — see key 27",
+     "why_not_corrected": "answer-side numbering is displaced in this band; extraction does not shift-align (procedure §4.2) — answer left empty, coordinator verifies the pair by content in review",
+     "suggested": "key 27 (this unit's answer side prints Q26's answer under printed label 27)"
+    }
+   ],
+   "content_hash": "ca2ad8930e0ef31f78c3adced712f54a372e1a708714a0aac81648a17c251e0d"
+  }
+ ],
+ "pending_summary": {}
+}
