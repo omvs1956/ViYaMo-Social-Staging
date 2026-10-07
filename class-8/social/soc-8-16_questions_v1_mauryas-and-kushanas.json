@@ -1,0 +1,2286 @@
+{
+ "contract_version": "1.7",
+ "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
+ "procedure_file": "extraction_procedure_social_addendum_v1.3_social science Classes 6-10 on top of procedure v2.md",
+ "machine_name": "soc-8-16_questions",
+ "version": 1,
+ "changelog": "v1 extraction — batch-01 — class-8-social",
+ "amendments_applied": [],
+ "unit_state": "EXTRACTED",
+ "review_ready": false,
+ "count_gate": {
+  "reference": 25,
+  "reference_source": "audited",
+  "extracted": 25,
+  "paired": 25,
+  "flagged": 3,
+  "gaps": [
+   "003"
+  ],
+  "duplicated_numbers": [
+   9
+  ],
+  "quota_table": "difficulty_only",
+  "second_method": {
+   "method": "printed difficulty distribution table",
+   "extracted": 25,
+   "agrees": true
+  },
+  "pass": true,
+  "note": "printed difficulty table 17/6/2=25 AGREES with per-question tags 17/6/2 (total 25). tags win (v2 6). q25 is a locate-on-map DIAGRAM answer (answer_diagram a25, 6; English labels; stem A-D + extras). Key-side misnumbers: MCQ printed '3' is a misprinted q2 option (no Q3), printed '9' duplicated (q009/q009b); q24 (art/architecture) NO printed answer; map answer key-labelled '24' = question-side q25. flagged = q009b (dup + letter/text disagreement), q024 (no answer printed), q25 (answer_diagram + notation); all carry structural marks flag (4.5)."
+ },
+ "extraction": {
+  "source_file": "8thSS-EM-LBARevised_1787048180.pdf",
+  "source_ref_prefix": "8thSS-EM-LBARevised_1787048180.pdf",
+  "pdf_pages": [
+   47,
+   48,
+   114,
+   115
+  ],
+  "printed_page_offset": -11,
+  "method_notes": [
+   "Offset -11 (pdf 47 = folio 36; pdf 114 = folio 103). Q: printed MCQ labels 1,2,[3=misprint],4,5,6,7 pdf47 and 8,9,9,10 pdf48; VSA-LA 11-25 pdf48. A: keys 1-21 pdf114, 22-24 pdf115.",
+   "QUESTION-SIDE MCQ MISNUMBER: the printed '3.' on pdf47 is NOT a question - it is the misprinted options C) Arthashastra D) Mahabharata of q2 (printed on their own line with a stray '3.' prefix). So q2 options = A Ramayana / B Abhijnana Shakuntala / C Arthashastra / D Mahabharata. There is NO question numbered 3 (gap). The MCQs are numbered 1,2,4,5,6,7,8,9,9,10 on the question side (printed '9' duplicated: religion-of-Chandragupta then capital-of-Mauryas). IDs (ID rule = printed question-side number): q001,q002,q004,q005,q006,q007,q008,q009,q009b,q010. IDMAP applied; DUPNUMS=[9]; printed-3 is a gap (misprint, not a question).",
+   "KEY-SIDE is sequential 1-10 for the 10 MCQs (key 3 = the Kalinga-war answer = question-side printed-4). So answer-side locators use internal order; question-side y is reset to the printed label in add_maps_16.",
+   "MCQ n9 (capital, q009b) letter/text DISAGREEMENT: key '9. C) Pataliputra' but option C='Magadha', option B='Pataliputra'. Text 'Pataliputra' = option B exactly, letter C disagrees -> no asserted answer (auto 'key text not among options'), suggested B. All other MCQ exact.",
+   "VSA q11-17 verbatim. q15 'who built Sudarshana Lake' -> key 'Pushyagupta was the governor under Chandragupta Maurya' (Pushyagupta is the builder; key phrases his role; kept verbatim - REVIEW note). SA q18-20 single-line list answers (BUL 1 step each). LA q21 BUL 9 items (no heading); q22 SUB (heading + 8); q23 SUB (heading + 7).",
+   "q24 (art & architecture of Mauryan Empire): NO printed answer in the key (key jumps 23 -> 24=map). -> 'no answer printed' (NOANS). The key's '24' is the MAP answer, which belongs to question-side q25 (numbering differs).",
+   "q25 MAP (crop-first, appended by add_maps_16): question-side '25. Draw a map of ancient India and mark A)Gandhara B)Purushapura C)Ujjain D)Indraprastha'; printed answer MAP on key pdf115 labelled '24'. English labels. Stem features A-D + extras Taxila/Pancala/Kosal(cut)/Avanti (in_stem:false). LO 2.",
+   "Difficulty: tags E17/A6/D2=25 AGREE with printed table (perq_match True incl q25(A) after add_maps). MARKS none printed -> unassigned + structural flag."
+  ],
+  "notation_summary": {
+   "render_tokens": 0,
+   "latex_tokens": 0,
+   "damage_flags": []
+  },
+  "excluded_objects": [],
+  "inline_excluded_count": 0,
+  "figure_references": []
+ },
+ "stimuli": [],
+ "questions": [
+  {
+   "id": "soc-8-16-s1-q001",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-16",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 7,
+     "text_as_printed": "Describes the contributions of North and South Indian royal dynasties in various fields including administration, literature, culture, architecture, and appreciates them by comparing with the present time."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The founder of the Mauryan Empire was",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s1-q001",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s1-q001",
+     "pdf_page": 47,
+     "printed_page": 36,
+     "y": 433.223214,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s1-q001-key",
+     "pdf_page": 114,
+     "printed_page": 103,
+     "y": 124.223191,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:59:02+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:59:02+05:30",
+   "text_as_printed": "The founder of the Mauryan Empire was (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Ashoka"
+    },
+    {
+     "id": "B",
+     "text": "Bindusara"
+    },
+    {
+     "id": "C",
+     "text": "Chandragupta Maurya"
+    },
+    {
+     "id": "D",
+     "text": "Chanakya"
+    }
+   ],
+   "answer_as_printed": "C) Chandragupta Maurya",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:59:02+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "dc8260ebbd82d011bf1dae1a1dcbec1ea9aff9cb506ee00f8342b9063c6f1419"
+  },
+  {
+   "id": "soc-8-16-s1-q002",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-16",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 7,
+     "text_as_printed": "Describes the contributions of North and South Indian royal dynasties in various fields including administration, literature, culture, architecture, and appreciates them by comparing with the present time."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The famous book of Chanakya is",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s1-q002",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s1-q002",
+     "pdf_page": 47,
+     "printed_page": 36,
+     "y": 214.823182,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s1-q002-key",
+     "pdf_page": 114,
+     "printed_page": 103,
+     "y": 141.503197,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:59:02+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:59:02+05:30",
+   "text_as_printed": "The famous book of Chanakya is (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Ramayana"
+    },
+    {
+     "id": "B",
+     "text": "Abhijnana Shakuntala"
+    },
+    {
+     "id": "C",
+     "text": "Arthashastra"
+    },
+    {
+     "id": "D",
+     "text": "Mahabharata"
+    }
+   ],
+   "answer_as_printed": "C) Arthashastra",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:59:02+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "82f8a4abdfdfe0c7ff01ed102a42c1b9668ad03fc649fecfd05063dc2fa85891"
+  },
+  {
+   "id": "soc-8-16-s1-q004",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-16",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 7,
+     "text_as_printed": "Describes the contributions of North and South Indian royal dynasties in various fields including administration, literature, culture, architecture, and appreciates them by comparing with the present time."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The war that inspired Ashoka to accept the Buddhism was",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s1-q004",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s1-q004",
+     "pdf_page": 47,
+     "printed_page": 36,
+     "y": 520.223214,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s1-q004-key",
+     "pdf_page": 114,
+     "printed_page": 103,
+     "y": 158.903195,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:59:02+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:59:02+05:30",
+   "text_as_printed": "The war that inspired Ashoka to accept the Buddhism was (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Paurava War"
+    },
+    {
+     "id": "B",
+     "text": "Kalinga War"
+    },
+    {
+     "id": "C",
+     "text": "Ujjain War"
+    },
+    {
+     "id": "D",
+     "text": "Patna War"
+    }
+   ],
+   "answer_as_printed": "B) Kalinga War",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:59:02+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "353f291be1b6ff37abad640ad54db79b13541f5f9334402011c070ea72a535f8"
+  },
+  {
+   "id": "soc-8-16-s1-q005",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-16",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 7,
+     "text_as_printed": "Describes the contributions of North and South Indian royal dynasties in various fields including administration, literature, culture, architecture, and appreciates them by comparing with the present time."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The language that is mostly used in Ashoka's rock edicts is",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s1-q005",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s1-q005",
+     "pdf_page": 47,
+     "printed_page": 36,
+     "y": 555.143212,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s1-q005-key",
+     "pdf_page": 114,
+     "printed_page": 103,
+     "y": 176.423196,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:59:02+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:59:02+05:30",
+   "text_as_printed": "The language that is mostly used in Ashoka's rock edicts is (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Sanskrit"
+    },
+    {
+     "id": "B",
+     "text": "Tamil"
+    },
+    {
+     "id": "C",
+     "text": "Prakrit"
+    },
+    {
+     "id": "D",
+     "text": "Persian"
+    }
+   ],
+   "answer_as_printed": "C) Prakrit",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:59:02+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "fef7cc8c10cc57de92386159ea840eb3853e04a65a59ddfcd97535b6e822e0f5"
+  },
+  {
+   "id": "soc-8-16-s1-q006",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-16",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 7,
+     "text_as_printed": "Describes the contributions of North and South Indian royal dynasties in various fields including administration, literature, culture, architecture, and appreciates them by comparing with the present time."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "He was prominent emperor of the Kushan Empire",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s1-q006",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s1-q006",
+     "pdf_page": 47,
+     "printed_page": 36,
+     "y": 589.823205,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s1-q006-key",
+     "pdf_page": 114,
+     "printed_page": 103,
+     "y": 193.823182,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:59:02+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:59:02+05:30",
+   "text_as_printed": "He was prominent emperor of the Kushan Empire (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Kanishka"
+    },
+    {
+     "id": "B",
+     "text": "Harshavardhana"
+    },
+    {
+     "id": "C",
+     "text": "Ashoka"
+    },
+    {
+     "id": "D",
+     "text": "Chandragupta"
+    }
+   ],
+   "answer_as_printed": "A) Kanishka",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:59:02+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "8fbaf9d7da767dcca5cabfb1019aaca316fe5bbd025cf86adf877a3e8d5076ea"
+  },
+  {
+   "id": "soc-8-16-s1-q007",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-16",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 7,
+     "text_as_printed": "Describes the contributions of North and South Indian royal dynasties in various fields including administration, literature, culture, architecture, and appreciates them by comparing with the present time."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The Gandhara style is related to",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s1-q007",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s1-q007",
+     "pdf_page": 47,
+     "printed_page": 36,
+     "y": 138.743191,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s1-q007-key",
+     "pdf_page": 114,
+     "printed_page": 103,
+     "y": 211.103188,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:59:02+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:59:02+05:30",
+   "text_as_printed": "The Gandhara style is related to (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Musical literature"
+    },
+    {
+     "id": "B",
+     "text": "Dance"
+    },
+    {
+     "id": "C",
+     "text": "Buddhist sculpture"
+    },
+    {
+     "id": "D",
+     "text": "Jain inscriptions"
+    }
+   ],
+   "answer_as_printed": "C) Buddhist sculpture",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:59:02+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "5c036a2525eb7ed5a2ccbb6a37096c484c4dafb45c420a5cece80b2887b96a5d"
+  },
+  {
+   "id": "soc-8-16-s1-q008",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-16",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 7,
+     "text_as_printed": "Describes the contributions of North and South Indian royal dynasties in various fields including administration, literature, culture, architecture, and appreciates them by comparing with the present time."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The branch of Buddhism that developed during the Kanishka's reign was",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s1-q008",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s1-q008",
+     "pdf_page": 48,
+     "printed_page": 37,
+     "y": 68.18319,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s1-q008-key",
+     "pdf_page": 114,
+     "printed_page": 103,
+     "y": 228.6232,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:59:02+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:59:02+05:30",
+   "text_as_printed": "The branch of Buddhism that developed during the Kanishka's reign was (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Hinayana"
+    },
+    {
+     "id": "B",
+     "text": "Mahayana"
+    },
+    {
+     "id": "C",
+     "text": "Lamayana"
+    },
+    {
+     "id": "D",
+     "text": "Vajrayana"
+    }
+   ],
+   "answer_as_printed": "B) Mahayana",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:59:02+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "1c4a0b2827214e62ae8ad6cb18e95cefc4fb70b3716f23142a51deb9dbda38c4"
+  },
+  {
+   "id": "soc-8-16-s1-q009",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-16",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 7,
+     "text_as_printed": "Describes the contributions of North and South Indian royal dynasties in various fields including administration, literature, culture, architecture, and appreciates them by comparing with the present time."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The religion adopted by the Chandragupta Maurya at the end of his life is",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s1-q009",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s1-q009",
+     "pdf_page": 48,
+     "printed_page": 37,
+     "y": 120.503197,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s1-q009-key",
+     "pdf_page": 114,
+     "printed_page": 103,
+     "y": 246.023187,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:59:02+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:59:02+05:30",
+   "text_as_printed": "The religion adopted by the Chandragupta Maurya at the end of his life is (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Buddhism"
+    },
+    {
+     "id": "B",
+     "text": "Vaishnavism"
+    },
+    {
+     "id": "C",
+     "text": "Jainism"
+    },
+    {
+     "id": "D",
+     "text": "Shaivism"
+    }
+   ],
+   "answer_as_printed": "C) Jainism",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:59:02+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "5a09036088481b7af644557d9b0e37979f993b500b176da240c99004e2fc031a"
+  },
+  {
+   "id": "soc-8-16-s1-q009b",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-16",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 7,
+     "text_as_printed": "Describes the contributions of North and South Indian royal dynasties in various fields including administration, literature, culture, architecture, and appreciates them by comparing with the present time."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Capital of the Mauryas",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s1-q009b",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s1-q009b",
+     "pdf_page": 48,
+     "printed_page": 37,
+     "y": 172.70319,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s1-q009b-key",
+     "pdf_page": 114,
+     "printed_page": 103,
+     "y": 263.423196,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:59:02+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:59:02+05:30",
+   "text_as_printed": "Capital of the Mauryas (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Purushapura"
+    },
+    {
+     "id": "B",
+     "text": "Pataliputra"
+    },
+    {
+     "id": "C",
+     "text": "Magadha"
+    },
+    {
+     "id": "D",
+     "text": "Dehali"
+    }
+   ],
+   "answer_as_printed": "C) Pataliputra",
+   "answer": {
+    "kind": "option",
+    "option_id": null
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text not among options",
+     "why_not_corrected": "the printed key is '9. C) Pataliputra'. Letter C = option C 'Magadha', but the key text names option B 'Pataliputra' (exact match). Letter and key text name different options; no answer is asserted (key-letter-text-disagreement vocab 'key text not among options'); the reviewer decides which governs (addendum §13.6).",
+     "suggested": "B (by text; printed letter C='Magadha' disagrees) — review"
+    },
+    {
+     "field": "text",
+     "issue": "duplicate question number — the printed question label '9' appears twice: the first '9' is the religion-of-Chandragupta question (id q009), this question 'Capital of the Mauryas' is the second '9' (id q009b per ID rule, question-side letter suffix). Key-side numbering is sequential (this answer is key '9').",
+     "why_not_corrected": "printed source duplicates the label; ids use the question-side number with a letter suffix for the duplicate (ID rule)",
+     "suggested": "review — duplicate printed '9'; id q009b"
+    }
+   ],
+   "content_hash": "e059ba66677425a80bc31e00113c759e9805b7737ba9a7b63a7990245a174db8"
+  },
+  {
+   "id": "soc-8-16-s1-q010",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-16",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 7,
+     "text_as_printed": "Describes the contributions of North and South Indian royal dynasties in various fields including administration, literature, culture, architecture, and appreciates them by comparing with the present time."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Founder of the Kushana dynasty",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s1-q010",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s1-q010",
+     "pdf_page": 48,
+     "printed_page": 37,
+     "y": 207.383195,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s1-q010-key",
+     "pdf_page": 114,
+     "printed_page": 103,
+     "y": 280.703202,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:59:02+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:59:02+05:30",
+   "text_as_printed": "Founder of the Kushana dynasty (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Kanishka"
+    },
+    {
+     "id": "B",
+     "text": "Kujula Kadphises"
+    },
+    {
+     "id": "C",
+     "text": "Vima Kadphises"
+    },
+    {
+     "id": "D",
+     "text": "Chandragupta"
+    }
+   ],
+   "answer_as_printed": "B) Kujula Kadphises",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:59:02+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "9085c27c44a679d0b793f03ee6e1098dd2439f84948dc9a9a0a73461829924ef"
+  },
+  {
+   "id": "soc-8-16-s2-q011",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-16",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 7,
+     "text_as_printed": "Describes the contributions of North and South Indian royal dynasties in various fields including administration, literature, culture, architecture, and appreciates them by comparing with the present time."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What are other names of Chanakya?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s2-q011",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s2-q011",
+     "pdf_page": 48,
+     "printed_page": 37,
+     "y": 294.503197,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s2-q011-key",
+     "pdf_page": 114,
+     "printed_page": 103,
+     "y": 315.6232,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:59:02+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:59:02+05:30",
+   "text_as_printed": "What are other names of Chanakya? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "Other names of Chanakya are Vishnugupta and Kautilya."
+   },
+   "answer_as_printed": "Other names of Chanakya are Vishnugupta and Kautilya.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:59:02+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "7d403189fc42b0bc31c881a6f13c88d9d3d739aff15be00784b468060d97a318"
+  },
+  {
+   "id": "soc-8-16-s2-q012",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-16",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 7,
+     "text_as_printed": "Describes the contributions of North and South Indian royal dynasties in various fields including administration, literature, culture, architecture, and appreciates them by comparing with the present time."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Which was the language used in the rock edicts of Ashoka?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s2-q012",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s2-q012",
+     "pdf_page": 48,
+     "printed_page": 37,
+     "y": 311.903184,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s2-q012-key",
+     "pdf_page": 114,
+     "printed_page": 103,
+     "y": 333.023187,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:59:02+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:59:02+05:30",
+   "text_as_printed": "Which was the language used in the rock edicts of Ashoka? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "The language of Ashoka's inscriptions is Prakrit."
+   },
+   "answer_as_printed": "The language of Ashoka's inscriptions is Prakrit.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:59:02+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "6144f95216624641194bee8e53d27611e31baeb457759f991ca400cc0803c94e"
+  },
+  {
+   "id": "soc-8-16-s2-q013",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-16",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 7,
+     "text_as_printed": "Describes the contributions of North and South Indian royal dynasties in various fields including administration, literature, culture, architecture, and appreciates them by comparing with the present time."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Which is the capital of the Kushanas?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s2-q013",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s2-q013",
+     "pdf_page": 48,
+     "printed_page": 37,
+     "y": 329.303193,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s2-q013-key",
+     "pdf_page": 114,
+     "printed_page": 103,
+     "y": 350.423196,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:59:02+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:59:02+05:30",
+   "text_as_printed": "Which is the capital of the Kushanas? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "The capital of the Kushans was Purushapura."
+   },
+   "answer_as_printed": "The capital of the Kushans was Purushapura.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:59:02+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "ebb01796ca326141a4903a5e2b8871003200587e322128604670103abd145215"
+  },
+  {
+   "id": "soc-8-16-s2-q014",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-16",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 7,
+     "text_as_printed": "Describes the contributions of North and South Indian royal dynasties in various fields including administration, literature, culture, architecture, and appreciates them by comparing with the present time."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Whom did Ashoka send to Sri Lanka for spreading Buddhism?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s2-q014",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s2-q014",
+     "pdf_page": 48,
+     "printed_page": 37,
+     "y": 346.583199,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s2-q014-key",
+     "pdf_page": 114,
+     "printed_page": 103,
+     "y": 367.823182,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:59:02+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:59:02+05:30",
+   "text_as_printed": "Whom did Ashoka send to Sri Lanka for spreading Buddhism? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "Ashoka sent his son Rahul and daughter Sanghamitra to Sri Lanka for the propagation of Dharma."
+   },
+   "answer_as_printed": "Ashoka sent his son Rahul and daughter Sanghamitra to Sri Lanka for the propagation of Dharma.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:59:02+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "30ba7062dbf4a981d93953df8dca0d2416693d9123a112f4f56f814b6fb9718b"
+  },
+  {
+   "id": "soc-8-16-s2-q015",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-16",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 7,
+     "text_as_printed": "Describes the contributions of North and South Indian royal dynasties in various fields including administration, literature, culture, architecture, and appreciates them by comparing with the present time."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Who built the Sudarshana Lake near Junagadh in Gujarat?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s2-q015",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s2-q015",
+     "pdf_page": 48,
+     "printed_page": 37,
+     "y": 364.103188,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s2-q015-key",
+     "pdf_page": 114,
+     "printed_page": 103,
+     "y": 402.623177,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:59:02+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:59:02+05:30",
+   "text_as_printed": "Who built the Sudarshana Lake near Junagadh in Gujarat? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "Pushyagupta was the governor under Chandragupta Maurya."
+   },
+   "answer_as_printed": "Pushyagupta was the governor under Chandragupta Maurya.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:59:02+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "b5d57e378beed2744abe5293ff05991a2ebeeb6fc133d4e9217c37a4043e470b"
+  },
+  {
+   "id": "soc-8-16-s2-q016",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-16",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 7,
+     "text_as_printed": "Describes the contributions of North and South Indian royal dynasties in various fields including administration, literature, culture, architecture, and appreciates them by comparing with the present time."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is the new era of Kanishka's reign called?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s2-q016",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s2-q016",
+     "pdf_page": 48,
+     "printed_page": 37,
+     "y": 381.503197,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s2-q016-key",
+     "pdf_page": 114,
+     "printed_page": 103,
+     "y": 420.023187,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:59:02+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:59:02+05:30",
+   "text_as_printed": "What is the new era of Kanishka's reign called? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "Saka Era"
+   },
+   "answer_as_printed": "Saka Era",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:59:02+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "20d76f0e756fc95e3303d31db8f4940fbaa21182aab50276bdc64b072b407b11"
+  },
+  {
+   "id": "soc-8-16-s2-q017",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-16",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 7,
+     "text_as_printed": "Describes the contributions of North and South Indian royal dynasties in various fields including administration, literature, culture, architecture, and appreciates them by comparing with the present time."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "To which race did the Kushanas belong?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s2-q017",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s2-q017",
+     "pdf_page": 48,
+     "printed_page": 37,
+     "y": 398.903207,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s2-q017-key",
+     "pdf_page": 114,
+     "printed_page": 103,
+     "y": 437.423196,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:59:02+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:59:02+05:30",
+   "text_as_printed": "To which race did the Kushanas belong? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "Yuchi dynasty"
+   },
+   "answer_as_printed": "Yuchi dynasty",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:59:02+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "99fd35001857b7cfdbb69beb4fbd05ea2186e6f6444fc9d44d4d24908513e5f8"
+  },
+  {
+   "id": "soc-8-16-s3-q018",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-16",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 7,
+     "text_as_printed": "Describes the contributions of North and South Indian royal dynasties in various fields including administration, literature, culture, architecture, and appreciates them by comparing with the present time."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "List out the texts that explain the history of Maurya",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s3-q018",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s3-q018",
+     "pdf_page": 48,
+     "printed_page": 37,
+     "y": 433.703179,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s3-q018-key",
+     "pdf_page": 114,
+     "printed_page": 103,
+     "y": 469.943184,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:59:02+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:59:02+05:30",
+   "text_as_printed": "List out the texts that explain the history of Maurya (A)",
+   "answer": {
+    "kind": "text",
+    "value": "Megasthenes' Indica, Kautilya's Arthashastra, Vishakadatta's Mudrarakshasa, Ashoka's inscriptions, pillars, and stupas."
+   },
+   "answer_as_printed": "Megasthenes' Indica, Kautilya's Arthashastra, Vishakadatta's Mudrarakshasa, Ashoka's inscriptions, pillars, and stupas.",
+   "solution_steps": [
+    "Megasthenes' Indica, Kautilya's Arthashastra, Vishakadatta's Mudrarakshasa, Ashoka's inscriptions, pillars, and stupas."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:59:02+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "c8ddefb6a3f9fecad814c130c8fcd8a41bcd662795f6f862d68665625787f977"
+  },
+  {
+   "id": "soc-8-16-s3-q019",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-16",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 7,
+     "text_as_printed": "Describes the contributions of North and South Indian royal dynasties in various fields including administration, literature, culture, architecture, and appreciates them by comparing with the present time."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "List the prominent cities during Ashoka's reign.",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s3-q019",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s3-q019",
+     "pdf_page": 48,
+     "printed_page": 37,
+     "y": 451.103188,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s3-q019-key",
+     "pdf_page": 114,
+     "printed_page": 103,
+     "y": 500.30317,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:59:02+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:59:02+05:30",
+   "text_as_printed": "List the prominent cities during Ashoka's reign. (A)",
+   "answer": {
+    "kind": "text",
+    "value": "The important cities during Ashoka's time were Pataliputra, Taxila, Ujjain, Kalinga, and Suvarnagiri."
+   },
+   "answer_as_printed": "The important cities during Ashoka's time were Pataliputra, Taxila, Ujjain, Kalinga, and Suvarnagiri.",
+   "solution_steps": [
+    "The important cities during Ashoka's time were Pataliputra, Taxila, Ujjain, Kalinga, and Suvarnagiri."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:59:02+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "1f1750c35ea2d07bacd76136bf58d9776c95af8e00014b8639ef0d6117e58864"
+  },
+  {
+   "id": "soc-8-16-s3-q020",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-16",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "D",
+   "learning_outcomes": [
+    {
+     "number": 7,
+     "text_as_printed": "Describes the contributions of North and South Indian royal dynasties in various fields including administration, literature, culture, architecture, and appreciates them by comparing with the present time."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Substantiate the statement that during Kanishka's reign, the Kushanas had a vast empire.",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s3-q020",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s3-q020",
+     "pdf_page": 48,
+     "printed_page": 37,
+     "y": 468.503197,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s3-q020-key",
+     "pdf_page": 114,
+     "printed_page": 103,
+     "y": 530.543175,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:59:02+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:59:02+05:30",
+   "text_as_printed": "Substantiate the statement that during Kanishka's reign, the Kushanas had a vast empire. (D)",
+   "answer": {
+    "kind": "text",
+    "value": "The extent of Kanishka's rule in India spread up to Sanchi in the south and Banaras in the east. His rule, including Central Asia, formed a vast empire."
+   },
+   "answer_as_printed": "The extent of Kanishka's rule in India spread up to Sanchi in the south and Banaras in the east. His rule, including Central Asia, formed a vast empire.",
+   "solution_steps": [
+    "The extent of Kanishka's rule in India spread up to Sanchi in the south and Banaras in the east. His rule, including Central Asia, formed a vast empire."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:59:02+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "e55d59d0ace890d65ac3032b86056eb27dc571f112d1a1bab3be2a2c89b12823"
+  },
+  {
+   "id": "soc-8-16-s4-q021",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-16",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "D",
+   "learning_outcomes": [
+    {
+     "number": 7,
+     "text_as_printed": "Describes the contributions of North and South Indian royal dynasties in various fields including administration, literature, culture, architecture, and appreciates them by comparing with the present time."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Historians have described Ashoka as a great ruler. Analyze this statement.",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s4-q021",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s4-q021",
+     "pdf_page": 48,
+     "printed_page": 37,
+     "y": 520.703179,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s4-q021-key",
+     "pdf_page": 114,
+     "printed_page": 103,
+     "y": 591.263192,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:59:02+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:59:02+05:30",
+   "text_as_printed": "Historians have described Ashoka as a great ruler. Analyze this statement. (D)",
+   "answer": {
+    "kind": "text",
+    "value": "A promoter of peace\nProtector of Buddhism\nBeliever in non-violence\nA good ruler\nA ruler who lived a value-based life\nPropagator of Buddhism\nGave importance to art and architecture; pioneer of inscriptions\nUnited and ruled a vast country like India\nProtector of human values such as compassion"
+   },
+   "answer_as_printed": "A promoter of peace\nProtector of Buddhism\nBeliever in non-violence\nA good ruler\nA ruler who lived a value-based life\nPropagator of Buddhism\nGave importance to art and architecture; pioneer of inscriptions\nUnited and ruled a vast country like India\nProtector of human values such as compassion",
+   "solution_steps": [
+    "A promoter of peace",
+    "Protector of Buddhism",
+    "Believer in non-violence",
+    "A good ruler",
+    "A ruler who lived a value-based life",
+    "Propagator of Buddhism",
+    "Gave importance to art and architecture; pioneer of inscriptions",
+    "United and ruled a vast country like India",
+    "Protector of human values such as compassion"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:59:02+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "eb64883e210236ef5c0d07d66e1438448d8fd2fae24ee9e769d93dff0f2ad176"
+  },
+  {
+   "id": "soc-8-16-s4-q022",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-16",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 7,
+     "text_as_printed": "Describes the contributions of North and South Indian royal dynasties in various fields including administration, literature, culture, architecture, and appreciates them by comparing with the present time."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Describe Ashoka's administration.",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s4-q022",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s4-q022",
+     "pdf_page": 48,
+     "printed_page": 37,
+     "y": 555.503197,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s4-q022-key",
+     "pdf_page": 115,
+     "printed_page": 104,
+     "y": 137.783193,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:59:02+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:59:02+05:30",
+   "text_as_printed": "Describe Ashoka's administration. (A)",
+   "answer": {
+    "kind": "text",
+    "value": "The Mauryan Empire had a centralized administrative system:\nPower was centralized in the king\nAn administrative class of officials existed\nStrong espionage system\nThe empire was divided into provinces and princes were appointed as governors\nUnder the king were ministers, priests, commander-in-chief, and princes\nTaxila, Ujjain, Tosali, Suvarnagiri, and Girnar were administrative centers\nThere were officials called Rajukas and Yuktas\nPataliputra was the capital, and there were six committees"
+   },
+   "answer_as_printed": "The Mauryan Empire had a centralized administrative system:\nPower was centralized in the king\nAn administrative class of officials existed\nStrong espionage system\nThe empire was divided into provinces and princes were appointed as governors\nUnder the king were ministers, priests, commander-in-chief, and princes\nTaxila, Ujjain, Tosali, Suvarnagiri, and Girnar were administrative centers\nThere were officials called Rajukas and Yuktas\nPataliputra was the capital, and there were six committees",
+   "solution_steps": [
+    "Power was centralized in the king",
+    "An administrative class of officials existed",
+    "Strong espionage system",
+    "The empire was divided into provinces and princes were appointed as governors",
+    "Under the king were ministers, priests, commander-in-chief, and princes",
+    "Taxila, Ujjain, Tosali, Suvarnagiri, and Girnar were administrative centers",
+    "There were officials called Rajukas and Yuktas",
+    "Pataliputra was the capital, and there were six committees"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:59:02+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "8996c363f8ce579642c311427e22bb4be543ff8e19670489ff594fbff8342a55"
+  },
+  {
+   "id": "soc-8-16-s4-q023",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-16",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 7,
+     "text_as_printed": "Describes the contributions of North and South Indian royal dynasties in various fields including administration, literature, culture, architecture, and appreciates them by comparing with the present time."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Write a note on Kanishka's administration.",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s4-q023",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s4-q023",
+     "pdf_page": 48,
+     "printed_page": 37,
+     "y": 572.903207,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s4-q023-key",
+     "pdf_page": 115,
+     "printed_page": 104,
+     "y": 329.303193,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:59:02+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:59:02+05:30",
+   "text_as_printed": "Write a note on Kanishka's administration. (A)",
+   "answer": {
+    "kind": "text",
+    "value": "During Kanishka's reign, the Kushan Empire expanded greatly:\nHe began the Saka Era in 78 CE\nPurushapura was his capital; another city was Mathura\nBuddhism flourished greatly\nAshvaghosha, Vasumitra, and Sangharaksha were scholars\nThe Fourth Buddhist Council was held in Kashmir under his leadership\nLike Ashoka, he sent missions to Central Asia and China to spread Buddhism\nHe gave great encouragement to art and architecture"
+   },
+   "answer_as_printed": "During Kanishka's reign, the Kushan Empire expanded greatly:\nHe began the Saka Era in 78 CE\nPurushapura was his capital; another city was Mathura\nBuddhism flourished greatly\nAshvaghosha, Vasumitra, and Sangharaksha were scholars\nThe Fourth Buddhist Council was held in Kashmir under his leadership\nLike Ashoka, he sent missions to Central Asia and China to spread Buddhism\nHe gave great encouragement to art and architecture",
+   "solution_steps": [
+    "He began the Saka Era in 78 CE",
+    "Purushapura was his capital; another city was Mathura",
+    "Buddhism flourished greatly",
+    "Ashvaghosha, Vasumitra, and Sangharaksha were scholars",
+    "The Fourth Buddhist Council was held in Kashmir under his leadership",
+    "Like Ashoka, he sent missions to Central Asia and China to spread Buddhism",
+    "He gave great encouragement to art and architecture"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:59:02+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "15e8f86bbacb43bf0e4d0abf8f6c80d28c9d4036d2c8ebbbbd250b0f3ec94d32"
+  },
+  {
+   "id": "soc-8-16-s4-q024",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-16",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 7,
+     "text_as_printed": "Describes the contributions of North and South Indian royal dynasties in various fields including administration, literature, culture, architecture, and appreciates them by comparing with the present time."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Explain the art and architectural contributions of the Mauryan Empire.",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s4-q024",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s4-q024",
+     "pdf_page": 48,
+     "printed_page": 37,
+     "y": 590.30317,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s4-q024-key",
+     "pdf_page": 115,
+     "printed_page": 104,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:59:02+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:59:02+05:30",
+   "text_as_printed": "Explain the art and architectural contributions of the Mauryan Empire. (A)",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no answer printed",
+     "why_not_corrected": "the printed answer key has no entry for this question number — the answer-side numbering skips it (see the shifted band in extraction.method_notes)",
+     "suggested": "key absent — review"
+    }
+   ],
+   "content_hash": "37d7fa15c0ba67e9614200e860d866e915e9add8b389000c56986f6b3d69b560"
+  },
+  {
+   "id": "soc-8-16-s5-q025",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-16",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 2,
+     "text_as_printed": "Social Science Skills: Map drawing, locating places on maps, and the skills of constructing, analysing, explaining, and critically evaluating graphs are applicable to this lesson."
+    }
+   ],
+   "lo_source": "q25_row_LO2",
+   "out_of_syllabus": false,
+   "text": "Draw a map of ancient India and mark the following places",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s5-q025",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s5-q025",
+     "pdf_page": 48,
+     "printed_page": 37,
+     "y": 625.103188,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-16-s5-q025-key",
+     "pdf_page": 115,
+     "printed_page": 104,
+     "y": 507.0,
+     "derived_from": "render_measured"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:59:02+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:59:02+05:30",
+   "text_as_printed": "Draw a map of ancient India and mark the following places (A)",
+   "section_signal": "V",
+   "answer": {
+    "kind": "text",
+    "value": "[diagram answer — see page image]"
+   },
+   "assets": [
+    {
+     "id": "a25",
+     "type": "image",
+     "ref": "images/soc-8-16/p115-q25_answer-map.png",
+     "role": "answer_diagram",
+     "source_px": {
+      "w": 719,
+      "h": 586
+     },
+     "quality": "ok",
+     "caption": "Map of ancient India (c. 2nd century BCE) marking Gandhara, Purushapura, Ujjaini, Indraprastha and others, q25 answer, pdf 115",
+     "pdf_page": 115,
+     "crop_bbox": {
+      "pdf_page": 115,
+      "x0": 158.0,
+      "y0": 505.0,
+      "x1": 417.0,
+      "y1": 716.0
+     }
+    }
+   ],
+   "map": {
+    "subject": "ancient India places",
+    "instruction": "Draw a map of ancient India and mark the following places: A) Gandhara B) Purushapura C) Ujjain D) Indraprastha",
+    "region": "Ancient India (c. 2nd century BCE)",
+    "features_source": "answer_map_render",
+    "features": [
+     {
+      "id": "A",
+      "name": "Gandhara",
+      "answer_map_label": "Gandhara",
+      "category": "region",
+      "position": null,
+      "position_source": "unset",
+      "in_stem": true,
+      "on_answer_map": true
+     },
+     {
+      "id": "B",
+      "name": "Purushapura",
+      "answer_map_label": "Purushapura",
+      "category": "city",
+      "position": null,
+      "position_source": "unset",
+      "in_stem": true,
+      "on_answer_map": true,
+      "note": "modern name 'Peshawar' is printed beneath Purushapura on the map"
+     },
+     {
+      "id": "C",
+      "name": "Ujjain",
+      "answer_map_label": "Ujjaini",
+      "category": "city",
+      "position": null,
+      "position_source": "unset",
+      "in_stem": true,
+      "on_answer_map": true
+     },
+     {
+      "id": "D",
+      "name": "Indraprastha",
+      "answer_map_label": "Indraprastha",
+      "category": "city",
+      "position": null,
+      "position_source": "unset",
+      "in_stem": true,
+      "on_answer_map": true
+     },
+     {
+      "id": "taxila",
+      "name": "Taxila",
+      "answer_map_label": "Taxila",
+      "category": "city",
+      "position": null,
+      "position_source": "unset",
+      "in_stem": false,
+      "on_answer_map": true
+     },
+     {
+      "id": "pancala",
+      "name": "Pancala",
+      "answer_map_label": "Pancala",
+      "category": "region",
+      "position": null,
+      "position_source": "unset",
+      "in_stem": false,
+      "on_answer_map": true
+     },
+     {
+      "id": "kosala",
+      "name": "Kosala",
+      "answer_map_label": "Kosal",
+      "category": "region",
+      "position": null,
+      "position_source": "unset",
+      "in_stem": false,
+      "on_answer_map": true,
+      "note": "label truncated at the printed right edge"
+     },
+     {
+      "id": "avanti",
+      "name": "Avanti",
+      "answer_map_label": "Avanti",
+      "category": "region",
+      "position": null,
+      "position_source": "unset",
+      "in_stem": false,
+      "on_answer_map": true
+     }
+    ],
+    "answer_map_asset_id": "a25"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:59:02+05:30",
+    "basis": "answer is the printed labelled map on pdf 115 (raster 481x683), cropped as answer_diagram a25; English labels read by position/outline; stem features A-D + in_stem:false extras (addendum 6, crop-first rev-8 ruling)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "answer is a diagram — q25 asks to draw a map of ancient India and mark A) Gandhara B) Purushapura C) Ujjain D) Indraprastha; the printed answer (pdf 115) is a labelled map (raster, cropped as answer_diagram a25). English labels. Stem features A-D are on the map; extras printed and not asked (in_stem:false): Taxila, Pancala, Kosal, Avanti. The map's right edge is truncated in the source (Kosal label partly cut; title cut). REVIEWER verify features vs the crop.",
+     "why_not_corrected": "locate-on-map answer is an image; features read by position/outline; no invention beyond legible labels (addendum 6, coordinator rev-8)",
+     "suggested": "reviewer: confirm the 4 stem places + 4 extras against the crop; note the right-edge truncation"
+    },
+    {
+     "field": "answer",
+     "issue": "source notation inconsistent — the printed answer key labels this map answer '24' (question-side number is 25). The key omits an answer for question-side q24 (art & architecture) and numbers the map '24'. Key-side numbering misprint; question-side number is 25.",
+     "why_not_corrected": "key-side label is a source misprint; extraction keeps the question-side number (25) as the id and records the key label here",
+     "suggested": "review — key labels the map answer '24'; question-side number is 25; q24 (art/architecture) has no printed answer"
+    }
+   ],
+   "content_hash": "2678a48e8a4661314b9053599894485819faafe95e01f4a1a7a8bc4a2045a921"
+  }
+ ],
+ "pending_summary": {}
+}
