@@ -1,0 +1,1392 @@
+{
+ "contract_version": "1.7",
+ "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
+ "procedure_file": "extraction_procedure_social_addendum_v1.3_social science Classes 6-10 on top of procedure v2.md",
+ "machine_name": "soc-8-05_questions",
+ "version": 1,
+ "changelog": "v1 extraction — batch-01 — class-8-social",
+ "amendments_applied": [],
+ "unit_state": "EXTRACTED",
+ "review_ready": false,
+ "count_gate": {
+  "reference": 16,
+  "reference_source": "audited",
+  "extracted": 16,
+  "paired": 16,
+  "flagged": 2,
+  "gaps": [],
+  "duplicated_numbers": [],
+  "quota_table": "difficulty_only",
+  "second_method": {
+   "method": "printed difficulty distribution table",
+   "extracted": 16,
+   "agrees": true
+  },
+  "pass": true,
+  "note": "printed difficulty table 6/6/4=16 AGREES with per-question tags; flagged counts answer-level flags; all carry the structural marks flag (addendum §4.5)."
+ },
+ "extraction": {
+  "source_file": "8thSS-EM-LBARevised_1787048180.pdf",
+  "source_ref_prefix": "8thSS-EM-LBARevised_1787048180.pdf",
+  "pdf_pages": [
+   20,
+   21,
+   86,
+   87
+  ],
+  "printed_page_offset": -11,
+  "method_notes": [
+   "Offset -11 (pdf 20 = folio 9; pdf 86 = folio 75). Q: q1-7 pdf20, q8-16 pdf21. A: keys 1-13 pdf86, 14-16 pdf87. KEY monotonic 1-16, no shift/insert/map.",
+   "Sections: I MCQ q1-4; II one word/sentence q5-9 (vsa); III two/three q10-13 (sa); IV five/six q14-15 (la); V seven/eight q16 (la).",
+   "DIFFICULTY tags E6/A6/D4 = printed table 6/6/4 (AGREES).",
+   "MCQ: q1 key 'D) Darshanas (Philosophical Systems)' -> option D 'Philosophies' (letter D governs; key text is a gloss, benign flag); q2 key 'D) Has been practiced since ancient times.' = option D (minor case). q3/q4 clean. NOTE possible printed-key factual doubt q1 (foundations of Sanatana Dharma: key=Philosophies/D, option C=Vedas) -> review.",
+   "VSA q5-9 answer.value = sentence, no steps (3d); q8 key is a quoted mantra line.",
+   "Descriptive all SUB (heading 'X:' non-step): q10 4 steps, q11 4, q12 6, q13 1 (three branches printed comma-separated on one line -> one step per printed line), q15 5, q16 8 (title heading + lead 'It teaches that:' as step + 5 May-lines + 2 closing).",
+   "q14 KEY IS A 2-COLUMN TABLE (Vedic vs Present-Day). Ruled-table extraction (v2 §7 / §13.3): one step per printed row incl. header -> 7 steps (header 'Vedic Society | Present-Day Society' + 6 rows, cells joined ' | '); title is the non-step heading.",
+   "De-glue: q16 stem 'SanatanaDharma'->'Sanatana Dharma'. MARKS none printed -> all null/unassigned + structural flag (§4.5)."
+  ],
+  "notation_summary": {
+   "render_tokens": 0,
+   "latex_tokens": 0,
+   "damage_flags": []
+  },
+  "excluded_objects": [],
+  "inline_excluded_count": 0,
+  "figure_references": []
+ },
+ "stimuli": [],
+ "questions": [
+  {
+   "id": "soc-8-05-s1-q001",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-05",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 6,
+     "text_as_printed": "Lists the basic principles of Sanatana Dharmas, and explains their impact on society"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "These are considered as the foundations of Sanatana Dharma",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-05-s1-q001",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-05-s1-q001",
+     "pdf_page": 20,
+     "printed_page": 9,
+     "y": 379.343193,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-05-s1-q001-key",
+     "pdf_page": 86,
+     "printed_page": 75,
+     "y": 103.103188,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:25:11+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:25:11+05:30",
+   "text_as_printed": "These are considered as the foundations of Sanatana Dharma (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Traditions"
+    },
+    {
+     "id": "B",
+     "text": "Puranas"
+    },
+    {
+     "id": "C",
+     "text": "Vedas"
+    },
+    {
+     "id": "D",
+     "text": "Philosophies"
+    }
+   ],
+   "answer_as_printed": "D) Darshanas (Philosophical Systems)",
+   "answer": {
+    "kind": "option",
+    "option_id": "D"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:25:11+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text differs from option by a printed typo",
+     "why_not_corrected": "letter D kept (addendum §4.1); key text 'Darshanas (Philosophical Systems)' vs option D 'Philosophies' differ by a source typo; spelling needs subject knowledge (v2 §1)",
+     "suggested": "D (letter kept)"
+    }
+   ],
+   "content_hash": "752f2a4190e2c4c7a971fda017b1b3938259a3e3bf1cfb50e218f9c22b6cfbed"
+  },
+  {
+   "id": "soc-8-05-s1-q002",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-05",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 6,
+     "text_as_printed": "Lists the basic principles of Sanatana Dharmas, and explains their impact on society"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Hinduism called Sanatana Dharma because of",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-05-s1-q002",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-05-s1-q002",
+     "pdf_page": 20,
+     "printed_page": 9,
+     "y": 431.543175,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-05-s1-q002-key",
+     "pdf_page": 86,
+     "printed_page": 75,
+     "y": 120.503197,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:25:11+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:25:11+05:30",
+   "text_as_printed": "Hinduism called Sanatana Dharma because of (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "It includes Vedic practices"
+    },
+    {
+     "id": "B",
+     "text": "It is based on Puranas and philosophies"
+    },
+    {
+     "id": "C",
+     "text": "It has a historical background"
+    },
+    {
+     "id": "D",
+     "text": "It has been practiced since ancient times"
+    }
+   ],
+   "answer_as_printed": "D) Has been practiced since ancient times.",
+   "answer": {
+    "kind": "option",
+    "option_id": "D"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:25:11+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text differs from option by a printed typo",
+     "why_not_corrected": "letter D kept (addendum §4.1); key text 'Has been practiced since ancient times.' vs option D 'It has been practiced since ancient times' differ by a source typo; spelling needs subject knowledge (v2 §1)",
+     "suggested": "D (letter kept)"
+    }
+   ],
+   "content_hash": "b53b6bf9c340ddf8e53a6c0dd116b81afc9fefa3a4fc73ca1318bfd5deab7be7"
+  },
+  {
+   "id": "soc-8-05-s1-q003",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-05",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 6,
+     "text_as_printed": "Lists the basic principles of Sanatana Dharmas, and explains their impact on society"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Meaning of the word \"Veda\"",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-05-s1-q003",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-05-s1-q003",
+     "pdf_page": 20,
+     "printed_page": 9,
+     "y": 518.543175,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-05-s1-q003-key",
+     "pdf_page": 86,
+     "printed_page": 75,
+     "y": 137.783193,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:25:11+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:25:11+05:30",
+   "text_as_printed": "Meaning of the word \"Veda\" (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Application"
+    },
+    {
+     "id": "B",
+     "text": "Knowledge"
+    },
+    {
+     "id": "C",
+     "text": "Understanding"
+    },
+    {
+     "id": "D",
+     "text": "Guessing"
+    }
+   ],
+   "answer_as_printed": "B) Knowledge",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:25:11+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "7b0722ce2a76a1405edfc4bc3e815fe9b4d10fcf9cc7a1639d0ed1f2d65f8870"
+  },
+  {
+   "id": "soc-8-05-s1-q004",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-05",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 6,
+     "text_as_printed": "Lists the basic principles of Sanatana Dharmas, and explains their impact on society"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The auxiliary disciplines formed for the pronunciation and practice of the Vedas are",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-05-s1-q004",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-05-s1-q004",
+     "pdf_page": 20,
+     "printed_page": 9,
+     "y": 570.743203,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-05-s1-q004-key",
+     "pdf_page": 86,
+     "printed_page": 75,
+     "y": 155.18319,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:25:11+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:25:11+05:30",
+   "text_as_printed": "The auxiliary disciplines formed for the pronunciation and practice of the Vedas are (A)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Samhitas"
+    },
+    {
+     "id": "B",
+     "text": "Aranyakas"
+    },
+    {
+     "id": "C",
+     "text": "Upanishads"
+    },
+    {
+     "id": "D",
+     "text": "Vedangas"
+    }
+   ],
+   "answer_as_printed": "D) Vedangas",
+   "answer": {
+    "kind": "option",
+    "option_id": "D"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:25:11+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "c739fcec77175b2d927a787f44b2ca29d50f079f738b088bb0eb2513b8db40e3"
+  },
+  {
+   "id": "soc-8-05-s2-q005",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-05",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 6,
+     "text_as_printed": "Lists the basic principles of Sanatana Dharmas, and explains their impact on society"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is Smriti?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-05-s2-q005",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-05-s2-q005",
+     "pdf_page": 20,
+     "printed_page": 9,
+     "y": 657.743203,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-05-s2-q005-key",
+     "pdf_page": 86,
+     "printed_page": 75,
+     "y": 190.103188,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:25:11+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:25:11+05:30",
+   "text_as_printed": "What is Smriti? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "The recollection of post-Vedic compositions and Vedic-Upanishadic teachings is called Smriti."
+   },
+   "answer_as_printed": "The recollection of post-Vedic compositions and Vedic-Upanishadic teachings is called Smriti.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:25:11+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "cee324e88c9b3762c6d0aab2cdaa70f5ed3002775ac0d2f118811387832475d9"
+  },
+  {
+   "id": "soc-8-05-s2-q006",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-05",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 6,
+     "text_as_printed": "Lists the basic principles of Sanatana Dharmas, and explains their impact on society"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "In which form are the Upanishads mostly written?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-05-s2-q006",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-05-s2-q006",
+     "pdf_page": 20,
+     "printed_page": 9,
+     "y": 138.743191,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-05-s2-q006-key",
+     "pdf_page": 86,
+     "printed_page": 75,
+     "y": 222.743203,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:25:11+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:25:11+05:30",
+   "text_as_printed": "In which form are the Upanishads mostly written? (A)",
+   "answer": {
+    "kind": "text",
+    "value": "It is in the form of a Guru–Shishya (Teacher–Disciple) dialogue."
+   },
+   "answer_as_printed": "It is in the form of a Guru–Shishya (Teacher–Disciple) dialogue.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:25:11+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "36d650bbec5448a85922ef6fb4ca56ba852b8893186d48177ecf59950e9dadd9"
+  },
+  {
+   "id": "soc-8-05-s2-q007",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-05",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 6,
+     "text_as_printed": "Lists the basic principles of Sanatana Dharmas, and explains their impact on society"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Which are the great epics of India?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-05-s2-q007",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-05-s2-q007",
+     "pdf_page": 20,
+     "printed_page": 9,
+     "y": 692.543175,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-05-s2-q007-key",
+     "pdf_page": 86,
+     "printed_page": 75,
+     "y": 240.143189,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:25:11+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:25:11+05:30",
+   "text_as_printed": "Which are the great epics of India? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "Ramayana and Mahabharata."
+   },
+   "answer_as_printed": "Ramayana and Mahabharata.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:25:11+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "448a99339e7a50edd855e8247cbac629f0394c9ceac52baedb05ae40decba1a0"
+  },
+  {
+   "id": "soc-8-05-s2-q008",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-05",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 6,
+     "text_as_printed": "Lists the basic principles of Sanatana Dharmas, and explains their impact on society"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is the aim of Sanatana Dharma?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-05-s2-q008",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-05-s2-q008",
+     "pdf_page": 21,
+     "printed_page": 10,
+     "y": 68.18319,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-05-s2-q008-key",
+     "pdf_page": 86,
+     "printed_page": 75,
+     "y": 257.543199,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:25:11+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:25:11+05:30",
+   "text_as_printed": "What is the aim of Sanatana Dharma? (A)",
+   "answer": {
+    "kind": "text",
+    "value": "\"May noble thoughts come to us from all directions of the world.\""
+   },
+   "answer_as_printed": "\"May noble thoughts come to us from all directions of the world.\"",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:25:11+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "62905d4afdb1efe66e7f45baa9b92803b9f484eac0ab32caa8324cf9126e30fc"
+  },
+  {
+   "id": "soc-8-05-s2-q009",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-05",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 6,
+     "text_as_printed": "Lists the basic principles of Sanatana Dharmas, and explains their impact on society"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Why are the Smritis called Dharma Sutras?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-05-s2-q009",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-05-s2-q009",
+     "pdf_page": 21,
+     "printed_page": 10,
+     "y": 85.583188,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-05-s2-q009-key",
+     "pdf_page": 86,
+     "printed_page": 75,
+     "y": 274.943184,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:25:11+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:25:11+05:30",
+   "text_as_printed": "Why are the Smritis called Dharma Sutras? (A)",
+   "answer": {
+    "kind": "text",
+    "value": "Since the Smritis prescribe the daily social conduct, customs, and rules of life for individuals in society, they are called Dharma sutras."
+   },
+   "answer_as_printed": "Since the Smritis prescribe the daily social conduct, customs, and rules of life for individuals in society, they are called Dharma sutras.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:25:11+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "028f4972595dd171862ca68307b9e525c060086c256cecd3b75b4f88a391be3e"
+  },
+  {
+   "id": "soc-8-05-s3-q010",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-05",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 6,
+     "text_as_printed": "Lists the basic principles of Sanatana Dharmas, and explains their impact on society"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Name the Vedas composed during the early Vedic and later Vedic periods.",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-05-s3-q010",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-05-s3-q010",
+     "pdf_page": 21,
+     "printed_page": 10,
+     "y": 133.70319,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-05-s3-q010-key",
+     "pdf_page": 86,
+     "printed_page": 75,
+     "y": 327.143189,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:25:11+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:25:11+05:30",
+   "text_as_printed": "Name the Vedas composed during the early Vedic and later Vedic periods. (E)",
+   "answer": {
+    "kind": "text",
+    "value": "The four Vedas are:\nRigveda\nYajurveda\nSamaveda\nAtharvaveda"
+   },
+   "answer_as_printed": "The four Vedas are:\nRigveda\nYajurveda\nSamaveda\nAtharvaveda",
+   "solution_steps": [
+    "Rigveda",
+    "Yajurveda",
+    "Samaveda",
+    "Atharvaveda"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:25:11+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "e52fe845076ca59323e257ba2207572d12f5b12a79355ca1e04e9cb2ae55d8a6"
+  },
+  {
+   "id": "soc-8-05-s3-q011",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-05",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "D",
+   "learning_outcomes": [
+    {
+     "number": 6,
+     "text_as_printed": "Lists the basic principles of Sanatana Dharmas, and explains their impact on society"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Name the four divisions of the Vedas.",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-05-s3-q011",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-05-s3-q011",
+     "pdf_page": 21,
+     "printed_page": 10,
+     "y": 168.383195,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-05-s3-q011-key",
+     "pdf_page": 86,
+     "printed_page": 75,
+     "y": 414.143212,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:25:11+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:25:11+05:30",
+   "text_as_printed": "Name the four divisions of the Vedas. (D)",
+   "answer": {
+    "kind": "text",
+    "value": "The four divisions of Vedic literature are:\nSamhita\nBrahmana\nAranyaka\nUpanishad"
+   },
+   "answer_as_printed": "The four divisions of Vedic literature are:\nSamhita\nBrahmana\nAranyaka\nUpanishad",
+   "solution_steps": [
+    "Samhita",
+    "Brahmana",
+    "Aranyaka",
+    "Upanishad"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:25:11+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "b5c9f99de9eab063f9af36adf7952494ede7362cdd59476445e1c40a648b5c75"
+  },
+  {
+   "id": "soc-8-05-s3-q012",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-05",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 6,
+     "text_as_printed": "Lists the basic principles of Sanatana Dharmas, and explains their impact on society"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Which are the major philosophies (Darshanas)?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-05-s3-q012",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-05-s3-q012",
+     "pdf_page": 21,
+     "printed_page": 10,
+     "y": 185.783181,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-05-s3-q012-key",
+     "pdf_page": 86,
+     "printed_page": 75,
+     "y": 518.543175,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:25:11+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:25:11+05:30",
+   "text_as_printed": "Which are the major philosophies (Darshanas)? (A)",
+   "answer": {
+    "kind": "text",
+    "value": "There are six major Darshanas (schools of philosophy):\nNyaya\nVaisheshika\nYoga\nSankhya\nPurva Mimamsa\nUttara Mimamsa (Vedanta)"
+   },
+   "answer_as_printed": "There are six major Darshanas (schools of philosophy):\nNyaya\nVaisheshika\nYoga\nSankhya\nPurva Mimamsa\nUttara Mimamsa (Vedanta)",
+   "solution_steps": [
+    "Nyaya",
+    "Vaisheshika",
+    "Yoga",
+    "Sankhya",
+    "Purva Mimamsa",
+    "Uttara Mimamsa (Vedanta)"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:25:11+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "e60f2b25bef10b0aac9a7035c407a1a9fa557e0fb4832a87fa1c23eb6fc58f26"
+  },
+  {
+   "id": "soc-8-05-s3-q013",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-05",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 6,
+     "text_as_printed": "Lists the basic principles of Sanatana Dharmas, and explains their impact on society"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "How many main branches of the Agamas are there? What are they?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-05-s3-q013",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-05-s3-q013",
+     "pdf_page": 21,
+     "printed_page": 10,
+     "y": 203.303193,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-05-s3-q013-key",
+     "pdf_page": 86,
+     "printed_page": 75,
+     "y": 640.343193,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:25:11+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:25:11+05:30",
+   "text_as_printed": "How many main branches of the Agamas are there? What are they? (A)",
+   "answer": {
+    "kind": "text",
+    "value": "There are three major branches of Agamas:\nVaishnava , Shaiva, Shakta"
+   },
+   "answer_as_printed": "There are three major branches of Agamas:\nVaishnava , Shaiva, Shakta",
+   "solution_steps": [
+    "Vaishnava , Shaiva, Shakta"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:25:11+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "8bbeb0a9677d9d202c583d15282b19c088fa10eba9c26d17733f96fc6773d351"
+  },
+  {
+   "id": "soc-8-05-s4-q014",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-05",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "D",
+   "learning_outcomes": [
+    {
+     "number": 6,
+     "text_as_printed": "Lists the basic principles of Sanatana Dharmas, and explains their impact on society"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Analysis the differences between the social system of the Vedic period and present day.",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-05-s4-q014",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-05-s4-q014",
+     "pdf_page": 21,
+     "printed_page": 10,
+     "y": 237.983185,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-05-s4-q014-key",
+     "pdf_page": 87,
+     "printed_page": 76,
+     "y": 85.583188,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:25:11+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:25:11+05:30",
+   "text_as_printed": "Analysis the differences between the social system of the Vedic period and present day. (D)",
+   "answer": {
+    "kind": "text",
+    "value": "Differences Between Vedic Society and Present-Day Society\nVedic Society | Present-Day Society\nJoint family system | Nuclear family system\nVarna system | Caste system\nSanskrit language | Use of various languages\nAnimal husbandry and agriculture | Agriculture, industry, commerce, and other occupations\nVedic literature | Regional languages and literature\nProperty rights were communal | Property rights are mostly private"
+   },
+   "answer_as_printed": "Differences Between Vedic Society and Present-Day Society\nVedic Society | Present-Day Society\nJoint family system | Nuclear family system\nVarna system | Caste system\nSanskrit language | Use of various languages\nAnimal husbandry and agriculture | Agriculture, industry, commerce, and other occupations\nVedic literature | Regional languages and literature\nProperty rights were communal | Property rights are mostly private",
+   "solution_steps": [
+    "Vedic Society | Present-Day Society",
+    "Joint family system | Nuclear family system",
+    "Varna system | Caste system",
+    "Sanskrit language | Use of various languages",
+    "Animal husbandry and agriculture | Agriculture, industry, commerce, and other occupations",
+    "Vedic literature | Regional languages and literature",
+    "Property rights were communal | Property rights are mostly private"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:25:11+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "3af3c2e669fbed4dfb6904cc193ba0cd66b0645ed689a37fc54f3bafaa7a8716"
+  },
+  {
+   "id": "soc-8-05-s4-q015",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-05",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "D",
+   "learning_outcomes": [
+    {
+     "number": 6,
+     "text_as_printed": "Lists the basic principles of Sanatana Dharmas, and explains their impact on society"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "List out the specialties of Sanatana Dharma.",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-05-s4-q015",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-05-s4-q015",
+     "pdf_page": 21,
+     "printed_page": 10,
+     "y": 272.903184,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-05-s4-q015-key",
+     "pdf_page": 87,
+     "printed_page": 76,
+     "y": 283.103188,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:25:11+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:25:11+05:30",
+   "text_as_printed": "List out the specialties of Sanatana Dharma. (D)",
+   "answer": {
+    "kind": "text",
+    "value": "Special Features of Sanatana Dharma\nMay all people be happy.\nMay all be free from illness and suffering.\nMay everyone see and experience goodness.\nMay no one suffer.\nMay all living beings in the world enjoy happiness, peace, and well-being."
+   },
+   "answer_as_printed": "Special Features of Sanatana Dharma\nMay all people be happy.\nMay all be free from illness and suffering.\nMay everyone see and experience goodness.\nMay no one suffer.\nMay all living beings in the world enjoy happiness, peace, and well-being.",
+   "solution_steps": [
+    "May all people be happy.",
+    "May all be free from illness and suffering.",
+    "May everyone see and experience goodness.",
+    "May no one suffer.",
+    "May all living beings in the world enjoy happiness, peace, and well-being."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:25:11+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "2ee47512551241bf18198bc783fa4cff02f8618994df7ff1e1fc2b8a0dafdf78"
+  },
+  {
+   "id": "soc-8-05-s5-q016",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-05",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "D",
+   "learning_outcomes": [
+    {
+     "number": 6,
+     "text_as_printed": "Lists the basic principles of Sanatana Dharmas, and explains their impact on society"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "With the help of a teacher, understand the hymns available in the Vedas related to Sanatana Dharma and write",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-05-s5-q016",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-05-s5-q016",
+     "pdf_page": 21,
+     "printed_page": 10,
+     "y": 320.783181,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-05-s5-q016-key",
+     "pdf_page": 87,
+     "printed_page": 76,
+     "y": 422.423196,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T23:25:11+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T23:25:11+05:30",
+   "text_as_printed": "With the help of a teacher, understand the hymns available in the Vedas related to Sanatana Dharma and write (D)",
+   "answer": {
+    "kind": "text",
+    "value": "Note on the Shanti Mantra Found in the Vedas Related to Sanatana Dharma\nThe Shanti Mantra of the Vedas conveys a universal message of peace, harmony, and welfare. It teaches that:\nMay all people be happy.\nMay all be free from disease and worries.\nMay everyone experience goodness and auspiciousness.\nMay no one suffer from sorrow or misery.\nMay all living beings in the universe enjoy happiness, peace, and prosperity.\nIt emphasizes universal brotherhood and compassion.\nIt promotes the welfare of all creation without discrimination."
+   },
+   "answer_as_printed": "Note on the Shanti Mantra Found in the Vedas Related to Sanatana Dharma\nThe Shanti Mantra of the Vedas conveys a universal message of peace, harmony, and welfare. It teaches that:\nMay all people be happy.\nMay all be free from disease and worries.\nMay everyone experience goodness and auspiciousness.\nMay no one suffer from sorrow or misery.\nMay all living beings in the universe enjoy happiness, peace, and prosperity.\nIt emphasizes universal brotherhood and compassion.\nIt promotes the welfare of all creation without discrimination.",
+   "solution_steps": [
+    "The Shanti Mantra of the Vedas conveys a universal message of peace, harmony, and welfare. It teaches that:",
+    "May all people be happy.",
+    "May all be free from disease and worries.",
+    "May everyone experience goodness and auspiciousness.",
+    "May no one suffer from sorrow or misery.",
+    "May all living beings in the universe enjoy happiness, peace, and prosperity.",
+    "It emphasizes universal brotherhood and compassion.",
+    "It promotes the welfare of all creation without discrimination."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T23:25:11+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "0b528ef9aaf793889ebe935c3b3dea58b73b032ab660297ff533a1d510458798"
+  }
+ ],
+ "pending_summary": {}
+}
