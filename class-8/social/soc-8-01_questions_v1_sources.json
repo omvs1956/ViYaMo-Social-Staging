@@ -1,0 +1,1970 @@
+{
+ "contract_version": "1.7",
+ "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
+ "procedure_file": "extraction_procedure_social_addendum_v1.3_social science Classes 6-10 on top of procedure v2.md",
+ "machine_name": "soc-8-01_questions",
+ "version": 1,
+ "changelog": "v1 extraction — batch-01 — class-8-social",
+ "amendments_applied": [],
+ "unit_state": "EXTRACTED",
+ "review_ready": false,
+ "count_gate": {
+  "reference": 23,
+  "reference_source": "audited",
+  "extracted": 23,
+  "paired": 23,
+  "flagged": 1,
+  "gaps": [],
+  "duplicated_numbers": [],
+  "quota_table": "difficulty_only",
+  "second_method": {
+   "method": "printed difficulty distribution table",
+   "extracted": 23,
+   "agrees": true
+  },
+  "pass": true,
+  "note": "printed difficulty table 18/2/3=23 DISAGREES with per-question tags 18/3/2 (source defect, tags win v2 §6; register difficulty-table-vs-tags); flagged counts answer-level flags; all carry the structural marks flag (addendum §4.5)."
+ },
+ "extraction": {
+  "source_file": "8thSS-EM-LBARevised_1787048180.pdf",
+  "source_ref_prefix": "8thSS-EM-LBARevised_1787048180.pdf",
+  "pdf_pages": [
+   12,
+   13,
+   77,
+   78
+  ],
+  "printed_page_offset": -11,
+  "method_notes": [
+   "Offset -11 (pdf 12 = printed folio 1; pdf 77 = folio 66). Q side: q1-7 pdf12 (folio1, Section I), q8-23 pdf13 (folio2). A side: keys 1-19 pdf77 (folio66), keys 20-23 pdf78 (folio67). KEY ANSWERS section header pdf77; ch1 key monotonic 1-23, NO shift/insert/orphan/map (clean chapter).",
+   "Sections (question side, labels I-IV sequential, no defect): I Multiple Choice (q1-7, mcq) 'Identify the correct choice'; II one word or sentence (q8-16, vsa); III two or three sentences (q17-22, sa); IV five or six sentences (q23, la). Answer side keeps the same I-IV order and numbering; pairing by printed number is trivial.",
+   "DIFFICULTY tags are single letters (A)=average (E)=easy (D)=difficult (LETTERDIFF). DIFFICULTY-TABLE-VS-TAGS defect: printed table 18/2/3 (total 23); per-question tags 18/3/2 — Average and Difficult are swapped (table says A2/D3, tags say A3/D2), TOTAL agrees (23). quota_table difficulty_only, second_method total agrees, tags win (v2 §6 / addendum §8). Register difficulty-table-vs-tags.",
+   "MCQ q1-7 letter+text keys (addendum §4.1). q5 'B) Lavani' vs option B 'ballads (lavani)': letter B kept (answer asserted), benign flag 'key text differs from option by a printed typo' — NOT a typo, an abbreviation (Lavani = the ballad form); noted for review. q1 'Si-Yu-Ki'/'Si-yu-ki', q3 'Halmidi Inscription'/'Halmidi inscription', q7 'Buddha charita'/'Buddha Charita' are case-only, no flag.",
+   "VSA q8-16 answer.value = the sentence, no solution_steps (ruling 3d). q8 key printed with a trailing blank '___' (fill-in form) — kept verbatim.",
+   "Descriptive keys: q17-21,q23 SUB (a 'X:' heading line, NOT a step — addendum §5.2 / ruling 3b, kept in answer.value; the list items are the steps). q22 BUL (lead sentence 'The historians follow the various methods...' is a full topic sentence, not a colon-label heading → it is step 1, ruling 3b; then 5 bullets).",
+   "q17 four numbered points '1) .. 4)' printed two-per-line -> 4 steps (one per numbered point). q18/q19 bullets printed 2-3 per line in the text layer -> de-glued to one step per bullet (q18=4, q19=6). q20 six bullets one-per-line. q21 fifth bullet wraps across two printed lines -> merged into one step. De-glue applied in solution_steps/text only; q19 lead 'Literary Works of foreigners are' treated as a (colon-dropped) list heading, non-step — FLAG for coordinator ruling.",
+   "key-lines self-count (addendum §13.3): mcq 1-7 option keys; vsa 8-16 single-value (no steps); q17=4 steps+1 heading, q18=4+1, q19=6+1(lead-as-heading), q20=6+1, q21=5+1, q22=6 steps(lead+5 bullets, 0 heading), q23=6+1. Differences vs printed lines explained inline (numbered points 2/line q17; glued bullets q18/q19; wrapped bullet q21).",
+   "De-glue (text layer joins, in text/steps only): q7 stem \"Ashvaghosha'san\"->\"Ashvaghosha's an\"; q7 opt A 'MudraRakshasa'->'Mudra Rakshasa'; q3 opt D 'TalagundaSimhakatanjana'->'Talagunda Simhakatanjana'; q23 \"Banabhatta'sHarsha\"->\"Banabhatta's Harsha\", \"Shrivijaya'sKavirajamarga\"->\"Shrivijaya's Kavirajamarga\". Source typos kept verbatim (v2 §1): q6 'to be issue', q23 stem 'contributes'.",
+   "MARKS: no marks printed in any section (addendum §4.5) -> every question marks null, marks_source unassigned, structural flag. Register section-marks-not-printed (one row)."
+  ],
+  "notation_summary": {
+   "render_tokens": 0,
+   "latex_tokens": 0,
+   "damage_flags": []
+  },
+  "excluded_objects": [],
+  "inline_excluded_count": 0,
+  "figure_references": []
+ },
+ "stimuli": [],
+ "questions": [
+  {
+   "id": "soc-8-01-s1-q001",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Explains the importance and necessity of sources in the construction of history scientifically"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The famous work of Hiuen Tsang is",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s1-q001",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s1-q001",
+     "pdf_page": 12,
+     "printed_page": 1,
+     "y": 138.743191,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s1-q001-key",
+     "pdf_page": 77,
+     "printed_page": 66,
+     "y": 155.18319,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T22:48:07+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T22:48:07+05:30",
+   "text_as_printed": "The famous work of Hiuen Tsang is (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Si-yu-ki"
+    },
+    {
+     "id": "B",
+     "text": "Indica"
+    },
+    {
+     "id": "C",
+     "text": "Geography"
+    },
+    {
+     "id": "D",
+     "text": "Gho-ko-ki"
+    }
+   ],
+   "answer_as_printed": "A) Si-Yu-Ki",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T22:48:07+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "6550952b232879647a6cf0c07c17e3a1b6ea610a244f8680d40a64212357b640"
+  },
+  {
+   "id": "soc-8-01-s1-q002",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Explains the importance and necessity of sources in the construction of history scientifically"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The example for archaeological source is",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s1-q002",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s1-q002",
+     "pdf_page": 12,
+     "printed_page": 1,
+     "y": 403.103188,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s1-q002-key",
+     "pdf_page": 77,
+     "printed_page": 66,
+     "y": 172.70319,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T22:48:07+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T22:48:07+05:30",
+   "text_as_printed": "The example for archaeological source is (A)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Indigenous literature"
+    },
+    {
+     "id": "B",
+     "text": "Oral sources"
+    },
+    {
+     "id": "C",
+     "text": "Foreign literature"
+    },
+    {
+     "id": "D",
+     "text": "Coins"
+    }
+   ],
+   "answer_as_printed": "D) Coins",
+   "answer": {
+    "kind": "option",
+    "option_id": "D"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T22:48:07+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "e3e27250418e7e3e30e7a40de7b4636cf460f918d718d9868a5559c110446cd6"
+  },
+  {
+   "id": "soc-8-01-s1-q003",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Explains the importance and necessity of sources in the construction of history scientifically"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The first inscription of the Kannada language is",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s1-q003",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s1-q003",
+     "pdf_page": 12,
+     "printed_page": 1,
+     "y": 455.423196,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s1-q003-key",
+     "pdf_page": 77,
+     "printed_page": 66,
+     "y": 190.103188,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T22:48:07+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T22:48:07+05:30",
+   "text_as_printed": "The first inscription of the Kannada language is (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Aihole inscription"
+    },
+    {
+     "id": "B",
+     "text": "Halmidi inscription"
+    },
+    {
+     "id": "C",
+     "text": "Allahabad pillar inscription"
+    },
+    {
+     "id": "D",
+     "text": "Talagunda Simhakatanjana inscription"
+    }
+   ],
+   "answer_as_printed": "B) Halmidi Inscription",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T22:48:07+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "8a5556b552bfe592bf567ee2451d8f9ec8e576333f71e960d3ad8476c2c3625c"
+  },
+  {
+   "id": "soc-8-01-s1-q004",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Explains the importance and necessity of sources in the construction of history scientifically"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The \"Uttara Meruru\" inscription belongs to the period of",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s1-q004",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s1-q004",
+     "pdf_page": 12,
+     "printed_page": 1,
+     "y": 507.503197,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s1-q004-key",
+     "pdf_page": 77,
+     "printed_page": 66,
+     "y": 207.383195,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T22:48:07+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T22:48:07+05:30",
+   "text_as_printed": "The \"Uttara Meruru\" inscription belongs to the period of (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Pandyas"
+    },
+    {
+     "id": "B",
+     "text": "Cheras"
+    },
+    {
+     "id": "C",
+     "text": "Cholas"
+    },
+    {
+     "id": "D",
+     "text": "Satavahanas"
+    }
+   ],
+   "answer_as_printed": "C) Cholas",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T22:48:07+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "9f34a9c4bffe389daa2db55b7bec18d0502f5334003d9a3c8adb22ef68d0e877"
+  },
+  {
+   "id": "soc-8-01-s1-q005",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Explains the importance and necessity of sources in the construction of history scientifically"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "An example for oral source is",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s1-q005",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s1-q005",
+     "pdf_page": 12,
+     "printed_page": 1,
+     "y": 559.703179,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s1-q005-key",
+     "pdf_page": 77,
+     "printed_page": 66,
+     "y": 224.903184,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T22:48:07+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T22:48:07+05:30",
+   "text_as_printed": "An example for oral source is (A)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Inscription"
+    },
+    {
+     "id": "B",
+     "text": "ballads (lavani)"
+    },
+    {
+     "id": "C",
+     "text": "Remains"
+    },
+    {
+     "id": "D",
+     "text": "Monument"
+    }
+   ],
+   "answer_as_printed": "B) Lavani",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T22:48:07+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text differs from option by a printed typo",
+     "why_not_corrected": "letter B kept (addendum §4.1); key text 'Lavani' vs option B 'ballads (lavani)' differ by a source typo; spelling needs subject knowledge (v2 §1)",
+     "suggested": "B (letter kept)"
+    }
+   ],
+   "content_hash": "4a7953a98a2874b6f1ded57caf1220ab7e85c8f070f9edd0cdd1d198d463f030"
+  },
+  {
+   "id": "soc-8-01-s1-q006",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Explains the importance and necessity of sources in the construction of history scientifically"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The first king to be issue an inscription in India was",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s1-q006",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s1-q006",
+     "pdf_page": 12,
+     "printed_page": 1,
+     "y": 611.903207,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s1-q006-key",
+     "pdf_page": 77,
+     "printed_page": 66,
+     "y": 242.303193,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T22:48:07+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T22:48:07+05:30",
+   "text_as_printed": "The first king to be issue an inscription in India was (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Ashoka"
+    },
+    {
+     "id": "B",
+     "text": "Kanishka"
+    },
+    {
+     "id": "C",
+     "text": "Harshavardhana"
+    },
+    {
+     "id": "D",
+     "text": "Samudragupta"
+    }
+   ],
+   "answer_as_printed": "A) Ashoka",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T22:48:07+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "41a98081ae94fcfa4a0b0062bba4c3cbc5390fc3676d2193e57e213ab9f2acb3"
+  },
+  {
+   "id": "soc-8-01-s1-q007",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Explains the importance and necessity of sources in the construction of history scientifically"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Ashvaghosha's an important literary source is",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s1-q007",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s1-q007",
+     "pdf_page": 12,
+     "printed_page": 1,
+     "y": 664.223214,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s1-q007-key",
+     "pdf_page": 77,
+     "printed_page": 66,
+     "y": 259.703202,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T22:48:07+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T22:48:07+05:30",
+   "text_as_printed": "Ashvaghosha's an important literary source is (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Mudra Rakshasa"
+    },
+    {
+     "id": "B",
+     "text": "Rajatarangini"
+    },
+    {
+     "id": "C",
+     "text": "Arthashastra"
+    },
+    {
+     "id": "D",
+     "text": "Buddha Charita"
+    }
+   ],
+   "answer_as_printed": "D)Buddha charita",
+   "answer": {
+    "kind": "option",
+    "option_id": "D"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T22:48:07+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "7119bc0cd3818d2d469165e1856916cef78c13c4ed419a275f3de4a26aa6ade6"
+  },
+  {
+   "id": "soc-8-01-s2-q008",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Explains the importance and necessity of sources in the construction of history scientifically"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What are sources?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s2-q008",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s2-q008",
+     "pdf_page": 13,
+     "printed_page": 2,
+     "y": 85.583188,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s2-q008-key",
+     "pdf_page": 77,
+     "printed_page": 66,
+     "y": 294.503197,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T22:48:07+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T22:48:07+05:30",
+   "text_as_printed": "What are sources? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "The materials required for constructing the history of mankind's past are called ___"
+   },
+   "answer_as_printed": "The materials required for constructing the history of mankind's past are called ___",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T22:48:07+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "ac3cd758b25e2b0b46770eadcc2cb0aeede1494a032e7b34a2ac9424d19dadd2"
+  },
+  {
+   "id": "soc-8-01-s2-q009",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Explains the importance and necessity of sources in the construction of history scientifically"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What are archaeological sources?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s2-q009",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s2-q009",
+     "pdf_page": 13,
+     "printed_page": 2,
+     "y": 103.103188,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s2-q009-key",
+     "pdf_page": 77,
+     "printed_page": 66,
+     "y": 329.303193,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T22:48:07+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T22:48:07+05:30",
+   "text_as_printed": "What are archaeological sources? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "Inscriptions, coins, monuments, pottery, and other remains obtained through research and excavations are called archaeological sources."
+   },
+   "answer_as_printed": "Inscriptions, coins, monuments, pottery, and other remains obtained through research and excavations are called archaeological sources.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T22:48:07+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "2ebe1a91efcc88bb13b3fc3530ab3f75f8042d7ae9db206282fbbcd5c74eb8a7"
+  },
+  {
+   "id": "soc-8-01-s2-q010",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Explains the importance and necessity of sources in the construction of history scientifically"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Which book was written by Chand Bardai?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s2-q010",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s2-q010",
+     "pdf_page": 13,
+     "printed_page": 2,
+     "y": 120.503197,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s2-q010-key",
+     "pdf_page": 77,
+     "printed_page": 66,
+     "y": 364.103188,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T22:48:07+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T22:48:07+05:30",
+   "text_as_printed": "Which book was written by Chand Bardai? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "The literary work written by Chand Bardai is Prithvi Raj Raso."
+   },
+   "answer_as_printed": "The literary work written by Chand Bardai is Prithvi Raj Raso.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T22:48:07+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "cd795d78e7d72c622991e3ae63f4003ad3293fd6aa60e06c8430a32ee2a4ddbb"
+  },
+  {
+   "id": "soc-8-01-s2-q011",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Explains the importance and necessity of sources in the construction of history scientifically"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Name the king that was patronized the Srivijaya.",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s2-q011",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s2-q011",
+     "pdf_page": 13,
+     "printed_page": 2,
+     "y": 137.783193,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s2-q011-key",
+     "pdf_page": 77,
+     "printed_page": 66,
+     "y": 381.503197,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T22:48:07+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T22:48:07+05:30",
+   "text_as_printed": "Name the king that was patronized the Srivijaya. (E)",
+   "answer": {
+    "kind": "text",
+    "value": "Shrivijaya was patronized by king Amoghavarsha"
+   },
+   "answer_as_printed": "Shrivijaya was patronized by king Amoghavarsha",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T22:48:07+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "4d6472ceb4a5225d1d028f5df30a852da24e3f0ef316373a56407cf3fef8ecac"
+  },
+  {
+   "id": "soc-8-01-s2-q012",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Explains the importance and necessity of sources in the construction of history scientifically"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What are the two famous books of Ceylon?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s2-q012",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s2-q012",
+     "pdf_page": 13,
+     "printed_page": 2,
+     "y": 155.18319,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s2-q012-key",
+     "pdf_page": 77,
+     "printed_page": 66,
+     "y": 398.903207,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T22:48:07+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T22:48:07+05:30",
+   "text_as_printed": "What are the two famous books of Ceylon? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "The two famous works from Ceylon are Dipavamsa and Mahavamsa."
+   },
+   "answer_as_printed": "The two famous works from Ceylon are Dipavamsa and Mahavamsa.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T22:48:07+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "2fe03562628988ed19c0b288c384a58785944675f6766e118b96f918c27c1dc4"
+  },
+  {
+   "id": "soc-8-01-s2-q013",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Explains the importance and necessity of sources in the construction of history scientifically"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is numismatics?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s2-q013",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s2-q013",
+     "pdf_page": 13,
+     "printed_page": 2,
+     "y": 172.70319,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s2-q013-key",
+     "pdf_page": 77,
+     "printed_page": 66,
+     "y": 416.30317,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T22:48:07+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T22:48:07+05:30",
+   "text_as_printed": "What is numismatics? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "The study that provides information about the form, development and evolution of coins is called numismatics."
+   },
+   "answer_as_printed": "The study that provides information about the form, development and evolution of coins is called numismatics.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T22:48:07+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "5ec31673f3aa66edf2a6bff39d52d0d96e32bb04fe409430b0a38801f3c08793"
+  },
+  {
+   "id": "soc-8-01-s2-q014",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Explains the importance and necessity of sources in the construction of history scientifically"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Where is Taj Mahal?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s2-q014",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s2-q014",
+     "pdf_page": 13,
+     "printed_page": 2,
+     "y": 190.103188,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s2-q014-key",
+     "pdf_page": 77,
+     "printed_page": 66,
+     "y": 451.103188,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T22:48:07+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T22:48:07+05:30",
+   "text_as_printed": "Where is Taj Mahal? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "The Taj Mahal is located in Agra."
+   },
+   "answer_as_printed": "The Taj Mahal is located in Agra.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T22:48:07+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "a7b80a6b81902fab23194f59b06319e8f03545b7f64cb3cb3be8ba0251fa316a"
+  },
+  {
+   "id": "soc-8-01-s2-q015",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "D",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Explains the importance and necessity of sources in the construction of history scientifically"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What do the Roman coins indicate that was found in Bengaluru?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s2-q015",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s2-q015",
+     "pdf_page": 13,
+     "printed_page": 2,
+     "y": 207.383195,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s2-q015-key",
+     "pdf_page": 77,
+     "printed_page": 66,
+     "y": 468.503197,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T22:48:07+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T22:48:07+05:30",
+   "text_as_printed": "What do the Roman coins indicate that was found in Bengaluru? (D)",
+   "answer": {
+    "kind": "text",
+    "value": "The source evidence indicated the trade relations with Rome existed 2,000 years ago."
+   },
+   "answer_as_printed": "The source evidence indicated the trade relations with Rome existed 2,000 years ago.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T22:48:07+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "0f5c5a7aa9ac09ee4b22ffa0054e22ae889625ea727868dcaf11f50a3e40d434"
+  },
+  {
+   "id": "soc-8-01-s2-q016",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Explains the importance and necessity of sources in the construction of history scientifically"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Who wrote the book \"Geography\"?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s2-q016",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s2-q016",
+     "pdf_page": 13,
+     "printed_page": 2,
+     "y": 224.903184,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s2-q016-key",
+     "pdf_page": 77,
+     "printed_page": 66,
+     "y": 503.30317,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T22:48:07+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T22:48:07+05:30",
+   "text_as_printed": "Who wrote the book \"Geography\"? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "The author of Geography was Ptolemy."
+   },
+   "answer_as_printed": "The author of Geography was Ptolemy.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T22:48:07+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "f5a4e04962066c23988253edeb8d2bd7e0e6ca6ab44f0667bbc28fed6174f7e1"
+  },
+  {
+   "id": "soc-8-01-s3-q017",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Explains the importance and necessity of sources in the construction of history scientifically"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What are the types of sources?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s3-q017",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s3-q017",
+     "pdf_page": 13,
+     "printed_page": 2,
+     "y": 259.703202,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s3-q017-key",
+     "pdf_page": 77,
+     "printed_page": 66,
+     "y": 538.223214,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T22:48:07+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T22:48:07+05:30",
+   "text_as_printed": "What are the types of sources? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "Types of Sources are:\n1) Literary sources\n2) Archaeological sources\n3) Oral sources\n4) Traditions"
+   },
+   "answer_as_printed": "Types of Sources are:\n1) Literary sources\n2) Archaeological sources\n3) Oral sources\n4) Traditions",
+   "solution_steps": [
+    "1) Literary sources",
+    "2) Archaeological sources",
+    "3) Oral sources",
+    "4) Traditions"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T22:48:07+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "9ed61b08a9957cc5de9132a3ba9546f1530fbbbbe9bef186df63e21d7f777bc3"
+  },
+  {
+   "id": "soc-8-01-s3-q018",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Explains the importance and necessity of sources in the construction of history scientifically"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Classify the archaeological sources.",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s3-q018",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s3-q018",
+     "pdf_page": 13,
+     "printed_page": 2,
+     "y": 276.983185,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s3-q018-key",
+     "pdf_page": 77,
+     "printed_page": 66,
+     "y": 590.30317,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T22:48:07+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T22:48:07+05:30",
+   "text_as_printed": "Classify the archaeological sources. (E)",
+   "answer": {
+    "kind": "text",
+    "value": "Classification of Archaeological Sources:\nInscriptions\nCoins\nMonuments\nExcavations"
+   },
+   "answer_as_printed": "Classification of Archaeological Sources:\nInscriptions\nCoins\nMonuments\nExcavations",
+   "solution_steps": [
+    "Inscriptions",
+    "Coins",
+    "Monuments",
+    "Excavations"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T22:48:07+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "edb4f76782ae36360c75149fe6ad2dd71f6533baea64adca3a5b5fd75598d392"
+  },
+  {
+   "id": "soc-8-01-s3-q019",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Explains the importance and necessity of sources in the construction of history scientifically"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Name the foreign literary sources.",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s3-q019",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s3-q019",
+     "pdf_page": 13,
+     "printed_page": 2,
+     "y": 294.503197,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s3-q019-key",
+     "pdf_page": 77,
+     "printed_page": 66,
+     "y": 642.503197,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T22:48:07+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T22:48:07+05:30",
+   "text_as_printed": "Name the foreign literary sources. (E)",
+   "answer": {
+    "kind": "text",
+    "value": "Literary Works of foreigners are\nMegasthenes – Indica\nHiuen Tsang – Si-Yu-Ki\nFa-Hien – Gho-Ko-Ki\nPtolemy – Geography\nBarani – Tarikh-i-Firoz Shahi\nCeylon – Dipavamsa and Mahavamsa"
+   },
+   "answer_as_printed": "Literary Works of foreigners are\nMegasthenes – Indica\nHiuen Tsang – Si-Yu-Ki\nFa-Hien – Gho-Ko-Ki\nPtolemy – Geography\nBarani – Tarikh-i-Firoz Shahi\nCeylon – Dipavamsa and Mahavamsa",
+   "solution_steps": [
+    "Megasthenes – Indica",
+    "Hiuen Tsang – Si-Yu-Ki",
+    "Fa-Hien – Gho-Ko-Ki",
+    "Ptolemy – Geography",
+    "Barani – Tarikh-i-Firoz Shahi",
+    "Ceylon – Dipavamsa and Mahavamsa"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T22:48:07+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "a296b1ebe7731a353f19c7053120e7099e2c647291c7081476778f74f2706b90"
+  },
+  {
+   "id": "soc-8-01-s3-q020",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Explains the importance and necessity of sources in the construction of history scientifically"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Name the inscriptions that were contributed to the indigenous literary composition.",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s3-q020",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s3-q020",
+     "pdf_page": 13,
+     "printed_page": 2,
+     "y": 311.903184,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s3-q020-key",
+     "pdf_page": 78,
+     "printed_page": 67,
+     "y": 68.18319,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T22:48:07+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T22:48:07+05:30",
+   "text_as_printed": "Name the inscriptions that were contributed to the indigenous literary composition. (E)",
+   "answer": {
+    "kind": "text",
+    "value": "Inscriptions helpful for Indigenous Literary Works:\nHalmidi Inscription\nAllahabad Pillar Inscription\nHathigumpha Inscription\nUttaramerur Inscription\nAihole Inscription\nTalagunda Inscription"
+   },
+   "answer_as_printed": "Inscriptions helpful for Indigenous Literary Works:\nHalmidi Inscription\nAllahabad Pillar Inscription\nHathigumpha Inscription\nUttaramerur Inscription\nAihole Inscription\nTalagunda Inscription",
+   "solution_steps": [
+    "Halmidi Inscription",
+    "Allahabad Pillar Inscription",
+    "Hathigumpha Inscription",
+    "Uttaramerur Inscription",
+    "Aihole Inscription",
+    "Talagunda Inscription"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T22:48:07+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "a69a2510c0fdd6ae4a80d628c56cb865aab6a6e16c3c4a04b037d8b3f833a92b"
+  },
+  {
+   "id": "soc-8-01-s3-q021",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Explains the importance and necessity of sources in the construction of history scientifically"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Justify how oral sources contribute to the shaping of Indian history.",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s3-q021",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s3-q021",
+     "pdf_page": 13,
+     "printed_page": 2,
+     "y": 346.583199,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s3-q021-key",
+     "pdf_page": 78,
+     "printed_page": 67,
+     "y": 190.103188,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T22:48:07+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T22:48:07+05:30",
+   "text_as_printed": "Justify how oral sources contribute to the shaping of Indian history. (E)",
+   "answer": {
+    "kind": "text",
+    "value": "Oral Traditions:\nOral traditions are the history of human society's memories.\nThey helps in understand India's diverse heritage.\nThey are useful for understanding the local history.\nInformation has been preserved orally from generation to generation.\nThe Examples for oral literature is the story about Kempegowda, Sangolli Rayanna, Kittur RaniChennamma and Sindhura Lakshmana"
+   },
+   "answer_as_printed": "Oral Traditions:\nOral traditions are the history of human society's memories.\nThey helps in understand India's diverse heritage.\nThey are useful for understanding the local history.\nInformation has been preserved orally from generation to generation.\nThe Examples for oral literature is the story about Kempegowda, Sangolli Rayanna, Kittur RaniChennamma and Sindhura Lakshmana",
+   "solution_steps": [
+    "Oral traditions are the history of human society's memories.",
+    "They helps in understand India's diverse heritage.",
+    "They are useful for understanding the local history.",
+    "Information has been preserved orally from generation to generation.",
+    "The Examples for oral literature is the story about Kempegowda, Sangolli Rayanna, Kittur RaniChennamma and Sindhura Lakshmana"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T22:48:07+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "a5db1815928f68c57dca54f20dc1e37fd54bb1a90f6bc71573b3a1fa8ca46fe9"
+  },
+  {
+   "id": "soc-8-01-s3-q022",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "D",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Explains the importance and necessity of sources in the construction of history scientifically"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "How do historians construct history?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s3-q022",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s3-q022",
+     "pdf_page": 13,
+     "printed_page": 2,
+     "y": 364.103188,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s3-q022-key",
+     "pdf_page": 78,
+     "printed_page": 67,
+     "y": 329.303193,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T22:48:07+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T22:48:07+05:30",
+   "text_as_printed": "How do historians construct history? (D)",
+   "answer": {
+    "kind": "text",
+    "value": "The historians follow the various methods to construct the History\nHistorians use various sources to understand historical processes.\nThey collect and study records.\nThe findings are analyzed.\nAn objective history close to the truth is constructed based on analysis.\nHistorians undertake research with extensive training."
+   },
+   "answer_as_printed": "The historians follow the various methods to construct the History\nHistorians use various sources to understand historical processes.\nThey collect and study records.\nThe findings are analyzed.\nAn objective history close to the truth is constructed based on analysis.\nHistorians undertake research with extensive training.",
+   "solution_steps": [
+    "The historians follow the various methods to construct the History",
+    "Historians use various sources to understand historical processes.",
+    "They collect and study records.",
+    "The findings are analyzed.",
+    "An objective history close to the truth is constructed based on analysis.",
+    "Historians undertake research with extensive training."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T22:48:07+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "a6d94bed39045ab918dff615b53b7e4992d12e7e100184e34e9a333eef076570"
+  },
+  {
+   "id": "soc-8-01-s4-q023",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Explains the importance and necessity of sources in the construction of history scientifically"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Explain how literary sources contributes in construction of Indian history.",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s4-q023",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s4-q023",
+     "pdf_page": 13,
+     "printed_page": 2,
+     "y": 399.743203,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-01-s4-q023-key",
+     "pdf_page": 78,
+     "printed_page": 67,
+     "y": 468.503197,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-07T22:48:07+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-07T22:48:07+05:30",
+   "text_as_printed": "Explain how literary sources contributes in construction of Indian history. (A)",
+   "answer": {
+    "kind": "text",
+    "value": "Literary Sources:\nWritten literature is classified into indigenous and foreign literature.\nIt reflects the history of the respective period.\nIt assists historians in analyzing historical information.\nIndigenous literature includes works like Kautilya's Arthashastra, Hala's Gathasaptashati, Banabhatta's Harsha Charita, Pampa's Vikramarjuna Vijaya, Buddhist Tripitakas, and Shrivijaya's Kavirajamarga.\nForeign literature, such as Megasthenes' Indica and Hiuen Tsang's Si-Yu-Ki, provides substantial information.\nWorks like Ptolemy's Geography, Ceylon's Dipavamsa and Mahavamsa shows the light on dynasties, kings, their achievements and the socio-political conditions and wars of the time."
+   },
+   "answer_as_printed": "Literary Sources:\nWritten literature is classified into indigenous and foreign literature.\nIt reflects the history of the respective period.\nIt assists historians in analyzing historical information.\nIndigenous literature includes works like Kautilya's Arthashastra, Hala's Gathasaptashati, Banabhatta's Harsha Charita, Pampa's Vikramarjuna Vijaya, Buddhist Tripitakas, and Shrivijaya's Kavirajamarga.\nForeign literature, such as Megasthenes' Indica and Hiuen Tsang's Si-Yu-Ki, provides substantial information.\nWorks like Ptolemy's Geography, Ceylon's Dipavamsa and Mahavamsa shows the light on dynasties, kings, their achievements and the socio-political conditions and wars of the time.",
+   "solution_steps": [
+    "Written literature is classified into indigenous and foreign literature.",
+    "It reflects the history of the respective period.",
+    "It assists historians in analyzing historical information.",
+    "Indigenous literature includes works like Kautilya's Arthashastra, Hala's Gathasaptashati, Banabhatta's Harsha Charita, Pampa's Vikramarjuna Vijaya, Buddhist Tripitakas, and Shrivijaya's Kavirajamarga.",
+    "Foreign literature, such as Megasthenes' Indica and Hiuen Tsang's Si-Yu-Ki, provides substantial information.",
+    "Works like Ptolemy's Geography, Ceylon's Dipavamsa and Mahavamsa shows the light on dynasties, kings, their achievements and the socio-political conditions and wars of the time."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-07T22:48:07+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "787929bd2babe3302ef388cb1f0b14a30212eec22b8cb8a2c9a7cf6f2ad40ff9"
+  }
+ ],
+ "pending_summary": {}
+}
