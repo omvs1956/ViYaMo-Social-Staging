@@ -1,0 +1,2954 @@
+{
+ "contract_version": "1.7",
+ "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
+ "procedure_file": "extraction_procedure_social_addendum_v1.3_social science Classes 6-10 on top of procedure v2.md",
+ "machine_name": "soc-8-11_questions",
+ "version": 1,
+ "changelog": "v1 extraction — batch-01 — class-8-social",
+ "amendments_applied": [],
+ "unit_state": "EXTRACTED",
+ "review_ready": false,
+ "count_gate": {
+  "reference": 34,
+  "reference_source": "audited",
+  "extracted": 34,
+  "paired": 34,
+  "flagged": 3,
+  "gaps": [],
+  "duplicated_numbers": [],
+  "quota_table": "difficulty_only",
+  "second_method": {
+   "method": "printed difficulty distribution table",
+   "extracted": 34,
+   "agrees": true
+  },
+  "pass": true,
+  "note": "printed difficulty table 24/8/2=34 AGREES with per-question tags 24/8/2 (total 34). tags win (v2 §6). q33 is a category-instruction map (answer_diagram, §6.2/6.3; Kannada labels, English answer_map_label, reviewer). flagged = q5/q11 (benign mcq key-text) + q33 (answer_diagram); all carry structural marks flag (§4.5)."
+ },
+ "extraction": {
+  "source_file": "8thSS-EM-LBARevised_1787048180.pdf",
+  "source_ref_prefix": "8thSS-EM-LBARevised_1787048180.pdf",
+  "pdf_pages": [
+   32,
+   33,
+   34,
+   97,
+   98,
+   99
+  ],
+  "printed_page_offset": -11,
+  "method_notes": [
+   "Offset -11 (pdf 32 = folio 21; pdf 97 = folio 86). Q: q1-6 pdf32, q7-26 pdf33, q27-34 pdf34. A: keys 1-25 pdf97, 26-31 pdf98, 32-34 pdf99. q33 is a MAP (appended by add_maps_11; crop-first commit already pushed).",
+   "Sections: I MCQ q1-11; II one word/sentence q12-22 (vsa); III two/three q23-26 (sa); IV five/six q27-30 (la); V six/eight q31-34 (la). Second LO (LO 2 map-skills) tags q33 only. DIFFICULTY tags E24/A8/D2 = printed table 24/8/2 (AGREES; counted WITH q33(E) after add_maps).",
+   "MCQ benign flags: q5 '0-degree longitude'/'0° longitude'; q11 'One day has to be lost'/'One day is lost'. q1-4,6-10 clean.",
+   "VSA q12-22 answer.value = sentence, no steps (3d). q19 key cleaned from OCR garble '820.30iEast' -> '82°30' East longitude' (degree/minute restored). REVIEW: q12 question asks 'how many times LARGER is Earth's diameter than the Sun' but the Earth is smaller; printed key says 'Earth's diameter is 107 times smaller than the Sun' (kept verbatim) -> printed-question/key mismatch, reviewer.",
+   "SA/LA SUB (heading non-step) single-paragraph: q24,q25,q26,q28,q29 = 1 step each. q30 SUB 7 bullets (lat labels, degree notation restored). q31 SUB 5, q32 SUB 5. BUL: q23 1, q27 1 (7 continents on one line). q34 TABLE (Latitudes|Longitudes) one step per printed row incl header -> 5 steps (§13.3), ' | ' cells.",
+   "MARKS none printed -> all null/unassigned + structural flag (§4.5)."
+  ],
+  "notation_summary": {
+   "render_tokens": 0,
+   "latex_tokens": 0,
+   "damage_flags": []
+  },
+  "excluded_objects": [],
+  "inline_excluded_count": 0,
+  "figure_references": []
+ },
+ "stimuli": [],
+ "questions": [
+  {
+   "id": "soc-8-11-s1-q001",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 10,
+     "text_as_printed": "Describes the shape, size, and features of the Earth, analyzes how the Earth is supportive to life forms, and suggests measures for environmental protection"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The position of Earth in terms of size in Solar System is",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s1-q001",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s1-q001",
+     "pdf_page": 32,
+     "printed_page": 21,
+     "y": 419.18319,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s1-q001-key",
+     "pdf_page": 97,
+     "printed_page": 86,
+     "y": 103.103188,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T00:48:58+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T00:48:58+05:30",
+   "text_as_printed": "The position of Earth in terms of size in Solar System is (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Largest planet"
+    },
+    {
+     "id": "B",
+     "text": "Fifth largest planet"
+    },
+    {
+     "id": "C",
+     "text": "Fourth largest planet"
+    },
+    {
+     "id": "D",
+     "text": "Sixth largest planet"
+    }
+   ],
+   "answer_as_printed": "B) Fifth largest planet",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T00:48:58+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "57c1de5ce69cd0b6fe8513f0d7c9f93911cbd54fb0bbd6fa92be4022b87a655a"
+  },
+  {
+   "id": "soc-8-11-s1-q002",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 10,
+     "text_as_printed": "Describes the shape, size, and features of the Earth, analyzes how the Earth is supportive to life forms, and suggests measures for environmental protection"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The largest ocean is",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s1-q002",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s1-q002",
+     "pdf_page": 32,
+     "printed_page": 21,
+     "y": 200.903184,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s1-q002-key",
+     "pdf_page": 97,
+     "printed_page": 86,
+     "y": 120.503197,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T00:48:58+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T00:48:58+05:30",
+   "text_as_printed": "The largest ocean is (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Pacific Ocean"
+    },
+    {
+     "id": "B",
+     "text": "Atlantic Ocean"
+    },
+    {
+     "id": "C",
+     "text": "Indian Ocean"
+    },
+    {
+     "id": "D",
+     "text": "Arctic Ocean"
+    }
+   ],
+   "answer_as_printed": "A) Pacific Ocean",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T00:48:58+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "a7aef39c6cccb0d5de2ecb98a8b94b29cb7eb9e98182c97a137f4ee4216e90c6"
+  },
+  {
+   "id": "soc-8-11-s1-q003",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 10,
+     "text_as_printed": "Describes the shape, size, and features of the Earth, analyzes how the Earth is supportive to life forms, and suggests measures for environmental protection"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The percentage of water in the Southern Hemisphere is",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s1-q003",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s1-q003",
+     "pdf_page": 32,
+     "printed_page": 21,
+     "y": 506.18319,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s1-q003-key",
+     "pdf_page": 97,
+     "printed_page": 86,
+     "y": 137.783193,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T00:48:58+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T00:48:58+05:30",
+   "text_as_printed": "The percentage of water in the Southern Hemisphere is (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "81%"
+    },
+    {
+     "id": "B",
+     "text": "19%"
+    },
+    {
+     "id": "C",
+     "text": "50%"
+    },
+    {
+     "id": "D",
+     "text": "71%"
+    }
+   ],
+   "answer_as_printed": "A) 81%",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T00:48:58+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "3b1dad4cf9f827786ee1217c43c34f26a8bbd800ccd01e8ee4c3ce0b87f7e177"
+  },
+  {
+   "id": "soc-8-11-s1-q004",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 10,
+     "text_as_printed": "Describes the shape, size, and features of the Earth, analyzes how the Earth is supportive to life forms, and suggests measures for environmental protection"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The distance between one latitude to another on the surface of Earth is",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s1-q004",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s1-q004",
+     "pdf_page": 32,
+     "printed_page": 21,
+     "y": 540.983208,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s1-q004-key",
+     "pdf_page": 97,
+     "printed_page": 86,
+     "y": 155.18319,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T00:48:58+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T00:48:58+05:30",
+   "text_as_printed": "The distance between one latitude to another on the surface of Earth is (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "111 km"
+    },
+    {
+     "id": "B",
+     "text": "110.4 km"
+    },
+    {
+     "id": "C",
+     "text": "100 km"
+    },
+    {
+     "id": "D",
+     "text": "112 km"
+    }
+   ],
+   "answer_as_printed": "B) 110.4 km",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T00:48:58+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "925cec50b260fd95e4128958ca892fc9c937acea8112bd29bb72c8a1099614f9"
+  },
+  {
+   "id": "soc-8-11-s1-q005",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 10,
+     "text_as_printed": "Describes the shape, size, and features of the Earth, analyzes how the Earth is supportive to life forms, and suggests measures for environmental protection"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The prime meridian passes through Greenwich is",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s1-q005",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s1-q005",
+     "pdf_page": 32,
+     "printed_page": 21,
+     "y": 575.783181,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s1-q005-key",
+     "pdf_page": 97,
+     "printed_page": 86,
+     "y": 172.70319,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T00:48:58+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T00:48:58+05:30",
+   "text_as_printed": "The prime meridian passes through Greenwich is (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "0° longitude"
+    },
+    {
+     "id": "B",
+     "text": "180° longitude"
+    },
+    {
+     "id": "C",
+     "text": "110° longitude"
+    },
+    {
+     "id": "D",
+     "text": "820 longitude"
+    }
+   ],
+   "answer_as_printed": "A) 0-degree longitude",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T00:48:58+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text differs from option by a printed typo",
+     "why_not_corrected": "letter A kept (addendum §4.1); key text '0-degree longitude' vs option A '0° longitude' differ by a source typo; spelling needs subject knowledge (v2 §1)",
+     "suggested": "A (letter kept)"
+    }
+   ],
+   "content_hash": "d9f73e16366b036327505a12cb3cd46b463dafd491c5e2a78ab79f34227bd2f9"
+  },
+  {
+   "id": "soc-8-11-s1-q006",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 10,
+     "text_as_printed": "Describes the shape, size, and features of the Earth, analyzes how the Earth is supportive to life forms, and suggests measures for environmental protection"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The time difference between the Indian Standard time and Greenwich Meridian Time is",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s1-q006",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s1-q006",
+     "pdf_page": 32,
+     "printed_page": 21,
+     "y": 627.983208,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s1-q006-key",
+     "pdf_page": 97,
+     "printed_page": 86,
+     "y": 190.103188,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T00:48:58+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T00:48:58+05:30",
+   "text_as_printed": "The time difference between the Indian Standard time and Greenwich Meridian Time is (A)",
+   "options": [
+    {
+     "id": "A",
+     "text": "5 hours"
+    },
+    {
+     "id": "B",
+     "text": "6 hours"
+    },
+    {
+     "id": "C",
+     "text": "5 hours 30 minutes"
+    },
+    {
+     "id": "D",
+     "text": "6 hours 30 minutes"
+    }
+   ],
+   "answer_as_printed": "C) 5 hours 30 minutes",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T00:48:58+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "393d7d98f948e5cf46ff79a3d47b987063c090e6237ee60ef7e0a4298b2cf4dc"
+  },
+  {
+   "id": "soc-8-11-s1-q007",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 10,
+     "text_as_printed": "Describes the shape, size, and features of the Earth, analyzes how the Earth is supportive to life forms, and suggests measures for environmental protection"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The total geographical area of the Earth is",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s1-q007",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s1-q007",
+     "pdf_page": 33,
+     "printed_page": 22,
+     "y": 68.18319,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s1-q007-key",
+     "pdf_page": 97,
+     "printed_page": 86,
+     "y": 207.383195,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T00:48:58+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T00:48:58+05:30",
+   "text_as_printed": "The total geographical area of the Earth is (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "310 million sq. km"
+    },
+    {
+     "id": "B",
+     "text": "149 million sq. km"
+    },
+    {
+     "id": "C",
+     "text": "410 million sq. km"
+    },
+    {
+     "id": "D",
+     "text": "510 million sq. km"
+    }
+   ],
+   "answer_as_printed": "D) 510 million sq. km",
+   "answer": {
+    "kind": "option",
+    "option_id": "D"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T00:48:58+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "5a56f3de76e69963bd79f20587e9de7226bca53845215075e21096aec91a9f36"
+  },
+  {
+   "id": "soc-8-11-s1-q008",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 10,
+     "text_as_printed": "Describes the shape, size, and features of the Earth, analyzes how the Earth is supportive to life forms, and suggests measures for environmental protection"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The latitude that divides the Earth into Northern and Southern Hemispheres is",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s1-q008",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s1-q008",
+     "pdf_page": 33,
+     "printed_page": 22,
+     "y": 120.503197,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s1-q008-key",
+     "pdf_page": 97,
+     "printed_page": 86,
+     "y": 224.903184,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T00:48:58+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T00:48:58+05:30",
+   "text_as_printed": "The latitude that divides the Earth into Northern and Southern Hemispheres is (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Tropic of Cancer"
+    },
+    {
+     "id": "B",
+     "text": "Equator"
+    },
+    {
+     "id": "C",
+     "text": "Tropic of Capricorn"
+    },
+    {
+     "id": "D",
+     "text": "Arctic Circle"
+    }
+   ],
+   "answer_as_printed": "B) Equator",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T00:48:58+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "59989112ee2abe66d4bbc204def85b6426fd242814b36e070d9cd3c39431f3a0"
+  },
+  {
+   "id": "soc-8-11-s1-q009",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 10,
+     "text_as_printed": "Describes the shape, size, and features of the Earth, analyzes how the Earth is supportive to life forms, and suggests measures for environmental protection"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The ratio of the area of land and water on Earth is",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s1-q009",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s1-q009",
+     "pdf_page": 33,
+     "printed_page": 22,
+     "y": 190.103188,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s1-q009-key",
+     "pdf_page": 97,
+     "printed_page": 86,
+     "y": 242.303193,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T00:48:58+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T00:48:58+05:30",
+   "text_as_printed": "The ratio of the area of land and water on Earth is (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "1:2"
+    },
+    {
+     "id": "B",
+     "text": "1:2.43"
+    },
+    {
+     "id": "C",
+     "text": "1:46"
+    },
+    {
+     "id": "D",
+     "text": "1:56"
+    }
+   ],
+   "answer_as_printed": "B) 1:2.43",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T00:48:58+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "ada52d4211542e047a0023ae3631445b2d74e408d639c1b49bd22f0786f0fba4"
+  },
+  {
+   "id": "soc-8-11-s1-q010",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 10,
+     "text_as_printed": "Describes the shape, size, and features of the Earth, analyzes how the Earth is supportive to life forms, and suggests measures for environmental protection"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Which statement is correct regarding the world time zones?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s1-q010",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s1-q010",
+     "pdf_page": 33,
+     "printed_page": 22,
+     "y": 224.903184,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s1-q010-key",
+     "pdf_page": 97,
+     "printed_page": 86,
+     "y": 259.703202,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T00:48:58+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T00:48:58+05:30",
+   "text_as_printed": "Which statement is correct regarding the world time zones? (A)",
+   "options": [
+    {
+     "id": "A",
+     "text": "There are 24 time zones in the whole world"
+    },
+    {
+     "id": "B",
+     "text": "Russia has 12 time zones"
+    },
+    {
+     "id": "C",
+     "text": "USA has 3 time zones"
+    },
+    {
+     "id": "D",
+     "text": "Australia has 5 time zones"
+    }
+   ],
+   "answer_as_printed": "A) There are 24 time zones in the whole world",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T00:48:58+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "13e40f7c8e38be3f307ac172230dc0839bea7e95b059231fe29946e9d0db86b7"
+  },
+  {
+   "id": "soc-8-11-s1-q011",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 10,
+     "text_as_printed": "Describes the shape, size, and features of the Earth, analyzes how the Earth is supportive to life forms, and suggests measures for environmental protection"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "When a ship/aircraft crosses 180° longitude from east to west then",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s1-q011",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s1-q011",
+     "pdf_page": 33,
+     "printed_page": 22,
+     "y": 311.903184,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s1-q011-key",
+     "pdf_page": 97,
+     "printed_page": 86,
+     "y": 276.983185,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T00:48:58+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T00:48:58+05:30",
+   "text_as_printed": "When a ship/aircraft crosses 180° longitude from east to west then (A)",
+   "options": [
+    {
+     "id": "A",
+     "text": "One day is lost"
+    },
+    {
+     "id": "B",
+     "text": "One day is gained"
+    },
+    {
+     "id": "C",
+     "text": "Two days are lost"
+    },
+    {
+     "id": "D",
+     "text": "Two days are gained"
+    }
+   ],
+   "answer_as_printed": "A) One day has to be lost",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T00:48:58+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text differs from option by a printed typo",
+     "why_not_corrected": "letter A kept (addendum §4.1); key text 'One day has to be lost' vs option A 'One day is lost' differ by a source typo; spelling needs subject knowledge (v2 §1)",
+     "suggested": "A (letter kept)"
+    }
+   ],
+   "content_hash": "ac7501595a42140f968d0facc1c8db90486455d981d73d9c67541a93ea785f06"
+  },
+  {
+   "id": "soc-8-11-s2-q012",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 10,
+     "text_as_printed": "Describes the shape, size, and features of the Earth, analyzes how the Earth is supportive to life forms, and suggests measures for environmental protection"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "How many times larger is Earth's diameter compared to the Sun?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s2-q012",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s2-q012",
+     "pdf_page": 33,
+     "printed_page": 22,
+     "y": 398.903207,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s2-q012-key",
+     "pdf_page": 97,
+     "printed_page": 86,
+     "y": 311.903184,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T00:48:58+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T00:48:58+05:30",
+   "text_as_printed": "How many times larger is Earth's diameter compared to the Sun? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "The Earth's diameter is 107 times smaller than that of the Sun"
+   },
+   "answer_as_printed": "The Earth's diameter is 107 times smaller than that of the Sun",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T00:48:58+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "a7a880217dc265b08e7eff4ebef3afd41209c5145765819ead84cd475ffa8243"
+  },
+  {
+   "id": "soc-8-11-s2-q013",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 10,
+     "text_as_printed": "Describes the shape, size, and features of the Earth, analyzes how the Earth is supportive to life forms, and suggests measures for environmental protection"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What percentage of Earth's surface is covered by water?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s2-q013",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s2-q013",
+     "pdf_page": 33,
+     "printed_page": 22,
+     "y": 416.30317,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s2-q013-key",
+     "pdf_page": 97,
+     "printed_page": 86,
+     "y": 329.303193,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T00:48:58+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T00:48:58+05:30",
+   "text_as_printed": "What percentage of Earth's surface is covered by water? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "Water covers 70.78% of the Earth's surface."
+   },
+   "answer_as_printed": "Water covers 70.78% of the Earth's surface.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T00:48:58+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "483ff7af3fa0a7a0a90e28c72f321346c75fca2951beacc4a7ba335a0d263c93"
+  },
+  {
+   "id": "soc-8-11-s2-q014",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 10,
+     "text_as_printed": "Describes the shape, size, and features of the Earth, analyzes how the Earth is supportive to life forms, and suggests measures for environmental protection"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "How many continents are there on the earth?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s2-q014",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s2-q014",
+     "pdf_page": 33,
+     "printed_page": 22,
+     "y": 433.703179,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s2-q014-key",
+     "pdf_page": 97,
+     "printed_page": 86,
+     "y": 346.583199,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T00:48:58+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T00:48:58+05:30",
+   "text_as_printed": "How many continents are there on the earth? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "The Earth's landmass is divided into seven continents."
+   },
+   "answer_as_printed": "The Earth's landmass is divided into seven continents.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T00:48:58+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "5c2acce7333e217c0cbdaaf7eb8630415e06c7cda5fd0ebca687e3c700d3ab4b"
+  },
+  {
+   "id": "soc-8-11-s2-q015",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 10,
+     "text_as_printed": "Describes the shape, size, and features of the Earth, analyzes how the Earth is supportive to life forms, and suggests measures for environmental protection"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Which is the smallest ocean on the earth?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s2-q015",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s2-q015",
+     "pdf_page": 33,
+     "printed_page": 22,
+     "y": 451.103188,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s2-q015-key",
+     "pdf_page": 97,
+     "printed_page": 86,
+     "y": 364.103188,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T00:48:58+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T00:48:58+05:30",
+   "text_as_printed": "Which is the smallest ocean on the earth? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "The Arctic Ocean is the smallest ocean on Earth."
+   },
+   "answer_as_printed": "The Arctic Ocean is the smallest ocean on Earth.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T00:48:58+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "598353515a2312f3c2a49326cce4d8f9f7630309a21cad2eb81ce74bcee25f1e"
+  },
+  {
+   "id": "soc-8-11-s2-q016",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 10,
+     "text_as_printed": "Describes the shape, size, and features of the Earth, analyzes how the Earth is supportive to life forms, and suggests measures for environmental protection"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Why the Southern Hemisphere is called the water-dominated hemisphere?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s2-q016",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s2-q016",
+     "pdf_page": 33,
+     "printed_page": 22,
+     "y": 468.503197,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s2-q016-key",
+     "pdf_page": 97,
+     "printed_page": 86,
+     "y": 381.503197,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T00:48:58+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T00:48:58+05:30",
+   "text_as_printed": "Why the Southern Hemisphere is called the water-dominated hemisphere? (A)",
+   "answer": {
+    "kind": "text",
+    "value": "The Southern Hemisphere is called the water-dominated hemisphere because 81% of it is covered by water."
+   },
+   "answer_as_printed": "The Southern Hemisphere is called the water-dominated hemisphere because 81% of it is covered by water.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T00:48:58+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "d223a4fff10394f3a82ace3520524ee18538c263493cac9d26638f02c73dc8c5"
+  },
+  {
+   "id": "soc-8-11-s2-q017",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 10,
+     "text_as_printed": "Describes the shape, size, and features of the Earth, analyzes how the Earth is supportive to life forms, and suggests measures for environmental protection"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "How long time does Earth take to complete one rotation on its axis?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s2-q017",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s2-q017",
+     "pdf_page": 33,
+     "printed_page": 22,
+     "y": 503.30317,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s2-q017-key",
+     "pdf_page": 97,
+     "printed_page": 86,
+     "y": 416.30317,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T00:48:58+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T00:48:58+05:30",
+   "text_as_printed": "How long time does Earth take to complete one rotation on its axis? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "The Earth takes 24 hours to complete one rotation on its axis."
+   },
+   "answer_as_printed": "The Earth takes 24 hours to complete one rotation on its axis.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T00:48:58+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "02069d77965a337f814d8984e65ac14d3be48c7e2725b98b5bd22edf03a23140"
+  },
+  {
+   "id": "soc-8-11-s2-q018",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 10,
+     "text_as_printed": "Describes the shape, size, and features of the Earth, analyzes how the Earth is supportive to life forms, and suggests measures for environmental protection"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "How many time zones does Russia have?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s2-q018",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s2-q018",
+     "pdf_page": 33,
+     "printed_page": 22,
+     "y": 520.703179,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s2-q018-key",
+     "pdf_page": 97,
+     "printed_page": 86,
+     "y": 433.703179,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T00:48:58+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T00:48:58+05:30",
+   "text_as_printed": "How many time zones does Russia have? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "Russia has 11 time zones."
+   },
+   "answer_as_printed": "Russia has 11 time zones.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T00:48:58+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "d00f4ac58bb1b655561f10c823ce2ff03a04e056e25f643a9dc00963222e39f9"
+  },
+  {
+   "id": "soc-8-11-s2-q019",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 10,
+     "text_as_printed": "Describes the shape, size, and features of the Earth, analyzes how the Earth is supportive to life forms, and suggests measures for environmental protection"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Which longitude is the basis for Indian Standard Time?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s2-q019",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s2-q019",
+     "pdf_page": 33,
+     "printed_page": 22,
+     "y": 538.223214,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s2-q019-key",
+     "pdf_page": 97,
+     "printed_page": 86,
+     "y": 451.103188,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T00:48:58+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T00:48:58+05:30",
+   "text_as_printed": "Which longitude is the basis for Indian Standard Time? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "India's standard time is based on 82°30' East longitude."
+   },
+   "answer_as_printed": "India's standard time is based on 82°30' East longitude.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T00:48:58+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "3048fad81c7ca7e9f98076f200afa75d7320669b66ece871d91fd0ed6f73ada6"
+  },
+  {
+   "id": "soc-8-11-s2-q020",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 10,
+     "text_as_printed": "Describes the shape, size, and features of the Earth, analyzes how the Earth is supportive to life forms, and suggests measures for environmental protection"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is the shape of the Earth?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s2-q020",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s2-q020",
+     "pdf_page": 33,
+     "printed_page": 22,
+     "y": 555.503197,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s2-q020-key",
+     "pdf_page": 97,
+     "printed_page": 86,
+     "y": 468.503197,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T00:48:58+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T00:48:58+05:30",
+   "text_as_printed": "What is the shape of the Earth? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "Shape of the Earth (Geoid)"
+   },
+   "answer_as_printed": "Shape of the Earth (Geoid)",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T00:48:58+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "bb272648cf4ece3d00e623248f449970d7238fa1798b33c60e4f01a31b0fbbac"
+  },
+  {
+   "id": "soc-8-11-s2-q021",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 10,
+     "text_as_printed": "Describes the shape, size, and features of the Earth, analyzes how the Earth is supportive to life forms, and suggests measures for environmental protection"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is 23° 30' North latitude called?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s2-q021",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s2-q021",
+     "pdf_page": 33,
+     "printed_page": 22,
+     "y": 572.903207,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s2-q021-key",
+     "pdf_page": 97,
+     "printed_page": 86,
+     "y": 485.903207,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T00:48:58+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T00:48:58+05:30",
+   "text_as_printed": "What is 23° 30' North latitude called? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "Tropic of Cancer"
+   },
+   "answer_as_printed": "Tropic of Cancer",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T00:48:58+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "88b03589a9b80a9d53aeb5116b50dff6c537995cf3938bf0e230d33551f710c2"
+  },
+  {
+   "id": "soc-8-11-s2-q022",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 10,
+     "text_as_printed": "Describes the shape, size, and features of the Earth, analyzes how the Earth is supportive to life forms, and suggests measures for environmental protection"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "On which Indian City does the 82° ½ East longitude pass?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s2-q022",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s2-q022",
+     "pdf_page": 33,
+     "printed_page": 22,
+     "y": 590.30317,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s2-q022-key",
+     "pdf_page": 97,
+     "printed_page": 86,
+     "y": 503.30317,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T00:48:58+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T00:48:58+05:30",
+   "text_as_printed": "On which Indian City does the 82° ½ East longitude pass? (A)",
+   "answer": {
+    "kind": "text",
+    "value": "It passes through Prayagraj city in the state of Uttar Pradesh"
+   },
+   "answer_as_printed": "It passes through Prayagraj city in the state of Uttar Pradesh",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T00:48:58+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "4fa8dfa24f00ac53efad3faa99a63f45f453a1ee08d427f107157a14f6890f99"
+  },
+  {
+   "id": "soc-8-11-s3-q023",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 10,
+     "text_as_printed": "Describes the shape, size, and features of the Earth, analyzes how the Earth is supportive to life forms, and suggests measures for environmental protection"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What are the different names of the Earth?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s3-q023",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s3-q023",
+     "pdf_page": 33,
+     "printed_page": 22,
+     "y": 633.863183,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s3-q023-key",
+     "pdf_page": 97,
+     "printed_page": 86,
+     "y": 538.223214,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T00:48:58+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T00:48:58+05:30",
+   "text_as_printed": "What are the different names of the Earth? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "Names for Earth are the living planet, water-covered planet, unique planet, and blue planet."
+   },
+   "answer_as_printed": "Names for Earth are the living planet, water-covered planet, unique planet, and blue planet.",
+   "solution_steps": [
+    "Names for Earth are the living planet, water-covered planet, unique planet, and blue planet."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T00:48:58+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "8c1dcdce85457c026c2d67572ed4b8205cf238a21455a19306eddb9e81769158"
+  },
+  {
+   "id": "soc-8-11-s3-q024",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 10,
+     "text_as_printed": "Describes the shape, size, and features of the Earth, analyzes how the Earth is supportive to life forms, and suggests measures for environmental protection"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What are latitudes and longitudes?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s3-q024",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s3-q024",
+     "pdf_page": 33,
+     "printed_page": 22,
+     "y": 651.143212,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s3-q024-key",
+     "pdf_page": 97,
+     "printed_page": 86,
+     "y": 572.903207,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T00:48:58+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T00:48:58+05:30",
+   "text_as_printed": "What are latitudes and longitudes? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "Latitudes and Longitudes:\nLatitudes are imaginary lines drawn east-west on the globe. Longitudes are imaginary lines that intersect the equator and connect the North and South Poles."
+   },
+   "answer_as_printed": "Latitudes and Longitudes:\nLatitudes are imaginary lines drawn east-west on the globe. Longitudes are imaginary lines that intersect the equator and connect the North and South Poles.",
+   "solution_steps": [
+    "Latitudes are imaginary lines drawn east-west on the globe. Longitudes are imaginary lines that intersect the equator and connect the North and South Poles."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T00:48:58+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "17d1feeecab74a93ea24fd7fe61e380e73951cf672f5d6073ff263220dcea753"
+  },
+  {
+   "id": "soc-8-11-s3-q025",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 10,
+     "text_as_printed": "Describes the shape, size, and features of the Earth, analyzes how the Earth is supportive to life forms, and suggests measures for environmental protection"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is meant by standard time?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s3-q025",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s3-q025",
+     "pdf_page": 33,
+     "printed_page": 22,
+     "y": 668.663201,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s3-q025-key",
+     "pdf_page": 97,
+     "printed_page": 86,
+     "y": 642.503197,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T00:48:58+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T00:48:58+05:30",
+   "text_as_printed": "What is meant by standard time? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "Standard Time:\nA country's standard time is based on the longitude passing through its center or a major city. This time is followed across the country and is called standard time."
+   },
+   "answer_as_printed": "Standard Time:\nA country's standard time is based on the longitude passing through its center or a major city. This time is followed across the country and is called standard time.",
+   "solution_steps": [
+    "A country's standard time is based on the longitude passing through its center or a major city. This time is followed across the country and is called standard time."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T00:48:58+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "27449715371871aa7342d177a78090e988aaac6edc0683522b88911c49f900be"
+  },
+  {
+   "id": "soc-8-11-s3-q026",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 10,
+     "text_as_printed": "Describes the shape, size, and features of the Earth, analyzes how the Earth is supportive to life forms, and suggests measures for environmental protection"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Why Earth is called as unique planet?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s3-q026",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s3-q026",
+     "pdf_page": 33,
+     "printed_page": 22,
+     "y": 686.06321,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s3-q026-key",
+     "pdf_page": 98,
+     "printed_page": 87,
+     "y": 68.18319,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T00:48:58+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T00:48:58+05:30",
+   "text_as_printed": "Why Earth is called as unique planet? (A)",
+   "answer": {
+    "kind": "text",
+    "value": "Earth is a Unique Planet:\nThe Earth is the only planet in the solar system with life, providing a habitat for plants, animals, and humans. Its favorable distance from the Sun supports life, making it a unique planet."
+   },
+   "answer_as_printed": "Earth is a Unique Planet:\nThe Earth is the only planet in the solar system with life, providing a habitat for plants, animals, and humans. Its favorable distance from the Sun supports life, making it a unique planet.",
+   "solution_steps": [
+    "The Earth is the only planet in the solar system with life, providing a habitat for plants, animals, and humans. Its favorable distance from the Sun supports life, making it a unique planet."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T00:48:58+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "5465cf49818415600a18160df1bf9b0be213062ee7c1f10cfb44ed8e15bd2b2e"
+  },
+  {
+   "id": "soc-8-11-s4-q027",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 10,
+     "text_as_printed": "Describes the shape, size, and features of the Earth, analyzes how the Earth is supportive to life forms, and suggests measures for environmental protection"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Name the seven continents of Earth.",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s4-q027",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s4-q027",
+     "pdf_page": 34,
+     "printed_page": 23,
+     "y": 85.583188,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s4-q027-key",
+     "pdf_page": 98,
+     "printed_page": 87,
+     "y": 155.18319,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T00:48:58+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T00:48:58+05:30",
+   "text_as_printed": "Name the seven continents of Earth. (E)",
+   "answer": {
+    "kind": "text",
+    "value": "Asia, Africa, North America, South America, Antarctica, Europe, and Australia"
+   },
+   "answer_as_printed": "Asia, Africa, North America, South America, Antarctica, Europe, and Australia",
+   "solution_steps": [
+    "Asia, Africa, North America, South America, Antarctica, Europe, and Australia"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T00:48:58+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "c859c5c86bc13c22a54a8af4f5a34e428b0ff0c58a148736fbe4192072825519"
+  },
+  {
+   "id": "soc-8-11-s4-q028",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "D",
+   "learning_outcomes": [
+    {
+     "number": 10,
+     "text_as_printed": "Describes the shape, size, and features of the Earth, analyzes how the Earth is supportive to life forms, and suggests measures for environmental protection"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "How are the location, direction, and distance of a place determined?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s4-q028",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s4-q028",
+     "pdf_page": 34,
+     "printed_page": 23,
+     "y": 103.103188,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s4-q028-key",
+     "pdf_page": 98,
+     "printed_page": 87,
+     "y": 190.103188,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T00:48:58+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T00:48:58+05:30",
+   "text_as_printed": "How are the location, direction, and distance of a place determined? (D)",
+   "answer": {
+    "kind": "text",
+    "value": "Role of Latitudes and Longitudes:\nThe Earth is spherical, making it difficult to measure location, direction, and distance. Imaginary lines—latitudes (east-west) and longitudes (north-south)—are drawn to measure specific locations, directions, and distances. These geographical coordinates help in precise identification of places."
+   },
+   "answer_as_printed": "Role of Latitudes and Longitudes:\nThe Earth is spherical, making it difficult to measure location, direction, and distance. Imaginary lines—latitudes (east-west) and longitudes (north-south)—are drawn to measure specific locations, directions, and distances. These geographical coordinates help in precise identification of places.",
+   "solution_steps": [
+    "The Earth is spherical, making it difficult to measure location, direction, and distance. Imaginary lines—latitudes (east-west) and longitudes (north-south)—are drawn to measure specific locations, directions, and distances. These geographical coordinates help in precise identification of places."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T00:48:58+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "3104a842bac7b5fc1044c476cfc186a693d3d49168ad629e7426a7ddcb0228bb"
+  },
+  {
+   "id": "soc-8-11-s4-q029",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 10,
+     "text_as_printed": "Describes the shape, size, and features of the Earth, analyzes how the Earth is supportive to life forms, and suggests measures for environmental protection"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What do you mean by International Date Line?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s4-q029",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s4-q029",
+     "pdf_page": 34,
+     "printed_page": 23,
+     "y": 120.503197,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s4-q029-key",
+     "pdf_page": 98,
+     "printed_page": 87,
+     "y": 276.983185,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T00:48:58+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T00:48:58+05:30",
+   "text_as_printed": "What do you mean by International Date Line? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "International Date Line:\nThe 180° longitude is known as the International Date Line, passing through the Pacific Ocean opposite the 0° longitude (Greenwich Meridian). It is drawn in a zigzag pattern to avoid landmasses. Travelers adjust their day and date for convenience when crossing this line."
+   },
+   "answer_as_printed": "International Date Line:\nThe 180° longitude is known as the International Date Line, passing through the Pacific Ocean opposite the 0° longitude (Greenwich Meridian). It is drawn in a zigzag pattern to avoid landmasses. Travelers adjust their day and date for convenience when crossing this line.",
+   "solution_steps": [
+    "The 180° longitude is known as the International Date Line, passing through the Pacific Ocean opposite the 0° longitude (Greenwich Meridian). It is drawn in a zigzag pattern to avoid landmasses. Travelers adjust their day and date for convenience when crossing this line."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T00:48:58+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "9128af661b3412c88d67a1869d6a2f235e3585dc1971079bbdbc8c6fdd5f566e"
+  },
+  {
+   "id": "soc-8-11-s4-q030",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 10,
+     "text_as_printed": "Describes the shape, size, and features of the Earth, analyzes how the Earth is supportive to life forms, and suggests measures for environmental protection"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Name the seven major latitudes.",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s4-q030",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s4-q030",
+     "pdf_page": 34,
+     "printed_page": 23,
+     "y": 137.783193,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s4-q030-key",
+     "pdf_page": 98,
+     "printed_page": 87,
+     "y": 364.103188,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T00:48:58+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T00:48:58+05:30",
+   "text_as_printed": "Name the seven major latitudes. (E)",
+   "answer": {
+    "kind": "text",
+    "value": "Important Latitudes are:\n0° latitude: Equator\n23°30' North latitude: Tropic of Cancer\n23°30' South latitude: Tropic of Capricorn\n66°30' North latitude: Arctic Circle\n66°30' South latitude: Antarctic Circle\n90° North latitude: North Pole\n90° South latitude: South Pole"
+   },
+   "answer_as_printed": "Important Latitudes are:\n0° latitude: Equator\n23°30' North latitude: Tropic of Cancer\n23°30' South latitude: Tropic of Capricorn\n66°30' North latitude: Arctic Circle\n66°30' South latitude: Antarctic Circle\n90° North latitude: North Pole\n90° South latitude: South Pole",
+   "solution_steps": [
+    "0° latitude: Equator",
+    "23°30' North latitude: Tropic of Cancer",
+    "23°30' South latitude: Tropic of Capricorn",
+    "66°30' North latitude: Arctic Circle",
+    "66°30' South latitude: Antarctic Circle",
+    "90° North latitude: North Pole",
+    "90° South latitude: South Pole"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T00:48:58+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "634122db7e4cc633a8fdb9b238d01952a16d77f7e2026390142ee7865a33f3ea"
+  },
+  {
+   "id": "soc-8-11-s5-q031",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "D",
+   "learning_outcomes": [
+    {
+     "number": 10,
+     "text_as_printed": "Describes the shape, size, and features of the Earth, analyzes how the Earth is supportive to life forms, and suggests measures for environmental protection"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Latitude and longitudes play a significant role in determining the climate of a region. Justify",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s5-q031",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s5-q031",
+     "pdf_page": 34,
+     "printed_page": 23,
+     "y": 190.103188,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s5-q031-key",
+     "pdf_page": 98,
+     "printed_page": 87,
+     "y": 520.703179,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T00:48:58+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T00:48:58+05:30",
+   "text_as_printed": "Latitude and longitudes play a significant role in determining the climate of a region. Justify (D)",
+   "answer": {
+    "kind": "text",
+    "value": "Climatic Zones and Latitudes:\nThe regions between 23°30' North and South latitudes receive maximum solar heat and are considered the Torrid Zone.\nThe climate in this zone is hot.\nAreas between 23°30' and 66°30' in both hemispheres receive moderate heat and are called the Temperate Zone.\nRegions from 66°30' to 90° North and South are considered the Frigid Zone due to low solar heat.\nLatitudes and longitudes help determine the climate of a region"
+   },
+   "answer_as_printed": "Climatic Zones and Latitudes:\nThe regions between 23°30' North and South latitudes receive maximum solar heat and are considered the Torrid Zone.\nThe climate in this zone is hot.\nAreas between 23°30' and 66°30' in both hemispheres receive moderate heat and are called the Temperate Zone.\nRegions from 66°30' to 90° North and South are considered the Frigid Zone due to low solar heat.\nLatitudes and longitudes help determine the climate of a region",
+   "solution_steps": [
+    "The regions between 23°30' North and South latitudes receive maximum solar heat and are considered the Torrid Zone.",
+    "The climate in this zone is hot.",
+    "Areas between 23°30' and 66°30' in both hemispheres receive moderate heat and are called the Temperate Zone.",
+    "Regions from 66°30' to 90° North and South are considered the Frigid Zone due to low solar heat.",
+    "Latitudes and longitudes help determine the climate of a region"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T00:48:58+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "34d12da7a15a9696f6fcdb0114ebbb42b3476403f232da3afbb9da32030d0121"
+  },
+  {
+   "id": "soc-8-11-s5-q032",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 10,
+     "text_as_printed": "Describes the shape, size, and features of the Earth, analyzes how the Earth is supportive to life forms, and suggests measures for environmental protection"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Write a note on the importance of the International Date Line.",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s5-q032",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s5-q032",
+     "pdf_page": 34,
+     "printed_page": 23,
+     "y": 224.903184,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s5-q032-key",
+     "pdf_page": 99,
+     "printed_page": 88,
+     "y": 68.18319,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T00:48:58+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T00:48:58+05:30",
+   "text_as_printed": "Write a note on the importance of the International Date Line. (A)",
+   "answer": {
+    "kind": "text",
+    "value": "International Date Line:\nThe 180° longitude is called the International Date Line, passing through the Pacific Ocean opposite the 0° longitude.\nIt is drawn in a zigzag pattern to avoid landmasses.\nTraveling from east to west across this line results in losing one day.\nTraveling from west to east results in gaining a day (experiencing the same day twice).\nThis line helps adjust time and date for travelers."
+   },
+   "answer_as_printed": "International Date Line:\nThe 180° longitude is called the International Date Line, passing through the Pacific Ocean opposite the 0° longitude.\nIt is drawn in a zigzag pattern to avoid landmasses.\nTraveling from east to west across this line results in losing one day.\nTraveling from west to east results in gaining a day (experiencing the same day twice).\nThis line helps adjust time and date for travelers.",
+   "solution_steps": [
+    "The 180° longitude is called the International Date Line, passing through the Pacific Ocean opposite the 0° longitude.",
+    "It is drawn in a zigzag pattern to avoid landmasses.",
+    "Traveling from east to west across this line results in losing one day.",
+    "Traveling from west to east results in gaining a day (experiencing the same day twice).",
+    "This line helps adjust time and date for travelers."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T00:48:58+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "17f492b4b65e13d36cd17896663e9a47fbd46cd39670ef281f4e4c7c6ac3d682"
+  },
+  {
+   "id": "soc-8-11-s5-q034",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 10,
+     "text_as_printed": "Describes the shape, size, and features of the Earth, analyzes how the Earth is supportive to life forms, and suggests measures for environmental protection"
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "How are latitudes different from longitudes?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s5-q034",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s5-q034",
+     "pdf_page": 34,
+     "printed_page": 23,
+     "y": 259.703202,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s5-q034-key",
+     "pdf_page": 99,
+     "printed_page": 88,
+     "y": 407.783181,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T00:48:58+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T00:48:58+05:30",
+   "text_as_printed": "How are latitudes different from longitudes? (A)",
+   "answer": {
+    "kind": "text",
+    "value": "Latitudes | Longitudes\nImaginary lines drawn east-west on the globe, parallel to the Equator. | Imaginary lines that intersect the Equator and join the North and South Poles.\nThe Equator is the 0° great circle, and the circles of latitude become smaller towards the north and south. | All longitudes are equal in length.\nIncluding the Equator, there are a total of 181 latitudes. | There are a total of 360 longitudes.\nThe distance between one latitude and the next on the Earth's surface is about 110.4 km. | The maximum distance between two longitudes is at the Equator, about 111 km."
+   },
+   "answer_as_printed": "Latitudes | Longitudes\nImaginary lines drawn east-west on the globe, parallel to the Equator. | Imaginary lines that intersect the Equator and join the North and South Poles.\nThe Equator is the 0° great circle, and the circles of latitude become smaller towards the north and south. | All longitudes are equal in length.\nIncluding the Equator, there are a total of 181 latitudes. | There are a total of 360 longitudes.\nThe distance between one latitude and the next on the Earth's surface is about 110.4 km. | The maximum distance between two longitudes is at the Equator, about 111 km.",
+   "solution_steps": [
+    "Latitudes | Longitudes",
+    "Imaginary lines drawn east-west on the globe, parallel to the Equator. | Imaginary lines that intersect the Equator and join the North and South Poles.",
+    "The Equator is the 0° great circle, and the circles of latitude become smaller towards the north and south. | All longitudes are equal in length.",
+    "Including the Equator, there are a total of 181 latitudes. | There are a total of 360 longitudes.",
+    "The distance between one latitude and the next on the Earth's surface is about 110.4 km. | The maximum distance between two longitudes is at the Equator, about 111 km."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T00:48:58+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "60f1d68612a63df9f087a68cc317f7c0cd5034f2c57469413c6397dd2c27d4b9"
+  },
+  {
+   "id": "soc-8-11-s5-q033",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-11",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 2,
+     "text_as_printed": "Social Science Skills: Map drawing, locating places on maps, and the skills of constructing, analyzing, explaining, and critically evaluating graphs are applicable to this lesson"
+    }
+   ],
+   "lo_source": "q33_row_LO2",
+   "out_of_syllabus": false,
+   "text": "Name the continents and oceans on the world map.",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s5-q033",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s5-q033",
+     "pdf_page": 34,
+     "printed_page": 23,
+     "y": 242.303193,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-11-s5-q033-key",
+     "pdf_page": 99,
+     "printed_page": 88,
+     "y": 240.0,
+     "derived_from": "render_measured"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T00:49:57+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T00:49:57+05:30",
+   "text_as_printed": "Name the continents and oceans on the world map. (E)",
+   "section_signal": "V",
+   "answer": {
+    "kind": "text",
+    "value": "[diagram answer — see page image]"
+   },
+   "assets": [
+    {
+     "id": "a33",
+     "type": "image",
+     "ref": "images/soc-8-11/p99-q33_answer-map.png",
+     "role": "answer_diagram",
+     "source_px": {
+      "w": 900,
+      "h": 444
+     },
+     "quality": "ok",
+     "caption": "World map (Western Hemisphere) showing continents and oceans, q33 answer, pdf 99",
+     "pdf_page": 99,
+     "crop_bbox": {
+      "pdf_page": 99,
+      "x0": 112.0,
+      "y0": 240.0,
+      "x1": 436.0,
+      "y1": 400.0
+     }
+    }
+   ],
+   "map": {
+    "subject": "continents and oceans",
+    "instruction": "Name the continents and oceans on the world map.",
+    "region": "World",
+    "features_source": "answer_map_render",
+    "features": [
+     {
+      "id": "north-pacific-ocean",
+      "name": "North Pacific Ocean",
+      "answer_map_label": "North Pacific Ocean",
+      "category": null,
+      "position": null,
+      "position_source": "unset"
+     },
+     {
+      "id": "north-america",
+      "name": "North America",
+      "answer_map_label": "North America",
+      "category": null,
+      "position": null,
+      "position_source": "unset"
+     },
+     {
+      "id": "north-atlantic-ocean",
+      "name": "North Atlantic Ocean",
+      "answer_map_label": "North Atlantic Ocean",
+      "category": null,
+      "position": null,
+      "position_source": "unset"
+     },
+     {
+      "id": "europe",
+      "name": "Europe",
+      "answer_map_label": "Europe",
+      "category": null,
+      "position": null,
+      "position_source": "unset"
+     },
+     {
+      "id": "africa",
+      "name": "Africa",
+      "answer_map_label": "Africa",
+      "category": null,
+      "position": null,
+      "position_source": "unset"
+     },
+     {
+      "id": "south-america",
+      "name": "South America",
+      "answer_map_label": "South America",
+      "category": null,
+      "position": null,
+      "position_source": "unset"
+     }
+    ],
+    "answer_map_asset_id": "a33"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T00:49:57+05:30",
+    "basis": "answer is the printed labelled world map on pdf 99; region render 200 dpi, viewed; labels Kannada, features by outline/position (addendum §6, coordinator rev-8 ruling)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "answer is a diagram — q33 asks to name the continents and oceans on the world map; the printed answer (pdf 99) is a labelled Western-Hemisphere world map (raster, cropped as answer_diagram a33). Printed labels are in KANNADA (not transcribed per rev-8 ruling); features identified by continent/ocean outline and position with standard English answer_map_label: North Pacific Ocean, North America, North Atlantic Ocean, Europe, Africa, South America. Low-resolution source (322x147); bottom/edge labels faint and additional labels may be present (a South-Atlantic/South ocean label appears at the bottom edge). features_source answer_map_render; categories + positions deferred to the MAP INDEX pass. REVIEWER verify the feature list and resolve faint labels.",
+     "why_not_corrected": "category-instruction map with Kannada labels; English labels assigned by outline per coordinator rev-8; no invention beyond legible/identifiable entities",
+     "suggested": "reviewer: confirm feature list vs the crop; add any missed labels"
+    }
+   ],
+   "content_hash": "399ef2ae5dc036ab928c47de0a4e7822385bd483c696fe1eca718e5604724677"
+  }
+ ],
+ "pending_summary": {}
+}
