@@ -1,0 +1,4340 @@
+{
+ "contract_version": "1.7",
+ "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
+ "procedure_file": "extraction_procedure_social_addendum_v1.3_social science Classes 6-10 on top of procedure v2.md",
+ "machine_name": "soc-8-13_questions",
+ "version": 1,
+ "changelog": "v1 extraction — batch-01 — class-8-social",
+ "amendments_applied": [],
+ "unit_state": "EXTRACTED",
+ "review_ready": false,
+ "count_gate": {
+  "reference": 50,
+  "reference_source": "audited",
+  "extracted": 50,
+  "paired": 50,
+  "flagged": 9,
+  "gaps": [],
+  "duplicated_numbers": [],
+  "quota_table": "difficulty_only",
+  "second_method": {
+   "method": "printed difficulty distribution table",
+   "extracted": 50,
+   "agrees": true
+  },
+  "pass": true,
+  "note": "printed difficulty table 31/17/2=50 AGREES with per-question tags; flagged counts answer-level flags; all carry the structural marks flag (addendum §4.5)."
+ },
+ "extraction": {
+  "source_file": "8thSS-EM-LBARevised_1787048180.pdf",
+  "source_ref_prefix": "8thSS-EM-LBARevised_1787048180.pdf",
+  "pdf_pages": [
+   38,
+   39,
+   40,
+   41,
+   104,
+   105,
+   106,
+   107
+  ],
+  "printed_page_offset": -11,
+  "method_notes": [
+   "Offset -11 (pdf 38 = folio 27; pdf 104 = folio 93). Q: q1-8 pdf38, q9-18 pdf39, q19-43 pdf40, q44-50 pdf41. A: keys 1-29 pdf104, 30-43 pdf105, 44-48 pdf106, 49-50 pdf107.",
+   "Sections: I MCQ q1-20; II one word/sentence q21-38 (vsa); III two/three q39-44 (sa); IV five/six q45-48 (la); V seven/eight q49-50 (la, header prints '(4 Marks)' -> marks=4 section_header set by add_stimuli_13).",
+   "FIGURES (read-the-diagram, question-side stimulus, added by add_stimuli_13): q12 'The diagram indicates' -> stimulus figure pdf39 (concentric isobars, arrows spiralling inward to a low-pressure centre labelled in Kannada = cyclonic circulation; key D cyclonic winds); q20 'type of rainfall shown in the given diagram' -> stimulus figure pdf40 (mountain cross-section, windward cloud+rain, leeward rain shadow, captioned 'Orographic rainfall'; key B orographic). Each: question asset role 'figure' + stimulus_id.",
+   "MCQ letter/text DISAGREEMENTS (no asserted answer, 'key text not among options', review): q3 key letter C but text 'Roaring Forties' = option A exactly (auto); q13 letter A text 'Temperate zone' matches no option (KEYNULL; letter A=Stratosphere); q16 letter B text 'Temperate zone' matches no option (KEYNULL; letter B=Stratosphere).",
+   "MCQ benign 'key text differs from option by a printed typo' (letter kept): q5 ('Wind compass' vs 'Wind vane'), q11 ('Due to extremely high temperature' vs 'Very high temperature'), q12 ('Cyclones' vs 'Cyclonic winds'), q14 ('Cumulus rain clouds' vs 'Cumulonimbus clouds' - ambiguous vs option B 'Cumulus clouds', letter D kept), q15 ('In the equatorial region' vs 'Equatorial region'), q19 ('Northern sub-tropical' vs 'North subtropical'). q1-2,4,6-10,17-18,20 exact.",
+   "q11 REVIEW (factual doubt, key kept): key says ionization due to 'extremely high temperature' (letter C); ionization is physically by UV absorption (option B). Printed key kept verbatim (v2 5.7).",
+   "q29 'key text does not address question' (review-blocking): key defines cyclones, question asks periodic winds. Kept verbatim.",
+   "VSA q21-38 answer.value = sentence verbatim. SA/LA SUB heading(s) + steps: q39=1, q40=1, q41=1, q42=1, q43=4, q45=1, q46=1, q47=2, q48=6, q49=7, q50=8 (two headings). BUL q44=4. q45 'astemperature' typo kept; q49 'extremely feel the low temperature' typo kept; q50 belts de-conflated (OCR ran 'Northern Subpolar...Southern' together).",
+   "q40 stem OCR garble '( .(E)' -> cleaned to '(E)'. q3 '40 degree' (OCR degree symbol). MARKS none printed in sections I-IV; section V '(4 Marks)'."
+  ],
+  "notation_summary": {
+   "render_tokens": 0,
+   "latex_tokens": 0,
+   "damage_flags": []
+  },
+  "excluded_objects": [],
+  "inline_excluded_count": 0,
+  "figure_references": []
+ },
+ "stimuli": [
+  {
+   "id": "st-soc-8-13-q12",
+   "kind": "figure",
+   "text": "A diagram of concentric circular isobars with arrows spiralling inward toward a central low-pressure area (the centre is labelled in Kannada). It depicts cyclonic wind circulation; the student identifies the type of wind shown.",
+   "locators": [
+    {
+     "role": "stimulus",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#st-soc-8-13-q12",
+     "pdf_page": 39,
+     "printed_page": 28,
+     "y": 273.0,
+     "derived_from": "render_measured"
+    }
+   ]
+  },
+  {
+   "id": "st-soc-8-13-q20",
+   "kind": "figure",
+   "text": "A labelled cross-section of a mountain: moist air rises the windward slope forming cloud and rain, while descending air warms and forms a rain shadow on the leeward side. The figure is captioned 'Orographic rainfall'. The student identifies the type of rainfall shown.",
+   "locators": [
+    {
+     "role": "stimulus",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#st-soc-8-13-q20",
+     "pdf_page": 40,
+     "printed_page": 29,
+     "y": 108.0,
+     "derived_from": "render_measured"
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "soc-8-13-s1-q001",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The highest temperature recorded region of India is",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s1-q001",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s1-q001",
+     "pdf_page": 38,
+     "printed_page": 27,
+     "y": 348.743203,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s1-q001-key",
+     "pdf_page": 104,
+     "printed_page": 93,
+     "y": 120.503197,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:36:55+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:36:55+05:30",
+   "text_as_printed": "The highest temperature recorded region of India is (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Ambika Nagar, Karnataka"
+    },
+    {
+     "id": "B",
+     "text": "Ganganagar, Rajasthan"
+    },
+    {
+     "id": "C",
+     "text": "Kargil, Kashmir"
+    },
+    {
+     "id": "D",
+     "text": "Nayakanahatti"
+    }
+   ],
+   "answer_as_printed": "B) Ganganagar, Rajasthan",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:36:55+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "5e9fbf1143665263b506ce3aa410c14ec3a0e43978761e6903b47eb339392a50"
+  },
+  {
+   "id": "soc-8-13-s1-q002",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The instrument that was used to measure air pressure is",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s1-q002",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s1-q002",
+     "pdf_page": 38,
+     "printed_page": 27,
+     "y": 400.943184,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s1-q002-key",
+     "pdf_page": 104,
+     "printed_page": 93,
+     "y": 137.783193,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:36:55+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:36:55+05:30",
+   "text_as_printed": "The instrument that was used to measure air pressure is (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Barometer"
+    },
+    {
+     "id": "B",
+     "text": "Richter scale"
+    },
+    {
+     "id": "C",
+     "text": "Ammeter"
+    },
+    {
+     "id": "D",
+     "text": "Voltmeter"
+    }
+   ],
+   "answer_as_printed": "A) Barometer",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:36:55+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "a7083dc8df7d5ef0979e4e3a87f90ef0c10c46a305a5f56be2f2d267cded6e4d"
+  },
+  {
+   "id": "soc-8-13-s1-q003",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The winds blowing at 40 degree latitude are called as",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s1-q003",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s1-q003",
+     "pdf_page": 38,
+     "printed_page": 27,
+     "y": 453.263192,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s1-q003-key",
+     "pdf_page": 104,
+     "printed_page": 93,
+     "y": 155.18319,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:36:55+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:36:55+05:30",
+   "text_as_printed": "The winds blowing at 40 degree latitude are called as (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Roaring Forties"
+    },
+    {
+     "id": "B",
+     "text": "Furious Fifties"
+    },
+    {
+     "id": "C",
+     "text": "Screaming Sixties"
+    },
+    {
+     "id": "D",
+     "text": "Howling Seventies"
+    }
+   ],
+   "answer_as_printed": "C) Roaring Forties",
+   "answer": {
+    "kind": "option",
+    "option_id": null
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text not among options",
+     "why_not_corrected": "the printed key is '3. C) Roaring Forties'. Letter C = option C 'Screaming Sixties', but the key text names option A 'Roaring Forties' (exact match). Letter and key text name different options; no answer is asserted (key-letter-text-disagreement vocab 'key text not among options'); the reviewer decides which governs (addendum §13.6).",
+     "suggested": "A (by text; printed letter C='Screaming Sixties' disagrees) — review"
+    }
+   ],
+   "content_hash": "b81edd9f4230d512d32e01cc3e561f7db85013c29b94df5cec5d37b99dca2326"
+  },
+  {
+   "id": "soc-8-13-s1-q004",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The cyclonic winds in India are known as",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s1-q004",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s1-q004",
+     "pdf_page": 38,
+     "printed_page": 27,
+     "y": 505.343193,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s1-q004-key",
+     "pdf_page": 104,
+     "printed_page": 93,
+     "y": 172.70319,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:36:55+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:36:55+05:30",
+   "text_as_printed": "The cyclonic winds in India are known as (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Cyclone"
+    },
+    {
+     "id": "B",
+     "text": "Hurricane"
+    },
+    {
+     "id": "C",
+     "text": "Laila"
+    },
+    {
+     "id": "D",
+     "text": "Typhoon"
+    }
+   ],
+   "answer_as_printed": "A) Cyclone",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:36:55+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "64fe47b2e2980c723e8b8aed4c66eea468084f1cbb948c3ae35cd7d422f23b2d"
+  },
+  {
+   "id": "soc-8-13-s1-q005",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The instrument used to determine the direction of wind is",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s1-q005",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s1-q005",
+     "pdf_page": 38,
+     "printed_page": 27,
+     "y": 540.143212,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s1-q005-key",
+     "pdf_page": 104,
+     "printed_page": 93,
+     "y": 190.103188,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:36:55+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:36:55+05:30",
+   "text_as_printed": "The instrument used to determine the direction of wind is (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Anemometer"
+    },
+    {
+     "id": "B",
+     "text": "Wind vane"
+    },
+    {
+     "id": "C",
+     "text": "Barometer"
+    },
+    {
+     "id": "D",
+     "text": "Richter scale"
+    }
+   ],
+   "answer_as_printed": "B) Wind compass",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:36:55+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text differs from option by a printed typo",
+     "why_not_corrected": "letter B kept (addendum §4.1); key text 'Wind compass' vs option B 'Wind vane' differ by a source typo; spelling needs subject knowledge (v2 §1)",
+     "suggested": "B (letter kept)"
+    }
+   ],
+   "content_hash": "f06f7fe78af05a838d3e547d698ae10b53be1cf8fa1e1716bdf31adf7c2038b6"
+  },
+  {
+   "id": "soc-8-13-s1-q006",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The local wind of India is",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s1-q006",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s1-q006",
+     "pdf_page": 38,
+     "printed_page": 27,
+     "y": 575.06321,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s1-q006-key",
+     "pdf_page": 104,
+     "printed_page": 93,
+     "y": 207.383195,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:36:55+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:36:55+05:30",
+   "text_as_printed": "The local wind of India is (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Chinook"
+    },
+    {
+     "id": "B",
+     "text": "Loo"
+    },
+    {
+     "id": "C",
+     "text": "Sirocco"
+    },
+    {
+     "id": "D",
+     "text": "Mistral"
+    }
+   ],
+   "answer_as_printed": "B) Loo",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:36:55+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "66a53532b2f80cd814b536fd3ddee6749158e924c22489cc70455852bca97809"
+  },
+  {
+   "id": "soc-8-13-s1-q007",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Nayakanahatti, located in the district of",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s1-q007",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s1-q007",
+     "pdf_page": 38,
+     "printed_page": 27,
+     "y": 609.743203,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s1-q007-key",
+     "pdf_page": 104,
+     "printed_page": 93,
+     "y": 224.903184,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:36:55+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:36:55+05:30",
+   "text_as_printed": "Nayakanahatti, located in the district of (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Shimoga"
+    },
+    {
+     "id": "B",
+     "text": "Chitradurga"
+    },
+    {
+     "id": "C",
+     "text": "Davanagere"
+    },
+    {
+     "id": "D",
+     "text": "Udupi"
+    }
+   ],
+   "answer_as_printed": "B) Chitradurga",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:36:55+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "d03245578f15f6ae6c66955e66108603a8643eb8fb31c52b9a84144f844f355b"
+  },
+  {
+   "id": "soc-8-13-s1-q008",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The wettest place of the Earth is",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s1-q008",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s1-q008",
+     "pdf_page": 38,
+     "printed_page": 27,
+     "y": 662.06321,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s1-q008-key",
+     "pdf_page": 104,
+     "printed_page": 93,
+     "y": 242.303193,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:36:55+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:36:55+05:30",
+   "text_as_printed": "The wettest place of the Earth is (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Mawsynram, Meghalaya"
+    },
+    {
+     "id": "B",
+     "text": "Agumbe, Karnataka"
+    },
+    {
+     "id": "C",
+     "text": "Raili, Rajasthan"
+    },
+    {
+     "id": "D",
+     "text": "Nayakanahatti, Chitradurga"
+    }
+   ],
+   "answer_as_printed": "A) Mawsynram, Meghalaya",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:36:55+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "d8ab225de9a30e0222052f488c155744382fac2ddd80d388a3960286311918f3"
+  },
+  {
+   "id": "soc-8-13-s1-q009",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The thin layer of gases, dust particles, and water vapour surrounding the Earth is",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s1-q009",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s1-q009",
+     "pdf_page": 39,
+     "printed_page": 28,
+     "y": 85.583188,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s1-q009-key",
+     "pdf_page": 104,
+     "printed_page": 93,
+     "y": 259.703202,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:36:55+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:36:55+05:30",
+   "text_as_printed": "The thin layer of gases, dust particles, and water vapour surrounding the Earth is (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Lithosphere"
+    },
+    {
+     "id": "B",
+     "text": "Hydrosphere"
+    },
+    {
+     "id": "C",
+     "text": "Atmosphere"
+    },
+    {
+     "id": "D",
+     "text": "Biosphere"
+    }
+   ],
+   "answer_as_printed": "C) Atmosphere",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:36:55+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "72c65714dd80f348c0181bfcfc674677d1d09c7e01c6af19ee28a5c3cf122011"
+  },
+  {
+   "id": "soc-8-13-s1-q010",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The layer of the atmosphere where components are very sparse",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s1-q010",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s1-q010",
+     "pdf_page": 39,
+     "printed_page": 28,
+     "y": 155.18319,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s1-q010-key",
+     "pdf_page": 104,
+     "printed_page": 93,
+     "y": 276.983185,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:36:55+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:36:55+05:30",
+   "text_as_printed": "The layer of the atmosphere where components are very sparse (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Mesosphere"
+    },
+    {
+     "id": "B",
+     "text": "Stratosphere"
+    },
+    {
+     "id": "C",
+     "text": "Thermosphere"
+    },
+    {
+     "id": "D",
+     "text": "Exosphere"
+    }
+   ],
+   "answer_as_printed": "D) Exosphere",
+   "answer": {
+    "kind": "option",
+    "option_id": "D"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:36:55+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "0b4d39aad2b45bdcd2f5a8d2d8465e1479676c35824fc6589e1a0cc70502f899"
+  },
+  {
+   "id": "soc-8-13-s1-q011",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "In the thermosphere, gas molecules get ionized due to",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s1-q011",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s1-q011",
+     "pdf_page": 39,
+     "printed_page": 28,
+     "y": 207.383195,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s1-q011-key",
+     "pdf_page": 104,
+     "printed_page": 93,
+     "y": 294.503197,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:36:55+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:36:55+05:30",
+   "text_as_printed": "In the thermosphere, gas molecules get ionized due to (A)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Very low temperature there"
+    },
+    {
+     "id": "B",
+     "text": "Absorption of ultraviolet rays"
+    },
+    {
+     "id": "C",
+     "text": "Very high temperature"
+    },
+    {
+     "id": "D",
+     "text": "Decrease in pressure with altitude"
+    }
+   ],
+   "answer_as_printed": "C) Due to extremely high temperature",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:36:55+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text differs from option by a printed typo",
+     "why_not_corrected": "letter C kept (addendum §4.1); key text 'Due to extremely high temperature' vs option C 'Very high temperature' differ by a source typo; spelling needs subject knowledge (v2 §1)",
+     "suggested": "C (letter kept)"
+    }
+   ],
+   "content_hash": "77e82bae53af0079c9fbcd7c8c6069cb805ba2c5bd0271468765a372d792167e"
+  },
+  {
+   "id": "soc-8-13-s1-q012",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The diagram indicates",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s1-q012",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s1-q012",
+     "pdf_page": 39,
+     "printed_page": 28,
+     "y": 259.703202,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s1-q012-key",
+     "pdf_page": 104,
+     "printed_page": 93,
+     "y": 311.903184,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:36:55+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:36:55+05:30",
+   "text_as_printed": "The diagram indicates (A)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Permanent winds"
+    },
+    {
+     "id": "B",
+     "text": "Trade winds"
+    },
+    {
+     "id": "C",
+     "text": "Periodic winds"
+    },
+    {
+     "id": "D",
+     "text": "Cyclonic winds"
+    }
+   ],
+   "answer_as_printed": "D) Cyclones",
+   "answer": {
+    "kind": "option",
+    "option_id": "D"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:36:55+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text differs from option by a printed typo",
+     "why_not_corrected": "letter D kept (addendum §4.1); key text 'Cyclones' vs option D 'Cyclonic winds' differ by a source typo; spelling needs subject knowledge (v2 §1)",
+     "suggested": "D (letter kept)"
+    }
+   ],
+   "content_hash": "32f762acc4028e33585564413681eb3a8227870e06323cc82c7ed2e82c968ce0",
+   "stimulus_id": "st-soc-8-13-q12",
+   "assets": [
+    {
+     "id": "s12",
+     "type": "image",
+     "ref": "images/soc-8-13/p39-q12_winds-diagram.png",
+     "role": "figure",
+     "source_px": {
+      "w": 358,
+      "h": 275
+     },
+     "quality": "ok",
+     "caption": "Diagram for q12: concentric isobars with arrows spiralling inward to a central low-pressure area (centre labelled in Kannada), depicting cyclonic wind circulation, pdf 39",
+     "pdf_page": 39,
+     "crop_bbox": {
+      "pdf_page": 39,
+      "x0": 387.0,
+      "y0": 271.0,
+      "x1": 516.0,
+      "y1": 370.0
+     }
+    }
+   ]
+  },
+  {
+   "id": "soc-8-13-s1-q013",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The layer of the atmosphere that is free from clouds and suitable for jet aircraft to fly",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s1-q013",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s1-q013",
+     "pdf_page": 39,
+     "printed_page": 28,
+     "y": 381.503197,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s1-q013-key",
+     "pdf_page": 104,
+     "printed_page": 93,
+     "y": 329.303193,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:36:55+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:36:55+05:30",
+   "text_as_printed": "The layer of the atmosphere that is free from clouds and suitable for jet aircraft to fly (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Stratosphere"
+    },
+    {
+     "id": "B",
+     "text": "Exosphere"
+    },
+    {
+     "id": "C",
+     "text": "Mesosphere"
+    },
+    {
+     "id": "D",
+     "text": "Troposphere"
+    }
+   ],
+   "answer_as_printed": "A) Temperate zone",
+   "answer": {
+    "kind": "option",
+    "option_id": null
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text not among options",
+     "why_not_corrected": "the printed key is '13. A) Temperate zone'. Letter A = option A 'Stratosphere', but the key text 'Temperate zone' matches no option (the cloud-free layer suitable for jet aircraft is the Stratosphere = option A). Letter and key text disagree; no answer asserted.",
+     "suggested": "A by letter (Stratosphere); key text 'Temperate zone' matches no option - review"
+    }
+   ],
+   "content_hash": "f2492ac14f6aed9e98f82d21a83b44efd531af5567c50f2835a74b604be8802a"
+  },
+  {
+   "id": "soc-8-13-s1-q014",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Clouds that bring heavy rain and snowfall",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s1-q014",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s1-q014",
+     "pdf_page": 39,
+     "printed_page": 28,
+     "y": 451.103188,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s1-q014-key",
+     "pdf_page": 104,
+     "printed_page": 93,
+     "y": 346.583199,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:36:55+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:36:55+05:30",
+   "text_as_printed": "Clouds that bring heavy rain and snowfall (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Layered clouds"
+    },
+    {
+     "id": "B",
+     "text": "Cumulus clouds"
+    },
+    {
+     "id": "C",
+     "text": "Cirrus clouds"
+    },
+    {
+     "id": "D",
+     "text": "Cumulonimbus clouds"
+    }
+   ],
+   "answer_as_printed": "D) Cumulus rain clouds",
+   "answer": {
+    "kind": "option",
+    "option_id": "D"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:36:55+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text differs from option by a printed typo",
+     "why_not_corrected": "letter D kept (addendum §4.1); key text 'Cumulus rain clouds' vs option D 'Cumulonimbus clouds' differ by a source typo; spelling needs subject knowledge (v2 §1)",
+     "suggested": "D (letter kept)"
+    }
+   ],
+   "content_hash": "ad13b0deb04fd1b9612a1c09feba7f21af6e03e01f834e93cfc8912e84a3edab"
+  },
+  {
+   "id": "soc-8-13-s1-q015",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Afternoon rainfall is mostly seen in this region",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s1-q015",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s1-q015",
+     "pdf_page": 39,
+     "printed_page": 28,
+     "y": 503.30317,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s1-q015-key",
+     "pdf_page": 104,
+     "printed_page": 93,
+     "y": 364.103188,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:36:55+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:36:55+05:30",
+   "text_as_printed": "Afternoon rainfall is mostly seen in this region (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Polar region"
+    },
+    {
+     "id": "B",
+     "text": "Equatorial region"
+    },
+    {
+     "id": "C",
+     "text": "Temperate region"
+    },
+    {
+     "id": "D",
+     "text": "Mountain (Himalayan) region"
+    }
+   ],
+   "answer_as_printed": "B) In the equatorial region",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:36:55+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text differs from option by a printed typo",
+     "why_not_corrected": "letter B kept (addendum §4.1); key text 'In the equatorial region' vs option B 'Equatorial region' differ by a source typo; spelling needs subject knowledge (v2 §1)",
+     "suggested": "B (letter kept)"
+    }
+   ],
+   "content_hash": "f9ab06961b68fd0b8ca69ff76e8760d91188df3fce681f2e13ff5a5cfa46957e"
+  },
+  {
+   "id": "soc-8-13-s1-q016",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The atmospheric layer in which the ozone layer is found",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s1-q016",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s1-q016",
+     "pdf_page": 39,
+     "printed_page": 28,
+     "y": 555.503197,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s1-q016-key",
+     "pdf_page": 104,
+     "printed_page": 93,
+     "y": 381.503197,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:36:55+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:36:55+05:30",
+   "text_as_printed": "The atmospheric layer in which the ozone layer is found (E)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Troposphere"
+    },
+    {
+     "id": "B",
+     "text": "Stratosphere"
+    },
+    {
+     "id": "C",
+     "text": "Exosphere"
+    },
+    {
+     "id": "D",
+     "text": "Mesosphere"
+    }
+   ],
+   "answer_as_printed": "B) Temperate zone",
+   "answer": {
+    "kind": "option",
+    "option_id": null
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text not among options",
+     "why_not_corrected": "the printed key is '16. B) Temperate zone'. Letter B = option B 'Stratosphere', but the key text 'Temperate zone' matches no option (the ozone layer is in the Stratosphere = option B). Letter and key text disagree; no answer asserted.",
+     "suggested": "B by letter (Stratosphere); key text 'Temperate zone' matches no option - review"
+    }
+   ],
+   "content_hash": "c7033ff1e1f123e8504188357628a157fa29d383fa75d60cce59d56cda1c163f"
+  },
+  {
+   "id": "soc-8-13-s1-q017",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The pressure belt known as the “Doldrums”",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s1-q017",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s1-q017",
+     "pdf_page": 39,
+     "printed_page": 28,
+     "y": 607.823205,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s1-q017-key",
+     "pdf_page": 104,
+     "printed_page": 93,
+     "y": 398.903207,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:36:55+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:36:55+05:30",
+   "text_as_printed": "The pressure belt known as the “Doldrums” (A)",
+   "options": [
+    {
+     "id": "A",
+     "text": "North sub-polar low-pressure belt"
+    },
+    {
+     "id": "B",
+     "text": "North polar high-pressure belt"
+    },
+    {
+     "id": "C",
+     "text": "South polar high-pressure belt"
+    },
+    {
+     "id": "D",
+     "text": "Equatorial low-pressure belt"
+    }
+   ],
+   "answer_as_printed": "D) Equatorial low-pressure belt",
+   "answer": {
+    "kind": "option",
+    "option_id": "D"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:36:55+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "1239bd6b929965f231d8fd1b8b8677487c2d829eaf2ea011f809f9d552a89f76"
+  },
+  {
+   "id": "soc-8-13-s1-q018",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The average atmospheric pressure at sea level",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s1-q018",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s1-q018",
+     "pdf_page": 39,
+     "printed_page": 28,
+     "y": 659.903207,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s1-q018-key",
+     "pdf_page": 104,
+     "printed_page": 93,
+     "y": 416.30317,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:36:55+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:36:55+05:30",
+   "text_as_printed": "The average atmospheric pressure at sea level (A)",
+   "options": [
+    {
+     "id": "A",
+     "text": "1013.25 millibar"
+    },
+    {
+     "id": "B",
+     "text": "1013.26 millibar"
+    },
+    {
+     "id": "C",
+     "text": "1013.24 millibar"
+    },
+    {
+     "id": "D",
+     "text": "1013.28 millibar"
+    }
+   ],
+   "answer_as_printed": "A) 1013.25 millibar",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:36:55+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "8cb76c9554a5e89cf037b6f4aff0072b63946c0ef58a59b1107012720927c326"
+  },
+  {
+   "id": "soc-8-13-s1-q019",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The belt known as the “Horse Latitudes”",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s1-q019",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s1-q019",
+     "pdf_page": 40,
+     "printed_page": 29,
+     "y": 103.103188,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s1-q019-key",
+     "pdf_page": 104,
+     "printed_page": 93,
+     "y": 433.703179,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:36:55+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:36:55+05:30",
+   "text_as_printed": "The belt known as the “Horse Latitudes” (A)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Equatorial low-pressure belt"
+    },
+    {
+     "id": "B",
+     "text": "North subtropical high-pressure belt"
+    },
+    {
+     "id": "C",
+     "text": "South subtropical high-pressure belt"
+    },
+    {
+     "id": "D",
+     "text": "North polar low-pressure belt"
+    }
+   ],
+   "answer_as_printed": "B) Northern sub-tropical high-pressure belt",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:36:55+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text differs from option by a printed typo",
+     "why_not_corrected": "letter B kept (addendum §4.1); key text 'Northern sub-tropical high-pressure belt' vs option B 'North subtropical high-pressure belt' differ by a source typo; spelling needs subject knowledge (v2 §1)",
+     "suggested": "B (letter kept)"
+    }
+   ],
+   "content_hash": "19cb84ab8a910726f559246e6077504059a31b7424a3afc5b86a78de004960e3"
+  },
+  {
+   "id": "soc-8-13-s1-q020",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The type of rainfall shown in the given diagram",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s1-q020",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s1-q020",
+     "pdf_page": 40,
+     "printed_page": 29,
+     "y": 207.383195,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s1-q020-key",
+     "pdf_page": 104,
+     "printed_page": 93,
+     "y": 451.103188,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:36:55+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:36:55+05:30",
+   "text_as_printed": "The type of rainfall shown in the given diagram (A)",
+   "options": [
+    {
+     "id": "A",
+     "text": "Monsoon rainfall"
+    },
+    {
+     "id": "B",
+     "text": "Orographic rainfall"
+    },
+    {
+     "id": "C",
+     "text": "Convectional rainfall"
+    },
+    {
+     "id": "D",
+     "text": "Cyclonic rainfall"
+    }
+   ],
+   "answer_as_printed": "B) Orographic rainfall",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:36:55+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "3de27cd2258a525bfef6c124135f4bd0421c710e2c8312d99b33e600db78566c",
+   "stimulus_id": "st-soc-8-13-q20",
+   "assets": [
+    {
+     "id": "s20",
+     "type": "image",
+     "ref": "images/soc-8-13/p40-q20_rainfall-diagram.png",
+     "role": "figure",
+     "source_px": {
+      "w": 456,
+      "h": 253
+     },
+     "quality": "ok",
+     "caption": "Diagram for q20: mountain cross-section with windward cloud and rain, leeward descending air and rain shadow, captioned 'Orographic rainfall', pdf 40",
+     "pdf_page": 40,
+     "crop_bbox": {
+      "pdf_page": 40,
+      "x0": 383.0,
+      "y0": 106.0,
+      "x1": 547.0,
+      "y1": 197.0
+     }
+    }
+   ]
+  },
+  {
+   "id": "soc-8-13-s2-q021",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is the thickness of the atmosphere?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s2-q021",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s2-q021",
+     "pdf_page": 40,
+     "printed_page": 29,
+     "y": 289.943184,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s2-q021-key",
+     "pdf_page": 104,
+     "printed_page": 93,
+     "y": 503.30317,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:36:55+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:36:55+05:30",
+   "text_as_printed": "What is the thickness of the atmosphere? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "The thickness of the atmosphere is approximately 1,000 kilometers."
+   },
+   "answer_as_printed": "The thickness of the atmosphere is approximately 1,000 kilometers.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:36:55+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "3b7392861d64ac5b27ed03cc74f3e9eb8ec0511abb679725ae44297281616fd6"
+  },
+  {
+   "id": "soc-8-13-s2-q022",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is the percentage of nitrogen in the atmosphere?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s2-q022",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s2-q022",
+     "pdf_page": 40,
+     "printed_page": 29,
+     "y": 307.343193,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s2-q022-key",
+     "pdf_page": 104,
+     "printed_page": 93,
+     "y": 520.703179,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:36:55+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:36:55+05:30",
+   "text_as_printed": "What is the percentage of nitrogen in the atmosphere? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "The proportion of nitrogen gas in the atmosphere is 78.08%."
+   },
+   "answer_as_printed": "The proportion of nitrogen gas in the atmosphere is 78.08%.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:36:55+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "fae61da33682f2be572e335ac1866fc5b71538043160a9366ef94417acf29a55"
+  },
+  {
+   "id": "soc-8-13-s2-q023",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Name the layer of the atmosphere that found lowest air pressure.",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s2-q023",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s2-q023",
+     "pdf_page": 40,
+     "printed_page": 29,
+     "y": 324.743203,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s2-q023-key",
+     "pdf_page": 104,
+     "printed_page": 93,
+     "y": 538.223214,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:36:55+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:36:55+05:30",
+   "text_as_printed": "Name the layer of the atmosphere that found lowest air pressure. (E)",
+   "answer": {
+    "kind": "text",
+    "value": "Air pressure is low in the outer layer of the atmosphere."
+   },
+   "answer_as_printed": "Air pressure is low in the outer layer of the atmosphere.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:36:55+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "e5dd8e610c2524e9898bda99deb23ec8c0a7d4487906d1a1da9fdbc5e4737f9b"
+  },
+  {
+   "id": "soc-8-13-s2-q024",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is Insolation?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s2-q024",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s2-q024",
+     "pdf_page": 40,
+     "printed_page": 29,
+     "y": 342.143189,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s2-q024-key",
+     "pdf_page": 104,
+     "printed_page": 93,
+     "y": 555.503197,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:36:55+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:36:55+05:30",
+   "text_as_printed": "What is Insolation? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "The heat received by the Earth from the Sun is called solar heat."
+   },
+   "answer_as_printed": "The heat received by the Earth from the Sun is called solar heat.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:36:55+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "68396b703451021767d03d506b1339fe6b90515093d302472b77a9dd8c3b6e7e"
+  },
+  {
+   "id": "soc-8-13-s2-q025",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Which zone receives the direct rays of the Sun?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s2-q025",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s2-q025",
+     "pdf_page": 40,
+     "printed_page": 29,
+     "y": 359.543199,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s2-q025-key",
+     "pdf_page": 104,
+     "printed_page": 93,
+     "y": 572.903207,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:36:55+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:36:55+05:30",
+   "text_as_printed": "Which zone receives the direct rays of the Sun? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "Torrid Zone."
+   },
+   "answer_as_printed": "Torrid Zone.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:36:55+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "00a359e798397b979c8d7358c47b855395e7bc2092ffa73bb322ad6fac3483e5"
+  },
+  {
+   "id": "soc-8-13-s2-q026",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What are isobars?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s2-q026",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s2-q026",
+     "pdf_page": 40,
+     "printed_page": 29,
+     "y": 376.943184,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s2-q026-key",
+     "pdf_page": 104,
+     "printed_page": 93,
+     "y": 590.30317,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:36:55+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:36:55+05:30",
+   "text_as_printed": "What are isobars? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "Lines that connect places with the same pressure are called isobars."
+   },
+   "answer_as_printed": "Lines that connect places with the same pressure are called isobars.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:36:55+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "3cf32e53ad272a55891f434ce6601c8904e9160f50d8bdb9cd20305972367571"
+  },
+  {
+   "id": "soc-8-13-s2-q027",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is the instrument used to measure the speed of the wind?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s2-q027",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s2-q027",
+     "pdf_page": 40,
+     "printed_page": 29,
+     "y": 394.343193,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s2-q027-key",
+     "pdf_page": 104,
+     "printed_page": 93,
+     "y": 607.823205,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:36:55+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:36:55+05:30",
+   "text_as_printed": "What is the instrument used to measure the speed of the wind? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "Anemometer."
+   },
+   "answer_as_printed": "Anemometer.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:36:55+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "0d60a15ac5687e60cc3372061f6273c6c520f4c31f3527e44c2f14deb554604e"
+  },
+  {
+   "id": "soc-8-13-s2-q028",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The winds blowing in India are the example of which type of winds?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s2-q028",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s2-q028",
+     "pdf_page": 40,
+     "printed_page": 29,
+     "y": 411.743203,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s2-q028-key",
+     "pdf_page": 104,
+     "printed_page": 93,
+     "y": 625.103188,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:36:55+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:36:55+05:30",
+   "text_as_printed": "The winds blowing in India are the example of which type of winds? (A)",
+   "answer": {
+    "kind": "text",
+    "value": "Monsoons in India are an example of periodic winds."
+   },
+   "answer_as_printed": "Monsoons in India are an example of periodic winds.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:36:55+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "0e3e9eec3ecf7263acb0a0c8a66cf82a8f10928c50de33922bcc794b3e83a6e5"
+  },
+  {
+   "id": "soc-8-13-s2-q029",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Define the periodic winds",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s2-q029",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s2-q029",
+     "pdf_page": 40,
+     "printed_page": 29,
+     "y": 429.143212,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s2-q029-key",
+     "pdf_page": 104,
+     "printed_page": 93,
+     "y": 642.503197,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:36:55+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:36:55+05:30",
+   "text_as_printed": "Define the periodic winds (E)",
+   "answer": {
+    "kind": "text",
+    "value": "Cyclones are winds that blow from high-pressure zones to low-pressure centers."
+   },
+   "answer_as_printed": "Cyclones are winds that blow from high-pressure zones to low-pressure centers.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:36:55+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "field": "answer",
+     "issue": "key text does not address question — q29 asks to define periodic winds; the printed key (29) defines cyclones ('Cyclones are winds that blow from high-pressure zones to low-pressure centers'), not periodic winds. Key kept verbatim.",
+     "why_not_corrected": "printed key kept verbatim (v2 5.7); the key does not answer the asked question - a source defect for the reviewer, not corrected at extraction",
+     "suggested": "review — key defines cyclones, question asks for periodic winds"
+    }
+   ],
+   "content_hash": "02e767e2fd2772c3daedab92eeaa679a3fcb53a311a66c03cdabf9c16436c90a"
+  },
+  {
+   "id": "soc-8-13-s2-q030",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is humidity?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s2-q030",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s2-q030",
+     "pdf_page": 40,
+     "printed_page": 29,
+     "y": 446.543175,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s2-q030-key",
+     "pdf_page": 105,
+     "printed_page": 94,
+     "y": 85.583188,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:36:55+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:36:55+05:30",
+   "text_as_printed": "What is humidity? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "The moisture content in the atmosphere is called humidity."
+   },
+   "answer_as_printed": "The moisture content in the atmosphere is called humidity.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:36:55+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "ffc4e01069adaa6e84d7bc39ccd8e29f13fa57e167c1a5e4c09b5ca265089ca6"
+  },
+  {
+   "id": "soc-8-13-s2-q031",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is the normal lapse rate of temperature?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s2-q031",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s2-q031",
+     "pdf_page": 40,
+     "printed_page": 29,
+     "y": 463.943184,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s2-q031-key",
+     "pdf_page": 105,
+     "printed_page": 94,
+     "y": 103.103188,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:36:55+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:36:55+05:30",
+   "text_as_printed": "What is the normal lapse rate of temperature? (A)",
+   "answer": {
+    "kind": "text",
+    "value": "As the quantity of gases decreases with increase in altitude, the density decreases and the temperature also decreases. This is called the normal lapse rate of temperature."
+   },
+   "answer_as_printed": "As the quantity of gases decreases with increase in altitude, the density decreases and the temperature also decreases. This is called the normal lapse rate of temperature.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:36:55+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "274df0a7e29c2814e1d73c1950fc956e74b5c482aa48ecf1a9c408a011ab8fe8"
+  },
+  {
+   "id": "soc-8-13-s2-q032",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What are isotherms?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s2-q032",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s2-q032",
+     "pdf_page": 40,
+     "printed_page": 29,
+     "y": 481.343193,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s2-q032-key",
+     "pdf_page": 105,
+     "printed_page": 94,
+     "y": 155.18319,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:36:55+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:36:55+05:30",
+   "text_as_printed": "What are isotherms? (A)",
+   "answer": {
+    "kind": "text",
+    "value": "The lines drawn joining places having the same temperature are called isotherms."
+   },
+   "answer_as_printed": "The lines drawn joining places having the same temperature are called isotherms.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:36:55+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "42be445cbf7bcdda92c20f626ad3b4094c88a159d346010d8db4ab3c6b2eec50"
+  },
+  {
+   "id": "soc-8-13-s2-q033",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "D",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is the rate of decrease in pressure with increase in altitude from the Earth's surface?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s2-q033",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s2-q033",
+     "pdf_page": 40,
+     "printed_page": 29,
+     "y": 498.743203,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s2-q033-key",
+     "pdf_page": 105,
+     "printed_page": 94,
+     "y": 190.103188,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:36:55+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:36:55+05:30",
+   "text_as_printed": "What is the rate of decrease in pressure with increase in altitude from the Earth's surface? (D)",
+   "answer": {
+    "kind": "text",
+    "value": "As we go higher from the Earth's surface, the rate of decrease of pressure is about 34 millibars for every 300 meters."
+   },
+   "answer_as_printed": "As we go higher from the Earth's surface, the rate of decrease of pressure is about 34 millibars for every 300 meters.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:36:55+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "10724a5bd64c815103fda2f8385ba43de37a74d06f5212e61fbe83b7204375d0"
+  },
+  {
+   "id": "soc-8-13-s2-q034",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is the instrument used to measure rainfall?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s2-q034",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s2-q034",
+     "pdf_page": 40,
+     "printed_page": 29,
+     "y": 533.543175,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s2-q034-key",
+     "pdf_page": 105,
+     "printed_page": 94,
+     "y": 207.383195,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:36:55+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:36:55+05:30",
+   "text_as_printed": "What is the instrument used to measure rainfall? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "The amount of rainfall is measured by a rain gauge."
+   },
+   "answer_as_printed": "The amount of rainfall is measured by a rain gauge.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:36:55+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "c687d3fb5db060eef932bb20b8a88fee85714f44b41acbcf5afe5296bf252293"
+  },
+  {
+   "id": "soc-8-13-s2-q035",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is the zone between warm and cold air masses called?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s2-q035",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s2-q035",
+     "pdf_page": 40,
+     "printed_page": 29,
+     "y": 551.06321,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s2-q035-key",
+     "pdf_page": 105,
+     "printed_page": 94,
+     "y": 242.303193,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:36:55+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:36:55+05:30",
+   "text_as_printed": "What is the zone between warm and cold air masses called? (A)",
+   "answer": {
+    "kind": "text",
+    "value": "The zone between warm and cold air masses is called a “front.”"
+   },
+   "answer_as_printed": "The zone between warm and cold air masses is called a “front.”",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:36:55+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "7d187d872b79f2238ce94059ce915e01d1ec3086985c1e877e8848a32e9b71d0"
+  },
+  {
+   "id": "soc-8-13-s2-q036",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is the rainfall caused by temperate cyclones called?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s2-q036",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s2-q036",
+     "pdf_page": 40,
+     "printed_page": 29,
+     "y": 568.343193,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s2-q036-key",
+     "pdf_page": 105,
+     "printed_page": 94,
+     "y": 259.703202,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:36:55+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:36:55+05:30",
+   "text_as_printed": "What is the rainfall caused by temperate cyclones called? (A)",
+   "answer": {
+    "kind": "text",
+    "value": "The rainfall of temperate cyclones is called “frontal rainfall.”"
+   },
+   "answer_as_printed": "The rainfall of temperate cyclones is called “frontal rainfall.”",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:36:55+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "67737969558ea77060015aeee55794da8d12434bc9e3004468d6216e794fe45a"
+  },
+  {
+   "id": "soc-8-13-s2-q037",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is convectional rainfall?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s2-q037",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s2-q037",
+     "pdf_page": 40,
+     "printed_page": 29,
+     "y": 585.743203,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s2-q037-key",
+     "pdf_page": 105,
+     "printed_page": 94,
+     "y": 276.983185,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:36:55+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:36:55+05:30",
+   "text_as_printed": "What is convectional rainfall? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "The rainfall caused due to air rising upward in the form of convection currents is called convectional rainfall."
+   },
+   "answer_as_printed": "The rainfall caused due to air rising upward in the form of convection currents is called convectional rainfall.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:36:55+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "1a8aca0f9f218e8c25b429fdb8ac717c8749124d162466015a307dd07a629108"
+  },
+  {
+   "id": "soc-8-13-s2-q038",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is meteorology?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s2-q038",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s2-q038",
+     "pdf_page": 40,
+     "printed_page": 29,
+     "y": 603.143212,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s2-q038-key",
+     "pdf_page": 105,
+     "printed_page": 94,
+     "y": 311.903184,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:36:55+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:36:55+05:30",
+   "text_as_printed": "What is meteorology? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "The scientific study of climate is called Climatology."
+   },
+   "answer_as_printed": "The scientific study of climate is called Climatology.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:36:55+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "9b600ec38474dfb3a9973a1e02f429f92608bd9af2e4a06cf408e3822665de7c"
+  },
+  {
+   "id": "soc-8-13-s3-q039",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Describe the structure of the atmosphere.",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s3-q039",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s3-q039",
+     "pdf_page": 40,
+     "printed_page": 29,
+     "y": 637.943184,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s3-q039-key",
+     "pdf_page": 105,
+     "printed_page": 94,
+     "y": 364.103188,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:36:55+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:36:55+05:30",
+   "text_as_printed": "Describe the structure of the atmosphere. (A)",
+   "answer": {
+    "kind": "text",
+    "value": "Layers of the Atmosphere are divided into five layers based on its characteristics:\nTroposphere, Stratosphere, Mesosphere, Ionosphere, and Exosphere."
+   },
+   "answer_as_printed": "Layers of the Atmosphere are divided into five layers based on its characteristics:\nTroposphere, Stratosphere, Mesosphere, Ionosphere, and Exosphere.",
+   "solution_steps": [
+    "Troposphere, Stratosphere, Mesosphere, Ionosphere, and Exosphere."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:36:55+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "daa399f91a6a14f066e316938fb26e4bdbf2bb3806da1e559e1c6c181e2862a1"
+  },
+  {
+   "id": "soc-8-13-s3-q040",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What factors that influence weather conditions?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s3-q040",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s3-q040",
+     "pdf_page": 40,
+     "printed_page": 29,
+     "y": 655.343193,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s3-q040-key",
+     "pdf_page": 105,
+     "printed_page": 94,
+     "y": 416.30317,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:36:55+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:36:55+05:30",
+   "text_as_printed": "What factors that influence weather conditions? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "Weather Conditions:\nWeather conditions include temperature, pressure, winds, humidity, rainfall and clouds."
+   },
+   "answer_as_printed": "Weather Conditions:\nWeather conditions include temperature, pressure, winds, humidity, rainfall and clouds.",
+   "solution_steps": [
+    "Weather conditions include temperature, pressure, winds, humidity, rainfall and clouds."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:36:55+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "dc5023d02d3dbf6846d15fccd3f2c46718380179dab309a604035adae1051300"
+  },
+  {
+   "id": "soc-8-13-s3-q041",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "List the factors affecting the temperature.",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s3-q041",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s3-q041",
+     "pdf_page": 40,
+     "printed_page": 29,
+     "y": 672.863183,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s3-q041-key",
+     "pdf_page": 105,
+     "printed_page": 94,
+     "y": 468.503197,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:36:55+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:36:55+05:30",
+   "text_as_printed": "List the factors affecting the temperature. (E)",
+   "answer": {
+    "kind": "text",
+    "value": "Factors Affecting Temperature:\nLatitude, altitude, distance from the sea, winds, ocean currents, clouds and rainfall influence factors of temperature."
+   },
+   "answer_as_printed": "Factors Affecting Temperature:\nLatitude, altitude, distance from the sea, winds, ocean currents, clouds and rainfall influence factors of temperature.",
+   "solution_steps": [
+    "Latitude, altitude, distance from the sea, winds, ocean currents, clouds and rainfall influence factors of temperature."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:36:55+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "531430e4e7ea2c67f47397fc23781896844daa6e8eafcbd1e18b9379ad9b8dbc"
+  },
+  {
+   "id": "soc-8-13-s3-q042",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is atmospheric pressure?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s3-q042",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s3-q042",
+     "pdf_page": 40,
+     "printed_page": 29,
+     "y": 690.263192,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s3-q042-key",
+     "pdf_page": 105,
+     "printed_page": 94,
+     "y": 520.703179,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:36:55+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:36:55+05:30",
+   "text_as_printed": "What is atmospheric pressure? (E)",
+   "answer": {
+    "kind": "text",
+    "value": "Atmospheric Pressure:\nAir has weight and exerts pressure on the Earth's surface. This is called atmospheric pressure."
+   },
+   "answer_as_printed": "Atmospheric Pressure:\nAir has weight and exerts pressure on the Earth's surface. This is called atmospheric pressure.",
+   "solution_steps": [
+    "Air has weight and exerts pressure on the Earth's surface. This is called atmospheric pressure."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:36:55+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "dbd9fe07f787fd4af01442dca27292fceb1d9ff1f823b7548ee1212827743b37"
+  },
+  {
+   "id": "soc-8-13-s3-q043",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "List out the types of winds.",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s3-q043",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s3-q043",
+     "pdf_page": 40,
+     "printed_page": 29,
+     "y": 707.543175,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s3-q043-key",
+     "pdf_page": 105,
+     "printed_page": 94,
+     "y": 572.903207,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:36:55+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:36:55+05:30",
+   "text_as_printed": "List out the types of winds. (A)",
+   "answer": {
+    "kind": "text",
+    "value": "Types of Winds:\nPlanetary winds\nPeriodic winds\nLocal winds\nCyclonic and anticyclone winds"
+   },
+   "answer_as_printed": "Types of Winds:\nPlanetary winds\nPeriodic winds\nLocal winds\nCyclonic and anticyclone winds",
+   "solution_steps": [
+    "Planetary winds",
+    "Periodic winds",
+    "Local winds",
+    "Cyclonic and anticyclone winds"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:36:55+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "b59402c5b28cfdd9326fce4a58cb7fc9338ec5b51ba17bf7cc40f40cae1c7bb0"
+  },
+  {
+   "id": "soc-8-13-s3-q044",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "D",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Why does temperature inversion occur in some situations in valley regions of mountains?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s3-q044",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s3-q044",
+     "pdf_page": 41,
+     "printed_page": 30,
+     "y": 68.18319,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s3-q044-key",
+     "pdf_page": 106,
+     "printed_page": 95,
+     "y": 68.18319,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:36:55+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:36:55+05:30",
+   "text_as_printed": "Why does temperature inversion occur in some situations in valley regions of mountains? (D)",
+   "answer": {
+    "kind": "text",
+    "value": "Long duration of night\nCloudless clear sky\nDry air\nCalm (windless) conditions and snow-covered mountain tops"
+   },
+   "answer_as_printed": "Long duration of night\nCloudless clear sky\nDry air\nCalm (windless) conditions and snow-covered mountain tops",
+   "solution_steps": [
+    "Long duration of night",
+    "Cloudless clear sky",
+    "Dry air",
+    "Calm (windless) conditions and snow-covered mountain tops"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:36:55+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "cb49a17f93126d9ec085ef1f7fb124b5f9746c8d26007504aae55c7e2d7a80c3"
+  },
+  {
+   "id": "soc-8-13-s4-q045",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What are the causes for temperature inversion?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s4-q045",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s4-q045",
+     "pdf_page": 41,
+     "printed_page": 30,
+     "y": 137.783193,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s4-q045-key",
+     "pdf_page": 106,
+     "printed_page": 95,
+     "y": 185.783181,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:36:55+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:36:55+05:30",
+   "text_as_printed": "What are the causes for temperature inversion? (A)",
+   "answer": {
+    "kind": "text",
+    "value": "Inversion of temperature:\nIn certain conditions, the temperature decreases with altitude in the atmosphere this Phenomenon is called astemperature inversion. It occurs in mountainous valley regions due to prolonged nights, clear cloudless skies, dry air, calm winds, and snow-covered mountain peaks."
+   },
+   "answer_as_printed": "Inversion of temperature:\nIn certain conditions, the temperature decreases with altitude in the atmosphere this Phenomenon is called astemperature inversion. It occurs in mountainous valley regions due to prolonged nights, clear cloudless skies, dry air, calm winds, and snow-covered mountain peaks.",
+   "solution_steps": [
+    "In certain conditions, the temperature decreases with altitude in the atmosphere this Phenomenon is called astemperature inversion. It occurs in mountainous valley regions due to prolonged nights, clear cloudless skies, dry air, calm winds, and snow-covered mountain peaks."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:36:55+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "68c57574f6dbf6dc992409d216543961a603839a0c98925896d88d750a315452"
+  },
+  {
+   "id": "soc-8-13-s4-q046",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What are clouds? Name their types.",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s4-q046",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s4-q046",
+     "pdf_page": 41,
+     "printed_page": 30,
+     "y": 155.18319,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s4-q046-key",
+     "pdf_page": 106,
+     "printed_page": 95,
+     "y": 290.18319,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:36:55+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:36:55+05:30",
+   "text_as_printed": "What are clouds? Name their types. (E)",
+   "answer": {
+    "kind": "text",
+    "value": "Clouds:\nWhen temperature of the atmosphere decreases, water vapor condenses into tiny water droplets, forming clouds. Clouds are classified into three types based on their characteristics: Stratus clouds, Cumulus clouds, and Cirrus clouds along with Cumulonimbus clouds."
+   },
+   "answer_as_printed": "Clouds:\nWhen temperature of the atmosphere decreases, water vapor condenses into tiny water droplets, forming clouds. Clouds are classified into three types based on their characteristics: Stratus clouds, Cumulus clouds, and Cirrus clouds along with Cumulonimbus clouds.",
+   "solution_steps": [
+    "When temperature of the atmosphere decreases, water vapor condenses into tiny water droplets, forming clouds. Clouds are classified into three types based on their characteristics: Stratus clouds, Cumulus clouds, and Cirrus clouds along with Cumulonimbus clouds."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:36:55+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "75f7be0e431f7f85938f64aafe3828d2d2aed63cf9474764b88f9e8b772d1baa"
+  },
+  {
+   "id": "soc-8-13-s4-q047",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Write a note on weather and climate.",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s4-q047",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s4-q047",
+     "pdf_page": 41,
+     "printed_page": 30,
+     "y": 172.70319,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s4-q047-key",
+     "pdf_page": 106,
+     "printed_page": 95,
+     "y": 394.703179,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:36:55+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:36:55+05:30",
+   "text_as_printed": "Write a note on weather and climate. (A)",
+   "answer": {
+    "kind": "text",
+    "value": "Weather and Climate:\nWeather refers to the short-term atmospheric conditions of a place, e.g., cloudy, sunny, or clear weather. The scientific study of weather is called meteorology.\nClimate refers to the long-term atmospheric conditions of a region, e.g., equatorial or desert climate. The scientific study of climate is called climatology."
+   },
+   "answer_as_printed": "Weather and Climate:\nWeather refers to the short-term atmospheric conditions of a place, e.g., cloudy, sunny, or clear weather. The scientific study of weather is called meteorology.\nClimate refers to the long-term atmospheric conditions of a region, e.g., equatorial or desert climate. The scientific study of climate is called climatology.",
+   "solution_steps": [
+    "Weather refers to the short-term atmospheric conditions of a place, e.g., cloudy, sunny, or clear weather. The scientific study of weather is called meteorology.",
+    "Climate refers to the long-term atmospheric conditions of a region, e.g., equatorial or desert climate. The scientific study of climate is called climatology."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:36:55+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "c4973699c011c7ac6f18679a443b96c8457d4af0340ec864b4696c7e1254274b"
+  },
+  {
+   "id": "soc-8-13-s4-q048",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What are the main factors that influence the climate of a region?",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s4-q048",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s4-q048",
+     "pdf_page": 41,
+     "printed_page": 30,
+     "y": 190.103188,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s4-q048-key",
+     "pdf_page": 106,
+     "printed_page": 95,
+     "y": 533.903207,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:36:55+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:36:55+05:30",
+   "text_as_printed": "What are the main factors that influence the climate of a region? (A)",
+   "answer": {
+    "kind": "text",
+    "value": "The major factors influencing the climate of a region:\nLatitude\nAltitude (height above sea level)\nWinds\nDistance from the sea\nDistribution of land and water bodies\nOcean currents"
+   },
+   "answer_as_printed": "The major factors influencing the climate of a region:\nLatitude\nAltitude (height above sea level)\nWinds\nDistance from the sea\nDistribution of land and water bodies\nOcean currents",
+   "solution_steps": [
+    "Latitude",
+    "Altitude (height above sea level)",
+    "Winds",
+    "Distance from the sea",
+    "Distribution of land and water bodies",
+    "Ocean currents"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:36:55+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "973fc12468540b046e40fba628afad841c51e845df8086ef52e3700e34054b90"
+  },
+  {
+   "id": "soc-8-13-s5-q049",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "A",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Write about the structure of the atmosphere.",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s5-q049",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s5-q049",
+     "pdf_page": 41,
+     "printed_page": 30,
+     "y": 224.903184,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s5-q049-key",
+     "pdf_page": 107,
+     "printed_page": 96,
+     "y": 85.583188,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:36:55+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:36:55+05:30",
+   "text_as_printed": "Write about the structure of the atmosphere. (A)",
+   "answer": {
+    "kind": "text",
+    "value": "Composition and Structure of the Atmosphere:\nThe atmosphere is a mixture of various gases, dust particles, and water vapor.\nNitrogen, oxygen, argon, carbon dioxide, and ozone are found in atmosphere\nThe atmosphere is divided into five layers.\nThe Troposphere, the lowest layer, experiences all weather changes, with decreasing temperature and pressure as altitude increases.\nThe Stratosphere, the second layer, contains ozone, which absorbs harmful ultraviolet rays, protecting life on Earth.\nThe Mesosphere, the third layer, has extremely feel the low temperature\nThe Ionosphere (Thermosphere) has high temperature, and air molecules ionize, hence the name is Ionosphere.\nThe Exosphere, the outermost layer, has very low pressure."
+   },
+   "answer_as_printed": "Composition and Structure of the Atmosphere:\nThe atmosphere is a mixture of various gases, dust particles, and water vapor.\nNitrogen, oxygen, argon, carbon dioxide, and ozone are found in atmosphere\nThe atmosphere is divided into five layers.\nThe Troposphere, the lowest layer, experiences all weather changes, with decreasing temperature and pressure as altitude increases.\nThe Stratosphere, the second layer, contains ozone, which absorbs harmful ultraviolet rays, protecting life on Earth.\nThe Mesosphere, the third layer, has extremely feel the low temperature\nThe Ionosphere (Thermosphere) has high temperature, and air molecules ionize, hence the name is Ionosphere.\nThe Exosphere, the outermost layer, has very low pressure.",
+   "solution_steps": [
+    "The atmosphere is a mixture of various gases, dust particles, and water vapor.",
+    "Nitrogen, oxygen, argon, carbon dioxide, and ozone are found in atmosphere",
+    "The atmosphere is divided into five layers.",
+    "The Troposphere, the lowest layer, experiences all weather changes, with decreasing temperature and pressure as altitude increases.",
+    "The Stratosphere, the second layer, contains ozone, which absorbs harmful ultraviolet rays, protecting life on Earth.",
+    "The Mesosphere, the third layer, has extremely feel the low temperature",
+    "The Ionosphere (Thermosphere) has high temperature, and air molecules ionize, hence the name is Ionosphere.",
+    "The Exosphere, the outermost layer, has very low pressure."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:36:55+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [],
+   "content_hash": "b941e246ac2ec465de3ae09f47f48c4a41f7f4b9e281a0a9ab54c098d6e338ab"
+  },
+  {
+   "id": "soc-8-13-s5-q050",
+   "class": "8",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-8-13",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "E",
+   "learning_outcomes": [
+    {
+     "number": 11,
+     "text_as_printed": "Understands the structure of Lithosphere, Atmosphere, Hydrosphere, Biosphere, and suggests the necessity and measures for their conservation."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is atmospheric pressure? Name the major pressure belts of the world.",
+   "source": "lba",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s5-q050",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s5-q050",
+     "pdf_page": 41,
+     "printed_page": 30,
+     "y": 242.303193,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-13-s5-q050-key",
+     "pdf_page": 107,
+     "printed_page": 96,
+     "y": 346.583199,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "extraction",
+     "at": "2026-10-08T01:36:55+05:30"
+    }
+   ],
+   "created_by": "class-8-social",
+   "created_at": "2026-10-08T01:36:55+05:30",
+   "text_as_printed": "What is atmospheric pressure? Name the major pressure belts of the world. (E)",
+   "answer": {
+    "kind": "text",
+    "value": "Atmospheric Pressure and Pressure Belts:\nAir has weight and exerts pressure on the Earth's surface, known as atmospheric pressure.\nMajor pressure belts include:\nEquatorial Low-Pressure Belt\nNorthern Subtropical High-Pressure Belt\nSouthern Subtropical High-Pressure Belt\nNorthern Subpolar Low-Pressure Belt\nSouthern Subpolar Low-Pressure Belt\nNorthern Polar High-Pressure Belt\nSouthern Polar High-Pressure Belt"
+   },
+   "answer_as_printed": "Atmospheric Pressure and Pressure Belts:\nAir has weight and exerts pressure on the Earth's surface, known as atmospheric pressure.\nMajor pressure belts include:\nEquatorial Low-Pressure Belt\nNorthern Subtropical High-Pressure Belt\nSouthern Subtropical High-Pressure Belt\nNorthern Subpolar Low-Pressure Belt\nSouthern Subpolar Low-Pressure Belt\nNorthern Polar High-Pressure Belt\nSouthern Polar High-Pressure Belt",
+   "solution_steps": [
+    "Air has weight and exerts pressure on the Earth's surface, known as atmospheric pressure.",
+    "Equatorial Low-Pressure Belt",
+    "Northern Subtropical High-Pressure Belt",
+    "Southern Subtropical High-Pressure Belt",
+    "Northern Subpolar Low-Pressure Belt",
+    "Southern Subpolar Low-Pressure Belt",
+    "Northern Polar High-Pressure Belt",
+    "Southern Polar High-Pressure Belt"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T01:36:55+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [],
+   "content_hash": "d6cd04c7cba83bbb8b487ef446c3d986be4dc1f6ca0b9a6ded10c3e59c127996"
+  }
+ ],
+ "pending_summary": {}
+}
