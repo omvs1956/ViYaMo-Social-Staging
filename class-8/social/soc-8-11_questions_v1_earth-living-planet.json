@@ -2886,7 +2886,9 @@
       "answer_map_label": "North Pacific Ocean",
       "category": null,
       "position": null,
-      "position_source": "unset"
+      "position_source": "unset",
+      "in_stem": false,
+      "on_answer_map": true
      },
      {
       "id": "north-america",
@@ -2894,7 +2896,9 @@
       "answer_map_label": "North America",
       "category": null,
       "position": null,
-      "position_source": "unset"
+      "position_source": "unset",
+      "in_stem": false,
+      "on_answer_map": true
      },
      {
       "id": "north-atlantic-ocean",
@@ -2902,7 +2906,19 @@
       "answer_map_label": "North Atlantic Ocean",
       "category": null,
       "position": null,
-      "position_source": "unset"
+      "position_source": "unset",
+      "in_stem": false,
+      "on_answer_map": true
+     },
+     {
+      "id": "arctic-ocean",
+      "name": "Arctic Ocean",
+      "answer_map_label": "Arctic Ocean",
+      "category": null,
+      "position": null,
+      "position_source": "unset",
+      "in_stem": false,
+      "on_answer_map": true
      },
      {
       "id": "europe",
@@ -2910,7 +2926,10 @@
       "answer_map_label": "Europe",
       "category": null,
       "position": null,
-      "position_source": "unset"
+      "position_source": "unset",
+      "in_stem": false,
+      "on_answer_map": false,
+      "note": "label truncated at the printed edge"
      },
      {
       "id": "africa",
@@ -2918,7 +2937,9 @@
       "answer_map_label": "Africa",
       "category": null,
       "position": null,
-      "position_source": "unset"
+      "position_source": "unset",
+      "in_stem": false,
+      "on_answer_map": true
      },
      {
       "id": "south-america",
@@ -2926,7 +2947,9 @@
       "answer_map_label": "South America",
       "category": null,
       "position": null,
-      "position_source": "unset"
+      "position_source": "unset",
+      "in_stem": false,
+      "on_answer_map": true
      }
     ],
     "answer_map_asset_id": "a33"
@@ -2945,6 +2968,10 @@
      "issue": "answer is a diagram — q33 asks to name the continents and oceans on the world map; the printed answer (pdf 99) is a labelled Western-Hemisphere world map (raster, cropped as answer_diagram a33). Printed labels are in KANNADA (not transcribed per rev-8 ruling); features identified by continent/ocean outline and position with standard English answer_map_label: North Pacific Ocean, North America, North Atlantic Ocean, Europe, Africa, South America. Low-resolution source (322x147); bottom/edge labels faint and additional labels may be present (a South-Atlantic/South ocean label appears at the bottom edge). features_source answer_map_render; categories + positions deferred to the MAP INDEX pass. REVIEWER verify the feature list and resolve faint labels.",
      "why_not_corrected": "category-instruction map with Kannada labels; English labels assigned by outline per coordinator rev-8; no invention beyond legible/identifiable entities",
      "suggested": "reviewer: confirm feature list vs the crop; add any missed labels"
+    },
+    {
+     "issue": "answer truncated in source — printed answer map truncated by the source; eastern hemisphere and southern oceans absent; partial labels Indian Ocean and South Atlantic(?) at the cut edges, not encoded",
+     "field": "map"
     }
    ],
    "content_hash": "399ef2ae5dc036ab928c47de0a4e7822385bd483c696fe1eca718e5604724677"
