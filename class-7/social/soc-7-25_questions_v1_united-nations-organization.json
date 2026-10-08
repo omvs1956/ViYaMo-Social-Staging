@@ -3,8 +3,8 @@
  "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
  "procedure_file": "extraction_procedure_social_addendum_v1.4_social science Classes 6-10 on top of procedure v2.md",
  "machine_name": "soc-7-25_questions",
- "version": 2,
- "changelog": "v1 extraction — batch-01 — class-7-social | v2 r1 correction (2026-10-08T23:59:28+05:30) — q14 excluded (textbook says 'Sudan'=193rd; real is South Sudan)",
+ "version": 3,
+ "changelog": "v1 extraction — batch-01 — class-7-social | v2 r1 correction (2026-10-08T23:59:28+05:30) — q14 excluded (textbook says 'Sudan'=193rd; real is South Sudan) | v3 r2 correction (2026-10-09T02:45:00+05:30) — c7-soc-batch-04r2: q14 value 'Sudan' (textbook Part-2 p.137 verbatim), flag normalised to 'printed key contradicts fact — actual South Sudan (2011)'. Un-excluded.",
  "amendments_applied": [],
  "unit_state": "EXTRACTED",
  "review_ready": false,
@@ -1281,7 +1281,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 2,
+   "revision": 3,
    "status": "draft",
    "status_history": [
     {
@@ -1298,6 +1298,14 @@
      "role": "correction",
      "at": "2026-10-08T23:59:28+05:30",
      "ref": "review_decisions_class-7 v1"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-09T02:45:00+05:30",
+     "ref": "class-7-social_r2_delta_prompt_v1 (control rev 12)"
     }
    ],
    "created_by": "class-7-social",
@@ -1312,7 +1320,7 @@
    "answer_provenance": {
     "by": "textbook_excerpt",
     "actor": "class-7-social",
-    "at": "2026-10-08T23:59:28+05:30",
+    "at": "2026-10-09T02:45:00+05:30",
     "basis": "7th English SS Part-2 2026-27, printed p.137 (pdf p.139): \"Sudan is the UN's 193rd member nation.\" Textbook states Sudan; the actual 193rd UN member is South Sudan (2011). Printed key 'Sudan' asserted as printed per the textbook; retained for review."
    },
    "source_flags": [
@@ -1320,7 +1328,7 @@
      "issue": "marks ambiguous in source — no marks printed"
     },
     {
-     "issue": "printed key contradicts fact — textbook and printed key both state 'Sudan' as the UN's 193rd member (Part-2 p.137), but the actual 193rd member is South Sudan (admitted 2011); reviewer"
+     "issue": "printed key contradicts fact — actual South Sudan (2011)"
     }
    ],
    "content_hash": "c375cb41ec5c0d6a0ff1e1628f61e7592d2e6aba98d67ba59c4952e01d531cd5",

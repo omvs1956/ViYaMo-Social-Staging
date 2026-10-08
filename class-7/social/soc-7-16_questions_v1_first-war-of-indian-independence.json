@@ -3,8 +3,8 @@
  "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
  "procedure_file": "extraction_procedure_social_addendum_v1.4_social science Classes 6-10 on top of procedure v2.md",
  "machine_name": "soc-7-16_questions",
- "version": 2,
- "changelog": "v1 extraction — batch-01 — class-7-social | v2 r1 correction (2026-10-08T23:52:09+05:30) — q21-23 rotated band excluded (pairing not coordinator-verified); map-truncation flags retained",
+ "version": 3,
+ "changelog": "v1 extraction — batch-01 — class-7-social | v2 r1 correction (2026-10-08T23:52:09+05:30) — q21-23 rotated band excluded (pairing not coordinator-verified); map-truncation flags retained | v3 r2 correction (2026-10-09T02:45:00+05:30) — c7-soc-batch-04r2: q21/q22/q23 answered from textbook Part-2 (1857 social/religious impact p.16-17; Rani Lakshmibai's role p.20; consequences p.21); off-stem printed keys retained in source_flags. Un-excluded.",
  "amendments_applied": [],
  "unit_state": "EXTRACTED",
  "review_ready": false,
@@ -2026,7 +2026,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -2035,6 +2035,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T04:18:43+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-09T02:45:00+05:30",
+     "ref": "class-7-social_r2_delta_prompt_v1 (control rev 12)"
     }
    ],
    "created_by": "class-7-social",
@@ -2043,14 +2051,15 @@
    "section_signal": "E",
    "answer": {
     "kind": "text",
-    "value": "Immediate causes of the 1857 struggle: In 1857, the British introduced a new type of Enfield rifle into the army. News spread among the soldiers like wildfire that pig and cow fat was used in these cartridges. The cartridges had to be bitten off before use. This hurt the religious sentiments of Hindu and Muslim sepoys. Soldiers who refused to use them were punished."
+    "value": "Many social and religious factors contributed to the revolt. The British, intoxicated by a sense of racial superiority, propagated the theory of 'The White Man's Burden', describing Indians as uncivilised 'savages', addressing them with slurs and barring them from European hotels and clubs. Their interference in Indian society - encouraging the prohibition of Sati and child marriage, promoting widow re-marriage, and the propagation of Christianity - was viewed by conservative Hindus as interference in their social and religious system, while the construction of railways and the telegraph made Indians view the British with suspicion. These social and religious grievances helped trigger the anti-British revolt of 1857."
    },
    "answer_as_printed": "Immediate causes of the 1857 struggle: In 1857, the British introduced a new type of Enfield rifle into the army. News spread among the soldiers like wildfire that pig and cow fat was used in these cartridges. The cartridges had to be bitten off before use. This hurt the religious sentiments of Hindu and Muslim sepoys. Soldiers who refused to use them were punished.",
    "answer_provenance": {
-    "by": "printed",
+    "by": "textbook_excerpt",
     "actor": "class-7-social",
-    "at": "2026-10-08T04:18:43+05:30",
-    "basis": "printed one-line answer, verbatim (v2 §4)"
+    "at": "2026-10-09T02:45:00+05:30",
+    "basis": "7th English SS Part-2 2026-27, printed pp.16-17 (pdf pp.18-19), 'Social and Religious causes': \"Many social and religious factors were also responsible for the outbreak of revolt. The British were intoxicated by their sense of racial superiority. They propagated the theory of 'The White Man's Burden' ... they encouraged the prohibition of Sati system and child marriage and encouraged widow re-marriage. This move was not easily acceptable to conservative Indians ... propogation of Christianity resulted in triggering anti-British movement in the society ... The construction of railways and telegraph by the British, made the Indians view them with suspicion.\" Composed from the textbook because the LBA key printed under q21 (immediate cause - the Enfield cartridges) does not address the social and religious dimension; the printed off-stem key is retained in source_flags.",
+    "textbook_derived": true
    },
    "source_flags": [
     {
@@ -2062,7 +2071,21 @@
      "suggested": "review — answer is the immediate causes, not the social/religious impact (cf. q26)"
     }
    ],
-   "content_hash": "2a02072f7f62b2954fa99ffcaaca3a31b0f96dd3856e9d82493a6bdc56f215a3"
+   "content_hash": "2a02072f7f62b2954fa99ffcaaca3a31b0f96dd3856e9d82493a6bdc56f215a3",
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "7th English SS Part-2 2026-27.pdf",
+      "pdf_page": 18,
+      "derived_from": "text_layer",
+      "y": 350.0
+     },
+     "text": "Many social and religious factors were also responsible for the outbreak of revolt.",
+     "confidence": "verbatim"
+    }
+   ]
   },
   {
    "id": "soc-7-16-s5-q022",
@@ -2115,7 +2138,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -2124,6 +2147,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T04:18:43+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-09T02:45:00+05:30",
+     "ref": "class-7-social_r2_delta_prompt_v1 (control rev 12)"
     }
    ],
    "created_by": "class-7-social",
@@ -2132,14 +2163,15 @@
    "section_signal": "E",
    "answer": {
     "kind": "text",
-    "value": "States that came under British rule due to the Doctrine of Lapse: Satara, Jaipur, Udaipur, Jhansi, Sambalpur, and Oudh."
+    "value": "During the 1857 revolt Rani Lakshmibai led the uprising at Jhansi. The textbook records that the riots took place under the leadership of Commander Bakht Khan in Delhi, Nana Saheb and Tatya Tope in Kanpur, Begum Hazrat Mahal in Lucknow, Laxmibai in Jhansi and Kunwar Singh in Bihar - so her role was to lead the revolt against the British in Jhansi, one of the important revolutionary centres of the war."
    },
    "answer_as_printed": "States that came under British rule due to the Doctrine of Lapse: Satara, Jaipur, Udaipur, Jhansi, Sambalpur, and Oudh.",
    "answer_provenance": {
-    "by": "printed",
+    "by": "textbook_excerpt",
     "actor": "class-7-social",
-    "at": "2026-10-08T04:18:43+05:30",
-    "basis": "printed one-line answer, verbatim (v2 §4)"
+    "at": "2026-10-09T02:45:00+05:30",
+    "basis": "7th English SS Part-2 2026-27, printed p.20 (pdf p.22): \"The riots took place under the leadership of Commander Bakht Khan in Delhi, Nana Saheb and Tatya Tope in Kanpur, Begum Hazrat Mahal in Lucknow, Laxmibai in Jhansi and Kunwar Singh in Bihar.\" Jhansi is also listed among the important revolutionary centres. Composed from the textbook because the LBA key printed under q22 (states annexed under the Doctrine of Lapse) does not address Lakshmibai's role; the printed off-stem key is retained in source_flags.",
+    "textbook_derived": true
    },
    "source_flags": [
     {
@@ -2151,7 +2183,21 @@
      "suggested": "review — answer is Doctrine-of-Lapse states, not Lakshmibai's role (cf. q27)"
     }
    ],
-   "content_hash": "f31106e18c111909d59d829bfbe58853355cdeef5dc7d540270b196cc9ea508b"
+   "content_hash": "f31106e18c111909d59d829bfbe58853355cdeef5dc7d540270b196cc9ea508b",
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "7th English SS Part-2 2026-27.pdf",
+      "pdf_page": 22,
+      "derived_from": "text_layer",
+      "y": 300.0
+     },
+     "text": "Begum Hazrat Mahal in Lucknow, Laxmibai in Jhansi and Kunwar Singh in Bihar.",
+     "confidence": "verbatim"
+    }
+   ]
   },
   {
    "id": "soc-7-16-s5-q023",
@@ -2204,7 +2250,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -2213,6 +2259,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T04:18:43+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-09T02:45:00+05:30",
+     "ref": "class-7-social_r2_delta_prompt_v1 (control rev 12)"
     }
    ],
    "created_by": "class-7-social",
@@ -2221,14 +2275,15 @@
    "section_signal": "E",
    "answer": {
     "kind": "text",
-    "value": "Factors that led to the First War of Independence: Political cause, Administrative cause, Economic cause, Social and religious cause, Military cause, Immediate cause."
+    "value": "Though the struggle failed it had long-lasting effects, with serious consequences for India's political, economic and cultural fields. As a result of the revolt the rule of the East India Company ended and the British Queen took over the administration of India. In 1858 C.E. Queen Victoria issued a 'Proclamation' promising to respect the rights, customs and traditions of Indians and not to interfere in their religious life. The 1857-58 C.E. war also paved the way for the modern national movement for independence and became a constant source of inspiration for the freedom struggle."
    },
    "answer_as_printed": "Factors that led to the First War of Independence: Political cause, Administrative cause, Economic cause, Social and religious cause, Military cause, Immediate cause.",
    "answer_provenance": {
-    "by": "printed",
+    "by": "textbook_excerpt",
     "actor": "class-7-social",
-    "at": "2026-10-08T04:18:43+05:30",
-    "basis": "printed one-line answer, verbatim (v2 §4)"
+    "at": "2026-10-09T02:45:00+05:30",
+    "basis": "7th English SS Part-2 2026-27, printed p.21 (pdf p.23), 'Consequences': \"Though the struggle failed, it had long-lasting effects. It had serious consequences on India's political, economic and cultural fields. As a result of this revolt, the rule of the East India Company ended and the British Queen took over the administration of India. In 1858 C.E. Queen Victoria issued a 'Proclamation' ... The 1857-58 C.E. war paved the way for the modern national movement for independence.\" Composed from the textbook because the LBA key printed under q23 (the causes/factors of the revolt) does not address the consequences; the printed off-stem key is retained in source_flags.",
+    "textbook_derived": true
    },
    "source_flags": [
     {
@@ -2240,7 +2295,21 @@
      "suggested": "review — answer is the causes, not the consequences (cf. q28)"
     }
    ],
-   "content_hash": "696db66d8109b04d493b8fc1bd2381248fcb25c6452674095dfe6c878b866b12"
+   "content_hash": "696db66d8109b04d493b8fc1bd2381248fcb25c6452674095dfe6c878b866b12",
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "7th English SS Part-2 2026-27.pdf",
+      "pdf_page": 23,
+      "derived_from": "text_layer",
+      "y": 300.0
+     },
+     "text": "As a result of this revolt, the rule of the East India Company ended and the British Queen took over the administration of India.",
+     "confidence": "verbatim"
+    }
+   ]
   },
   {
    "id": "soc-7-16-s5-q024",
