@@ -3,8 +3,8 @@
  "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
  "procedure_file": "extraction_procedure_social_addendum_v1.3_social science Classes 6-10 on top of procedure v2.md",
  "machine_name": "soc-7-08_questions",
- "version": 1,
- "changelog": "v1 extraction — batch-01 — class-7-social",
+ "version": 2,
+ "changelog": "v1 extraction — batch-01 — class-7-social | v2 r1 correction (2026-10-08T23:45:00+05:30) [v1.4 figure-unit fallback: kept at current addendum version] — q22 'Gesudaraj = long haired' from textbook Part-1; q27 excluded (not in textbook); q47 question-side figure kept (figure-unit fallback)",
  "amendments_applied": [],
  "unit_state": "EXTRACTED",
  "review_ready": false,
@@ -1789,7 +1789,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -1798,6 +1798,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T03:08:27+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:45:00+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -1806,14 +1814,14 @@
    "section_signal": "B",
    "answer": {
     "kind": "text",
-    "value": "Protecting the entrapped fish"
+    "value": "long haired"
    },
    "answer_as_printed": "Protecting the entrapped fish",
    "answer_provenance": {
-    "by": "printed",
+    "by": "textbook_excerpt",
     "actor": "class-7-social",
-    "at": "2026-10-08T03:08:27+05:30",
-    "basis": "printed fill-in-the-blank key word(s), verbatim (v2 §4)"
+    "at": "2026-10-08T23:45:00+05:30",
+    "basis": "7th English SS Part-1 2026-27, printed p.124 (pdf p.138): \"Another name of him was Gesudaraj means 'long haired'. His original name was Syed Muhammad Hussaini\". The Sufi saint's name Gesudaraj (Jesudaraj) means 'long haired'."
    },
    "source_flags": [
     {
@@ -1825,7 +1833,21 @@
      "suggested": "review — printed key does not define 'Jesudaraj'"
     }
    ],
-   "content_hash": "10723ecee11825b6b08cb09b8810db63263e93bc44e65ba7e5494ee3a55f24e2"
+   "content_hash": "10723ecee11825b6b08cb09b8810db63263e93bc44e65ba7e5494ee3a55f24e2",
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "7th English SS Part-1 2026-27.pdf",
+      "pdf_page": 138,
+      "derived_from": "text_layer",
+      "y": 310.7
+     },
+     "text": "Another name of him was Gesudaraj means 'long haired'. His original name was Syed Muhammad Hussaini",
+     "confidence": "verbatim"
+    }
+   ]
   },
   {
    "id": "soc-7-08-s3-q023",
