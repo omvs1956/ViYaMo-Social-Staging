@@ -1,10 +1,10 @@
 {
  "contract_version": "1.7",
  "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
- "procedure_file": "extraction_procedure_social_addendum_v1.3_social science Classes 6-10 on top of procedure v2.md",
+ "procedure_file": "extraction_procedure_social_addendum_v1.4_social science Classes 6-10 on top of procedure v2.md",
  "machine_name": "soc-7-23_questions",
- "version": 1,
- "changelog": "v1 extraction — batch-01 — class-7-social",
+ "version": 2,
+ "changelog": "v1 extraction — batch-01 — class-7-social | v2 r1 correction (2026-10-08T23:59:28+05:30) — q19->'border areas' from textbook Part-2; q27 excluded (defective stem)",
  "amendments_applied": [],
  "unit_state": "EXTRACTED",
  "review_ready": false,
@@ -1775,7 +1775,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -1784,6 +1784,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T05:23:05+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:59:28+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -1792,26 +1800,35 @@
    "section_signal": "B",
    "answer": {
     "kind": "text",
-    "value": "Duty until the last breadth."
+    "value": "Border areas"
    },
    "answer_as_printed": "Duty until the last breadth.",
    "answer_provenance": {
-    "by": "printed",
+    "by": "textbook_excerpt",
     "actor": "class-7-social",
-    "at": "2026-10-08T05:23:05+05:30",
-    "basis": "printed fill-in-the-blank key word(s), verbatim (v2 §4)"
+    "at": "2026-10-08T23:59:28+05:30",
+    "basis": "7th English SS Part-2 2026-27, printed p.119 (pdf p.121): \"The main work of the Border Security Force (BSF) is to guard our border areas\". Border security forces are deployed in the border areas."
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
-    },
-    {
-     "issue": "key text does not address question",
-     "why_not_corrected": "stem asks WHERE the border security forces have been deployed (a place); printed key 'Duty until the last breadth.' is a motto, not a location. Kept verbatim; correctness is the review layer.",
-     "suggested": "review — key gives a motto, not a deployment location"
     }
    ],
-   "content_hash": "8a42ed3de6de31ef0e624269e92ed576c28593e58fe4c9784c8c4042c8afde5d"
+   "content_hash": "8a42ed3de6de31ef0e624269e92ed576c28593e58fe4c9784c8c4042c8afde5d",
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "7th English SS Part-2 2026-27.pdf",
+      "pdf_page": 121,
+      "derived_from": "text_layer",
+      "y": 54.3
+     },
+     "text": "The main work of the Border Security Force (BSF) is to guard our border areas",
+     "confidence": "verbatim"
+    }
+   ]
   },
   {
    "id": "soc-7-23-s2-q020",
