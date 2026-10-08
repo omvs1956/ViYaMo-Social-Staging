@@ -1,10 +1,10 @@
 {
  "contract_version": "1.7",
  "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
- "procedure_file": "extraction_procedure_social_addendum_v1.3_social science Classes 6-10 on top of procedure v2.md",
+ "procedure_file": "extraction_procedure_social_addendum_v1.4_social science Classes 6-10 on top of procedure v2.md",
  "machine_name": "soc-7-12_questions",
- "version": 1,
- "changelog": "v1 extraction — batch-01 — class-7-social",
+ "version": 2,
+ "changelog": "v1 extraction — batch-01 — class-7-social | v2 r1 correction (2026-10-08T23:49:14+05:30) — q7/q9/q10/q23 corrected + q2 confirmed from textbook Part-1; q13 excluded (correct mapping not an option)",
  "amendments_applied": [],
  "unit_state": "EXTRACTED",
  "review_ready": false,
@@ -205,7 +205,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -214,6 +214,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T03:36:32+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:49:14+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -244,22 +252,31 @@
     "option_id": "B"
    },
    "answer_provenance": {
-    "by": "printed",
+    "by": "textbook_excerpt",
     "actor": "class-7-social",
-    "at": "2026-10-08T03:36:32+05:30",
-    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+    "at": "2026-10-08T23:49:14+05:30",
+    "basis": "7th English SS Part-1 2026-27, printed p.161 (pdf p.175): \"according to the statistics presented by the UNO in 2022, there are discussions that India is at the first place in the world\". Most populous country per UN 2022 (textbook) = India = option B (confirms printed answer)."
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
-    },
-    {
-     "issue": "key text does not address question",
-     "why_not_corrected": "stem pins it to UN 2022 statistics; keyed option B 'India' is wrong for 2022 (per UN WPP 2022 China was most populous; India overtook in 2023 = option C). Option B asserted verbatim; correctness is the review layer.",
-     "suggested": "C) China (for UN 2022) — review; borderline vs textbook intent"
     }
    ],
-   "content_hash": "b91f57b75d5753549323d5866918ea477fe1c80d43bfff3081a27807c9d700a8"
+   "content_hash": "b91f57b75d5753549323d5866918ea477fe1c80d43bfff3081a27807c9d700a8",
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "7th English SS Part-1 2026-27.pdf",
+      "pdf_page": 175,
+      "derived_from": "text_layer",
+      "y": 113.2
+     },
+     "text": "according to the statistics presented by the UNO in 2022, there are discussions that India is at the first place in the world",
+     "confidence": "verbatim"
+    }
+   ]
   },
   {
    "id": "soc-7-12-s1-q003",
@@ -700,7 +717,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -709,6 +726,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T03:36:32+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:49:14+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -736,25 +761,37 @@
    "answer_as_printed": "C.",
    "answer": {
     "kind": "option",
-    "option_id": "C"
+    "option_id": "B"
    },
    "answer_provenance": {
-    "by": "printed",
+    "by": "textbook_excerpt",
     "actor": "class-7-social",
-    "at": "2026-10-08T03:36:32+05:30",
-    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+    "at": "2026-10-08T23:49:14+05:30",
+    "basis": "7th English SS Part-1 2026-27, printed p.164 (pdf p.178): \"to the south of the north Indian plains and mostly comprised of old hard rocks (the Peninsular plateaus)\". Natural division of old hard rocks = Peninsular plateau = option B."
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
     },
     {
-     "issue": "key text does not address question",
-     "why_not_corrected": "stem: division formed mostly by ancient hard rocks = Peninsular Plateau (option B); keyed option C 'Northern plains' is wrong. Option C asserted verbatim; correctness is the review layer.",
-     "suggested": "B) Peninsular plateau — review"
+     "issue": "printed key contradicts fact — textbook gives option B Peninsular plateau (Part-1 p.164); printed key C (Northern plains) wrong; reviewer"
     }
    ],
-   "content_hash": "01c4973adaff5ab696cd2a3f453a74337ef1b7f31d1a423e6f0b5083ec10fa5d"
+   "content_hash": "01c4973adaff5ab696cd2a3f453a74337ef1b7f31d1a423e6f0b5083ec10fa5d",
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "7th English SS Part-1 2026-27.pdf",
+      "pdf_page": 178,
+      "derived_from": "text_layer",
+      "y": 508.8
+     },
+     "text": "to the south of the north Indian plains and mostly comprised of old hard rocks (the Peninsular plateaus)",
+     "confidence": "verbatim"
+    }
+   ]
   },
   {
    "id": "soc-7-12-s1-q008",
@@ -901,7 +938,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -910,6 +947,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T03:36:32+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:49:14+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -937,25 +982,37 @@
    "answer_as_printed": "C.",
    "answer": {
     "kind": "option",
-    "option_id": "C"
+    "option_id": "A"
    },
    "answer_provenance": {
-    "by": "printed",
+    "by": "textbook_excerpt",
     "actor": "class-7-social",
-    "at": "2026-10-08T03:36:32+05:30",
-    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+    "at": "2026-10-08T23:49:14+05:30",
+    "basis": "7th English SS Part-1 2026-27, printed p.166 (pdf p.180): \"The Andaman and Nicobar islands are made up of hard volcanic rocks\". The 204 Bay-of-Bengal islands are the Andaman & Nicobar group, made of hard volcanic rocks = option A (earthquakes/volcanoes), not coral (that is Lakshadweep)."
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
     },
     {
-     "issue": "key text does not address question",
-     "why_not_corrected": "stem: how the Bay of Bengal islands (Andaman & Nicobar) formed = earthquakes/volcanoes (tectonic, option A); keyed option C 'Glaciers' is wrong. Option C asserted verbatim; correctness is the review layer.",
-     "suggested": "A) Earthquakes, volcanoes — review"
+     "issue": "printed key contradicts fact — textbook gives Andaman & Nicobar = hard volcanic rocks = option A (Part-1 p.166); printed key C (Glaciers) wrong; reviewer"
     }
    ],
-   "content_hash": "02637a9320d308befe971a2f6b59bcf69b0c8060e36c0d95d7e39fd93218b61c"
+   "content_hash": "02637a9320d308befe971a2f6b59bcf69b0c8060e36c0d95d7e39fd93218b61c",
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "7th English SS Part-1 2026-27.pdf",
+      "pdf_page": 180,
+      "derived_from": "text_layer",
+      "y": 163.2
+     },
+     "text": "The Andaman and Nicobar islands are made up of hard volcanic rocks",
+     "confidence": "verbatim"
+    }
+   ]
   },
   {
    "id": "soc-7-12-s1-q010",
@@ -1004,7 +1061,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -1013,6 +1070,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T03:36:32+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:49:14+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -1040,25 +1105,37 @@
    "answer_as_printed": "C.",
    "answer": {
     "kind": "option",
-    "option_id": "C"
+    "option_id": "B"
    },
    "answer_provenance": {
-    "by": "printed",
+    "by": "textbook_excerpt",
     "actor": "class-7-social",
-    "at": "2026-10-08T03:36:32+05:30",
-    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+    "at": "2026-10-08T23:49:14+05:30",
+    "basis": "7th English SS Part-1 2026-27, printed p.166 (pdf p.180): \"India has a desert, known as the 'Thar desert'. It is located in north-western India\". The Thar desert is in north-western India; of the options, Bihar (eastern India) has no Thar = option B."
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
     },
     {
-     "issue": "key text does not address question",
-     "why_not_corrected": "stem: state the Thar Desert is NOT spread in = Bihar (option B); keyed option C 'Punjab' is wrong (Punjab IS covered). Option C asserted verbatim; correctness is the review layer.",
-     "suggested": "B) Bihar — review"
+     "issue": "printed key contradicts fact — textbook: Thar is north-western (Part-1 p.166); the non-Thar state is Bihar = option B; printed key C (Punjab, a Thar state) wrong; reviewer"
     }
    ],
-   "content_hash": "1d6575c094be28aec1a1d17d6c688f3f47effe2ead07c34ffedf2eff486fb84d"
+   "content_hash": "1d6575c094be28aec1a1d17d6c688f3f47effe2ead07c34ffedf2eff486fb84d",
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "7th English SS Part-1 2026-27.pdf",
+      "pdf_page": 180,
+      "derived_from": "text_layer",
+      "y": 262.7
+     },
+     "text": "India has a desert, known as the 'Thar desert'. It is located in north-western India",
+     "confidence": "verbatim"
+    }
+   ]
   },
   {
    "id": "soc-7-12-s1-q011",
@@ -1303,7 +1380,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -1312,6 +1389,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T03:36:32+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:49:14+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -1352,9 +1437,7 @@
      "issue": "marks ambiguous in source — no marks printed"
     },
     {
-     "issue": "key text does not address question",
-     "why_not_corrected": "stem matches India's neighbours by direction (NW=Pakistan/Afghanistan, N=Nepal/Bhutan/China, E=Bangladesh/Myanmar, SE=Sri Lanka = 1-D 2-C 3-B 4-A, option B); keyed option C '1-D 2-B 3-C 4-D' is internally inconsistent and wrong. Option C asserted verbatim; correctness is the review layer.",
-     "suggested": "B) 1-D 2-C 3-B 4-A — review"
+     "issue": "printed key contradicts fact — correct neighbour mapping is 1-D 2-C 3-B 4-A (NW Pakistan/Afghanistan; N Nepal/Bhutan/China; E Bangladesh/Myanmar; SE Sri Lanka), which is not among the options; printed key asserted as printed; reviewer"
     }
    ],
    "content_hash": "9206db81b0925c1f3e102944cf429575a3c5b1829af3d9f866e89dafe8b48c8c"
@@ -2288,7 +2371,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -2297,6 +2380,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T03:36:32+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:49:14+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -2324,25 +2415,37 @@
    "answer_as_printed": "C.",
    "answer": {
     "kind": "option",
-    "option_id": "C"
+    "option_id": "B"
    },
    "answer_provenance": {
-    "by": "printed",
+    "by": "textbook_excerpt",
     "actor": "class-7-social",
-    "at": "2026-10-08T03:36:32+05:30",
-    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+    "at": "2026-10-08T23:49:14+05:30",
+    "basis": "7th English SS Part-1 2026-27, printed p.169 (pdf p.183): \"Davangere was known as the 'Manchester of Karnataka' because it was famous for cotton textiles\". Manchester of Karnataka = Davanagere = option B."
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
     },
     {
-     "issue": "key text does not address question",
-     "why_not_corrected": "stem: 'Manchester of Karnataka' = Davanagere (option B); keyed option C 'Sirsi' is wrong. Option C asserted verbatim; correctness is the review layer.",
-     "suggested": "B) Davanagere — review"
+     "issue": "printed key contradicts fact — textbook gives option B Davanagere (Part-1 p.169); printed key C (Sirsi) wrong; reviewer"
     }
    ],
-   "content_hash": "0f2c766903d249b439a12e50c91b5dbe0be158fec913c7b17f74c56493d08708"
+   "content_hash": "0f2c766903d249b439a12e50c91b5dbe0be158fec913c7b17f74c56493d08708",
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "7th English SS Part-1 2026-27.pdf",
+      "pdf_page": 183,
+      "derived_from": "text_layer",
+      "y": 587.6
+     },
+     "text": "Davangere was known as the 'Manchester of Karnataka' because it was famous for cotton textiles",
+     "confidence": "verbatim"
+    }
+   ]
   },
   {
    "id": "soc-7-12-s1-q024",
