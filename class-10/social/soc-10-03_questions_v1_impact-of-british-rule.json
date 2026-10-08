@@ -1,10 +1,10 @@
 {
  "contract_version": "1.7",
  "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
- "procedure_file": "extraction_procedure_social_addendum_v1.2_social science Classes 6-10 on top of procedure v2.md",
+ "procedure_file": "extraction_procedure_social_addendum_v1.4_social science Classes 6-10 on top of procedure v2.md",
  "machine_name": "soc-10-03_questions",
  "version": 1,
- "changelog": "v1 extraction — batch-02 — class-10-social",
+ "changelog": "v1 extraction — batch-02 — class-10-social; r2 (c10-soc-batch-05r2) — re-stamp addendum v1.4; review_decisions_class-10 v1 — class-10-social",
  "amendments_applied": [],
  "unit_state": "EXTRACTED",
  "review_ready": false,
@@ -426,7 +426,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -435,6 +435,14 @@
      "by": "class-10-social",
      "role": "extraction",
      "at": "2026-10-01T19:55:12+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "correction",
+     "at": "2026-10-08T22:28:34+05:30",
+     "ref": "review_decisions_class-10 v1 (key)"
     }
    ],
    "created_by": "class-10-social",
@@ -467,19 +475,37 @@
    ],
    "answer": {
     "kind": "option",
-    "option_id": null
+    "option_id": "A"
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
     },
     {
-     "issue": "key text not among options",
-     "why_not_corrected": "text-only key; two-pass normalised match found no option (v2 §3)",
-     "suggested": "? (review)"
+     "issue": "key text differs from option by a printed typo"
     }
    ],
-   "content_hash": "4bf54cf7005a339e97d2568809ea35c225a28249eb94472168bf0609288a1df2"
+   "content_hash": "4bf54cf7005a339e97d2568809ea35c225a28249eb94472168bf0609288a1df2",
+   "answer_provenance": {
+    "by": "textbook_excerpt",
+    "actor": "class-10-social",
+    "at": "2026-10-08T22:28:34+05:30",
+    "basis": "Part 1, printed page 30 (pdf 43): under 'Indian Councils Act of 1909' the Act provided separate representation for Muslims via a 'Separate Electorate College' -> option A 'Indian council act of 1909'. Printed text-only key '1909 Indian Council Act' is option A reordered (normalise miss, now resolved)."
+   },
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "confidence": "verbatim",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "10th English  SS  Part - 1 2026-27.pdf#soc-10-03-s1-q004-textbook",
+      "pdf_page": 43,
+      "y": 0,
+      "derived_from": "manual"
+     },
+     "text": "In order to provide separate representation for Muslims, 'Separate Electorate College' was created. (under 'Indian Councils Act of 1909')"
+    }
+   ]
   },
   {
    "id": "soc-10-03-s1-q005",
