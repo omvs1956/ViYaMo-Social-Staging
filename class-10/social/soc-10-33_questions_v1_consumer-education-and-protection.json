@@ -1,10 +1,10 @@
 {
  "contract_version": "1.7",
  "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
- "procedure_file": "extraction_procedure_social_addendum_v1.2_social science Classes 6-10 on top of procedure v2.md",
+ "procedure_file": "extraction_procedure_social_addendum_v1.4_social science Classes 6-10 on top of procedure v2.md",
  "machine_name": "soc-10-33_questions",
  "version": 1,
- "changelog": "v1 extraction — batch-02 — class-10-social",
+ "changelog": "v1 extraction — batch-02 — class-10-social; r2 (c10-soc-batch-05r2) — re-stamp addendum v1.4; review_decisions_class-10 v1 — class-10-social",
  "amendments_applied": [],
  "unit_state": "EXTRACTED",
  "review_ready": false,
@@ -209,7 +209,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -218,6 +218,14 @@
      "by": "class-10-social",
      "role": "extraction",
      "at": "2026-10-02T08:13:39+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "correction",
+     "at": "2026-10-08T22:28:34+05:30",
+     "ref": "review_decisions_class-10 v1 (printed)"
     }
    ],
    "created_by": "class-10-social",
@@ -254,19 +262,37 @@
    "answer_as_printed": "A) District Consumer disputes Redressal Commission",
    "answer": {
     "kind": "option",
-    "option_id": null
+    "option_id": "D"
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
     },
     {
-     "issue": "key text not among options",
-     "why_not_corrected": "the printed key is '2. A) District Consumer disputes Redressal Commission'. Letter A = option A 'State Consumer disputes Redressal Commission', but the key text names option D 'District Consumer disputes Redressal Commission' (exact match). Letter and key text name different options; no answer is asserted (key-letter-text-disagreement vocab 'key text not among options'); the reviewer decides which governs (coordinator relay 13)",
-     "suggested": "D (by text; printed letter A='State...' disagrees — complaints < 1 crore -> District Commission, cf this chapter's q17) — review"
+     "issue": "printed key contradicts fact — printed letter A names option A 'State Consumer disputes Redressal Commission'; complaints under one crore go to the District Commission (option D), confirmed by textbook"
     }
    ],
-   "content_hash": "f66693dfe06b468998be93306987e2e6c5f0159f5a67589a7a93a950a762a122"
+   "content_hash": "f66693dfe06b468998be93306987e2e6c5f0159f5a67589a7a93a950a762a122",
+   "answer_provenance": {
+    "by": "textbook_excerpt",
+    "actor": "class-10-social",
+    "at": "2026-10-08T22:28:34+05:30",
+    "basis": "Part 2, printed page 148 (pdf 150): the District Consumer Disputes Redressal Commission entertains complaints where the value is less than Rs. One Crore -> option D. Printed letter A (option A 'State ...') contradicts the fact; text/fact win (D)."
+   },
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "confidence": "verbatim",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "10th English  SS  Part - 2 2026-27.pdf#soc-10-33-s1-q002-textbook",
+      "pdf_page": 150,
+      "y": 0,
+      "derived_from": "manual"
+     },
+     "text": "District Consumer Disputes Redressal Commission : There shall be a Commission in each district. ... It entertains the complaints where the value of goods and services is less than Rs. One Crore."
+    }
+   ]
   },
   {
    "id": "soc-10-33-s1-q003",
