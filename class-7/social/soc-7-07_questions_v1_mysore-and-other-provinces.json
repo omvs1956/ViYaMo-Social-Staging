@@ -3,8 +3,8 @@
  "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
  "procedure_file": "extraction_procedure_social_addendum_v1.3_social science Classes 6-10 on top of procedure v2.md",
  "machine_name": "soc-7-07_questions",
- "version": 1,
- "changelog": "v1 extraction — batch-01 — class-7-social (composite)",
+ "version": 2,
+ "changelog": "v1 extraction — batch-01 — class-7-social (composite) | v2 r1 correction (2026-10-08T23:44:01+05:30) [v1.4 figure-unit fallback: kept at current addendum version] — re-id 7.3 -> uniform suffix 'c' (v1.4 §14.2, 39 ids); 10 MCQ + q9c + q30 + q6(truncation completed) corrected from textbook Part-1; figure-unit fallback (q048/q061 question-side crops)",
  "amendments_applied": [],
  "unit_state": "EXTRACTED",
  "review_ready": false,
@@ -309,7 +309,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -318,6 +318,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T02:42:11+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:44:01+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -345,26 +353,38 @@
    "answer_as_printed": "C)",
    "answer": {
     "kind": "option",
-    "option_id": "C"
+    "option_id": "B"
    },
    "answer_provenance": {
-    "by": "printed",
+    "by": "textbook_excerpt",
     "actor": "class-7-social",
-    "at": "2026-10-08T02:42:11+05:30",
-    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+    "at": "2026-10-08T23:44:01+05:30",
+    "basis": "7th English SS Part-1 2026-27, printed p.72 (pdf p.86): \"Their royal emblem was Ganda-Bherunda\". Mysore state emblem = Ganda-Bherunda = option B."
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
     },
     {
-     "issue": "key text does not address question",
-     "why_not_corrected": "printed MCQ key C 'Four-faced lion' is wrong; the Mysore state emblem is the Gandaberunda (option B 'Ganda Beruanda'); printed letter asserted verbatim",
-     "suggested": "review (source answer-key error — chapter key-unreliable, A-to-Q blind read)"
+     "issue": "printed key contradicts fact — textbook gives option B (Part-1 p.72); printed key C wrong for this stem; reviewer"
     }
    ],
    "content_hash": "445b4b7657a984904028faae88622998dfea36107256ef72c88e2f82b5754d9b",
-   "subunit": "7.1"
+   "subunit": "7.1",
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "7th English SS Part-1 2026-27.pdf",
+      "pdf_page": 86,
+      "derived_from": "text_layer",
+      "y": 492.1
+     },
+     "text": "Their royal emblem was Ganda-Bherunda",
+     "confidence": "verbatim"
+    }
+   ]
   },
   {
    "id": "soc-7-07-s1-q003",
@@ -2708,7 +2728,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -2717,6 +2737,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T02:42:11+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:44:01+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -2725,27 +2753,39 @@
    "section_signal": "7.1/C",
    "answer": {
     "kind": "text",
-    "value": "Srirangapatna"
+    "value": "Mysuru"
    },
    "answer_as_printed": "Srirangapatna",
    "answer_provenance": {
-    "by": "printed",
+    "by": "textbook_excerpt",
     "actor": "class-7-social",
-    "at": "2026-10-08T02:42:11+05:30",
-    "basis": "printed fill-in-the-blank key word(s), verbatim (v2 §4)"
+    "at": "2026-10-08T23:44:01+05:30",
+    "basis": "7th English SS Part-1 2026-27, printed p.72 (pdf p.86): \"The capital of the Wodeyars was Mysore\". Textbook states the capital of the Wodeyars was Mysore (Mysuru); printed 'Srirangapatna' overruled."
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
     },
     {
-     "issue": "key text does not address question",
-     "why_not_corrected": "printed fill answer 'Srirangapatna' for 'early capital of the Mysore Wodeyars' is doubtful (the Wodeyars' early capital was Mysore; Srirangapatna became capital later); recorded verbatim",
-     "suggested": "review (source answer-key error — chapter key-unreliable, A-to-Q blind read)"
+     "issue": "printed key contradicts fact — textbook gives the Wodeyars' capital as Mysuru (Part-1 p.72); printed 'Srirangapatna' wrong; reviewer"
     }
    ],
    "content_hash": "4f93d8dfb6ca77d8f4ded9dd08efcb08973c0324daecd8171da8fdd7b7113423",
-   "subunit": "7.1"
+   "subunit": "7.1",
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "7th English SS Part-1 2026-27.pdf",
+      "pdf_page": 86,
+      "derived_from": "text_layer",
+      "y": 59.6
+     },
+     "text": "The capital of the Wodeyars was Mysore",
+     "confidence": "verbatim"
+    }
+   ]
   },
   {
    "id": "soc-7-07-s3-q031",
@@ -4924,7 +4964,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -4933,6 +4973,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T02:42:11+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:44:01+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -4941,27 +4989,36 @@
    "section_signal": "7.2/B",
    "answer": {
     "kind": "text",
-    "value": "He conquered the Portuguese ports one coast and assumed"
+    "value": "He conquered the Portuguese ports on the coast and assumed the title 'Padugadalodeya' (Lord of the Coast)."
    },
    "answer_as_printed": "He conquered the Portuguese ports one coast and assumed",
    "answer_provenance": {
-    "by": "printed",
+    "by": "textbook_excerpt",
     "actor": "class-7-social",
-    "at": "2026-10-08T02:42:11+05:30",
-    "basis": "printed VSA key, verbatim (v2 §4)"
+    "at": "2026-10-08T23:44:01+05:30",
+    "basis": "7th English SS Part-1 2026-27, printed p.89 (pdf p.103): \"he conquered the Portuguese ports on the coast and assumed the title 'Padugadalodeya' for defensive purpose\". Reason for the title 'Padugadalodeya' (Lord of the Coast): Shivappa Nayaka conquered the Portuguese ports on the coast. Textbook completes the truncated printed key."
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
-    },
-    {
-     "issue": "answer truncated in source",
-     "why_not_corrected": "the printed answer for q6 is incomplete/garbled ('He conquered the Portuguese ports one coast and assumed'); recorded verbatim",
-     "suggested": "review — answer incomplete in source"
     }
    ],
    "content_hash": "62c49abbc1cef516f3baf09d8ca0451b9cb53d6213278bb72b291529b442406b",
-   "subunit": "7.2"
+   "subunit": "7.2",
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "7th English SS Part-1 2026-27.pdf",
+      "pdf_page": 103,
+      "derived_from": "text_layer",
+      "y": 596.3
+     },
+     "text": "he conquered the Portuguese ports on the coast and assumed the title 'Padugadalodeya' for defensive purpose",
+     "confidence": "verbatim"
+    }
+   ]
   },
   {
    "id": "soc-7-07-s10-q007b",
@@ -6557,7 +6614,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -6566,6 +6623,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T02:42:11+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:44:01+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -6593,26 +6658,38 @@
    "answer_as_printed": "C)",
    "answer": {
     "kind": "option",
-    "option_id": "C"
+    "option_id": "B"
    },
    "answer_provenance": {
-    "by": "printed",
+    "by": "textbook_excerpt",
     "actor": "class-7-social",
-    "at": "2026-10-08T02:42:11+05:30",
-    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+    "at": "2026-10-08T23:44:01+05:30",
+    "basis": "7th English SS Part-1 2026-27, printed p.95 (pdf p.109): \"the Nagarhole National Park is in Kodagu\". National park in Kodagu = Nagarhole = option B."
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
     },
     {
-     "issue": "key text does not address question",
-     "why_not_corrected": "printed MCQ key C 'Bannerghatta' is wrong; the National Park in Kodagu is Nagarhole (option B); printed letter asserted verbatim",
-     "suggested": "review (source answer-key error — chapter key-unreliable, A-to-Q blind read)"
+     "issue": "printed key contradicts fact — textbook gives option B (Part-1 p.95); printed key C wrong for this stem; reviewer"
     }
    ],
    "content_hash": "aaf95301d9d03a771a7b7dbd875de7baa7c2c04b04c4757a21f98ea64f67a4ed",
-   "subunit": "7.3"
+   "subunit": "7.3",
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "7th English SS Part-1 2026-27.pdf",
+      "pdf_page": 109,
+      "derived_from": "text_layer",
+      "y": 505.3
+     },
+     "text": "the Nagarhole National Park is in Kodagu",
+     "confidence": "verbatim"
+    }
+   ]
   },
   {
    "id": "soc-7-07-s13-q004c",
@@ -7156,7 +7233,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -7165,6 +7242,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T02:42:11+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:44:01+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -7192,26 +7277,38 @@
    "answer_as_printed": "A)",
    "answer": {
     "kind": "option",
-    "option_id": "A"
+    "option_id": "C"
    },
    "answer_provenance": {
-    "by": "printed",
+    "by": "textbook_excerpt",
     "actor": "class-7-social",
-    "at": "2026-10-08T02:42:11+05:30",
-    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+    "at": "2026-10-08T23:44:01+05:30",
+    "basis": "7th English SS Part-1 2026-27, printed p.96 (pdf p.110): \"Revolt of Amarasullia: Since the peasants of Amarasullia found it hard to bear the heavy burden of land revenue, they rose in an armed revolt against the British ... They exiled the last king of Kodagu, Chikkaveera Rajendra\". Statement 1 (revenue burden increased on the Canara-district peasants of Amarasullia) and Statement 2 (British exiled the last Kodagu king) are both true (Part-1 p.96) = option C."
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
     },
     {
-     "issue": "key text does not address question",
-     "why_not_corrected": "printed MCQ key A 'Statement 1 only' is wrong; both statements are historically correct = option C; printed letter asserted verbatim",
-     "suggested": "review (source answer-key error — chapter key-unreliable, A-to-Q blind read)"
+     "issue": "printed key contradicts fact — textbook supports both statements = option C (Part-1 p.96); printed key A (statement 1 only) wrong; reviewer"
     }
    ],
    "content_hash": "d8d9f3c7c3189c9c52e6e939b6aa2ea6893ffaa2f28ccfe76c61d27590ce9fda",
-   "subunit": "7.3"
+   "subunit": "7.3",
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "7th English SS Part-1 2026-27.pdf",
+      "pdf_page": 110,
+      "derived_from": "text_layer",
+      "y": 432.0
+     },
+     "text": "Revolt of Amarasullia: Since the peasants of Amarasullia found it hard to bear the heavy burden of land revenue, they rose in an armed revolt against the British ... They exiled the last king of Kodagu, Chikkaveera Rajendra",
+     "confidence": "verbatim"
+    }
+   ]
   },
   {
    "id": "soc-7-07-s13-q010c",
@@ -7854,7 +7951,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -7863,6 +7960,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T02:42:11+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:44:01+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -7890,26 +7995,38 @@
    "answer_as_printed": "B)",
    "answer": {
     "kind": "option",
-    "option_id": "B"
+    "option_id": "C"
    },
    "answer_provenance": {
-    "by": "printed",
+    "by": "textbook_excerpt",
     "actor": "class-7-social",
-    "at": "2026-10-08T02:42:11+05:30",
-    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+    "at": "2026-10-08T23:44:01+05:30",
+    "basis": "7th English SS Part-1 2026-27, printed p.98 (pdf p.112): \"the Dharwad collector Thackeray made a lame excuse that the adoption was illegal\". Dharwad collector who opposed Kittur Chennamma's adoption = Thackeray = option C."
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
     },
     {
-     "issue": "key text does not address question",
-     "why_not_corrected": "printed MCQ key B 'Stuart' is wrong; the Dharwad Collector who opposed Chennamma's adoption was Thackeray (option C); asserted verbatim (cf. q51/q55 answers naming Thackeray)",
-     "suggested": "review (source answer-key error — chapter key-unreliable, A-to-Q blind read)"
+     "issue": "printed key contradicts fact — textbook gives option C (Part-1 p.98); printed key B wrong for this stem; reviewer"
     }
    ],
    "content_hash": "dc2b5db289963cad5864d365e1bddeb348876553261e7c3ea90d12b5141e6d53",
-   "subunit": "7.3"
+   "subunit": "7.3",
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "7th English SS Part-1 2026-27.pdf",
+      "pdf_page": 112,
+      "derived_from": "text_layer",
+      "y": 357.6
+     },
+     "text": "the Dharwad collector Thackeray made a lame excuse that the adoption was illegal",
+     "confidence": "verbatim"
+    }
+   ]
   },
   {
    "id": "soc-7-07-s13-q017c",
@@ -7958,7 +8075,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -7967,6 +8084,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T02:42:11+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:44:01+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -7994,26 +8119,38 @@
    "answer_as_printed": "C)",
    "answer": {
     "kind": "option",
-    "option_id": "C"
+    "option_id": "B"
    },
    "answer_provenance": {
-    "by": "printed",
+    "by": "textbook_excerpt",
     "actor": "class-7-social",
-    "at": "2026-10-08T02:42:11+05:30",
-    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+    "at": "2026-10-08T23:44:01+05:30",
+    "basis": "7th English SS Part-1 2026-27, printed p.99 (pdf p.113): \"The British imprisoned her at Bailhongal\". Channamma was imprisoned at Bailhongal = option B."
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
     },
     {
-     "issue": "key text does not address question",
-     "why_not_corrected": "printed MCQ key C 'Nandagarh' is wrong; Chennamma was imprisoned at Bailhongal (option B); asserted verbatim (cf. q55 answer 'imprisoned at Bailhongal')",
-     "suggested": "review (source answer-key error — chapter key-unreliable, A-to-Q blind read)"
+     "issue": "printed key contradicts fact — textbook gives option B (Part-1 p.99); printed key C wrong for this stem; reviewer"
     }
    ],
    "content_hash": "29fa96ff48f0b2009405c9c31db3492a5afbfc6eefa4c7c217dea2e54719899f",
-   "subunit": "7.3"
+   "subunit": "7.3",
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "7th English SS Part-1 2026-27.pdf",
+      "pdf_page": 113,
+      "derived_from": "text_layer",
+      "y": 70.2
+     },
+     "text": "The British imprisoned her at Bailhongal",
+     "confidence": "verbatim"
+    }
+   ]
   },
   {
    "id": "soc-7-07-s13-q018c",
@@ -8458,7 +8595,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -8467,6 +8604,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T02:42:11+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:44:01+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -8494,29 +8639,41 @@
    "answer_as_printed": "C)",
    "answer": {
     "kind": "option",
-    "option_id": "C"
+    "option_id": "B"
    },
    "answer_provenance": {
-    "by": "printed",
+    "by": "textbook_excerpt",
     "actor": "class-7-social",
-    "at": "2026-10-08T02:42:11+05:30",
-    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+    "at": "2026-10-08T23:44:01+05:30",
+    "basis": "7th English SS Part-1 2026-27, printed p.101 (pdf p.115): \"A German by name Manner compiled a Tulu dictionary\". Tulu dictionary author = Manner (Menner) = option B."
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
     },
     {
-     "issue": "key text does not address question",
-     "why_not_corrected": "printed MCQ key C 'Max Muller' is wrong; the Tulu dictionary was compiled by Rev. A. Maenner (option B 'Menner'); asserted verbatim",
-     "suggested": "review (source answer-key error — chapter key-unreliable, A-to-Q blind read)"
+     "issue": "printed key contradicts fact — textbook gives option B (Part-1 p.101); printed key C wrong for this stem; reviewer"
     }
    ],
    "content_hash": "b28f3c3930cf8d92ac6b550eaca4b704d3d0ed9b7a30f3fb8795e6e5fb5d96a8",
-   "subunit": "7.3"
+   "subunit": "7.3",
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "7th English SS Part-1 2026-27.pdf",
+      "pdf_page": 115,
+      "derived_from": "text_layer",
+      "y": 130.1
+     },
+     "text": "A German by name Manner compiled a Tulu dictionary",
+     "confidence": "verbatim"
+    }
+   ]
   },
   {
-   "id": "soc-7-07-s13-q023b",
+   "id": "soc-7-07-s13-q023c",
    "class": "7",
    "subject": "social",
    "language": "en",
@@ -8543,11 +8700,11 @@
    "out_of_syllabus": false,
    "text": "The royal family that ruled Tulu for a long time.",
    "source": "lba",
-   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q023b",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q023c",
    "locators": [
     {
      "role": "question",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q023b",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q023c",
      "pdf_page": 57,
      "printed_page": 43,
      "y": 409.058,
@@ -8555,14 +8712,14 @@
     },
     {
      "role": "answer",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q023b-key",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q023c-key",
      "pdf_page": 197,
      "printed_page": 183,
      "y": 0.0,
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 3,
    "status": "draft",
    "status_history": [
     {
@@ -8571,6 +8728,22 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T02:42:11+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:44:01+05:30",
+     "ref": "review_decisions_class-7 v1"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:44:01+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -8598,29 +8771,41 @@
    "answer_as_printed": "B)",
    "answer": {
     "kind": "option",
-    "option_id": "B"
+    "option_id": "C"
    },
    "answer_provenance": {
-    "by": "printed",
+    "by": "textbook_excerpt",
     "actor": "class-7-social",
-    "at": "2026-10-08T02:42:11+05:30",
-    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+    "at": "2026-10-08T23:44:01+05:30",
+    "basis": "7th English SS Part-1 2026-27, printed p.100 (pdf p.114): \"The kings of Alupa dynasty ruled Tulunadu for a long time\". Dynasty that ruled Tulunadu for a long time = Alupa = option C."
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
     },
     {
-     "issue": "key text does not address question",
-     "why_not_corrected": "printed MCQ key B 'Hoysala' is wrong; the dynasty that ruled Tulu Nadu for a long time was the Alupa (option C); asserted verbatim",
-     "suggested": "review (source answer-key error — chapter key-unreliable, A-to-Q blind read)"
+     "issue": "printed key contradicts fact — textbook gives option C (Part-1 p.100); printed key B wrong for this stem; reviewer"
     }
    ],
    "content_hash": "984051ed790989eaf1dd46d3c6ea108804a66d174b97d6fa9d41926fb8283e58",
-   "subunit": "7.3"
+   "subunit": "7.3",
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "7th English SS Part-1 2026-27.pdf",
+      "pdf_page": 114,
+      "derived_from": "text_layer",
+      "y": 95.4
+     },
+     "text": "The kings of Alupa dynasty ruled Tulunadu for a long time",
+     "confidence": "verbatim"
+    }
+   ]
   },
   {
-   "id": "soc-7-07-s13-q024b",
+   "id": "soc-7-07-s13-q024c",
    "class": "7",
    "subject": "social",
    "language": "en",
@@ -8647,11 +8832,11 @@
    "out_of_syllabus": false,
    "text": "The queen of the Chauta family who defeated the Portuguese.",
    "source": "lba",
-   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q024b",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q024c",
    "locators": [
     {
      "role": "question",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q024b",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q024c",
      "pdf_page": 57,
      "printed_page": 43,
      "y": 495.158,
@@ -8659,14 +8844,14 @@
     },
     {
      "role": "answer",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q024b-key",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q024c-key",
      "pdf_page": 197,
      "printed_page": 183,
      "y": 0.0,
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -8675,6 +8860,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T02:42:11+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:44:01+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -8719,7 +8912,7 @@
    "subunit": "7.3"
   },
   {
-   "id": "soc-7-07-s13-q025b",
+   "id": "soc-7-07-s13-q025c",
    "class": "7",
    "subject": "social",
    "language": "en",
@@ -8746,11 +8939,11 @@
    "out_of_syllabus": false,
    "text": "The place where the thousand pillared basadi, famous as the Kashi of the Jains, is located.",
    "source": "lba",
-   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q025b",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q025c",
    "locators": [
     {
      "role": "question",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q025b",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q025c",
      "pdf_page": 57,
      "printed_page": 43,
      "y": 638.678,
@@ -8758,14 +8951,14 @@
     },
     {
      "role": "answer",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q025b-key",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q025c-key",
      "pdf_page": 197,
      "printed_page": 183,
      "y": 0.0,
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -8774,6 +8967,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T02:42:11+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:44:01+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -8818,7 +9019,7 @@
    "subunit": "7.3"
   },
   {
-   "id": "soc-7-07-s13-q026b",
+   "id": "soc-7-07-s13-q026c",
    "class": "7",
    "subject": "social",
    "language": "en",
@@ -8845,11 +9046,11 @@
    "out_of_syllabus": false,
    "text": "The British called the coastal region this way.",
    "source": "lba",
-   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q026b",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q026c",
    "locators": [
     {
      "role": "question",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q026b",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q026c",
      "pdf_page": 58,
      "printed_page": 44,
      "y": 64.608,
@@ -8857,14 +9058,14 @@
     },
     {
      "role": "answer",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q026b-key",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q026c-key",
      "pdf_page": 197,
      "printed_page": 183,
      "y": 0.0,
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -8873,6 +9074,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T02:42:11+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:44:01+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -8917,7 +9126,7 @@
    "subunit": "7.3"
   },
   {
-   "id": "soc-7-07-s13-q027b",
+   "id": "soc-7-07-s13-q027c",
    "class": "7",
    "subject": "social",
    "language": "en",
@@ -8944,11 +9153,11 @@
    "out_of_syllabus": false,
    "text": "The year in which Uttara and Dakshina Kannada districts were merged with Karnataka.",
    "source": "lba",
-   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q027b",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q027c",
    "locators": [
     {
      "role": "question",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q027b",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q027c",
      "pdf_page": 58,
      "printed_page": 44,
      "y": 150.728,
@@ -8956,14 +9165,14 @@
     },
     {
      "role": "answer",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q027b-key",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q027c-key",
      "pdf_page": 197,
      "printed_page": 183,
      "y": 0.0,
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 3,
    "status": "draft",
    "status_history": [
     {
@@ -8972,6 +9181,22 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T02:42:11+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:44:01+05:30",
+     "ref": "review_decisions_class-7 v1"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:44:01+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -8999,29 +9224,41 @@
    "answer_as_printed": "C)",
    "answer": {
     "kind": "option",
-    "option_id": "C"
+    "option_id": "B"
    },
    "answer_provenance": {
-    "by": "printed",
+    "by": "textbook_excerpt",
     "actor": "class-7-social",
-    "at": "2026-10-08T02:42:11+05:30",
-    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+    "at": "2026-10-08T23:44:01+05:30",
+    "basis": "7th English SS Part-1 2026-27, printed p.103 (pdf p.117): \"In 1956 the North and South Canara districts were merged with Karnataka State\". North & South Canara merged with Karnataka in 1956 = option B."
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
     },
     {
-     "issue": "key text does not address question",
-     "why_not_corrected": "printed MCQ key C '1950' is wrong; Uttara/Dakshina Kannada merged with Karnataka in 1956 (option B); asserted verbatim",
-     "suggested": "review (source answer-key error — chapter key-unreliable, A-to-Q blind read)"
+     "issue": "printed key contradicts fact — textbook gives option B (Part-1 p.103); printed key C wrong for this stem; reviewer"
     }
    ],
    "content_hash": "3e8f96118f18f06fd800e61d08f22e370274ad47bc15cf3ad97b1c476cfb91cb",
-   "subunit": "7.3"
+   "subunit": "7.3",
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "7th English SS Part-1 2026-27.pdf",
+      "pdf_page": 117,
+      "derived_from": "text_layer",
+      "y": 52.8
+     },
+     "text": "In 1956 the North and South Canara districts were merged with Karnataka State",
+     "confidence": "verbatim"
+    }
+   ]
   },
   {
-   "id": "soc-7-07-s13-q028b",
+   "id": "soc-7-07-s13-q028c",
    "class": "7",
    "subject": "social",
    "language": "en",
@@ -9048,11 +9285,11 @@
    "out_of_syllabus": false,
    "text": "A new district was created by dividing the entire Dakshina Kannada district in 1997.",
    "source": "lba",
-   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q028b",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q028c",
    "locators": [
     {
      "role": "question",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q028b",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q028c",
      "pdf_page": 58,
      "printed_page": 44,
      "y": 265.528,
@@ -9060,14 +9297,14 @@
     },
     {
      "role": "answer",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q028b-key",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q028c-key",
      "pdf_page": 197,
      "printed_page": 183,
      "y": 0.0,
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 3,
    "status": "draft",
    "status_history": [
     {
@@ -9076,6 +9313,22 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T02:42:11+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:44:01+05:30",
+     "ref": "review_decisions_class-7 v1"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:44:01+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -9103,29 +9356,41 @@
    "answer_as_printed": "B)",
    "answer": {
     "kind": "option",
-    "option_id": "B"
+    "option_id": "C"
    },
    "answer_provenance": {
-    "by": "printed",
+    "by": "textbook_excerpt",
     "actor": "class-7-social",
-    "at": "2026-10-08T02:42:11+05:30",
-    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+    "at": "2026-10-08T23:44:01+05:30",
+    "basis": "7th English SS Part-1 2026-27, printed p.103 (pdf p.117): \"South Canara district was divided into Upupi [Udupi] district (1997)\". New district formed from Dakshina Kannada in 1997 = Udupi = option C."
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
     },
     {
-     "issue": "key text does not address question",
-     "why_not_corrected": "printed MCQ key B 'Uttara Kannada' is wrong; the district carved from Dakshina Kannada in 1997 was Udupi (option C); asserted verbatim",
-     "suggested": "review (source answer-key error — chapter key-unreliable, A-to-Q blind read)"
+     "issue": "printed key contradicts fact — textbook gives option C (Part-1 p.103); printed key B wrong for this stem; reviewer"
     }
    ],
    "content_hash": "d4fbff4326ac5244421e62fe1e80e751723d1912cf3f5c37367ca97e00469dab",
-   "subunit": "7.3"
+   "subunit": "7.3",
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "7th English SS Part-1 2026-27.pdf",
+      "pdf_page": 117,
+      "derived_from": "text_layer",
+      "y": 52.8
+     },
+     "text": "South Canara district was divided into Upupi [Udupi] district (1997)",
+     "confidence": "verbatim"
+    }
+   ]
   },
   {
-   "id": "soc-7-07-s13-q029b",
+   "id": "soc-7-07-s13-q029c",
    "class": "7",
    "subject": "social",
    "language": "en",
@@ -9152,11 +9417,11 @@
    "out_of_syllabus": false,
    "text": "In 1857, the Halagali Bedas revolted against the British Act.",
    "source": "lba",
-   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q029b",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q029c",
    "locators": [
     {
      "role": "question",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q029b",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q029c",
      "pdf_page": 58,
      "printed_page": 44,
      "y": 409.058,
@@ -9164,14 +9429,14 @@
     },
     {
      "role": "answer",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q029b-key",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q029c-key",
      "pdf_page": 197,
      "printed_page": 183,
      "y": 0.0,
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -9180,6 +9445,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T02:42:11+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:44:01+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -9224,7 +9497,7 @@
    "subunit": "7.3"
   },
   {
-   "id": "soc-7-07-s13-q030b",
+   "id": "soc-7-07-s13-q030c",
    "class": "7",
    "subject": "social",
    "language": "en",
@@ -9251,11 +9524,11 @@
    "out_of_syllabus": false,
    "text": "Founder of the Surapura Nayaka dynasty.",
    "source": "lba",
-   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q030b",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q030c",
    "locators": [
     {
      "role": "question",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q030b",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q030c",
      "pdf_page": 58,
      "printed_page": 44,
      "y": 495.158,
@@ -9263,14 +9536,14 @@
     },
     {
      "role": "answer",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q030b-key",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q030c-key",
      "pdf_page": 197,
      "printed_page": 183,
      "y": 0.0,
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -9279,6 +9552,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T02:42:11+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:44:01+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -9323,7 +9604,7 @@
    "subunit": "7.3"
   },
   {
-   "id": "soc-7-07-s13-q031b",
+   "id": "soc-7-07-s13-q031c",
    "class": "7",
    "subject": "social",
    "language": "en",
@@ -9350,11 +9631,11 @@
    "out_of_syllabus": false,
    "text": "The one who built the city of Surapura and made it his capital.",
    "source": "lba",
-   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q031b",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q031c",
    "locators": [
     {
      "role": "question",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q031b",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q031c",
      "pdf_page": 58,
      "printed_page": 44,
      "y": 581.288,
@@ -9362,14 +9643,14 @@
     },
     {
      "role": "answer",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q031b-key",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q031c-key",
      "pdf_page": 197,
      "printed_page": 183,
      "y": 648.578,
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -9378,6 +9659,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T02:42:11+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:44:01+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -9422,7 +9711,7 @@
    "subunit": "7.3"
   },
   {
-   "id": "soc-7-07-s13-q032b",
+   "id": "soc-7-07-s13-q032c",
    "class": "7",
    "subject": "social",
    "language": "en",
@@ -9449,11 +9738,11 @@
    "out_of_syllabus": false,
    "text": "This Nayaka of Surapura participated in the Indian Independence War.",
    "source": "lba",
-   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q032b",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q032c",
    "locators": [
     {
      "role": "question",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q032b",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q032c",
      "pdf_page": 58,
      "printed_page": 44,
      "y": 667.378,
@@ -9461,14 +9750,14 @@
     },
     {
      "role": "answer",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q032b-key",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q032c-key",
      "pdf_page": 197,
      "printed_page": 183,
      "y": 648.578,
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -9477,6 +9766,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T02:42:11+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:44:01+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -9521,7 +9818,7 @@
    "subunit": "7.3"
   },
   {
-   "id": "soc-7-07-s13-q033b",
+   "id": "soc-7-07-s13-q033c",
    "class": "7",
    "subject": "social",
    "language": "en",
@@ -9548,11 +9845,11 @@
    "out_of_syllabus": false,
    "text": "The Prime Minister of the Nizam of Hyderabad who handed over Nalvadi Venkatappa Nayaka to the British.",
    "source": "lba",
-   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q033b",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q033c",
    "locators": [
     {
      "role": "question",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q033b",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q033c",
      "pdf_page": 59,
      "printed_page": 45,
      "y": 64.608,
@@ -9560,14 +9857,14 @@
     },
     {
      "role": "answer",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q033b-key",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q033c-key",
      "pdf_page": 197,
      "printed_page": 183,
      "y": 0.0,
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 3,
    "status": "draft",
    "status_history": [
     {
@@ -9576,6 +9873,22 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T02:42:11+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:44:01+05:30",
+     "ref": "review_decisions_class-7 v1"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:44:01+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -9603,29 +9916,41 @@
    "answer_as_printed": "B)",
    "answer": {
     "kind": "option",
-    "option_id": "B"
+    "option_id": "C"
    },
    "answer_provenance": {
-    "by": "printed",
+    "by": "textbook_excerpt",
     "actor": "class-7-social",
-    "at": "2026-10-08T02:42:11+05:30",
-    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+    "at": "2026-10-08T23:44:01+05:30",
+    "basis": "7th English SS Part-1 2026-27, printed p.107 (pdf p.121): \"Hyderabad's Nizam's prime minister Salar Jung handed him over to the British\". Nizam's PM who handed Nalvadi Venkatappa Nayaka to the British = Salar Jung = option C."
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
     },
     {
-     "issue": "key text does not address question",
-     "why_not_corrected": "printed MCQ key B 'Muzaffar Jung' is wrong; the Nizam's PM was Salar Jung (option C); asserted verbatim",
-     "suggested": "review (source answer-key error — chapter key-unreliable, A-to-Q blind read)"
+     "issue": "printed key contradicts fact — textbook gives option C (Part-1 p.107); printed key B wrong for this stem; reviewer"
     }
    ],
    "content_hash": "1358f50bf3fd10eeb3eaff702852d0e167788fd161fe228eb2a4a42bcd273c58",
-   "subunit": "7.3"
+   "subunit": "7.3",
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "7th English SS Part-1 2026-27.pdf",
+      "pdf_page": 121,
+      "derived_from": "text_layer",
+      "y": 200.8
+     },
+     "text": "Hyderabad's Nizam's prime minister Salar Jung handed him over to the British",
+     "confidence": "verbatim"
+    }
+   ]
   },
   {
-   "id": "soc-7-07-s13-q034b",
+   "id": "soc-7-07-s13-q034c",
    "class": "7",
    "subject": "social",
    "language": "en",
@@ -9652,11 +9977,11 @@
    "out_of_syllabus": false,
    "text": "The Nizam of Hyderabad imposed 53 dark laws called ___________________ and suppressed the fundamental freedoms of the people.",
    "source": "lba",
-   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q034b",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q034c",
    "locators": [
     {
      "role": "question",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q034b",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q034c",
      "pdf_page": 59,
      "printed_page": 45,
      "y": 171.428,
@@ -9664,14 +9989,14 @@
     },
     {
      "role": "answer",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q034b-key",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q034c-key",
      "pdf_page": 197,
      "printed_page": 183,
      "y": 0.0,
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -9680,6 +10005,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T02:42:11+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:44:01+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -9724,7 +10057,7 @@
    "subunit": "7.3"
   },
   {
-   "id": "soc-7-07-s13-q035b",
+   "id": "soc-7-07-s13-q035c",
    "class": "7",
    "subject": "social",
    "language": "en",
@@ -9751,11 +10084,11 @@
    "out_of_syllabus": false,
    "text": "Gadinadu Gandhi: Khan Abdul Ghaffar Khan: Gandhi of Karnataka:",
    "source": "lba",
-   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q035b",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q035c",
    "locators": [
     {
      "role": "question",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q035b",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q035c",
      "pdf_page": 59,
      "printed_page": 45,
      "y": 278.238,
@@ -9763,14 +10096,14 @@
     },
     {
      "role": "answer",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q035b-key",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q035c-key",
      "pdf_page": 197,
      "printed_page": 183,
      "y": 0.0,
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -9779,6 +10112,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T02:42:11+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:44:01+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -9823,7 +10164,7 @@
    "subunit": "7.3"
   },
   {
-   "id": "soc-7-07-s13-q036b",
+   "id": "soc-7-07-s13-q036c",
    "class": "7",
    "subject": "social",
    "language": "en",
@@ -9850,11 +10191,11 @@
    "out_of_syllabus": false,
    "text": "Who organized the underground movement in the Hyderabad Liberation War?",
    "source": "lba",
-   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q036b",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q036c",
    "locators": [
     {
      "role": "question",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q036b",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q036c",
      "pdf_page": 59,
      "printed_page": 45,
      "y": 364.358,
@@ -9862,14 +10203,14 @@
     },
     {
      "role": "answer",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q036b-key",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q036c-key",
      "pdf_page": 197,
      "printed_page": 183,
      "y": 0.0,
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -9878,6 +10219,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T02:42:11+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:44:01+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -9922,7 +10271,7 @@
    "subunit": "7.3"
   },
   {
-   "id": "soc-7-07-s13-q037b",
+   "id": "soc-7-07-s13-q037c",
    "class": "7",
    "subject": "social",
    "language": "en",
@@ -9949,11 +10298,11 @@
    "out_of_syllabus": false,
    "text": "Sharanagouda Inamdar was fondly called by the people.",
    "source": "lba",
-   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q037b",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q037c",
    "locators": [
     {
      "role": "question",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q037b",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q037c",
      "pdf_page": 59,
      "printed_page": 45,
      "y": 450.458,
@@ -9961,14 +10310,14 @@
     },
     {
      "role": "answer",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q037b-key",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q037c-key",
      "pdf_page": 197,
      "printed_page": 183,
      "y": 0.0,
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -9977,6 +10326,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T02:42:11+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:44:01+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -10021,7 +10378,7 @@
    "subunit": "7.3"
   },
   {
-   "id": "soc-7-07-s13-q038b",
+   "id": "soc-7-07-s13-q038c",
    "class": "7",
    "subject": "social",
    "language": "en",
@@ -10048,11 +10405,11 @@
    "out_of_syllabus": false,
    "text": "The year in which the Hyderabad State was liberated from the rule of the Nizam.",
    "source": "lba",
-   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q038b",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q038c",
    "locators": [
     {
      "role": "question",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q038b",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q038c",
      "pdf_page": 59,
      "printed_page": 45,
      "y": 536.558,
@@ -10060,14 +10417,14 @@
     },
     {
      "role": "answer",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q038b-key",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q038c-key",
      "pdf_page": 197,
      "printed_page": 183,
      "y": 0.0,
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -10076,6 +10433,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T02:42:11+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:44:01+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -10120,7 +10485,7 @@
    "subunit": "7.3"
   },
   {
-   "id": "soc-7-07-s13-q039b",
+   "id": "soc-7-07-s13-q039c",
    "class": "7",
    "subject": "social",
    "language": "en",
@@ -10147,11 +10512,11 @@
    "out_of_syllabus": false,
    "text": "He was a popular leader of the Hyderabad liberation struggle.",
    "source": "lba",
-   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q039b",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q039c",
    "locators": [
     {
      "role": "question",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q039b",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q039c",
      "pdf_page": 59,
      "printed_page": 45,
      "y": 622.678,
@@ -10159,14 +10524,14 @@
     },
     {
      "role": "answer",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q039b-key",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q039c-key",
      "pdf_page": 197,
      "printed_page": 183,
      "y": 648.578,
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -10175,6 +10540,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T02:42:11+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:44:01+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -10219,7 +10592,7 @@
    "subunit": "7.3"
   },
   {
-   "id": "soc-7-07-s13-q040b",
+   "id": "soc-7-07-s13-q040c",
    "class": "7",
    "subject": "social",
    "language": "en",
@@ -10246,11 +10619,11 @@
    "out_of_syllabus": false,
    "text": "The Nizam's private army that committed widespread murder and extortion in the Hyderabad state.",
    "source": "lba",
-   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q040b",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q040c",
    "locators": [
     {
      "role": "question",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q040b",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q040c",
      "pdf_page": 59,
      "printed_page": 45,
      "y": 0.0,
@@ -10258,14 +10631,14 @@
     },
     {
      "role": "answer",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q040b-key",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s13-q040c-key",
      "pdf_page": 197,
      "printed_page": 183,
      "y": 0.0,
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 3,
    "status": "draft",
    "status_history": [
     {
@@ -10274,6 +10647,22 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T02:42:11+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:44:01+05:30",
+     "ref": "review_decisions_class-7 v1"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:44:01+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -10301,29 +10690,41 @@
    "answer_as_printed": "B)",
    "answer": {
     "kind": "option",
-    "option_id": "B"
+    "option_id": "C"
    },
    "answer_provenance": {
-    "by": "printed",
+    "by": "textbook_excerpt",
     "actor": "class-7-social",
-    "at": "2026-10-08T02:42:11+05:30",
-    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+    "at": "2026-10-08T23:44:01+05:30",
+    "basis": "7th English SS Part-1 2026-27, printed p.109 (pdf p.123): \"At the same time, the Razakars ... the atrocities of the Razakars\". Nizam's private army = Razakars (Rajakars) = option C."
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
     },
     {
-     "issue": "key text does not address question",
-     "why_not_corrected": "printed MCQ key B 'Pindaris' is wrong; the Nizam's private army was the Razakars (option C 'Rajakars'); asserted verbatim (cf. 7.3 prose naming Rajakars)",
-     "suggested": "review (source answer-key error — chapter key-unreliable, A-to-Q blind read)"
+     "issue": "printed key contradicts fact — textbook gives option C (Part-1 p.109); printed key B wrong for this stem; reviewer"
     }
    ],
    "content_hash": "60a48f0fe8948b56280d93485a2c85126a0c7b66010d9a2f5511df2a3c671875",
-   "subunit": "7.3"
+   "subunit": "7.3",
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "7th English SS Part-1 2026-27.pdf",
+      "pdf_page": 123,
+      "derived_from": "text_layer",
+      "y": 606.6
+     },
+     "text": "At the same time, the Razakars ... the atrocities of the Razakars",
+     "confidence": "verbatim"
+    }
+   ]
   },
   {
-   "id": "soc-7-07-s14-q041b",
+   "id": "soc-7-07-s14-q041c",
    "class": "7",
    "subject": "social",
    "language": "en",
@@ -10350,11 +10751,11 @@
    "out_of_syllabus": false,
    "text": "Who were the important leaders of the Amar Sulya struggle?",
    "source": "lba",
-   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q041b",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q041c",
    "locators": [
     {
      "role": "question",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q041b",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q041c",
      "pdf_page": 60,
      "printed_page": 46,
      "y": 201.928,
@@ -10362,14 +10763,14 @@
     },
     {
      "role": "answer",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q041b-key",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q041c-key",
      "pdf_page": 197,
      "printed_page": 183,
      "y": 722.378,
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -10378,6 +10779,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T02:42:11+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:44:01+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -10407,7 +10816,7 @@
    "subunit": "7.3"
   },
   {
-   "id": "soc-7-07-s14-q042b",
+   "id": "soc-7-07-s14-q042c",
    "class": "7",
    "subject": "social",
    "language": "en",
@@ -10434,11 +10843,11 @@
    "out_of_syllabus": false,
    "text": "Which towns did the Amar Sulya fighters take control of for 13 days.",
    "source": "lba",
-   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q042b",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q042c",
    "locators": [
     {
      "role": "question",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q042b",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q042c",
      "pdf_page": 60,
      "printed_page": 46,
      "y": 230.628,
@@ -10446,14 +10855,14 @@
     },
     {
      "role": "answer",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q042b-key",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q042c-key",
      "pdf_page": 198,
      "printed_page": 184,
      "y": 114.028,
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -10462,6 +10871,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T02:42:11+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:44:01+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -10491,7 +10908,7 @@
    "subunit": "7.3"
   },
   {
-   "id": "soc-7-07-s14-q043b",
+   "id": "soc-7-07-s14-q043c",
    "class": "7",
    "subject": "social",
    "language": "en",
@@ -10518,11 +10935,11 @@
    "out_of_syllabus": false,
    "text": "What were the various royal families that ruled Tulu Nadu?",
    "source": "lba",
-   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q043b",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q043c",
    "locators": [
     {
      "role": "question",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q043b",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q043c",
      "pdf_page": 60,
      "printed_page": 46,
      "y": 259.328,
@@ -10530,14 +10947,14 @@
     },
     {
      "role": "answer",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q043b-key",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q043c-key",
      "pdf_page": 198,
      "printed_page": 184,
      "y": 192.128,
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -10546,6 +10963,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T02:42:11+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:44:01+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -10575,7 +11000,7 @@
    "subunit": "7.3"
   },
   {
-   "id": "soc-7-07-s14-q044b",
+   "id": "soc-7-07-s14-q044c",
    "class": "7",
    "subject": "social",
    "language": "en",
@@ -10602,11 +11027,11 @@
    "out_of_syllabus": false,
    "text": "What were the regions that were the capitals of the Tulu state?",
    "source": "lba",
-   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q044b",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q044c",
    "locators": [
     {
      "role": "question",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q044b",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q044c",
      "pdf_page": 60,
      "printed_page": 46,
      "y": 288.028,
@@ -10614,14 +11039,14 @@
     },
     {
      "role": "answer",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q044b-key",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q044c-key",
      "pdf_page": 198,
      "printed_page": 184,
      "y": 270.228,
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -10630,6 +11055,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T02:42:11+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:44:01+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -10659,7 +11092,7 @@
    "subunit": "7.3"
   },
   {
-   "id": "soc-7-07-s14-q045b",
+   "id": "soc-7-07-s14-q045c",
    "class": "7",
    "subject": "social",
    "language": "en",
@@ -10686,11 +11119,11 @@
    "out_of_syllabus": false,
    "text": "What were the two religious sects of Tulu Nadu?",
    "source": "lba",
-   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q045b",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q045c",
    "locators": [
     {
      "role": "question",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q045b",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q045c",
      "pdf_page": 60,
      "printed_page": 46,
      "y": 316.728,
@@ -10698,14 +11131,14 @@
     },
     {
      "role": "answer",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q045b-key",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q045c-key",
      "pdf_page": 198,
      "printed_page": 184,
      "y": 348.358,
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -10714,6 +11147,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T02:42:11+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:44:01+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -10743,7 +11184,7 @@
    "subunit": "7.3"
   },
   {
-   "id": "soc-7-07-s14-q046b",
+   "id": "soc-7-07-s14-q046c",
    "class": "7",
    "subject": "social",
    "language": "en",
@@ -10770,11 +11211,11 @@
    "out_of_syllabus": false,
    "text": "Which districts of Karnataka are called Tulunadu?",
    "source": "lba",
-   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q046b",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q046c",
    "locators": [
     {
      "role": "question",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q046b",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q046c",
      "pdf_page": 60,
      "printed_page": 46,
      "y": 345.458,
@@ -10782,14 +11223,14 @@
     },
     {
      "role": "answer",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q046b-key",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q046c-key",
      "pdf_page": 198,
      "printed_page": 184,
      "y": 426.458,
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -10798,6 +11239,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T02:42:11+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:44:01+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -10827,7 +11276,7 @@
    "subunit": "7.3"
   },
   {
-   "id": "soc-7-07-s14-q047b",
+   "id": "soc-7-07-s14-q047c",
    "class": "7",
    "subject": "social",
    "language": "en",
@@ -10854,11 +11303,11 @@
    "out_of_syllabus": false,
    "text": "What were the reasons for the Beda Nayaka revolt?",
    "source": "lba",
-   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q047b",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q047c",
    "locators": [
     {
      "role": "question",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q047b",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q047c",
      "pdf_page": 60,
      "printed_page": 46,
      "y": 374.158,
@@ -10866,14 +11315,14 @@
     },
     {
      "role": "answer",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q047b-key",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q047c-key",
      "pdf_page": 198,
      "printed_page": 184,
      "y": 483.858,
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -10882,6 +11331,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T02:42:11+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:44:01+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -10913,7 +11370,7 @@
    "subunit": "7.3"
   },
   {
-   "id": "soc-7-07-s14-q048b",
+   "id": "soc-7-07-s14-q048c",
    "class": "7",
    "subject": "social",
    "language": "en",
@@ -10940,11 +11397,11 @@
    "out_of_syllabus": false,
    "text": "Who were the main leaders of the Halagali revolt?",
    "source": "lba",
-   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q048b",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q048c",
    "locators": [
     {
      "role": "question",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q048b",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q048c",
      "pdf_page": 60,
      "printed_page": 46,
      "y": 402.858,
@@ -10952,14 +11409,14 @@
     },
     {
      "role": "answer",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q048b-key",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q048c-key",
      "pdf_page": 198,
      "printed_page": 184,
      "y": 627.378,
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -10968,6 +11425,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T02:42:11+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:44:01+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -10997,7 +11462,7 @@
    "subunit": "7.3"
   },
   {
-   "id": "soc-7-07-s14-q049",
+   "id": "soc-7-07-s14-q049c",
    "class": "7",
    "subject": "social",
    "language": "en",
@@ -11024,11 +11489,11 @@
    "out_of_syllabus": false,
    "text": "Who were the main leaders of the Hyderabad Karnataka liberation struggle?",
    "source": "lba",
-   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q049",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q049c",
    "locators": [
     {
      "role": "question",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q049",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q049c",
      "pdf_page": 60,
      "printed_page": 46,
      "y": 431.558,
@@ -11036,14 +11501,14 @@
     },
     {
      "role": "answer",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q049-key",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q049c-key",
      "pdf_page": 198,
      "printed_page": 184,
      "y": 713.478,
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -11052,6 +11517,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T02:42:11+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:44:01+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -11081,7 +11554,7 @@
    "subunit": "7.3"
   },
   {
-   "id": "soc-7-07-s14-q050",
+   "id": "soc-7-07-s14-q050c",
    "class": "7",
    "subject": "social",
    "language": "en",
@@ -11108,11 +11581,11 @@
    "out_of_syllabus": false,
    "text": "Why did the Amarasulya Uprising take place?",
    "source": "lba",
-   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q050",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q050c",
    "locators": [
     {
      "role": "question",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q050",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q050c",
      "pdf_page": 60,
      "printed_page": 46,
      "y": 466.158,
@@ -11120,14 +11593,14 @@
     },
     {
      "role": "answer",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q050-key",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q050c-key",
      "pdf_page": 199,
      "printed_page": 185,
      "y": 70.608,
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -11136,6 +11609,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T02:42:11+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:44:01+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -11162,7 +11643,7 @@
    "subunit": "7.3"
   },
   {
-   "id": "soc-7-07-s14-q051",
+   "id": "soc-7-07-s14-q051c",
    "class": "7",
    "subject": "social",
    "language": "en",
@@ -11189,11 +11670,11 @@
    "out_of_syllabus": false,
    "text": "Why did Rani Chennamma of Kittur revolt against the British?",
    "source": "lba",
-   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q051",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q051c",
    "locators": [
     {
      "role": "question",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q051",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q051c",
      "pdf_page": 60,
      "printed_page": 46,
      "y": 500.858,
@@ -11201,14 +11682,14 @@
     },
     {
      "role": "answer",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q051-key",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q051c-key",
      "pdf_page": 199,
      "printed_page": 185,
      "y": 126.028,
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -11217,6 +11698,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T02:42:11+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:44:01+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -11243,7 +11732,7 @@
    "subunit": "7.3"
   },
   {
-   "id": "soc-7-07-s14-q052",
+   "id": "soc-7-07-s14-q052c",
    "class": "7",
    "subject": "social",
    "language": "en",
@@ -11270,11 +11759,11 @@
    "out_of_syllabus": false,
    "text": "Why do we remember Karnadu Sadashiva Rao?",
    "source": "lba",
-   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q052",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q052c",
    "locators": [
     {
      "role": "question",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q052",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q052c",
      "pdf_page": 60,
      "printed_page": 46,
      "y": 535.558,
@@ -11282,14 +11771,14 @@
     },
     {
      "role": "answer",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q052-key",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q052c-key",
      "pdf_page": 199,
      "printed_page": 185,
      "y": 243.528,
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -11298,6 +11787,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T02:42:11+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:44:01+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -11324,7 +11821,7 @@
    "subunit": "7.3"
   },
   {
-   "id": "soc-7-07-s14-q053",
+   "id": "soc-7-07-s14-q053c",
    "class": "7",
    "subject": "social",
    "language": "en",
@@ -11351,11 +11848,11 @@
    "out_of_syllabus": false,
    "text": "What measures did Kudmul Ranga Rao take for the upliftment of the Dalits?",
    "source": "lba",
-   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q053",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q053c",
    "locators": [
     {
      "role": "question",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q053",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q053c",
      "pdf_page": 60,
      "printed_page": 46,
      "y": 570.258,
@@ -11363,14 +11860,14 @@
     },
     {
      "role": "answer",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q053-key",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q053c-key",
      "pdf_page": 199,
      "printed_page": 185,
      "y": 340.358,
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -11379,6 +11876,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T02:42:11+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:44:01+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -11405,7 +11910,7 @@
    "subunit": "7.3"
   },
   {
-   "id": "soc-7-07-s14-q054",
+   "id": "soc-7-07-s14-q054c",
    "class": "7",
    "subject": "social",
    "language": "en",
@@ -11432,11 +11937,11 @@
    "out_of_syllabus": false,
    "text": "Who was the brave leader of the \"Vande Mataram\" Movement? Why was he called so?",
    "source": "lba",
-   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q054",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q054c",
    "locators": [
     {
      "role": "question",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q054",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q054c",
      "pdf_page": 60,
      "printed_page": 46,
      "y": 604.978,
@@ -11444,14 +11949,14 @@
     },
     {
      "role": "answer",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q054-key",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s14-q054c-key",
      "pdf_page": 199,
      "printed_page": 185,
      "y": 423.158,
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -11460,6 +11965,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T02:42:11+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:44:01+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -11486,7 +11999,7 @@
    "subunit": "7.3"
   },
   {
-   "id": "soc-7-07-s15-q055",
+   "id": "soc-7-07-s15-q055c",
    "class": "7",
    "subject": "social",
    "language": "en",
@@ -11513,11 +12026,11 @@
    "out_of_syllabus": false,
    "text": "Write a note on Kittur Rani Chennammaji",
    "source": "lba",
-   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s15-q055",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s15-q055c",
    "locators": [
     {
      "role": "question",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s15-q055",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s15-q055c",
      "pdf_page": 61,
      "printed_page": 47,
      "y": 0.0,
@@ -11525,14 +12038,14 @@
     },
     {
      "role": "answer",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s15-q055-key",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s15-q055c-key",
      "pdf_page": 199,
      "printed_page": 185,
      "y": 534.658,
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -11541,6 +12054,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T02:42:11+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:44:01+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -11577,7 +12098,7 @@
    "subunit": "7.3"
   },
   {
-   "id": "soc-7-07-s15-q056",
+   "id": "soc-7-07-s15-q056c",
    "class": "7",
    "subject": "social",
    "language": "en",
@@ -11604,11 +12125,11 @@
    "out_of_syllabus": false,
    "text": "List the reasons for the Beda Nayaka revolts of Halagali",
    "source": "lba",
-   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s15-q056",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s15-q056c",
    "locators": [
     {
      "role": "question",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s15-q056",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s15-q056c",
      "pdf_page": 61,
      "printed_page": 47,
      "y": 0.0,
@@ -11616,14 +12137,14 @@
     },
     {
      "role": "answer",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s15-q056-key",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s15-q056c-key",
      "pdf_page": 200,
      "printed_page": 186,
      "y": 93.308,
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -11632,6 +12153,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T02:42:11+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:44:01+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -11663,7 +12192,7 @@
    "subunit": "7.3"
   },
   {
-   "id": "soc-7-07-s15-q057",
+   "id": "soc-7-07-s15-q057c",
    "class": "7",
    "subject": "social",
    "language": "en",
@@ -11690,11 +12219,11 @@
    "out_of_syllabus": false,
    "text": "Sindhur Lakshman is immortalized in the pages of history. Justify this sentence",
    "source": "lba",
-   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s15-q057",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s15-q057c",
    "locators": [
     {
      "role": "question",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s15-q057",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s15-q057c",
      "pdf_page": 61,
      "printed_page": 47,
      "y": 0.0,
@@ -11702,14 +12231,14 @@
     },
     {
      "role": "answer",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s15-q057-key",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s15-q057c-key",
      "pdf_page": 200,
      "printed_page": 186,
      "y": 228.828,
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -11718,6 +12247,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T02:42:11+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:44:01+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -11750,7 +12287,7 @@
    "subunit": "7.3"
   },
   {
-   "id": "soc-7-07-s15-q058",
+   "id": "soc-7-07-s15-q058c",
    "class": "7",
    "subject": "social",
    "language": "en",
@@ -11777,11 +12314,11 @@
    "out_of_syllabus": false,
    "text": "Write a note on the achievements of Nalvadi Venkatappa Nayaka.",
    "source": "lba",
-   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s15-q058",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s15-q058c",
    "locators": [
     {
      "role": "question",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s15-q058",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s15-q058c",
      "pdf_page": 61,
      "printed_page": 47,
      "y": 0.0,
@@ -11789,14 +12326,14 @@
     },
     {
      "role": "answer",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s15-q058-key",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s15-q058c-key",
      "pdf_page": 200,
      "printed_page": 186,
      "y": 399.058,
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -11805,6 +12342,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T02:42:11+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:44:01+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -11831,7 +12376,7 @@
    "subunit": "7.3"
   },
   {
-   "id": "soc-7-07-s16-q059",
+   "id": "soc-7-07-s16-q059c",
    "class": "7",
    "subject": "social",
    "language": "en",
@@ -11858,11 +12403,11 @@
    "out_of_syllabus": false,
    "text": "Discuss the Hyderabad-Karnataka liberation struggle",
    "source": "lba",
-   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s16-q059",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s16-q059c",
    "locators": [
     {
      "role": "question",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s16-q059",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s16-q059c",
      "pdf_page": 61,
      "printed_page": 47,
      "y": 96.808,
@@ -11870,14 +12415,14 @@
     },
     {
      "role": "answer",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s16-q059-key",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s16-q059c-key",
      "pdf_page": 200,
      "printed_page": 186,
      "y": 586.678,
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -11886,6 +12431,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T02:42:11+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:44:01+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -11915,7 +12468,7 @@
    "subunit": "7.3"
   },
   {
-   "id": "soc-7-07-s16-q060",
+   "id": "soc-7-07-s16-q060c",
    "class": "7",
    "subject": "social",
    "language": "en",
@@ -11942,11 +12495,11 @@
    "out_of_syllabus": false,
    "text": "Write a note on Sangolli Rayanna",
    "source": "lba",
-   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s16-q060",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s16-q060c",
    "locators": [
     {
      "role": "question",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s16-q060",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s16-q060c",
      "pdf_page": 61,
      "printed_page": 47,
      "y": 125.528,
@@ -11954,14 +12507,14 @@
     },
     {
      "role": "answer",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s16-q060-key",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s16-q060c-key",
      "pdf_page": 201,
      "printed_page": 187,
      "y": 64.608,
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -11970,6 +12523,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T02:42:11+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:44:01+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -11999,7 +12560,7 @@
    "subunit": "7.3"
   },
   {
-   "id": "soc-7-07-s17-q061",
+   "id": "soc-7-07-s17-q061c",
    "class": "7",
    "subject": "social",
    "language": "en",
@@ -12026,11 +12587,11 @@
    "out_of_syllabus": false,
    "text": "Mark the important places on the map of South India given below 61. A) Mysore B) Kittur C) Hyderabad D) Yadgir",
    "source": "lba",
-   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s17-q061",
+   "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s17-q061c",
    "locators": [
     {
      "role": "question",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s17-q061",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s17-q061c",
      "pdf_page": 61,
      "printed_page": 47,
      "y": 184.628,
@@ -12038,14 +12599,14 @@
     },
     {
      "role": "answer",
-     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s17-q061-key",
+     "source_ref": "7thSS-EM-LBARevised_1787048371.pdf#soc-7-07-s17-q061c-key",
      "pdf_page": 201,
      "printed_page": 187,
      "y": 0.0,
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -12054,6 +12615,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T02:42:11+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:44:01+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
