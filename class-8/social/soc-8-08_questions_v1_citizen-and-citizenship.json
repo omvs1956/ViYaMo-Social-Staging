@@ -1,7 +1,7 @@
 {
  "contract_version": "1.7",
  "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
- "procedure_file": "extraction_procedure_social_addendum_v1.3_social science Classes 6-10 on top of procedure v2.md",
+ "procedure_file": "extraction_procedure_social_addendum_v1.4_social science Classes 6-10 on top of procedure v2.md",
  "machine_name": "soc-8-08_questions",
  "version": 1,
  "changelog": "v1 extraction — batch-01 — class-8-social",
@@ -568,7 +568,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -577,6 +577,14 @@
      "by": "class-8-social",
      "role": "extraction",
      "at": "2026-10-07T23:41:05+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "correction",
+     "at": "2026-10-08T22:30:00+05:30",
+     "ref": "review_decisions_class-8 v1"
     }
    ],
    "created_by": "class-8-social",
@@ -603,25 +611,39 @@
    "answer_as_printed": "A) Blood Relation",
    "answer": {
     "kind": "option",
-    "option_id": "A"
+    "option_id": "B"
    },
    "answer_provenance": {
-    "by": "printed",
+    "by": "textbook_excerpt",
     "actor": "class-8-social",
-    "at": "2026-10-07T23:41:05+05:30",
-    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+    "at": "2026-10-08T22:30:00+05:30",
+    "basis": "textbook_excerpt: 8th English SS Part 1 2026-27.pdf, pdf page 73 (printed page 59): \"Citizenship by birth: Every person born in India on or after 26th January 1950 shall be a citizen of India by birth.\". Jyothi born in Karnataka in 1982 acquires citizenship by Birth; printed key letter A (Descent) overruled -> option B."
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
     },
     {
-     "issue": "key text differs from option by a printed typo",
-     "why_not_corrected": "letter A kept (addendum §4.1); key text 'Blood Relation' vs option A 'Descent' differ by a source typo; spelling needs subject knowledge (v2 §1)",
-     "suggested": "A (letter kept)"
+     "field": "answer",
+     "issue": "printed key contradicts fact — correct option is B (Birth); reviewer",
+     "suggested": "B) Birth"
     }
    ],
-   "content_hash": "4414fbcfd961c1ee129ce3414e68a742c5b4f3a0b3233cd7e748cdea2c001760"
+   "content_hash": "4414fbcfd961c1ee129ce3414e68a742c5b4f3a0b3233cd7e748cdea2c001760",
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "8th English SS Part 1 2026-27.pdf#soc-8-08-s1-q006-textbook",
+      "pdf_page": 73,
+      "derived_from": "text_layer",
+      "y": 0.0
+     },
+     "text": "Citizenship by birth: Every person born in India on or after 26th January 1950 shall be a citizen of India by birth.",
+     "confidence": "verbatim"
+    }
+   ]
   },
   {
    "id": "soc-8-08-s1-q007",
@@ -666,7 +688,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -675,6 +697,14 @@
      "by": "class-8-social",
      "role": "extraction",
      "at": "2026-10-07T23:41:05+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "correction",
+     "at": "2026-10-08T22:30:00+05:30",
+     "ref": "review_decisions_class-8 v1"
     }
    ],
    "created_by": "class-8-social",
@@ -704,22 +734,36 @@
     "option_id": "A"
    },
    "answer_provenance": {
-    "by": "printed",
+    "by": "textbook_excerpt",
     "actor": "class-8-social",
-    "at": "2026-10-07T23:41:05+05:30",
-    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+    "at": "2026-10-08T22:30:00+05:30",
+    "basis": "textbook_excerpt: 8th English SS Part 1 2026-27.pdf, pdf page 70 (printed page 56): \"Before 1947 we were subjects of the British. After independence we became the citizens of India.\". printed answer text 'Citizen' (option B) is the misprint; under British rule people were Subjects -> option A (letter/text disagreement)."
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
     },
     {
-     "issue": "key text differs from option by a printed typo",
-     "why_not_corrected": "letter A kept (addendum §4.1); key text 'Citizen' vs option A 'Subjects' differ by a source typo; spelling needs subject knowledge (v2 §1)",
-     "suggested": "A (letter kept)"
+     "field": "answer",
+     "issue": "printed key contradicts fact — correct option is A (Subjects); reviewer",
+     "suggested": "A) Subjects"
     }
    ],
-   "content_hash": "39bd4310bccd6fb5251f489e23132c2b721d96bdaabafb04128afc15e5a89613"
+   "content_hash": "39bd4310bccd6fb5251f489e23132c2b721d96bdaabafb04128afc15e5a89613",
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "8th English SS Part 1 2026-27.pdf#soc-8-08-s1-q007-textbook",
+      "pdf_page": 70,
+      "derived_from": "text_layer",
+      "y": 0.0
+     },
+     "text": "Before 1947 we were subjects of the British. After independence we became the citizens of India.",
+     "confidence": "verbatim"
+    }
+   ]
   },
   {
    "id": "soc-8-08-s1-q008",
