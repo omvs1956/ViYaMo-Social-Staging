@@ -1,7 +1,7 @@
 {
  "contract_version": "1.7",
  "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
- "procedure_file": "extraction_procedure_social_addendum_v1.3_social science Classes 6-10 on top of procedure v2.md",
+ "procedure_file": "extraction_procedure_social_addendum_v1.4_social science Classes 6-10 on top of procedure v2.md",
  "machine_name": "soc-9-24_questions",
  "version": 1,
  "changelog": "v1 extraction — batch-01 — class-9-social",
@@ -292,7 +292,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -301,6 +301,14 @@
      "by": "class-9-social",
      "role": "extraction",
      "at": "2026-10-03T01:10:15+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "correction",
+     "at": "2026-10-08T23:14:00+05:30",
+     "ref": "review_decisions_class-9 v1"
     }
    ],
    "created_by": "class-9-social",
@@ -328,13 +336,13 @@
    "answer_as_printed": "A) Queen's Right",
    "answer": {
     "kind": "option",
-    "option_id": "A"
+    "option_id": "B"
    },
    "answer_provenance": {
-    "by": "printed",
+    "by": "textbook_excerpt",
     "actor": "class-9-social",
-    "at": "2026-10-03T01:10:15+05:30",
-    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+    "at": "2026-10-08T23:14:00+05:30",
+    "basis": "textbook_excerpt: 9th English SS Part - 2 2026-27.pdf, pdf page 82 (printed page 80): \"Hans J. Morgenthau: He called international relations as international politics. 'International politics is the struggle for power between nations and its use'.\". the scholar who called international relations 'international politics' is Hans J. Morgenthau = option B; printed key A overruled."
    },
    "pending_category": "unclassified",
    "source_flags": [
@@ -342,17 +350,24 @@
      "issue": "marks ambiguous in source — no marks printed"
     },
     {
-     "issue": "key text differs from option by a printed typo",
-     "why_not_corrected": "letter A kept (addendum §4.1); key text 'Queen's Right' vs option A 'Quincy Wright' differ by a source typo; spelling needs subject knowledge (v2 §1)",
-     "suggested": "A (letter kept)"
-    },
-    {
-     "issue": "unclassified — printed MCQ key may be factually wrong",
-     "why_not_corrected": "q3 asks who studied/called international relations as 'international politics'. That power-politics characterization is Hans J. Morgenthau's — option B (printed 'Hans J. Margantho', a garble of Morgenthau). The printed key selects option A 'Quincy Wright' (printed garbled as 'Queen's Right'), whose definition is the broad 'interactions between groups' one (cf. q25). Likely a printed-key error. Option A asserted as printed (letter+text name option A) pending review. Surfaced by blind-read.",
-     "suggested": "nearest: category:printed-key-wrong — correct answer is likely option B (Morgenthau); subject reviewer to confirm"
+     "issue": "printed key contradicts fact — printed 'A) Queen's Right' (garbled); textbook: Hans J. Morgenthau called international relations international politics; reviewer"
     }
    ],
-   "content_hash": "2f10ad59e6b295db7a987dd7b610df82efb8a3594d6eaf0b4d85ae93a4382cae"
+   "content_hash": "2f10ad59e6b295db7a987dd7b610df82efb8a3594d6eaf0b4d85ae93a4382cae",
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "9th English SS Part - 2 2026-27.pdf#soc-9-24-s1-q003-textbook",
+      "pdf_page": 82,
+      "derived_from": "text_layer",
+      "y": 0.0
+     },
+     "text": "Hans J. Morgenthau: He called international relations as international politics.",
+     "confidence": "verbatim"
+    }
+   ]
   },
   {
    "id": "soc-9-24-s1-q004",
