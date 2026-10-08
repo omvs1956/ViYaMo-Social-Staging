@@ -1,0 +1,3881 @@
+{
+ "contract_version": "1.7",
+ "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
+ "procedure_file": "extraction_procedure_social_addendum_v1.3_social science Classes 6-10 on top of procedure v2.md",
+ "machine_name": "soc-6-01_questions",
+ "version": 1,
+ "changelog": "v1 extraction — batch-01 — class-6-social",
+ "amendments_applied": [],
+ "unit_state": "EXTRACTED",
+ "review_ready": false,
+ "count_gate": {
+  "reference": 46,
+  "reference_source": "audited",
+  "extracted": 46,
+  "paired": 46,
+  "flagged": 6,
+  "gaps": [],
+  "duplicated_numbers": [],
+  "quota_table": "difficulty_only",
+  "second_method": {
+   "method": "printed difficulty distribution table",
+   "extracted": 46,
+   "agrees": true
+  },
+  "pass": true,
+  "note": "printed difficulty table 30/11/5=46 AGREES with per-question tags; flagged counts answer-level flags; all carry the structural marks flag (addendum §4.5)."
+ },
+ "extraction": {
+  "source_file": "6thSS-EM-LBARevised_1787048536.pdf",
+  "source_ref_prefix": "6thSS-EM-LBARevised_1787048536.pdf",
+  "pdf_pages": [
+   18,
+   19,
+   20,
+   21,
+   109,
+   110,
+   111
+  ],
+  "printed_page_offset": -17,
+  "method_notes": [
+   "Offset -17 (pdf 18 = printed folio 1; pdf 109 = folio 92). Q side: q1-11 pdf18 (folio1), q12-19 pdf19 (folio2), q20-36 pdf20 (folio3), q37-46 pdf21 (folio4). A side: keys 1-30 pdf109 (folio92), keys 31-41 pdf110 (folio93), keys 42-46 pdf111 (folio94). Numbering monotonic 1-46, NO shift/insert/orphan.",
+   "Sections (Q side, labels I-VIII sequential, no defect): I FILL IN THE BLANKS (q1-10, type fill); II CHOOSE THE CORRECT ANSWER (q11-19, mcq); III ANSWER IN ONE SENTENCE (q20-29, vsa); IV MATCH THE FOLLOWING (q30, match); V ARRANGE IN CHRONOLOGICAL ORDER (q31, ordering); VI WRITE THE FOURTH WORD RELATED TO THE THIRD (q32-36, analogy -> vsa per rev4 ruling 4); VII ANSWER IN TWO TO FOUR SENTENCES (q37-43, sa); VIII ANSWER IN SIX SENTENCES (q44-46, la).",
+   "DIFFICULTY: difficulty table header reads 'Type of Questions' (not 'Difficulty Level'); 30/11/5=46 AGREES with per-question tags. Tags inline (Easy)/(Average)/(Difficult) on q1-29 and q37-46. SECTION-HEADER difficulty (rev4 ruling 5): sections IV/V/VI print '(Average)' on the heading, not the stem -> q30,q31,q32-36 difficulty 'average', difficulty_source 'section_header', difficulty_as_printed 'section header (Average)' (additive DIFF override, class-6 soc_build.py copy only).",
+   "BUILDER EXTENSIONS (additive, class-6 copy ONLY; other classes untouched; blessed control rev4): (a) MATCH branch -> type match, answer {kind:match, pairs:[{left,right}]}; (b) DIFF override for section-header difficulty; (c) STIMULI (unit-level) + stimulus_id link. fill/ordering use existing text-answer paths (SINGLE); analogy uses vsa (KEY2).",
+   "q30 MATCH: pairs left=column A items, right=printed key values (verbatim). Printed pair 3 'Timeline -> Christian Era (CE)' is not a column-B item (col B has D. Chronology) -> assert as printed + flag 'match key value not among column-B items' (rev4 ruling 2). Q-side prints no '30.' label (question is under 'IV. MATCH') -> question locator y=0 (missing_y, structural).",
+   "q31 ORDERING: answer '3, 4, 2, 1, 5' as printed (kind text). A-side prints the sequence under 'V. ARRANGE...' with NO '31.' label -> answer locator y=0 (missing_y, structural).",
+   "q11 NUMERIC KEY (rev4 ruling 6): answer key prints '1. Greece' (stem options A-D). Text-only key path resolves to option A by key text 'Greece'; flag 'options printed with numeric labels' carries '1. Greece'. answer_as_printed = 'Greece' (text-only path).",
+   "MCQ letter-governs + benign flag (addendum 4.1, answer asserted): q14 'B. Caves and natural rock shelters' vs option B 'In caves and natural shelters'; q16 'D. Agriculture or farming' vs option D 'Agriculture'; q18 'A. Archaeological sources (Archaeological evidence)' vs option A 'Archaeological sources'. Letter kept; flagged 'key text differs from option by a printed typo'. q12/q13/q15/q17/q19 clean.",
+   "q46 MAP (rev4 ruling 7): QUESTION side has a BLANK printed outline map of India (raster image, pdf21, placement x0 152.2 y0 240.9 x1 425.4 y1 487.9 pt from pdfplumber) -> unit-level stimulus kind 'figure' with crop_bbox + extracted native asset images/soc-6-01/soc-6-01_q46_india-blank-map.png (489x443), linked from q46 via stimulus_id. ANSWER side has NO map -> answer = printed text list (SUB: heading 'Archaeological sites in Karnataka' + 6 sites), type la. No 6.2 answer-map block, no answer-map crop, no extra checkpoint. Stem(Neolithic sites/India) vs key(archaeological sites/Karnataka) mismatch -> flag 'printed key does not address the stem'.",
+   "Descriptive keys: q37 BUL (3 bullets, no heading); q38/q39 BUL (single line); q40-46 SUB (a title heading line, non-step, kept in answer.value; the items are the steps). 'Label: text' bullets are steps (content after colon), not headings (class-9 ruling 3b). q41 continues from pdf110 onto pdf111 (5 bullets total). q46 items are 6 site names.",
+   "key-lines self-count (addendum 13.3): fill q1-10 single-value; mcq q11-19 option keys; vsa q20-29 single-value; q30 match 5 pairs; q31 ordering 1 sequence; analogy q32-36 single-value; q37=3 steps, q38=1, q39=1, q40=5 steps+1 heading, q41=5+1, q42=4+1, q43=3+1, q44=4+1, q45=5+1, q46=6+1. No drops.",
+   "MARKS: no marks printed in any section (addendum 4.5) -> every question marks null, marks_source unassigned, structural flag. Register section-marks-not-printed (one row)."
+  ],
+  "notation_summary": {
+   "render_tokens": 0,
+   "latex_tokens": 0,
+   "damage_flags": []
+  },
+  "excluded_objects": [],
+  "inline_excluded_count": 0,
+  "figure_references": []
+ },
+ "stimuli": [
+  {
+   "id": "stim-soc-6-01-q46-map",
+   "kind": "figure",
+   "region": "India",
+   "text": "Blank outline map of India printed with Q46 on the question side (pdf 21); no places are marked or labelled.",
+   "locators": [
+    {
+     "role": "stimulus",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s8-q046-figure",
+     "pdf_page": 21,
+     "printed_page": 4,
+     "y": 354.1,
+     "derived_from": "render_measured"
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "soc-6-01-s1-q001",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Understands history through sources and describes the development of early society."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The Father of History is ____________.",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s1-q001",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s1-q001",
+     "pdf_page": 18,
+     "printed_page": 1,
+     "y": 185.838,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s1-q001-key",
+     "pdf_page": 109,
+     "printed_page": 92,
+     "y": 180.728,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T06:49:59+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T06:49:59+05:30",
+   "text_as_printed": "The Father of History is ____________. (Easy)",
+   "section_signal": "I",
+   "answer": {
+    "kind": "text",
+    "value": "Herodotus"
+   },
+   "answer_as_printed": "Herodotus",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T06:49:59+05:30",
+    "basis": "printed one-line answer, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "c9cef4ea0b710ba13214baff2d742612af9cad86c7da23933d5dcec0b0851c1e"
+  },
+  {
+   "id": "soc-6-01-s1-q002",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Understands history through sources and describes the development of early society."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Just as humans have memory, the memory of the world is ____________.",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s1-q002",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s1-q002",
+     "pdf_page": 18,
+     "printed_page": 1,
+     "y": 240.228,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s1-q002-key",
+     "pdf_page": 109,
+     "printed_page": 92,
+     "y": 196.638,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T06:49:59+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T06:49:59+05:30",
+   "text_as_printed": "Just as humans have memory, the memory of the world is ____________. (Easy)",
+   "section_signal": "I",
+   "answer": {
+    "kind": "text",
+    "value": "History"
+   },
+   "answer_as_printed": "History",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T06:49:59+05:30",
+    "basis": "printed one-line answer, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "05c1f8b3463833bacadaa420fe000b7f206283418d81a7f894d4b2307e207627"
+  },
+  {
+   "id": "soc-6-01-s1-q003",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Understands history through sources and describes the development of early society."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "One century means ____________ years.",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s1-q003",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s1-q003",
+     "pdf_page": 18,
+     "printed_page": 1,
+     "y": 410.558,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s1-q003-key",
+     "pdf_page": 109,
+     "printed_page": 92,
+     "y": 212.428,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T06:49:59+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T06:49:59+05:30",
+   "text_as_printed": "One century means ____________ years. (Easy)",
+   "section_signal": "I",
+   "answer": {
+    "kind": "text",
+    "value": "100"
+   },
+   "answer_as_printed": "100",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T06:49:59+05:30",
+    "basis": "printed one-line answer, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "941d4e862001d7877e815f414dba92f22542dbf5653dd48d26a73aac177025f7"
+  },
+  {
+   "id": "soc-6-01-s1-q004",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Understands history through sources and describes the development of early society."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The chronology used in historical writing is ____________.",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s1-q004",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s1-q004",
+     "pdf_page": 18,
+     "printed_page": 1,
+     "y": 567.378,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s1-q004-key",
+     "pdf_page": 109,
+     "printed_page": 92,
+     "y": 228.338,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T06:49:59+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T06:49:59+05:30",
+   "text_as_printed": "The chronology used in historical writing is ____________. (Easy)",
+   "section_signal": "I",
+   "answer": {
+    "kind": "text",
+    "value": "Common Era"
+   },
+   "answer_as_printed": "Common Era",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T06:49:59+05:30",
+    "basis": "printed one-line answer, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "dc65599783b103e4dcde432163351c69c5fc478382f28fc3cdd6e1a19cdd62d9"
+  },
+  {
+   "id": "soc-6-01-s1-q005",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Understands history through sources and describes the development of early society."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Those who compose written literature are ____________.",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s1-q005",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s1-q005",
+     "pdf_page": 18,
+     "printed_page": 1,
+     "y": 583.278,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s1-q005-key",
+     "pdf_page": 109,
+     "printed_page": 92,
+     "y": 244.228,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T06:49:59+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T06:49:59+05:30",
+   "text_as_printed": "Those who compose written literature are ____________. (Easy)",
+   "section_signal": "I",
+   "answer": {
+    "kind": "text",
+    "value": "Literates"
+   },
+   "answer_as_printed": "Literates",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T06:49:59+05:30",
+    "basis": "printed one-line answer, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "8a8e3ede0169cf723a5148727eb1f6d51d6b195bcce7c63e8535dc4b423a18cc"
+  },
+  {
+   "id": "soc-6-01-s1-q006",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Understands history through sources and describes the development of early society."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The Harappan Civilization belongs to the ____________ period of history.",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s1-q006",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s1-q006",
+     "pdf_page": 18,
+     "printed_page": 1,
+     "y": 599.088,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s1-q006-key",
+     "pdf_page": 109,
+     "printed_page": 92,
+     "y": 260.028,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T06:49:59+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T06:49:59+05:30",
+   "text_as_printed": "The Harappan Civilization belongs to the ____________ period of history. (Easy)",
+   "section_signal": "I",
+   "answer": {
+    "kind": "text",
+    "value": "Chalcolithic Age (Copper and Bronze Stone Age)"
+   },
+   "answer_as_printed": "Chalcolithic Age (Copper and Bronze Stone Age)",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T06:49:59+05:30",
+    "basis": "printed one-line answer, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "51c1b6dd1d927c97eb0dc24fc7bc79efc293b09fb439258e04cdcbf22cc57256"
+  },
+  {
+   "id": "soc-6-01-s1-q007",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Understands history through sources and describes the development of early society."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The first living beings to evolve in the course of evolution were ____________.",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s1-q007",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s1-q007",
+     "pdf_page": 18,
+     "printed_page": 1,
+     "y": 614.988,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s1-q007-key",
+     "pdf_page": 109,
+     "printed_page": 92,
+     "y": 275.928,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T06:49:59+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T06:49:59+05:30",
+   "text_as_printed": "The first living beings to evolve in the course of evolution were ____________. (Easy)",
+   "section_signal": "I",
+   "answer": {
+    "kind": "text",
+    "value": "Unicellular organisms"
+   },
+   "answer_as_printed": "Unicellular organisms",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T06:49:59+05:30",
+    "basis": "printed one-line answer, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "c795a4a46485121efcbd7996635dc37f14011f22b5cc781b7dad5c8bcabbd326"
+  },
+  {
+   "id": "soc-6-01-s1-q008",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Understands history through sources and describes the development of early society."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The place where humans with the physical features of modern humans first appeared is ____________.",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s1-q008",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s1-q008",
+     "pdf_page": 18,
+     "printed_page": 1,
+     "y": 630.888,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s1-q008-key",
+     "pdf_page": 109,
+     "printed_page": 92,
+     "y": 291.858,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T06:49:59+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T06:49:59+05:30",
+   "text_as_printed": "The place where humans with the physical features of modern humans first appeared is ____________. (Easy)",
+   "section_signal": "I",
+   "answer": {
+    "kind": "text",
+    "value": "South Africa"
+   },
+   "answer_as_printed": "South Africa",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T06:49:59+05:30",
+    "basis": "printed one-line answer, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "e0d8427ffb3c373fd069356d6b3e648492287785d5e8c052773e863ca2a66aff"
+  },
+  {
+   "id": "soc-6-01-s1-q009",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Understands history through sources and describes the development of early society."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The Stone Ages belong to the ____________ period of history.",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s1-q009",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s1-q009",
+     "pdf_page": 18,
+     "printed_page": 1,
+     "y": 662.588,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s1-q009-key",
+     "pdf_page": 109,
+     "printed_page": 92,
+     "y": 307.758,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T06:49:59+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T06:49:59+05:30",
+   "text_as_printed": "The Stone Ages belong to the ____________ period of history. (Easy)",
+   "section_signal": "I",
+   "answer": {
+    "kind": "text",
+    "value": "Prehistoric period"
+   },
+   "answer_as_printed": "Prehistoric period",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T06:49:59+05:30",
+    "basis": "printed one-line answer, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "2a2944c9686e01d975f2ef6c5e6510d727709c92896f0a3d78724de26738a7f2"
+  },
+  {
+   "id": "soc-6-01-s1-q010",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Understands history through sources and describes the development of early society."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The Common Era began in the year ____________.",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s1-q010",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s1-q010",
+     "pdf_page": 18,
+     "printed_page": 1,
+     "y": 678.478,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s1-q010-key",
+     "pdf_page": 109,
+     "printed_page": 92,
+     "y": 323.558,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T06:49:59+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T06:49:59+05:30",
+   "text_as_printed": "The Common Era began in the year ____________. (Easy)",
+   "section_signal": "I",
+   "answer": {
+    "kind": "text",
+    "value": "The specific year of Jesus' birth"
+   },
+   "answer_as_printed": "The specific year of Jesus' birth",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T06:49:59+05:30",
+    "basis": "printed one-line answer, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "c739a3bdb35fdd7e9d7a83ee637aeba6a260cb25ff326370ff59ae4d557ada3d"
+  },
+  {
+   "id": "soc-6-01-s2-q011",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Understands history through sources and describes the development of early society."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The country of Herodotus, who is known as the Father of History, is:",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s2-q011",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s2-q011",
+     "pdf_page": 18,
+     "printed_page": 1,
+     "y": 739.508,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s2-q011-key",
+     "pdf_page": 109,
+     "printed_page": 92,
+     "y": 391.058,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T06:49:59+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T06:49:59+05:30",
+   "text_as_printed": "The country of Herodotus, who is known as the Father of History, is: (Easy)",
+   "section_signal": "II",
+   "options": [
+    {
+     "id": "A",
+     "text": "Greece"
+    },
+    {
+     "id": "B",
+     "text": "Rome"
+    },
+    {
+     "id": "C",
+     "text": "Persia"
+    },
+    {
+     "id": "D",
+     "text": "China"
+    }
+   ],
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_as_printed": "Greece",
+   "source_corrections": [
+    {
+     "field": "answer",
+     "printed": "Greece",
+     "corrected": "A",
+     "basis": "pass 1"
+    }
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T06:49:59+05:30",
+    "basis": "section-I text-only key matched to option by pass 1 normalised match (v2 §3)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "source notation inconsistent",
+     "why_not_corrected": "answer key q11 prints the option with a numeric label '1. Greece' instead of a letter; the stem options are A-D; resolved to option A by key text 'Greece' (control rev4 ruling 6)",
+     "suggested": "A"
+    }
+   ],
+   "content_hash": "9a8f774bc25c189103f651305b5f70e54cd9a95e737e2c0a48709c5b3bb6552e"
+  },
+  {
+   "id": "soc-6-01-s2-q012",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Understands history through sources and describes the development of early society."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is meant by the Prehistoric Period?",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s2-q012",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s2-q012",
+     "pdf_page": 19,
+     "printed_page": 2,
+     "y": 120.138,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s2-q012-key",
+     "pdf_page": 109,
+     "printed_page": 92,
+     "y": 406.858,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T06:49:59+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T06:49:59+05:30",
+   "text_as_printed": "What is meant by the Prehistoric Period? (Easy)",
+   "section_signal": "II",
+   "options": [
+    {
+     "id": "A",
+     "text": "The period when metals were used"
+    },
+    {
+     "id": "B",
+     "text": "The period for which written records are available"
+    },
+    {
+     "id": "C",
+     "text": "The period when the art of writing was not known"
+    },
+    {
+     "id": "D",
+     "text": "The age of modern machines"
+    }
+   ],
+   "answer_as_printed": "C. The period when the art of writing was not known.",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T06:49:59+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "58a337461d1dfc7c12ca4e9664f4739afbcb972a701daba2fd584c797874184f"
+  },
+  {
+   "id": "soc-6-01-s2-q013",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Understands history through sources and describes the development of early society."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What did people of the Palaeolithic Age mainly use for their protection and food?",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s2-q013",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s2-q013",
+     "pdf_page": 19,
+     "printed_page": 2,
+     "y": 199.428,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s2-q013-key",
+     "pdf_page": 109,
+     "printed_page": 92,
+     "y": 422.758,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T06:49:59+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T06:49:59+05:30",
+   "text_as_printed": "What did people of the Palaeolithic Age mainly use for their protection and food? (Easy)",
+   "section_signal": "II",
+   "options": [
+    {
+     "id": "A",
+     "text": "Rough stone tools"
+    },
+    {
+     "id": "B",
+     "text": "Iron swords"
+    },
+    {
+     "id": "C",
+     "text": "Gold ornaments"
+    },
+    {
+     "id": "D",
+     "text": "Plastic tools"
+    }
+   ],
+   "answer_as_printed": "A. Rough stone tools",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T06:49:59+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "98b6df18ea4aab1f1b8be3a42ab987e31ddd1779d9d144f68b3845bffca19046"
+  },
+  {
+   "id": "soc-6-01-s2-q014",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Understands history through sources and describes the development of early society."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Where did primitive humans live to protect themselves from rain, wind, and wild animals?",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s2-q014",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s2-q014",
+     "pdf_page": 19,
+     "printed_page": 2,
+     "y": 278.838,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s2-q014-key",
+     "pdf_page": 109,
+     "printed_page": 92,
+     "y": 438.658,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T06:49:59+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T06:49:59+05:30",
+   "text_as_printed": "Where did primitive humans live to protect themselves from rain, wind, and wild animals? (Easy)",
+   "section_signal": "II",
+   "options": [
+    {
+     "id": "A",
+     "text": "In cement houses"
+    },
+    {
+     "id": "B",
+     "text": "In caves and natural shelters"
+    },
+    {
+     "id": "C",
+     "text": "In large palaces"
+    },
+    {
+     "id": "D",
+     "text": "In tall apartments"
+    }
+   ],
+   "answer_as_printed": "B. Caves and natural rock shelters",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T06:49:59+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text differs from option by a printed typo",
+     "why_not_corrected": "letter B kept (addendum §4.1); key text 'Caves and natural rock shelters' vs option B 'In caves and natural shelters' differ by a source typo; spelling needs subject knowledge (v2 §1)",
+     "suggested": "B (letter kept)"
+    }
+   ],
+   "content_hash": "11c836e3bdadc8c7b90a74042b8723f4ec4586a41729f8c05e05a013c506fd68"
+  },
+  {
+   "id": "soc-6-01-s2-q015",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Understands history through sources and describes the development of early society."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Which discovery brought a revolutionary change in the life of primitive humans and helped them drive away wild animals?",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s2-q015",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s2-q015",
+     "pdf_page": 19,
+     "printed_page": 2,
+     "y": 374.058,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s2-q015-key",
+     "pdf_page": 109,
+     "printed_page": 92,
+     "y": 454.458,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T06:49:59+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T06:49:59+05:30",
+   "text_as_printed": "Which discovery brought a revolutionary change in the life of primitive humans and helped them drive away wild animals? (Easy)",
+   "section_signal": "II",
+   "options": [
+    {
+     "id": "A",
+     "text": "Metal coins"
+    },
+    {
+     "id": "B",
+     "text": "Discovery of fire"
+    },
+    {
+     "id": "C",
+     "text": "Mobile phone"
+    },
+    {
+     "id": "D",
+     "text": "Use of paper"
+    }
+   ],
+   "answer_as_printed": "B. Discovery of fire",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T06:49:59+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "21a430a47c6a33d6b4cff87564b07fb4499ccd5a50db275d27232aed7efe8644"
+  },
+  {
+   "id": "soc-6-01-s2-q016",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Understands history through sources and describes the development of early society."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Which occupation enabled humans to give up their nomadic life, settle in one place, and begin a stable life?",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s2-q016",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s2-q016",
+     "pdf_page": 19,
+     "printed_page": 2,
+     "y": 469.258,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s2-q016-key",
+     "pdf_page": 109,
+     "printed_page": 92,
+     "y": 470.358,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T06:49:59+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T06:49:59+05:30",
+   "text_as_printed": "Which occupation enabled humans to give up their nomadic life, settle in one place, and begin a stable life? (Easy)",
+   "section_signal": "II",
+   "options": [
+    {
+     "id": "A",
+     "text": "Software jobs"
+    },
+    {
+     "id": "B",
+     "text": "Factory work"
+    },
+    {
+     "id": "C",
+     "text": "Only hunting"
+    },
+    {
+     "id": "D",
+     "text": "Agriculture"
+    }
+   ],
+   "answer_as_printed": "D. Agriculture or farming",
+   "answer": {
+    "kind": "option",
+    "option_id": "D"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T06:49:59+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text differs from option by a printed typo",
+     "why_not_corrected": "letter D kept (addendum §4.1); key text 'Agriculture or farming' vs option D 'Agriculture' differ by a source typo; spelling needs subject knowledge (v2 §1)",
+     "suggested": "D (letter kept)"
+    }
+   ],
+   "content_hash": "f764a82a5a7b0e2fe06f0f6d86f51e79e84edd5546b5f7a3058866d0ef380581"
+  },
+  {
+   "id": "soc-6-01-s2-q017",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Understands history through sources and describes the development of early society."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Which animal was first domesticated by humans?",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s2-q017",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s2-q017",
+     "pdf_page": 19,
+     "printed_page": 2,
+     "y": 564.478,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s2-q017-key",
+     "pdf_page": 109,
+     "printed_page": 92,
+     "y": 486.258,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T06:49:59+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T06:49:59+05:30",
+   "text_as_printed": "Which animal was first domesticated by humans? (Easy)",
+   "section_signal": "II",
+   "options": [
+    {
+     "id": "A",
+     "text": "Tiger"
+    },
+    {
+     "id": "B",
+     "text": "Lion"
+    },
+    {
+     "id": "C",
+     "text": "Dog"
+    },
+    {
+     "id": "D",
+     "text": "Elephant"
+    }
+   ],
+   "answer_as_printed": "C. Dog",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T06:49:59+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "6aec9ba2c5293de2247fdc663e3b8e6f10840f4900cdb3c9f048f32dc940b8bc"
+  },
+  {
+   "id": "soc-6-01-s2-q018",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Understands history through sources and describes the development of early society."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Coins, inscriptions, and monuments used for writing history are called:",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s2-q018",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s2-q018",
+     "pdf_page": 19,
+     "printed_page": 2,
+     "y": 643.878,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s2-q018-key",
+     "pdf_page": 109,
+     "printed_page": 92,
+     "y": 502.078,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T06:49:59+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T06:49:59+05:30",
+   "text_as_printed": "Coins, inscriptions, and monuments used for writing history are called: (Easy)",
+   "section_signal": "II",
+   "options": [
+    {
+     "id": "A",
+     "text": "Archaeological sources"
+    },
+    {
+     "id": "B",
+     "text": "Literary sources"
+    },
+    {
+     "id": "C",
+     "text": "Oral sources"
+    },
+    {
+     "id": "D",
+     "text": "Imaginary sources"
+    }
+   ],
+   "answer_as_printed": "A. Archaeological sources (Archaeological evidence)",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T06:49:59+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text differs from option by a printed typo",
+     "why_not_corrected": "letter A kept (addendum §4.1); key text 'Archaeological sources (Archaeological evidence)' vs option A 'Archaeological sources' differ by a source typo; spelling needs subject knowledge (v2 §1)",
+     "suggested": "A (letter kept)"
+    }
+   ],
+   "content_hash": "53cf36e5c83bf1bba77a12ba8fc7dcc0414b7737d356cae27280b4389e42190a"
+  },
+  {
+   "id": "soc-6-01-s2-q019",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Understands history through sources and describes the development of early society."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Which important invention in the New Stone Age helped in transporting heavy objects easily and making pottery?",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s2-q019",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s2-q019",
+     "pdf_page": 19,
+     "printed_page": 2,
+     "y": 723.208,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s2-q019-key",
+     "pdf_page": 109,
+     "printed_page": 92,
+     "y": 517.978,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T06:49:59+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T06:49:59+05:30",
+   "text_as_printed": "Which important invention in the New Stone Age helped in transporting heavy objects easily and making pottery? (Easy)",
+   "section_signal": "II",
+   "options": [
+    {
+     "id": "A",
+     "text": "Wheel"
+    },
+    {
+     "id": "B",
+     "text": "Plastic bucket"
+    },
+    {
+     "id": "C",
+     "text": "Railway engine"
+    },
+    {
+     "id": "D",
+     "text": "Iron nail"
+    }
+   ],
+   "answer_as_printed": "A. Wheel",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T06:49:59+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "6b8c3899b2f909157177564b20140faaf8c54b04f0d41d80d45c8843537d68ab"
+  },
+  {
+   "id": "soc-6-01-s3-q020",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Understands history through sources and describes the development of early society."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is history?",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s3-q020",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s3-q020",
+     "pdf_page": 20,
+     "printed_page": 3,
+     "y": 166.638,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s3-q020-key",
+     "pdf_page": 109,
+     "printed_page": 92,
+     "y": 565.588,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T06:49:59+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T06:49:59+05:30",
+   "text_as_printed": "What is history? (Easy)",
+   "section_signal": "III",
+   "answer": {
+    "kind": "text",
+    "value": "History is the systematic narration of past events."
+   },
+   "answer_as_printed": "History is the systematic narration of past events.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T06:49:59+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "3db103c66873f29e40f90ab28497160df19a3d84c8026a1f87eabc9ab14efa61"
+  },
+  {
+   "id": "soc-6-01-s3-q021",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Understands history through sources and describes the development of early society."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What does history help us understand?",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s3-q021",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s3-q021",
+     "pdf_page": 20,
+     "printed_page": 3,
+     "y": 182.528,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s3-q021-key",
+     "pdf_page": 109,
+     "printed_page": 92,
+     "y": 581.488,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T06:49:59+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T06:49:59+05:30",
+   "text_as_printed": "What does history help us understand? (Easy)",
+   "section_signal": "III",
+   "answer": {
+    "kind": "text",
+    "value": "When? Where? By whom? Did the event occur."
+   },
+   "answer_as_printed": "When? Where? By whom? Did the event occur.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T06:49:59+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "55e3893a2881ff271f611290c55cb4c1649f15b97faed2cb6a3021ed844fe6b8"
+  },
+  {
+   "id": "soc-6-01-s3-q022",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Understands history through sources and describes the development of early society."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Who first showed how to write history?",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s3-q022",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s3-q022",
+     "pdf_page": 20,
+     "printed_page": 3,
+     "y": 198.428,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s3-q022-key",
+     "pdf_page": 109,
+     "printed_page": 92,
+     "y": 597.388,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T06:49:59+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T06:49:59+05:30",
+   "text_as_printed": "Who first showed how to write history? (Easy)",
+   "section_signal": "III",
+   "answer": {
+    "kind": "text",
+    "value": "Greeks"
+   },
+   "answer_as_printed": "Greeks",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T06:49:59+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "548c3688d911356198cdd713033cad6d3f7d562343af3cf0a692e7841244cf6e"
+  },
+  {
+   "id": "soc-6-01-s3-q023",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Understands history through sources and describes the development of early society."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What are sources?",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s3-q023",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s3-q023",
+     "pdf_page": 20,
+     "printed_page": 3,
+     "y": 214.228,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s3-q023-key",
+     "pdf_page": 109,
+     "printed_page": 92,
+     "y": 613.178,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T06:49:59+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T06:49:59+05:30",
+   "text_as_printed": "What are sources? (Easy)",
+   "section_signal": "III",
+   "answer": {
+    "kind": "text",
+    "value": "Definite and accurate sources that explain history."
+   },
+   "answer_as_printed": "Definite and accurate sources that explain history.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T06:49:59+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "ac3cd758b25e2b0b46770eadcc2cb0aeede1494a032e7b34a2ac9424d19dadd2"
+  },
+  {
+   "id": "soc-6-01-s3-q024",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Understands history through sources and describes the development of early society."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Which type of literature includes folk songs, folk tales, Lavani, and legends?",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s3-q024",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s3-q024",
+     "pdf_page": 20,
+     "printed_page": 3,
+     "y": 230.138,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s3-q024-key",
+     "pdf_page": 109,
+     "printed_page": 92,
+     "y": 629.088,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T06:49:59+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T06:49:59+05:30",
+   "text_as_printed": "Which type of literature includes folk songs, folk tales, Lavani, and legends? (Easy)",
+   "section_signal": "III",
+   "answer": {
+    "kind": "text",
+    "value": "Oral literature"
+   },
+   "answer_as_printed": "Oral literature",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T06:49:59+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "91cc31a04f539acf040583342e9ade1c5681e56887e17b34b163023accc7f11d"
+  },
+  {
+   "id": "soc-6-01-s3-q025",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Understands history through sources and describes the development of early society."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is excavation?",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s3-q025",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s3-q025",
+     "pdf_page": 20,
+     "printed_page": 3,
+     "y": 246.028,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s3-q025-key",
+     "pdf_page": 109,
+     "printed_page": 92,
+     "y": 644.978,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T06:49:59+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T06:49:59+05:30",
+   "text_as_printed": "What is excavation? (Easy)",
+   "section_signal": "III",
+   "answer": {
+    "kind": "text",
+    "value": "Scientific excavation conducted to unearth ancient human remains or fossils."
+   },
+   "answer_as_printed": "Scientific excavation conducted to unearth ancient human remains or fossils.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T06:49:59+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "9d463e8e54f407c85364b11e64385e7392228c277be67342929fe0c8288a80ce"
+  },
+  {
+   "id": "soc-6-01-s3-q026",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Understands history through sources and describes the development of early society."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "When did human evolution begin?",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s3-q026",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s3-q026",
+     "pdf_page": 20,
+     "printed_page": 3,
+     "y": 261.838,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s3-q026-key",
+     "pdf_page": 109,
+     "printed_page": 92,
+     "y": 660.778,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T06:49:59+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T06:49:59+05:30",
+   "text_as_printed": "When did human evolution begin? (Easy)",
+   "section_signal": "III",
+   "answer": {
+    "kind": "text",
+    "value": "1.8 million years ago"
+   },
+   "answer_as_printed": "1.8 million years ago",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T06:49:59+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "9a6ec443c0c9ce7b988443038f3a3f476f3bda6118c7c444d2b86ec4007cb004"
+  },
+  {
+   "id": "soc-6-01-s3-q027",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Understands history through sources and describes the development of early society."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Which period of history had no knowledge of writing?",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s3-q027",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s3-q027",
+     "pdf_page": 20,
+     "printed_page": 3,
+     "y": 277.728,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s3-q027-key",
+     "pdf_page": 109,
+     "printed_page": 92,
+     "y": 676.678,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T06:49:59+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T06:49:59+05:30",
+   "text_as_printed": "Which period of history had no knowledge of writing? (Easy)",
+   "section_signal": "III",
+   "answer": {
+    "kind": "text",
+    "value": "Prehistoric period"
+   },
+   "answer_as_printed": "Prehistoric period",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T06:49:59+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "b451c65d13ef1564f9e14c590f6544b2ec94e2e0e4ef0dafdebda7cdc869ccbd"
+  },
+  {
+   "id": "soc-6-01-s3-q028",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Understands history through sources and describes the development of early society."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What are archaeological sources?",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s3-q028",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s3-q028",
+     "pdf_page": 20,
+     "printed_page": 3,
+     "y": 293.658,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s3-q028-key",
+     "pdf_page": 109,
+     "printed_page": 92,
+     "y": 692.588,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T06:49:59+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T06:49:59+05:30",
+   "text_as_printed": "What are archaeological sources? (Easy)",
+   "section_signal": "III",
+   "answer": {
+    "kind": "text",
+    "value": "Remnants of physical objects created and used by early humans are archaeological sources."
+   },
+   "answer_as_printed": "Remnants of physical objects created and used by early humans are archaeological sources.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T06:49:59+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "2ebe1a91efcc88bb13b3fc3530ab3f75f8042d7ae9db206282fbbcd5c74eb8a7"
+  },
+  {
+   "id": "soc-6-01-s3-q029",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Understands history through sources and describes the development of early society."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Which period marked the beginning of the use of metals?",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s3-q029",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s3-q029",
+     "pdf_page": 20,
+     "printed_page": 3,
+     "y": 309.458,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s3-q029-key",
+     "pdf_page": 109,
+     "printed_page": 92,
+     "y": 724.308,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T06:49:59+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T06:49:59+05:30",
+   "text_as_printed": "Which period marked the beginning of the use of metals? (Easy)",
+   "section_signal": "III",
+   "answer": {
+    "kind": "text",
+    "value": "End of Neolithic Age"
+   },
+   "answer_as_printed": "End of Neolithic Age",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T06:49:59+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "b511c2d0a7a39291b9e6bbf5c2a50620d47feef4e8ac6a78224c6a91e832dfb0"
+  },
+  {
+   "id": "soc-6-01-s4-q030",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "match",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Understands history through sources and describes the development of early society."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Match the following.\nColumn A: 1. Archaeological sources; 2. 21st Century; 3. Timeline; 4. Discovery of fire; 5. Tool production centre\nColumn B: A. Common Era 2001-2100; B. Inscriptions; C. Sanganakallu near Ballari; D. Chronology; E. Palaeolithic Age",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s4-q030",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s4-q030",
+     "pdf_page": 20,
+     "printed_page": 3,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s4-q030-key",
+     "pdf_page": 109,
+     "printed_page": 92,
+     "y": 756.008,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T06:49:59+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T06:49:59+05:30",
+   "section_signal": "IV",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "Archaeological sources",
+      "right": "Inscriptions"
+     },
+     {
+      "left": "21st Century",
+      "right": "2001 to 2100 CE"
+     },
+     {
+      "left": "Timeline",
+      "right": "Christian Era (CE)"
+     },
+     {
+      "left": "Discovery of fire",
+      "right": "Paleolithic Age"
+     },
+     {
+      "left": "Tool production centre",
+      "right": "Sanganakallu near Ballari"
+     }
+    ]
+   },
+   "answer_as_printed": "1. Inscriptions; 2. 2001 to 2100 CE; 3. Christian Era (CE); 4. Paleolithic Age; 5. Sanganakallu near Ballari",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T06:49:59+05:30",
+    "basis": "printed match key; pairs left/right verbatim (rev4 ruling 2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "match key internally inconsistent",
+     "why_not_corrected": "printed match key pair 3 'Timeline -> Christian Era (CE)' names no column-B item (column B lists D. Chronology); recorded verbatim as printed (control rev4 ruling 2)",
+     "suggested": "review — Timeline = Chronology (D)"
+    }
+   ],
+   "content_hash": "611d2650fa00f4005a82f692ca0473a21768b710452d6291791687b43ff93679"
+  },
+  {
+   "id": "soc-6-01-s5-q031",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "ordering",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Understands history through sources and describes the development of early society."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Arrange the following in chronological order.\n1. Student joined school. 2. Student was born. 3. Student's father was born. 4. Student's mother was born. 5. Student passed Grade 5.",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s5-q031",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s5-q031",
+     "pdf_page": 20,
+     "printed_page": 3,
+     "y": 546.388,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s5-q031-key",
+     "pdf_page": 110,
+     "printed_page": 93,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T06:49:59+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T06:49:59+05:30",
+   "section_signal": "V",
+   "answer": {
+    "kind": "text",
+    "value": "3, 4, 2, 1, 5"
+   },
+   "answer_as_printed": "3, 4, 2, 1, 5",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T06:49:59+05:30",
+    "basis": "printed one-line answer, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "400cee9e885e9cdf74f23f4092db1eb8ad226ad875fc02865cc8da7f3a8caf4f"
+  },
+  {
+   "id": "soc-6-01-s6-q032",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Understands history through sources and describes the development of early society."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Middle Stone Age: Microlithic Age:: Palaeolithic Age: __________",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s6-q032",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s6-q032",
+     "pdf_page": 20,
+     "printed_page": 3,
+     "y": 686.778,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s6-q032-key",
+     "pdf_page": 110,
+     "printed_page": 93,
+     "y": 220.838,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T06:49:59+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T06:49:59+05:30",
+   "text_as_printed": "Middle Stone Age : Microlithic Age :: Palaeolithic Age : __________",
+   "section_signal": "VI",
+   "answer": {
+    "kind": "text",
+    "value": "The early archaeological stage of history"
+   },
+   "answer_as_printed": "The early archaeological stage of history",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T06:49:59+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "cc26c48d9d33bb79627c01c1f474a9dbfaf19fc19061af858353d362d7f1650d"
+  },
+  {
+   "id": "soc-6-01-s6-q033",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Understands history through sources and describes the development of early society."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Palaeolithic Age: Nomads:: Middle Stone Age: __________",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s6-q033",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s6-q033",
+     "pdf_page": 20,
+     "printed_page": 3,
+     "y": 702.608,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s6-q033-key",
+     "pdf_page": 110,
+     "printed_page": 93,
+     "y": 236.728,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T06:49:59+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T06:49:59+05:30",
+   "text_as_printed": "Palaeolithic Age : Nomads :: Middle Stone Age : __________",
+   "section_signal": "VI",
+   "answer": {
+    "kind": "text",
+    "value": "Cattle herders"
+   },
+   "answer_as_printed": "Cattle herders",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T06:49:59+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "b289735d7c2e1971d566fd4731391db4d0d271095047f92beb0b91ae47b77631"
+  },
+  {
+   "id": "soc-6-01-s6-q034",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Understands history through sources and describes the development of early society."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "When?: Time:: Where?: __________",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s6-q034",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s6-q034",
+     "pdf_page": 20,
+     "printed_page": 3,
+     "y": 718.508,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s6-q034-key",
+     "pdf_page": 110,
+     "printed_page": 93,
+     "y": 252.638,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T06:49:59+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T06:49:59+05:30",
+   "text_as_printed": "When? : Time :: Where? : __________",
+   "section_signal": "VI",
+   "answer": {
+    "kind": "text",
+    "value": "Place"
+   },
+   "answer_as_printed": "Place",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T06:49:59+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "07e1950534705e2b0db3b641913c087742c2decf6a73094138b48979d0b4a033"
+  },
+  {
+   "id": "soc-6-01-s6-q035",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Understands history through sources and describes the development of early society."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Folk songs: Literary sources:: Monuments: __________",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s6-q035",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s6-q035",
+     "pdf_page": 20,
+     "printed_page": 3,
+     "y": 734.408,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s6-q035-key",
+     "pdf_page": 110,
+     "printed_page": 93,
+     "y": 268.428,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T06:49:59+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T06:49:59+05:30",
+   "text_as_printed": "Folk songs : Literary sources :: Monuments : __________",
+   "section_signal": "VI",
+   "answer": {
+    "kind": "text",
+    "value": "Archaeological sources"
+   },
+   "answer_as_printed": "Archaeological sources",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T06:49:59+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "8b5d34e56b087580a87184c8edf73b1e9f1903967641229e00817f0e9e0e3ae1"
+  },
+  {
+   "id": "soc-6-01-s6-q036",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Understands history through sources and describes the development of early society."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Strongest metal: Iron:: Strong alloy: __________",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s6-q036",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s6-q036",
+     "pdf_page": 20,
+     "printed_page": 3,
+     "y": 750.208,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s6-q036-key",
+     "pdf_page": 110,
+     "printed_page": 93,
+     "y": 284.338,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T06:49:59+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T06:49:59+05:30",
+   "text_as_printed": "Strongest metal : Iron :: Strong alloy : __________",
+   "section_signal": "VI",
+   "answer": {
+    "kind": "text",
+    "value": "Bronze"
+   },
+   "answer_as_printed": "Bronze",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T06:49:59+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "35d37d5febba68144e6ec9f62150b276e6ebf81971e9d9e813a3eec7d8d77d8f"
+  },
+  {
+   "id": "soc-6-01-s7-q037",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Understands history through sources and describes the development of early society."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What are the three major periods of history?",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s7-q037",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s7-q037",
+     "pdf_page": 21,
+     "printed_page": 4,
+     "y": 120.928,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s7-q037-key",
+     "pdf_page": 110,
+     "printed_page": 93,
+     "y": 331.958,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T06:49:59+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T06:49:59+05:30",
+   "text_as_printed": "What are the three major periods of history? (Average)",
+   "section_signal": "VII",
+   "answer": {
+    "kind": "text",
+    "value": "Pre-historic period,\nproto-historic period,\nhistoric period"
+   },
+   "answer_as_printed": "Pre-historic period,\nproto-historic period,\nhistoric period",
+   "solution_steps": [
+    "Pre-historic period,",
+    "proto-historic period,",
+    "historic period"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T06:49:59+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "f4522ff5fd2561564f4c2819b876c26e8de73c5e6f1eefecf4d62306c6d412c6"
+  },
+  {
+   "id": "soc-6-01-s7-q038",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Understands history through sources and describes the development of early society."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Name the tools used by people during the Palaeolithic Age.",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s7-q038",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s7-q038",
+     "pdf_page": 21,
+     "printed_page": 4,
+     "y": 136.838,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s7-q038-key",
+     "pdf_page": 110,
+     "printed_page": 93,
+     "y": 411.358,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T06:49:59+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T06:49:59+05:30",
+   "text_as_printed": "Name the tools used by people during the Palaeolithic Age. (Easy)",
+   "section_signal": "VII",
+   "answer": {
+    "kind": "text",
+    "value": "Large stone tools like hand axes, chisels, scrapers, and hammer stones"
+   },
+   "answer_as_printed": "Large stone tools like hand axes, chisels, scrapers, and hammer stones",
+   "solution_steps": [
+    "Large stone tools like hand axes, chisels, scrapers, and hammer stones"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T06:49:59+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "e1028e54fd368a60367b6ffa67c64f41e25655e67f71e88d08269bd32018f9c1"
+  },
+  {
+   "id": "soc-6-01-s7-q039",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Understands history through sources and describes the development of early society."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What are the important sources of history?",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s7-q039",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s7-q039",
+     "pdf_page": 21,
+     "printed_page": 4,
+     "y": 152.638,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s7-q039-key",
+     "pdf_page": 110,
+     "printed_page": 93,
+     "y": 443.058,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T06:49:59+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T06:49:59+05:30",
+   "text_as_printed": "What are the important sources of history? (Average)",
+   "section_signal": "VII",
+   "answer": {
+    "kind": "text",
+    "value": "Literary sources and archaeological sources"
+   },
+   "answer_as_printed": "Literary sources and archaeological sources",
+   "solution_steps": [
+    "Literary sources and archaeological sources"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T06:49:59+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "d4a95ef4a8de663e79eeb91e811e72c726cc85569782041eeaf53c6628e4527b"
+  },
+  {
+   "id": "soc-6-01-s7-q040",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Understands history through sources and describes the development of early society."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Explain the factors that led to the origin of agriculture during the New Stone Age (Neolithic Age).",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s7-q040",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s7-q040",
+     "pdf_page": 21,
+     "printed_page": 4,
+     "y": 168.528,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s7-q040-key",
+     "pdf_page": 110,
+     "printed_page": 93,
+     "y": 474.758,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T06:49:59+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T06:49:59+05:30",
+   "text_as_printed": "Explain the factors that led to the origin of agriculture during the New Stone Age (Neolithic Age). (Difficult)",
+   "section_signal": "VII",
+   "answer": {
+    "kind": "text",
+    "value": "Key developments in human history\nScarcity of food for animals: Humans had to find new ways to obtain food.\nShift from nomadic lifestyle to settled agriculture: Humans began to cultivate crops and domesticate animals.\nRiver valley civilizations: Early civilizations emerged in river valleys.\nAgriculture became the foundation of culture and civilization: Agriculture allowed for settled life, which led to the development of complex societies.\nEvidence of early agriculture in the Indian subcontinent: Archaeological sites like Mehrgarh in Pakistan provide evidence of early agriculture."
+   },
+   "answer_as_printed": "Key developments in human history\nScarcity of food for animals: Humans had to find new ways to obtain food.\nShift from nomadic lifestyle to settled agriculture: Humans began to cultivate crops and domesticate animals.\nRiver valley civilizations: Early civilizations emerged in river valleys.\nAgriculture became the foundation of culture and civilization: Agriculture allowed for settled life, which led to the development of complex societies.\nEvidence of early agriculture in the Indian subcontinent: Archaeological sites like Mehrgarh in Pakistan provide evidence of early agriculture.",
+   "solution_steps": [
+    "Scarcity of food for animals: Humans had to find new ways to obtain food.",
+    "Shift from nomadic lifestyle to settled agriculture: Humans began to cultivate crops and domesticate animals.",
+    "River valley civilizations: Early civilizations emerged in river valleys.",
+    "Agriculture became the foundation of culture and civilization: Agriculture allowed for settled life, which led to the development of complex societies.",
+    "Evidence of early agriculture in the Indian subcontinent: Archaeological sites like Mehrgarh in Pakistan provide evidence of early agriculture."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T06:49:59+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "173d00bbe08c43d56f5f3d80f6e9a5c67dee3340b371a0569df9aac8bf595afb"
+  },
+  {
+   "id": "soc-6-01-s7-q041",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Understands history through sources and describes the development of early society."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What changes occurred due to the discovery of iron?",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s7-q041",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s7-q041",
+     "pdf_page": 21,
+     "printed_page": 4,
+     "y": 200.228,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s7-q041-key",
+     "pdf_page": 110,
+     "printed_page": 93,
+     "y": 637.788,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T06:49:59+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T06:49:59+05:30",
+   "text_as_printed": "What changes occurred due to the discovery of iron? (Average)",
+   "section_signal": "VII",
+   "answer": {
+    "kind": "text",
+    "value": "Iron Age developments\nIron Age is also known as the Megalithic Age: The use of iron tools and megalithic structures characterized this period.\nIron tools and equipment aided agriculture and craft production: The introduction of iron tools improved agricultural productivity and craft production.\nAgricultural activities flourished in North India: The use of iron tools and other technological advancements led to increased agricultural productivity.\nSurplus production and emergence of a controlling class: The increased productivity led to surplus production, which in turn led to the emergence of a controlling class.\nEmergence of republics and empires: The Mauryan and Nanda empires emerged during this period."
+   },
+   "answer_as_printed": "Iron Age developments\nIron Age is also known as the Megalithic Age: The use of iron tools and megalithic structures characterized this period.\nIron tools and equipment aided agriculture and craft production: The introduction of iron tools improved agricultural productivity and craft production.\nAgricultural activities flourished in North India: The use of iron tools and other technological advancements led to increased agricultural productivity.\nSurplus production and emergence of a controlling class: The increased productivity led to surplus production, which in turn led to the emergence of a controlling class.\nEmergence of republics and empires: The Mauryan and Nanda empires emerged during this period.",
+   "solution_steps": [
+    "Iron Age is also known as the Megalithic Age: The use of iron tools and megalithic structures characterized this period.",
+    "Iron tools and equipment aided agriculture and craft production: The introduction of iron tools improved agricultural productivity and craft production.",
+    "Agricultural activities flourished in North India: The use of iron tools and other technological advancements led to increased agricultural productivity.",
+    "Surplus production and emergence of a controlling class: The increased productivity led to surplus production, which in turn led to the emergence of a controlling class.",
+    "Emergence of republics and empires: The Mauryan and Nanda empires emerged during this period."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T06:49:59+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "dc599bda97e01edc40fbbb578051787e1ec596f92568150ec479e4fb4f54517b"
+  },
+  {
+   "id": "soc-6-01-s7-q042",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Understands history through sources and describes the development of early society."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Why do we need history? Explain in your own words.",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s7-q042",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s7-q042",
+     "pdf_page": 21,
+     "printed_page": 4,
+     "y": 216.138,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s7-q042-key",
+     "pdf_page": 111,
+     "printed_page": 94,
+     "y": 153.638,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T06:49:59+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T06:49:59+05:30",
+   "text_as_printed": "Why do we need history? Explain in your own words. (Difficult)",
+   "section_signal": "VII",
+   "answer": {
+    "kind": "text",
+    "value": "Importance of history\nHistory is the collective memory of a nation: It helps us learn from the past and make informed decisions about the future.\nHistory provides lessons from the past: It teaches us about the successes and failures of our ancestors.\nHistory inspires future generations: The stories of bravery, sacrifice, and achievement inspire future generations.\nHistory helps us understand our culture and heritage: It provides a sense of identity and belonging."
+   },
+   "answer_as_printed": "Importance of history\nHistory is the collective memory of a nation: It helps us learn from the past and make informed decisions about the future.\nHistory provides lessons from the past: It teaches us about the successes and failures of our ancestors.\nHistory inspires future generations: The stories of bravery, sacrifice, and achievement inspire future generations.\nHistory helps us understand our culture and heritage: It provides a sense of identity and belonging.",
+   "solution_steps": [
+    "History is the collective memory of a nation: It helps us learn from the past and make informed decisions about the future.",
+    "History provides lessons from the past: It teaches us about the successes and failures of our ancestors.",
+    "History inspires future generations: The stories of bravery, sacrifice, and achievement inspire future generations.",
+    "History helps us understand our culture and heritage: It provides a sense of identity and belonging."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T06:49:59+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "ef0731200c8662d37390a045041da35c8faead1ff75337e7a1ab9f57d6494c24"
+  },
+  {
+   "id": "soc-6-01-s7-q043",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Understands history through sources and describes the development of early society."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What are the three stages of the Prehistoric Period?",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s7-q043",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s7-q043",
+     "pdf_page": 21,
+     "printed_page": 4,
+     "y": 232.028,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s7-q043-key",
+     "pdf_page": 111,
+     "printed_page": 94,
+     "y": 299.858,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T06:49:59+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T06:49:59+05:30",
+   "text_as_printed": "What are the three stages of the Prehistoric Period? (Average)",
+   "section_signal": "VII",
+   "answer": {
+    "kind": "text",
+    "value": "Stone Ages\nPalaeolithic Age (Palaeolithic Age)\nMesolithic Age (Middle Stone Age)\nNeolithic Age (New Stone Age)"
+   },
+   "answer_as_printed": "Stone Ages\nPalaeolithic Age (Palaeolithic Age)\nMesolithic Age (Middle Stone Age)\nNeolithic Age (New Stone Age)",
+   "solution_steps": [
+    "Palaeolithic Age (Palaeolithic Age)",
+    "Mesolithic Age (Middle Stone Age)",
+    "Neolithic Age (New Stone Age)"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T06:49:59+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "2d4078736ac7522914cfb605fa28238153a874bd43b81996231ec996863a1008"
+  },
+  {
+   "id": "soc-6-01-s8-q044",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Understands history through sources and describes the development of early society."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Explain the evolution of life.",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s8-q044",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s8-q044",
+     "pdf_page": 21,
+     "printed_page": 4,
+     "y": 293.058,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s8-q044-key",
+     "pdf_page": 111,
+     "printed_page": 94,
+     "y": 397.658,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T06:49:59+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T06:49:59+05:30",
+   "text_as_printed": "Explain the evolution of life. (Difficult)",
+   "section_signal": "VIII",
+   "answer": {
+    "kind": "text",
+    "value": "Evolution of life\nSingle-celled organisms evolved first: The earliest forms of life on Earth.\nEvolution of complex life forms: The development of more complex organisms like plants, animals, and humans.\nHuman evolution: Humans evolved around 1.8 million years ago.\nModern humans emerged in Africa: The earliest modern humans appeared in Africa and later migrated to other parts of the world."
+   },
+   "answer_as_printed": "Evolution of life\nSingle-celled organisms evolved first: The earliest forms of life on Earth.\nEvolution of complex life forms: The development of more complex organisms like plants, animals, and humans.\nHuman evolution: Humans evolved around 1.8 million years ago.\nModern humans emerged in Africa: The earliest modern humans appeared in Africa and later migrated to other parts of the world.",
+   "solution_steps": [
+    "Single-celled organisms evolved first: The earliest forms of life on Earth.",
+    "Evolution of complex life forms: The development of more complex organisms like plants, animals, and humans.",
+    "Human evolution: Humans evolved around 1.8 million years ago.",
+    "Modern humans emerged in Africa: The earliest modern humans appeared in Africa and later migrated to other parts of the world."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T06:49:59+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "ef078207722b81eb67b3c1423b7e75d8d1ebe0a5fb9bc790f65b0d22ebf53083"
+  },
+  {
+   "id": "soc-6-01-s8-q045",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Understands history through sources and describes the development of early society."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Describe the life of people during the Middle Stone Age.",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s8-q045",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s8-q045",
+     "pdf_page": 21,
+     "printed_page": 4,
+     "y": 308.958,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s8-q045-key",
+     "pdf_page": 111,
+     "printed_page": 94,
+     "y": 528.078,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T06:49:59+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T06:49:59+05:30",
+   "text_as_printed": "Describe the life of people during the Middle Stone Age. (Difficult)",
+   "section_signal": "VIII",
+   "answer": {
+    "kind": "text",
+    "value": "Mesolithic Age developments\nUse of microliths: Mesolithic humans used small, skilled stone tools.\nHunting and gathering: They hunted animals and gathered wild grains for food.\nAnimal domestication: They began to domesticate animals.\nArt and culture: They created art on stones and used animal hides for clothing.\nUse of fire: They knew how to use fire."
+   },
+   "answer_as_printed": "Mesolithic Age developments\nUse of microliths: Mesolithic humans used small, skilled stone tools.\nHunting and gathering: They hunted animals and gathered wild grains for food.\nAnimal domestication: They began to domesticate animals.\nArt and culture: They created art on stones and used animal hides for clothing.\nUse of fire: They knew how to use fire.",
+   "solution_steps": [
+    "Use of microliths: Mesolithic humans used small, skilled stone tools.",
+    "Hunting and gathering: They hunted animals and gathered wild grains for food.",
+    "Animal domestication: They began to domesticate animals.",
+    "Art and culture: They created art on stones and used animal hides for clothing.",
+    "Use of fire: They knew how to use fire."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T06:49:59+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "964dc6a178a5367a32b2316fa26d98d1f5e23ecd678ee767d59f9a2103b45849"
+  },
+  {
+   "id": "soc-6-01-s8-q046",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-01",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 1,
+     "text_as_printed": "Understands history through sources and describes the development of early society."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Identify the Neolithic sites on the given map of India.",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s8-q046",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s8-q046",
+     "pdf_page": 21,
+     "printed_page": 4,
+     "y": 324.858,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-01-s8-q046-key",
+     "pdf_page": 111,
+     "printed_page": 94,
+     "y": 643.478,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T06:49:59+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T06:49:59+05:30",
+   "text_as_printed": "Identify the Neolithic sites on the given map of India. (Difficult)",
+   "section_signal": "VIII",
+   "answer": {
+    "kind": "text",
+    "value": "Archaeological sites in Karnataka\nBanahalli\nBrahmagiri\nHallur\nPiklihal\nT. Narasipur\nUtnur"
+   },
+   "answer_as_printed": "Archaeological sites in Karnataka\nBanahalli\nBrahmagiri\nHallur\nPiklihal\nT. Narasipur\nUtnur",
+   "solution_steps": [
+    "Banahalli",
+    "Brahmagiri",
+    "Hallur",
+    "Piklihal",
+    "T. Narasipur",
+    "Utnur"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T06:49:59+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "stimulus_id": "stim-soc-6-01-q46-map",
+   "assets": [
+    {
+     "id": "a46",
+     "type": "image",
+     "ref": "images/soc-6-01/soc-6-01_q46_india-blank-map.png",
+     "role": "map_outline",
+     "source_px": {
+      "w": 489,
+      "h": 443
+     },
+     "sha256": "a22458e2ec3633c4e3b881ba455d3739bc40d1845c12b0863b71734234469608",
+     "quality": "ok",
+     "caption": "Blank outline map of India, Q46 (question side), pdf 21",
+     "pdf_page": 21,
+     "crop_bbox": {
+      "pdf_page": 21,
+      "x0": 152.2,
+      "y0": 240.9,
+      "x1": 425.4,
+      "y1": 487.9
+     }
+    }
+   ],
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text does not address question",
+     "why_not_corrected": "stem asks to identify Neolithic sites on the map of India; the printed answer lists archaeological sites in Karnataka; recorded as printed (control rev4 ruling 7)",
+     "suggested": "review — stem/key scope mismatch"
+    }
+   ],
+   "content_hash": "17c08711923c46b9a785166b15571485a46f6a03b8afc6007f12dbc0069bfe74"
+  }
+ ],
+ "pending_summary": {}
+}
