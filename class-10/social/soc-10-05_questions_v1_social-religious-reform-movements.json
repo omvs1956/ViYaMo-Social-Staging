@@ -1,10 +1,10 @@
 {
  "contract_version": "1.7",
  "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
- "procedure_file": "extraction_procedure_social_addendum_v1.2_social science Classes 6-10 on top of procedure v2.md",
+ "procedure_file": "extraction_procedure_social_addendum_v1.4_social science Classes 6-10 on top of procedure v2.md",
  "machine_name": "soc-10-05_questions",
  "version": 1,
- "changelog": "v1 extraction — batch-02 — class-10-social",
+ "changelog": "v1 extraction — batch-02 — class-10-social; r2 (c10-soc-batch-05r2) — re-stamp addendum v1.4; review_decisions_class-10 v1 — class-10-social",
  "amendments_applied": [],
  "unit_state": "EXTRACTED",
  "review_ready": false,
@@ -568,7 +568,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -577,6 +577,14 @@
      "by": "class-10-social",
      "role": "extraction",
      "at": "2026-10-01T20:41:25+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "correction",
+     "at": "2026-10-08T22:28:34+05:30",
+     "ref": "review_decisions_class-10 v1 (printed)"
     }
    ],
    "created_by": "class-10-social",
@@ -603,19 +611,37 @@
    "answer_as_printed": "C) Dayananda Saraswathi",
    "answer": {
     "kind": "option",
-    "option_id": null
+    "option_id": "A"
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
     },
     {
-     "issue": "key text not among options",
-     "why_not_corrected": "the printed key is 'C) Dayananda Saraswathi'. Letter C = option C 'Swami Vivekananda', but the text names Dayananda Saraswati — option A, the giver of the call 'Back to the Vedas' — with a spelling variant 'Saraswathi'/'Saraswati' that exactly matches no option. Letter and text disagree and the letter is substantively wrong; no answer is asserted (key-letter-text-disagreement vocab 'key text not among options')",
-     "suggested": "A (by text; printed letter C='Swami Vivekananda' disagrees and is historically wrong) — review"
+     "issue": "printed key contradicts fact — printed letter C names option C 'Swami Vivekananda'; the correct giver of 'Back to the Vedas' is Dayananda Saraswati (option A), confirmed by textbook"
     }
    ],
-   "content_hash": "b7751f5a8e842b62fa1c2ef47910e8a215bed1228720fce0bb690d631ea5be85"
+   "content_hash": "b7751f5a8e842b62fa1c2ef47910e8a215bed1228720fce0bb690d631ea5be85",
+   "answer_provenance": {
+    "by": "textbook_excerpt",
+    "actor": "class-10-social",
+    "at": "2026-10-08T22:28:34+05:30",
+    "basis": "Part 1, printed page 51 (pdf 64): \"he advised people to 'Back to the Vedas'\" (Dayananda Saraswati) -> option A. Printed letter C (option C 'Swami Vivekananda') contradicts the fact; text wins (A)."
+   },
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "confidence": "verbatim",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "10th English  SS  Part - 1 2026-27.pdf#soc-10-05-s1-q006-textbook",
+      "pdf_page": 64,
+      "y": 0,
+      "derived_from": "manual"
+     },
+     "text": "He travelled throughout the country giving lectures and emphasized that the Vedas were the source of truth and knowledge. In this context, he advised people to 'Back to the Vedas'."
+    }
+   ]
   },
   {
    "id": "soc-10-05-s1-q007",
