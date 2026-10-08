@@ -1,10 +1,10 @@
 {
  "contract_version": "1.7",
  "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
- "procedure_file": "extraction_procedure_social_addendum_v1.3_social science Classes 6-10 on top of procedure v2.md",
+ "procedure_file": "extraction_procedure_social_addendum_v1.4_social science Classes 6-10 on top of procedure v2.md",
  "machine_name": "soc-7-10_questions",
- "version": 1,
- "changelog": "v1 extraction — batch-01 — class-7-social",
+ "version": 2,
+ "changelog": "v1 extraction — batch-01 — class-7-social | v2 r1 correction (2026-10-08T23:48:01+05:30) — q6->President(C) from textbook Part-1",
  "amendments_applied": [],
  "unit_state": "EXTRACTED",
  "review_ready": false,
@@ -595,7 +595,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -604,6 +604,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T03:21:15+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:48:01+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -631,25 +639,37 @@
    "answer_as_printed": "A) Prime Minister",
    "answer": {
     "kind": "option",
-    "option_id": "A"
+    "option_id": "C"
    },
    "answer_provenance": {
-    "by": "printed",
+    "by": "textbook_excerpt",
     "actor": "class-7-social",
-    "at": "2026-10-08T03:21:15+05:30",
-    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+    "at": "2026-10-08T23:48:01+05:30",
+    "basis": "7th English SS Part-1 2026-27, printed p.149 (pdf p.163): \"The President appoints the leader of the majority party in the Lok Sabha as the Prime Minister\". The one who appoints the Lok Sabha majority leader as PM = the President = option C."
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
     },
     {
-     "issue": "key text does not address question",
-     "why_not_corrected": "stem: who appoints the leader of the majority party in the LokSabha AS the Prime Minister; printed key 'A) Prime Minister' names the PM as the appointer, which is self-contradictory — the appointer is the President (option C), as q34's own key states. Printed option A asserted verbatim (letter+text agree); correctness is the review layer (review-method v1.3).",
-     "suggested": "C) President (per q34); printed key A is wrong — review"
+     "issue": "printed key contradicts fact — textbook gives option C President (Part-1 p.149); printed key A (Prime Minister) wrong; reviewer"
     }
    ],
-   "content_hash": "a2d58e2dedee97aa1890bd6f9942fd78786a97ed539ea80f210e58f4758258f0"
+   "content_hash": "a2d58e2dedee97aa1890bd6f9942fd78786a97ed539ea80f210e58f4758258f0",
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "7th English SS Part-1 2026-27.pdf",
+      "pdf_page": 163,
+      "derived_from": "text_layer",
+      "y": 252.6
+     },
+     "text": "The President appoints the leader of the majority party in the Lok Sabha as the Prime Minister",
+     "confidence": "verbatim"
+    }
+   ]
   },
   {
    "id": "soc-7-10-s2-q007",
