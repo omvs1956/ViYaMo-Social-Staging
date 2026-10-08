@@ -1,10 +1,10 @@
 {
  "contract_version": "1.7",
  "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
- "procedure_file": "extraction_procedure_social_addendum_v1.3_social science Classes 6-10 on top of procedure v2.md",
+ "procedure_file": "extraction_procedure_social_addendum_v1.4_social science Classes 6-10 on top of procedure v2.md",
  "machine_name": "soc-7-06_questions",
- "version": 1,
- "changelog": "v1 extraction — batch-01 — class-7-social",
+ "version": 2,
+ "changelog": "v1 extraction — batch-01 — class-7-social | v2 r1 correction (2026-10-08T23:39:35+05:30) — q2 excluded (Cornwallis not among options; printed asserted + contradicts); q4->B and q16->'William Pitt' from textbook Part-1; q13 printed OK unchanged",
  "amendments_applied": [],
  "unit_state": "EXTRACTED",
  "review_ready": false,
@@ -211,7 +211,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -220,6 +220,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T02:17:24+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:39:35+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -260,9 +268,7 @@
      "issue": "marks ambiguous in source — no marks printed"
     },
     {
-     "issue": "key text does not address question",
-     "why_not_corrected": "printed MCQ key B 'Warren Hastings' for 'who introduced the Permanent Settlement' is wrong (it was Lord Cornwallis, 1793 — not among the printed options A Clive/B Hastings/C Dalhousie/D Wellesley; the question itself omits the correct answer); printed letter asserted verbatim",
-     "suggested": "review (source answer-key error)"
+     "issue": "printed key contradicts fact — textbook (Part-1 p.61) attributes the Permanent Land Revenue System (1793) to Governor General Cornwallis, who is not among the options (Clive/Hastings/Dalhousie/Wellesley); printed key B asserted as printed; reviewer"
     }
    ],
    "content_hash": "94443d2ab6260513c5effddad23e2c43f676c93d1d74024e1e473cb2102037b0"
@@ -420,7 +426,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -429,6 +435,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T02:17:24+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:39:35+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -456,25 +470,37 @@
    "answer_as_printed": "C)",
    "answer": {
     "kind": "option",
-    "option_id": "C"
+    "option_id": "B"
    },
    "answer_provenance": {
-    "by": "printed",
+    "by": "textbook_excerpt",
     "actor": "class-7-social",
-    "at": "2026-10-08T02:17:24+05:30",
-    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+    "at": "2026-10-08T23:39:35+05:30",
+    "basis": "7th English SS Part-1 2026-27, printed p.61 (pdf p.75): \"The Governor General Cornwallis ... decided to fix the land tax on a permanent basis in Bengal, Bihar and Odhisha\". Permanent (Land Revenue/Zamindari) System provinces = Bengal, Bihar, Orissa (items 1,2,3); Punjab (item 4) is not listed = option B."
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
     },
     {
-     "issue": "key text does not address question",
-     "why_not_corrected": "printed MCQ key C '1 and 3' for the Permanent-Zamindari provinces is wrong; it was Bengal, Bihar AND Orissa = option B '1,2,3' (per the chapter's own q33/q41 answers); printed letter asserted verbatim",
-     "suggested": "review (source answer-key error)"
+     "issue": "printed key contradicts fact — textbook gives Bengal/Bihar/Orissa = items 1,2,3 = option B (Part-1 p.61); printed key C (1 and 3) wrong; reviewer"
     }
    ],
-   "content_hash": "958bfb62d0dfe5a1730d7b247c667cbe55e6878dec69c0fa15f8acb8ba15a994"
+   "content_hash": "958bfb62d0dfe5a1730d7b247c667cbe55e6878dec69c0fa15f8acb8ba15a994",
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "7th English SS Part-1 2026-27.pdf",
+      "pdf_page": 75,
+      "derived_from": "text_layer",
+      "y": 305.3
+     },
+     "text": "The Governor General Cornwallis ... decided to fix the land tax on a permanent basis in Bengal, Bihar and Odhisha",
+     "confidence": "verbatim"
+    }
+   ]
   },
   {
    "id": "soc-7-06-s1-q005",
@@ -1549,7 +1575,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -1558,6 +1584,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T02:17:24+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:39:35+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -1566,14 +1600,14 @@
    "section_signal": "C",
    "answer": {
     "kind": "text",
-    "value": "1784 AD"
+    "value": "William Pitt"
    },
    "answer_as_printed": "1784 AD",
    "answer_provenance": {
-    "by": "printed",
+    "by": "textbook_excerpt",
     "actor": "class-7-social",
-    "at": "2026-10-08T02:17:24+05:30",
-    "basis": "printed VSA key, verbatim (v2 §4)"
+    "at": "2026-10-08T23:39:35+05:30",
+    "basis": "7th English SS Part-1 2026-27, printed p.68 (pdf p.82): \"the Prime Minister William Pitt brought in an Act\". The British PM who introduced Pitt's India Act (1784) = William Pitt (named in the textbook)."
    },
    "source_flags": [
     {
@@ -1585,7 +1619,21 @@
      "suggested": "review (source answer-key error)"
     }
    ],
-   "content_hash": "19a2ed075280b19b159add0f00dcb3778c599855279e831b20b67066d6ca414a"
+   "content_hash": "19a2ed075280b19b159add0f00dcb3778c599855279e831b20b67066d6ca414a",
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "7th English SS Part-1 2026-27.pdf",
+      "pdf_page": 82,
+      "derived_from": "text_layer",
+      "y": 316.0
+     },
+     "text": "the Prime Minister William Pitt brought in an Act",
+     "confidence": "verbatim"
+    }
+   ]
   },
   {
    "id": "soc-7-06-s3-q017",
