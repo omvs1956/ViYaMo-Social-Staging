@@ -1,0 +1,3232 @@
+{
+ "contract_version": "1.7",
+ "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
+ "procedure_file": "extraction_procedure_social_addendum_v1.4_social science Classes 6-10 on top of procedure v2.md",
+ "machine_name": "soc-6-08_questions",
+ "version": 1,
+ "changelog": "v1 extraction — batch-01 — class-6-social",
+ "amendments_applied": [],
+ "unit_state": "EXTRACTED",
+ "review_ready": false,
+ "count_gate": {
+  "reference": 38,
+  "reference_source": "audited",
+  "extracted": 38,
+  "paired": 38,
+  "flagged": 3,
+  "gaps": [],
+  "duplicated_numbers": [],
+  "quota_table": "difficulty_only",
+  "second_method": {
+   "method": "printed difficulty distribution table",
+   "extracted": 38,
+   "agrees": true
+  },
+  "pass": true,
+  "note": "printed difficulty table 26/9/3=38 DISAGREES with per-question tags 25/9/4 (source defect, tags win v2 §6; register difficulty-table-vs-tags); flagged counts answer-level flags; all carry the structural marks flag (addendum §4.5)."
+ },
+ "extraction": {
+  "source_file": "6thSS-EM-LBARevised_1787048536.pdf",
+  "source_ref_prefix": "6thSS-EM-LBARevised_1787048536.pdf",
+  "pdf_pages": [
+   44,
+   45,
+   46,
+   134,
+   135
+  ],
+  "printed_page_offset": -17,
+  "method_notes": [
+   "Offset -17. Q: q1-3 pdf44, q4-13 pdf45, q14-38 pdf46. A: q1-32 pdf134, q33-38 pdf135. Monotonic 1-38. No map.",
+   "Sections (I-VI): I MCQ (q1-10, keys TEXT-ONLY no letter -> v1.4 §14.5 token-containment); II fill (q11-20); III one-sentence vsa (q21-30); IV two-to-three-sentence sa (q31-35); V sa (q36-37, printed 'three to four' Q-side / 'five to six' A-side header mismatch, noted); VI la (q38).",
+   "DIFFICULTY table 'Difficulty Level' 26/9/3=38; DIFFICULTY-TABLE-VS-TAGS: q5 printed table lists Easy (in '1-6') but the stem tag is (Difficult) -> tags win (v2 §6); tags 25/9/4. Register.",
+   "MCQ text-only keys (§14.5): q1/q2/q3/q4/q5/q7/q9 resolve by normalised match; q6 by token containment (date reordered) + variant flag; q8 ('treats all religions equally without bias' vs option C wording) and q10 ('Universal adult voting system' vs option B 'Universal Adult Franchise') -> no single containment match -> null + 'key text not among options' (review-blocking). q28 trailing layout dash dropped.",
+   "MARKS none printed (addendum §4.5)."
+  ],
+  "notation_summary": {
+   "render_tokens": 0,
+   "latex_tokens": 0,
+   "damage_flags": []
+  },
+  "excluded_objects": [],
+  "inline_excluded_count": 0,
+  "figure_references": []
+ },
+ "stimuli": [],
+ "questions": [
+  {
+   "id": "soc-6-08-s1-q001",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-08",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 13,
+     "text_as_printed": "Describes the concept of citizenship, discusses dimensions of acquiring and losing citizenship."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The Constitution is:",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s1-q001",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s1-q001",
+     "pdf_page": 44,
+     "printed_page": 27,
+     "y": 300.058,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s1-q001-key",
+     "pdf_page": 134,
+     "printed_page": 117,
+     "y": 148.338,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T08:55:04+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T08:55:04+05:30",
+   "text_as_printed": "The Constitution is: (Easy)",
+   "section_signal": "I",
+   "options": [
+    {
+     "id": "A",
+     "text": "The supreme law of a country."
+    },
+    {
+     "id": "B",
+     "text": "A document that provides the framework for the governance of a country."
+    },
+    {
+     "id": "C",
+     "text": "A document that describes the organs of the government, their powers and functions."
+    },
+    {
+     "id": "D",
+     "text": "All of the above."
+    }
+   ],
+   "answer": {
+    "kind": "option",
+    "option_id": "D"
+   },
+   "answer_as_printed": "all of the above",
+   "source_corrections": [
+    {
+     "field": "answer",
+     "printed": "all of the above",
+     "corrected": "D",
+     "basis": "pass 1"
+    }
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T08:55:04+05:30",
+    "basis": "text-only key matched to option by pass 1 (normalised match (v2 §3))"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "b31435cbc1005f46deed346d103864b458b6ddbb319aa17e9f24c31d9ec00faf"
+  },
+  {
+   "id": "soc-6-08-s1-q002",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-08",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 13,
+     "text_as_printed": "Describes the concept of citizenship, discusses dimensions of acquiring and losing citizenship."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "In this session of the Constituent Assembly, Dr Babu Rajendra Prasad was elected as its President.",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s1-q002",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s1-q002",
+     "pdf_page": 44,
+     "printed_page": 27,
+     "y": 334.058,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s1-q002-key",
+     "pdf_page": 134,
+     "printed_page": 117,
+     "y": 164.228,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T08:55:04+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T08:55:04+05:30",
+   "text_as_printed": "In this session of the Constituent Assembly, Dr Babu Rajendra Prasad was elected as its President. (Easy)",
+   "section_signal": "I",
+   "options": [
+    {
+     "id": "A",
+     "text": "First Session"
+    },
+    {
+     "id": "B",
+     "text": "Second Session"
+    },
+    {
+     "id": "C",
+     "text": "Third Session"
+    },
+    {
+     "id": "D",
+     "text": "None of the above"
+    }
+   ],
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_as_printed": "second session",
+   "source_corrections": [
+    {
+     "field": "answer",
+     "printed": "second session",
+     "corrected": "B",
+     "basis": "pass 1"
+    }
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T08:55:04+05:30",
+    "basis": "text-only key matched to option by pass 1 (normalised match (v2 §3))"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "7a723005b224a3b41df2bb479fa9068e8e2173ca80c3884b16c71edd7baa104a"
+  },
+  {
+   "id": "soc-6-08-s1-q003",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-08",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 13,
+     "text_as_printed": "Describes the concept of citizenship, discusses dimensions of acquiring and losing citizenship."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The number of committees constituted by the Constituent Assembly to expedite its work was:",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s1-q003",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s1-q003",
+     "pdf_page": 44,
+     "printed_page": 27,
+     "y": 352.158,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s1-q003-key",
+     "pdf_page": 134,
+     "printed_page": 117,
+     "y": 180.028,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T08:55:04+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T08:55:04+05:30",
+   "text_as_printed": "The number of committees constituted by the Constituent Assembly to expedite its work was: (Easy)",
+   "section_signal": "I",
+   "options": [
+    {
+     "id": "A",
+     "text": "22"
+    },
+    {
+     "id": "B",
+     "text": "21"
+    },
+    {
+     "id": "C",
+     "text": "20"
+    },
+    {
+     "id": "D",
+     "text": "19"
+    }
+   ],
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_as_printed": "22",
+   "source_corrections": [
+    {
+     "field": "answer",
+     "printed": "22",
+     "corrected": "A",
+     "basis": "pass 1"
+    }
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T08:55:04+05:30",
+    "basis": "text-only key matched to option by pass 1 (normalised match (v2 §3))"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "51b73bd1dc9017c304f5d672b4858ecc0ff32081d2b22d478d7b668b1e75472f"
+  },
+  {
+   "id": "soc-6-08-s1-q004",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-08",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 13,
+     "text_as_printed": "Describes the concept of citizenship, discusses dimensions of acquiring and losing citizenship."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The Chairman of the Drafting Committee of the Constitution was:",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s1-q004",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s1-q004",
+     "pdf_page": 45,
+     "printed_page": 28,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s1-q004-key",
+     "pdf_page": 134,
+     "printed_page": 117,
+     "y": 195.928,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T08:55:04+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T08:55:04+05:30",
+   "text_as_printed": "The Chairman of the Drafting Committee of the Constitution was: (Easy)",
+   "section_signal": "I",
+   "options": [
+    {
+     "id": "A",
+     "text": "Dr Babu Rajendra Prasad"
+    },
+    {
+     "id": "B",
+     "text": "Sardar Vallabhbhai Patel"
+    },
+    {
+     "id": "C",
+     "text": "Dr B. R. Ambedkar"
+    },
+    {
+     "id": "D",
+     "text": "J. B. Kripalani"
+    }
+   ],
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_as_printed": "Dr. B. R Ambedkar",
+   "source_corrections": [
+    {
+     "field": "answer",
+     "printed": "Dr. B. R Ambedkar",
+     "corrected": "C",
+     "basis": "pass 1"
+    }
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T08:55:04+05:30",
+    "basis": "text-only key matched to option by pass 1 (normalised match (v2 §3))"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "5ac631bc6fd889c46829f0e4b79e81e3a19cd52ad4423bb6f75354fbd294dfdb"
+  },
+  {
+   "id": "soc-6-08-s1-q005",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-08",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 13,
+     "text_as_printed": "Describes the concept of citizenship, discusses dimensions of acquiring and losing citizenship."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The time taken to complete the Constitution was:",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s1-q005",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s1-q005",
+     "pdf_page": 45,
+     "printed_page": 28,
+     "y": 120.138,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s1-q005-key",
+     "pdf_page": 134,
+     "printed_page": 117,
+     "y": 211.838,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T08:55:04+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T08:55:04+05:30",
+   "text_as_printed": "The time taken to complete the Constitution was: (Difficult)",
+   "section_signal": "I",
+   "options": [
+    {
+     "id": "A",
+     "text": "2 years, 10 months and 18 days"
+    },
+    {
+     "id": "B",
+     "text": "2 years, 9 months and 18 days"
+    },
+    {
+     "id": "C",
+     "text": "2 years, 11 months and 17 days"
+    },
+    {
+     "id": "D",
+     "text": "2 years, 11 months and 18 days"
+    }
+   ],
+   "answer": {
+    "kind": "option",
+    "option_id": "D"
+   },
+   "answer_as_printed": "2 years, 11 months and 18 days",
+   "source_corrections": [
+    {
+     "field": "answer",
+     "printed": "2 years, 11 months and 18 days",
+     "corrected": "D",
+     "basis": "pass 1"
+    }
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T08:55:04+05:30",
+    "basis": "text-only key matched to option by pass 1 (normalised match (v2 §3))"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "c6cca8be67bfa2cfc0031998b905e69fb99ad9d1a4be7b8f6a214e1883c963f2"
+  },
+  {
+   "id": "soc-6-08-s1-q006",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-08",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 13,
+     "text_as_printed": "Describes the concept of citizenship, discusses dimensions of acquiring and losing citizenship."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The Constitution came into force on:",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s1-q006",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s1-q006",
+     "pdf_page": 45,
+     "printed_page": 28,
+     "y": 199.428,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s1-q006-key",
+     "pdf_page": 134,
+     "printed_page": 117,
+     "y": 227.638,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T08:55:04+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T08:55:04+05:30",
+   "text_as_printed": "The Constitution came into force on: (Easy)",
+   "section_signal": "I",
+   "options": [
+    {
+     "id": "A",
+     "text": "26 January 1950"
+    },
+    {
+     "id": "B",
+     "text": "15 August 1947"
+    },
+    {
+     "id": "C",
+     "text": "25 January 1950"
+    },
+    {
+     "id": "D",
+     "text": "24 January 1949"
+    }
+   ],
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_as_printed": "January 26, 1950",
+   "source_corrections": [
+    {
+     "field": "answer",
+     "printed": "January 26, 1950",
+     "corrected": "A",
+     "basis": "pass 3"
+    }
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T08:55:04+05:30",
+    "basis": "text-only key matched to option by pass 3 (§14.5 token containment)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "source notation inconsistent",
+     "why_not_corrected": "text-only key 'January 26, 1950' has no printed letter; resolved to option A by v1.4 §14.5 token-set containment (printed key text differs from the option wording)",
+     "suggested": "A"
+    }
+   ],
+   "content_hash": "161d731a0aab12227cfa73aff4531644014f7fd3d4f882f0697935f7f078ba60"
+  },
+  {
+   "id": "soc-6-08-s1-q007",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-08",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 13,
+     "text_as_printed": "Describes the concept of citizenship, discusses dimensions of acquiring and losing citizenship."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Which organ has the power to protect Fundamental Rights when they are violated?",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s1-q007",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s1-q007",
+     "pdf_page": 45,
+     "printed_page": 28,
+     "y": 278.838,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s1-q007-key",
+     "pdf_page": 134,
+     "printed_page": 117,
+     "y": 243.528,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T08:55:04+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T08:55:04+05:30",
+   "text_as_printed": "Which organ has the power to protect Fundamental Rights when they are violated? (Average)",
+   "section_signal": "I",
+   "options": [
+    {
+     "id": "A",
+     "text": "Legislature"
+    },
+    {
+     "id": "B",
+     "text": "Police Department"
+    },
+    {
+     "id": "C",
+     "text": "Armed Forces"
+    },
+    {
+     "id": "D",
+     "text": "Judiciary"
+    }
+   ],
+   "answer": {
+    "kind": "option",
+    "option_id": "D"
+   },
+   "answer_as_printed": "Judiciary",
+   "source_corrections": [
+    {
+     "field": "answer",
+     "printed": "Judiciary",
+     "corrected": "D",
+     "basis": "pass 1"
+    }
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T08:55:04+05:30",
+    "basis": "text-only key matched to option by pass 1 (normalised match (v2 §3))"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "dcfe34a18ab3077ea33b8ea6c5bcebf7172ca33b3e7a4e04ab238e5f655938b4"
+  },
+  {
+   "id": "soc-6-08-s1-q008",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-08",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 13,
+     "text_as_printed": "Describes the concept of citizenship, discusses dimensions of acquiring and losing citizenship."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Secularism means:",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s1-q008",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s1-q008",
+     "pdf_page": 45,
+     "printed_page": 28,
+     "y": 374.058,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s1-q008-key",
+     "pdf_page": 134,
+     "printed_page": 117,
+     "y": 259.428,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T08:55:04+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T08:55:04+05:30",
+   "text_as_printed": "Secularism means: (Average)",
+   "section_signal": "I",
+   "options": [
+    {
+     "id": "A",
+     "text": "The State discriminates in the name of religion."
+    },
+    {
+     "id": "B",
+     "text": "The State treats one religion as the national religion."
+    },
+    {
+     "id": "C",
+     "text": "The State does not discriminate on the basis of religion and treats all religions equally."
+    },
+    {
+     "id": "D",
+     "text": "All of the above."
+    }
+   ],
+   "answer": {
+    "kind": "option",
+    "option_id": null
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text not among options",
+     "why_not_corrected": "text-only key; two-pass normalised match found no option (v2 §3)",
+     "suggested": "? (review)"
+    }
+   ],
+   "content_hash": "71d0a4dfba9eac22ad0dbdf44a909f89ca0f82216450f8704011a7f5ae9c0768"
+  },
+  {
+   "id": "soc-6-08-s1-q009",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-08",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 13,
+     "text_as_printed": "Describes the concept of citizenship, discusses dimensions of acquiring and losing citizenship."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The largest democracy in the world is:",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s1-q009",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s1-q009",
+     "pdf_page": 45,
+     "printed_page": 28,
+     "y": 469.258,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s1-q009-key",
+     "pdf_page": 134,
+     "printed_page": 117,
+     "y": 275.228,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T08:55:04+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T08:55:04+05:30",
+   "text_as_printed": "The largest democracy in the world is: (Easy)",
+   "section_signal": "I",
+   "options": [
+    {
+     "id": "A",
+     "text": "India"
+    },
+    {
+     "id": "B",
+     "text": "United States of America"
+    },
+    {
+     "id": "C",
+     "text": "Russia"
+    },
+    {
+     "id": "D",
+     "text": "Britain"
+    }
+   ],
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_as_printed": "India",
+   "source_corrections": [
+    {
+     "field": "answer",
+     "printed": "India",
+     "corrected": "A",
+     "basis": "pass 1"
+    }
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T08:55:04+05:30",
+    "basis": "text-only key matched to option by pass 1 (normalised match (v2 §3))"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "ac535f4431cb0f062af027c353050a2cf9e2ec6eef106e51aa6d9497d52854ab"
+  },
+  {
+   "id": "soc-6-08-s1-q010",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-08",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 13,
+     "text_as_printed": "Describes the concept of citizenship, discusses dimensions of acquiring and losing citizenship."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "This is the basic principle of democracy.",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s1-q010",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s1-q010",
+     "pdf_page": 45,
+     "printed_page": 28,
+     "y": 548.678,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s1-q010-key",
+     "pdf_page": 134,
+     "printed_page": 117,
+     "y": 291.158,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T08:55:04+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T08:55:04+05:30",
+   "text_as_printed": "This is the basic principle of democracy. (Average)",
+   "section_signal": "I",
+   "options": [
+    {
+     "id": "A",
+     "text": "Secularism"
+    },
+    {
+     "id": "B",
+     "text": "Universal Adult Franchise"
+    },
+    {
+     "id": "C",
+     "text": "Welfare State"
+    },
+    {
+     "id": "D",
+     "text": "None of the above"
+    }
+   ],
+   "answer": {
+    "kind": "option",
+    "option_id": null
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key text not among options",
+     "why_not_corrected": "text-only key; two-pass normalised match found no option (v2 §3)",
+     "suggested": "? (review)"
+    }
+   ],
+   "content_hash": "a8c9f1b2672cab92cf82289019a5e81a26d8bb5f6c3ecc04e060b475753a101b"
+  },
+  {
+   "id": "soc-6-08-s2-q011",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-08",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 13,
+     "text_as_printed": "Describes the concept of citizenship, discusses dimensions of acquiring and losing citizenship."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The special assembly constituted to frame the Constitution of India is the ____________.",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s2-q011",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s2-q011",
+     "pdf_page": 45,
+     "printed_page": 28,
+     "y": 673.178,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s2-q011-key",
+     "pdf_page": 134,
+     "printed_page": 117,
+     "y": 211.838,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T08:55:04+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T08:55:04+05:30",
+   "text_as_printed": "The special assembly constituted to frame the Constitution of India is the ____________. (Easy)",
+   "section_signal": "II",
+   "answer": {
+    "kind": "text",
+    "value": "Constituent Assembly"
+   },
+   "answer_as_printed": "Constituent Assembly",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T08:55:04+05:30",
+    "basis": "printed one-line answer, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "59e13ff16fdec6062e935050eac77ab2ad6bf49ac81a1c30dcd0b5b148cae87b"
+  },
+  {
+   "id": "soc-6-08-s2-q012",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-08",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 13,
+     "text_as_printed": "Describes the concept of citizenship, discusses dimensions of acquiring and losing citizenship."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The ____________ Committee was constituted to prepare the draft Constitution.",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s2-q012",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s2-q012",
+     "pdf_page": 45,
+     "printed_page": 28,
+     "y": 704.908,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s2-q012-key",
+     "pdf_page": 134,
+     "printed_page": 117,
+     "y": 357.258,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T08:55:04+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T08:55:04+05:30",
+   "text_as_printed": "The ____________ Committee was constituted to prepare the draft Constitution. (Easy)",
+   "section_signal": "II",
+   "answer": {
+    "kind": "text",
+    "value": "Drafting Committee"
+   },
+   "answer_as_printed": "Drafting Committee",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T08:55:04+05:30",
+    "basis": "printed one-line answer, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "aa3e1d7e3cf990d07d3dc97828e1449c6614079f3d29ab4faaa9051234fa4f84"
+  },
+  {
+   "id": "soc-6-08-s2-q013",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-08",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 13,
+     "text_as_printed": "Describes the concept of citizenship, discusses dimensions of acquiring and losing citizenship."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The Chairman of the Advisory Committee on Fundamental Rights was ____________.",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s2-q013",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s2-q013",
+     "pdf_page": 45,
+     "printed_page": 28,
+     "y": 736.708,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s2-q013-key",
+     "pdf_page": 134,
+     "printed_page": 117,
+     "y": 373.158,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T08:55:04+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T08:55:04+05:30",
+   "text_as_printed": "The Chairman of the Advisory Committee on Fundamental Rights was ____________. (Easy)",
+   "section_signal": "II",
+   "answer": {
+    "kind": "text",
+    "value": "Sardar Vallabhbhai Patel"
+   },
+   "answer_as_printed": "Sardar Vallabhbhai Patel",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T08:55:04+05:30",
+    "basis": "printed one-line answer, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "34b41ab5047eafa4530202d89cdeccabcb409c22efbc54876a03e68561091d4b"
+  },
+  {
+   "id": "soc-6-08-s2-q014",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-08",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 13,
+     "text_as_printed": "Describes the concept of citizenship, discusses dimensions of acquiring and losing citizenship."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "On 26 January 1950, the Constitution declared India a ____________.",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s2-q014",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s2-q014",
+     "pdf_page": 46,
+     "printed_page": 29,
+     "y": 72.508,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s2-q014-key",
+     "pdf_page": 134,
+     "printed_page": 117,
+     "y": 389.058,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T08:55:04+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T08:55:04+05:30",
+   "text_as_printed": "On 26 January 1950, the Constitution declared India a ____________. (Easy)",
+   "section_signal": "II",
+   "answer": {
+    "kind": "text",
+    "value": "Republic"
+   },
+   "answer_as_printed": "Republic",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T08:55:04+05:30",
+    "basis": "printed one-line answer, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "dbbf2a9e39815e1898ec2f9c7ed99b3a9b07f55c2155afb14433e812bafce945"
+  },
+  {
+   "id": "soc-6-08-s2-q015",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-08",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 13,
+     "text_as_printed": "Describes the concept of citizenship, discusses dimensions of acquiring and losing citizenship."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Constitution Day is observed on ____________.",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s2-q015",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s2-q015",
+     "pdf_page": 46,
+     "printed_page": 29,
+     "y": 88.428,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s2-q015-key",
+     "pdf_page": 134,
+     "printed_page": 117,
+     "y": 404.858,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T08:55:04+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T08:55:04+05:30",
+   "text_as_printed": "Constitution Day is observed on ____________. (Easy)",
+   "section_signal": "II",
+   "answer": {
+    "kind": "text",
+    "value": "November 26"
+   },
+   "answer_as_printed": "November 26",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T08:55:04+05:30",
+    "basis": "printed one-line answer, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "64aabb694039a800bf58738dcf9a95e2cafef143316b2b2b3e272fcf42b534af"
+  },
+  {
+   "id": "soc-6-08-s2-q016",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-08",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 13,
+     "text_as_printed": "Describes the concept of citizenship, discusses dimensions of acquiring and losing citizenship."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The first General Elections were held in the year ____________.",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s2-q016",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s2-q016",
+     "pdf_page": 46,
+     "printed_page": 29,
+     "y": 104.228,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s2-q016-key",
+     "pdf_page": 134,
+     "printed_page": 117,
+     "y": 420.758,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T08:55:04+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T08:55:04+05:30",
+   "text_as_printed": "The first General Elections were held in the year ____________. (Difficult)",
+   "section_signal": "II",
+   "answer": {
+    "kind": "text",
+    "value": "1951-52"
+   },
+   "answer_as_printed": "1951-52",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T08:55:04+05:30",
+    "basis": "printed one-line answer, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "da0719d1adc0c3604074d284305aad162d52d70eee9513e01f217a2f072dd258"
+  },
+  {
+   "id": "soc-6-08-s2-q017",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-08",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 13,
+     "text_as_printed": "Describes the concept of citizenship, discusses dimensions of acquiring and losing citizenship."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Up to September 2023, the Constitution has been amended ____________ times.",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s2-q017",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s2-q017",
+     "pdf_page": 46,
+     "printed_page": 29,
+     "y": 120.138,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s2-q017-key",
+     "pdf_page": 134,
+     "printed_page": 117,
+     "y": 436.658,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T08:55:04+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T08:55:04+05:30",
+   "text_as_printed": "Up to September 2023, the Constitution has been amended ____________ times. (Easy)",
+   "section_signal": "II",
+   "answer": {
+    "kind": "text",
+    "value": "106"
+   },
+   "answer_as_printed": "106",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T08:55:04+05:30",
+    "basis": "printed one-line answer, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "39c4842912fb7f7a858dce689786da60d67ba72727152d2f37a475030cfd24e3"
+  },
+  {
+   "id": "soc-6-08-s2-q018",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-08",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 13,
+     "text_as_printed": "Describes the concept of citizenship, discusses dimensions of acquiring and losing citizenship."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "____________ is the heart of the Constitution.",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s2-q018",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s2-q018",
+     "pdf_page": 46,
+     "printed_page": 29,
+     "y": 151.838,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s2-q018-key",
+     "pdf_page": 134,
+     "printed_page": 117,
+     "y": 452.458,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T08:55:04+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T08:55:04+05:30",
+   "text_as_printed": "____________ is the heart of the Constitution. (Easy)",
+   "section_signal": "II",
+   "answer": {
+    "kind": "text",
+    "value": "Preamble to the Constitution"
+   },
+   "answer_as_printed": "Preamble to the Constitution",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T08:55:04+05:30",
+    "basis": "printed one-line answer, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "cfd537a3779e7ac673d22911a8b6fa04c2a80c377f5ca4667ed632773ba3f94e"
+  },
+  {
+   "id": "soc-6-08-s2-q019",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-08",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 13,
+     "text_as_printed": "Describes the concept of citizenship, discusses dimensions of acquiring and losing citizenship."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The first President of the Republic of India was ____________.",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s2-q019",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s2-q019",
+     "pdf_page": 46,
+     "printed_page": 29,
+     "y": 167.728,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s2-q019-key",
+     "pdf_page": 134,
+     "printed_page": 117,
+     "y": 468.358,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T08:55:04+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T08:55:04+05:30",
+   "text_as_printed": "The first President of the Republic of India was ____________. (Easy)",
+   "section_signal": "II",
+   "answer": {
+    "kind": "text",
+    "value": "Dr. Babu Rajendra Prasad"
+   },
+   "answer_as_printed": "Dr. Babu Rajendra Prasad",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T08:55:04+05:30",
+    "basis": "printed one-line answer, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "e5ddd9dd476b0f9bf473f0fac237d08ea1e5bfe38703262a60e0f06746e1ae21"
+  },
+  {
+   "id": "soc-6-08-s2-q020",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-08",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 13,
+     "text_as_printed": "Describes the concept of citizenship, discusses dimensions of acquiring and losing citizenship."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "The voting age in India is ____________ years.",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s2-q020",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s2-q020",
+     "pdf_page": 46,
+     "printed_page": 29,
+     "y": 183.638,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s2-q020-key",
+     "pdf_page": 134,
+     "printed_page": 117,
+     "y": 484.258,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T08:55:04+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T08:55:04+05:30",
+   "text_as_printed": "The voting age in India is ____________ years. (Easy)",
+   "section_signal": "II",
+   "answer": {
+    "kind": "text",
+    "value": "18"
+   },
+   "answer_as_printed": "18",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T08:55:04+05:30",
+    "basis": "printed one-line answer, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "f90c01a24702b067cdeb80b9180d7c587caf6ea12b2b9a4eacb47aefa1924beb"
+  },
+  {
+   "id": "soc-6-08-s3-q021",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-08",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 13,
+     "text_as_printed": "Describes the concept of citizenship, discusses dimensions of acquiring and losing citizenship."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Under which framework does the Central Government function?",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s3-q021",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s3-q021",
+     "pdf_page": 46,
+     "printed_page": 29,
+     "y": 244.638,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s3-q021-key",
+     "pdf_page": 134,
+     "printed_page": 117,
+     "y": 533.178,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T08:55:04+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T08:55:04+05:30",
+   "text_as_printed": "Under which framework does the Central Government function? (Average)",
+   "section_signal": "III",
+   "answer": {
+    "kind": "text",
+    "value": "The central government functions within the framework of the Constitution."
+   },
+   "answer_as_printed": "The central government functions within the framework of the Constitution.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T08:55:04+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "149b4df51a1220892b3b2f997f19352c6c6dcb91dc31602676421efc4ce8df35"
+  },
+  {
+   "id": "soc-6-08-s3-q022",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-08",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 13,
+     "text_as_printed": "Describes the concept of citizenship, discusses dimensions of acquiring and losing citizenship."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Who was the Chairman of the Sub-Committee on Fundamental Rights?",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s3-q022",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s3-q022",
+     "pdf_page": 46,
+     "printed_page": 29,
+     "y": 260.528,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s3-q022-key",
+     "pdf_page": 134,
+     "printed_page": 117,
+     "y": 180.028,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T08:55:04+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T08:55:04+05:30",
+   "text_as_printed": "Who was the Chairman of the Sub-Committee on Fundamental Rights? (Easy)",
+   "section_signal": "III",
+   "answer": {
+    "kind": "text",
+    "value": "J.B. Kripalani"
+   },
+   "answer_as_printed": "J.B. Kripalani",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T08:55:04+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "6f0d62b6036662f9bf87c2be50ad487e02e747f758811e567d514732b62962af"
+  },
+  {
+   "id": "soc-6-08-s3-q023",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-08",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 13,
+     "text_as_printed": "Describes the concept of citizenship, discusses dimensions of acquiring and losing citizenship."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Who was the eminent personality from Karnataka who played a significant role in the framing of the Constitution?",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s3-q023",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s3-q023",
+     "pdf_page": 46,
+     "printed_page": 29,
+     "y": 276.428,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s3-q023-key",
+     "pdf_page": 134,
+     "printed_page": 117,
+     "y": 564.888,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T08:55:04+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T08:55:04+05:30",
+   "text_as_printed": "Who was the eminent personality from Karnataka who played a significant role in the framing of the Constitution? (Easy)",
+   "section_signal": "III",
+   "answer": {
+    "kind": "text",
+    "value": "Kengal Hanumanthaiah and S. Nijalingappa"
+   },
+   "answer_as_printed": "Kengal Hanumanthaiah and S. Nijalingappa",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T08:55:04+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "a966cd650404384feb20c0ff49d0e935f247b490b92897e3979828892ff6ad30"
+  },
+  {
+   "id": "soc-6-08-s3-q024",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-08",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 13,
+     "text_as_printed": "Describes the concept of citizenship, discusses dimensions of acquiring and losing citizenship."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "When is Republic Day celebrated in your school?",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s3-q024",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s3-q024",
+     "pdf_page": 46,
+     "printed_page": 29,
+     "y": 308.158,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s3-q024-key",
+     "pdf_page": 134,
+     "printed_page": 117,
+     "y": 580.778,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T08:55:04+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T08:55:04+05:30",
+   "text_as_printed": "When is Republic Day celebrated in your school? (Easy)",
+   "section_signal": "III",
+   "answer": {
+    "kind": "text",
+    "value": "January 26, 1950"
+   },
+   "answer_as_printed": "January 26, 1950",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T08:55:04+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "3c11229f7e1cd5d2ba3ae7e15967ebd39639e5bb300dd0260e27dd98f66a2633"
+  },
+  {
+   "id": "soc-6-08-s3-q025",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-08",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 13,
+     "text_as_printed": "Describes the concept of citizenship, discusses dimensions of acquiring and losing citizenship."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What are the two Houses of Parliament?",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s3-q025",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s3-q025",
+     "pdf_page": 46,
+     "printed_page": 29,
+     "y": 324.058,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s3-q025-key",
+     "pdf_page": 134,
+     "printed_page": 117,
+     "y": 596.678,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T08:55:04+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T08:55:04+05:30",
+   "text_as_printed": "What are the two Houses of Parliament? (Easy)",
+   "section_signal": "III",
+   "answer": {
+    "kind": "text",
+    "value": "Rajya Sabha and Lok Sabha"
+   },
+   "answer_as_printed": "Rajya Sabha and Lok Sabha",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T08:55:04+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "b0d5b9de96eae1f32b745fb42bd7f4738294de2f31a666e6daf94fd7884d5baa"
+  },
+  {
+   "id": "soc-6-08-s3-q026",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-08",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 13,
+     "text_as_printed": "Describes the concept of citizenship, discusses dimensions of acquiring and losing citizenship."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "When did the first elected Parliament of India come into existence?",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s3-q026",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s3-q026",
+     "pdf_page": 46,
+     "printed_page": 29,
+     "y": 72.508,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s3-q026-key",
+     "pdf_page": 134,
+     "printed_page": 117,
+     "y": 612.588,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T08:55:04+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T08:55:04+05:30",
+   "text_as_printed": "When did the first elected Parliament of India come into existence? (Easy)",
+   "section_signal": "III",
+   "answer": {
+    "kind": "text",
+    "value": "1952"
+   },
+   "answer_as_printed": "1952",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T08:55:04+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "6386abb0abf9b26280a67681b243116260e288186d73400508ce2440b316a335"
+  },
+  {
+   "id": "soc-6-08-s3-q027",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-08",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 13,
+     "text_as_printed": "Describes the concept of citizenship, discusses dimensions of acquiring and losing citizenship."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Which country has the longest written Constitution in the world?",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s3-q027",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s3-q027",
+     "pdf_page": 46,
+     "printed_page": 29,
+     "y": 355.758,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s3-q027-key",
+     "pdf_page": 134,
+     "printed_page": 117,
+     "y": 628.378,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T08:55:04+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T08:55:04+05:30",
+   "text_as_printed": "Which country has the longest written Constitution in the world? (Easy)",
+   "section_signal": "III",
+   "answer": {
+    "kind": "text",
+    "value": "India"
+   },
+   "answer_as_printed": "India",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T08:55:04+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "71ae1c15979ea1d6094de8b8b6c513090ab5e6a6e9f8273043490e0724202375"
+  },
+  {
+   "id": "soc-6-08-s3-q028",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-08",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 13,
+     "text_as_printed": "Describes the concept of citizenship, discusses dimensions of acquiring and losing citizenship."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is a Republic?",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s3-q028",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s3-q028",
+     "pdf_page": 46,
+     "printed_page": 29,
+     "y": 371.658,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s3-q028-key",
+     "pdf_page": 134,
+     "printed_page": 117,
+     "y": 644.288,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T08:55:04+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T08:55:04+05:30",
+   "text_as_printed": "What is a Republic? (Easy)",
+   "section_signal": "III",
+   "answer": {
+    "kind": "text",
+    "value": "A republic is a system of government where the head of state is elected."
+   },
+   "answer_as_printed": "A republic is a system of government where the head of state is elected.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T08:55:04+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "a797d0a73f8b35aeec9adcfaeed6da96d88b5667d9de6e3c4fb0485f66446f67"
+  },
+  {
+   "id": "soc-6-08-s3-q029",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-08",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 13,
+     "text_as_printed": "Describes the concept of citizenship, discusses dimensions of acquiring and losing citizenship."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "According to the Constitution, how many Fundamental Duties should you perform?",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s3-q029",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s3-q029",
+     "pdf_page": 46,
+     "printed_page": 29,
+     "y": 387.558,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s3-q029-key",
+     "pdf_page": 134,
+     "printed_page": 117,
+     "y": 660.178,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T08:55:04+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T08:55:04+05:30",
+   "text_as_printed": "According to the Constitution, how many Fundamental Duties should you perform? (Easy)",
+   "section_signal": "III",
+   "answer": {
+    "kind": "text",
+    "value": "11"
+   },
+   "answer_as_printed": "11",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T08:55:04+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "5bc68d5986a8a78869800b95819e8a07bd6aec1f824c6cd4dced694fbd94d72f"
+  },
+  {
+   "id": "soc-6-08-s3-q030",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-08",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 13,
+     "text_as_printed": "Describes the concept of citizenship, discusses dimensions of acquiring and losing citizenship."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is a Welfare State?",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s3-q030",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s3-q030",
+     "pdf_page": 46,
+     "printed_page": 29,
+     "y": 419.258,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s3-q030-key",
+     "pdf_page": 134,
+     "printed_page": 117,
+     "y": 675.988,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T08:55:04+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T08:55:04+05:30",
+   "text_as_printed": "What is a Welfare State? (Average)",
+   "section_signal": "III",
+   "answer": {
+    "kind": "text",
+    "value": "A welfare state aims to provide social and economic opportunities and security to all citizens."
+   },
+   "answer_as_printed": "A welfare state aims to provide social and economic opportunities and security to all citizens.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T08:55:04+05:30",
+    "basis": "printed VSA key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "d1b8758661b8d0aeb027c93d589b74670a5713c4a285011ce96749bfda9f2678"
+  },
+  {
+   "id": "soc-6-08-s4-q031",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-08",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 13,
+     "text_as_printed": "Describes the concept of citizenship, discusses dimensions of acquiring and losing citizenship."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is a government?",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s4-q031",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s4-q031",
+     "pdf_page": 46,
+     "printed_page": 29,
+     "y": 497.488,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s4-q031-key",
+     "pdf_page": 134,
+     "printed_page": 117,
+     "y": 740.808,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T08:55:04+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T08:55:04+05:30",
+   "text_as_printed": "What is a government? (Easy)",
+   "section_signal": "IV",
+   "answer": {
+    "kind": "text",
+    "value": "Government is a group of people who make laws and run a country or state."
+   },
+   "answer_as_printed": "Government is a group of people who make laws and run a country or state.",
+   "solution_steps": [
+    "Government is a group of people who make laws and run a country or state."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T08:55:04+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "224706c33413d487aa0a9b93fd2a22d376e7f6bc96750a299875acb97387cf4b"
+  },
+  {
+   "id": "soc-6-08-s4-q032",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-08",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 13,
+     "text_as_printed": "Describes the concept of citizenship, discusses dimensions of acquiring and losing citizenship."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Write the names of some women members of the Constituent Assembly.",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s4-q032",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s4-q032",
+     "pdf_page": 46,
+     "printed_page": 29,
+     "y": 513.388,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s4-q032-key",
+     "pdf_page": 134,
+     "printed_page": 117,
+     "y": 756.708,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T08:55:04+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T08:55:04+05:30",
+   "text_as_printed": "Write the names of some women members of the Constituent Assembly. (Average)",
+   "section_signal": "IV",
+   "answer": {
+    "kind": "text",
+    "value": "Women's participation in the Constituent Assembly:\nRajkumari Amrit Kaur, Leela Roy, Malati Chaudhary, Sarojini Naidu, Begum Aizaz Rasul, Vijayalakshmi Pandit, Dakshayani Velayudhan, etc."
+   },
+   "answer_as_printed": "Women's participation in the Constituent Assembly:\nRajkumari Amrit Kaur, Leela Roy, Malati Chaudhary, Sarojini Naidu, Begum Aizaz Rasul, Vijayalakshmi Pandit, Dakshayani Velayudhan, etc.",
+   "solution_steps": [
+    "Rajkumari Amrit Kaur, Leela Roy, Malati Chaudhary, Sarojini Naidu, Begum Aizaz Rasul, Vijayalakshmi Pandit, Dakshayani Velayudhan, etc."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T08:55:04+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "40c3bef78aa4d15bbe1e2baa931d7e8b761d53d89a0532dbd50382afc3c27c6f"
+  },
+  {
+   "id": "soc-6-08-s4-q033",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-08",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 13,
+     "text_as_printed": "Describes the concept of citizenship, discusses dimensions of acquiring and losing citizenship."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Explain why Fundamental Rights are special.",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s4-q033",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s4-q033",
+     "pdf_page": 46,
+     "printed_page": 29,
+     "y": 529.278,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s4-q033-key",
+     "pdf_page": 135,
+     "printed_page": 118,
+     "y": 104.228,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T08:55:04+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T08:55:04+05:30",
+   "text_as_printed": "Explain why Fundamental Rights are special. (Difficult)",
+   "section_signal": "IV",
+   "answer": {
+    "kind": "text",
+    "value": "Fundamental Rights:\nThe Constitution guarantees six fundamental rights to citizens, and any law or action that violates these rights is null and void."
+   },
+   "answer_as_printed": "Fundamental Rights:\nThe Constitution guarantees six fundamental rights to citizens, and any law or action that violates these rights is null and void.",
+   "solution_steps": [
+    "The Constitution guarantees six fundamental rights to citizens, and any law or action that violates these rights is null and void."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T08:55:04+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "9135c99ef6b53ba724e74181c216979024e9f2699fd247854c5d30a6da0c386b"
+  },
+  {
+   "id": "soc-6-08-s4-q034",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-08",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": 13,
+     "text_as_printed": "Describes the concept of citizenship, discusses dimensions of acquiring and losing citizenship."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What is Universal Adult Franchise?",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s4-q034",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s4-q034",
+     "pdf_page": 46,
+     "printed_page": 29,
+     "y": 545.178,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s4-q034-key",
+     "pdf_page": 135,
+     "printed_page": 118,
+     "y": 151.838,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T08:55:04+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T08:55:04+05:30",
+   "text_as_printed": "What is Universal Adult Franchise? (Easy)",
+   "section_signal": "IV",
+   "answer": {
+    "kind": "text",
+    "value": "Universal Adult Suffrage:\nThe right to vote for citizens above 18 years of age."
+   },
+   "answer_as_printed": "Universal Adult Suffrage:\nThe right to vote for citizens above 18 years of age.",
+   "solution_steps": [
+    "The right to vote for citizens above 18 years of age."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T08:55:04+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "4a1a7e0d3d85921303c1c263d5d31625526ab728fad49b6b9a8970e1722797b1"
+  },
+  {
+   "id": "soc-6-08-s4-q035",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-08",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 13,
+     "text_as_printed": "Describes the concept of citizenship, discusses dimensions of acquiring and losing citizenship."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "What are the ideals of the Preamble to the Constitution?",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s4-q035",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s4-q035",
+     "pdf_page": 46,
+     "printed_page": 29,
+     "y": 560.978,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s4-q035-key",
+     "pdf_page": 135,
+     "printed_page": 118,
+     "y": 183.638,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T08:55:04+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T08:55:04+05:30",
+   "text_as_printed": "What are the ideals of the Preamble to the Constitution? (Average)",
+   "section_signal": "IV",
+   "answer": {
+    "kind": "text",
+    "value": "Values enshrined in the Preamble:\nJustice, Liberty, Equality, Fraternity, Dignity of the individual, and Unity and Integrity of the Nation."
+   },
+   "answer_as_printed": "Values enshrined in the Preamble:\nJustice, Liberty, Equality, Fraternity, Dignity of the individual, and Unity and Integrity of the Nation.",
+   "solution_steps": [
+    "Justice, Liberty, Equality, Fraternity, Dignity of the individual, and Unity and Integrity of the Nation."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T08:55:04+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "2768a870cefb8b77ea591ff2afa7bcb4d116213d3cdf5356a7f136ced2716e33"
+  },
+  {
+   "id": "soc-6-08-s5-q036",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-08",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 13,
+     "text_as_printed": "Describes the concept of citizenship, discusses dimensions of acquiring and losing citizenship."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Explain the importance of the Constitution.",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s5-q036",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s5-q036",
+     "pdf_page": 46,
+     "printed_page": 29,
+     "y": 639.278,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s5-q036-key",
+     "pdf_page": 135,
+     "printed_page": 118,
+     "y": 265.638,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T08:55:04+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T08:55:04+05:30",
+   "text_as_printed": "Explain the importance of the Constitution. (Average)",
+   "section_signal": "V",
+   "answer": {
+    "kind": "text",
+    "value": "Significance of the Constitution:\na) Reflects the ideals and aspirations of the people.\nb) Provides guidance for establishing a welfare state.\nc) Regulates the policies and procedures of the government.\nd) Protects the rights of citizens by upholding the principle of equality before the law."
+   },
+   "answer_as_printed": "Significance of the Constitution:\na) Reflects the ideals and aspirations of the people.\nb) Provides guidance for establishing a welfare state.\nc) Regulates the policies and procedures of the government.\nd) Protects the rights of citizens by upholding the principle of equality before the law.",
+   "solution_steps": [
+    "a) Reflects the ideals and aspirations of the people.",
+    "b) Provides guidance for establishing a welfare state.",
+    "c) Regulates the policies and procedures of the government.",
+    "d) Protects the rights of citizens by upholding the principle of equality before the law."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T08:55:04+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "45fb0678b72b2023a2403a061db4d240508c5cd90ac2dc28b8642de5cc4bc410"
+  },
+  {
+   "id": "soc-6-08-s5-q037",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-08",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [
+    {
+     "number": 13,
+     "text_as_printed": "Describes the concept of citizenship, discusses dimensions of acquiring and losing citizenship."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Write the Preamble to the Constitution of our country.",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s5-q037",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s5-q037",
+     "pdf_page": 46,
+     "printed_page": 29,
+     "y": 655.078,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s5-q037-key",
+     "pdf_page": 135,
+     "printed_page": 118,
+     "y": 344.958,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T08:55:04+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T08:55:04+05:30",
+   "text_as_printed": "Write the Preamble to the Constitution of our country. (Average)",
+   "section_signal": "V",
+   "answer": {
+    "kind": "text",
+    "value": "\"We, the People of India, having solemnly resolved to constitute India into a sovereign socialist secular democratic republic and to secure to all its citizens:\nJustice: social, economic, and political;\nLiberty: of thought, expression, belief, faith, and worship;\nEquality: of status and opportunity;\nand to promote among them all\nFraternity: assuring the dignity of the individual and the unity and integrity of the Nation;\nIn our Constituent Assembly, this 26th day of November 1949, do hereby adopt, enact, and give to ourselves this Constitution.\""
+   },
+   "answer_as_printed": "\"We, the People of India, having solemnly resolved to constitute India into a sovereign socialist secular democratic republic and to secure to all its citizens:\nJustice: social, economic, and political;\nLiberty: of thought, expression, belief, faith, and worship;\nEquality: of status and opportunity;\nand to promote among them all\nFraternity: assuring the dignity of the individual and the unity and integrity of the Nation;\nIn our Constituent Assembly, this 26th day of November 1949, do hereby adopt, enact, and give to ourselves this Constitution.\"",
+   "solution_steps": [
+    "\"We, the People of India, having solemnly resolved to constitute India into a sovereign socialist secular democratic republic and to secure to all its citizens:",
+    "Justice: social, economic, and political;",
+    "Liberty: of thought, expression, belief, faith, and worship;",
+    "Equality: of status and opportunity;",
+    "and to promote among them all",
+    "Fraternity: assuring the dignity of the individual and the unity and integrity of the Nation;",
+    "In our Constituent Assembly, this 26th day of November 1949, do hereby adopt, enact, and give to ourselves this Constitution.\""
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T08:55:04+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed line (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "969ea68fdaa180929434e1314bf04443f190b9867c24b5092f68926def3afbf7"
+  },
+  {
+   "id": "soc-6-08-s6-q038",
+   "class": "6",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-6-08",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [
+    {
+     "number": 13,
+     "text_as_printed": "Describes the concept of citizenship, discusses dimensions of acquiring and losing citizenship."
+    }
+   ],
+   "lo_source": "all_questions_row",
+   "out_of_syllabus": false,
+   "text": "Explain the salient features of our Constitution.",
+   "source": "lba",
+   "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s6-q038",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s6-q038",
+     "pdf_page": 46,
+     "printed_page": 29,
+     "y": 716.208,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "6thSS-EM-LBARevised_1787048536.pdf#soc-6-08-s6-q038-key",
+     "pdf_page": 135,
+     "printed_page": 118,
+     "y": 522.178,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "extraction",
+     "at": "2026-10-08T08:55:04+05:30"
+    }
+   ],
+   "created_by": "class-6-social",
+   "created_at": "2026-10-08T08:55:04+05:30",
+   "text_as_printed": "Explain the salient features of our Constitution. (Difficult)",
+   "section_signal": "VI",
+   "answer": {
+    "kind": "text",
+    "value": "Main Features of Our Constitution\nThe Constitution of India is the longest written Constitution in the world.\nThe Constitution declares that India is a Republic. Since the country is governed by representatives elected by the people, it is a democratic republic.\nThe Constitution provides the citizens of India with six Fundamental Rights and 11 Fundamental Duties.\nThe Constitution upholds the principle of secularism. It states that the State should not discriminate on the basis of religion and should treat all religions equally.\nOur Judiciary is independent and has sufficient powers. The Constitution states that neither the Legislature nor the Executive should interfere with the Judiciary.\nSince caste-based discrimination is a social evil by birth, the objective of the Constitution is to eliminate it and establish social justice.\nThe ideal of the Constitution of India is to establish a Welfare State.\nIndia is the largest democracy in the world, and the electoral system has been adopted."
+   },
+   "answer_as_printed": "Main Features of Our Constitution\nThe Constitution of India is the longest written Constitution in the world.\nThe Constitution declares that India is a Republic. Since the country is governed by representatives elected by the people, it is a democratic republic.\nThe Constitution provides the citizens of India with six Fundamental Rights and 11 Fundamental Duties.\nThe Constitution upholds the principle of secularism. It states that the State should not discriminate on the basis of religion and should treat all religions equally.\nOur Judiciary is independent and has sufficient powers. The Constitution states that neither the Legislature nor the Executive should interfere with the Judiciary.\nSince caste-based discrimination is a social evil by birth, the objective of the Constitution is to eliminate it and establish social justice.\nThe ideal of the Constitution of India is to establish a Welfare State.\nIndia is the largest democracy in the world, and the electoral system has been adopted.",
+   "solution_steps": [
+    "The Constitution of India is the longest written Constitution in the world.",
+    "The Constitution declares that India is a Republic. Since the country is governed by representatives elected by the people, it is a democratic republic.",
+    "The Constitution provides the citizens of India with six Fundamental Rights and 11 Fundamental Duties.",
+    "The Constitution upholds the principle of secularism. It states that the State should not discriminate on the basis of religion and should treat all religions equally.",
+    "Our Judiciary is independent and has sufficient powers. The Constitution states that neither the Legislature nor the Executive should interfere with the Judiciary.",
+    "Since caste-based discrimination is a social evil by birth, the objective of the Constitution is to eliminate it and establish social justice.",
+    "The ideal of the Constitution of India is to establish a Welfare State.",
+    "India is the largest democracy in the world, and the electoral system has been adopted."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-6-social",
+    "at": "2026-10-08T08:55:04+05:30",
+    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "d8c0127e8ed3bf1276266e0e3e014a7e891ef9cee9fdc0916cf68d4d9e1a0af6"
+  }
+ ],
+ "pending_summary": {}
+}
