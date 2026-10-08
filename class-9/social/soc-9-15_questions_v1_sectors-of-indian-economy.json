@@ -1,7 +1,7 @@
 {
  "contract_version": "1.7",
  "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
- "procedure_file": "extraction_procedure_social_addendum_v1.3_social science Classes 6-10 on top of procedure v2.md",
+ "procedure_file": "extraction_procedure_social_addendum_v1.4_social science Classes 6-10 on top of procedure v2.md",
  "machine_name": "soc-9-15_questions",
  "version": 1,
  "changelog": "v1 extraction — batch-01 — class-9-social",
@@ -289,7 +289,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -298,6 +298,14 @@
      "by": "class-9-social",
      "role": "extraction",
      "at": "2026-10-02T22:15:24+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "correction",
+     "at": "2026-10-08T23:14:00+05:30",
+     "ref": "review_decisions_class-9 v1"
     }
    ],
    "created_by": "class-9-social",
@@ -325,13 +333,13 @@
    "answer_as_printed": "B) Agro-based Industries",
    "answer": {
     "kind": "option",
-    "option_id": "B"
+    "option_id": "D"
    },
    "answer_provenance": {
-    "by": "printed",
+    "by": "textbook_excerpt",
     "actor": "class-9-social",
-    "at": "2026-10-02T22:15:24+05:30",
-    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+    "at": "2026-10-08T23:14:00+05:30",
+    "basis": "textbook_excerpt: 9th English SS Part - 1 2026-27.pdf, pdf page 153 (printed page 140): \"Industries are classified into three groups namely, a) Agro-based Industries b) Forest-based Industries c) Mineral-based Industries.\". industries are classified by raw material; the mining sector supplies Mineral-based Industries = option D; printed key B overruled."
    },
    "pending_category": "unclassified",
    "source_flags": [
@@ -339,17 +347,24 @@
      "issue": "marks ambiguous in source — no marks printed"
     },
     {
-     "issue": "key text differs from option by a printed typo",
-     "why_not_corrected": "letter B kept (addendum §4.1); key text 'Agro-based Industries' vs option B 'Agro-based Industry' differ by a source typo; spelling needs subject knowledge (v2 §1)",
-     "suggested": "B (letter kept)"
-    },
-    {
-     "issue": "unclassified — printed MCQ key 'B) Agro-based Industry' is factually wrong for this stem",
-     "why_not_corrected": "q3 asks which industries the MINING sector supplies raw materials to. Mining supplies MINERAL-based industry (option D); the printed key letter and text both say B 'Agro-based Industry' (agro-based uses agricultural raw materials, not mined ones). Letter and text agree, so this is not a letter-text disagreement but a factual key error. Answer kept as printed (B) pending review; surfaced by the independent blind read.",
-     "suggested": "nearest: category:printed-key-wrong — the printed key is factually wrong (mining feeds mineral-based industry = option D, not agro-based = B); no vocab prefix exists for a factually-wrong key (register gap), subject reviewer to confirm D"
+     "issue": "printed key contradicts fact — printed 'B) Agro-based Industries'; the mining sector supplies Mineral-based Industries; reviewer"
     }
    ],
-   "content_hash": "601d5af5b10757ec296e50d63f8217b0a9722fe27081ad917b2b233b38c91a49"
+   "content_hash": "601d5af5b10757ec296e50d63f8217b0a9722fe27081ad917b2b233b38c91a49",
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "9th English SS Part - 1 2026-27.pdf#soc-9-15-s1-q003-textbook",
+      "pdf_page": 153,
+      "derived_from": "text_layer",
+      "y": 0.0
+     },
+     "text": "Industries are classified into three groups namely, a) Agro-based Industries b) Forest-based Industries c) Mineral-based Industries.",
+     "confidence": "verbatim"
+    }
+   ]
   },
   {
    "id": "soc-9-15-s1-q004",
