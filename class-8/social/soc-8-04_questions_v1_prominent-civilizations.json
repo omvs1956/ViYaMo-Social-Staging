@@ -1,7 +1,7 @@
 {
  "contract_version": "1.7",
  "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
- "procedure_file": "extraction_procedure_social_addendum_v1.3_social science Classes 6-10 on top of procedure v2.md",
+ "procedure_file": "extraction_procedure_social_addendum_v1.4_social science Classes 6-10 on top of procedure v2.md",
  "machine_name": "soc-8-04_questions",
  "version": 1,
  "changelog": "v1 extraction — batch-01 — class-8-social",
@@ -1334,7 +1334,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -1343,6 +1343,14 @@
      "by": "class-8-social",
      "role": "extraction",
      "at": "2026-10-07T23:21:21+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "correction",
+     "at": "2026-10-08T22:30:00+05:30",
+     "ref": "review_decisions_class-8 v1"
     }
    ],
    "created_by": "class-8-social",
@@ -1350,21 +1358,47 @@
    "text_as_printed": "What is \"pyramid\"? (E)",
    "answer": {
     "kind": "text",
-    "value": "The tallest tower built over the tombs of Greek kings is called a pyramid."
+    "value": "The tallest tower built over the tombs of the kings of Egypt is called a pyramid."
    },
    "answer_as_printed": "The tallest tower built over the tombs of Greek kings is called a pyramid.",
    "answer_provenance": {
-    "by": "printed",
+    "by": "textbook_excerpt",
     "actor": "class-8-social",
-    "at": "2026-10-07T23:21:21+05:30",
-    "basis": "printed VSA key, verbatim (v2 §4)"
+    "at": "2026-10-08T22:30:00+05:30",
+    "basis": "textbook_excerpt: 8th English SS Part 1 2026-27.pdf, pdf page 39 (printed page 25): \"The Greeks called these structures 'Pyramids'. The kings of Egypt ...\". printed key said the tombs were of 'Greek kings'; the textbook states the Greeks only NAMED them pyramids and the tombs are of the kings of Egypt."
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "field": "answer",
+     "issue": "printed key contradicts fact — printed key said tombs of 'Greek kings'; textbook: kings of Egypt; reviewer"
     }
    ],
-   "content_hash": "29905464d1bebc88028ad06d2a14eb5753df48cb21e5d966e90ccc3c7e8da580"
+   "content_hash": "29905464d1bebc88028ad06d2a14eb5753df48cb21e5d966e90ccc3c7e8da580",
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "8th English SS Part 1 2026-27.pdf#soc-8-04-s2-q015-textbook",
+      "pdf_page": 39,
+      "derived_from": "text_layer",
+      "y": 0.0
+     },
+     "text": "The Greeks called these structures 'Pyramids'. The kings of Egypt ...",
+     "confidence": "verbatim"
+    }
+   ],
+   "source_corrections": [
+    {
+     "field": "answer",
+     "printed": "The tallest tower built over the tombs of Greek kings is called a pyramid.",
+     "corrected": "The tallest tower built over the tombs of the kings of Egypt is called a pyramid.",
+     "basis": "textbook Part 1, pdf 39 (printed 25)"
+    }
+   ]
   },
   {
    "id": "soc-8-04-s2-q016",
