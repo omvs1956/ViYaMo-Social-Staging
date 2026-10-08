@@ -1,7 +1,7 @@
 {
  "contract_version": "1.7",
  "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
- "procedure_file": "extraction_procedure_social_addendum_v1.3_social science Classes 6-10 on top of procedure v2.md",
+ "procedure_file": "extraction_procedure_social_addendum_v1.4_social science Classes 6-10 on top of procedure v2.md",
  "machine_name": "soc-9-01_questions",
  "version": 1,
  "changelog": "v1 extraction — batch-01 — class-9-social",
@@ -293,7 +293,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -302,6 +302,14 @@
      "by": "class-9-social",
      "role": "extraction",
      "at": "2026-10-02T17:49:45+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "correction",
+     "at": "2026-10-08T23:14:00+05:30",
+     "ref": "review_decisions_class-9 v1"
     }
    ],
    "created_by": "class-9-social",
@@ -328,19 +336,34 @@
    "answer_as_printed": "C) Abraham",
    "answer": {
     "kind": "option",
-    "option_id": null
+    "option_id": "A"
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
-    },
-    {
-     "issue": "key text not among options",
-     "why_not_corrected": "the printed key is '3. C) Abraham'. Letter C = option C 'Paul', but the key text names option A 'Abraham' (exact match). Letter and key text name different options; no answer is asserted (key-letter-text-disagreement vocab 'key text not among options'); the reviewer decides which governs (addendum §13.6).",
-     "suggested": "A (by text; printed letter C='Paul' disagrees) — review"
     }
    ],
-   "content_hash": "9b5c7fde4bdba25ee22084c7374177f1d9ea06c6e6292485428faa531ae3fb01"
+   "content_hash": "9b5c7fde4bdba25ee22084c7374177f1d9ea06c6e6292485428faa531ae3fb01",
+   "answer_provenance": {
+    "by": "textbook_excerpt",
+    "actor": "class-9-social",
+    "at": "2026-10-08T23:14:00+05:30",
+    "basis": "textbook_excerpt: 9th English SS Part - 1 2026-27.pdf, pdf page 14 (printed page 1): \"Abraham or Ebraham was their forefather and Moses was their messenger (Prophet).\". printed key letter C ('Paul') disagreed with its own key text 'Abraham'; the Jewish forefather is Abraham = option A, confirmed by the textbook."
+   },
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "9th English SS Part - 1 2026-27.pdf#soc-9-01-s1-q003-textbook",
+      "pdf_page": 14,
+      "derived_from": "text_layer",
+      "y": 0.0
+     },
+     "text": "Abraham or Ebraham was their forefather and Moses was their messenger (Prophet).",
+     "confidence": "verbatim"
+    }
+   ]
   },
   {
    "id": "soc-9-01-s1-q004",
