@@ -1,10 +1,10 @@
 {
  "contract_version": "1.7",
  "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
- "procedure_file": "extraction_procedure_social_addendum_v1.3_social science Classes 6-10 on top of procedure v2.md",
+ "procedure_file": "extraction_procedure_social_addendum_v1.4_social science Classes 6-10 on top of procedure v2.md",
  "machine_name": "soc-7-05_questions",
- "version": 1,
- "changelog": "v1 extraction — batch-01 — class-7-social",
+ "version": 2,
+ "changelog": "v1 extraction — batch-01 — class-7-social | v2 r1 correction (2026-10-08T23:37:54+05:30) — q16 MCQ + q41 descriptive from textbook Part-1 (Ranjit Singh); q22 and rotated-band q35/37/38/39/40/45 excluded (pairing not coordinator-verified)",
  "amendments_applied": [],
  "unit_state": "EXTRACTED",
  "review_ready": false,
@@ -1577,7 +1577,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -1586,6 +1586,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T01:59:42+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:37:54+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -1613,25 +1621,37 @@
    "answer_as_printed": "D)",
    "answer": {
     "kind": "option",
-    "option_id": "D"
+    "option_id": "B"
    },
    "answer_provenance": {
-    "by": "printed",
+    "by": "textbook_excerpt",
     "actor": "class-7-social",
-    "at": "2026-10-08T01:59:42+05:30",
-    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+    "at": "2026-10-08T23:37:54+05:30",
+    "basis": "7th English SS Part-1 2026-27, printed p.56 (pdf p.70): \"At the age of 18, he became the king of Lahore (Punjab). Credit goes to him for bringing together all the Sikhs and to transforming them into a strong political force\". The person credited with uniting the Sikhs into a strong political force = Ranjit Singh = option B."
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
     },
     {
-     "issue": "key text does not address question",
-     "why_not_corrected": "printed MCQ key letter D 'Ranveer Singh' is a distractor; 'who united the Sikhs into a powerful political force' = Ranjit Singh (option B); printed letter asserted verbatim",
-     "suggested": "review (chapter answer-key content errors — see summary)"
+     "issue": "printed key contradicts fact — textbook gives option B Ranjit Singh (Part-1 p.56); printed key D (Ranveer Singh) wrong; reviewer"
     }
    ],
-   "content_hash": "5669502978f274756f2de8b99cbd2f8c593c5431c6be55b51bc300e9513cc966"
+   "content_hash": "5669502978f274756f2de8b99cbd2f8c593c5431c6be55b51bc300e9513cc966",
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "7th English SS Part-1 2026-27.pdf",
+      "pdf_page": 70,
+      "derived_from": "text_layer",
+      "y": 389.8
+     },
+     "text": "At the age of 18, he became the king of Lahore (Punjab). Credit goes to him for bringing together all the Sikhs and to transforming them into a strong political force",
+     "confidence": "verbatim"
+    }
+   ]
   },
   {
    "id": "soc-7-05-s1-q017",
@@ -3781,7 +3801,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -3790,6 +3810,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T01:59:42+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:37:54+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -3798,14 +3826,15 @@
    "section_signal": "D",
    "answer": {
     "kind": "text",
-    "value": "The British obtained the Diwani rights of the provinces of Bengal, Bihar, and Orissa."
+    "value": "Ranjit Singh became the king of Lahore (Punjab) at the age of 18. He brought together all the Sikhs and transformed them into a strong political force, and ruled Punjab for over four decades. The Afghan king gifted him the Kohinoor diamond. Hence he is remembered as one of the memorable kings (Maharajas) of modern India."
    },
    "answer_as_printed": "The British obtained the Diwani rights of the provinces of Bengal, Bihar, and Orissa.",
    "answer_provenance": {
-    "by": "printed",
+    "by": "textbook_excerpt",
     "actor": "class-7-social",
-    "at": "2026-10-08T01:59:42+05:30",
-    "basis": "printed one-line answer, verbatim (v2 §4)"
+    "at": "2026-10-08T23:37:54+05:30",
+    "basis": "7th English SS Part-1 2026-27, printed p.56 (pdf p.70): \"He ruled Punjab for over four decades. He is one of the memorable Ranjit Singh kings of modern India. ... The Afghan king ... had gifted the Kohinoor diamond to Ranjit Singh.\". Composed from the textbook: Ranjit Singh became king of Lahore (Punjab) at 18, united all the Sikhs into a strong political force, ruled Punjab over four decades, and was gifted the Kohinoor diamond — hence remembered as one of the memorable Maharajas of modern India.",
+    "textbook_derived": true
    },
    "source_flags": [
     {
@@ -3817,7 +3846,21 @@
      "suggested": "review (chapter answer-key content errors — see summary)"
     }
    ],
-   "content_hash": "6baa81c9a186fecfc0c596813ad860383ec7ac9671442153ecf6c03bc9966479"
+   "content_hash": "6baa81c9a186fecfc0c596813ad860383ec7ac9671442153ecf6c03bc9966479",
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "7th English SS Part-1 2026-27.pdf",
+      "pdf_page": 70,
+      "derived_from": "text_layer",
+      "y": 319.8
+     },
+     "text": "He ruled Punjab for over four decades. He is one of the memorable Ranjit Singh kings of modern India. ... The Afghan king ... had gifted the Kohinoor diamond to Ranjit Singh.",
+     "confidence": "partial"
+    }
+   ]
   },
   {
    "id": "soc-7-05-s4-q042",
