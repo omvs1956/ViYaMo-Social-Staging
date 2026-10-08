@@ -1,10 +1,10 @@
 {
  "contract_version": "1.7",
  "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
- "procedure_file": "extraction_procedure_social_addendum_v1.3_social science Classes 6-10 on top of procedure v2.md",
+ "procedure_file": "extraction_procedure_social_addendum_v1.4_social science Classes 6-10 on top of procedure v2.md",
  "machine_name": "soc-6-01_questions",
  "version": 1,
- "changelog": "v1 extraction — batch-01 — class-6-social",
+ "changelog": "v1 extraction — batch-01 — class-6-social; r1 c6-soc-batch-03r1: re-stamped procedure v1.3->v1.4; q31 structured ordering; q46 Neolithic map block from textbook",
  "amendments_applied": [],
  "unit_state": "EXTRACTED",
  "review_ready": false,
@@ -2618,7 +2618,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -2627,25 +2627,44 @@
      "by": "class-6-social",
      "role": "extraction",
      "at": "2026-10-08T06:49:59+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "correction",
+     "at": "2026-10-08T19:54:48+05:30",
+     "ref": "review_decisions_class-6 v1"
     }
    ],
    "created_by": "class-6-social",
    "created_at": "2026-10-08T06:49:59+05:30",
    "section_signal": "V",
    "answer": {
-    "kind": "text",
-    "value": "3, 4, 2, 1, 5"
+    "kind": "ordering",
+    "sequence": [
+     "Student's father was born.",
+     "Student's mother was born.",
+     "Student was born.",
+     "Student joined school.",
+     "Student passed Grade 5."
+    ]
    },
    "answer_as_printed": "3, 4, 2, 1, 5",
    "answer_provenance": {
     "by": "printed",
     "actor": "class-6-social",
     "at": "2026-10-08T06:49:59+05:30",
-    "basis": "printed one-line answer, verbatim (v2 §4)"
+    "basis": "printed one-line ordering key '3, 4, 2, 1, 5' resolved to the stem items in that order (v1.4 §14.8); printed label string kept in flag 'ordering key in label form'."
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "ordering key in label form",
+     "why_not_corrected": "printed key gives the order as number labels '3, 4, 2, 1, 5'; resolved to the stem item texts in sequence (v1.4 §14.8)",
+     "suggested": "3,4,2,1,5"
     }
    ],
    "content_hash": "400cee9e885e9cdf74f23f4092db1eb8ad226ad875fc02865cc8da7f3a8caf4f"
@@ -3806,7 +3825,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -3815,6 +3834,14 @@
      "by": "class-6-social",
      "role": "extraction",
      "at": "2026-10-08T06:49:59+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-6-social",
+     "role": "correction",
+     "at": "2026-10-08T19:54:48+05:30",
+     "ref": "review_decisions_class-6 v1"
     }
    ],
    "created_by": "class-6-social",
@@ -3823,22 +3850,15 @@
    "section_signal": "VIII",
    "answer": {
     "kind": "text",
-    "value": "Archaeological sites in Karnataka\nBanahalli\nBrahmagiri\nHallur\nPiklihal\nT. Narasipur\nUtnur"
+    "value": "[diagram answer — see page image]"
    },
    "answer_as_printed": "Archaeological sites in Karnataka\nBanahalli\nBrahmagiri\nHallur\nPiklihal\nT. Narasipur\nUtnur",
-   "solution_steps": [
-    "Banahalli",
-    "Brahmagiri",
-    "Hallur",
-    "Piklihal",
-    "T. Narasipur",
-    "Utnur"
-   ],
    "answer_provenance": {
-    "by": "printed",
+    "by": "textbook_excerpt",
     "actor": "class-6-social",
-    "at": "2026-10-08T06:49:59+05:30",
-    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+    "at": "2026-10-08T19:54:48+05:30",
+    "basis": "6th English SS Part 1 2026-27, 'Introduction to History and Early Society', pdf27 (printed p9): 'Neolithic sites have been traced out in Banahalli, Bramhagiri, Boodihala, Halluru, Piklihala, T.Narasipura and Uttnuru of Karnataka, Chirand of Bihar.' Encoded as the map features to be identified; positions unset.",
+    "textbook_derived": true
    },
    "stimulus_id": "stim-soc-6-01-q46-map",
    "assets": [
@@ -3872,9 +3892,116 @@
      "issue": "key text does not address question",
      "why_not_corrected": "stem asks to identify Neolithic sites on the map of India; the printed answer lists archaeological sites in Karnataka; recorded as printed (control rev4 ruling 7)",
      "suggested": "review — stem/key scope mismatch"
+    },
+    {
+     "issue": "answer is a diagram — Neolithic sites to be identified on the India map; features from the textbook list, positions unset",
+     "why_not_corrected": "mark-on-map answer; answer.value is the diagram placeholder (v1.4 §14.11)",
+     "suggested": "review — map answer"
     }
    ],
-   "content_hash": "17c08711923c46b9a785166b15571485a46f6a03b8afc6007f12dbc0069bfe74"
+   "content_hash": "17c08711923c46b9a785166b15571485a46f6a03b8afc6007f12dbc0069bfe74",
+   "map": {
+    "subject": "Neolithic sites",
+    "instruction": "Identify the Neolithic sites on the given map of India.",
+    "region": "India",
+    "features_source": "textbook_key",
+    "features": [
+     {
+      "id": "banahalli",
+      "name": "Banahalli",
+      "category": null,
+      "in_stem": false,
+      "on_answer_map": false,
+      "answer_map_label": "Banahalli",
+      "position": null,
+      "position_source": "unset"
+     },
+     {
+      "id": "brahmagiri",
+      "name": "Brahmagiri",
+      "category": null,
+      "in_stem": false,
+      "on_answer_map": false,
+      "answer_map_label": "Brahmagiri",
+      "position": null,
+      "position_source": "unset"
+     },
+     {
+      "id": "boodihala",
+      "name": "Boodihala",
+      "category": null,
+      "in_stem": false,
+      "on_answer_map": false,
+      "answer_map_label": "Boodihala",
+      "position": null,
+      "position_source": "unset"
+     },
+     {
+      "id": "halluru",
+      "name": "Halluru",
+      "category": null,
+      "in_stem": false,
+      "on_answer_map": false,
+      "answer_map_label": "Halluru",
+      "position": null,
+      "position_source": "unset"
+     },
+     {
+      "id": "piklihala",
+      "name": "Piklihala",
+      "category": null,
+      "in_stem": false,
+      "on_answer_map": false,
+      "answer_map_label": "Piklihala",
+      "position": null,
+      "position_source": "unset"
+     },
+     {
+      "id": "t-narasipura",
+      "name": "T. Narasipura",
+      "category": null,
+      "in_stem": false,
+      "on_answer_map": false,
+      "answer_map_label": "T. Narasipura",
+      "position": null,
+      "position_source": "unset"
+     },
+     {
+      "id": "uttnuru",
+      "name": "Uttnuru",
+      "category": null,
+      "in_stem": false,
+      "on_answer_map": false,
+      "answer_map_label": "Uttnuru",
+      "position": null,
+      "position_source": "unset"
+     },
+     {
+      "id": "chirand",
+      "name": "Chirand",
+      "category": null,
+      "in_stem": false,
+      "on_answer_map": false,
+      "answer_map_label": "Chirand",
+      "position": null,
+      "position_source": "unset"
+     }
+    ]
+   },
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "text": "Neolithic sites have been traced out in Banahalli, Bramhagiri, Boodihala, Halluru, Piklihala, T.Narasipura and Uttnuru of Karnataka, Chirand of Bihar.",
+     "confidence": "verbatim",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "6th English SS Part 1 2026-27.pdf#textbook-pdf27",
+      "pdf_page": 27,
+      "y": 0.0,
+      "derived_from": "text_layer"
+     }
+    }
+   ]
   }
  ],
  "pending_summary": {}
