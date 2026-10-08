@@ -1,7 +1,7 @@
 {
  "contract_version": "1.7",
  "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
- "procedure_file": "extraction_procedure_social_addendum_v1.3_social science Classes 6-10 on top of procedure v2.md",
+ "procedure_file": "extraction_procedure_social_addendum_v1.4_social science Classes 6-10 on top of procedure v2.md",
  "machine_name": "soc-9-09_questions",
  "version": 1,
  "changelog": "v1 extraction — batch-01 — class-9-social",
@@ -671,7 +671,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -680,6 +680,14 @@
      "by": "class-9-social",
      "role": "extraction",
      "at": "2026-10-02T20:33:45+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "correction",
+     "at": "2026-10-08T23:14:00+05:30",
+     "ref": "review_decisions_class-9 v1"
     }
    ],
    "created_by": "class-9-social",
@@ -706,19 +714,37 @@
    "answer_as_printed": "D) Matriarchal Family",
    "answer": {
     "kind": "option",
-    "option_id": null
+    "option_id": "B"
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
     },
     {
-     "issue": "key text not among options",
-     "why_not_corrected": "the printed key is '7. D) Matriarchal Family'. Letter D = option D 'Polyandrous family', but the key text names option A 'Matriarchal family' (exact match). Letter and key text name different options; no answer is asserted (key-letter-text-disagreement vocab 'key text not among options'); the reviewer decides which governs (addendum §13.6).",
-     "suggested": "A (by text; printed letter D='Polyandrous family' disagrees) — review"
+     "issue": "printed key contradicts fact — printed 'D) Matriarchal Family' (letter D='Polyandrous', text='Matriarchal'); textbook: Patriarchal family; reviewer"
     }
    ],
-   "content_hash": "7e3f1a4287dd4f4df109e4c1a301d5080f4d1e233c6b22d7bd5781dd7cc033e9"
+   "content_hash": "7e3f1a4287dd4f4df109e4c1a301d5080f4d1e233c6b22d7bd5781dd7cc033e9",
+   "answer_provenance": {
+    "by": "textbook_excerpt",
+    "actor": "class-9-social",
+    "at": "2026-10-08T23:14:00+05:30",
+    "basis": "textbook_excerpt: 9th English SS Part - 1 2026-27.pdf, pdf page 109 (printed page 96): \"This type of family system was prevalent in ancient India,China, Rome, Egypt and other countries and is in existence even today.\". the family type prevalent in ancient India/China/Egypt is the Patriarchal family = option B."
+   },
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "9th English SS Part - 1 2026-27.pdf#soc-9-09-s1-q007-textbook",
+      "pdf_page": 109,
+      "derived_from": "text_layer",
+      "y": 0.0
+     },
+     "text": "1. Patriarchal family : A family in which the father is the head and has all assets in his name is called a patriarchal family. This type of family system was prevalent in ancient India,China, Rome, Egypt and other countries and is in existence even today.",
+     "confidence": "verbatim"
+    }
+   ]
   },
   {
    "id": "soc-9-09-s1-q008",
@@ -1140,7 +1166,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -1149,6 +1175,14 @@
      "by": "class-9-social",
      "role": "extraction",
      "at": "2026-10-02T20:33:45+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "correction",
+     "at": "2026-10-08T23:14:00+05:30",
+     "ref": "review_decisions_class-9 v1"
     }
    ],
    "created_by": "class-9-social",
@@ -1156,7 +1190,7 @@
    "text_as_printed": "The third generation in a family system includes: (A)",
    "answer": {
     "kind": "option",
-    "option_id": null
+    "option_id": "C"
    },
    "options": [
     {
@@ -1181,12 +1215,17 @@
      "issue": "marks ambiguous in source — no marks printed"
     },
     {
-     "issue": "shifted numbering — see key 13",
-     "why_not_corrected": "answer-side numbering is displaced in this band; extraction does not shift-align (procedure §4.2) — answer left empty, coordinator verifies the pair by content in review",
-     "suggested": "key 13 (this unit's answer side prints Q12's answer under printed label 13)"
+     "field": "answer",
+     "issue": "displaced key — paired by content to printed key label 13; coordinator-verified (control rev 21)"
     }
    ],
-   "content_hash": "2594068a014f43049a243c01b1b2458433f67d0a04e70cf91648e788e0530629"
+   "content_hash": "2594068a014f43049a243c01b1b2458433f67d0a04e70cf91648e788e0530629",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-08T23:14:00+05:30",
+    "basis": "printed MCQ key at displaced label 13; coordinator-verified pairing (rulings/verified_shifts_class-9-social.json); option letter and text verbatim from the LBA answer side"
+   }
   },
   {
    "id": "soc-9-09-s1-q013",
@@ -1231,7 +1270,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -1240,6 +1279,14 @@
      "by": "class-9-social",
      "role": "extraction",
      "at": "2026-10-02T20:33:45+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "correction",
+     "at": "2026-10-08T23:14:00+05:30",
+     "ref": "review_decisions_class-9 v1"
     }
    ],
    "created_by": "class-9-social",
@@ -1247,7 +1294,7 @@
    "text_as_printed": "When the father is the head of the family, that family is called ___________. (Easy)",
    "answer": {
     "kind": "option",
-    "option_id": null
+    "option_id": "B"
    },
    "options": [
     {
@@ -1272,12 +1319,17 @@
      "issue": "marks ambiguous in source — no marks printed"
     },
     {
-     "issue": "shifted numbering — see key 14",
-     "why_not_corrected": "answer-side numbering is displaced in this band; extraction does not shift-align (procedure §4.2) — answer left empty, coordinator verifies the pair by content in review",
-     "suggested": "key 14 (this unit's answer side prints Q13's answer under printed label 14)"
+     "field": "answer",
+     "issue": "displaced key — paired by content to printed key label 14; coordinator-verified (control rev 21)"
     }
    ],
-   "content_hash": "d5eacdfe67edcb1a90e7ff481ef2daeba94e03a6d80819ae572ccd2dfb63c69a"
+   "content_hash": "d5eacdfe67edcb1a90e7ff481ef2daeba94e03a6d80819ae572ccd2dfb63c69a",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-08T23:14:00+05:30",
+    "basis": "printed MCQ key at displaced label 14; coordinator-verified pairing (rulings/verified_shifts_class-9-social.json); option letter and text verbatim from the LBA answer side"
+   }
   },
   {
    "id": "soc-9-09-s1-q014",
@@ -1322,7 +1374,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -1331,6 +1383,14 @@
      "by": "class-9-social",
      "role": "extraction",
      "at": "2026-10-02T20:33:45+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "correction",
+     "at": "2026-10-08T23:14:00+05:30",
+     "ref": "review_decisions_class-9 v1"
     }
    ],
    "created_by": "class-9-social",
@@ -1338,7 +1398,7 @@
    "text_as_printed": "________family is seen among the Nairs of Malabar in Kerala. (Easy)",
    "answer": {
     "kind": "option",
-    "option_id": null
+    "option_id": "A"
    },
    "options": [
     {
@@ -1363,12 +1423,17 @@
      "issue": "marks ambiguous in source — no marks printed"
     },
     {
-     "issue": "shifted numbering — see key 15",
-     "why_not_corrected": "answer-side numbering is displaced in this band; extraction does not shift-align (procedure §4.2) — answer left empty, coordinator verifies the pair by content in review",
-     "suggested": "key 15 (this unit's answer side prints Q14's answer under printed label 15)"
+     "field": "answer",
+     "issue": "displaced key — paired by content to printed key label 15; coordinator-verified (control rev 21)"
     }
    ],
-   "content_hash": "9bcfd7d79edf5c91630a9e7220189e785d01826a8fbf68edef6c2190f70c6b62"
+   "content_hash": "9bcfd7d79edf5c91630a9e7220189e785d01826a8fbf68edef6c2190f70c6b62",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-9-social",
+    "at": "2026-10-08T23:14:00+05:30",
+    "basis": "printed MCQ key at displaced label 15; coordinator-verified pairing (rulings/verified_shifts_class-9-social.json); option letter and text verbatim from the LBA answer side"
+   }
   },
   {
    "id": "soc-9-09-s2-q015",
@@ -1713,7 +1778,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -1722,6 +1787,14 @@
      "by": "class-9-social",
      "role": "extraction",
      "at": "2026-10-02T20:33:45+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "correction",
+     "at": "2026-10-08T23:14:00+05:30",
+     "ref": "review_decisions_class-9 v1"
     }
    ],
    "created_by": "class-9-social",
@@ -1729,14 +1802,15 @@
    "text_as_printed": "What is the main reason for the increase in nuclear families? (A)",
    "answer": {
     "kind": "text",
-    "value": "Matriarchal family\nPatriarchal family\nModern nuclear family\nDivided family\nundevided family (Joint family)"
+    "value": "The reasons for the increase in nuclear (divided) families are: privacy, personal happiness, self-contentment, property rights, changing social values, geographical and social structures, advances in science and technology, industrialisation, urbanisation, principles of democracy and equality, decline of religious faith, spread of materialistic attitude, and freedom of women."
    },
    "answer_as_printed": "Matriarchal family\nPatriarchal family\nModern nuclear family\nDivided family\nundevided family (Joint family)",
    "answer_provenance": {
-    "by": "printed",
+    "by": "textbook_excerpt",
     "actor": "class-9-social",
-    "at": "2026-10-02T20:33:45+05:30",
-    "basis": "printed VSA key, verbatim (v2 §4)"
+    "at": "2026-10-08T23:14:00+05:30",
+    "basis": "textbook_excerpt: 9th English SS Part - 1 2026-27.pdf, pdf page 110 (printed page 97): \"Privacy, personal happiness, self-contentment, property rights, changing social values, geographical and social structures, advances in science and technology, industrialisation, urbanisation, principles of democracy and equality, decline of religious faith and thinking, spread of materialistic attitude, freedom of women have become responsible for the increase in the number of this type of family.\". composed from the textbook passage on the modern nuclear family.",
+    "textbook_derived": true
    },
    "source_flags": [
     {
@@ -1748,7 +1822,21 @@
      "suggested": "review — printed key for q19 appears to be the wrong content (a types list); correct answer would name the reason (industrialization/urbanization etc.)"
     }
    ],
-   "content_hash": "fa5cb5965abd68853a95577bfc85a3eef7ad95c008c2e77585189b2fa6acd371"
+   "content_hash": "fa5cb5965abd68853a95577bfc85a3eef7ad95c008c2e77585189b2fa6acd371",
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "9th English SS Part - 1 2026-27.pdf#soc-9-09-s2-q019-textbook",
+      "pdf_page": 110,
+      "derived_from": "text_layer",
+      "y": 0.0
+     },
+     "text": "Privacy, personal happiness, self-contentment, property rights, changing social values, geographical and social structures, advances in science and technology, industrialisation, urbanisation, principles of democracy and equality, decline of religious faith and thinking, spread of materialistic attitude, freedom of women have become responsible for the increase in the number of this type of family.",
+     "confidence": "verbatim"
+    }
+   ]
   },
   {
    "id": "soc-9-09-s2-q020",
@@ -2248,7 +2336,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -2257,6 +2345,14 @@
      "by": "class-9-social",
      "role": "extraction",
      "at": "2026-10-02T20:33:45+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "correction",
+     "at": "2026-10-08T23:14:00+05:30",
+     "ref": "review_decisions_class-9 v1"
     }
    ],
    "created_by": "class-9-social",
@@ -2264,7 +2360,7 @@
    "text_as_printed": "What are the main characteristics of the family system? (A)",
    "answer": {
     "kind": "text",
-    "value": "The Family as the Lifeline of Indian Society\nThe family is a center of maternal love, paternal affection, and spousal love.\nIt nurtures and raises children.\nIt facilitates quality education for children.\nIt regulates social traditions, moral norms, and behavior.\nIt fosters social responsibility.\nIt promotes the care, support, and protection of parents."
+    "value": "Family is universal — it is a social system seen in all times and all countries. It is the core of society. It is from the family that neighbourhoods, villages, cities and nations have evolved. Right from their childhood, the members of the family realise their social responsibilities and understand co-operation. The social traditions, morality and behaviour are all controlled by the family. Thus, the family is a universal, permanent and traditional structure."
    },
    "answer_as_printed": "The Family as the Lifeline of Indian Society\nThe family is a center of maternal love, paternal affection, and spousal love.\nIt nurtures and raises children.\nIt facilitates quality education for children.\nIt regulates social traditions, moral norms, and behavior.\nIt fosters social responsibility.\nIt promotes the care, support, and protection of parents.",
    "solution_steps": [
@@ -2276,10 +2372,11 @@
     "It promotes the care, support, and protection of parents."
    ],
    "answer_provenance": {
-    "by": "printed",
+    "by": "textbook_excerpt",
     "actor": "class-9-social",
-    "at": "2026-10-02T20:33:45+05:30",
-    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+    "at": "2026-10-08T23:14:00+05:30",
+    "basis": "textbook_excerpt: 9th English SS Part - 1 2026-27.pdf, pdf page 108 (printed page 95): \"Family is universal it is a social system seen in all times and all countries. 'It is the core of society'. It is from the family that neighbourhoods, villages, cities and nations have evolved. ... The social traditions, morality and behavior are all controlled by the family. Thus, the family is called a universal, permanent and traditional structure.\". composed from the textbook 'Features of a family' passage.",
+    "textbook_derived": true
    },
    "source_flags": [
     {
@@ -2291,7 +2388,21 @@
      "suggested": "review — this printed key gives the family's functions ('lifeline'/role), not the characteristics the stem asks; the SA section (q25-q29) appears content-displaced"
     }
    ],
-   "content_hash": "6c74c3f37d44287b5fa5e0460ad341096b262b2af7923e6e0604143c8f2dac25"
+   "content_hash": "6c74c3f37d44287b5fa5e0460ad341096b262b2af7923e6e0604143c8f2dac25",
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "9th English SS Part - 1 2026-27.pdf#soc-9-09-s3-q026-textbook",
+      "pdf_page": 108,
+      "derived_from": "text_layer",
+      "y": 0.0
+     },
+     "text": "Family is universal it is a social system seen in all times and all countries. 'It is the core of society'. It is from the family that neighbourhoods, villages, cities and nations have evolved. Right from their childhood, the members of the family not only realise their social responsibilities but also understand co-operation. The social traditions, morality and behavior are all controlled by the family. Thus, the family is called a universal, permanent and traditional structure.",
+     "confidence": "verbatim"
+    }
+   ]
   },
   {
    "id": "soc-9-09-s3-q027",
@@ -2336,7 +2447,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -2345,6 +2456,14 @@
      "by": "class-9-social",
      "role": "extraction",
      "at": "2026-10-02T20:33:45+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "correction",
+     "at": "2026-10-08T23:14:00+05:30",
+     "ref": "review_decisions_class-9 v1"
     }
    ],
    "created_by": "class-9-social",
@@ -2352,7 +2471,7 @@
    "text_as_printed": "What is the role of childhood and youth in the social development of an individual? (A)",
    "answer": {
     "kind": "text",
-    "value": "Characteristics of a Family\nThe family is universal.\nIt is central to all social elements.\nNeighborhoods, villages, cities, and nations are built from families.\nThe family teaches social responsibility.\nIt regulates social traditions, moral norms, and behavior.\nThe family is a pervasive, eternal, and traditional unit."
+    "value": "Childhood and youth occupy an important place in the social development of an individual. The child learns the mother tongue and the fundamental social tenets. Growing up in a family and social environment, the child develops these characteristics and forms friendships with other children of the same age; by mingling with others the child develops leadership qualities and social behaviour, forming healthy social relationships. Later in youth it leads to friendship, independence, security and social acceptance; the behaviour and habits developed in youth continue into adulthood and old age."
    },
    "answer_as_printed": "Characteristics of a Family\nThe family is universal.\nIt is central to all social elements.\nNeighborhoods, villages, cities, and nations are built from families.\nThe family teaches social responsibility.\nIt regulates social traditions, moral norms, and behavior.\nThe family is a pervasive, eternal, and traditional unit.",
    "solution_steps": [
@@ -2364,10 +2483,11 @@
     "The family is a pervasive, eternal, and traditional unit."
    ],
    "answer_provenance": {
-    "by": "printed",
+    "by": "textbook_excerpt",
     "actor": "class-9-social",
-    "at": "2026-10-02T20:33:45+05:30",
-    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+    "at": "2026-10-08T23:14:00+05:30",
+    "basis": "textbook_excerpt: 9th English SS Part - 1 2026-27.pdf, pdf page 109 (printed page 96): \"Childhood and youth occupy an important place in the social development of an individual. Not only does the child learn the mother tongue, but also the fundamental social tenets. ... Later in youth, it leads to friendship, independence, security and social acceptance. The behaviour and habits developed in youth continue into adulthood and old ages.\". textbook 'Childhood and youth' passage.",
+    "textbook_derived": true
    },
    "source_flags": [
     {
@@ -2379,7 +2499,21 @@
      "suggested": "review — this printed key describes family characteristics, not childhood/youth; the SA section (q26-q29) appears content-displaced"
     }
    ],
-   "content_hash": "bd02faf57f6d8b22b8fb9fb4b10b68679418e984fd5e4a853762f4cf5c4cf45c"
+   "content_hash": "bd02faf57f6d8b22b8fb9fb4b10b68679418e984fd5e4a853762f4cf5c4cf45c",
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "9th English SS Part - 1 2026-27.pdf#soc-9-09-s3-q027-textbook",
+      "pdf_page": 109,
+      "derived_from": "text_layer",
+      "y": 0.0
+     },
+     "text": "Childhood and youth: Childhood and youth occupy an important place in the social development of an individual. Not only does the child learn the mother tongue, but also the fundamental social tenets. ... Later in youth, it leads to friendship, independence, security and social acceptance. The behaviour and habits developed in youth continue into adulthood and old ages.",
+     "confidence": "verbatim"
+    }
+   ]
   },
   {
    "id": "soc-9-09-s3-q028",
@@ -2424,7 +2558,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -2433,6 +2567,14 @@
      "by": "class-9-social",
      "role": "extraction",
      "at": "2026-10-02T20:33:45+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "correction",
+     "at": "2026-10-08T23:14:00+05:30",
+     "ref": "review_decisions_class-9 v1"
     }
    ],
    "created_by": "class-9-social",
@@ -2440,7 +2582,7 @@
    "text_as_printed": "The joint family system is self-sufficient. - Justify(D)",
    "answer": {
     "kind": "text",
-    "value": "Childhood and Youth in Social Development\nA child learns the mother tongue and basic social concepts.\nGrowing up in a family and social environment, the child adopts corresponding characteristics.\nDevelops friendships with peers.\nDevelops leadership qualities by interacting with others.\nSocial behaviours, demands, and rules influence the child, forming social relationships.\nIn youth, individuals strive for friendship, freedom, security, and acceptance, and the behaviours and opinions developed during this phase continue into adulthood and old age."
+    "value": "The joint (undivided) family is self-sufficient: it is mostly self-dependent, encompasses the lives of its members completely and fulfils the majority of their needs. Residence: all members normally live under the same roof. Kitchen: the members usually prepare and consume food in the same kitchen. Religion: all members follow the same religion and worship together. Property: all members own the property and utilise it harmoniously. The oldest member holds the authority to make decisions."
    },
    "answer_as_printed": "Childhood and Youth in Social Development\nA child learns the mother tongue and basic social concepts.\nGrowing up in a family and social environment, the child adopts corresponding characteristics.\nDevelops friendships with peers.\nDevelops leadership qualities by interacting with others.\nSocial behaviours, demands, and rules influence the child, forming social relationships.\nIn youth, individuals strive for friendship, freedom, security, and acceptance, and the behaviours and opinions developed during this phase continue into adulthood and old age.",
    "solution_steps": [
@@ -2452,10 +2594,11 @@
     "In youth, individuals strive for friendship, freedom, security, and acceptance, and the behaviours and opinions developed during this phase continue into adulthood and old age."
    ],
    "answer_provenance": {
-    "by": "printed",
+    "by": "textbook_excerpt",
     "actor": "class-9-social",
-    "at": "2026-10-02T20:33:45+05:30",
-    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+    "at": "2026-10-08T23:14:00+05:30",
+    "basis": "textbook_excerpt: 9th English SS Part - 1 2026-27.pdf, pdf page 111 (printed page 98): \"Self-reliant : An undivided family is mostly self-dependent. It encompasses the lives of its members completely. It fulfills the majority of their needs. ... Residence : All the members of the family normally live under the same roof. ... Kitchen : The members of an undivided family usually prepare the food in the same kitchen and consume it together. Religion : Normally all the members of an undivided family follow the same religion.\". composed from the textbook features of an undivided family.",
+    "textbook_derived": true
    },
    "source_flags": [
     {
@@ -2467,7 +2610,21 @@
      "suggested": "review — this printed key describes childhood/youth, not joint-family self-sufficiency; SA section appears content-displaced"
     }
    ],
-   "content_hash": "4e63aa4cefd1680aa2f73d1f7139087ca1e81c718b0d9ff1627ef1b6d158bde9"
+   "content_hash": "4e63aa4cefd1680aa2f73d1f7139087ca1e81c718b0d9ff1627ef1b6d158bde9",
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "9th English SS Part - 1 2026-27.pdf#soc-9-09-s3-q028-textbook",
+      "pdf_page": 111,
+      "derived_from": "text_layer",
+      "y": 0.0
+     },
+     "text": "Self-reliant : An undivided family is mostly self-dependent. It encompasses the lives of its members completely. It fulfills the majority of their needs. All members share the household chores. Structure of authority : The oldest member of the undivided family has the authority to make decisions.",
+     "confidence": "verbatim"
+    }
+   ]
   },
   {
    "id": "soc-9-09-s3-q029",
@@ -2512,7 +2669,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -2521,6 +2678,14 @@
      "by": "class-9-social",
      "role": "extraction",
      "at": "2026-10-02T20:33:45+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "correction",
+     "at": "2026-10-08T23:14:00+05:30",
+     "ref": "review_decisions_class-9 v1"
     }
    ],
    "created_by": "class-9-social",
