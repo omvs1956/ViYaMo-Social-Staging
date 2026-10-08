@@ -1,7 +1,7 @@
 {
  "contract_version": "1.7",
  "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
- "procedure_file": "extraction_procedure_social_addendum_v1.3_social science Classes 6-10 on top of procedure v2.md",
+ "procedure_file": "extraction_procedure_social_addendum_v1.4_social science Classes 6-10 on top of procedure v2.md",
  "machine_name": "soc-9-14_questions",
  "version": 1,
  "changelog": "v1 extraction — batch-01 — class-9-social",
@@ -1630,7 +1630,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -1639,6 +1639,14 @@
      "by": "class-9-social",
      "role": "extraction",
      "at": "2026-10-02T22:08:03+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "correction",
+     "at": "2026-10-08T23:14:00+05:30",
+     "ref": "review_decisions_class-9 v1"
     }
    ],
    "created_by": "class-9-social",
@@ -1666,19 +1674,34 @@
    "answer_as_printed": "D) Static",
    "answer": {
     "kind": "option",
-    "option_id": null
+    "option_id": "D"
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
-    },
-    {
-     "issue": "key text not among options",
-     "why_not_corrected": "the printed key is '17. D) Static'. Letter D = option D 'Statike', but the key text names option A 'Static' (exact match). Letter and key text name different options; no answer is asserted (key-letter-text-disagreement vocab 'key text not among options'); the reviewer decides which governs (addendum §13.6).",
-     "suggested": "A (by text; printed letter D='Statike' disagrees) — review"
     }
    ],
-   "content_hash": "97140a8202ea2ad141f470533bc47080180eb559ef8f24a614b32d06b2a63aa0"
+   "content_hash": "97140a8202ea2ad141f470533bc47080180eb559ef8f24a614b32d06b2a63aa0",
+   "answer_provenance": {
+    "by": "textbook_excerpt",
+    "actor": "class-9-social",
+    "at": "2026-10-08T23:14:00+05:30",
+    "basis": "textbook_excerpt: 9th English SS Part - 1 2026-27.pdf, pdf page 150 (printed page 137): \"The word 'static' has been derived from the Greek word 'statike'.\". the derivation word is 'Statike' = option D; printed key text 'Static' overruled."
+   },
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "9th English SS Part - 1 2026-27.pdf#soc-9-14-s1-q017-textbook",
+      "pdf_page": 150,
+      "derived_from": "text_layer",
+      "y": 0.0
+     },
+     "text": "The word 'static' has been derived from the Greek word 'statike'. 'Statike' means 'stand still.'",
+     "confidence": "verbatim"
+    }
+   ]
   },
   {
    "id": "soc-9-14-s2-q018",
