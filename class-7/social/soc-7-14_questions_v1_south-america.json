@@ -1,10 +1,10 @@
 {
  "contract_version": "1.7",
  "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
- "procedure_file": "extraction_procedure_social_addendum_v1.3_social science Classes 6-10 on top of procedure v2.md",
+ "procedure_file": "extraction_procedure_social_addendum_v1.4_social science Classes 6-10 on top of procedure v2.md",
  "machine_name": "soc-7-14_questions",
- "version": 1,
- "changelog": "v1 extraction — batch-01 — class-7-social",
+ "version": 2,
+ "changelog": "v1 extraction — batch-01 — class-7-social | v2 r1 correction (2026-10-08T23:51:20+05:30) — q19->Llanos(B) from textbook Part-1; q14/q40/q44 excluded (answers not in textbook text)",
  "amendments_applied": [],
  "unit_state": "EXTRACTED",
  "review_ready": false,
@@ -1825,7 +1825,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -1834,6 +1834,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T03:46:51+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:51:20+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -1861,30 +1869,37 @@
    "answer_as_printed": "C) Llanosa",
    "answer": {
     "kind": "option",
-    "option_id": "C"
+    "option_id": "B"
    },
    "answer_provenance": {
-    "by": "printed",
+    "by": "textbook_excerpt",
     "actor": "class-7-social",
-    "at": "2026-10-08T03:46:51+05:30",
-    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+    "at": "2026-10-08T23:51:20+05:30",
+    "basis": "7th English SS Part-1 2026-27, printed p.201 (pdf p.215): \"these are known as Llanos in the Orinoco river basin and as Campos in the Brazilian high lands\". Grasslands of the Orinoco river plains = Llanos = option B."
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
     },
     {
-     "issue": "key text differs from option by a printed typo",
-     "why_not_corrected": "letter C kept (addendum §4.1); key text 'Llanosa' vs option C 'Pampas' differ by a source typo; spelling needs subject knowledge (v2 §1)",
-     "suggested": "C (letter kept)"
-    },
-    {
-     "issue": "key text does not address question",
-     "why_not_corrected": "stem: grasslands of the Orinoco river plains = Llanos (option B); printed key '19. C) Llanosa' is internally inconsistent — letter C = option C 'Pampas' (asserted by letter-governs) but the key text 'Llanosa' is Llanos (option B). Keyed option C is wrong. Correctness is the review layer.",
-     "suggested": "B) Llanos — review (printed letter C disagrees with its own text)"
+     "issue": "printed key contradicts fact — textbook gives option B Llanos (Part-1 p.201); printed key C (Pampas) wrong; reviewer"
     }
    ],
-   "content_hash": "612c6831c0dc698c945fe870a9b234a22e41f240c368b6ace8c16dc7163baaea"
+   "content_hash": "612c6831c0dc698c945fe870a9b234a22e41f240c368b6ace8c16dc7163baaea",
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "7th English SS Part-1 2026-27.pdf",
+      "pdf_page": 215,
+      "derived_from": "text_layer",
+      "y": 560.2
+     },
+     "text": "these are known as Llanos in the Orinoco river basin and as Campos in the Brazilian high lands",
+     "confidence": "verbatim"
+    }
+   ]
   },
   {
    "id": "soc-7-14-s1-q020",
