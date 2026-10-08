@@ -1,7 +1,7 @@
 {
  "contract_version": "1.7",
  "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
- "procedure_file": "extraction_procedure_social_addendum_v1.3_social science Classes 6-10 on top of procedure v2.md",
+ "procedure_file": "extraction_procedure_social_addendum_v1.4_social science Classes 6-10 on top of procedure v2.md",
  "machine_name": "soc-9-27_questions",
  "version": 1,
  "changelog": "v1 extraction — batch-01 — class-9-social",
@@ -863,7 +863,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -872,6 +872,14 @@
      "by": "class-9-social",
      "role": "extraction",
      "at": "2026-10-03T02:38:59+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "correction",
+     "at": "2026-10-08T23:14:00+05:30",
+     "ref": "review_decisions_class-9 v1"
     }
    ],
    "created_by": "class-9-social",
@@ -880,7 +888,7 @@
    "section_signal": "I",
    "answer": {
     "kind": "option",
-    "option_id": null
+    "option_id": "B"
    },
    "options": [
     {
@@ -903,14 +911,29 @@
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
-    },
-    {
-     "issue": "no answer printed",
-     "why_not_corrected": "the printed answer key has no entry for this question number — the answer-side numbering skips it (see the shifted band in extraction.method_notes)",
-     "suggested": "key absent — review"
     }
    ],
-   "content_hash": "a5bae6956c2f4023cc64bb1bbac66b0bf1cca4daa8939cde813f1ef06bd4e4a6"
+   "content_hash": "a5bae6956c2f4023cc64bb1bbac66b0bf1cca4daa8939cde813f1ef06bd4e4a6",
+   "answer_provenance": {
+    "by": "textbook_excerpt",
+    "actor": "class-9-social",
+    "at": "2026-10-08T23:14:00+05:30",
+    "basis": "textbook_excerpt: 9th English SS Part - 2 2026-27.pdf, pdf page 102 (printed page 100): \"The gold deposits in these mines are almost exhausted due to continuous mining for many years.\". the LBA printed no key for this question (the match-grid key labelled '9' belongs to q10); minerals and energy resources are precious and non-renewable (exhaustible), so they must be conserved = option B."
+   },
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "9th English SS Part - 2 2026-27.pdf#soc-9-27-s1-q009-textbook",
+      "pdf_page": 102,
+      "derived_from": "text_layer",
+      "y": 0.0
+     },
+     "text": "The gold deposits in these mines are almost exhausted due to continuous mining for many years. Now they are not working.",
+     "confidence": "verbatim"
+    }
+   ]
   },
   {
    "id": "soc-9-27-s1-q010",
@@ -955,7 +978,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -964,6 +987,14 @@
      "by": "class-9-social",
      "role": "extraction",
      "at": "2026-10-03T02:38:59+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-9-social",
+     "role": "correction",
+     "at": "2026-10-08T23:14:00+05:30",
+     "ref": "review_decisions_class-9 v1"
     }
    ],
    "created_by": "class-9-social",
@@ -997,9 +1028,8 @@
      "issue": "marks ambiguous in source — no marks printed"
     },
     {
-     "issue": "shifted numbering — see key 9",
-     "why_not_corrected": "answer-side numbering is displaced in this band; extraction does not shift-align (procedure §4.2) — answer left empty, coordinator verifies the pair by content in review",
-     "suggested": "key 9 (this unit's answer side prints Q10's answer under printed label 9) — answer as printed: '1-E, 2-D, 3-A, 4-B' (matching)"
+     "field": "answer",
+     "issue": "key text not among options — printed match-grid key '1-E, 2-D, 3-A, 4-B' (coordinator-paired to displaced label 9); the key letters E/D/A/B do not map to Column B labels a-d, so no single option resolves; reviewer must map"
     }
    ],
    "content_hash": "b2982d59fb54e22e329fc1f4882cb31f864a2b8fb91d3a943d6576bc80c0f458"
