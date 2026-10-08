@@ -1,7 +1,7 @@
 {
  "contract_version": "1.7",
  "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
- "procedure_file": "extraction_procedure_social_addendum_v1.3_social science Classes 6-10 on top of procedure v2.md",
+ "procedure_file": "extraction_procedure_social_addendum_v1.4_social science Classes 6-10 on top of procedure v2.md",
  "machine_name": "soc-8-22_questions",
  "version": 1,
  "changelog": "v1 extraction — batch-01 — class-8-social",
@@ -97,7 +97,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -106,6 +106,14 @@
      "by": "class-8-social",
      "role": "extraction",
      "at": "2026-10-08T02:35:51+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "correction",
+     "at": "2026-10-08T22:30:00+05:30",
+     "ref": "review_decisions_class-8 v1"
     }
    ],
    "created_by": "class-8-social",
@@ -132,19 +140,39 @@
    "answer_as_printed": "A) 2005",
    "answer": {
     "kind": "option",
-    "option_id": null
+    "option_id": "C"
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
     },
     {
-     "issue": "key text not among options",
-     "why_not_corrected": "the printed key is '1. A) 2005'. Letter A = option A '2006', but the key text names option C '2005' (exact match). Letter and key text name different options; no answer is asserted (key-letter-text-disagreement vocab 'key text not among options'); the reviewer decides which governs (addendum §13.6).",
-     "suggested": "C (by text; printed letter A='2006' disagrees) — review"
+     "field": "answer",
+     "issue": "printed key contradicts fact — correct option is C (2005); reviewer",
+     "suggested": "C) 2005"
     }
    ],
-   "content_hash": "f98a0d73c9a42254f528dd0157e3e5797fedaeab209ff80442d81827a8a37778"
+   "content_hash": "f98a0d73c9a42254f528dd0157e3e5797fedaeab209ff80442d81827a8a37778",
+   "answer_provenance": {
+    "by": "textbook_excerpt",
+    "actor": "class-8-social",
+    "at": "2026-10-08T22:30:00+05:30",
+    "basis": "textbook_excerpt: 8th English SS Part 2 2026-27.pdf, pdf page 45 (printed page 43): \"Know about Right to Information Act - 2005.\". printed key letter A (2006) is wrong; RTI Act = 2005 -> option C."
+   },
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "8th English SS Part 2 2026-27.pdf#soc-8-22-s1-q001-textbook",
+      "pdf_page": 45,
+      "derived_from": "text_layer",
+      "y": 0.0
+     },
+     "text": "Know about Right to Information Act - 2005.",
+     "confidence": "verbatim"
+    }
+   ]
   },
   {
    "id": "soc-8-22-s1-q002",
@@ -812,7 +840,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -821,6 +849,14 @@
      "by": "class-8-social",
      "role": "extraction",
      "at": "2026-10-08T02:35:51+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "correction",
+     "at": "2026-10-08T22:30:00+05:30",
+     "ref": "review_decisions_class-8 v1"
     }
    ],
    "created_by": "class-8-social",
@@ -828,14 +864,14 @@
    "text_as_printed": "Who defined democracy as a way of life? (E)",
    "answer": {
     "kind": "text",
-    "value": "Elections that were held every five years are called general elections."
+    "value": "Hermen Finer"
    },
    "answer_as_printed": "Elections that were held every five years are called general elections.",
    "answer_provenance": {
-    "by": "printed",
+    "by": "textbook_excerpt",
     "actor": "class-8-social",
-    "at": "2026-10-08T02:35:51+05:30",
-    "basis": "printed VSA key, verbatim (v2 §4)"
+    "at": "2026-10-08T22:30:00+05:30",
+    "basis": "textbook_excerpt: 8th English SS Part 2 2026-27.pdf, pdf page 46 (printed page 44): \"2) Hermen Finer : Democracy is not only a philosophical form of government but also a way of life.\". printed key was about general elections (off-stem, kept); textbook attributes 'democracy as a way of life' to Hermen Finer."
    },
    "source_flags": [
     {
@@ -848,7 +884,21 @@
      "suggested": "review — key is about general elections, question asks who defined democracy as a way of life"
     }
    ],
-   "content_hash": "7491bdc241c02ae4ee976c9a9b182d164b7d161a0c8f1aed2422e560fcdae4eb"
+   "content_hash": "7491bdc241c02ae4ee976c9a9b182d164b7d161a0c8f1aed2422e560fcdae4eb",
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "8th English SS Part 2 2026-27.pdf#soc-8-22-s2-q009-textbook",
+      "pdf_page": 46,
+      "derived_from": "text_layer",
+      "y": 0.0
+     },
+     "text": "2) Hermen Finer : Democracy is not only a philosophical form of government but also a way of life.",
+     "confidence": "verbatim"
+    }
+   ]
   },
   {
    "id": "soc-8-22-s3-q010",
@@ -1285,7 +1335,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -1294,6 +1344,14 @@
      "by": "class-8-social",
      "role": "extraction",
      "at": "2026-10-08T02:35:51+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "correction",
+     "at": "2026-10-08T22:30:00+05:30",
+     "ref": "review_decisions_class-8 v1"
     }
    ],
    "created_by": "class-8-social",
@@ -1301,19 +1359,27 @@
    "text_as_printed": "What are the factors that led to the success of democracy? (E)",
    "answer": {
     "kind": "text",
-    "value": "Indirect Democracy:\nPeople elect their representatives through periodic elections.\nElected members formulate laws and manage administration.\nIndia follows an indirect democratic system."
+    "value": "Factors essential for the success of democracy:\n1. People should have an urge to protect democracy.\n2. People must always be vigilant.\n3. Tolerance is one of the basic qualities needed for the success of democracy. They must work with the spirit of give and take.\n4. Success of democracy depends upon good leadership. The leaders must have the ability to understand the problems of the common man. They must possess the qualities of service, patriotism and spirit of sacrifice.\n5. An efficient opposition party keeps the government alert. It checks the ruling party from becoming dictatorial.\n6. A well informed and educated electorate contributes to the success of democracy.\n7. Success of democracy depends upon the role of the people. People must compulsorily vote during the election. People must be free from corrupt practices. The people must elect efficient and non-corrupt representatives who can solve their problems.\n8. Free, fearless and unbiased press contributes to the success of democracy.\n9. Well organized, efficient and responsible local bodies strengthen democracy."
    },
    "answer_as_printed": "Indirect Democracy:\nPeople elect their representatives through periodic elections.\nElected members formulate laws and manage administration.\nIndia follows an indirect democratic system.",
    "solution_steps": [
-    "People elect their representatives through periodic elections.",
-    "Elected members formulate laws and manage administration.",
-    "India follows an indirect democratic system."
+    "Factors essential for the success of democracy:",
+    "1. People should have an urge to protect democracy.",
+    "2. People must always be vigilant.",
+    "3. Tolerance is one of the basic qualities needed for the success of democracy. They must work with the spirit of give and take.",
+    "4. Success of democracy depends upon good leadership. The leaders must have the ability to understand the problems of the common man. They must possess the qualities of service, patriotism and spirit of sacrifice.",
+    "5. An efficient opposition party keeps the government alert. It checks the ruling party from becoming dictatorial.",
+    "6. A well informed and educated electorate contributes to the success of democracy.",
+    "7. Success of democracy depends upon the role of the people. People must compulsorily vote during the election. People must be free from corrupt practices. The people must elect efficient and non-corrupt representatives who can solve their problems.",
+    "8. Free, fearless and unbiased press contributes to the success of democracy.",
+    "9. Well organized, efficient and responsible local bodies strengthen democracy."
    ],
    "answer_provenance": {
-    "by": "printed",
+    "by": "textbook_excerpt",
     "actor": "class-8-social",
-    "at": "2026-10-08T02:35:51+05:30",
-    "basis": "printed sub-headed bullet key; headings in answer.value, solution_steps are the answer points only (addendum §5.2)"
+    "at": "2026-10-08T22:30:00+05:30",
+    "basis": "textbook_excerpt: 8th English SS Part 2 2026-27.pdf, pdf page 47 (printed page 45): \"Factors essential for the success of democracy: urge to protect democracy; vigilance; tolerance and the spirit of give and take; good leadership (service, patriotism, sacrifice); efficient opposition; an informed electorate; the role of the people; a free press; responsible local bodies.\". printed key described indirect democracy (off-stem, kept); textbook 'Factors essential for the success of democracy' list supplied (textbook_derived).",
+    "textbook_derived": true
    },
    "source_flags": [
     {
@@ -1326,7 +1392,21 @@
      "suggested": "review — key is about indirect democracy, question asks for success factors"
     }
    ],
-   "content_hash": "c925bd08aa15f1185922826a48e4535b46ac2d004e05ad5c3eff0ff59387fdbd"
+   "content_hash": "c925bd08aa15f1185922826a48e4535b46ac2d004e05ad5c3eff0ff59387fdbd",
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "8th English SS Part 2 2026-27.pdf#soc-8-22-s4-q015-textbook",
+      "pdf_page": 47,
+      "derived_from": "text_layer",
+      "y": 0.0
+     },
+     "text": "Factors essential for the success of democracy: urge to protect democracy; vigilance; tolerance and the spirit of give and take; good leadership (service, patriotism, sacrifice); efficient opposition; an informed electorate; the role of the people; a free press; responsible local bodies.",
+     "confidence": "partial"
+    }
+   ]
   },
   {
    "id": "soc-8-22-s4-q016",
