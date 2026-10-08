@@ -1,7 +1,7 @@
 {
  "contract_version": "1.7",
  "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
- "procedure_file": "extraction_procedure_social_addendum_v1.3_social science Classes 6-10 on top of procedure v2.md",
+ "procedure_file": "extraction_procedure_social_addendum_v1.4_social science Classes 6-10 on top of procedure v2.md",
  "machine_name": "soc-8-07_questions",
  "version": 1,
  "changelog": "v1 extraction — batch-01 — class-8-social",
@@ -97,7 +97,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -106,6 +106,14 @@
      "by": "class-8-social",
      "role": "extraction",
      "at": "2026-10-07T23:36:45+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "correction",
+     "at": "2026-10-08T22:30:00+05:30",
+     "ref": "review_decisions_class-8 v1"
     }
    ],
    "created_by": "class-8-social",
@@ -132,19 +140,39 @@
    "answer_as_printed": "A) Aristotle",
    "answer": {
     "kind": "option",
-    "option_id": null
+    "option_id": "B"
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
     },
     {
-     "issue": "key text not among options",
-     "why_not_corrected": "the printed key is '1. A) Aristotle'. Letter A = option A 'Herodotus', but the key text names option B 'Aristotle' (exact match). Letter and key text name different options; no answer is asserted (key-letter-text-disagreement vocab 'key text not among options'); the reviewer decides which governs (addendum §13.6).",
-     "suggested": "B (by text; printed letter A='Herodotus' disagrees) — review"
+     "field": "answer",
+     "issue": "printed key contradicts fact — correct option is B (Aristotle); reviewer",
+     "suggested": "B) Aristotle"
     }
    ],
-   "content_hash": "06a5486f3ce091f21247313c334074b594fa7320730e3da50dd683fc09d957df"
+   "content_hash": "06a5486f3ce091f21247313c334074b594fa7320730e3da50dd683fc09d957df",
+   "answer_provenance": {
+    "by": "textbook_excerpt",
+    "actor": "class-8-social",
+    "at": "2026-10-08T22:30:00+05:30",
+    "basis": "textbook_excerpt: 8th English SS Part 1 2026-27.pdf, pdf page 66 (printed page 52): \"Aristotle, the ancient Greek thinker is recognized as the 'Father of Political Science' for his valuable contributions to its growth and development. He wrote the first book on political science called \"The Politics\".\". printed key letter A names Herodotus; option B (Aristotle) is the factually correct answer."
+   },
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "8th English SS Part 1 2026-27.pdf#soc-8-07-s1-q001-textbook",
+      "pdf_page": 66,
+      "derived_from": "text_layer",
+      "y": 0.0
+     },
+     "text": "Aristotle, the ancient Greek thinker is recognized as the 'Father of Political Science' for his valuable contributions to its growth and development. He wrote the first book on political science called \"The Politics\".",
+     "confidence": "verbatim"
+    }
+   ]
   },
   {
    "id": "soc-8-07-s1-q002",
@@ -1000,7 +1028,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -1009,6 +1037,14 @@
      "by": "class-8-social",
      "role": "extraction",
      "at": "2026-10-07T23:36:45+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "correction",
+     "at": "2026-10-08T22:30:00+05:30",
+     "ref": "review_decisions_class-8 v1"
     }
    ],
    "created_by": "class-8-social",
@@ -1016,19 +1052,29 @@
    "text_as_printed": "Name the Greek thinkers related to Political Science. (A)",
    "answer": {
     "kind": "text",
-    "value": ""
+    "value": "Greek thinkers related to Political Science:\nSocrates, Plato, Aristotle"
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
     },
     {
-     "issue": "shifted numbering — see key 14",
-     "why_not_corrected": "answer-side numbering is displaced in this band; extraction does not shift-align (procedure §4.2) — answer left empty, coordinator verifies the pair by content in review",
-     "suggested": "key 14 (this unit's answer side prints Q12's answer under printed label 14)"
+     "field": "answer",
+     "issue": "displaced key — paired by content to printed key label 14; coordinator-verified (control rev 7)"
     }
    ],
-   "content_hash": "de6f75790502531813283c71fe3b008703658b26ddf534867467407080e722b3"
+   "content_hash": "de6f75790502531813283c71fe3b008703658b26ddf534867467407080e722b3",
+   "answer_as_printed": "Greek thinkers related to Political Science:\nSocrates, Plato, Aristotle",
+   "solution_steps": [
+    "Greek thinkers related to Political Science:",
+    "Socrates, Plato, Aristotle"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T22:30:00+05:30",
+    "basis": "displaced key — printed answer-side key label 14, paired by content; coordinator-verified (control rev 7); see rulings/verified_shifts_class-8-social.json. LBA printed its key under a displaced label."
+   }
   },
   {
    "id": "soc-8-07-s4-q013",
@@ -1073,7 +1119,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -1082,6 +1128,14 @@
      "by": "class-8-social",
      "role": "extraction",
      "at": "2026-10-07T23:36:45+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "correction",
+     "at": "2026-10-08T22:30:00+05:30",
+     "ref": "review_decisions_class-8 v1"
     }
    ],
    "created_by": "class-8-social",
@@ -1089,19 +1143,34 @@
    "text_as_printed": "Name the subjects studied in political science. (E)",
    "answer": {
     "kind": "text",
-    "value": ""
+    "value": "Scope of Political Science:\n• It studies political life of human being\n• It examines the structure of the state.\n• It explores the relationship between the state and government.\n• It analyzes the origin and characteristics of the state.\n• It studies political institutions and the administration of the state.\n• It covers citizens' rights and responsibilities."
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
     },
     {
-     "issue": "shifted numbering — see key 12",
-     "why_not_corrected": "answer-side numbering is displaced in this band; extraction does not shift-align (procedure §4.2) — answer left empty, coordinator verifies the pair by content in review",
-     "suggested": "key 12 (this unit's answer side prints Q13's answer under printed label 12)"
+     "field": "answer",
+     "issue": "displaced key — paired by content to printed key label 12; coordinator-verified (control rev 7)"
     }
    ],
-   "content_hash": "2cf3061f285d3b406ae0885be47791ffb16359db060d04873be9a5627f68361c"
+   "content_hash": "2cf3061f285d3b406ae0885be47791ffb16359db060d04873be9a5627f68361c",
+   "answer_as_printed": "Scope of Political Science:\n• It studies political life of human being\n• It examines the structure of the state.\n• It explores the relationship between the state and government.\n• It analyzes the origin and characteristics of the state.\n• It studies political institutions and the administration of the state.\n• It covers citizens' rights and responsibilities.",
+   "solution_steps": [
+    "Scope of Political Science:",
+    "• It studies political life of human being",
+    "• It examines the structure of the state.",
+    "• It explores the relationship between the state and government.",
+    "• It analyzes the origin and characteristics of the state.",
+    "• It studies political institutions and the administration of the state.",
+    "• It covers citizens' rights and responsibilities."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T22:30:00+05:30",
+    "basis": "displaced key — printed answer-side key label 12, paired by content; coordinator-verified (control rev 7); see rulings/verified_shifts_class-8-social.json. LBA printed its key under a displaced label."
+   }
   },
   {
    "id": "soc-8-07-s4-q014",
@@ -1146,7 +1215,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -1155,6 +1224,14 @@
      "by": "class-8-social",
      "role": "extraction",
      "at": "2026-10-07T23:36:45+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "correction",
+     "at": "2026-10-08T22:30:00+05:30",
+     "ref": "review_decisions_class-8 v1"
     }
    ],
    "created_by": "class-8-social",
@@ -1162,19 +1239,34 @@
    "text_as_printed": "Explain the contributions of Greeks to political science. (A)",
    "answer": {
     "kind": "text",
-    "value": ""
+    "value": "Greek Contributions to Political Science:\n• Greek philosophers like Socrates, Plato, and Aristotle were prominent political thinkers.\n• Plato's Republic explains the references to political science.\n• Aristotle authored the book Politics.\n• Politics discusses the state's origin, development, and functions.\n• Aristotle is honored as the \"Father of Political Science.\"\n• The Greeks gave political science the status of an independent science."
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
     },
     {
-     "issue": "shifted numbering — see key 13",
-     "why_not_corrected": "answer-side numbering is displaced in this band; extraction does not shift-align (procedure §4.2) — answer left empty, coordinator verifies the pair by content in review",
-     "suggested": "key 13 (this unit's answer side prints Q14's answer under printed label 13)"
+     "field": "answer",
+     "issue": "displaced key — paired by content to printed key label 13; coordinator-verified (control rev 7)"
     }
    ],
-   "content_hash": "89d9e62bc4ebf2177e57f938579fe40bc7c18a6605d4113de822847886217219"
+   "content_hash": "89d9e62bc4ebf2177e57f938579fe40bc7c18a6605d4113de822847886217219",
+   "answer_as_printed": "Greek Contributions to Political Science:\n• Greek philosophers like Socrates, Plato, and Aristotle were prominent political thinkers.\n• Plato's Republic explains the references to political science.\n• Aristotle authored the book Politics.\n• Politics discusses the state's origin, development, and functions.\n• Aristotle is honored as the \"Father of Political Science.\"\n• The Greeks gave political science the status of an independent science.",
+   "solution_steps": [
+    "Greek Contributions to Political Science:",
+    "• Greek philosophers like Socrates, Plato, and Aristotle were prominent political thinkers.",
+    "• Plato's Republic explains the references to political science.",
+    "• Aristotle authored the book Politics.",
+    "• Politics discusses the state's origin, development, and functions.",
+    "• Aristotle is honored as the \"Father of Political Science.\"",
+    "• The Greeks gave political science the status of an independent science."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-8-social",
+    "at": "2026-10-08T22:30:00+05:30",
+    "basis": "displaced key — printed answer-side key label 13, paired by content; coordinator-verified (control rev 7); see rulings/verified_shifts_class-8-social.json. LBA printed its key under a displaced label."
+   }
   },
   {
    "id": "soc-8-07-s5-q015",
