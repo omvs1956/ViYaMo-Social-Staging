@@ -1,10 +1,10 @@
 {
  "contract_version": "1.7",
  "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
- "procedure_file": "extraction_procedure_social_addendum_v1.3_social science Classes 6-10 on top of procedure v2.md",
+ "procedure_file": "extraction_procedure_social_addendum_v1.4_social science Classes 6-10 on top of procedure v2.md",
  "machine_name": "soc-7-11_questions",
- "version": 1,
- "changelog": "v1 extraction — batch-01 — class-7-social",
+ "version": 2,
+ "changelog": "v1 extraction — batch-01 — class-7-social | v2 r1 correction (2026-10-08T23:48:02+05:30) — q5->Governor(C) from textbook Part-1; q38 excluded (CM list not in textbook)",
  "amendments_applied": [],
  "unit_state": "EXTRACTED",
  "review_ready": false,
@@ -496,7 +496,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -505,6 +505,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T03:31:32+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:48:02+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -532,25 +540,37 @@
    "answer_as_printed": "B. Chief Minister",
    "answer": {
     "kind": "option",
-    "option_id": "B"
+    "option_id": "C"
    },
    "answer_provenance": {
-    "by": "printed",
+    "by": "textbook_excerpt",
     "actor": "class-7-social",
-    "at": "2026-10-08T03:31:32+05:30",
-    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+    "at": "2026-10-08T23:48:02+05:30",
+    "basis": "7th English SS Part-1 2026-27, printed p.158 (pdf p.172): \"The Governor appoints the Chief Minister and, on his advice, appoints the rest of the Ministers\". The one who appoints the Legislative Assembly majority leader as CM = the Governor = option C."
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
     },
     {
-     "issue": "key text does not address question",
-     "why_not_corrected": "stem: who appoints the leader of the majority party in the Legislative Assembly AS the Chief Minister; printed key 'B. Chief Minister' is self-contradictory — the appointer is the Governor (option C), as q26's own key states. Option B asserted verbatim (letter+text agree); correctness is the review layer (review-method v1.3).",
-     "suggested": "C) Governor (per q26); printed key B is wrong — review"
+     "issue": "printed key contradicts fact — textbook gives option C Governor (Part-1 p.158); printed key B (Chief Minister) wrong; reviewer"
     }
    ],
-   "content_hash": "d5a6687721533104914ec57dd3eff1d0e380119c71e5e75b788a2ff587013573"
+   "content_hash": "d5a6687721533104914ec57dd3eff1d0e380119c71e5e75b788a2ff587013573",
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "7th English SS Part-1 2026-27.pdf",
+      "pdf_page": 172,
+      "derived_from": "text_layer",
+      "y": 86.3
+     },
+     "text": "The Governor appoints the Chief Minister and, on his advice, appoints the rest of the Ministers",
+     "confidence": "verbatim"
+    }
+   ]
   },
   {
    "id": "soc-7-11-s2-q006",
