@@ -1,10 +1,10 @@
 {
  "contract_version": "1.7",
  "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
- "procedure_file": "extraction_procedure_social_addendum_v1.3_social science Classes 6-10 on top of procedure v2.md",
+ "procedure_file": "extraction_procedure_social_addendum_v1.4_social science Classes 6-10 on top of procedure v2.md",
  "machine_name": "soc-7-25_questions",
- "version": 1,
- "changelog": "v1 extraction — batch-01 — class-7-social",
+ "version": 2,
+ "changelog": "v1 extraction — batch-01 — class-7-social | v2 r1 correction (2026-10-08T23:59:28+05:30) — q14 excluded (textbook says 'Sudan'=193rd; real is South Sudan)",
  "amendments_applied": [],
  "unit_state": "EXTRACTED",
  "review_ready": false,
@@ -1281,7 +1281,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -1290,6 +1290,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T05:28:10+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:59:28+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -1302,22 +1310,34 @@
    },
    "answer_as_printed": "Sudan",
    "answer_provenance": {
-    "by": "printed",
+    "by": "textbook_excerpt",
     "actor": "class-7-social",
-    "at": "2026-10-08T05:28:10+05:30",
-    "basis": "printed fill-in-the-blank key word(s), verbatim (v2 §4)"
+    "at": "2026-10-08T23:59:28+05:30",
+    "basis": "7th English SS Part-2 2026-27, printed p.137 (pdf p.139): \"Sudan is the UN's 193rd member nation.\" Textbook states Sudan; the actual 193rd UN member is South Sudan (2011). Printed key 'Sudan' asserted as printed per the textbook; retained for review."
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
     },
     {
-     "issue": "key text does not address question",
-     "why_not_corrected": "stem: the 193rd member country of the United Nations; printed key 'Sudan' is wrong — the 193rd (most recent) UN member is South Sudan, admitted 2011. Kept verbatim; correctness is the review layer.",
-     "suggested": "review — South Sudan, not Sudan"
+     "issue": "printed key contradicts fact — textbook and printed key both state 'Sudan' as the UN's 193rd member (Part-2 p.137), but the actual 193rd member is South Sudan (admitted 2011); reviewer"
     }
    ],
-   "content_hash": "c375cb41ec5c0d6a0ff1e1628f61e7592d2e6aba98d67ba59c4952e01d531cd5"
+   "content_hash": "c375cb41ec5c0d6a0ff1e1628f61e7592d2e6aba98d67ba59c4952e01d531cd5",
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "7th English SS Part-2 2026-27.pdf",
+      "pdf_page": 139,
+      "derived_from": "text_layer",
+      "y": 482.5
+     },
+     "text": "Sudan is the UN's 193rd member nation",
+     "confidence": "verbatim"
+    }
+   ]
   },
   {
    "id": "soc-7-25-s3-q015",
