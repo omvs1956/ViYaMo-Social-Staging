@@ -1,10 +1,10 @@
 {
  "contract_version": "1.7",
  "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
- "procedure_file": "extraction_procedure_social_addendum_v1.3_social science Classes 6-10 on top of procedure v2.md",
+ "procedure_file": "extraction_procedure_social_addendum_v1.4_social science Classes 6-10 on top of procedure v2.md",
  "machine_name": "soc-7-27_questions",
- "version": 1,
- "changelog": "v1 extraction — batch-01 — class-7-social",
+ "version": 2,
+ "changelog": "v1 extraction — batch-01 — class-7-social | v2 r1 correction (2026-10-08T23:59:28+05:30) — q8 excluded (defective stem); q27->Dakshina Gangotri/Maitri/Bharati from textbook Part-2",
  "amendments_applied": [],
  "unit_state": "EXTRACTED",
  "review_ready": false,
@@ -2528,7 +2528,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -2537,6 +2537,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T05:34:37+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:59:28+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -2545,26 +2553,36 @@
    "section_signal": "C",
    "answer": {
     "kind": "text",
-    "value": "Maitri and Priyadarshini Research Centers were set up. India is planning to establish Bharathi Research Centre."
+    "value": "India's research stations in Antarctica are Dakshina Gangotri (the first, built 1983), Maitri (the second, set up 1988-89 on the Schirmacher Oasis), and Bharati (for oceanography research)."
    },
    "answer_as_printed": "Maitri and Priyadarshini Research Centers were set up. India is planning to establish Bharathi Research Centre.",
    "answer_provenance": {
-    "by": "printed",
+    "by": "textbook_excerpt",
     "actor": "class-7-social",
-    "at": "2026-10-08T05:34:37+05:30",
-    "basis": "printed one-line answer, verbatim (v2 §4)"
+    "at": "2026-10-08T23:59:28+05:30",
+    "basis": "7th English SS Part-2 2026-27, printed p.172 (pdf p.174): \"The first research centre established by the Indian scientists was called 'Dakshina Gangotri' (1983). 'Maithri' is the second research station (1988-89, Schirmacher Oasis). India has proposed to build another research center 'Bharathi'\". India's research stations in Antarctica = Dakshina Gangotri, Maitri and Bharati (textbook 'New terms': Dakshina Gangotri, Maitri, Bharathi).",
+    "textbook_derived": true
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
-    },
-    {
-     "issue": "key text does not address question",
-     "why_not_corrected": "stem: list India's research stations in Antarctica; printed key names 'Maitri and Priyadarshini' and 'Bharathi' — there is no Indian station 'Priyadarshini', and the first station Dakshin Gangotri (cf. q23) is omitted. Kept verbatim; correctness is the review layer.",
-     "suggested": "review — Dakshin Gangotri, Maitri, Bharati (no 'Priyadarshini')"
     }
    ],
-   "content_hash": "b9f2f2a8bf6d281ccd1430e15a5358ad2cb7d6f8353ad0d50a3fd7bb0e0aa48b"
+   "content_hash": "b9f2f2a8bf6d281ccd1430e15a5358ad2cb7d6f8353ad0d50a3fd7bb0e0aa48b",
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "7th English SS Part-2 2026-27.pdf",
+      "pdf_page": 174,
+      "derived_from": "text_layer",
+      "y": 364.3
+     },
+     "text": "The first research centre established by the Indian scientists was called 'Dakshina Gangotri' (1983). 'Maithri' is the second research station (1988-89, Schirmacher Oasis). India has proposed to build another research center 'Bharathi'",
+     "confidence": "partial"
+    }
+   ]
   },
   {
    "id": "soc-7-27-s3-q028",
