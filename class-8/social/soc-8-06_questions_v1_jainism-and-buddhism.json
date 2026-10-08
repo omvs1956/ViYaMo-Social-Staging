@@ -1,7 +1,7 @@
 {
  "contract_version": "1.7",
  "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
- "procedure_file": "extraction_procedure_social_addendum_v1.3_social science Classes 6-10 on top of procedure v2.md",
+ "procedure_file": "extraction_procedure_social_addendum_v1.4_social science Classes 6-10 on top of procedure v2.md",
  "machine_name": "soc-8-06_questions",
  "version": 1,
  "changelog": "v1 extraction — batch-01 — class-8-social",
@@ -14,8 +14,12 @@
   "extracted": 14,
   "paired": 14,
   "flagged": 1,
-  "gaps": [],
-  "duplicated_numbers": [],
+  "gaps": [
+   "005"
+  ],
+  "duplicated_numbers": [
+   6
+  ],
   "quota_table": "difficulty_only",
   "second_method": {
    "method": "printed difficulty distribution table",
@@ -97,7 +101,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 3,
    "status": "draft",
    "status_history": [
     {
@@ -106,6 +110,22 @@
      "by": "class-8-social",
      "role": "extraction",
      "at": "2026-10-07T23:31:04+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "correction",
+     "at": "2026-10-08T22:30:00+05:30",
+     "ref": "review_decisions_class-8 v1"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "correction",
+     "at": "2026-10-08T22:30:00+05:30",
+     "ref": "review_decisions_class-8 v1"
     }
    ],
    "created_by": "class-8-social",
@@ -132,20 +152,39 @@
    "answer_as_printed": "D) Eightfold Path",
    "answer": {
     "kind": "option",
-    "option_id": "D"
+    "option_id": "B"
    },
    "answer_provenance": {
-    "by": "printed",
+    "by": "textbook_excerpt",
     "actor": "class-8-social",
-    "at": "2026-10-07T23:31:04+05:30",
-    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+    "at": "2026-10-08T22:30:00+05:30",
+    "basis": "textbook_excerpt: 8th English SS Part 1 2026-27.pdf, pdf page 63 (printed page 49): \"Buddha gave his messages in Prakrit, the language of the common man.\". printed key D (Eightfold Path) is factually wrong for this stem; the factor that popularised Buddha's principles was the use of Prakrit -> option B."
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "field": "answer",
+     "issue": "printed key contradicts fact — correct option is B (Prakrit language); reviewer",
+     "suggested": "B) Prakrit language"
     }
    ],
-   "content_hash": "b9eed73ff3ac7e037f6d056cdf34d660649544a1d7f656c3e039f16111d40dc7"
+   "content_hash": "b9eed73ff3ac7e037f6d056cdf34d660649544a1d7f656c3e039f16111d40dc7",
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "8th English SS Part 1 2026-27.pdf#soc-8-06-s1-q001-textbook",
+      "pdf_page": 63,
+      "derived_from": "text_layer",
+      "y": 0.0
+     },
+     "text": "Buddha gave his messages in Prakrit, the language of the common man.",
+     "confidence": "verbatim"
+    }
+   ]
   },
   {
    "id": "soc-8-06-s1-q002",
@@ -381,7 +420,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -390,6 +429,14 @@
      "by": "class-8-social",
      "role": "extraction",
      "at": "2026-10-07T23:31:04+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "correction",
+     "at": "2026-10-08T22:30:00+05:30",
+     "ref": "review_decisions_class-8 v1"
     }
    ],
    "created_by": "class-8-social",
@@ -427,12 +474,15 @@
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "numbering label misprint — stray label '5.' printed on q4's C/D option row (options folded into q4; no question 5)"
     }
    ],
    "content_hash": "1c42d0ffa364dcb0a1a322ec34a2ef99d37e2f4886b3d0af3559270159038b57"
   },
   {
-   "id": "soc-8-06-s1-q005",
+   "id": "soc-8-06-s1-q006",
    "class": "8",
    "subject": "social",
    "language": "en",
@@ -455,11 +505,11 @@
    "out_of_syllabus": false,
    "text": "The Macedonian king who invaded India",
    "source": "lba",
-   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-06-s1-q005",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-06-s1-q006",
    "locators": [
     {
      "role": "question",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-06-s1-q005",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-06-s1-q006",
      "pdf_page": 22,
      "printed_page": 11,
      "y": 546.503197,
@@ -467,14 +517,14 @@
     },
     {
      "role": "answer",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-06-s1-q005-key",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-06-s1-q006-key",
      "pdf_page": 88,
      "printed_page": 77,
      "y": 193.513869,
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -483,6 +533,14 @@
      "by": "class-8-social",
      "role": "extraction",
      "at": "2026-10-07T23:31:04+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "correction",
+     "at": "2026-10-08T22:30:00+05:30",
+     "ref": "review_decisions_class-8 v1"
     }
    ],
    "created_by": "class-8-social",
@@ -520,12 +578,15 @@
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "numbering label misprint — question printed 6, key 5 (section-I fifth MCQ; a stray '7.' is printed on its C/D option row)"
     }
    ],
    "content_hash": "04c4340f4ff208028a04c937b8944b76b755814ee9984ceba3672423bc692e86"
   },
   {
-   "id": "soc-8-06-s2-q006",
+   "id": "soc-8-06-s2-q006b",
    "class": "8",
    "subject": "social",
    "language": "en",
@@ -548,11 +609,11 @@
    "out_of_syllabus": false,
    "text": "How did Mahavira attain Kevala Jnana?",
    "source": "lba",
-   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-06-s2-q006",
+   "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-06-s2-q006b",
    "locators": [
     {
      "role": "question",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-06-s2-q006",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-06-s2-q006b",
      "pdf_page": 22,
      "printed_page": 11,
      "y": 151.943196,
@@ -560,14 +621,14 @@
     },
     {
      "role": "answer",
-     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-06-s2-q006-key",
+     "source_ref": "8thSS-EM-LBARevised_1787048180.pdf#soc-8-06-s2-q006b-key",
      "pdf_page": 88,
      "printed_page": 77,
      "y": 228.313864,
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -576,6 +637,14 @@
      "by": "class-8-social",
      "role": "extraction",
      "at": "2026-10-07T23:31:04+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "correction",
+     "at": "2026-10-08T22:30:00+05:30",
+     "ref": "review_decisions_class-8 v1"
     }
    ],
    "created_by": "class-8-social",
@@ -595,6 +664,10 @@
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "field": "text",
+     "issue": "duplicate question number — printed label '6' appears twice in chapter 6 (section-I Macedonian-king MCQ and section-II first question); this is the second occurrence -> id q006b (addendum v1.4 §14.1)"
     }
    ],
    "content_hash": "62e133df1641ff95f54e9e6f4d4f9de48a4baa0c6a1e6acd89c69c1dccfc8977"
