@@ -1,10 +1,10 @@
 {
  "contract_version": "1.7",
  "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
- "procedure_file": "extraction_procedure_social_addendum_v1.2_social science Classes 6-10 on top of procedure v2.md",
+ "procedure_file": "extraction_procedure_social_addendum_v1.4_social science Classes 6-10 on top of procedure v2.md",
  "machine_name": "soc-10-18_questions",
  "version": 1,
- "changelog": "v1 extraction — batch-02 — class-10-social",
+ "changelog": "v1 extraction — batch-02 — class-10-social; r2 (c10-soc-batch-05r2) — re-stamp addendum v1.4; review_decisions_class-10 v1 — class-10-social",
  "amendments_applied": [],
  "unit_state": "EXTRACTED",
  "review_ready": false,
@@ -1548,7 +1548,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -1557,6 +1557,14 @@
      "by": "class-10-social",
      "role": "extraction",
      "at": "2026-10-01T21:05:20+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "correction",
+     "at": "2026-10-08T22:28:34+05:30",
+     "ref": "review_decisions_class-10 v1 (A5)"
     }
    ],
    "created_by": "class-10-social",
@@ -1564,19 +1572,34 @@
    "text_as_printed": "Who was the President of the Lahore Session of Congress? (Average)",
    "answer": {
     "kind": "text",
-    "value": ""
+    "value": "Jawaharlal Nehru"
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
-    },
-    {
-     "issue": "no answer printed",
-     "why_not_corrected": "the printed answer key has no entry for this question number — the answer-side numbering skips it (see the shifted band in extraction.method_notes)",
-     "suggested": "key absent — review"
     }
    ],
-   "content_hash": "08497aa9a9e4c88edff90b9f2a816a046c1770b046943e4c2a0b82c14b84e610"
+   "content_hash": "08497aa9a9e4c88edff90b9f2a816a046c1770b046943e4c2a0b82c14b84e610",
+   "answer_provenance": {
+    "by": "textbook_excerpt",
+    "actor": "class-10-social",
+    "at": "2026-10-08T22:28:34+05:30",
+    "basis": "LBA printed no key for this question. Textbook Part 2, printed page 14 (pdf 16): \"In the year 1929, under the presidentship of Jawaharlal Nehru, a Congress Session was held in Lahore.\" -> President of the Lahore (1929) session = Jawaharlal Nehru."
+   },
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "confidence": "verbatim",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "10th English  SS  Part - 2 2026-27.pdf#soc-10-18-s2-q017-textbook",
+      "pdf_page": 16,
+      "y": 0,
+      "derived_from": "manual"
+     },
+     "text": "In the year 1929, under the presidentship of Jawaharlal Nehru, a Congress Session was held in Lahore."
+    }
+   ]
   },
   {
    "id": "soc-10-18-s2-q018",
@@ -1621,7 +1644,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -1630,6 +1653,14 @@
      "by": "class-10-social",
      "role": "extraction",
      "at": "2026-10-01T21:05:20+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "correction",
+     "at": "2026-10-08T22:28:34+05:30",
+     "ref": "review_decisions_class-10 v1 (A6 displaced key)"
     }
    ],
    "created_by": "class-10-social",
@@ -1637,19 +1668,23 @@
    "text_as_printed": "In which year did the Quit India Movement take place? (Average)",
    "answer": {
     "kind": "text",
-    "value": ""
+    "value": "1942"
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
     },
     {
-     "issue": "shifted numbering — see key 17",
-     "why_not_corrected": "answer-side numbering is displaced in this band; extraction does not shift-align (procedure §4.2) — answer left empty, coordinator verifies the pair by content in review",
-     "suggested": "key 17 (this unit's answer side prints Q18's answer under printed label 17)"
+     "issue": "displaced key — paired by position to printed key label 17; coordinator-verified (control rev 19)"
     }
    ],
-   "content_hash": "d85a872856d8e5211eab5195dd8861530902b369ed7d7b8061ed6d658039c93d"
+   "content_hash": "d85a872856d8e5211eab5195dd8861530902b369ed7d7b8061ed6d658039c93d",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-08T22:28:34+05:30",
+    "basis": "Displaced printed key: LBA answer-side printed key label 17 (10thSS-EM-LBA-Revised_1786620693.pdf answer side, printed 53-54) pairs to this stem. Q17 (President of Lahore Session) has no printed key, so answer-side numbering runs one behind (key N -> question N+1) for Q18-Q28; paired by position and content-verified per rulings/verified_shifts_class-10-social.json (coordinator-verified, control rev 19)."
+   }
   },
   {
    "id": "soc-10-18-s2-q019",
@@ -1694,7 +1729,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -1703,6 +1738,14 @@
      "by": "class-10-social",
      "role": "extraction",
      "at": "2026-10-01T21:05:20+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "correction",
+     "at": "2026-10-08T22:28:34+05:30",
+     "ref": "review_decisions_class-10 v1 (A6 displaced key)"
     }
    ],
    "created_by": "class-10-social",
@@ -1710,19 +1753,23 @@
    "text_as_printed": "Who was the founder of the Forward Block Party? (Average)",
    "answer": {
     "kind": "text",
-    "value": ""
+    "value": "Subhash Chandra Bose"
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
     },
     {
-     "issue": "shifted numbering — see key 18",
-     "why_not_corrected": "answer-side numbering is displaced in this band; extraction does not shift-align (procedure §4.2) — answer left empty, coordinator verifies the pair by content in review",
-     "suggested": "key 18 (this unit's answer side prints Q19's answer under printed label 18)"
+     "issue": "displaced key — paired by position to printed key label 18; coordinator-verified (control rev 19)"
     }
    ],
-   "content_hash": "9d64adb13b963093fdae7bc26d15013958995bc140065a20f27813d43bb4712f"
+   "content_hash": "9d64adb13b963093fdae7bc26d15013958995bc140065a20f27813d43bb4712f",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-08T22:28:34+05:30",
+    "basis": "Displaced printed key: LBA answer-side printed key label 18 (10thSS-EM-LBA-Revised_1786620693.pdf answer side, printed 53-54) pairs to this stem. Q17 (President of Lahore Session) has no printed key, so answer-side numbering runs one behind (key N -> question N+1) for Q18-Q28; paired by position and content-verified per rulings/verified_shifts_class-10-social.json (coordinator-verified, control rev 19)."
+   }
   },
   {
    "id": "soc-10-18-s2-q020",
@@ -1767,7 +1814,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -1776,6 +1823,14 @@
      "by": "class-10-social",
      "role": "extraction",
      "at": "2026-10-01T21:05:20+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "correction",
+     "at": "2026-10-08T22:28:34+05:30",
+     "ref": "review_decisions_class-10 v1 (A6 displaced key)"
     }
    ],
    "created_by": "class-10-social",
@@ -1783,19 +1838,23 @@
    "text_as_printed": "Who Published the newspapers Janata and Mookanayaka? (Average)",
    "answer": {
     "kind": "text",
-    "value": ""
+    "value": "Dr. B. R. Ambedkar"
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
     },
     {
-     "issue": "shifted numbering — see key 19",
-     "why_not_corrected": "answer-side numbering is displaced in this band; extraction does not shift-align (procedure §4.2) — answer left empty, coordinator verifies the pair by content in review",
-     "suggested": "key 19 (this unit's answer side prints Q20's answer under printed label 19)"
+     "issue": "displaced key — paired by position to printed key label 19; coordinator-verified (control rev 19)"
     }
    ],
-   "content_hash": "36173dd0a7bee863a90b4e2b210a4ca746adcf320e44f4d12da73e1eaa6e4242"
+   "content_hash": "36173dd0a7bee863a90b4e2b210a4ca746adcf320e44f4d12da73e1eaa6e4242",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-08T22:28:34+05:30",
+    "basis": "Displaced printed key: LBA answer-side printed key label 19 (10thSS-EM-LBA-Revised_1786620693.pdf answer side, printed 53-54) pairs to this stem. Q17 (President of Lahore Session) has no printed key, so answer-side numbering runs one behind (key N -> question N+1) for Q18-Q28; paired by position and content-verified per rulings/verified_shifts_class-10-social.json (coordinator-verified, control rev 19)."
+   }
   },
   {
    "id": "soc-10-18-s2-q021",
@@ -1840,7 +1899,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -1849,6 +1908,14 @@
      "by": "class-10-social",
      "role": "extraction",
      "at": "2026-10-01T21:05:20+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "correction",
+     "at": "2026-10-08T22:28:34+05:30",
+     "ref": "review_decisions_class-10 v1 (A6 displaced key)"
     }
    ],
    "created_by": "class-10-social",
@@ -1856,19 +1923,23 @@
    "text_as_printed": "Who led the Non-Aligned Movement? (Average)",
    "answer": {
     "kind": "text",
-    "value": ""
+    "value": "Jawaharlal Nehru"
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
     },
     {
-     "issue": "shifted numbering — see key 20",
-     "why_not_corrected": "answer-side numbering is displaced in this band; extraction does not shift-align (procedure §4.2) — answer left empty, coordinator verifies the pair by content in review",
-     "suggested": "key 20 (this unit's answer side prints Q21's answer under printed label 20)"
+     "issue": "displaced key — paired by position to printed key label 20; coordinator-verified (control rev 19)"
     }
    ],
-   "content_hash": "0bd5c70854a5fcd7add51c146a7a2f15e9a45261922f8d68caa065d90c5aa979"
+   "content_hash": "0bd5c70854a5fcd7add51c146a7a2f15e9a45261922f8d68caa065d90c5aa979",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-08T22:28:34+05:30",
+    "basis": "Displaced printed key: LBA answer-side printed key label 20 (10thSS-EM-LBA-Revised_1786620693.pdf answer side, printed 53-54) pairs to this stem. Q17 (President of Lahore Session) has no printed key, so answer-side numbering runs one behind (key N -> question N+1) for Q18-Q28; paired by position and content-verified per rulings/verified_shifts_class-10-social.json (coordinator-verified, control rev 19)."
+   }
   },
   {
    "id": "soc-10-18-s2-q022",
@@ -1913,7 +1984,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -1922,6 +1993,14 @@
      "by": "class-10-social",
      "role": "extraction",
      "at": "2026-10-01T21:05:20+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "correction",
+     "at": "2026-10-08T22:28:34+05:30",
+     "ref": "review_decisions_class-10 v1 (A6 displaced key)"
     }
    ],
    "created_by": "class-10-social",
@@ -1929,19 +2008,23 @@
    "text_as_printed": "Who was the last Viceroy of India? (Difficult)",
    "answer": {
     "kind": "text",
-    "value": ""
+    "value": "Mountbatten"
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
     },
     {
-     "issue": "shifted numbering — see key 21",
-     "why_not_corrected": "answer-side numbering is displaced in this band; extraction does not shift-align (procedure §4.2) — answer left empty, coordinator verifies the pair by content in review",
-     "suggested": "key 21 (this unit's answer side prints Q22's answer under printed label 21)"
+     "issue": "displaced key — paired by position to printed key label 21; coordinator-verified (control rev 19)"
     }
    ],
-   "content_hash": "57b42166440b3709a6bdfba06ca062f431fc6afa1f351863744ba8aed3bda6be"
+   "content_hash": "57b42166440b3709a6bdfba06ca062f431fc6afa1f351863744ba8aed3bda6be",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-08T22:28:34+05:30",
+    "basis": "Displaced printed key: LBA answer-side printed key label 21 (10thSS-EM-LBA-Revised_1786620693.pdf answer side, printed 53-54) pairs to this stem. Q17 (President of Lahore Session) has no printed key, so answer-side numbering runs one behind (key N -> question N+1) for Q18-Q28; paired by position and content-verified per rulings/verified_shifts_class-10-social.json (coordinator-verified, control rev 19)."
+   }
   },
   {
    "id": "soc-10-18-s2-q023",
@@ -1986,7 +2069,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -1995,6 +2078,14 @@
      "by": "class-10-social",
      "role": "extraction",
      "at": "2026-10-01T21:05:20+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "correction",
+     "at": "2026-10-08T22:28:34+05:30",
+     "ref": "review_decisions_class-10 v1 (A6 displaced key)"
     }
    ],
    "created_by": "class-10-social",
@@ -2002,19 +2093,23 @@
    "text_as_printed": "Which commission marked the border between India and Pakistan? (Difficult)",
    "answer": {
     "kind": "text",
-    "value": ""
+    "value": "Radcliff Commission"
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
     },
     {
-     "issue": "shifted numbering — see key 22",
-     "why_not_corrected": "answer-side numbering is displaced in this band; extraction does not shift-align (procedure §4.2) — answer left empty, coordinator verifies the pair by content in review",
-     "suggested": "key 22 (this unit's answer side prints Q23's answer under printed label 22)"
+     "issue": "displaced key — paired by position to printed key label 22; coordinator-verified (control rev 19)"
     }
    ],
-   "content_hash": "9e6d63ec94fac36a1e452ff74eecfc2d24cbad22f02a0baa4257d6671c31da59"
+   "content_hash": "9e6d63ec94fac36a1e452ff74eecfc2d24cbad22f02a0baa4257d6671c31da59",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-08T22:28:34+05:30",
+    "basis": "Displaced printed key: LBA answer-side printed key label 22 (10thSS-EM-LBA-Revised_1786620693.pdf answer side, printed 53-54) pairs to this stem. Q17 (President of Lahore Session) has no printed key, so answer-side numbering runs one behind (key N -> question N+1) for Q18-Q28; paired by position and content-verified per rulings/verified_shifts_class-10-social.json (coordinator-verified, control rev 19)."
+   }
   },
   {
    "id": "soc-10-18-s2-q024",
@@ -2059,7 +2154,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -2068,6 +2163,14 @@
      "by": "class-10-social",
      "role": "extraction",
      "at": "2026-10-01T21:05:20+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "correction",
+     "at": "2026-10-08T22:28:34+05:30",
+     "ref": "review_decisions_class-10 v1 (A6 displaced key)"
     }
    ],
    "created_by": "class-10-social",
@@ -2075,19 +2178,23 @@
    "text_as_printed": "Who demanded for a separate nation for Muslims? (Average)",
    "answer": {
     "kind": "text",
-    "value": ""
+    "value": "Muhammad Ali Jinnah"
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
     },
     {
-     "issue": "shifted numbering — see key 23",
-     "why_not_corrected": "answer-side numbering is displaced in this band; extraction does not shift-align (procedure §4.2) — answer left empty, coordinator verifies the pair by content in review",
-     "suggested": "key 23 (this unit's answer side prints Q24's answer under printed label 23)"
+     "issue": "displaced key — paired by position to printed key label 23; coordinator-verified (control rev 19)"
     }
    ],
-   "content_hash": "e5734ad11ffd0b09970a48c5d7e05db6b4d3ec90001a12e3d650884b74badd79"
+   "content_hash": "e5734ad11ffd0b09970a48c5d7e05db6b4d3ec90001a12e3d650884b74badd79",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-08T22:28:34+05:30",
+    "basis": "Displaced printed key: LBA answer-side printed key label 23 (10thSS-EM-LBA-Revised_1786620693.pdf answer side, printed 53-54) pairs to this stem. Q17 (President of Lahore Session) has no printed key, so answer-side numbering runs one behind (key N -> question N+1) for Q18-Q28; paired by position and content-verified per rulings/verified_shifts_class-10-social.json (coordinator-verified, control rev 19)."
+   }
   },
   {
    "id": "soc-10-18-s2-q025",
@@ -2132,7 +2239,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -2141,6 +2248,14 @@
      "by": "class-10-social",
      "role": "extraction",
      "at": "2026-10-01T21:05:20+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "correction",
+     "at": "2026-10-08T22:28:34+05:30",
+     "ref": "review_decisions_class-10 v1 (A6 displaced key)"
     }
    ],
    "created_by": "class-10-social",
@@ -2148,19 +2263,23 @@
    "text_as_printed": "Who declared that “Swaraj is my birth right and I shall get it.”? (Easy)",
    "answer": {
     "kind": "text",
-    "value": ""
+    "value": "Bal Gangadhar Tilak"
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
     },
     {
-     "issue": "shifted numbering — see key 24",
-     "why_not_corrected": "answer-side numbering is displaced in this band; extraction does not shift-align (procedure §4.2) — answer left empty, coordinator verifies the pair by content in review",
-     "suggested": "key 24 (this unit's answer side prints Q25's answer under printed label 24)"
+     "issue": "displaced key — paired by position to printed key label 24; coordinator-verified (control rev 19)"
     }
    ],
-   "content_hash": "e29003ea94cfdd1c51c3c66eb6ac65ac80fee348638654438604926611d88a5f"
+   "content_hash": "e29003ea94cfdd1c51c3c66eb6ac65ac80fee348638654438604926611d88a5f",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-08T22:28:34+05:30",
+    "basis": "Displaced printed key: LBA answer-side printed key label 24 (10thSS-EM-LBA-Revised_1786620693.pdf answer side, printed 53-54) pairs to this stem. Q17 (President of Lahore Session) has no printed key, so answer-side numbering runs one behind (key N -> question N+1) for Q18-Q28; paired by position and content-verified per rulings/verified_shifts_class-10-social.json (coordinator-verified, control rev 19)."
+   }
   },
   {
    "id": "soc-10-18-s2-q026",
@@ -2205,7 +2324,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -2214,6 +2333,14 @@
      "by": "class-10-social",
      "role": "extraction",
      "at": "2026-10-01T21:05:20+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "correction",
+     "at": "2026-10-08T22:28:34+05:30",
+     "ref": "review_decisions_class-10 v1 (A6 displaced key)"
     }
    ],
    "created_by": "class-10-social",
@@ -2221,19 +2348,23 @@
    "text_as_printed": "Who organised Mahad tank and Kalaram temple movement? (Average)",
    "answer": {
     "kind": "text",
-    "value": ""
+    "value": "Dr. B. R. Ambedkar"
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
     },
     {
-     "issue": "shifted numbering — see key 25",
-     "why_not_corrected": "answer-side numbering is displaced in this band; extraction does not shift-align (procedure §4.2) — answer left empty, coordinator verifies the pair by content in review",
-     "suggested": "key 25 (this unit's answer side prints Q26's answer under printed label 25)"
+     "issue": "displaced key — paired by position to printed key label 25; coordinator-verified (control rev 19)"
     }
    ],
-   "content_hash": "6dc66f8536b7a8c6dff26f6f804e8692bff5648e78e2ec4c67fcce1065a4d6a7"
+   "content_hash": "6dc66f8536b7a8c6dff26f6f804e8692bff5648e78e2ec4c67fcce1065a4d6a7",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-08T22:28:34+05:30",
+    "basis": "Displaced printed key: LBA answer-side printed key label 25 (10thSS-EM-LBA-Revised_1786620693.pdf answer side, printed 53-54) pairs to this stem. Q17 (President of Lahore Session) has no printed key, so answer-side numbering runs one behind (key N -> question N+1) for Q18-Q28; paired by position and content-verified per rulings/verified_shifts_class-10-social.json (coordinator-verified, control rev 19)."
+   }
   },
   {
    "id": "soc-10-18-s2-q027",
@@ -2278,7 +2409,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -2287,6 +2418,14 @@
      "by": "class-10-social",
      "role": "extraction",
      "at": "2026-10-01T21:05:20+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "correction",
+     "at": "2026-10-08T22:28:34+05:30",
+     "ref": "review_decisions_class-10 v1 (A6 displaced key)"
     }
    ],
    "created_by": "class-10-social",
@@ -2294,19 +2433,23 @@
    "text_as_printed": "Who was the head of the Jhansi regiment of Indian National Army? (Difficult)",
    "answer": {
     "kind": "text",
-    "value": ""
+    "value": "Captain Lakshmi Sehagal"
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
     },
     {
-     "issue": "shifted numbering — see key 26",
-     "why_not_corrected": "answer-side numbering is displaced in this band; extraction does not shift-align (procedure §4.2) — answer left empty, coordinator verifies the pair by content in review",
-     "suggested": "key 26 (this unit's answer side prints Q27's answer under printed label 26)"
+     "issue": "displaced key — paired by position to printed key label 26; coordinator-verified (control rev 19)"
     }
    ],
-   "content_hash": "d3ca9ff69f60a292bc44a117c148efd807dcafe5b16612a6fa9574df4df1c0f7"
+   "content_hash": "d3ca9ff69f60a292bc44a117c148efd807dcafe5b16612a6fa9574df4df1c0f7",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-08T22:28:34+05:30",
+    "basis": "Displaced printed key: LBA answer-side printed key label 26 (10thSS-EM-LBA-Revised_1786620693.pdf answer side, printed 53-54) pairs to this stem. Q17 (President of Lahore Session) has no printed key, so answer-side numbering runs one behind (key N -> question N+1) for Q18-Q28; paired by position and content-verified per rulings/verified_shifts_class-10-social.json (coordinator-verified, control rev 19)."
+   }
   },
   {
    "id": "soc-10-18-s3-q028",
@@ -2351,7 +2494,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -2360,6 +2503,14 @@
      "by": "class-10-social",
      "role": "extraction",
      "at": "2026-10-01T21:05:20+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "correction",
+     "at": "2026-10-08T22:28:34+05:30",
+     "ref": "review_decisions_class-10 v1 (A6 displaced key)"
     }
    ],
    "created_by": "class-10-social",
@@ -2377,19 +2528,35 @@
    ],
    "answer": {
     "kind": "text",
-    "value": ""
+    "value": "The first 20 years of the Congress are called the 'Moderate Age'.\nM.G. Ranade, Surendranatha Bannerjee, Dadabhai Naoroji and Gopalkrishna Gokhale were prominent.\nThe moderates trusted the British administration and their impartiality.\nThey place their requests and appeal before the government.\nThe moderates taught people about political situations.\nThey conducted meetings, discussed problems & placed it to government.\nThe requests related to development of industries,\nReduction of military expenses.\nImprovement in educational standards.\nThey forced to take up studies about poverty in the country."
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — (3/4 marks questions)"
     },
     {
-     "issue": "shifted numbering — see key 27",
-     "why_not_corrected": "answer-side numbering is displaced in this band; extraction does not shift-align (procedure §4.2) — answer left empty, coordinator verifies the pair by content in review",
-     "suggested": "key 27 (this unit's answer side prints Q28's answer under printed label 27)"
+     "issue": "displaced key — paired by position to printed key label 27; coordinator-verified (control rev 19)"
     }
    ],
-   "content_hash": "a13abd3d4d57c0597c80175622bfc3b3ef9d3d96901ef2d4f351ca5f7b5d6712"
+   "content_hash": "a13abd3d4d57c0597c80175622bfc3b3ef9d3d96901ef2d4f351ca5f7b5d6712",
+   "solution_steps": [
+    "The first 20 years of the Congress are called the 'Moderate Age'.",
+    "M.G. Ranade, Surendranatha Bannerjee, Dadabhai Naoroji and Gopalkrishna Gokhale were prominent.",
+    "The moderates trusted the British administration and their impartiality.",
+    "They place their requests and appeal before the government.",
+    "The moderates taught people about political situations.",
+    "They conducted meetings, discussed problems & placed it to government.",
+    "The requests related to development of industries,",
+    "Reduction of military expenses.",
+    "Improvement in educational standards.",
+    "They forced to take up studies about poverty in the country."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-10-social",
+    "at": "2026-10-08T22:28:34+05:30",
+    "basis": "Displaced printed key: LBA answer-side printed key label 27 (10thSS-EM-LBA-Revised_1786620693.pdf answer side, printed 53-54) pairs to this stem. Q17 (President of Lahore Session) has no printed key, so answer-side numbering runs one behind (key N -> question N+1) for Q18-Q28; paired by position and content-verified per rulings/verified_shifts_class-10-social.json (coordinator-verified, control rev 19)."
+   }
   },
   {
    "id": "soc-10-18-s3-q029",
