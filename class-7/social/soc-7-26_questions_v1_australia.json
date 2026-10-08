@@ -1,10 +1,10 @@
 {
  "contract_version": "1.7",
  "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
- "procedure_file": "extraction_procedure_social_addendum_v1.3_social science Classes 6-10 on top of procedure v2.md",
+ "procedure_file": "extraction_procedure_social_addendum_v1.4_social science Classes 6-10 on top of procedure v2.md",
  "machine_name": "soc-7-26_questions",
- "version": 1,
- "changelog": "v1 extraction — batch-01 — class-7-social",
+ "version": 2,
+ "changelog": "v1 extraction — batch-01 — class-7-social | v2 r1 correction (2026-10-08T23:59:28+05:30) — q13->Animal husbandry(B), q14->Only 1 correct(C), q15 confirmed(A) from textbook Part-2",
  "amendments_applied": [],
  "unit_state": "EXTRACTED",
  "review_ready": false,
@@ -1277,7 +1277,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -1286,6 +1286,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T05:30:45+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:59:28+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -1313,25 +1321,37 @@
    "answer_as_printed": "C.",
    "answer": {
     "kind": "option",
-    "option_id": "C"
+    "option_id": "B"
    },
    "answer_provenance": {
-    "by": "printed",
+    "by": "textbook_excerpt",
     "actor": "class-7-social",
-    "at": "2026-10-08T05:30:45+05:30",
-    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+    "at": "2026-10-08T23:59:28+05:30",
+    "basis": "7th English SS Part-2 2026-27, printed p.159 (pdf p.161): \"Animal husbandry: This is an important occupation in Australia. Australia is very popular as a country of pastoral activity\". Main profession of Australia = animal husbandry (pastoral activity; sheep/cattle rearing) = option B."
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
     },
     {
-     "issue": "key text does not address question",
-     "why_not_corrected": "stem: the main profession in Australia; keyed option C 'Potters' is wrong — Australia's main profession is animal husbandry/mining (option B 'Animal husbandry'). Option C asserted verbatim (letter-only grid key); correctness is the review layer.",
-     "suggested": "B) Animal husbandry — review"
+     "issue": "printed key contradicts fact — textbook gives animal husbandry/pastoral activity = option B (Part-2 p.159); printed key C (Potters) wrong; reviewer"
     }
    ],
-   "content_hash": "1363d3a2d807a74825e73ec3262ad57a69a1fa299152524b659126b7e31cb31d"
+   "content_hash": "1363d3a2d807a74825e73ec3262ad57a69a1fa299152524b659126b7e31cb31d",
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "7th English SS Part-2 2026-27.pdf",
+      "pdf_page": 161,
+      "derived_from": "text_layer",
+      "y": 52.8
+     },
+     "text": "Animal husbandry: This is an important occupation in Australia. Australia is very popular as a country of pastoral activity",
+     "confidence": "verbatim"
+    }
+   ]
   },
   {
    "id": "soc-7-26-s1-q014",
@@ -1380,7 +1400,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -1389,6 +1409,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T05:30:45+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:59:28+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -1416,25 +1444,37 @@
    "answer_as_printed": "D.",
    "answer": {
     "kind": "option",
-    "option_id": "D"
+    "option_id": "C"
    },
    "answer_provenance": {
-    "by": "printed",
+    "by": "textbook_excerpt",
     "actor": "class-7-social",
-    "at": "2026-10-08T05:30:45+05:30",
-    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+    "at": "2026-10-08T23:59:28+05:30",
+    "basis": "7th English SS Part-2 2026-27, printed p.153 (pdf p.155): \"The cyclones in Australia are known as 'Willy Willies'. ... The northern parts experience Monsoon climate and the southern coast experiences Mediterranean type of climate\". Statement 1 (storm 'Willy Willies') is true; Statement 2 ('rainfall is monsoon type') is not correct for Australia as a whole — only the northern parts are monsoon (south Mediterranean, west desert). So only Statement 1 is correct = option C."
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
     },
     {
-     "issue": "key text does not address question",
-     "why_not_corrected": "statement-evaluation MCQ; keyed option D '1 and 2 are correct' but statement 2 ('rainfall here is monsoon type') is false for Australia (arid/Mediterranean, not monsoonal) — only statement 1 (Willy-Willy storm) is true. Option D asserted verbatim (grid key); correctness is the review layer.",
-     "suggested": "C) Only 1 is correct — review"
+     "issue": "printed key contradicts fact — textbook: Willy Willies true (Stmt 1); only northern Australia is monsoon, so blanket 'rainfall is monsoon type' (Stmt 2) is not correct -> Only 1 correct = option C (Part-2 p.153); printed D wrong; reviewer"
     }
    ],
-   "content_hash": "f4248891b7abe5354e51f5f92203a43b05d4970f9ce968a621477c45952831ef"
+   "content_hash": "f4248891b7abe5354e51f5f92203a43b05d4970f9ce968a621477c45952831ef",
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "7th English SS Part-2 2026-27.pdf",
+      "pdf_page": 155,
+      "derived_from": "text_layer",
+      "y": 78.3
+     },
+     "text": "The cyclones in Australia are known as 'Willy Willies'. ... The northern parts experience Monsoon climate and the southern coast experiences Mediterranean type of climate",
+     "confidence": "verbatim"
+    }
+   ]
   },
   {
    "id": "soc-7-26-s1-q015",
@@ -1483,7 +1523,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -1492,6 +1532,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T05:30:45+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:59:28+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -1522,22 +1570,31 @@
     "option_id": "A"
    },
    "answer_provenance": {
-    "by": "printed",
+    "by": "textbook_excerpt",
     "actor": "class-7-social",
-    "at": "2026-10-08T05:30:45+05:30",
-    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+    "at": "2026-10-08T23:59:28+05:30",
+    "basis": "7th English SS Part-2 2026-27, printed p.158 (pdf p.160): \"the cultivable area is less and only 4% of the land in Australia is used for agriculture ... Only 44% of the population is engaged directly in agriculture\". Statement 1 (agricultural land is less) and Statement 2 (only 44% engaged in agriculture) are both true (Part-2 p.158) = option A (confirms printed key)."
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
-    },
-    {
-     "issue": "key text does not address question",
-     "why_not_corrected": "statement-evaluation MCQ; keyed option A '1 and 2 are correct' but statement 2 ('44% of the population engaged in agriculture') is factually wrong (only a small fraction) — only statement 1 is true. Option A asserted verbatim (grid key); correctness is the review layer.",
-     "suggested": "C) Only 1 is correct — review"
     }
    ],
-   "content_hash": "fc1aa4c44fdeaed2dba65f1a5e9a0d24d163fd5b00587053ac0949290417960b"
+   "content_hash": "fc1aa4c44fdeaed2dba65f1a5e9a0d24d163fd5b00587053ac0949290417960b",
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "7th English SS Part-2 2026-27.pdf",
+      "pdf_page": 160,
+      "derived_from": "text_layer",
+      "y": 92.1
+     },
+     "text": "the cultivable area is less and only 4% of the land in Australia is used for agriculture ... Only 44% of the population is engaged directly in agriculture",
+     "confidence": "verbatim"
+    }
+   ]
   },
   {
    "id": "soc-7-26-s1-q016",
