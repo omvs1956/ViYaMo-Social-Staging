@@ -1,10 +1,10 @@
 {
  "contract_version": "1.7",
  "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
- "procedure_file": "extraction_procedure_social_addendum_v1.3_social science Classes 6-10 on top of procedure v2.md",
+ "procedure_file": "extraction_procedure_social_addendum_v1.4_social science Classes 6-10 on top of procedure v2.md",
  "machine_name": "soc-7-09_questions",
- "version": 1,
- "changelog": "v1 extraction — batch-01 — class-7-social",
+ "version": 2,
+ "changelog": "v1 extraction — batch-01 — class-7-social | v2 r1 correction (2026-10-08T23:47:10+05:30) — q3->Lok Sabha(D) and q34 etymology confirmed from textbook Part-1; q24 and q84 excluded (no matching textbook statement)",
  "amendments_applied": [],
  "unit_state": "EXTRACTED",
  "review_ready": false,
@@ -294,7 +294,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -303,6 +303,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T03:16:15+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:47:10+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -330,7 +338,7 @@
    "answer_as_printed": "C) LokSabha",
    "answer": {
     "kind": "option",
-    "option_id": null
+    "option_id": "D"
    },
    "source_flags": [
     {
@@ -342,7 +350,27 @@
      "suggested": "D (by text; printed letter C='VidhanParisha' disagrees) — review"
     }
    ],
-   "content_hash": "1af17b2d021dcf7ef9d2b0c1cd1e9e9102d63795f0530ab8e5d18215f8a6ca92"
+   "content_hash": "1af17b2d021dcf7ef9d2b0c1cd1e9e9102d63795f0530ab8e5d18215f8a6ca92",
+   "answer_provenance": {
+    "by": "textbook_excerpt",
+    "actor": "class-7-social",
+    "at": "2026-10-08T23:47:10+05:30",
+    "basis": "7th English SS Part-1 2026-27, printed p.132 (pdf p.146): \"the Indian Legislature 'Parliament' is a Bicameral Legislature. Its lower house is called 'Lok Sabha'\". Lower house of the Indian Parliament = Lok Sabha = option D."
+   },
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "7th English SS Part-1 2026-27.pdf",
+      "pdf_page": 146,
+      "derived_from": "text_layer",
+      "y": 93.0
+     },
+     "text": "the Indian Legislature 'Parliament' is a Bicameral Legislature. Its lower house is called 'Lok Sabha'",
+     "confidence": "verbatim"
+    }
+   ]
   },
   {
    "id": "soc-7-09-s1-q004",
@@ -2731,7 +2759,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -2740,6 +2768,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T03:16:15+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:47:10+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -2748,26 +2784,35 @@
    "section_signal": "D",
    "answer": {
     "kind": "text",
-    "value": "From the French word \"Parler\" and the Latin word \"Parlamentum\""
+    "value": "The French word 'Parler' and the Latin word 'Parliamentum' (meaning to talk or discuss)."
    },
    "answer_as_printed": "From the French word \"Parler\" and the Latin word \"Parlamentum\"",
    "answer_provenance": {
-    "by": "printed",
+    "by": "textbook_excerpt",
     "actor": "class-7-social",
-    "at": "2026-10-08T03:16:15+05:30",
-    "basis": "printed VSA key, verbatim (v2 §4)"
+    "at": "2026-10-08T23:47:10+05:30",
+    "basis": "7th English SS Part-1 2026-27, printed p.128 (pdf p.142): \"The word Legislature or Parliament is derived from French word 'Parler' and Latin word 'Parliamentum', which means to talk or discuss\". Textbook confirms the root words of Legislature: French 'Parler' and Latin 'Parliamentum'."
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
-    },
-    {
-     "issue": "key text does not address question",
-     "why_not_corrected": "stem asks the root words of 'legislature'; printed key gives the roots of 'parliament' (French 'Parler' and Latin 'Parlamentum') — the same text printed for q45. Wrong term. Key asserted verbatim; correctness is the review layer.",
-     "suggested": "review — key gives parliament's roots, not legislature's"
     }
    ],
-   "content_hash": "7e0ef10d04a87f9e8be3860484c1a1a77d0767ae5299a16057432dbd747a2154"
+   "content_hash": "7e0ef10d04a87f9e8be3860484c1a1a77d0767ae5299a16057432dbd747a2154",
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "7th English SS Part-1 2026-27.pdf",
+      "pdf_page": 142,
+      "derived_from": "text_layer",
+      "y": 558.7
+     },
+     "text": "The word Legislature or Parliament is derived from French word 'Parler' and Latin word 'Parliamentum', which means to talk or discuss",
+     "confidence": "verbatim"
+    }
+   ]
   },
   {
    "id": "soc-7-09-s4-q035",
