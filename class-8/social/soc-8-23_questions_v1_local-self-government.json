@@ -1,7 +1,7 @@
 {
  "contract_version": "1.7",
  "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
- "procedure_file": "extraction_procedure_social_addendum_v1.3_social science Classes 6-10 on top of procedure v2.md",
+ "procedure_file": "extraction_procedure_social_addendum_v1.4_social science Classes 6-10 on top of procedure v2.md",
  "machine_name": "soc-8-23_questions",
  "version": 1,
  "changelog": "v1 extraction — batch-01 — class-8-social",
@@ -97,7 +97,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -106,6 +106,14 @@
      "by": "class-8-social",
      "role": "extraction",
      "at": "2026-10-08T02:38:31+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-8-social",
+     "role": "correction",
+     "at": "2026-10-08T22:30:00+05:30",
+     "ref": "review_decisions_class-8 v1"
     }
    ],
    "created_by": "class-8-social",
@@ -132,19 +140,39 @@
    "answer_as_printed": "A) 73rd and 74th Amendments",
    "answer": {
     "kind": "option",
-    "option_id": null
+    "option_id": "B"
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
     },
     {
-     "issue": "key text not among options",
-     "why_not_corrected": "the printed key is '1. A) 73rd and 74th Amendments'. Letter A = option A '63rd and 64th Amendments', but the key text names option B '73rd and 74th Amendments' (exact match). Letter and key text name different options; no answer is asserted (key-letter-text-disagreement vocab 'key text not among options'); the reviewer decides which governs (addendum §13.6).",
-     "suggested": "B (by text; printed letter A='63rd and 64th Amendments' disagrees) — review"
+     "field": "answer",
+     "issue": "printed key contradicts fact — correct option is B (73rd and 74th Amendments); reviewer",
+     "suggested": "B) 73rd and 74th Amendments"
     }
    ],
-   "content_hash": "7675ae0c6bcb02e0c12d95d283da811e36c5611f2298edf1d9e0c0eb90e4d882"
+   "content_hash": "7675ae0c6bcb02e0c12d95d283da811e36c5611f2298edf1d9e0c0eb90e4d882",
+   "answer_provenance": {
+    "by": "textbook_excerpt",
+    "actor": "class-8-social",
+    "at": "2026-10-08T22:30:00+05:30",
+    "basis": "textbook_excerpt: 8th English SS Part 2 2026-27.pdf, pdf page 52 (printed page 50): \"73rd and 74th constitutional amendments are considered a milestone in the Panchayat Raj system.\". printed key letter A (63rd/64th) is wrong; the milestone amendments are the 73rd and 74th -> option B."
+   },
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "8th English SS Part 2 2026-27.pdf#soc-8-23-s1-q001-textbook",
+      "pdf_page": 52,
+      "derived_from": "text_layer",
+      "y": 0.0
+     },
+     "text": "73rd and 74th constitutional amendments are considered a milestone in the Panchayat Raj system.",
+     "confidence": "verbatim"
+    }
+   ]
   },
   {
    "id": "soc-8-23-s1-q002",
