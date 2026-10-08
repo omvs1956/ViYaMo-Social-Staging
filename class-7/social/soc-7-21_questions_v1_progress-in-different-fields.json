@@ -1,10 +1,10 @@
 {
  "contract_version": "1.7",
  "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
- "procedure_file": "extraction_procedure_social_addendum_v1.3_social science Classes 6-10 on top of procedure v2.md",
+ "procedure_file": "extraction_procedure_social_addendum_v1.4_social science Classes 6-10 on top of procedure v2.md",
  "machine_name": "soc-7-21_questions",
- "version": 1,
- "changelog": "v1 extraction — batch-01 — class-7-social",
+ "version": 2,
+ "changelog": "v1 extraction — batch-01 — class-7-social | v2 r1 correction (2026-10-08T23:59:27+05:30) — q2->Mobile(A) confirmed from textbook Part-2",
  "amendments_applied": [],
  "unit_state": "EXTRACTED",
  "review_ready": false,
@@ -201,7 +201,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -210,6 +210,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T04:41:16+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:59:27+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -240,22 +248,31 @@
     "option_id": "A"
    },
    "answer_provenance": {
-    "by": "printed",
+    "by": "textbook_excerpt",
     "actor": "class-7-social",
-    "at": "2026-10-08T04:41:16+05:30",
-    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+    "at": "2026-10-08T23:59:27+05:30",
+    "basis": "7th English SS Part-2 2026-27, printed p.99 (pdf p.101): \"Mobile is a powerful medium which has reached both the literate and the illiterate\". Medium effective for both literate and illiterate = Mobile = option A (confirms printed key)."
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
-    },
-    {
-     "issue": "key text does not address question",
-     "why_not_corrected": "stem: medium effective in reaching both literate and illiterate people; keyed option A 'Mobile' is doubtful — the classic answer is Radio (option C, audio needs no literacy). Option A asserted verbatim (letter+text agree); correctness is the review layer.",
-     "suggested": "C) Radio — review"
     }
    ],
-   "content_hash": "37e94255be5a025350d951d1acac7433ebf4cc2cdd49f8bb84af8af17ab3e11b"
+   "content_hash": "37e94255be5a025350d951d1acac7433ebf4cc2cdd49f8bb84af8af17ab3e11b",
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "7th English SS Part-2 2026-27.pdf",
+      "pdf_page": 101,
+      "derived_from": "text_layer",
+      "y": 147.8
+     },
+     "text": "Mobile is a powerful medium which has reached both the literate and the illiterate",
+     "confidence": "verbatim"
+    }
+   ]
   },
   {
    "id": "soc-7-21-s1-q003",
