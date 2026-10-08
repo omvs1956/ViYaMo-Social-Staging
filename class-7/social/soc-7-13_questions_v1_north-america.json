@@ -1,10 +1,10 @@
 {
  "contract_version": "1.7",
  "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
- "procedure_file": "extraction_procedure_social_addendum_v1.3_social science Classes 6-10 on top of procedure v2.md",
+ "procedure_file": "extraction_procedure_social_addendum_v1.4_social science Classes 6-10 on top of procedure v2.md",
  "machine_name": "soc-7-13_questions",
- "version": 1,
- "changelog": "v1 extraction — batch-01 — class-7-social",
+ "version": 2,
+ "changelog": "v1 extraction — batch-01 — class-7-social | v2 r1 correction (2026-10-08T23:50:24+05:30) — q29 Chicago confirmed (flag withdrawn); q41 White Mountain (California) + Rockies (Western Cordilleras) from textbook Part-1",
  "amendments_applied": [],
  "unit_state": "EXTRACTED",
  "review_ready": false,
@@ -2801,7 +2801,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -2810,6 +2810,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T03:41:51+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:50:24+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -2840,22 +2848,31 @@
     "option_id": "B"
    },
    "answer_provenance": {
-    "by": "printed",
+    "by": "textbook_excerpt",
     "actor": "class-7-social",
-    "at": "2026-10-08T03:41:51+05:30",
-    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+    "at": "2026-10-08T23:50:24+05:30",
+    "basis": "7th English SS Part-1 2026-27, printed p.190 (pdf p.204): \"Plastic is prepared in all parts of the USA. Chicago is famous for plastic industry\". City famous for the plastics industry = Chicago = option B (confirms printed key; thread flag withdrawn)."
    },
    "source_flags": [
     {
      "issue": "marks ambiguous in source — no marks printed"
-    },
-    {
-     "issue": "key text does not address question",
-     "why_not_corrected": "stem: city known for its plastics industry; keyed option B 'Chicago' is wrong — Akron (option C) is the plastics/rubber city. Option B asserted verbatim; correctness is the review layer.",
-     "suggested": "C) Akron — review"
     }
    ],
-   "content_hash": "a1d28188a04ddc6dbfe0ddc9729f39c43ecbe6475cce2af80442d7c9a44a3d42"
+   "content_hash": "a1d28188a04ddc6dbfe0ddc9729f39c43ecbe6475cce2af80442d7c9a44a3d42",
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "7th English SS Part-1 2026-27.pdf",
+      "pdf_page": 204,
+      "derived_from": "text_layer",
+      "y": 88.8
+     },
+     "text": "Plastic is prepared in all parts of the USA. Chicago is famous for plastic industry",
+     "confidence": "verbatim"
+    }
+   ]
   },
   {
    "id": "soc-7-13-s1-q030",
@@ -3776,7 +3793,7 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
+   "revision": 2,
    "status": "draft",
    "status_history": [
     {
@@ -3785,6 +3802,14 @@
      "by": "class-7-social",
      "role": "extraction",
      "at": "2026-10-08T03:41:51+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "draft",
+     "by": "class-7-social",
+     "role": "correction",
+     "at": "2026-10-08T23:50:24+05:30",
+     "ref": "review_decisions_class-7 v1"
     }
    ],
    "created_by": "class-7-social",
@@ -3793,14 +3818,15 @@
    "section_signal": "D",
    "answer": {
     "kind": "text",
-    "value": "California"
+    "value": "The White Mountain (with the Whitney Mountain) is in California; the Rocky Mountains (the Western Cordilleras) lie along the western part of North America."
    },
    "answer_as_printed": "California",
    "answer_provenance": {
-    "by": "printed",
+    "by": "textbook_excerpt",
     "actor": "class-7-social",
-    "at": "2026-10-08T03:41:51+05:30",
-    "basis": "printed VSA key, verbatim (v2 §4)"
+    "at": "2026-10-08T23:50:24+05:30",
+    "textbook_derived": true,
+    "basis": "7th English SS Part-1 2026-27, printed p.175 (pdf p.189): \"The Whitney Mountain and White Mountain in California are well known for their rugged slopes\"; and p.175 (pdf 189): \"the Rockies are most important ranges in the Western Cordilleras\" (p.174 lists 'The Western Cordilleras or the Rocky Mountains' as the western division). Textbook places White Mountain in California and the Rockies in the Western Cordilleras (west); the printed one-word key 'California' addressed only White Mountain."
    },
    "source_flags": [
     {
@@ -3812,7 +3838,33 @@
      "suggested": "review — western part of North America"
     }
    ],
-   "content_hash": "29360730382437a8e97c5763ab157ac19998db282bd33b5b4f2147da8b7c0230"
+   "content_hash": "29360730382437a8e97c5763ab157ac19998db282bd33b5b4f2147da8b7c0230",
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "7th English SS Part-1 2026-27.pdf",
+      "pdf_page": 189,
+      "derived_from": "text_layer",
+      "y": 526.8
+     },
+     "text": "The Whitney Mountain and White Mountain in California are well known for their rugged slopes and scenic beauty",
+     "confidence": "verbatim"
+    },
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "7th English SS Part-1 2026-27.pdf",
+      "pdf_page": 189,
+      "derived_from": "text_layer",
+      "y": 526.8
+     },
+     "text": "the Rockies are most important ranges in the Western Cordilleras",
+     "confidence": "verbatim"
+    }
+   ]
   },
   {
    "id": "soc-7-13-s4-q042",
