@@ -1,0 +1,4208 @@
+{
+ "contract_version": "1.7",
+ "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
+ "procedure_file": "extraction_procedure_social_addendum_v1.4_social science Classes 6-10 on top of procedure v2.md",
+ "machine_name": "soc-10-93_questions",
+ "version": 1,
+ "changelog": "v1 extraction — MQP section (c10-mqp-batch-01) — class-10-social; S.S.L.C. Model Question Paper 3 2026-27 (85-E); answers textbook-sourced; all status draft (review items)",
+ "amendments_applied": [],
+ "unit_state": "EXTRACTED",
+ "review_ready": false,
+ "section": "mqp",
+ "paper": 3,
+ "paper_title": "S.S.L.C. Model Question Paper 3 : 2026-27 (85-E)",
+ "count_gate": {
+  "reference": 48,
+  "reference_source": "audited",
+  "extracted": 48,
+  "paired": 48,
+  "flagged": 48,
+  "gaps": [],
+  "duplicated_numbers": [],
+  "quota_table": "absent",
+  "second_method": {
+   "method": "printed question-number sequence 1-38 + OR partners + visually-impaired alternatives",
+   "extracted": 48,
+   "agrees": true
+  },
+  "pass": true,
+  "note": "MQP 3: 38 printed questions + OR partners + 2 visually-impaired alternatives = 48 records"
+ },
+ "extraction": {
+  "source_file": "85E_MQP_3.pdf",
+  "source_ref_prefix": "85E_MQP_3.pdf",
+  "method_notes": [
+   "Source 85E_MQP_3.pdf (SCANNED, no text layer, 5 pp). Pages rendered to PNG and read visually; every stem transcribed from the image (flag 'transcribed from image'); question locators derived_from 'ocr' with estimated y.",
+   "One unit per paper (MQP section, NOT chapter units); ids soc-10-93-sS-qNNN, S=printed paper section I-VI.",
+   "marks = exact printed section value (I/II 1, III 2, IV 3, V 4, VI/q38 5); marks_source section_header (gate enum has no 'printed'; section value is printed in the section header).",
+   "OR-pairs in sections III (q17/q18), IV (q25-q28) and V (q34/q35) encoded as qNNN and qNNNb with or_group 93-qNNN so the generator never picks both.",
+   "Q38 map: map block with the ten offered features (in_stem true, on_answer_map false, positions unset), no answer map printed (empty answer + 'no answer printed'); feature H labelled 'Ruyli' exactly as printed. q38 itself carries or_group 93-q038 (grouped with its visually-impaired alternatives so the generator never draws q38 with an alternative).",
+   "Visually-impaired alternatives (in lieu of Q38) as q038b/q038c, or_group 93-q038, review_note 'alternative question (visually impaired)'.",
+   "Answers textbook-sourced (answer_provenance.by textbook_excerpt); all questions status draft (review items for Yash). chapter_ref inferred for syllabus linkage only.",
+   "q013 (who abolished bonded labour in Karnataka) unfound: the Class-10 textbooks (Part 1 & 2, 2026-27) do not name who abolished bonded labour in Karnataka; answer left empty with flag 'no answer printed'."
+  ],
+  "notation_summary": {
+   "render_tokens": 0,
+   "latex_tokens": 0,
+   "damage_flags": []
+  },
+  "excluded_objects": []
+ },
+ "stimuli": [],
+ "questions": [
+  {
+   "id": "soc-10-93-s1-q001",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-93",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": 1,
+   "marks_source": "section_header",
+   "section_signal": "I",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "learning_outcomes": [],
+   "lo_source": "none",
+   "out_of_syllabus": false,
+   "text": "The statement “Indian farmers were born in debt, lived in debt and died in debt due to the land tax policies of the British” was made by",
+   "source": "mqp",
+   "source_ref": "85E_MQP_3.pdf#soc-10-93-s1-q001",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "85E_MQP_3.pdf#soc-10-93-s1-q001",
+     "pdf_page": 2,
+     "y": 700,
+     "derived_from": "ocr"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-09T07:45:02+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-09T07:45:02+05:30",
+   "paper": 3,
+   "paper_title": "S.S.L.C. Model Question Paper 3 : 2026-27 (85-E)",
+   "chapter_ref": "soc-10-03",
+   "chapter_ref_source": "inferred",
+   "transcribed_from_image": true,
+   "options": [
+    {
+     "id": "A",
+     "text": "Cornwallis"
+    },
+    {
+     "id": "B",
+     "text": "Macaulay"
+    },
+    {
+     "id": "C",
+     "text": "Charles Metcalf"
+    },
+    {
+     "id": "D",
+     "text": "Edmond Burk"
+    }
+   ],
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "textbook_excerpt",
+    "actor": "class-10-social",
+    "at": "2026-10-09T07:45:02+05:30",
+    "basis": "Textbook 10th English  SS  Part - 1 2026-27(Part 1), pdf p36 (printed p23): \"According to Charles Metcalf, “the Indian farmers were born in debt, lived in debt and died in debt due to the land tax policies of the British”.\". The MQP prints no answer key; answer sourced from the textbook per review_policy_v1 §2-4."
+   },
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "10th English  SS  Part - 1 2026-27.pdf#p36",
+      "pdf_page": 36,
+      "y": 39.2,
+      "derived_from": "text_layer"
+     },
+     "text": "According to Charles Metcalf, “the Indian farmers were born in debt, lived in debt and died in debt due to the land tax policies of the British”.",
+     "confidence": "verbatim"
+    }
+   ],
+   "source_flags": [
+    {
+     "issue": "no difficulty tag"
+    },
+    {
+     "issue": "no LO mapped"
+    }
+   ],
+   "content_hash": "b5ac17fe37e528db4a8612b0b95d1fcb2e77a39df2181e068705a978984a64de"
+  },
+  {
+   "id": "soc-10-93-s1-q002",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-93",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": 1,
+   "marks_source": "section_header",
+   "section_signal": "I",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "learning_outcomes": [],
+   "lo_source": "none",
+   "out_of_syllabus": false,
+   "text": "The assassination of Archduke Franz Ferdinand was the immediate cause for the first world war. He was the prince of",
+   "source": "mqp",
+   "source_ref": "85E_MQP_3.pdf#soc-10-93-s1-q002",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "85E_MQP_3.pdf#soc-10-93-s1-q002",
+     "pdf_page": 2,
+     "y": 560,
+     "derived_from": "ocr"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-09T07:45:02+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-09T07:45:02+05:30",
+   "paper": 3,
+   "paper_title": "S.S.L.C. Model Question Paper 3 : 2026-27 (85-E)",
+   "chapter_ref": "soc-10-20",
+   "chapter_ref_source": "inferred",
+   "transcribed_from_image": true,
+   "options": [
+    {
+     "id": "A",
+     "text": "Serbia"
+    },
+    {
+     "id": "B",
+     "text": "Austria"
+    },
+    {
+     "id": "C",
+     "text": "Bulgaria"
+    },
+    {
+     "id": "D",
+     "text": "Australia"
+    }
+   ],
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "textbook_excerpt",
+    "actor": "class-10-social",
+    "at": "2026-10-09T07:45:02+05:30",
+    "basis": "Textbook 10th English  SS  Part - 2 2026-27(Part 2), pdf p36 (printed p34): \"The immediate reason for the war was the assassination of the Austrian prince, Archduke Franz Ferdinand on 28th June 1914.\". The MQP prints no answer key; answer sourced from the textbook per review_policy_v1 §2-4."
+   },
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "10th English  SS  Part - 2 2026-27.pdf#p36",
+      "pdf_page": 36,
+      "y": 128.6,
+      "derived_from": "text_layer"
+     },
+     "text": "The immediate reason for the war was the assassination of the Austrian prince, Archduke Franz Ferdinand on 28th June 1914.",
+     "confidence": "verbatim"
+    }
+   ],
+   "source_flags": [
+    {
+     "issue": "no difficulty tag"
+    },
+    {
+     "issue": "no LO mapped"
+    }
+   ],
+   "content_hash": "1dbaa422466fb934da1a0cf61e98b6e9b103c56a08261f126e1bfdfb2f838517"
+  },
+  {
+   "id": "soc-10-93-s1-q003",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-93",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": 1,
+   "marks_source": "section_header",
+   "section_signal": "I",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "learning_outcomes": [],
+   "lo_source": "none",
+   "out_of_syllabus": false,
+   "text": "The headquarters of the International Court of Justice is located in",
+   "source": "mqp",
+   "source_ref": "85E_MQP_3.pdf#soc-10-93-s1-q003",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "85E_MQP_3.pdf#soc-10-93-s1-q003",
+     "pdf_page": 2,
+     "y": 430,
+     "derived_from": "ocr"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-09T07:45:02+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-09T07:45:02+05:30",
+   "paper": 3,
+   "paper_title": "S.S.L.C. Model Question Paper 3 : 2026-27 (85-E)",
+   "chapter_ref": "soc-10-22",
+   "chapter_ref_source": "inferred",
+   "transcribed_from_image": true,
+   "options": [
+    {
+     "id": "A",
+     "text": "The Hague"
+    },
+    {
+     "id": "B",
+     "text": "Geneva"
+    },
+    {
+     "id": "C",
+     "text": "Washington"
+    },
+    {
+     "id": "D",
+     "text": "New York"
+    }
+   ],
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "textbook_excerpt",
+    "actor": "class-10-social",
+    "at": "2026-10-09T07:45:02+05:30",
+    "basis": "Textbook 10th English  SS  Part - 2 2026-27(Part 2), pdf p57 (printed p55): \"International Court of Justice : It is the principal judicial organ of the U.N. ... Its permanent seat is in the Hague of Netherlands.\". The MQP prints no answer key; answer sourced from the textbook per review_policy_v1 §2-4."
+   },
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "10th English  SS  Part - 2 2026-27.pdf#p57",
+      "pdf_page": 57,
+      "y": 119.6,
+      "derived_from": "text_layer"
+     },
+     "text": "International Court of Justice : It is the principal judicial organ of the U.N. ... Its permanent seat is in the Hague of Netherlands.",
+     "confidence": "verbatim"
+    }
+   ],
+   "source_flags": [
+    {
+     "issue": "no difficulty tag"
+    },
+    {
+     "issue": "no LO mapped"
+    }
+   ],
+   "content_hash": "e50e895c8d4aea997c7b5474a51b0fd335a9cd3fafa6b35017052f7402291bd1"
+  },
+  {
+   "id": "soc-10-93-s1-q004",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-93",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": 1,
+   "marks_source": "section_header",
+   "section_signal": "I",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "learning_outcomes": [],
+   "lo_source": "none",
+   "out_of_syllabus": false,
+   "text": "The magazine Mookanayaka was started by",
+   "source": "mqp",
+   "source_ref": "85E_MQP_3.pdf#soc-10-93-s1-q004",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "85E_MQP_3.pdf#soc-10-93-s1-q004",
+     "pdf_page": 2,
+     "y": 320,
+     "derived_from": "ocr"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-09T07:45:02+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-09T07:45:02+05:30",
+   "paper": 3,
+   "paper_title": "S.S.L.C. Model Question Paper 3 : 2026-27 (85-E)",
+   "chapter_ref": "soc-10-23",
+   "chapter_ref_source": "inferred",
+   "transcribed_from_image": true,
+   "options": [
+    {
+     "id": "A",
+     "text": "Dr. Shivaram Karanth"
+    },
+    {
+     "id": "B",
+     "text": "Dr. B. R. Ambedkar"
+    },
+    {
+     "id": "C",
+     "text": "Annie Besant"
+    },
+    {
+     "id": "D",
+     "text": "Mahatma Jyotiba Phule"
+    }
+   ],
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "textbook_excerpt",
+    "actor": "class-10-social",
+    "at": "2026-10-09T07:45:02+05:30",
+    "basis": "Textbook 10th English  SS  Part - 2 2026-27(Part 2), pdf p70 (printed p68): \"Dr. B.R. Ambedkar advocated the rights for socially oppressed, untouchables and women throughout his life. He started the magazine ‘Mookanayaka’.\". The MQP prints no answer key; answer sourced from the textbook per review_policy_v1 §2-4."
+   },
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "10th English  SS  Part - 2 2026-27.pdf#p70",
+      "pdf_page": 70,
+      "y": 263.1,
+      "derived_from": "text_layer"
+     },
+     "text": "Dr. B.R. Ambedkar advocated the rights for socially oppressed, untouchables and women throughout his life. He started the magazine ‘Mookanayaka’.",
+     "confidence": "verbatim"
+    }
+   ],
+   "source_flags": [
+    {
+     "issue": "no difficulty tag"
+    },
+    {
+     "issue": "no LO mapped"
+    }
+   ],
+   "content_hash": "ed0f57368e89c41a2257e090deb98aca8478aaf13f207726c323c2a9f7f89b6e"
+  },
+  {
+   "id": "soc-10-93-s1-q005",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-93",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": 1,
+   "marks_source": "section_header",
+   "section_signal": "I",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "learning_outcomes": [],
+   "lo_source": "none",
+   "out_of_syllabus": false,
+   "text": "The seaport located on the East coast of India is",
+   "source": "mqp",
+   "source_ref": "85E_MQP_3.pdf#soc-10-93-s1-q005",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "85E_MQP_3.pdf#soc-10-93-s1-q005",
+     "pdf_page": 2,
+     "y": 190,
+     "derived_from": "ocr"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-09T07:45:02+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-09T07:45:02+05:30",
+   "paper": 3,
+   "paper_title": "S.S.L.C. Model Question Paper 3 : 2026-27 (85-E)",
+   "chapter_ref": "soc-10-27",
+   "chapter_ref_source": "inferred",
+   "transcribed_from_image": true,
+   "options": [
+    {
+     "id": "A",
+     "text": "Kandla"
+    },
+    {
+     "id": "B",
+     "text": "Kochi"
+    },
+    {
+     "id": "C",
+     "text": "Mumbai"
+    },
+    {
+     "id": "D",
+     "text": "Paradeep"
+    }
+   ],
+   "answer": {
+    "kind": "option",
+    "option_id": "D"
+   },
+   "answer_provenance": {
+    "by": "textbook_excerpt",
+    "actor": "class-10-social",
+    "at": "2026-10-09T07:45:02+05:30",
+    "basis": "Textbook 10th English  SS  Part - 2 2026-27(Part 2), pdf p103 (printed p101): \"Paradeep : It is in Odisha state. It is a recently developed port.\". The MQP prints no answer key; answer sourced from the textbook per review_policy_v1 §2-4."
+   },
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "10th English  SS  Part - 2 2026-27.pdf#p103",
+      "pdf_page": 103,
+      "y": 599.3,
+      "derived_from": "text_layer"
+     },
+     "text": "Paradeep : It is in Odisha state. It is a recently developed port.",
+     "confidence": "verbatim"
+    }
+   ],
+   "source_flags": [
+    {
+     "issue": "no difficulty tag"
+    },
+    {
+     "issue": "no LO mapped"
+    }
+   ],
+   "content_hash": "fda3cf08776f193a3680ee654d8179ad477f5d971afd6084a16a0ed6ad8978dd"
+  },
+  {
+   "id": "soc-10-93-s1-q006",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-93",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": 1,
+   "marks_source": "section_header",
+   "section_signal": "I",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "learning_outcomes": [],
+   "lo_source": "none",
+   "out_of_syllabus": false,
+   "text": "Iron and steel industry is called a basic industry Because,",
+   "source": "mqp",
+   "source_ref": "85E_MQP_3.pdf#soc-10-93-s1-q006",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "85E_MQP_3.pdf#soc-10-93-s1-q006",
+     "pdf_page": 3,
+     "y": 760,
+     "derived_from": "ocr"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-09T07:45:02+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-09T07:45:02+05:30",
+   "paper": 3,
+   "paper_title": "S.S.L.C. Model Question Paper 3 : 2026-27 (85-E)",
+   "chapter_ref": "soc-10-28",
+   "chapter_ref_source": "inferred",
+   "transcribed_from_image": true,
+   "options": [
+    {
+     "id": "A",
+     "text": "Its history is long period than other industries"
+    },
+    {
+     "id": "B",
+     "text": "It mainly depends on the availability of Bauxite"
+    },
+    {
+     "id": "C",
+     "text": "It provides raw materials for many industries"
+    },
+    {
+     "id": "D",
+     "text": "It is knowledge-based industry"
+    }
+   ],
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "textbook_excerpt",
+    "actor": "class-10-social",
+    "at": "2026-10-09T07:45:02+05:30",
+    "basis": "Textbook 10th English  SS  Part - 2 2026-27(Part 2), pdf p110 (printed p108): \"This is called a basic industry, because the region of this industry provides the raw materials to machinery, railways, ship building, power projects, irrigation projects, building construction, house construction etc.\". The MQP prints no answer key; answer sourced from the textbook per review_policy_v1 §2-4."
+   },
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "10th English  SS  Part - 2 2026-27.pdf#p110",
+      "pdf_page": 110,
+      "y": 292.3,
+      "derived_from": "text_layer"
+     },
+     "text": "This is called a basic industry, because the region of this industry provides the raw materials to machinery, railways, ship building, power projects, irrigation projects, building construction, house construction etc.",
+     "confidence": "verbatim"
+    }
+   ],
+   "source_flags": [
+    {
+     "issue": "no difficulty tag"
+    },
+    {
+     "issue": "no LO mapped"
+    }
+   ],
+   "content_hash": "d71aa4763a9fd1adad758506848aa164e70b8840d0159aa50cec62ac42eaab84"
+  },
+  {
+   "id": "soc-10-93-s1-q007",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-93",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": 1,
+   "marks_source": "section_header",
+   "section_signal": "I",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "learning_outcomes": [],
+   "lo_source": "none",
+   "out_of_syllabus": false,
+   "text": "The central budget is presented in Lok Sabha by the",
+   "source": "mqp",
+   "source_ref": "85E_MQP_3.pdf#soc-10-93-s1-q007",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "85E_MQP_3.pdf#soc-10-93-s1-q007",
+     "pdf_page": 3,
+     "y": 680,
+     "derived_from": "ocr"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-09T07:45:02+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-09T07:45:02+05:30",
+   "paper": 3,
+   "paper_title": "S.S.L.C. Model Question Paper 3 : 2026-27 (85-E)",
+   "chapter_ref": "soc-10-31",
+   "chapter_ref_source": "inferred",
+   "transcribed_from_image": true,
+   "options": [
+    {
+     "id": "A",
+     "text": "Chief Minister"
+    },
+    {
+     "id": "B",
+     "text": "Prime Minister"
+    },
+    {
+     "id": "C",
+     "text": "State Finance Minister"
+    },
+    {
+     "id": "D",
+     "text": "Union Finance Minister"
+    }
+   ],
+   "answer": {
+    "kind": "option",
+    "option_id": "D"
+   },
+   "answer_provenance": {
+    "by": "textbook_excerpt",
+    "actor": "class-10-social",
+    "at": "2026-10-09T07:45:02+05:30",
+    "basis": "Textbook 10th English  SS  Part - 2 2026-27(Part 2), pdf p132 (printed p130): \"Normally the Union Finance Minister presents the union budget in the Lok Sabha during the budget session held in the month of February or March every year.\". The MQP prints no answer key; answer sourced from the textbook per review_policy_v1 §2-4."
+   },
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "10th English  SS  Part - 2 2026-27.pdf#p132",
+      "pdf_page": 132,
+      "y": 214.4,
+      "derived_from": "text_layer"
+     },
+     "text": "Normally the Union Finance Minister presents the union budget in the Lok Sabha during the budget session held in the month of February or March every year.",
+     "confidence": "verbatim"
+    }
+   ],
+   "source_flags": [
+    {
+     "issue": "no difficulty tag"
+    },
+    {
+     "issue": "no LO mapped"
+    }
+   ],
+   "content_hash": "fe81882016d828ddcc110be4db624e2bef8bb07e3b28fac1e01170ad13ef79b0"
+  },
+  {
+   "id": "soc-10-93-s1-q008",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-93",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "mcq",
+   "marks": 1,
+   "marks_source": "section_header",
+   "section_signal": "I",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "learning_outcomes": [],
+   "lo_source": "none",
+   "out_of_syllabus": false,
+   "text": "Government of India has established District Industrial Centres in",
+   "source": "mqp",
+   "source_ref": "85E_MQP_3.pdf#soc-10-93-s1-q008",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "85E_MQP_3.pdf#soc-10-93-s1-q008",
+     "pdf_page": 3,
+     "y": 600,
+     "derived_from": "ocr"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-09T07:45:02+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-09T07:45:02+05:30",
+   "paper": 3,
+   "paper_title": "S.S.L.C. Model Question Paper 3 : 2026-27 (85-E)",
+   "chapter_ref": "soc-10-32",
+   "chapter_ref_source": "inferred",
+   "transcribed_from_image": true,
+   "options": [
+    {
+     "id": "A",
+     "text": "1942"
+    },
+    {
+     "id": "B",
+     "text": "1945"
+    },
+    {
+     "id": "C",
+     "text": "1978"
+    },
+    {
+     "id": "D",
+     "text": "1984"
+    }
+   ],
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "textbook_excerpt",
+    "actor": "class-10-social",
+    "at": "2026-10-09T07:45:02+05:30",
+    "basis": "Textbook 10th English  SS  Part - 2 2026-27(Part 2), pdf p145 (printed p143): \"District Industrial Centres (DIC’s) These centres were established in the year 1978 with a focus to provide integrated administrative support for promotion of small scale industries in rural areas.\". The MQP prints no answer key; answer sourced from the textbook per review_policy_v1 §2-4."
+   },
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "10th English  SS  Part - 2 2026-27.pdf#p145",
+      "pdf_page": 145,
+      "y": 60.9,
+      "derived_from": "text_layer"
+     },
+     "text": "District Industrial Centres (DIC’s) These centres were established in the year 1978 with a focus to provide integrated administrative support for promotion of small scale industries in rural areas.",
+     "confidence": "verbatim"
+    }
+   ],
+   "source_flags": [
+    {
+     "issue": "no difficulty tag"
+    },
+    {
+     "issue": "no LO mapped"
+    }
+   ],
+   "content_hash": "3627eba52f16526ee53f243527f661ecb13922597158034bc941a698f8f26644"
+  },
+  {
+   "id": "soc-10-93-s2-q009",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-93",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "section_signal": "II",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "learning_outcomes": [],
+   "lo_source": "none",
+   "out_of_syllabus": false,
+   "text": "Which act of Puttabasappa increased his popularity?",
+   "source": "mqp",
+   "source_ref": "85E_MQP_3.pdf#soc-10-93-s2-q009",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "85E_MQP_3.pdf#soc-10-93-s2-q009",
+     "pdf_page": 3,
+     "y": 470,
+     "derived_from": "ocr"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-09T07:45:02+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-09T07:45:02+05:30",
+   "paper": 3,
+   "paper_title": "S.S.L.C. Model Question Paper 3 : 2026-27 (85-E)",
+   "chapter_ref": "soc-10-04",
+   "chapter_ref_source": "inferred",
+   "transcribed_from_image": true,
+   "answer": {
+    "kind": "text",
+    "value": "Puttabasappa killed an Amaldar (Amaldhar) who was known for his brutality; this act further increased his popularity."
+   },
+   "answer_provenance": {
+    "by": "textbook_excerpt",
+    "actor": "class-10-social",
+    "at": "2026-10-09T07:45:02+05:30",
+    "basis": "Textbook 10th English  SS  Part - 1 2026-27(Part 1), pdf p58 (printed p45): \"Puttabasappa killed an Amaldhar who was known for his brutality. This further increased the popularity of Puttabasappa.\". The MQP prints no answer key; answer sourced from the textbook per review_policy_v1 §2-4.",
+    "textbook_derived": true
+   },
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "10th English  SS  Part - 1 2026-27.pdf#p58",
+      "pdf_page": 58,
+      "y": 38.3,
+      "derived_from": "text_layer"
+     },
+     "text": "Puttabasappa killed an Amaldhar who was known for his brutality. This further increased the popularity of Puttabasappa.",
+     "confidence": "verbatim"
+    }
+   ],
+   "source_flags": [
+    {
+     "issue": "no difficulty tag"
+    },
+    {
+     "issue": "no LO mapped"
+    }
+   ],
+   "content_hash": "f7f0ab84856a67a145ff0a0e1420052f3917a00c4483ae92c1c535745df62bc5"
+  },
+  {
+   "id": "soc-10-93-s2-q010",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-93",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "section_signal": "II",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "learning_outcomes": [],
+   "lo_source": "none",
+   "out_of_syllabus": false,
+   "text": "Name the political party founded by Mussolini.",
+   "source": "mqp",
+   "source_ref": "85E_MQP_3.pdf#soc-10-93-s2-q010",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "85E_MQP_3.pdf#soc-10-93-s2-q010",
+     "pdf_page": 3,
+     "y": 445,
+     "derived_from": "ocr"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-09T07:45:02+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-09T07:45:02+05:30",
+   "paper": 3,
+   "paper_title": "S.S.L.C. Model Question Paper 3 : 2026-27 (85-E)",
+   "chapter_ref": "soc-10-20",
+   "chapter_ref_source": "inferred",
+   "transcribed_from_image": true,
+   "answer": {
+    "kind": "text",
+    "value": "Mussolini founded the ‘National Fascist Party’."
+   },
+   "answer_provenance": {
+    "by": "textbook_excerpt",
+    "actor": "class-10-social",
+    "at": "2026-10-09T07:45:02+05:30",
+    "basis": "Textbook 10th English  SS  Part - 2 2026-27(Part 2), pdf p38 (printed p36): \"The Prime Minister of Italy from 1922-1943 was the founder of the ‘National Fascist Party’.\". The MQP prints no answer key; answer sourced from the textbook per review_policy_v1 §2-4.",
+    "textbook_derived": true
+   },
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "10th English  SS  Part - 2 2026-27.pdf#p38",
+      "pdf_page": 38,
+      "y": 39.2,
+      "derived_from": "text_layer"
+     },
+     "text": "The Prime Minister of Italy from 1922-1943 was the founder of the ‘National Fascist Party’.",
+     "confidence": "verbatim"
+    }
+   ],
+   "source_flags": [
+    {
+     "issue": "no difficulty tag"
+    },
+    {
+     "issue": "no LO mapped"
+    }
+   ],
+   "content_hash": "b288f7b72061a1758f87f8fb8cb5916225b850159f610cea988265f409f99219"
+  },
+  {
+   "id": "soc-10-93-s2-q011",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-93",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "section_signal": "II",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "learning_outcomes": [],
+   "lo_source": "none",
+   "out_of_syllabus": false,
+   "text": "Which organ is called as the Cabinet of UN?",
+   "source": "mqp",
+   "source_ref": "85E_MQP_3.pdf#soc-10-93-s2-q011",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "85E_MQP_3.pdf#soc-10-93-s2-q011",
+     "pdf_page": 3,
+     "y": 420,
+     "derived_from": "ocr"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-09T07:45:02+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-09T07:45:02+05:30",
+   "paper": 3,
+   "paper_title": "S.S.L.C. Model Question Paper 3 : 2026-27 (85-E)",
+   "chapter_ref": "soc-10-22",
+   "chapter_ref_source": "inferred",
+   "transcribed_from_image": true,
+   "answer": {
+    "kind": "text",
+    "value": "The Security Council is called the cabinet of the UN."
+   },
+   "answer_provenance": {
+    "by": "textbook_excerpt",
+    "actor": "class-10-social",
+    "at": "2026-10-09T07:45:02+05:30",
+    "basis": "Textbook 10th English  SS  Part - 2 2026-27(Part 2), pdf p56 (printed p54): \"The Security Council : This is the most powerful organ and executive or cabinet of the UN.\". The MQP prints no answer key; answer sourced from the textbook per review_policy_v1 §2-4.",
+    "textbook_derived": true
+   },
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "10th English  SS  Part - 2 2026-27.pdf#p56",
+      "pdf_page": 56,
+      "y": 70.2,
+      "derived_from": "text_layer"
+     },
+     "text": "The Security Council : This is the most powerful organ and executive or cabinet of the UN.",
+     "confidence": "verbatim"
+    }
+   ],
+   "source_flags": [
+    {
+     "issue": "no difficulty tag"
+    },
+    {
+     "issue": "no LO mapped"
+    }
+   ],
+   "content_hash": "663d6ae15cd4642ace1681cd91f1b3749bb3a19f8a04331bc21d362311ffeb75"
+  },
+  {
+   "id": "soc-10-93-s2-q012",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-93",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "section_signal": "II",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "learning_outcomes": [],
+   "lo_source": "none",
+   "out_of_syllabus": false,
+   "text": "What is social stratification?",
+   "source": "mqp",
+   "source_ref": "85E_MQP_3.pdf#soc-10-93-s2-q012",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "85E_MQP_3.pdf#soc-10-93-s2-q012",
+     "pdf_page": 3,
+     "y": 395,
+     "derived_from": "ocr"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-09T07:45:02+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-09T07:45:02+05:30",
+   "paper": 3,
+   "paper_title": "S.S.L.C. Model Question Paper 3 : 2026-27 (85-E)",
+   "chapter_ref": "soc-10-08",
+   "chapter_ref_source": "inferred",
+   "transcribed_from_image": true,
+   "answer": {
+    "kind": "text",
+    "value": "Social stratification refers to the practice of classifying people as upper class and lower class on the basis of income, education, caste, colour, gender, occupation, intelligence etc."
+   },
+   "answer_provenance": {
+    "by": "textbook_excerpt",
+    "actor": "class-10-social",
+    "at": "2026-10-09T07:45:02+05:30",
+    "basis": "Textbook 10th English  SS  Part - 1 2026-27(Part 1), pdf p92 (printed p79): \"Social stratification refers to the practice of classifying people as upper class and lower class on the basis of income, education, caste, colour, gender, occupation, intelligence etc.\". The MQP prints no answer key; answer sourced from the textbook per review_policy_v1 §2-4."
+   },
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "10th English  SS  Part - 1 2026-27.pdf#p92",
+      "pdf_page": 92,
+      "y": 85.6,
+      "derived_from": "text_layer"
+     },
+     "text": "Social stratification refers to the practice of classifying people as upper class and lower class on the basis of income, education, caste, colour, gender, occupation, intelligence etc.",
+     "confidence": "verbatim"
+    }
+   ],
+   "source_flags": [
+    {
+     "issue": "no difficulty tag"
+    },
+    {
+     "issue": "no LO mapped"
+    }
+   ],
+   "content_hash": "366a88a16541b4ad4066fc65f3501259b9d4cffac7047680973ad76192285555"
+  },
+  {
+   "id": "soc-10-93-s2-q013",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-93",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "section_signal": "II",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "learning_outcomes": [],
+   "lo_source": "none",
+   "out_of_syllabus": false,
+   "text": "Who abolished Bounded labour in Karnataka?",
+   "source": "mqp",
+   "source_ref": "85E_MQP_3.pdf#soc-10-93-s2-q013",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "85E_MQP_3.pdf#soc-10-93-s2-q013",
+     "pdf_page": 3,
+     "y": 370,
+     "derived_from": "ocr"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-09T07:45:02+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-09T07:45:02+05:30",
+   "paper": 3,
+   "paper_title": "S.S.L.C. Model Question Paper 3 : 2026-27 (85-E)",
+   "chapter_ref": "soc-10-24",
+   "chapter_ref_source": "inferred",
+   "transcribed_from_image": true,
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag"
+    },
+    {
+     "issue": "no LO mapped"
+    },
+    {
+     "issue": "no answer printed"
+    }
+   ],
+   "content_hash": "2c5550c7615318600eb91173203abff2ad633ff91be7a2750b31d3ba879ad214"
+  },
+  {
+   "id": "soc-10-93-s2-q014",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-93",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "section_signal": "II",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "learning_outcomes": [],
+   "lo_source": "none",
+   "out_of_syllabus": false,
+   "text": "Which type of climate India has?",
+   "source": "mqp",
+   "source_ref": "85E_MQP_3.pdf#soc-10-93-s2-q014",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "85E_MQP_3.pdf#soc-10-93-s2-q014",
+     "pdf_page": 3,
+     "y": 345,
+     "derived_from": "ocr"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-09T07:45:02+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-09T07:45:02+05:30",
+   "paper": 3,
+   "paper_title": "S.S.L.C. Model Question Paper 3 : 2026-27 (85-E)",
+   "chapter_ref": "soc-10-11",
+   "chapter_ref_source": "inferred",
+   "transcribed_from_image": true,
+   "answer": {
+    "kind": "text",
+    "value": "India has tropical monsoon type climatic conditions."
+   },
+   "answer_provenance": {
+    "by": "textbook_excerpt",
+    "actor": "class-10-social",
+    "at": "2026-10-09T07:45:02+05:30",
+    "basis": "Textbook 10th English  SS  Part - 1 2026-27(Part 1), pdf p111 (printed p98): \"India has tropical monsoon type climatic conditions. In this type of climate, winds blow in opposite directions in different seasons.\". The MQP prints no answer key; answer sourced from the textbook per review_policy_v1 §2-4."
+   },
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "10th English  SS  Part - 1 2026-27.pdf#p111",
+      "pdf_page": 111,
+      "y": 59.1,
+      "derived_from": "text_layer"
+     },
+     "text": "India has tropical monsoon type climatic conditions. In this type of climate, winds blow in opposite directions in different seasons.",
+     "confidence": "verbatim"
+    }
+   ],
+   "source_flags": [
+    {
+     "issue": "no difficulty tag"
+    },
+    {
+     "issue": "no LO mapped"
+    }
+   ],
+   "content_hash": "b9916b08ec6d387b6f4b1f0b2afa43b3c048699780c8a078d517f447c54c19e5"
+  },
+  {
+   "id": "soc-10-93-s2-q015",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-93",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "section_signal": "II",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "learning_outcomes": [],
+   "lo_source": "none",
+   "out_of_syllabus": false,
+   "text": "Who said that “Development of its villages is the true development of India”.",
+   "source": "mqp",
+   "source_ref": "85E_MQP_3.pdf#soc-10-93-s2-q015",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "85E_MQP_3.pdf#soc-10-93-s2-q015",
+     "pdf_page": 3,
+     "y": 320,
+     "derived_from": "ocr"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-09T07:45:02+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-09T07:45:02+05:30",
+   "paper": 3,
+   "paper_title": "S.S.L.C. Model Question Paper 3 : 2026-27 (85-E)",
+   "chapter_ref": "soc-10-30",
+   "chapter_ref_source": "inferred",
+   "transcribed_from_image": true,
+   "answer": {
+    "kind": "text",
+    "value": "Mahatma Gandhi, the Father of the Nation, said it."
+   },
+   "answer_provenance": {
+    "by": "textbook_excerpt",
+    "actor": "class-10-social",
+    "at": "2026-10-09T07:45:02+05:30",
+    "basis": "Textbook 10th English  SS  Part - 2 2026-27(Part 2), pdf p123 (printed p121): \"The Father of the Nation, Mahatma Gandhi said, long ago, that “development of its villages is the true development of India”.\". The MQP prints no answer key; answer sourced from the textbook per review_policy_v1 §2-4.",
+    "textbook_derived": true
+   },
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "10th English  SS  Part - 2 2026-27.pdf#p123",
+      "pdf_page": 123,
+      "y": 117.5,
+      "derived_from": "text_layer"
+     },
+     "text": "The Father of the Nation, Mahatma Gandhi said, long ago, that “development of its villages is the true development of India”.",
+     "confidence": "verbatim"
+    }
+   ],
+   "source_flags": [
+    {
+     "issue": "no difficulty tag"
+    },
+    {
+     "issue": "no LO mapped"
+    }
+   ],
+   "content_hash": "27878074e2ae4203d33507cea70884bf96bbd84863d764bdcf517b55401822f0"
+  },
+  {
+   "id": "soc-10-93-s2-q016",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-93",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "section_signal": "II",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "learning_outcomes": [],
+   "lo_source": "none",
+   "out_of_syllabus": false,
+   "text": "Shreyas has a bank account. Bank does not give interest on his deposits but collects service charges. Which type of bank account he has?",
+   "source": "mqp",
+   "source_ref": "85E_MQP_3.pdf#soc-10-93-s2-q016",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "85E_MQP_3.pdf#soc-10-93-s2-q016",
+     "pdf_page": 3,
+     "y": 290,
+     "derived_from": "ocr"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-09T07:45:02+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-09T07:45:02+05:30",
+   "paper": 3,
+   "paper_title": "S.S.L.C. Model Question Paper 3 : 2026-27 (85-E)",
+   "chapter_ref": "soc-10-16",
+   "chapter_ref_source": "inferred",
+   "transcribed_from_image": true,
+   "answer": {
+    "kind": "text",
+    "value": "He has a Current Account."
+   },
+   "answer_provenance": {
+    "by": "textbook_excerpt",
+    "actor": "class-10-social",
+    "at": "2026-10-09T07:45:02+05:30",
+    "basis": "Textbook 10th English  SS  Part - 1 2026-27(Part 1), pdf p148 (printed p135): \"Current account is opened by businessmen who have a large number of regular transactions with the Bank. ... Generally banks do not give any interest on these deposits but collect service charges or bank charges on such account.\". The MQP prints no answer key; answer sourced from the textbook per review_policy_v1 §2-4.",
+    "textbook_derived": true
+   },
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "10th English  SS  Part - 1 2026-27.pdf#p148",
+      "pdf_page": 148,
+      "y": 39.1,
+      "derived_from": "text_layer"
+     },
+     "text": "Current account is opened by businessmen who have a large number of regular transactions with the Bank. ... Generally banks do not give any interest on these deposits but collect service charges or bank charges on such account.",
+     "confidence": "verbatim"
+    }
+   ],
+   "source_flags": [
+    {
+     "issue": "no difficulty tag"
+    },
+    {
+     "issue": "no LO mapped"
+    }
+   ],
+   "content_hash": "78ad9f9935b02080cfc4aab657529b9ada7fa41a75b51e0f0bcb263d1e5c4e2c"
+  },
+  {
+   "id": "soc-10-93-s3-q017",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-93",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "section_signal": "III",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "learning_outcomes": [],
+   "lo_source": "none",
+   "out_of_syllabus": false,
+   "text": "Explain the functions of State Public Service Commission.",
+   "source": "mqp",
+   "source_ref": "85E_MQP_3.pdf#soc-10-93-s3-q017",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "85E_MQP_3.pdf#soc-10-93-s3-q017",
+     "pdf_page": 3,
+     "y": 215,
+     "derived_from": "ocr"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-09T07:45:02+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-09T07:45:02+05:30",
+   "paper": 3,
+   "paper_title": "S.S.L.C. Model Question Paper 3 : 2026-27 (85-E)",
+   "chapter_ref": "soc-10-06",
+   "chapter_ref_source": "inferred",
+   "or_group": "93-q017",
+   "transcribed_from_image": true,
+   "answer": {
+    "kind": "text",
+    "value": "The functions of the State Public Service Commission (in Karnataka, the KPSC) are: (1) recruitment of Gazetted Officers to the State Government services through Competitive Exams and Personality Tests, and of Non-Gazetted Officers through Competitive Exams; (2) conducting Personality Tests for appointment to certain posts; (3) conducting Departmental Exams twice a year for government employees; (4) advising the government on disciplinary and promotion cases; and (5) carrying out coordination work for various Competitive Exams conducted by the UPSC in different examination centres of the state."
+   },
+   "answer_provenance": {
+    "by": "textbook_excerpt",
+    "actor": "class-10-social",
+    "at": "2026-10-09T07:45:02+05:30",
+    "basis": "Textbook 10th English  SS  Part - 1 2026-27(Part 1), pdf p76 (printed p63): \"FUNCTIONS: 1) Recruitment of Gazzetted Officers to the State Government services through Competitive Exams and Personality Tests and Non Gazzetted Officers through Competitive Exams ... 2) Conducting Personality Tests to the candidates to appoint for certain posts. 3) Conducting Departmental Exams twice a year for government employees. 4) To advise the government on disciplinary and promotion cases. 5) To carry out coordination work for various Competitive Exams conducted by UPSC in different examination centers of the state.\". The MQP prints no answer key; answer sourced from the textbook per review_policy_v1 §2-4.",
+    "textbook_derived": true
+   },
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "10th English  SS  Part - 1 2026-27.pdf#p76",
+      "pdf_page": 76,
+      "y": 446.1,
+      "derived_from": "text_layer"
+     },
+     "text": "FUNCTIONS: 1) Recruitment of Gazzetted Officers to the State Government services through Competitive Exams and Personality Tests and Non Gazzetted Officers through Competitive Exams ... 2) Conducting Personality Tests to the candidates to appoint for certain posts. 3) Conducting Departmental Exams twice a year for government employees. 4) To advise the government on disciplinary and promotion cases. 5) To carry out coordination work for various Competitive Exams conducted by UPSC in different examination centers of the state.",
+     "confidence": "verbatim"
+    }
+   ],
+   "source_flags": [
+    {
+     "issue": "no difficulty tag"
+    },
+    {
+     "issue": "no LO mapped"
+    }
+   ],
+   "content_hash": "8a56e91b4e676111b0523132f592a6873ec3b82b996a41c0653a4194a940f4f4"
+  },
+  {
+   "id": "soc-10-93-s3-q017b",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-93",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "section_signal": "III",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "learning_outcomes": [],
+   "lo_source": "none",
+   "out_of_syllabus": false,
+   "text": "Explain the aims and objectives of the United Nations",
+   "source": "mqp",
+   "source_ref": "85E_MQP_3.pdf#soc-10-93-s3-q017b",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "85E_MQP_3.pdf#soc-10-93-s3-q017b",
+     "pdf_page": 3,
+     "y": 175,
+     "derived_from": "ocr"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-09T07:45:02+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-09T07:45:02+05:30",
+   "paper": 3,
+   "paper_title": "S.S.L.C. Model Question Paper 3 : 2026-27 (85-E)",
+   "chapter_ref": "soc-10-22",
+   "chapter_ref_source": "inferred",
+   "or_group": "93-q017",
+   "transcribed_from_image": true,
+   "answer": {
+    "kind": "text",
+    "value": "The objectives of the UN are: (1) to maintain international peace and security; (2) to develop friendly relations among nations; (3) to establish faith in fundamental human rights; (4) to achieve international cooperation in solving international problems of an economic, social, cultural or humanitarian character; (5) to establish justice and respect for international obligations; and (6) to function as a centre for harmonizing the actions of nations."
+   },
+   "answer_provenance": {
+    "by": "textbook_excerpt",
+    "actor": "class-10-social",
+    "at": "2026-10-09T07:45:02+05:30",
+    "basis": "Textbook 10th English  SS  Part - 2 2026-27(Part 2), pdf p55 (printed p53): \"The objectives of the UN are: 1) To maintain international peace and security 2) To develop friendly relations among nations, 3) To establish faith in fundamental human rights, 4) To achieve international cooperation in solving international problems of economic, social, cultural or humanitarian character, 5) To establish justice and respect for international obligation and 6) to function as a center for harmonizing the actions of nations.\". The MQP prints no answer key; answer sourced from the textbook per review_policy_v1 §2-4.",
+    "textbook_derived": true
+   },
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "10th English  SS  Part - 2 2026-27.pdf#p55",
+      "pdf_page": 55,
+      "y": 111.8,
+      "derived_from": "text_layer"
+     },
+     "text": "The objectives of the UN are: 1) To maintain international peace and security 2) To develop friendly relations among nations, 3) To establish faith in fundamental human rights, 4) To achieve international cooperation in solving international problems of economic, social, cultural or humanitarian character, 5) To establish justice and respect for international obligation and 6) to function as a center for harmonizing the actions of nations.",
+     "confidence": "verbatim"
+    }
+   ],
+   "source_flags": [
+    {
+     "issue": "no difficulty tag"
+    },
+    {
+     "issue": "no LO mapped"
+    }
+   ],
+   "content_hash": "8a1725a0453b03b3494a7ce252ee7b3f9b8f6d9594baa2fc960e256d994160e7"
+  },
+  {
+   "id": "soc-10-93-s3-q018",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-93",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "section_signal": "III",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "learning_outcomes": [],
+   "lo_source": "none",
+   "out_of_syllabus": false,
+   "text": "What are the reasons for child labour?",
+   "source": "mqp",
+   "source_ref": "85E_MQP_3.pdf#soc-10-93-s3-q018",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "85E_MQP_3.pdf#soc-10-93-s3-q018",
+     "pdf_page": 3,
+     "y": 140,
+     "derived_from": "ocr"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-09T07:45:02+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-09T07:45:02+05:30",
+   "paper": 3,
+   "paper_title": "S.S.L.C. Model Question Paper 3 : 2026-27 (85-E)",
+   "chapter_ref": "soc-10-24",
+   "chapter_ref_source": "inferred",
+   "or_group": "93-q018",
+   "transcribed_from_image": true,
+   "answer": {
+    "kind": "text",
+    "value": "The causes of child labour are poverty, domestic conflicts, divorce, domestic violence, excessive control, greed of industrialists, illiteracy, and the kidnapping of children and pledging them."
+   },
+   "answer_provenance": {
+    "by": "textbook_excerpt",
+    "actor": "class-10-social",
+    "at": "2026-10-09T07:45:02+05:30",
+    "basis": "Textbook 10th English  SS  Part - 2 2026-27(Part 2), pdf p73 (printed p71): \"Poverty, domestic conflicts, divorce, domestic violence, excessive control, greed of industrialists, illiteracy, kidnapping of children and pledging them etc. are the causes behind child labour and its increase.\". The MQP prints no answer key; answer sourced from the textbook per review_policy_v1 §2-4."
+   },
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "10th English  SS  Part - 2 2026-27.pdf#p73",
+      "pdf_page": 73,
+      "y": 326.8,
+      "derived_from": "text_layer"
+     },
+     "text": "Poverty, domestic conflicts, divorce, domestic violence, excessive control, greed of industrialists, illiteracy, kidnapping of children and pledging them etc. are the causes behind child labour and its increase.",
+     "confidence": "verbatim"
+    }
+   ],
+   "source_flags": [
+    {
+     "issue": "no difficulty tag"
+    },
+    {
+     "issue": "no LO mapped"
+    }
+   ],
+   "content_hash": "49b6005bc102f20bc26088e6d6d22b31ebea3d595f43486e23cfa21638cab67d"
+  },
+  {
+   "id": "soc-10-93-s3-q018b",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-93",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "section_signal": "III",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "learning_outcomes": [],
+   "lo_source": "none",
+   "out_of_syllabus": false,
+   "text": "What are the negative effects of Prejudice created by discrimination?",
+   "source": "mqp",
+   "source_ref": "85E_MQP_3.pdf#soc-10-93-s3-q018b",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "85E_MQP_3.pdf#soc-10-93-s3-q018b",
+     "pdf_page": 3,
+     "y": 100,
+     "derived_from": "ocr"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-09T07:45:02+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-09T07:45:02+05:30",
+   "paper": 3,
+   "paper_title": "S.S.L.C. Model Question Paper 3 : 2026-27 (85-E)",
+   "chapter_ref": "soc-10-08",
+   "chapter_ref_source": "inferred",
+   "or_group": "93-q018",
+   "transcribed_from_image": true,
+   "answer": {
+    "kind": "text",
+    "value": "Prejudices created by discrimination lead to the development of feelings like impatience, contempt, disrespect and hatred. As a result, social inequality develops, leading to social conflicts."
+   },
+   "answer_provenance": {
+    "by": "textbook_excerpt",
+    "actor": "class-10-social",
+    "at": "2026-10-09T07:45:02+05:30",
+    "basis": "Textbook 10th English  SS  Part - 1 2026-27(Part 1), pdf p93 (printed p80): \"prejudices created by discrimination lead to development of feelings like impatience, contempt, disrespect and hatred. As a result, social inequality develops leading to social conflicts.\". The MQP prints no answer key; answer sourced from the textbook per review_policy_v1 §2-4."
+   },
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "10th English  SS  Part - 1 2026-27.pdf#p93",
+      "pdf_page": 93,
+      "y": 248.2,
+      "derived_from": "text_layer"
+     },
+     "text": "prejudices created by discrimination lead to development of feelings like impatience, contempt, disrespect and hatred. As a result, social inequality develops leading to social conflicts.",
+     "confidence": "verbatim"
+    }
+   ],
+   "source_flags": [
+    {
+     "issue": "no difficulty tag"
+    },
+    {
+     "issue": "no LO mapped"
+    }
+   ],
+   "content_hash": "50c7f6e331807dec3bcb7ec55609f174016a320de93d4b0cae247f9d0dd9f92f"
+  },
+  {
+   "id": "soc-10-93-s3-q019",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-93",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "section_signal": "III",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "learning_outcomes": [],
+   "lo_source": "none",
+   "out_of_syllabus": false,
+   "text": "Explain the causes for the First Anglo-Maratha War.",
+   "source": "mqp",
+   "source_ref": "85E_MQP_3.pdf#soc-10-93-s3-q019",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "85E_MQP_3.pdf#soc-10-93-s3-q019",
+     "pdf_page": 4,
+     "y": 780,
+     "derived_from": "ocr"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-09T07:45:02+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-09T07:45:02+05:30",
+   "paper": 3,
+   "paper_title": "S.S.L.C. Model Question Paper 3 : 2026-27 (85-E)",
+   "chapter_ref": "soc-10-02",
+   "chapter_ref_source": "inferred",
+   "transcribed_from_image": true,
+   "answer": {
+    "kind": "text",
+    "value": "The First Anglo-Maratha War (1775-1782) was caused by the enmity that arose when the Marathas restored Shah Alam-II to the Mughal throne and received Koara and Allahabad (which the emperor had earlier given to the British), and by the Maratha succession dispute after the death of Madhav Rao Peshwa: Narayanrao was murdered by his uncle Raghoba (Raghunatha Rao), who then approached the British for support, and the British exploited this situation in their favour."
+   },
+   "answer_provenance": {
+    "by": "textbook_excerpt",
+    "actor": "class-10-social",
+    "at": "2026-10-09T07:45:02+05:30",
+    "basis": "Textbook 10th English  SS  Part - 1 2026-27(Part 1), pdf p27 (printed p14): \"During this period, the death of the Maratha strong man Madhav Rao Peshwa was a major setback to Marathas. ... he was murdered by his uncle Raghobha (Ragunatha Rao). This resulted in fighting for the Peshwa post. ... Upset with this development, Raghobha approached the British for support. The British thought of exploiting this situation in their favour.\". The MQP prints no answer key; answer sourced from the textbook per review_policy_v1 §2-4.",
+    "textbook_derived": true
+   },
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "10th English  SS  Part - 1 2026-27.pdf#p27",
+      "pdf_page": 27,
+      "y": 140.5,
+      "derived_from": "text_layer"
+     },
+     "text": "During this period, the death of the Maratha strong man Madhav Rao Peshwa was a major setback to Marathas. ... he was murdered by his uncle Raghobha (Ragunatha Rao). This resulted in fighting for the Peshwa post. ... Upset with this development, Raghobha approached the British for support. The British thought of exploiting this situation in their favour.",
+     "confidence": "verbatim"
+    }
+   ],
+   "source_flags": [
+    {
+     "issue": "no difficulty tag"
+    },
+    {
+     "issue": "no LO mapped"
+    }
+   ],
+   "content_hash": "be0225a5acfc824031807e58d77b84885d83bf44543fa784b25b95f9f624c2f2"
+  },
+  {
+   "id": "soc-10-93-s3-q020",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-93",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "section_signal": "III",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "learning_outcomes": [],
+   "lo_source": "none",
+   "out_of_syllabus": false,
+   "text": "Write about the liberation movement of Pondicherry.",
+   "source": "mqp",
+   "source_ref": "85E_MQP_3.pdf#soc-10-93-s3-q020",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "85E_MQP_3.pdf#soc-10-93-s3-q020",
+     "pdf_page": 4,
+     "y": 755,
+     "derived_from": "ocr"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-09T07:45:02+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-09T07:45:02+05:30",
+   "paper": 3,
+   "paper_title": "S.S.L.C. Model Question Paper 3 : 2026-27 (85-E)",
+   "chapter_ref": "soc-10-19",
+   "chapter_ref_source": "inferred",
+   "transcribed_from_image": true,
+   "answer": {
+    "kind": "text",
+    "value": "The French colonies had continued their hold on Pondicherry, Karaikal, Mahe and Chandranagar in post-independence India. As a result of the struggle by the Congress, the Communists and other organizations urging that it should be a part of India, in 1954 these provinces joined India. Pondicherry was declared a Union Territory in 1962, and was renamed Puducherry in 2006."
+   },
+   "answer_provenance": {
+    "by": "textbook_excerpt",
+    "actor": "class-10-social",
+    "at": "2026-10-09T07:45:02+05:30",
+    "basis": "Textbook 10th English  SS  Part - 2 2026-27(Part 2), pdf p34 (printed p32): \"The French colonies had continued their hold on Pondicherry, Karaikal, Mahe and Chandranagar in post-independence India. As a result of the struggle by the Congress, the Communists and other organizations urging that it should be a part of India, in 1954, these provinces joined India. Pondicherry was declared a Union territory in 1962. Pondicherry was renamed as puducherry in 2006.\". The MQP prints no answer key; answer sourced from the textbook per review_policy_v1 §2-4."
+   },
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "10th English  SS  Part - 2 2026-27.pdf#p34",
+      "pdf_page": 34,
+      "y": 58.1,
+      "derived_from": "text_layer"
+     },
+     "text": "The French colonies had continued their hold on Pondicherry, Karaikal, Mahe and Chandranagar in post-independence India. As a result of the struggle by the Congress, the Communists and other organizations urging that it should be a part of India, in 1954, these provinces joined India. Pondicherry was declared a Union territory in 1962. Pondicherry was renamed as puducherry in 2006.",
+     "confidence": "verbatim"
+    }
+   ],
+   "source_flags": [
+    {
+     "issue": "no difficulty tag"
+    },
+    {
+     "issue": "no LO mapped"
+    }
+   ],
+   "content_hash": "df63551d6923f626d5f7aad899f864aa4920bf9c1419805f75681ecdf3f663da"
+  },
+  {
+   "id": "soc-10-93-s3-q021",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-93",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "section_signal": "III",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "learning_outcomes": [],
+   "lo_source": "none",
+   "out_of_syllabus": false,
+   "text": "Well irrigation is the most important irrigation system. Illustrate.",
+   "source": "mqp",
+   "source_ref": "85E_MQP_3.pdf#soc-10-93-s3-q021",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "85E_MQP_3.pdf#soc-10-93-s3-q021",
+     "pdf_page": 4,
+     "y": 730,
+     "derived_from": "ocr"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-09T07:45:02+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-09T07:45:02+05:30",
+   "paper": 3,
+   "paper_title": "S.S.L.C. Model Question Paper 3 : 2026-27 (85-E)",
+   "chapter_ref": "soc-10-14",
+   "chapter_ref_source": "inferred",
+   "transcribed_from_image": true,
+   "answer": {
+    "kind": "text",
+    "value": "Well irrigation is the most important type of irrigation in India. Supplying ground water by digging or drilling wells is called well irrigation. It provides water to large areas of agricultural land, is more useful in low-rainfall regions, is easier to construct and maintain, and becomes essential where canals and tanks are not available. There are two types of wells - open wells and tube wells."
+   },
+   "answer_provenance": {
+    "by": "textbook_excerpt",
+    "actor": "class-10-social",
+    "at": "2026-10-09T07:45:02+05:30",
+    "basis": "Textbook 10th English  SS  Part - 1 2026-27(Part 1), pdf p126 (printed p113): \"Well irrigation: Well irrigation is the most important type of irrigation in India. It provides water to large areas of agricultural land. Supplying ground water by digging or drilling wells is called well irrigation. Well irrigation is more useful in low rainfall regions. Construction and maintenance of wells is easier. Well irrigation becomes essential where the canals and tanks are not available. There are two types of wells: 1.Open wells 2. Tube wells.\". The MQP prints no answer key; answer sourced from the textbook per review_policy_v1 §2-4.",
+    "textbook_derived": true
+   },
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "10th English  SS  Part - 1 2026-27.pdf#p126",
+      "pdf_page": 126,
+      "y": 91.7,
+      "derived_from": "text_layer"
+     },
+     "text": "Well irrigation: Well irrigation is the most important type of irrigation in India. It provides water to large areas of agricultural land. Supplying ground water by digging or drilling wells is called well irrigation. Well irrigation is more useful in low rainfall regions. Construction and maintenance of wells is easier. Well irrigation becomes essential where the canals and tanks are not available. There are two types of wells: 1.Open wells 2. Tube wells.",
+     "confidence": "verbatim"
+    }
+   ],
+   "source_flags": [
+    {
+     "issue": "no difficulty tag"
+    },
+    {
+     "issue": "no LO mapped"
+    }
+   ],
+   "content_hash": "8b17b067e4ed7aabbae0e7cc0520a3847ce9e8328a882efbf0e2ac2a3af55619"
+  },
+  {
+   "id": "soc-10-93-s3-q022",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-93",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "section_signal": "III",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "learning_outcomes": [],
+   "lo_source": "none",
+   "out_of_syllabus": false,
+   "text": "Mention the importance of agriculture.",
+   "source": "mqp",
+   "source_ref": "85E_MQP_3.pdf#soc-10-93-s3-q022",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "85E_MQP_3.pdf#soc-10-93-s3-q022",
+     "pdf_page": 4,
+     "y": 705,
+     "derived_from": "ocr"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-09T07:45:02+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-09T07:45:02+05:30",
+   "paper": 3,
+   "paper_title": "S.S.L.C. Model Question Paper 3 : 2026-27 (85-E)",
+   "chapter_ref": "soc-10-25",
+   "chapter_ref_source": "inferred",
+   "transcribed_from_image": true,
+   "answer": {
+    "kind": "text",
+    "value": "Agriculture is the main occupation of Indians. It supplies the food grains of the country's huge population; it is a life-subsistence occupation and provides more employment opportunities than all other sectors of the economy; many industries depend on the raw materials it provides, so it indirectly nurtures industries; and it supports many tertiary occupations like transport, trade and banking."
+   },
+   "answer_provenance": {
+    "by": "textbook_excerpt",
+    "actor": "class-10-social",
+    "at": "2026-10-09T07:45:02+05:30",
+    "basis": "Textbook 10th English  SS  Part - 2 2026-27(Part 2), pdf p84 (printed p82): \"Agriculture is the main occupation of Indians. ... Farming supplies the food grains of the huge population of the country. It is a life-subsistence occupation and provides more employment opportunities than all other sectors of economy. There are many industries in India which depend on the raw materials provided by agriculture. ... Agriculture supports even many tertiary occupations like transport, trade, banking etc.\". The MQP prints no answer key; answer sourced from the textbook per review_policy_v1 §2-4.",
+    "textbook_derived": true
+   },
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "10th English  SS  Part - 2 2026-27.pdf#p84",
+      "pdf_page": 84,
+      "y": 133.6,
+      "derived_from": "text_layer"
+     },
+     "text": "Agriculture is the main occupation of Indians. ... Farming supplies the food grains of the huge population of the country. It is a life-subsistence occupation and provides more employment opportunities than all other sectors of economy. There are many industries in India which depend on the raw materials provided by agriculture. ... Agriculture supports even many tertiary occupations like transport, trade, banking etc.",
+     "confidence": "verbatim"
+    }
+   ],
+   "source_flags": [
+    {
+     "issue": "no difficulty tag"
+    },
+    {
+     "issue": "no LO mapped"
+    }
+   ],
+   "content_hash": "90580c0bbd448eae8c51d4aa654ed6cc774300e6a5c834515d0c6e69a1ae0732"
+  },
+  {
+   "id": "soc-10-93-s3-q023",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-93",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "section_signal": "III",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "learning_outcomes": [],
+   "lo_source": "none",
+   "out_of_syllabus": false,
+   "text": "Explain the objectives of the Five-Year Plans.",
+   "source": "mqp",
+   "source_ref": "85E_MQP_3.pdf#soc-10-93-s3-q023",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "85E_MQP_3.pdf#soc-10-93-s3-q023",
+     "pdf_page": 4,
+     "y": 680,
+     "derived_from": "ocr"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-09T07:45:02+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-09T07:45:02+05:30",
+   "paper": 3,
+   "paper_title": "S.S.L.C. Model Question Paper 3 : 2026-27 (85-E)",
+   "chapter_ref": "soc-10-15",
+   "chapter_ref_source": "inferred",
+   "transcribed_from_image": true,
+   "answer": {
+    "kind": "text",
+    "value": "The primary objective of India's five-year plans is the eradication of poverty and the improvement of the standard of living. To achieve this, other complementary objectives are: (1) increasing production to the maximum extent possible; (2) increasing employment opportunities; (3) reducing economic disparities; and (4) ensuring economic stability."
+   },
+   "answer_provenance": {
+    "by": "textbook_excerpt",
+    "actor": "class-10-social",
+    "at": "2026-10-09T07:45:02+05:30",
+    "basis": "Textbook 10th English  SS  Part - 1 2026-27(Part 1), pdf p136 (printed p123): \"eradication of poverty and improving the standard of living is one of the primary objective of Indias five year plans. ... They are : 1. Increasing the production to the maximum extent possible. 2. Increasing the employment opportunities. 3. Reducing the economic disparities. 4. Ensuring economic stability.\". The MQP prints no answer key; answer sourced from the textbook per review_policy_v1 §2-4.",
+    "textbook_derived": true
+   },
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "10th English  SS  Part - 1 2026-27.pdf#p136",
+      "pdf_page": 136,
+      "y": 56.7,
+      "derived_from": "text_layer"
+     },
+     "text": "eradication of poverty and improving the standard of living is one of the primary objective of Indias five year plans. ... They are : 1. Increasing the production to the maximum extent possible. 2. Increasing the employment opportunities. 3. Reducing the economic disparities. 4. Ensuring economic stability.",
+     "confidence": "verbatim"
+    }
+   ],
+   "source_flags": [
+    {
+     "issue": "no difficulty tag"
+    },
+    {
+     "issue": "no LO mapped"
+    }
+   ],
+   "content_hash": "10614dbf2ab9ee848f1032833cd1b851bfa97f303fbaec83f96e3e76e28775ac"
+  },
+  {
+   "id": "soc-10-93-s3-q024",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-93",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "section_signal": "III",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "learning_outcomes": [],
+   "lo_source": "none",
+   "out_of_syllabus": false,
+   "text": "How are consumers exploited?",
+   "source": "mqp",
+   "source_ref": "85E_MQP_3.pdf#soc-10-93-s3-q024",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "85E_MQP_3.pdf#soc-10-93-s3-q024",
+     "pdf_page": 4,
+     "y": 655,
+     "derived_from": "ocr"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-09T07:45:02+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-09T07:45:02+05:30",
+   "paper": 3,
+   "paper_title": "S.S.L.C. Model Question Paper 3 : 2026-27 (85-E)",
+   "chapter_ref": "soc-10-33",
+   "chapter_ref_source": "inferred",
+   "transcribed_from_image": true,
+   "answer": {
+    "kind": "text",
+    "value": "It is the duty of traders and producers to provide quality goods and services, but many times consumers are neglected, exploited and cheated by traders and producers. They are exploited through malpractices such as adulteration of food articles, the use of false weights and measures, trade malpractices, and the marketing of sub-standard or hazardous goods - against which Acts like the Essential Commodities Act, the Weights and Measures Act, the Act against Adulteration of Food Articles and the Consumer Protection Act, 1986 were enacted."
+   },
+   "answer_provenance": {
+    "by": "textbook_excerpt",
+    "actor": "class-10-social",
+    "at": "2026-10-09T07:45:02+05:30",
+    "basis": "Textbook 10th English  SS  Part - 2 2026-27(Part 2), pdf p149 (printed p147): \"unfortunately many times consumers are neglected, exploited and cheated. They suffer heavily. ... The Consumer Movements were started by a few people who suffered on account of regular exploitation by traders ... Essential Commodities Act, Weights and Measures Act, Act against Adulteration of Food Articles etc.\". The MQP prints no answer key; answer sourced from the textbook per review_policy_v1 §2-4.",
+    "textbook_derived": true
+   },
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "10th English  SS  Part - 2 2026-27.pdf#p149",
+      "pdf_page": 149,
+      "y": 100.0,
+      "derived_from": "text_layer"
+     },
+     "text": "unfortunately many times consumers are neglected, exploited and cheated. They suffer heavily. ... The Consumer Movements were started by a few people who suffered on account of regular exploitation by traders ... Essential Commodities Act, Weights and Measures Act, Act against Adulteration of Food Articles etc.",
+     "confidence": "verbatim"
+    }
+   ],
+   "source_flags": [
+    {
+     "issue": "no difficulty tag"
+    },
+    {
+     "issue": "no LO mapped"
+    }
+   ],
+   "content_hash": "1dc4545b864fa415593aacc8329f9b5d510724d4dae1021bf9690914bdbf796d"
+  },
+  {
+   "id": "soc-10-93-s4-q025",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-93",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": 3,
+   "marks_source": "section_header",
+   "section_signal": "IV",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "learning_outcomes": [],
+   "lo_source": "none",
+   "out_of_syllabus": false,
+   "text": "What were the causes and consequences of the Battle of Plassey?",
+   "source": "mqp",
+   "source_ref": "85E_MQP_3.pdf#soc-10-93-s4-q025",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "85E_MQP_3.pdf#soc-10-93-s4-q025",
+     "pdf_page": 4,
+     "y": 600,
+     "derived_from": "ocr"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-09T07:45:02+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-09T07:45:02+05:30",
+   "paper": 3,
+   "paper_title": "S.S.L.C. Model Question Paper 3 : 2026-27 (85-E)",
+   "chapter_ref": "soc-10-01",
+   "chapter_ref_source": "inferred",
+   "or_group": "93-q025",
+   "transcribed_from_image": true,
+   "answer": {
+    "kind": "text",
+    "value": "The Battle of Plassey (1757) was fought between the young Nawab of Bengal, Siraj-ud-Daulah, and the British. Causes: (1) misuse of Dastaks by Company officials, which angered Siraj-ud-Daulah; (2) the British mending/fortifying the fort of Calcutta with cannons without permission; and (3) the Black Hole Tragedy, in which 123 of 146 imprisoned Englishmen died, enraging Robert Clive. Consequences: (1) the war exposed the immorality and lack of unity among Indians and the greed of Indian businessmen; (2) Mir Jaffar became the Nawab of Bengal; (3) the Company gained exclusive rights to trade in Bengal; and (4) Mir Jaffar had to pay Rupees seventeen crore seventy lakh as war indemnity to the British East India Company."
+   },
+   "answer_provenance": {
+    "by": "textbook_excerpt",
+    "actor": "class-10-social",
+    "at": "2026-10-09T07:45:02+05:30",
+    "basis": "Textbook 10th English  SS  Part - 1 2026-27(Part 1), pdf p22 (printed p9): \"Reasons: 1. Misuse of Dastaks ... 2. Mending of the fort without permission ... 3. Black Room Tragedy ... He imprisoned 146 Englishmen in a small room in the fort, of which 123 died. ... Outcomes: 1. This war brought out the immorality, lack of unity among the Indians and the greed of Indian businessmen. 2. Mir Jaffar became the Nawab of Bengal. 3. The company gained exclusive rights to trade in Bengal. 4. Mir Jaffar had to pay Rupees seventeen crores and seventy lakhs as war indemnity to the British East India Company.\". The MQP prints no answer key; answer sourced from the textbook per review_policy_v1 §2-4.",
+    "textbook_derived": true
+   },
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "10th English  SS  Part - 1 2026-27.pdf#p22",
+      "pdf_page": 22,
+      "y": 75.2,
+      "derived_from": "text_layer"
+     },
+     "text": "Reasons: 1. Misuse of Dastaks ... 2. Mending of the fort without permission ... 3. Black Room Tragedy ... He imprisoned 146 Englishmen in a small room in the fort, of which 123 died. ... Outcomes: 1. This war brought out the immorality, lack of unity among the Indians and the greed of Indian businessmen. 2. Mir Jaffar became the Nawab of Bengal. 3. The company gained exclusive rights to trade in Bengal. 4. Mir Jaffar had to pay Rupees seventeen crores and seventy lakhs as war indemnity to the British East India Company.",
+     "confidence": "verbatim"
+    }
+   ],
+   "source_flags": [
+    {
+     "issue": "no difficulty tag"
+    },
+    {
+     "issue": "no LO mapped"
+    }
+   ],
+   "content_hash": "d2a9a6b56e4bf0ec80c218ca6732ab15bd4e4fb2d3521e03434db77c76d8b53c"
+  },
+  {
+   "id": "soc-10-93-s4-q025b",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-93",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": 3,
+   "marks_source": "section_header",
+   "section_signal": "IV",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "learning_outcomes": [],
+   "lo_source": "none",
+   "out_of_syllabus": false,
+   "text": "What were the effects of the British land tax system in India?",
+   "source": "mqp",
+   "source_ref": "85E_MQP_3.pdf#soc-10-93-s4-q025b",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "85E_MQP_3.pdf#soc-10-93-s4-q025b",
+     "pdf_page": 4,
+     "y": 555,
+     "derived_from": "ocr"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-09T07:45:02+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-09T07:45:02+05:30",
+   "paper": 3,
+   "paper_title": "S.S.L.C. Model Question Paper 3 : 2026-27 (85-E)",
+   "chapter_ref": "soc-10-03",
+   "chapter_ref_source": "inferred",
+   "or_group": "93-q025",
+   "transcribed_from_image": true,
+   "answer": {
+    "kind": "text",
+    "value": "The effects of the British Land Tax system were: (1) a new class of Zamindars who exploited the farmers was created; (2) the farmers subjected to the Zamindars' exploitation slowly became landless; (3) land became a commodity and loans could be raised by mortgaging land; (4) many Zamindars also had to mortgage their lands to pay the land taxes; (5) the agriculture sector became commercialized and had to grow raw materials needed by industries back in England; and (6) the money lenders became strong."
+   },
+   "answer_provenance": {
+    "by": "textbook_excerpt",
+    "actor": "class-10-social",
+    "at": "2026-10-09T07:45:02+05:30",
+    "basis": "Textbook 10th English  SS  Part - 1 2026-27(Part 1), pdf p36 (printed p23): \"The Impact of the British Land Tax system : 1. A new class of Zamindars who exploited the farmers was created. 2. The farmers who were subjected to the exploitation of the Zamindars, became landless slowly. 3. Land became a commodity. Loans could be raised by mortgaging the lands. 4. Many Zamindars also had to mortgage their lands in order to pay the land taxes. 5. The Agriculture sector became commercialized and had to grow raw materials needed by industries back in England. 6. The money lenders became strong.\". The MQP prints no answer key; answer sourced from the textbook per review_policy_v1 §2-4."
+   },
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "10th English  SS  Part - 1 2026-27.pdf#p36",
+      "pdf_page": 36,
+      "y": 39.2,
+      "derived_from": "text_layer"
+     },
+     "text": "The Impact of the British Land Tax system : 1. A new class of Zamindars who exploited the farmers was created. 2. The farmers who were subjected to the exploitation of the Zamindars, became landless slowly. 3. Land became a commodity. Loans could be raised by mortgaging the lands. 4. Many Zamindars also had to mortgage their lands in order to pay the land taxes. 5. The Agriculture sector became commercialized and had to grow raw materials needed by industries back in England. 6. The money lenders became strong.",
+     "confidence": "verbatim"
+    }
+   ],
+   "source_flags": [
+    {
+     "issue": "no difficulty tag"
+    },
+    {
+     "issue": "no LO mapped"
+    }
+   ],
+   "content_hash": "cd14a6be5111da50f05b39e196e0a33e312e4e1e6c993fd5469dbe9f15567c50"
+  },
+  {
+   "id": "soc-10-93-s4-q026",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-93",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": 3,
+   "marks_source": "section_header",
+   "section_signal": "IV",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "learning_outcomes": [],
+   "lo_source": "none",
+   "out_of_syllabus": false,
+   "text": "How are Evergreen forests different from Deciduous monsoon forests?",
+   "source": "mqp",
+   "source_ref": "85E_MQP_3.pdf#soc-10-93-s4-q026",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "85E_MQP_3.pdf#soc-10-93-s4-q026",
+     "pdf_page": 4,
+     "y": 520,
+     "derived_from": "ocr"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-09T07:45:02+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-09T07:45:02+05:30",
+   "paper": 3,
+   "paper_title": "S.S.L.C. Model Question Paper 3 : 2026-27 (85-E)",
+   "chapter_ref": "soc-10-13",
+   "chapter_ref_source": "inferred",
+   "or_group": "93-q026",
+   "transcribed_from_image": true,
+   "answer": {
+    "kind": "text",
+    "value": "Evergreen forests are found in regions not more than 900 m above sea level that receive an annual rainfall of more than 250 cm (e.g. the Western Ghats, the north-eastern states and the Andaman-Nicobar islands); since their trees are always green they are called evergreen forests. Deciduous monsoon forests are more widely distributed and are found in areas receiving 75 to 250 cm of rainfall; they form about 65.5% of the total forest area, and since India has mainly a monsoon climate they are distributed widely; their trees shed their leaves during the dry winters, so they are called deciduous monsoon forests."
+   },
+   "answer_provenance": {
+    "by": "textbook_excerpt",
+    "actor": "class-10-social",
+    "at": "2026-10-09T07:45:02+05:30",
+    "basis": "Textbook 10th English  SS  Part - 1 2026-27(Part 1), pdf p119 (printed p106): \"Evergreen forests: In India, evergreen forests are found in regions which are not more than 900 mts above sea level and receive an annual rainfall of more than 250 cms. ... Since the trees are always green they are called Evergreen forests. Deciduous monsoon forests : This type of forest is more widely distributed in India. They are seen in areas receiving 75 to 250 cms of rainfall. It forms about 65.5% of the total area of forests. ... The trees shed their leaves during the dry winters. As such these are also called deciduous monsoon forests.\". The MQP prints no answer key; answer sourced from the textbook per review_policy_v1 §2-4.",
+    "textbook_derived": true
+   },
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "10th English  SS  Part - 1 2026-27.pdf#p119",
+      "pdf_page": 119,
+      "y": 331.6,
+      "derived_from": "text_layer"
+     },
+     "text": "Evergreen forests: In India, evergreen forests are found in regions which are not more than 900 mts above sea level and receive an annual rainfall of more than 250 cms. ... Since the trees are always green they are called Evergreen forests. Deciduous monsoon forests : This type of forest is more widely distributed in India. They are seen in areas receiving 75 to 250 cms of rainfall. It forms about 65.5% of the total area of forests. ... The trees shed their leaves during the dry winters. As such these are also called deciduous monsoon forests.",
+     "confidence": "verbatim"
+    }
+   ],
+   "source_flags": [
+    {
+     "issue": "no difficulty tag"
+    },
+    {
+     "issue": "no LO mapped"
+    }
+   ],
+   "content_hash": "653427acecbf5c8cbcaaebe4902dae57419053ad8c3ac3f8cd4e79f4a93de290"
+  },
+  {
+   "id": "soc-10-93-s4-q026b",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-93",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": 3,
+   "marks_source": "section_header",
+   "section_signal": "IV",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "learning_outcomes": [],
+   "lo_source": "none",
+   "out_of_syllabus": false,
+   "text": "How is Global Positioning system useful?",
+   "source": "mqp",
+   "source_ref": "85E_MQP_3.pdf#soc-10-93-s4-q026b",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "85E_MQP_3.pdf#soc-10-93-s4-q026b",
+     "pdf_page": 4,
+     "y": 475,
+     "derived_from": "ocr"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-09T07:45:02+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-09T07:45:02+05:30",
+   "paper": 3,
+   "paper_title": "S.S.L.C. Model Question Paper 3 : 2026-27 (85-E)",
+   "chapter_ref": "soc-10-27",
+   "chapter_ref_source": "inferred",
+   "or_group": "93-q026",
+   "transcribed_from_image": true,
+   "answer": {
+    "kind": "text",
+    "value": "The main objective of the Global Positioning System (GPS) is to indicate the location of a stationary or moving object or person by pointing out its latitude, longitude and height above sea level. It works on the basis of information sent by more than 20 artificial satellites and an individual's receiver set on the earth's surface. Today it is very useful in many areas - for locating and tracking stationary and moving objects, navigation and related applications."
+   },
+   "answer_provenance": {
+    "by": "textbook_excerpt",
+    "actor": "class-10-social",
+    "at": "2026-10-09T07:45:02+05:30",
+    "basis": "Textbook 10th English  SS  Part - 2 2026-27(Part 2), pdf p106 (printed p104): \"Global Positioning System (GPS): The main objective of this system is to indicate the location of a stationary or moving object or person through pointing out the latitude, longitude and height above the sea level. Today this system is very useful in many areas. GPS technology works based on the information sent by the satellites and through the use of any individual’s receiver set on the earth’s surface.\". The MQP prints no answer key; answer sourced from the textbook per review_policy_v1 §2-4.",
+    "textbook_derived": true
+   },
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "10th English  SS  Part - 2 2026-27.pdf#p106",
+      "pdf_page": 106,
+      "y": 180.5,
+      "derived_from": "text_layer"
+     },
+     "text": "Global Positioning System (GPS): The main objective of this system is to indicate the location of a stationary or moving object or person through pointing out the latitude, longitude and height above the sea level. Today this system is very useful in many areas. GPS technology works based on the information sent by the satellites and through the use of any individual’s receiver set on the earth’s surface.",
+     "confidence": "verbatim"
+    }
+   ],
+   "source_flags": [
+    {
+     "issue": "no difficulty tag"
+    },
+    {
+     "issue": "no LO mapped"
+    }
+   ],
+   "content_hash": "37d86bcbedbca5226c1102199826220a8a4968b4ae4b21286e606ab31daaf391"
+  },
+  {
+   "id": "soc-10-93-s4-q027",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-93",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": 3,
+   "marks_source": "section_header",
+   "section_signal": "IV",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "learning_outcomes": [],
+   "lo_source": "none",
+   "out_of_syllabus": false,
+   "text": "Explain the role of the Panchayat Raj Institutions in Rural Development.",
+   "source": "mqp",
+   "source_ref": "85E_MQP_3.pdf#soc-10-93-s4-q027",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "85E_MQP_3.pdf#soc-10-93-s4-q027",
+     "pdf_page": 4,
+     "y": 440,
+     "derived_from": "ocr"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-09T07:45:02+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-09T07:45:02+05:30",
+   "paper": 3,
+   "paper_title": "S.S.L.C. Model Question Paper 3 : 2026-27 (85-E)",
+   "chapter_ref": "soc-10-30",
+   "chapter_ref_source": "inferred",
+   "or_group": "93-q027",
+   "transcribed_from_image": true,
+   "answer": {
+    "kind": "text",
+    "value": "Panchayat Raj institutions play a major role in enabling rural people to participate in rural development. They help provide the rural community with basic facilities like roads, drains, drinking water, street lights, toilets, school and hospital buildings and market-yards. Through the encouragement of primary and middle-school education, adult education, technical and vocational training, and the expansion of health and hygiene facilities, they strive to develop human resources and create more employment opportunities."
+   },
+   "answer_provenance": {
+    "by": "textbook_excerpt",
+    "actor": "class-10-social",
+    "at": "2026-10-09T07:45:02+05:30",
+    "basis": "Textbook 10th English  SS  Part - 2 2026-27(Part 2), pdf p123 (printed p121): \"Panchayat Raj institutions play a major role in enabling the rural people to participate in rural development. They can help to provide the rural community with basic facilities of roads, drains, drinking water, street lights, toilets, school and hospital buildings, market-yards etc. Through encouragement of primary and middle school education, adult education, technical and vocational training, and expansion of health and hygiene facilities, panchayat institutions have striven to develop human resources too.\". The MQP prints no answer key; answer sourced from the textbook per review_policy_v1 §2-4.",
+    "textbook_derived": true
+   },
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "10th English  SS  Part - 2 2026-27.pdf#p123",
+      "pdf_page": 123,
+      "y": 169.1,
+      "derived_from": "text_layer"
+     },
+     "text": "Panchayat Raj institutions play a major role in enabling the rural people to participate in rural development. They can help to provide the rural community with basic facilities of roads, drains, drinking water, street lights, toilets, school and hospital buildings, market-yards etc. Through encouragement of primary and middle school education, adult education, technical and vocational training, and expansion of health and hygiene facilities, panchayat institutions have striven to develop human resources too.",
+     "confidence": "verbatim"
+    }
+   ],
+   "source_flags": [
+    {
+     "issue": "no difficulty tag"
+    },
+    {
+     "issue": "no LO mapped"
+    }
+   ],
+   "content_hash": "749a91553028f62f3a963a604c1e990de92806e541f9478b2b8ac2831127fc5d"
+  },
+  {
+   "id": "soc-10-93-s4-q027b",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-93",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": 3,
+   "marks_source": "section_header",
+   "section_signal": "IV",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "learning_outcomes": [],
+   "lo_source": "none",
+   "out_of_syllabus": false,
+   "text": "Explain the differences between Personal finance and Public Finance.",
+   "source": "mqp",
+   "source_ref": "85E_MQP_3.pdf#soc-10-93-s4-q027b",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "85E_MQP_3.pdf#soc-10-93-s4-q027b",
+     "pdf_page": 4,
+     "y": 395,
+     "derived_from": "ocr"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-09T07:45:02+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-09T07:45:02+05:30",
+   "paper": 3,
+   "paper_title": "S.S.L.C. Model Question Paper 3 : 2026-27 (85-E)",
+   "chapter_ref": "soc-10-31",
+   "chapter_ref_source": "inferred",
+   "or_group": "93-q027",
+   "transcribed_from_image": true,
+   "answer": {
+    "kind": "text",
+    "value": "Personal Finance deals with the income, expenditure and debt management of an individual or a family - balancing income and expenditure to achieve progress (and when expenditure exceeds income, it leads to debt). Public Finance, in the same manner, is the management of finance by the government; it gives a complete picture of the government's income, expenditure and debt management."
+   },
+   "answer_provenance": {
+    "by": "textbook_excerpt",
+    "actor": "class-10-social",
+    "at": "2026-10-09T07:45:02+05:30",
+    "basis": "Textbook 10th English  SS  Part - 2 2026-27(Part 2), pdf p130 (printed p128): \"‘Personal Finance’ deals with this kind of income, expenditure and debt management of an individual. In the same manner, the government manages its finance. It is called ‘Public Finance’. ... Public finance gives a complete picture of the government’s income, expenditure and debt management.\". The MQP prints no answer key; answer sourced from the textbook per review_policy_v1 §2-4.",
+    "textbook_derived": true
+   },
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "10th English  SS  Part - 2 2026-27.pdf#p130",
+      "pdf_page": 130,
+      "y": 263.8,
+      "derived_from": "text_layer"
+     },
+     "text": "‘Personal Finance’ deals with this kind of income, expenditure and debt management of an individual. In the same manner, the government manages its finance. It is called ‘Public Finance’. ... Public finance gives a complete picture of the government’s income, expenditure and debt management.",
+     "confidence": "verbatim"
+    }
+   ],
+   "source_flags": [
+    {
+     "issue": "no difficulty tag"
+    },
+    {
+     "issue": "no LO mapped"
+    }
+   ],
+   "content_hash": "6f61ba34c3e23b5b1cc208773ab9d48947e289321dc517921d07c8b4b8ae8ef3"
+  },
+  {
+   "id": "soc-10-93-s4-q028",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-93",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": 3,
+   "marks_source": "section_header",
+   "section_signal": "IV",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "learning_outcomes": [],
+   "lo_source": "none",
+   "out_of_syllabus": false,
+   "text": "Analyze the advantages of Opening a bank account.",
+   "source": "mqp",
+   "source_ref": "85E_MQP_3.pdf#soc-10-93-s4-q028",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "85E_MQP_3.pdf#soc-10-93-s4-q028",
+     "pdf_page": 4,
+     "y": 360,
+     "derived_from": "ocr"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-09T07:45:02+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-09T07:45:02+05:30",
+   "paper": 3,
+   "paper_title": "S.S.L.C. Model Question Paper 3 : 2026-27 (85-E)",
+   "chapter_ref": "soc-10-16",
+   "chapter_ref_source": "inferred",
+   "or_group": "93-q028",
+   "transcribed_from_image": true,
+   "answer": {
+    "kind": "text",
+    "value": "The advantages of opening a bank account are: (1) it facilitates the safe custody of money; (2) it helps in making payments; (3) it helps in the collection of money; (4) account holders get advances and loans; (5) it helps in smooth financial transactions; and (6) account holders get safe-deposit locker facilities."
+   },
+   "answer_provenance": {
+    "by": "textbook_excerpt",
+    "actor": "class-10-social",
+    "at": "2026-10-09T07:45:02+05:30",
+    "basis": "Textbook 10th English  SS  Part - 1 2026-27(Part 1), pdf p150 (printed p137): \"Advantages of opening Bank Account : A Bank account facilitates a safe custody of money. Bank account helps in making payments. Bank account helps in the collection of money. Bank account holders get advances and loans. Bank account helps in smooth financial transactions. Bank account holders get safe deposit locker facilities.\". The MQP prints no answer key; answer sourced from the textbook per review_policy_v1 §2-4."
+   },
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "10th English  SS  Part - 1 2026-27.pdf#p150",
+      "pdf_page": 150,
+      "y": 38.3,
+      "derived_from": "text_layer"
+     },
+     "text": "Advantages of opening Bank Account : A Bank account facilitates a safe custody of money. Bank account helps in making payments. Bank account helps in the collection of money. Bank account holders get advances and loans. Bank account helps in smooth financial transactions. Bank account holders get safe deposit locker facilities.",
+     "confidence": "verbatim"
+    }
+   ],
+   "source_flags": [
+    {
+     "issue": "no difficulty tag"
+    },
+    {
+     "issue": "no LO mapped"
+    }
+   ],
+   "content_hash": "147a3221f63f0047bc8e4bb6d3f379beb421158c7578cff85fdee4a66fb375a9"
+  },
+  {
+   "id": "soc-10-93-s4-q028b",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-93",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": 3,
+   "marks_source": "section_header",
+   "section_signal": "IV",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "learning_outcomes": [],
+   "lo_source": "none",
+   "out_of_syllabus": false,
+   "text": "Analyze the functions of entrepreneurs.",
+   "source": "mqp",
+   "source_ref": "85E_MQP_3.pdf#soc-10-93-s4-q028b",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "85E_MQP_3.pdf#soc-10-93-s4-q028b",
+     "pdf_page": 4,
+     "y": 320,
+     "derived_from": "ocr"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-09T07:45:02+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-09T07:45:02+05:30",
+   "paper": 3,
+   "paper_title": "S.S.L.C. Model Question Paper 3 : 2026-27 (85-E)",
+   "chapter_ref": "soc-10-32",
+   "chapter_ref_source": "inferred",
+   "or_group": "93-q028",
+   "transcribed_from_image": true,
+   "answer": {
+    "kind": "text",
+    "value": "An entrepreneur has to perceive opportunities, plan, organise resources and oversee production and marketing, motivate assistants, and above all innovate and bear risk. The main functions of an entrepreneur are: (1) starting business activity by preparing various plans relating to the business; (2) organising the factors of production; (3) taking decisions about product, technology, marketing and employment; (4) co-ordinating things effectively; and (5) innovating new methods."
+   },
+   "answer_provenance": {
+    "by": "textbook_excerpt",
+    "actor": "class-10-social",
+    "at": "2026-10-09T07:45:02+05:30",
+    "basis": "Textbook 10th English  SS  Part - 2 2026-27(Part 2), pdf p141 (printed p139): \"Functions of Entrepreneur: An entrepreneur has to perceive opportunities, plan, organise resources and oversee production, marketing. He infuses motivation among his assistants. Most importantly he has to innovate and bear risk. The main functions of an entrepreneur are: Entrepreneur starts business activity by preparing various plans relating to business; He organises factors of production; He takes decisions about product, technology, marketing, employment etc.; He co-ordinates things effectively; He innovates new methods.\". The MQP prints no answer key; answer sourced from the textbook per review_policy_v1 §2-4.",
+    "textbook_derived": true
+   },
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "10th English  SS  Part - 2 2026-27.pdf#p141",
+      "pdf_page": 141,
+      "y": 255.5,
+      "derived_from": "text_layer"
+     },
+     "text": "Functions of Entrepreneur: An entrepreneur has to perceive opportunities, plan, organise resources and oversee production, marketing. He infuses motivation among his assistants. Most importantly he has to innovate and bear risk. The main functions of an entrepreneur are: Entrepreneur starts business activity by preparing various plans relating to business; He organises factors of production; He takes decisions about product, technology, marketing, employment etc.; He co-ordinates things effectively; He innovates new methods.",
+     "confidence": "verbatim"
+    }
+   ],
+   "source_flags": [
+    {
+     "issue": "no difficulty tag"
+    },
+    {
+     "issue": "no LO mapped"
+    }
+   ],
+   "content_hash": "001f7f56580b74e866ae44a4b9d8cbccedce21b80e4cbd21f21cda657efe2342"
+  },
+  {
+   "id": "soc-10-93-s4-q029",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-93",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": 3,
+   "marks_source": "section_header",
+   "section_signal": "IV",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "learning_outcomes": [],
+   "lo_source": "none",
+   "out_of_syllabus": false,
+   "text": "The role of Dayanand Saraswati in reforming Indian society is ever remembered. Justify.",
+   "source": "mqp",
+   "source_ref": "85E_MQP_3.pdf#soc-10-93-s4-q029",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "85E_MQP_3.pdf#soc-10-93-s4-q029",
+     "pdf_page": 4,
+     "y": 290,
+     "derived_from": "ocr"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-09T07:45:02+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-09T07:45:02+05:30",
+   "paper": 3,
+   "paper_title": "S.S.L.C. Model Question Paper 3 : 2026-27 (85-E)",
+   "chapter_ref": "soc-10-05",
+   "chapter_ref_source": "inferred",
+   "transcribed_from_image": true,
+   "answer": {
+    "kind": "text",
+    "value": "Dayananda Saraswati established the Arya Samaj. He travelled throughout the country giving lectures and emphasized that the Vedas were the source of truth and knowledge, advising people to go 'Back to the Vedas'. He condemned idol worship and the caste system and advocated that caste should be decided by a person's ability and not by birth. He rejected innumerable meaningless practices, encouraged widow marriage, and urged people to use swadeshi goods."
+   },
+   "answer_provenance": {
+    "by": "textbook_excerpt",
+    "actor": "class-10-social",
+    "at": "2026-10-09T07:45:02+05:30",
+    "basis": "Textbook 10th English  SS  Part - 1 2026-27(Part 1), pdf p64 (printed p51): \"Arya Samaj was established by Dayananda Saraswati. He travelled throughout the country giving lectures and emphasized that the Vedas were the source of truth and knowledge. In this context, he advised people to ‘Back to the Vedas’. He condemned idol worship and the caste system. He advocated that caste should be decided based on the ability and not on the birth of the person. He rejected the innumerable meaningless practices. He encouraged widow marriage. He urged people to use swadeshi goods.\". The MQP prints no answer key; answer sourced from the textbook per review_policy_v1 §2-4.",
+    "textbook_derived": true
+   },
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "10th English  SS  Part - 1 2026-27.pdf#p64",
+      "pdf_page": 64,
+      "y": 230.1,
+      "derived_from": "text_layer"
+     },
+     "text": "Arya Samaj was established by Dayananda Saraswati. He travelled throughout the country giving lectures and emphasized that the Vedas were the source of truth and knowledge. In this context, he advised people to ‘Back to the Vedas’. He condemned idol worship and the caste system. He advocated that caste should be decided based on the ability and not on the birth of the person. He rejected the innumerable meaningless practices. He encouraged widow marriage. He urged people to use swadeshi goods.",
+     "confidence": "verbatim"
+    }
+   ],
+   "source_flags": [
+    {
+     "issue": "no difficulty tag"
+    },
+    {
+     "issue": "no LO mapped"
+    }
+   ],
+   "content_hash": "2bf150b09d0ec61e535cfedd42d6a7625298a4ff20b12420bde0255f5a0d5d4a"
+  },
+  {
+   "id": "soc-10-93-s4-q030",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-93",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": 3,
+   "marks_source": "section_header",
+   "section_signal": "IV",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "learning_outcomes": [],
+   "lo_source": "none",
+   "out_of_syllabus": false,
+   "text": "The First war of Indian Independence of 1857 failed due to various reasons. Substantiate.",
+   "source": "mqp",
+   "source_ref": "85E_MQP_3.pdf#soc-10-93-s4-q030",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "85E_MQP_3.pdf#soc-10-93-s4-q030",
+     "pdf_page": 4,
+     "y": 265,
+     "derived_from": "ocr"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-09T07:45:02+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-09T07:45:02+05:30",
+   "paper": 3,
+   "paper_title": "S.S.L.C. Model Question Paper 3 : 2026-27 (85-E)",
+   "chapter_ref": "soc-10-17",
+   "chapter_ref_source": "inferred",
+   "transcribed_from_image": true,
+   "answer": {
+    "kind": "text",
+    "value": "The First War of Independence of 1857 failed due to various reasons: the movement did not spread to the whole country; it was intended to protect the interests of a few rather than to win freedom for the country; instead of being an organized struggle it erupted due to certain unexpected reasons; the British forces were united while the Indian soldiers were not; there was no proper direction or leadership and a lack of strategy, expertise, discipline and direction; many provincial kings, out of loyalty to the British, did not support the struggle; and the people lost confidence in the soldiers due to their arson and looting."
+   },
+   "answer_provenance": {
+    "by": "textbook_excerpt",
+    "actor": "class-10-social",
+    "at": "2026-10-09T07:45:02+05:30",
+    "basis": "Textbook 10th English  SS  Part - 2 2026-27(Part 2), pdf p5 (printed p3): \"The First War of Independence of 1857 failed due to various reasons. The movement did not spread to the whole country. This struggle was intended to protect the interests of a few rather than getting freedom for the country. ... The unity among the British forces and lack of it among the Indian soldiers also led to the failure. There was no proper direction or proper leadership. ... Many provincial kings, on account of their loyalty to the British, did not support the struggle. The people lost confidence in the soldiers due to their arson and looting.\". The MQP prints no answer key; answer sourced from the textbook per review_policy_v1 §2-4."
+   },
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "10th English  SS  Part - 2 2026-27.pdf#p5",
+      "pdf_page": 5,
+      "y": 39.2,
+      "derived_from": "text_layer"
+     },
+     "text": "The First War of Independence of 1857 failed due to various reasons. The movement did not spread to the whole country. This struggle was intended to protect the interests of a few rather than getting freedom for the country. ... The unity among the British forces and lack of it among the Indian soldiers also led to the failure. There was no proper direction or proper leadership. ... Many provincial kings, on account of their loyalty to the British, did not support the struggle. The people lost confidence in the soldiers due to their arson and looting.",
+     "confidence": "verbatim"
+    }
+   ],
+   "source_flags": [
+    {
+     "issue": "no difficulty tag"
+    },
+    {
+     "issue": "no LO mapped"
+    }
+   ],
+   "content_hash": "5d5b85eae56747959bc578b776b38dda9ae0dac72eeac598b0cfe0a08ebb389e"
+  },
+  {
+   "id": "soc-10-93-s4-q031",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-93",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": 3,
+   "marks_source": "section_header",
+   "section_signal": "IV",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "learning_outcomes": [],
+   "lo_source": "none",
+   "out_of_syllabus": false,
+   "text": "Explain the effects of arms race.",
+   "source": "mqp",
+   "source_ref": "85E_MQP_3.pdf#soc-10-93-s4-q031",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "85E_MQP_3.pdf#soc-10-93-s4-q031",
+     "pdf_page": 4,
+     "y": 240,
+     "derived_from": "ocr"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-09T07:45:02+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-09T07:45:02+05:30",
+   "paper": 3,
+   "paper_title": "S.S.L.C. Model Question Paper 3 : 2026-27 (85-E)",
+   "chapter_ref": "soc-10-21",
+   "chapter_ref_source": "inferred",
+   "transcribed_from_image": true,
+   "answer": {
+    "kind": "text",
+    "value": "An arms race is the competition among countries for the production, stockpiling and use of arms. Its effects (disadvantages) are: it increases fear and instability among countries and raises the possibility of war; it hinders the achievement of world peace; and it leads to financial loss and economic instability, diverting resources away from constructive use."
+   },
+   "answer_provenance": {
+    "by": "textbook_excerpt",
+    "actor": "class-10-social",
+    "at": "2026-10-09T07:45:02+05:30",
+    "basis": "Textbook 10th English  SS  Part - 2 2026-27(Part 2), pdf p49 (printed p47): \"Arms race is the competition among the countries for production, stockpiling and use of arms. Disadvantages of Arms race : Fear, instability, among the countries has increased the possibilities of war. It hinders in achieving world peace. It leads to financial loss and economic instability.\". The MQP prints no answer key; answer sourced from the textbook per review_policy_v1 §2-4.",
+    "textbook_derived": true
+   },
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "10th English  SS  Part - 2 2026-27.pdf#p49",
+      "pdf_page": 49,
+      "y": 341.2,
+      "derived_from": "text_layer"
+     },
+     "text": "Arms race is the competition among the countries for production, stockpiling and use of arms. Disadvantages of Arms race : Fear, instability, among the countries has increased the possibilities of war. It hinders in achieving world peace. It leads to financial loss and economic instability.",
+     "confidence": "verbatim"
+    }
+   ],
+   "source_flags": [
+    {
+     "issue": "no difficulty tag"
+    },
+    {
+     "issue": "no LO mapped"
+    }
+   ],
+   "content_hash": "5b6f55f932ebbe6b65bc03241aa96f8f4d9d2b8d1a7b073f1563fc3c389b6b27"
+  },
+  {
+   "id": "soc-10-93-s4-q032",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-93",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": 3,
+   "marks_source": "section_header",
+   "section_signal": "IV",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "learning_outcomes": [],
+   "lo_source": "none",
+   "out_of_syllabus": false,
+   "text": "Mention the differences between the workers of Organised and Unorganised sector.",
+   "source": "mqp",
+   "source_ref": "85E_MQP_3.pdf#soc-10-93-s4-q032",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "85E_MQP_3.pdf#soc-10-93-s4-q032",
+     "pdf_page": 4,
+     "y": 215,
+     "derived_from": "ocr"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-09T07:45:02+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-09T07:45:02+05:30",
+   "paper": 3,
+   "paper_title": "S.S.L.C. Model Question Paper 3 : 2026-27 (85-E)",
+   "chapter_ref": "soc-10-09",
+   "chapter_ref_source": "inferred",
+   "transcribed_from_image": true,
+   "answer": {
+    "kind": "text",
+    "value": "Organised workers are those who work in specific fields governed by legal rules and regulations; their work is subject to specific terms and conditions, there is an organizational hierarchy, their transactions are recorded in writing, and they get fixed wages, allowances, paid leave, pension and medical facilities and fixed working hours (e.g. workers in insurance companies, educational institutions, banks, armed forces, private companies and government departments). Unorganised workers are those who work in areas not governed by specific rules, regulations or unions and who earn daily wages or material benefits; the unorganised sector is very vast and not under government control (e.g. domestic servants, construction workers, agricultural labourers, footpath hawkers, vehicle repairers and push-cart vegetable vendors)."
+   },
+   "answer_provenance": {
+    "by": "textbook_excerpt",
+    "actor": "class-10-social",
+    "at": "2026-10-09T07:45:02+05:30",
+    "basis": "Textbook 10th English  SS  Part - 1 2026-27(Part 1), pdf p99 (printed p86): \"Organised Workers : Those who are working in specific fields which are governed by legal rules and regulations are called Organized workers. ... They get fixed wages, allowances, paid leave and pension facilities. ... Unorganised Workers : People who work in areas which are not governed by specific rules and regulations or unions, and lead their lives by earning daily wages or material benefit in any other form, are called unorganized workers. Since the unorganized sector is very vast, it is not under government control. For ex: domestic servants, construction workers, agricultural labours, footpath hawkers, vehicle repairers, push-cart vegetable vendors etc.\". The MQP prints no answer key; answer sourced from the textbook per review_policy_v1 §2-4.",
+    "textbook_derived": true
+   },
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "10th English  SS  Part - 1 2026-27.pdf#p99",
+      "pdf_page": 99,
+      "y": 169.7,
+      "derived_from": "text_layer"
+     },
+     "text": "Organised Workers : Those who are working in specific fields which are governed by legal rules and regulations are called Organized workers. ... They get fixed wages, allowances, paid leave and pension facilities. ... Unorganised Workers : People who work in areas which are not governed by specific rules and regulations or unions, and lead their lives by earning daily wages or material benefit in any other form, are called unorganized workers. Since the unorganized sector is very vast, it is not under government control. For ex: domestic servants, construction workers, agricultural labours, footpath hawkers, vehicle repairers, push-cart vegetable vendors etc.",
+     "confidence": "verbatim"
+    }
+   ],
+   "source_flags": [
+    {
+     "issue": "no difficulty tag"
+    },
+    {
+     "issue": "no LO mapped"
+    }
+   ],
+   "content_hash": "5b8dcb282de31bfc2aad2f2c607491eb1fa6127271c6fc3f83d52b19445d2e22"
+  },
+  {
+   "id": "soc-10-93-s4-q033",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-93",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": 3,
+   "marks_source": "section_header",
+   "section_signal": "IV",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "learning_outcomes": [],
+   "lo_source": "none",
+   "out_of_syllabus": false,
+   "text": "Explain the effects of earthquakes.",
+   "source": "mqp",
+   "source_ref": "85E_MQP_3.pdf#soc-10-93-s4-q033",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "85E_MQP_3.pdf#soc-10-93-s4-q033",
+     "pdf_page": 4,
+     "y": 190,
+     "derived_from": "ocr"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-09T07:45:02+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-09T07:45:02+05:30",
+   "paper": 3,
+   "paper_title": "S.S.L.C. Model Question Paper 3 : 2026-27 (85-E)",
+   "chapter_ref": "soc-10-29",
+   "chapter_ref_source": "inferred",
+   "transcribed_from_image": true,
+   "answer": {
+    "kind": "text",
+    "value": "The effects of earthquakes are: (1) the loss of life and destruction of property; (2) obstruction to transport; (3) the spread of infectious diseases; (4) increased tidal activity; (5) tsunamis; and (6) change in the direction of rivers."
+   },
+   "answer_provenance": {
+    "by": "textbook_excerpt",
+    "actor": "class-10-social",
+    "at": "2026-10-09T07:45:02+05:30",
+    "basis": "Textbook 10th English  SS  Part - 2 2026-27(Part 2), pdf p118 (printed p116): \"Effects of Earthquakes: 1. The loss of life and destruction of property, 2. Obstruction to transport, 3. Spread of infectious diseases, 4. Increased tidal activity, 5. Tsunamis, 6. Change in the river’s direction.\". The MQP prints no answer key; answer sourced from the textbook per review_policy_v1 §2-4."
+   },
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "10th English  SS  Part - 2 2026-27.pdf#p118",
+      "pdf_page": 118,
+      "y": 100.0,
+      "derived_from": "text_layer"
+     },
+     "text": "Effects of Earthquakes: 1. The loss of life and destruction of property, 2. Obstruction to transport, 3. Spread of infectious diseases, 4. Increased tidal activity, 5. Tsunamis, 6. Change in the river’s direction.",
+     "confidence": "verbatim"
+    }
+   ],
+   "source_flags": [
+    {
+     "issue": "no difficulty tag"
+    },
+    {
+     "issue": "no LO mapped"
+    }
+   ],
+   "content_hash": "45e524b0445b17e205f9ca6791551415982653e6de1275b17f509cf649a6c6db"
+  },
+  {
+   "id": "soc-10-93-s5-q034",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-93",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "section_signal": "V",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "learning_outcomes": [],
+   "lo_source": "none",
+   "out_of_syllabus": false,
+   "text": "Explain the methods followed by the Revolutionaries in the freedom struggle of India.",
+   "source": "mqp",
+   "source_ref": "85E_MQP_3.pdf#soc-10-93-s5-q034",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "85E_MQP_3.pdf#soc-10-93-s5-q034",
+     "pdf_page": 4,
+     "y": 140,
+     "derived_from": "ocr"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-09T07:45:02+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-09T07:45:02+05:30",
+   "paper": 3,
+   "paper_title": "S.S.L.C. Model Question Paper 3 : 2026-27 (85-E)",
+   "chapter_ref": "soc-10-18",
+   "chapter_ref_source": "inferred",
+   "or_group": "93-q034",
+   "transcribed_from_image": true,
+   "answer": {
+    "kind": "text",
+    "value": "The revolutionaries dreamt of a totally free India and strongly believed that the British could be thrown out of India only by violent means. The methods they followed included: establishing secret branches/societies in India and abroad; collecting money and arms and training people; forming organizations such as the 'Anusheelana Samithi' and 'Abhinava Bharata'; using bombs and firearms to achieve their objectives; and spreading their ideas through publications. The government tried hard to suppress them - many were arrested for murder attempts and given life imprisonment, and many were hanged to death. Prominent revolutionary leaders were V.D. Savarkar, Aurobindo Ghosh, Shyamji Krishna Verma, Madam Cama, Khudiram Bose, Ramaprasad Bismil, Bhagat Singh and Chandrashekar Azad."
+   },
+   "answer_provenance": {
+    "by": "textbook_excerpt",
+    "actor": "class-10-social",
+    "at": "2026-10-09T07:45:02+05:30",
+    "basis": "Textbook 10th English  SS  Part - 2 2026-27(Part 2), pdf p11 (printed p9): \"The revolutionaries dreamt of a totally free India. They strongly believed that the British could be thrown out of India only by violent means. They started establishing their secret branches in India and abroad, and engaged in collection of money, arms and training of people. ‘Anusheelana Samithi’ and ‘Abhinava Bharata’ were important organizations of this kind. They used bombs and firearms to achieve their objectives. ... V.D.Savarkar, Aurobindo Ghosh, Shyamji Krishna Verma, Madam Cama, Khudiram Bose, Ramaprasad Bismil, Bhagat Singh and Chandrashekar Azad were prominent revolutionary leaders.\". The MQP prints no answer key; answer sourced from the textbook per review_policy_v1 §2-4.",
+    "textbook_derived": true
+   },
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "10th English  SS  Part - 2 2026-27.pdf#p11",
+      "pdf_page": 11,
+      "y": 165.8,
+      "derived_from": "text_layer"
+     },
+     "text": "The revolutionaries dreamt of a totally free India. They strongly believed that the British could be thrown out of India only by violent means. They started establishing their secret branches in India and abroad, and engaged in collection of money, arms and training of people. ‘Anusheelana Samithi’ and ‘Abhinava Bharata’ were important organizations of this kind. They used bombs and firearms to achieve their objectives. ... V.D.Savarkar, Aurobindo Ghosh, Shyamji Krishna Verma, Madam Cama, Khudiram Bose, Ramaprasad Bismil, Bhagat Singh and Chandrashekar Azad were prominent revolutionary leaders.",
+     "confidence": "verbatim"
+    }
+   ],
+   "source_flags": [
+    {
+     "issue": "no difficulty tag"
+    },
+    {
+     "issue": "no LO mapped"
+    }
+   ],
+   "content_hash": "82d90d435bd25fe87cfb29c564b28493c9eb037d902f7f4e46049b76cf8f2f50"
+  },
+  {
+   "id": "soc-10-93-s5-q034b",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-93",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "section_signal": "V",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "learning_outcomes": [],
+   "lo_source": "none",
+   "out_of_syllabus": false,
+   "text": "Explain the role of Raja Ram Mohan Roy in the Social and religious reform movement of India.",
+   "source": "mqp",
+   "source_ref": "85E_MQP_3.pdf#soc-10-93-s5-q034b",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "85E_MQP_3.pdf#soc-10-93-s5-q034b",
+     "pdf_page": 4,
+     "y": 105,
+     "derived_from": "ocr"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-09T07:45:02+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-09T07:45:02+05:30",
+   "paper": 3,
+   "paper_title": "S.S.L.C. Model Question Paper 3 : 2026-27 (85-E)",
+   "chapter_ref": "soc-10-05",
+   "chapter_ref_source": "inferred",
+   "or_group": "93-q034",
+   "transcribed_from_image": true,
+   "answer": {
+    "kind": "text",
+    "value": "Raja Ram Mohan Roy was one of the important persons in the establishment of the Brahmo Samaj and has been called 'The Father of Indian Renaissance'. He was well-versed in many languages (Sanskrit, Arabic, Persian, English, French, Greek and Latin) and had studied the principles of Hinduism, Islam, Sufism, Christianity and Buddhism. He studied the Upanishads and questioned the practice of idol-worship, and argued that modern science and English education were essential for an Indian revival. He opposed the exploitation of women and led an organized attack against the practices of sati and child marriage, supporting the Prohibition of Sati Act introduced by Lord William Bentinck. He also tried to develop rationalism among people through journalism, starting a newspaper in Bengali."
+   },
+   "answer_provenance": {
+    "by": "textbook_excerpt",
+    "actor": "class-10-social",
+    "at": "2026-10-09T07:45:02+05:30",
+    "basis": "Textbook 10th English  SS  Part - 1 2026-27(Part 1), pdf p63 (printed p50): \"Ram Mohan Roy was one of the important person in the establishment of Brahmo Samaj. He has been called ‘The Father of Indian Renaissance’. ... Raja Ram Mohan Roy studied the Upanishads and questioned the practice of idol-worship. He argued that modern science and English education were essential for an Indian revival. He opposed exploitation of women. He led an organized attack against the practice of sati and child marriage. ... Ram Mohan Roy supported the Prohibition of Sati Act which was introduced by Lord William Bentinck. He tried to develop rationalism among people through journalism.\". The MQP prints no answer key; answer sourced from the textbook per review_policy_v1 §2-4.",
+    "textbook_derived": true
+   },
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "10th English  SS  Part - 1 2026-27.pdf#p63",
+      "pdf_page": 63,
+      "y": 59.0,
+      "derived_from": "text_layer"
+     },
+     "text": "Ram Mohan Roy was one of the important person in the establishment of Brahmo Samaj. He has been called ‘The Father of Indian Renaissance’. ... Raja Ram Mohan Roy studied the Upanishads and questioned the practice of idol-worship. He argued that modern science and English education were essential for an Indian revival. He opposed exploitation of women. He led an organized attack against the practice of sati and child marriage. ... Ram Mohan Roy supported the Prohibition of Sati Act which was introduced by Lord William Bentinck. He tried to develop rationalism among people through journalism.",
+     "confidence": "verbatim"
+    }
+   ],
+   "source_flags": [
+    {
+     "issue": "no difficulty tag"
+    },
+    {
+     "issue": "no LO mapped"
+    }
+   ],
+   "content_hash": "211968dc94b90d0431c4f2e8ca9205f9c21d204a2585b02f06d1e89457969608"
+  },
+  {
+   "id": "soc-10-93-s5-q035",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-93",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "section_signal": "V",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "learning_outcomes": [],
+   "lo_source": "none",
+   "out_of_syllabus": false,
+   "text": "List out the features of Black soil.",
+   "source": "mqp",
+   "source_ref": "85E_MQP_3.pdf#soc-10-93-s5-q035",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "85E_MQP_3.pdf#soc-10-93-s5-q035",
+     "pdf_page": 4,
+     "y": 80,
+     "derived_from": "ocr"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-09T07:45:02+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-09T07:45:02+05:30",
+   "paper": 3,
+   "paper_title": "S.S.L.C. Model Question Paper 3 : 2026-27 (85-E)",
+   "chapter_ref": "soc-10-12",
+   "chapter_ref_source": "inferred",
+   "or_group": "93-q035",
+   "transcribed_from_image": true,
+   "answer": {
+    "kind": "text",
+    "value": "The features of Black soil are: it is also called 'Regur soil'; it is best suited for cotton cultivation and so is also called 'Black Cotton soil'; the area of black soil is called the Deccan Trap; it is formed from the weathering of igneous rock; it contains more clay particles; it is fertile and capable of retaining water; it is seen in Maharashtra, Gujarat, Madhya Pradesh, western Andhra Pradesh and north Karnataka; it contains more lime and magnesium carbonates and is highly suitable for dry farming; and the major crops grown on it are cotton, jowar, wheat, onion, chilli, tobacco, oil seeds, lemon and grapes."
+   },
+   "answer_provenance": {
+    "by": "textbook_excerpt",
+    "actor": "class-10-social",
+    "at": "2026-10-09T07:45:02+05:30",
+    "basis": "Textbook 10th English  SS  Part - 1 2026-27(Part 1), pdf p115 (printed p102): \"Black Soil : Black soil is also called ‘Regur soil’. It is best suited for cotton cultivation. Therefore it is also called ‘Black Cotton soil’. The area of black soil is also called Deccan Trap. The soil is formed from the weathering of igneous rock. It contains more clay particles. It is fertile and capable of retaining water. This type of soil is seen in Maharashtra, Gujarat, Madhya Pradesh, Western areas of Andhra Pradesh and North Karnataka. This soil is more of lime and magnesium carbonates. It is highly suitable for dry farming. Cotton, jowar, wheat, onion, chilli, tobacco, oil seeds, lemon and grapes are the major crops growing in this soil.\". The MQP prints no answer key; answer sourced from the textbook per review_policy_v1 §2-4."
+   },
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "10th English  SS  Part - 1 2026-27.pdf#p115",
+      "pdf_page": 115,
+      "y": 304.2,
+      "derived_from": "text_layer"
+     },
+     "text": "Black Soil : Black soil is also called ‘Regur soil’. It is best suited for cotton cultivation. Therefore it is also called ‘Black Cotton soil’. The area of black soil is also called Deccan Trap. The soil is formed from the weathering of igneous rock. It contains more clay particles. It is fertile and capable of retaining water. This type of soil is seen in Maharashtra, Gujarat, Madhya Pradesh, Western areas of Andhra Pradesh and North Karnataka. This soil is more of lime and magnesium carbonates. It is highly suitable for dry farming. Cotton, jowar, wheat, onion, chilli, tobacco, oil seeds, lemon and grapes are the major crops growing in this soil.",
+     "confidence": "verbatim"
+    }
+   ],
+   "source_flags": [
+    {
+     "issue": "no difficulty tag"
+    },
+    {
+     "issue": "no LO mapped"
+    }
+   ],
+   "content_hash": "0969703da3079bdb0b76f6ed27687ababf890004f5491d38128b5ff72371c691"
+  },
+  {
+   "id": "soc-10-93-s5-q035b",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-93",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "section_signal": "V",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "learning_outcomes": [],
+   "lo_source": "none",
+   "out_of_syllabus": false,
+   "text": "List out the factors which influence the location of Iron and steel industry.",
+   "source": "mqp",
+   "source_ref": "85E_MQP_3.pdf#soc-10-93-s5-q035b",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "85E_MQP_3.pdf#soc-10-93-s5-q035b",
+     "pdf_page": 4,
+     "y": 55,
+     "derived_from": "ocr"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-09T07:45:02+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-09T07:45:02+05:30",
+   "paper": 3,
+   "paper_title": "S.S.L.C. Model Question Paper 3 : 2026-27 (85-E)",
+   "chapter_ref": "soc-10-28",
+   "chapter_ref_source": "inferred",
+   "or_group": "93-q035",
+   "transcribed_from_image": true,
+   "answer": {
+    "kind": "text",
+    "value": "Industries (including the iron and steel industry) are concentrated mainly in areas of advantage, and the factors that influence their location are: the availability of raw materials; energy resources; market; transport facility; availability of labour; and port facility. In addition, the location is influenced by the availability of land at low cost, technology and government policies (these factors vary from one type of industry to another)."
+   },
+   "answer_provenance": {
+    "by": "textbook_excerpt",
+    "actor": "class-10-social",
+    "at": "2026-10-09T07:45:02+05:30",
+    "basis": "Textbook 10th English  SS  Part - 2 2026-27(Part 2), pdf p110 (printed p108): \"Factors influencing location of industries : Industries are concentrated mainly in the areas of advantages. Availability of raw materials, energy resources, market, transport facility, availability of labour, port facility etc, are influenced on the location of industries. Besides, the location of industries is also influenced by the land availability at low cost, technology and government policies. In addition, factors influencing the location of industries vary from one type of industry to another.\". The MQP prints no answer key; answer sourced from the textbook per review_policy_v1 §2-4.",
+    "textbook_derived": true
+   },
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "10th English  SS  Part - 2 2026-27.pdf#p110",
+      "pdf_page": 110,
+      "y": 120.8,
+      "derived_from": "text_layer"
+     },
+     "text": "Factors influencing location of industries : Industries are concentrated mainly in the areas of advantages. Availability of raw materials, energy resources, market, transport facility, availability of labour, port facility etc, are influenced on the location of industries. Besides, the location of industries is also influenced by the land availability at low cost, technology and government policies. In addition, factors influencing the location of industries vary from one type of industry to another.",
+     "confidence": "verbatim"
+    }
+   ],
+   "source_flags": [
+    {
+     "issue": "no difficulty tag"
+    },
+    {
+     "issue": "no LO mapped"
+    }
+   ],
+   "content_hash": "1089453d9a03d809e99ab35c1c6c80087f207aa66f46c763a5147338c1db3594"
+  },
+  {
+   "id": "soc-10-93-s5-q036",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-93",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "section_signal": "V",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "learning_outcomes": [],
+   "lo_source": "none",
+   "out_of_syllabus": false,
+   "text": "Explain the causes and effects of the Third Anglo-Mysore war.",
+   "source": "mqp",
+   "source_ref": "85E_MQP_3.pdf#soc-10-93-s5-q036",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "85E_MQP_3.pdf#soc-10-93-s5-q036",
+     "pdf_page": 4,
+     "y": 30,
+     "derived_from": "ocr"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-09T07:45:02+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-09T07:45:02+05:30",
+   "paper": 3,
+   "paper_title": "S.S.L.C. Model Question Paper 3 : 2026-27 (85-E)",
+   "chapter_ref": "soc-10-04",
+   "chapter_ref_source": "inferred",
+   "transcribed_from_image": true,
+   "answer": {
+    "kind": "text",
+    "value": "The main cause of the Third Anglo-Mysore War was the political situation of Travancore: the king of Travancore built a fort in Kochi with British help and captured the Ayacotta and Kanganoor forts from the Dutch, which was a clear breach of the Mangalore Treaty. In the war the British under General Meadows captured Karwar, Coimbatore and Dindigul; Tippu Sultan captured Sathyamangalam but failed to take Thiruchanapalli; then Lord Cornwallis took over the British command, captured Kolar, Hosakote and Bangalore (destroying its fort), and sought the help of the Marathas and the Nizam of Hyderabad. The combined army marched to Srirangapattana in 1792 and destroyed the fort. As an effect, Tippu Sultan was forced to sign the 'Treaty of Srirangapatna' in 1792 on unfavourable conditions, being forced to part with half of his territory, and with this the Third Anglo-Mysore War came to an end."
+   },
+   "answer_provenance": {
+    "by": "textbook_excerpt",
+    "actor": "class-10-social",
+    "at": "2026-10-09T07:45:02+05:30",
+    "basis": "Textbook 10th English  SS  Part - 1 2026-27(Part 1), pdf p53 (printed p40): \"Third Anglo-Mysore War : The political situation of Travancore was the main reason for this war. The king of Travancore built a fort in Kochi with the help of the British and captured Ayacotta and Kanganoor forts from the Dutch. All these were a clear breach of Mangalore Treaty. ... Lord Cornwallis ... captured Bangalore and destroyed the fort. ... The combined army marched towards Srirangapattana by capturing fort after fort in 1792. ... He signed the ‘Treaty of Srirangapatna’ in 1792 which had unfavourable conditions. With this, Third Anglo-Mysore War came to an end. ... Tippu was forced to part with half of his [territory].\". The MQP prints no answer key; answer sourced from the textbook per review_policy_v1 §2-4.",
+    "textbook_derived": true
+   },
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "10th English  SS  Part - 1 2026-27.pdf#p53",
+      "pdf_page": 53,
+      "y": 38.3,
+      "derived_from": "text_layer"
+     },
+     "text": "Third Anglo-Mysore War : The political situation of Travancore was the main reason for this war. The king of Travancore built a fort in Kochi with the help of the British and captured Ayacotta and Kanganoor forts from the Dutch. All these were a clear breach of Mangalore Treaty. ... Lord Cornwallis ... captured Bangalore and destroyed the fort. ... The combined army marched towards Srirangapattana by capturing fort after fort in 1792. ... He signed the ‘Treaty of Srirangapatna’ in 1792 which had unfavourable conditions. With this, Third Anglo-Mysore War came to an end. ... Tippu was forced to part with half of his [territory].",
+     "confidence": "verbatim"
+    }
+   ],
+   "source_flags": [
+    {
+     "issue": "no difficulty tag"
+    },
+    {
+     "issue": "no LO mapped"
+    }
+   ],
+   "content_hash": "4c91f85eb21b6b2d8431bcde1de109498b6611b8a5a3149e85d28efeba2448c9"
+  },
+  {
+   "id": "soc-10-93-s5-q037",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-93",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "section_signal": "V",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "learning_outcomes": [],
+   "lo_source": "none",
+   "out_of_syllabus": false,
+   "text": "How corruption leads to various negative effects?",
+   "source": "mqp",
+   "source_ref": "85E_MQP_3.pdf#soc-10-93-s5-q037",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "85E_MQP_3.pdf#soc-10-93-s5-q037",
+     "pdf_page": 5,
+     "y": 760,
+     "derived_from": "ocr"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-09T07:45:02+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-09T07:45:02+05:30",
+   "paper": 3,
+   "paper_title": "S.S.L.C. Model Question Paper 3 : 2026-27 (85-E)",
+   "chapter_ref": "soc-10-07",
+   "chapter_ref_source": "inferred",
+   "transcribed_from_image": true,
+   "answer": {
+    "kind": "text",
+    "value": "Corruption is the abuse of power for personal gains and is spreading like an epidemic in public life. Corruption leads to various negative consequences: it is an illegal, antisocial and immoral act; it is a staunch enemy of good administration; it disrupts transparency and accountability in administration; political corruption leads to organized crimes; it allows for bureaucratic loopholes and fraud in public-service sectors; and it weakens the social, economic and political system of the country."
+   },
+   "answer_provenance": {
+    "by": "textbook_excerpt",
+    "actor": "class-10-social",
+    "at": "2026-10-09T07:45:02+05:30",
+    "basis": "Textbook 10th English  SS  Part - 1 2026-27(Part 1), pdf p84 (printed p71): \"Consequences of Corruption : Corruption leads to various negative consequences. They are : corruption is one of the illegal acts, it is an antisocial and immoral act. It is a staunch enemy of good administration, it disrupts transparency and accountability in administration. Political corruption also leads to organized crimes. It allows for bureaucratic loopholes and fraud in public service sectors. It weakens the social, economic and political system of the country.\". The MQP prints no answer key; answer sourced from the textbook per review_policy_v1 §2-4."
+   },
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "10th English  SS  Part - 1 2026-27.pdf#p84",
+      "pdf_page": 84,
+      "y": 590.8,
+      "derived_from": "text_layer"
+     },
+     "text": "Consequences of Corruption : Corruption leads to various negative consequences. They are : corruption is one of the illegal acts, it is an antisocial and immoral act. It is a staunch enemy of good administration, it disrupts transparency and accountability in administration. Political corruption also leads to organized crimes. It allows for bureaucratic loopholes and fraud in public service sectors. It weakens the social, economic and political system of the country.",
+     "confidence": "verbatim"
+    }
+   ],
+   "source_flags": [
+    {
+     "issue": "no difficulty tag"
+    },
+    {
+     "issue": "no LO mapped"
+    }
+   ],
+   "content_hash": "9bc7b43857c4a6b927e2a6bf798161c3b509f1299e03204875b26b1126fa0df7"
+  },
+  {
+   "id": "soc-10-93-s6-q038",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-93",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "sa",
+   "marks": 5,
+   "marks_source": "section_header",
+   "section_signal": "VI",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "learning_outcomes": [],
+   "lo_source": "none",
+   "out_of_syllabus": false,
+   "text": "Mark any five of the following in the outline map of India provided to you.",
+   "source": "mqp",
+   "source_ref": "85E_MQP_3.pdf#soc-10-93-s6-q038",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "85E_MQP_3.pdf#soc-10-93-s6-q038",
+     "pdf_page": 5,
+     "y": 720,
+     "derived_from": "ocr"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-09T07:45:02+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-09T07:45:02+05:30",
+   "paper": 3,
+   "paper_title": "S.S.L.C. Model Question Paper 3 : 2026-27 (85-E)",
+   "chapter_ref": null,
+   "chapter_ref_source": "inferred",
+   "or_group": "93-q038",
+   "transcribed_from_image": true,
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "map": {
+    "subject": "India – outline map features (SSLC map question)",
+    "instruction": "Mark any five of the following in the outline map of India provided to you.",
+    "region": "India",
+    "features_source": "stem",
+    "features": [
+     {
+      "id": "A",
+      "name": "Malabar Coast",
+      "answer_map_label": "Malabar Coast",
+      "answer_map_label_source": "printed",
+      "on_answer_map": false,
+      "in_stem": true,
+      "position": null,
+      "position_source": "unset"
+     },
+     {
+      "id": "B",
+      "name": "23° 30′ North latitude",
+      "answer_map_label": "23° 30′ North latitude",
+      "answer_map_label_source": "printed",
+      "on_answer_map": false,
+      "in_stem": true,
+      "position": null,
+      "position_source": "unset"
+     },
+     {
+      "id": "C",
+      "name": "Surat",
+      "answer_map_label": "Surat",
+      "answer_map_label_source": "printed",
+      "on_answer_map": false,
+      "in_stem": true,
+      "position": null,
+      "position_source": "unset"
+     },
+     {
+      "id": "D",
+      "name": "Damodar project",
+      "answer_map_label": "Damodar project",
+      "answer_map_label_source": "printed",
+      "on_answer_map": false,
+      "in_stem": true,
+      "position": null,
+      "position_source": "unset"
+     },
+     {
+      "id": "E",
+      "name": "Narora",
+      "answer_map_label": "Narora",
+      "answer_map_label_source": "printed",
+      "on_answer_map": false,
+      "in_stem": true,
+      "position": null,
+      "position_source": "unset"
+     },
+     {
+      "id": "F",
+      "name": "Kandla",
+      "answer_map_label": "Kandla",
+      "answer_map_label_source": "printed",
+      "on_answer_map": false,
+      "in_stem": true,
+      "position": null,
+      "position_source": "unset"
+     },
+     {
+      "id": "G",
+      "name": "Indira Gandhi International Airport",
+      "answer_map_label": "Indira Gandhi International Airport",
+      "answer_map_label_source": "printed",
+      "on_answer_map": false,
+      "in_stem": true,
+      "position": null,
+      "position_source": "unset"
+     },
+     {
+      "id": "H",
+      "name": "Ruyli",
+      "answer_map_label": "Ruyli",
+      "answer_map_label_source": "printed",
+      "on_answer_map": false,
+      "in_stem": true,
+      "position": null,
+      "position_source": "unset"
+     },
+     {
+      "id": "I",
+      "name": "Salem",
+      "answer_map_label": "Salem",
+      "answer_map_label_source": "printed",
+      "on_answer_map": false,
+      "in_stem": true,
+      "position": null,
+      "position_source": "unset"
+     },
+     {
+      "id": "J",
+      "name": "Koyna",
+      "answer_map_label": "Koyna",
+      "answer_map_label_source": "printed",
+      "on_answer_map": false,
+      "in_stem": true,
+      "position": null,
+      "position_source": "unset"
+     }
+    ]
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag"
+    },
+    {
+     "issue": "no LO mapped"
+    },
+    {
+     "issue": "no answer printed"
+    }
+   ],
+   "content_hash": "d46ff317971a770ddc6a7ebbeb638e4fcfd63dfc815ce8f70da125de917d0d9e"
+  },
+  {
+   "id": "soc-10-93-s6-q038b",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-93",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": 5,
+   "marks_source": "section_header",
+   "section_signal": "VI",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "learning_outcomes": [],
+   "lo_source": "none",
+   "out_of_syllabus": false,
+   "text": "What are the main objectives of multipurpose river valley projects?",
+   "source": "mqp",
+   "source_ref": "85E_MQP_3.pdf#soc-10-93-s6-q038b",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "85E_MQP_3.pdf#soc-10-93-s6-q038b",
+     "pdf_page": 5,
+     "y": 380,
+     "derived_from": "ocr"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-09T07:45:02+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-09T07:45:02+05:30",
+   "paper": 3,
+   "paper_title": "S.S.L.C. Model Question Paper 3 : 2026-27 (85-E)",
+   "chapter_ref": "soc-10-14",
+   "chapter_ref_source": "inferred",
+   "or_group": "93-q038",
+   "review_note": "alternative question (visually impaired) — in lieu of Question 38",
+   "transcribed_from_image": true,
+   "answer": {
+    "kind": "text",
+    "value": "The main aims of multi-purpose river valley projects are: (1) providing irrigation facility; (2) production of hydro-electric power; (3) prevention of floods; (4) creating facility for water transportation; (5) providing water for domestic and industrial use; (6) preventing soil erosion; (7) developing fisheries; and (8) enhancing forest wealth."
+   },
+   "answer_provenance": {
+    "by": "textbook_excerpt",
+    "actor": "class-10-social",
+    "at": "2026-10-09T07:45:02+05:30",
+    "basis": "Textbook 10th English  SS  Part - 1 2026-27(Part 1), pdf p127 (printed p114): \"The main aims of these projects are: 1. providing irrigation facility; 2. production of hydro-electric power; 3. prevention of floods; 4. creating facility for water transportation; 5. providing water for domestic and industrial use; 6. preventing soil erosion; 7. developing fisheries; 8. enhancing forest wealth.\". The MQP prints no answer key; answer sourced from the textbook per review_policy_v1 §2-4."
+   },
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "10th English  SS  Part - 1 2026-27.pdf#p127",
+      "pdf_page": 127,
+      "y": 39.2,
+      "derived_from": "text_layer"
+     },
+     "text": "The main aims of these projects are: 1. providing irrigation facility; 2. production of hydro-electric power; 3. prevention of floods; 4. creating facility for water transportation; 5. providing water for domestic and industrial use; 6. preventing soil erosion; 7. developing fisheries; 8. enhancing forest wealth.",
+     "confidence": "verbatim"
+    }
+   ],
+   "source_flags": [
+    {
+     "issue": "no difficulty tag"
+    },
+    {
+     "issue": "no LO mapped"
+    }
+   ],
+   "content_hash": "cd93cd29b98b5d1fbb4fc30478a6db892c2a2ef3f8e88a67bc083857b3e6e52d"
+  },
+  {
+   "id": "soc-10-93-s6-q038c",
+   "class": "10",
+   "subject": "social",
+   "language": "en",
+   "chapter_id": "soc-10-93",
+   "syllabus_map_version": "none",
+   "audience": "student",
+   "type": "la",
+   "marks": 5,
+   "marks_source": "section_header",
+   "section_signal": "VI",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "learning_outcomes": [],
+   "lo_source": "none",
+   "out_of_syllabus": false,
+   "text": "What are the advantages of Himalayan mountains?",
+   "source": "mqp",
+   "source_ref": "85E_MQP_3.pdf#soc-10-93-s6-q038c",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "85E_MQP_3.pdf#soc-10-93-s6-q038c",
+     "pdf_page": 5,
+     "y": 320,
+     "derived_from": "ocr"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-10-social",
+     "role": "extraction",
+     "at": "2026-10-09T07:45:02+05:30"
+    }
+   ],
+   "created_by": "class-10-social",
+   "created_at": "2026-10-09T07:45:02+05:30",
+   "paper": 3,
+   "paper_title": "S.S.L.C. Model Question Paper 3 : 2026-27 (85-E)",
+   "chapter_ref": "soc-10-10",
+   "chapter_ref_source": "inferred",
+   "or_group": "93-q038",
+   "review_note": "alternative question (visually impaired) — in lieu of Question 38",
+   "transcribed_from_image": true,
+   "answer": {
+    "kind": "text",
+    "value": "The Himalayan mountains have greatly influenced the life of Indians: they provide protection to India by obstructing the cold winds from the North Asian regions; they are the birth-place of many rivers; they form vast fertile plains; they facilitate hydro-electric power generation; and they are the home to many types of plants and animals."
+   },
+   "answer_provenance": {
+    "by": "textbook_excerpt",
+    "actor": "class-10-social",
+    "at": "2026-10-09T07:45:02+05:30",
+    "basis": "Textbook 10th English  SS  Part - 1 2026-27(Part 1), pdf p106 (printed p93): \"Importance of the Himalayas: The Himalayan mountains have influenced the life of Indians to a greater extent. They provide protection to India, by obstructing the cold winds from the North Asian regions. They are the birth-place of many rivers. They form vast plains. They facilitate hydro-electric power generation. They are the home to many types of plants [and animals].\". The MQP prints no answer key; answer sourced from the textbook per review_policy_v1 §2-4.",
+    "textbook_derived": true
+   },
+   "answer_evidence": [
+    {
+     "kind": "textbook_excerpt",
+     "locator": {
+      "role": "textbook",
+      "source_ref": "10th English  SS  Part - 1 2026-27.pdf#p106",
+      "pdf_page": 106,
+      "y": 274.6,
+      "derived_from": "text_layer"
+     },
+     "text": "Importance of the Himalayas: The Himalayan mountains have influenced the life of Indians to a greater extent. They provide protection to India, by obstructing the cold winds from the North Asian regions. They are the birth-place of many rivers. They form vast plains. They facilitate hydro-electric power generation. They are the home to many types of plants [and animals].",
+     "confidence": "verbatim"
+    }
+   ],
+   "source_flags": [
+    {
+     "issue": "no difficulty tag"
+    },
+    {
+     "issue": "no LO mapped"
+    }
+   ],
+   "content_hash": "e258e7b0aaa8d3375eba2feaf81b02b943f35ece1be997e641c4a87820068c61"
+  }
+ ],
+ "pending_summary": {}
+}
