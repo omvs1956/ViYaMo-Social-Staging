@@ -1,0 +1,6151 @@
+{
+ "contract_version": "1.7",
+ "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
+ "procedure_file": "extraction_procedure_social_addendum_v1.4_social science Classes 6-10 on top of procedure v2.md",
+ "machine_name": "evs-4-06_questions",
+ "version": 1,
+ "changelog": "v1 extraction — batch-01 — class-4-evs",
+ "amendments_applied": [],
+ "unit_state": "EXTRACTED",
+ "review_ready": false,
+ "count_gate": {
+  "reference": 74,
+  "reference_source": "audited",
+  "extracted": 74,
+  "paired": 73,
+  "flagged": 3,
+  "gaps": [],
+  "duplicated_numbers": [],
+  "quota_table": "absent",
+  "second_method": {
+   "method": "independent count of answer-side keys (73 numbered keys + 0 unnumbered match block(s)) + 1 question(s) with no printed key",
+   "extracted": 74,
+   "agrees": true
+  },
+  "pass": true,
+  "note": "No difficulty distribution table is printed in this LBA -> quota_table 'absent' (ruling R-E6). Question side labels 1-74 monotonic, no gaps or duplicates (the match rows carry labels 26-33 and are questions). Answer side 1-73; q74 (colour) has no key. Difficulty per question: easy 47, average 4, difficult 18, untagged 5."
+ },
+ "extraction": {
+  "source_file": "4thLBA-EVS-EM1.pdf",
+  "source_ref_prefix": "4thLBA-EVS-EM1.pdf",
+  "pdf_pages": [
+   24,
+   25,
+   26,
+   27,
+   28,
+   129,
+   130,
+   131,
+   132,
+   133
+  ],
+  "printed_page_offset": 0,
+  "method_notes": [
+   "Pages: Q pdf 24 (heading) 25 (LO, q1-15) 26-28; A pdf 129 (heading, keys 1-21) 130-133.",
+   "Sections: s1 MCQ q1-5 (heading untagged, stems untagged -> 5 x 'no difficulty tag'); s2 fill q6-15; s3 T/F q16-25; s4 '• Match the followings (easy)' q26-33; s5 one mark q34-43 vsa; s6 two marks q44-53 sa; s7 three marks q54-63 sa; s8 four marks q64-74 la.",
+   "MATCH ROWS: each column-A row prints its own question label (26-33) continuing the lesson's numbering, and the key side keys each row by the same label (pdf 130) -> each row is a question (v1.4 §14.1: ids are printed labels), type match with its one printed pair; stem = 'Match the followings: <row>' + column B as printed. Coordinator: this differs from evs-4-01/02 (one unlabelled-row match = one question) only because the rows here carry their own labels.",
+   "LO: 10 lines printed with '*' under 'Learning Out comes:-' (pdf 24-25).",
+   "Keys 54-73 print a heading on the number line ('Three stages of water cycle:') -> kept in answer.value, not a step (addendum §5.2). q66, q68, q70 end with an un-bulleted point ('Importance: …', 'Prevention: …') -> its own step.",
+   "q64 'Describe the water cycle. Draw its phases and label the parts.' — key is text only ('Draw and label: …'); stored verbatim + 'answer is a diagram' flag (no drawn key printed).",
+   "q74 figure -> stimulus st-evs-4-06-q74 (crop in images/evs-4-06/stimuli/, ruling D4); no key -> 'no answer printed'. T/F answer-space underscores removed from text.",
+   "Transcription: evs_auto.py rules (as evs-4-01) + the overrides in build file build_06.py; marks per ruling R-E5; topic per R-E3."
+  ],
+  "notation_summary": {
+   "render_tokens": 0,
+   "latex_tokens": 0,
+   "damage_flags": []
+  },
+  "excluded_objects": [],
+  "inline_excluded_count": 0,
+  "figure_references": []
+ },
+ "stimuli": [
+  {
+   "id": "st-evs-4-06-q74",
+   "kind": "figure",
+   "note": "74. Colour the following picture appropritely and label the parts. (Difficult)",
+   "assets": [
+    {
+     "id": "st74",
+     "type": "image",
+     "ref": "images/evs-4-06/stimuli/p028-q74_figure.png",
+     "role": "figure",
+     "source_px": {
+      "w": 888,
+      "h": 596
+     },
+     "quality": "ok",
+     "caption": "Figure printed below q74, pdf 28 — region render at 150 dpi of the embedded image's box",
+     "pdf_page": 28,
+     "crop_bbox": {
+      "pdf_page": 28,
+      "x0": 72.0,
+      "y0": 88.0,
+      "x1": 498.0,
+      "y1": 374.0
+     }
+    }
+   ],
+   "locators": [
+    {
+     "role": "stimulus",
+     "source_ref": "4thLBA-EVS-EM1.pdf#st-evs-4-06-q74",
+     "pdf_page": 28,
+     "printed_page": 28,
+     "y": 88.0,
+     "derived_from": "render_measured"
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "evs-4-06-s1-q001",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The water suitable for use on earth is",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s1-q001",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s1-q001",
+     "pdf_page": 25,
+     "printed_page": 25,
+     "y": 295.652,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s1-q001-key",
+     "pdf_page": 129,
+     "printed_page": 129,
+     "y": 364.908,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "section_signal": "Choose the correct answers to the following questions and write them",
+   "options": [
+    {
+     "id": "A",
+     "text": "4%"
+    },
+    {
+     "id": "B",
+     "text": "less than 1 %"
+    },
+    {
+     "id": "C",
+     "text": "2%"
+    },
+    {
+     "id": "D",
+     "text": "3%"
+    }
+   ],
+   "answer_as_printed": "B) Less than 1%",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "neither the question nor its section heading prints a difficulty tag; assigning one needs subject judgement",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "6234ce270c6028089117d184bd8034983e420d288c4e6b16d34800ddc81dc18a",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s1-q002",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "If all the droplets join together in the sky it",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s1-q002",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s1-q002",
+     "pdf_page": 25,
+     "printed_page": 25,
+     "y": 327.402,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s1-q002-key",
+     "pdf_page": 129,
+     "printed_page": 129,
+     "y": 380.928,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "section_signal": "Choose the correct answers to the following questions and write them",
+   "options": [
+    {
+     "id": "A",
+     "text": "Becomes cloudy"
+    },
+    {
+     "id": "B",
+     "text": "rains"
+    },
+    {
+     "id": "C",
+     "text": "Evaporates"
+    },
+    {
+     "id": "D",
+     "text": "Thunders"
+    }
+   ],
+   "answer_as_printed": "B) Rain",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "neither the question nor its section heading prints a difficulty tag; assigning one needs subject judgement",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key text differs from option by a printed typo",
+     "why_not_corrected": "letter B kept (addendum §4.1); key text 'Rain' vs option B 'rains'",
+     "suggested": "B (letter kept)"
+    }
+   ],
+   "content_hash": "fb186587439fd5f80fa2a317f973756ec07806b11a332008f30090beee72a329",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s1-q003",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Our body is made up of this percentage of water.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s1-q003",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s1-q003",
+     "pdf_page": 25,
+     "printed_page": 25,
+     "y": 359.402,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s1-q003-key",
+     "pdf_page": 129,
+     "printed_page": 129,
+     "y": 396.928,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "section_signal": "Choose the correct answers to the following questions and write them",
+   "options": [
+    {
+     "id": "A",
+     "text": "90%"
+    },
+    {
+     "id": "B",
+     "text": "70%"
+    },
+    {
+     "id": "C",
+     "text": "50%"
+    },
+    {
+     "id": "D",
+     "text": "20%"
+    }
+   ],
+   "answer_as_printed": "B) 70%",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "neither the question nor its section heading prints a difficulty tag; assigning one needs subject judgement",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "785a4d5a6025b7cd0bab2a8a8377ccca02f3cff86f5b347c933d72c369810e4e",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s1-q004",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "We live with out water for",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s1-q004",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s1-q004",
+     "pdf_page": 25,
+     "printed_page": 25,
+     "y": 391.422,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s1-q004-key",
+     "pdf_page": 129,
+     "printed_page": 129,
+     "y": 412.928,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "section_signal": "Choose the correct answers to the following questions and write them",
+   "options": [
+    {
+     "id": "A",
+     "text": "10 days"
+    },
+    {
+     "id": "B",
+     "text": "2 days"
+    },
+    {
+     "id": "C",
+     "text": "3 days"
+    },
+    {
+     "id": "D",
+     "text": "1 day"
+    }
+   ],
+   "answer_as_printed": "C) 3 days",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "neither the question nor its section heading prints a difficulty tag; assigning one needs subject judgement",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "adbe197f29289780d4cb79b336dd9b99e81912c276218cb89d40967d1f605668",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s1-q005",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The sources of water",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s1-q005",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s1-q005",
+     "pdf_page": 25,
+     "printed_page": 25,
+     "y": 423.172,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s1-q005-key",
+     "pdf_page": 129,
+     "printed_page": 129,
+     "y": 428.928,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "section_signal": "Choose the correct answers to the following questions and write them",
+   "options": [
+    {
+     "id": "A",
+     "text": "river"
+    },
+    {
+     "id": "B",
+     "text": "well"
+    },
+    {
+     "id": "C",
+     "text": "Lake"
+    },
+    {
+     "id": "D",
+     "text": "All the above"
+    }
+   ],
+   "answer_as_printed": "D) All the above",
+   "answer": {
+    "kind": "option",
+    "option_id": "D"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "neither the question nor its section heading prints a difficulty tag; assigning one needs subject judgement",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "6cfea602ce3bc40610b480b25c56dff243ceb234bca61b9c24429ef0f1f600d5",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s2-q006",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The change of water from liquid state to gaseous state is called ____________.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s2-q006",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s2-q006",
+     "pdf_page": 25,
+     "printed_page": 25,
+     "y": 487.202,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s2-q006-key",
+     "pdf_page": 129,
+     "printed_page": 129,
+     "y": 474.208,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "section_signal": "Fill in the blanks",
+   "answer": {
+    "kind": "text",
+    "value": "Evaporation"
+   },
+   "answer_as_printed": "Evaporation",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "5817b574b29f15b089d2a9997c490c69a593459020ccdd2d72a2d162231de583",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s2-q007",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "When the air of the water cools down, it turns into smallsprings, which are called ____________",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s2-q007",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s2-q007",
+     "pdf_page": 25,
+     "printed_page": 25,
+     "y": 503.202,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s2-q007-key",
+     "pdf_page": 129,
+     "printed_page": 129,
+     "y": 490.208,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "section_signal": "Fill in the blanks",
+   "answer": {
+    "kind": "text",
+    "value": "Droplets"
+   },
+   "answer_as_printed": "Droplets",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "fce30cc08eed929cb5c46a322a2a9fd551bcdc687fb920acb9f39cdf505acb86",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s2-q008",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The process of Evaporation, Condensation, Cloud formation and rainfall are together called as",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s2-q008",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s2-q008",
+     "pdf_page": 25,
+     "printed_page": 25,
+     "y": 534.952,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s2-q008-key",
+     "pdf_page": 129,
+     "printed_page": 129,
+     "y": 506.208,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "section_signal": "Fill in the blanks",
+   "answer": {
+    "kind": "text",
+    "value": "Water cycle"
+   },
+   "answer_as_printed": "Water cycle",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "f0991fd8c38c92583e6dc3ef1ef661130bffe4b1da53d27969bc0088709fa84d",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s2-q009",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Only ____________ percent of earth's water is available as fresh water.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s2-q009",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s2-q009",
+     "pdf_page": 25,
+     "printed_page": 25,
+     "y": 566.972,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s2-q009-key",
+     "pdf_page": 129,
+     "printed_page": 129,
+     "y": 522.208,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "section_signal": "Fill in the blanks",
+   "answer": {
+    "kind": "text",
+    "value": "Less than 1"
+   },
+   "answer_as_printed": "Less than 1",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "0fd65a47cd1ea09eeb4d333d0257ad4c53d471074415237af0fde338341a75f3",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s2-q010",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The water used for washing utensils, clothes and vegetables can be used for ____________ plants.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s2-q010",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s2-q010",
+     "pdf_page": 25,
+     "printed_page": 25,
+     "y": 582.972,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s2-q010-key",
+     "pdf_page": 129,
+     "printed_page": 129,
+     "y": 538.208,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "section_signal": "Fill in the blanks",
+   "answer": {
+    "kind": "text",
+    "value": "Watering"
+   },
+   "answer_as_printed": "Watering",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "ec6e781dfe29e42533ab3bcb944be2988234556b014c9cb55172bb80d097e602",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s2-q011",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "____________ is the process of collecting rainwater and then saving it for use.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s2-q011",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s2-q011",
+     "pdf_page": 25,
+     "printed_page": 25,
+     "y": 614.982,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s2-q011-key",
+     "pdf_page": 129,
+     "printed_page": 129,
+     "y": 554.228,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "section_signal": "Fill in the blanks",
+   "answer": {
+    "kind": "text",
+    "value": "Rainwater harvesting"
+   },
+   "answer_as_printed": "Rainwater harvesting",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "9b0216c0bc92567423b39e2ddda2d7805903faa6dbdecc7fb89d67c25e9148e2",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s2-q012",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Sea water is not fit for drinking as it contains ____________.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s2-q012",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s2-q012",
+     "pdf_page": 25,
+     "printed_page": 25,
+     "y": 630.752,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s2-q012-key",
+     "pdf_page": 129,
+     "printed_page": 129,
+     "y": 570.238,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "section_signal": "Fill in the blanks",
+   "answer": {
+    "kind": "text",
+    "value": "Salt"
+   },
+   "answer_as_printed": "Salt",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "f168433dc3fdcfc7ab5c69b9476c2a5f14be2ca1f04fe5762604e804a8896ea8",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s2-q013",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The water in the air is in ____________ form.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s2-q013",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s2-q013",
+     "pdf_page": 25,
+     "printed_page": 25,
+     "y": 646.752,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s2-q013-key",
+     "pdf_page": 129,
+     "printed_page": 129,
+     "y": 586.228,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "section_signal": "Fill in the blanks",
+   "answer": {
+    "kind": "text",
+    "value": "Gas"
+   },
+   "answer_as_printed": "Gas",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "9a1fa2b37facbbd30bf23f2f121c319c0baef9c26d0f349708abf022a85ffdbd",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s2-q014",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The solid form of water found in glaciers is called____________.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s2-q014",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s2-q014",
+     "pdf_page": 25,
+     "printed_page": 25,
+     "y": 662.752,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s2-q014-key",
+     "pdf_page": 129,
+     "printed_page": 129,
+     "y": 602.228,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "section_signal": "Fill in the blanks",
+   "answer": {
+    "kind": "text",
+    "value": "Ice"
+   },
+   "answer_as_printed": "Ice",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "3951144e7c81d79d42c6dfc7400aec279a714d7079fdb4a38f974406e4b765a6",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s2-q015",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The temperature of the ____________ rays causes water to evaporate.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s2-q015",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s2-q015",
+     "pdf_page": 25,
+     "printed_page": 25,
+     "y": 678.752,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s2-q015-key",
+     "pdf_page": 129,
+     "printed_page": 129,
+     "y": 618.228,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "section_signal": "Fill in the blanks",
+   "answer": {
+    "kind": "text",
+    "value": "Sun’s"
+   },
+   "answer_as_printed": "Sun’s",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "44d6d661795be3c175f6d1b12760e9e909c0dbb67ac8d8e2fbf891754c8d102c",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s3-q016",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The water cycle consists of precipitation, condensation and precipitation",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s3-q016",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s3-q016",
+     "pdf_page": 25,
+     "printed_page": 25,
+     "y": 729.277,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s3-q016-key",
+     "pdf_page": 129,
+     "printed_page": 129,
+     "y": 663.508,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "text_as_printed": "The water cycle consists of precipitation, condensation and precipitation_______",
+   "section_signal": "State whether the following statements are true or false true",
+   "answer": {
+    "kind": "option",
+    "option_id": "false"
+   },
+   "answer_as_printed": "False",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "1dbe05d3c4a412ccb21715e7f8174b3fc4bdad824089be8e56572408b8e6089d",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s3-q017",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "All the water on the earth is pure and fit for drinking.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s3-q017",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s3-q017",
+     "pdf_page": 25,
+     "printed_page": 25,
+     "y": 745.277,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s3-q017-key",
+     "pdf_page": 129,
+     "printed_page": 129,
+     "y": 679.508,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "text_as_printed": "All the water on the earth is pure and fit for drinking. ______",
+   "section_signal": "State whether the following statements are true or false true",
+   "answer": {
+    "kind": "option",
+    "option_id": "false"
+   },
+   "answer_as_printed": "False",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "b1b699e603055b13557f397085b443515b4f12fee3becb3bc25f7854dbdae45d",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s3-q018",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Rain water harvesting helps in conserving water.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s3-q018",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s3-q018",
+     "pdf_page": 26,
+     "printed_page": 26,
+     "y": 72.082,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s3-q018-key",
+     "pdf_page": 129,
+     "printed_page": 129,
+     "y": 695.508,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "text_as_printed": "Rain water harvesting helps in conserving water. ______",
+   "section_signal": "State whether the following statements are true or false true",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "True",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "6167974897844890f830c0c3169033d1be3e3965c7ff4aff2e39d5fe21b550f1",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s3-q019",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The air form of water is the liquid state of water.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s3-q019",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s3-q019",
+     "pdf_page": 26,
+     "printed_page": 26,
+     "y": 88.082,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s3-q019-key",
+     "pdf_page": 129,
+     "printed_page": 129,
+     "y": 711.508,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "text_as_printed": "The air form of water is the liquid state of water. ______",
+   "section_signal": "State whether the following statements are true or false true",
+   "answer": {
+    "kind": "option",
+    "option_id": "false"
+   },
+   "answer_as_printed": "False",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "240e7fdb89ea15e8923764ee6896a5ee0b903c187ac90463b5f975a744d5a4b2",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s3-q020",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The destruction of water has no effect on the availability of water.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s3-q020",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s3-q020",
+     "pdf_page": 26,
+     "printed_page": 26,
+     "y": 104.082,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s3-q020-key",
+     "pdf_page": 129,
+     "printed_page": 129,
+     "y": 727.538,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "text_as_printed": "The destruction of water has no effect on the availability of water. _______",
+   "section_signal": "State whether the following statements are true or false true",
+   "answer": {
+    "kind": "option",
+    "option_id": "false"
+   },
+   "answer_as_printed": "False",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "8429b9a218bcdb55064fcca8aa4d81d4b6ebc27924784218406cb680bb62bb5a",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s3-q021",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Hailstones are small pieces of snow that fall during the rains.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s3-q021",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s3-q021",
+     "pdf_page": 26,
+     "printed_page": 26,
+     "y": 119.852,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s3-q021-key",
+     "pdf_page": 129,
+     "printed_page": 129,
+     "y": 743.533,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "text_as_printed": "Hailstones are small pieces of snow that fall during the rains. ______",
+   "section_signal": "State whether the following statements are true or false true",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "True",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "61960231f6be492a74baea74f3fad626150c175dc5a6610c9f33fe23d05433fb",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s3-q022",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Water once used cannot be reused.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s3-q022",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s3-q022",
+     "pdf_page": 26,
+     "printed_page": 26,
+     "y": 135.852,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s3-q022-key",
+     "pdf_page": 130,
+     "printed_page": 130,
+     "y": 72.588,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "text_as_printed": "Water once used cannot be reused. _______",
+   "section_signal": "State whether the following statements are true or false true",
+   "answer": {
+    "kind": "option",
+    "option_id": "false"
+   },
+   "answer_as_printed": "False",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "9ebf0ea0f5e7ba00db4c542f08015300627ea84bd0896280f05a173a367cc601",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s3-q023",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "About 65% of the human body is made up of water",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s3-q023",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s3-q023",
+     "pdf_page": 26,
+     "printed_page": 26,
+     "y": 151.852,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s3-q023-key",
+     "pdf_page": 130,
+     "printed_page": 130,
+     "y": 88.588,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "text_as_printed": "About 65% of the human body is made up of water______",
+   "section_signal": "State whether the following statements are true or false true",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "True",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "ff7e3ce54dacc9aa650658fc320c11976a972bd2ab55939c3b9e9d024d32820b",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s3-q024",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Boiling water is an example of condensation.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s3-q024",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s3-q024",
+     "pdf_page": 26,
+     "printed_page": 26,
+     "y": 167.852,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s3-q024-key",
+     "pdf_page": 130,
+     "printed_page": 130,
+     "y": 104.588,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "text_as_printed": "Boiling water is an example of condensation. ______",
+   "section_signal": "State whether the following statements are true or false true",
+   "answer": {
+    "kind": "option",
+    "option_id": "false"
+   },
+   "answer_as_printed": "False",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "37a20a52af57eeacdec611cd6d1255c9733f5d9062062f8948e4cd7b6a177ad7",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s3-q025",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Fresh water accounts for more than 90% of the total water on the earth",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s3-q025",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s3-q025",
+     "pdf_page": 26,
+     "printed_page": 26,
+     "y": 183.852,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s3-q025-key",
+     "pdf_page": 130,
+     "printed_page": 130,
+     "y": 120.608,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "text_as_printed": "Fresh water accounts for more than 90% of the total water on the earth_______",
+   "section_signal": "State whether the following statements are true or false true",
+   "answer": {
+    "kind": "option",
+    "option_id": "false"
+   },
+   "answer_as_printed": "False",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "bf1b1cc31bf0adabceacffa63fe40bb20842f6413e9feb57524e0a443ba1c477",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s4-q026",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Match the followings: Agriculture\nB: a) gaseous state to liquid state; b) together join to form clouds; c) Rain water harvesting; d) water vapour; e) Not fit for drinking; f) 3% of total water on earth; g) liquid state to gaseous state; h) Continuous movement of water",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s4-q026",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s4-q026",
+     "pdf_page": 26,
+     "printed_page": 26,
+     "y": 247.632,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s4-q026-key",
+     "pdf_page": 130,
+     "printed_page": 130,
+     "y": 181.858,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "text_as_printed": "Agriculture               a) gaseous state to liquid state",
+   "section_signal": "Match the followings",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "Agriculture",
+      "right": "Rain water harvesting"
+     }
+    ]
+   },
+   "answer_as_printed": "26. Agriculture — c) Rain water harvesting",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed match key (letter + text per row); pairs left/right verbatim from the key (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "eef1218c930b93d5ebde6d143ba56b6c5b2956ebc184cb6125afe0747dca6fef",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s4-q027",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Match the followings: Evaporation\nB: a) gaseous state to liquid state; b) together join to form clouds; c) Rain water harvesting; d) water vapour; e) Not fit for drinking; f) 3% of total water on earth; g) liquid state to gaseous state; h) Continuous movement of water",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s4-q027",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s4-q027",
+     "pdf_page": 26,
+     "printed_page": 26,
+     "y": 263.632,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s4-q027-key",
+     "pdf_page": 130,
+     "printed_page": 130,
+     "y": 197.858,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "text_as_printed": "Evaporation              b) together join to form clouds",
+   "section_signal": "Match the followings",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "Evaporation",
+      "right": "Liquid state to gaseous state"
+     }
+    ]
+   },
+   "answer_as_printed": "27. Evaporation — g) Liquid state to gaseous state",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed match key (letter + text per row); pairs left/right verbatim from the key (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "1082aa74e637abee4133234f557c159340e059e9937e0c04f0621f6c070920e6",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s4-q028",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Match the followings: Condensation\nB: a) gaseous state to liquid state; b) together join to form clouds; c) Rain water harvesting; d) water vapour; e) Not fit for drinking; f) 3% of total water on earth; g) liquid state to gaseous state; h) Continuous movement of water",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s4-q028",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s4-q028",
+     "pdf_page": 26,
+     "printed_page": 26,
+     "y": 283.882,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s4-q028-key",
+     "pdf_page": 130,
+     "printed_page": 130,
+     "y": 213.888,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "text_as_printed": "Condensation                 c) Rain water harvesting",
+   "section_signal": "Match the followings",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "Condensation",
+      "right": "Gaseous state to liquid state"
+     }
+    ]
+   },
+   "answer_as_printed": "28. Condensation — a) Gaseous state to liquid state",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed match key (letter + text per row); pairs left/right verbatim from the key (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "d9175997ca466fbbef101b0944d0f93d666e6b8326c6f0ffe4265c701754ca6d",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s4-q029",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Match the followings: Droplets of water\nB: a) gaseous state to liquid state; b) together join to form clouds; c) Rain water harvesting; d) water vapour; e) Not fit for drinking; f) 3% of total water on earth; g) liquid state to gaseous state; h) Continuous movement of water",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s4-q029",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s4-q029",
+     "pdf_page": 26,
+     "printed_page": 26,
+     "y": 304.402,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s4-q029-key",
+     "pdf_page": 130,
+     "printed_page": 130,
+     "y": 229.888,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "text_as_printed": "Droplets of water            d) water vapour",
+   "section_signal": "Match the followings",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "Droplets of water",
+      "right": "Together join to form clouds"
+     }
+    ]
+   },
+   "answer_as_printed": "29. Droplets of water — b) Together join to form clouds",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed match key (letter + text per row); pairs left/right verbatim from the key (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "9fa7edc54560ff85dce59a1ebf601c28e16aa513227d9247ca9aad2822688171",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s4-q030",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Match the followings: Sweet water\nB: a) gaseous state to liquid state; b) together join to form clouds; c) Rain water harvesting; d) water vapour; e) Not fit for drinking; f) 3% of total water on earth; g) liquid state to gaseous state; h) Continuous movement of water",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s4-q030",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s4-q030",
+     "pdf_page": 26,
+     "printed_page": 26,
+     "y": 324.652,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s4-q030-key",
+     "pdf_page": 130,
+     "printed_page": 130,
+     "y": 261.888,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "text_as_printed": "Sweet water                  e) Not fit for drinking",
+   "section_signal": "Match the followings",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "Sweet water",
+      "right": "3% of total water on earth"
+     }
+    ]
+   },
+   "answer_as_printed": "30. Sweet water — f) 3% of total water on earth",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed match key (letter + text per row); pairs left/right verbatim from the key (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "d7807c179ee3f59848b22b7824ba34c2e6cad458154877137dd4a6a1a6067606",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s4-q031",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Match the followings: Sea water\nB: a) gaseous state to liquid state; b) together join to form clouds; c) Rain water harvesting; d) water vapour; e) Not fit for drinking; f) 3% of total water on earth; g) liquid state to gaseous state; h) Continuous movement of water",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s4-q031",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s4-q031",
+     "pdf_page": 26,
+     "printed_page": 26,
+     "y": 349.402,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s4-q031-key",
+     "pdf_page": 130,
+     "printed_page": 130,
+     "y": 277.628,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "text_as_printed": "Sea water                    f) 3% of total water on earth",
+   "section_signal": "Match the followings",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "Sea water",
+      "right": "Not fit for drinking"
+     }
+    ]
+   },
+   "answer_as_printed": "31. Sea water — e) Not fit for drinking",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed match key (letter + text per row); pairs left/right verbatim from the key (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "bfcd671ab68bc4a9e7fa29b5f359428184c032e37336020ef78871b4eea39a38",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s4-q032",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Match the followings: Water cycle\nB: a) gaseous state to liquid state; b) together join to form clouds; c) Rain water harvesting; d) water vapour; e) Not fit for drinking; f) 3% of total water on earth; g) liquid state to gaseous state; h) Continuous movement of water",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s4-q032",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s4-q032",
+     "pdf_page": 26,
+     "printed_page": 26,
+     "y": 374.172,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s4-q032-key",
+     "pdf_page": 130,
+     "printed_page": 130,
+     "y": 301.658,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "text_as_printed": "Water cycle                  g) liquid state to gaseous state",
+   "section_signal": "Match the followings",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "Water cycle",
+      "right": "Continuous movement of water"
+     }
+    ]
+   },
+   "answer_as_printed": "32. Water cycle — h) Continuous movement of water",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed match key (letter + text per row); pairs left/right verbatim from the key (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "c0ca7504bed8ea49053855ed39846a34dbffb3eb8525ecc260614c09799c2bac",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s4-q033",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Match the followings: Air form of water\nB: a) gaseous state to liquid state; b) together join to form clouds; c) Rain water harvesting; d) water vapour; e) Not fit for drinking; f) 3% of total water on earth; g) liquid state to gaseous state; h) Continuous movement of water",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s4-q033",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s4-q033",
+     "pdf_page": 26,
+     "printed_page": 26,
+     "y": 406.922,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s4-q033-key",
+     "pdf_page": 130,
+     "printed_page": 130,
+     "y": 325.658,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "text_as_printed": "Air form of water            h) Continuous movement of water",
+   "section_signal": "Match the followings",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "Air form of water",
+      "right": "Water vapour"
+     }
+    ]
+   },
+   "answer_as_printed": "33. Air form of water — d) Water vapour",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed match key (letter + text per row); pairs left/right verbatim from the key (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "90bf94c16f5198de1a2339a53cffdb46858769ad30b59a338007a12a38d0e4e2",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s5-q034",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What is the main source of heat for the watercycle?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s5-q034",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s5-q034",
+     "pdf_page": 26,
+     "printed_page": 26,
+     "y": 470.202,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s5-q034-key",
+     "pdf_page": 130,
+     "printed_page": 130,
+     "y": 386.928,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "section_signal": "Answer the following questions (onemarkquestions)",
+   "answer": {
+    "kind": "text",
+    "value": "The Sun"
+   },
+   "answer_as_printed": "The Sun",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "c270cdd1cc3d9df26b338af4f72598d9696946b6d3298fc465608712a059f7c2",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s5-q035",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What happens when water boils?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s5-q035",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s5-q035",
+     "pdf_page": 26,
+     "printed_page": 26,
+     "y": 486.202,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s5-q035-key",
+     "pdf_page": 130,
+     "printed_page": 130,
+     "y": 402.928,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "section_signal": "Answer the following questions (onemarkquestions)",
+   "answer": {
+    "kind": "text",
+    "value": "It changes into steam or vapour."
+   },
+   "answer_as_printed": "It changes into steam or vapour.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "758807eb1aad90fae7ab0beaeb5557eb23ffdaa4745c9e21729e778c9e35cbd0",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s5-q036",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What is the name of the process of conversion of water into vapour?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s5-q036",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s5-q036",
+     "pdf_page": 26,
+     "printed_page": 26,
+     "y": 501.952,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s5-q036-key",
+     "pdf_page": 130,
+     "printed_page": 130,
+     "y": 418.928,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "section_signal": "Answer the following questions (onemarkquestions)",
+   "answer": {
+    "kind": "text",
+    "value": "Evaporation"
+   },
+   "answer_as_printed": "Evaporation",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "a7b9016834b2a5a1b4fac15d8c03ba120bde882951cc73ec7bfcf495c0c784c3",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s5-q037",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Name of the process of vapour becoming water droplets again?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s5-q037",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s5-q037",
+     "pdf_page": 26,
+     "printed_page": 26,
+     "y": 517.952,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s5-q037-key",
+     "pdf_page": 130,
+     "printed_page": 130,
+     "y": 434.928,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "section_signal": "Answer the following questions (onemarkquestions)",
+   "answer": {
+    "kind": "text",
+    "value": "Condensation"
+   },
+   "answer_as_printed": "Condensation",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "3d70741df898c1b13085915bc05c2f3bf85959a58fc6a2cd76d0235e0d418c26",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s5-q038",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Name a source of drinking water.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s5-q038",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s5-q038",
+     "pdf_page": 26,
+     "printed_page": 26,
+     "y": 533.952,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s5-q038-key",
+     "pdf_page": 130,
+     "printed_page": 130,
+     "y": 450.928,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "section_signal": "Answer the following questions (onemarkquestions)",
+   "answer": {
+    "kind": "text",
+    "value": "River / Well / Tap Water"
+   },
+   "answer_as_printed": "River / Well / Tap Water",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "23024d014258f5e0d7bc1c14e131740e7d7d2b5f6ced249dffc9704e675e232b",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s5-q039",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Give one use of water at home.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s5-q039",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s5-q039",
+     "pdf_page": 26,
+     "printed_page": 26,
+     "y": 549.972,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s5-q039-key",
+     "pdf_page": 130,
+     "printed_page": 130,
+     "y": 466.958,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "section_signal": "Answer the following questions (onemarkquestions)",
+   "answer": {
+    "kind": "text",
+    "value": "For drinking / bathing / washing utensils"
+   },
+   "answer_as_printed": "For drinking / bathing / washing utensils",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "f282c1e755c0c0f804ee22f845208b48b7620087283d13af12a6742490038d05",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s5-q040",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What do clouds contain?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s5-q040",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s5-q040",
+     "pdf_page": 26,
+     "printed_page": 26,
+     "y": 565.972,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s5-q040-key",
+     "pdf_page": 130,
+     "printed_page": 130,
+     "y": 482.958,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "section_signal": "Answer the following questions (onemarkquestions)",
+   "answer": {
+    "kind": "text",
+    "value": "Tiny water droplets"
+   },
+   "answer_as_printed": "Tiny water droplets",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "96436e4fdfa66db1397297dd3eb1b721a31aa7867c8f0df19fa2720b096ea574",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s5-q041",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What form of water is used in our daily life – liquid, solid, or gas?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s5-q041",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s5-q041",
+     "pdf_page": 26,
+     "printed_page": 26,
+     "y": 581.972,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s5-q041-key",
+     "pdf_page": 130,
+     "printed_page": 130,
+     "y": 498.958,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "section_signal": "Answer the following questions (onemarkquestions)",
+   "answer": {
+    "kind": "text",
+    "value": "Liquid"
+   },
+   "answer_as_printed": "Liquid",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "882f50bd17ecb305059145eedff66ac5a56a4ae85b7d8cefe40fd2a080f0cb3b",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s5-q042",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What is rain water harvesting?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s5-q042",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s5-q042",
+     "pdf_page": 26,
+     "printed_page": 26,
+     "y": 597.972,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s5-q042-key",
+     "pdf_page": 130,
+     "printed_page": 130,
+     "y": 514.958,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "section_signal": "Answer the following questions (onemarkquestions)",
+   "answer": {
+    "kind": "text",
+    "value": "Collecting and storing rainwater for use"
+   },
+   "answer_as_printed": "Collecting and storing rainwater for use",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "39d4874a12b2eb3c85b588c2a63b0bf2a54b1ae8c9344389bcdb5a4c97f21f2c",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s5-q043",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What percent of sweet water is suitable for daily use?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s5-q043",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s5-q043",
+     "pdf_page": 26,
+     "printed_page": 26,
+     "y": 613.722,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s5-q043-key",
+     "pdf_page": 130,
+     "printed_page": 130,
+     "y": 530.958,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "section_signal": "Answer the following questions (onemarkquestions)",
+   "answer": {
+    "kind": "text",
+    "value": "Less than 1%"
+   },
+   "answer_as_printed": "Less than 1%",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "b13f7dba42aad7608d540265c114893da5512c2a6cd33e32d88d9030cd008710",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s6-q044",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Write any two sources of water.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s6-q044",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s6-q044",
+     "pdf_page": 26,
+     "printed_page": 26,
+     "y": 664.502,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s6-q044-key",
+     "pdf_page": 130,
+     "printed_page": 130,
+     "y": 576.228,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "text_as_printed": "Write any two sources of water. (Easy)",
+   "section_signal": "Answer the following questions(two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "River and Well"
+   },
+   "answer_as_printed": "River and Well",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "125f64cc3139473918a7de5036000713d6198220ddf6c9946c5f6e12abed6708",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s6-q045",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Name two activities for which we use water in school.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s6-q045",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s6-q045",
+     "pdf_page": 26,
+     "printed_page": 26,
+     "y": 680.252,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s6-q045-key",
+     "pdf_page": 130,
+     "printed_page": 130,
+     "y": 592.238,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "text_as_printed": "Name two activities for which we use water in school. (Easy)",
+   "section_signal": "Answer the following questions(two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Drinking and cleaning classrooms"
+   },
+   "answer_as_printed": "Drinking and cleaning classrooms",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "336cfcbc44ed6c82115aaa7326955bd28bcd0f89b89a194e13a56c0b17d85231",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s6-q046",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What happens when the clouds become heavy?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s6-q046",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s6-q046",
+     "pdf_page": 26,
+     "printed_page": 26,
+     "y": 696.252,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s6-q046-key",
+     "pdf_page": 130,
+     "printed_page": 130,
+     "y": 608.238,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "text_as_printed": "What happens when the clouds become heavy? (Difficult)",
+   "section_signal": "Answer the following questions(two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "It rains when clouds become heavy."
+   },
+   "answer_as_printed": "It rains when clouds become heavy.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "72e6fd7c5e491ba49d9821f949e2bd0e1d43e8d5aa408f8e5c62af601b35e93f",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s6-q047",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Write the two uses of rain water.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s6-q047",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s6-q047",
+     "pdf_page": 26,
+     "printed_page": 26,
+     "y": 712.252,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s6-q047-key",
+     "pdf_page": 130,
+     "printed_page": 130,
+     "y": 624.238,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "text_as_printed": "Write the two uses of rain water. (Easy)",
+   "section_signal": "Answer the following questions(two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "For plants and storing for future use"
+   },
+   "answer_as_printed": "For plants and storing for future use",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "9d3820e29b6d4864c25ff478a1f342126ddd8bb0d4bd828271eb0e675030444a",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s6-q048",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Mention two problems arising out of water scarcity.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s6-q048",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s6-q048",
+     "pdf_page": 26,
+     "printed_page": 26,
+     "y": 728.272,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s6-q048-key",
+     "pdf_page": 130,
+     "printed_page": 130,
+     "y": 640.258,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "text_as_printed": "Mention two problems arising out of water scarcity. (Difficult)",
+   "section_signal": "Answer the following questions(two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Drought and health problems"
+   },
+   "answer_as_printed": "Drought and health problems",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "a2ddafa063e5c046624d209c1b713148990aa11a98f000a2ea333feebbd693df",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s6-q049",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Write two activities that waste water in your house.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s6-q049",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s6-q049",
+     "pdf_page": 26,
+     "printed_page": 26,
+     "y": 744.277,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s6-q049-key",
+     "pdf_page": 130,
+     "printed_page": 130,
+     "y": 656.258,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "text_as_printed": "Write two activities that waste water in your house.(Average)",
+   "section_signal": "Answer the following questions(two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Leaving tap open; Overflowing tanks"
+   },
+   "answer_as_printed": "Leaving tap open; Overflowing tanks",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "f83884cefd1d43d66aa812aba219dce50a041bcac400048ab27a73995565973f",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s6-q050",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Write down two ways to save water.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s6-q050",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s6-q050",
+     "pdf_page": 27,
+     "printed_page": 27,
+     "y": 72.082,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s6-q050-key",
+     "pdf_page": 130,
+     "printed_page": 130,
+     "y": 672.258,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "text_as_printed": "Write down two ways to save water. (Average)",
+   "section_signal": "Answer the following questions(two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Turn off taps; Use a bucket instead of a shower"
+   },
+   "answer_as_printed": "Turn off taps; Use a bucket instead of a shower",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "d8133d52e93113f3db310f7c6115ea9ca50d27b9f54b5235323970a71997b156",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s6-q051",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What do you observe while boiling water?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s6-q051",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s6-q051",
+     "pdf_page": 27,
+     "printed_page": 27,
+     "y": 88.082,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s6-q051-key",
+     "pdf_page": 130,
+     "printed_page": 130,
+     "y": 688.008,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "text_as_printed": "What do you observe while boiling water? (Average)",
+   "section_signal": "Answer the following questions(two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Steam comes out and bubbles are formed"
+   },
+   "answer_as_printed": "Steam comes out and bubbles are formed",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "ba4992c609dd77b7032ab4b42d74198260240ccdb664162e027a687442aaef7a",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s6-q052",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Mention two things for which we use water at home.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s6-q052",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s6-q052",
+     "pdf_page": 27,
+     "printed_page": 27,
+     "y": 104.082,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s6-q052-key",
+     "pdf_page": 130,
+     "printed_page": 130,
+     "y": 704.008,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "text_as_printed": "Mention two things for which we use water at home. (Easy)",
+   "section_signal": "Answer the following questions(two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Drinking and cooking"
+   },
+   "answer_as_printed": "Drinking and cooking",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "6498c30b8ffc3e3c22a33ea6d720291e5346a75217ea3b76f28ce3ea37bcb639",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s6-q053",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "For which activity do we use stored rain water?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s6-q053",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s6-q053",
+     "pdf_page": 27,
+     "printed_page": 27,
+     "y": 119.852,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s6-q053-key",
+     "pdf_page": 130,
+     "printed_page": 130,
+     "y": 720.028,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "text_as_printed": "For which activity do we use stored rain water? (Easy)",
+   "section_signal": "Answer the following questions(two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Watering plants"
+   },
+   "answer_as_printed": "Watering plants",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "18bf38b2f3dfcbb327844f0b169e8836f348f58703b5702a7f1b94d4043be3e8",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s7-q054",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Write a short note on the three stages of the watercycle.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s7-q054",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s7-q054",
+     "pdf_page": 27,
+     "printed_page": 27,
+     "y": 170.602,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s7-q054-key",
+     "pdf_page": 131,
+     "printed_page": 131,
+     "y": 72.588,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "text_as_printed": "Write a short note on the three stages of the watercycle.Difficult)",
+   "section_signal": "Answer the following questions(three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Three stages of water cycle:\nEvaporation – Water turns into vapour.\nCondensation – Vapour becomes clouds.\nPrecipitation – Clouds release water as rain."
+   },
+   "answer_as_printed": "Three stages of water cycle:\nEvaporation – Water turns into vapour.\nCondensation – Vapour becomes clouds.\nPrecipitation – Clouds release water as rain.",
+   "solution_steps": [
+    "Evaporation – Water turns into vapour.",
+    "Condensation – Vapour becomes clouds.",
+    "Precipitation – Clouds release water as rain."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "24d03152e22cc294e09d7e9b8094e5130c0a5256f88d493b9b840fbd97e5970e",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s7-q055",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What are the different forms of water? Explain with examples.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s7-q055",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s7-q055",
+     "pdf_page": 27,
+     "printed_page": 27,
+     "y": 186.352,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s7-q055-key",
+     "pdf_page": 131,
+     "printed_page": 131,
+     "y": 136.608,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "text_as_printed": "What are the different forms of water? Explain with examples. (Easy)",
+   "section_signal": "Answer the following questions(three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Forms of water:\nSolid – Ice\nLiquid – Water\nGas – Water vapour"
+   },
+   "answer_as_printed": "Forms of water:\nSolid – Ice\nLiquid – Water\nGas – Water vapour",
+   "solution_steps": [
+    "Solid – Ice",
+    "Liquid – Water",
+    "Gas – Water vapour"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "2cf206aab227d5952797eb0dec4765b26fdff44572a17b4171fde3409a30dadf",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s7-q056",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "How can we save water at school? Write three points.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s7-q056",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s7-q056",
+     "pdf_page": 27,
+     "printed_page": 27,
+     "y": 202.382,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s7-q056-key",
+     "pdf_page": 131,
+     "printed_page": 131,
+     "y": 200.358,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "text_as_printed": "How can we save water at school? Write three points. (Average)",
+   "section_signal": "Answer the following questions(three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Ways to save water at school:\nClose leaking taps.\nUse buckets to clean.\nEducate students to use less water."
+   },
+   "answer_as_printed": "Ways to save water at school:\nClose leaking taps.\nUse buckets to clean.\nEducate students to use less water.",
+   "solution_steps": [
+    "Close leaking taps.",
+    "Use buckets to clean.",
+    "Educate students to use less water."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "c50034480af1660593b1ca9f4b4725d6827d610dc1fbfe5ad8bfed38cab45b1f",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s7-q057",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Explain the process of evaporation through an activity.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s7-q057",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s7-q057",
+     "pdf_page": 27,
+     "printed_page": 27,
+     "y": 218.382,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s7-q057-key",
+     "pdf_page": 131,
+     "printed_page": 131,
+     "y": 264.388,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "text_as_printed": "Explain the process of evaporation through an activity. (Difficult)",
+   "section_signal": "Answer the following questions(three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Evaporation Activity:\nPlace water in a bowl under the sun.\nAfter some time, water level goes down.\nShows evaporation due to heat."
+   },
+   "answer_as_printed": "Evaporation Activity:\nPlace water in a bowl under the sun.\nAfter some time, water level goes down.\nShows evaporation due to heat.",
+   "solution_steps": [
+    "Place water in a bowl under the sun.",
+    "After some time, water level goes down.",
+    "Shows evaporation due to heat."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "5cf3c3ee6826d0202e2bc4f4d3dcb27dd93c3262bb93e4d683fe060c554c3a74",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s7-q058",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "How can the water used at home be recycled?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s7-q058",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s7-q058",
+     "pdf_page": 27,
+     "printed_page": 27,
+     "y": 234.382,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s7-q058-key",
+     "pdf_page": 131,
+     "printed_page": 131,
+     "y": 328.408,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "text_as_printed": "How can the water used at home be recycled? (Difficult)",
+   "section_signal": "Answer the following questions(three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Used water recycling:\nUse washing water for cleaning.\nUse cooking water for plants.\nHelps save clean water."
+   },
+   "answer_as_printed": "Used water recycling:\nUse washing water for cleaning.\nUse cooking water for plants.\nHelps save clean water.",
+   "solution_steps": [
+    "Use washing water for cleaning.",
+    "Use cooking water for plants.",
+    "Helps save clean water."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "b99412594dd447c8193842278a1eee3765ee7947871aa3f33a5153cb579857d1",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s7-q059",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What are the consequences of wasting water?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s7-q059",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s7-q059",
+     "pdf_page": 27,
+     "printed_page": 27,
+     "y": 250.382,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s7-q059-key",
+     "pdf_page": 131,
+     "printed_page": 131,
+     "y": 392.428,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "text_as_printed": "What are the consequences of wasting water? (Difficult)",
+   "section_signal": "Answer the following questions(three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Consequences of wasting water:\nShortage of water.\nPoor hygiene.\nNo water for farming or drinking."
+   },
+   "answer_as_printed": "Consequences of wasting water:\nShortage of water.\nPoor hygiene.\nNo water for farming or drinking.",
+   "solution_steps": [
+    "Shortage of water.",
+    "Poor hygiene.",
+    "No water for farming or drinking."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "e817b5e4be5858ce2e4b91d47302fa7649a6c43cb80be4922c2fef00e012c2e3",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s7-q060",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "How is rain water useful? Give three examples.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s7-q060",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s7-q060",
+     "pdf_page": 27,
+     "printed_page": 27,
+     "y": 266.382,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s7-q060-key",
+     "pdf_page": 131,
+     "printed_page": 131,
+     "y": 456.178,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "text_as_printed": "How is rain water useful? Give three examples. (Easy)",
+   "section_signal": "Answer the following questions(three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Rain water is useful for:\nWatering plants.\nFilling tanks and wells.\nWashing floors and vehicles."
+   },
+   "answer_as_printed": "Rain water is useful for:\nWatering plants.\nFilling tanks and wells.\nWashing floors and vehicles.",
+   "solution_steps": [
+    "Watering plants.",
+    "Filling tanks and wells.",
+    "Washing floors and vehicles."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "435b192e1f17bb89c59472ea32c6eb87bdf245c2f839c74920e2c1f6f7192ccc",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s7-q061",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Write three activities that require more water at home.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s7-q061",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s7-q061",
+     "pdf_page": 27,
+     "printed_page": 27,
+     "y": 282.122,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s7-q061-key",
+     "pdf_page": 131,
+     "printed_page": 131,
+     "y": 520.208,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "text_as_printed": "Write three activities that require more water at home. (Easy)",
+   "section_signal": "Answer the following questions(three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Activities that need more water:\nBathing.\nWashing clothes.\nCleaning floors."
+   },
+   "answer_as_printed": "Activities that need more water:\nBathing.\nWashing clothes.\nCleaning floors.",
+   "solution_steps": [
+    "Bathing.",
+    "Washing clothes.",
+    "Cleaning floors."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "3b1bf11a870b326d00255bd56b3b1377000752c7afa83d1f79fabb2a5a5b4a36",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s7-q062",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What did you learn from the plastic bag experiment of water?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s7-q062",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s7-q062",
+     "pdf_page": 27,
+     "printed_page": 27,
+     "y": 298.152,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s7-q062-key",
+     "pdf_page": 131,
+     "printed_page": 131,
+     "y": 584.228,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "text_as_printed": "What did you learn from the plastic bag experiment of water? (Easy)",
+   "section_signal": "Answer the following questions(three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Plastic bag experiment shows:\nWater turns into vapour.\nVapour becomes droplets.\nWater cycle in action."
+   },
+   "answer_as_printed": "Plastic bag experiment shows:\nWater turns into vapour.\nVapour becomes droplets.\nWater cycle in action.",
+   "solution_steps": [
+    "Water turns into vapour.",
+    "Vapour becomes droplets.",
+    "Water cycle in action."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "f7cd4a01609b6b754e6f122c800c20471bcaa79a08c22e02a1d6fdeef836c179",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s7-q063",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Write the ways to reduce wastage of water?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s7-q063",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s7-q063",
+     "pdf_page": 27,
+     "printed_page": 27,
+     "y": 314.152,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s7-q063-key",
+     "pdf_page": 131,
+     "printed_page": 131,
+     "y": 648.258,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "text_as_printed": "Write the ways to reduce wastage of water? (Difficult)",
+   "section_signal": "Answer the following questions(three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Ways to reduce wastage:\nClose taps tightly.\nFix leaks.\nUse water wisely.\nReuse water when possible."
+   },
+   "answer_as_printed": "Ways to reduce wastage:\nClose taps tightly.\nFix leaks.\nUse water wisely.\nReuse water when possible.",
+   "solution_steps": [
+    "Close taps tightly.",
+    "Fix leaks.",
+    "Use water wisely.",
+    "Reuse water when possible."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "1af73949cd772fb4cd9bdf27015f01fd34639437aeab03cc418a358cfe1c8269",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s8-q064",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Describe the water cycle. Draw its phases and label the parts.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s8-q064",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s8-q064",
+     "pdf_page": 27,
+     "printed_page": 27,
+     "y": 348.652,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s8-q064-key",
+     "pdf_page": 132,
+     "printed_page": 132,
+     "y": 120.608,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "text_as_printed": "Describe the water cycle. Draw its phases and label the parts.Difficult)",
+   "section_signal": "Answer the following questions(four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Water Cycle with diagram:\nDraw and label: Evaporation → Condensation → Precipitation → Collection\nDescribe the steps shortly."
+   },
+   "answer_as_printed": "Water Cycle with diagram:\nDraw and label: Evaporation → Condensation → Precipitation → Collection\nDescribe the steps shortly.",
+   "solution_steps": [
+    "Draw and label: Evaporation → Condensation → Precipitation → Collection",
+    "Describe the steps shortly."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    },
+    {
+     "issue": "answer is a diagram — the stem asks to draw the water cycle and label it; the key prints only text ('Draw and label: Evaporation → Condensation → Precipitation → Collection'), no drawing",
+     "why_not_corrected": "printed text key stored verbatim; no answer diagram is printed (v2 §4.7)",
+     "suggested": "review — drawn answer not printed"
+    }
+   ],
+   "content_hash": "6f101782b4d3804f34e08983f10bb832d290c0fd63005f40e3f0e66349544098",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s8-q065",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Make a list (ininformalquantities) of the amount of water that you and your family use for daily activities.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s8-q065",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s8-q065",
+     "pdf_page": 27,
+     "printed_page": 27,
+     "y": 364.652,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s8-q065-key",
+     "pdf_page": 132,
+     "printed_page": 132,
+     "y": 168.608,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "text_as_printed": "Make a list (ininformalquantities) of the amount of water that you and your family use for daily activities. (Difficult)",
+   "section_signal": "Answer the following questions(four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Water usage list (informal):\nDrinking – 5 litres\nBathing – 20 litres\nWashing clothes – 30 litres\nCooking – 10 litres\nCleaning – 15 litres\nTotal per person: ~80 litres/day"
+   },
+   "answer_as_printed": "Water usage list (informal):\nDrinking – 5 litres\nBathing – 20 litres\nWashing clothes – 30 litres\nCooking – 10 litres\nCleaning – 15 litres\nTotal per person: ~80 litres/day",
+   "solution_steps": [
+    "Drinking – 5 litres",
+    "Bathing – 20 litres",
+    "Washing clothes – 30 litres",
+    "Cooking – 10 litres",
+    "Cleaning – 15 litres",
+    "Total per person: ~80 litres/day"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "3f5aa5ceda28caa24102b63159dddfcb1ad5d372df352ab58e5ad0cdb0c7e7d7",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s8-q066",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Explain the four ways to recycle water at home and why is it important.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s8-q066",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s8-q066",
+     "pdf_page": 27,
+     "printed_page": 27,
+     "y": 396.672,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s8-q066-key",
+     "pdf_page": 132,
+     "printed_page": 132,
+     "y": 280.388,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "text_as_printed": "Explain the four ways to recycle water at home and why is it important. (Difficult)",
+   "section_signal": "Answer the following questions(four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Four ways to recycle water:\nReuse cooking water.\nUse bathing water for flushing.\nWater plants with leftover water.\nCollect rainwater.\nImportance: Saves water, good for environment."
+   },
+   "answer_as_printed": "Four ways to recycle water:\nReuse cooking water.\nUse bathing water for flushing.\nWater plants with leftover water.\nCollect rainwater.\nImportance: Saves water, good for environment.",
+   "solution_steps": [
+    "Reuse cooking water.",
+    "Use bathing water for flushing.",
+    "Water plants with leftover water.",
+    "Collect rainwater.",
+    "Importance: Saves water, good for environment."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "90a706cdd58e60533421224c009848b75880e2d8fe72fea5754236b883a7679d",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s8-q067",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Explain the importance of water in our dailylife. Write atleast four uses with examples.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s8-q067",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s8-q067",
+     "pdf_page": 27,
+     "printed_page": 27,
+     "y": 412.672,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s8-q067-key",
+     "pdf_page": 132,
+     "printed_page": 132,
+     "y": 376.428,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "text_as_printed": "Explain the importance of water in our dailylife. Write atleast four uses with examples. (Difficult)",
+   "section_signal": "Answer the following questions(four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Importance of water in daily life:\nDrinking – keeps us healthy.\nCooking – needed for food.\nCleaning – keeps surroundings clean.\nFarming – for growing crops."
+   },
+   "answer_as_printed": "Importance of water in daily life:\nDrinking – keeps us healthy.\nCooking – needed for food.\nCleaning – keeps surroundings clean.\nFarming – for growing crops.",
+   "solution_steps": [
+    "Drinking – keeps us healthy.",
+    "Cooking – needed for food.",
+    "Cleaning – keeps surroundings clean.",
+    "Farming – for growing crops."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "72b2b22321cf0cd27a1fb0aa3b6a3a7e3a954dfa252fdfe42dcf21262e7448e4",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s8-q068",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What are the main reasons for wastage ofwater? Suggest four ways to prevent it.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s8-q068",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s8-q068",
+     "pdf_page": 27,
+     "printed_page": 27,
+     "y": 444.672,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s8-q068-key",
+     "pdf_page": 132,
+     "printed_page": 132,
+     "y": 456.178,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "text_as_printed": "What are the main reasons for wastage ofwater? Suggest four ways to prevent it. (Difficult)",
+   "section_signal": "Answer the following questions(four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Reasons for water wastage:\nLeaking pipes.\nOverflowing tanks.\nUnused running taps.\nOveruse in cleaning.\nPrevention: Fix leaks, use buckets, monitor use, educate others."
+   },
+   "answer_as_printed": "Reasons for water wastage:\nLeaking pipes.\nOverflowing tanks.\nUnused running taps.\nOveruse in cleaning.\nPrevention: Fix leaks, use buckets, monitor use, educate others.",
+   "solution_steps": [
+    "Leaking pipes.",
+    "Overflowing tanks.",
+    "Unused running taps.",
+    "Overuse in cleaning.",
+    "Prevention: Fix leaks, use buckets, monitor use, educate others."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "68148cb6bc34cc526012027fb0d622d8f79f414e2040cd823448f255375657ae",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s8-q069",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Make a list of the types of water available on earth. Explain what type of water is most useful to us and why.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s8-q069",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s8-q069",
+     "pdf_page": 27,
+     "printed_page": 27,
+     "y": 476.452,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s8-q069-key",
+     "pdf_page": 132,
+     "printed_page": 132,
+     "y": 552.228,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "text_as_printed": "Make a list of the types of water available on earth. Explain what type of water is most useful to us and why. (Difficult)",
+   "section_signal": "Answer the following questions(four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Types of water:\nSea water, River water, Rain water, Groundwater, Ice.\nFresh water is most useful – it is drinkable and safe."
+   },
+   "answer_as_printed": "Types of water:\nSea water, River water, Rain water, Groundwater, Ice.\nFresh water is most useful – it is drinkable and safe.",
+   "solution_steps": [
+    "Sea water, River water, Rain water, Groundwater, Ice.",
+    "Fresh water is most useful – it is drinkable and safe."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "c943ba77320dda4884b4749d78ed2ef6d1811ce896f8cdd96046fa18fbd4e769",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s8-q070",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Explain the method of rain water harvesting. Why is it important to us?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s8-q070",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s8-q070",
+     "pdf_page": 27,
+     "printed_page": 27,
+     "y": 508.452,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s8-q070-key",
+     "pdf_page": 132,
+     "printed_page": 132,
+     "y": 600.228,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "text_as_printed": "Explain the method of rain water harvesting. Why is it important to us? (Difficult)",
+   "section_signal": "Answer the following questions(four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Rainwater harvesting:\nCollect rainwater in tanks.\nUse it later for daily use.\nImportance: Saves water and helps during shortages."
+   },
+   "answer_as_printed": "Rainwater harvesting:\nCollect rainwater in tanks.\nUse it later for daily use.\nImportance: Saves water and helps during shortages.",
+   "solution_steps": [
+    "Collect rainwater in tanks.",
+    "Use it later for daily use.",
+    "Importance: Saves water and helps during shortages."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "916bb7643c238e5d3c1f2ce310d55b2cc9d2ea039317c8b579703300fb2bb030",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s8-q071",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What are the problems you will have to face if there is no water in you house one day? What will you do then?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s8-q071",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s8-q071",
+     "pdf_page": 27,
+     "printed_page": 27,
+     "y": 524.452,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s8-q071-key",
+     "pdf_page": 132,
+     "printed_page": 132,
+     "y": 664.258,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "text_as_printed": "What are the problems you will have to face if there is no water in you house one day? What will you do then? (Difficult)",
+   "section_signal": "Answer the following questions(four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "If there’s no water at home:\nCan’t drink, cook, or clean.\nWe feel tired and dirty.\nWill borrow or buy water.\nWill learn to save next time."
+   },
+   "answer_as_printed": "If there’s no water at home:\nCan’t drink, cook, or clean.\nWe feel tired and dirty.\nWill borrow or buy water.\nWill learn to save next time.",
+   "solution_steps": [
+    "Can’t drink, cook, or clean.",
+    "We feel tired and dirty.",
+    "Will borrow or buy water.",
+    "Will learn to save next time."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "f58a3665f5c8dd37074392e76a9648b0d8c9a063648ebfbdfb48a7dae540fd6c",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s8-q072",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Write four points to explain the importance of saving water to your friend.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s8-q072",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s8-q072",
+     "pdf_page": 27,
+     "printed_page": 27,
+     "y": 556.222,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s8-q072-key",
+     "pdf_page": 132,
+     "printed_page": 132,
+     "y": 744.033,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "text_as_printed": "Write four points to explain the importance of saving water to your friend. (Difficult)",
+   "section_signal": "Answer the following questions(four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "To a friend – Save water because:\nWater is life.\nSaves money.\nHelps animals and plants.\nNeeded every day."
+   },
+   "answer_as_printed": "To a friend – Save water because:\nWater is life.\nSaves money.\nHelps animals and plants.\nNeeded every day.",
+   "solution_steps": [
+    "Water is life.",
+    "Saves money.",
+    "Helps animals and plants.",
+    "Needed every day."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "d57d901999635a6a12c9b93a557fd834c80764a538c07c0b0562942e7cec8398",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s8-q073",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What are the benefits of recycling used water? Givev examples from everyday life.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s8-q073",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s8-q073",
+     "pdf_page": 27,
+     "printed_page": 27,
+     "y": 588.232,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s8-q073-key",
+     "pdf_page": 133,
+     "printed_page": 133,
+     "y": 136.608,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "text_as_printed": "What are the benefits of recycling used water? Givev examples from everyday life. (Difficult)",
+   "section_signal": "Answer the following questions(four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Benefits of recycling water:\nSave fresh water.\nReduce water bills.\nGood for garden and cleaning.\nUse clothes-washing water for cleaning floors."
+   },
+   "answer_as_printed": "Benefits of recycling water:\nSave fresh water.\nReduce water bills.\nGood for garden and cleaning.\nUse clothes-washing water for cleaning floors.",
+   "solution_steps": [
+    "Save fresh water.",
+    "Reduce water bills.",
+    "Good for garden and cleaning.",
+    "Use clothes-washing water for cleaning floors."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:08:27+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "c6541a59e675f112eba53a7e348f72f691c0395dc0cf5530f8c39ec43682e9ae",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-06-s8-q074",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-06",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Colour the following picture appropritely and label the parts.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s8-q074",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s8-q074",
+     "pdf_page": 28,
+     "printed_page": 28,
+     "y": 72.082,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-06-s8-q074-key",
+     "pdf_page": 130,
+     "printed_page": 130,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:08:27+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:08:27+05:30",
+   "text_as_printed": "Colour the following picture appropritely and label the parts. (Difficult)",
+   "section_signal": "Answer the following questions(four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "stimulus_id": "st-evs-4-06-q74",
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    },
+    {
+     "issue": "no answer printed",
+     "why_not_corrected": "the answer side ends at key 73 (pdf 133) and prints nothing for this colouring task",
+     "suggested": "key absent — review"
+    }
+   ],
+   "content_hash": "c9d9425cc6781017d899b8444de8af66c7c9532bf7bf41744f63337c0296964a",
+   "topic_ids": [
+    "evs-4-06-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  }
+ ],
+ "pending_summary": {}
+}
