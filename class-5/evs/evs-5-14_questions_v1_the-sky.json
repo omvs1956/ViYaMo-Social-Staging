@@ -1,0 +1,5650 @@
+{
+ "contract_version": "1.7",
+ "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
+ "procedure_file": "extraction_procedure_social_addendum_v1.4_social science Classes 6-10 on top of procedure v2.md",
+ "machine_name": "evs-5-14_questions",
+ "version": 1,
+ "changelog": "v1 extraction — batch-02 — class-5-evs",
+ "amendments_applied": [],
+ "unit_state": "EXTRACTED",
+ "review_ready": false,
+ "count_gate": {
+  "reference": 43,
+  "reference_source": "audited",
+  "extracted": 43,
+  "paired": 34,
+  "flagged": 26,
+  "gaps": [],
+  "duplicated_numbers": [],
+  "quota_table": "absent",
+  "second_method": {
+   "method": "independent count of answer-side keys: 42 printed key numbers matching question labels + 1 question(s) with no printed key (keys 8-15 printed but belonging to another set of fill questions — counted as printed keys of those labels)",
+   "extracted": 43,
+   "agrees": true
+  },
+  "pass": true,
+  "note": "Question side labels 1-43 monotonic, no gaps, no duplicates (I 1-5, II 6-15 (heading '(Easy)'), III 16-24, IV 25 (5 rows), V 26-30 ('one point'), VI 31-39, VII 40-42, VIII 43 project — no four-mark section); answer side keys 1-42 in the same order; keys 8-15 belong to another set of fill questions (pair by number only where they answer; q008-q015 empty + pointer); q43 unkeyed. The LBA prints no difficulty distribution table -> quota_table 'absent' (R-E6). Difficulty per question: easy 33, average 1, difficult 4, untagged 5."
+ },
+ "extraction": {
+  "source_file": "5thLBA-EVS-EM.pdf",
+  "source_ref_prefix": "5thLBA-EVS-EM.pdf",
+  "pdf_pages": [
+   59,
+   60,
+   61,
+   112,
+   113
+  ],
+  "printed_page_offset": 0,
+  "method_notes": [
+   "Pages: Q pdf 59 (heading, 12 LOs) 60-61; A pdf 112-113 (Lesson 15 heading on pdf 114).",
+   "Sections: s1 I mcq q1-5; s2 II fill q6-15 (heading '(Easy)'); s3 III true/false q16-24; s4 IV match q25 (5 rows, '(Medium)'); s5 V 'one point' vsa q26-30 (marks 1); s6 VI two-mark sa q31-39 (q35-q39 print no tag, heading none -> null + 'no difficulty tag'); s7 VII three-mark sa q40-42; s8 VIII project q43 sa (marks 4, heading '(Hard)'). No four-mark section.",
+   "MCQ keys text only, all matched: q1 'The sun' -> C, q2 '8 planets' -> C, q3 -> B, q4 -> B, q5 'moon' -> C (pass 1/2).",
+   "KEY SIDE ANALYSED FIRST: fill keys 8-15 answer another set of fill questions (only key 9 'Solar System' -> q11 and key 10 'Stars' -> q9 fit any printed question; no offset, no rotation) -> q008-q015 EMPTY + 'key belongs to another paper version' with the content pointer (class-3 L13-L18 encoding, control rev 4/5; lane 2 at r1). q6, q7 and the T/F keys 16-24 answer their questions by number.",
+   "T/F keys print only 'OK' / 'Error' -> R-E4a doubted on all nine; q22 'Venus is smaller than Earth' keyed Error -> also 'printed key contradicts fact' (Venus is smaller).",
+   "q5's stem prints a stray '[' before its tag and q43 a stray closing ')' -> dropped from text, kept in text_as_printed. q5 and q39 print the same stem -> 'duplicate of' both ways.",
+   "q34's key wraps one sentence over two printed lines ('… revolve around it' / 'A system formed by joining') -> one value. q40 wrapped paragraph joined; q42 three printed lines -> three steps.",
+   "q43 project (solar-system model) prints no key -> 'no answer printed'. No figure.",
+   "TOPIC (R-E7): map v1 evs-5-14 s00 (Introduction, untickable), s01 The Sun and its family, s02 The Movements of the Earth, s03 The Earth's Satellite - The Moon. Tagged by section title only (mapping in the unit summary).",
+   "Transcription: c5auto.py rules (pdftotext -raw reading order; the rules of evs-5-01's hand transcription) + the overrides in build_14.py; every entry read against the layout text / renders before commit. Marks R-E5; difficulty Medium -> average (R-E2), Hard/Hardest -> difficult, printed word kept; LO = the lesson's printed list (R-E10); R-E4 flags in the 'unclassified — …' form (control rev 2 E1); topics R-E7 (mapping in the unit summary)."
+  ],
+  "notation_summary": {
+   "render_tokens": 0,
+   "latex_tokens": 0,
+   "damage_flags": []
+  },
+  "excluded_objects": [],
+  "inline_excluded_count": 0,
+  "figure_references": []
+ },
+ "stimuli": [],
+ "questions": [
+  {
+   "id": "evs-5-14-s1-q001",
+   "class": "5",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-5-14",
+   "syllabus_map_version": "evs-5-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Identify the Sun and its family (Solar System) and name the planets in order from the Sun."
+    },
+    {
+     "number": "2",
+     "text_as_printed": "Explain the characteristics of the Sun and its importance for life on Earth."
+    },
+    {
+     "number": "3",
+     "text_as_printed": "Describe the shape and size of the Earth and understand why it is called a geoid."
+    },
+    {
+     "number": "4",
+     "text_as_printed": "Understand the Earth’s movements — rotation and revolution — and explain how these cause day and night, and the year."
+    },
+    {
+     "number": "5",
+     "text_as_printed": "Describe the features of the eight planets including facts about Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune."
+    },
+    {
+     "number": "6",
+     "text_as_printed": "Explain the difference between the geocentric and heliocentric models of the solar system."
+    },
+    {
+     "number": "7",
+     "text_as_printed": "Understand what meteoroids, asteroids, and comets are, and describe their characteristics."
+    },
+    {
+     "number": "8",
+     "text_as_printed": "Describe the Moon as the Earth’s natural satellite and explain its movements — rotation and revolution."
+    },
+    {
+     "number": "9",
+     "text_as_printed": "Explain the phases of the Moon and how the Moon reflects sunlight."
+    },
+    {
+     "number": "10",
+     "text_as_printed": "Recognize why Earth is a unique planet with ideal conditions to support life."
+    },
+    {
+     "number": "11",
+     "text_as_printed": "Develop basic observational skills by watching the sky and identifying stars, shooting stars, and other celestial phenomena."
+    },
+    {
+     "number": "12",
+     "text_as_printed": "Engage in activities that demonstrate the movements of the Earth and planets to better understand their orbits and rotations."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "What is the center of the solar system?",
+   "source": "lba",
+   "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s1-q001",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s1-q001",
+     "pdf_page": 59,
+     "printed_page": 59,
+     "y": 119.987598,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s1-q001-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 76.187591,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-5-evs",
+     "role": "extraction",
+     "at": "2026-11-27T02:29:50+05:30"
+    }
+   ],
+   "created_by": "class-5-evs",
+   "created_at": "2026-11-27T02:29:50+05:30",
+   "text_as_printed": "What is the center of the solar system? (Easy)",
+   "section_signal": "I. Choose the correct option and answer the following questions",
+   "lo_source": "lesson_table",
+   "options": [
+    {
+     "id": "A",
+     "text": "Land"
+    },
+    {
+     "id": "B",
+     "text": "Moon"
+    },
+    {
+     "id": "C",
+     "text": "Sun"
+    },
+    {
+     "id": "D",
+     "text": "Mars"
+    }
+   ],
+   "answer_as_printed": "The sun",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "source_corrections": [
+    {
+     "field": "answer",
+     "printed": "The sun",
+     "corrected": "C",
+     "basis": "pass 2"
+    }
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-5-evs",
+    "at": "2026-11-27T02:29:50+05:30",
+    "basis": "printed text-only key matched to its option (addendum §4.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "f14112e16eb38ae210bd3ed4ed185a83a18cb653338c606c50851eaf9b97dc7a",
+   "topic_ids": [
+    "evs-5-14-s01"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-5-14-s1-q002",
+   "class": "5",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-5-14",
+   "syllabus_map_version": "evs-5-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Identify the Sun and its family (Solar System) and name the planets in order from the Sun."
+    },
+    {
+     "number": "2",
+     "text_as_printed": "Explain the characteristics of the Sun and its importance for life on Earth."
+    },
+    {
+     "number": "3",
+     "text_as_printed": "Describe the shape and size of the Earth and understand why it is called a geoid."
+    },
+    {
+     "number": "4",
+     "text_as_printed": "Understand the Earth’s movements — rotation and revolution — and explain how these cause day and night, and the year."
+    },
+    {
+     "number": "5",
+     "text_as_printed": "Describe the features of the eight planets including facts about Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune."
+    },
+    {
+     "number": "6",
+     "text_as_printed": "Explain the difference between the geocentric and heliocentric models of the solar system."
+    },
+    {
+     "number": "7",
+     "text_as_printed": "Understand what meteoroids, asteroids, and comets are, and describe their characteristics."
+    },
+    {
+     "number": "8",
+     "text_as_printed": "Describe the Moon as the Earth’s natural satellite and explain its movements — rotation and revolution."
+    },
+    {
+     "number": "9",
+     "text_as_printed": "Explain the phases of the Moon and how the Moon reflects sunlight."
+    },
+    {
+     "number": "10",
+     "text_as_printed": "Recognize why Earth is a unique planet with ideal conditions to support life."
+    },
+    {
+     "number": "11",
+     "text_as_printed": "Develop basic observational skills by watching the sky and identifying stars, shooting stars, and other celestial phenomena."
+    },
+    {
+     "number": "12",
+     "text_as_printed": "Engage in activities that demonstrate the movements of the Earth and planets to better understand their orbits and rotations."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "What is the total number of planets in the solar system?",
+   "source": "lba",
+   "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s1-q002",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s1-q002",
+     "pdf_page": 59,
+     "printed_page": 59,
+     "y": 143.987598,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s1-q002-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 92.147591,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-5-evs",
+     "role": "extraction",
+     "at": "2026-11-27T02:29:50+05:30"
+    }
+   ],
+   "created_by": "class-5-evs",
+   "created_at": "2026-11-27T02:29:50+05:30",
+   "text_as_printed": "What is the total number of planets in the solar system? (Easy)",
+   "section_signal": "I. Choose the correct option and answer the following questions",
+   "lo_source": "lesson_table",
+   "options": [
+    {
+     "id": "A",
+     "text": "9"
+    },
+    {
+     "id": "B",
+     "text": "7"
+    },
+    {
+     "id": "C",
+     "text": "8"
+    },
+    {
+     "id": "D",
+     "text": "6"
+    }
+   ],
+   "answer_as_printed": "8 planets",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "source_corrections": [
+    {
+     "field": "answer",
+     "printed": "8 planets",
+     "corrected": "C",
+     "basis": "pass 2"
+    }
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-5-evs",
+    "at": "2026-11-27T02:29:50+05:30",
+    "basis": "printed text-only key matched to its option (addendum §4.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "759d7568b3226a10981ff915d2db37bd4550924e5930fc2abc76ba463d1a4796",
+   "topic_ids": [
+    "evs-5-14-s01"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-5-14-s1-q003",
+   "class": "5",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-5-14",
+   "syllabus_map_version": "evs-5-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Identify the Sun and its family (Solar System) and name the planets in order from the Sun."
+    },
+    {
+     "number": "2",
+     "text_as_printed": "Explain the characteristics of the Sun and its importance for life on Earth."
+    },
+    {
+     "number": "3",
+     "text_as_printed": "Describe the shape and size of the Earth and understand why it is called a geoid."
+    },
+    {
+     "number": "4",
+     "text_as_printed": "Understand the Earth’s movements — rotation and revolution — and explain how these cause day and night, and the year."
+    },
+    {
+     "number": "5",
+     "text_as_printed": "Describe the features of the eight planets including facts about Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune."
+    },
+    {
+     "number": "6",
+     "text_as_printed": "Explain the difference between the geocentric and heliocentric models of the solar system."
+    },
+    {
+     "number": "7",
+     "text_as_printed": "Understand what meteoroids, asteroids, and comets are, and describe their characteristics."
+    },
+    {
+     "number": "8",
+     "text_as_printed": "Describe the Moon as the Earth’s natural satellite and explain its movements — rotation and revolution."
+    },
+    {
+     "number": "9",
+     "text_as_printed": "Explain the phases of the Moon and how the Moon reflects sunlight."
+    },
+    {
+     "number": "10",
+     "text_as_printed": "Recognize why Earth is a unique planet with ideal conditions to support life."
+    },
+    {
+     "number": "11",
+     "text_as_printed": "Develop basic observational skills by watching the sky and identifying stars, shooting stars, and other celestial phenomena."
+    },
+    {
+     "number": "12",
+     "text_as_printed": "Engage in activities that demonstrate the movements of the Earth and planets to better understand their orbits and rotations."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "How long does it take for the Earth to rotate one revolution on its axis?",
+   "source": "lba",
+   "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s1-q003",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s1-q003",
+     "pdf_page": 60,
+     "printed_page": 60,
+     "y": 70.922955,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s1-q003-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 108.10759,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-5-evs",
+     "role": "extraction",
+     "at": "2026-11-27T02:29:50+05:30"
+    }
+   ],
+   "created_by": "class-5-evs",
+   "created_at": "2026-11-27T02:29:50+05:30",
+   "text_as_printed": "How long does it take for the Earth to rotate one revolution on its axis? (Easy)",
+   "section_signal": "I. Choose the correct option and answer the following questions",
+   "lo_source": "lesson_table",
+   "options": [
+    {
+     "id": "A",
+     "text": "12 hours"
+    },
+    {
+     "id": "B",
+     "text": "24 hours"
+    },
+    {
+     "id": "C",
+     "text": "365 days"
+    },
+    {
+     "id": "D",
+     "text": "88 days"
+    }
+   ],
+   "answer_as_printed": "24 hours",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "source_corrections": [
+    {
+     "field": "answer",
+     "printed": "24 hours",
+     "corrected": "B",
+     "basis": "pass 1"
+    }
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-5-evs",
+    "at": "2026-11-27T02:29:50+05:30",
+    "basis": "printed text-only key matched to its option (addendum §4.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "88508c6a3557d84d0e57b4ef367f1da68a47f77b38641db35b36cdb93e0c2885",
+   "topic_ids": [
+    "evs-5-14-s02"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-5-14-s1-q004",
+   "class": "5",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-5-14",
+   "syllabus_map_version": "evs-5-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Identify the Sun and its family (Solar System) and name the planets in order from the Sun."
+    },
+    {
+     "number": "2",
+     "text_as_printed": "Explain the characteristics of the Sun and its importance for life on Earth."
+    },
+    {
+     "number": "3",
+     "text_as_printed": "Describe the shape and size of the Earth and understand why it is called a geoid."
+    },
+    {
+     "number": "4",
+     "text_as_printed": "Understand the Earth’s movements — rotation and revolution — and explain how these cause day and night, and the year."
+    },
+    {
+     "number": "5",
+     "text_as_printed": "Describe the features of the eight planets including facts about Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune."
+    },
+    {
+     "number": "6",
+     "text_as_printed": "Explain the difference between the geocentric and heliocentric models of the solar system."
+    },
+    {
+     "number": "7",
+     "text_as_printed": "Understand what meteoroids, asteroids, and comets are, and describe their characteristics."
+    },
+    {
+     "number": "8",
+     "text_as_printed": "Describe the Moon as the Earth’s natural satellite and explain its movements — rotation and revolution."
+    },
+    {
+     "number": "9",
+     "text_as_printed": "Explain the phases of the Moon and how the Moon reflects sunlight."
+    },
+    {
+     "number": "10",
+     "text_as_printed": "Recognize why Earth is a unique planet with ideal conditions to support life."
+    },
+    {
+     "number": "11",
+     "text_as_printed": "Develop basic observational skills by watching the sky and identifying stars, shooting stars, and other celestial phenomena."
+    },
+    {
+     "number": "12",
+     "text_as_printed": "Engage in activities that demonstrate the movements of the Earth and planets to better understand their orbits and rotations."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "What is called the \"red planet\"?",
+   "source": "lba",
+   "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s1-q004",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s1-q004",
+     "pdf_page": 60,
+     "printed_page": 60,
+     "y": 204.36296,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s1-q004-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 124.187591,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-5-evs",
+     "role": "extraction",
+     "at": "2026-11-27T02:29:50+05:30"
+    }
+   ],
+   "created_by": "class-5-evs",
+   "created_at": "2026-11-27T02:29:50+05:30",
+   "text_as_printed": "What is called the \"red planet\"? (Easy)",
+   "section_signal": "I. Choose the correct option and answer the following questions",
+   "lo_source": "lesson_table",
+   "options": [
+    {
+     "id": "A",
+     "text": "Venus"
+    },
+    {
+     "id": "B",
+     "text": "Mars"
+    },
+    {
+     "id": "C",
+     "text": "Guru"
+    },
+    {
+     "id": "D",
+     "text": "Saturn"
+    }
+   ],
+   "answer_as_printed": "Mars",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "source_corrections": [
+    {
+     "field": "answer",
+     "printed": "Mars",
+     "corrected": "B",
+     "basis": "pass 1"
+    }
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-5-evs",
+    "at": "2026-11-27T02:29:50+05:30",
+    "basis": "printed text-only key matched to its option (addendum §4.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "aec79c899f75ae171568bb0b1fd23ed2cb607a52076fd8c460992ddd33f3e366",
+   "topic_ids": [
+    "evs-5-14-s01"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-5-14-s1-q005",
+   "class": "5",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-5-14",
+   "syllabus_map_version": "evs-5-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Identify the Sun and its family (Solar System) and name the planets in order from the Sun."
+    },
+    {
+     "number": "2",
+     "text_as_printed": "Explain the characteristics of the Sun and its importance for life on Earth."
+    },
+    {
+     "number": "3",
+     "text_as_printed": "Describe the shape and size of the Earth and understand why it is called a geoid."
+    },
+    {
+     "number": "4",
+     "text_as_printed": "Understand the Earth’s movements — rotation and revolution — and explain how these cause day and night, and the year."
+    },
+    {
+     "number": "5",
+     "text_as_printed": "Describe the features of the eight planets including facts about Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune."
+    },
+    {
+     "number": "6",
+     "text_as_printed": "Explain the difference between the geocentric and heliocentric models of the solar system."
+    },
+    {
+     "number": "7",
+     "text_as_printed": "Understand what meteoroids, asteroids, and comets are, and describe their characteristics."
+    },
+    {
+     "number": "8",
+     "text_as_printed": "Describe the Moon as the Earth’s natural satellite and explain its movements — rotation and revolution."
+    },
+    {
+     "number": "9",
+     "text_as_printed": "Explain the phases of the Moon and how the Moon reflects sunlight."
+    },
+    {
+     "number": "10",
+     "text_as_printed": "Recognize why Earth is a unique planet with ideal conditions to support life."
+    },
+    {
+     "number": "11",
+     "text_as_printed": "Develop basic observational skills by watching the sky and identifying stars, shooting stars, and other celestial phenomena."
+    },
+    {
+     "number": "12",
+     "text_as_printed": "Engage in activities that demonstrate the movements of the Earth and planets to better understand their orbits and rotations."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "What is earth's only natural satellite?",
+   "source": "lba",
+   "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s1-q005",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s1-q005",
+     "pdf_page": 60,
+     "printed_page": 60,
+     "y": 360.482963,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s1-q005-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 140.147591,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-5-evs",
+     "role": "extraction",
+     "at": "2026-11-27T02:29:50+05:30"
+    }
+   ],
+   "created_by": "class-5-evs",
+   "created_at": "2026-11-27T02:29:50+05:30",
+   "text_as_printed": "What is earth's only natural satellite? [ (Easy)",
+   "section_signal": "I. Choose the correct option and answer the following questions",
+   "lo_source": "lesson_table",
+   "options": [
+    {
+     "id": "A",
+     "text": "Mars"
+    },
+    {
+     "id": "B",
+     "text": "Guru"
+    },
+    {
+     "id": "C",
+     "text": "Moon"
+    },
+    {
+     "id": "D",
+     "text": "Sun"
+    }
+   ],
+   "answer_as_printed": "moon",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "source_corrections": [
+    {
+     "field": "answer",
+     "printed": "moon",
+     "corrected": "C",
+     "basis": "pass 1"
+    }
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-5-evs",
+    "at": "2026-11-27T02:29:50+05:30",
+    "basis": "printed text-only key matched to its option (addendum §4.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "duplicate of evs-5-14-s6-q039",
+     "why_not_corrected": "same stem printed as an MCQ (q5) and in VI (q39); two questions, ids by label (v1.4 §14.3)",
+     "suggested": "keys agree (moon) — review"
+    }
+   ],
+   "content_hash": "7ff6169570870c5a94da6a8dddd174302a135f131ac74d31f9e172136e34c9f8",
+   "topic_ids": [
+    "evs-5-14-s03"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-5-14-s2-q006",
+   "class": "5",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-5-14",
+   "syllabus_map_version": "evs-5-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Identify the Sun and its family (Solar System) and name the planets in order from the Sun."
+    },
+    {
+     "number": "2",
+     "text_as_printed": "Explain the characteristics of the Sun and its importance for life on Earth."
+    },
+    {
+     "number": "3",
+     "text_as_printed": "Describe the shape and size of the Earth and understand why it is called a geoid."
+    },
+    {
+     "number": "4",
+     "text_as_printed": "Understand the Earth’s movements — rotation and revolution — and explain how these cause day and night, and the year."
+    },
+    {
+     "number": "5",
+     "text_as_printed": "Describe the features of the eight planets including facts about Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune."
+    },
+    {
+     "number": "6",
+     "text_as_printed": "Explain the difference between the geocentric and heliocentric models of the solar system."
+    },
+    {
+     "number": "7",
+     "text_as_printed": "Understand what meteoroids, asteroids, and comets are, and describe their characteristics."
+    },
+    {
+     "number": "8",
+     "text_as_printed": "Describe the Moon as the Earth’s natural satellite and explain its movements — rotation and revolution."
+    },
+    {
+     "number": "9",
+     "text_as_printed": "Explain the phases of the Moon and how the Moon reflects sunlight."
+    },
+    {
+     "number": "10",
+     "text_as_printed": "Recognize why Earth is a unique planet with ideal conditions to support life."
+    },
+    {
+     "number": "11",
+     "text_as_printed": "Develop basic observational skills by watching the sky and identifying stars, shooting stars, and other celestial phenomena."
+    },
+    {
+     "number": "12",
+     "text_as_printed": "Engage in activities that demonstrate the movements of the Earth and planets to better understand their orbits and rotations."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "____ is the largest star on Earth.",
+   "source": "lba",
+   "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s2-q006",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s2-q006",
+     "pdf_page": 60,
+     "printed_page": 60,
+     "y": 548.642966,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s2-q006-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 174.707592,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-5-evs",
+     "role": "extraction",
+     "at": "2026-11-27T02:29:50+05:30"
+    }
+   ],
+   "created_by": "class-5-evs",
+   "created_at": "2026-11-27T02:29:50+05:30",
+   "text_as_printed": "____ is the largest star on Earth. (Easy)",
+   "section_signal": "II. Fill in the blanks",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "The sun"
+   },
+   "answer_as_printed": "The sun",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-5-evs",
+    "at": "2026-11-27T02:29:50+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "6e5b7c7650f41d9a73b402d88523537a21ee154278841b38b456e59177370560",
+   "topic_ids": [
+    "evs-5-14-s01"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-5-14-s2-q007",
+   "class": "5",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-5-14",
+   "syllabus_map_version": "evs-5-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Identify the Sun and its family (Solar System) and name the planets in order from the Sun."
+    },
+    {
+     "number": "2",
+     "text_as_printed": "Explain the characteristics of the Sun and its importance for life on Earth."
+    },
+    {
+     "number": "3",
+     "text_as_printed": "Describe the shape and size of the Earth and understand why it is called a geoid."
+    },
+    {
+     "number": "4",
+     "text_as_printed": "Understand the Earth’s movements — rotation and revolution — and explain how these cause day and night, and the year."
+    },
+    {
+     "number": "5",
+     "text_as_printed": "Describe the features of the eight planets including facts about Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune."
+    },
+    {
+     "number": "6",
+     "text_as_printed": "Explain the difference between the geocentric and heliocentric models of the solar system."
+    },
+    {
+     "number": "7",
+     "text_as_printed": "Understand what meteoroids, asteroids, and comets are, and describe their characteristics."
+    },
+    {
+     "number": "8",
+     "text_as_printed": "Describe the Moon as the Earth’s natural satellite and explain its movements — rotation and revolution."
+    },
+    {
+     "number": "9",
+     "text_as_printed": "Explain the phases of the Moon and how the Moon reflects sunlight."
+    },
+    {
+     "number": "10",
+     "text_as_printed": "Recognize why Earth is a unique planet with ideal conditions to support life."
+    },
+    {
+     "number": "11",
+     "text_as_printed": "Develop basic observational skills by watching the sky and identifying stars, shooting stars, and other celestial phenomena."
+    },
+    {
+     "number": "12",
+     "text_as_printed": "Engage in activities that demonstrate the movements of the Earth and planets to better understand their orbits and rotations."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "____ rotates around the earth.",
+   "source": "lba",
+   "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s2-q007",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s2-q007",
+     "pdf_page": 60,
+     "printed_page": 60,
+     "y": 563.282935,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s2-q007-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 190.787606,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-5-evs",
+     "role": "extraction",
+     "at": "2026-11-27T02:29:50+05:30"
+    }
+   ],
+   "created_by": "class-5-evs",
+   "created_at": "2026-11-27T02:29:50+05:30",
+   "text_as_printed": "____ rotates around the earth. (Easy)",
+   "section_signal": "II. Fill in the blanks",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "moon"
+   },
+   "answer_as_printed": "moon",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-5-evs",
+    "at": "2026-11-27T02:29:50+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    }
+   ],
+   "content_hash": "0a54462d7e13620bca11f10d1f89ac89c28c335daa7d12f9cdfa1b19ca89042e",
+   "topic_ids": [
+    "evs-5-14-s03"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-5-14-s2-q008",
+   "class": "5",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-5-14",
+   "syllabus_map_version": "evs-5-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Identify the Sun and its family (Solar System) and name the planets in order from the Sun."
+    },
+    {
+     "number": "2",
+     "text_as_printed": "Explain the characteristics of the Sun and its importance for life on Earth."
+    },
+    {
+     "number": "3",
+     "text_as_printed": "Describe the shape and size of the Earth and understand why it is called a geoid."
+    },
+    {
+     "number": "4",
+     "text_as_printed": "Understand the Earth’s movements — rotation and revolution — and explain how these cause day and night, and the year."
+    },
+    {
+     "number": "5",
+     "text_as_printed": "Describe the features of the eight planets including facts about Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune."
+    },
+    {
+     "number": "6",
+     "text_as_printed": "Explain the difference between the geocentric and heliocentric models of the solar system."
+    },
+    {
+     "number": "7",
+     "text_as_printed": "Understand what meteoroids, asteroids, and comets are, and describe their characteristics."
+    },
+    {
+     "number": "8",
+     "text_as_printed": "Describe the Moon as the Earth’s natural satellite and explain its movements — rotation and revolution."
+    },
+    {
+     "number": "9",
+     "text_as_printed": "Explain the phases of the Moon and how the Moon reflects sunlight."
+    },
+    {
+     "number": "10",
+     "text_as_printed": "Recognize why Earth is a unique planet with ideal conditions to support life."
+    },
+    {
+     "number": "11",
+     "text_as_printed": "Develop basic observational skills by watching the sky and identifying stars, shooting stars, and other celestial phenomena."
+    },
+    {
+     "number": "12",
+     "text_as_printed": "Engage in activities that demonstrate the movements of the Earth and planets to better understand their orbits and rotations."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "____ is the largest planet in the solar system.",
+   "source": "lba",
+   "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s2-q008",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s2-q008",
+     "pdf_page": 60,
+     "printed_page": 60,
+     "y": 577.92295,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s2-q008-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-5-evs",
+     "role": "extraction",
+     "at": "2026-11-27T02:29:50+05:30"
+    }
+   ],
+   "created_by": "class-5-evs",
+   "created_at": "2026-11-27T02:29:50+05:30",
+   "text_as_printed": "____ is the largest planet in the solar system. (Easy)",
+   "section_signal": "II. Fill in the blanks",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key belongs to another paper version — printed key 8 'Planets' does not answer this question (the largest planet (Jupiter))",
+     "why_not_corrected": "the answer side 'II.Spacing Replies' (pdf 112) answers q6-q7 by number, then prints keys 8-15 'Planets', 'Solar System', 'Stars', 'Sky', 'Planets', 'Around the sun', 'The Moon', 'Light' for another set of fill questions: key 9 fits q11, key 10 fits q9, the other six fit no printed question; no constant offset or rotation (encoding as ruled for the class-3 L13-L18 key sides, class-3 control rev 4/5)",
+     "suggested": "lane 2 — content pointer: none fits"
+    }
+   ],
+   "content_hash": "afdaa560cbe24510e0ad7257ad4a4d7cf9f8380f02e10effeabb2f12b497f94f",
+   "topic_ids": [
+    "evs-5-14-s01"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-5-14-s2-q009",
+   "class": "5",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-5-14",
+   "syllabus_map_version": "evs-5-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Identify the Sun and its family (Solar System) and name the planets in order from the Sun."
+    },
+    {
+     "number": "2",
+     "text_as_printed": "Explain the characteristics of the Sun and its importance for life on Earth."
+    },
+    {
+     "number": "3",
+     "text_as_printed": "Describe the shape and size of the Earth and understand why it is called a geoid."
+    },
+    {
+     "number": "4",
+     "text_as_printed": "Understand the Earth’s movements — rotation and revolution — and explain how these cause day and night, and the year."
+    },
+    {
+     "number": "5",
+     "text_as_printed": "Describe the features of the eight planets including facts about Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune."
+    },
+    {
+     "number": "6",
+     "text_as_printed": "Explain the difference between the geocentric and heliocentric models of the solar system."
+    },
+    {
+     "number": "7",
+     "text_as_printed": "Understand what meteoroids, asteroids, and comets are, and describe their characteristics."
+    },
+    {
+     "number": "8",
+     "text_as_printed": "Describe the Moon as the Earth’s natural satellite and explain its movements — rotation and revolution."
+    },
+    {
+     "number": "9",
+     "text_as_printed": "Explain the phases of the Moon and how the Moon reflects sunlight."
+    },
+    {
+     "number": "10",
+     "text_as_printed": "Recognize why Earth is a unique planet with ideal conditions to support life."
+    },
+    {
+     "number": "11",
+     "text_as_printed": "Develop basic observational skills by watching the sky and identifying stars, shooting stars, and other celestial phenomena."
+    },
+    {
+     "number": "12",
+     "text_as_printed": "Engage in activities that demonstrate the movements of the Earth and planets to better understand their orbits and rotations."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "_____ They appear and shine at night.",
+   "source": "lba",
+   "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s2-q009",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s2-q009",
+     "pdf_page": 60,
+     "printed_page": 60,
+     "y": 592.562964,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s2-q009-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-5-evs",
+     "role": "extraction",
+     "at": "2026-11-27T02:29:50+05:30"
+    }
+   ],
+   "created_by": "class-5-evs",
+   "created_at": "2026-11-27T02:29:50+05:30",
+   "text_as_printed": "_____ They appear and shine at night. (Easy)",
+   "section_signal": "II. Fill in the blanks",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key belongs to another paper version — printed key 9 'Solar System' does not answer this question (what appears and shines at night (stars)); key 9 itself fits q011; key 10 'Stars' fits this question",
+     "why_not_corrected": "the answer side 'II.Spacing Replies' (pdf 112) answers q6-q7 by number, then prints keys 8-15 'Planets', 'Solar System', 'Stars', 'Sky', 'Planets', 'Around the sun', 'The Moon', 'Light' for another set of fill questions: key 9 fits q11, key 10 fits q9, the other six fit no printed question; no constant offset or rotation (encoding as ruled for the class-3 L13-L18 key sides, class-3 control rev 4/5)",
+     "suggested": "lane 2 — content pointer: key 10"
+    }
+   ],
+   "content_hash": "2642dce5d41496ffc3b263edcd7511dd8cedcb0f6d4c6189a650b48d3f9db4c8",
+   "topic_ids": [
+    "evs-5-14-s01",
+    "evs-5-14-s02",
+    "evs-5-14-s03"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "low"
+  },
+  {
+   "id": "evs-5-14-s2-q010",
+   "class": "5",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-5-14",
+   "syllabus_map_version": "evs-5-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Identify the Sun and its family (Solar System) and name the planets in order from the Sun."
+    },
+    {
+     "number": "2",
+     "text_as_printed": "Explain the characteristics of the Sun and its importance for life on Earth."
+    },
+    {
+     "number": "3",
+     "text_as_printed": "Describe the shape and size of the Earth and understand why it is called a geoid."
+    },
+    {
+     "number": "4",
+     "text_as_printed": "Understand the Earth’s movements — rotation and revolution — and explain how these cause day and night, and the year."
+    },
+    {
+     "number": "5",
+     "text_as_printed": "Describe the features of the eight planets including facts about Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune."
+    },
+    {
+     "number": "6",
+     "text_as_printed": "Explain the difference between the geocentric and heliocentric models of the solar system."
+    },
+    {
+     "number": "7",
+     "text_as_printed": "Understand what meteoroids, asteroids, and comets are, and describe their characteristics."
+    },
+    {
+     "number": "8",
+     "text_as_printed": "Describe the Moon as the Earth’s natural satellite and explain its movements — rotation and revolution."
+    },
+    {
+     "number": "9",
+     "text_as_printed": "Explain the phases of the Moon and how the Moon reflects sunlight."
+    },
+    {
+     "number": "10",
+     "text_as_printed": "Recognize why Earth is a unique planet with ideal conditions to support life."
+    },
+    {
+     "number": "11",
+     "text_as_printed": "Develop basic observational skills by watching the sky and identifying stars, shooting stars, and other celestial phenomena."
+    },
+    {
+     "number": "12",
+     "text_as_printed": "Engage in activities that demonstrate the movements of the Earth and planets to better understand their orbits and rotations."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "______ is the only planet that gives life to living beings.",
+   "source": "lba",
+   "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s2-q010",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s2-q010",
+     "pdf_page": 60,
+     "printed_page": 60,
+     "y": 607.322959,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s2-q010-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-5-evs",
+     "role": "extraction",
+     "at": "2026-11-27T02:29:50+05:30"
+    }
+   ],
+   "created_by": "class-5-evs",
+   "created_at": "2026-11-27T02:29:50+05:30",
+   "text_as_printed": "______ is the only planet that gives life to living beings. (Easy)",
+   "section_signal": "II. Fill in the blanks",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key belongs to another paper version — printed key 10 'Stars' does not answer this question (the only planet with life (Earth)); key 10 itself fits q009",
+     "why_not_corrected": "the answer side 'II.Spacing Replies' (pdf 112) answers q6-q7 by number, then prints keys 8-15 'Planets', 'Solar System', 'Stars', 'Sky', 'Planets', 'Around the sun', 'The Moon', 'Light' for another set of fill questions: key 9 fits q11, key 10 fits q9, the other six fit no printed question; no constant offset or rotation (encoding as ruled for the class-3 L13-L18 key sides, class-3 control rev 4/5)",
+     "suggested": "lane 2 — content pointer: none fits"
+    }
+   ],
+   "content_hash": "dcbb0497ffa4ccff809c1e9da3d71a945bc9a1e1145180a456be3bc4759f935d",
+   "topic_ids": [
+    "evs-5-14-s01"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-5-14-s2-q011",
+   "class": "5",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-5-14",
+   "syllabus_map_version": "evs-5-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Identify the Sun and its family (Solar System) and name the planets in order from the Sun."
+    },
+    {
+     "number": "2",
+     "text_as_printed": "Explain the characteristics of the Sun and its importance for life on Earth."
+    },
+    {
+     "number": "3",
+     "text_as_printed": "Describe the shape and size of the Earth and understand why it is called a geoid."
+    },
+    {
+     "number": "4",
+     "text_as_printed": "Understand the Earth’s movements — rotation and revolution — and explain how these cause day and night, and the year."
+    },
+    {
+     "number": "5",
+     "text_as_printed": "Describe the features of the eight planets including facts about Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune."
+    },
+    {
+     "number": "6",
+     "text_as_printed": "Explain the difference between the geocentric and heliocentric models of the solar system."
+    },
+    {
+     "number": "7",
+     "text_as_printed": "Understand what meteoroids, asteroids, and comets are, and describe their characteristics."
+    },
+    {
+     "number": "8",
+     "text_as_printed": "Describe the Moon as the Earth’s natural satellite and explain its movements — rotation and revolution."
+    },
+    {
+     "number": "9",
+     "text_as_printed": "Explain the phases of the Moon and how the Moon reflects sunlight."
+    },
+    {
+     "number": "10",
+     "text_as_printed": "Recognize why Earth is a unique planet with ideal conditions to support life."
+    },
+    {
+     "number": "11",
+     "text_as_printed": "Develop basic observational skills by watching the sky and identifying stars, shooting stars, and other celestial phenomena."
+    },
+    {
+     "number": "12",
+     "text_as_printed": "Engage in activities that demonstrate the movements of the Earth and planets to better understand their orbits and rotations."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "The family of the sun is called __________.",
+   "source": "lba",
+   "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s2-q011",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s2-q011",
+     "pdf_page": 60,
+     "printed_page": 60,
+     "y": 621.962973,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s2-q011-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-5-evs",
+     "role": "extraction",
+     "at": "2026-11-27T02:29:50+05:30"
+    }
+   ],
+   "created_by": "class-5-evs",
+   "created_at": "2026-11-27T02:29:50+05:30",
+   "text_as_printed": "The family of the sun is called __________. (Easy)",
+   "section_signal": "II. Fill in the blanks",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key belongs to another paper version — printed key 11 'Sky' does not answer this question (the sun's family (solar system)); key 9 'Solar System' fits this question",
+     "why_not_corrected": "the answer side 'II.Spacing Replies' (pdf 112) answers q6-q7 by number, then prints keys 8-15 'Planets', 'Solar System', 'Stars', 'Sky', 'Planets', 'Around the sun', 'The Moon', 'Light' for another set of fill questions: key 9 fits q11, key 10 fits q9, the other six fit no printed question; no constant offset or rotation (encoding as ruled for the class-3 L13-L18 key sides, class-3 control rev 4/5)",
+     "suggested": "lane 2 — content pointer: key 9"
+    }
+   ],
+   "content_hash": "306a81b473834e4da35162fa63378fb41997b9fb12202b87fe5a6d43a1b17c82",
+   "topic_ids": [
+    "evs-5-14-s01"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-5-14-s2-q012",
+   "class": "5",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-5-14",
+   "syllabus_map_version": "evs-5-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Identify the Sun and its family (Solar System) and name the planets in order from the Sun."
+    },
+    {
+     "number": "2",
+     "text_as_printed": "Explain the characteristics of the Sun and its importance for life on Earth."
+    },
+    {
+     "number": "3",
+     "text_as_printed": "Describe the shape and size of the Earth and understand why it is called a geoid."
+    },
+    {
+     "number": "4",
+     "text_as_printed": "Understand the Earth’s movements — rotation and revolution — and explain how these cause day and night, and the year."
+    },
+    {
+     "number": "5",
+     "text_as_printed": "Describe the features of the eight planets including facts about Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune."
+    },
+    {
+     "number": "6",
+     "text_as_printed": "Explain the difference between the geocentric and heliocentric models of the solar system."
+    },
+    {
+     "number": "7",
+     "text_as_printed": "Understand what meteoroids, asteroids, and comets are, and describe their characteristics."
+    },
+    {
+     "number": "8",
+     "text_as_printed": "Describe the Moon as the Earth’s natural satellite and explain its movements — rotation and revolution."
+    },
+    {
+     "number": "9",
+     "text_as_printed": "Explain the phases of the Moon and how the Moon reflects sunlight."
+    },
+    {
+     "number": "10",
+     "text_as_printed": "Recognize why Earth is a unique planet with ideal conditions to support life."
+    },
+    {
+     "number": "11",
+     "text_as_printed": "Develop basic observational skills by watching the sky and identifying stars, shooting stars, and other celestial phenomena."
+    },
+    {
+     "number": "12",
+     "text_as_printed": "Engage in activities that demonstrate the movements of the Earth and planets to better understand their orbits and rotations."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Earth is the __________ planet from the Sun in the solar system.",
+   "source": "lba",
+   "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s2-q012",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s2-q012",
+     "pdf_page": 60,
+     "printed_page": 60,
+     "y": 636.482963,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s2-q012-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-5-evs",
+     "role": "extraction",
+     "at": "2026-11-27T02:29:50+05:30"
+    }
+   ],
+   "created_by": "class-5-evs",
+   "created_at": "2026-11-27T02:29:50+05:30",
+   "text_as_printed": "Earth is the __________ planet from the Sun in the solar system. (Easy)",
+   "section_signal": "II. Fill in the blanks",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key belongs to another paper version — printed key 12 'Planets' does not answer this question (the Earth's place from the Sun (third))",
+     "why_not_corrected": "the answer side 'II.Spacing Replies' (pdf 112) answers q6-q7 by number, then prints keys 8-15 'Planets', 'Solar System', 'Stars', 'Sky', 'Planets', 'Around the sun', 'The Moon', 'Light' for another set of fill questions: key 9 fits q11, key 10 fits q9, the other six fit no printed question; no constant offset or rotation (encoding as ruled for the class-3 L13-L18 key sides, class-3 control rev 4/5)",
+     "suggested": "lane 2 — content pointer: none fits"
+    }
+   ],
+   "content_hash": "4a8b4236ad7bb256306c92b0cf729fe169b21499d2383c7d2646b7d40bf82bb0",
+   "topic_ids": [
+    "evs-5-14-s01"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-5-14-s2-q013",
+   "class": "5",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-5-14",
+   "syllabus_map_version": "evs-5-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Identify the Sun and its family (Solar System) and name the planets in order from the Sun."
+    },
+    {
+     "number": "2",
+     "text_as_printed": "Explain the characteristics of the Sun and its importance for life on Earth."
+    },
+    {
+     "number": "3",
+     "text_as_printed": "Describe the shape and size of the Earth and understand why it is called a geoid."
+    },
+    {
+     "number": "4",
+     "text_as_printed": "Understand the Earth’s movements — rotation and revolution — and explain how these cause day and night, and the year."
+    },
+    {
+     "number": "5",
+     "text_as_printed": "Describe the features of the eight planets including facts about Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune."
+    },
+    {
+     "number": "6",
+     "text_as_printed": "Explain the difference between the geocentric and heliocentric models of the solar system."
+    },
+    {
+     "number": "7",
+     "text_as_printed": "Understand what meteoroids, asteroids, and comets are, and describe their characteristics."
+    },
+    {
+     "number": "8",
+     "text_as_printed": "Describe the Moon as the Earth’s natural satellite and explain its movements — rotation and revolution."
+    },
+    {
+     "number": "9",
+     "text_as_printed": "Explain the phases of the Moon and how the Moon reflects sunlight."
+    },
+    {
+     "number": "10",
+     "text_as_printed": "Recognize why Earth is a unique planet with ideal conditions to support life."
+    },
+    {
+     "number": "11",
+     "text_as_printed": "Develop basic observational skills by watching the sky and identifying stars, shooting stars, and other celestial phenomena."
+    },
+    {
+     "number": "12",
+     "text_as_printed": "Engage in activities that demonstrate the movements of the Earth and planets to better understand their orbits and rotations."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "__________ is the characteristic shape of the earth, which is slightly flat at the poles and slightly bulging near the equator.",
+   "source": "lba",
+   "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s2-q013",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s2-q013",
+     "pdf_page": 60,
+     "printed_page": 60,
+     "y": 651.002951,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s2-q013-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-5-evs",
+     "role": "extraction",
+     "at": "2026-11-27T02:29:50+05:30"
+    }
+   ],
+   "created_by": "class-5-evs",
+   "created_at": "2026-11-27T02:29:50+05:30",
+   "text_as_printed": "__________ is the characteristic shape of the earth, which is slightly flat at the poles and slightly bulging near the equator. (Easy)",
+   "section_signal": "II. Fill in the blanks",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key belongs to another paper version — printed key 13 'Around the sun' does not answer this question (the Earth's characteristic shape (geoid))",
+     "why_not_corrected": "the answer side 'II.Spacing Replies' (pdf 112) answers q6-q7 by number, then prints keys 8-15 'Planets', 'Solar System', 'Stars', 'Sky', 'Planets', 'Around the sun', 'The Moon', 'Light' for another set of fill questions: key 9 fits q11, key 10 fits q9, the other six fit no printed question; no constant offset or rotation (encoding as ruled for the class-3 L13-L18 key sides, class-3 control rev 4/5)",
+     "suggested": "lane 2 — content pointer: none fits"
+    }
+   ],
+   "content_hash": "317fb3d6f78479dff8571f1199269d4ce3386bb8c8f7f605a0a5926d70fcd511",
+   "topic_ids": [
+    "evs-5-14-s01",
+    "evs-5-14-s02",
+    "evs-5-14-s03"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "low"
+  },
+  {
+   "id": "evs-5-14-s2-q014",
+   "class": "5",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-5-14",
+   "syllabus_map_version": "evs-5-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Identify the Sun and its family (Solar System) and name the planets in order from the Sun."
+    },
+    {
+     "number": "2",
+     "text_as_printed": "Explain the characteristics of the Sun and its importance for life on Earth."
+    },
+    {
+     "number": "3",
+     "text_as_printed": "Describe the shape and size of the Earth and understand why it is called a geoid."
+    },
+    {
+     "number": "4",
+     "text_as_printed": "Understand the Earth’s movements — rotation and revolution — and explain how these cause day and night, and the year."
+    },
+    {
+     "number": "5",
+     "text_as_printed": "Describe the features of the eight planets including facts about Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune."
+    },
+    {
+     "number": "6",
+     "text_as_printed": "Explain the difference between the geocentric and heliocentric models of the solar system."
+    },
+    {
+     "number": "7",
+     "text_as_printed": "Understand what meteoroids, asteroids, and comets are, and describe their characteristics."
+    },
+    {
+     "number": "8",
+     "text_as_printed": "Describe the Moon as the Earth’s natural satellite and explain its movements — rotation and revolution."
+    },
+    {
+     "number": "9",
+     "text_as_printed": "Explain the phases of the Moon and how the Moon reflects sunlight."
+    },
+    {
+     "number": "10",
+     "text_as_printed": "Recognize why Earth is a unique planet with ideal conditions to support life."
+    },
+    {
+     "number": "11",
+     "text_as_printed": "Develop basic observational skills by watching the sky and identifying stars, shooting stars, and other celestial phenomena."
+    },
+    {
+     "number": "12",
+     "text_as_printed": "Engage in activities that demonstrate the movements of the Earth and planets to better understand their orbits and rotations."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "__________ the brightest planet in the solar system.",
+   "source": "lba",
+   "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s2-q014",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s2-q014",
+     "pdf_page": 60,
+     "printed_page": 60,
+     "y": 680.162955,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s2-q014-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-5-evs",
+     "role": "extraction",
+     "at": "2026-11-27T02:29:50+05:30"
+    }
+   ],
+   "created_by": "class-5-evs",
+   "created_at": "2026-11-27T02:29:50+05:30",
+   "text_as_printed": "__________ the brightest planet in the solar system. (Easy)",
+   "section_signal": "II. Fill in the blanks",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key belongs to another paper version — printed key 14 'The Moon' does not answer this question (the brightest planet (Venus))",
+     "why_not_corrected": "the answer side 'II.Spacing Replies' (pdf 112) answers q6-q7 by number, then prints keys 8-15 'Planets', 'Solar System', 'Stars', 'Sky', 'Planets', 'Around the sun', 'The Moon', 'Light' for another set of fill questions: key 9 fits q11, key 10 fits q9, the other six fit no printed question; no constant offset or rotation (encoding as ruled for the class-3 L13-L18 key sides, class-3 control rev 4/5)",
+     "suggested": "lane 2 — content pointer: none fits"
+    }
+   ],
+   "content_hash": "a5bf080f4a281e1973fb787df9ca4eb4cae658de93b8f38b546897a91f4338e8",
+   "topic_ids": [
+    "evs-5-14-s01"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-5-14-s2-q015",
+   "class": "5",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-5-14",
+   "syllabus_map_version": "evs-5-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Identify the Sun and its family (Solar System) and name the planets in order from the Sun."
+    },
+    {
+     "number": "2",
+     "text_as_printed": "Explain the characteristics of the Sun and its importance for life on Earth."
+    },
+    {
+     "number": "3",
+     "text_as_printed": "Describe the shape and size of the Earth and understand why it is called a geoid."
+    },
+    {
+     "number": "4",
+     "text_as_printed": "Understand the Earth’s movements — rotation and revolution — and explain how these cause day and night, and the year."
+    },
+    {
+     "number": "5",
+     "text_as_printed": "Describe the features of the eight planets including facts about Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune."
+    },
+    {
+     "number": "6",
+     "text_as_printed": "Explain the difference between the geocentric and heliocentric models of the solar system."
+    },
+    {
+     "number": "7",
+     "text_as_printed": "Understand what meteoroids, asteroids, and comets are, and describe their characteristics."
+    },
+    {
+     "number": "8",
+     "text_as_printed": "Describe the Moon as the Earth’s natural satellite and explain its movements — rotation and revolution."
+    },
+    {
+     "number": "9",
+     "text_as_printed": "Explain the phases of the Moon and how the Moon reflects sunlight."
+    },
+    {
+     "number": "10",
+     "text_as_printed": "Recognize why Earth is a unique planet with ideal conditions to support life."
+    },
+    {
+     "number": "11",
+     "text_as_printed": "Develop basic observational skills by watching the sky and identifying stars, shooting stars, and other celestial phenomena."
+    },
+    {
+     "number": "12",
+     "text_as_printed": "Engage in activities that demonstrate the movements of the Earth and planets to better understand their orbits and rotations."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Mars is also known as __________ planet because of its red soil.",
+   "source": "lba",
+   "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s2-q015",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s2-q015",
+     "pdf_page": 60,
+     "printed_page": 60,
+     "y": 694.682944,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s2-q015-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-5-evs",
+     "role": "extraction",
+     "at": "2026-11-27T02:29:50+05:30"
+    }
+   ],
+   "created_by": "class-5-evs",
+   "created_at": "2026-11-27T02:29:50+05:30",
+   "text_as_printed": "Mars is also known as __________ planet because of its red soil. (Easy)",
+   "section_signal": "II. Fill in the blanks",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "key belongs to another paper version — printed key 15 'Light' does not answer this question (Mars, the ___ planet (red))",
+     "why_not_corrected": "the answer side 'II.Spacing Replies' (pdf 112) answers q6-q7 by number, then prints keys 8-15 'Planets', 'Solar System', 'Stars', 'Sky', 'Planets', 'Around the sun', 'The Moon', 'Light' for another set of fill questions: key 9 fits q11, key 10 fits q9, the other six fit no printed question; no constant offset or rotation (encoding as ruled for the class-3 L13-L18 key sides, class-3 control rev 4/5)",
+     "suggested": "lane 2 — content pointer: none fits"
+    }
+   ],
+   "content_hash": "1876d387f3ad1ff42d25defa932cb09f5e11dfaa00d409424ad4ac28d729e27b",
+   "topic_ids": [
+    "evs-5-14-s01"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-5-14-s3-q016",
+   "class": "5",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-5-14",
+   "syllabus_map_version": "evs-5-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Identify the Sun and its family (Solar System) and name the planets in order from the Sun."
+    },
+    {
+     "number": "2",
+     "text_as_printed": "Explain the characteristics of the Sun and its importance for life on Earth."
+    },
+    {
+     "number": "3",
+     "text_as_printed": "Describe the shape and size of the Earth and understand why it is called a geoid."
+    },
+    {
+     "number": "4",
+     "text_as_printed": "Understand the Earth’s movements — rotation and revolution — and explain how these cause day and night, and the year."
+    },
+    {
+     "number": "5",
+     "text_as_printed": "Describe the features of the eight planets including facts about Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune."
+    },
+    {
+     "number": "6",
+     "text_as_printed": "Explain the difference between the geocentric and heliocentric models of the solar system."
+    },
+    {
+     "number": "7",
+     "text_as_printed": "Understand what meteoroids, asteroids, and comets are, and describe their characteristics."
+    },
+    {
+     "number": "8",
+     "text_as_printed": "Describe the Moon as the Earth’s natural satellite and explain its movements — rotation and revolution."
+    },
+    {
+     "number": "9",
+     "text_as_printed": "Explain the phases of the Moon and how the Moon reflects sunlight."
+    },
+    {
+     "number": "10",
+     "text_as_printed": "Recognize why Earth is a unique planet with ideal conditions to support life."
+    },
+    {
+     "number": "11",
+     "text_as_printed": "Develop basic observational skills by watching the sky and identifying stars, shooting stars, and other celestial phenomena."
+    },
+    {
+     "number": "12",
+     "text_as_printed": "Engage in activities that demonstrate the movements of the Earth and planets to better understand their orbits and rotations."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Stars are self-luminous celestial bodies.",
+   "source": "lba",
+   "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s3-q016",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s3-q016",
+     "pdf_page": 60,
+     "printed_page": 60,
+     "y": 746.282935,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s3-q016-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 353.162955,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-5-evs",
+     "role": "extraction",
+     "at": "2026-11-27T02:29:50+05:30"
+    }
+   ],
+   "created_by": "class-5-evs",
+   "created_at": "2026-11-27T02:29:50+05:30",
+   "text_as_printed": "Stars are self-luminous celestial bodies. (Easy)",
+   "section_signal": "III. State true or false to the following questions",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "16. OK",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-5-evs",
+    "at": "2026-11-27T02:29:50+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "unclassified — printed key doubted: true/false key printed in label form ('OK'); read as True per R-E4a",
+     "why_not_corrected": "printed key stored verbatim (R-E4a); the key side is a machine translation of a Kannada key — never translated or corrected at extraction",
+     "suggested": "nearest: key text does not address question — the key is printed and placed, but its wording is a transliteration / mistranslation / label form the reviewer must confirm"
+    }
+   ],
+   "content_hash": "f8666d17700a37c3f078cccc5586364165425c722deccdb6b73255a2a1675519",
+   "topic_ids": [
+    "evs-5-14-s01"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "high",
+   "pending_category": "unclassified"
+  },
+  {
+   "id": "evs-5-14-s3-q017",
+   "class": "5",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-5-14",
+   "syllabus_map_version": "evs-5-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Identify the Sun and its family (Solar System) and name the planets in order from the Sun."
+    },
+    {
+     "number": "2",
+     "text_as_printed": "Explain the characteristics of the Sun and its importance for life on Earth."
+    },
+    {
+     "number": "3",
+     "text_as_printed": "Describe the shape and size of the Earth and understand why it is called a geoid."
+    },
+    {
+     "number": "4",
+     "text_as_printed": "Understand the Earth’s movements — rotation and revolution — and explain how these cause day and night, and the year."
+    },
+    {
+     "number": "5",
+     "text_as_printed": "Describe the features of the eight planets including facts about Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune."
+    },
+    {
+     "number": "6",
+     "text_as_printed": "Explain the difference between the geocentric and heliocentric models of the solar system."
+    },
+    {
+     "number": "7",
+     "text_as_printed": "Understand what meteoroids, asteroids, and comets are, and describe their characteristics."
+    },
+    {
+     "number": "8",
+     "text_as_printed": "Describe the Moon as the Earth’s natural satellite and explain its movements — rotation and revolution."
+    },
+    {
+     "number": "9",
+     "text_as_printed": "Explain the phases of the Moon and how the Moon reflects sunlight."
+    },
+    {
+     "number": "10",
+     "text_as_printed": "Recognize why Earth is a unique planet with ideal conditions to support life."
+    },
+    {
+     "number": "11",
+     "text_as_printed": "Develop basic observational skills by watching the sky and identifying stars, shooting stars, and other celestial phenomena."
+    },
+    {
+     "number": "12",
+     "text_as_printed": "Engage in activities that demonstrate the movements of the Earth and planets to better understand their orbits and rotations."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "The Sun appears larger and brighter than other stars because it is closer to the Earth.",
+   "source": "lba",
+   "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s3-q017",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s3-q017",
+     "pdf_page": 60,
+     "printed_page": 60,
+     "y": 759.842948,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s3-q017-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 367.802947,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-5-evs",
+     "role": "extraction",
+     "at": "2026-11-27T02:29:50+05:30"
+    }
+   ],
+   "created_by": "class-5-evs",
+   "created_at": "2026-11-27T02:29:50+05:30",
+   "text_as_printed": "The Sun appears larger and brighter than other stars because it is closer to the Earth. (Easy)",
+   "section_signal": "III. State true or false to the following questions",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "17. OK",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-5-evs",
+    "at": "2026-11-27T02:29:50+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "unclassified — printed key doubted: true/false key printed in label form ('OK'); read as True per R-E4a",
+     "why_not_corrected": "printed key stored verbatim (R-E4a); the key side is a machine translation of a Kannada key — never translated or corrected at extraction",
+     "suggested": "nearest: key text does not address question — the key is printed and placed, but its wording is a transliteration / mistranslation / label form the reviewer must confirm"
+    }
+   ],
+   "content_hash": "0b6b865ffc5888b28df9ab413e82318dab1bc44f1da8d5c3f32c77bbe50fc51b",
+   "topic_ids": [
+    "evs-5-14-s01"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "high",
+   "pending_category": "unclassified"
+  },
+  {
+   "id": "evs-5-14-s3-q018",
+   "class": "5",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-5-14",
+   "syllabus_map_version": "evs-5-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Identify the Sun and its family (Solar System) and name the planets in order from the Sun."
+    },
+    {
+     "number": "2",
+     "text_as_printed": "Explain the characteristics of the Sun and its importance for life on Earth."
+    },
+    {
+     "number": "3",
+     "text_as_printed": "Describe the shape and size of the Earth and understand why it is called a geoid."
+    },
+    {
+     "number": "4",
+     "text_as_printed": "Understand the Earth’s movements — rotation and revolution — and explain how these cause day and night, and the year."
+    },
+    {
+     "number": "5",
+     "text_as_printed": "Describe the features of the eight planets including facts about Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune."
+    },
+    {
+     "number": "6",
+     "text_as_printed": "Explain the difference between the geocentric and heliocentric models of the solar system."
+    },
+    {
+     "number": "7",
+     "text_as_printed": "Understand what meteoroids, asteroids, and comets are, and describe their characteristics."
+    },
+    {
+     "number": "8",
+     "text_as_printed": "Describe the Moon as the Earth’s natural satellite and explain its movements — rotation and revolution."
+    },
+    {
+     "number": "9",
+     "text_as_printed": "Explain the phases of the Moon and how the Moon reflects sunlight."
+    },
+    {
+     "number": "10",
+     "text_as_printed": "Recognize why Earth is a unique planet with ideal conditions to support life."
+    },
+    {
+     "number": "11",
+     "text_as_printed": "Develop basic observational skills by watching the sky and identifying stars, shooting stars, and other celestial phenomena."
+    },
+    {
+     "number": "12",
+     "text_as_printed": "Engage in activities that demonstrate the movements of the Earth and planets to better understand their orbits and rotations."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "According to the geocentric model, the sun and other days revolve around the earth.",
+   "source": "lba",
+   "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s3-q018",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s3-q018",
+     "pdf_page": 60,
+     "printed_page": 60,
+     "y": 773.52294,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s3-q018-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 382.442939,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-5-evs",
+     "role": "extraction",
+     "at": "2026-11-27T02:29:50+05:30"
+    }
+   ],
+   "created_by": "class-5-evs",
+   "created_at": "2026-11-27T02:29:50+05:30",
+   "text_as_printed": "According to the geocentric model, the sun and other days revolve around the earth. (Easy)",
+   "section_signal": "III. State true or false to the following questions",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "18. OK",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-5-evs",
+    "at": "2026-11-27T02:29:50+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "unclassified — printed key doubted: true/false key printed in label form ('OK'); read as True per R-E4a",
+     "why_not_corrected": "printed key stored verbatim (R-E4a); the key side is a machine translation of a Kannada key — never translated or corrected at extraction",
+     "suggested": "nearest: key text does not address question — the key is printed and placed, but its wording is a transliteration / mistranslation / label form the reviewer must confirm"
+    }
+   ],
+   "content_hash": "f637962e7ac2577c5e56a7bf59171c7c759fa5771439773721269049e5c8b353",
+   "topic_ids": [
+    "evs-5-14-s02"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "high",
+   "pending_category": "unclassified"
+  },
+  {
+   "id": "evs-5-14-s3-q019",
+   "class": "5",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-5-14",
+   "syllabus_map_version": "evs-5-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Identify the Sun and its family (Solar System) and name the planets in order from the Sun."
+    },
+    {
+     "number": "2",
+     "text_as_printed": "Explain the characteristics of the Sun and its importance for life on Earth."
+    },
+    {
+     "number": "3",
+     "text_as_printed": "Describe the shape and size of the Earth and understand why it is called a geoid."
+    },
+    {
+     "number": "4",
+     "text_as_printed": "Understand the Earth’s movements — rotation and revolution — and explain how these cause day and night, and the year."
+    },
+    {
+     "number": "5",
+     "text_as_printed": "Describe the features of the eight planets including facts about Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune."
+    },
+    {
+     "number": "6",
+     "text_as_printed": "Explain the difference between the geocentric and heliocentric models of the solar system."
+    },
+    {
+     "number": "7",
+     "text_as_printed": "Understand what meteoroids, asteroids, and comets are, and describe their characteristics."
+    },
+    {
+     "number": "8",
+     "text_as_printed": "Describe the Moon as the Earth’s natural satellite and explain its movements — rotation and revolution."
+    },
+    {
+     "number": "9",
+     "text_as_printed": "Explain the phases of the Moon and how the Moon reflects sunlight."
+    },
+    {
+     "number": "10",
+     "text_as_printed": "Recognize why Earth is a unique planet with ideal conditions to support life."
+    },
+    {
+     "number": "11",
+     "text_as_printed": "Develop basic observational skills by watching the sky and identifying stars, shooting stars, and other celestial phenomena."
+    },
+    {
+     "number": "12",
+     "text_as_printed": "Engage in activities that demonstrate the movements of the Earth and planets to better understand their orbits and rotations."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "The planets produce their own light.",
+   "source": "lba",
+   "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s3-q019",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s3-q019",
+     "pdf_page": 61,
+     "printed_page": 61,
+     "y": 36.122954,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s3-q019-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 397.082954,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-5-evs",
+     "role": "extraction",
+     "at": "2026-11-27T02:29:50+05:30"
+    }
+   ],
+   "created_by": "class-5-evs",
+   "created_at": "2026-11-27T02:29:50+05:30",
+   "text_as_printed": "The planets produce their own light. (Easy)",
+   "section_signal": "III. State true or false to the following questions",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "option",
+    "option_id": "false"
+   },
+   "answer_as_printed": "19. Error",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-5-evs",
+    "at": "2026-11-27T02:29:50+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "unclassified — printed key doubted: true/false key printed in label form ('Error'); read as False per R-E4a",
+     "why_not_corrected": "printed key stored verbatim (R-E4a); the key side is a machine translation of a Kannada key — never translated or corrected at extraction",
+     "suggested": "nearest: key text does not address question — the key is printed and placed, but its wording is a transliteration / mistranslation / label form the reviewer must confirm"
+    }
+   ],
+   "content_hash": "1f717fcce860ba7e92c245cca8b0745e2f01743671d802fd4e57665c850c9d54",
+   "topic_ids": [
+    "evs-5-14-s01"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "high",
+   "pending_category": "unclassified"
+  },
+  {
+   "id": "evs-5-14-s3-q020",
+   "class": "5",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-5-14",
+   "syllabus_map_version": "evs-5-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Identify the Sun and its family (Solar System) and name the planets in order from the Sun."
+    },
+    {
+     "number": "2",
+     "text_as_printed": "Explain the characteristics of the Sun and its importance for life on Earth."
+    },
+    {
+     "number": "3",
+     "text_as_printed": "Describe the shape and size of the Earth and understand why it is called a geoid."
+    },
+    {
+     "number": "4",
+     "text_as_printed": "Understand the Earth’s movements — rotation and revolution — and explain how these cause day and night, and the year."
+    },
+    {
+     "number": "5",
+     "text_as_printed": "Describe the features of the eight planets including facts about Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune."
+    },
+    {
+     "number": "6",
+     "text_as_printed": "Explain the difference between the geocentric and heliocentric models of the solar system."
+    },
+    {
+     "number": "7",
+     "text_as_printed": "Understand what meteoroids, asteroids, and comets are, and describe their characteristics."
+    },
+    {
+     "number": "8",
+     "text_as_printed": "Describe the Moon as the Earth’s natural satellite and explain its movements — rotation and revolution."
+    },
+    {
+     "number": "9",
+     "text_as_printed": "Explain the phases of the Moon and how the Moon reflects sunlight."
+    },
+    {
+     "number": "10",
+     "text_as_printed": "Recognize why Earth is a unique planet with ideal conditions to support life."
+    },
+    {
+     "number": "11",
+     "text_as_printed": "Develop basic observational skills by watching the sky and identifying stars, shooting stars, and other celestial phenomena."
+    },
+    {
+     "number": "12",
+     "text_as_printed": "Engage in activities that demonstrate the movements of the Earth and planets to better understand their orbits and rotations."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "The total surface area of the Earth is 510 million square kilometers.",
+   "source": "lba",
+   "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s3-q020",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s3-q020",
+     "pdf_page": 61,
+     "printed_page": 61,
+     "y": 49.802953,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s3-q020-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 411.722968,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-5-evs",
+     "role": "extraction",
+     "at": "2026-11-27T02:29:50+05:30"
+    }
+   ],
+   "created_by": "class-5-evs",
+   "created_at": "2026-11-27T02:29:50+05:30",
+   "text_as_printed": "The total surface area of the Earth is 510 million square kilometers. (Easy)",
+   "section_signal": "III. State true or false to the following questions",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "20. OK",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-5-evs",
+    "at": "2026-11-27T02:29:50+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "unclassified — printed key doubted: true/false key printed in label form ('OK'); read as True per R-E4a",
+     "why_not_corrected": "printed key stored verbatim (R-E4a); the key side is a machine translation of a Kannada key — never translated or corrected at extraction",
+     "suggested": "nearest: key text does not address question — the key is printed and placed, but its wording is a transliteration / mistranslation / label form the reviewer must confirm"
+    }
+   ],
+   "content_hash": "3ab257c2940849b033fa6ce4266a10cc22af252ab36d0aca33a106989ed362d7",
+   "topic_ids": [
+    "evs-5-14-s01",
+    "evs-5-14-s02",
+    "evs-5-14-s03"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "low",
+   "pending_category": "unclassified"
+  },
+  {
+   "id": "evs-5-14-s3-q021",
+   "class": "5",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-5-14",
+   "syllabus_map_version": "evs-5-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Identify the Sun and its family (Solar System) and name the planets in order from the Sun."
+    },
+    {
+     "number": "2",
+     "text_as_printed": "Explain the characteristics of the Sun and its importance for life on Earth."
+    },
+    {
+     "number": "3",
+     "text_as_printed": "Describe the shape and size of the Earth and understand why it is called a geoid."
+    },
+    {
+     "number": "4",
+     "text_as_printed": "Understand the Earth’s movements — rotation and revolution — and explain how these cause day and night, and the year."
+    },
+    {
+     "number": "5",
+     "text_as_printed": "Describe the features of the eight planets including facts about Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune."
+    },
+    {
+     "number": "6",
+     "text_as_printed": "Explain the difference between the geocentric and heliocentric models of the solar system."
+    },
+    {
+     "number": "7",
+     "text_as_printed": "Understand what meteoroids, asteroids, and comets are, and describe their characteristics."
+    },
+    {
+     "number": "8",
+     "text_as_printed": "Describe the Moon as the Earth’s natural satellite and explain its movements — rotation and revolution."
+    },
+    {
+     "number": "9",
+     "text_as_printed": "Explain the phases of the Moon and how the Moon reflects sunlight."
+    },
+    {
+     "number": "10",
+     "text_as_printed": "Recognize why Earth is a unique planet with ideal conditions to support life."
+    },
+    {
+     "number": "11",
+     "text_as_printed": "Develop basic observational skills by watching the sky and identifying stars, shooting stars, and other celestial phenomena."
+    },
+    {
+     "number": "12",
+     "text_as_printed": "Engage in activities that demonstrate the movements of the Earth and planets to better understand their orbits and rotations."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Pluto is still considered the ninth planet in the solar system.",
+   "source": "lba",
+   "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s3-q021",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s3-q021",
+     "pdf_page": 61,
+     "printed_page": 61,
+     "y": 63.482957,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s3-q021-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 426.362937,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-5-evs",
+     "role": "extraction",
+     "at": "2026-11-27T02:29:50+05:30"
+    }
+   ],
+   "created_by": "class-5-evs",
+   "created_at": "2026-11-27T02:29:50+05:30",
+   "text_as_printed": "Pluto is still considered the ninth planet in the solar system. (Easy)",
+   "section_signal": "III. State true or false to the following questions",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "option",
+    "option_id": "false"
+   },
+   "answer_as_printed": "21. Error",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-5-evs",
+    "at": "2026-11-27T02:29:50+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "unclassified — printed key doubted: true/false key printed in label form ('Error'); read as False per R-E4a",
+     "why_not_corrected": "printed key stored verbatim (R-E4a); the key side is a machine translation of a Kannada key — never translated or corrected at extraction",
+     "suggested": "nearest: key text does not address question — the key is printed and placed, but its wording is a transliteration / mistranslation / label form the reviewer must confirm"
+    }
+   ],
+   "content_hash": "0bc40496cfffad75ca4b456d9d5bcfe63ab870793c25ff345f4615e96f6ab55f",
+   "topic_ids": [
+    "evs-5-14-s01"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "high",
+   "pending_category": "unclassified"
+  },
+  {
+   "id": "evs-5-14-s3-q022",
+   "class": "5",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-5-14",
+   "syllabus_map_version": "evs-5-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Identify the Sun and its family (Solar System) and name the planets in order from the Sun."
+    },
+    {
+     "number": "2",
+     "text_as_printed": "Explain the characteristics of the Sun and its importance for life on Earth."
+    },
+    {
+     "number": "3",
+     "text_as_printed": "Describe the shape and size of the Earth and understand why it is called a geoid."
+    },
+    {
+     "number": "4",
+     "text_as_printed": "Understand the Earth’s movements — rotation and revolution — and explain how these cause day and night, and the year."
+    },
+    {
+     "number": "5",
+     "text_as_printed": "Describe the features of the eight planets including facts about Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune."
+    },
+    {
+     "number": "6",
+     "text_as_printed": "Explain the difference between the geocentric and heliocentric models of the solar system."
+    },
+    {
+     "number": "7",
+     "text_as_printed": "Understand what meteoroids, asteroids, and comets are, and describe their characteristics."
+    },
+    {
+     "number": "8",
+     "text_as_printed": "Describe the Moon as the Earth’s natural satellite and explain its movements — rotation and revolution."
+    },
+    {
+     "number": "9",
+     "text_as_printed": "Explain the phases of the Moon and how the Moon reflects sunlight."
+    },
+    {
+     "number": "10",
+     "text_as_printed": "Recognize why Earth is a unique planet with ideal conditions to support life."
+    },
+    {
+     "number": "11",
+     "text_as_printed": "Develop basic observational skills by watching the sky and identifying stars, shooting stars, and other celestial phenomena."
+    },
+    {
+     "number": "12",
+     "text_as_printed": "Engage in activities that demonstrate the movements of the Earth and planets to better understand their orbits and rotations."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Venus is smaller than Earth.",
+   "source": "lba",
+   "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s3-q022",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s3-q022",
+     "pdf_page": 61,
+     "printed_page": 61,
+     "y": 77.042952,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s3-q022-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 441.002951,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-5-evs",
+     "role": "extraction",
+     "at": "2026-11-27T02:29:50+05:30"
+    }
+   ],
+   "created_by": "class-5-evs",
+   "created_at": "2026-11-27T02:29:50+05:30",
+   "text_as_printed": "Venus is smaller than Earth. (Easy)",
+   "section_signal": "III. State true or false to the following questions",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "option",
+    "option_id": "false"
+   },
+   "answer_as_printed": "22. Error",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-5-evs",
+    "at": "2026-11-27T02:29:50+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "printed key contradicts fact — Venus is smaller than Earth (diameter about 12,100 km against 12,756 km, the lesson's own q35), so the statement is true; the key says 'Error'; reviewer",
+     "why_not_corrected": "printed label asserted (Class-9 rule, as evs-5-01 q28)",
+     "suggested": "review — True"
+    },
+    {
+     "issue": "unclassified — printed key doubted: true/false key printed in label form ('Error'); read as False per R-E4a",
+     "why_not_corrected": "printed key stored verbatim (R-E4a); the key side is a machine translation of a Kannada key — never translated or corrected at extraction",
+     "suggested": "nearest: key text does not address question — the key is printed and placed, but its wording is a transliteration / mistranslation / label form the reviewer must confirm"
+    }
+   ],
+   "content_hash": "de748262033e9fd3831160df3be1652f83638e2050ebf27bf885a4420682b087",
+   "topic_ids": [
+    "evs-5-14-s01"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "high",
+   "pending_category": "unclassified"
+  },
+  {
+   "id": "evs-5-14-s3-q023",
+   "class": "5",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-5-14",
+   "syllabus_map_version": "evs-5-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Identify the Sun and its family (Solar System) and name the planets in order from the Sun."
+    },
+    {
+     "number": "2",
+     "text_as_printed": "Explain the characteristics of the Sun and its importance for life on Earth."
+    },
+    {
+     "number": "3",
+     "text_as_printed": "Describe the shape and size of the Earth and understand why it is called a geoid."
+    },
+    {
+     "number": "4",
+     "text_as_printed": "Understand the Earth’s movements — rotation and revolution — and explain how these cause day and night, and the year."
+    },
+    {
+     "number": "5",
+     "text_as_printed": "Describe the features of the eight planets including facts about Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune."
+    },
+    {
+     "number": "6",
+     "text_as_printed": "Explain the difference between the geocentric and heliocentric models of the solar system."
+    },
+    {
+     "number": "7",
+     "text_as_printed": "Understand what meteoroids, asteroids, and comets are, and describe their characteristics."
+    },
+    {
+     "number": "8",
+     "text_as_printed": "Describe the Moon as the Earth’s natural satellite and explain its movements — rotation and revolution."
+    },
+    {
+     "number": "9",
+     "text_as_printed": "Explain the phases of the Moon and how the Moon reflects sunlight."
+    },
+    {
+     "number": "10",
+     "text_as_printed": "Recognize why Earth is a unique planet with ideal conditions to support life."
+    },
+    {
+     "number": "11",
+     "text_as_printed": "Develop basic observational skills by watching the sky and identifying stars, shooting stars, and other celestial phenomena."
+    },
+    {
+     "number": "12",
+     "text_as_printed": "Engage in activities that demonstrate the movements of the Earth and planets to better understand their orbits and rotations."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "The moon produces its own light.",
+   "source": "lba",
+   "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s3-q023",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s3-q023",
+     "pdf_page": 61,
+     "printed_page": 61,
+     "y": 90.722957,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s3-q023-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 455.642966,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-5-evs",
+     "role": "extraction",
+     "at": "2026-11-27T02:29:50+05:30"
+    }
+   ],
+   "created_by": "class-5-evs",
+   "created_at": "2026-11-27T02:29:50+05:30",
+   "text_as_printed": "The moon produces its own light. (Easy)",
+   "section_signal": "III. State true or false to the following questions",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "option",
+    "option_id": "false"
+   },
+   "answer_as_printed": "23. Error",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-5-evs",
+    "at": "2026-11-27T02:29:50+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "unclassified — printed key doubted: true/false key printed in label form ('Error'); read as False per R-E4a",
+     "why_not_corrected": "printed key stored verbatim (R-E4a); the key side is a machine translation of a Kannada key — never translated or corrected at extraction",
+     "suggested": "nearest: key text does not address question — the key is printed and placed, but its wording is a transliteration / mistranslation / label form the reviewer must confirm"
+    }
+   ],
+   "content_hash": "21e9637e46d3d1a36496e42dfdb72e16a151e838d3c299c2bb7b50f61dc4f3ce",
+   "topic_ids": [
+    "evs-5-14-s03"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "high",
+   "pending_category": "unclassified"
+  },
+  {
+   "id": "evs-5-14-s3-q024",
+   "class": "5",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-5-14",
+   "syllabus_map_version": "evs-5-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Identify the Sun and its family (Solar System) and name the planets in order from the Sun."
+    },
+    {
+     "number": "2",
+     "text_as_printed": "Explain the characteristics of the Sun and its importance for life on Earth."
+    },
+    {
+     "number": "3",
+     "text_as_printed": "Describe the shape and size of the Earth and understand why it is called a geoid."
+    },
+    {
+     "number": "4",
+     "text_as_printed": "Understand the Earth’s movements — rotation and revolution — and explain how these cause day and night, and the year."
+    },
+    {
+     "number": "5",
+     "text_as_printed": "Describe the features of the eight planets including facts about Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune."
+    },
+    {
+     "number": "6",
+     "text_as_printed": "Explain the difference between the geocentric and heliocentric models of the solar system."
+    },
+    {
+     "number": "7",
+     "text_as_printed": "Understand what meteoroids, asteroids, and comets are, and describe their characteristics."
+    },
+    {
+     "number": "8",
+     "text_as_printed": "Describe the Moon as the Earth’s natural satellite and explain its movements — rotation and revolution."
+    },
+    {
+     "number": "9",
+     "text_as_printed": "Explain the phases of the Moon and how the Moon reflects sunlight."
+    },
+    {
+     "number": "10",
+     "text_as_printed": "Recognize why Earth is a unique planet with ideal conditions to support life."
+    },
+    {
+     "number": "11",
+     "text_as_printed": "Develop basic observational skills by watching the sky and identifying stars, shooting stars, and other celestial phenomena."
+    },
+    {
+     "number": "12",
+     "text_as_printed": "Engage in activities that demonstrate the movements of the Earth and planets to better understand their orbits and rotations."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "A year is defined as the time it takes for the Earth to rotate once on its axis.",
+   "source": "lba",
+   "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s3-q024",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s3-q024",
+     "pdf_page": 61,
+     "printed_page": 61,
+     "y": 104.40296,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s3-q024-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 470.40296,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-5-evs",
+     "role": "extraction",
+     "at": "2026-11-27T02:29:50+05:30"
+    }
+   ],
+   "created_by": "class-5-evs",
+   "created_at": "2026-11-27T02:29:50+05:30",
+   "text_as_printed": "A year is defined as the time it takes for the Earth to rotate once on its axis. (Easy)",
+   "section_signal": "III. State true or false to the following questions",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "option",
+    "option_id": "false"
+   },
+   "answer_as_printed": "24. Error",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-5-evs",
+    "at": "2026-11-27T02:29:50+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "unclassified — printed key doubted: true/false key printed in label form ('Error'); read as False per R-E4a",
+     "why_not_corrected": "printed key stored verbatim (R-E4a); the key side is a machine translation of a Kannada key — never translated or corrected at extraction",
+     "suggested": "nearest: key text does not address question — the key is printed and placed, but its wording is a transliteration / mistranslation / label form the reviewer must confirm"
+    }
+   ],
+   "content_hash": "d6d78bfd25b421a5189cbf92af727b6f188332836a5d4da1ce0c9f407578453f",
+   "topic_ids": [
+    "evs-5-14-s02"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "high",
+   "pending_category": "unclassified"
+  },
+  {
+   "id": "evs-5-14-s4-q025",
+   "class": "5",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-5-14",
+   "syllabus_map_version": "evs-5-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Medium",
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Identify the Sun and its family (Solar System) and name the planets in order from the Sun."
+    },
+    {
+     "number": "2",
+     "text_as_printed": "Explain the characteristics of the Sun and its importance for life on Earth."
+    },
+    {
+     "number": "3",
+     "text_as_printed": "Describe the shape and size of the Earth and understand why it is called a geoid."
+    },
+    {
+     "number": "4",
+     "text_as_printed": "Understand the Earth’s movements — rotation and revolution — and explain how these cause day and night, and the year."
+    },
+    {
+     "number": "5",
+     "text_as_printed": "Describe the features of the eight planets including facts about Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune."
+    },
+    {
+     "number": "6",
+     "text_as_printed": "Explain the difference between the geocentric and heliocentric models of the solar system."
+    },
+    {
+     "number": "7",
+     "text_as_printed": "Understand what meteoroids, asteroids, and comets are, and describe their characteristics."
+    },
+    {
+     "number": "8",
+     "text_as_printed": "Describe the Moon as the Earth’s natural satellite and explain its movements — rotation and revolution."
+    },
+    {
+     "number": "9",
+     "text_as_printed": "Explain the phases of the Moon and how the Moon reflects sunlight."
+    },
+    {
+     "number": "10",
+     "text_as_printed": "Recognize why Earth is a unique planet with ideal conditions to support life."
+    },
+    {
+     "number": "11",
+     "text_as_printed": "Develop basic observational skills by watching the sky and identifying stars, shooting stars, and other celestial phenomena."
+    },
+    {
+     "number": "12",
+     "text_as_printed": "Engage in activities that demonstrate the movements of the Earth and planets to better understand their orbits and rotations."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Match the following.\na: 1. Mars; 2. Moon; 3. Sun; 4. Earth; 5. Stars\nB: a) Earth satellite; b) Red Planet; e) Convenient for living beings; d) Lightning objects; e) Light gives warmth",
+   "source": "lba",
+   "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s4-q025",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s4-q025",
+     "pdf_page": 61,
+     "printed_page": 61,
+     "y": 131.969888,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s4-q025-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 487.187615,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-5-evs",
+     "role": "extraction",
+     "at": "2026-11-27T02:29:50+05:30"
+    }
+   ],
+   "created_by": "class-5-evs",
+   "created_at": "2026-11-27T02:29:50+05:30",
+   "text_as_printed": "Match the following. (Medium) a B 1. Mars a) Earth satellite 2. Moon b) Red Planet 3. Sun e) Convenient for living beings 4. Earth d) Lightning objects 5. Stars e) Light gives warmth",
+   "section_signal": "IV. Match the following.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "Mars",
+      "right": "Red Planet"
+     },
+     {
+      "left": "Moon",
+      "right": "Earth Satellite"
+     },
+     {
+      "left": "Sun",
+      "right": "Provides light and heat"
+     },
+     {
+      "left": "Earth",
+      "right": "Convenient to living organisms"
+     },
+     {
+      "left": "Stars",
+      "right": "Flashy objects"
+     }
+    ]
+   },
+   "answer_as_printed": "IV .25.Match Write Answers\nA B Answer\n1. Mars b) Red Planet 1→b\n2. Moon a) Earth Satellite 2 →a\n3. Sun c) Provides light and heat 3→c\n4. Earth d) Convenient to living organisms 4 →d\n5. Stars e) Flashy objects 5 →e",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-5-evs",
+    "at": "2026-11-27T02:29:50+05:30",
+    "basis": "printed match key ('Match Write Answers', pdf 112, columns A / B / Answer 'N→letter'): right = the key's column-B text verbatim, letter dropped; left = the question side's column-a item of row N (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "match key value not among column-B items — 'Provides light and heat' (B 'Light gives warmth'), 'Convenient to living organisms' (B 'Convenient for living beings'), 'Flashy objects' (B 'Lightning objects'); the question side prints the letter 'e)' twice and no 'c)', and the key's letters c-e name other column-B items",
+     "why_not_corrected": "pairs by the key's value text, letters dropped (v1.4 §14.8)",
+     "suggested": "column-B wording — review"
+    }
+   ],
+   "content_hash": "61f92c037d5d9cd8c235ec684692f11f2452bc08eb59be8e51f2bf4ccd72796a",
+   "topic_ids": [
+    "evs-5-14-s01",
+    "evs-5-14-s03"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-5-14-s5-q026",
+   "class": "5",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-5-14",
+   "syllabus_map_version": "evs-5-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Identify the Sun and its family (Solar System) and name the planets in order from the Sun."
+    },
+    {
+     "number": "2",
+     "text_as_printed": "Explain the characteristics of the Sun and its importance for life on Earth."
+    },
+    {
+     "number": "3",
+     "text_as_printed": "Describe the shape and size of the Earth and understand why it is called a geoid."
+    },
+    {
+     "number": "4",
+     "text_as_printed": "Understand the Earth’s movements — rotation and revolution — and explain how these cause day and night, and the year."
+    },
+    {
+     "number": "5",
+     "text_as_printed": "Describe the features of the eight planets including facts about Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune."
+    },
+    {
+     "number": "6",
+     "text_as_printed": "Explain the difference between the geocentric and heliocentric models of the solar system."
+    },
+    {
+     "number": "7",
+     "text_as_printed": "Understand what meteoroids, asteroids, and comets are, and describe their characteristics."
+    },
+    {
+     "number": "8",
+     "text_as_printed": "Describe the Moon as the Earth’s natural satellite and explain its movements — rotation and revolution."
+    },
+    {
+     "number": "9",
+     "text_as_printed": "Explain the phases of the Moon and how the Moon reflects sunlight."
+    },
+    {
+     "number": "10",
+     "text_as_printed": "Recognize why Earth is a unique planet with ideal conditions to support life."
+    },
+    {
+     "number": "11",
+     "text_as_printed": "Develop basic observational skills by watching the sky and identifying stars, shooting stars, and other celestial phenomena."
+    },
+    {
+     "number": "12",
+     "text_as_printed": "Engage in activities that demonstrate the movements of the Earth and planets to better understand their orbits and rotations."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "What is the sun?",
+   "source": "lba",
+   "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s5-q026",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s5-q026",
+     "pdf_page": 61,
+     "printed_page": 61,
+     "y": 356.282958,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s5-q026-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 638.507576,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-5-evs",
+     "role": "extraction",
+     "at": "2026-11-27T02:29:50+05:30"
+    }
+   ],
+   "created_by": "class-5-evs",
+   "created_at": "2026-11-27T02:29:50+05:30",
+   "text_as_printed": "What is the sun? (Easy)",
+   "section_signal": "V. Answer the following questions (one point)",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "The sun is the star that gives us light and heat."
+   },
+   "answer_as_printed": "The sun is the star that gives us light and heat.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-5-evs",
+    "at": "2026-11-27T02:29:50+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [],
+   "content_hash": "ff153e4b629de85790a4e7507b2e5810c211fdf909e6cb54a4155ed471b2b291",
+   "topic_ids": [
+    "evs-5-14-s01"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-5-14-s5-q027",
+   "class": "5",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-5-14",
+   "syllabus_map_version": "evs-5-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Identify the Sun and its family (Solar System) and name the planets in order from the Sun."
+    },
+    {
+     "number": "2",
+     "text_as_printed": "Explain the characteristics of the Sun and its importance for life on Earth."
+    },
+    {
+     "number": "3",
+     "text_as_printed": "Describe the shape and size of the Earth and understand why it is called a geoid."
+    },
+    {
+     "number": "4",
+     "text_as_printed": "Understand the Earth’s movements — rotation and revolution — and explain how these cause day and night, and the year."
+    },
+    {
+     "number": "5",
+     "text_as_printed": "Describe the features of the eight planets including facts about Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune."
+    },
+    {
+     "number": "6",
+     "text_as_printed": "Explain the difference between the geocentric and heliocentric models of the solar system."
+    },
+    {
+     "number": "7",
+     "text_as_printed": "Understand what meteoroids, asteroids, and comets are, and describe their characteristics."
+    },
+    {
+     "number": "8",
+     "text_as_printed": "Describe the Moon as the Earth’s natural satellite and explain its movements — rotation and revolution."
+    },
+    {
+     "number": "9",
+     "text_as_printed": "Explain the phases of the Moon and how the Moon reflects sunlight."
+    },
+    {
+     "number": "10",
+     "text_as_printed": "Recognize why Earth is a unique planet with ideal conditions to support life."
+    },
+    {
+     "number": "11",
+     "text_as_printed": "Develop basic observational skills by watching the sky and identifying stars, shooting stars, and other celestial phenomena."
+    },
+    {
+     "number": "12",
+     "text_as_printed": "Engage in activities that demonstrate the movements of the Earth and planets to better understand their orbits and rotations."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Which planet do we live on?",
+   "source": "lba",
+   "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s5-q027",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s5-q027",
+     "pdf_page": 61,
+     "printed_page": 61,
+     "y": 370.92295,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s5-q027-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 654.347573,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-5-evs",
+     "role": "extraction",
+     "at": "2026-11-27T02:29:50+05:30"
+    }
+   ],
+   "created_by": "class-5-evs",
+   "created_at": "2026-11-27T02:29:50+05:30",
+   "text_as_printed": "Which planet do we live on? (Easy)",
+   "section_signal": "V. Answer the following questions (one point)",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "We live on earth."
+   },
+   "answer_as_printed": "We live on earth.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-5-evs",
+    "at": "2026-11-27T02:29:50+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [],
+   "content_hash": "99e54d1177002923c5f876ba05a216d8bbd2575b1a1cf7f64e3a9ef0e07176ed",
+   "topic_ids": [
+    "evs-5-14-s01"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-5-14-s5-q028",
+   "class": "5",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-5-14",
+   "syllabus_map_version": "evs-5-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Identify the Sun and its family (Solar System) and name the planets in order from the Sun."
+    },
+    {
+     "number": "2",
+     "text_as_printed": "Explain the characteristics of the Sun and its importance for life on Earth."
+    },
+    {
+     "number": "3",
+     "text_as_printed": "Describe the shape and size of the Earth and understand why it is called a geoid."
+    },
+    {
+     "number": "4",
+     "text_as_printed": "Understand the Earth’s movements — rotation and revolution — and explain how these cause day and night, and the year."
+    },
+    {
+     "number": "5",
+     "text_as_printed": "Describe the features of the eight planets including facts about Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune."
+    },
+    {
+     "number": "6",
+     "text_as_printed": "Explain the difference between the geocentric and heliocentric models of the solar system."
+    },
+    {
+     "number": "7",
+     "text_as_printed": "Understand what meteoroids, asteroids, and comets are, and describe their characteristics."
+    },
+    {
+     "number": "8",
+     "text_as_printed": "Describe the Moon as the Earth’s natural satellite and explain its movements — rotation and revolution."
+    },
+    {
+     "number": "9",
+     "text_as_printed": "Explain the phases of the Moon and how the Moon reflects sunlight."
+    },
+    {
+     "number": "10",
+     "text_as_printed": "Recognize why Earth is a unique planet with ideal conditions to support life."
+    },
+    {
+     "number": "11",
+     "text_as_printed": "Develop basic observational skills by watching the sky and identifying stars, shooting stars, and other celestial phenomena."
+    },
+    {
+     "number": "12",
+     "text_as_printed": "Engage in activities that demonstrate the movements of the Earth and planets to better understand their orbits and rotations."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "What can we see in the sky at night?",
+   "source": "lba",
+   "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s5-q028",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s5-q028",
+     "pdf_page": 61,
+     "printed_page": 61,
+     "y": 385.562964,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s5-q028-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 670.187615,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-5-evs",
+     "role": "extraction",
+     "at": "2026-11-27T02:29:50+05:30"
+    }
+   ],
+   "created_by": "class-5-evs",
+   "created_at": "2026-11-27T02:29:50+05:30",
+   "text_as_printed": "What can we see in the sky at night? (Easy)",
+   "section_signal": "V. Answer the following questions (one point)",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "We see the moon, the stars and sometimes the planets."
+   },
+   "answer_as_printed": "We see the moon, the stars and sometimes the planets.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-5-evs",
+    "at": "2026-11-27T02:29:50+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [],
+   "content_hash": "c37eece3e110a8539c32e84d45703e682e172a852f72dc594fe63d80c41e1ecf",
+   "topic_ids": [
+    "evs-5-14-s01",
+    "evs-5-14-s03"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-5-14-s5-q029",
+   "class": "5",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-5-14",
+   "syllabus_map_version": "evs-5-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Identify the Sun and its family (Solar System) and name the planets in order from the Sun."
+    },
+    {
+     "number": "2",
+     "text_as_printed": "Explain the characteristics of the Sun and its importance for life on Earth."
+    },
+    {
+     "number": "3",
+     "text_as_printed": "Describe the shape and size of the Earth and understand why it is called a geoid."
+    },
+    {
+     "number": "4",
+     "text_as_printed": "Understand the Earth’s movements — rotation and revolution — and explain how these cause day and night, and the year."
+    },
+    {
+     "number": "5",
+     "text_as_printed": "Describe the features of the eight planets including facts about Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune."
+    },
+    {
+     "number": "6",
+     "text_as_printed": "Explain the difference between the geocentric and heliocentric models of the solar system."
+    },
+    {
+     "number": "7",
+     "text_as_printed": "Understand what meteoroids, asteroids, and comets are, and describe their characteristics."
+    },
+    {
+     "number": "8",
+     "text_as_printed": "Describe the Moon as the Earth’s natural satellite and explain its movements — rotation and revolution."
+    },
+    {
+     "number": "9",
+     "text_as_printed": "Explain the phases of the Moon and how the Moon reflects sunlight."
+    },
+    {
+     "number": "10",
+     "text_as_printed": "Recognize why Earth is a unique planet with ideal conditions to support life."
+    },
+    {
+     "number": "11",
+     "text_as_printed": "Develop basic observational skills by watching the sky and identifying stars, shooting stars, and other celestial phenomena."
+    },
+    {
+     "number": "12",
+     "text_as_printed": "Engage in activities that demonstrate the movements of the Earth and planets to better understand their orbits and rotations."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "What is the moon?",
+   "source": "lba",
+   "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s5-q029",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s5-q029",
+     "pdf_page": 61,
+     "printed_page": 61,
+     "y": 400.202933,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s5-q029-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 686.147591,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-5-evs",
+     "role": "extraction",
+     "at": "2026-11-27T02:29:50+05:30"
+    }
+   ],
+   "created_by": "class-5-evs",
+   "created_at": "2026-11-27T02:29:50+05:30",
+   "text_as_printed": "What is the moon? (Easy)",
+   "section_signal": "V. Answer the following questions (one point)",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "The moon is the earth's natural satellite."
+   },
+   "answer_as_printed": "The moon is the earth's natural satellite.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-5-evs",
+    "at": "2026-11-27T02:29:50+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [],
+   "content_hash": "9bde7e381e76de2444512fa2f6c92fc42e1e24a16863f1e17577840ee60ae717",
+   "topic_ids": [
+    "evs-5-14-s03"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-5-14-s5-q030",
+   "class": "5",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-5-14",
+   "syllabus_map_version": "evs-5-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Identify the Sun and its family (Solar System) and name the planets in order from the Sun."
+    },
+    {
+     "number": "2",
+     "text_as_printed": "Explain the characteristics of the Sun and its importance for life on Earth."
+    },
+    {
+     "number": "3",
+     "text_as_printed": "Describe the shape and size of the Earth and understand why it is called a geoid."
+    },
+    {
+     "number": "4",
+     "text_as_printed": "Understand the Earth’s movements — rotation and revolution — and explain how these cause day and night, and the year."
+    },
+    {
+     "number": "5",
+     "text_as_printed": "Describe the features of the eight planets including facts about Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune."
+    },
+    {
+     "number": "6",
+     "text_as_printed": "Explain the difference between the geocentric and heliocentric models of the solar system."
+    },
+    {
+     "number": "7",
+     "text_as_printed": "Understand what meteoroids, asteroids, and comets are, and describe their characteristics."
+    },
+    {
+     "number": "8",
+     "text_as_printed": "Describe the Moon as the Earth’s natural satellite and explain its movements — rotation and revolution."
+    },
+    {
+     "number": "9",
+     "text_as_printed": "Explain the phases of the Moon and how the Moon reflects sunlight."
+    },
+    {
+     "number": "10",
+     "text_as_printed": "Recognize why Earth is a unique planet with ideal conditions to support life."
+    },
+    {
+     "number": "11",
+     "text_as_printed": "Develop basic observational skills by watching the sky and identifying stars, shooting stars, and other celestial phenomena."
+    },
+    {
+     "number": "12",
+     "text_as_printed": "Engage in activities that demonstrate the movements of the Earth and planets to better understand their orbits and rotations."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Why do stars shine?",
+   "source": "lba",
+   "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s5-q030",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s5-q030",
+     "pdf_page": 61,
+     "printed_page": 61,
+     "y": 414.842948,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s5-q030-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 701.987587,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-5-evs",
+     "role": "extraction",
+     "at": "2026-11-27T02:29:50+05:30"
+    }
+   ],
+   "created_by": "class-5-evs",
+   "created_at": "2026-11-27T02:29:50+05:30",
+   "text_as_printed": "Why do stars shine? (Easy)",
+   "section_signal": "V. Answer the following questions (one point)",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "The stars are illuminated by the earth's atmosphere."
+   },
+   "answer_as_printed": "The stars are illuminated by the earth's atmosphere.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-5-evs",
+    "at": "2026-11-27T02:29:50+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "printed key contradicts fact — stars shine by their own light (the lesson's own q16 and q32), not because they are 'illuminated by the earth's atmosphere'; reviewer",
+     "why_not_corrected": "printed key kept verbatim",
+     "suggested": "review"
+    }
+   ],
+   "content_hash": "85019e98a58ade97f792f9ef0f128224ee04f06bee05ce351cb032d809eac36d",
+   "topic_ids": [
+    "evs-5-14-s01"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-5-14-s6-q031",
+   "class": "5",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-5-14",
+   "syllabus_map_version": "evs-5-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Identify the Sun and its family (Solar System) and name the planets in order from the Sun."
+    },
+    {
+     "number": "2",
+     "text_as_printed": "Explain the characteristics of the Sun and its importance for life on Earth."
+    },
+    {
+     "number": "3",
+     "text_as_printed": "Describe the shape and size of the Earth and understand why it is called a geoid."
+    },
+    {
+     "number": "4",
+     "text_as_printed": "Understand the Earth’s movements — rotation and revolution — and explain how these cause day and night, and the year."
+    },
+    {
+     "number": "5",
+     "text_as_printed": "Describe the features of the eight planets including facts about Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune."
+    },
+    {
+     "number": "6",
+     "text_as_printed": "Explain the difference between the geocentric and heliocentric models of the solar system."
+    },
+    {
+     "number": "7",
+     "text_as_printed": "Understand what meteoroids, asteroids, and comets are, and describe their characteristics."
+    },
+    {
+     "number": "8",
+     "text_as_printed": "Describe the Moon as the Earth’s natural satellite and explain its movements — rotation and revolution."
+    },
+    {
+     "number": "9",
+     "text_as_printed": "Explain the phases of the Moon and how the Moon reflects sunlight."
+    },
+    {
+     "number": "10",
+     "text_as_printed": "Recognize why Earth is a unique planet with ideal conditions to support life."
+    },
+    {
+     "number": "11",
+     "text_as_printed": "Develop basic observational skills by watching the sky and identifying stars, shooting stars, and other celestial phenomena."
+    },
+    {
+     "number": "12",
+     "text_as_printed": "Engage in activities that demonstrate the movements of the Earth and planets to better understand their orbits and rotations."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Write down the two features of the moon.",
+   "source": "lba",
+   "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s6-q031",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s6-q031",
+     "pdf_page": 61,
+     "printed_page": 61,
+     "y": 462.842948,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s6-q031-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 736.427574,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-5-evs",
+     "role": "extraction",
+     "at": "2026-11-27T02:29:50+05:30"
+    }
+   ],
+   "created_by": "class-5-evs",
+   "created_at": "2026-11-27T02:29:50+05:30",
+   "text_as_printed": "Write down the two features of the moon. (Easy)",
+   "section_signal": "VI. Answer the following questions (Two marks questions)",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Reflects light, has no light of its own"
+   },
+   "answer_as_printed": "Reflects light, has no light of its own",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-5-evs",
+    "at": "2026-11-27T02:29:50+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [],
+   "content_hash": "28d4af772304906f591578e0472217acee24951d24d2df78b15660d16211256a",
+   "topic_ids": [
+    "evs-5-14-s03"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-5-14-s6-q032",
+   "class": "5",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-5-14",
+   "syllabus_map_version": "evs-5-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Identify the Sun and its family (Solar System) and name the planets in order from the Sun."
+    },
+    {
+     "number": "2",
+     "text_as_printed": "Explain the characteristics of the Sun and its importance for life on Earth."
+    },
+    {
+     "number": "3",
+     "text_as_printed": "Describe the shape and size of the Earth and understand why it is called a geoid."
+    },
+    {
+     "number": "4",
+     "text_as_printed": "Understand the Earth’s movements — rotation and revolution — and explain how these cause day and night, and the year."
+    },
+    {
+     "number": "5",
+     "text_as_printed": "Describe the features of the eight planets including facts about Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune."
+    },
+    {
+     "number": "6",
+     "text_as_printed": "Explain the difference between the geocentric and heliocentric models of the solar system."
+    },
+    {
+     "number": "7",
+     "text_as_printed": "Understand what meteoroids, asteroids, and comets are, and describe their characteristics."
+    },
+    {
+     "number": "8",
+     "text_as_printed": "Describe the Moon as the Earth’s natural satellite and explain its movements — rotation and revolution."
+    },
+    {
+     "number": "9",
+     "text_as_printed": "Explain the phases of the Moon and how the Moon reflects sunlight."
+    },
+    {
+     "number": "10",
+     "text_as_printed": "Recognize why Earth is a unique planet with ideal conditions to support life."
+    },
+    {
+     "number": "11",
+     "text_as_printed": "Develop basic observational skills by watching the sky and identifying stars, shooting stars, and other celestial phenomena."
+    },
+    {
+     "number": "12",
+     "text_as_printed": "Engage in activities that demonstrate the movements of the Earth and planets to better understand their orbits and rotations."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "What is a star?",
+   "source": "lba",
+   "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s6-q032",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s6-q032",
+     "pdf_page": 61,
+     "printed_page": 61,
+     "y": 477.482963,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s6-q032-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 752.507576,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-5-evs",
+     "role": "extraction",
+     "at": "2026-11-27T02:29:50+05:30"
+    }
+   ],
+   "created_by": "class-5-evs",
+   "created_at": "2026-11-27T02:29:50+05:30",
+   "text_as_printed": "What is a star? (Easy)",
+   "section_signal": "VI. Answer the following questions (Two marks questions)",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "The philosopher who emits light itself is the celestial body"
+   },
+   "answer_as_printed": "The philosopher who emits light itself is the celestial body",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-5-evs",
+    "at": "2026-11-27T02:29:50+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "unclassified — printed key doubted: 'The philosopher who emits light itself is the celestial body' is wrong-looking wording (mistranslation)",
+     "why_not_corrected": "printed key stored verbatim (R-E4a); the key side is a machine translation of a Kannada key — never translated or corrected at extraction",
+     "suggested": "nearest: key text does not address question — the key is printed and placed, but its wording is a transliteration / mistranslation / label form the reviewer must confirm; reviewer: a celestial body that emits its own light"
+    }
+   ],
+   "content_hash": "a666ea3743c66486753ed71b52225dfe8f2d1934cef02db5197b4e467869034d",
+   "topic_ids": [
+    "evs-5-14-s01"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "high",
+   "pending_category": "unclassified"
+  },
+  {
+   "id": "evs-5-14-s6-q033",
+   "class": "5",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-5-14",
+   "syllabus_map_version": "evs-5-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Identify the Sun and its family (Solar System) and name the planets in order from the Sun."
+    },
+    {
+     "number": "2",
+     "text_as_printed": "Explain the characteristics of the Sun and its importance for life on Earth."
+    },
+    {
+     "number": "3",
+     "text_as_printed": "Describe the shape and size of the Earth and understand why it is called a geoid."
+    },
+    {
+     "number": "4",
+     "text_as_printed": "Understand the Earth’s movements — rotation and revolution — and explain how these cause day and night, and the year."
+    },
+    {
+     "number": "5",
+     "text_as_printed": "Describe the features of the eight planets including facts about Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune."
+    },
+    {
+     "number": "6",
+     "text_as_printed": "Explain the difference between the geocentric and heliocentric models of the solar system."
+    },
+    {
+     "number": "7",
+     "text_as_printed": "Understand what meteoroids, asteroids, and comets are, and describe their characteristics."
+    },
+    {
+     "number": "8",
+     "text_as_printed": "Describe the Moon as the Earth’s natural satellite and explain its movements — rotation and revolution."
+    },
+    {
+     "number": "9",
+     "text_as_printed": "Explain the phases of the Moon and how the Moon reflects sunlight."
+    },
+    {
+     "number": "10",
+     "text_as_printed": "Recognize why Earth is a unique planet with ideal conditions to support life."
+    },
+    {
+     "number": "11",
+     "text_as_printed": "Develop basic observational skills by watching the sky and identifying stars, shooting stars, and other celestial phenomena."
+    },
+    {
+     "number": "12",
+     "text_as_printed": "Engage in activities that demonstrate the movements of the Earth and planets to better understand their orbits and rotations."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Name any two planets and write each of the qualities.",
+   "source": "lba",
+   "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s6-q033",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s6-q033",
+     "pdf_page": 61,
+     "printed_page": 61,
+     "y": 492.122977,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s6-q033-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 768.467598,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-5-evs",
+     "role": "extraction",
+     "at": "2026-11-27T02:29:50+05:30"
+    }
+   ],
+   "created_by": "class-5-evs",
+   "created_at": "2026-11-27T02:29:50+05:30",
+   "text_as_printed": "Name any two planets and write each of the qualities. (Easy)",
+   "section_signal": "VI. Answer the following questions (Two marks questions)",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Earth – the only planet with life; Saturn – composed of gases"
+   },
+   "answer_as_printed": "Earth – the only planet with life; Saturn – composed of gases",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-5-evs",
+    "at": "2026-11-27T02:29:50+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [],
+   "content_hash": "12c35ed77538eb87b2aebca6e135b167a81876e325aa887e3c946d2bee259b9d",
+   "topic_ids": [
+    "evs-5-14-s01"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-5-14-s6-q034",
+   "class": "5",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-5-14",
+   "syllabus_map_version": "evs-5-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Identify the Sun and its family (Solar System) and name the planets in order from the Sun."
+    },
+    {
+     "number": "2",
+     "text_as_printed": "Explain the characteristics of the Sun and its importance for life on Earth."
+    },
+    {
+     "number": "3",
+     "text_as_printed": "Describe the shape and size of the Earth and understand why it is called a geoid."
+    },
+    {
+     "number": "4",
+     "text_as_printed": "Understand the Earth’s movements — rotation and revolution — and explain how these cause day and night, and the year."
+    },
+    {
+     "number": "5",
+     "text_as_printed": "Describe the features of the eight planets including facts about Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune."
+    },
+    {
+     "number": "6",
+     "text_as_printed": "Explain the difference between the geocentric and heliocentric models of the solar system."
+    },
+    {
+     "number": "7",
+     "text_as_printed": "Understand what meteoroids, asteroids, and comets are, and describe their characteristics."
+    },
+    {
+     "number": "8",
+     "text_as_printed": "Describe the Moon as the Earth’s natural satellite and explain its movements — rotation and revolution."
+    },
+    {
+     "number": "9",
+     "text_as_printed": "Explain the phases of the Moon and how the Moon reflects sunlight."
+    },
+    {
+     "number": "10",
+     "text_as_printed": "Recognize why Earth is a unique planet with ideal conditions to support life."
+    },
+    {
+     "number": "11",
+     "text_as_printed": "Develop basic observational skills by watching the sky and identifying stars, shooting stars, and other celestial phenomena."
+    },
+    {
+     "number": "12",
+     "text_as_printed": "Engage in activities that demonstrate the movements of the Earth and planets to better understand their orbits and rotations."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "What is the solar system?",
+   "source": "lba",
+   "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s6-q034",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s6-q034",
+     "pdf_page": 61,
+     "printed_page": 61,
+     "y": 506.762946,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s6-q034-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 784.42762,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-5-evs",
+     "role": "extraction",
+     "at": "2026-11-27T02:29:50+05:30"
+    }
+   ],
+   "created_by": "class-5-evs",
+   "created_at": "2026-11-27T02:29:50+05:30",
+   "text_as_printed": "What is the solar system? (Easy)",
+   "section_signal": "VI. Answer the following questions (Two marks questions)",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "The Sun and the planets, satellites, perceptions, comets that revolve around it A system formed by joining"
+   },
+   "answer_as_printed": "The Sun and the planets, satellites, perceptions, comets that revolve around it A system formed by joining",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-5-evs",
+    "at": "2026-11-27T02:29:50+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "unclassified — printed key doubted: 'perceptions' is a mistranslation of asteroids (cf. key 38 'Perceptions (Asteroids)')",
+     "why_not_corrected": "printed key stored verbatim (R-E4a); the key side is a machine translation of a Kannada key — never translated or corrected at extraction",
+     "suggested": "nearest: key text does not address question — the key is printed and placed, but its wording is a transliteration / mistranslation / label form the reviewer must confirm"
+    }
+   ],
+   "content_hash": "a46aaa84d6346cdb2ac44ff159289f94d3039c72376d2e52858b3195e7ec75b2",
+   "topic_ids": [
+    "evs-5-14-s01"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "high",
+   "pending_category": "unclassified"
+  },
+  {
+   "id": "evs-5-14-s6-q035",
+   "class": "5",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-5-14",
+   "syllabus_map_version": "evs-5-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Identify the Sun and its family (Solar System) and name the planets in order from the Sun."
+    },
+    {
+     "number": "2",
+     "text_as_printed": "Explain the characteristics of the Sun and its importance for life on Earth."
+    },
+    {
+     "number": "3",
+     "text_as_printed": "Describe the shape and size of the Earth and understand why it is called a geoid."
+    },
+    {
+     "number": "4",
+     "text_as_printed": "Understand the Earth’s movements — rotation and revolution — and explain how these cause day and night, and the year."
+    },
+    {
+     "number": "5",
+     "text_as_printed": "Describe the features of the eight planets including facts about Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune."
+    },
+    {
+     "number": "6",
+     "text_as_printed": "Explain the difference between the geocentric and heliocentric models of the solar system."
+    },
+    {
+     "number": "7",
+     "text_as_printed": "Understand what meteoroids, asteroids, and comets are, and describe their characteristics."
+    },
+    {
+     "number": "8",
+     "text_as_printed": "Describe the Moon as the Earth’s natural satellite and explain its movements — rotation and revolution."
+    },
+    {
+     "number": "9",
+     "text_as_printed": "Explain the phases of the Moon and how the Moon reflects sunlight."
+    },
+    {
+     "number": "10",
+     "text_as_printed": "Recognize why Earth is a unique planet with ideal conditions to support life."
+    },
+    {
+     "number": "11",
+     "text_as_printed": "Develop basic observational skills by watching the sky and identifying stars, shooting stars, and other celestial phenomena."
+    },
+    {
+     "number": "12",
+     "text_as_printed": "Engage in activities that demonstrate the movements of the Earth and planets to better understand their orbits and rotations."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "What is the approximate diameter in the equator of the Earth?",
+   "source": "lba",
+   "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s6-q035",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s6-q035",
+     "pdf_page": 61,
+     "printed_page": 61,
+     "y": 521.40296,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s6-q035-key",
+     "pdf_page": 113,
+     "printed_page": 113,
+     "y": 52.187591,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-5-evs",
+     "role": "extraction",
+     "at": "2026-11-27T02:29:50+05:30"
+    }
+   ],
+   "created_by": "class-5-evs",
+   "created_at": "2026-11-27T02:29:50+05:30",
+   "section_signal": "VI. Answer the following questions (Two marks questions)",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "About 12,756 kilometers"
+   },
+   "answer_as_printed": "About 12,756 kilometers",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-5-evs",
+    "at": "2026-11-27T02:29:50+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "neither the question nor its section heading prints a difficulty tag; assigning one needs subject judgement",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "6c45de88d39c43a72031ff58abd85fd1305540b375c3d2367a5f607f5c01718b",
+   "topic_ids": [
+    "evs-5-14-s01",
+    "evs-5-14-s02",
+    "evs-5-14-s03"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "low"
+  },
+  {
+   "id": "evs-5-14-s6-q036",
+   "class": "5",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-5-14",
+   "syllabus_map_version": "evs-5-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Identify the Sun and its family (Solar System) and name the planets in order from the Sun."
+    },
+    {
+     "number": "2",
+     "text_as_printed": "Explain the characteristics of the Sun and its importance for life on Earth."
+    },
+    {
+     "number": "3",
+     "text_as_printed": "Describe the shape and size of the Earth and understand why it is called a geoid."
+    },
+    {
+     "number": "4",
+     "text_as_printed": "Understand the Earth’s movements — rotation and revolution — and explain how these cause day and night, and the year."
+    },
+    {
+     "number": "5",
+     "text_as_printed": "Describe the features of the eight planets including facts about Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune."
+    },
+    {
+     "number": "6",
+     "text_as_printed": "Explain the difference between the geocentric and heliocentric models of the solar system."
+    },
+    {
+     "number": "7",
+     "text_as_printed": "Understand what meteoroids, asteroids, and comets are, and describe their characteristics."
+    },
+    {
+     "number": "8",
+     "text_as_printed": "Describe the Moon as the Earth’s natural satellite and explain its movements — rotation and revolution."
+    },
+    {
+     "number": "9",
+     "text_as_printed": "Explain the phases of the Moon and how the Moon reflects sunlight."
+    },
+    {
+     "number": "10",
+     "text_as_printed": "Recognize why Earth is a unique planet with ideal conditions to support life."
+    },
+    {
+     "number": "11",
+     "text_as_printed": "Develop basic observational skills by watching the sky and identifying stars, shooting stars, and other celestial phenomena."
+    },
+    {
+     "number": "12",
+     "text_as_printed": "Engage in activities that demonstrate the movements of the Earth and planets to better understand their orbits and rotations."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Which planet is known as the \"morning spot\" or \"evening dot\"?",
+   "source": "lba",
+   "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s6-q036",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s6-q036",
+     "pdf_page": 61,
+     "printed_page": 61,
+     "y": 535.082954,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s6-q036-key",
+     "pdf_page": 113,
+     "printed_page": 113,
+     "y": 68.147597,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-5-evs",
+     "role": "extraction",
+     "at": "2026-11-27T02:29:50+05:30"
+    }
+   ],
+   "created_by": "class-5-evs",
+   "created_at": "2026-11-27T02:29:50+05:30",
+   "section_signal": "VI. Answer the following questions (Two marks questions)",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Venus"
+   },
+   "answer_as_printed": "Venus",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-5-evs",
+    "at": "2026-11-27T02:29:50+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "neither the question nor its section heading prints a difficulty tag; assigning one needs subject judgement",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "76d88a7e99970134d03a108add8e95912cd9b63dcd12a2e0f5ba61a4309540b2",
+   "topic_ids": [
+    "evs-5-14-s01"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-5-14-s6-q037",
+   "class": "5",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-5-14",
+   "syllabus_map_version": "evs-5-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Identify the Sun and its family (Solar System) and name the planets in order from the Sun."
+    },
+    {
+     "number": "2",
+     "text_as_printed": "Explain the characteristics of the Sun and its importance for life on Earth."
+    },
+    {
+     "number": "3",
+     "text_as_printed": "Describe the shape and size of the Earth and understand why it is called a geoid."
+    },
+    {
+     "number": "4",
+     "text_as_printed": "Understand the Earth’s movements — rotation and revolution — and explain how these cause day and night, and the year."
+    },
+    {
+     "number": "5",
+     "text_as_printed": "Describe the features of the eight planets including facts about Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune."
+    },
+    {
+     "number": "6",
+     "text_as_printed": "Explain the difference between the geocentric and heliocentric models of the solar system."
+    },
+    {
+     "number": "7",
+     "text_as_printed": "Understand what meteoroids, asteroids, and comets are, and describe their characteristics."
+    },
+    {
+     "number": "8",
+     "text_as_printed": "Describe the Moon as the Earth’s natural satellite and explain its movements — rotation and revolution."
+    },
+    {
+     "number": "9",
+     "text_as_printed": "Explain the phases of the Moon and how the Moon reflects sunlight."
+    },
+    {
+     "number": "10",
+     "text_as_printed": "Recognize why Earth is a unique planet with ideal conditions to support life."
+    },
+    {
+     "number": "11",
+     "text_as_printed": "Develop basic observational skills by watching the sky and identifying stars, shooting stars, and other celestial phenomena."
+    },
+    {
+     "number": "12",
+     "text_as_printed": "Engage in activities that demonstrate the movements of the Earth and planets to better understand their orbits and rotations."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "What is the common name for debris that enters the Earth's atmosphere and looks like a line of light?",
+   "source": "lba",
+   "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s6-q037",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s6-q037",
+     "pdf_page": 61,
+     "printed_page": 61,
+     "y": 548.762946,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s6-q037-key",
+     "pdf_page": 113,
+     "printed_page": 113,
+     "y": 84.227593,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-5-evs",
+     "role": "extraction",
+     "at": "2026-11-27T02:29:50+05:30"
+    }
+   ],
+   "created_by": "class-5-evs",
+   "created_at": "2026-11-27T02:29:50+05:30",
+   "section_signal": "VI. Answer the following questions (Two marks questions)",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Meteor shower"
+   },
+   "answer_as_printed": "Meteor shower",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-5-evs",
+    "at": "2026-11-27T02:29:50+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "neither the question nor its section heading prints a difficulty tag; assigning one needs subject judgement",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "599646b351995583d220bd1d8cc59fcfe0dc1a4cf078891f8956adddb654958a",
+   "topic_ids": [
+    "evs-5-14-s01"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-5-14-s6-q038",
+   "class": "5",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-5-14",
+   "syllabus_map_version": "evs-5-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Identify the Sun and its family (Solar System) and name the planets in order from the Sun."
+    },
+    {
+     "number": "2",
+     "text_as_printed": "Explain the characteristics of the Sun and its importance for life on Earth."
+    },
+    {
+     "number": "3",
+     "text_as_printed": "Describe the shape and size of the Earth and understand why it is called a geoid."
+    },
+    {
+     "number": "4",
+     "text_as_printed": "Understand the Earth’s movements — rotation and revolution — and explain how these cause day and night, and the year."
+    },
+    {
+     "number": "5",
+     "text_as_printed": "Describe the features of the eight planets including facts about Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune."
+    },
+    {
+     "number": "6",
+     "text_as_printed": "Explain the difference between the geocentric and heliocentric models of the solar system."
+    },
+    {
+     "number": "7",
+     "text_as_printed": "Understand what meteoroids, asteroids, and comets are, and describe their characteristics."
+    },
+    {
+     "number": "8",
+     "text_as_printed": "Describe the Moon as the Earth’s natural satellite and explain its movements — rotation and revolution."
+    },
+    {
+     "number": "9",
+     "text_as_printed": "Explain the phases of the Moon and how the Moon reflects sunlight."
+    },
+    {
+     "number": "10",
+     "text_as_printed": "Recognize why Earth is a unique planet with ideal conditions to support life."
+    },
+    {
+     "number": "11",
+     "text_as_printed": "Develop basic observational skills by watching the sky and identifying stars, shooting stars, and other celestial phenomena."
+    },
+    {
+     "number": "12",
+     "text_as_printed": "Engage in activities that demonstrate the movements of the Earth and planets to better understand their orbits and rotations."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Which celestial bodies are found between the orbits of Mars and Jupiter?",
+   "source": "lba",
+   "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s6-q038",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s6-q038",
+     "pdf_page": 61,
+     "printed_page": 61,
+     "y": 562.442939,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s6-q038-key",
+     "pdf_page": 113,
+     "printed_page": 113,
+     "y": 100.187591,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-5-evs",
+     "role": "extraction",
+     "at": "2026-11-27T02:29:50+05:30"
+    }
+   ],
+   "created_by": "class-5-evs",
+   "created_at": "2026-11-27T02:29:50+05:30",
+   "section_signal": "VI. Answer the following questions (Two marks questions)",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Perceptions (Asteroids)"
+   },
+   "answer_as_printed": "Perceptions (Asteroids)",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-5-evs",
+    "at": "2026-11-27T02:29:50+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "neither the question nor its section heading prints a difficulty tag; assigning one needs subject judgement",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "unclassified — printed key doubted: 'Perceptions (Asteroids)' — 'Perceptions' is a mistranslation",
+     "why_not_corrected": "printed key stored verbatim (R-E4a); the key side is a machine translation of a Kannada key — never translated or corrected at extraction",
+     "suggested": "nearest: key text does not address question — the key is printed and placed, but its wording is a transliteration / mistranslation / label form the reviewer must confirm; reviewer: Asteroids"
+    }
+   ],
+   "content_hash": "a26161942db27e9400f0b20ee86c8e25960b632f157efbe7c20548cfab237687",
+   "topic_ids": [
+    "evs-5-14-s01"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "high",
+   "pending_category": "unclassified"
+  },
+  {
+   "id": "evs-5-14-s6-q039",
+   "class": "5",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-5-14",
+   "syllabus_map_version": "evs-5-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Identify the Sun and its family (Solar System) and name the planets in order from the Sun."
+    },
+    {
+     "number": "2",
+     "text_as_printed": "Explain the characteristics of the Sun and its importance for life on Earth."
+    },
+    {
+     "number": "3",
+     "text_as_printed": "Describe the shape and size of the Earth and understand why it is called a geoid."
+    },
+    {
+     "number": "4",
+     "text_as_printed": "Understand the Earth’s movements — rotation and revolution — and explain how these cause day and night, and the year."
+    },
+    {
+     "number": "5",
+     "text_as_printed": "Describe the features of the eight planets including facts about Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune."
+    },
+    {
+     "number": "6",
+     "text_as_printed": "Explain the difference between the geocentric and heliocentric models of the solar system."
+    },
+    {
+     "number": "7",
+     "text_as_printed": "Understand what meteoroids, asteroids, and comets are, and describe their characteristics."
+    },
+    {
+     "number": "8",
+     "text_as_printed": "Describe the Moon as the Earth’s natural satellite and explain its movements — rotation and revolution."
+    },
+    {
+     "number": "9",
+     "text_as_printed": "Explain the phases of the Moon and how the Moon reflects sunlight."
+    },
+    {
+     "number": "10",
+     "text_as_printed": "Recognize why Earth is a unique planet with ideal conditions to support life."
+    },
+    {
+     "number": "11",
+     "text_as_printed": "Develop basic observational skills by watching the sky and identifying stars, shooting stars, and other celestial phenomena."
+    },
+    {
+     "number": "12",
+     "text_as_printed": "Engage in activities that demonstrate the movements of the Earth and planets to better understand their orbits and rotations."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "What is earth's only natural satellite?",
+   "source": "lba",
+   "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s6-q039",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s6-q039",
+     "pdf_page": 61,
+     "printed_page": 61,
+     "y": 576.002951,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s6-q039-key",
+     "pdf_page": 113,
+     "printed_page": 113,
+     "y": 116.147591,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-5-evs",
+     "role": "extraction",
+     "at": "2026-11-27T02:29:50+05:30"
+    }
+   ],
+   "created_by": "class-5-evs",
+   "created_at": "2026-11-27T02:29:50+05:30",
+   "section_signal": "VI. Answer the following questions (Two marks questions)",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Moon"
+   },
+   "answer_as_printed": "Moon",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-5-evs",
+    "at": "2026-11-27T02:29:50+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "neither the question nor its section heading prints a difficulty tag; assigning one needs subject judgement",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "duplicate of evs-5-14-s1-q005",
+     "why_not_corrected": "same stem printed as an MCQ (q5) and in VI (q39); two questions, ids by label (v1.4 §14.3)",
+     "suggested": "keys agree (moon) — review"
+    }
+   ],
+   "content_hash": "7ff6169570870c5a94da6a8dddd174302a135f131ac74d31f9e172136e34c9f8",
+   "topic_ids": [
+    "evs-5-14-s03"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-5-14-s7-q040",
+   "class": "5",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-5-14",
+   "syllabus_map_version": "evs-5-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Hard",
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Identify the Sun and its family (Solar System) and name the planets in order from the Sun."
+    },
+    {
+     "number": "2",
+     "text_as_printed": "Explain the characteristics of the Sun and its importance for life on Earth."
+    },
+    {
+     "number": "3",
+     "text_as_printed": "Describe the shape and size of the Earth and understand why it is called a geoid."
+    },
+    {
+     "number": "4",
+     "text_as_printed": "Understand the Earth’s movements — rotation and revolution — and explain how these cause day and night, and the year."
+    },
+    {
+     "number": "5",
+     "text_as_printed": "Describe the features of the eight planets including facts about Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune."
+    },
+    {
+     "number": "6",
+     "text_as_printed": "Explain the difference between the geocentric and heliocentric models of the solar system."
+    },
+    {
+     "number": "7",
+     "text_as_printed": "Understand what meteoroids, asteroids, and comets are, and describe their characteristics."
+    },
+    {
+     "number": "8",
+     "text_as_printed": "Describe the Moon as the Earth’s natural satellite and explain its movements — rotation and revolution."
+    },
+    {
+     "number": "9",
+     "text_as_printed": "Explain the phases of the Moon and how the Moon reflects sunlight."
+    },
+    {
+     "number": "10",
+     "text_as_printed": "Recognize why Earth is a unique planet with ideal conditions to support life."
+    },
+    {
+     "number": "11",
+     "text_as_printed": "Develop basic observational skills by watching the sky and identifying stars, shooting stars, and other celestial phenomena."
+    },
+    {
+     "number": "12",
+     "text_as_printed": "Engage in activities that demonstrate the movements of the Earth and planets to better understand their orbits and rotations."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Explain the sun and its significance.",
+   "source": "lba",
+   "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s7-q040",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s7-q040",
+     "pdf_page": 61,
+     "printed_page": 61,
+     "y": 620.762946,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s7-q040-key",
+     "pdf_page": 113,
+     "printed_page": 113,
+     "y": 150.827595,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-5-evs",
+     "role": "extraction",
+     "at": "2026-11-27T02:29:50+05:30"
+    }
+   ],
+   "created_by": "class-5-evs",
+   "created_at": "2026-11-27T02:29:50+05:30",
+   "text_as_printed": "Explain the sun and its significance.(Hard)",
+   "section_signal": "VII. Answer the following questions (three marks questions)",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "The Sun is the center of the solar system, the star that gives light and heat to itself. It is very essential for the rise of life on earth. Plants use sunlight for food production and are also a source of solar energy."
+   },
+   "answer_as_printed": "The Sun is the center of the solar system, the star that gives light and heat to itself. It is very essential for the rise of life on earth. Plants use sunlight for food production and are also a source of solar energy.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-5-evs",
+    "at": "2026-11-27T02:29:50+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [],
+   "content_hash": "d2111ad3986a3408bfb6ccf0d134c501404f3cc651ff8fd2b483f2be34b75611",
+   "topic_ids": [
+    "evs-5-14-s01"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-5-14-s7-q041",
+   "class": "5",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-5-14",
+   "syllabus_map_version": "evs-5-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Hard",
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Identify the Sun and its family (Solar System) and name the planets in order from the Sun."
+    },
+    {
+     "number": "2",
+     "text_as_printed": "Explain the characteristics of the Sun and its importance for life on Earth."
+    },
+    {
+     "number": "3",
+     "text_as_printed": "Describe the shape and size of the Earth and understand why it is called a geoid."
+    },
+    {
+     "number": "4",
+     "text_as_printed": "Understand the Earth’s movements — rotation and revolution — and explain how these cause day and night, and the year."
+    },
+    {
+     "number": "5",
+     "text_as_printed": "Describe the features of the eight planets including facts about Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune."
+    },
+    {
+     "number": "6",
+     "text_as_printed": "Explain the difference between the geocentric and heliocentric models of the solar system."
+    },
+    {
+     "number": "7",
+     "text_as_printed": "Understand what meteoroids, asteroids, and comets are, and describe their characteristics."
+    },
+    {
+     "number": "8",
+     "text_as_printed": "Describe the Moon as the Earth’s natural satellite and explain its movements — rotation and revolution."
+    },
+    {
+     "number": "9",
+     "text_as_printed": "Explain the phases of the Moon and how the Moon reflects sunlight."
+    },
+    {
+     "number": "10",
+     "text_as_printed": "Recognize why Earth is a unique planet with ideal conditions to support life."
+    },
+    {
+     "number": "11",
+     "text_as_printed": "Develop basic observational skills by watching the sky and identifying stars, shooting stars, and other celestial phenomena."
+    },
+    {
+     "number": "12",
+     "text_as_printed": "Engage in activities that demonstrate the movements of the Earth and planets to better understand their orbits and rotations."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Write the names of the five planets in the solar system.",
+   "source": "lba",
+   "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s7-q041",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s7-q041",
+     "pdf_page": 61,
+     "printed_page": 61,
+     "y": 635.40296,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s7-q041-key",
+     "pdf_page": 113,
+     "printed_page": 113,
+     "y": 182.747604,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-5-evs",
+     "role": "extraction",
+     "at": "2026-11-27T02:29:50+05:30"
+    }
+   ],
+   "created_by": "class-5-evs",
+   "created_at": "2026-11-27T02:29:50+05:30",
+   "text_as_printed": "Write the names of the five planets in the solar system. (Hard)",
+   "section_signal": "VII. Answer the following questions (three marks questions)",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Earth, Mars, Mercury, Venus, Saturn"
+   },
+   "answer_as_printed": "Earth, Mars, Mercury, Venus, Saturn",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-5-evs",
+    "at": "2026-11-27T02:29:50+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [],
+   "content_hash": "367f445ff702af85eb549a47fe18006aff27e45d29005165abff1cd4f9c9791e",
+   "topic_ids": [
+    "evs-5-14-s01"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-5-14-s7-q042",
+   "class": "5",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-5-14",
+   "syllabus_map_version": "evs-5-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Hard",
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Identify the Sun and its family (Solar System) and name the planets in order from the Sun."
+    },
+    {
+     "number": "2",
+     "text_as_printed": "Explain the characteristics of the Sun and its importance for life on Earth."
+    },
+    {
+     "number": "3",
+     "text_as_printed": "Describe the shape and size of the Earth and understand why it is called a geoid."
+    },
+    {
+     "number": "4",
+     "text_as_printed": "Understand the Earth’s movements — rotation and revolution — and explain how these cause day and night, and the year."
+    },
+    {
+     "number": "5",
+     "text_as_printed": "Describe the features of the eight planets including facts about Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune."
+    },
+    {
+     "number": "6",
+     "text_as_printed": "Explain the difference between the geocentric and heliocentric models of the solar system."
+    },
+    {
+     "number": "7",
+     "text_as_printed": "Understand what meteoroids, asteroids, and comets are, and describe their characteristics."
+    },
+    {
+     "number": "8",
+     "text_as_printed": "Describe the Moon as the Earth’s natural satellite and explain its movements — rotation and revolution."
+    },
+    {
+     "number": "9",
+     "text_as_printed": "Explain the phases of the Moon and how the Moon reflects sunlight."
+    },
+    {
+     "number": "10",
+     "text_as_printed": "Recognize why Earth is a unique planet with ideal conditions to support life."
+    },
+    {
+     "number": "11",
+     "text_as_printed": "Develop basic observational skills by watching the sky and identifying stars, shooting stars, and other celestial phenomena."
+    },
+    {
+     "number": "12",
+     "text_as_printed": "Engage in activities that demonstrate the movements of the Earth and planets to better understand their orbits and rotations."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Explain the difference between stars and planets.",
+   "source": "lba",
+   "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s7-q042",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s7-q042",
+     "pdf_page": 61,
+     "printed_page": 61,
+     "y": 650.042975,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s7-q042-key",
+     "pdf_page": 113,
+     "printed_page": 113,
+     "y": 198.707603,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-5-evs",
+     "role": "extraction",
+     "at": "2026-11-27T02:29:50+05:30"
+    }
+   ],
+   "created_by": "class-5-evs",
+   "created_at": "2026-11-27T02:29:50+05:30",
+   "text_as_printed": "Explain the difference between stars and planets. (Hard)",
+   "section_signal": "VII. Answer the following questions (three marks questions)",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "The stars themselves save light; The planets reflect light.\nThe stars are very large; The planets are smaller than the star.\nThe stars look steady; The planets seem to be moving."
+   },
+   "answer_as_printed": "The stars themselves save light; The planets reflect light.\nThe stars are very large; The planets are smaller than the star.\nThe stars look steady; The planets seem to be moving.",
+   "solution_steps": [
+    "The stars themselves save light; The planets reflect light.",
+    "The stars are very large; The planets are smaller than the star.",
+    "The stars look steady; The planets seem to be moving."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-5-evs",
+    "at": "2026-11-27T02:29:50+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "unclassified — printed key doubted: 'The stars themselves save light' is wrong-looking wording (mistranslation of 'emit')",
+     "why_not_corrected": "printed key stored verbatim (R-E4a); the key side is a machine translation of a Kannada key — never translated or corrected at extraction",
+     "suggested": "nearest: key text does not address question — the key is printed and placed, but its wording is a transliteration / mistranslation / label form the reviewer must confirm"
+    }
+   ],
+   "content_hash": "608e4f469a4b0ac332f33a82f0f75dd3477eac4fbd86d84bed17241ae3fe990d",
+   "topic_ids": [
+    "evs-5-14-s01"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "high",
+   "pending_category": "unclassified"
+  },
+  {
+   "id": "evs-5-14-s8-q043",
+   "class": "5",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-5-14",
+   "syllabus_map_version": "evs-5-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Hard",
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Identify the Sun and its family (Solar System) and name the planets in order from the Sun."
+    },
+    {
+     "number": "2",
+     "text_as_printed": "Explain the characteristics of the Sun and its importance for life on Earth."
+    },
+    {
+     "number": "3",
+     "text_as_printed": "Describe the shape and size of the Earth and understand why it is called a geoid."
+    },
+    {
+     "number": "4",
+     "text_as_printed": "Understand the Earth’s movements — rotation and revolution — and explain how these cause day and night, and the year."
+    },
+    {
+     "number": "5",
+     "text_as_printed": "Describe the features of the eight planets including facts about Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune."
+    },
+    {
+     "number": "6",
+     "text_as_printed": "Explain the difference between the geocentric and heliocentric models of the solar system."
+    },
+    {
+     "number": "7",
+     "text_as_printed": "Understand what meteoroids, asteroids, and comets are, and describe their characteristics."
+    },
+    {
+     "number": "8",
+     "text_as_printed": "Describe the Moon as the Earth’s natural satellite and explain its movements — rotation and revolution."
+    },
+    {
+     "number": "9",
+     "text_as_printed": "Explain the phases of the Moon and how the Moon reflects sunlight."
+    },
+    {
+     "number": "10",
+     "text_as_printed": "Recognize why Earth is a unique planet with ideal conditions to support life."
+    },
+    {
+     "number": "11",
+     "text_as_printed": "Develop basic observational skills by watching the sky and identifying stars, shooting stars, and other celestial phenomena."
+    },
+    {
+     "number": "12",
+     "text_as_printed": "Engage in activities that demonstrate the movements of the Earth and planets to better understand their orbits and rotations."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Make a model of the solar system using cardboard, paper balls and colours.Write the names of the sun's family.Join your friends in the class and do the activity with the help of your teacher",
+   "source": "lba",
+   "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s8-q043",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s8-q043",
+     "pdf_page": 61,
+     "printed_page": 61,
+     "y": 705.962973,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "5thLBA-EVS-EM.pdf#evs-5-14-s8-q043-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-5-evs",
+     "role": "extraction",
+     "at": "2026-11-27T02:29:50+05:30"
+    }
+   ],
+   "created_by": "class-5-evs",
+   "created_at": "2026-11-27T02:29:50+05:30",
+   "text_as_printed": "Make a model of the solar system using cardboard, paper balls and colours.Write the names of the sun's family.Join your friends in the class and do the activity with the help of your teacher)",
+   "section_signal": "VIII. Project Work (Four Marks Question)",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "no answer printed",
+     "why_not_corrected": "the answer side ends lesson 14 after key 42 ('******', pdf 113); the model-making project prints no key",
+     "suggested": "key absent — review"
+    }
+   ],
+   "content_hash": "16a97890cdebc48727dd10857820afff77484522100888b74cd9ffefdd2f4923",
+   "topic_ids": [
+    "evs-5-14-s01"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "high"
+  }
+ ],
+ "pending_summary": {
+  "unclassified": 13
+ }
+}
