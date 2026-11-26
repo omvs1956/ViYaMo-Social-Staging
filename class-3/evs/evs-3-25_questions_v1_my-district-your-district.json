@@ -1,0 +1,1865 @@
+{
+ "contract_version": "1.7",
+ "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
+ "procedure_file": "extraction_procedure_social_addendum_v1.4_social science Classes 6-10 on top of procedure v2.md",
+ "machine_name": "evs-3-25_questions",
+ "version": 1,
+ "changelog": "v1 extraction — batch-01 — class-3-evs",
+ "amendments_applied": [],
+ "unit_state": "EXTRACTED",
+ "review_ready": false,
+ "count_gate": {
+  "reference": 20,
+  "reference_source": "audited",
+  "extracted": 20,
+  "paired": 19,
+  "flagged": 3,
+  "gaps": [],
+  "duplicated_numbers": [],
+  "quota_table": "difficulty_only",
+  "second_method": {
+   "method": "printed BLUE PRINT difficulty table total (Easy 10 + Average 5 + Difficulty 5 = 20), pdf 95; independently, the answer side's keys counted",
+   "extracted": 20,
+   "agrees": true
+  },
+  "pass": true,
+  "note": "Question side labels 1-20 monotonic, no gaps, no duplicates (I 1-5, II 6-10, III 11-15, IV 16-20). Answer side keys 1-20 in order (pdf 127-128). BLUE PRINT 10/5/5 = 20 = audited count. Difficulty per question: easy 0, average 0, difficult 0, untagged 20."
+ },
+ "extraction": {
+  "source_file": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf",
+  "source_ref_prefix": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf",
+  "pdf_pages": [
+   95,
+   96,
+   97,
+   127,
+   128
+  ],
+  "printed_page_offset": 0,
+  "method_notes": [
+   "Pages: Q pdf 95 (heading, LO 13, BLUE PRINT, q1-4) 96 (q5-15) 97 (q16-20). A side 'Key Answers Lesson25 My district- Your district' pdf 127 (keys 1-8) 128 (9-20). Folios = pdf page.",
+   "ANSWER SIDE (analysed first): keys 1-20 answer q1-q20 by printed number (aligned). Open answers stored as printed (coordinator rev 5): q3, q4 'Own'; q19, q20 'Write in their own districts' (instruction keys, verbatim, unflagged — as the cleared Class-4 instruction key).",
+   "BILINGUAL: Kannada dropped; keys 6 and 7 (pdf 127) and key 16 (pdf 128) are followed by legacy-Nudi junk on the same line — cut off (both Kannada greps 0).",
+   "Sections: s1 I fill q1-5; s2 II match q6-10 (numbered rows -> one-pair match; keys 6 'Taluk' and 7 'District' flagged against column B 'TalukCenter' / 'District headquarters'); s3 III odd-one-out q11-15 (four unlettered words -> mcq ids A-D by printed order; word keys match by pass 1 except q14 'Potato', which names no option -> null + 'key text not among options' — the options are four towns in the Kannada line, 'Cup' rendering Koppa and the key 'Potato' rendering Alur); s4 IV q16-20.",
+   "MARKS (R-E9, rev 3): every header's N equals its printed count -> 1 on all four sections.",
+   "MAP: no map question in this lesson (survey and read); no printed map either side.",
+   "DIFFICULTY: none printed -> null + 'no difficulty tag'. quota_table difficulty_only; second method = BLUE PRINT total 20 (agrees). LO (R-E10): lesson LO 13, lo_source 'lesson_table'.",
+   "FIGURES: none on these pages. TOPIC evs-3-25-t00 / chapter / high (R-E3)."
+  ],
+  "notation_summary": {
+   "render_tokens": 0,
+   "latex_tokens": 0,
+   "damage_flags": []
+  },
+  "excluded_objects": [],
+  "inline_excluded_count": 0,
+  "figure_references": []
+ },
+ "stimuli": [],
+ "questions": [
+  {
+   "id": "evs-3-25-s1-q001",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-25",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "-Draws sketches of the Immediate surroundings -Identify the directions, Locates the places."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Many hobli’s together form a _________",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-25-s1-q001",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-25-s1-q001",
+     "pdf_page": 95,
+     "printed_page": 95,
+     "y": 597.773,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-25-s1-q001-key",
+     "pdf_page": 127,
+     "printed_page": 127,
+     "y": 637.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:40:51+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:40:51+05:30",
+   "section_signal": "I. Fill in the blanks with suitable answers :-",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "taluks"
+   },
+   "answer_as_printed": "I.1. taluks",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:40:51+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "a70e0a8c2d3fbe12078e20f1803459090f3dd7de8eb881b37985fa3286870b5e",
+   "topic_ids": [
+    "evs-3-25-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-25-s1-q002",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-25",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "-Draws sketches of the Immediate surroundings -Identify the directions, Locates the places."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Group of many taluks is called a ____________",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-25-s1-q002",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-25-s1-q002",
+     "pdf_page": 95,
+     "printed_page": 95,
+     "y": 651.293,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-25-s1-q002-key",
+     "pdf_page": 127,
+     "printed_page": 127,
+     "y": 657.293,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:40:51+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:40:51+05:30",
+   "section_signal": "I. Fill in the blanks with suitable answers :-",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "District"
+   },
+   "answer_as_printed": "District",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:40:51+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "fa7ed44623159aa0d15bbc01b78883a37a41ec0be904749f0fa61ba93ae86987",
+   "topic_ids": [
+    "evs-3-25-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-25-s1-q003",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-25",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "-Draws sketches of the Immediate surroundings -Identify the directions, Locates the places."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "_________ is your taluk.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-25-s1-q003",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-25-s1-q003",
+     "pdf_page": 95,
+     "printed_page": 95,
+     "y": 704.573,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-25-s1-q003-key",
+     "pdf_page": 127,
+     "printed_page": 127,
+     "y": 676.733,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:40:51+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:40:51+05:30",
+   "section_signal": "I. Fill in the blanks with suitable answers :-",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Own"
+   },
+   "answer_as_printed": "Own",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:40:51+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "bfe88188c11fa47c0c67a86cc63bbc1f75100ad862fbccd56a25f8f01aef82bd",
+   "topic_ids": [
+    "evs-3-25-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-25-s1-q004",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-25",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "-Draws sketches of the Immediate surroundings -Identify the directions, Locates the places."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "___________ is your district.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-25-s1-q004",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-25-s1-q004",
+     "pdf_page": 95,
+     "printed_page": 95,
+     "y": 757.853,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-25-s1-q004-key",
+     "pdf_page": 127,
+     "printed_page": 127,
+     "y": 676.733,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:40:51+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:40:51+05:30",
+   "section_signal": "I. Fill in the blanks with suitable answers :-",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Own"
+   },
+   "answer_as_printed": "Own",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:40:51+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "559abeb8681af9be4017cf07395aadfdfaf5d640bc7fefcfbcae7d1a5ab558ca",
+   "topic_ids": [
+    "evs-3-25-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-25-s1-q005",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-25",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "-Draws sketches of the Immediate surroundings -Identify the directions, Locates the places."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "________ districts are there in the Karnataka state.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-25-s1-q005",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-25-s1-q005",
+     "pdf_page": 96,
+     "printed_page": 96,
+     "y": 76.493,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-25-s1-q005-key",
+     "pdf_page": 127,
+     "printed_page": 127,
+     "y": 676.733,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:40:51+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:40:51+05:30",
+   "section_signal": "I. Fill in the blanks with suitable answers :-",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "31"
+   },
+   "answer_as_printed": "31",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:40:51+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "08ba066b63e9ab1fc4d7946f5222ec6fe4d95c6e667c0509defbed0100514fed",
+   "topic_ids": [
+    "evs-3-25-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-25-s2-q006",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-25",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "-Draws sketches of the Immediate surroundings -Identify the directions, Locates the places."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Match the following: Many Hobli\nB: Hassan; TalukCenter; Coffee; District headquarters; 31",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-25-s2-q006",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-25-s2-q006",
+     "pdf_page": 96,
+     "printed_page": 96,
+     "y": 174.893,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-25-s2-q006-key",
+     "pdf_page": 127,
+     "printed_page": 127,
+     "y": 697.373,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:40:51+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:40:51+05:30",
+   "text_as_printed": "Many Hobli",
+   "section_signal": "II. Match the following :-",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "Many Hobli",
+      "right": "Taluk"
+     }
+    ]
+   },
+   "answer_as_printed": "II. 6.Taluk (followed by a legacy-font word, not stored)",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:40:51+05:30",
+    "basis": "printed match key: the right-hand value per printed row number; left = that row's column-A item, right = key wording verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "match key value not among column-B items — key 'Taluk'; column B prints 'TalukCenter' (the key line continues in a legacy-font word)",
+     "why_not_corrected": "English key kept as printed (v1.4 §14.8); the legacy-font word after it is not stored",
+     "suggested": "TalukCenter — review"
+    }
+   ],
+   "content_hash": "f22e780e6e3cacd8ed6cc6960c027e253c425f6dd76251979de3ce17abd0b394",
+   "topic_ids": [
+    "evs-3-25-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-25-s2-q007",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-25",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "-Draws sketches of the Immediate surroundings -Identify the directions, Locates the places."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Match the following: Many Taluks\nB: Hassan; TalukCenter; Coffee; District headquarters; 31",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-25-s2-q007",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-25-s2-q007",
+     "pdf_page": 96,
+     "printed_page": 96,
+     "y": 225.773,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-25-s2-q007-key",
+     "pdf_page": 127,
+     "printed_page": 127,
+     "y": 721.133,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:40:51+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:40:51+05:30",
+   "text_as_printed": "Many Taluks",
+   "section_signal": "II. Match the following :-",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "Many Taluks",
+      "right": "District"
+     }
+    ]
+   },
+   "answer_as_printed": "7.District (followed by a legacy-font word, not stored)",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:40:51+05:30",
+    "basis": "printed match key: the right-hand value per printed row number; left = that row's column-A item, right = key wording verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "match key value not among column-B items — key 'District'; column B prints 'District headquarters' (the key line continues in a legacy-font word)",
+     "why_not_corrected": "English key kept as printed (v1.4 §14.8); the legacy-font word after it is not stored",
+     "suggested": "District headquarters — review"
+    }
+   ],
+   "content_hash": "b29be84802d4ed3f2acd5e26d38f89e2db27907c22386dac1552c08a5c07390c",
+   "topic_ids": [
+    "evs-3-25-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-25-s2-q008",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-25",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "-Draws sketches of the Immediate surroundings -Identify the directions, Locates the places."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Match the following: Karnataka State Districts\nB: Hassan; TalukCenter; Coffee; District headquarters; 31",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-25-s2-q008",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-25-s2-q008",
+     "pdf_page": 96,
+     "printed_page": 96,
+     "y": 276.413,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-25-s2-q008-key",
+     "pdf_page": 127,
+     "printed_page": 127,
+     "y": 745.133,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:40:51+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:40:51+05:30",
+   "text_as_printed": "Karnataka State Districts",
+   "section_signal": "II. Match the following :-",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "Karnataka State Districts",
+      "right": "31"
+     }
+    ]
+   },
+   "answer_as_printed": "8. 31",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:40:51+05:30",
+    "basis": "printed match key: the right-hand value per printed row number; left = that row's column-A item, right = key wording verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "f28573733f33507afaf525e97a00ceb777e1106f676ed17e41eceb1b33d9cb97",
+   "topic_ids": [
+    "evs-3-25-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-25-s2-q009",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-25",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "-Draws sketches of the Immediate surroundings -Identify the directions, Locates the places."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Match the following: My Neighbour District\nB: Hassan; TalukCenter; Coffee; District headquarters; 31",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-25-s2-q009",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-25-s2-q009",
+     "pdf_page": 96,
+     "printed_page": 96,
+     "y": 327.293,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-25-s2-q009-key",
+     "pdf_page": 128,
+     "printed_page": 128,
+     "y": 41.453,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:40:51+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:40:51+05:30",
+   "text_as_printed": "My Neighbour District",
+   "section_signal": "II. Match the following :-",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "My Neighbour District",
+      "right": "Hassan"
+     }
+    ]
+   },
+   "answer_as_printed": "9.Hassan",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:40:51+05:30",
+    "basis": "printed match key: the right-hand value per printed row number; left = that row's column-A item, right = key wording verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "70346988230ceecd10b6fdbeab77ce65533ae8ecfb90e1b8ca9711f053cf8738",
+   "topic_ids": [
+    "evs-3-25-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-25-s2-q010",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-25",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "-Draws sketches of the Immediate surroundings -Identify the directions, Locates the places."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Match the following: Finance crop of our district\nB: Hassan; TalukCenter; Coffee; District headquarters; 31",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-25-s2-q010",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-25-s2-q010",
+     "pdf_page": 96,
+     "printed_page": 96,
+     "y": 378.173,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-25-s2-q010-key",
+     "pdf_page": 128,
+     "printed_page": 128,
+     "y": 62.813,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:40:51+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:40:51+05:30",
+   "text_as_printed": "Finance crop of our district",
+   "section_signal": "II. Match the following :-",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "Finance crop of our district",
+      "right": "Coffee"
+     }
+    ]
+   },
+   "answer_as_printed": "10.Coffee",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:40:51+05:30",
+    "basis": "printed match key: the right-hand value per printed row number; left = that row's column-A item, right = key wording verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "c89dc337ed307a85b8f066d3d5673a1789af1b6c3eefd05afc5fbd0897fe7dc7",
+   "topic_ids": [
+    "evs-3-25-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-25-s3-q011",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-25",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "-Draws sketches of the Immediate surroundings -Identify the directions, Locates the places."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Identify the word that does not belong to group:-\nMysore, Chitradurga, Ramanagara, India",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-25-s3-q011",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-25-s3-q011",
+     "pdf_page": 96,
+     "printed_page": 96,
+     "y": 489.053,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-25-s3-q011-key",
+     "pdf_page": 128,
+     "printed_page": 128,
+     "y": 84.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:40:51+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:40:51+05:30",
+   "section_signal": "III.Identify the word that does not belong to group:-",
+   "lo_source": "lesson_table",
+   "options": [
+    {
+     "id": "A",
+     "text": "Mysore"
+    },
+    {
+     "id": "B",
+     "text": "Chitradurga"
+    },
+    {
+     "id": "C",
+     "text": "Ramanagara"
+    },
+    {
+     "id": "D",
+     "text": "India"
+    }
+   ],
+   "answer_as_printed": "India",
+   "answer": {
+    "kind": "option",
+    "option_id": "D"
+   },
+   "source_corrections": [
+    {
+     "field": "answer",
+     "printed": "India",
+     "corrected": "D",
+     "basis": "pass 1"
+    }
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:40:51+05:30",
+    "basis": "printed text-only key matched to its option (addendum §4.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "d64d60b30951c8c06d9238e7bb24172fedce5953d84f77f2d9aac95d942b850d",
+   "topic_ids": [
+    "evs-3-25-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-25-s3-q012",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-25",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "-Draws sketches of the Immediate surroundings -Identify the directions, Locates the places."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Identify the word that does not belong to group:-\nSringeri, Horanadu, Belur, Mullaiyanagari.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-25-s3-q012",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-25-s3-q012",
+     "pdf_page": 96,
+     "printed_page": 96,
+     "y": 539.933,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-25-s3-q012-key",
+     "pdf_page": 128,
+     "printed_page": 128,
+     "y": 103.373,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:40:51+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:40:51+05:30",
+   "section_signal": "III.Identify the word that does not belong to group:-",
+   "lo_source": "lesson_table",
+   "options": [
+    {
+     "id": "A",
+     "text": "Sringeri"
+    },
+    {
+     "id": "B",
+     "text": "Horanadu"
+    },
+    {
+     "id": "C",
+     "text": "Belur"
+    },
+    {
+     "id": "D",
+     "text": "Mullaiyanagari."
+    }
+   ],
+   "answer_as_printed": "Belur",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "source_corrections": [
+    {
+     "field": "answer",
+     "printed": "Belur",
+     "corrected": "C",
+     "basis": "pass 1"
+    }
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:40:51+05:30",
+    "basis": "printed text-only key matched to its option (addendum §4.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "9e1ba79ca469276215d6e1ee46e2732f0f9bce1cffe441fceeb3aa96ddf2ba55",
+   "topic_ids": [
+    "evs-3-25-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-25-s3-q013",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-25",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "-Draws sketches of the Immediate surroundings -Identify the directions, Locates the places."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Identify the word that does not belong to group:-\nRice, Millet, Pepper, Corn.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-25-s3-q013",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-25-s3-q013",
+     "pdf_page": 96,
+     "printed_page": 96,
+     "y": 590.813,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-25-s3-q013-key",
+     "pdf_page": 128,
+     "printed_page": 128,
+     "y": 133.373,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:40:51+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:40:51+05:30",
+   "section_signal": "III.Identify the word that does not belong to group:-",
+   "lo_source": "lesson_table",
+   "options": [
+    {
+     "id": "A",
+     "text": "Rice"
+    },
+    {
+     "id": "B",
+     "text": "Millet"
+    },
+    {
+     "id": "C",
+     "text": "Pepper"
+    },
+    {
+     "id": "D",
+     "text": "Corn."
+    }
+   ],
+   "answer_as_printed": "Pepper",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "source_corrections": [
+    {
+     "field": "answer",
+     "printed": "Pepper",
+     "corrected": "C",
+     "basis": "pass 1"
+    }
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:40:51+05:30",
+    "basis": "printed text-only key matched to its option (addendum §4.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "699ed3b9c7c537495d6617f52d6680fa82daf2e700c6a7cab99a3ae6baa33927",
+   "topic_ids": [
+    "evs-3-25-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-25-s3-q014",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-25",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "-Draws sketches of the Immediate surroundings -Identify the directions, Locates the places."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Identify the word that does not belong to group:-\nMudigere, Cup, Tarikere, Alur.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-25-s3-q014",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-25-s3-q014",
+     "pdf_page": 96,
+     "printed_page": 96,
+     "y": 641.453,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-25-s3-q014-key",
+     "pdf_page": 128,
+     "printed_page": 128,
+     "y": 154.733,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:40:51+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:40:51+05:30",
+   "section_signal": "III.Identify the word that does not belong to group:-",
+   "lo_source": "lesson_table",
+   "options": [
+    {
+     "id": "A",
+     "text": "Mudigere"
+    },
+    {
+     "id": "B",
+     "text": "Cup"
+    },
+    {
+     "id": "C",
+     "text": "Tarikere"
+    },
+    {
+     "id": "D",
+     "text": "Alur."
+    }
+   ],
+   "answer_as_printed": "Potato",
+   "answer": {
+    "kind": "option",
+    "option_id": null
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key text not among options",
+     "why_not_corrected": "printed key '14. Potato' prints no letter and matches no option(s) after normalisation (addendum §4.2/§4.4)",
+     "suggested": "review — the four options are towns (Mudigere, Koppa rendered 'Cup', Tarikere, Alur); 'Potato' renders the word for Alur"
+    }
+   ],
+   "content_hash": "d3ef1ea5ee17b9484342151a21d58c78e89ace6530493175d8dec47431c5982e",
+   "topic_ids": [
+    "evs-3-25-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-25-s3-q015",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-25",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "-Draws sketches of the Immediate surroundings -Identify the directions, Locates the places."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Identify the word that does not belong to group:-\nFarmer, Mason, Shoemaker, Construction worker.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-25-s3-q015",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-25-s3-q015",
+     "pdf_page": 96,
+     "printed_page": 96,
+     "y": 692.333,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-25-s3-q015-key",
+     "pdf_page": 128,
+     "printed_page": 128,
+     "y": 176.093,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:40:51+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:40:51+05:30",
+   "section_signal": "III.Identify the word that does not belong to group:-",
+   "lo_source": "lesson_table",
+   "options": [
+    {
+     "id": "A",
+     "text": "Farmer"
+    },
+    {
+     "id": "B",
+     "text": "Mason"
+    },
+    {
+     "id": "C",
+     "text": "Shoemaker"
+    },
+    {
+     "id": "D",
+     "text": "Construction worker."
+    }
+   ],
+   "answer_as_printed": "Farmer",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "source_corrections": [
+    {
+     "field": "answer",
+     "printed": "Farmer",
+     "corrected": "A",
+     "basis": "pass 1"
+    }
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:40:51+05:30",
+    "basis": "printed text-only key matched to its option (addendum §4.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "57a030e1ee79652aea4023411c6f464e09fe357da4d3b3e2388364e70a745820",
+   "topic_ids": [
+    "evs-3-25-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-25-s4-q016",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-25",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "-Draws sketches of the Immediate surroundings -Identify the directions, Locates the places."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "What is a district?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-25-s4-q016",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-25-s4-q016",
+     "pdf_page": 97,
+     "printed_page": 97,
+     "y": 55.373,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-25-s4-q016-key",
+     "pdf_page": 128,
+     "printed_page": 128,
+     "y": 195.533,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:40:51+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:40:51+05:30",
+   "section_signal": "IV. Answer the following questions:-",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "A group of many taluks is called a district."
+   },
+   "answer_as_printed": "A group of many taluks is called a district.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:40:51+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "25a29fa56acb41bdbdd294f4b24b0778704685ba4d362e26b234d8f3534918fd",
+   "topic_ids": [
+    "evs-3-25-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-25-s4-q017",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-25",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "-Draws sketches of the Immediate surroundings -Identify the directions, Locates the places."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Name the neighbouring districts of your district?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-25-s4-q017",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-25-s4-q017",
+     "pdf_page": 97,
+     "printed_page": 97,
+     "y": 106.253,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-25-s4-q017-key",
+     "pdf_page": 128,
+     "printed_page": 128,
+     "y": 248.813,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:40:51+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:40:51+05:30",
+   "text_as_printed": "Name the neighbouring districts of your district ?",
+   "section_signal": "IV. Answer the following questions:-",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Hassan,Tumkur,Chitradurga,Shimoga,Udupi,SouthKannada."
+   },
+   "answer_as_printed": "Hassan,Tumkur,Chitradurga,Shimoga,Udupi,SouthKannada.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:40:51+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "b860c511649622fce44e7739cf155ec0aae4fd1a5b3b137524d0b5bf1bc5e3a6",
+   "topic_ids": [
+    "evs-3-25-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-25-s4-q018",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-25",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "-Draws sketches of the Immediate surroundings -Identify the directions, Locates the places."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Which are the important occupations in rural areas?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-25-s4-q018",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-25-s4-q018",
+     "pdf_page": 97,
+     "printed_page": 97,
+     "y": 157.133,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-25-s4-q018-key",
+     "pdf_page": 128,
+     "printed_page": 128,
+     "y": 302.093,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:40:51+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:40:51+05:30",
+   "text_as_printed": "Which are the important occupations in rural areas ?",
+   "section_signal": "IV. Answer the following questions:-",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "The main occupations are Agriculture. Dairy farming , and animal husbandry"
+   },
+   "answer_as_printed": "The main occupations are Agriculture. Dairy farming , and animal husbandry",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:40:51+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "b1eaf4a598cd60e2f6e9aef456a2b012f63cb92f5162b1fefe4995ca189a566f",
+   "topic_ids": [
+    "evs-3-25-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-25-s4-q019",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-25",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "-Draws sketches of the Immediate surroundings -Identify the directions, Locates the places."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Name the important rivers in your district.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-25-s4-q019",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-25-s4-q019",
+     "pdf_page": 97,
+     "printed_page": 97,
+     "y": 207.773,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-25-s4-q019-key",
+     "pdf_page": 128,
+     "printed_page": 128,
+     "y": 357.773,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:40:51+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:40:51+05:30",
+   "section_signal": "IV. Answer the following questions:-",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Write in their own districts"
+   },
+   "answer_as_printed": "Write in their own districts",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:40:51+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "222351631e6032efcf04a45efa2afc168b74e91595ce1eaae01deb7fc7c0169b",
+   "topic_ids": [
+    "evs-3-25-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-25-s4-q020",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-25",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "-Draws sketches of the Immediate surroundings -Identify the directions, Locates the places."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Name the important tourisam places of your district.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-25-s4-q020",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-25-s4-q020",
+     "pdf_page": 97,
+     "printed_page": 97,
+     "y": 258.653,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-25-s4-q020-key",
+     "pdf_page": 128,
+     "printed_page": 128,
+     "y": 375.866,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:40:51+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:40:51+05:30",
+   "section_signal": "IV. Answer the following questions:-",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Write in their own districts"
+   },
+   "answer_as_printed": "Write in their own districts",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:40:51+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "6182d73857a96c7e63c1d8e3fe6738015891384cef2bd5a148f20af878fd5097",
+   "topic_ids": [
+    "evs-3-25-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  }
+ ],
+ "pending_summary": {}
+}
