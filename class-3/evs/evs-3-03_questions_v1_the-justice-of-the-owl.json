@@ -1,0 +1,1904 @@
+{
+ "contract_version": "1.7",
+ "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
+ "procedure_file": "extraction_procedure_social_addendum_v1.4_social science Classes 6-10 on top of procedure v2.md",
+ "machine_name": "evs-3-03_questions",
+ "version": 1,
+ "changelog": "v1 extraction — batch-01 — class-3-evs",
+ "amendments_applied": [],
+ "unit_state": "EXTRACTED",
+ "review_ready": false,
+ "count_gate": {
+  "reference": 21,
+  "reference_source": "audited",
+  "extracted": 21,
+  "paired": 21,
+  "flagged": 5,
+  "gaps": [],
+  "duplicated_numbers": [],
+  "quota_table": "difficulty_only",
+  "second_method": {
+   "method": "printed BLUE PRINT difficulty table total (Easy 7 + Average 9 + Difficulty 5 = 21), pdf 18; independently, the answer side's keys counted",
+   "extracted": 21,
+   "agrees": true
+  },
+  "pass": true,
+  "note": "Question side labels 1-21 monotonic, no gaps, no duplicates (I 1-4, II 5-8, III 9-12, IV 13-16, V 17-18, VI 19-21); answer side keys 1-21 in order (labels mix '5)', '6', '12.'; keys 17-21 all under 'V.'). BLUE PRINT 7/9/5 = 21 = audited count. Difficulty per question: easy 0, average 0, difficult 0, untagged 21."
+ },
+ "extraction": {
+  "source_file": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf",
+  "source_ref_prefix": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf",
+  "pdf_pages": [
+   18,
+   19,
+   20,
+   100,
+   101
+  ],
+  "printed_page_offset": 0,
+  "method_notes": [
+   "Pages: Q pdf 18 (heading, LO 2, BLUE PRINT, q1-3) 19 (q3 options, q4-11) 20 (q12-21). A side 'Answers: Lesson no 3 - The Justice of the owl' pdf 100 (keys 1-16), pdf 101 (17-21). Folios = pdf page. Heading title differs from index/map 'Judgement of the owl' (slug from the LBA heading).",
+   "BILINGUAL: all Kannada dropped (Unicode on the Q side; key IV line on pdf 100 is legacy-Nudi junk; keys 5-12 carry Kannada glued after the English — cut off).",
+   "Sections: s1 I mcq q1-4; s2 II match q5-8 (numbered rows -> one-pair match questions); s3 III relationship q9-12 (printed blank -> fill; printed ':'/': :' spacing kept); s4 IV fill q13-16; s5 V q17-18; s6 VI q19-21. Types by key form: vsa q17, q21 (one sentence), sa q18-20.",
+   "MARKS (R-E9): every header's N equals its printed count and M is the smaller (or equal) factor -> s1-s4 1, s5 2 ('2 X 2 = 4'), s6 3 ('3 X 3 = 9').",
+   "DIFFICULTY: none printed -> null + 'no difficulty tag'. quota_table difficulty_only; second method = BLUE PRINT total 21 (agrees). LO (R-E10): lesson LO 2, lo_source 'lesson_table'.",
+   "KEYS: q3 'A) From the soil' vs option A 'It is made by a soil' -> letter kept + 'key text paraphrases option'. Match keys print shortened/variant wording for all four rows (q5-q8) -> 'match key value not among column-B items' each (not blocking). q18 key is garbled (first sentence does not state a plant/animal difference; second does) — stored verbatim, unflagged (addresses the question in part). Typo 'From the soi l' (q10) kept.",
+   "FIGURES: none on these pages. TOPIC evs-3-03-t00 / chapter / high (R-E3)."
+  ],
+  "notation_summary": {
+   "render_tokens": 0,
+   "latex_tokens": 0,
+   "damage_flags": []
+  },
+  "excluded_objects": [],
+  "inline_excluded_count": 0,
+  "figure_references": []
+ },
+ "stimuli": [],
+ "questions": [
+  {
+   "id": "evs-3-03-s1-q001",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-03",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "2",
+     "text_as_printed": "Sorts Objects ̧birds ̧animalş plants according to their similarities and differences."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Which of the following is not a part of the animal body?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s1-q001",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s1-q001",
+     "pdf_page": 18,
+     "printed_page": 18,
+     "y": 577.9,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s1-q001-key",
+     "pdf_page": 100,
+     "printed_page": 100,
+     "y": 370.253,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:04:15+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:04:15+05:30",
+   "section_signal": "I. Choose one of the four appropriate answers to the following questions and write it down:",
+   "lo_source": "lesson_table",
+   "options": [
+    {
+     "id": "A",
+     "text": "Foot"
+    },
+    {
+     "id": "B",
+     "text": "head"
+    },
+    {
+     "id": "C",
+     "text": "Root"
+    },
+    {
+     "id": "D",
+     "text": "Stomach"
+    }
+   ],
+   "answer_as_printed": "C) Root",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:04:15+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 7 / Average 9 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "70418ca121d0d7ea8ee99dead023dc7596dd05b5fcb360f95ec4dbbc5f075b64",
+   "topic_ids": [
+    "evs-3-03-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-03-s1-q002",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-03",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "2",
+     "text_as_printed": "Sorts Objects ̧birds ̧animalş plants according to their similarities and differences."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Which of the following is inanimate?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s1-q002",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s1-q002",
+     "pdf_page": 18,
+     "printed_page": 18,
+     "y": 665.213,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s1-q002-key",
+     "pdf_page": 100,
+     "printed_page": 100,
+     "y": 370.253,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:04:15+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:04:15+05:30",
+   "section_signal": "I. Choose one of the four appropriate answers to the following questions and write it down:",
+   "lo_source": "lesson_table",
+   "options": [
+    {
+     "id": "A",
+     "text": "Cucumber vine"
+    },
+    {
+     "id": "B",
+     "text": "Bus"
+    },
+    {
+     "id": "C",
+     "text": "Owl"
+    },
+    {
+     "id": "D",
+     "text": "Conch"
+    }
+   ],
+   "answer_as_printed": "B) Bus",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:04:15+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 7 / Average 9 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "d88a213549aba36da47bd048ee4243c54e4e4a31c0ebebe3629f7aba454b73b1",
+   "topic_ids": [
+    "evs-3-03-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-03-s1-q003",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-03",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "2",
+     "text_as_printed": "Sorts Objects ̧birds ̧animalş plants according to their similarities and differences."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Where does the fertilizer and water needed by the plant come from?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s1-q003",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s1-q003",
+     "pdf_page": 18,
+     "printed_page": 18,
+     "y": 754.733,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s1-q003-key",
+     "pdf_page": 100,
+     "printed_page": 100,
+     "y": 370.253,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:04:15+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:04:15+05:30",
+   "section_signal": "I. Choose one of the four appropriate answers to the following questions and write it down:",
+   "lo_source": "lesson_table",
+   "options": [
+    {
+     "id": "A",
+     "text": "It is made by a soil"
+    },
+    {
+     "id": "B",
+     "text": "air"
+    },
+    {
+     "id": "C",
+     "text": "itself"
+    },
+    {
+     "id": "D",
+     "text": "None"
+    }
+   ],
+   "answer_as_printed": "A) From the soil",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:04:15+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 7 / Average 9 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key text paraphrases option",
+     "why_not_corrected": "letter A kept (addendum §4.1); key text 'From the soil' vs option A 'It is made by a soil'",
+     "suggested": "A (letter kept)"
+    }
+   ],
+   "content_hash": "227a27480be4f6f8fb77d53fb521d57edb5422da470c02ed80ec7acf1c92639a",
+   "topic_ids": [
+    "evs-3-03-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-03-s1-q004",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-03",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "2",
+     "text_as_printed": "Sorts Objects ̧birds ̧animalş plants according to their similarities and differences."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "The leaves of all plants are _______",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s1-q004",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s1-q004",
+     "pdf_page": 19,
+     "printed_page": 19,
+     "y": 147.626,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s1-q004-key",
+     "pdf_page": 100,
+     "printed_page": 100,
+     "y": 370.253,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:04:15+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:04:15+05:30",
+   "section_signal": "I. Choose one of the four appropriate answers to the following questions and write it down:",
+   "lo_source": "lesson_table",
+   "options": [
+    {
+     "id": "A",
+     "text": "Red"
+    },
+    {
+     "id": "B",
+     "text": "Same shape"
+    },
+    {
+     "id": "C",
+     "text": "Same size"
+    },
+    {
+     "id": "D",
+     "text": "Different shapes"
+    }
+   ],
+   "answer_as_printed": "D) Different shapes",
+   "answer": {
+    "kind": "option",
+    "option_id": "D"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:04:15+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 7 / Average 9 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "cf59c7709c4289f46110f8eea400df4afb3f922b5c11a67d4f38dcca79452f41",
+   "topic_ids": [
+    "evs-3-03-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-03-s2-q005",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-03",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "2",
+     "text_as_printed": "Sorts Objects ̧birds ̧animalş plants according to their similarities and differences."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Match the following: Train\nB: Lays eggs/chicks; A new organism grows from a seed/other parts; It moves. Yet it is inanimate; It moves. But it is alive",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s2-q005",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s2-q005",
+     "pdf_page": 19,
+     "printed_page": 19,
+     "y": 294.893,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s2-q005-key",
+     "pdf_page": 100,
+     "printed_page": 100,
+     "y": 446.093,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:04:15+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:04:15+05:30",
+   "text_as_printed": "Train",
+   "section_signal": "II. Match the following :-",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "Train",
+      "right": "Moves. Yet is inanimate."
+     }
+    ]
+   },
+   "answer_as_printed": "5) Moves. Yet is inanimate.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:04:15+05:30",
+    "basis": "printed match key: the right-hand value per printed row number; left = that row's column-A item, right = key wording verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 7 / Average 9 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "match key value not among column-B items — key 'Moves. Yet is inanimate.'; column B prints 'It moves. Yet it is inanimate'",
+     "why_not_corrected": "key text kept as printed (v1.4 §14.8); the row is unambiguous",
+     "suggested": "It moves. Yet it is inanimate — review"
+    }
+   ],
+   "content_hash": "cfe88650d968097ce630a948f04f8459db689865e7456233b74cea844f125a51",
+   "topic_ids": [
+    "evs-3-03-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-03-s2-q006",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-03",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "2",
+     "text_as_printed": "Sorts Objects ̧birds ̧animalş plants according to their similarities and differences."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Match the following: Horse\nB: Lays eggs/chicks; A new organism grows from a seed/other parts; It moves. Yet it is inanimate; It moves. But it is alive",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s2-q006",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s2-q006",
+     "pdf_page": 19,
+     "printed_page": 19,
+     "y": 339.533,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s2-q006-key",
+     "pdf_page": 100,
+     "printed_page": 100,
+     "y": 477.533,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:04:15+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:04:15+05:30",
+   "text_as_printed": "Horse",
+   "section_signal": "II. Match the following :-",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "Horse",
+      "right": "Moves. But is alive"
+     }
+    ]
+   },
+   "answer_as_printed": "6 Moves. But is alive",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:04:15+05:30",
+    "basis": "printed match key: the right-hand value per printed row number; left = that row's column-A item, right = key wording verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 7 / Average 9 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "match key value not among column-B items — key 'Moves. But is alive'; column B prints 'It moves. But it is alive'",
+     "why_not_corrected": "key text kept as printed (v1.4 §14.8); the row is unambiguous",
+     "suggested": "It moves. But it is alive — review"
+    }
+   ],
+   "content_hash": "8d14c69964a97d3d15d506e5813db6ea12fed6a6655f62a8ed573cd9dbfa6164",
+   "topic_ids": [
+    "evs-3-03-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-03-s2-q007",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-03",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "2",
+     "text_as_printed": "Sorts Objects ̧birds ̧animalş plants according to their similarities and differences."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Match the following: Animal\nB: Lays eggs/chicks; A new organism grows from a seed/other parts; It moves. Yet it is inanimate; It moves. But it is alive",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s2-q007",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s2-q007",
+     "pdf_page": 19,
+     "printed_page": 19,
+     "y": 384.413,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s2-q007-key",
+     "pdf_page": 100,
+     "printed_page": 100,
+     "y": 509.213,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:04:15+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:04:15+05:30",
+   "text_as_printed": "Animal",
+   "section_signal": "II. Match the following :-",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "Animal",
+      "right": "Egg/Chicken becomes"
+     }
+    ]
+   },
+   "answer_as_printed": "7) Egg/Chicken becomes",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:04:15+05:30",
+    "basis": "printed match key: the right-hand value per printed row number; left = that row's column-A item, right = key wording verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 7 / Average 9 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "match key value not among column-B items — key 'Egg/Chicken becomes'; column B prints 'Lays eggs/chicks'",
+     "why_not_corrected": "key text kept as printed (v1.4 §14.8); the row is unambiguous",
+     "suggested": "Lays eggs/chicks — review"
+    }
+   ],
+   "content_hash": "1fbf51a193a7bf0f3166c633d412bb66b1e6068bf94c17b4b37eb358716f3ad4",
+   "topic_ids": [
+    "evs-3-03-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-03-s2-q008",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-03",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "2",
+     "text_as_printed": "Sorts Objects ̧birds ̧animalş plants according to their similarities and differences."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Match the following: Plants\nB: Lays eggs/chicks; A new organism grows from a seed/other parts; It moves. Yet it is inanimate; It moves. But it is alive",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s2-q008",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s2-q008",
+     "pdf_page": 19,
+     "printed_page": 19,
+     "y": 429.053,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s2-q008-key",
+     "pdf_page": 100,
+     "printed_page": 100,
+     "y": 542.813,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:04:15+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:04:15+05:30",
+   "text_as_printed": "Plants",
+   "section_signal": "II. Match the following :-",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "Plants",
+      "right": "A new organism grows from seed and other parts."
+     }
+    ]
+   },
+   "answer_as_printed": "8) A new organism grows from seed and other parts.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:04:15+05:30",
+    "basis": "printed match key: the right-hand value per printed row number; left = that row's column-A item, right = key wording verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 7 / Average 9 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "match key value not among column-B items — key 'A new organism grows from seed and other parts.'; column B prints 'A new organism grows from a seed/other parts'",
+     "why_not_corrected": "key text kept as printed (v1.4 §14.8); the row is unambiguous",
+     "suggested": "A new organism grows from a seed/other parts — review"
+    }
+   ],
+   "content_hash": "20a9d98c09c3c441ac7d00dbf01e577f94341ccedb9ba9324a699a460444737a",
+   "topic_ids": [
+    "evs-3-03-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-03-s3-q009",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-03",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "2",
+     "text_as_printed": "Sorts Objects ̧birds ̧animalş plants according to their similarities and differences."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Man: Breathes air : : Fish : __________________",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s3-q009",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s3-q009",
+     "pdf_page": 19,
+     "printed_page": 19,
+     "y": 542.333,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s3-q009-key",
+     "pdf_page": 100,
+     "printed_page": 100,
+     "y": 641.933,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:04:15+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:04:15+05:30",
+   "section_signal": "III. Identify the relationship and write the answer:",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "In the water"
+   },
+   "answer_as_printed": "In the water",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:04:15+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 7 / Average 9 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "0281eeece0eb7461bb08bede17333c2191698b5f766e170dee4d3e07cdfa6e2b",
+   "topic_ids": [
+    "evs-3-03-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-03-s3-q010",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-03",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "2",
+     "text_as_printed": "Sorts Objects ̧birds ̧animalş plants according to their similarities and differences."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Animals : Plants - get food from animals : : Plants : ________",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s3-q010",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s3-q010",
+     "pdf_page": 19,
+     "printed_page": 19,
+     "y": 621.053,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s3-q010-key",
+     "pdf_page": 100,
+     "printed_page": 100,
+     "y": 641.933,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:04:15+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:04:15+05:30",
+   "section_signal": "III. Identify the relationship and write the answer:",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "From the soi l"
+   },
+   "answer_as_printed": "From the soi l",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:04:15+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 7 / Average 9 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "853cd298a32c1bf2feb859b06771e80dcd356c6c0e6ec61867e437a39a93035e",
+   "topic_ids": [
+    "evs-3-03-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-03-s3-q011",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-03",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "2",
+     "text_as_printed": "Sorts Objects ̧birds ̧animalş plants according to their similarities and differences."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "The leaves of a plant are :green: : The color of an animal is : ___________",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s3-q011",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s3-q011",
+     "pdf_page": 19,
+     "printed_page": 19,
+     "y": 700.013,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s3-q011-key",
+     "pdf_page": 100,
+     "printed_page": 100,
+     "y": 670.013,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:04:15+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:04:15+05:30",
+   "section_signal": "III. Identify the relationship and write the answer:",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "They are different."
+   },
+   "answer_as_printed": "They are different.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:04:15+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 7 / Average 9 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "2b5e7fb4f7b7ba00372df279c83c4e36df52222dc5fc1bb32ccf9a19308b86d5",
+   "topic_ids": [
+    "evs-3-03-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-03-s3-q012",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-03",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "2",
+     "text_as_printed": "Sorts Objects ̧birds ̧animalş plants according to their similarities and differences."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Non-living things: do not grow: : Living things: ___________________",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s3-q012",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s3-q012",
+     "pdf_page": 20,
+     "printed_page": 20,
+     "y": 39.293,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s3-q012-key",
+     "pdf_page": 100,
+     "printed_page": 100,
+     "y": 698.093,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:04:15+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:04:15+05:30",
+   "section_signal": "III. Identify the relationship and write the answer:",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Grow"
+   },
+   "answer_as_printed": "Grow",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:04:15+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 7 / Average 9 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "c6a5e6cb2aacda0c6aa3f4ebf6c284303f976c5ece8de1e98551b9e6fe7ce656",
+   "topic_ids": [
+    "evs-3-03-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-03-s4-q013",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-03",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "2",
+     "text_as_printed": "Sorts Objects ̧birds ̧animalş plants according to their similarities and differences."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Fish respire through ___________",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s4-q013",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s4-q013",
+     "pdf_page": 20,
+     "printed_page": 20,
+     "y": 148.973,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s4-q013-key",
+     "pdf_page": 100,
+     "printed_page": 100,
+     "y": 725.546,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:04:15+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:04:15+05:30",
+   "section_signal": "IV. Fill in the blanks :-",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Gills"
+   },
+   "answer_as_printed": "Gills",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:04:15+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 7 / Average 9 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "0c54ecdf53c02a35d3a406d446f7089a90ac3b726b6087f68be73543ce592175",
+   "topic_ids": [
+    "evs-3-03-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-03-s4-q014",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-03",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "2",
+     "text_as_printed": "Sorts Objects ̧birds ̧animalş plants according to their similarities and differences."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Examples of living beings are _____________",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s4-q014",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s4-q014",
+     "pdf_page": 20,
+     "printed_page": 20,
+     "y": 203.213,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s4-q014-key",
+     "pdf_page": 100,
+     "printed_page": 100,
+     "y": 725.546,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:04:15+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:04:15+05:30",
+   "section_signal": "IV. Fill in the blanks :-",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Dog"
+   },
+   "answer_as_printed": "Dog",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:04:15+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 7 / Average 9 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "50877c911be4b09a1a41a5f2e5d2743665dfb1188df8868b31150bf7b7af533c",
+   "topic_ids": [
+    "evs-3-03-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-03-s4-q015",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-03",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "2",
+     "text_as_printed": "Sorts Objects ̧birds ̧animalş plants according to their similarities and differences."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Living beings need food to ___________",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s4-q015",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s4-q015",
+     "pdf_page": 20,
+     "printed_page": 20,
+     "y": 256.973,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s4-q015-key",
+     "pdf_page": 100,
+     "printed_page": 100,
+     "y": 725.546,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:04:15+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:04:15+05:30",
+   "section_signal": "IV. Fill in the blanks :-",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Live"
+   },
+   "answer_as_printed": "Live",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:04:15+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 7 / Average 9 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "61be5b3d7cabfd3a347a4eea1b186601a6c08ea3d9bfe4866cf36bf14f5ccb0a",
+   "topic_ids": [
+    "evs-3-03-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-03-s4-q016",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-03",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "2",
+     "text_as_printed": "Sorts Objects ̧birds ̧animalş plants according to their similarities and differences."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Examples for non living things ____________",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s4-q016",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s4-q016",
+     "pdf_page": 20,
+     "printed_page": 20,
+     "y": 310.493,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s4-q016-key",
+     "pdf_page": 100,
+     "printed_page": 100,
+     "y": 725.546,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:04:15+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:04:15+05:30",
+   "section_signal": "IV. Fill in the blanks :-",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Table"
+   },
+   "answer_as_printed": "Table",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:04:15+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 7 / Average 9 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "478cd38ebb674bd4cdb5b51d88c46cd73fff7d93f7aed0628e5b1a51f61ad1ee",
+   "topic_ids": [
+    "evs-3-03-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-03-s5-q017",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-03",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "2",
+     "text_as_printed": "Sorts Objects ̧birds ̧animalş plants according to their similarities and differences."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Soil is lifeless. How?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s5-q017",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s5-q017",
+     "pdf_page": 20,
+     "printed_page": 20,
+     "y": 439.373,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s5-q017-key",
+     "pdf_page": 101,
+     "printed_page": 101,
+     "y": 67.853,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:04:15+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:04:15+05:30",
+   "section_signal": "V. Answer the questions.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "It doesn't grow, it doesn't eat, so it's inanimate."
+   },
+   "answer_as_printed": "It doesn't grow, it doesn't eat, so it's inanimate.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:04:15+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 7 / Average 9 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "a73f4b67bafaf50049a0a1ccabb0f891d5e47c52d4f49a69e7df3206e3b341ce",
+   "topic_ids": [
+    "evs-3-03-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-03-s5-q018",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-03",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "2",
+     "text_as_printed": "Sorts Objects ̧birds ̧animalş plants according to their similarities and differences."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "State one difference between plants and animals",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s5-q018",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s5-q018",
+     "pdf_page": 20,
+     "printed_page": 20,
+     "y": 490.013,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s5-q018-key",
+     "pdf_page": 101,
+     "printed_page": 101,
+     "y": 141.293,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:04:15+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:04:15+05:30",
+   "section_signal": "V. Answer the questions.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Animals can move very far if the parts of the plant are different, the parts of the animal's body are different, or if the plants are only partially present. Plants get their food from the soil, while animals get it from plants and animals."
+   },
+   "answer_as_printed": "Animals can move very far if the parts of the plant are different, the parts of the animal's body are different, or if the plants are only partially present. Plants get their food from the soil, while animals get it from plants and animals.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:04:15+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 7 / Average 9 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "8d75953a695610e1653c17bd618738bdbe1833a7706c7285d536b2b9769f58a3",
+   "topic_ids": [
+    "evs-3-03-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-03-s6-q019",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-03",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "2",
+     "text_as_printed": "Sorts Objects ̧birds ̧animalş plants according to their similarities and differences."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "How do you say that a 'cow' is a living being?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s6-q019",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s6-q019",
+     "pdf_page": 20,
+     "printed_page": 20,
+     "y": 594.413,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s6-q019-key",
+     "pdf_page": 101,
+     "printed_page": 101,
+     "y": 289.853,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:04:15+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:04:15+05:30",
+   "section_signal": "VI. Answer the questions in three to four sentences.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "A cow is a living being. Because it grows, eats food, gives birth to another living being like itself, moves, and breathes. Because it has all these characteristics, I call a cow a living being."
+   },
+   "answer_as_printed": "A cow is a living being. Because it grows, eats food, gives birth to another living being like itself, moves, and breathes. Because it has all these characteristics, I call a cow a living being.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:04:15+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 7 / Average 9 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "dc2cd5972cfe2e432b005980c23ef4ca172095e580f783b38906d6db69b37f54",
+   "topic_ids": [
+    "evs-3-03-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-03-s6-q020",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-03",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "2",
+     "text_as_printed": "Sorts Objects ̧birds ̧animalş plants according to their similarities and differences."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "A 'cloud' moves and grows. So is it a living being? If not, why not?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s6-q020",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s6-q020",
+     "pdf_page": 20,
+     "printed_page": 20,
+     "y": 645.293,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s6-q020-key",
+     "pdf_page": 101,
+     "printed_page": 101,
+     "y": 438.893,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:04:15+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:04:15+05:30",
+   "section_signal": "VI. Answer the questions in three to four sentences.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "A cloud is inanimate. Because it does not breathe, does not eat, does not give birth to another living being, therefore a cloud is not alive."
+   },
+   "answer_as_printed": "A cloud is inanimate. Because it does not breathe, does not eat, does not give birth to another living being, therefore a cloud is not alive.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:04:15+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 7 / Average 9 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "9c8e184c7288741763a4a53cb3ef4c50fa5f09fd76506e6100d87084ff2d697e",
+   "topic_ids": [
+    "evs-3-03-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-03-s6-q021",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-03",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "2",
+     "text_as_printed": "Sorts Objects ̧birds ̧animalş plants according to their similarities and differences."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "We have seen the changes that occur in a seed planted/sown in the soil in 15 days. What are those changes?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s6-q021",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s6-q021",
+     "pdf_page": 20,
+     "printed_page": 20,
+     "y": 696.173,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-03-s6-q021-key",
+     "pdf_page": 101,
+     "printed_page": 101,
+     "y": 529.613,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:04:15+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:04:15+05:30",
+   "section_signal": "VI. Answer the questions in three to four sentences.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "When water is sprayed daily, the soil swells within five to seven days, the seeds germinate and emerge from the ground, and within 15 days, leaves appear and the plant grows into a seedling."
+   },
+   "answer_as_printed": "When water is sprayed daily, the soil swells within five to seven days, the seeds germinate and emerge from the ground, and within 15 days, leaves appear and the plant grows into a seedling.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:04:15+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 7 / Average 9 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "52da5ae2b62d2090b7d300dd3f26dd37a4652ef47f093debcacd8f63fee62295",
+   "topic_ids": [
+    "evs-3-03-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  }
+ ],
+ "pending_summary": {}
+}
