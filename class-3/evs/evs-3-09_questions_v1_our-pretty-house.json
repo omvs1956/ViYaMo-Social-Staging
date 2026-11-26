@@ -1,0 +1,1469 @@
+{
+ "contract_version": "1.7",
+ "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
+ "procedure_file": "extraction_procedure_social_addendum_v1.4_social science Classes 6-10 on top of procedure v2.md",
+ "machine_name": "evs-3-09_questions",
+ "version": 1,
+ "changelog": "v1 extraction — batch-01 — class-3-evs",
+ "amendments_applied": [],
+ "unit_state": "EXTRACTED",
+ "review_ready": false,
+ "count_gate": {
+  "reference": 16,
+  "reference_source": "audited",
+  "extracted": 16,
+  "paired": 16,
+  "flagged": 2,
+  "gaps": [],
+  "duplicated_numbers": [],
+  "quota_table": "difficulty_only",
+  "second_method": {
+   "method": "printed BLUE PRINT difficulty table total (Easy 12 + Average 3 + Difficulty 1 = 16), pdf 38; independently, the answer side's keys counted",
+   "extracted": 16,
+   "agrees": true
+  },
+  "pass": true,
+  "note": "Question side labels 1-16 monotonic, no gaps, no duplicates (I 1-3, II 4-7, III 8, IV 9-12, V 13-16); answer side keys 1-16 in order (T/F keys 1-3 printed in one sentence-run '1 is correct, 2 is incorrect, 3 is incorrect.'; key section labels III/IV are the question side's IV/V). BLUE PRINT 12/3/1 = 16 = audited count. Difficulty per question: easy 0, average 0, difficult 0, untagged 16."
+ },
+ "extraction": {
+  "source_file": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf",
+  "source_ref_prefix": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf",
+  "pdf_pages": [
+   38,
+   39,
+   40,
+   110
+  ],
+  "printed_page_offset": 0,
+  "method_notes": [
+   "Pages: Q pdf 38 (heading 'Unit -9', LO 4, BLUE PRINT, q1-4) 39 (q5-13) 40 (q14-16). A side 'Key Answers. :- Unit 9 Pretty house' pdf 110 (keys 1-16 + the q8 picture). Folios = pdf page.",
+   "BILINGUAL: all Kannada dropped (Unicode both sides; one key line on pdf 110 has a legacy-Nudi glyph run — dropped). q15 stem prints a stray combining mark after 'house' (font artefact) — removed from text, kept in text_as_printed.",
+   "Sections: s1 I T/F q1-3 (keys 'N is correct/incorrect' -> true/false, printed words in answer_as_printed); s2 II q4-7 (q4 three lettered points A/B/C -> sa, 3 steps; q5-7 one sentence/list -> vsa); s3 III q8 draw -> sa; s4 IV match q9-12 (numbered rows -> one-pair match questions); s5 V fill q13-16.",
+   "MARKS (R-E9, control rev 3): s5 '4x1 = 4' (4 q) -> 1. Null + unassigned + ambiguity flag where N disagrees with the printed count (factors reversed): s1 '1 X 3=3' over 3 q, s2 '2 X 4=8' over 4 q, s3 '4 X 1=4' over 1 q, s4 '1x4 = 4' over 4 q.",
+   "DIFFICULTY: none printed -> null + 'no difficulty tag'. quota_table difficulty_only; second method = BLUE PRINT total 16 (agrees). LO (R-E10): lesson LO 4, lo_source 'lesson_table'.",
+   "ANSWER FIGURE (v1.4 §14.10, crop-first): the answer side prints a line drawing of a house under '8. Picture of the house.' (pdf 110, the only image on the page) -> crop committed first (Staging 00ef9cc), referenced as answer_diagram asset a8 (bare draw-diagram shape, soc-9-14 q38); value = the printed text; flag 'answer is a diagram' (not blocking). The drawing carries a stock website watermark (noted in caption).",
+   "KEYS: match key 10 'to protect from sunlight' vs column B 'to protect from sun light' flagged; q4 key printed with lettered points A./B./C. kept in the steps.",
+   "TOPIC evs-3-09-t00 / chapter / high (R-E3)."
+  ],
+  "notation_summary": {
+   "render_tokens": 0,
+   "latex_tokens": 0,
+   "damage_flags": []
+  },
+  "excluded_objects": [],
+  "inline_excluded_count": 0,
+  "figure_references": []
+ },
+ "stimuli": [],
+ "questions": [
+  {
+   "id": "evs-3-09-s1-q001",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-09",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "4",
+     "text_as_printed": "List different types of shelters and materials used to construct them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "The house should be swept every day",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-09-s1-q001",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-09-s1-q001",
+     "pdf_page": 38,
+     "printed_page": 38,
+     "y": 463.853,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-09-s1-q001-key",
+     "pdf_page": 110,
+     "printed_page": 110,
+     "y": 155.45264,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:15:55+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:15:55+05:30",
+   "section_signal": "I. Tick true or false",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "1 is correct",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:15:55+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '1 X 3=3' — N=1 but 3 question(s) printed in the section (R-E9)"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 12 / Average 3 / Difficulty 1) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "2f5873b399cdf62dd8a1d78305ff473b82a0d439c0ce67023051a7ae046bb1eb",
+   "topic_ids": [
+    "evs-3-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-09-s1-q002",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-09",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "4",
+     "text_as_printed": "List different types of shelters and materials used to construct them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "One should eat food while spilling it everywhere in the house",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-09-s1-q002",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-09-s1-q002",
+     "pdf_page": 38,
+     "printed_page": 38,
+     "y": 561.773,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-09-s1-q002-key",
+     "pdf_page": 110,
+     "printed_page": 110,
+     "y": 155.45264,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:15:55+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:15:55+05:30",
+   "section_signal": "I. Tick true or false",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "option",
+    "option_id": "false"
+   },
+   "answer_as_printed": "2 is incorrect,",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:15:55+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '1 X 3=3' — N=1 but 3 question(s) printed in the section (R-E9)"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 12 / Average 3 / Difficulty 1) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "42765080939f31b8829e0507a7670cca2034618b08598d1102bd6280660ff649",
+   "topic_ids": [
+    "evs-3-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-09-s1-q003",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-09",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "4",
+     "text_as_printed": "List different types of shelters and materials used to construct them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "The windows and doors of the house should always be closed.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-09-s1-q003",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-09-s1-q003",
+     "pdf_page": 38,
+     "printed_page": 38,
+     "y": 620.333,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-09-s1-q003-key",
+     "pdf_page": 110,
+     "printed_page": 110,
+     "y": 155.45264,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:15:55+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:15:55+05:30",
+   "section_signal": "I. Tick true or false",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "option",
+    "option_id": "false"
+   },
+   "answer_as_printed": "3 is incorrect.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:15:55+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '1 X 3=3' — N=1 but 3 question(s) printed in the section (R-E9)"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 12 / Average 3 / Difficulty 1) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "de4e44e7771104a7db92bfb1ab90ba04bb97a908045b247ee74907be5305508e",
+   "topic_ids": [
+    "evs-3-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-09-s2-q004",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-09",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "4",
+     "text_as_printed": "List different types of shelters and materials used to construct them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Write down three characteristics of a good home?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-09-s2-q004",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-09-s2-q004",
+     "pdf_page": 38,
+     "printed_page": 38,
+     "y": 737.213,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-09-s2-q004-key",
+     "pdf_page": 110,
+     "printed_page": 110,
+     "y": 211.613,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:15:55+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:15:55+05:30",
+   "section_signal": "II. Answer in one or two sentences.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "A. The house should have fresh air and light.\nB. It should be protected from rain, wind, and sun.\nC. Must have grown a garden."
+   },
+   "answer_as_printed": "A. The house should have fresh air and light.\nB. It should be protected from rain, wind, and sun.\nC. Must have grown a garden.",
+   "solution_steps": [
+    "A. The house should have fresh air and light.",
+    "B. It should be protected from rain, wind, and sun.",
+    "C. Must have grown a garden."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:15:55+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '2 X 4=8' — N=2 but 4 question(s) printed in the section (R-E9)"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 12 / Average 3 / Difficulty 1) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "547e4a47324fe258091cdc3f0125a82d319bedbd7365e310ae89fffa964154b9",
+   "topic_ids": [
+    "evs-3-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-09-s2-q005",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-09",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "4",
+     "text_as_printed": "List different types of shelters and materials used to construct them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Why do we need a house?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-09-s2-q005",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-09-s2-q005",
+     "pdf_page": 39,
+     "printed_page": 39,
+     "y": 57.773,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-09-s2-q005-key",
+     "pdf_page": 110,
+     "printed_page": 110,
+     "y": 331.613,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:15:55+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:15:55+05:30",
+   "section_signal": "II. Answer in one or two sentences.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "A house is needed for protection from the sun, rain, wind, animals, and thieves."
+   },
+   "answer_as_printed": "A house is needed for protection from the sun, rain, wind, animals, and thieves.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:15:55+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '2 X 4=8' — N=2 but 4 question(s) printed in the section (R-E9)"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 12 / Average 3 / Difficulty 1) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "2a7454673b0a5c97b9fb51381648fce96ab52ccf5d563efb606772f751f7a9e6",
+   "topic_ids": [
+    "evs-3-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-09-s2-q006",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-09",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "4",
+     "text_as_printed": "List different types of shelters and materials used to construct them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Write the names of 3 things used for home decoration?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-09-s2-q006",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-09-s2-q006",
+     "pdf_page": 39,
+     "printed_page": 39,
+     "y": 116.333,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-09-s2-q006-key",
+     "pdf_page": 110,
+     "printed_page": 110,
+     "y": 371.453,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:15:55+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:15:55+05:30",
+   "section_signal": "II. Answer in one or two sentences.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Flowers, mango leaves, balloons, colored paper, vase, arch."
+   },
+   "answer_as_printed": "Flowers, mango leaves, balloons, colored paper, vase, arch.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:15:55+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '2 X 4=8' — N=2 but 4 question(s) printed in the section (R-E9)"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 12 / Average 3 / Difficulty 1) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "83c979352b353ec6631959c5d3ffd0a272095dac5631196955195e0dd4636d65",
+   "topic_ids": [
+    "evs-3-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-09-s2-q007",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-09",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "4",
+     "text_as_printed": "List different types of shelters and materials used to construct them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Name 3 occasions when you decorate your home?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-09-s2-q007",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-09-s2-q007",
+     "pdf_page": 39,
+     "printed_page": 39,
+     "y": 177.533,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-09-s2-q007-key",
+     "pdf_page": 110,
+     "printed_page": 110,
+     "y": 412.826,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:15:55+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:15:55+05:30",
+   "section_signal": "II. Answer in one or two sentences.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "in festivals, in birthday functions, and in special occasions"
+   },
+   "answer_as_printed": "in festivals, in birthday functions, and in special occasions",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:15:55+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '2 X 4=8' — N=2 but 4 question(s) printed in the section (R-E9)"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 12 / Average 3 / Difficulty 1) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "7b81937f96f9d3b0bd8edca32071ec9fd9034aaef8cd49815c740472bc627fee",
+   "topic_ids": [
+    "evs-3-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-09-s3-q008",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-09",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "4",
+     "text_as_printed": "List different types of shelters and materials used to construct them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Draw and color a beautiful picture of the house?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-09-s3-q008",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-09-s3-q008",
+     "pdf_page": 39,
+     "printed_page": 39,
+     "y": 285.293,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-09-s3-q008-key",
+     "pdf_page": 110,
+     "printed_page": 110,
+     "y": 432.653,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:15:55+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:15:55+05:30",
+   "section_signal": "III. Answer the following question in 4-5 sentences.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Picture of the house."
+   },
+   "answer_as_printed": "Picture of the house.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:15:55+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '4 X 1=4' — N=4 but 1 question(s) printed in the section (R-E9)"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 12 / Average 3 / Difficulty 1) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "answer is a diagram — q8 asks to draw and colour a house; the answer side prints 'Picture of the house.' and a line drawing of a house (pdf 110), cropped as answer_diagram asset a8 (the drawing carries a stock-drawing website watermark)"
+    }
+   ],
+   "assets": [
+    {
+     "id": "a8",
+     "type": "image",
+     "ref": "images/evs-3-09/evs-3-09_q8_house-picture.png",
+     "role": "answer_diagram",
+     "source_px": {
+      "w": 434,
+      "h": 274
+     },
+     "quality": "ok",
+     "caption": "Line drawing of a house printed as the answer to q8 (carries a stock-drawing site watermark), pdf 110",
+     "pdf_page": 110,
+     "crop_bbox": {
+      "pdf_page": 110,
+      "x0": 90.0,
+      "y0": 448.16,
+      "x1": 298.56,
+      "y1": 579.92
+     }
+    }
+   ],
+   "content_hash": "2066bfdc0c50730c85fc4f5cd35f244c706be637e262f33b8e6ba0b24ab2ef3f",
+   "topic_ids": [
+    "evs-3-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-09-s4-q009",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-09",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "4",
+     "text_as_printed": "List different types of shelters and materials used to construct them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Match the following: Windows and doors\nB: to protect from sun light; to get fresh air and light; to pass used water; to grow plants",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-09-s4-q009",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-09-s4-q009",
+     "pdf_page": 39,
+     "printed_page": 39,
+     "y": 406.013,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-09-s4-q009-key",
+     "pdf_page": 110,
+     "printed_page": 110,
+     "y": 587.693,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:15:55+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:15:55+05:30",
+   "text_as_printed": "Windows and doors",
+   "section_signal": "IV. Match the following :",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "Windows and doors",
+      "right": "To get fresh air and light"
+     }
+    ]
+   },
+   "answer_as_printed": "III. 9. To get fresh air and light",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:15:55+05:30",
+    "basis": "printed match key: the right-hand value per printed row number; left = that row's column-A item, right = key wording verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '1x4 = 4' — N=1 but 4 question(s) printed in the section (R-E9)"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 12 / Average 3 / Difficulty 1) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "44ff671b8448e22adc7a00b7c77d796184e40b71cd6b15c095dadbfa510f7d09",
+   "topic_ids": [
+    "evs-3-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-09-s4-q010",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-09",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "4",
+     "text_as_printed": "List different types of shelters and materials used to construct them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Match the following: Roof\nB: to protect from sun light; to get fresh air and light; to pass used water; to grow plants",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-09-s4-q010",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-09-s4-q010",
+     "pdf_page": 39,
+     "printed_page": 39,
+     "y": 467.453,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-09-s4-q010-key",
+     "pdf_page": 110,
+     "printed_page": 110,
+     "y": 609.053,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:15:55+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:15:55+05:30",
+   "text_as_printed": "Roof",
+   "section_signal": "IV. Match the following :",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "Roof",
+      "right": "to protect from sunlight"
+     }
+    ]
+   },
+   "answer_as_printed": "10. to protect from sunlight",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:15:55+05:30",
+    "basis": "printed match key: the right-hand value per printed row number; left = that row's column-A item, right = key wording verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '1x4 = 4' — N=1 but 4 question(s) printed in the section (R-E9)"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 12 / Average 3 / Difficulty 1) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "match key value not among column-B items — key 'to protect from sunlight'; column B prints 'to protect from sun light'",
+     "why_not_corrected": "key text kept as printed (v1.4 §14.8); the row is unambiguous",
+     "suggested": "to protect from sun light — review"
+    }
+   ],
+   "content_hash": "e89775d794b9dc5db2158a63d6c8822dada135fcdb002c46f14a2736c2f2d56d",
+   "topic_ids": [
+    "evs-3-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-09-s4-q011",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-09",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "4",
+     "text_as_printed": "List different types of shelters and materials used to construct them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Match the following: Garden\nB: to protect from sun light; to get fresh air and light; to pass used water; to grow plants",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-09-s4-q011",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-09-s4-q011",
+     "pdf_page": 39,
+     "printed_page": 39,
+     "y": 528.893,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-09-s4-q011-key",
+     "pdf_page": 110,
+     "printed_page": 110,
+     "y": 634.013,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:15:55+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:15:55+05:30",
+   "text_as_printed": "Garden",
+   "section_signal": "IV. Match the following :",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "Garden",
+      "right": "to grow plants"
+     }
+    ]
+   },
+   "answer_as_printed": "11. to grow plants",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:15:55+05:30",
+    "basis": "printed match key: the right-hand value per printed row number; left = that row's column-A item, right = key wording verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '1x4 = 4' — N=1 but 4 question(s) printed in the section (R-E9)"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 12 / Average 3 / Difficulty 1) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "725f4e09df09fc7a9fa09865741a74ea935b4379c3b2acc3aac6254987b918f8",
+   "topic_ids": [
+    "evs-3-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-09-s4-q012",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-09",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "4",
+     "text_as_printed": "List different types of shelters and materials used to construct them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Match the following: Drainage\nB: to protect from sun light; to get fresh air and light; to pass used water; to grow plants",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-09-s4-q012",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-09-s4-q012",
+     "pdf_page": 39,
+     "printed_page": 39,
+     "y": 590.093,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-09-s4-q012-key",
+     "pdf_page": 110,
+     "printed_page": 110,
+     "y": 655.373,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:15:55+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:15:55+05:30",
+   "text_as_printed": "Drainage",
+   "section_signal": "IV. Match the following :",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "Drainage",
+      "right": "to pass used water"
+     }
+    ]
+   },
+   "answer_as_printed": "12. to pass used water",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:15:55+05:30",
+    "basis": "printed match key: the right-hand value per printed row number; left = that row's column-A item, right = key wording verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '1x4 = 4' — N=1 but 4 question(s) printed in the section (R-E9)"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 12 / Average 3 / Difficulty 1) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "16eae4cbbb7b4e5ec53ae19ea698cc0a79a8e4d1605ecb77dc3c919e6876e79c",
+   "topic_ids": [
+    "evs-3-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-09-s5-q013",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-09",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "4",
+     "text_as_printed": "List different types of shelters and materials used to construct them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "We decorate our house doors with _____ on festivals",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-09-s5-q013",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-09-s5-q013",
+     "pdf_page": 39,
+     "printed_page": 39,
+     "y": 713.453,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-09-s5-q013-key",
+     "pdf_page": 110,
+     "printed_page": 110,
+     "y": 695.453,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:15:55+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:15:55+05:30",
+   "section_signal": "V.Fill in the blanks :",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Mango leaves or garlands"
+   },
+   "answer_as_printed": "Mango leaves or garlands",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:15:55+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 12 / Average 3 / Difficulty 1) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "cacc98e329b8aefba154c180aafecf1c5b09cd6112767586c2ea1cd732addfc4",
+   "topic_ids": [
+    "evs-3-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-09-s5-q014",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-09",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "4",
+     "text_as_printed": "List different types of shelters and materials used to construct them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "We put ______ everyday infront of our house",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-09-s5-q014",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-09-s5-q014",
+     "pdf_page": 40,
+     "printed_page": 40,
+     "y": 39.293,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-09-s5-q014-key",
+     "pdf_page": 110,
+     "printed_page": 110,
+     "y": 716.813,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:15:55+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:15:55+05:30",
+   "section_signal": "V.Fill in the blanks :",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Rangoli"
+   },
+   "answer_as_printed": "Rangoli",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:15:55+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 12 / Average 3 / Difficulty 1) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "c60657036270b8736af8c8532d6fd04ea0dbb046ebe17cc98b75037e63d0addf",
+   "topic_ids": [
+    "evs-3-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-09-s5-q015",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-09",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "4",
+     "text_as_printed": "List different types of shelters and materials used to construct them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "______ and ______ should be avoided around your house",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-09-s5-q015",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-09-s5-q015",
+     "pdf_page": 40,
+     "printed_page": 40,
+     "y": 100.733,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-09-s5-q015-key",
+     "pdf_page": 110,
+     "printed_page": 110,
+     "y": 738.173,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:15:55+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:15:55+05:30",
+   "text_as_printed": "______ and ______ should be avoided around your house̤",
+   "section_signal": "V.Fill in the blanks :",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "dust and garbage"
+   },
+   "answer_as_printed": "dust and garbage",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:15:55+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 12 / Average 3 / Difficulty 1) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "11be4e1b739fbc1b99e047cecd3da6269b12a20c8719b341436d7b9af6558533",
+   "topic_ids": [
+    "evs-3-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-09-s5-q016",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-09",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "4",
+     "text_as_printed": "List different types of shelters and materials used to construct them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "We put dust in the _________",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-09-s5-q016",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-09-s5-q016",
+     "pdf_page": 40,
+     "printed_page": 40,
+     "y": 161.933,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-09-s5-q016-key",
+     "pdf_page": 110,
+     "printed_page": 110,
+     "y": 759.533,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:15:55+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:15:55+05:30",
+   "section_signal": "V.Fill in the blanks :",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Dustbin"
+   },
+   "answer_as_printed": "Dustbin",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:15:55+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 12 / Average 3 / Difficulty 1) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "61af9d9634138589411a92ceedf67ed41cd8f46dfbde36f39c2b7c39f3db428f",
+   "topic_ids": [
+    "evs-3-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  }
+ ],
+ "pending_summary": {}
+}
