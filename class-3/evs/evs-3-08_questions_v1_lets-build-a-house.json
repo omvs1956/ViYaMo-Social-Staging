@@ -1,0 +1,1479 @@
+{
+ "contract_version": "1.7",
+ "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
+ "procedure_file": "extraction_procedure_social_addendum_v1.4_social science Classes 6-10 on top of procedure v2.md",
+ "machine_name": "evs-3-08_questions",
+ "version": 1,
+ "changelog": "v1 extraction — batch-01 — class-3-evs",
+ "amendments_applied": [],
+ "unit_state": "EXTRACTED",
+ "review_ready": false,
+ "count_gate": {
+  "reference": 17,
+  "reference_source": "audited",
+  "extracted": 17,
+  "paired": 17,
+  "flagged": 0,
+  "gaps": [],
+  "duplicated_numbers": [],
+  "quota_table": "difficulty_only",
+  "second_method": {
+   "method": "printed BLUE PRINT difficulty table total (Easy 12 + Average 4 + Difficulty 1 = 17), pdf 35; independently, the answer side's keys counted",
+   "extracted": 17,
+   "agrees": true
+  },
+  "pass": true,
+  "note": "Question side labels 1-17 monotonic, no gaps, no duplicates (I 1-4, II 5-7, III 8-10, IV 11-13, V 14-17); answer side keys 1-17 in order (key 1 printed with a doubled label '1. 1.'). BLUE PRINT 12/4/1 = 17 = audited count. Difficulty per question: easy 0, average 0, difficult 0, untagged 17."
+ },
+ "extraction": {
+  "source_file": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf",
+  "source_ref_prefix": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf",
+  "pdf_pages": [
+   35,
+   36,
+   37,
+   109
+  ],
+  "printed_page_offset": 0,
+  "method_notes": [
+   "Pages: Q pdf 35 (heading 'Unit -8', LO 4, BLUE PRINT, q1-4) 36 (q5-14) 37 (q15-17). A side 'Key Answers.:- 8. Let’s build a house' pdf 109 (keys 1-17). Folios = pdf page.",
+   "BILINGUAL: all Kannada dropped (Unicode both sides; key 1's line carries legacy-Nudi junk after the English — cut off).",
+   "Sections: s1 I 'Name the materials …' q1-4 (each question prints only the house name and answer dashes -> text = section instruction + the printed line, dashes removed and kept in text_as_printed; list keys -> vsa); s2 II 'Arrange the uses' q5-7 (two printed columns, numbered rows -> one-pair match questions); s3 III 'Who am I?' q8-10 (riddle + answer dashes; one-word keys -> vsa); s4 IV q11-13 (one sentence/list -> vsa); s5 V fill q14-17.",
+   "MARKS (R-E9 as clarified at control rev 3: N = printed count -> M whatever its size): s1 '4 X 2=8' -> 2; s2 '3 X1=3' -> 1; s3 '3 X1=3' -> 1; s4 '3 X2=6' -> 2; s5 '4x1=4' -> 1. All section_header.",
+   "DIFFICULTY: none printed -> null + 'no difficulty tag'. quota_table difficulty_only; second method = BLUE PRINT total 17 (agrees). LO (R-E10): lesson LO 4, lo_source 'lesson_table'.",
+   "KEYS: verbatim incl. trailing punctuation ('To build a wall,', 'Roof.'); q10 key 'Tarasi' (the terrace house, transliterated) kept. No flags.",
+   "FIGURES: none on these pages. TOPIC evs-3-08-t00 / chapter / high (R-E3)."
+  ],
+  "notation_summary": {
+   "render_tokens": 0,
+   "latex_tokens": 0,
+   "damage_flags": []
+  },
+  "excluded_objects": [],
+  "inline_excluded_count": 0,
+  "figure_references": []
+ },
+ "stimuli": [],
+ "questions": [
+  {
+   "id": "evs-3-08-s1-q001",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-08",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "4",
+     "text_as_printed": "List different types of shelters and materials used to construct them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Name the materials used to build the following houses.\nHut",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-08-s1-q001",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-08-s1-q001",
+     "pdf_page": 35,
+     "printed_page": 35,
+     "y": 541.373,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-08-s1-q001-key",
+     "pdf_page": 109,
+     "printed_page": 109,
+     "y": 152.573,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:14:18+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:14:18+05:30",
+   "text_as_printed": "Name the materials used to build the following houses.\nHut ------------------------ --------------",
+   "section_signal": "I. Name the materials used to build the following houses.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Coconut ,palm, soil."
+   },
+   "answer_as_printed": "1. 1. Coconut ,palm, soil.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:14:18+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 12 / Average 4 / Difficulty 1) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "4d6ad7ed97cfc777acfb97844e93262110b665d07464402f3153cf621f36aec0",
+   "topic_ids": [
+    "evs-3-08-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-08-s1-q002",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-08",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "4",
+     "text_as_printed": "List different types of shelters and materials used to construct them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Name the materials used to build the following houses.\nTents",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-08-s1-q002",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-08-s1-q002",
+     "pdf_page": 35,
+     "printed_page": 35,
+     "y": 587.693,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-08-s1-q002-key",
+     "pdf_page": 109,
+     "printed_page": 109,
+     "y": 178.493,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:14:18+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:14:18+05:30",
+   "text_as_printed": "Name the materials used to build the following houses.\nTents -------------- ----------- --------------",
+   "section_signal": "I. Name the materials used to build the following houses.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Tarpaulin, nails, rope."
+   },
+   "answer_as_printed": "Tarpaulin, nails, rope.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:14:18+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 12 / Average 4 / Difficulty 1) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "82da66f3423b2556d3d16c1709509c5e56f6de32b6af9994d60d3dd469f93a3c",
+   "topic_ids": [
+    "evs-3-08-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-08-s1-q003",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-08",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "4",
+     "text_as_printed": "List different types of shelters and materials used to construct them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Name the materials used to build the following houses.\nBrick House",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-08-s1-q003",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-08-s1-q003",
+     "pdf_page": 35,
+     "printed_page": 35,
+     "y": 634.253,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-08-s1-q003-key",
+     "pdf_page": 109,
+     "printed_page": 109,
+     "y": 199.853,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:14:18+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:14:18+05:30",
+   "text_as_printed": "Name the materials used to build the following houses.\nBrick House ---------- ----------- -----------",
+   "section_signal": "I. Name the materials used to build the following houses.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Brick, cement, wood"
+   },
+   "answer_as_printed": "Brick, cement, wood",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:14:18+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 12 / Average 4 / Difficulty 1) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "60381ab681ec02651b7aa8f97a537ff80847a02c1c3657e3ca681865d91c778f",
+   "topic_ids": [
+    "evs-3-08-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-08-s1-q004",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-08",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "4",
+     "text_as_printed": "List different types of shelters and materials used to construct them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Name the materials used to build the following houses.\nTerrace House",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-08-s1-q004",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-08-s1-q004",
+     "pdf_page": 35,
+     "printed_page": 35,
+     "y": 680.573,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-08-s1-q004-key",
+     "pdf_page": 109,
+     "printed_page": 109,
+     "y": 221.213,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:14:18+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:14:18+05:30",
+   "text_as_printed": "Name the materials used to build the following houses.\nTerrace House ------------ ----------- ----------",
+   "section_signal": "I. Name the materials used to build the following houses.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Iron, cement brick."
+   },
+   "answer_as_printed": "Iron, cement brick.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:14:18+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 12 / Average 4 / Difficulty 1) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "3dd09b3c5a4c5a2d59178fd43634dd583b29f1763a1792ab553fb113e39dd9e6",
+   "topic_ids": [
+    "evs-3-08-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-08-s2-q005",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-08",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "4",
+     "text_as_printed": "List different types of shelters and materials used to construct them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Arrange the uses of the following objects: Cement\nB: Roof; To build a wall; To make a door",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-08-s2-q005",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-08-s2-q005",
+     "pdf_page": 36,
+     "printed_page": 36,
+     "y": 39.293,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-08-s2-q005-key",
+     "pdf_page": 109,
+     "printed_page": 109,
+     "y": 262.253,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:14:18+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:14:18+05:30",
+   "text_as_printed": "Cement",
+   "section_signal": "II. Arrange the uses of the following objects and write them.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "Cement",
+      "right": "To build a wall,"
+     }
+    ]
+   },
+   "answer_as_printed": "5.To build a wall,",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:14:18+05:30",
+    "basis": "printed match key: the right-hand value per printed row number; left = that row's column-A item, right = key wording verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 12 / Average 4 / Difficulty 1) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "9d10862254361a398fbf97b97fa68b9763ae37736dbcaef752ba7b16ff573757",
+   "topic_ids": [
+    "evs-3-08-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-08-s2-q006",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-08",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "4",
+     "text_as_printed": "List different types of shelters and materials used to construct them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Arrange the uses of the following objects: Tree\nB: Roof; To build a wall; To make a door",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-08-s2-q006",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-08-s2-q006",
+     "pdf_page": 36,
+     "printed_page": 36,
+     "y": 97.853,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-08-s2-q006-key",
+     "pdf_page": 109,
+     "printed_page": 109,
+     "y": 283.613,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:14:18+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:14:18+05:30",
+   "text_as_printed": "Tree",
+   "section_signal": "II. Arrange the uses of the following objects and write them.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "Tree",
+      "right": "To make a door"
+     }
+    ]
+   },
+   "answer_as_printed": "6.To make a door",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:14:18+05:30",
+    "basis": "printed match key: the right-hand value per printed row number; left = that row's column-A item, right = key wording verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 12 / Average 4 / Difficulty 1) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "38076cbd0e69a81022d3398bedfc991ecd4ed98704c059d078049945991bffe6",
+   "topic_ids": [
+    "evs-3-08-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-08-s2-q007",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-08",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "4",
+     "text_as_printed": "List different types of shelters and materials used to construct them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Arrange the uses of the following objects: Tiles\nB: Roof; To build a wall; To make a door",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-08-s2-q007",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-08-s2-q007",
+     "pdf_page": 36,
+     "printed_page": 36,
+     "y": 156.173,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-08-s2-q007-key",
+     "pdf_page": 109,
+     "printed_page": 109,
+     "y": 305.213,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:14:18+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:14:18+05:30",
+   "text_as_printed": "Tiles",
+   "section_signal": "II. Arrange the uses of the following objects and write them.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "Tiles",
+      "right": "Roof."
+     }
+    ]
+   },
+   "answer_as_printed": "7. Roof.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:14:18+05:30",
+    "basis": "printed match key: the right-hand value per printed row number; left = that row's column-A item, right = key wording verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 12 / Average 4 / Difficulty 1) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "a857ed6136ac9b369570da68ea5375c542f0788d94ae192afb2020d3728c9bb4",
+   "topic_ids": [
+    "evs-3-08-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-08-s3-q008",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-08",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "4",
+     "text_as_printed": "List different types of shelters and materials used to construct them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Who am I?\nI am not a permanent home, it is easy to move from one place to another",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-08-s3-q008",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-08-s3-q008",
+     "pdf_page": 36,
+     "printed_page": 36,
+     "y": 256.013,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-08-s3-q008-key",
+     "pdf_page": 109,
+     "printed_page": 109,
+     "y": 346.253,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:14:18+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:14:18+05:30",
+   "text_as_printed": "Who am I?\nI am not a permanent home, it is easy to move from one place to another ---------",
+   "section_signal": "III. Who am I?",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Tent"
+   },
+   "answer_as_printed": "Tent",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:14:18+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 12 / Average 4 / Difficulty 1) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "dce3a340d8af7f8bda5bd7c29adc3b077fa682c19d915d08e6d82b0fe1877a21",
+   "topic_ids": [
+    "evs-3-08-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-08-s3-q009",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-08",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "4",
+     "text_as_printed": "List different types of shelters and materials used to construct them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Who am I?\nI don't need many things to build me. I am very simple.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-08-s3-q009",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-08-s3-q009",
+     "pdf_page": 36,
+     "printed_page": 36,
+     "y": 338.573,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-08-s3-q009-key",
+     "pdf_page": 109,
+     "printed_page": 109,
+     "y": 367.613,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:14:18+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:14:18+05:30",
+   "text_as_printed": "Who am I?\nI don't need many things to build me. I am very simple. -----------",
+   "section_signal": "III. Who am I?",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Hut"
+   },
+   "answer_as_printed": "Hut",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:14:18+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 12 / Average 4 / Difficulty 1) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "c2702d34614599cf6386b06a9877cf84604bc7a95c015f108174ab721b82c556",
+   "topic_ids": [
+    "evs-3-08-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-08-s3-q010",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-08",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "4",
+     "text_as_printed": "List different types of shelters and materials used to construct them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Who am I?\nI can with stand the sun, rain, and wind. Most people like me",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-08-s3-q010",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-08-s3-q010",
+     "pdf_page": 36,
+     "printed_page": 36,
+     "y": 400.013,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-08-s3-q010-key",
+     "pdf_page": 109,
+     "printed_page": 109,
+     "y": 388.973,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:14:18+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:14:18+05:30",
+   "text_as_printed": "Who am I?\nI can with stand the sun, rain, and wind. Most people like me ------------",
+   "section_signal": "III. Who am I?",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Tarasi"
+   },
+   "answer_as_printed": "Tarasi",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:14:18+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 12 / Average 4 / Difficulty 1) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "225b66bbf61d867251892f91aa4c92cd03a6dffa9aa5b284466569c2c9ee8d8d",
+   "topic_ids": [
+    "evs-3-08-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-08-s4-q011",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-08",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "4",
+     "text_as_printed": "List different types of shelters and materials used to construct them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Why do you need a house?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-08-s4-q011",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-08-s4-q011",
+     "pdf_page": 36,
+     "printed_page": 36,
+     "y": 520.973,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-08-s4-q011-key",
+     "pdf_page": 109,
+     "printed_page": 109,
+     "y": 427.853,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:14:18+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:14:18+05:30",
+   "section_signal": "IV. Answer in one or two sentences.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "A house is needed to protect against sun, rain, wind, animals, and thieves."
+   },
+   "answer_as_printed": "A house is needed to protect against sun, rain, wind, animals, and thieves.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:14:18+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 12 / Average 4 / Difficulty 1) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "f771f6d1fe2ad895597c316d42740804a0f6de73c6138b93dfb63ccea8bd9a9d",
+   "topic_ids": [
+    "evs-3-08-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-08-s4-q012",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-08",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "4",
+     "text_as_printed": "List different types of shelters and materials used to construct them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "What materials are needed to build a house?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-08-s4-q012",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-08-s4-q012",
+     "pdf_page": 36,
+     "printed_page": 36,
+     "y": 579.293,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-08-s4-q012-key",
+     "pdf_page": 109,
+     "printed_page": 109,
+     "y": 467.933,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:14:18+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:14:18+05:30",
+   "section_signal": "IV. Answer in one or two sentences.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Cement, brick, iron, sand, wood."
+   },
+   "answer_as_printed": "Cement, brick, iron, sand, wood.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:14:18+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 12 / Average 4 / Difficulty 1) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "cc04fde72648edcdf55a56abb2b22e1345b6d319ec77d4c9d8f82620591ae125",
+   "topic_ids": [
+    "evs-3-08-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-08-s4-q013",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-08",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "4",
+     "text_as_printed": "List different types of shelters and materials used to construct them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Write down 3 types of houses you have seen.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-08-s4-q013",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-08-s4-q013",
+     "pdf_page": 36,
+     "printed_page": 36,
+     "y": 637.853,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-08-s4-q013-key",
+     "pdf_page": 109,
+     "printed_page": 109,
+     "y": 507.773,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:14:18+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:14:18+05:30",
+   "section_signal": "IV. Answer in one or two sentences.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Hut, mud house, terrace, tent"
+   },
+   "answer_as_printed": "Hut, mud house, terrace, tent",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:14:18+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 12 / Average 4 / Difficulty 1) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "c8bd5b241ccb8281dec3b41fcac9868d7c4f1bfcea2f6de19ca41f2f2a31bfc1",
+   "topic_ids": [
+    "evs-3-08-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-08-s5-q014",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-08",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "4",
+     "text_as_printed": "List different types of shelters and materials used to construct them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "___________ house is made up of tiles.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-08-s5-q014",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-08-s5-q014",
+     "pdf_page": 36,
+     "printed_page": 36,
+     "y": 743.546,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-08-s5-q014-key",
+     "pdf_page": 109,
+     "printed_page": 109,
+     "y": 570.746,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:14:18+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:14:18+05:30",
+   "section_signal": "V. fill in the blanks :-",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Tiled house"
+   },
+   "answer_as_printed": "Tiled house",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:14:18+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 12 / Average 4 / Difficulty 1) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "f0aa248b30dcd16a15dc3efce2606492ad3400d034a34994ed6302d5d7fce40b",
+   "topic_ids": [
+    "evs-3-08-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-08-s5-q015",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-08",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "4",
+     "text_as_printed": "List different types of shelters and materials used to construct them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "The Tent is not a _______________ house.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-08-s5-q015",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-08-s5-q015",
+     "pdf_page": 37,
+     "printed_page": 37,
+     "y": 62.186,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-08-s5-q015-key",
+     "pdf_page": 109,
+     "printed_page": 109,
+     "y": 592.106,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:14:18+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:14:18+05:30",
+   "section_signal": "V. fill in the blanks :-",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "permanent"
+   },
+   "answer_as_printed": "permanent",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:14:18+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 12 / Average 4 / Difficulty 1) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "53d1d8c005b3848ba0617eb0e1c91abb9b8e4eca956a14033da6ccf0fb842e55",
+   "topic_ids": [
+    "evs-3-08-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-08-s5-q016",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-08",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "4",
+     "text_as_printed": "List different types of shelters and materials used to construct them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Terrace house become cold in ___________ and warm in winter.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-08-s5-q016",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-08-s5-q016",
+     "pdf_page": 37,
+     "printed_page": 37,
+     "y": 126.506,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-08-s5-q016-key",
+     "pdf_page": 109,
+     "printed_page": 109,
+     "y": 613.466,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:14:18+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:14:18+05:30",
+   "section_signal": "V. fill in the blanks :-",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "summer"
+   },
+   "answer_as_printed": "summer",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:14:18+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 12 / Average 4 / Difficulty 1) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "f00a20cc4b698025c26b282568e61152c84ee25a6d3ccc61ed11508c15ebb887",
+   "topic_ids": [
+    "evs-3-08-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-08-s5-q017",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-08",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "4",
+     "text_as_printed": "List different types of shelters and materials used to construct them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Skyscrapers are _____________ buildings.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-08-s5-q017",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-08-s5-q017",
+     "pdf_page": 37,
+     "printed_page": 37,
+     "y": 212.186,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-08-s5-q017-key",
+     "pdf_page": 109,
+     "printed_page": 109,
+     "y": 634.826,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:14:18+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:14:18+05:30",
+   "section_signal": "V. fill in the blanks :-",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "multi-storeyed"
+   },
+   "answer_as_printed": "multi-storeyed",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:14:18+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 12 / Average 4 / Difficulty 1) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "bc38e0695c7ac34a4e8f15c89f870d7ff3ee48718ef6e8afa4e1449af9f11df2",
+   "topic_ids": [
+    "evs-3-08-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  }
+ ],
+ "pending_summary": {}
+}
