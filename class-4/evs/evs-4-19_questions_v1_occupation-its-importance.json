@@ -1,0 +1,4136 @@
+{
+ "contract_version": "1.7",
+ "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
+ "procedure_file": "extraction_procedure_social_addendum_v1.4_social science Classes 6-10 on top of procedure v2.md",
+ "machine_name": "evs-4-19_questions",
+ "version": 1,
+ "changelog": "v1 extraction — batch-01 — class-4-evs",
+ "amendments_applied": [],
+ "unit_state": "EXTRACTED",
+ "review_ready": false,
+ "count_gate": {
+  "reference": 50,
+  "reference_source": "audited",
+  "extracted": 50,
+  "paired": 49,
+  "flagged": 1,
+  "gaps": [],
+  "duplicated_numbers": [],
+  "quota_table": "absent",
+  "second_method": {
+   "method": "independent count of answer-side keys (48 numbered keys + 1 unnumbered match block(s)) + 1 question(s) with no printed key",
+   "extracted": 50,
+   "agrees": true
+  },
+  "pass": true,
+  "note": "No difficulty distribution table is printed in this LBA -> quota_table 'absent' (ruling R-E6). Question side labels 1-50 monotonic, no gaps or duplicates. Answer side 1-25, [match block], 27-49 by printed number; the numbered list 1.-10. inside key 45 is part of that key; q050 (draw) has no key. Difficulty per question: easy 37, average 2, difficult 8, untagged 3."
+ },
+ "extraction": {
+  "source_file": "4thLBA-EVS-EM1.pdf",
+  "source_ref_prefix": "4thLBA-EVS-EM1.pdf",
+  "pdf_pages": [
+   79,
+   80,
+   81,
+   82,
+   83,
+   175,
+   176,
+   177,
+   178,
+   179
+  ],
+  "printed_page_offset": 0,
+  "method_notes": [
+   "Pages: Q pdf 79 (heading, LO) 80-83; A pdf 175 (heading, key 1) 176-179.",
+   "Sections: s1 MCQ q1-5; s2 fill q6-15; s3 T/F q16-25; s4 '26. Match the following appropriately (easy)' q26 (10 rows; Q-side labels garbled e)/(r)/(a)); s5 one mark q27-33 vsa; s6 two marks q34-38 sa; s7 three marks q39-43 sa; s8 four marks q44-50 la (heading untagged; q44-46 untagged).",
+   "KEY SIDE ANALYSED FIRST: no displacement. The survey's 'labels 1-10 repeated after 45' is the numbered list of ten occupations printed inside key 45 (pdf 178) -> ten lines/steps of q45, not keys.",
+   "Keys: one-line or wrapped prose (joined); q40, q42, q43, q47 bullets; key 27 and 30 print teacher notes '(Accept any correct occupation)', '(Any one from Ramanahalli)' — kept verbatim. q50 draw -> 'no answer printed'.",
+   "Transcription: evs_auto.py rules (as evs-4-01) + the overrides in build file build_19.py; marks per ruling R-E5; topic per R-E3."
+  ],
+  "notation_summary": {
+   "render_tokens": 0,
+   "latex_tokens": 0,
+   "damage_flags": []
+  },
+  "excluded_objects": [],
+  "inline_excluded_count": 0,
+  "figure_references": []
+ },
+ "stimuli": [],
+ "questions": [
+  {
+   "id": "evs-4-19-s1-q001",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-19",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The doctor visit us when we are",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s1-q001",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s1-q001",
+     "pdf_page": 80,
+     "printed_page": 80,
+     "y": 331.402,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s1-q001-key",
+     "pdf_page": 175,
+     "printed_page": 175,
+     "y": 747.783,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:31:29+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:31:29+05:30",
+   "section_signal": "Choose the correct answer from the options given below",
+   "options": [
+    {
+     "id": "A",
+     "text": "On the way to school"
+    },
+    {
+     "id": "B",
+     "text": "In a hotel"
+    },
+    {
+     "id": "C",
+     "text": "Sick"
+    },
+    {
+     "id": "D",
+     "text": "In the fair"
+    }
+   ],
+   "answer_as_printed": "C) Sick",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:31:29+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "1340f9cf0d73db03bd7466fb0a695f823a386e8bd79b3cf3cbb087ed71fc8123",
+   "topic_ids": [
+    "evs-4-19-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-19-s1-q002",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-19",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Our house is built by",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s1-q002",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s1-q002",
+     "pdf_page": 80,
+     "printed_page": 80,
+     "y": 368.402,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s1-q002-key",
+     "pdf_page": 176,
+     "printed_page": 176,
+     "y": 72.588,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:31:29+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:31:29+05:30",
+   "section_signal": "Choose the correct answer from the options given below",
+   "options": [
+    {
+     "id": "A",
+     "text": "Labourers"
+    },
+    {
+     "id": "B",
+     "text": "Doctors"
+    },
+    {
+     "id": "C",
+     "text": "Tribal people"
+    },
+    {
+     "id": "D",
+     "text": "Carpenter"
+    }
+   ],
+   "answer_as_printed": "A) Labourers",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:31:29+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "ed3aba410f8c3ece74121c1900bfe4171a6d971c4dc558ba28c1416f277df2ac",
+   "topic_ids": [
+    "evs-4-19-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-19-s1-q003",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-19",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The dentist treats",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s1-q003",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s1-q003",
+     "pdf_page": 80,
+     "printed_page": 80,
+     "y": 413.422,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s1-q003-key",
+     "pdf_page": 176,
+     "printed_page": 176,
+     "y": 96.588,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:31:29+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:31:29+05:30",
+   "section_signal": "Choose the correct answer from the options given below",
+   "options": [
+    {
+     "id": "A",
+     "text": "eye"
+    },
+    {
+     "id": "B",
+     "text": "Bones"
+    },
+    {
+     "id": "C",
+     "text": "heart"
+    },
+    {
+     "id": "D",
+     "text": "teeth"
+    }
+   ],
+   "answer_as_printed": "D) Teeth",
+   "answer": {
+    "kind": "option",
+    "option_id": "D"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:31:29+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "35d82332d16b430a2e7cc11cf3a0904eda09d4cd2406c90db0e9caef4688b43a",
+   "topic_ids": [
+    "evs-4-19-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-19-s1-q004",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-19",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "In a school the students are taught by a",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s1-q004",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s1-q004",
+     "pdf_page": 80,
+     "printed_page": 80,
+     "y": 458.452,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s1-q004-key",
+     "pdf_page": 176,
+     "printed_page": 176,
+     "y": 120.608,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:31:29+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:31:29+05:30",
+   "section_signal": "Choose the correct answer from the options given below",
+   "options": [
+    {
+     "id": "A",
+     "text": "Merchant"
+    },
+    {
+     "id": "B",
+     "text": "Police"
+    },
+    {
+     "id": "C",
+     "text": "Teacher"
+    },
+    {
+     "id": "D",
+     "text": "Gardener"
+    }
+   ],
+   "answer_as_printed": "C) Teacher",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:31:29+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "cdb92d973a2cda2b03e3220c3e6af1b0ef7adf2700568752bba262be09ca6aa6",
+   "topic_ids": [
+    "evs-4-19-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-19-s1-q005",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-19",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Who brings us letters?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s1-q005",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s1-q005",
+     "pdf_page": 80,
+     "printed_page": 80,
+     "y": 503.452,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s1-q005-key",
+     "pdf_page": 176,
+     "printed_page": 176,
+     "y": 144.608,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:31:29+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:31:29+05:30",
+   "section_signal": "Choose the correct answer from the options given below",
+   "options": [
+    {
+     "id": "A",
+     "text": "tailor"
+    },
+    {
+     "id": "B",
+     "text": "potter"
+    },
+    {
+     "id": "C",
+     "text": "postman"
+    },
+    {
+     "id": "D",
+     "text": "Labour"
+    }
+   ],
+   "answer_as_printed": "C) Postman",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:31:29+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "7d0710c2c67d4a6a9ccf08f2ad75fd886f2eb9b15971ff9db296c8b676ca9041",
+   "topic_ids": [
+    "evs-4-19-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-19-s2-q006",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-19",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The people of Ramanahalli village are engaged in different _________.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s2-q006",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s2-q006",
+     "pdf_page": 80,
+     "printed_page": 80,
+     "y": 593.472,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s2-q006-key",
+     "pdf_page": 176,
+     "printed_page": 176,
+     "y": 196.108,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:31:29+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:31:29+05:30",
+   "section_signal": "Fill in the blanks with suitable answers",
+   "answer": {
+    "kind": "text",
+    "value": "occupations"
+   },
+   "answer_as_printed": "occupations",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:31:29+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "760b7e0f333c40af29dc95ed7727131b914eea7a47dd6a1a6a3ce60454ea6488",
+   "topic_ids": [
+    "evs-4-19-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-19-s2-q007",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-19",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The clothes we wear are made of _________",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s2-q007",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s2-q007",
+     "pdf_page": 80,
+     "printed_page": 80,
+     "y": 619.972,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s2-q007-key",
+     "pdf_page": 176,
+     "printed_page": 176,
+     "y": 220.138,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:31:29+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:31:29+05:30",
+   "section_signal": "Fill in the blanks with suitable answers",
+   "answer": {
+    "kind": "text",
+    "value": "cloth"
+   },
+   "answer_as_printed": "cloth",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:31:29+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "a621e99a3f79d5e0cf59aea238b5e9b20cb6414c6e770418295d7f0f381d2046",
+   "topic_ids": [
+    "evs-4-19-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-19-s2-q008",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-19",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "It is a_________ offence to employ children below the age of 14 years.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s2-q008",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s2-q008",
+     "pdf_page": 80,
+     "printed_page": 80,
+     "y": 646.502,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s2-q008-key",
+     "pdf_page": 176,
+     "printed_page": 176,
+     "y": 243.888,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:31:29+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:31:29+05:30",
+   "section_signal": "Fill in the blanks with suitable answers",
+   "answer": {
+    "kind": "text",
+    "value": "punishable"
+   },
+   "answer_as_printed": "punishable",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:31:29+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "8638ab6dd2b0ea2b950a555556327e2d2eae596a387a0774243cf29510d383f7",
+   "topic_ids": [
+    "evs-4-19-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-19-s2-q009",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-19",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Dolls and toys are made from wood in _________ district.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s2-q009",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s2-q009",
+     "pdf_page": 80,
+     "printed_page": 80,
+     "y": 673.002,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s2-q009-key",
+     "pdf_page": 176,
+     "printed_page": 176,
+     "y": 267.888,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:31:29+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:31:29+05:30",
+   "section_signal": "Fill in the blanks with suitable answers",
+   "answer": {
+    "kind": "text",
+    "value": "Channapatna"
+   },
+   "answer_as_printed": "Channapatna",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:31:29+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "40ef886350d3ee25a9a462f2bdc66748ad69c5f4789e259765f5a63553afe2fa",
+   "topic_ids": [
+    "evs-4-19-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-19-s2-q010",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-19",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "People following one occupation are dependent on other's _________",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s2-q010",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s2-q010",
+     "pdf_page": 80,
+     "printed_page": 80,
+     "y": 699.502,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s2-q010-key",
+     "pdf_page": 176,
+     "printed_page": 176,
+     "y": 291.908,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:31:29+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:31:29+05:30",
+   "section_signal": "Fill in the blanks with suitable answers",
+   "answer": {
+    "kind": "text",
+    "value": "work"
+   },
+   "answer_as_printed": "work",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:31:29+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "32df30bb134c290fe11e994ab94c29861dbac91646c686075664ea8e33bad020",
+   "topic_ids": [
+    "evs-4-19-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-19-s2-q011",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-19",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "It is everyone's _________ to make working children to get compulsory education.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s2-q011",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s2-q011",
+     "pdf_page": 80,
+     "printed_page": 80,
+     "y": 726.022,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s2-q011-key",
+     "pdf_page": 176,
+     "printed_page": 176,
+     "y": 315.908,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:31:29+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:31:29+05:30",
+   "text_as_printed": "It is everyone's _________ to make working children to get compulsory education .",
+   "section_signal": "Fill in the blanks with suitable answers",
+   "answer": {
+    "kind": "text",
+    "value": "duty"
+   },
+   "answer_as_printed": "duty",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:31:29+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "d7615375d9196290639cbbd68e3e04e231f92c638e9e1935faf0a50e24b82c24",
+   "topic_ids": [
+    "evs-4-19-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-19-s2-q012",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-19",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The cot that is used daily in Somu's house was made by a ___________.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s2-q012",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s2-q012",
+     "pdf_page": 81,
+     "printed_page": 81,
+     "y": 72.082,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s2-q012-key",
+     "pdf_page": 176,
+     "printed_page": 176,
+     "y": 339.908,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:31:29+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:31:29+05:30",
+   "text_as_printed": "The cot that is used daily in Somu's house was made by a ___________ .",
+   "section_signal": "Fill in the blanks with suitable answers",
+   "answer": {
+    "kind": "text",
+    "value": "carpenter"
+   },
+   "answer_as_printed": "carpenter",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:31:29+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "32a44e03d8fec50b5cf368f95d08b910d426bda1e183dddd7638eb3ab0e85f62",
+   "topic_ids": [
+    "evs-4-19-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-19-s2-q013",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-19",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "There are a lot of problems of working children, one of them is a _________ problem.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s2-q013",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s2-q013",
+     "pdf_page": 81,
+     "printed_page": 81,
+     "y": 98.582,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s2-q013-key",
+     "pdf_page": 176,
+     "printed_page": 176,
+     "y": 363.908,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:31:29+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:31:29+05:30",
+   "section_signal": "Fill in the blanks with suitable answers",
+   "answer": {
+    "kind": "text",
+    "value": "health"
+   },
+   "answer_as_printed": "health",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:31:29+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "bc80d6ca793acd123fd7efecc0ecaa774a6eccb71aea9d88656b2bd5c5a335bb",
+   "topic_ids": [
+    "evs-4-19-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-19-s2-q014",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-19",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The government has set up _________ schools for working children aged between 6-14 years.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s2-q014",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s2-q014",
+     "pdf_page": 81,
+     "printed_page": 81,
+     "y": 143.602,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s2-q014-key",
+     "pdf_page": 176,
+     "printed_page": 176,
+     "y": 387.928,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:31:29+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:31:29+05:30",
+   "section_signal": "Fill in the blanks with suitable answers",
+   "answer": {
+    "kind": "text",
+    "value": "bridge"
+   },
+   "answer_as_printed": "bridge",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:31:29+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "6e3999e01b8bded0c1413217470a29c2915913743ecaced0a6179c8c6b46aab9",
+   "topic_ids": [
+    "evs-4-19-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-19-s2-q015",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-19",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The farmer' occupation is called _________.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s2-q015",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s2-q015",
+     "pdf_page": 81,
+     "printed_page": 81,
+     "y": 188.602,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s2-q015-key",
+     "pdf_page": 176,
+     "printed_page": 176,
+     "y": 411.928,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:31:29+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:31:29+05:30",
+   "section_signal": "Fill in the blanks with suitable answers",
+   "answer": {
+    "kind": "text",
+    "value": "agriculture"
+   },
+   "answer_as_printed": "agriculture",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:31:29+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "c617326ce04b7f55ba0b65df01a57dda2c2f12dbd27b94c6daf77017ccdc66ab",
+   "topic_ids": [
+    "evs-4-19-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-19-s3-q016",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-19",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "It is convenient to employ children below the age of 14 years.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s3-q016",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s3-q016",
+     "pdf_page": 81,
+     "printed_page": 81,
+     "y": 241.632,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s3-q016-key",
+     "pdf_page": 176,
+     "printed_page": 176,
+     "y": 463.458,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:31:29+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:31:29+05:30",
+   "section_signal": "State whether the following statements aretrue or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "false"
+   },
+   "answer_as_printed": "False",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:31:29+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "01396aca6e7272cf1b152340e79e725de77558007bd35bee9a339aab0d205c95",
+   "topic_ids": [
+    "evs-4-19-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-19-s3-q017",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-19",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The carpenter cuts wood and makes several things.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s3-q017",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s3-q017",
+     "pdf_page": 81,
+     "printed_page": 81,
+     "y": 268.132,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s3-q017-key",
+     "pdf_page": 176,
+     "printed_page": 176,
+     "y": 487.458,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:31:29+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:31:29+05:30",
+   "section_signal": "State whether the following statements aretrue or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "True",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:31:29+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "c70b74d63caeebad0538749d5f6a2b598aeb27f63a7d4ae749c4672b63e9c57c",
+   "topic_ids": [
+    "evs-4-19-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-19-s3-q018",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-19",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Chennapatna is not famous for its wooden handicraft.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s3-q018",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s3-q018",
+     "pdf_page": 81,
+     "printed_page": 81,
+     "y": 294.652,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s3-q018-key",
+     "pdf_page": 176,
+     "printed_page": 176,
+     "y": 511.458,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:31:29+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:31:29+05:30",
+   "section_signal": "State whether the following statements aretrue or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "false"
+   },
+   "answer_as_printed": "False",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:31:29+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "0b0d524817c3bb3d6b778c843eeee837e3bb1775a20482a1363ff7f3af36e6c0",
+   "topic_ids": [
+    "evs-4-19-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-19-s3-q019",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-19",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Working children have no problems.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s3-q019",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s3-q019",
+     "pdf_page": 81,
+     "printed_page": 81,
+     "y": 321.152,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s3-q019-key",
+     "pdf_page": 176,
+     "printed_page": 176,
+     "y": 535.458,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:31:29+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:31:29+05:30",
+   "section_signal": "State whether the following statements aretrue or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "false"
+   },
+   "answer_as_printed": "False",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:31:29+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "a5395fe2b31191dda1a3ff66e38857275d9693fe09348ad0edca8b1cbbfb4bdb",
+   "topic_ids": [
+    "evs-4-19-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-19-s3-q020",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-19",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "One's occupation is dependent on another’s occupation.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s3-q020",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s3-q020",
+     "pdf_page": 81,
+     "printed_page": 81,
+     "y": 347.402,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s3-q020-key",
+     "pdf_page": 176,
+     "printed_page": 176,
+     "y": 559.478,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:31:29+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:31:29+05:30",
+   "section_signal": "State whether the following statements aretrue or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "True",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:31:29+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "c9f9a22c705dbd4334ab6f508d607762def607e59c9e0fbccd7f4748df3d540d",
+   "topic_ids": [
+    "evs-4-19-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-19-s3-q021",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-19",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The government provides education for working children also.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s3-q021",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s3-q021",
+     "pdf_page": 81,
+     "printed_page": 81,
+     "y": 373.922,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s3-q021-key",
+     "pdf_page": 176,
+     "printed_page": 176,
+     "y": 583.238,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:31:29+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:31:29+05:30",
+   "section_signal": "State whether the following statements aretrue or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "True",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:31:29+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "9d07a649432fe386c4842b21e40c07a655bc672f2290e2206a4364e8f9e8d1ba",
+   "topic_ids": [
+    "evs-4-19-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-19-s3-q022",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-19",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The farmer helps in making our clothes.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s3-q022",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s3-q022",
+     "pdf_page": 81,
+     "printed_page": 81,
+     "y": 400.422,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s3-q022-key",
+     "pdf_page": 176,
+     "printed_page": 176,
+     "y": 607.228,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:31:29+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:31:29+05:30",
+   "section_signal": "State whether the following statements aretrue or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "false"
+   },
+   "answer_as_printed": "False",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:31:29+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "e1f52bd95329da2b9db4c3529511f54b24859e0618735eea9eee661a81e3b359",
+   "topic_ids": [
+    "evs-4-19-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-19-s3-q023",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-19",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The doctor and teachers are local employees.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s3-q023",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s3-q023",
+     "pdf_page": 81,
+     "printed_page": 81,
+     "y": 426.922,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s3-q023-key",
+     "pdf_page": 176,
+     "printed_page": 176,
+     "y": 631.258,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:31:29+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:31:29+05:30",
+   "section_signal": "State whether the following statements aretrue or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "True",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:31:29+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "8c7b6f6c0aeebe3eb2c24a7bad5962ae68d884e417ed94cfdda0d203c7f18d5e",
+   "topic_ids": [
+    "evs-4-19-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-19-s3-q024",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-19",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Education is not free and compulsory for all.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s3-q024",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s3-q024",
+     "pdf_page": 81,
+     "printed_page": 81,
+     "y": 453.422,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s3-q024-key",
+     "pdf_page": 176,
+     "printed_page": 176,
+     "y": 655.258,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:31:29+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:31:29+05:30",
+   "section_signal": "State whether the following statements aretrue or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "false"
+   },
+   "answer_as_printed": "False",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:31:29+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "f540598362310f53673f3e922aeaad96dee59ac2423e255a9ffff4c8a5008d34",
+   "topic_ids": [
+    "evs-4-19-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-19-s3-q025",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-19",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Agriculture is one of the important occupations of Karnataka.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s3-q025",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s3-q025",
+     "pdf_page": 81,
+     "printed_page": 81,
+     "y": 479.952,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s3-q025-key",
+     "pdf_page": 176,
+     "printed_page": 176,
+     "y": 679.258,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:31:29+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:31:29+05:30",
+   "section_signal": "State whether the following statements aretrue or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "True",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:31:29+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "4b22185956fa5c005a1d21f59975a63618f7c2bfe1a8cc785f3e6fa3cf88c9b4",
+   "topic_ids": [
+    "evs-4-19-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-19-s4-q026",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-19",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Match the following appropriately\nA (Jobs): a) Carpenter; b) Farmer; e) Doctor; d) Teacher; e) Dancer; f) Flower vendor; (r) Policeman; a) Driver; (a) Tailor; i) Postman\nB (job description): (a) grows food for all.; b) Makes tables and chairs out of wood .; e) Teaches students.; d) Treats patients.; e) Sells flowers.; f) perform dance.; c) Drives the vehicle.; a) Distributes letters.; a) controls the law and order; i) Sews clothes.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s4-q026",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s4-q026",
+     "pdf_page": 81,
+     "printed_page": 81,
+     "y": 532.952,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s4-q026-key",
+     "pdf_page": 176,
+     "printed_page": 176,
+     "y": 716.538,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:31:29+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:31:29+05:30",
+   "text_as_printed": "Match the following appropriately (easy) A (Jobs)                  B (job description) a) Carpenter             (a) grows food for all. b) Farmer                b) Makes tables and chairs out of wood . e) Doctor                e) Teaches students. d) Teacher               d) Treats patients. e) Dancer                e) Sells flowers. f) Flower vendor           f) perform dance. (r) Policeman              c) Drives the vehicle. a) Driver                  a) Distributes letters. (a) Tailor                 a) controls the law and order i) Postman                 i) Sews clothes.",
+   "section_signal": "Match the Following",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "Carpenter",
+      "right": "Makes tables and chairs out of wood"
+     },
+     {
+      "left": "Farmer",
+      "right": "Grows food for all"
+     },
+     {
+      "left": "Doctor",
+      "right": "Treats patients"
+     },
+     {
+      "left": "Teacher",
+      "right": "Teaches students"
+     },
+     {
+      "left": "Dancer",
+      "right": "Performs dance"
+     },
+     {
+      "left": "Flower vendor",
+      "right": "Sells flowers"
+     },
+     {
+      "left": "Policeman",
+      "right": "Controls the law and order"
+     },
+     {
+      "left": "Driver",
+      "right": "Drives the vehicle"
+     },
+     {
+      "left": "Postman",
+      "right": "Distributes letters"
+     },
+     {
+      "left": "Tailor",
+      "right": "Sews clothes"
+     }
+    ]
+   },
+   "answer_as_printed": "a) Carpenter — b) Makes tables and chairs out of wood; b) Farmer — a) Grows food for all; c) Doctor — d) Treats patients; d) Teacher — e) Teaches students; e) Dancer — f) Performs dance; f) Flower vendor — e) Sells flowers; g) Policeman — a) Controls the law and order; h) Driver — c) Drives the vehicle; i) Postman — a) Distributes letters; j) Tailor — i) Sews clothes",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:31:29+05:30",
+    "basis": "printed match key (letter + text per row); pairs left/right verbatim from the key (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "fbf1e002e8ac43d97f28adbdf68328d4a959f1ad685203c11107f8abaf9ced36",
+   "topic_ids": [
+    "evs-4-19-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-19-s5-q027",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-19",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What is the occupation of your father?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s5-q027",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s5-q027",
+     "pdf_page": 82,
+     "printed_page": 82,
+     "y": 271.622,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s5-q027-key",
+     "pdf_page": 177,
+     "printed_page": 177,
+     "y": 279.388,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:31:29+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:31:29+05:30",
+   "section_signal": "Answer the following questions (one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "My father's occupation is farming / driver / teacher (Accept any correct occupation)."
+   },
+   "answer_as_printed": "My father's occupation is farming / driver / teacher (Accept any correct occupation).",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:31:29+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "fb5866598963684b4b9f065e26c8eb137a1f5e56c2889a68b402447f1dc94c73",
+   "topic_ids": [
+    "evs-4-19-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-19-s5-q028",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-19",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Which place in Karnataka is famous for wooden toys and dolls?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s5-q028",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s5-q028",
+     "pdf_page": 82,
+     "printed_page": 82,
+     "y": 298.152,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s5-q028-key",
+     "pdf_page": 177,
+     "printed_page": 177,
+     "y": 303.408,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:31:29+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:31:29+05:30",
+   "section_signal": "Answer the following questions (one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Channapatna is famous for wooden toys and dolls."
+   },
+   "answer_as_printed": "Channapatna is famous for wooden toys and dolls.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:31:29+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "7b8c0288979204f1f53f7d7a79054264d8df64b0c106a914f731230b33cca67c",
+   "topic_ids": [
+    "evs-4-19-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-19-s5-q029",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-19",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What age group of children should not be employed?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s5-q029",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s5-q029",
+     "pdf_page": 82,
+     "printed_page": 82,
+     "y": 324.402,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s5-q029-key",
+     "pdf_page": 177,
+     "printed_page": 177,
+     "y": 327.408,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:31:29+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:31:29+05:30",
+   "section_signal": "Answer the following questions (one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Children below 14 years should not be employed."
+   },
+   "answer_as_printed": "Children below 14 years should not be employed.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:31:29+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "b03bbc9725e7ceb6d266c2a90d4808d19db78e919b2dfb541c05d6920928eacc",
+   "topic_ids": [
+    "evs-4-19-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-19-s5-q030",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-19",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Name any one occupation found in Ramanahalli village.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s5-q030",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s5-q030",
+     "pdf_page": 82,
+     "printed_page": 82,
+     "y": 350.902,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s5-q030-key",
+     "pdf_page": 177,
+     "printed_page": 177,
+     "y": 351.408,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:31:29+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:31:29+05:30",
+   "section_signal": "Answer the following questions (one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Farming / Carpentry / Pottery (Any one from Ramanahalli)."
+   },
+   "answer_as_printed": "Farming / Carpentry / Pottery (Any one from Ramanahalli).",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:31:29+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "55cf979516bca6de13db38bb51f9ef29c9b7855db7ea21aedcaf0abc5cd7818a",
+   "topic_ids": [
+    "evs-4-19-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-19-s5-q031",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-19",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What is the speciality of Karnataka architecture?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s5-q031",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s5-q031",
+     "pdf_page": 82,
+     "printed_page": 82,
+     "y": 377.422,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s5-q031-key",
+     "pdf_page": 177,
+     "printed_page": 177,
+     "y": 375.428,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:31:29+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:31:29+05:30",
+   "section_signal": "Answer the following questions (one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Karnataka architecture is known for temples and wooden craft."
+   },
+   "answer_as_printed": "Karnataka architecture is known for temples and wooden craft.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:31:29+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "2a8ab341211d5d303d1e6e9f5d33a0f708373fe7371b5df4c6e180500e3d6999",
+   "topic_ids": [
+    "evs-4-19-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-19-s5-q032",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-19",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Who sews our clothes?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s5-q032",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s5-q032",
+     "pdf_page": 82,
+     "printed_page": 82,
+     "y": 403.922,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s5-q032-key",
+     "pdf_page": 177,
+     "printed_page": 177,
+     "y": 399.428,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:31:29+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:31:29+05:30",
+   "section_signal": "Answer the following questions (one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Tailor sews our clothes."
+   },
+   "answer_as_printed": "Tailor sews our clothes.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:31:29+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "bbf4fb3eb172e32ff1f8a5e6829540b557550db34bcfb3adf037b8a2f0fafeab",
+   "topic_ids": [
+    "evs-4-19-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-19-s5-q033",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-19",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Who sows in the field?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s5-q033",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s5-q033",
+     "pdf_page": 82,
+     "printed_page": 82,
+     "y": 430.422,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s5-q033-key",
+     "pdf_page": 177,
+     "printed_page": 177,
+     "y": 423.428,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:31:29+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:31:29+05:30",
+   "section_signal": "Answer the following questions (one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "The farmer sows in the field."
+   },
+   "answer_as_printed": "The farmer sows in the field.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:31:29+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "ccff28f3997aab6d10b7680c799a4bdc48223466f24bcdf5fb5a8a733da47a00",
+   "topic_ids": [
+    "evs-4-19-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-19-s6-q034",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-19",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What do we learn from the elephant story?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s6-q034",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s6-q034",
+     "pdf_page": 82,
+     "printed_page": 82,
+     "y": 509.952,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s6-q034-key",
+     "pdf_page": 177,
+     "printed_page": 177,
+     "y": 474.958,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:31:29+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:31:29+05:30",
+   "text_as_printed": "What do we learn from the elephant story ? (Average)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "We learn that all jobs are important. We must respect everyone’s work."
+   },
+   "answer_as_printed": "We learn that all jobs are important. We must respect everyone’s work.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:31:29+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "be10b45ab0acade01b8caaac361197673bfac32f1f190f260cdc10f0cd400460",
+   "topic_ids": [
+    "evs-4-19-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-19-s6-q035",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-19",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Write the names of two people of different occupations and the work they do.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s6-q035",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s6-q035",
+     "pdf_page": 82,
+     "printed_page": 82,
+     "y": 536.452,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s6-q035-key",
+     "pdf_page": 177,
+     "printed_page": 177,
+     "y": 488.708,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:31:29+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:31:29+05:30",
+   "text_as_printed": "Write the names of two people of different occupations and the work they do. (Easy)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Doctor – treats sick people. Farmer – grows crops and food."
+   },
+   "answer_as_printed": "Doctor – treats sick people. Farmer – grows crops and food.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:31:29+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "6375afeaa451dac8a124fc066c740bf2489e5921b26108f9aaed741bef0847db",
+   "topic_ids": [
+    "evs-4-19-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-19-s6-q036",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-19",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Mention two problems faced by the working children.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s6-q036",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s6-q036",
+     "pdf_page": 82,
+     "printed_page": 82,
+     "y": 581.482,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s6-q036-key",
+     "pdf_page": 177,
+     "printed_page": 177,
+     "y": 502.458,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:31:29+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:31:29+05:30",
+   "text_as_printed": "Mention two problems faced by the working children. (Difficult)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Health problem and no education are faced by working children."
+   },
+   "answer_as_printed": "Health problem and no education are faced by working children.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:31:29+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "546a2bbfb77ca45c7b885df486a0475f7b5f23f34f93bb80a52301dd23f75ffc",
+   "topic_ids": [
+    "evs-4-19-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-19-s6-q037",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-19",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Name the different occupations who are involved in the making of clothes?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s6-q037",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s6-q037",
+     "pdf_page": 82,
+     "printed_page": 82,
+     "y": 607.982,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s6-q037-key",
+     "pdf_page": 177,
+     "printed_page": 177,
+     "y": 516.208,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:31:29+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:31:29+05:30",
+   "text_as_printed": "Name the different occupations who are involved in the making of clothes? (Easy)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Farmer grows cotton. Tailor stitches clothes."
+   },
+   "answer_as_printed": "Farmer grows cotton. Tailor stitches clothes.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:31:29+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "af02eeedf751e3edffe929693751f7cdeaabadbae74ffee50b8a98cadeed1981",
+   "topic_ids": [
+    "evs-4-19-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-19-s6-q038",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-19",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Write two sentences about the importance of different occcupations.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s6-q038",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s6-q038",
+     "pdf_page": 82,
+     "printed_page": 82,
+     "y": 653.002,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s6-q038-key",
+     "pdf_page": 177,
+     "printed_page": 177,
+     "y": 530.208,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:31:29+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:31:29+05:30",
+   "text_as_printed": "Write two sentences about the importance of different occcupations. (Easy)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Every job is important. People help each other through their jobs."
+   },
+   "answer_as_printed": "Every job is important. People help each other through their jobs.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:31:29+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "7286a8cf552a7626660775e85b8ee101f76a91c75f43f1683838261e2554ca64",
+   "topic_ids": [
+    "evs-4-19-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-19-s7-q039",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-19",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Write the sequence in which the elephant in the script went to meet the different occupations.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s7-q039",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s7-q039",
+     "pdf_page": 82,
+     "printed_page": 82,
+     "y": 706.002,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s7-q039-key",
+     "pdf_page": 177,
+     "printed_page": 177,
+     "y": 624.478,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:31:29+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:31:29+05:30",
+   "text_as_printed": "Write the sequence in which the elephant in the script went to meet the different occupations. (Difficult)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "The elephant first met the tailor, then the farmer, then the weaver, and finally the shopkeeper to get his shirt."
+   },
+   "answer_as_printed": "The elephant first met the tailor, then the farmer, then the weaver, and finally the shopkeeper to get his shirt.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:31:29+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "77bf7f704c2925b5c36628b5f447a4c388b6193a412677b5ab3c687f80e9e647",
+   "topic_ids": [
+    "evs-4-19-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-19-s7-q040",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-19",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Mention the three occupations found in your area and explain what they do.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s7-q040",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s7-q040",
+     "pdf_page": 83,
+     "printed_page": 83,
+     "y": 72.082,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s7-q040-key",
+     "pdf_page": 177,
+     "printed_page": 177,
+     "y": 652.258,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:31:29+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:31:29+05:30",
+   "text_as_printed": "Mention the three occupations found in your area and explain what they do. (Easy)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Farmer: Grows food crops in fields.\nDoctor: Treats sick people.\nTeacher: Teaches students in school."
+   },
+   "answer_as_printed": "Farmer: Grows food crops in fields.\nDoctor: Treats sick people.\nTeacher: Teaches students in school.",
+   "solution_steps": [
+    "Farmer: Grows food crops in fields.",
+    "Doctor: Treats sick people.",
+    "Teacher: Teaches students in school."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:31:29+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "839bb7e0ca926a3dff2c85a3e99f4a39d8226622f9a2952053f7fb88fb37a06a",
+   "topic_ids": [
+    "evs-4-19-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-19-s7-q041",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-19",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Why is it necessary for different occupations to be interdependent?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s7-q041",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s7-q041",
+     "pdf_page": 83,
+     "printed_page": 83,
+     "y": 117.102,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s7-q041-key",
+     "pdf_page": 178,
+     "printed_page": 178,
+     "y": 72.588,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:31:29+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:31:29+05:30",
+   "text_as_printed": "Why is it necessary for different occupations to be interdependent? (Average)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "One job needs the help of another. Like, the tailor needs cloth made by the weaver. So, all jobs are connected."
+   },
+   "answer_as_printed": "One job needs the help of another. Like, the tailor needs cloth made by the weaver. So, all jobs are connected.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:31:29+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "f3fe25d5555eab86c9e3cdb843ab1df2bb379273f3b1adb085912e53befeabab",
+   "topic_ids": [
+    "evs-4-19-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-19-s7-q042",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-19",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Mention the three steps or people who are involve in the making a shirt.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s7-q042",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s7-q042",
+     "pdf_page": 83,
+     "printed_page": 83,
+     "y": 143.602,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s7-q042-key",
+     "pdf_page": 178,
+     "printed_page": 178,
+     "y": 100.088,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:31:29+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:31:29+05:30",
+   "text_as_printed": "Mention the three steps or people who are involve in the making a shirt. (Difficult)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Farmer grows cotton.\nWeaver makes cloth.\nTailor stitches the shirt."
+   },
+   "answer_as_printed": "Farmer grows cotton.\nWeaver makes cloth.\nTailor stitches the shirt.",
+   "solution_steps": [
+    "Farmer grows cotton.",
+    "Weaver makes cloth.",
+    "Tailor stitches the shirt."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:31:29+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "09252b9395cc1211a1daa93762d720ef0d8487940ce13f2a61a94fc4db2bee9e",
+   "topic_ids": [
+    "evs-4-19-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-19-s7-q043",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-19",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Write down the steps taken by the government for the benefit working children.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s7-q043",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s7-q043",
+     "pdf_page": 83,
+     "printed_page": 83,
+     "y": 188.602,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s7-q043-key",
+     "pdf_page": 178,
+     "printed_page": 178,
+     "y": 185.858,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:31:29+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:31:29+05:30",
+   "text_as_printed": "Write down the steps taken by the government for the benefit working children. (Difficult)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "The government gives free education.\nBridge schools are set up.\nLaws are made to stop child labour."
+   },
+   "answer_as_printed": "The government gives free education.\nBridge schools are set up.\nLaws are made to stop child labour.",
+   "solution_steps": [
+    "The government gives free education.",
+    "Bridge schools are set up.",
+    "Laws are made to stop child labour."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:31:29+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "0a3fc87e58847e6194075889a5940a67bbfe1751e84ae8e22f90a8e10e3dd46d",
+   "topic_ids": [
+    "evs-4-19-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-19-s8-q044",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-19",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "How many people did the elephant meet and why?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s8-q044",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s8-q044",
+     "pdf_page": 83,
+     "printed_page": 83,
+     "y": 260.132,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s8-q044-key",
+     "pdf_page": 178,
+     "printed_page": 178,
+     "y": 299.158,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:31:29+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:31:29+05:30",
+   "section_signal": "Answer the following questions (four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "The elephant met the tailor, farmer, weaver, and shopkeeper. He needed help to get a shirt stitched."
+   },
+   "answer_as_printed": "The elephant met the tailor, farmer, weaver, and shopkeeper. He needed help to get a shirt stitched.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:31:29+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "neither the question nor its section heading prints a difficulty tag; assigning one needs subject judgement",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "61a710293e25e9b620fdc6b1da44bd1d93471460ce1915cea7ef56ffb53f4b19",
+   "topic_ids": [
+    "evs-4-19-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-19-s8-q045",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-19",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Name any 10 different occupations found in your place.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s8-q045",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s8-q045",
+     "pdf_page": 83,
+     "printed_page": 83,
+     "y": 286.652,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s8-q045-key",
+     "pdf_page": 178,
+     "printed_page": 178,
+     "y": 326.908,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:31:29+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:31:29+05:30",
+   "section_signal": "Answer the following questions (four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "1. Farmer\n2. Doctor\n3. Teacher\n4. Tailor\n5. Carpenter\n6. Driver\n7. Policeman\n8. Postman\n9. Shopkeeper\n10. Dancer"
+   },
+   "answer_as_printed": "1. Farmer\n2. Doctor\n3. Teacher\n4. Tailor\n5. Carpenter\n6. Driver\n7. Policeman\n8. Postman\n9. Shopkeeper\n10. Dancer",
+   "solution_steps": [
+    "1. Farmer",
+    "2. Doctor",
+    "3. Teacher",
+    "4. Tailor",
+    "5. Carpenter",
+    "6. Driver",
+    "7. Policeman",
+    "8. Postman",
+    "9. Shopkeeper",
+    "10. Dancer"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:31:29+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "neither the question nor its section heading prints a difficulty tag; assigning one needs subject judgement",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "98a366d0828c611b78e00145106e405378a2e337229e62dbc35171b3bcc7106e",
+   "topic_ids": [
+    "evs-4-19-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-19-s8-q046",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-19",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What lesson do we learn from the elephant story?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s8-q046",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s8-q046",
+     "pdf_page": 83,
+     "printed_page": 83,
+     "y": 313.152,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s8-q046-key",
+     "pdf_page": 178,
+     "printed_page": 178,
+     "y": 580.478,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:31:29+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:31:29+05:30",
+   "section_signal": "Answer the following questions (four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "The elephant story teaches us that all work is valuable and people depend on each other. We must respect every job."
+   },
+   "answer_as_printed": "The elephant story teaches us that all work is valuable and people depend on each other. We must respect every job.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:31:29+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "neither the question nor its section heading prints a difficulty tag; assigning one needs subject judgement",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "b47607c2084e1898bd38f1a5d5bf3d03fdb7e6dcf6cf10fd92bdf65512c8809d",
+   "topic_ids": [
+    "evs-4-19-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-19-s8-q047",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-19",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Write the four major problems faced by the working children:",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s8-q047",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s8-q047",
+     "pdf_page": 83,
+     "printed_page": 83,
+     "y": 339.402,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s8-q047-key",
+     "pdf_page": 178,
+     "printed_page": 178,
+     "y": 608.238,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:31:29+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:31:29+05:30",
+   "text_as_printed": "Write the four major problems faced by the working children: (difficult)",
+   "section_signal": "Answer the following questions (four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "No time for school\nHealth issues\nLow income\nNo rest and play"
+   },
+   "answer_as_printed": "No time for school\nHealth issues\nLow income\nNo rest and play",
+   "solution_steps": [
+    "No time for school",
+    "Health issues",
+    "Low income",
+    "No rest and play"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:31:29+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "c2bbf47200e7355eb17e30fce1ce297131ea9dd02754985f772b917dc14f6d67",
+   "topic_ids": [
+    "evs-4-19-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-19-s8-q048",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-19",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Write a short note on the importance of different occupations in the society?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s8-q048",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s8-q048",
+     "pdf_page": 83,
+     "printed_page": 83,
+     "y": 365.902,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s8-q048-key",
+     "pdf_page": 178,
+     "printed_page": 178,
+     "y": 717.778,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:31:29+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:31:29+05:30",
+   "text_as_printed": "Write a short note on the importance of different occupations in the society? (difficult)",
+   "section_signal": "Answer the following questions (four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Every job helps society. Farmers grow food, teachers educate us, and doctors make us healthy. All jobs help each other."
+   },
+   "answer_as_printed": "Every job helps society. Farmers grow food, teachers educate us, and doctors make us healthy. All jobs help each other.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:31:29+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "57b6bb79a75b80e9ea4fd6235f2f739461b287611546efab9898ac7af38198ae",
+   "topic_ids": [
+    "evs-4-19-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-19-s8-q049",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-19",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Write an article on the occupations, Karnataka is famous for.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s8-q049",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s8-q049",
+     "pdf_page": 83,
+     "printed_page": 83,
+     "y": 410.922,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s8-q049-key",
+     "pdf_page": 179,
+     "printed_page": 179,
+     "y": 72.588,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:31:29+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:31:29+05:30",
+   "text_as_printed": "Write an article on the occupations, Karnataka is famous for. (Difficult)",
+   "section_signal": "Answer the following questions (four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Karnataka is famous for farming, sandalwood carving, silk weaving, and wooden toys. Many people are involved in these jobs. These occupations make our state special."
+   },
+   "answer_as_printed": "Karnataka is famous for farming, sandalwood carving, silk weaving, and wooden toys. Many people are involved in these jobs. These occupations make our state special.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:31:29+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "d7c55f5ab9e6a9fc65e8518d165f193eb9214b690d289ba7cab025ef0bc978c4",
+   "topic_ids": [
+    "evs-4-19-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-19-s8-q050",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-19",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Draw a picture of the farmer ploughing and colour it.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s8-q050",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s8-q050",
+     "pdf_page": 83,
+     "printed_page": 83,
+     "y": 437.422,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-19-s8-q050-key",
+     "pdf_page": 176,
+     "printed_page": 176,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:31:29+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:31:29+05:30",
+   "text_as_printed": "Draw a picture of the farmer ploughing and colour it. (Difficult)",
+   "section_signal": "Answer the following questions (four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    },
+    {
+     "issue": "no answer printed",
+     "why_not_corrected": "the answer side ends at key 49 (pdf 179) and prints nothing for this drawing task",
+     "suggested": "key absent — review"
+    }
+   ],
+   "content_hash": "49a7fba5b9a06da19771d4417d599d2adeafad84d4fcc9f0cc563f1ce375cd01",
+   "topic_ids": [
+    "evs-4-19-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  }
+ ],
+ "pending_summary": {}
+}
