@@ -1,0 +1,1959 @@
+{
+ "contract_version": "1.7",
+ "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
+ "procedure_file": "extraction_procedure_social_addendum_v1.4_social science Classes 6-10 on top of procedure v2.md",
+ "machine_name": "evs-3-20_questions",
+ "version": 1,
+ "changelog": "v1 extraction — batch-01 — class-3-evs",
+ "amendments_applied": [],
+ "unit_state": "EXTRACTED",
+ "review_ready": false,
+ "count_gate": {
+  "reference": 20,
+  "reference_source": "audited",
+  "extracted": 20,
+  "paired": 14,
+  "flagged": 13,
+  "gaps": [],
+  "duplicated_numbers": [],
+  "quota_table": "difficulty_only",
+  "second_method": {
+   "method": "printed BLUE PRINT difficulty table total (Easy 10 + Average 5 + Difficulty 5 = 20), pdf 78; independently, the answer side's keys counted",
+   "extracted": 20,
+   "agrees": true
+  },
+  "pass": true,
+  "note": "Question side labels 1-20 monotonic, no gaps, no duplicates (I 1-5, II 6-10, III 11-15, IV 16, V 17-18, VI 19, 20); q16 items A-G, q19 sub-questions A-F and q20 sub-questions 1-4 are parts of their questions. Answer side keys 1-20 in order (pdf 122-123). BLUE PRINT 10/5/5 = 20 = audited count. Difficulty per question: easy 0, average 0, difficult 0, untagged 20."
+ },
+ "extraction": {
+  "source_file": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf",
+  "source_ref_prefix": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf",
+  "pdf_pages": [
+   78,
+   79,
+   80,
+   81,
+   82,
+   122,
+   123
+  ],
+  "printed_page_offset": 0,
+  "method_notes": [
+   "Pages: Q pdf 78 (heading, LO 11, BLUE PRINT, q1-5) 79 (q6-14) 80 (q14 options-q18) 81 (q19 passage + A-F) 82 (q20 picture + 1-4). A side 'Sample answers 20' pdf 122 (keys 1-13), pdf 123 (14-20). Folios = pdf page.",
+   "ANSWER SIDE (analysed first): keys 1-16 answer q1-q16 by number. Keys 17 and 18 answer other questions (17 fits q12, 18 fits q19 B) -> q17, q18 empty + 'key belongs to another paper version'. Key 19 answers q19's sub-question E only and key 20 answers q20's sub-question 2 only -> stored with 'answer truncated in source'.",
+   "Sections: s1 I fill q1-5; s2 II match q6-10 (numbered rows -> one-pair match questions); s3 III mcq q11-15 (three options A-C; keys print text only -> addendum §4.2 matching: q14 'Education' -> B by pass 1; q11 'He wakes up early.', q12 'VegetablesTo sell', q13 'Plays with a friend.', q15 'ToothMust be rubbed' match no option -> null + 'key text not among options' with the suggested letter); s4 IV q16 ordering (items A-G in the stem; key = six re-worded lines, stored as the sequence verbatim + 'key text does not address question'); s5 V q17-18; s6 VI q19 (passage stimulus); s7 q20 (picture stimulus).",
+   "MARKS (R-E9, rev 3): s2 '5X1=5' -> 1; s3 '5X1=5' -> 1; null: s1 '5X1=6' (arithmetic wrong), s4 '7X1=7' over 1 q, s5 '[Marks: 4 × 2 = 8]' over 2 q, s6 '6X1=6' over 1 q, s7 '4*1=4' over 1 q.",
+   "DIFFICULTY: none printed -> null + 'no difficulty tag'. quota_table difficulty_only; second method = BLUE PRINT total 20 (agrees). LO (R-E10): lesson LO 11, lo_source 'lesson_table'.",
+   "FIGURES (v1.4 §14.10): q20's three-panel picture (pdf 82, one embedded image) -> stimulus crop.",
+   "Source wording kept: key 5 'Claim' (right), q13 option A 'He watches the distance vision.', glued words in keys ('VegetablesTo sell', 'ToothMust be rubbed', 'EveningPlays'); key 18 'Wit hout school …' quoted verbatim in q18's flag."
+  ],
+  "notation_summary": {
+   "render_tokens": 0,
+   "latex_tokens": 0,
+   "damage_flags": []
+  },
+  "excluded_objects": [],
+  "inline_excluded_count": 0,
+  "figure_references": []
+ },
+ "stimuli": [
+  {
+   "id": "st-evs-3-20-passage",
+   "kind": "passage",
+   "text": "The children who are engaged in work for money at an early age are called child labourers. They do not get access to school, learning and play. They miss proper education. Many works are dangerous for children. They getting into health risks is more. They get into hazards quickly. May be punished by the owners. There are possibilities of getting into bad habits. So the Government has enforced the child labour Prohibition Act. Children of school age are being identified and brought back to school. Efforts are made to provide education to these children.",
+   "note": "VI. 19. Read the passage below and answer the questions given.",
+   "locators": [
+    {
+     "role": "stimulus",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#st-evs-3-20-passage",
+     "pdf_page": 81,
+     "printed_page": 81,
+     "y": 159.05264,
+     "derived_from": "text_layer"
+    }
+   ]
+  },
+  {
+   "id": "st-evs-3-20-q20",
+   "kind": "figure",
+   "note": "20. three-panel picture of children at work, pdf 82",
+   "assets": [
+    {
+     "id": "st20",
+     "type": "image",
+     "ref": "images/evs-3-20/stimuli/p082-q20_figure.png",
+     "role": "figure",
+     "source_px": {
+      "w": 941,
+      "h": 492
+     },
+     "quality": "ok",
+     "caption": "Picture printed for q20, pdf 82 — region render at 150 dpi of the embedded image's box",
+     "pdf_page": 82,
+     "crop_bbox": {
+      "pdf_page": 82,
+      "x0": 36.0,
+      "y0": 113.1,
+      "x1": 487.7,
+      "y1": 349.5
+     }
+    }
+   ],
+   "locators": [
+    {
+     "role": "stimulus",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#st-evs-3-20-q20",
+     "pdf_page": 82,
+     "printed_page": 82,
+     "y": 113.1,
+     "derived_from": "render_measured"
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "evs-3-20-s1-q001",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-20",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "11",
+     "text_as_printed": "Develop sensitivity and an attitude to help the people with special needs."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Ramu is a student of ____________ class.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-20-s1-q001",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-20-s1-q001",
+     "pdf_page": 78,
+     "printed_page": 78,
+     "y": 520.493,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-20-s1-q001-key",
+     "pdf_page": 122,
+     "printed_page": 122,
+     "y": 542.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:35:14+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:35:14+05:30",
+   "section_signal": "I. Fill in the blank.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Third"
+   },
+   "answer_as_printed": "Third",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:35:14+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '5X1=6' — arithmetic wrong (5x1 is not 6) (R-E9)"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "6671e9d07c06729b45d0d73ad956a039eb9212ff75144398e713c4758075ed19",
+   "topic_ids": [
+    "evs-3-20-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-20-s1-q002",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-20",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "11",
+     "text_as_printed": "Develop sensitivity and an attitude to help the people with special needs."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "We have to wake up at _______________ every morning.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-20-s1-q002",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-20-s1-q002",
+     "pdf_page": 78,
+     "printed_page": 78,
+     "y": 579.053,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-20-s1-q002-key",
+     "pdf_page": 122,
+     "printed_page": 122,
+     "y": 542.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:35:14+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:35:14+05:30",
+   "section_signal": "I. Fill in the blank.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "6:00"
+   },
+   "answer_as_printed": "2.6:00",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:35:14+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '5X1=6' — arithmetic wrong (5x1 is not 6) (R-E9)"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "f253ad43f7531d02b337969f746ba84ac722b9ad007bad1a420d2ae5ef487a9d",
+   "topic_ids": [
+    "evs-3-20-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-20-s1-q003",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-20",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "11",
+     "text_as_printed": "Develop sensitivity and an attitude to help the people with special needs."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Her _________________ illness is the reason for not going to school.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-20-s1-q003",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-20-s1-q003",
+     "pdf_page": 78,
+     "printed_page": 78,
+     "y": 640.253,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-20-s1-q003-key",
+     "pdf_page": 122,
+     "printed_page": 122,
+     "y": 542.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:35:14+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:35:14+05:30",
+   "section_signal": "I. Fill in the blank.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Mother's"
+   },
+   "answer_as_printed": "Mother's",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:35:14+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '5X1=6' — arithmetic wrong (5x1 is not 6) (R-E9)"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "a9fee3fbd8b0afaf3d68c6ed7706d0b625d10a4395550cbe93c3e3633eafd78a",
+   "topic_ids": [
+    "evs-3-20-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-20-s1-q004",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-20",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "11",
+     "text_as_printed": "Develop sensitivity and an attitude to help the people with special needs."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "I will go to ______________ on time after school in the evening.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-20-s1-q004",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-20-s1-q004",
+     "pdf_page": 78,
+     "printed_page": 78,
+     "y": 701.693,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-20-s1-q004-key",
+     "pdf_page": 122,
+     "printed_page": 122,
+     "y": 542.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:35:14+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:35:14+05:30",
+   "section_signal": "I. Fill in the blank.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Home"
+   },
+   "answer_as_printed": "Home",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:35:14+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '5X1=6' — arithmetic wrong (5x1 is not 6) (R-E9)"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "baf7ebb4153c9a239cedd55deaa0803bb7101829899dddab68935e0f27524735",
+   "topic_ids": [
+    "evs-3-20-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-20-s1-q005",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-20",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "11",
+     "text_as_printed": "Develop sensitivity and an attitude to help the people with special needs."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Education is the ____________ of children.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-20-s1-q005",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-20-s1-q005",
+     "pdf_page": 78,
+     "printed_page": 78,
+     "y": 763.133,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-20-s1-q005-key",
+     "pdf_page": 122,
+     "printed_page": 122,
+     "y": 542.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:35:14+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:35:14+05:30",
+   "section_signal": "I. Fill in the blank.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Claim"
+   },
+   "answer_as_printed": "5Claim",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:35:14+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '5X1=6' — arithmetic wrong (5x1 is not 6) (R-E9)"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "9f125d4f300df8854f71efadb2741754a35bdef6282ddbf83c9dd770bff2a721",
+   "topic_ids": [
+    "evs-3-20-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-20-s2-q006",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-20",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "11",
+     "text_as_printed": "Develop sensitivity and an attitude to help the people with special needs."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Match the following: We are in the morning.\nB: Must help; You should bathe every day.; I have to wake up early.; I need to go to school.; You should read the lessons of that day.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-20-s2-q006",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-20-s2-q006",
+     "pdf_page": 79,
+     "printed_page": 79,
+     "y": 143.453,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-20-s2-q006-key",
+     "pdf_page": 122,
+     "printed_page": 122,
+     "y": 600.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:35:14+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:35:14+05:30",
+   "text_as_printed": "We are in the morning.",
+   "section_signal": "II. Match the following",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "We are in the morning.",
+      "right": "I have to wake up early."
+     }
+    ]
+   },
+   "answer_as_printed": "6. I have to wake up early.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:35:14+05:30",
+    "basis": "printed match key: the right-hand value per printed row number; left = that row's column-A item, right = key wording verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "35ed7c058e7a987828fc025c96b8352d85c8eb5fb97833ee37d1b4a56129fc45",
+   "topic_ids": [
+    "evs-3-20-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-20-s2-q007",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-20",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "11",
+     "text_as_printed": "Develop sensitivity and an attitude to help the people with special needs."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Match the following: At the right time\nB: Must help; You should bathe every day.; I have to wake up early.; I need to go to school.; You should read the lessons of that day.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-20-s2-q007",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-20-s2-q007",
+     "pdf_page": 79,
+     "printed_page": 79,
+     "y": 202.013,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-20-s2-q007-key",
+     "pdf_page": 122,
+     "printed_page": 122,
+     "y": 600.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:35:14+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:35:14+05:30",
+   "text_as_printed": "At the right time",
+   "section_signal": "II. Match the following",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "At the right time",
+      "right": "I have to go to school."
+     }
+    ]
+   },
+   "answer_as_printed": "7. I have to go to school.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:35:14+05:30",
+    "basis": "printed match key: the right-hand value per printed row number; left = that row's column-A item, right = key wording verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "match key value not among column-B items — key 'I have to go to school.'; column B prints 'I need to go to school.'",
+     "why_not_corrected": "key text kept as printed (v1.4 §14.8)",
+     "suggested": "I need to go to school. — review"
+    }
+   ],
+   "content_hash": "996a2953c83e4727cf212287ef310d91c4675d2510c1804c2a2e777d20352942",
+   "topic_ids": [
+    "evs-3-20-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-20-s2-q008",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-20",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "11",
+     "text_as_printed": "Develop sensitivity and an attitude to help the people with special needs."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Match the following: In the work of parents\nB: Must help; You should bathe every day.; I have to wake up early.; I need to go to school.; You should read the lessons of that day.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-20-s2-q008",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-20-s2-q008",
+     "pdf_page": 79,
+     "printed_page": 79,
+     "y": 260.333,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-20-s2-q008-key",
+     "pdf_page": 122,
+     "printed_page": 122,
+     "y": 600.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:35:14+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:35:14+05:30",
+   "text_as_printed": "In the work of parents",
+   "section_signal": "II. Match the following",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "In the work of parents",
+      "right": "Must help"
+     }
+    ]
+   },
+   "answer_as_printed": "8.Must help",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:35:14+05:30",
+    "basis": "printed match key: the right-hand value per printed row number; left = that row's column-A item, right = key wording verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "927e30b5e4c4b2ab46fb39e173dd3b77f951c7bb5c0339a2b38a2718764f85b7",
+   "topic_ids": [
+    "evs-3-20-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-20-s2-q009",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-20",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "11",
+     "text_as_printed": "Develop sensitivity and an attitude to help the people with special needs."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Match the following: Every evening\nB: Must help; You should bathe every day.; I have to wake up early.; I need to go to school.; You should read the lessons of that day.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-20-s2-q009",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-20-s2-q009",
+     "pdf_page": 79,
+     "printed_page": 79,
+     "y": 318.893,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-20-s2-q009-key",
+     "pdf_page": 122,
+     "printed_page": 122,
+     "y": 640.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:35:14+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:35:14+05:30",
+   "text_as_printed": "Every evening",
+   "section_signal": "II. Match the following",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "Every evening",
+      "right": "You should study the lesson of the day right away."
+     }
+    ]
+   },
+   "answer_as_printed": "9. You should study the lesson of the day right away.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:35:14+05:30",
+    "basis": "printed match key: the right-hand value per printed row number; left = that row's column-A item, right = key wording verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "match key value not among column-B items — key 'You should study the lesson of the day right away.'; column B prints 'You should read the lessons of that day.'",
+     "why_not_corrected": "key text kept as printed (v1.4 §14.8)",
+     "suggested": "You should read the lessons of that day. — review"
+    }
+   ],
+   "content_hash": "a6417120587c37b82a6440e951551c7df5d338d66b3a8f626475abd7d6c780f8",
+   "topic_ids": [
+    "evs-3-20-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-20-s2-q010",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-20",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "11",
+     "text_as_printed": "Develop sensitivity and an attitude to help the people with special needs."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Match the following: To be healthy\nB: Must help; You should bathe every day.; I have to wake up early.; I need to go to school.; You should read the lessons of that day.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-20-s2-q010",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-20-s2-q010",
+     "pdf_page": 79,
+     "printed_page": 79,
+     "y": 377.213,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-20-s2-q010-key",
+     "pdf_page": 122,
+     "printed_page": 122,
+     "y": 680.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:35:14+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:35:14+05:30",
+   "text_as_printed": "To be healthy",
+   "section_signal": "II. Match the following",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "To be healthy",
+      "right": "You should take a bath every day."
+     }
+    ]
+   },
+   "answer_as_printed": "10. You should take a bath every day.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:35:14+05:30",
+    "basis": "printed match key: the right-hand value per printed row number; left = that row's column-A item, right = key wording verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "match key value not among column-B items — key 'You should take a bath every day.'; column B prints 'You should bathe every day.'",
+     "why_not_corrected": "key text kept as printed (v1.4 §14.8)",
+     "suggested": "You should bathe every day. — review"
+    }
+   ],
+   "content_hash": "2f8186c7a5e8c5ffd839d7cf0c9a20888c2230af65b0e96bb5d431d61fab59cb",
+   "topic_ids": [
+    "evs-3-20-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-20-s3-q011",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-20",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "11",
+     "text_as_printed": "Develop sensitivity and an attitude to help the people with special needs."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Ramu ________________ every morning.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-20-s3-q011",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-20-s3-q011",
+     "pdf_page": 79,
+     "printed_page": 79,
+     "y": 494.093,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-20-s3-q011-key",
+     "pdf_page": 122,
+     "printed_page": 122,
+     "y": 738.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:35:14+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:35:14+05:30",
+   "section_signal": "III. Choose the correct answer to the following questions.",
+   "lo_source": "lesson_table",
+   "options": [
+    {
+     "id": "A",
+     "text": "goes to school"
+    },
+    {
+     "id": "B",
+     "text": "Gets up early"
+    },
+    {
+     "id": "C",
+     "text": "Plays with friends"
+    }
+   ],
+   "answer_as_printed": "He wakes up early.",
+   "answer": {
+    "kind": "option",
+    "option_id": null
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key text not among options",
+     "why_not_corrected": "printed key '11. He wakes up early.' prints no letter and matches no option(s) after normalisation (addendum §4.2/§4.4)",
+     "suggested": "B (Gets up early) — review"
+    },
+    {
+     "issue": "source notation inconsistent — the question prints three options (A-C), not four",
+     "why_not_corrected": "options kept as printed (v1.4 option count)",
+     "suggested": "none — as printed"
+    }
+   ],
+   "content_hash": "3f61d89b69a4da69a64dcf6cd37aad992f9c01e3a6d48dc293b11c1bbbcf8922",
+   "topic_ids": [
+    "evs-3-20-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-20-s3-q012",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-20",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "11",
+     "text_as_printed": "Develop sensitivity and an attitude to help the people with special needs."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Suma is going _________ due to her mother's illness.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-20-s3-q012",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-20-s3-q012",
+     "pdf_page": 79,
+     "printed_page": 79,
+     "y": 580.493,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-20-s3-q012-key",
+     "pdf_page": 122,
+     "printed_page": 122,
+     "y": 738.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:35:14+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:35:14+05:30",
+   "section_signal": "III. Choose the correct answer to the following questions.",
+   "lo_source": "lesson_table",
+   "options": [
+    {
+     "id": "A",
+     "text": "To sell vegetables"
+    },
+    {
+     "id": "B",
+     "text": "To take care of"
+    },
+    {
+     "id": "C",
+     "text": "To play a game."
+    }
+   ],
+   "answer_as_printed": "VegetablesTo sell",
+   "answer": {
+    "kind": "option",
+    "option_id": null
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key text not among options",
+     "why_not_corrected": "printed key '12. VegetablesTo sell' prints no letter and matches no option(s) after normalisation (addendum §4.2/§4.4)",
+     "suggested": "A (To sell vegetables) — review"
+    },
+    {
+     "issue": "source notation inconsistent — the question prints three options (A-C), not four",
+     "why_not_corrected": "options kept as printed (v1.4 option count)",
+     "suggested": "none — as printed"
+    }
+   ],
+   "content_hash": "e3f3d0be54406ed2a268aebc474d8debfb086af14c22c57787e8529c9b6e7fda",
+   "topic_ids": [
+    "evs-3-20-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-20-s3-q013",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-20",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "11",
+     "text_as_printed": "Develop sensitivity and an attitude to help the people with special needs."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Ramu _____________ in the evening.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-20-s3-q013",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-20-s3-q013",
+     "pdf_page": 79,
+     "printed_page": 79,
+     "y": 666.893,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-20-s3-q013-key",
+     "pdf_page": 122,
+     "printed_page": 122,
+     "y": 738.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:35:14+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:35:14+05:30",
+   "section_signal": "III. Choose the correct answer to the following questions.",
+   "lo_source": "lesson_table",
+   "options": [
+    {
+     "id": "A",
+     "text": "He watches the distance vision."
+    },
+    {
+     "id": "B",
+     "text": "sleeps"
+    },
+    {
+     "id": "C",
+     "text": "Plays with friends"
+    }
+   ],
+   "answer_as_printed": "Plays with a friend.",
+   "answer": {
+    "kind": "option",
+    "option_id": null
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key text not among options",
+     "why_not_corrected": "printed key '13. Plays with a friend.' prints no letter and matches no option(s) after normalisation (addendum §4.2/§4.4)",
+     "suggested": "C (Plays with friends) — review"
+    },
+    {
+     "issue": "source notation inconsistent — the question prints three options (A-C), not four",
+     "why_not_corrected": "options kept as printed (v1.4 option count)",
+     "suggested": "none — as printed"
+    }
+   ],
+   "content_hash": "3f56c2972d991bd2832feb16e17d682b1ee2bce275380178d4ac884e2d808897",
+   "topic_ids": [
+    "evs-3-20-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-20-s3-q014",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-20",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "11",
+     "text_as_printed": "Develop sensitivity and an attitude to help the people with special needs."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "It is very important for every child to be healthy.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-20-s3-q014",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-20-s3-q014",
+     "pdf_page": 79,
+     "printed_page": 79,
+     "y": 765.293,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-20-s3-q014-key",
+     "pdf_page": 123,
+     "printed_page": 123,
+     "y": 39.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:35:14+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:35:14+05:30",
+   "section_signal": "III. Choose the correct answer to the following questions.",
+   "lo_source": "lesson_table",
+   "options": [
+    {
+     "id": "A",
+     "text": "Sleep"
+    },
+    {
+     "id": "B",
+     "text": "Education"
+    },
+    {
+     "id": "C",
+     "text": "Work"
+    }
+   ],
+   "answer_as_printed": "Education",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "source_corrections": [
+    {
+     "field": "answer",
+     "printed": "Education",
+     "corrected": "B",
+     "basis": "pass 1"
+    }
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:35:14+05:30",
+    "basis": "printed text-only key matched to its option (addendum §4.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "source notation inconsistent — the question prints three options (A-C), not four",
+     "why_not_corrected": "options kept as printed (v1.4 option count)",
+     "suggested": "none — as printed"
+    }
+   ],
+   "content_hash": "edb687cb01e60e4e937332ef60893f470c8b6c2ce61e22a7d72984c6c24693a5",
+   "topic_ids": [
+    "evs-3-20-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-20-s3-q015",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-20",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "11",
+     "text_as_printed": "Develop sensitivity and an attitude to help the people with special needs."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "I need ____ juice every day after dinner.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-20-s3-q015",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-20-s3-q015",
+     "pdf_page": 80,
+     "printed_page": 80,
+     "y": 119.213,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-20-s3-q015-key",
+     "pdf_page": 123,
+     "printed_page": 123,
+     "y": 39.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:35:14+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:35:14+05:30",
+   "section_signal": "III. Choose the correct answer to the following questions.",
+   "lo_source": "lesson_table",
+   "options": [
+    {
+     "id": "A",
+     "text": "Teeth"
+    },
+    {
+     "id": "B",
+     "text": "legs"
+    },
+    {
+     "id": "C",
+     "text": "Face."
+    }
+   ],
+   "answer_as_printed": "ToothMust be rubbed",
+   "answer": {
+    "kind": "option",
+    "option_id": null
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key text not among options",
+     "why_not_corrected": "printed key '15. ToothMust be rubbed' prints no letter and matches no option(s) after normalisation (addendum §4.2/§4.4)",
+     "suggested": "A (Teeth) — review"
+    },
+    {
+     "issue": "source notation inconsistent — the question prints three options (A-C), not four",
+     "why_not_corrected": "options kept as printed (v1.4 option count)",
+     "suggested": "none — as printed"
+    }
+   ],
+   "content_hash": "44933b00226d8b0b4f015938e17631a5bacc3d56b0f9386af2b93bee96527013",
+   "topic_ids": [
+    "evs-3-20-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-20-s4-q016",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-20",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "ordering",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "11",
+     "text_as_printed": "Develop sensitivity and an attitude to help the people with special needs."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Some activities are given here. Write them in the correct order.\nA. I go to bed in the night after meals.\nB. I go to school.\nC. I water the plants.\nD. I take bathe and have breakfast.\nE. I get up early in the morning.\nF. Once again, I study the lessons taught in school.\nG. I play with my friends in the evening.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-20-s4-q016",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-20-s4-q016",
+     "pdf_page": 80,
+     "printed_page": 80,
+     "y": 217.853,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-20-s4-q016-key",
+     "pdf_page": 123,
+     "printed_page": 123,
+     "y": 98.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:35:14+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:35:14+05:30",
+   "section_signal": "IV. 16 . Some activities are given here. Write them in the correct order.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "ordering",
+    "sequence": [
+     "1. Ramu wakes up early every day.",
+     "2He brushes his teeth and takes a bath.",
+     "3.He eats breakfast and goes to school on time.",
+     "4.EveningPlays with friends.",
+     "5.He rereads the lesson he was taught at school.",
+     "1. He goes to bed at the right time after dinner."
+    ]
+   },
+   "answer_as_printed": "16. 1. Ramu wakes up early every day. / 2He brushes his teeth and takes a bath. / 3.He eats breakfast and goes to school on time. / 4.EveningPlays with friends. / 5.He rereads the lesson he was taught at school. / 1. He goes to bed at the right time after dinner.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:35:14+05:30",
+    "basis": "printed ordering key; sequence = the key's printed lines in printed order, verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '7X1=7' — N=7 but 1 question(s) printed in the section (R-E9)"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key text does not address question — the key lists six re-worded third-person sentences about Ramu (numbered 1-5, then '1.' again) instead of ordering the seven printed items A-G; item C (watering the plants) has no counterpart; reviewer",
+     "why_not_corrected": "sequence stored as the key's printed lines, verbatim; mapping them to letters A-G is authoring",
+     "suggested": "E, D, B, G, F, A (C unplaced) — review"
+    }
+   ],
+   "content_hash": "85942c33b897dd75a4814264b47bcd414a23d392ab6ca22425e90bb5b3f24364",
+   "topic_ids": [
+    "evs-3-20-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-20-s5-q017",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-20",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "11",
+     "text_as_printed": "Develop sensitivity and an attitude to help the people with special needs."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Make a list of your activities from morning till night in proper order with time.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-20-s5-q017",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-20-s5-q017",
+     "pdf_page": 80,
+     "printed_page": 80,
+     "y": 655.853,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-20-s5-q017-key",
+     "pdf_page": 123,
+     "printed_page": 123,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:35:14+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:35:14+05:30",
+   "section_signal": "V. Answer the following questions",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '[Marks: 4 × 2 = 8]' — N=4 but 2 question(s) printed in the section (R-E9)"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key belongs to another paper version — printed key 17 'Suma goes to sell vegetables because her mother is ill.' does not address it (it fits q12)",
+     "why_not_corrected": "the answer side 'Sample answers 20' (pdf 123) prints keys 17 and 18 that answer other questions (17 = q12's Suma, 18 = the passage's 'what they miss'); extraction pairs only matching keys (schema v7) and does not re-pair by content",
+     "suggested": "review"
+    }
+   ],
+   "content_hash": "0811fa1e3b380feb2d8d695c20d93f7a35e4ca29891db0b94193fb38f9da0df0",
+   "topic_ids": [
+    "evs-3-20-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-20-s5-q018",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-20",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "11",
+     "text_as_printed": "Develop sensitivity and an attitude to help the people with special needs."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Do you want to help your mother / father home in household works? How do you help them give examples.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-20-s5-q018",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-20-s5-q018",
+     "pdf_page": 80,
+     "printed_page": 80,
+     "y": 735.773,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-20-s5-q018-key",
+     "pdf_page": 123,
+     "printed_page": 123,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:35:14+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:35:14+05:30",
+   "section_signal": "V. Answer the following questions",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '[Marks: 4 × 2 = 8]' — N=4 but 2 question(s) printed in the section (R-E9)"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key belongs to another paper version — printed key 18 'Wit hout school, learning and games, they are deprived of education.' does not address it (it fits q19 B)",
+     "why_not_corrected": "the answer side 'Sample answers 20' (pdf 123) prints keys 17 and 18 that answer other questions (17 = q12's Suma, 18 = the passage's 'what they miss'); extraction pairs only matching keys (schema v7) and does not re-pair by content",
+     "suggested": "review"
+    }
+   ],
+   "content_hash": "8c298de7d00e2f0aa2001cd38e3ddcc1bc031bff60ccb68fdf9b2618a7cd5d40",
+   "topic_ids": [
+    "evs-3-20-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-20-s6-q019",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-20",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "11",
+     "text_as_printed": "Develop sensitivity and an attitude to help the people with special needs."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Read the passage below and answer the questions given.\nA. Who are child labourers?\nB. What they are going to miss in life?\nC. Is it safe to work in small age, in dangerous places? How it is dangerous?\nD. Who may punish these children?\nE. Which is the act enforced by Government to save these children?\nF. What is the good effort by the government towards these children?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-20-s6-q019",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-20-s6-q019",
+     "pdf_page": 81,
+     "printed_page": 81,
+     "y": 100.973,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-20-s6-q019-key",
+     "pdf_page": 123,
+     "printed_page": 123,
+     "y": 417.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:35:14+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:35:14+05:30",
+   "section_signal": "VI. 19. Read the passage below and answer the questions given.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "An act to prevent children from dropping out of school\n“Child Labor Prohibition Act”"
+   },
+   "answer_as_printed": "An act to prevent children from dropping out of school\n“Child Labor Prohibition Act”",
+   "solution_steps": [
+    "An act to prevent children from dropping out of school “Child Labor Prohibition Act”"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:35:14+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "stimulus_id": "st-evs-3-20-passage",
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '6X1=6' — N=6 but 1 question(s) printed in the section (R-E9)"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "answer truncated in source — key 19 answers sub-question E only (the act); A-D and F are unanswered",
+     "why_not_corrected": "printed key stored as printed; sub-answers are not authored at extraction",
+     "suggested": "review — A-D, F"
+    }
+   ],
+   "content_hash": "f3513b3b796a2e46cf410b6aa3e3806538b7545c33467a77df28b08459c18e6a",
+   "topic_ids": [
+    "evs-3-20-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-20-s7-q020",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-20",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "11",
+     "text_as_printed": "Develop sensitivity and an attitude to help the people with special needs."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Look at the pictures given below and answer the following.\n1. What are the children doing in the pictures?\n2. Do these children face problems while working?\n3. Why are they working? write reason.\n4. What will you do, if you notice child labour?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-20-s7-q020",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-20-s7-q020",
+     "pdf_page": 82,
+     "printed_page": 82,
+     "y": 58.013,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-20-s7-q020-key",
+     "pdf_page": 123,
+     "printed_page": 123,
+     "y": 497.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:35:14+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:35:14+05:30",
+   "section_signal": "20. Look at the pictures given below and answer the following.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "1. Children's health deteriorates\n2.A disability occurs.\n3KThere is a possibility of falling victim to addictions."
+   },
+   "answer_as_printed": "1. Children's health deteriorates\n2.A disability occurs.\n3KThere is a possibility of falling victim to addictions.",
+   "solution_steps": [
+    "1. Children's health deteriorates",
+    "2.A disability occurs.",
+    "3KThere is a possibility of falling victim to addictions."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:35:14+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "stimulus_id": "st-evs-3-20-q20",
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '4*1=4' — N=4 but 1 question(s) printed in the section (R-E9)"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 5) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "answer truncated in source — key 20 answers sub-question 2 only (problems children face); 1, 3 and 4 are unanswered",
+     "why_not_corrected": "printed key stored as printed",
+     "suggested": "review — 1, 3, 4"
+    }
+   ],
+   "content_hash": "7360789943b9c233247eb58b67a2f45d6ed7c58026287caa05dd3e92db61f4b3",
+   "topic_ids": [
+    "evs-3-20-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  }
+ ],
+ "pending_summary": {}
+}
