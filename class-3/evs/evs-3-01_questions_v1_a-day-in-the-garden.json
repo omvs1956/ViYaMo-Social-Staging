@@ -41,12 +41,12 @@
    "Pages: Q side heading + LO table + BLUE PRINT pdf 10, q1-2 pdf 10, q3-10 pdf 11 (q10 options on pdf 12), q11-20 pdf 12, q21-26 pdf 13. A side 'Key Answers: / Lesson :- 1: A Day in the garden' pdf 98, keys 1-26 pdf 98 (q26 key continues to pdf 99 top). Folios printed = pdf page (offset 0).",
    "BILINGUAL: every English line is followed by its Kannada line. On the question side the Kannada extracts as Unicode Kannada (broken shaping); on the answer side two lines (III and IV keys, pdf 98) extract as legacy-Nudi Latin junk. ALL Kannada lines dropped; nothing Kannada or Nudi stored (junk grep and Unicode-Kannada grep both 0).",
    "Sections (roman numerals printed; -sN- by printed order, numeral kept in section_signal): s1 I mcq q1-10; s2 II 'Identify the relationship and answer' q11-16 analogies with a printed blank -> fill by form; s3 III match q17-20 printed as four numbered rows -> four one-pair match questions (printed labels rule, as evs-4-06, control rev 3); s4 IV fill-from-box q21-23 (box words kept in the stem as printed); s5 V answer q24-26 -> sa by form (2-3 sentence/line keys).",
-   "MARKS: headers print 'NxM=T' (10X1=10, 6x1=6, 5X1=5, 5 X 1 = 5, 3X3=9). Per the prompt §1 pin these are BLUEPRINT totals, not per-question marks -> marks null, 'unassigned', flag 'marks ambiguous in source — <header>'. Evidence for the pin: N disagrees with the printed rows in III and IV. No header prints the Class-4 '(one mark questions)' form (all 25 lessons surveyed). Reported at READY for a ruling (the M factor is per-question on its face; mechanical change if ruled).",
+   "MARKS (ruling R-E9, control rev 2): header 'N x M = T' gives marks M (section_header) only when N = the printed question count of the section, N*M = T and M is the smaller factor. s1 '10X1=10' (10 q) -> 1; s2 '6x1=6' (6 q) -> 1; s5 '3X3=9' (3 q) -> 3; s3 '5X1=5' over 4 rows and s4 '5 X 1 = 5' over 3 questions -> null + 'unassigned' + 'marks ambiguous in source — <reason>'. (v1 rev of this file applied the prompt pin, null everywhere; changed before the batch tag as ruled.)",
    "DIFFICULTY: no per-question or section tag anywhere -> difficulty null, 'unassigned', 'no difficulty tag' on all 26. BLUE PRINT totals (E10/A13/D3) recorded in the subject map and count_gate only; no backfill.",
    "MATCH III: column A Birds/Duck/Cow/Cat, column B Moo/Mew/chirps/quack (unlettered); key prints the right-hand value per number ('17. chirping 18. Quack 19 moo 20. Mew') -> pair left = the row's column-A item, right = key wording verbatim; q17 'chirping' vs column-B 'chirps' flagged. Stem = 'Match the following: <A item>' + column B list.",
    "KEYS: MCQ letter+text; letter kept (addendum §4.1). q7 key 'C) Ant' vs option C 'Gut' and q8 'B) Screaming sweetly' vs option B 'melodious' -> 'key text paraphrases option' (the Kannada line printed under option and key is the same word in each case; q7 = anthill). q5 'Weaver bird' vs 'Weaver Bird' case only. Analogy keys q11 'scurries' and q14 'roars' contradict fact (frog hops; elephant trumpets — the keys' own Kannada lines say so) -> 'printed key contradicts fact' (review-blocking, v1.4 §14.6). q24/q25 one paragraph each (wrapped over 2 lines, joined); q26 three printed lines (one per class) -> 3 solution_steps.",
    "Source typos kept verbatim: q2 option B 'Knob', q5 option D 'Cucko', q10 'a omnivore', q13 'Laya', q22 'jellyf ish', q23 'eats', key q22 'Acquatic animals', key q23 'Omnivore’s'.",
-   "LO: one LO row (LO No. 1) printed for the lesson; no question carries an LO -> learning_outcomes [] + 'no LO mapped' (prompt §1a). TOPIC: evs-3-01-t00 / chapter / high on all (R-E3; map v1 evs-3-01 has exactly t00).",
+   "LO (ruling R-E10): the lesson prints one LO row (LO No. 1) applicable to the whole lesson -> learning_outcomes [{number '1', text_as_printed = the English LO text}] with lo_source 'lesson_table' (lesson-level provenance, not a per-question mapping) on every question; no 'no LO mapped' flag. TOPIC: evs-3-01-t00 / chapter / high on all (R-E3; map v1 evs-3-01 has exactly t00).",
    "FIGURES: pdfimages lists no image on pdf 10-13 or 98-99; pdfplumber finds no curves (rects = LO/BLUE PRINT tables). No picture-based question; no stimuli."
   ],
   "notation_summary": {
@@ -69,12 +69,17 @@
    "syllabus_map_version": "evs-3-2026/v1",
    "audience": "student",
    "type": "mcq",
-   "marks": null,
-   "marks_source": "unassigned",
+   "marks": 1,
+   "marks_source": "section_header",
    "difficulty": null,
    "difficulty_source": "unassigned",
    "difficulty_as_printed": null,
-   "learning_outcomes": [],
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Describes her/his observations in the environment like plant, animals, birds, insects with their shape, sound, size and habitat."
+    }
+   ],
    "out_of_syllabus": false,
    "text": "Which of these is the largest aquatic animal?",
    "source": "lba",
@@ -105,12 +110,13 @@
      "to": "draft",
      "by": "class-3-evs",
      "role": "extraction",
-     "at": "2026-11-27T00:55:50+05:30"
+     "at": "2026-11-27T01:00:17+05:30"
     }
    ],
    "created_by": "class-3-evs",
-   "created_at": "2026-11-27T00:55:50+05:30",
+   "created_at": "2026-11-27T01:00:17+05:30",
    "section_signal": "I. Answer the questions by choosing the correct answer.",
+   "lo_source": "lesson_table",
    "options": [
     {
      "id": "A",
@@ -137,18 +143,10 @@
    "answer_provenance": {
     "by": "printed",
     "actor": "class-3-evs",
-    "at": "2026-11-27T00:55:50+05:30",
+    "at": "2026-11-27T01:00:17+05:30",
     "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
    },
    "source_flags": [
-    {
-     "issue": "marks ambiguous in source — section header '10X1=10' read as a blueprint total, not per-question marks (prompt §1 pin)"
-    },
-    {
-     "issue": "no LO mapped",
-     "why_not_corrected": "the lesson prints one LO row (LO No. 1, applicable to the whole lesson) and maps no question to it; per-question assignment is authoring (v2 §6, prompt §1a)",
-     "suggested": "exempt (1.7) — LO printed per lesson only"
-    },
     {
      "issue": "no difficulty tag",
      "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 13 / Difficulty 03) and names no question — no backfill from the table (prompt §1 pin)",
@@ -171,12 +169,17 @@
    "syllabus_map_version": "evs-3-2026/v1",
    "audience": "student",
    "type": "mcq",
-   "marks": null,
-   "marks_source": "unassigned",
+   "marks": 1,
+   "marks_source": "section_header",
    "difficulty": null,
    "difficulty_source": "unassigned",
    "difficulty_as_printed": null,
-   "learning_outcomes": [],
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Describes her/his observations in the environment like plant, animals, birds, insects with their shape, sound, size and habitat."
+    }
+   ],
    "out_of_syllabus": false,
    "text": "Which bird has a green colour?",
    "source": "lba",
@@ -207,12 +210,13 @@
      "to": "draft",
      "by": "class-3-evs",
      "role": "extraction",
-     "at": "2026-11-27T00:55:50+05:30"
+     "at": "2026-11-27T01:00:17+05:30"
     }
    ],
    "created_by": "class-3-evs",
-   "created_at": "2026-11-27T00:55:50+05:30",
+   "created_at": "2026-11-27T01:00:17+05:30",
    "section_signal": "I. Answer the questions by choosing the correct answer.",
+   "lo_source": "lesson_table",
    "options": [
     {
      "id": "A",
@@ -239,18 +243,10 @@
    "answer_provenance": {
     "by": "printed",
     "actor": "class-3-evs",
-    "at": "2026-11-27T00:55:50+05:30",
+    "at": "2026-11-27T01:00:17+05:30",
     "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
    },
    "source_flags": [
-    {
-     "issue": "marks ambiguous in source — section header '10X1=10' read as a blueprint total, not per-question marks (prompt §1 pin)"
-    },
-    {
-     "issue": "no LO mapped",
-     "why_not_corrected": "the lesson prints one LO row (LO No. 1, applicable to the whole lesson) and maps no question to it; per-question assignment is authoring (v2 §6, prompt §1a)",
-     "suggested": "exempt (1.7) — LO printed per lesson only"
-    },
     {
      "issue": "no difficulty tag",
      "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 13 / Difficulty 03) and names no question — no backfill from the table (prompt §1 pin)",
@@ -273,12 +269,17 @@
    "syllabus_map_version": "evs-3-2026/v1",
    "audience": "student",
    "type": "mcq",
-   "marks": null,
-   "marks_source": "unassigned",
+   "marks": 1,
+   "marks_source": "section_header",
    "difficulty": null,
    "difficulty_source": "unassigned",
    "difficulty_as_printed": null,
-   "learning_outcomes": [],
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Describes her/his observations in the environment like plant, animals, birds, insects with their shape, sound, size and habitat."
+    }
+   ],
    "out_of_syllabus": false,
    "text": "Even though we don't keep pets in our homes, animals that live in homes are ___",
    "source": "lba",
@@ -309,12 +310,13 @@
      "to": "draft",
      "by": "class-3-evs",
      "role": "extraction",
-     "at": "2026-11-27T00:55:50+05:30"
+     "at": "2026-11-27T01:00:17+05:30"
     }
    ],
    "created_by": "class-3-evs",
-   "created_at": "2026-11-27T00:55:50+05:30",
+   "created_at": "2026-11-27T01:00:17+05:30",
    "section_signal": "I. Answer the questions by choosing the correct answer.",
+   "lo_source": "lesson_table",
    "options": [
     {
      "id": "A",
@@ -341,18 +343,10 @@
    "answer_provenance": {
     "by": "printed",
     "actor": "class-3-evs",
-    "at": "2026-11-27T00:55:50+05:30",
+    "at": "2026-11-27T01:00:17+05:30",
     "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
    },
    "source_flags": [
-    {
-     "issue": "marks ambiguous in source — section header '10X1=10' read as a blueprint total, not per-question marks (prompt §1 pin)"
-    },
-    {
-     "issue": "no LO mapped",
-     "why_not_corrected": "the lesson prints one LO row (LO No. 1, applicable to the whole lesson) and maps no question to it; per-question assignment is authoring (v2 §6, prompt §1a)",
-     "suggested": "exempt (1.7) — LO printed per lesson only"
-    },
     {
      "issue": "no difficulty tag",
      "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 13 / Difficulty 03) and names no question — no backfill from the table (prompt §1 pin)",
@@ -375,12 +369,17 @@
    "syllabus_map_version": "evs-3-2026/v1",
    "audience": "student",
    "type": "mcq",
-   "marks": null,
-   "marks_source": "unassigned",
+   "marks": 1,
+   "marks_source": "section_header",
    "difficulty": null,
    "difficulty_source": "unassigned",
    "difficulty_as_printed": null,
-   "learning_outcomes": [],
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Describes her/his observations in the environment like plant, animals, birds, insects with their shape, sound, size and habitat."
+    }
+   ],
    "out_of_syllabus": false,
    "text": "The eagle's food is _________",
    "source": "lba",
@@ -411,12 +410,13 @@
      "to": "draft",
      "by": "class-3-evs",
      "role": "extraction",
-     "at": "2026-11-27T00:55:50+05:30"
+     "at": "2026-11-27T01:00:17+05:30"
     }
    ],
    "created_by": "class-3-evs",
-   "created_at": "2026-11-27T00:55:50+05:30",
+   "created_at": "2026-11-27T01:00:17+05:30",
    "section_signal": "I. Answer the questions by choosing the correct answer.",
+   "lo_source": "lesson_table",
    "options": [
     {
      "id": "A",
@@ -443,18 +443,10 @@
    "answer_provenance": {
     "by": "printed",
     "actor": "class-3-evs",
-    "at": "2026-11-27T00:55:50+05:30",
+    "at": "2026-11-27T01:00:17+05:30",
     "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
    },
    "source_flags": [
-    {
-     "issue": "marks ambiguous in source — section header '10X1=10' read as a blueprint total, not per-question marks (prompt §1 pin)"
-    },
-    {
-     "issue": "no LO mapped",
-     "why_not_corrected": "the lesson prints one LO row (LO No. 1, applicable to the whole lesson) and maps no question to it; per-question assignment is authoring (v2 §6, prompt §1a)",
-     "suggested": "exempt (1.7) — LO printed per lesson only"
-    },
     {
      "issue": "no difficulty tag",
      "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 13 / Difficulty 03) and names no question — no backfill from the table (prompt §1 pin)",
@@ -477,12 +469,17 @@
    "syllabus_map_version": "evs-3-2026/v1",
    "audience": "student",
    "type": "mcq",
-   "marks": null,
-   "marks_source": "unassigned",
+   "marks": 1,
+   "marks_source": "section_header",
    "difficulty": null,
    "difficulty_source": "unassigned",
    "difficulty_as_printed": null,
-   "learning_outcomes": [],
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Describes her/his observations in the environment like plant, animals, birds, insects with their shape, sound, size and habitat."
+    }
+   ],
    "out_of_syllabus": false,
    "text": "The bird that builds a beautiful nest is________.",
    "source": "lba",
@@ -513,12 +510,13 @@
      "to": "draft",
      "by": "class-3-evs",
      "role": "extraction",
-     "at": "2026-11-27T00:55:50+05:30"
+     "at": "2026-11-27T01:00:17+05:30"
     }
    ],
    "created_by": "class-3-evs",
-   "created_at": "2026-11-27T00:55:50+05:30",
+   "created_at": "2026-11-27T01:00:17+05:30",
    "section_signal": "I. Answer the questions by choosing the correct answer.",
+   "lo_source": "lesson_table",
    "options": [
     {
      "id": "A",
@@ -545,18 +543,10 @@
    "answer_provenance": {
     "by": "printed",
     "actor": "class-3-evs",
-    "at": "2026-11-27T00:55:50+05:30",
+    "at": "2026-11-27T01:00:17+05:30",
     "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
    },
    "source_flags": [
-    {
-     "issue": "marks ambiguous in source — section header '10X1=10' read as a blueprint total, not per-question marks (prompt §1 pin)"
-    },
-    {
-     "issue": "no LO mapped",
-     "why_not_corrected": "the lesson prints one LO row (LO No. 1, applicable to the whole lesson) and maps no question to it; per-question assignment is authoring (v2 §6, prompt §1a)",
-     "suggested": "exempt (1.7) — LO printed per lesson only"
-    },
     {
      "issue": "no difficulty tag",
      "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 13 / Difficulty 03) and names no question — no backfill from the table (prompt §1 pin)",
@@ -579,12 +569,17 @@
    "syllabus_map_version": "evs-3-2026/v1",
    "audience": "student",
    "type": "mcq",
-   "marks": null,
-   "marks_source": "unassigned",
+   "marks": 1,
+   "marks_source": "section_header",
    "difficulty": null,
    "difficulty_source": "unassigned",
    "difficulty_as_printed": null,
-   "learning_outcomes": [],
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Describes her/his observations in the environment like plant, animals, birds, insects with their shape, sound, size and habitat."
+    }
+   ],
    "out_of_syllabus": false,
    "text": "Which of the following has the most legs?",
    "source": "lba",
@@ -615,12 +610,13 @@
      "to": "draft",
      "by": "class-3-evs",
      "role": "extraction",
-     "at": "2026-11-27T00:55:50+05:30"
+     "at": "2026-11-27T01:00:17+05:30"
     }
    ],
    "created_by": "class-3-evs",
-   "created_at": "2026-11-27T00:55:50+05:30",
+   "created_at": "2026-11-27T01:00:17+05:30",
    "section_signal": "I. Answer the questions by choosing the correct answer.",
+   "lo_source": "lesson_table",
    "options": [
     {
      "id": "A",
@@ -647,18 +643,10 @@
    "answer_provenance": {
     "by": "printed",
     "actor": "class-3-evs",
-    "at": "2026-11-27T00:55:50+05:30",
+    "at": "2026-11-27T01:00:17+05:30",
     "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
    },
    "source_flags": [
-    {
-     "issue": "marks ambiguous in source — section header '10X1=10' read as a blueprint total, not per-question marks (prompt §1 pin)"
-    },
-    {
-     "issue": "no LO mapped",
-     "why_not_corrected": "the lesson prints one LO row (LO No. 1, applicable to the whole lesson) and maps no question to it; per-question assignment is authoring (v2 §6, prompt §1a)",
-     "suggested": "exempt (1.7) — LO printed per lesson only"
-    },
     {
      "issue": "no difficulty tag",
      "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 13 / Difficulty 03) and names no question — no backfill from the table (prompt §1 pin)",
@@ -681,12 +669,17 @@
    "syllabus_map_version": "evs-3-2026/v1",
    "audience": "student",
    "type": "mcq",
-   "marks": null,
-   "marks_source": "unassigned",
+   "marks": 1,
+   "marks_source": "section_header",
    "difficulty": null,
    "difficulty_source": "unassigned",
    "difficulty_as_printed": null,
-   "learning_outcomes": [],
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Describes her/his observations in the environment like plant, animals, birds, insects with their shape, sound, size and habitat."
+    }
+   ],
    "out_of_syllabus": false,
    "text": "What is the habitat of a snake?",
    "source": "lba",
@@ -717,12 +710,13 @@
      "to": "draft",
      "by": "class-3-evs",
      "role": "extraction",
-     "at": "2026-11-27T00:55:50+05:30"
+     "at": "2026-11-27T01:00:17+05:30"
     }
    ],
    "created_by": "class-3-evs",
-   "created_at": "2026-11-27T00:55:50+05:30",
+   "created_at": "2026-11-27T01:00:17+05:30",
    "section_signal": "I. Answer the questions by choosing the correct answer.",
+   "lo_source": "lesson_table",
    "options": [
     {
      "id": "A",
@@ -749,18 +743,10 @@
    "answer_provenance": {
     "by": "printed",
     "actor": "class-3-evs",
-    "at": "2026-11-27T00:55:50+05:30",
+    "at": "2026-11-27T01:00:17+05:30",
     "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
    },
    "source_flags": [
-    {
-     "issue": "marks ambiguous in source — section header '10X1=10' read as a blueprint total, not per-question marks (prompt §1 pin)"
-    },
-    {
-     "issue": "no LO mapped",
-     "why_not_corrected": "the lesson prints one LO row (LO No. 1, applicable to the whole lesson) and maps no question to it; per-question assignment is authoring (v2 §6, prompt §1a)",
-     "suggested": "exempt (1.7) — LO printed per lesson only"
-    },
     {
      "issue": "no difficulty tag",
      "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 13 / Difficulty 03) and names no question — no backfill from the table (prompt §1 pin)",
@@ -788,12 +774,17 @@
    "syllabus_map_version": "evs-3-2026/v1",
    "audience": "student",
    "type": "mcq",
-   "marks": null,
-   "marks_source": "unassigned",
+   "marks": 1,
+   "marks_source": "section_header",
    "difficulty": null,
    "difficulty_source": "unassigned",
    "difficulty_as_printed": null,
-   "learning_outcomes": [],
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Describes her/his observations in the environment like plant, animals, birds, insects with their shape, sound, size and habitat."
+    }
+   ],
    "out_of_syllabus": false,
    "text": "A cuckoo is a ___________ bird.",
    "source": "lba",
@@ -824,12 +815,13 @@
      "to": "draft",
      "by": "class-3-evs",
      "role": "extraction",
-     "at": "2026-11-27T00:55:50+05:30"
+     "at": "2026-11-27T01:00:17+05:30"
     }
    ],
    "created_by": "class-3-evs",
-   "created_at": "2026-11-27T00:55:50+05:30",
+   "created_at": "2026-11-27T01:00:17+05:30",
    "section_signal": "I. Answer the questions by choosing the correct answer.",
+   "lo_source": "lesson_table",
    "options": [
     {
      "id": "A",
@@ -856,18 +848,10 @@
    "answer_provenance": {
     "by": "printed",
     "actor": "class-3-evs",
-    "at": "2026-11-27T00:55:50+05:30",
+    "at": "2026-11-27T01:00:17+05:30",
     "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
    },
    "source_flags": [
-    {
-     "issue": "marks ambiguous in source — section header '10X1=10' read as a blueprint total, not per-question marks (prompt §1 pin)"
-    },
-    {
-     "issue": "no LO mapped",
-     "why_not_corrected": "the lesson prints one LO row (LO No. 1, applicable to the whole lesson) and maps no question to it; per-question assignment is authoring (v2 §6, prompt §1a)",
-     "suggested": "exempt (1.7) — LO printed per lesson only"
-    },
     {
      "issue": "no difficulty tag",
      "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 13 / Difficulty 03) and names no question — no backfill from the table (prompt §1 pin)",
@@ -895,12 +879,17 @@
    "syllabus_map_version": "evs-3-2026/v1",
    "audience": "student",
    "type": "mcq",
-   "marks": null,
-   "marks_source": "unassigned",
+   "marks": 1,
+   "marks_source": "section_header",
    "difficulty": null,
    "difficulty_source": "unassigned",
    "difficulty_as_printed": null,
-   "learning_outcomes": [],
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Describes her/his observations in the environment like plant, animals, birds, insects with their shape, sound, size and habitat."
+    }
+   ],
    "out_of_syllabus": false,
    "text": "The place where the frog lives is ______________.",
    "source": "lba",
@@ -931,12 +920,13 @@
      "to": "draft",
      "by": "class-3-evs",
      "role": "extraction",
-     "at": "2026-11-27T00:55:50+05:30"
+     "at": "2026-11-27T01:00:17+05:30"
     }
    ],
    "created_by": "class-3-evs",
-   "created_at": "2026-11-27T00:55:50+05:30",
+   "created_at": "2026-11-27T01:00:17+05:30",
    "section_signal": "I. Answer the questions by choosing the correct answer.",
+   "lo_source": "lesson_table",
    "options": [
     {
      "id": "A",
@@ -963,18 +953,10 @@
    "answer_provenance": {
     "by": "printed",
     "actor": "class-3-evs",
-    "at": "2026-11-27T00:55:50+05:30",
+    "at": "2026-11-27T01:00:17+05:30",
     "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
    },
    "source_flags": [
-    {
-     "issue": "marks ambiguous in source — section header '10X1=10' read as a blueprint total, not per-question marks (prompt §1 pin)"
-    },
-    {
-     "issue": "no LO mapped",
-     "why_not_corrected": "the lesson prints one LO row (LO No. 1, applicable to the whole lesson) and maps no question to it; per-question assignment is authoring (v2 §6, prompt §1a)",
-     "suggested": "exempt (1.7) — LO printed per lesson only"
-    },
     {
      "issue": "no difficulty tag",
      "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 13 / Difficulty 03) and names no question — no backfill from the table (prompt §1 pin)",
@@ -997,12 +979,17 @@
    "syllabus_map_version": "evs-3-2026/v1",
    "audience": "student",
    "type": "mcq",
-   "marks": null,
-   "marks_source": "unassigned",
+   "marks": 1,
+   "marks_source": "section_header",
    "difficulty": null,
    "difficulty_source": "unassigned",
    "difficulty_as_printed": null,
-   "learning_outcomes": [],
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Describes her/his observations in the environment like plant, animals, birds, insects with their shape, sound, size and habitat."
+    }
+   ],
    "out_of_syllabus": false,
    "text": "Example of a omnivore",
    "source": "lba",
@@ -1033,12 +1020,13 @@
      "to": "draft",
      "by": "class-3-evs",
      "role": "extraction",
-     "at": "2026-11-27T00:55:50+05:30"
+     "at": "2026-11-27T01:00:17+05:30"
     }
    ],
    "created_by": "class-3-evs",
-   "created_at": "2026-11-27T00:55:50+05:30",
+   "created_at": "2026-11-27T01:00:17+05:30",
    "section_signal": "I. Answer the questions by choosing the correct answer.",
+   "lo_source": "lesson_table",
    "options": [
     {
      "id": "A",
@@ -1065,18 +1053,10 @@
    "answer_provenance": {
     "by": "printed",
     "actor": "class-3-evs",
-    "at": "2026-11-27T00:55:50+05:30",
+    "at": "2026-11-27T01:00:17+05:30",
     "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
    },
    "source_flags": [
-    {
-     "issue": "marks ambiguous in source — section header '10X1=10' read as a blueprint total, not per-question marks (prompt §1 pin)"
-    },
-    {
-     "issue": "no LO mapped",
-     "why_not_corrected": "the lesson prints one LO row (LO No. 1, applicable to the whole lesson) and maps no question to it; per-question assignment is authoring (v2 §6, prompt §1a)",
-     "suggested": "exempt (1.7) — LO printed per lesson only"
-    },
     {
      "issue": "no difficulty tag",
      "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 13 / Difficulty 03) and names no question — no backfill from the table (prompt §1 pin)",
@@ -1099,12 +1079,17 @@
    "syllabus_map_version": "evs-3-2026/v1",
    "audience": "student",
    "type": "fill",
-   "marks": null,
-   "marks_source": "unassigned",
+   "marks": 1,
+   "marks_source": "section_header",
    "difficulty": null,
    "difficulty_source": "unassigned",
    "difficulty_as_printed": null,
-   "learning_outcomes": [],
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Describes her/his observations in the environment like plant, animals, birds, insects with their shape, sound, size and habitat."
+    }
+   ],
    "out_of_syllabus": false,
    "text": "Goat : walks :: Frog: ________",
    "source": "lba",
@@ -1135,12 +1120,13 @@
      "to": "draft",
      "by": "class-3-evs",
      "role": "extraction",
-     "at": "2026-11-27T00:55:50+05:30"
+     "at": "2026-11-27T01:00:17+05:30"
     }
    ],
    "created_by": "class-3-evs",
-   "created_at": "2026-11-27T00:55:50+05:30",
+   "created_at": "2026-11-27T01:00:17+05:30",
    "section_signal": "II. Identify the relationship and answer.",
+   "lo_source": "lesson_table",
    "answer": {
     "kind": "text",
     "value": "scurries"
@@ -1149,18 +1135,10 @@
    "answer_provenance": {
     "by": "printed",
     "actor": "class-3-evs",
-    "at": "2026-11-27T00:55:50+05:30",
+    "at": "2026-11-27T01:00:17+05:30",
     "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
    },
    "source_flags": [
-    {
-     "issue": "marks ambiguous in source — section header '6x1=6' read as a blueprint total, not per-question marks (prompt §1 pin)"
-    },
-    {
-     "issue": "no LO mapped",
-     "why_not_corrected": "the lesson prints one LO row (LO No. 1, applicable to the whole lesson) and maps no question to it; per-question assignment is authoring (v2 §6, prompt §1a)",
-     "suggested": "exempt (1.7) — LO printed per lesson only"
-    },
     {
      "issue": "no difficulty tag",
      "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 13 / Difficulty 03) and names no question — no backfill from the table (prompt §1 pin)",
@@ -1188,12 +1166,17 @@
    "syllabus_map_version": "evs-3-2026/v1",
    "audience": "student",
    "type": "fill",
-   "marks": null,
-   "marks_source": "unassigned",
+   "marks": 1,
+   "marks_source": "section_header",
    "difficulty": null,
    "difficulty_source": "unassigned",
    "difficulty_as_printed": null,
-   "learning_outcomes": [],
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Describes her/his observations in the environment like plant, animals, birds, insects with their shape, sound, size and habitat."
+    }
+   ],
    "out_of_syllabus": false,
    "text": "Snake : slithers :: Fish: _______",
    "source": "lba",
@@ -1224,12 +1207,13 @@
      "to": "draft",
      "by": "class-3-evs",
      "role": "extraction",
-     "at": "2026-11-27T00:55:50+05:30"
+     "at": "2026-11-27T01:00:17+05:30"
     }
    ],
    "created_by": "class-3-evs",
-   "created_at": "2026-11-27T00:55:50+05:30",
+   "created_at": "2026-11-27T01:00:17+05:30",
    "section_signal": "II. Identify the relationship and answer.",
+   "lo_source": "lesson_table",
    "answer": {
     "kind": "text",
     "value": "swims"
@@ -1238,18 +1222,10 @@
    "answer_provenance": {
     "by": "printed",
     "actor": "class-3-evs",
-    "at": "2026-11-27T00:55:50+05:30",
+    "at": "2026-11-27T01:00:17+05:30",
     "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
    },
    "source_flags": [
-    {
-     "issue": "marks ambiguous in source — section header '6x1=6' read as a blueprint total, not per-question marks (prompt §1 pin)"
-    },
-    {
-     "issue": "no LO mapped",
-     "why_not_corrected": "the lesson prints one LO row (LO No. 1, applicable to the whole lesson) and maps no question to it; per-question assignment is authoring (v2 §6, prompt §1a)",
-     "suggested": "exempt (1.7) — LO printed per lesson only"
-    },
     {
      "issue": "no difficulty tag",
      "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 13 / Difficulty 03) and names no question — no backfill from the table (prompt §1 pin)",
@@ -1272,12 +1248,17 @@
    "syllabus_map_version": "evs-3-2026/v1",
    "audience": "student",
    "type": "fill",
-   "marks": null,
-   "marks_source": "unassigned",
+   "marks": 1,
+   "marks_source": "section_header",
    "difficulty": null,
    "difficulty_source": "unassigned",
    "difficulty_as_printed": null,
-   "learning_outcomes": [],
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Describes her/his observations in the environment like plant, animals, birds, insects with their shape, sound, size and habitat."
+    }
+   ],
    "out_of_syllabus": false,
    "text": "Horse : Laya :: Lion : ______",
    "source": "lba",
@@ -1308,12 +1289,13 @@
      "to": "draft",
      "by": "class-3-evs",
      "role": "extraction",
-     "at": "2026-11-27T00:55:50+05:30"
+     "at": "2026-11-27T01:00:17+05:30"
     }
    ],
    "created_by": "class-3-evs",
-   "created_at": "2026-11-27T00:55:50+05:30",
+   "created_at": "2026-11-27T01:00:17+05:30",
    "section_signal": "II. Identify the relationship and answer.",
+   "lo_source": "lesson_table",
    "answer": {
     "kind": "text",
     "value": "cave"
@@ -1322,18 +1304,10 @@
    "answer_provenance": {
     "by": "printed",
     "actor": "class-3-evs",
-    "at": "2026-11-27T00:55:50+05:30",
+    "at": "2026-11-27T01:00:17+05:30",
     "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
    },
    "source_flags": [
-    {
-     "issue": "marks ambiguous in source — section header '6x1=6' read as a blueprint total, not per-question marks (prompt §1 pin)"
-    },
-    {
-     "issue": "no LO mapped",
-     "why_not_corrected": "the lesson prints one LO row (LO No. 1, applicable to the whole lesson) and maps no question to it; per-question assignment is authoring (v2 §6, prompt §1a)",
-     "suggested": "exempt (1.7) — LO printed per lesson only"
-    },
     {
      "issue": "no difficulty tag",
      "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 13 / Difficulty 03) and names no question — no backfill from the table (prompt §1 pin)",
@@ -1356,12 +1330,17 @@
    "syllabus_map_version": "evs-3-2026/v1",
    "audience": "student",
    "type": "fill",
-   "marks": null,
-   "marks_source": "unassigned",
+   "marks": 1,
+   "marks_source": "section_header",
    "difficulty": null,
    "difficulty_source": "unassigned",
    "difficulty_as_printed": null,
-   "learning_outcomes": [],
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Describes her/his observations in the environment like plant, animals, birds, insects with their shape, sound, size and habitat."
+    }
+   ],
    "out_of_syllabus": false,
    "text": "Tiger : roars :: Elephant : _______",
    "source": "lba",
@@ -1392,12 +1371,13 @@
      "to": "draft",
      "by": "class-3-evs",
      "role": "extraction",
-     "at": "2026-11-27T00:55:50+05:30"
+     "at": "2026-11-27T01:00:17+05:30"
     }
    ],
    "created_by": "class-3-evs",
-   "created_at": "2026-11-27T00:55:50+05:30",
+   "created_at": "2026-11-27T01:00:17+05:30",
    "section_signal": "II. Identify the relationship and answer.",
+   "lo_source": "lesson_table",
    "answer": {
     "kind": "text",
     "value": "roars"
@@ -1406,18 +1386,10 @@
    "answer_provenance": {
     "by": "printed",
     "actor": "class-3-evs",
-    "at": "2026-11-27T00:55:50+05:30",
+    "at": "2026-11-27T01:00:17+05:30",
     "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
    },
    "source_flags": [
-    {
-     "issue": "marks ambiguous in source — section header '6x1=6' read as a blueprint total, not per-question marks (prompt §1 pin)"
-    },
-    {
-     "issue": "no LO mapped",
-     "why_not_corrected": "the lesson prints one LO row (LO No. 1, applicable to the whole lesson) and maps no question to it; per-question assignment is authoring (v2 §6, prompt §1a)",
-     "suggested": "exempt (1.7) — LO printed per lesson only"
-    },
     {
      "issue": "no difficulty tag",
      "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 13 / Difficulty 03) and names no question — no backfill from the table (prompt §1 pin)",
@@ -1445,12 +1417,17 @@
    "syllabus_map_version": "evs-3-2026/v1",
    "audience": "student",
    "type": "fill",
-   "marks": null,
-   "marks_source": "unassigned",
+   "marks": 1,
+   "marks_source": "section_header",
    "difficulty": null,
    "difficulty_source": "unassigned",
    "difficulty_as_printed": null,
-   "learning_outcomes": [],
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Describes her/his observations in the environment like plant, animals, birds, insects with their shape, sound, size and habitat."
+    }
+   ],
    "out_of_syllabus": false,
    "text": "Elephant: Big Animal :: Rat: _______",
    "source": "lba",
@@ -1481,12 +1458,13 @@
      "to": "draft",
      "by": "class-3-evs",
      "role": "extraction",
-     "at": "2026-11-27T00:55:50+05:30"
+     "at": "2026-11-27T01:00:17+05:30"
     }
    ],
    "created_by": "class-3-evs",
-   "created_at": "2026-11-27T00:55:50+05:30",
+   "created_at": "2026-11-27T01:00:17+05:30",
    "section_signal": "II. Identify the relationship and answer.",
+   "lo_source": "lesson_table",
    "answer": {
     "kind": "text",
     "value": "small animal"
@@ -1495,18 +1473,10 @@
    "answer_provenance": {
     "by": "printed",
     "actor": "class-3-evs",
-    "at": "2026-11-27T00:55:50+05:30",
+    "at": "2026-11-27T01:00:17+05:30",
     "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
    },
    "source_flags": [
-    {
-     "issue": "marks ambiguous in source — section header '6x1=6' read as a blueprint total, not per-question marks (prompt §1 pin)"
-    },
-    {
-     "issue": "no LO mapped",
-     "why_not_corrected": "the lesson prints one LO row (LO No. 1, applicable to the whole lesson) and maps no question to it; per-question assignment is authoring (v2 §6, prompt §1a)",
-     "suggested": "exempt (1.7) — LO printed per lesson only"
-    },
     {
      "issue": "no difficulty tag",
      "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 13 / Difficulty 03) and names no question — no backfill from the table (prompt §1 pin)",
@@ -1529,12 +1499,17 @@
    "syllabus_map_version": "evs-3-2026/v1",
    "audience": "student",
    "type": "fill",
-   "marks": null,
-   "marks_source": "unassigned",
+   "marks": 1,
+   "marks_source": "section_header",
    "difficulty": null,
    "difficulty_source": "unassigned",
    "difficulty_as_printed": null,
-   "learning_outcomes": [],
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Describes her/his observations in the environment like plant, animals, birds, insects with their shape, sound, size and habitat."
+    }
+   ],
    "out_of_syllabus": false,
    "text": "Fast movement: Cheetah :: Slow movement : ___________",
    "source": "lba",
@@ -1565,12 +1540,13 @@
      "to": "draft",
      "by": "class-3-evs",
      "role": "extraction",
-     "at": "2026-11-27T00:55:50+05:30"
+     "at": "2026-11-27T01:00:17+05:30"
     }
    ],
    "created_by": "class-3-evs",
-   "created_at": "2026-11-27T00:55:50+05:30",
+   "created_at": "2026-11-27T01:00:17+05:30",
    "section_signal": "II. Identify the relationship and answer.",
+   "lo_source": "lesson_table",
    "answer": {
     "kind": "text",
     "value": "turtle"
@@ -1579,18 +1555,10 @@
    "answer_provenance": {
     "by": "printed",
     "actor": "class-3-evs",
-    "at": "2026-11-27T00:55:50+05:30",
+    "at": "2026-11-27T01:00:17+05:30",
     "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
    },
    "source_flags": [
-    {
-     "issue": "marks ambiguous in source — section header '6x1=6' read as a blueprint total, not per-question marks (prompt §1 pin)"
-    },
-    {
-     "issue": "no LO mapped",
-     "why_not_corrected": "the lesson prints one LO row (LO No. 1, applicable to the whole lesson) and maps no question to it; per-question assignment is authoring (v2 §6, prompt §1a)",
-     "suggested": "exempt (1.7) — LO printed per lesson only"
-    },
     {
      "issue": "no difficulty tag",
      "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 13 / Difficulty 03) and names no question — no backfill from the table (prompt §1 pin)",
@@ -1618,7 +1586,12 @@
    "difficulty": null,
    "difficulty_source": "unassigned",
    "difficulty_as_printed": null,
-   "learning_outcomes": [],
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Describes her/his observations in the environment like plant, animals, birds, insects with their shape, sound, size and habitat."
+    }
+   ],
    "out_of_syllabus": false,
    "text": "Match the following: Birds\nB: Moo; Mew; chirps; quack",
    "source": "lba",
@@ -1649,13 +1622,14 @@
      "to": "draft",
      "by": "class-3-evs",
      "role": "extraction",
-     "at": "2026-11-27T00:55:50+05:30"
+     "at": "2026-11-27T01:00:17+05:30"
     }
    ],
    "created_by": "class-3-evs",
-   "created_at": "2026-11-27T00:55:50+05:30",
+   "created_at": "2026-11-27T01:00:17+05:30",
    "text_as_printed": "Birds",
    "section_signal": "III. Match the following :-",
+   "lo_source": "lesson_table",
    "answer": {
     "kind": "match",
     "pairs": [
@@ -1669,17 +1643,12 @@
    "answer_provenance": {
     "by": "printed",
     "actor": "class-3-evs",
-    "at": "2026-11-27T00:55:50+05:30",
+    "at": "2026-11-27T01:00:17+05:30",
     "basis": "printed match key: the right-hand value per printed row number; left = that row's column-A item, right = key wording verbatim (v1.4 §14.8)"
    },
    "source_flags": [
     {
-     "issue": "marks ambiguous in source — section header '5X1=5' read as a blueprint total, not per-question marks (prompt §1 pin)"
-    },
-    {
-     "issue": "no LO mapped",
-     "why_not_corrected": "the lesson prints one LO row (LO No. 1, applicable to the whole lesson) and maps no question to it; per-question assignment is authoring (v2 §6, prompt §1a)",
-     "suggested": "exempt (1.7) — LO printed per lesson only"
+     "issue": "marks ambiguous in source — section header '5X1=5' — N=5 but 4 question(s) printed in the section (R-E9)"
     },
     {
      "issue": "no difficulty tag",
@@ -1713,7 +1682,12 @@
    "difficulty": null,
    "difficulty_source": "unassigned",
    "difficulty_as_printed": null,
-   "learning_outcomes": [],
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Describes her/his observations in the environment like plant, animals, birds, insects with their shape, sound, size and habitat."
+    }
+   ],
    "out_of_syllabus": false,
    "text": "Match the following: Duck\nB: Moo; Mew; chirps; quack",
    "source": "lba",
@@ -1744,13 +1718,14 @@
      "to": "draft",
      "by": "class-3-evs",
      "role": "extraction",
-     "at": "2026-11-27T00:55:50+05:30"
+     "at": "2026-11-27T01:00:17+05:30"
     }
    ],
    "created_by": "class-3-evs",
-   "created_at": "2026-11-27T00:55:50+05:30",
+   "created_at": "2026-11-27T01:00:17+05:30",
    "text_as_printed": "Duck",
    "section_signal": "III. Match the following :-",
+   "lo_source": "lesson_table",
    "answer": {
     "kind": "match",
     "pairs": [
@@ -1764,17 +1739,12 @@
    "answer_provenance": {
     "by": "printed",
     "actor": "class-3-evs",
-    "at": "2026-11-27T00:55:50+05:30",
+    "at": "2026-11-27T01:00:17+05:30",
     "basis": "printed match key: the right-hand value per printed row number; left = that row's column-A item, right = key wording verbatim (v1.4 §14.8)"
    },
    "source_flags": [
     {
-     "issue": "marks ambiguous in source — section header '5X1=5' read as a blueprint total, not per-question marks (prompt §1 pin)"
-    },
-    {
-     "issue": "no LO mapped",
-     "why_not_corrected": "the lesson prints one LO row (LO No. 1, applicable to the whole lesson) and maps no question to it; per-question assignment is authoring (v2 §6, prompt §1a)",
-     "suggested": "exempt (1.7) — LO printed per lesson only"
+     "issue": "marks ambiguous in source — section header '5X1=5' — N=5 but 4 question(s) printed in the section (R-E9)"
     },
     {
      "issue": "no difficulty tag",
@@ -1803,7 +1773,12 @@
    "difficulty": null,
    "difficulty_source": "unassigned",
    "difficulty_as_printed": null,
-   "learning_outcomes": [],
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Describes her/his observations in the environment like plant, animals, birds, insects with their shape, sound, size and habitat."
+    }
+   ],
    "out_of_syllabus": false,
    "text": "Match the following: Cow\nB: Moo; Mew; chirps; quack",
    "source": "lba",
@@ -1834,13 +1809,14 @@
      "to": "draft",
      "by": "class-3-evs",
      "role": "extraction",
-     "at": "2026-11-27T00:55:50+05:30"
+     "at": "2026-11-27T01:00:17+05:30"
     }
    ],
    "created_by": "class-3-evs",
-   "created_at": "2026-11-27T00:55:50+05:30",
+   "created_at": "2026-11-27T01:00:17+05:30",
    "text_as_printed": "Cow",
    "section_signal": "III. Match the following :-",
+   "lo_source": "lesson_table",
    "answer": {
     "kind": "match",
     "pairs": [
@@ -1854,17 +1830,12 @@
    "answer_provenance": {
     "by": "printed",
     "actor": "class-3-evs",
-    "at": "2026-11-27T00:55:50+05:30",
+    "at": "2026-11-27T01:00:17+05:30",
     "basis": "printed match key: the right-hand value per printed row number; left = that row's column-A item, right = key wording verbatim (v1.4 §14.8)"
    },
    "source_flags": [
     {
-     "issue": "marks ambiguous in source — section header '5X1=5' read as a blueprint total, not per-question marks (prompt §1 pin)"
-    },
-    {
-     "issue": "no LO mapped",
-     "why_not_corrected": "the lesson prints one LO row (LO No. 1, applicable to the whole lesson) and maps no question to it; per-question assignment is authoring (v2 §6, prompt §1a)",
-     "suggested": "exempt (1.7) — LO printed per lesson only"
+     "issue": "marks ambiguous in source — section header '5X1=5' — N=5 but 4 question(s) printed in the section (R-E9)"
     },
     {
      "issue": "no difficulty tag",
@@ -1893,7 +1864,12 @@
    "difficulty": null,
    "difficulty_source": "unassigned",
    "difficulty_as_printed": null,
-   "learning_outcomes": [],
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Describes her/his observations in the environment like plant, animals, birds, insects with their shape, sound, size and habitat."
+    }
+   ],
    "out_of_syllabus": false,
    "text": "Match the following: Cat\nB: Moo; Mew; chirps; quack",
    "source": "lba",
@@ -1924,13 +1900,14 @@
      "to": "draft",
      "by": "class-3-evs",
      "role": "extraction",
-     "at": "2026-11-27T00:55:50+05:30"
+     "at": "2026-11-27T01:00:17+05:30"
     }
    ],
    "created_by": "class-3-evs",
-   "created_at": "2026-11-27T00:55:50+05:30",
+   "created_at": "2026-11-27T01:00:17+05:30",
    "text_as_printed": "Cat",
    "section_signal": "III. Match the following :-",
+   "lo_source": "lesson_table",
    "answer": {
     "kind": "match",
     "pairs": [
@@ -1944,17 +1921,12 @@
    "answer_provenance": {
     "by": "printed",
     "actor": "class-3-evs",
-    "at": "2026-11-27T00:55:50+05:30",
+    "at": "2026-11-27T01:00:17+05:30",
     "basis": "printed match key: the right-hand value per printed row number; left = that row's column-A item, right = key wording verbatim (v1.4 §14.8)"
    },
    "source_flags": [
     {
-     "issue": "marks ambiguous in source — section header '5X1=5' read as a blueprint total, not per-question marks (prompt §1 pin)"
-    },
-    {
-     "issue": "no LO mapped",
-     "why_not_corrected": "the lesson prints one LO row (LO No. 1, applicable to the whole lesson) and maps no question to it; per-question assignment is authoring (v2 §6, prompt §1a)",
-     "suggested": "exempt (1.7) — LO printed per lesson only"
+     "issue": "marks ambiguous in source — section header '5X1=5' — N=5 but 4 question(s) printed in the section (R-E9)"
     },
     {
      "issue": "no difficulty tag",
@@ -1983,7 +1955,12 @@
    "difficulty": null,
    "difficulty_source": "unassigned",
    "difficulty_as_printed": null,
-   "learning_outcomes": [],
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Describes her/his observations in the environment like plant, animals, birds, insects with their shape, sound, size and habitat."
+    }
+   ],
    "out_of_syllabus": false,
    "text": "Cockroaches, Lizards, houseflies are called _____________\n[ insects. Animals, birds]",
    "source": "lba",
@@ -2014,12 +1991,13 @@
      "to": "draft",
      "by": "class-3-evs",
      "role": "extraction",
-     "at": "2026-11-27T00:55:50+05:30"
+     "at": "2026-11-27T01:00:17+05:30"
     }
    ],
    "created_by": "class-3-evs",
-   "created_at": "2026-11-27T00:55:50+05:30",
+   "created_at": "2026-11-27T01:00:17+05:30",
    "section_signal": "IV. Fill in the Blanks by choosing correct answer from the box:-",
+   "lo_source": "lesson_table",
    "answer": {
     "kind": "text",
     "value": "Insects"
@@ -2028,17 +2006,12 @@
    "answer_provenance": {
     "by": "printed",
     "actor": "class-3-evs",
-    "at": "2026-11-27T00:55:50+05:30",
+    "at": "2026-11-27T01:00:17+05:30",
     "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
    },
    "source_flags": [
     {
-     "issue": "marks ambiguous in source — section header '5 X 1 = 5' read as a blueprint total, not per-question marks (prompt §1 pin)"
-    },
-    {
-     "issue": "no LO mapped",
-     "why_not_corrected": "the lesson prints one LO row (LO No. 1, applicable to the whole lesson) and maps no question to it; per-question assignment is authoring (v2 §6, prompt §1a)",
-     "suggested": "exempt (1.7) — LO printed per lesson only"
+     "issue": "marks ambiguous in source — section header '5 X 1 = 5' — N=5 but 3 question(s) printed in the section (R-E9)"
     },
     {
      "issue": "no difficulty tag",
@@ -2067,7 +2040,12 @@
    "difficulty": null,
    "difficulty_source": "unassigned",
    "difficulty_as_printed": null,
-   "learning_outcomes": [],
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Describes her/his observations in the environment like plant, animals, birds, insects with their shape, sound, size and habitat."
+    }
+   ],
    "out_of_syllabus": false,
    "text": "Star fish, jellyf ish, whale are called _______ animals\n[ aquatic animals, terrestrial animals]",
    "source": "lba",
@@ -2098,12 +2076,13 @@
      "to": "draft",
      "by": "class-3-evs",
      "role": "extraction",
-     "at": "2026-11-27T00:55:50+05:30"
+     "at": "2026-11-27T01:00:17+05:30"
     }
    ],
    "created_by": "class-3-evs",
-   "created_at": "2026-11-27T00:55:50+05:30",
+   "created_at": "2026-11-27T01:00:17+05:30",
    "section_signal": "IV. Fill in the Blanks by choosing correct answer from the box:-",
+   "lo_source": "lesson_table",
    "answer": {
     "kind": "text",
     "value": "Acquatic animals"
@@ -2112,17 +2091,12 @@
    "answer_provenance": {
     "by": "printed",
     "actor": "class-3-evs",
-    "at": "2026-11-27T00:55:50+05:30",
+    "at": "2026-11-27T01:00:17+05:30",
     "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
    },
    "source_flags": [
     {
-     "issue": "marks ambiguous in source — section header '5 X 1 = 5' read as a blueprint total, not per-question marks (prompt §1 pin)"
-    },
-    {
-     "issue": "no LO mapped",
-     "why_not_corrected": "the lesson prints one LO row (LO No. 1, applicable to the whole lesson) and maps no question to it; per-question assignment is authoring (v2 §6, prompt §1a)",
-     "suggested": "exempt (1.7) — LO printed per lesson only"
+     "issue": "marks ambiguous in source — section header '5 X 1 = 5' — N=5 but 3 question(s) printed in the section (R-E9)"
     },
     {
      "issue": "no difficulty tag",
@@ -2151,7 +2125,12 @@
    "difficulty": null,
    "difficulty_source": "unassigned",
    "difficulty_as_printed": null,
-   "learning_outcomes": [],
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Describes her/his observations in the environment like plant, animals, birds, insects with their shape, sound, size and habitat."
+    }
+   ],
    "out_of_syllabus": false,
    "text": "The animals which eats both animals and plants are called _____\n[ Herbivores,Omnivorous]",
    "source": "lba",
@@ -2182,12 +2161,13 @@
      "to": "draft",
      "by": "class-3-evs",
      "role": "extraction",
-     "at": "2026-11-27T00:55:50+05:30"
+     "at": "2026-11-27T01:00:17+05:30"
     }
    ],
    "created_by": "class-3-evs",
-   "created_at": "2026-11-27T00:55:50+05:30",
+   "created_at": "2026-11-27T01:00:17+05:30",
    "section_signal": "IV. Fill in the Blanks by choosing correct answer from the box:-",
+   "lo_source": "lesson_table",
    "answer": {
     "kind": "text",
     "value": "Omnivore’s"
@@ -2196,17 +2176,12 @@
    "answer_provenance": {
     "by": "printed",
     "actor": "class-3-evs",
-    "at": "2026-11-27T00:55:50+05:30",
+    "at": "2026-11-27T01:00:17+05:30",
     "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
    },
    "source_flags": [
     {
-     "issue": "marks ambiguous in source — section header '5 X 1 = 5' read as a blueprint total, not per-question marks (prompt §1 pin)"
-    },
-    {
-     "issue": "no LO mapped",
-     "why_not_corrected": "the lesson prints one LO row (LO No. 1, applicable to the whole lesson) and maps no question to it; per-question assignment is authoring (v2 §6, prompt §1a)",
-     "suggested": "exempt (1.7) — LO printed per lesson only"
+     "issue": "marks ambiguous in source — section header '5 X 1 = 5' — N=5 but 3 question(s) printed in the section (R-E9)"
     },
     {
      "issue": "no difficulty tag",
@@ -2230,12 +2205,17 @@
    "syllabus_map_version": "evs-3-2026/v1",
    "audience": "student",
    "type": "sa",
-   "marks": null,
-   "marks_source": "unassigned",
+   "marks": 3,
+   "marks_source": "section_header",
    "difficulty": null,
    "difficulty_source": "unassigned",
    "difficulty_as_printed": null,
-   "learning_outcomes": [],
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Describes her/his observations in the environment like plant, animals, birds, insects with their shape, sound, size and habitat."
+    }
+   ],
    "out_of_syllabus": false,
    "text": "What are herbivorous animals? Give two examples.",
    "source": "lba",
@@ -2266,12 +2246,13 @@
      "to": "draft",
      "by": "class-3-evs",
      "role": "extraction",
-     "at": "2026-11-27T00:55:50+05:30"
+     "at": "2026-11-27T01:00:17+05:30"
     }
    ],
    "created_by": "class-3-evs",
-   "created_at": "2026-11-27T00:55:50+05:30",
+   "created_at": "2026-11-27T01:00:17+05:30",
    "section_signal": "V. Answer the questions:-",
+   "lo_source": "lesson_table",
    "answer": {
     "kind": "text",
     "value": "Herbivorous animals are those that eat the substances obtained from bare plants such as grass, grains, fruits and vegetables. Example - deer, cow, buffalo, etc."
@@ -2280,18 +2261,10 @@
    "answer_provenance": {
     "by": "printed",
     "actor": "class-3-evs",
-    "at": "2026-11-27T00:55:50+05:30",
+    "at": "2026-11-27T01:00:17+05:30",
     "basis": "printed key text, verbatim (v2 §4)"
    },
    "source_flags": [
-    {
-     "issue": "marks ambiguous in source — section header '3X3=9' read as a blueprint total, not per-question marks (prompt §1 pin)"
-    },
-    {
-     "issue": "no LO mapped",
-     "why_not_corrected": "the lesson prints one LO row (LO No. 1, applicable to the whole lesson) and maps no question to it; per-question assignment is authoring (v2 §6, prompt §1a)",
-     "suggested": "exempt (1.7) — LO printed per lesson only"
-    },
     {
      "issue": "no difficulty tag",
      "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 13 / Difficulty 03) and names no question — no backfill from the table (prompt §1 pin)",
@@ -2314,12 +2287,17 @@
    "syllabus_map_version": "evs-3-2026/v1",
    "audience": "student",
    "type": "sa",
-   "marks": null,
-   "marks_source": "unassigned",
+   "marks": 3,
+   "marks_source": "section_header",
    "difficulty": null,
    "difficulty_source": "unassigned",
    "difficulty_as_printed": null,
-   "learning_outcomes": [],
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Describes her/his observations in the environment like plant, animals, birds, insects with their shape, sound, size and habitat."
+    }
+   ],
    "out_of_syllabus": false,
    "text": "How can you help birds in the summer?",
    "source": "lba",
@@ -2350,12 +2328,13 @@
      "to": "draft",
      "by": "class-3-evs",
      "role": "extraction",
-     "at": "2026-11-27T00:55:50+05:30"
+     "at": "2026-11-27T01:00:17+05:30"
     }
    ],
    "created_by": "class-3-evs",
-   "created_at": "2026-11-27T00:55:50+05:30",
+   "created_at": "2026-11-27T01:00:17+05:30",
    "section_signal": "V. Answer the questions:-",
+   "lo_source": "lesson_table",
    "answer": {
     "kind": "text",
     "value": "When summer comes, I will put water and seeds in a bowl on the roof of the house for the birds. If possible, I will make a house out of cardboard to help provide shade."
@@ -2364,18 +2343,10 @@
    "answer_provenance": {
     "by": "printed",
     "actor": "class-3-evs",
-    "at": "2026-11-27T00:55:50+05:30",
+    "at": "2026-11-27T01:00:17+05:30",
     "basis": "printed key text, verbatim (v2 §4)"
    },
    "source_flags": [
-    {
-     "issue": "marks ambiguous in source — section header '3X3=9' read as a blueprint total, not per-question marks (prompt §1 pin)"
-    },
-    {
-     "issue": "no LO mapped",
-     "why_not_corrected": "the lesson prints one LO row (LO No. 1, applicable to the whole lesson) and maps no question to it; per-question assignment is authoring (v2 §6, prompt §1a)",
-     "suggested": "exempt (1.7) — LO printed per lesson only"
-    },
     {
      "issue": "no difficulty tag",
      "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 13 / Difficulty 03) and names no question — no backfill from the table (prompt §1 pin)",
@@ -2398,12 +2369,17 @@
    "syllabus_map_version": "evs-3-2026/v1",
    "audience": "student",
    "type": "sa",
-   "marks": null,
-   "marks_source": "unassigned",
+   "marks": 3,
+   "marks_source": "section_header",
    "difficulty": null,
    "difficulty_source": "unassigned",
    "difficulty_as_printed": null,
-   "learning_outcomes": [],
+   "learning_outcomes": [
+    {
+     "number": "1",
+     "text_as_printed": "Describes her/his observations in the environment like plant, animals, birds, insects with their shape, sound, size and habitat."
+    }
+   ],
    "out_of_syllabus": false,
    "text": "Classify the following into herbivores, carnivores and omnivores:\nCow, vulture, crow, rabbit, bear, deer, chicken, leopard, lion",
    "source": "lba",
@@ -2434,12 +2410,13 @@
      "to": "draft",
      "by": "class-3-evs",
      "role": "extraction",
-     "at": "2026-11-27T00:55:50+05:30"
+     "at": "2026-11-27T01:00:17+05:30"
     }
    ],
    "created_by": "class-3-evs",
-   "created_at": "2026-11-27T00:55:50+05:30",
+   "created_at": "2026-11-27T01:00:17+05:30",
    "section_signal": "V. Answer the questions:-",
+   "lo_source": "lesson_table",
    "answer": {
     "kind": "text",
     "value": "Herbivorous animals - cow, rabbit, deer\nCarnivores – vulture, leopard, lion\nOmnivorous animals – crow, bear, chicken."
@@ -2453,18 +2430,10 @@
    "answer_provenance": {
     "by": "printed",
     "actor": "class-3-evs",
-    "at": "2026-11-27T00:55:50+05:30",
+    "at": "2026-11-27T01:00:17+05:30",
     "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
    },
    "source_flags": [
-    {
-     "issue": "marks ambiguous in source — section header '3X3=9' read as a blueprint total, not per-question marks (prompt §1 pin)"
-    },
-    {
-     "issue": "no LO mapped",
-     "why_not_corrected": "the lesson prints one LO row (LO No. 1, applicable to the whole lesson) and maps no question to it; per-question assignment is authoring (v2 §6, prompt §1a)",
-     "suggested": "exempt (1.7) — LO printed per lesson only"
-    },
     {
      "issue": "no difficulty tag",
      "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 13 / Difficulty 03) and names no question — no backfill from the table (prompt §1 pin)",
