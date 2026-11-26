@@ -1,0 +1,4567 @@
+{
+ "contract_version": "1.7",
+ "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
+ "procedure_file": "extraction_procedure_social_addendum_v1.4_social science Classes 6-10 on top of procedure v2.md",
+ "machine_name": "evs-4-10_questions",
+ "version": 1,
+ "changelog": "v1 extraction — batch-01 — class-4-evs",
+ "amendments_applied": [],
+ "unit_state": "EXTRACTED",
+ "review_ready": false,
+ "count_gate": {
+  "reference": 56,
+  "reference_source": "audited",
+  "extracted": 56,
+  "paired": 55,
+  "flagged": 1,
+  "gaps": [
+   21,
+   33
+  ],
+  "duplicated_numbers": [
+   26
+  ],
+  "quota_table": "absent",
+  "second_method": {
+   "method": "independent count of answer-side keys (54 numbered keys + 1 unnumbered match block(s)) + 1 question(s) with no printed key",
+   "extracted": 56,
+   "agrees": true
+  },
+  "pass": true,
+  "note": "No difficulty distribution table is printed in this LBA -> quota_table 'absent' (ruling R-E6). Question side: labels 21 and 33 absent (count_gate.gaps), label 26 printed twice (T/F q026, match q026b); 56 questions. Answer side: 1-26 continuous (T/F keys 16-26 incl. an orphan key 21 with no question), [match block], 27-32, 34-56 (33 absent like its question). All keys pair by printed number; q057 (draw) no key. Difficulty per question: easy 39, average 1, difficult 15, untagged 1."
+ },
+ "extraction": {
+  "source_file": "4thLBA-EVS-EM1.pdf",
+  "source_ref_prefix": "4thLBA-EVS-EM1.pdf",
+  "pdf_pages": [
+   42,
+   43,
+   44,
+   45,
+   46,
+   145,
+   146,
+   147,
+   148
+  ],
+  "printed_page_offset": 0,
+  "method_notes": [
+   "Pages: Q pdf 42 (heading, LO) 43-46; A pdf 145 (heading, keys 1-3) 146-147.",
+   "Sections: s1 MCQ q1-5; s2 fill q6-15; s3 T/F q16-26 (no 21; q26 'The woodpeckars create their nest…' prints no answer space); s4 '26. Match the following with appropriate answers. (easy)' q026b (8 rows, Q-side labels garbled e)/(r)/(h)); s5 one mark q27-37 (no 33) vsa; s6 two marks q38-47 sa; s7 three marks q48-52 sa; s8 four marks q53-57 la.",
+   "NUMBERING: label 26 printed twice (pdf 44: T/F '26. The woodpeckars…' and '26. Match the following…') -> q026, q026b. Labels 21, 33 absent -> gaps. Answer side: '21. True' is an ORPHAN key (extraction.orphan_keys) — numbered, but every key after it still fits its question by printed number, so it displaces nothing (v2 §4.5); not paired with anything.",
+   "Text-layer joins on the key side split by hand: 'State whether … (Easy): 16. False' (heading + key 16 on one line), '29. Tall buildings with many floors 30. Cement sheets', '45. Bricks, cement, metal sheets 46. Bamboo is light…'.",
+   "Tags printed without '(' read as tags: q49 'compared?Average)', q53 'society?Difficult)'. q52 prints no tag -> 'no difficulty tag'. q57 draw -> 'no answer printed'.",
+   "Transcription: evs_auto.py rules (as evs-4-01) + the overrides in build file build_10.py; marks per ruling R-E5; topic per R-E3."
+  ],
+  "notation_summary": {
+   "render_tokens": 0,
+   "latex_tokens": 0,
+   "damage_flags": []
+  },
+  "excluded_objects": [],
+  "inline_excluded_count": 0,
+  "figure_references": [],
+  "orphan_keys": [
+   {
+    "label": "21",
+    "page": 146,
+    "text": "21. True",
+    "note": "T/F key with no printed question 21 (question side jumps 20 -> 22); keys 22-26 still fit their questions by printed number, so it shifts nothing (v2 §4.5 sequence test)"
+   }
+  ]
+ },
+ "stimuli": [],
+ "questions": [
+  {
+   "id": "evs-4-10-s1-q001",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-10",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "We need a home for",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s1-q001",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s1-q001",
+     "pdf_page": 43,
+     "printed_page": 43,
+     "y": 386.922,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s1-q001-key",
+     "pdf_page": 145,
+     "printed_page": 145,
+     "y": 697.008,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:16:02+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:16:02+05:30",
+   "section_signal": "Choose the correct answers to the following questions and write them",
+   "options": [
+    {
+     "id": "A",
+     "text": "Protection"
+    },
+    {
+     "id": "B",
+     "text": "Shelter"
+    },
+    {
+     "id": "C",
+     "text": "To survive"
+    },
+    {
+     "id": "D",
+     "text": "All of the above"
+    }
+   ],
+   "answer_as_printed": "D) All of the above",
+   "answer": {
+    "kind": "option",
+    "option_id": "D"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:16:02+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "85ad3f3fd1d19623e6f53e1e0ea4c24bec2ca89f533c304f1d31c29c718f1b34",
+   "topic_ids": [
+    "evs-4-10-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-10-s1-q002",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-10",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Burj Khalifa in Dubai is the tallest building in the world and its height is",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s1-q002",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s1-q002",
+     "pdf_page": 43,
+     "printed_page": 43,
+     "y": 423.922,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s1-q002-key",
+     "pdf_page": 145,
+     "printed_page": 145,
+     "y": 725.788,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:16:02+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:16:02+05:30",
+   "section_signal": "Choose the correct answers to the following questions and write them",
+   "options": [
+    {
+     "id": "A",
+     "text": "3722 foot"
+    },
+    {
+     "id": "B",
+     "text": "2722 foot"
+    },
+    {
+     "id": "C",
+     "text": "1722 foot"
+    },
+    {
+     "id": "D",
+     "text": "0722 foot"
+    }
+   ],
+   "answer_as_printed": "B) 2722 foot",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:16:02+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "3ecda94fed94044f60702a474bf2ddff0c51bf3bea35f91c324023e0a378ee5d",
+   "topic_ids": [
+    "evs-4-10-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-10-s1-q003",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-10",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Nowadays these kind of houses are built",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s1-q003",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s1-q003",
+     "pdf_page": 43,
+     "printed_page": 43,
+     "y": 460.952,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s1-q003-key",
+     "pdf_page": 145,
+     "printed_page": 145,
+     "y": 754.283,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:16:02+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:16:02+05:30",
+   "section_signal": "Choose the correct answers to the following questions and write them",
+   "options": [
+    {
+     "id": "A",
+     "text": "Eco-friendly"
+    },
+    {
+     "id": "B",
+     "text": "Air-friendly"
+    },
+    {
+     "id": "C",
+     "text": "Rain friendly"
+    },
+    {
+     "id": "D",
+     "text": "Land friendly"
+    }
+   ],
+   "answer_as_printed": "A) Eco-friendly",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:16:02+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "2f22a09a0d723b0952fb1317be7cad93d560880bf35b02e8715218874d12e550",
+   "topic_ids": [
+    "evs-4-10-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-10-s1-q004",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-10",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The Weaver bird lives here",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s1-q004",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s1-q004",
+     "pdf_page": 43,
+     "printed_page": 43,
+     "y": 497.952,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s1-q004-key",
+     "pdf_page": 146,
+     "printed_page": 146,
+     "y": 72.588,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:16:02+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:16:02+05:30",
+   "section_signal": "Choose the correct answers to the following questions and write them",
+   "options": [
+    {
+     "id": "A",
+     "text": "House"
+    },
+    {
+     "id": "B",
+     "text": "Cave"
+    },
+    {
+     "id": "C",
+     "text": "Nest"
+    },
+    {
+     "id": "D",
+     "text": "All of the above"
+    }
+   ],
+   "answer_as_printed": "C) Nest",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:16:02+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "0f44ba1f182fb788f71ed55603395241131a0c0ce2b060060f2588fe131d784c",
+   "topic_ids": [
+    "evs-4-10-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-10-s1-q005",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-10",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Materials used for construction of houses",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s1-q005",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s1-q005",
+     "pdf_page": 43,
+     "printed_page": 43,
+     "y": 534.952,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s1-q005-key",
+     "pdf_page": 146,
+     "printed_page": 146,
+     "y": 101.338,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:16:02+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:16:02+05:30",
+   "section_signal": "Choose the correct answers to the following questions and write them",
+   "options": [
+    {
+     "id": "A",
+     "text": "Wood"
+    },
+    {
+     "id": "B",
+     "text": "Brick"
+    },
+    {
+     "id": "C",
+     "text": "Cement"
+    },
+    {
+     "id": "D",
+     "text": "All of the above"
+    }
+   ],
+   "answer_as_printed": "D) All of the above",
+   "answer": {
+    "kind": "option",
+    "option_id": "D"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:16:02+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "d0370115eb1510a81e615fa071ad495914020e3e8992a6702f4d44fa3fd0d53c",
+   "topic_ids": [
+    "evs-4-10-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-10-s2-q006",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-10",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The people of Jewargi build their houses using ______________ stones.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s2-q006",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s2-q006",
+     "pdf_page": 43,
+     "printed_page": 43,
+     "y": 651.502,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s2-q006-key",
+     "pdf_page": 146,
+     "printed_page": 146,
+     "y": 150.608,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:16:02+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:16:02+05:30",
+   "section_signal": "Fill in the blanks with appropriate answers",
+   "answer": {
+    "kind": "text",
+    "value": "Shahabad"
+   },
+   "answer_as_printed": "Shahabad",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:16:02+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "a2d8dee60343eb82c7346f23854d2c41ab56ca4f8dad7a450135942fc825be8c",
+   "topic_ids": [
+    "evs-4-10-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-10-s2-q007",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-10",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The surface of houses in areas with high rainfall is ______________.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s2-q007",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s2-q007",
+     "pdf_page": 43,
+     "printed_page": 43,
+     "y": 678.002,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s2-q007-key",
+     "pdf_page": 146,
+     "printed_page": 146,
+     "y": 171.358,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:16:02+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:16:02+05:30",
+   "section_signal": "Fill in the blanks with appropriate answers",
+   "answer": {
+    "kind": "text",
+    "value": "Sloping"
+   },
+   "answer_as_printed": "Sloping",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:16:02+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "d907ba75dca5b4667ab4367194e04f63c4142b95346111489212121829145c4a",
+   "topic_ids": [
+    "evs-4-10-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-10-s2-q008",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-10",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "______________, bricks and steel rods are used to build multi-storey buildings.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s2-q008",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s2-q008",
+     "pdf_page": 43,
+     "printed_page": 43,
+     "y": 704.502,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s2-q008-key",
+     "pdf_page": 146,
+     "printed_page": 146,
+     "y": 192.108,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:16:02+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:16:02+05:30",
+   "section_signal": "Fill in the blanks with appropriate answers",
+   "answer": {
+    "kind": "text",
+    "value": "Cement"
+   },
+   "answer_as_printed": "Cement",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:16:02+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "b01ce9b64e7ebbc26a03a298ab95d78cd6282aefaff32ebc400579d6e0c78dcd",
+   "topic_ids": [
+    "evs-4-10-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-10-s2-q009",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-10",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "There is no proper ______________ and ______________ in the slums.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s2-q009",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s2-q009",
+     "pdf_page": 43,
+     "printed_page": 43,
+     "y": 731.027,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s2-q009-key",
+     "pdf_page": 146,
+     "printed_page": 146,
+     "y": 212.888,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:16:02+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:16:02+05:30",
+   "section_signal": "Fill in the blanks with appropriate answers",
+   "answer": {
+    "kind": "text",
+    "value": "Light and ventilation"
+   },
+   "answer_as_printed": "Light and ventilation",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:16:02+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "77943b19fd76c89807f70d58889ea1c1b884b03900b103a665c759000b126b0a",
+   "topic_ids": [
+    "evs-4-10-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-10-s2-q010",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-10",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Venkkajji's first house was platered with ______________.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s2-q010",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s2-q010",
+     "pdf_page": 44,
+     "printed_page": 44,
+     "y": 72.082,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s2-q010-key",
+     "pdf_page": 146,
+     "printed_page": 146,
+     "y": 233.638,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:16:02+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:16:02+05:30",
+   "text_as_printed": "Venkkajji's first house was platered with ______________ .",
+   "section_signal": "Fill in the blanks with appropriate answers",
+   "answer": {
+    "kind": "text",
+    "value": "Cow dung"
+   },
+   "answer_as_printed": "Cow dung",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:16:02+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "26076e61fa59ff361972cdb525cea424acfd1a3c65460ea4df7370dc388599dc",
+   "topic_ids": [
+    "evs-4-10-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-10-s2-q011",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-10",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The world's tallest building ______________ is located in Dubai.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s2-q011",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s2-q011",
+     "pdf_page": 44,
+     "printed_page": 44,
+     "y": 98.582,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s2-q011-key",
+     "pdf_page": 146,
+     "printed_page": 146,
+     "y": 254.128,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:16:02+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:16:02+05:30",
+   "section_signal": "Fill in the blanks with appropriate answers",
+   "answer": {
+    "kind": "text",
+    "value": "Burj Khalifa"
+   },
+   "answer_as_printed": "Burj Khalifa",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:16:02+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "fed2ff36c6aa28724a50f60a8bc9771b720238559ce60a7ce34f6b0d3896f52d",
+   "topic_ids": [
+    "evs-4-10-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-10-s2-q012",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-10",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Bees build their shelter called ______________ from wax.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s2-q012",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s2-q012",
+     "pdf_page": 44,
+     "printed_page": 44,
+     "y": 125.102,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s2-q012-key",
+     "pdf_page": 146,
+     "printed_page": 146,
+     "y": 274.888,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:16:02+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:16:02+05:30",
+   "section_signal": "Fill in the blanks with appropriate answers",
+   "answer": {
+    "kind": "text",
+    "value": "Hive"
+   },
+   "answer_as_printed": "Hive",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:16:02+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "6c8dd51392b6dda8f1bd5ca8cf424b30dbbda32370f5534d5fcd50779edf33b1",
+   "topic_ids": [
+    "evs-4-10-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-10-s2-q013",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-10",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The largest slum area in India is located in ______________ of Mumbai.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s2-q013",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s2-q013",
+     "pdf_page": 44,
+     "printed_page": 44,
+     "y": 151.602,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s2-q013-key",
+     "pdf_page": 146,
+     "printed_page": 146,
+     "y": 295.658,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:16:02+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:16:02+05:30",
+   "section_signal": "Fill in the blanks with appropriate answers",
+   "answer": {
+    "kind": "text",
+    "value": "Dharavi"
+   },
+   "answer_as_printed": "Dharavi",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:16:02+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "7de9b1627417140184fd5ebb5a4f59e3fb7dd56255ef596d69ea14305a6ad368",
+   "topic_ids": [
+    "evs-4-10-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-10-s2-q014",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-10",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The materials used in the construction of a house are based on local ______________ and ______________.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s2-q014",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s2-q014",
+     "pdf_page": 44,
+     "printed_page": 44,
+     "y": 178.102,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s2-q014-key",
+     "pdf_page": 146,
+     "printed_page": 146,
+     "y": 316.408,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:16:02+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:16:02+05:30",
+   "section_signal": "Fill in the blanks with appropriate answers",
+   "answer": {
+    "kind": "text",
+    "value": "Climate and availability"
+   },
+   "answer_as_printed": "Climate and availability",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:16:02+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "1bb0702bf49ba720cd1f4b7787e54b733a98e1f73036ae114938275fad1f334e",
+   "topic_ids": [
+    "evs-4-10-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-10-s2-q015",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-10",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The roofs of the houses in places where there is heavy rainfall is______________",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s2-q015",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s2-q015",
+     "pdf_page": 44,
+     "printed_page": 44,
+     "y": 223.132,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s2-q015-key",
+     "pdf_page": 146,
+     "printed_page": 146,
+     "y": 337.158,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:16:02+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:16:02+05:30",
+   "section_signal": "Fill in the blanks with appropriate answers",
+   "answer": {
+    "kind": "text",
+    "value": "Sloping"
+   },
+   "answer_as_printed": "Sloping",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:16:02+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "74dd5cee9da07fd224dce5815eabcc09da6d3f93b1f0952404fa754eb404aeff",
+   "topic_ids": [
+    "evs-4-10-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-10-s3-q016",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-10",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Houses in areas with heavy rainfall have a flat roof.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s3-q016",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s3-q016",
+     "pdf_page": 44,
+     "printed_page": 44,
+     "y": 276.132,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s3-q016-key",
+     "pdf_page": 146,
+     "printed_page": 146,
+     "y": 357.658,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:16:02+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:16:02+05:30",
+   "text_as_printed": "Houses in areas with heavy rainfall have a flat roof. –",
+   "section_signal": "State whether the following statements are true or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "false"
+   },
+   "answer_as_printed": "False",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:16:02+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "a927c15aa48c270afcb5fd5ec94d979abbed456fe7b13b89254967ebef26966e",
+   "topic_ids": [
+    "evs-4-10-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-10-s3-q017",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-10",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Multi-storey buildings have lifts and stairs.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s3-q017",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s3-q017",
+     "pdf_page": 44,
+     "printed_page": 44,
+     "y": 302.652,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s3-q017-key",
+     "pdf_page": 146,
+     "printed_page": 146,
+     "y": 378.428,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:16:02+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:16:02+05:30",
+   "text_as_printed": "Multi-storey buildings have lifts and stairs. –",
+   "section_signal": "State whether the following statements are true or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "True",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:16:02+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "f96395e1edca92b7c6343ba59fc37d040bf6d9b7eee5891350cb0caf75c35de3",
+   "topic_ids": [
+    "evs-4-10-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-10-s3-q018",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-10",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Slums have good ventilation and a clean environment.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s3-q018",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s3-q018",
+     "pdf_page": 44,
+     "printed_page": 44,
+     "y": 329.152,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s3-q018-key",
+     "pdf_page": 146,
+     "printed_page": 146,
+     "y": 399.178,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:16:02+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:16:02+05:30",
+   "text_as_printed": "Slums have good ventilation and a clean environment. –",
+   "section_signal": "State whether the following statements are true or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "false"
+   },
+   "answer_as_printed": "False",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:16:02+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "7ec9d78446cba3881f3ae2c66866f0ec91f7a4fe6ba29d8d1359e832ad4a9be5",
+   "topic_ids": [
+    "evs-4-10-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-10-s3-q019",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-10",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Animals always use similar materials to build shelters.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s3-q019",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s3-q019",
+     "pdf_page": 44,
+     "printed_page": 44,
+     "y": 355.402,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s3-q019-key",
+     "pdf_page": 146,
+     "printed_page": 146,
+     "y": 419.928,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:16:02+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:16:02+05:30",
+   "text_as_printed": "Animals always use similar materials to build shelters. –",
+   "section_signal": "State whether the following statements are true or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "false"
+   },
+   "answer_as_printed": "False",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:16:02+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "269f26fc4a4aea86948d2f1ad475380b53153df7bcbf3e48b5420841dc7bb2f4",
+   "topic_ids": [
+    "evs-4-10-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-10-s3-q020",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-10",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Cement and steel are the materials commonly used to build modern buildings.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s3-q020",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s3-q020",
+     "pdf_page": 44,
+     "printed_page": 44,
+     "y": 381.922,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s3-q020-key",
+     "pdf_page": 146,
+     "printed_page": 146,
+     "y": 440.428,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:16:02+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:16:02+05:30",
+   "text_as_printed": "Cement and steel are the materials commonly used to build modern buildings. –",
+   "section_signal": "State whether the following statements are true or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "True",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:16:02+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "40eeed5a7e50593af73626fa7b746e7de0de8d6e61fcf3ec89b63c20d5289fce",
+   "topic_ids": [
+    "evs-4-10-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-10-s3-q022",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-10",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "In hot places the people built houses using Shahabad stones.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s3-q022",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s3-q022",
+     "pdf_page": 44,
+     "printed_page": 44,
+     "y": 408.422,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s3-q022-key",
+     "pdf_page": 146,
+     "printed_page": 146,
+     "y": 481.958,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:16:02+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:16:02+05:30",
+   "text_as_printed": "In hot places the people built houses using Shahabad stones. –",
+   "section_signal": "State whether the following statements are true or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "True",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:16:02+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "8efa57bafef85e2b4ad0ad5a7c0765b02a658a04fa0b1627c6a97283b8ce9b38",
+   "topic_ids": [
+    "evs-4-10-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-10-s3-q023",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-10",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "In Chikkamagaluru the roofs of the houses are thatched with hay.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s3-q023",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s3-q023",
+     "pdf_page": 44,
+     "printed_page": 44,
+     "y": 434.922,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s3-q023-key",
+     "pdf_page": 146,
+     "printed_page": 146,
+     "y": 502.708,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:16:02+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:16:02+05:30",
+   "text_as_printed": "In Chikkamagaluru the roofs of the houses are thatched with hay. –",
+   "section_signal": "State whether the following statements are true or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "True",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:16:02+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "b8236377219da50114c9f7bfb6dcc5bbd89eeb4fca4f784461577fbc5d013b76",
+   "topic_ids": [
+    "evs-4-10-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-10-s3-q024",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-10",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The roofs of the houses in Jevargi are usually made of metal sheets.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s3-q024",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s3-q024",
+     "pdf_page": 44,
+     "printed_page": 44,
+     "y": 461.452,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s3-q024-key",
+     "pdf_page": 146,
+     "printed_page": 146,
+     "y": 523.458,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:16:02+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:16:02+05:30",
+   "text_as_printed": "The roofs of the houses in Jevargi are usually made of metal sheets. –",
+   "section_signal": "State whether the following statements are true or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "false"
+   },
+   "answer_as_printed": "False",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:16:02+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "cd5867ce3e42f7273765f5c82aa7ea145ad72431a61216a4230c2c9f9801679c",
+   "topic_ids": [
+    "evs-4-10-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-10-s3-q025",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-10",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Multi-storey buildings provide more residential space in cities.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s3-q025",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s3-q025",
+     "pdf_page": 44,
+     "printed_page": 44,
+     "y": 487.952,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s3-q025-key",
+     "pdf_page": 146,
+     "printed_page": 146,
+     "y": 543.978,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:16:02+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:16:02+05:30",
+   "text_as_printed": "Multi-storey buildings provide more residential space in cities. –",
+   "section_signal": "State whether the following statements are true or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "True",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:16:02+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "9ac8b51229b3a91cf6363c1a222a85536358e766b20b95915a47df1ed57e5a88",
+   "topic_ids": [
+    "evs-4-10-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-10-s3-q026",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-10",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The woodpeckars create their nest by excavating cavities in the tree.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s3-q026",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s3-q026",
+     "pdf_page": 44,
+     "printed_page": 44,
+     "y": 514.452,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s3-q026-key",
+     "pdf_page": 146,
+     "printed_page": 146,
+     "y": 564.728,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:16:02+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:16:02+05:30",
+   "section_signal": "State whether the following statements are true or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "True",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:16:02+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "be8ad334d37c9fb7fdcfdee000083ac3ed994afc1b86252b7a4cbb3477577210",
+   "topic_ids": [
+    "evs-4-10-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-10-s4-q026b",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-10",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Match the following with appropriate answers.\nA (animal/bird): a) White ant; b) Sparrow; c) Honey bee; d) Rat; e) Woodpecker; f )Frog; g) Fish; (h) Tiger\nB (shelter/object): a) A nest made of sticks and grasses; b) fresh water sources; e) Anthills; d) A nest made of wax; e) Burrows; f) builds a nest by making a hole in the tree; (r) Burrow (cave) in the forest; a) Areas under water (waterlogged)",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s4-q026b",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s4-q026b",
+     "pdf_page": 44,
+     "printed_page": 44,
+     "y": 567.482,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s4-q026b-key",
+     "pdf_page": 146,
+     "printed_page": 146,
+     "y": 585.488,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:16:02+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:16:02+05:30",
+   "text_as_printed": "Match the following with appropriate answers. (easy) A (animal/bird)                       B (shelter/object) a) White ant                         a) A nest made of sticks and grasses b) Sparrow                           b) fresh water sources c) Honey bee                         e) Anthills d) Rat                              d) A nest made of wax e) Woodpecker                       e) Burrows f )Frog                             f) builds a nest by making a hole in the tree g) Fish                             (r) Burrow (cave) in the forest (h) Tiger                           a) Areas under water (waterlogged)",
+   "section_signal": "Match the Following",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "White ant",
+      "right": "Anthills"
+     },
+     {
+      "left": "Sparrow",
+      "right": "A nest made of sticks and grasses"
+     },
+     {
+      "left": "Honey bee",
+      "right": "A nest made of wax"
+     },
+     {
+      "left": "Rat",
+      "right": "Burrows"
+     },
+     {
+      "left": "Woodpecker",
+      "right": "builds a nest by making a hole in the tree"
+     },
+     {
+      "left": "Frog",
+      "right": "fresh water sources"
+     },
+     {
+      "left": "Fish",
+      "right": "Areas under water (waterlogged)"
+     },
+     {
+      "left": "Tiger",
+      "right": "Burrow (cave) in the forest"
+     }
+    ]
+   },
+   "answer_as_printed": "a) White ant - e) Anthills; b) Sparrow - a) A nest made of sticks and grasses; c) Honey bee - d) A nest made of wax; d) Rat - e) Burrows; e) Woodpecker - f) builds a nest by making a hole in the tree; f) Frog - b) fresh water sources; g) Fish - a) Areas under water (waterlogged); h) Tiger - r) Burrow (cave) in the forest",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:16:02+05:30",
+    "basis": "printed match key (letter + text per row); pairs left/right verbatim from the key (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "fec9aa352b9120ce7759546c0b89fb0a4ded69cfc784829a593d68935282dd40",
+   "topic_ids": [
+    "evs-4-10-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-10-s5-q027",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-10",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What materials are used to build houses in Jevargi taluk of Kalaburagi district?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s5-q027",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s5-q027",
+     "pdf_page": 45,
+     "printed_page": 45,
+     "y": 288.652,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s5-q027-key",
+     "pdf_page": 147,
+     "printed_page": 147,
+     "y": 93.338,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:16:02+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:16:02+05:30",
+   "section_signal": "Answer the following questions ( one mark questions )",
+   "answer": {
+    "kind": "text",
+    "value": "Shahabad stones"
+   },
+   "answer_as_printed": "Shahabad stones",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:16:02+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "d595ccb28bba9f218562a10e7ded157654fe5493e8d14a4328bb1ebe7ffb3439",
+   "topic_ids": [
+    "evs-4-10-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-10-s5-q028",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-10",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What type of roof is commonly used in Koppa in Chikkamagaluru?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s5-q028",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s5-q028",
+     "pdf_page": 45,
+     "printed_page": 45,
+     "y": 315.152,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s5-q028-key",
+     "pdf_page": 147,
+     "printed_page": 147,
+     "y": 114.088,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:16:02+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:16:02+05:30",
+   "section_signal": "Answer the following questions ( one mark questions )",
+   "answer": {
+    "kind": "text",
+    "value": "Thatched with hay"
+   },
+   "answer_as_printed": "Thatched with hay",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:16:02+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "2eafd5efc27d67f570b7faa6e61f2babcf887e36ba5218724d8cc73a4d37a48e",
+   "topic_ids": [
+    "evs-4-10-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-10-s5-q029",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-10",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What are multi-storey buildings?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s5-q029",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s5-q029",
+     "pdf_page": 45,
+     "printed_page": 45,
+     "y": 341.652,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s5-q029-key",
+     "pdf_page": 147,
+     "printed_page": 147,
+     "y": 134.608,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:16:02+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:16:02+05:30",
+   "section_signal": "Answer the following questions ( one mark questions )",
+   "answer": {
+    "kind": "text",
+    "value": "Tall buildings with many floors"
+   },
+   "answer_as_printed": "Tall buildings with many floors",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:16:02+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "bcfe33900a7e696db2049ea07d5187c6fc37f45204c5637d1baca5d73d2848b3",
+   "topic_ids": [
+    "evs-4-10-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-10-s5-q030",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-10",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Write the name of an object used for roofing in Bangalore city.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s5-q030",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s5-q030",
+     "pdf_page": 45,
+     "printed_page": 45,
+     "y": 368.152,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s5-q030-key",
+     "pdf_page": 147,
+     "printed_page": 147,
+     "y": 134.608,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:16:02+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:16:02+05:30",
+   "section_signal": "Answer the following questions ( one mark questions )",
+   "answer": {
+    "kind": "text",
+    "value": "Cement sheets"
+   },
+   "answer_as_printed": "Cement sheets",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:16:02+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "50b742de62b8ba225f06aee9bce5fb8729867cc4a0a5b9c27d7ee94d4257d831",
+   "topic_ids": [
+    "evs-4-10-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-10-s5-q031",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-10",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What is the main disadvantage of multi-storey buildings?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s5-q031",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s5-q031",
+     "pdf_page": 45,
+     "printed_page": 45,
+     "y": 394.672,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s5-q031-key",
+     "pdf_page": 147,
+     "printed_page": 147,
+     "y": 155.358,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:16:02+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:16:02+05:30",
+   "section_signal": "Answer the following questions ( one mark questions )",
+   "answer": {
+    "kind": "text",
+    "value": "Lack of open space"
+   },
+   "answer_as_printed": "Lack of open space",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:16:02+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "2b7d3292ebdf8528c3de7cda4bedcc846e25dbe4e978c31d3f4a3fa1c84516ba",
+   "topic_ids": [
+    "evs-4-10-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-10-s5-q032",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-10",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What is a slum?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s5-q032",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s5-q032",
+     "pdf_page": 45,
+     "printed_page": 45,
+     "y": 421.172,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s5-q032-key",
+     "pdf_page": 147,
+     "printed_page": 147,
+     "y": 176.108,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:16:02+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:16:02+05:30",
+   "section_signal": "Answer the following questions ( one mark questions )",
+   "answer": {
+    "kind": "text",
+    "value": "A place where people live in poor conditions"
+   },
+   "answer_as_printed": "A place where people live in poor conditions",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:16:02+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "c53cb8d0eb3cd7d8e04f32723644a9a8e6e5025bc473af399ccf283ab81d3db5",
+   "topic_ids": [
+    "evs-4-10-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-10-s5-q034",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-10",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What is the benefit of using dry grass for roofing in areas like Chikkamagaluru?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s5-q034",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s5-q034",
+     "pdf_page": 45,
+     "printed_page": 45,
+     "y": 447.672,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s5-q034-key",
+     "pdf_page": 147,
+     "printed_page": 147,
+     "y": 196.858,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:16:02+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:16:02+05:30",
+   "section_signal": "Answer the following questions ( one mark questions )",
+   "answer": {
+    "kind": "text",
+    "value": "It keeps the house cool in summer"
+   },
+   "answer_as_printed": "It keeps the house cool in summer",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:16:02+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "565e5d41981a7c56909ee97477773cd62ff0414c589048f385100cdec5bcc9bf",
+   "topic_ids": [
+    "evs-4-10-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-10-s5-q035",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-10",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What materials were used to build the wall of Venkajji's childhood home?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s5-q035",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s5-q035",
+     "pdf_page": 45,
+     "printed_page": 45,
+     "y": 474.202,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s5-q035-key",
+     "pdf_page": 147,
+     "printed_page": 147,
+     "y": 217.638,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:16:02+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:16:02+05:30",
+   "section_signal": "Answer the following questions ( one mark questions )",
+   "answer": {
+    "kind": "text",
+    "value": "Mud and stones"
+   },
+   "answer_as_printed": "Mud and stones",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:16:02+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "fcc37297012ba7dfcbbed86dfce03c366203fbdfaa6b482a21c17d91d6f76757",
+   "topic_ids": [
+    "evs-4-10-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-10-s5-q036",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-10",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Name an object used to build modern multi-storey buildings.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s5-q036",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s5-q036",
+     "pdf_page": 45,
+     "printed_page": 45,
+     "y": 500.702,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s5-q036-key",
+     "pdf_page": 147,
+     "printed_page": 147,
+     "y": 238.138,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:16:02+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:16:02+05:30",
+   "section_signal": "Answer the following questions ( one mark questions )",
+   "answer": {
+    "kind": "text",
+    "value": "Cement"
+   },
+   "answer_as_printed": "Cement",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:16:02+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "bffd993be5560acf0285dcc056a0136fe9fbca59e615da9d40c7d0f3ee8a0218",
+   "topic_ids": [
+    "evs-4-10-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-10-s5-q037",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-10",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What kind of house did Venkajji live in in her childhood?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s5-q037",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s5-q037",
+     "pdf_page": 45,
+     "printed_page": 45,
+     "y": 527.202,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s5-q037-key",
+     "pdf_page": 147,
+     "printed_page": 147,
+     "y": 258.888,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:16:02+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:16:02+05:30",
+   "section_signal": "Answer the following questions ( one mark questions )",
+   "answer": {
+    "kind": "text",
+    "value": "A hut"
+   },
+   "answer_as_printed": "A hut",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:16:02+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "6583299d758af57e3236ef793dda60022581b935d5a5efc398d713186d1a54fc",
+   "topic_ids": [
+    "evs-4-10-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-10-s6-q038",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-10",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Why do people use stones to build houses in Jevargi?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s6-q038",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s6-q038",
+     "pdf_page": 45,
+     "printed_page": 45,
+     "y": 583.232,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s6-q038-key",
+     "pdf_page": 147,
+     "printed_page": 147,
+     "y": 300.408,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:16:02+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:16:02+05:30",
+   "text_as_printed": "Why do people use stones to build houses in Jevargi? (Easy)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Because Shahabad stones are locally available and keep homes cool"
+   },
+   "answer_as_printed": "Because Shahabad stones are locally available and keep homes cool",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:16:02+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "1a81e25f0c9d9054cbbeeb673c1234528f84a1d09c3f47865ac4d532a2ee2b6f",
+   "topic_ids": [
+    "evs-4-10-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-10-s6-q039",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-10",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What is the main reason of using hay(dry grass) for roofing in Koppa?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s6-q039",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s6-q039",
+     "pdf_page": 45,
+     "printed_page": 45,
+     "y": 609.722,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s6-q039-key",
+     "pdf_page": 147,
+     "printed_page": 147,
+     "y": 321.158,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:16:02+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:16:02+05:30",
+   "text_as_printed": "What is the main reason of using hay(dry grass) for roofing in Koppa? (Difficult)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "To keep the house warm and dry"
+   },
+   "answer_as_printed": "To keep the house warm and dry",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:16:02+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "2056d7671ab16c5a5ae77518c3ad1a2c969d33d640f415172902155e90352f24",
+   "topic_ids": [
+    "evs-4-10-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-10-s6-q040",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-10",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Write one advantage and disadvantage of multi-storey buildings?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s6-q040",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s6-q040",
+     "pdf_page": 45,
+     "printed_page": 45,
+     "y": 636.252,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s6-q040-key",
+     "pdf_page": 147,
+     "printed_page": 147,
+     "y": 341.658,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:16:02+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:16:02+05:30",
+   "text_as_printed": "Write one advantage and disadvantage of multi-storey buildings? (Difficult)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Advantage: More houses in less space. Disadvantage: Lack of personal space."
+   },
+   "answer_as_printed": "Advantage: More houses in less space. Disadvantage: Lack of personal space.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:16:02+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "8153162584a2dda6bb939ff81ff465a75b25577ea2c3f9c1c2389ee8dfa80c29",
+   "topic_ids": [
+    "evs-4-10-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-10-s6-q041",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-10",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What are the common problems of slums as explained by Vivek?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s6-q041",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s6-q041",
+     "pdf_page": 45,
+     "printed_page": 45,
+     "y": 662.752,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s6-q041-key",
+     "pdf_page": 147,
+     "printed_page": 147,
+     "y": 362.408,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:16:02+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:16:02+05:30",
+   "text_as_printed": "What are the common problems of slums as explained by Vivek? (Difficult)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "No toilets, poor light, bad smell, and unclean surroundings"
+   },
+   "answer_as_printed": "No toilets, poor light, bad smell, and unclean surroundings",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:16:02+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "9d6c71a3f26d01d9666fd18b6f531a3887b851cf8102143fd81d4373c830ebdd",
+   "topic_ids": [
+    "evs-4-10-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-10-s6-q042",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-10",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Why did Venkajji's family build a new house after the hut was burnt in the fire?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s6-q042",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s6-q042",
+     "pdf_page": 45,
+     "printed_page": 45,
+     "y": 689.252,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s6-q042-key",
+     "pdf_page": 147,
+     "printed_page": 147,
+     "y": 383.178,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:16:02+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:16:02+05:30",
+   "text_as_printed": "Why did Venkajji's family build a new house after the hut was burnt in the fire? (Easy)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Because the old hut caught fire and was destroyed"
+   },
+   "answer_as_printed": "Because the old hut caught fire and was destroyed",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:16:02+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "1f938f4cce311559674840e67dbcec4ef60e330cbb63496c907956efb7a7a350",
+   "topic_ids": [
+    "evs-4-10-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-10-s6-q043",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-10",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Explain how the style of house construction has changed over time.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s6-q043",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s6-q043",
+     "pdf_page": 45,
+     "printed_page": 45,
+     "y": 734.277,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s6-q043-key",
+     "pdf_page": 147,
+     "printed_page": 147,
+     "y": 403.928,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:16:02+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:16:02+05:30",
+   "text_as_printed": "Explain how the style of house construction has changed over time. (Difficult)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Earlier houses used mud and grass; now cement, bricks and steel are used."
+   },
+   "answer_as_printed": "Earlier houses used mud and grass; now cement, bricks and steel are used.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:16:02+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "06d696d4902f2de18501ee4c9e46ac72981c31e2f252b5f1d8b824d3f4a78010",
+   "topic_ids": [
+    "evs-4-10-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-10-s6-q044",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-10",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "How do the materials used for house construction adapt to the local climate?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s6-q044",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s6-q044",
+     "pdf_page": 46,
+     "printed_page": 46,
+     "y": 72.082,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s6-q044-key",
+     "pdf_page": 147,
+     "printed_page": 147,
+     "y": 424.428,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:16:02+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:16:02+05:30",
+   "text_as_printed": "How do the materials used for house construction adapt to the local climate? (Difficult)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "In hot areas thick stones; in rainy areas sloping roofs."
+   },
+   "answer_as_printed": "In hot areas thick stones; in rainy areas sloping roofs.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:16:02+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "a0510b3c0da037ed5aeef6a36e06dd796c2ff45810c54d5a60515b4d2cd8b2d4",
+   "topic_ids": [
+    "evs-4-10-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-10-s6-q045",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-10",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What materials were used to build Venkajji's husband's house?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s6-q045",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s6-q045",
+     "pdf_page": 46,
+     "printed_page": 46,
+     "y": 117.102,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s6-q045-key",
+     "pdf_page": 147,
+     "printed_page": 147,
+     "y": 445.178,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:16:02+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:16:02+05:30",
+   "text_as_printed": "What materials were used to build Venkajji's husband's house? (Difficult)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Bricks, cement, metal sheets"
+   },
+   "answer_as_printed": "Bricks, cement, metal sheets",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:16:02+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "3aa06ebda16ce0f904587d3eb8d1d925b23adaca5587ef9e7414fb266e3d699a",
+   "topic_ids": [
+    "evs-4-10-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-10-s6-q046",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-10",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Why is bamboo used for construction of houses in some areas?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s6-q046",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s6-q046",
+     "pdf_page": 46,
+     "printed_page": 46,
+     "y": 143.602,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s6-q046-key",
+     "pdf_page": 147,
+     "printed_page": 147,
+     "y": 445.178,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:16:02+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:16:02+05:30",
+   "text_as_printed": "Why is bamboo used for construction of houses in some areas? (Difficult)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Bamboo is light, strong and grows easily in some areas"
+   },
+   "answer_as_printed": "Bamboo is light, strong and grows easily in some areas",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:16:02+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "b541460a1cccbb6b1a0dd31009168ed4a063d5a652bf81cb8e145fe1244142b9",
+   "topic_ids": [
+    "evs-4-10-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-10-s6-q047",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-10",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What changes can be made to improve the conditions of slums?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s6-q047",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s6-q047",
+     "pdf_page": 46,
+     "printed_page": 46,
+     "y": 170.102,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s6-q047-key",
+     "pdf_page": 147,
+     "printed_page": 147,
+     "y": 465.958,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:16:02+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:16:02+05:30",
+   "text_as_printed": "What changes can be made to improve the conditions of slums? (Easy)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Clean surroundings, build toilets, proper drainage"
+   },
+   "answer_as_printed": "Clean surroundings, build toilets, proper drainage",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:16:02+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "71a58d4bad7912f6a3e75cb87c4d7dbfbf0659fa78d8cc3dea0a1709825dcb25",
+   "topic_ids": [
+    "evs-4-10-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-10-s7-q048",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-10",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What were the features of the house where Venkajji lived as a child?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s7-q048",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s7-q048",
+     "pdf_page": 46,
+     "printed_page": 46,
+     "y": 226.132,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s7-q048-key",
+     "pdf_page": 147,
+     "printed_page": 147,
+     "y": 527.958,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:16:02+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:16:02+05:30",
+   "text_as_printed": "What were the features of the house where Venkajji lived as a child? (Difficult)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Walls of mud, roof of hay, no windows, dark inside"
+   },
+   "answer_as_printed": "Walls of mud, roof of hay, no windows, dark inside",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:16:02+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "548bb130cccd0e49b717d6b333a894159ec11e722d2c01aab5700e9436ea664c",
+   "topic_ids": [
+    "evs-4-10-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-10-s7-q049",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-10",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "How can the houses of rats, birds and insects be compared?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s7-q049",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s7-q049",
+     "pdf_page": 46,
+     "printed_page": 46,
+     "y": 252.632,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s7-q049-key",
+     "pdf_page": 147,
+     "printed_page": 147,
+     "y": 548.728,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:16:02+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:16:02+05:30",
+   "text_as_printed": "How can the houses of rats, birds and insects be compared?Average)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Rats dig burrows, birds build nests, insects live in anthills or hives"
+   },
+   "answer_as_printed": "Rats dig burrows, birds build nests, insects live in anthills or hives",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:16:02+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "d419a140cc1922487843dc4e4370351534d60d3dd767607303d923b9cbcacf1a",
+   "topic_ids": [
+    "evs-4-10-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-10-s7-q050",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-10",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What are the main problems faced by people in slum areas?.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s7-q050",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s7-q050",
+     "pdf_page": 46,
+     "printed_page": 46,
+     "y": 279.132,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s7-q050-key",
+     "pdf_page": 147,
+     "printed_page": 147,
+     "y": 569.478,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:16:02+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:16:02+05:30",
+   "text_as_printed": "What are the main problems faced by people in slum areas?. (Difficult)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Poor hygiene, lack of water, no toilets, overcrowding"
+   },
+   "answer_as_printed": "Poor hygiene, lack of water, no toilets, overcrowding",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:16:02+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "be4d2097b212a03b390df2e9d3a69d8cc5218426a626ef6329801bffcea7ab3c",
+   "topic_ids": [
+    "evs-4-10-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-10-s7-q051",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-10",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Why did Venkajji's parents decide to build a house?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s7-q051",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s7-q051",
+     "pdf_page": 46,
+     "printed_page": 46,
+     "y": 305.652,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s7-q051-key",
+     "pdf_page": 147,
+     "printed_page": 147,
+     "y": 590.238,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:16:02+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:16:02+05:30",
+   "text_as_printed": "Why did Venkajji's parents decide to build a house? (Difficult)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "To stay safe from rain, cold and wild animals"
+   },
+   "answer_as_printed": "To stay safe from rain, cold and wild animals",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:16:02+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "d3ef6dd0cdf17e19625908acaa31d1dec7bfa9bfb6bd0d6fb6e891bce6ecb325",
+   "topic_ids": [
+    "evs-4-10-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-10-s7-q052",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-10",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Name any six materials required to build the modern houses.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s7-q052",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s7-q052",
+     "pdf_page": 46,
+     "printed_page": 46,
+     "y": 332.152,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s7-q052-key",
+     "pdf_page": 147,
+     "printed_page": 147,
+     "y": 610.978,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:16:02+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:16:02+05:30",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Cement, bricks, sand, steel, wood, paint"
+   },
+   "answer_as_printed": "Cement, bricks, sand, steel, wood, paint",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:16:02+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "neither the question nor its section heading prints a difficulty tag; assigning one needs subject judgement",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "191c902e04f645bc8b6a7666c7d4132b8deb2be5f53d3069b647c3353933637e",
+   "topic_ids": [
+    "evs-4-10-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-10-s8-q053",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-10",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "How does the house change and how does this change affect the society?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s8-q053",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s8-q053",
+     "pdf_page": 46,
+     "printed_page": 46,
+     "y": 380.172,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s8-q053-key",
+     "pdf_page": 147,
+     "printed_page": 147,
+     "y": 652.258,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:16:02+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:16:02+05:30",
+   "text_as_printed": "How does the house change and how does this change affect the society?Difficult)",
+   "section_signal": "Answer the following questions (four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Houses became stronger, more modern, cities grew, life became easier"
+   },
+   "answer_as_printed": "Houses became stronger, more modern, cities grew, life became easier",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:16:02+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "9e77dec8fb70953cb66ff20ea80a7a5034d6e7b2d7e8f6b5f9f9a5cb029a6262",
+   "topic_ids": [
+    "evs-4-10-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-10-s8-q054",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-10",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Imagine that you are living in a slum.What steps will you take to improve your environment?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s8-q054",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s8-q054",
+     "pdf_page": 46,
+     "printed_page": 46,
+     "y": 425.172,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s8-q054-key",
+     "pdf_page": 147,
+     "printed_page": 147,
+     "y": 673.008,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:16:02+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:16:02+05:30",
+   "text_as_printed": "Imagine that you are living in a slum.What steps will you take to improve your environment? (Difficult)",
+   "section_signal": "Answer the following questions (four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Clean the area, plant trees, build toilets, use dustbins"
+   },
+   "answer_as_printed": "Clean the area, plant trees, build toilets, use dustbins",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:16:02+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "5dfb16a93e37e87cc87536d497f09e45997e466c949a8bdf5587e65681510c3c",
+   "topic_ids": [
+    "evs-4-10-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-10-s8-q055",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-10",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The way animals create their homes is different from one another.What does this teach us?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s8-q055",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s8-q055",
+     "pdf_page": 46,
+     "printed_page": 46,
+     "y": 470.202,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s8-q055-key",
+     "pdf_page": 147,
+     "printed_page": 147,
+     "y": 693.758,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:16:02+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:16:02+05:30",
+   "text_as_printed": "The way animals create their homes is different from one another.What does this teach us? (Difficult)",
+   "section_signal": "Answer the following questions (four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Animals teach us to use nature wisely and creatively"
+   },
+   "answer_as_printed": "Animals teach us to use nature wisely and creatively",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:16:02+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "3051b89f354cf5853578d76f3164fc2f15ba70e13502ee2ecd2c61f72c62763f",
+   "topic_ids": [
+    "evs-4-10-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-10-s8-q056",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-10",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The home is not just a shelter, it is also a reflection of culture and heritage. Explain this statement.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s8-q056",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s8-q056",
+     "pdf_page": 46,
+     "printed_page": 46,
+     "y": 515.202,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s8-q056-key",
+     "pdf_page": 147,
+     "printed_page": 147,
+     "y": 714.508,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:16:02+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:16:02+05:30",
+   "text_as_printed": "The home is not just a shelter, it is also a reflection of culture and heritage. Explain this statement. (Difficult)",
+   "section_signal": "Answer the following questions (four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Homes show our traditions, materials we use, and how we live"
+   },
+   "answer_as_printed": "Homes show our traditions, materials we use, and how we live",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:16:02+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "0130bbed33e4f0bdcea7c8f29fe39e99362c20b56495fd0c83b8709cb7fdea1d",
+   "topic_ids": [
+    "evs-4-10-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-10-s8-q057",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-10",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Draw a picture of the house and colour it and write the names of the materials used for the construction of the house.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s8-q057",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s8-q057",
+     "pdf_page": 46,
+     "printed_page": 46,
+     "y": 560.222,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-10-s8-q057-key",
+     "pdf_page": 146,
+     "printed_page": 146,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:16:02+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:16:02+05:30",
+   "text_as_printed": "Draw a picture of the house and colour it and write the names of the materials used for the construction of the house. (Difficult)",
+   "section_signal": "Answer the following questions (four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 9 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    },
+    {
+     "issue": "no answer printed",
+     "why_not_corrected": "the answer side ends at key 56 (pdf 147) and prints nothing for this drawing task",
+     "suggested": "key absent — review"
+    }
+   ],
+   "content_hash": "76a523bf50ce59128851c19b61efb8b1f4c0310d2c0559fc30fe423195bedbe6",
+   "topic_ids": [
+    "evs-4-10-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  }
+ ],
+ "pending_summary": {}
+}
