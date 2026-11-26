@@ -1,0 +1,1789 @@
+{
+ "contract_version": "1.7",
+ "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
+ "procedure_file": "extraction_procedure_social_addendum_v1.4_social science Classes 6-10 on top of procedure v2.md",
+ "machine_name": "evs-3-10_questions",
+ "version": 1,
+ "changelog": "v1 extraction — batch-01 — class-3-evs",
+ "amendments_applied": [],
+ "unit_state": "EXTRACTED",
+ "review_ready": false,
+ "count_gate": {
+  "reference": 20,
+  "reference_source": "audited",
+  "extracted": 20,
+  "paired": 20,
+  "flagged": 5,
+  "gaps": [],
+  "duplicated_numbers": [],
+  "quota_table": "difficulty_only",
+  "second_method": {
+   "method": "printed BLUE PRINT difficulty table total (Easy 14 + Average 4 + Difficulty 2 = 20), pdf 41; independently, the answer side's keys counted",
+   "extracted": 20,
+   "agrees": true
+  },
+  "pass": true,
+  "note": "Question side labels 1-20 monotonic, no gaps, no duplicates (I 1-5, II 6-8, III 9-13, IV 14-16, V 17-20); answer side keys 1-20 in order (keys 17-20 at the top of pdf 112, above the Unit 11 heading). BLUE PRINT 14/4/2 = 20 = audited count. Difficulty per question: easy 0, average 0, difficult 0, untagged 20."
+ },
+ "extraction": {
+  "source_file": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf",
+  "source_ref_prefix": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf",
+  "pdf_pages": [
+   41,
+   42,
+   43,
+   111,
+   112
+  ],
+  "printed_page_offset": 0,
+  "method_notes": [
+   "Pages: Q pdf 41 (heading 'Unit -10', LO 12, BLUE PRINT, q1-4) 42 (q5-15) 43 (q16-20). A side 'Key Answers: Unit 10. Our sense organs' pdf 111 (keys 1-16), pdf 112 top (17-20). Folios = pdf page.",
+   "BILINGUAL: all Kannada dropped (Unicode both sides). q18 stem prints a stray combining mark at the end (font artefact) — removed from text, kept in text_as_printed.",
+   "Sections: s1 I match q1-5 (numbered rows -> one-pair match questions); s2 II 'Name the organ …' q6-8 (q7, q8 print a blank -> fill; q6 prints none on its English line -> vsa; text = instruction + situation); s3 III T/F q9-13; s4 IV q14-16 (q14 one printed line -> vsa; q15 five 'organ – function' lines -> la, 5 steps; q16 two sentences -> sa); s5 V fill q17-20.",
+   "MARKS (R-E9, control rev 3): every header's N equals its printed count -> s1 1, s2 1, s3 1, s4 2, s5 1 (section_header).",
+   "DIFFICULTY: none printed -> null + 'no difficulty tag'. quota_table difficulty_only; second method = BLUE PRINT total 20 (agrees). LO (R-E10): lesson LO 12 (its row also names the teeth LO text), lo_source 'lesson_table'.",
+   "TOPICS (R-E7): map v1 evs-3-10 = s00 (Introduction, not tickable) + s01 Eyes, s02 Ears, s03 Nose, s04 Tongue, s05 Skin. Each question tagged to the organ section its content names, topic_source 'content', confidence 'high' (16 q); questions about all five senses (q14-17) carry all five tickable sections with 'low' per R-E7 (one clear section required for 'high'). s00 never tagged.",
+   "KEYS — SOURCE DEFECT IN SECTION I: the English match keys '1.To learn the word 2.To smell 3.To taste 4.To feel 5..Skin' do not follow their own Kannada lines (seeing / knowing sound / identifying smell / tasting / knowing touch) — the English column looks displaced by one row. Stored exactly as printed: q1-q4 'printed key contradicts fact' (review-blocking), q5 'match key value not among column-B items'. Not a numbering shift (labels 1-5 align on both sides).",
+   "Other keys: II '6.Skin 7.,Ear 8. Nose'; T/F 9 F, 10 T, 11 F, 12 T, 13 F; q14 'Five 1. Eyes, 2.. Ears, …' one line verbatim.",
+   "FIGURES: none on these pages."
+  ],
+  "notation_summary": {
+   "render_tokens": 0,
+   "latex_tokens": 0,
+   "damage_flags": []
+  },
+  "excluded_objects": [],
+  "inline_excluded_count": 0,
+  "figure_references": []
+ },
+ "stimuli": [],
+ "questions": [
+  {
+   "id": "evs-3-10-s1-q001",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-10",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "12",
+     "text_as_printed": "Identifies the sense organs of the body, explain their importance Know the importance of teeth and types of teeth and functions."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Match the following: Eye\nB: To taste; To feel; to see; To learn the word; To smell",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-10-s1-q001",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-10-s1-q001",
+     "pdf_page": 41,
+     "printed_page": 41,
+     "y": 561.533,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-10-s1-q001-key",
+     "pdf_page": 111,
+     "printed_page": 111,
+     "y": 154.826,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:17:21+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:17:21+05:30",
+   "text_as_printed": "Eye",
+   "section_signal": "I :Match the following",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "Eye",
+      "right": "To learn the word"
+     }
+    ]
+   },
+   "answer_as_printed": "1.To learn the word",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:17:21+05:30",
+    "basis": "printed match key: the right-hand value per printed row number; left = that row's column-A item, right = key wording verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 4 / Difficulty 2) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "printed key contradicts fact — 'Eye: To learn the word'; the eye's function in column B is 'to see', and the key's own Kannada line reads 'to see objects'; reviewer",
+     "why_not_corrected": "printed English key asserted as printed (v1.4 §14.6); the English key column (1 'To learn the word', 2 'To smell', 3 'To taste', 4 'To feel', 5 'Skin') does not follow its own Kannada lines (see seeing / knowing sound / smell / taste / touch); never re-translated or re-paired",
+     "suggested": "to see — review"
+    }
+   ],
+   "content_hash": "250c7304b9dfb60c1ff20f9cf3c7c0da0d1a019b93aeda2280fb19050f35daaa",
+   "topic_ids": [
+    "evs-3-10-s01"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-10-s1-q002",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-10",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "12",
+     "text_as_printed": "Identifies the sense organs of the body, explain their importance Know the importance of teeth and types of teeth and functions."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Match the following: Ear\nB: To taste; To feel; to see; To learn the word; To smell",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-10-s1-q002",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-10-s1-q002",
+     "pdf_page": 41,
+     "printed_page": 41,
+     "y": 622.733,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-10-s1-q002-key",
+     "pdf_page": 111,
+     "printed_page": 111,
+     "y": 176.813,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:17:21+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:17:21+05:30",
+   "text_as_printed": "Ear",
+   "section_signal": "I :Match the following",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "Ear",
+      "right": "To smell"
+     }
+    ]
+   },
+   "answer_as_printed": "2.To smell",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:17:21+05:30",
+    "basis": "printed match key: the right-hand value per printed row number; left = that row's column-A item, right = key wording verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 4 / Difficulty 2) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "printed key contradicts fact — 'Ear: To smell'; the ear's function in column B is '(none printed — hearing)', and the key's own Kannada line reads 'to know sound'; reviewer",
+     "why_not_corrected": "printed English key asserted as printed (v1.4 §14.6); the English key column (1 'To learn the word', 2 'To smell', 3 'To taste', 4 'To feel', 5 'Skin') does not follow its own Kannada lines (see seeing / knowing sound / smell / taste / touch); never re-translated or re-paired",
+     "suggested": "(none printed — hearing) — review"
+    }
+   ],
+   "content_hash": "5a49f2d1bd9ea7c649a2649f2f975d02752a93cd1221203d67f25ac408d9c5f6",
+   "topic_ids": [
+    "evs-3-10-s02"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-10-s1-q003",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-10",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "12",
+     "text_as_printed": "Identifies the sense organs of the body, explain their importance Know the importance of teeth and types of teeth and functions."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Match the following: Nose\nB: To taste; To feel; to see; To learn the word; To smell",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-10-s1-q003",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-10-s1-q003",
+     "pdf_page": 41,
+     "printed_page": 41,
+     "y": 684.173,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-10-s1-q003-key",
+     "pdf_page": 111,
+     "printed_page": 111,
+     "y": 198.173,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:17:21+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:17:21+05:30",
+   "text_as_printed": "Nose",
+   "section_signal": "I :Match the following",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "Nose",
+      "right": "To taste"
+     }
+    ]
+   },
+   "answer_as_printed": "3.To taste",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:17:21+05:30",
+    "basis": "printed match key: the right-hand value per printed row number; left = that row's column-A item, right = key wording verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 4 / Difficulty 2) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "printed key contradicts fact — 'Nose: To taste'; the nose's function in column B is 'To smell', and the key's own Kannada line reads 'to identify smell'; reviewer",
+     "why_not_corrected": "printed English key asserted as printed (v1.4 §14.6); the English key column (1 'To learn the word', 2 'To smell', 3 'To taste', 4 'To feel', 5 'Skin') does not follow its own Kannada lines (see seeing / knowing sound / smell / taste / touch); never re-translated or re-paired",
+     "suggested": "To smell — review"
+    }
+   ],
+   "content_hash": "f1ad5914f711974c929f03d8dc1355893a8a2ca679296c607bec1c419d7cc001",
+   "topic_ids": [
+    "evs-3-10-s03"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-10-s1-q004",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-10",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "12",
+     "text_as_printed": "Identifies the sense organs of the body, explain their importance Know the importance of teeth and types of teeth and functions."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Match the following: Tongue\nB: To taste; To feel; to see; To learn the word; To smell",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-10-s1-q004",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-10-s1-q004",
+     "pdf_page": 41,
+     "printed_page": 41,
+     "y": 745.613,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-10-s1-q004-key",
+     "pdf_page": 111,
+     "printed_page": 111,
+     "y": 219.146,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:17:21+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:17:21+05:30",
+   "text_as_printed": "Tongue",
+   "section_signal": "I :Match the following",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "Tongue",
+      "right": "To feel"
+     }
+    ]
+   },
+   "answer_as_printed": "4.To feel",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:17:21+05:30",
+    "basis": "printed match key: the right-hand value per printed row number; left = that row's column-A item, right = key wording verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 4 / Difficulty 2) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "printed key contradicts fact — 'Tongue: To feel'; the tongue's function in column B is 'To taste', and the key's own Kannada line reads 'to taste'; reviewer",
+     "why_not_corrected": "printed English key asserted as printed (v1.4 §14.6); the English key column (1 'To learn the word', 2 'To smell', 3 'To taste', 4 'To feel', 5 'Skin') does not follow its own Kannada lines (see seeing / knowing sound / smell / taste / touch); never re-translated or re-paired",
+     "suggested": "To taste — review"
+    }
+   ],
+   "content_hash": "92aaba676637c981893d66b51652ac6fa0bef62f9f9ad7e2ec4e59b0768d52fe",
+   "topic_ids": [
+    "evs-3-10-s04"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-10-s1-q005",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-10",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "12",
+     "text_as_printed": "Identifies the sense organs of the body, explain their importance Know the importance of teeth and types of teeth and functions."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Match the following: Skin\nB: To taste; To feel; to see; To learn the word; To smell",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-10-s1-q005",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-10-s1-q005",
+     "pdf_page": 42,
+     "printed_page": 42,
+     "y": 60.653,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-10-s1-q005-key",
+     "pdf_page": 111,
+     "printed_page": 111,
+     "y": 241.133,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:17:21+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:17:21+05:30",
+   "text_as_printed": "Skin",
+   "section_signal": "I :Match the following",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "Skin",
+      "right": "Skin"
+     }
+    ]
+   },
+   "answer_as_printed": "5..Skin",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:17:21+05:30",
+    "basis": "printed match key: the right-hand value per printed row number; left = that row's column-A item, right = key wording verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 4 / Difficulty 2) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "match key value not among column-B items — key '5..Skin' repeats the row's own column-A item; its Kannada line reads 'to know touch' (column B 'To feel')",
+     "why_not_corrected": "key text kept as printed (v1.4 §14.8); never re-paired",
+     "suggested": "To feel — review"
+    }
+   ],
+   "content_hash": "f2059370b54cc2d683fbe2da456a7f4d9e7dfbdc26c6c0045ede70e745b54976",
+   "topic_ids": [
+    "evs-3-10-s05"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-10-s2-q006",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-10",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "12",
+     "text_as_printed": "Identifies the sense organs of the body, explain their importance Know the importance of teeth and types of teeth and functions."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Name the organ used to identify the following situations: To know if the food is hot",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-10-s2-q006",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-10-s2-q006",
+     "pdf_page": 42,
+     "printed_page": 42,
+     "y": 180.413,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-10-s2-q006-key",
+     "pdf_page": 111,
+     "printed_page": 111,
+     "y": 280.973,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:17:21+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:17:21+05:30",
+   "text_as_printed": "To know if the food is hot",
+   "section_signal": "II. Name the organ used to identify the following situations :",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Skin"
+   },
+   "answer_as_printed": "Skin",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:17:21+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 4 / Difficulty 2) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "4b13f98b91f6dd6b7ce5f1154adb4427cde1396599399f6ea7e1e12057dc7870",
+   "topic_ids": [
+    "evs-3-10-s05"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-10-s2-q007",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-10",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "12",
+     "text_as_printed": "Identifies the sense organs of the body, explain their importance Know the importance of teeth and types of teeth and functions."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Name the organ used to identify the following situations: To identify the sound of vehicles __________",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-10-s2-q007",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-10-s2-q007",
+     "pdf_page": 42,
+     "printed_page": 42,
+     "y": 238.973,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-10-s2-q007-key",
+     "pdf_page": 111,
+     "printed_page": 111,
+     "y": 280.973,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:17:21+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:17:21+05:30",
+   "text_as_printed": "To identify the sound of vehicles __________",
+   "section_signal": "II. Name the organ used to identify the following situations :",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Ear"
+   },
+   "answer_as_printed": "7.,Ear",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:17:21+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 4 / Difficulty 2) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "361c1c4c8a26af47ddf5914a76b98a7129f044aec29054952d23e778276818c2",
+   "topic_ids": [
+    "evs-3-10-s02"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-10-s2-q008",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-10",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "12",
+     "text_as_printed": "Identifies the sense organs of the body, explain their importance Know the importance of teeth and types of teeth and functions."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Name the organ used to identify the following situations: To recognize the smell of a flower ________",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-10-s2-q008",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-10-s2-q008",
+     "pdf_page": 42,
+     "printed_page": 42,
+     "y": 297.293,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-10-s2-q008-key",
+     "pdf_page": 111,
+     "printed_page": 111,
+     "y": 280.973,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:17:21+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:17:21+05:30",
+   "text_as_printed": "To recognize the smell of a flower ________",
+   "section_signal": "II. Name the organ used to identify the following situations :",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Nose"
+   },
+   "answer_as_printed": "Nose",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:17:21+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 4 / Difficulty 2) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "16825aee3825cfdd7e96c83dbe0bbbf336a30541b8a3c784c6c97b04a88bfdef",
+   "topic_ids": [
+    "evs-3-10-s03"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-10-s3-q009",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-10",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "12",
+     "text_as_printed": "Identifies the sense organs of the body, explain their importance Know the importance of teeth and types of teeth and functions."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "You should read while watching.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-10-s3-q009",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-10-s3-q009",
+     "pdf_page": 42,
+     "printed_page": 42,
+     "y": 402.173,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-10-s3-q009-key",
+     "pdf_page": 111,
+     "printed_page": 111,
+     "y": 321.773,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:17:21+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:17:21+05:30",
+   "section_signal": "III. Tick true or false for the statements :",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "option",
+    "option_id": "false"
+   },
+   "answer_as_printed": "False",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:17:21+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 4 / Difficulty 2) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "a19b21325552b29c5175a063b35257f370d11c7b12eaebf4584b7d6b6066d684",
+   "topic_ids": [
+    "evs-3-10-s01"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-10-s3-q010",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-10",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "12",
+     "text_as_printed": "Identifies the sense organs of the body, explain their importance Know the importance of teeth and types of teeth and functions."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Eating fruits and vegetables can help maintain skin health.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-10-s3-q010",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-10-s3-q010",
+     "pdf_page": 42,
+     "printed_page": 42,
+     "y": 448.733,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-10-s3-q010-key",
+     "pdf_page": 111,
+     "printed_page": 111,
+     "y": 321.773,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:17:21+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:17:21+05:30",
+   "section_signal": "III. Tick true or false for the statements :",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "True",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:17:21+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 4 / Difficulty 2) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "cda9a2edd34a7ee6869856d40635e4505fb40bcec3e16967e5f7ae67acdc7605",
+   "topic_ids": [
+    "evs-3-10-s05"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-10-s3-q011",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-10",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "12",
+     "text_as_printed": "Identifies the sense organs of the body, explain their importance Know the importance of teeth and types of teeth and functions."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "The ear should be cleaned with a stick/pin.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-10-s3-q011",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-10-s3-q011",
+     "pdf_page": 42,
+     "printed_page": 42,
+     "y": 488.573,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-10-s3-q011-key",
+     "pdf_page": 111,
+     "printed_page": 111,
+     "y": 321.773,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:17:21+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:17:21+05:30",
+   "section_signal": "III. Tick true or false for the statements :",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "option",
+    "option_id": "false"
+   },
+   "answer_as_printed": "False",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:17:21+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 4 / Difficulty 2) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "fc88336ec8ba22e3b14f11a40ae9615d90e4fe4b43b4d25ee44f44e2d198ca17",
+   "topic_ids": [
+    "evs-3-10-s02"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-10-s3-q012",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-10",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "12",
+     "text_as_printed": "Identifies the sense organs of the body, explain their importance Know the importance of teeth and types of teeth and functions."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Do not consume foods that are too hot.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-10-s3-q012",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-10-s3-q012",
+     "pdf_page": 42,
+     "printed_page": 42,
+     "y": 528.653,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-10-s3-q012-key",
+     "pdf_page": 111,
+     "printed_page": 111,
+     "y": 321.773,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:17:21+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:17:21+05:30",
+   "section_signal": "III. Tick true or false for the statements :",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "True",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:17:21+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 4 / Difficulty 2) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "3220bb7f8954f3eb19e8c54cfa312b74c47535c68eecc1ffb95eae61c73f1a09",
+   "topic_ids": [
+    "evs-3-10-s04"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-10-s3-q013",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-10",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "12",
+     "text_as_printed": "Identifies the sense organs of the body, explain their importance Know the importance of teeth and types of teeth and functions."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Making loud noises in the ears of friends.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-10-s3-q013",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-10-s3-q013",
+     "pdf_page": 42,
+     "printed_page": 42,
+     "y": 568.493,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-10-s3-q013-key",
+     "pdf_page": 111,
+     "printed_page": 111,
+     "y": 321.773,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:17:21+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:17:21+05:30",
+   "section_signal": "III. Tick true or false for the statements :",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "option",
+    "option_id": "false"
+   },
+   "answer_as_printed": "False",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:17:21+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 4 / Difficulty 2) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "dad142f9c10ef5147c0597d699c855b409d4deeae33104e523a0e41699575d08",
+   "topic_ids": [
+    "evs-3-10-s02"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-10-s4-q014",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-10",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "12",
+     "text_as_printed": "Identifies the sense organs of the body, explain their importance Know the importance of teeth and types of teeth and functions."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "How many senses are there? What are they?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-10-s4-q014",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-10-s4-q014",
+     "pdf_page": 42,
+     "printed_page": 42,
+     "y": 666.893,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-10-s4-q014-key",
+     "pdf_page": 111,
+     "printed_page": 111,
+     "y": 382.973,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:17:21+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:17:21+05:30",
+   "section_signal": "IV. Answer in one or two sentences.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Five 1. Eyes, 2.. Ears, 3. Nose, 4. Tongue, 5.. Skin"
+   },
+   "answer_as_printed": "Five 1. Eyes, 2.. Ears, 3. Nose, 4. Tongue, 5.. Skin",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:17:21+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 4 / Difficulty 2) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "6a02397c42fa885a0de3ea5c5fa6bf964ff8169282ef5bbd0c3b52667121600a",
+   "topic_ids": [
+    "evs-3-10-s01",
+    "evs-3-10-s02",
+    "evs-3-10-s03",
+    "evs-3-10-s04",
+    "evs-3-10-s05"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "low"
+  },
+  {
+   "id": "evs-3-10-s4-q015",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-10",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "12",
+     "text_as_printed": "Identifies the sense organs of the body, explain their importance Know the importance of teeth and types of teeth and functions."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "What are the senses? What are their functions?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-10-s4-q015",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-10-s4-q015",
+     "pdf_page": 42,
+     "printed_page": 42,
+     "y": 717.773,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-10-s4-q015-key",
+     "pdf_page": 111,
+     "printed_page": 111,
+     "y": 441.533,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:17:21+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:17:21+05:30",
+   "section_signal": "IV. Answer in one or two sentences.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Eye – to see\nEar – to hear\nNose – to detect smells\nTongue – to taste\nSkin – to feel"
+   },
+   "answer_as_printed": "Eye – to see\nEar – to hear\nNose – to detect smells\nTongue – to taste\nSkin – to feel",
+   "solution_steps": [
+    "Eye – to see",
+    "Ear – to hear",
+    "Nose – to detect smells",
+    "Tongue – to taste",
+    "Skin – to feel"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:17:21+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 4 / Difficulty 2) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "317a4f7b82e369248f8aa0d6848934f265bb17ad4f06c777449167f6e89abdf0",
+   "topic_ids": [
+    "evs-3-10-s01",
+    "evs-3-10-s02",
+    "evs-3-10-s03",
+    "evs-3-10-s04",
+    "evs-3-10-s05"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "low"
+  },
+  {
+   "id": "evs-3-10-s4-q016",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-10",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "12",
+     "text_as_printed": "Identifies the sense organs of the body, explain their importance Know the importance of teeth and types of teeth and functions."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "What are the sense organs?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-10-s4-q016",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-10-s4-q016",
+     "pdf_page": 43,
+     "printed_page": 43,
+     "y": 39.293,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-10-s4-q016-key",
+     "pdf_page": 111,
+     "printed_page": 111,
+     "y": 642.746,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:17:21+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:17:21+05:30",
+   "text_as_printed": "What are the sense organs ?",
+   "section_signal": "IV. Answer in one or two sentences.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "The eyes, ears, nose, tongue, and skin help us see, hear, smell, taste, and touch. Therefore, these five organs are called the senses."
+   },
+   "answer_as_printed": "The eyes, ears, nose, tongue, and skin help us see, hear, smell, taste, and touch. Therefore, these five organs are called the senses.",
+   "solution_steps": [
+    "The eyes, ears, nose, tongue, and skin help us see, hear, smell, taste, and touch. Therefore, these five organs are called the senses."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:17:21+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 4 / Difficulty 2) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "300c8fec3e9416b4369bf2b12dd0e9c9a30c472df38e13414765e209e80a1bd8",
+   "topic_ids": [
+    "evs-3-10-s01",
+    "evs-3-10-s02",
+    "evs-3-10-s03",
+    "evs-3-10-s04",
+    "evs-3-10-s05"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "low"
+  },
+  {
+   "id": "evs-3-10-s5-q017",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-10",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "12",
+     "text_as_printed": "Identifies the sense organs of the body, explain their importance Know the importance of teeth and types of teeth and functions."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "We have _______ sense organs.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-10-s5-q017",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-10-s5-q017",
+     "pdf_page": 43,
+     "printed_page": 43,
+     "y": 159.525,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-10-s5-q017-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 40.826,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:17:21+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:17:21+05:30",
+   "section_signal": "V.Fill in the blanks :",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "five"
+   },
+   "answer_as_printed": "five",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:17:21+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 4 / Difficulty 2) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "c927e95746dfdd57191155a5ce5ee5b9fbbc91b68d59906fa10d8c29012d0c4f",
+   "topic_ids": [
+    "evs-3-10-s01",
+    "evs-3-10-s02",
+    "evs-3-10-s03",
+    "evs-3-10-s04",
+    "evs-3-10-s05"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "low"
+  },
+  {
+   "id": "evs-3-10-s5-q018",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-10",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "12",
+     "text_as_printed": "Identifies the sense organs of the body, explain their importance Know the importance of teeth and types of teeth and functions."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "______ organ is used to hear the sound",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-10-s5-q018",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-10-s5-q018",
+     "pdf_page": 43,
+     "printed_page": 43,
+     "y": 217.845,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-10-s5-q018-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 40.826,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:17:21+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:17:21+05:30",
+   "text_as_printed": "______ organ is used to hear the sound ̤",
+   "section_signal": "V.Fill in the blanks :",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Ear"
+   },
+   "answer_as_printed": "Ear",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:17:21+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 4 / Difficulty 2) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "a4a52aaf2cb5eaf015cef6c1d4718ed035411729f940b2314b6f751f3ba04325",
+   "topic_ids": [
+    "evs-3-10-s02"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-10-s5-q019",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-10",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "12",
+     "text_as_printed": "Identifies the sense organs of the body, explain their importance Know the importance of teeth and types of teeth and functions."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Our skin experiences the ________ and _______",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-10-s5-q019",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-10-s5-q019",
+     "pdf_page": 43,
+     "printed_page": 43,
+     "y": 275.925,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-10-s5-q019-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 40.826,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:17:21+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:17:21+05:30",
+   "section_signal": "V.Fill in the blanks :",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Feel and touch"
+   },
+   "answer_as_printed": "Feel and touch",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:17:21+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 4 / Difficulty 2) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "6b2a5bfa7c5bc4cb8a058bcac9a1348f5052a517e3945073548d0b10c9e72dcc",
+   "topic_ids": [
+    "evs-3-10-s05"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-10-s5-q020",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-10",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "12",
+     "text_as_printed": "Identifies the sense organs of the body, explain their importance Know the importance of teeth and types of teeth and functions."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "____ organ helps us to see our surroundings.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-10-s5-q020",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-10-s5-q020",
+     "pdf_page": 43,
+     "printed_page": 43,
+     "y": 337.365,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-10-s5-q020-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 40.826,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:17:21+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:17:21+05:30",
+   "section_signal": "V.Fill in the blanks :",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Eyes"
+   },
+   "answer_as_printed": "Eyes",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:17:21+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 4 / Difficulty 2) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "79b330bb82434d7907c95cf00fe54545d8e390be438eeb121e8d9af8a9d372ea",
+   "topic_ids": [
+    "evs-3-10-s01"
+   ],
+   "topic_source": "content",
+   "topic_confidence": "high"
+  }
+ ],
+ "pending_summary": {}
+}
