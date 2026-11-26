@@ -1,0 +1,2483 @@
+{
+ "contract_version": "1.7",
+ "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
+ "procedure_file": "extraction_procedure_social_addendum_v1.4_social science Classes 6-10 on top of procedure v2.md",
+ "machine_name": "evs-3-01_questions",
+ "version": 1,
+ "changelog": "v1 extraction — batch-01 — class-3-evs",
+ "amendments_applied": [],
+ "unit_state": "EXTRACTED",
+ "review_ready": false,
+ "count_gate": {
+  "reference": 26,
+  "reference_source": "audited",
+  "extracted": 26,
+  "paired": 26,
+  "flagged": 5,
+  "gaps": [],
+  "duplicated_numbers": [],
+  "quota_table": "difficulty_only",
+  "second_method": {
+   "method": "printed BLUE PRINT difficulty table total (Easy 10 + Average 13 + Difficulty 03 = 26), pdf 10; independently, the answer side prints 26 keys 1-26",
+   "extracted": 26,
+   "agrees": true
+  },
+  "pass": true,
+  "note": "Question side labels 1-26 monotonic, no gaps, no duplicates (I 1-10, II 11-16, III 17-20, IV 21-23, V 24-26); answer side keys 1-26 in the same order. BLUE PRINT total 26 = audited count (quota_table difficulty_only, addendum §8). Section headers print 'NxM=T' with N disagreeing with the printed rows in III ('5X1=5' over 4 rows) and IV ('5 X 1 = 5' over 3 questions) — blueprint totals, not counts. Difficulty per question: easy 0, average 0, difficult 0, untagged 26."
+ },
+ "extraction": {
+  "source_file": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf",
+  "source_ref_prefix": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf",
+  "pdf_pages": [
+   10,
+   11,
+   12,
+   13,
+   98,
+   99
+  ],
+  "printed_page_offset": 0,
+  "method_notes": [
+   "Pages: Q side heading + LO table + BLUE PRINT pdf 10, q1-2 pdf 10, q3-10 pdf 11 (q10 options on pdf 12), q11-20 pdf 12, q21-26 pdf 13. A side 'Key Answers: / Lesson :- 1: A Day in the garden' pdf 98, keys 1-26 pdf 98 (q26 key continues to pdf 99 top). Folios printed = pdf page (offset 0).",
+   "BILINGUAL: every English line is followed by its Kannada line. On the question side the Kannada extracts as Unicode Kannada (broken shaping); on the answer side two lines (III and IV keys, pdf 98) extract as legacy-Nudi Latin junk. ALL Kannada lines dropped; nothing Kannada or Nudi stored (junk grep and Unicode-Kannada grep both 0).",
+   "Sections (roman numerals printed; -sN- by printed order, numeral kept in section_signal): s1 I mcq q1-10; s2 II 'Identify the relationship and answer' q11-16 analogies with a printed blank -> fill by form; s3 III match q17-20 printed as four numbered rows -> four one-pair match questions (printed labels rule, as evs-4-06, control rev 3); s4 IV fill-from-box q21-23 (box words kept in the stem as printed); s5 V answer q24-26 -> sa by form (2-3 sentence/line keys).",
+   "MARKS: headers print 'NxM=T' (10X1=10, 6x1=6, 5X1=5, 5 X 1 = 5, 3X3=9). Per the prompt §1 pin these are BLUEPRINT totals, not per-question marks -> marks null, 'unassigned', flag 'marks ambiguous in source — <header>'. Evidence for the pin: N disagrees with the printed rows in III and IV. No header prints the Class-4 '(one mark questions)' form (all 25 lessons surveyed). Reported at READY for a ruling (the M factor is per-question on its face; mechanical change if ruled).",
+   "DIFFICULTY: no per-question or section tag anywhere -> difficulty null, 'unassigned', 'no difficulty tag' on all 26. BLUE PRINT totals (E10/A13/D3) recorded in the subject map and count_gate only; no backfill.",
+   "MATCH III: column A Birds/Duck/Cow/Cat, column B Moo/Mew/chirps/quack (unlettered); key prints the right-hand value per number ('17. chirping 18. Quack 19 moo 20. Mew') -> pair left = the row's column-A item, right = key wording verbatim; q17 'chirping' vs column-B 'chirps' flagged. Stem = 'Match the following: <A item>' + column B list.",
+   "KEYS: MCQ letter+text; letter kept (addendum §4.1). q7 key 'C) Ant' vs option C 'Gut' and q8 'B) Screaming sweetly' vs option B 'melodious' -> 'key text paraphrases option' (the Kannada line printed under option and key is the same word in each case; q7 = anthill). q5 'Weaver bird' vs 'Weaver Bird' case only. Analogy keys q11 'scurries' and q14 'roars' contradict fact (frog hops; elephant trumpets — the keys' own Kannada lines say so) -> 'printed key contradicts fact' (review-blocking, v1.4 §14.6). q24/q25 one paragraph each (wrapped over 2 lines, joined); q26 three printed lines (one per class) -> 3 solution_steps.",
+   "Source typos kept verbatim: q2 option B 'Knob', q5 option D 'Cucko', q10 'a omnivore', q13 'Laya', q22 'jellyf ish', q23 'eats', key q22 'Acquatic animals', key q23 'Omnivore’s'.",
+   "LO: one LO row (LO No. 1) printed for the lesson; no question carries an LO -> learning_outcomes [] + 'no LO mapped' (prompt §1a). TOPIC: evs-3-01-t00 / chapter / high on all (R-E3; map v1 evs-3-01 has exactly t00).",
+   "FIGURES: pdfimages lists no image on pdf 10-13 or 98-99; pdfplumber finds no curves (rects = LO/BLUE PRINT tables). No picture-based question; no stimuli."
+  ],
+  "notation_summary": {
+   "render_tokens": 0,
+   "latex_tokens": 0,
+   "damage_flags": []
+  },
+  "excluded_objects": [],
+  "inline_excluded_count": 0,
+  "figure_references": []
+ },
+ "stimuli": [],
+ "questions": [
+  {
+   "id": "evs-3-01-s1-q001",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-01",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Which of these is the largest aquatic animal?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s1-q001",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s1-q001",
+     "pdf_page": 10,
+     "printed_page": 10,
+     "y": 585.56,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s1-q001-key",
+     "pdf_page": 98,
+     "printed_page": 98,
+     "y": 179.5,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:55:50+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T00:55:50+05:30",
+   "section_signal": "I. Answer the questions by choosing the correct answer.",
+   "options": [
+    {
+     "id": "A",
+     "text": "Fish"
+    },
+    {
+     "id": "B",
+     "text": "Blue whale"
+    },
+    {
+     "id": "C",
+     "text": "Crab"
+    },
+    {
+     "id": "D",
+     "text": "Starfish"
+    }
+   ],
+   "answer_as_printed": "B) Blue whale",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T00:55:50+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '10X1=10' read as a blueprint total, not per-question marks (prompt §1 pin)"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints one LO row (LO No. 1, applicable to the whole lesson) and maps no question to it; per-question assignment is authoring (v2 §6, prompt §1a)",
+     "suggested": "exempt (1.7) — LO printed per lesson only"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 13 / Difficulty 03) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "81847842d1df785325c78d00e9d9cb6f8651564c98785e81a5c7a2146b51d445",
+   "topic_ids": [
+    "evs-3-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-01-s1-q002",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-01",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Which bird has a green colour?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s1-q002",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s1-q002",
+     "pdf_page": 10,
+     "printed_page": 10,
+     "y": 682.25264,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s1-q002-key",
+     "pdf_page": 98,
+     "printed_page": 98,
+     "y": 179.5,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:55:50+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T00:55:50+05:30",
+   "section_signal": "I. Answer the questions by choosing the correct answer.",
+   "options": [
+    {
+     "id": "A",
+     "text": "Crow"
+    },
+    {
+     "id": "B",
+     "text": "Knob"
+    },
+    {
+     "id": "C",
+     "text": "Parrot"
+    },
+    {
+     "id": "D",
+     "text": "Stork"
+    }
+   ],
+   "answer_as_printed": "C) Parrot",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T00:55:50+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '10X1=10' read as a blueprint total, not per-question marks (prompt §1 pin)"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints one LO row (LO No. 1, applicable to the whole lesson) and maps no question to it; per-question assignment is authoring (v2 §6, prompt §1a)",
+     "suggested": "exempt (1.7) — LO printed per lesson only"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 13 / Difficulty 03) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "a520ea30c0d9af548b564317f774c9e4a710cbc3176ccb5a8cc6776d281103a3",
+   "topic_ids": [
+    "evs-3-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-01-s1-q003",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-01",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Even though we don't keep pets in our homes, animals that live in homes are ___",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s1-q003",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s1-q003",
+     "pdf_page": 11,
+     "printed_page": 11,
+     "y": 39.29264,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s1-q003-key",
+     "pdf_page": 98,
+     "printed_page": 98,
+     "y": 179.5,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:55:50+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T00:55:50+05:30",
+   "section_signal": "I. Answer the questions by choosing the correct answer.",
+   "options": [
+    {
+     "id": "A",
+     "text": "Cat"
+    },
+    {
+     "id": "B",
+     "text": "Sheep"
+    },
+    {
+     "id": "C",
+     "text": "Cow"
+    },
+    {
+     "id": "D",
+     "text": "Lizard"
+    }
+   ],
+   "answer_as_printed": "D) Lizard",
+   "answer": {
+    "kind": "option",
+    "option_id": "D"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T00:55:50+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '10X1=10' read as a blueprint total, not per-question marks (prompt §1 pin)"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints one LO row (LO No. 1, applicable to the whole lesson) and maps no question to it; per-question assignment is authoring (v2 §6, prompt §1a)",
+     "suggested": "exempt (1.7) — LO printed per lesson only"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 13 / Difficulty 03) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "c2010db9f7276e3f5c6b22e6cba9baa80060e9a2973565dbb3292709a1595f0c",
+   "topic_ids": [
+    "evs-3-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-01-s1-q004",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-01",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The eagle's food is _________",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s1-q004",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s1-q004",
+     "pdf_page": 11,
+     "printed_page": 11,
+     "y": 134.09264,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s1-q004-key",
+     "pdf_page": 98,
+     "printed_page": 98,
+     "y": 179.5,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:55:50+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T00:55:50+05:30",
+   "section_signal": "I. Answer the questions by choosing the correct answer.",
+   "options": [
+    {
+     "id": "A",
+     "text": "Fruits"
+    },
+    {
+     "id": "B",
+     "text": "Grains"
+    },
+    {
+     "id": "C",
+     "text": "Meat"
+    },
+    {
+     "id": "D",
+     "text": "Grass"
+    }
+   ],
+   "answer_as_printed": "C) Meat",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T00:55:50+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '10X1=10' read as a blueprint total, not per-question marks (prompt §1 pin)"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints one LO row (LO No. 1, applicable to the whole lesson) and maps no question to it; per-question assignment is authoring (v2 §6, prompt §1a)",
+     "suggested": "exempt (1.7) — LO printed per lesson only"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 13 / Difficulty 03) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "652ad1cd5b23c3aa888115845b5b2d566373a705398db72055528f593b25b7ef",
+   "topic_ids": [
+    "evs-3-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-01-s1-q005",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-01",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The bird that builds a beautiful nest is________.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s1-q005",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s1-q005",
+     "pdf_page": 11,
+     "printed_page": 11,
+     "y": 226.25264,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s1-q005-key",
+     "pdf_page": 98,
+     "printed_page": 98,
+     "y": 226.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:55:50+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T00:55:50+05:30",
+   "section_signal": "I. Answer the questions by choosing the correct answer.",
+   "options": [
+    {
+     "id": "A",
+     "text": "Weaver Bird"
+    },
+    {
+     "id": "B",
+     "text": "Duck"
+    },
+    {
+     "id": "C",
+     "text": "Owl"
+    },
+    {
+     "id": "D",
+     "text": "Cucko"
+    }
+   ],
+   "answer_as_printed": "A) Weaver bird",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T00:55:50+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '10X1=10' read as a blueprint total, not per-question marks (prompt §1 pin)"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints one LO row (LO No. 1, applicable to the whole lesson) and maps no question to it; per-question assignment is authoring (v2 §6, prompt §1a)",
+     "suggested": "exempt (1.7) — LO printed per lesson only"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 13 / Difficulty 03) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "ad486acacb7b1c758ecc7253ee9b862ae624744b3b5719b1442f2f4d067da8ff",
+   "topic_ids": [
+    "evs-3-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-01-s1-q006",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-01",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Which of the following has the most legs?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s1-q006",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s1-q006",
+     "pdf_page": 11,
+     "printed_page": 11,
+     "y": 318.65264,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s1-q006-key",
+     "pdf_page": 98,
+     "printed_page": 98,
+     "y": 226.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:55:50+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T00:55:50+05:30",
+   "section_signal": "I. Answer the questions by choosing the correct answer.",
+   "options": [
+    {
+     "id": "A",
+     "text": "Crab"
+    },
+    {
+     "id": "B",
+     "text": "Rat"
+    },
+    {
+     "id": "C",
+     "text": "Shrimp"
+    },
+    {
+     "id": "D",
+     "text": "Centipede"
+    }
+   ],
+   "answer_as_printed": "D) Centipede",
+   "answer": {
+    "kind": "option",
+    "option_id": "D"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T00:55:50+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '10X1=10' read as a blueprint total, not per-question marks (prompt §1 pin)"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints one LO row (LO No. 1, applicable to the whole lesson) and maps no question to it; per-question assignment is authoring (v2 §6, prompt §1a)",
+     "suggested": "exempt (1.7) — LO printed per lesson only"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 13 / Difficulty 03) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "7d4d5d7ad94750bd1d892afe5e304d49df950f5b8106800c9401c90c8cf3c14c",
+   "topic_ids": [
+    "evs-3-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-01-s1-q007",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-01",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What is the habitat of a snake?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s1-q007",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s1-q007",
+     "pdf_page": 11,
+     "printed_page": 11,
+     "y": 411.05264,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s1-q007-key",
+     "pdf_page": 98,
+     "printed_page": 98,
+     "y": 226.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:55:50+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T00:55:50+05:30",
+   "section_signal": "I. Answer the questions by choosing the correct answer.",
+   "options": [
+    {
+     "id": "A",
+     "text": "Nest"
+    },
+    {
+     "id": "B",
+     "text": "Burrow"
+    },
+    {
+     "id": "C",
+     "text": "Gut"
+    },
+    {
+     "id": "D",
+     "text": "Cave"
+    }
+   ],
+   "answer_as_printed": "C) Ant",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T00:55:50+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '10X1=10' read as a blueprint total, not per-question marks (prompt §1 pin)"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints one LO row (LO No. 1, applicable to the whole lesson) and maps no question to it; per-question assignment is authoring (v2 §6, prompt §1a)",
+     "suggested": "exempt (1.7) — LO printed per lesson only"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 13 / Difficulty 03) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key text paraphrases option",
+     "why_not_corrected": "letter C kept (addendum §4.1); key text 'Ant' vs option C 'Gut'",
+     "suggested": "C (letter kept)"
+    }
+   ],
+   "content_hash": "0fba630297fbebb6b02d6e77c3ed8fda84c4f5e27ab94845abab538c9dd61e52",
+   "topic_ids": [
+    "evs-3-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-01-s1-q008",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-01",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "A cuckoo is a ___________ bird.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s1-q008",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s1-q008",
+     "pdf_page": 11,
+     "printed_page": 11,
+     "y": 503.21274,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s1-q008-key",
+     "pdf_page": 98,
+     "printed_page": 98,
+     "y": 272.3,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:55:50+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T00:55:50+05:30",
+   "section_signal": "I. Answer the questions by choosing the correct answer.",
+   "options": [
+    {
+     "id": "A",
+     "text": "Flying fast"
+    },
+    {
+     "id": "B",
+     "text": "melodious"
+    },
+    {
+     "id": "C",
+     "text": "very large"
+    },
+    {
+     "id": "D",
+     "text": "flightless"
+    }
+   ],
+   "answer_as_printed": "B) Screaming sweetly",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T00:55:50+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '10X1=10' read as a blueprint total, not per-question marks (prompt §1 pin)"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints one LO row (LO No. 1, applicable to the whole lesson) and maps no question to it; per-question assignment is authoring (v2 §6, prompt §1a)",
+     "suggested": "exempt (1.7) — LO printed per lesson only"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 13 / Difficulty 03) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key text paraphrases option",
+     "why_not_corrected": "letter B kept (addendum §4.1); key text 'Screaming sweetly' vs option B 'melodious'",
+     "suggested": "B (letter kept)"
+    }
+   ],
+   "content_hash": "872e64b8610710d08175c9a2b77c478462bb9b15dd837a7c75a4fe23e918806a",
+   "topic_ids": [
+    "evs-3-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-01-s1-q009",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-01",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The place where the frog lives is ______________.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s1-q009",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s1-q009",
+     "pdf_page": 11,
+     "printed_page": 11,
+     "y": 633.05264,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s1-q009-key",
+     "pdf_page": 98,
+     "printed_page": 98,
+     "y": 272.3,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:55:50+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T00:55:50+05:30",
+   "section_signal": "I. Answer the questions by choosing the correct answer.",
+   "options": [
+    {
+     "id": "A",
+     "text": "In the water"
+    },
+    {
+     "id": "B",
+     "text": "On land"
+    },
+    {
+     "id": "C",
+     "text": "Both in water and land"
+    },
+    {
+     "id": "D",
+     "text": "On a tree"
+    }
+   ],
+   "answer_as_printed": "C) Both in water and land",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T00:55:50+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '10X1=10' read as a blueprint total, not per-question marks (prompt §1 pin)"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints one LO row (LO No. 1, applicable to the whole lesson) and maps no question to it; per-question assignment is authoring (v2 §6, prompt §1a)",
+     "suggested": "exempt (1.7) — LO printed per lesson only"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 13 / Difficulty 03) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "15259af7657b5a5f065b34288c922b04239713e66889b2880e73f583311cca5e",
+   "topic_ids": [
+    "evs-3-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-01-s1-q010",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-01",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Example of a omnivore",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s1-q010",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s1-q010",
+     "pdf_page": 11,
+     "printed_page": 11,
+     "y": 762.89264,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s1-q010-key",
+     "pdf_page": 98,
+     "printed_page": 98,
+     "y": 272.3,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:55:50+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T00:55:50+05:30",
+   "section_signal": "I. Answer the questions by choosing the correct answer.",
+   "options": [
+    {
+     "id": "A",
+     "text": "Dog"
+    },
+    {
+     "id": "B",
+     "text": "Elephant"
+    },
+    {
+     "id": "C",
+     "text": "Lion"
+    },
+    {
+     "id": "D",
+     "text": "Sheep"
+    }
+   ],
+   "answer_as_printed": "A) Dog",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T00:55:50+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '10X1=10' read as a blueprint total, not per-question marks (prompt §1 pin)"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints one LO row (LO No. 1, applicable to the whole lesson) and maps no question to it; per-question assignment is authoring (v2 §6, prompt §1a)",
+     "suggested": "exempt (1.7) — LO printed per lesson only"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 13 / Difficulty 03) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "c9e625c7c0e61e398656c09607ce8910b6f0a3ac8ddab753e7bc0e4f36c111bf",
+   "topic_ids": [
+    "evs-3-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-01-s2-q011",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-01",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Goat : walks :: Frog: ________",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s2-q011",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s2-q011",
+     "pdf_page": 12,
+     "printed_page": 12,
+     "y": 176.81274,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s2-q011-key",
+     "pdf_page": 98,
+     "printed_page": 98,
+     "y": 318.9,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:55:50+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T00:55:50+05:30",
+   "section_signal": "II. Identify the relationship and answer.",
+   "answer": {
+    "kind": "text",
+    "value": "scurries"
+   },
+   "answer_as_printed": "scurries",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T00:55:50+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '6x1=6' read as a blueprint total, not per-question marks (prompt §1 pin)"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints one LO row (LO No. 1, applicable to the whole lesson) and maps no question to it; per-question assignment is authoring (v2 §6, prompt §1a)",
+     "suggested": "exempt (1.7) — LO printed per lesson only"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 13 / Difficulty 03) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "printed key contradicts fact — 'Frog: scurries' in the analogy 'Goat : walks'; a frog hops/leaps (the key's own Kannada line under it reads 'hops'); reviewer",
+     "why_not_corrected": "printed English key 'scurries' asserted as printed (v1.4 §14.6); never re-translated at extraction",
+     "suggested": "review — hops"
+    }
+   ],
+   "content_hash": "d26f0c1647b4a30d83bd50370ed1dad49b740eb23f553aa45fb0564f19069ddb",
+   "topic_ids": [
+    "evs-3-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-01-s2-q012",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-01",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Snake : slithers :: Fish: _______",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s2-q012",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s2-q012",
+     "pdf_page": 12,
+     "printed_page": 12,
+     "y": 235.13264,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s2-q012-key",
+     "pdf_page": 98,
+     "printed_page": 98,
+     "y": 318.9,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:55:50+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T00:55:50+05:30",
+   "section_signal": "II. Identify the relationship and answer.",
+   "answer": {
+    "kind": "text",
+    "value": "swims"
+   },
+   "answer_as_printed": "swims",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T00:55:50+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '6x1=6' read as a blueprint total, not per-question marks (prompt §1 pin)"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints one LO row (LO No. 1, applicable to the whole lesson) and maps no question to it; per-question assignment is authoring (v2 §6, prompt §1a)",
+     "suggested": "exempt (1.7) — LO printed per lesson only"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 13 / Difficulty 03) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "a1f25c1cd206666d3066d0852e340b4f58cfad25a7b039ad40312d2aeaadb622",
+   "topic_ids": [
+    "evs-3-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-01-s2-q013",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-01",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Horse : Laya :: Lion : ______",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s2-q013",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s2-q013",
+     "pdf_page": 12,
+     "printed_page": 12,
+     "y": 293.69264,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s2-q013-key",
+     "pdf_page": 98,
+     "printed_page": 98,
+     "y": 318.9,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:55:50+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T00:55:50+05:30",
+   "section_signal": "II. Identify the relationship and answer.",
+   "answer": {
+    "kind": "text",
+    "value": "cave"
+   },
+   "answer_as_printed": "cave",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T00:55:50+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '6x1=6' read as a blueprint total, not per-question marks (prompt §1 pin)"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints one LO row (LO No. 1, applicable to the whole lesson) and maps no question to it; per-question assignment is authoring (v2 §6, prompt §1a)",
+     "suggested": "exempt (1.7) — LO printed per lesson only"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 13 / Difficulty 03) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "d5a74e41ad53306b9ab81cb42400db9f25d9d9679f36584045765168a751682c",
+   "topic_ids": [
+    "evs-3-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-01-s2-q014",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-01",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Tiger : roars :: Elephant : _______",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s2-q014",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s2-q014",
+     "pdf_page": 12,
+     "printed_page": 12,
+     "y": 352.01264,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s2-q014-key",
+     "pdf_page": 98,
+     "printed_page": 98,
+     "y": 365.2,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:55:50+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T00:55:50+05:30",
+   "section_signal": "II. Identify the relationship and answer.",
+   "answer": {
+    "kind": "text",
+    "value": "roars"
+   },
+   "answer_as_printed": "roars",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T00:55:50+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '6x1=6' read as a blueprint total, not per-question marks (prompt §1 pin)"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints one LO row (LO No. 1, applicable to the whole lesson) and maps no question to it; per-question assignment is authoring (v2 §6, prompt §1a)",
+     "suggested": "exempt (1.7) — LO printed per lesson only"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 13 / Difficulty 03) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "printed key contradicts fact — 'Elephant: roars' repeats the stem's own pair 'Tiger : roars'; an elephant trumpets (the key's own Kannada line under it reads 'trumpets'); reviewer",
+     "why_not_corrected": "printed English key 'roars' asserted as printed (v1.4 §14.6); never re-translated at extraction",
+     "suggested": "review — trumpets"
+    }
+   ],
+   "content_hash": "5c2786b8ef9ea1b9f3c549d33786ced749e7fb6e98a24b7bbe09ca72bea1f48d",
+   "topic_ids": [
+    "evs-3-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-01-s2-q015",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-01",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Elephant: Big Animal :: Rat: _______",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s2-q015",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s2-q015",
+     "pdf_page": 12,
+     "printed_page": 12,
+     "y": 410.57264,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s2-q015-key",
+     "pdf_page": 98,
+     "printed_page": 98,
+     "y": 365.2,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:55:50+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T00:55:50+05:30",
+   "section_signal": "II. Identify the relationship and answer.",
+   "answer": {
+    "kind": "text",
+    "value": "small animal"
+   },
+   "answer_as_printed": "small animal",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T00:55:50+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '6x1=6' read as a blueprint total, not per-question marks (prompt §1 pin)"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints one LO row (LO No. 1, applicable to the whole lesson) and maps no question to it; per-question assignment is authoring (v2 §6, prompt §1a)",
+     "suggested": "exempt (1.7) — LO printed per lesson only"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 13 / Difficulty 03) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "98c00bcffb4cf00136e09ad5d687dea75fcf7561f87c11d3f4714d65eac85a91",
+   "topic_ids": [
+    "evs-3-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-01-s2-q016",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-01",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Fast movement: Cheetah :: Slow movement : ___________",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s2-q016",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s2-q016",
+     "pdf_page": 12,
+     "printed_page": 12,
+     "y": 468.89264,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s2-q016-key",
+     "pdf_page": 98,
+     "printed_page": 98,
+     "y": 365.2,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:55:50+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T00:55:50+05:30",
+   "section_signal": "II. Identify the relationship and answer.",
+   "answer": {
+    "kind": "text",
+    "value": "turtle"
+   },
+   "answer_as_printed": "turtle",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T00:55:50+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '6x1=6' read as a blueprint total, not per-question marks (prompt §1 pin)"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints one LO row (LO No. 1, applicable to the whole lesson) and maps no question to it; per-question assignment is authoring (v2 §6, prompt §1a)",
+     "suggested": "exempt (1.7) — LO printed per lesson only"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 13 / Difficulty 03) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "03e6b34d2aa0376271e29d0cd99585b3f098ac376280e993007bd68169607de8",
+   "topic_ids": [
+    "evs-3-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-01-s3-q017",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-01",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Match the following: Birds\nB: Moo; Mew; chirps; quack",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s3-q017",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s3-q017",
+     "pdf_page": 12,
+     "printed_page": 12,
+     "y": 570.17264,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s3-q017-key",
+     "pdf_page": 98,
+     "printed_page": 98,
+     "y": 419.1,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:55:50+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T00:55:50+05:30",
+   "text_as_printed": "Birds",
+   "section_signal": "III. Match the following :-",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "Birds",
+      "right": "chirping"
+     }
+    ]
+   },
+   "answer_as_printed": "17. chirping",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T00:55:50+05:30",
+    "basis": "printed match key: the right-hand value per printed row number; left = that row's column-A item, right = key wording verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '5X1=5' read as a blueprint total, not per-question marks (prompt §1 pin)"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints one LO row (LO No. 1, applicable to the whole lesson) and maps no question to it; per-question assignment is authoring (v2 §6, prompt §1a)",
+     "suggested": "exempt (1.7) — LO printed per lesson only"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 13 / Difficulty 03) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "match key value not among column-B items — key 'chirping'; column B prints 'chirps'",
+     "why_not_corrected": "key text kept as printed (v1.4 §14.8); the row is unambiguous",
+     "suggested": "chirps (column-B wording) — review"
+    }
+   ],
+   "content_hash": "752efde1f5be3740965cfef3510c9c3fc82f5eedf6cf531799ddf1d88cea6d8f",
+   "topic_ids": [
+    "evs-3-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-01-s3-q018",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-01",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Match the following: Duck\nB: Moo; Mew; chirps; quack",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s3-q018",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s3-q018",
+     "pdf_page": 12,
+     "printed_page": 12,
+     "y": 622.01264,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s3-q018-key",
+     "pdf_page": 98,
+     "printed_page": 98,
+     "y": 419.1,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:55:50+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T00:55:50+05:30",
+   "text_as_printed": "Duck",
+   "section_signal": "III. Match the following :-",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "Duck",
+      "right": "Quack"
+     }
+    ]
+   },
+   "answer_as_printed": "18. Quack",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T00:55:50+05:30",
+    "basis": "printed match key: the right-hand value per printed row number; left = that row's column-A item, right = key wording verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '5X1=5' read as a blueprint total, not per-question marks (prompt §1 pin)"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints one LO row (LO No. 1, applicable to the whole lesson) and maps no question to it; per-question assignment is authoring (v2 §6, prompt §1a)",
+     "suggested": "exempt (1.7) — LO printed per lesson only"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 13 / Difficulty 03) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "e1faf602ec49fe17a39d89b49dc11f5df4070d8189a8c91b2583201f154e2d89",
+   "topic_ids": [
+    "evs-3-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-01-s3-q019",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-01",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Match the following: Cow\nB: Moo; Mew; chirps; quack",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s3-q019",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s3-q019",
+     "pdf_page": 12,
+     "printed_page": 12,
+     "y": 672.65264,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s3-q019-key",
+     "pdf_page": 98,
+     "printed_page": 98,
+     "y": 419.1,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:55:50+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T00:55:50+05:30",
+   "text_as_printed": "Cow",
+   "section_signal": "III. Match the following :-",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "Cow",
+      "right": "moo"
+     }
+    ]
+   },
+   "answer_as_printed": "19 moo",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T00:55:50+05:30",
+    "basis": "printed match key: the right-hand value per printed row number; left = that row's column-A item, right = key wording verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '5X1=5' read as a blueprint total, not per-question marks (prompt §1 pin)"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints one LO row (LO No. 1, applicable to the whole lesson) and maps no question to it; per-question assignment is authoring (v2 §6, prompt §1a)",
+     "suggested": "exempt (1.7) — LO printed per lesson only"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 13 / Difficulty 03) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "b073bb85f5e08f35d883556ac3a98ffacc68a932303130f320e6ebd9e9f0647b",
+   "topic_ids": [
+    "evs-3-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-01-s3-q020",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-01",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Match the following: Cat\nB: Moo; Mew; chirps; quack",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s3-q020",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s3-q020",
+     "pdf_page": 12,
+     "printed_page": 12,
+     "y": 725.93264,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s3-q020-key",
+     "pdf_page": 98,
+     "printed_page": 98,
+     "y": 419.1,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:55:50+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T00:55:50+05:30",
+   "text_as_printed": "Cat",
+   "section_signal": "III. Match the following :-",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "Cat",
+      "right": "Mew"
+     }
+    ]
+   },
+   "answer_as_printed": "20. Mew",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T00:55:50+05:30",
+    "basis": "printed match key: the right-hand value per printed row number; left = that row's column-A item, right = key wording verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '5X1=5' read as a blueprint total, not per-question marks (prompt §1 pin)"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints one LO row (LO No. 1, applicable to the whole lesson) and maps no question to it; per-question assignment is authoring (v2 §6, prompt §1a)",
+     "suggested": "exempt (1.7) — LO printed per lesson only"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 13 / Difficulty 03) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "9eb3d58b545fd03be14dc9d3dfa532ed58d49ef44de8022824006677c3dbd4a0",
+   "topic_ids": [
+    "evs-3-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-01-s4-q021",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-01",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Cockroaches, Lizards, houseflies are called _____________\n[ insects. Animals, birds]",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s4-q021",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s4-q021",
+     "pdf_page": 13,
+     "printed_page": 13,
+     "y": 79.13264,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s4-q021-key",
+     "pdf_page": 98,
+     "printed_page": 98,
+     "y": 473.8,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:55:50+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T00:55:50+05:30",
+   "section_signal": "IV. Fill in the Blanks by choosing correct answer from the box:-",
+   "answer": {
+    "kind": "text",
+    "value": "Insects"
+   },
+   "answer_as_printed": "Insects",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T00:55:50+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '5 X 1 = 5' read as a blueprint total, not per-question marks (prompt §1 pin)"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints one LO row (LO No. 1, applicable to the whole lesson) and maps no question to it; per-question assignment is authoring (v2 §6, prompt §1a)",
+     "suggested": "exempt (1.7) — LO printed per lesson only"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 13 / Difficulty 03) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "5c412c60221a88984ea8a60a9695375a95783fc39471b49f45bc5a4cebc3d40b",
+   "topic_ids": [
+    "evs-3-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-01-s4-q022",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-01",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Star fish, jellyf ish, whale are called _______ animals\n[ aquatic animals, terrestrial animals]",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s4-q022",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s4-q022",
+     "pdf_page": 13,
+     "printed_page": 13,
+     "y": 178.01264,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s4-q022-key",
+     "pdf_page": 98,
+     "printed_page": 98,
+     "y": 473.8,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:55:50+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T00:55:50+05:30",
+   "section_signal": "IV. Fill in the Blanks by choosing correct answer from the box:-",
+   "answer": {
+    "kind": "text",
+    "value": "Acquatic animals"
+   },
+   "answer_as_printed": "Acquatic animals",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T00:55:50+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '5 X 1 = 5' read as a blueprint total, not per-question marks (prompt §1 pin)"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints one LO row (LO No. 1, applicable to the whole lesson) and maps no question to it; per-question assignment is authoring (v2 §6, prompt §1a)",
+     "suggested": "exempt (1.7) — LO printed per lesson only"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 13 / Difficulty 03) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "0570569ad2b3d10cf26635948932acfb86b9f63241abcadeeff6ec0555e15a3e",
+   "topic_ids": [
+    "evs-3-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-01-s4-q023",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-01",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The animals which eats both animals and plants are called _____\n[ Herbivores,Omnivorous]",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s4-q023",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s4-q023",
+     "pdf_page": 13,
+     "printed_page": 13,
+     "y": 279.29264,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s4-q023-key",
+     "pdf_page": 98,
+     "printed_page": 98,
+     "y": 473.8,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:55:50+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T00:55:50+05:30",
+   "section_signal": "IV. Fill in the Blanks by choosing correct answer from the box:-",
+   "answer": {
+    "kind": "text",
+    "value": "Omnivore’s"
+   },
+   "answer_as_printed": "Omnivore’s",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T00:55:50+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '5 X 1 = 5' read as a blueprint total, not per-question marks (prompt §1 pin)"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints one LO row (LO No. 1, applicable to the whole lesson) and maps no question to it; per-question assignment is authoring (v2 §6, prompt §1a)",
+     "suggested": "exempt (1.7) — LO printed per lesson only"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 13 / Difficulty 03) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "99bd9e0306cf86d3b68d7e2d2a833b0976b8da89e15cfe48e40662555b82cb98",
+   "topic_ids": [
+    "evs-3-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-01-s5-q024",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-01",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What are herbivorous animals? Give two examples.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s5-q024",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s5-q024",
+     "pdf_page": 13,
+     "printed_page": 13,
+     "y": 415.37264,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s5-q024-key",
+     "pdf_page": 98,
+     "printed_page": 98,
+     "y": 531.8,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:55:50+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T00:55:50+05:30",
+   "section_signal": "V. Answer the questions:-",
+   "answer": {
+    "kind": "text",
+    "value": "Herbivorous animals are those that eat the substances obtained from bare plants such as grass, grains, fruits and vegetables. Example - deer, cow, buffalo, etc."
+   },
+   "answer_as_printed": "Herbivorous animals are those that eat the substances obtained from bare plants such as grass, grains, fruits and vegetables. Example - deer, cow, buffalo, etc.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T00:55:50+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '3X3=9' read as a blueprint total, not per-question marks (prompt §1 pin)"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints one LO row (LO No. 1, applicable to the whole lesson) and maps no question to it; per-question assignment is authoring (v2 §6, prompt §1a)",
+     "suggested": "exempt (1.7) — LO printed per lesson only"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 13 / Difficulty 03) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "0cfd3c3b2a69bba5d69da0ea702d3906fb3e7b7425acf476d4275d6946cc6196",
+   "topic_ids": [
+    "evs-3-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-01-s5-q025",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-01",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "How can you help birds in the summer?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s5-q025",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s5-q025",
+     "pdf_page": 13,
+     "printed_page": 13,
+     "y": 474.50624,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s5-q025-key",
+     "pdf_page": 98,
+     "printed_page": 98,
+     "y": 611.7,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:55:50+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T00:55:50+05:30",
+   "section_signal": "V. Answer the questions:-",
+   "answer": {
+    "kind": "text",
+    "value": "When summer comes, I will put water and seeds in a bowl on the roof of the house for the birds. If possible, I will make a house out of cardboard to help provide shade."
+   },
+   "answer_as_printed": "When summer comes, I will put water and seeds in a bowl on the roof of the house for the birds. If possible, I will make a house out of cardboard to help provide shade.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T00:55:50+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '3X3=9' read as a blueprint total, not per-question marks (prompt §1 pin)"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints one LO row (LO No. 1, applicable to the whole lesson) and maps no question to it; per-question assignment is authoring (v2 §6, prompt §1a)",
+     "suggested": "exempt (1.7) — LO printed per lesson only"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 13 / Difficulty 03) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "6008ca062be52b6489d70849f30f1998118e0b17a0f2c799bb8ade53740ee9ce",
+   "topic_ids": [
+    "evs-3-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-01-s5-q026",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-01",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Classify the following into herbivores, carnivores and omnivores:\nCow, vulture, crow, rabbit, bear, deer, chicken, leopard, lion",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s5-q026",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s5-q026",
+     "pdf_page": 13,
+     "printed_page": 13,
+     "y": 534.74624,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-01-s5-q026-key",
+     "pdf_page": 98,
+     "printed_page": 98,
+     "y": 713.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:55:50+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T00:55:50+05:30",
+   "section_signal": "V. Answer the questions:-",
+   "answer": {
+    "kind": "text",
+    "value": "Herbivorous animals - cow, rabbit, deer\nCarnivores – vulture, leopard, lion\nOmnivorous animals – crow, bear, chicken."
+   },
+   "answer_as_printed": "Herbivorous animals - cow, rabbit, deer\nCarnivores – vulture, leopard, lion\nOmnivorous animals – crow, bear, chicken.",
+   "solution_steps": [
+    "Herbivorous animals - cow, rabbit, deer",
+    "Carnivores – vulture, leopard, lion",
+    "Omnivorous animals – crow, bear, chicken."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T00:55:50+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '3X3=9' read as a blueprint total, not per-question marks (prompt §1 pin)"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints one LO row (LO No. 1, applicable to the whole lesson) and maps no question to it; per-question assignment is authoring (v2 §6, prompt §1a)",
+     "suggested": "exempt (1.7) — LO printed per lesson only"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 13 / Difficulty 03) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "9db80c4b5bdc70e79c7b3fd2c618557140ea65810fe6d7feeb31233a8df3499d",
+   "topic_ids": [
+    "evs-3-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  }
+ ],
+ "pending_summary": {}
+}
