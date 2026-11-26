@@ -1,0 +1,5306 @@
+{
+ "contract_version": "1.7",
+ "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
+ "procedure_file": "extraction_procedure_social_addendum_v1.4_social science Classes 6-10 on top of procedure v2.md",
+ "machine_name": "evs-4-11_questions",
+ "version": 1,
+ "changelog": "v1 extraction — batch-01 — class-4-evs",
+ "amendments_applied": [],
+ "unit_state": "EXTRACTED",
+ "review_ready": false,
+ "count_gate": {
+  "reference": 65,
+  "reference_source": "audited",
+  "extracted": 65,
+  "paired": 63,
+  "flagged": 3,
+  "gaps": [],
+  "duplicated_numbers": [
+   14,
+   35
+  ],
+  "quota_table": "absent",
+  "second_method": {
+   "method": "independent count of answer-side keys (63 numbered keys + 1 unnumbered match block(s)) + 1 question(s) with no printed key",
+   "extracted": 65,
+   "agrees": true
+  },
+  "pass": true,
+  "note": "No difficulty distribution table is printed in this LBA -> quota_table 'absent' (ruling R-E6). Question side prints label 14 twice (fill q014, q014b) and 35 twice (one-mark q035, two-mark q035b); 65 questions. Answer side: fill keys 6-15 run continuously, so key 15 'recycling' answers q014b (left EMPTY with 'shifted numbering — see key 15'); the T/F keys restart at 15 and fit 15-24 by printed number; [match block]; 26-35 one-mark, then '35.' again opening the two-mark run (pairs with q035b by printed label and order), 36-62. q063 (colouring) no key. Difficulty per question: easy 32, average 6, difficult 22, untagged 5."
+ },
+ "extraction": {
+  "source_file": "4thLBA-EVS-EM1.pdf",
+  "source_ref_prefix": "4thLBA-EVS-EM1.pdf",
+  "pdf_pages": [
+   46,
+   47,
+   48,
+   49,
+   50,
+   51,
+   148,
+   149,
+   150
+  ],
+  "printed_page_offset": 0,
+  "method_notes": [
+   "Pages: Q pdf 46 (heading, LO) 47-51; A pdf 148 (heading, keys 1-15 + T/F) 149-150.",
+   "Sections: s1 MCQ q1-5 (untagged heading and stems -> 5 x 'no difficulty tag'); s2 fill q6-14b; s3 T/F q15-24; s4 '25. Match the following with correct answers (easy)' q25; s5 one mark q26-35 vsa; s6 two marks q35b-42 sa; s7 three marks q43-52 sa; s8 four marks q53-63 la.",
+   "NUMBERING (analysis: reports/class-4-evs/evs-4-11_numbering_analysis.md): q014b <- key 15 of the fill run is a one-question offset from the repeated label 14 -> default lane EMPTY + pointer (v2 §4.2). The T/F run's own '15.' restarts the numbering and every T/F key fits by number. q035b pairs with the second printed '35.' (same printed label, second occurrence, same section) — not displaced.",
+   "Key-side text-layer joins handled by hand: 'Fill in the blanks with appropriate answers 6. wet', 'State whether the following statements are true or false 15. True'. Stray characters 'Garbage Management Qa / SB' above the key's first heading (pdf 148) are not keys (residue).",
+   "Tags printed without ')' ('(Average' q48, q51, q54) and without '(' ('growth?Difficult)' q36) read as tags.",
+   "q63 dustbins figure -> stimulus crop images/evs-4-11/stimuli/ (ruling D4); no key -> 'no answer printed'. q36 prints two questions under one label (flagged).",
+   "Transcription: evs_auto.py rules (as evs-4-01) + the overrides in build file build_11.py; marks per ruling R-E5; topic per R-E3."
+  ],
+  "notation_summary": {
+   "render_tokens": 0,
+   "latex_tokens": 0,
+   "damage_flags": []
+  },
+  "excluded_objects": [],
+  "inline_excluded_count": 0,
+  "figure_references": []
+ },
+ "stimuli": [
+  {
+   "id": "st-evs-4-11-q63",
+   "kind": "figure",
+   "note": "63. Name the different types of waste by colouring the four types of dustbins given below. (Difficult)",
+   "assets": [
+    {
+     "id": "st63",
+     "type": "image",
+     "ref": "images/evs-4-11/stimuli/p051-q63_figure.png",
+     "role": "figure",
+     "source_px": {
+      "w": 616,
+      "h": 351
+     },
+     "quality": "ok",
+     "caption": "Figure printed below q63, pdf 51 — region render at 150 dpi of the embedded image's box",
+     "pdf_page": 51,
+     "crop_bbox": {
+      "pdf_page": 51,
+      "x0": 149.8,
+      "y0": 117.0,
+      "x1": 445.5,
+      "y1": 285.8
+     }
+    }
+   ],
+   "locators": [
+    {
+     "role": "stimulus",
+     "source_ref": "4thLBA-EVS-EM1.pdf#st-evs-4-11-q63",
+     "pdf_page": 51,
+     "printed_page": 51,
+     "y": 117.0,
+     "derived_from": "render_measured"
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "evs-4-11-s1-q001",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The sign found on the garbage box.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s1-q001",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s1-q001",
+     "pdf_page": 47,
+     "printed_page": 47,
+     "y": 313.152,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s1-q001-key",
+     "pdf_page": 148,
+     "printed_page": 148,
+     "y": 161.358,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "section_signal": "Choose the correct answers to the following questions and write them",
+   "options": [
+    {
+     "id": "A",
+     "text": "Picture of the flower"
+    },
+    {
+     "id": "B",
+     "text": "Picture of food"
+    },
+    {
+     "id": "C",
+     "text": "Recycle Symbol"
+    },
+    {
+     "id": "D",
+     "text": "Water tank"
+    }
+   ],
+   "answer_as_printed": "C) Recycle Symbol",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "neither the question nor its section heading prints a difficulty tag; assigning one needs subject judgement",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "e2635c49f7d74764697d7a0405e85307a66cccc3ab57f78480368c7cd0f90403",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s1-q002",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The kind of garbage to be dumped in the green bin.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s1-q002",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s1-q002",
+     "pdf_page": 47,
+     "printed_page": 47,
+     "y": 365.902,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s1-q002-key",
+     "pdf_page": 148,
+     "printed_page": 148,
+     "y": 185.108,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "section_signal": "Choose the correct answers to the following questions and write them",
+   "options": [
+    {
+     "id": "A",
+     "text": "medicines and chemicals"
+    },
+    {
+     "id": "B",
+     "text": "bandages"
+    },
+    {
+     "id": "C",
+     "text": "Plastic and glass"
+    },
+    {
+     "id": "D",
+     "text": "kitchen waste"
+    }
+   ],
+   "answer_as_printed": "D) Kitchen waste",
+   "answer": {
+    "kind": "option",
+    "option_id": "D"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "neither the question nor its section heading prints a difficulty tag; assigning one needs subject judgement",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "9f63cb62e59435eb75f2677e6568076fd4e1ff3f47ac3defe7272960a722af95",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s1-q003",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The kind of garbage to be dumped in a red bin?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s1-q003",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s1-q003",
+     "pdf_page": 47,
+     "printed_page": 47,
+     "y": 418.922,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s1-q003-key",
+     "pdf_page": 148,
+     "printed_page": 148,
+     "y": 209.138,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "section_signal": "Choose the correct answers to the following questions and write them",
+   "options": [
+    {
+     "id": "A",
+     "text": "Vegetable waste"
+    },
+    {
+     "id": "B",
+     "text": "syringes"
+    },
+    {
+     "id": "C",
+     "text": "pieces of metal"
+    },
+    {
+     "id": "D",
+     "text": "broken tubelights"
+    }
+   ],
+   "answer_as_printed": "B) Syringes",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "neither the question nor its section heading prints a difficulty tag; assigning one needs subject judgement",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "1aefe64578814a386f7ac381d763c8be3597342cb9a5088ff5cea7a3acd64aaf",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s1-q004",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Cleanliness of a country should be maintained by",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s1-q004",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s1-q004",
+     "pdf_page": 47,
+     "printed_page": 47,
+     "y": 471.952,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s1-q004-key",
+     "pdf_page": 148,
+     "printed_page": 148,
+     "y": 233.138,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "section_signal": "Choose the correct answers to the following questions and write them",
+   "options": [
+    {
+     "id": "A",
+     "text": "School teacher"
+    },
+    {
+     "id": "B",
+     "text": "Municipality"
+    },
+    {
+     "id": "C",
+     "text": "Every citizen"
+    },
+    {
+     "id": "D",
+     "text": "Police"
+    }
+   ],
+   "answer_as_printed": "C) Every citizen",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "neither the question nor its section heading prints a difficulty tag; assigning one needs subject judgement",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "95854cbbf0975c5016760d99977ccc25e3d4098b2fb66a855dd44edb5de7ec32",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s1-q005",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The method used to make manure",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s1-q005",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s1-q005",
+     "pdf_page": 47,
+     "printed_page": 47,
+     "y": 524.952,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s1-q005-key",
+     "pdf_page": 148,
+     "printed_page": 148,
+     "y": 257.138,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "section_signal": "Choose the correct answers to the following questions and write them",
+   "options": [
+    {
+     "id": "A",
+     "text": "Biological system"
+    },
+    {
+     "id": "B",
+     "text": "Industrial System"
+    },
+    {
+     "id": "C",
+     "text": "Oil system"
+    },
+    {
+     "id": "D",
+     "text": "Chemical method"
+    }
+   ],
+   "answer_as_printed": "A) Biological system",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "neither the question nor its section heading prints a difficulty tag; assigning one needs subject judgement",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "208515eacc086bb7810a94bf3a3d021fec141ebb0a70dddcf65bdc049d0b0e39",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s2-q006",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Vegetables, fruit washes, tea snacks and bread crumbs are examples of __________ waste.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s2-q006",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s2-q006",
+     "pdf_page": 47,
+     "printed_page": 47,
+     "y": 604.472,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s2-q006-key",
+     "pdf_page": 148,
+     "printed_page": 148,
+     "y": 281.128,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "section_signal": "Fill in the blanks with approriate answers",
+   "answer": {
+    "kind": "text",
+    "value": "wet"
+   },
+   "answer_as_printed": "wet",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "35ef45bd96761ed4ecb52fec9723d00bd20697c273c056edefa5aa55d2137be5",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s2-q007",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Plastic, glass, metal pieces and rubber are examples of __________ waste.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s2-q007",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s2-q007",
+     "pdf_page": 47,
+     "printed_page": 47,
+     "y": 649.502,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s2-q007-key",
+     "pdf_page": 148,
+     "printed_page": 148,
+     "y": 301.908,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "section_signal": "Fill in the blanks with approriate answers",
+   "answer": {
+    "kind": "text",
+    "value": "dry"
+   },
+   "answer_as_printed": "dry",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "f4b67cc41ea8d6ae93a89e5732d367378e22013bb72c23f515446a276909c1a5",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s2-q008",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Hazardous wastes include dyes, pesticides and __________ chemicals.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s2-q008",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s2-q008",
+     "pdf_page": 47,
+     "printed_page": 47,
+     "y": 676.002,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s2-q008-key",
+     "pdf_page": 148,
+     "printed_page": 148,
+     "y": 322.658,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "section_signal": "Fill in the blanks with approriate answers",
+   "answer": {
+    "kind": "text",
+    "value": "poisonous"
+   },
+   "answer_as_printed": "poisonous",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "91d9919666720d18eb5665256a8866a6cf0cfae9350c1faed988dcdcf369c6d8",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s2-q009",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Decaying waste can be converted into__________",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s2-q009",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s2-q009",
+     "pdf_page": 47,
+     "printed_page": 47,
+     "y": 702.502,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s2-q009-key",
+     "pdf_page": 148,
+     "printed_page": 148,
+     "y": 343.408,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "section_signal": "Fill in the blanks with approriate answers",
+   "answer": {
+    "kind": "text",
+    "value": "compost"
+   },
+   "answer_as_printed": "compost",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "d194c2cf5592b2869984404b1c28b6b7a80c41128ae31df9cbb084190cc5525b",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s2-q010",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The stagnant water near the house becomes a protective place for __________ and flies.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s2-q010",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s2-q010",
+     "pdf_page": 47,
+     "printed_page": 47,
+     "y": 729.022,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s2-q010-key",
+     "pdf_page": 148,
+     "printed_page": 148,
+     "y": 363.908,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "section_signal": "Fill in the blanks with approriate answers",
+   "answer": {
+    "kind": "text",
+    "value": "mosquitoes"
+   },
+   "answer_as_printed": "mosquitoes",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "3bda4846fdb1c11d22b12a21aa3a901a2c350d08690a39f74bd4268977668932",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s2-q011",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Rag pickers collect __________ waste and recycle them.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s2-q011",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s2-q011",
+     "pdf_page": 48,
+     "printed_page": 48,
+     "y": 72.082,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s2-q011-key",
+     "pdf_page": 148,
+     "printed_page": 148,
+     "y": 384.678,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "section_signal": "Fill in the blanks with approriate answers",
+   "answer": {
+    "kind": "text",
+    "value": "dry"
+   },
+   "answer_as_printed": "dry",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "a0968889d20e722de755e680084dd72ef03245177a45413f356623937accc805",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s2-q012",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Old bottles, cans and plastics should be given to the people who buy ________",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s2-q012",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s2-q012",
+     "pdf_page": 48,
+     "printed_page": 48,
+     "y": 98.582,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s2-q012-key",
+     "pdf_page": 148,
+     "printed_page": 148,
+     "y": 405.428,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "section_signal": "Fill in the blanks with approriate answers",
+   "answer": {
+    "kind": "text",
+    "value": "scrap"
+   },
+   "answer_as_printed": "scrap",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "802e1dd63d0c1ed04a313404e14f0e54ab640147b8c3475429074cc224fb2f68",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s2-q013",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Used bandages and syringes are treated as __________ waste.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s2-q013",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s2-q013",
+     "pdf_page": 48,
+     "printed_page": 48,
+     "y": 125.102,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s2-q013-key",
+     "pdf_page": 148,
+     "printed_page": 148,
+     "y": 426.178,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "section_signal": "Fill in the blanks with approriate answers",
+   "answer": {
+    "kind": "text",
+    "value": "hazardous"
+   },
+   "answer_as_printed": "hazardous",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "0a4f9185de68ac4f6293a4cd327918c5f825320e70ba4d8b17a3b58ea1478f98",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s2-q014",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Compost made from decaying waste helps in increasing the __________ of the earth.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s2-q014",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s2-q014",
+     "pdf_page": 48,
+     "printed_page": 48,
+     "y": 151.602,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s2-q014-key",
+     "pdf_page": 148,
+     "printed_page": 148,
+     "y": 446.928,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "section_signal": "Fill in the blanks with approriate answers",
+   "answer": {
+    "kind": "text",
+    "value": "fertility"
+   },
+   "answer_as_printed": "fertility",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "802774c33da015594411ccaa196096476aafbf8685c0d72c621a77cda62901b9",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s2-q014b",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The process of making new materials from used plastic, glass and paper is called __________.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s2-q014b",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s2-q014b",
+     "pdf_page": 48,
+     "printed_page": 48,
+     "y": 196.602,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s2-q014b-key",
+     "pdf_page": 148,
+     "printed_page": 148,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "section_signal": "Fill in the blanks with approriate answers",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    },
+    {
+     "issue": "shifted numbering — see key 15",
+     "why_not_corrected": "answer-side numbering is displaced; extraction does not shift-align (procedure §4.2) — answer left empty, coordinator verifies by content",
+     "suggested": "key 15"
+    }
+   ],
+   "content_hash": "d4dc160bf01ea2fcc7e975ec77633d735e590650772f957fa0d0c5b1511775b3",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s3-q015",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Vegetable washes and the leftover food is the wet waste..",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s3-q015",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s3-q015",
+     "pdf_page": 48,
+     "printed_page": 48,
+     "y": 273.632,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s3-q015-key",
+     "pdf_page": 148,
+     "printed_page": 148,
+     "y": 488.208,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "text_as_printed": "Vegetable washes and the leftover food is the wet waste.. –",
+   "section_signal": "State whether the following statements are true or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "True",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "2a767d162d21b1d31dc2e9c273005155babf60979f11ba34ba561dd2447e4d6d",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s3-q016",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The dry waste comes with leftover meat.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s3-q016",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s3-q016",
+     "pdf_page": 48,
+     "printed_page": 48,
+     "y": 300.152,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s3-q016-key",
+     "pdf_page": 148,
+     "printed_page": 148,
+     "y": 508.958,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "text_as_printed": "The dry waste comes with leftover meat. –",
+   "section_signal": "State whether the following statements are true or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "false"
+   },
+   "answer_as_printed": "False",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "9d325e708d58fc7f330a07e6069e0e719cc0d3a77df7064def529da3d9488b85",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s3-q017",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The harmful waste should be dumped in the decomposing pit.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s3-q017",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s3-q017",
+     "pdf_page": 48,
+     "printed_page": 48,
+     "y": 326.652,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s3-q017-key",
+     "pdf_page": 148,
+     "printed_page": 148,
+     "y": 529.708,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "text_as_printed": "The harmful waste should be dumped in the decomposing pit. –",
+   "section_signal": "State whether the following statements are true or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "false"
+   },
+   "answer_as_printed": "False",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "ea8c56268f5f382a533be4b374c7fea2d66abeb6f80cdbcaa82c0dbd8de7d778",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s3-q018",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Diseases can be spread by mosquitoes settling in stagnant water.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s3-q018",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s3-q018",
+     "pdf_page": 48,
+     "printed_page": 48,
+     "y": 353.152,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s3-q018-key",
+     "pdf_page": 148,
+     "printed_page": 148,
+     "y": 550.228,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "text_as_printed": "Diseases can be spread by mosquitoes settling in stagnant water. –",
+   "section_signal": "State whether the following statements are true or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "True",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "712bdbc7aacff6a22573039337f6abfd08c2e2c4a9cc9463d0dda674a5524847",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s3-q019",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Recycling means converting waste into new useful materials.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s3-q019",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s3-q019",
+     "pdf_page": 48,
+     "printed_page": 48,
+     "y": 379.672,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s3-q019-key",
+     "pdf_page": 148,
+     "printed_page": 148,
+     "y": 570.978,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "text_as_printed": "Recycling means converting waste into new useful materials. –",
+   "section_signal": "State whether the following statements are true or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "True",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "5df1b91154f42f7d7582b7d5a2899e35ce5aa60310069d1b34ff798edce0f950",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s3-q020",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Plastic decpmoses in less than a year.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s3-q020",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s3-q020",
+     "pdf_page": 48,
+     "printed_page": 48,
+     "y": 406.172,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s3-q020-key",
+     "pdf_page": 148,
+     "printed_page": 148,
+     "y": 591.728,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "text_as_printed": "Plastic decpmoses in less than a year. –",
+   "section_signal": "State whether the following statements are true or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "false"
+   },
+   "answer_as_printed": "False",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "ef390b4d9c0eb4bc9e300241c6195b5a011d6fc3260b5b8ac7b8fc3b1faebfb1",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s3-q021",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Silt compost can be used to grow plants and increase soil fertility.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s3-q021",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s3-q021",
+     "pdf_page": 48,
+     "printed_page": 48,
+     "y": 432.422,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s3-q021-key",
+     "pdf_page": 148,
+     "printed_page": 148,
+     "y": 612.488,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "text_as_printed": "Silt compost can be used to grow plants and increase soil fertility. –",
+   "section_signal": "State whether the following statements are true or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "True",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "8edaf87544740c346125aa993bbe629cb43a8f59c9ccaab65c1ec74c7b988dfb",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s3-q022",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Ragpickers collect wet waste to make compost.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s3-q022",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s3-q022",
+     "pdf_page": 48,
+     "printed_page": 48,
+     "y": 458.952,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s3-q022-key",
+     "pdf_page": 148,
+     "printed_page": 148,
+     "y": 633.258,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "text_as_printed": "Ragpickers collect wet waste to make compost._",
+   "section_signal": "State whether the following statements are true or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "false"
+   },
+   "answer_as_printed": "False",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "dffd5c166a406f4fc10c089fbd114837236d4c955743598a9f3deef8ec5dc5e6",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s3-q023",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "It is better to reduce the use of plastics to reduce waste.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s3-q023",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s3-q023",
+     "pdf_page": 48,
+     "printed_page": 48,
+     "y": 485.452,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s3-q023-key",
+     "pdf_page": 148,
+     "printed_page": 148,
+     "y": 653.758,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "text_as_printed": "It is better to reduce the use of plastics to reduce waste. –",
+   "section_signal": "State whether the following statements are true or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "True",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "66d9314fd41d66afd882659b3c9bf2192ce8c33e3c8583c7bd469487d6d5ce09",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s3-q024",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Used bandages and needles are examples of polluted waste.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s3-q024",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s3-q024",
+     "pdf_page": 48,
+     "printed_page": 48,
+     "y": 511.952,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s3-q024-key",
+     "pdf_page": 148,
+     "printed_page": 148,
+     "y": 674.508,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "text_as_printed": "Used bandages and needles are examples of polluted waste. –",
+   "section_signal": "State whether the following statements are true or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "True",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "bb97a117806568cf3ce5778348d7b4cc44eb574b107da0b7631830ed79dc700a",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s4-q025",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Match the following with correct answers\nA: a) Dry waste; b) Wet waste; e) Polluting waste; d) Hazardous waste; e) Compost; f) Ragpickers collect\nB: a) Vegetable washes, leftover food; b) Plastic, glass, metal pieces; e) Dyes, pesticides, batteries; d) Used bandages, syringes; e) Old bottles, tins,rubbers; f) Manure made from wet waste",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s4-q025",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s4-q025",
+     "pdf_page": 48,
+     "printed_page": 48,
+     "y": 538.452,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s4-q025-key",
+     "pdf_page": 148,
+     "printed_page": 148,
+     "y": 716.028,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "text_as_printed": "Match the following with correct answers (easy) A                        B a) Dry waste          a) Vegetable washes, leftover food b) Wet waste          b) Plastic, glass, metal pieces e) Polluting waste    e) Dyes, pesticides, batteries d) Hazardous waste d) Used bandages, syringes e) Compost            e) Old bottles, tins,rubbers f) Ragpickers collect f) Manure made from wet waste",
+   "section_signal": "Match the Following",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "Dry waste",
+      "right": "Plastic, glass, metal pieces"
+     },
+     {
+      "left": "Wet waste",
+      "right": "Vegetable washes, leftover food"
+     },
+     {
+      "left": "Polluting waste",
+      "right": "Dyes, pesticides, batteries"
+     },
+     {
+      "left": "Hazardous waste",
+      "right": "Used bandages, syringes"
+     },
+     {
+      "left": "Compost",
+      "right": "Manure made from wet waste"
+     },
+     {
+      "left": "Ragpickers collect",
+      "right": "Old bottles, tins, rubbers"
+     }
+    ]
+   },
+   "answer_as_printed": "a) Dry waste - b) Plastic, glass, metal pieces; b) Wet waste - a) Vegetable washes, leftover food; c) Polluting waste - e) Dyes, pesticides, batteries; d) Hazardous waste - d) Used bandages, syringes; e) Compost - f) Manure made from wet waste; f) Ragpickers collect - e) Old bottles, tins, rubbers",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed match key (letter + text per row); pairs left/right verbatim from the key (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "5012ace27e24a7da2af2647ce0b1c9c707da396a8cb1cc51e0d9b67685db4369",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s5-q026",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What do you mean by garbage?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s5-q026",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s5-q026",
+     "pdf_page": 49,
+     "printed_page": 49,
+     "y": 106.332,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s5-q026-key",
+     "pdf_page": 149,
+     "printed_page": 149,
+     "y": 217.638,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "section_signal": "Answer the following questions ( one mark questions )",
+   "answer": {
+    "kind": "text",
+    "value": "Garbage means waste materials that are thrown away."
+   },
+   "answer_as_printed": "Garbage means waste materials that are thrown away.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "de005b3cd53bdd477d4eff31a09c01134a5a1b36ec4d2899b8ecac34601f41b8",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s5-q027",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Name any two types of garbage mentioned in the lesson.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s5-q027",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s5-q027",
+     "pdf_page": 49,
+     "printed_page": 49,
+     "y": 132.852,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s5-q027-key",
+     "pdf_page": 149,
+     "printed_page": 149,
+     "y": 238.138,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "section_signal": "Answer the following questions ( one mark questions )",
+   "answer": {
+    "kind": "text",
+    "value": "Wet waste and dry waste."
+   },
+   "answer_as_printed": "Wet waste and dry waste.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "0d43198ec782524835070c7688ba44006f463c27cbedc4c2f8c884811d412292",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s5-q028",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What should be done with the bark of vegetables and washes of fruits?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s5-q028",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s5-q028",
+     "pdf_page": 49,
+     "printed_page": 49,
+     "y": 159.352,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s5-q028-key",
+     "pdf_page": 149,
+     "printed_page": 149,
+     "y": 258.888,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "section_signal": "Answer the following questions ( one mark questions )",
+   "answer": {
+    "kind": "text",
+    "value": "They should be put in compost to make manure."
+   },
+   "answer_as_printed": "They should be put in compost to make manure.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "0e3e5ebcea43b36c4a35ad787eaf406e725313a64a13353d9b46730cba3d7790",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s5-q029",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Name two types of garbage that is dangerous.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s5-q029",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s5-q029",
+     "pdf_page": 49,
+     "printed_page": 49,
+     "y": 185.852,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s5-q029-key",
+     "pdf_page": 149,
+     "printed_page": 149,
+     "y": 279.638,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "section_signal": "Answer the following questions ( one mark questions )",
+   "answer": {
+    "kind": "text",
+    "value": "Hazardous waste and polluting waste."
+   },
+   "answer_as_printed": "Hazardous waste and polluting waste.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "88a08ccf163245847574d214e36f45dcf07e5c4f2bee900370407bb9711cdaa5",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s5-q030",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What is recycling?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s5-q030",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s5-q030",
+     "pdf_page": 49,
+     "printed_page": 49,
+     "y": 212.382,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s5-q030-key",
+     "pdf_page": 149,
+     "printed_page": 149,
+     "y": 300.408,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "section_signal": "Answer the following questions ( one mark questions )",
+   "answer": {
+    "kind": "text",
+    "value": "Recycling means using old things to make new ones."
+   },
+   "answer_as_printed": "Recycling means using old things to make new ones.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "9104320ac6c89fabbd8c1c685f6d6ba590edbca71b9a6d6e01bfd4d235b15190",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s5-q031",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What is the role of ragpickers in garbage collection?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s5-q031",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s5-q031",
+     "pdf_page": 49,
+     "printed_page": 49,
+     "y": 238.632,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s5-q031-key",
+     "pdf_page": 149,
+     "printed_page": 149,
+     "y": 321.158,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "section_signal": "Answer the following questions ( one mark questions )",
+   "answer": {
+    "kind": "text",
+    "value": "Ragpickers collect dry waste to give for recycling."
+   },
+   "answer_as_printed": "Ragpickers collect dry waste to give for recycling.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "badf03c8f1cbdf048f822f80fb92cb4c0215487f995237df72de890d3867289d",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s5-q032",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What is compost?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s5-q032",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s5-q032",
+     "pdf_page": 49,
+     "printed_page": 49,
+     "y": 265.132,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s5-q032-key",
+     "pdf_page": 149,
+     "printed_page": 149,
+     "y": 341.658,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "section_signal": "Answer the following questions ( one mark questions )",
+   "answer": {
+    "kind": "text",
+    "value": "Compost is manure made from decayed food and plants."
+   },
+   "answer_as_printed": "Compost is manure made from decayed food and plants.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "28318a02c5d5f7ecbf1e040736b1de09b25ed01d0e21ac8f4b21e3711abbd0a1",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s5-q033",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What happens if there is stagnant water outside the house?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s5-q033",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s5-q033",
+     "pdf_page": 49,
+     "printed_page": 49,
+     "y": 291.652,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s5-q033-key",
+     "pdf_page": 149,
+     "printed_page": 149,
+     "y": 362.408,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "section_signal": "Answer the following questions ( one mark questions )",
+   "answer": {
+    "kind": "text",
+    "value": "Mosquitoes may grow and cause diseases."
+   },
+   "answer_as_printed": "Mosquitoes may grow and cause diseases.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "a590976cd73f5c07d6f86fba1894f6a3920edcde729f9fd3881c38652b90dd06",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s5-q034",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Why should the use of plastic bags be reduced?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s5-q034",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s5-q034",
+     "pdf_page": 49,
+     "printed_page": 49,
+     "y": 323.902,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s5-q034-key",
+     "pdf_page": 149,
+     "printed_page": 149,
+     "y": 383.178,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "section_signal": "Answer the following questions ( one mark questions )",
+   "answer": {
+    "kind": "text",
+    "value": "Because plastic harms the environment."
+   },
+   "answer_as_printed": "Because plastic harms the environment.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "0f20e7f29932d19cb48f6ddae89d22ed5659186cc547c8673456756c04fcc5b4",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s5-q035",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "State one use of rotten waste.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s5-q035",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s5-q035",
+     "pdf_page": 49,
+     "printed_page": 49,
+     "y": 350.152,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s5-q035-key",
+     "pdf_page": 149,
+     "printed_page": 149,
+     "y": 403.928,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "section_signal": "Answer the following questions ( one mark questions )",
+   "answer": {
+    "kind": "text",
+    "value": "It can be used to make compost."
+   },
+   "answer_as_printed": "It can be used to make compost.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "2b511cc72de793885e514615a7d3a9ebf47325808db349f908e65d45b34443fb",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s6-q035b",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Explain the two methods of recycling garbage",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s6-q035b",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s6-q035b",
+     "pdf_page": 49,
+     "printed_page": 49,
+     "y": 410.422,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s6-q035b-key",
+     "pdf_page": 149,
+     "printed_page": 149,
+     "y": 445.178,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "text_as_printed": "Explain the two methods of recycling garbage (easy)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Two methods are: 1) Reusing items. 2) Recycling them to make new ones."
+   },
+   "answer_as_printed": "Two methods are: 1) Reusing items. 2) Recycling them to make new ones.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "bfb2477312bf4caee12a32f336f0c6fb78d4ea5556b7a40894caa8739052276d",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s6-q036",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Why is it important to dispose of hazardous garbage? What is the role of manure in plant growth?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s6-q036",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s6-q036",
+     "pdf_page": 49,
+     "printed_page": 49,
+     "y": 436.922,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s6-q036-key",
+     "pdf_page": 149,
+     "printed_page": 149,
+     "y": 465.958,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "text_as_printed": "Why is it important to dispose of hazardous garbage? What is the role of manure in plant growth?Difficult)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Hazardous garbage can cause harm. Manure helps plants grow strong."
+   },
+   "answer_as_printed": "Hazardous garbage can cause harm. Manure helps plants grow strong.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    },
+    {
+     "issue": "source notation inconsistent — two questions printed under one label: 'Why is it important to dispose of hazardous garbage? What is the role of manure in plant growth?'",
+     "why_not_corrected": "kept as one question with its printed key (which answers both parts)",
+     "suggested": "review — split at authoring?"
+    }
+   ],
+   "content_hash": "55185b1ecf98787d8576d6c16cc5eb5f10a7b286d29fc8b615e181394255432f",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s6-q037",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "How can diseases caused by stagnant water be prevented?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s6-q037",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s6-q037",
+     "pdf_page": 49,
+     "printed_page": 49,
+     "y": 492.952,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s6-q037-key",
+     "pdf_page": 149,
+     "printed_page": 149,
+     "y": 486.708,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "text_as_printed": "How can diseases caused by stagnant water be prevented? (Difficult)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Keep water covered, clean surroundings, and use mosquito nets."
+   },
+   "answer_as_printed": "Keep water covered, clean surroundings, and use mosquito nets.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "a6fb53cbbd3b413709099cb3210a47a047a7a9f20288c12848fc7a8d572df9a7",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s6-q038",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What should be done with dry waste like plastic and tins?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s6-q038",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s6-q038",
+     "pdf_page": 49,
+     "printed_page": 49,
+     "y": 519.452,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s6-q038-key",
+     "pdf_page": 149,
+     "printed_page": 149,
+     "y": 507.458,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "text_as_printed": "What should be done with dry waste like plastic and tins? (Difficult)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "They should be given for recycling."
+   },
+   "answer_as_printed": "They should be given for recycling.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "9366be4c4cad12bb8d7d1545c2f7928b0c23e6c2f6dd0f91a197c5958e5f47a6",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s6-q039",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What can be done with the remaining food or kitchen garbage?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s6-q039",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s6-q039",
+     "pdf_page": 49,
+     "printed_page": 49,
+     "y": 545.972,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s6-q039-key",
+     "pdf_page": 149,
+     "printed_page": 149,
+     "y": 527.958,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "text_as_printed": "What can be done with the remaining food or kitchen garbage? (Average)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "It can be put in compost pits to make manure."
+   },
+   "answer_as_printed": "It can be put in compost pits to make manure.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "9ea89ba812e1d2ce1416d382663301383f44cb9a5a426d52b3ccd7e7a9c96ecd",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s6-q040",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "How can the wet waste be used in villages?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s6-q040",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s6-q040",
+     "pdf_page": 49,
+     "printed_page": 49,
+     "y": 572.482,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s6-q040-key",
+     "pdf_page": 149,
+     "printed_page": 149,
+     "y": 548.728,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "text_as_printed": "How can the wet waste be used in villages? (Difficult)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Wet waste can be used in fields as compost."
+   },
+   "answer_as_printed": "Wet waste can be used in fields as compost.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "10a04c5fea93eaa27e0de32a61b4209f3e2bf7b638841e546bc608cbe5843d36",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s6-q041",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What is the difference between dry and wet garbage?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s6-q041",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s6-q041",
+     "pdf_page": 49,
+     "printed_page": 49,
+     "y": 598.982,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s6-q041-key",
+     "pdf_page": 149,
+     "printed_page": 149,
+     "y": 569.478,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "text_as_printed": "What is the difference between dry and wet garbage? (Difficult)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Wet waste is food and peels. Dry waste is plastic, glass."
+   },
+   "answer_as_printed": "Wet waste is food and peels. Dry waste is plastic, glass.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "750b789434a4e827f585aed1df8f6f0ca577af39e9cf878a8930f113f03195cb",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s6-q042",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What does plastic waste in the environment do with time?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s6-q042",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s6-q042",
+     "pdf_page": 49,
+     "printed_page": 49,
+     "y": 625.472,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s6-q042-key",
+     "pdf_page": 149,
+     "printed_page": 149,
+     "y": 590.238,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "text_as_printed": "What does plastic waste in the environment do with time? (Difficult)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Plastic waste stays long and pollutes land and water."
+   },
+   "answer_as_printed": "Plastic waste stays long and pollutes land and water.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "d07cd48e2a70fcd7525ae1cdf7169b24d81946dece45da768b8ff0313fca152f",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s7-q043",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What are the different types of garbage and how should they be handled?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s7-q043",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s7-q043",
+     "pdf_page": 49,
+     "printed_page": 49,
+     "y": 685.502,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s7-q043-key",
+     "pdf_page": 149,
+     "printed_page": 149,
+     "y": 652.258,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "text_as_printed": "What are the different types of garbage and how should they be handled? (Difficult)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Wet waste, dry waste, hazardous waste, and polluting waste. Each should be thrown in the correct bin."
+   },
+   "answer_as_printed": "Wet waste, dry waste, hazardous waste, and polluting waste. Each should be thrown in the correct bin.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "da2b4faf79dc94ee2bc9e5a94365701a0be3531d2b58d6dccb4c07e8f2e3a439",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s7-q044",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Explain how the wet waste be converted into compost.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s7-q044",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s7-q044",
+     "pdf_page": 49,
+     "printed_page": 49,
+     "y": 730.527,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s7-q044-key",
+     "pdf_page": 149,
+     "printed_page": 149,
+     "y": 693.758,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "text_as_printed": "Explain how the wet waste be converted into compost. (Difficult)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Wet waste is put in compost pits. After some time, it turns into compost."
+   },
+   "answer_as_printed": "Wet waste is put in compost pits. After some time, it turns into compost.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "c4f7b49df07d26932c00508efb71eb34592271b00213f29c596da56689250b0c",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s7-q045",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Explain how recycling reduces garbage and helps save wealth.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s7-q045",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s7-q045",
+     "pdf_page": 50,
+     "printed_page": 50,
+     "y": 72.082,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s7-q045-key",
+     "pdf_page": 149,
+     "printed_page": 149,
+     "y": 714.508,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "text_as_printed": "Explain how recycling reduces garbage and helps save wealth. (Difficult)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Recycling reduces waste. It helps save money and resources."
+   },
+   "answer_as_printed": "Recycling reduces waste. It helps save money and resources.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "c215d5ff04e4bf9044e0b8b5accc4d4ee40bc0ffa7f9c902ea68ceb3e5fcee38",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s7-q046",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Explain a suitable method of disposal of variety of polluted waste.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s7-q046",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s7-q046",
+     "pdf_page": 50,
+     "printed_page": 50,
+     "y": 98.582,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s7-q046-key",
+     "pdf_page": 149,
+     "printed_page": 149,
+     "y": 735.033,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "text_as_printed": "Explain a suitable method of disposal of variety of polluted waste. (Difficult)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Polluted waste like syringes should be burned or safely buried."
+   },
+   "answer_as_printed": "Polluted waste like syringes should be burned or safely buried.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "91c0afdebbbc2fa45ee8a153717573372e581eafa55064ce0e2c5498b2f675c0",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s7-q047",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What happens if hazardous garbage is not disposed properly?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s7-q047",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s7-q047",
+     "pdf_page": 50,
+     "printed_page": 50,
+     "y": 125.102,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s7-q047-key",
+     "pdf_page": 149,
+     "printed_page": 149,
+     "y": 755.783,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "text_as_printed": "What happens if hazardous garbage is not disposed properly? (Difficult)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "It can harm people and animals, and pollute land and water."
+   },
+   "answer_as_printed": "It can harm people and animals, and pollute land and water.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "1d69940cb58db7ab3f72ca45d761c558c1b3102101dcba352a429dba49497a96",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s7-q048",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What are the benefits of recycling plastic items in the house?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s7-q048",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s7-q048",
+     "pdf_page": 50,
+     "printed_page": 50,
+     "y": 151.602,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s7-q048-key",
+     "pdf_page": 150,
+     "printed_page": 150,
+     "y": 72.588,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "text_as_printed": "What are the benefits of recycling plastic items in the house? (Average",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "We can make pots, boxes, or bags from recycled plastic."
+   },
+   "answer_as_printed": "We can make pots, boxes, or bags from recycled plastic.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "b2edd34145a59da51d1d69956e5b94394dd9033cb10ebe077f2f065c73accea2",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s7-q049",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What are the consequences of lack of garbage conservation in urban areas?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s7-q049",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s7-q049",
+     "pdf_page": 50,
+     "printed_page": 50,
+     "y": 178.102,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s7-q049-key",
+     "pdf_page": 150,
+     "printed_page": 150,
+     "y": 93.338,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "text_as_printed": "What are the consequences of lack of garbage conservation in urban areas? (Average)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Garbage can block drains, cause smell and diseases."
+   },
+   "answer_as_printed": "Garbage can block drains, cause smell and diseases.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "6d9ffa2e2dc17e15bee9145af25694243cb2f9d6b799567486d9fe36acbefd9b",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s7-q050",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "How can the amount of garbage in daily life be reduced? Give an example.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s7-q050",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s7-q050",
+     "pdf_page": 50,
+     "printed_page": 50,
+     "y": 223.132,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s7-q050-key",
+     "pdf_page": 150,
+     "printed_page": 150,
+     "y": 114.088,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "text_as_printed": "How can the amount of garbage in daily life be reduced? Give an example. (Difficult)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "By reusing and recycling things. For example, using cloth bags."
+   },
+   "answer_as_printed": "By reusing and recycling things. For example, using cloth bags.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "7bdea9b1d4a67a37129cea7ee5ace45bcf6cfd51f59deeb52ab11e51489ecd7f",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s7-q051",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Why is it important to separate dry and wet waste?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s7-q051",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s7-q051",
+     "pdf_page": 50,
+     "printed_page": 50,
+     "y": 268.132,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s7-q051-key",
+     "pdf_page": 150,
+     "printed_page": 150,
+     "y": 134.608,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "text_as_printed": "Why is it important to separate dry and wet waste? (Average",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "So that wet waste can be composted and dry waste recycled."
+   },
+   "answer_as_printed": "So that wet waste can be composted and dry waste recycled.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "ea4f488e60663c82453acfc1d06b581d552fe52abc89590546f62a7d2c92c486",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s7-q052",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What happens when wastes are thrown constantly in public places?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s7-q052",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s7-q052",
+     "pdf_page": 50,
+     "printed_page": 50,
+     "y": 294.652,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s7-q052-key",
+     "pdf_page": 150,
+     "printed_page": 150,
+     "y": 155.358,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "text_as_printed": "What happens when wastes are thrown constantly in public places? (Difficult)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "It makes the place dirty and causes diseases."
+   },
+   "answer_as_printed": "It makes the place dirty and causes diseases.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "5aa083eb5c95513d6ec86ac4b6d62ac77d912a0986c204825e7e2bb0b0e91563",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s8-q053",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Explain the different types of wastes discussed in the lesson with examples.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s8-q053",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s8-q053",
+     "pdf_page": 50,
+     "printed_page": 50,
+     "y": 350.652,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s8-q053-key",
+     "pdf_page": 150,
+     "printed_page": 150,
+     "y": 196.858,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "text_as_printed": "Explain the different types of wastes discussed in the lesson with examples. (Difficult)",
+   "section_signal": "Answer the following questions (four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Wet waste - fruit peels, Dry waste - glass, Hazardous - syringes, Polluting - pesticides."
+   },
+   "answer_as_printed": "Wet waste - fruit peels, Dry waste - glass, Hazardous - syringes, Polluting - pesticides.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "237ba09d0febc76fb98d77e0886fcbbfbf1cc1901c2794478919d8283e9ab72f",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s8-q054",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "How can you reduce garbage in your home and school? Give at least three suggestions.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s8-q054",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s8-q054",
+     "pdf_page": 50,
+     "printed_page": 50,
+     "y": 395.672,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s8-q054-key",
+     "pdf_page": 150,
+     "printed_page": 150,
+     "y": 217.638,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "text_as_printed": "How can you reduce garbage in your home and school? Give at least three suggestions. (Average",
+   "section_signal": "Answer the following questions (four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "We can reduce garbage by reusing items, recycling, and using less plastic."
+   },
+   "answer_as_printed": "We can reduce garbage by reusing items, recycling, and using less plastic.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "20f21e8e0bac4c3c01973feaf7bfb83197a5105c1b3cca11bd444de89c4142d1",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s8-q055",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What can be done with things like old plastic bottle, paper, tin etc.? Explain the use of recycling things.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s8-q055",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s8-q055",
+     "pdf_page": 50,
+     "printed_page": 50,
+     "y": 440.672,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s8-q055-key",
+     "pdf_page": 150,
+     "printed_page": 150,
+     "y": 238.138,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "text_as_printed": "What can be done with things like old plastic bottle, paper, tin etc.? Explain the use of recycling things. (Difficult)",
+   "section_signal": "Answer the following questions (four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Old plastic bottles can be used to plant trees. Recycling helps reduce pollution."
+   },
+   "answer_as_printed": "Old plastic bottles can be used to plant trees. Recycling helps reduce pollution.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "b58ed58a42197028c5e66276b71d5c24ba0ad5ab2b70f6267bca8f67413a1b87",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s8-q056",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Explain how composting is beneficial for the environment and plants.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s8-q056",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s8-q056",
+     "pdf_page": 50,
+     "printed_page": 50,
+     "y": 485.702,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s8-q056-key",
+     "pdf_page": 150,
+     "printed_page": 150,
+     "y": 258.888,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "text_as_printed": "Explain how composting is beneficial for the environment and plants.(Average)",
+   "section_signal": "Answer the following questions (four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Composting reduces waste and makes soil rich for plants."
+   },
+   "answer_as_printed": "Composting reduces waste and makes soil rich for plants.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "880bb07708318eb1526c066614504dabe92d21d567970e2947fc7380d97a986d",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s8-q057",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Discuss the importance of segregating wastes at homes. How does it help in proper disposal of wastes?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s8-q057",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s8-q057",
+     "pdf_page": 50,
+     "printed_page": 50,
+     "y": 511.952,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s8-q057-key",
+     "pdf_page": 150,
+     "printed_page": 150,
+     "y": 279.638,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "text_as_printed": "Discuss the importance of segregating wastes at homes. How does it help in proper disposal of wastes? (Difficult)",
+   "section_signal": "Answer the following questions (four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Segregation helps in proper disposal. It makes composting and recycling easy."
+   },
+   "answer_as_printed": "Segregation helps in proper disposal. It makes composting and recycling easy.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "35b871dc9b9149b71ef13fd194d2a36e093993d2a791291bc55b0344d80cf94e",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s8-q058",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Explain the steps to be taken to prevent diseases caused by wastes and stagnant water.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s8-q058",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s8-q058",
+     "pdf_page": 50,
+     "printed_page": 50,
+     "y": 556.972,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s8-q058-key",
+     "pdf_page": 150,
+     "printed_page": 150,
+     "y": 300.408,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "text_as_printed": "Explain the steps to be taken to prevent diseases caused by wastes and stagnant water. (Difficult)",
+   "section_signal": "Answer the following questions (four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Clean water tanks, drain water, use mosquito repellents."
+   },
+   "answer_as_printed": "Clean water tanks, drain water, use mosquito repellents.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "2dfa7e6aa1488a46bc23455bee901edcc3be56881ee515388f39663b20c32b4a",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s8-q059",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Write an essay on how plastic waste an be reduced in daily life.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s8-q059",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s8-q059",
+     "pdf_page": 50,
+     "printed_page": 50,
+     "y": 601.972,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s8-q059-key",
+     "pdf_page": 150,
+     "printed_page": 150,
+     "y": 321.158,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "text_as_printed": "Write an essay on how plastic waste an be reduced in daily life. (Difficult)",
+   "section_signal": "Answer the following questions (four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Use cloth bags, avoid plastic bottles, reuse containers."
+   },
+   "answer_as_printed": "Use cloth bags, avoid plastic bottles, reuse containers.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "1df9dec65127d0a22af6445bf419331b22fc521c840782dc837b56cb97e82293",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s8-q060",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Explain how can you ensure that waste is not dumped on your streets.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s8-q060",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s8-q060",
+     "pdf_page": 50,
+     "printed_page": 50,
+     "y": 628.502,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s8-q060-key",
+     "pdf_page": 150,
+     "printed_page": 150,
+     "y": 341.658,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "text_as_printed": "Explain how can you ensure that waste is not dumped on your streets. (Difficult)",
+   "section_signal": "Answer the following questions (four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Tell others not to throw waste, put bins, inform the municipality."
+   },
+   "answer_as_printed": "Tell others not to throw waste, put bins, inform the municipality.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "7df5bc5ffdad51580ddbd71cebd8c56b5c26e6208e7511bb21654dd6396f9b23",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s8-q061",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What are the effects of hazardous waste on the environment and how should it be managed?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s8-q061",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s8-q061",
+     "pdf_page": 50,
+     "printed_page": 50,
+     "y": 655.002,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s8-q061-key",
+     "pdf_page": 150,
+     "printed_page": 150,
+     "y": 362.408,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "text_as_printed": "What are the effects of hazardous waste on the environment and how should it be managed? (Difficult)",
+   "section_signal": "Answer the following questions (four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Hazardous waste can cause pollution. It should be kept in special bins."
+   },
+   "answer_as_printed": "Hazardous waste can cause pollution. It should be kept in special bins.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "b93d8329b19da54ab01539a678bfc5ac982f4f02dffc53a6b6ad85503fef91ce",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s8-q062",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What are the effects of not handling wastes in a correct way on the environment? How can we overcome these problems?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s8-q062",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s8-q062",
+     "pdf_page": 50,
+     "printed_page": 50,
+     "y": 700.002,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s8-q062-key",
+     "pdf_page": 150,
+     "printed_page": 150,
+     "y": 383.178,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "text_as_printed": "What are the effects of not handling wastes in a correct way on the environment ? How can we overcome these problems? (Difficult)",
+   "section_signal": "Answer the following questions (four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Waste pollutes air, water, and land. We should recycle, compost, and dispose properly."
+   },
+   "answer_as_printed": "Waste pollutes air, water, and land. We should recycle, compost, and dispose properly.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:17:41+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "a5a2da700d1796670509699960e3632247693064fa20662e26bfdde0cba9e67d",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-11-s8-q063",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-11",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Name the different types of waste by colouring the four types of dustbins given below.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s8-q063",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s8-q063",
+     "pdf_page": 51,
+     "printed_page": 51,
+     "y": 72.082,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-11-s8-q063-key",
+     "pdf_page": 148,
+     "printed_page": 148,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:17:41+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:17:41+05:30",
+   "text_as_printed": "Name the different types of waste by colouring the four types of dustbins given below. (Difficult)",
+   "section_signal": "Answer the following questions (four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "stimulus_id": "st-evs-4-11-q63",
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    },
+    {
+     "issue": "no answer printed",
+     "why_not_corrected": "the answer side ends at key 62 (pdf 150) and prints nothing for this colouring task",
+     "suggested": "key absent — review"
+    }
+   ],
+   "content_hash": "7197b0de15ad3c703fb983d21ee9b5c8f8b4fe2093a65c3d0bc4c4efca00d8cd",
+   "topic_ids": [
+    "evs-4-11-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  }
+ ],
+ "pending_summary": {}
+}
