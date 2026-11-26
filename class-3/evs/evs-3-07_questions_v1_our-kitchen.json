@@ -1,0 +1,1743 @@
+{
+ "contract_version": "1.7",
+ "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
+ "procedure_file": "extraction_procedure_social_addendum_v1.4_social science Classes 6-10 on top of procedure v2.md",
+ "machine_name": "evs-3-07_questions",
+ "version": 1,
+ "changelog": "v1 extraction — batch-01 — class-3-evs",
+ "amendments_applied": [],
+ "unit_state": "EXTRACTED",
+ "review_ready": false,
+ "count_gate": {
+  "reference": 19,
+  "reference_source": "audited",
+  "extracted": 19,
+  "paired": 19,
+  "flagged": 2,
+  "gaps": [],
+  "duplicated_numbers": [],
+  "quota_table": "inconsistent",
+  "second_method": {
+   "method": "independent count of question blocks on the renders of pdf 32-34 (4 + 4 + 3 + 4 + 2 + 2 = 19) and of answer-side keys 1-19 (pdf 108); the BLUE PRINT total 10+7+3 = 20 disagrees (FINDING, addendum §8)",
+   "extracted": 19,
+   "agrees": true
+  },
+  "pass": true,
+  "note": "Question side labels 1-19 monotonic, no gaps, no duplicates (I 1-4, II 5-8, III 9-11, IV 12-15, V 16-17, VI 18-19); answer side keys 1-19 in order. BLUE PRINT total 20 (10/7/3) disagrees with the audited 19 -> quota_table 'inconsistent', independent count as second method (addendum §8; finding, not a stop). Difficulty per question: easy 0, average 0, difficult 0, untagged 19."
+ },
+ "extraction": {
+  "source_file": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf",
+  "source_ref_prefix": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf",
+  "pdf_pages": [
+   32,
+   33,
+   34,
+   108
+  ],
+  "printed_page_offset": 0,
+  "method_notes": [
+   "Pages: Q pdf 32 (heading, LO 5, BLUE PRINT, q1-4) 33 (q5-15) 34 (q16-19). A side 'Key Answers :- 7. Our Kitchen' pdf 108 (keys 1-19). Folios = pdf page.",
+   "BILINGUAL: all Kannada dropped (Unicode both sides; keys print the Kannada glued after the English — cut off).",
+   "Sections: s1 I odd-one-out q1-4 -> mcq (each question prints only its four lettered options and an answer line '------'; text = the section instruction + the printed option row, which is the whole printed question (answer dashes removed, kept in text_as_printed); options also split A-D); s2 II match q5-8 (numbered rows -> one-pair match questions); s3 III q9-11 (printed blanks -> fill); s4 IV q12-15; s5 V q16-17; s6 VI q18-19. All IV-VI keys are one line/list -> vsa by form.",
+   "MARKS (R-E9): s1 '4X1=4' -> 1; s2 '4x1=4' -> 1; s3 '3X1=3' -> 1; s4 '4X2=8' -> 2; s5 '2 X 3=6' and s6 '2 X 4=8' (2 q each) -> null, M is not the smaller factor (R-E9 as written).",
+   "DIFFICULTY: none printed -> null + 'no difficulty tag'. LO (R-E10): lesson LO 5, lo_source 'lesson_table' (text joined from the LO row's two printed lines).",
+   "KEYS: MCQ keys print letter + text with a dot or comma ('1 D. Cooker.', '2. A, stone') -> option by the printed letter; all agree. Match key 6 wording variant flagged. q11 key 'Guarding the barricade' does not name chapati equipment (the key's Kannada line names rolling pin and griddle) -> 'key text does not address question' (review-blocking). q12 key 'children favourite food.' is an open-answer placeholder, kept verbatim. q18 asks for 5 things; key lists 4 — kept, unflagged.",
+   "FIGURES: none on these pages. TOPIC evs-3-07-t00 / chapter / high (R-E3)."
+  ],
+  "notation_summary": {
+   "render_tokens": 0,
+   "latex_tokens": 0,
+   "damage_flags": []
+  },
+  "excluded_objects": [],
+  "inline_excluded_count": 0,
+  "figure_references": []
+ },
+ "stimuli": [],
+ "questions": [
+  {
+   "id": "evs-3-07-s1-q001",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-07",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "5",
+     "text_as_printed": "Categorizes different types of cooking materials and fuels used for cooking."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Identify the word that does not belong to the group and write it down.\nA.Lemon B. Water C. Sugar D. Cooker",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-07-s1-q001",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-07-s1-q001",
+     "pdf_page": 32,
+     "printed_page": 32,
+     "y": 551.933,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-07-s1-q001-key",
+     "pdf_page": 108,
+     "printed_page": 108,
+     "y": 134.093,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:10:53+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:10:53+05:30",
+   "text_as_printed": "Identify the word that does not belong to the group and write it down.\nA.Lemon B. Water C. Sugar D. Cooker ------",
+   "section_signal": "I.Identify the word that does not belong to the group and write it down.",
+   "lo_source": "lesson_table",
+   "options": [
+    {
+     "id": "A",
+     "text": "Lemon"
+    },
+    {
+     "id": "B",
+     "text": "Water"
+    },
+    {
+     "id": "C",
+     "text": "Sugar"
+    },
+    {
+     "id": "D",
+     "text": "Cooker"
+    }
+   ],
+   "answer_as_printed": "1 D. Cooker.",
+   "answer": {
+    "kind": "option",
+    "option_id": "D"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:10:53+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 7 / Difficulty 3) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "c10886b508faa2bfa14aec8193ff0425364995bf9d3a06a411b371b720a452d6",
+   "topic_ids": [
+    "evs-3-07-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-07-s1-q002",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-07",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "5",
+     "text_as_printed": "Categorizes different types of cooking materials and fuels used for cooking."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Identify the word that does not belong to the group and write it down.\nA.Stone B. Rice C. Water D.Salt",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-07-s1-q002",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-07-s1-q002",
+     "pdf_page": 32,
+     "printed_page": 32,
+     "y": 610.493,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-07-s1-q002-key",
+     "pdf_page": 108,
+     "printed_page": 108,
+     "y": 155.453,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:10:53+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:10:53+05:30",
+   "text_as_printed": "Identify the word that does not belong to the group and write it down.\nA.Stone B. Rice C. Water D.Salt -------",
+   "section_signal": "I.Identify the word that does not belong to the group and write it down.",
+   "lo_source": "lesson_table",
+   "options": [
+    {
+     "id": "A",
+     "text": "Stone"
+    },
+    {
+     "id": "B",
+     "text": "Rice"
+    },
+    {
+     "id": "C",
+     "text": "Water"
+    },
+    {
+     "id": "D",
+     "text": "Salt"
+    }
+   ],
+   "answer_as_printed": "2. A, stone",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:10:53+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 7 / Difficulty 3) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "060ec17afc73a3377ae4bef55cf055100387d5d4b48f89460d1de71132968d32",
+   "topic_ids": [
+    "evs-3-07-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-07-s1-q003",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-07",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "5",
+     "text_as_printed": "Categorizes different types of cooking materials and fuels used for cooking."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Identify the word that does not belong to the group and write it down.\nA. wheat flour B. water C. salt D. kerosene",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-07-s1-q003",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-07-s1-q003",
+     "pdf_page": 32,
+     "printed_page": 32,
+     "y": 668.813,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-07-s1-q003-key",
+     "pdf_page": 108,
+     "printed_page": 108,
+     "y": 176.813,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:10:53+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:10:53+05:30",
+   "text_as_printed": "Identify the word that does not belong to the group and write it down.\nA. wheat flour B. water C. salt D. kerosene ---",
+   "section_signal": "I.Identify the word that does not belong to the group and write it down.",
+   "lo_source": "lesson_table",
+   "options": [
+    {
+     "id": "A",
+     "text": "wheat flour"
+    },
+    {
+     "id": "B",
+     "text": "water"
+    },
+    {
+     "id": "C",
+     "text": "salt"
+    },
+    {
+     "id": "D",
+     "text": "kerosene"
+    }
+   ],
+   "answer_as_printed": "3. D. Kerosene",
+   "answer": {
+    "kind": "option",
+    "option_id": "D"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:10:53+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 7 / Difficulty 3) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "64fe9232458cd766afe55cea7fbc9a38f0882bc5aa9120ef7d8fdbe2e1e26d4f",
+   "topic_ids": [
+    "evs-3-07-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-07-s1-q004",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-07",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "5",
+     "text_as_printed": "Categorizes different types of cooking materials and fuels used for cooking."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Identify the word that does not belong to the group and write it down.\nA.coffee powder B. rice C. sugar D. milk",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-07-s1-q004",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-07-s1-q004",
+     "pdf_page": 32,
+     "printed_page": 32,
+     "y": 730.253,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-07-s1-q004-key",
+     "pdf_page": 108,
+     "printed_page": 108,
+     "y": 198.173,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:10:53+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:10:53+05:30",
+   "text_as_printed": "Identify the word that does not belong to the group and write it down.\nA.coffee powder B. rice C. sugar D. milk ---------",
+   "section_signal": "I.Identify the word that does not belong to the group and write it down.",
+   "lo_source": "lesson_table",
+   "options": [
+    {
+     "id": "A",
+     "text": "coffee powder"
+    },
+    {
+     "id": "B",
+     "text": "rice"
+    },
+    {
+     "id": "C",
+     "text": "sugar"
+    },
+    {
+     "id": "D",
+     "text": "milk"
+    }
+   ],
+   "answer_as_printed": "4. B. Rice.",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:10:53+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 7 / Difficulty 3) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "d84274c68a29939ad699cb08ecf0d7d773e62eeb83aa9dcb959f9eda4137f3cb",
+   "topic_ids": [
+    "evs-3-07-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-07-s2-q005",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-07",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "5",
+     "text_as_printed": "Categorizes different types of cooking materials and fuels used for cooking."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Match the following: spoon\nB: to prepare chapattis and Rotis; to cut vegetables; to cook food; to serve food.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-07-s2-q005",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-07-s2-q005",
+     "pdf_page": 33,
+     "printed_page": 33,
+     "y": 105.146,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-07-s2-q005-key",
+     "pdf_page": 108,
+     "printed_page": 108,
+     "y": 238.28,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:10:53+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:10:53+05:30",
+   "text_as_printed": "spoon",
+   "section_signal": "II. Match the following :-",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "spoon",
+      "right": "To serve food"
+     }
+    ]
+   },
+   "answer_as_printed": "5. To serve food",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:10:53+05:30",
+    "basis": "printed match key: the right-hand value per printed row number; left = that row's column-A item, right = key wording verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 7 / Difficulty 3) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "62ceeb646fa9678cbd4513da7de1ea1154905dcafc7859c35fee80fbe9d33894",
+   "topic_ids": [
+    "evs-3-07-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-07-s2-q006",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-07",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "5",
+     "text_as_printed": "Categorizes different types of cooking materials and fuels used for cooking."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Match the following: Rolling pin and stand\nB: to prepare chapattis and Rotis; to cut vegetables; to cook food; to serve food.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-07-s2-q006",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-07-s2-q006",
+     "pdf_page": 33,
+     "printed_page": 33,
+     "y": 169.226,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-07-s2-q006-key",
+     "pdf_page": 108,
+     "printed_page": 108,
+     "y": 260.12,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:10:53+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:10:53+05:30",
+   "text_as_printed": "Rolling pin and stand",
+   "section_signal": "II. Match the following :-",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "Rolling pin and stand",
+      "right": "To prepare Rotis and chapathis"
+     }
+    ]
+   },
+   "answer_as_printed": "6. To prepare Rotis and chapathis",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:10:53+05:30",
+    "basis": "printed match key: the right-hand value per printed row number; left = that row's column-A item, right = key wording verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 7 / Difficulty 3) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "match key value not among column-B items — key 'To prepare Rotis and chapathis'; column B prints 'to prepare chapattis and Rotis'",
+     "why_not_corrected": "key text kept as printed (v1.4 §14.8); the row is unambiguous",
+     "suggested": "to prepare chapattis and Rotis — review"
+    }
+   ],
+   "content_hash": "44fbff1ead34d182c73b9357282be47c9769f58c23f810d7fd6cf7e0ac45038f",
+   "topic_ids": [
+    "evs-3-07-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-07-s2-q007",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-07",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "5",
+     "text_as_printed": "Categorizes different types of cooking materials and fuels used for cooking."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Match the following: Knife\nB: to prepare chapattis and Rotis; to cut vegetables; to cook food; to serve food.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-07-s2-q007",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-07-s2-q007",
+     "pdf_page": 33,
+     "printed_page": 33,
+     "y": 233.546,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-07-s2-q007-key",
+     "pdf_page": 108,
+     "printed_page": 108,
+     "y": 281.72,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:10:53+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:10:53+05:30",
+   "text_as_printed": "Knife",
+   "section_signal": "II. Match the following :-",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "Knife",
+      "right": "to cut vegetables"
+     }
+    ]
+   },
+   "answer_as_printed": "7. to cut vegetables",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:10:53+05:30",
+    "basis": "printed match key: the right-hand value per printed row number; left = that row's column-A item, right = key wording verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 7 / Difficulty 3) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "ccacf90d29ba779644f9a2181d43f4b1f256936bfefafdce99e200e63f1d3a99",
+   "topic_ids": [
+    "evs-3-07-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-07-s2-q008",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-07",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "5",
+     "text_as_printed": "Categorizes different types of cooking materials and fuels used for cooking."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Match the following: cooker\nB: to prepare chapattis and Rotis; to cut vegetables; to cook food; to serve food.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-07-s2-q008",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-07-s2-q008",
+     "pdf_page": 33,
+     "printed_page": 33,
+     "y": 297.866,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-07-s2-q008-key",
+     "pdf_page": 108,
+     "printed_page": 108,
+     "y": 303.32,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:10:53+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:10:53+05:30",
+   "text_as_printed": "cooker",
+   "section_signal": "II. Match the following :-",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "cooker",
+      "right": "to cook food"
+     }
+    ]
+   },
+   "answer_as_printed": "8. to cook food",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:10:53+05:30",
+    "basis": "printed match key: the right-hand value per printed row number; left = that row's column-A item, right = key wording verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 7 / Difficulty 3) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "d48d84b68986f00cf24fdc35037f12ae2bdf2f16226be311f0561cc57929424d",
+   "topic_ids": [
+    "evs-3-07-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-07-s3-q009",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-07",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "5",
+     "text_as_printed": "Categorizes different types of cooking materials and fuels used for cooking."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "To eat ____ _____",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-07-s3-q009",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-07-s3-q009",
+     "pdf_page": 33,
+     "printed_page": 33,
+     "y": 398.333,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-07-s3-q009-key",
+     "pdf_page": 108,
+     "printed_page": 108,
+     "y": 344.573,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:10:53+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:10:53+05:30",
+   "section_signal": "III .Write down the equipment required to prepare the following food.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "plate-bowl"
+   },
+   "answer_as_printed": "plate-bowl",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:10:53+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 7 / Difficulty 3) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "527af7c109a784d869569782277251e4f0d70e9bf95ff84f53dfa3ce68a2ef28",
+   "topic_ids": [
+    "evs-3-07-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-07-s3-q010",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-07",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "5",
+     "text_as_printed": "Categorizes different types of cooking materials and fuels used for cooking."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "To cook _____ ____ ____",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-07-s3-q010",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-07-s3-q010",
+     "pdf_page": 33,
+     "printed_page": 33,
+     "y": 456.893,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-07-s3-q010-key",
+     "pdf_page": 108,
+     "printed_page": 108,
+     "y": 365.933,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:10:53+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:10:53+05:30",
+   "section_signal": "III .Write down the equipment required to prepare the following food.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "cookers, stove, gas"
+   },
+   "answer_as_printed": "cookers, stove, gas",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:10:53+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 7 / Difficulty 3) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "a946373850e9c466cc20e932550f9807d13b4fd586aea365657a774ddbbbd3ae",
+   "topic_ids": [
+    "evs-3-07-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-07-s3-q011",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-07",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "5",
+     "text_as_printed": "Categorizes different types of cooking materials and fuels used for cooking."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "To make chapati _____ _____",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-07-s3-q011",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-07-s3-q011",
+     "pdf_page": 33,
+     "printed_page": 33,
+     "y": 518.093,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-07-s3-q011-key",
+     "pdf_page": 108,
+     "printed_page": 108,
+     "y": 387.293,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:10:53+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:10:53+05:30",
+   "section_signal": "III .Write down the equipment required to prepare the following food.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Guarding the barricade"
+   },
+   "answer_as_printed": "Guarding the barricade",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:10:53+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 7 / Difficulty 3) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key text does not address question — 'Guarding the barricade' names no equipment for making chapati; the key's own Kannada line names a rolling pin and a griddle; reviewer",
+     "why_not_corrected": "printed English key stored verbatim; never re-translated at extraction",
+     "suggested": "review — rolling pin, griddle"
+    }
+   ],
+   "content_hash": "bf0eb93816e2226ae64c28b46e6d9feff59089456eb4bd5fffb16f3b78e96998",
+   "topic_ids": [
+    "evs-3-07-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-07-s4-q012",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-07",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "5",
+     "text_as_printed": "Categorizes different types of cooking materials and fuels used for cooking."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Which is your favourite food?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-07-s4-q012",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-07-s4-q012",
+     "pdf_page": 33,
+     "printed_page": 33,
+     "y": 619.226,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-07-s4-q012-key",
+     "pdf_page": 108,
+     "printed_page": 108,
+     "y": 430.04,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:10:53+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:10:53+05:30",
+   "text_as_printed": "Which is your favourite food ?",
+   "section_signal": "IV. Answer in one or two sentences.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "children favourite food."
+   },
+   "answer_as_printed": "children favourite food.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:10:53+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 7 / Difficulty 3) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "a586f560a5cec4302a48cda36ad3bbe3feb9e4d61e34173472a51abcc40f5a61",
+   "topic_ids": [
+    "evs-3-07-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-07-s4-q013",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-07",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "5",
+     "text_as_printed": "Categorizes different types of cooking materials and fuels used for cooking."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Who cooks food in your home?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-07-s4-q013",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-07-s4-q013",
+     "pdf_page": 33,
+     "printed_page": 33,
+     "y": 661.946,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-07-s4-q013-key",
+     "pdf_page": 108,
+     "printed_page": 108,
+     "y": 458.12,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:10:53+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:10:53+05:30",
+   "text_as_printed": "Who cooks food in your home ?",
+   "section_signal": "IV. Answer in one or two sentences.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Mother cooks food in my home ."
+   },
+   "answer_as_printed": "Mother cooks food in my home .",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:10:53+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 7 / Difficulty 3) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "9f4cd61d418f518f80853ed4c619d36feea50d2e410b51c86b420f694690465f",
+   "topic_ids": [
+    "evs-3-07-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-07-s4-q014",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-07",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "5",
+     "text_as_printed": "Categorizes different types of cooking materials and fuels used for cooking."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "How do you help your mother in the kitchen?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-07-s4-q014",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-07-s4-q014",
+     "pdf_page": 33,
+     "printed_page": 33,
+     "y": 704.906,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-07-s4-q014-key",
+     "pdf_page": 108,
+     "printed_page": 108,
+     "y": 483.56,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:10:53+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:10:53+05:30",
+   "text_as_printed": "How do you help your mother in the kitchen ?",
+   "section_signal": "IV. Answer in one or two sentences.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "I bring water, clean vessels, and swob the floor"
+   },
+   "answer_as_printed": "I bring water, clean vessels, and swob the floor",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:10:53+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 7 / Difficulty 3) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "44167a72af108ab09b104a99456ee930c2cb7daba0c96159681c22f6c91efbfb",
+   "topic_ids": [
+    "evs-3-07-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-07-s4-q015",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-07",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "5",
+     "text_as_printed": "Categorizes different types of cooking materials and fuels used for cooking."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "What are the things are needed to prepare lemon juice?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-07-s4-q015",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-07-s4-q015",
+     "pdf_page": 33,
+     "printed_page": 33,
+     "y": 747.626,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-07-s4-q015-key",
+     "pdf_page": 108,
+     "printed_page": 108,
+     "y": 526.52,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:10:53+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:10:53+05:30",
+   "section_signal": "IV. Answer in one or two sentences.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "lemon, sugar, salt, cardamom and if need icecubes"
+   },
+   "answer_as_printed": "lemon, sugar, salt, cardamom and if need icecubes",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:10:53+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 7 / Difficulty 3) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "55e542ac4cd9fd7d9aaec66d8afcbcd23e4b9335eb6cb34c3e997d17742db0f7",
+   "topic_ids": [
+    "evs-3-07-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-07-s5-q016",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-07",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "5",
+     "text_as_printed": "Categorizes different types of cooking materials and fuels used for cooking."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Name three vegetables that are eaten cooked.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-07-s5-q016",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-07-s5-q016",
+     "pdf_page": 34,
+     "printed_page": 34,
+     "y": 116.573,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-07-s5-q016-key",
+     "pdf_page": 108,
+     "printed_page": 108,
+     "y": 568.493,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:10:53+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:10:53+05:30",
+   "section_signal": "V. Answer the following questions in 2-3 sentences.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "carrot. Gourd, tomato"
+   },
+   "answer_as_printed": "carrot. Gourd, tomato",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:10:53+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '2 X 3=6' — M=3 is not the smaller factor (R-E9)"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 7 / Difficulty 3) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "e35f15f61b6e84da0160b12314f08536768596bb4777c23a70821cfac75644ed",
+   "topic_ids": [
+    "evs-3-07-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-07-s5-q017",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-07",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "5",
+     "text_as_printed": "Categorizes different types of cooking materials and fuels used for cooking."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Name three fuels used for cooking.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-07-s5-q017",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-07-s5-q017",
+     "pdf_page": 34,
+     "printed_page": 34,
+     "y": 163.133,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-07-s5-q017-key",
+     "pdf_page": 108,
+     "printed_page": 108,
+     "y": 608.333,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:10:53+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:10:53+05:30",
+   "section_signal": "V. Answer the following questions in 2-3 sentences.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Wood, electricity, gas"
+   },
+   "answer_as_printed": "Wood, electricity, gas",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:10:53+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '2 X 3=6' — M=3 is not the smaller factor (R-E9)"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 7 / Difficulty 3) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "ffd31a6cc39721789653fb5aeb16dc8910fd458d2e41eb24085147330e75a328",
+   "topic_ids": [
+    "evs-3-07-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-07-s6-q018",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-07",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "5",
+     "text_as_printed": "Categorizes different types of cooking materials and fuels used for cooking."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Write the names of 5 things used for cooking in your home.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-07-s6-q018",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-07-s6-q018",
+     "pdf_page": 34,
+     "printed_page": 34,
+     "y": 253.373,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-07-s6-q018-key",
+     "pdf_page": 108,
+     "printed_page": 108,
+     "y": 648.413,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:10:53+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:10:53+05:30",
+   "section_signal": "VI. Answer the following question in 4-5 sentences.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Rice, sugar, salt, pulses,"
+   },
+   "answer_as_printed": "Rice, sugar, salt, pulses,",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:10:53+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '2 X 4=8' — M=4 is not the smaller factor (R-E9)"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 7 / Difficulty 3) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "6d12d7ca263b57d90c81a5ef65be1ce384c62c473bfb17d6ae15f97c634e4460",
+   "topic_ids": [
+    "evs-3-07-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-07-s6-q019",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-07",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "5",
+     "text_as_printed": "Categorizes different types of cooking materials and fuels used for cooking."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Write down any food preparation tips you know.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-07-s6-q019",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-07-s6-q019",
+     "pdf_page": 34,
+     "printed_page": 34,
+     "y": 314.813,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-07-s6-q019-key",
+     "pdf_page": 108,
+     "printed_page": 108,
+     "y": 688.253,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:10:53+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:10:53+05:30",
+   "section_signal": "VI. Answer the following question in 4-5 sentences.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Cook rice with water and a little salt. (Steamed rice)"
+   },
+   "answer_as_printed": "Cook rice with water and a little salt. (Steamed rice)",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:10:53+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '2 X 4=8' — M=4 is not the smaller factor (R-E9)"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 7 / Difficulty 3) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "37faefa93a13d7056716036ab94cd840b553b7a7b63fcad4ffd92680e742d4ac",
+   "topic_ids": [
+    "evs-3-07-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  }
+ ],
+ "pending_summary": {}
+}
