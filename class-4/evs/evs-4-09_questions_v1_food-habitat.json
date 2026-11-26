@@ -1,0 +1,5199 @@
+{
+ "contract_version": "1.7",
+ "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
+ "procedure_file": "extraction_procedure_social_addendum_v1.4_social science Classes 6-10 on top of procedure v2.md",
+ "machine_name": "evs-4-09_questions",
+ "version": 1,
+ "changelog": "v1 extraction — batch-01 — class-4-evs",
+ "amendments_applied": [],
+ "unit_state": "EXTRACTED",
+ "review_ready": false,
+ "count_gate": {
+  "reference": 64,
+  "reference_source": "audited",
+  "extracted": 64,
+  "paired": 62,
+  "flagged": 3,
+  "gaps": [],
+  "duplicated_numbers": [
+   51
+  ],
+  "quota_table": "absent",
+  "second_method": {
+   "method": "independent count of answer-side keys (61 numbered keys + 1 unnumbered match block(s)) + 2 question(s) with no printed key",
+   "extracted": 64,
+   "agrees": true
+  },
+  "pass": true,
+  "note": "No difficulty distribution table is printed in this LBA -> quota_table 'absent' (ruling R-E6). Question side prints label 51 twice (q051, q051b); 64 questions. Answer side 1-25, [match block, 10 rows], 27-62 aligned by printed number (key 51 fits the first q51, key 52 fits q052): q051b and q063 have no key. Difficulty per question: easy 41, average 4, difficult 19, untagged 0."
+ },
+ "extraction": {
+  "source_file": "4thLBA-EVS-EM1.pdf",
+  "source_ref_prefix": "4thLBA-EVS-EM1.pdf",
+  "pdf_pages": [
+   38,
+   39,
+   40,
+   41,
+   42,
+   142,
+   143,
+   144,
+   145
+  ],
+  "printed_page_offset": 0,
+  "method_notes": [
+   "Pages: Q pdf 38 (heading, LO, q1-5) 39-42; A pdf 142 (heading 'Lesson 9 : Food habits', keys 1-12) 143-145.",
+   "Sections: s1 MCQ q1-5; s2 fill q6-15; s3 T/F q16-25 (answer-space dashes removed; q24 prints none); s4 '26. Match the following appropriately (easy)' q26 (10 rows; Q-side labels garbled e)/(j)); s5 one mark q27-36 vsa; s6 two marks q37-45 sa; s7 three marks q46-53 sa (incl. q051b); s8 four marks q54-63 la.",
+   "NUMBERING: label 51 printed twice (pdf 41: '51. Explain the importance of cleanliness…' and '51.Give a comparison of the food of other regions…') -> q051, q051b (v1.4 §14.1). The answer side prints one '51.' whose text fits q051 and continues 52, 53 … fitting q052 onwards by printed number — no displaced band; q051b has no printed key ('no answer printed').",
+   "q34 stem merges a fragment ('do people follow different food habits.') with the question — flagged. q063 refers to a picture of the fair that is not printed — flagged, 'no answer printed'.",
+   "Keys: one-line prose keys verbatim, wrapped prose joined; q48 key a list of 6 printed lines (6 steps); q29, q42, q46, q50, q57 print example/sample answers as printed.",
+   "Transcription: evs_auto.py rules (as evs-4-01) + the overrides in build file build_09.py; marks per ruling R-E5; topic per R-E3."
+  ],
+  "notation_summary": {
+   "render_tokens": 0,
+   "latex_tokens": 0,
+   "damage_flags": []
+  },
+  "excluded_objects": [],
+  "inline_excluded_count": 0,
+  "figure_references": []
+ },
+ "stimuli": [],
+ "questions": [
+  {
+   "id": "evs-4-09-s1-q001",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "This is a protein-rich food.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s1-q001",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s1-q001",
+     "pdf_page": 38,
+     "printed_page": 38,
+     "y": 579.972,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s1-q001-key",
+     "pdf_page": 142,
+     "printed_page": 142,
+     "y": 453.928,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "section_signal": "Choose the correct answers to the following questions and write them",
+   "options": [
+    {
+     "id": "A",
+     "text": "banana"
+    },
+    {
+     "id": "B",
+     "text": "egg"
+    },
+    {
+     "id": "C",
+     "text": "sweet"
+    },
+    {
+     "id": "D",
+     "text": "Vegetables"
+    }
+   ],
+   "answer_as_printed": "B) egg",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "9d03ea311b353f64c25defaae88636e972adb234beb39b6ad2a086a15a2a6925",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s1-q002",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Rice is made from the following grain.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s1-q002",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s1-q002",
+     "pdf_page": 38,
+     "printed_page": 38,
+     "y": 616.982,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s1-q002-key",
+     "pdf_page": 142,
+     "printed_page": 142,
+     "y": 477.958,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "section_signal": "Choose the correct answers to the following questions and write them",
+   "options": [
+    {
+     "id": "A",
+     "text": "Paddy"
+    },
+    {
+     "id": "B",
+     "text": "Wheat"
+    },
+    {
+     "id": "C",
+     "text": "Millet"
+    },
+    {
+     "id": "D",
+     "text": "Corn"
+    }
+   ],
+   "answer_as_printed": "A) Paddy",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "90ad2c1f5c00bb62f1b3f25d8984e461dc6f01e8bd1a472d3d1b207823ae02c2",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s1-q003",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Which is our state festival?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s1-q003",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s1-q003",
+     "pdf_page": 38,
+     "printed_page": 38,
+     "y": 653.752,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s1-q003-key",
+     "pdf_page": 142,
+     "printed_page": 142,
+     "y": 501.708,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "text_as_printed": "Which is our state festival ?",
+   "section_signal": "Choose the correct answers to the following questions and write them",
+   "options": [
+    {
+     "id": "A",
+     "text": "Christmas"
+    },
+    {
+     "id": "B",
+     "text": "Ugadi"
+    },
+    {
+     "id": "C",
+     "text": "Dussehra"
+    },
+    {
+     "id": "D",
+     "text": "Ramadan"
+    }
+   ],
+   "answer_as_printed": "B) Ugadi",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "b790f4b9301c8686f52e914481e1933fdc405430d8cde4154bbd0f3ff7a827d4",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s1-q004",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "A python can live without food for so many years.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s1-q004",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s1-q004",
+     "pdf_page": 38,
+     "printed_page": 38,
+     "y": 690.752,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s1-q004-key",
+     "pdf_page": 142,
+     "printed_page": 142,
+     "y": 525.708,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "section_signal": "Choose the correct answers to the following questions and write them",
+   "options": [
+    {
+     "id": "A",
+     "text": "4 Year"
+    },
+    {
+     "id": "B",
+     "text": "1 Year"
+    },
+    {
+     "id": "C",
+     "text": "2 Year"
+    },
+    {
+     "id": "D",
+     "text": "3 Year"
+    }
+   ],
+   "answer_as_printed": "C) 2 Year",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "fd705a423c00486dcfb2dcd278c203c1e21dda8b5eb18d560d6eddf6ab09669d",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s1-q005",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The vitamin present in rice.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s1-q005",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s1-q005",
+     "pdf_page": 38,
+     "printed_page": 38,
+     "y": 727.782,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s1-q005-key",
+     "pdf_page": 142,
+     "printed_page": 142,
+     "y": 549.728,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "section_signal": "Choose the correct answers to the following questions and write them",
+   "options": [
+    {
+     "id": "A",
+     "text": "B"
+    },
+    {
+     "id": "B",
+     "text": "D"
+    },
+    {
+     "id": "C",
+     "text": "A"
+    },
+    {
+     "id": "D",
+     "text": "C"
+    }
+   ],
+   "answer_as_printed": "A) B",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "4b6db72fa2adcbfd6eb5dc2fc2ae91102d93c1712724453bbf69329b1735aa22",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s2-q006",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The food we eat comes from ______________ and ______________ sources.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s2-q006",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s2-q006",
+     "pdf_page": 39,
+     "printed_page": 39,
+     "y": 117.102,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s2-q006-key",
+     "pdf_page": 142,
+     "printed_page": 142,
+     "y": 601.238,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "section_signal": "Fill in the blanks with appropriate answers",
+   "answer": {
+    "kind": "text",
+    "value": "plant and animal"
+   },
+   "answer_as_printed": "plant and animal",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "11e6ee2661cfb9e2bcf161e2e98c944ea2e7b4fbad707620ff81cb7e410819de",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s2-q007",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "People cooperate by providing ______________, ______________ and ______________ during a group meal.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s2-q007",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s2-q007",
+     "pdf_page": 39,
+     "printed_page": 39,
+     "y": 143.602,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s2-q007-key",
+     "pdf_page": 142,
+     "printed_page": 142,
+     "y": 625.228,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "section_signal": "Fill in the blanks with appropriate answers",
+   "answer": {
+    "kind": "text",
+    "value": "food, plates and water"
+   },
+   "answer_as_printed": "food, plates and water",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "a4d059ca6f4f33ae7d0280cbd935eda3d4210b3202abcaf957ec71282b4ab2a0",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s2-q008",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Midday meal in school is an example of a ______________ feeding.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s2-q008",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s2-q008",
+     "pdf_page": 39,
+     "printed_page": 39,
+     "y": 188.602,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s2-q008-key",
+     "pdf_page": 142,
+     "printed_page": 142,
+     "y": 649.258,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "section_signal": "Fill in the blanks with appropriate answers",
+   "answer": {
+    "kind": "text",
+    "value": "mass"
+   },
+   "answer_as_printed": "mass",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "277979c16825a715ad0a9c3b5f4794d42389c3a8fe9f6b9ded8dba06f1cc1fd1",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s2-q009",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The place where food is cooked should have proper ______________ and ______________",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s2-q009",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s2-q009",
+     "pdf_page": 39,
+     "printed_page": 39,
+     "y": 215.132,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s2-q009-key",
+     "pdf_page": 142,
+     "printed_page": 142,
+     "y": 673.258,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "section_signal": "Fill in the blanks with appropriate answers",
+   "answer": {
+    "kind": "text",
+    "value": "light and air"
+   },
+   "answer_as_printed": "light and air",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "4d84b267e68b82214cee5ab04f0b5aee021801b42868909b8cf8b3ac9eba06bf",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s2-q010",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "People from coastal districts like Mangaluru and Udupi eat ______________ as a special food.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s2-q010",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s2-q010",
+     "pdf_page": 39,
+     "printed_page": 39,
+     "y": 260.132,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s2-q010-key",
+     "pdf_page": 142,
+     "printed_page": 142,
+     "y": 697.258,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "text_as_printed": "People from coastal districts like Mangaluru and Udupi eat ______________ as a special food .",
+   "section_signal": "Fill in the blanks with appropriate answers",
+   "answer": {
+    "kind": "text",
+    "value": "fish"
+   },
+   "answer_as_printed": "fish",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "8f9cbfbb7b3f4de8cade3f65e6694cbf4359654e2503ab595c5a26cc4cdd9ed0",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s2-q011",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "___________ is the main food in North Karnataka districts like Belagavi and Bidar.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s2-q011",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s2-q011",
+     "pdf_page": 39,
+     "printed_page": 39,
+     "y": 305.152,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s2-q011-key",
+     "pdf_page": 142,
+     "printed_page": 142,
+     "y": 721.288,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "section_signal": "Fill in the blanks with appropriate answers",
+   "answer": {
+    "kind": "text",
+    "value": "Jowar"
+   },
+   "answer_as_printed": "Jowar",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "29450b3a47bc05afaf1143001bdd313d5820e0f20489ba4f863e6ef5005e57fa",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s2-q012",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Vitamin B is mostly found in the outer layer of the ______________.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s2-q012",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s2-q012",
+     "pdf_page": 39,
+     "printed_page": 39,
+     "y": 331.402,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s2-q012-key",
+     "pdf_page": 142,
+     "printed_page": 142,
+     "y": 745.283,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "section_signal": "Fill in the blanks with appropriate answers",
+   "answer": {
+    "kind": "text",
+    "value": "rice"
+   },
+   "answer_as_printed": "rice",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "02d5691a69b625ecb2b0bf72d20558a1921ff0cf2d13e87a2494efa4773580d7",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s2-q013",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "If the vegetables are overcooked, the ____________ present in them will be destroyed.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s2-q013",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s2-q013",
+     "pdf_page": 39,
+     "printed_page": 39,
+     "y": 357.902,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s2-q013-key",
+     "pdf_page": 143,
+     "printed_page": 143,
+     "y": 72.588,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "section_signal": "Fill in the blanks with appropriate answers",
+   "answer": {
+    "kind": "text",
+    "value": "vitamins"
+   },
+   "answer_as_printed": "vitamins",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "60cda74a6e55dce8025975f74dd1a86ed8b6ce916e9a7bc4e6be312cb9dc0e20",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s2-q014",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The nutrients of the food are better digested after eating ______________.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s2-q014",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s2-q014",
+     "pdf_page": 39,
+     "printed_page": 39,
+     "y": 402.922,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s2-q014-key",
+     "pdf_page": 143,
+     "printed_page": 143,
+     "y": 96.588,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "section_signal": "Fill in the blanks with appropriate answers",
+   "answer": {
+    "kind": "text",
+    "value": "fruits"
+   },
+   "answer_as_printed": "fruits",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "5f0fc04d4e905d06a191f8b148af7e15b7fded2811545f6d682b862abf14a5e7",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s2-q015",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The place of mass feeding should be ______________ and free from ________________",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s2-q015",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s2-q015",
+     "pdf_page": 39,
+     "printed_page": 39,
+     "y": 429.422,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s2-q015-key",
+     "pdf_page": 143,
+     "printed_page": 143,
+     "y": 120.608,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "section_signal": "Fill in the blanks with appropriate answers",
+   "answer": {
+    "kind": "text",
+    "value": "clean and free from flies"
+   },
+   "answer_as_printed": "clean and free from flies",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "7ae13c5d4b950aa9b92001ef190e4aa3d43f721fd4b9d87c799a2a9a41acc166",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s3-q016",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "A mass dining is multiple people eating together.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s3-q016",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s3-q016",
+     "pdf_page": 39,
+     "printed_page": 39,
+     "y": 482.452,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s3-q016-key",
+     "pdf_page": 143,
+     "printed_page": 143,
+     "y": 172.108,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "text_as_printed": "A mass dining is multiple people eating together. –",
+   "section_signal": "State whether the following statements are true or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "True",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "57d857222da622e326bdf745246ac422191d66af87796faf7d16c4c9503be021",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s3-q017",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Those who cook at a mass feeding should be clean, dressed in clean clothes",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s3-q017",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s3-q017",
+     "pdf_page": 39,
+     "printed_page": 39,
+     "y": 508.952,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s3-q017-key",
+     "pdf_page": 143,
+     "printed_page": 143,
+     "y": 196.108,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "text_as_printed": "Those who cook at a mass feeding should be clean, dressed in clean clothes–",
+   "section_signal": "State whether the following statements are true or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "True",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "900490f3ecf52539ed00abe0471bbc3d61fcb45434b295f69be66869e91080e6",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s3-q018",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Proper lighting and air flow is required in the cooking area.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s3-q018",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s3-q018",
+     "pdf_page": 39,
+     "printed_page": 39,
+     "y": 535.452,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s3-q018-key",
+     "pdf_page": 143,
+     "printed_page": 143,
+     "y": 220.138,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "text_as_printed": "Proper lighting and air flow is required in the cooking area. –",
+   "section_signal": "State whether the following statements are true or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "True",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "0bb25fbfc0262510a0a791d3cf3329a02420585b5de0fd032790d5383d776d60",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s3-q019",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "It is safe to eat food prepared in unclean containers.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s3-q019",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s3-q019",
+     "pdf_page": 39,
+     "printed_page": 39,
+     "y": 561.972,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s3-q019-key",
+     "pdf_page": 143,
+     "printed_page": 143,
+     "y": 243.888,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "text_as_printed": "It is safe to eat food prepared in unclean containers. –",
+   "section_signal": "State whether the following statements are true or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "false"
+   },
+   "answer_as_printed": "False",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "0b73caff11c45387282828a916cc4bd3def76efd095d5195853b4cde79b99afe",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s3-q020",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Eating too much is good for health.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s3-q020",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s3-q020",
+     "pdf_page": 39,
+     "printed_page": 39,
+     "y": 588.472,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s3-q020-key",
+     "pdf_page": 143,
+     "printed_page": 143,
+     "y": 267.888,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "text_as_printed": "Eating too much is good for health. –",
+   "section_signal": "State whether the following statements are true or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "false"
+   },
+   "answer_as_printed": "False",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "ed35c60f3d991eb27d39f9a3553cce979e5f0dc9404ee0f366e4c8fe68c425ee",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s3-q021",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "If fruits are eaten before meals, the nutrients will be better digested.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s3-q021",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s3-q021",
+     "pdf_page": 39,
+     "printed_page": 39,
+     "y": 614.982,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s3-q021-key",
+     "pdf_page": 143,
+     "printed_page": 143,
+     "y": 291.908,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "text_as_printed": "If fruits are eaten before meals, the nutrients will be better digested. –",
+   "section_signal": "State whether the following statements are true or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "True",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "5824b2dfd5d41dc0ac9b6eefbe7d061965d507c6ff3349d40c2b594a41f94814",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s3-q022",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Food habits of people depend on the food items available in that place",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s3-q022",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s3-q022",
+     "pdf_page": 39,
+     "printed_page": 39,
+     "y": 641.502,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s3-q022-key",
+     "pdf_page": 143,
+     "printed_page": 143,
+     "y": 315.908,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "text_as_printed": "Food habits of people depend on the food items available in that place –",
+   "section_signal": "State whether the following statements are true or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "True",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "2cac720ad11b586b1dd16be825a24dcf8e3c1a5b882e99960245a43f16add825",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s3-q023",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Raw or half-cooked vegetables are high in nutrients.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s3-q023",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s3-q023",
+     "pdf_page": 39,
+     "printed_page": 39,
+     "y": 668.002,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s3-q023-key",
+     "pdf_page": 143,
+     "printed_page": 143,
+     "y": 339.908,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "text_as_printed": "Raw or half-cooked vegetables are high in nutrients. –",
+   "section_signal": "State whether the following statements are true or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "True",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "f4ad17a5423b2552139edbbb712c59c200387f512e73703bd4d030626f94a7ff",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s3-q024",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Radish grown in Egypt in 278 B.C was red in colour.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s3-q024",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s3-q024",
+     "pdf_page": 39,
+     "printed_page": 39,
+     "y": 694.502,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s3-q024-key",
+     "pdf_page": 143,
+     "printed_page": 143,
+     "y": 363.908,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "section_signal": "State whether the following statements are true or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "false"
+   },
+   "answer_as_printed": "False",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "28b0480c028c4fd26935e71b848f217adba98b567a1083cea118542d5e5968e4",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s3-q025",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Most of the food we eat is used to keep the body warm.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s3-q025",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s3-q025",
+     "pdf_page": 39,
+     "printed_page": 39,
+     "y": 721.032,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s3-q025-key",
+     "pdf_page": 143,
+     "printed_page": 143,
+     "y": 387.928,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "text_as_printed": "Most of the food we eat is used to keep the body warm. –",
+   "section_signal": "State whether the following statements are true or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "false"
+   },
+   "answer_as_printed": "False",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "5aab5d088b52f2ca55600cdf73429a7f9a2b6a15224186f60c996d140f1eb8d8",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s4-q026",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Match the following appropriately\nA: a) Midday meal; b) Coastal Districts; e) Mass feeding; d) Northern Districts; e) Precautions before dinner; f) Vitamin B; g) Over cooked vegetables; h) Mandya and Mysore; i) Over eating; (j) Radish grown in Egypt in 278 B.C\nB: a) A large group of people eating together; b) ) Corn is the main food.; c) fish is the special food; d) Example of mass feeding; e) Found in the outer layer of rice; f) Clean water, clean utensils, clean place; g) Rice and Ragi; h) Nutrients are destroyed; i) Black; j) ill health",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s4-q026",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s4-q026",
+     "pdf_page": 40,
+     "printed_page": 40,
+     "y": 72.082,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s4-q026-key",
+     "pdf_page": 143,
+     "printed_page": 143,
+     "y": 425.178,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "text_as_printed": "Match the following appropriately (easy) A                                            B a) Midday meal                                   a) A large group of people eating together b) Coastal Districts                             b) ) Corn is the main food. e) Mass feeding                                  c) fish is the special food d) Northern Districts                            d) Example of mass feeding e) Precautions before dinner                     e) Found in the outer layer of rice f) Vitamin B                                     f) Clean water, clean utensils, clean place g) Over cooked vegetables                        g) Rice and Ragi h) Mandya and Mysore                             h) Nutrients are destroyed i) Over eating                                   i) Black (j) Radish grown in Egypt in 278 B.C             j) ill health",
+   "section_signal": "Match the Following",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "Midday meal",
+      "right": "Example of mass feeding"
+     },
+     {
+      "left": "Coastal Districts",
+      "right": "Fish is the special food"
+     },
+     {
+      "left": "Mass feeding",
+      "right": "A large group of people eating together"
+     },
+     {
+      "left": "Northern Districts",
+      "right": "Corn is the main food"
+     },
+     {
+      "left": "Precautions before dinner",
+      "right": "Clean water, clean utensils, clean place"
+     },
+     {
+      "left": "Vitamin B",
+      "right": "Found in the outer layer of rice"
+     },
+     {
+      "left": "Overcooked vegetables",
+      "right": "Nutrients are destroyed"
+     },
+     {
+      "left": "Mandya and Mysore",
+      "right": "Rice and Ragi"
+     },
+     {
+      "left": "Overeating",
+      "right": "Ill health"
+     },
+     {
+      "left": "Radish grown in Egypt in 278 B.C",
+      "right": "Black"
+     }
+    ]
+   },
+   "answer_as_printed": "a) Midday meal — d) Example of mass feeding; b) Coastal Districts — c) Fish is the special food; c) Mass feeding — a) A large group of people eating together; d) Northern Districts — b) Corn is the main food; e) Precautions before dinner — f) Clean water, clean utensils, clean place; f) Vitamin B — e) Found in the outer layer of rice; g) Overcooked vegetables — h) Nutrients are destroyed; h) Mandya and Mysore — g) Rice and Ragi; i) Overeating — j) Ill health; j) Radish grown in Egypt in 278 B.C — i) Black",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed match key (letter + text per row); pairs left/right verbatim from the key (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "d846f52f9b2563c05fb36b1a5119be3df08ecda85129eec78460221c6346d972",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s5-q027",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Where do we get food?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s5-q027",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s5-q027",
+     "pdf_page": 40,
+     "printed_page": 40,
+     "y": 516.452,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s5-q027-key",
+     "pdf_page": 143,
+     "printed_page": 143,
+     "y": 660.008,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "section_signal": "Answer the following questions ( one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "We get food from plants and animals."
+   },
+   "answer_as_printed": "We get food from plants and animals.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "18c12b91716618568b08f1b30fdc21f592ce612f04039dddbdd606acf63bdb4f",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s5-q028",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What is mass feeding?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s5-q028",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s5-q028",
+     "pdf_page": 40,
+     "printed_page": 40,
+     "y": 542.972,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s5-q028-key",
+     "pdf_page": 143,
+     "printed_page": 143,
+     "y": 684.008,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "section_signal": "Answer the following questions ( one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Mass feeding means many people eating together."
+   },
+   "answer_as_printed": "Mass feeding means many people eating together.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "3bc9e7b6edddc5757cd876dac60765ce8df67b7ad3cf14c8fff2f7bd76897645",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s5-q029",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Name one special food prepared in your district?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s5-q029",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s5-q029",
+     "pdf_page": 40,
+     "printed_page": 40,
+     "y": 569.472,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s5-q029-key",
+     "pdf_page": 143,
+     "printed_page": 143,
+     "y": 708.008,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "section_signal": "Answer the following questions ( one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "(Example: Bisi Bele Bath – varies by region)"
+   },
+   "answer_as_printed": "(Example: Bisi Bele Bath – varies by region)",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "2db6a501e72d06467f34f57a2667c5a58f3449043ad981200e6d8e7871dbf5da",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s5-q030",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Who removed the leaves after the meal during the mass feeding?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s5-q030",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s5-q030",
+     "pdf_page": 40,
+     "printed_page": 40,
+     "y": 595.972,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s5-q030-key",
+     "pdf_page": 143,
+     "printed_page": 143,
+     "y": 732.033,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "text_as_printed": "Who removed the leaves after the meal during the mass feeding ?",
+   "section_signal": "Answer the following questions ( one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Volunteers or helpers"
+   },
+   "answer_as_printed": "Volunteers or helpers",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "e0d624f787158ef918e2af44121e6e7d7f24a59d04d942452d4a5fbfe6f663db",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s5-q031",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Which is the most commonly used food in Mangalore and Udupi?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s5-q031",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s5-q031",
+     "pdf_page": 40,
+     "printed_page": 40,
+     "y": 622.472,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s5-q031-key",
+     "pdf_page": 143,
+     "printed_page": 143,
+     "y": 756.033,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "text_as_printed": "Which is the most commonly used food in Mangalore and Udupi ?",
+   "section_signal": "Answer the following questions ( one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Fish and rice"
+   },
+   "answer_as_printed": "Fish and rice",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "209b0de73c3bbbaf319d8a096e7b0f6f8141c916448026f8876d04dd5a367def",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s5-q032",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "From where do we buy the grains to prepare the food at home?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s5-q032",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s5-q032",
+     "pdf_page": 40,
+     "printed_page": 40,
+     "y": 649.002,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s5-q032-key",
+     "pdf_page": 144,
+     "printed_page": 144,
+     "y": 72.588,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "section_signal": "Answer the following questions ( one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "From shops or markets"
+   },
+   "answer_as_printed": "From shops or markets",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "6bfe47dcb6c226aca89ce17d3eb0ef3e7aae23a80ea1f1ac6577b1553c05199d",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s5-q033",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Which is the most commonly used food in northern districts like Belagavi?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s5-q033",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s5-q033",
+     "pdf_page": 40,
+     "printed_page": 40,
+     "y": 675.502,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s5-q033-key",
+     "pdf_page": 144,
+     "printed_page": 144,
+     "y": 96.588,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "section_signal": "Answer the following questions ( one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Jowar or corn"
+   },
+   "answer_as_printed": "Jowar or corn",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "d8df2ed824c0be1902f4d64d30e04459914a91a47e1af3a0333dbb40eb92b9e7",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s5-q034",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "do people follow different food habits.What is the role of volunteers in mass feeding?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s5-q034",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s5-q034",
+     "pdf_page": 40,
+     "printed_page": 40,
+     "y": 702.002,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s5-q034-key",
+     "pdf_page": 144,
+     "printed_page": 144,
+     "y": 120.608,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "section_signal": "Answer the following questions ( one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Yes. Volunteers help in serving, cleaning, and organizing."
+   },
+   "answer_as_printed": "Yes. Volunteers help in serving, cleaning, and organizing.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    },
+    {
+     "issue": "source notation inconsistent — the stem prints a fragment before the question: '34 do people follow different food habits.What is the role of volunteers in mass feeding?'; the key 'Yes. Volunteers help in serving, cleaning, and organizing.' answers both parts",
+     "why_not_corrected": "stem and key kept as printed",
+     "suggested": "review — merged stem"
+    }
+   ],
+   "content_hash": "0f412899b3449cbc1db0ccffc4aada9dc8df4db0e9ce40a549207537d3beb920",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s5-q035",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Why do food habits differ in different regions?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s5-q035",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s5-q035",
+     "pdf_page": 40,
+     "printed_page": 40,
+     "y": 747.027,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s5-q035-key",
+     "pdf_page": 144,
+     "printed_page": 144,
+     "y": 144.608,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "section_signal": "Answer the following questions ( one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Because of climate, crops grown, and traditions."
+   },
+   "answer_as_printed": "Because of climate, crops grown, and traditions.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "f097ad6ee3b50b9e2547c466396c26670745708c19368fb529f4ea91b66f9b74",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s5-q036",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Why is it good to eat half-cooked vegetables?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s5-q036",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s5-q036",
+     "pdf_page": 41,
+     "printed_page": 41,
+     "y": 72.082,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s5-q036-key",
+     "pdf_page": 144,
+     "printed_page": 144,
+     "y": 168.608,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "section_signal": "Answer the following questions ( one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "They are rich in nutrients and easier to digest."
+   },
+   "answer_as_printed": "They are rich in nutrients and easier to digest.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "3ebb801b9b5a45ff47d07c8623c43e53daf1d4a4d598bb4df6cbb2486e24739d",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s6-q037",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Name the stages of production of food in the proper order.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s6-q037",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s6-q037",
+     "pdf_page": 41,
+     "printed_page": 41,
+     "y": 154.602,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s6-q037-key",
+     "pdf_page": 144,
+     "printed_page": 144,
+     "y": 220.138,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "text_as_printed": "Name the stages of production of food in the proper order. (Difficult)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Sowing → Growing → Harvesting → Storing → Cooking"
+   },
+   "answer_as_printed": "Sowing → Growing → Harvesting → Storing → Cooking",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "c5e2fe5dd15591d7eb5ed71148e505ab49bce3b482bb493e7a72a4321c238d6c",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s6-q038",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What precautions are required while cooking during mass feeding?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s6-q038",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s6-q038",
+     "pdf_page": 41,
+     "printed_page": 41,
+     "y": 181.102,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s6-q038-key",
+     "pdf_page": 144,
+     "printed_page": 144,
+     "y": 243.888,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "text_as_printed": "What precautions are required while cooking during mass feeding? (Average)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Use clean water, clean utensils, and keep the area tidy."
+   },
+   "answer_as_printed": "Use clean water, clean utensils, and keep the area tidy.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "379bac29bc59668727d15fe9ce1963a6ed8b8b86e9550f9bac8c9278db89f3f3",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s6-q039",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Why do people follow different food habits?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s6-q039",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s6-q039",
+     "pdf_page": 41,
+     "printed_page": 41,
+     "y": 207.632,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s6-q039-key",
+     "pdf_page": 144,
+     "printed_page": 144,
+     "y": 267.888,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "text_as_printed": "Why do people follow different food habits? (Difficult)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Different foods are grown in different places, so habits differ."
+   },
+   "answer_as_printed": "Different foods are grown in different places, so habits differ.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "08b798ac8c83211cc811806fedb1dc0acbcdac484e18c9b88e63cd622f13fd47",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s6-q040",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What are the important factors that influence food habits in different districts?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s6-q040",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s6-q040",
+     "pdf_page": 41,
+     "printed_page": 41,
+     "y": 234.132,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s6-q040-key",
+     "pdf_page": 144,
+     "printed_page": 144,
+     "y": 291.908,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "text_as_printed": "What are the important factors that influence food habits in different districts? (Easy)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Climate, soil, crops, and water availability."
+   },
+   "answer_as_printed": "Climate, soil, crops, and water availability.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "ea9c515ea32c6c93f258d39836f71b5ea78f2c78360e3e0133983d2c54ab537a",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s6-q041",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What are the steps to be taken to maintain cleanliness in mass feeding?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s6-q041",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s6-q041",
+     "pdf_page": 41,
+     "printed_page": 41,
+     "y": 279.132,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s6-q041-key",
+     "pdf_page": 144,
+     "printed_page": 144,
+     "y": 315.908,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "text_as_printed": "What are the steps to be taken to maintain cleanliness in mass feeding? (Average)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Clean the area, wash hands, cover food, and wear clean clothes."
+   },
+   "answer_as_printed": "Clean the area, wash hands, cover food, and wear clean clothes.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "1f2f009942e2b86b1b43be4bb9639d96e2d906cc1d0d42e508135c9b5bbe0790",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s6-q042",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Explain the special foods prepared at your home during festive occasions.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s6-q042",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s6-q042",
+     "pdf_page": 41,
+     "printed_page": 41,
+     "y": 324.152,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s6-q042-key",
+     "pdf_page": 144,
+     "printed_page": 144,
+     "y": 339.908,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "text_as_printed": "Explain the special foods prepared at your home during festive occasions. (Easy)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Example: Payasam (sweet item) for festivals like Ugadi"
+   },
+   "answer_as_printed": "Example: Payasam (sweet item) for festivals like Ugadi",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "c0a1dd0e70eb01418e3d691c433da64d472552c18f17c9eda9cdd0a5bab072f7",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s6-q043",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "How can food and environment be kept clean in mass feeding?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s6-q043",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s6-q043",
+     "pdf_page": 41,
+     "printed_page": 41,
+     "y": 350.652,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s6-q043-key",
+     "pdf_page": 144,
+     "printed_page": 144,
+     "y": 363.908,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "text_as_printed": "How can food and environment be kept clean in mass feeding? (Average)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Keep surroundings clean, cover food, proper waste disposal."
+   },
+   "answer_as_printed": "Keep surroundings clean, cover food, proper waste disposal.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "ac196f4688a7a25a93e819b3cc3f7db9d08e08e00ac1cf622403fc4e47a95a64",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s6-q044",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What is the meaning of the sentence \"The habit of eating depends on the food available in that area\"?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s6-q044",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s6-q044",
+     "pdf_page": 41,
+     "printed_page": 41,
+     "y": 377.172,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s6-q044-key",
+     "pdf_page": 144,
+     "printed_page": 144,
+     "y": 387.928,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "text_as_printed": "What is the meaning of the sentence \"The habit of eating depends on the food available in that area\"? (Difficult)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "People eat what is grown or available in their region."
+   },
+   "answer_as_printed": "People eat what is grown or available in their region.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "f67e5e0cec6e15b165c649d44aad6a7acfedf350b9d82df548db13d39988fe70",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s6-q045",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Explain how food habits are related to the traditions of a region or family.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s6-q045",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s6-q045",
+     "pdf_page": 41,
+     "printed_page": 41,
+     "y": 422.172,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s6-q045-key",
+     "pdf_page": 144,
+     "printed_page": 144,
+     "y": 411.928,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "text_as_printed": "Explain how food habits are related to the traditions of a region or family. (Difficult)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Food is connected with customs, festivals, and traditions."
+   },
+   "answer_as_printed": "Food is connected with customs, festivals, and traditions.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "ea3b6beb0e0a25683152f51be657a60396e12f2d6c3e7aa532ae12db40799fd1",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s7-q046",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Make a list and compare the food prepared in your house every day with the food prepared during festivals.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s7-q046",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s7-q046",
+     "pdf_page": 41,
+     "printed_page": 41,
+     "y": 496.702,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s7-q046-key",
+     "pdf_page": 144,
+     "printed_page": 144,
+     "y": 463.458,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "text_as_printed": "Make a list and compare the food prepared in your house every day with the food prepared during festivals. (Easy)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Everyday: Rice, sambar, vegetables; Festival: Sweets, vada, payasam"
+   },
+   "answer_as_printed": "Everyday: Rice, sambar, vegetables; Festival: Sweets, vada, payasam",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "43661df05461ba57f06152e73697103f892f931e5f4101aa92293ac7aa13980c",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s7-q047",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Write a short paragraph about your experience of participating in mass feeding at a village festival or fair.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s7-q047",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s7-q047",
+     "pdf_page": 41,
+     "printed_page": 41,
+     "y": 541.722,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s7-q047-key",
+     "pdf_page": 144,
+     "printed_page": 144,
+     "y": 487.458,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "text_as_printed": "Write a short paragraph about your experience of participating in mass feeding at a village festival or fair. (Difficult)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "(Sample answer) I enjoyed serving food and eating with many people. Everyone helped and the food was tasty."
+   },
+   "answer_as_printed": "(Sample answer) I enjoyed serving food and eating with many people. Everyone helped and the food was tasty.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "9bc6071589a74c0b5bf560448fa060624d5e92fe54528650e67d614bfbcf31cf",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s7-q048",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Make a list of 10 food items used in your home and write where are they found.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s7-q048",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s7-q048",
+     "pdf_page": 41,
+     "printed_page": 41,
+     "y": 586.722,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s7-q048-key",
+     "pdf_page": 144,
+     "printed_page": 144,
+     "y": 527.458,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "text_as_printed": "Make a list of 10 food items used in your home and write where are they found. (Easy)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Rice – Field\nDal – Store\nOnion – Market\nTomato – Garden\nMilk – Dairy\nCurd – Home\nBanana – Shop\nOil – Grocery store\nSalt – Shop\nCoconut – Tree"
+   },
+   "answer_as_printed": "Rice – Field\nDal – Store\nOnion – Market\nTomato – Garden\nMilk – Dairy\nCurd – Home\nBanana – Shop\nOil – Grocery store\nSalt – Shop\nCoconut – Tree",
+   "solution_steps": [
+    "Rice – Field",
+    "Dal – Store",
+    "Onion – Market",
+    "Tomato – Garden",
+    "Milk – Dairy",
+    "Curd – Home",
+    "Banana – Shop",
+    "Oil – Grocery store",
+    "Salt – Shop",
+    "Coconut – Tree"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "6da90d230bd0b9d9a4221f30edf4329a3a1f0f324c05bb4c63fd37a4b7d841c3",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s7-q049",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What are the precautions to be taken while having lunch in school?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s7-q049",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s7-q049",
+     "pdf_page": 41,
+     "printed_page": 41,
+     "y": 631.752,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s7-q049-key",
+     "pdf_page": 145,
+     "printed_page": 145,
+     "y": 96.588,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "text_as_printed": "What are the precautions to be taken while having lunch in school? (Average)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Wash hands, sit in line, bring clean plate, don’t waste food."
+   },
+   "answer_as_printed": "Wash hands, sit in line, bring clean plate, don’t waste food.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "fe7266d595b62a4d539afe0eefb2fd466fb505706a0d67ded1bdc3313bc3b80a",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s7-q050",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Compare the festive foods of your and friends' homes.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s7-q050",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s7-q050",
+     "pdf_page": 41,
+     "printed_page": 41,
+     "y": 658.252,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s7-q050-key",
+     "pdf_page": 145,
+     "printed_page": 145,
+     "y": 120.608,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "text_as_printed": "Compare the festive foods of your and friends' homes. (Easy)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "My house: Rice & sweet pongal; Friend’s house: Chapati and halwa"
+   },
+   "answer_as_printed": "My house: Rice & sweet pongal; Friend’s house: Chapati and halwa",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "43d541195611e74559e1a0e567cc36dc9bb24c17be97f266d4a05044ee543df9",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s7-q051",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Explain the importance of cleanliness and how can it be maintained in mass feeding.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s7-q051",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s7-q051",
+     "pdf_page": 41,
+     "printed_page": 41,
+     "y": 684.502,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s7-q051-key",
+     "pdf_page": 145,
+     "printed_page": 145,
+     "y": 144.608,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "text_as_printed": "Explain the importance of cleanliness and how can it be maintained in mass feeding. (Difficult)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Clean cooking, serving, and eating area prevents disease and keeps food safe."
+   },
+   "answer_as_printed": "Clean cooking, serving, and eating area prevents disease and keeps food safe.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "2222d6d63aefd6b1fe9c9dce1768a3747f06938a3b74b4edbc0297f78789297b",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s7-q051b",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Give a comparison of the food of other regions with a description of the special food prepared in your district.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s7-q051b",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s7-q051b",
+     "pdf_page": 41,
+     "printed_page": 41,
+     "y": 729.527,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s7-q051b-key",
+     "pdf_page": 143,
+     "printed_page": 143,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "text_as_printed": "Give a comparison of the food of other regions with a description of the special food prepared in your district. (Difficult)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    },
+    {
+     "issue": "no answer printed",
+     "why_not_corrected": "the answer side prints one '51.' (it answers the first q51, cleanliness in mass feeding) and its '52.' answers q052 — no key is printed for the second printed (51)",
+     "suggested": "key absent — review"
+    }
+   ],
+   "content_hash": "2d2b3f5772659b604c7214fb96107f52a5e24786fb6cf3e6ecfe6054970518fa",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s7-q052",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Identify the differences in the food habits of the people in the coastal areas and the plains.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s7-q052",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s7-q052",
+     "pdf_page": 42,
+     "printed_page": 42,
+     "y": 72.082,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s7-q052-key",
+     "pdf_page": 145,
+     "printed_page": 145,
+     "y": 168.608,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "text_as_printed": "Identify the differences in the food habits of the people in the coastal areas and the plains. (Difficult)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Coastal people eat fish; plains eat grains like jowar or ragi."
+   },
+   "answer_as_printed": "Coastal people eat fish; plains eat grains like jowar or ragi.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "dc062e56c36df5d193451dd5a9d1fa8a7fc704e5285edb9903daeac0f9d3d352",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s7-q053",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What is the benefit of eating fruits before meals?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s7-q053",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s7-q053",
+     "pdf_page": 42,
+     "printed_page": 42,
+     "y": 117.102,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s7-q053-key",
+     "pdf_page": 145,
+     "printed_page": 145,
+     "y": 192.608,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "text_as_printed": "What is the benefit of eating fruits before meals? (Difficult)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Fruits help digestion and give quick energy before meals."
+   },
+   "answer_as_printed": "Fruits help digestion and give quick energy before meals.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "a0285399fdbbfe12b8613eb1e1d35a2f6235380f449bedf43eece8c3b2de709b",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s8-q054",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Explain how the geography and climate of different regions in your district influences food habits.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s8-q054",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s8-q054",
+     "pdf_page": 42,
+     "printed_page": 42,
+     "y": 173.102,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s8-q054-key",
+     "pdf_page": 145,
+     "printed_page": 145,
+     "y": 243.888,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "text_as_printed": "Explain how the geography and climate of different regions in your district influences food habits. (Difficult)",
+   "section_signal": "Answer the following questions (four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "In coastal areas, people eat fish and rice. In dry areas, jowar and bajra are common. This is due to rainfall and soil."
+   },
+   "answer_as_printed": "In coastal areas, people eat fish and rice. In dry areas, jowar and bajra are common. This is due to rainfall and soil.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "f706f634f630df1c2eb7f1ea8e2062fce5c8e344c6746e12d545e26b4890b06e",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s8-q055",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Write a detailed paragraph on the role of mass feeding and the importance of co-operation in village festivals and fairs.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s8-q055",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s8-q055",
+     "pdf_page": 42,
+     "printed_page": 42,
+     "y": 218.132,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s8-q055-key",
+     "pdf_page": 145,
+     "printed_page": 145,
+     "y": 283.888,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "text_as_printed": "Write a detailed paragraph on the role of mass feeding and the importance of co-operation in village festivals and fairs. (Difficult)",
+   "section_signal": "Answer the following questions (four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Mass feeding brings people together. Everyone helps – cooking, serving, cleaning. It builds friendship and unity."
+   },
+   "answer_as_printed": "Mass feeding brings people together. Everyone helps – cooking, serving, cleaning. It builds friendship and unity.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "4c4bcb80586ac0b0f7944b6d2271732941b1bb66a209339d25e3cd20e121bdea",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s8-q056",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Imagine that you are at a fair. Explain the process of cooking, from the collection of materials to the distribution of food. Also include the role of volunteers.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s8-q056",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s8-q056",
+     "pdf_page": 42,
+     "printed_page": 42,
+     "y": 263.122,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s8-q056-key",
+     "pdf_page": 145,
+     "printed_page": 145,
+     "y": 323.908,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "text_as_printed": "Imagine that you are at a fair. Explain the process of cooking, from the collection of materials to the distribution of food. Also include the role of volunteers. (Difficult)",
+   "section_signal": "Answer the following questions (four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Volunteers collect grains, vegetables, and firewood. Cooks prepare meals. Food is served to people in lines. Clean-up is done together."
+   },
+   "answer_as_printed": "Volunteers collect grains, vegetables, and firewood. Cooks prepare meals. Food is served to people in lines. Clean-up is done together.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "a749046a7e409efd969c6ea45b882997a7e78c763632703b6b5c7d9c84b44722",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s8-q057",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Give an introduction to a traditional food in your district. Explain how it is made and why it is special.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s8-q057",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s8-q057",
+     "pdf_page": 42,
+     "printed_page": 42,
+     "y": 308.152,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s8-q057-key",
+     "pdf_page": 145,
+     "printed_page": 145,
+     "y": 363.908,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "text_as_printed": "Give an introduction to a traditional food in your district. Explain how it is made and why it is special. (Difficult)",
+   "section_signal": "Answer the following questions (four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Example: Ragi Mudde ( millet) in Karnataka – made from ragi flour and eaten with sambar. It is healthy and local."
+   },
+   "answer_as_printed": "Example: Ragi Mudde ( millet) in Karnataka – made from ragi flour and eaten with sambar. It is healthy and local.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "fe49de4fde9653e5c503745a47b3012ebb5819c1942804da939b94275e2d01a1",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s8-q058",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Why is it better to eat fresh or half-cooked vegetables? Write about why overcooking vegetables should be avoided.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s8-q058",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s8-q058",
+     "pdf_page": 42,
+     "printed_page": 42,
+     "y": 353.152,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s8-q058-key",
+     "pdf_page": 145,
+     "printed_page": 145,
+     "y": 403.928,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "text_as_printed": "Why is it better to eat fresh or half-cooked vegetables? Write about why overcooking vegetables should be avoided. (Difficult)",
+   "section_signal": "Answer the following questions (four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Fresh or half-cooked vegetables keep more nutrients. Overcooking destroys vitamins."
+   },
+   "answer_as_printed": "Fresh or half-cooked vegetables keep more nutrients. Overcooking destroys vitamins.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "0861a14dc9f4d4a85d8196a47d374f08347b2f6c655e5545d0e139b08a3203b6",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s8-q059",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Compare the food habits of your district with the food habits of the neighbouring district, including at least two different foods or preparations.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s8-q059",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s8-q059",
+     "pdf_page": 42,
+     "printed_page": 42,
+     "y": 398.172,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s8-q059-key",
+     "pdf_page": 145,
+     "printed_page": 145,
+     "y": 443.928,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "text_as_printed": "Compare the food habits of your district with the food habits of the neighbouring district, including at least two different foods or preparations. (Difficult)",
+   "section_signal": "Answer the following questions (four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "My district: rice & rasam. Neighboring: jowar roti & chutney. Each suits the local crops."
+   },
+   "answer_as_printed": "My district: rice & rasam. Neighboring: jowar roti & chutney. Each suits the local crops.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "4177ec74bbe11285b832c9755217365633611b44435f110f282165ae3ce12d81",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s8-q060",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Describe your experience of participating in a fair, festival or community dinner.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s8-q060",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s8-q060",
+     "pdf_page": 42,
+     "printed_page": 42,
+     "y": 443.172,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s8-q060-key",
+     "pdf_page": 145,
+     "printed_page": 145,
+     "y": 483.958,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "text_as_printed": "Describe your experience of participating in a fair, festival or community dinner. (Difficult)",
+   "section_signal": "Answer the following questions (four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "At the fair, I helped in serving food. Many people came. The food was simple and everyone shared."
+   },
+   "answer_as_printed": "At the fair, I helped in serving food. Many people came. The food was simple and everyone shared.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "1c5062765d3e053a70722b1669552516539e8adfd171ffc0a984870fee5ff998",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s8-q061",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Write an essay on the different food habits of your district. Give examples of food that are relevant to your culture.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s8-q061",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s8-q061",
+     "pdf_page": 42,
+     "printed_page": 42,
+     "y": 487.952,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s8-q061-key",
+     "pdf_page": 145,
+     "printed_page": 145,
+     "y": 523.958,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "text_as_printed": "Write an essay on the different food habits of your district. Give examples of food that are relevant to your culture. (Difficult)",
+   "section_signal": "Answer the following questions (four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "In my district, rice and sambar are common. For festivals, we make sweets like laddu and payasam."
+   },
+   "answer_as_printed": "In my district, rice and sambar are common. For festivals, we make sweets like laddu and payasam.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "ae91d55ae8ba27ce72631b28ea68ee0314f059949547532890c1961daf490d17",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s8-q062",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What is the role of the community in mass feeding during festivals? Write about the contributions made by the community.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s8-q062",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s8-q062",
+     "pdf_page": 42,
+     "printed_page": 42,
+     "y": 532.952,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s8-q062-key",
+     "pdf_page": 145,
+     "printed_page": 145,
+     "y": 563.728,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "text_as_printed": "What is the role of the community in mass feeding during festivals? Write about the contributions made by the community. (Difficult)",
+   "section_signal": "Answer the following questions (four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "The community helps in arranging food, serving, and cleaning. Cooperation makes mass feeding successful."
+   },
+   "answer_as_printed": "The community helps in arranging food, serving, and cleaning. Cooperation makes mass feeding successful.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:14:45+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "cc9e03e2785e5befde0072e515cc372890491c4107426adda9ff2ee94f7091e2",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-09-s8-q063",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-09",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Look at the picture of the fair and write a short note on it.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s8-q063",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s8-q063",
+     "pdf_page": 42,
+     "printed_page": 42,
+     "y": 577.972,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-09-s8-q063-key",
+     "pdf_page": 143,
+     "printed_page": 143,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:14:45+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:14:45+05:30",
+   "text_as_printed": "Look at the picture of the fair and write a short note on it. (Difficult)",
+   "section_signal": "Answer the following questions (four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 6 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    },
+    {
+     "issue": "no answer printed",
+     "why_not_corrected": "the answer side ends at key 62 (pdf 145); no key, and the picture the stem refers to is not printed",
+     "suggested": "key absent — review"
+    },
+    {
+     "issue": "source notation inconsistent — figure referenced but not printed: 'Look at the picture of the fair' (pdf 42 has no picture; pdfimages lists none)",
+     "why_not_corrected": "a picture that is not printed cannot be cropped; nothing is described in its place (prompt §1 types)",
+     "suggested": "review — picture missing from the LBA"
+    }
+   ],
+   "content_hash": "a18e64ee4c54db37a5ede55e7600c6074e2bea6f1c4fc8d7079700ecbe98ee3d",
+   "topic_ids": [
+    "evs-4-09-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  }
+ ],
+ "pending_summary": {}
+}
