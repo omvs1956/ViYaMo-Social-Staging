@@ -1,0 +1,1876 @@
+{
+ "contract_version": "1.7",
+ "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
+ "procedure_file": "extraction_procedure_social_addendum_v1.4_social science Classes 6-10 on top of procedure v2.md",
+ "machine_name": "evs-3-23_questions",
+ "version": 1,
+ "changelog": "v1 extraction — batch-01 — class-3-evs",
+ "amendments_applied": [],
+ "unit_state": "EXTRACTED",
+ "review_ready": false,
+ "count_gate": {
+  "reference": 20,
+  "reference_source": "audited",
+  "extracted": 20,
+  "paired": 20,
+  "flagged": 7,
+  "gaps": [],
+  "duplicated_numbers": [],
+  "quota_table": "difficulty_only",
+  "second_method": {
+   "method": "printed BLUE PRINT difficulty table total (Easy 9 + Average 7 + Difficulty 4 = 20), pdf 89; independently, the answer side's keys counted",
+   "extracted": 20,
+   "agrees": true
+  },
+  "pass": true,
+  "note": "Question side labels 1-20 monotonic, no gaps, no duplicates (I 1-5, II 6-10, III 11-15, IV 16-20). Answer side keys 1-20 in order (pdf 126-127). BLUE PRINT 9/7/4 = 20 = audited count. Difficulty per question: easy 0, average 0, difficult 0, untagged 20."
+ },
+ "extraction": {
+  "source_file": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf",
+  "source_ref_prefix": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf",
+  "pdf_pages": [
+   89,
+   90,
+   91,
+   126,
+   127
+  ],
+  "printed_page_offset": 0,
+  "method_notes": [
+   "Pages: Q pdf 89 (heading, LO 13, BLUE PRINT, q1-3) 90 (q4-13) 91 (q13 options-20). A side 'Sample answers. 23. The Earth - Our Home' pdf 126 (keys 1-19), pdf 127 top (20). Folios = pdf page.",
+   "ANSWER SIDE (analysed first): keys 1-20 answer q1-q20 by printed number (aligned).",
+   "Sections: s1 I fill q1-5; s2 II match q6-10 (numbered rows -> one-pair match; row 10's left item 'Shape of the Earth' is also printed in column B and the key pairs it with itself — as printed); s3 III mcq q11-15 (three options -> 'source notation inconsistent'; text-only keys all match by pass 1); s4 IV q16-20.",
+   "MARKS (R-E9, rev 3): s1-s3 1; s4 '5*2=10' -> 2.",
+   "KEYS: q17's key is garbled by machine translation ('…comes.PoetThe cloud is moving. PoeticIt seems dark … Appear') — stored verbatim, unflagged (it addresses the question in part). q19: the stem's 'earthworm \"Ghola\"' renders the word for globe; the key describes a sphere -> 'key text does not address question' (review-blocking; the stem is the likely defect). q20 (draw a sphere model) key is an instruction 'Children They draw a picture of the earth according to their own discretion.' -> stored verbatim (as the cleared Class-4 instruction key).",
+   "DIFFICULTY: none printed -> null + 'no difficulty tag'. quota_table difficulty_only; second method = BLUE PRINT total 20 (agrees). LO (R-E10): lesson LO 13, lo_source 'lesson_table'.",
+   "FIGURES: none on these pages; q20 asks to draw a sphere (not a map; no map rulings). TOPIC evs-3-23-t00 / chapter / high (R-E3)."
+  ],
+  "notation_summary": {
+   "render_tokens": 0,
+   "latex_tokens": 0,
+   "damage_flags": []
+  },
+  "excluded_objects": [],
+  "inline_excluded_count": 0,
+  "figure_references": []
+ },
+ "stimuli": [],
+ "questions": [
+  {
+   "id": "evs-3-23-s1-q001",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-23",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "Draws sketches of the Immediate surroundings Identify the directions, Locates the places."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "The shape of the Earth is like a ____________ fruit.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-23-s1-q001",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-23-s1-q001",
+     "pdf_page": 89,
+     "printed_page": 89,
+     "y": 591.533,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-23-s1-q001-key",
+     "pdf_page": 126,
+     "printed_page": 126,
+     "y": 216.173,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:38:21+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:38:21+05:30",
+   "section_signal": "I. Fill in the blank:",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Orange"
+   },
+   "answer_as_printed": "Orange",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:38:21+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 9 / Average 7 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "5656b06ad971bf5a7d482a1f821d8ff327799786f75e8883fefe1752a15061b2",
+   "topic_ids": [
+    "evs-3-23-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-23-s1-q002",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-23",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "Draws sketches of the Immediate surroundings Identify the directions, Locates the places."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "The sun rises in the direction of __________________.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-23-s1-q002",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-23-s1-q002",
+     "pdf_page": 89,
+     "printed_page": 89,
+     "y": 649.853,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-23-s1-q002-key",
+     "pdf_page": 126,
+     "printed_page": 126,
+     "y": 216.173,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:38:21+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:38:21+05:30",
+   "section_signal": "I. Fill in the blank:",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "East"
+   },
+   "answer_as_printed": "East",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:38:21+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 9 / Average 7 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "5896a62d6b7deeb0db180e9f8374ab35132c66df9a2a757f9124bd4bbfa8cb09",
+   "topic_ids": [
+    "evs-3-23-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-23-s1-q003",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-23",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "Draws sketches of the Immediate surroundings Identify the directions, Locates the places."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "We live on a planet called _______________.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-23-s1-q003",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-23-s1-q003",
+     "pdf_page": 89,
+     "printed_page": 89,
+     "y": 712.826,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-23-s1-q003-key",
+     "pdf_page": 126,
+     "printed_page": 126,
+     "y": 216.173,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:38:21+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:38:21+05:30",
+   "section_signal": "I. Fill in the blank:",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Earth"
+   },
+   "answer_as_printed": "Earth",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:38:21+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 9 / Average 7 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "7e8dcbab23a2281d2f63e9f1d8ca6f3e99108a3445f949bb0d89ffe2c42245c9",
+   "topic_ids": [
+    "evs-3-23-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-23-s1-q004",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-23",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "Draws sketches of the Immediate surroundings Identify the directions, Locates the places."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "The two extreme ends of the Earth are called ____________",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-23-s1-q004",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-23-s1-q004",
+     "pdf_page": 90,
+     "printed_page": 90,
+     "y": 39.293,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-23-s1-q004-key",
+     "pdf_page": 126,
+     "printed_page": 126,
+     "y": 216.173,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:38:21+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:38:21+05:30",
+   "section_signal": "I. Fill in the blank:",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Pole"
+   },
+   "answer_as_printed": "Pole",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:38:21+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 9 / Average 7 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "96871be439aa20006121a6233183db2e470c5eaa12c7a4fd45167024418c300f",
+   "topic_ids": [
+    "evs-3-23-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-23-s1-q005",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-23",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "Draws sketches of the Immediate surroundings Identify the directions, Locates the places."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "The model of the Earth is called _______",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-23-s1-q005",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-23-s1-q005",
+     "pdf_page": 90,
+     "printed_page": 90,
+     "y": 102.266,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-23-s1-q005-key",
+     "pdf_page": 126,
+     "printed_page": 126,
+     "y": 216.173,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:38:21+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:38:21+05:30",
+   "section_signal": "I. Fill in the blank:",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Sphere"
+   },
+   "answer_as_printed": "Sphere",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:38:21+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 9 / Average 7 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "f57bd80bf92b6a734fa631c32837b793052181543aeab524993eb03ba3932309",
+   "topic_ids": [
+    "evs-3-23-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-23-s2-q006",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-23",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "Draws sketches of the Immediate surroundings Identify the directions, Locates the places."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Match the following: East\nB: Direction of sunset; Earth's satellite; Shape of the Earth; Star; Direction of sunrise",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-23-s2-q006",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-23-s2-q006",
+     "pdf_page": 90,
+     "printed_page": 90,
+     "y": 220.493,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-23-s2-q006-key",
+     "pdf_page": 126,
+     "printed_page": 126,
+     "y": 274.493,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:38:21+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:38:21+05:30",
+   "text_as_printed": "East",
+   "section_signal": "II. Match the following:",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "East",
+      "right": "Direction of sunrise"
+     }
+    ]
+   },
+   "answer_as_printed": "6) Direction of sunrise",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:38:21+05:30",
+    "basis": "printed match key: the right-hand value per printed row number; left = that row's column-A item, right = key wording verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 9 / Average 7 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "ba20f22ba886dc20d57158953938ff340c5846a1c80865a03006c03dde9c022a",
+   "topic_ids": [
+    "evs-3-23-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-23-s2-q007",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-23",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "Draws sketches of the Immediate surroundings Identify the directions, Locates the places."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Match the following: West\nB: Direction of sunset; Earth's satellite; Shape of the Earth; Star; Direction of sunrise",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-23-s2-q007",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-23-s2-q007",
+     "pdf_page": 90,
+     "printed_page": 90,
+     "y": 278.813,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-23-s2-q007-key",
+     "pdf_page": 126,
+     "printed_page": 126,
+     "y": 274.493,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:38:21+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:38:21+05:30",
+   "text_as_printed": "West",
+   "section_signal": "II. Match the following:",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "West",
+      "right": "Sunset direction"
+     }
+    ]
+   },
+   "answer_as_printed": "7)Sunset direction",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:38:21+05:30",
+    "basis": "printed match key: the right-hand value per printed row number; left = that row's column-A item, right = key wording verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 9 / Average 7 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "match key value not among column-B items — key 'Sunset direction'; column B prints 'Direction of sunset'",
+     "why_not_corrected": "key text kept as printed (v1.4 §14.8)",
+     "suggested": "Direction of sunset — review"
+    }
+   ],
+   "content_hash": "934f9d1a69b74cbecdb06b711834fbfb3a99d4bf1316c07b0c56d3ea600e16c1",
+   "topic_ids": [
+    "evs-3-23-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-23-s2-q008",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-23",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "Draws sketches of the Immediate surroundings Identify the directions, Locates the places."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Match the following: Sun\nB: Direction of sunset; Earth's satellite; Shape of the Earth; Star; Direction of sunrise",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-23-s2-q008",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-23-s2-q008",
+     "pdf_page": 90,
+     "printed_page": 90,
+     "y": 337.373,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-23-s2-q008-key",
+     "pdf_page": 126,
+     "printed_page": 126,
+     "y": 274.493,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:38:21+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:38:21+05:30",
+   "text_as_printed": "Sun",
+   "section_signal": "II. Match the following:",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "Sun",
+      "right": "Star"
+     }
+    ]
+   },
+   "answer_as_printed": "8)Star",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:38:21+05:30",
+    "basis": "printed match key: the right-hand value per printed row number; left = that row's column-A item, right = key wording verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 9 / Average 7 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "94102f4e90fbf9bc89a5d21839156eb3d4bf4fddb8473b01e494f262a7d75f65",
+   "topic_ids": [
+    "evs-3-23-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-23-s2-q009",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-23",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "Draws sketches of the Immediate surroundings Identify the directions, Locates the places."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Match the following: Moon\nB: Direction of sunset; Earth's satellite; Shape of the Earth; Star; Direction of sunrise",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-23-s2-q009",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-23-s2-q009",
+     "pdf_page": 90,
+     "printed_page": 90,
+     "y": 395.693,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-23-s2-q009-key",
+     "pdf_page": 126,
+     "printed_page": 126,
+     "y": 333.053,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:38:21+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:38:21+05:30",
+   "text_as_printed": "Moon",
+   "section_signal": "II. Match the following:",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "Moon",
+      "right": "Earth's satellite"
+     }
+    ]
+   },
+   "answer_as_printed": "9) Earth's satellite",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:38:21+05:30",
+    "basis": "printed match key: the right-hand value per printed row number; left = that row's column-A item, right = key wording verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 9 / Average 7 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "1760fcf81b48e5477016cc79fc99d6663e9ec1b5058a4f0b0252500f63dae8a9",
+   "topic_ids": [
+    "evs-3-23-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-23-s2-q010",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-23",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "Draws sketches of the Immediate surroundings Identify the directions, Locates the places."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Match the following: Shape of the Earth\nB: Direction of sunset; Earth's satellite; Shape of the Earth; Star; Direction of sunrise",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-23-s2-q010",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-23-s2-q010",
+     "pdf_page": 90,
+     "printed_page": 90,
+     "y": 454.253,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-23-s2-q010-key",
+     "pdf_page": 126,
+     "printed_page": 126,
+     "y": 333.053,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:38:21+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:38:21+05:30",
+   "text_as_printed": "Shape of the Earth",
+   "section_signal": "II. Match the following:",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "Shape of the Earth",
+      "right": "Shape of the Earth"
+     }
+    ]
+   },
+   "answer_as_printed": "10)Shape of the Earth",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:38:21+05:30",
+    "basis": "printed match key: the right-hand value per printed row number; left = that row's column-A item, right = key wording verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 9 / Average 7 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "662ff45b778644db63917b817d444d771f970705279a9140fa134b2616f796da",
+   "topic_ids": [
+    "evs-3-23-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-23-s3-q011",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-23",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "Draws sketches of the Immediate surroundings Identify the directions, Locates the places."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Imaginary lines drawn horizontally on the Earth are __________",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-23-s3-q011",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-23-s3-q011",
+     "pdf_page": 90,
+     "printed_page": 90,
+     "y": 559.133,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-23-s3-q011-key",
+     "pdf_page": 126,
+     "printed_page": 126,
+     "y": 391.373,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:38:21+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:38:21+05:30",
+   "section_signal": "III. Choose the correct answer and write it.",
+   "lo_source": "lesson_table",
+   "options": [
+    {
+     "id": "A",
+     "text": "Longitude"
+    },
+    {
+     "id": "B",
+     "text": "Pole"
+    },
+    {
+     "id": "C",
+     "text": "Latitude"
+    }
+   ],
+   "answer_as_printed": "Latitude",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "source_corrections": [
+    {
+     "field": "answer",
+     "printed": "Latitude",
+     "corrected": "C",
+     "basis": "pass 1"
+    }
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:38:21+05:30",
+    "basis": "printed text-only key matched to its option (addendum §4.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 9 / Average 7 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "source notation inconsistent — the question prints three options (A-C), not four",
+     "why_not_corrected": "options kept as printed (v1.4 option count)",
+     "suggested": "none — as printed"
+    }
+   ],
+   "content_hash": "c395628f7940d33da1ba2d3afbfea4de467568390b39d1b67f72ea6011a32e26",
+   "topic_ids": [
+    "evs-3-23-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-23-s3-q012",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-23",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "Draws sketches of the Immediate surroundings Identify the directions, Locates the places."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Imaginary lines drawn long on the earth_____",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-23-s3-q012",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-23-s3-q012",
+     "pdf_page": 90,
+     "printed_page": 90,
+     "y": 640.346,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-23-s3-q012-key",
+     "pdf_page": 126,
+     "printed_page": 126,
+     "y": 391.373,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:38:21+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:38:21+05:30",
+   "section_signal": "III. Choose the correct answer and write it.",
+   "lo_source": "lesson_table",
+   "options": [
+    {
+     "id": "A",
+     "text": "Latitude"
+    },
+    {
+     "id": "B",
+     "text": "Longitude"
+    },
+    {
+     "id": "C",
+     "text": "West"
+    }
+   ],
+   "answer_as_printed": "Longitude",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "source_corrections": [
+    {
+     "field": "answer",
+     "printed": "Longitude",
+     "corrected": "B",
+     "basis": "pass 1"
+    }
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:38:21+05:30",
+    "basis": "printed text-only key matched to its option (addendum §4.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 9 / Average 7 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "source notation inconsistent — the question prints three options (A-C), not four",
+     "why_not_corrected": "options kept as printed (v1.4 option count)",
+     "suggested": "none — as printed"
+    }
+   ],
+   "content_hash": "9128cc7c521d4a3f8ba38070c6dc0fc2132ecf292bdafc3b637e3d20f04bcefd",
+   "topic_ids": [
+    "evs-3-23-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-23-s3-q013",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-23",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "Draws sketches of the Immediate surroundings Identify the directions, Locates the places."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "___________% of the Earth is covered by water.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-23-s3-q013",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-23-s3-q013",
+     "pdf_page": 90,
+     "printed_page": 90,
+     "y": 740.093,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-23-s3-q013-key",
+     "pdf_page": 126,
+     "printed_page": 126,
+     "y": 391.373,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:38:21+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:38:21+05:30",
+   "section_signal": "III. Choose the correct answer and write it.",
+   "lo_source": "lesson_table",
+   "options": [
+    {
+     "id": "A",
+     "text": "52%."
+    },
+    {
+     "id": "B",
+     "text": "82 %"
+    },
+    {
+     "id": "C",
+     "text": "71%"
+    }
+   ],
+   "answer_as_printed": "71 %",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "source_corrections": [
+    {
+     "field": "answer",
+     "printed": "71 %",
+     "corrected": "C",
+     "basis": "pass 1"
+    }
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:38:21+05:30",
+    "basis": "printed text-only key matched to its option (addendum §4.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 9 / Average 7 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "source notation inconsistent — the question prints three options (A-C), not four",
+     "why_not_corrected": "options kept as printed (v1.4 option count)",
+     "suggested": "none — as printed"
+    }
+   ],
+   "content_hash": "ac15fd6178ee55b3a14cdefc11e236d733124a8c3951213a06322f9eb70cc822",
+   "topic_ids": [
+    "evs-3-23-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-23-s3-q014",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-23",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "Draws sketches of the Immediate surroundings Identify the directions, Locates the places."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "On rainy days, there is a _______ atmosphere around us.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-23-s3-q014",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-23-s3-q014",
+     "pdf_page": 91,
+     "printed_page": 91,
+     "y": 76.253,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-23-s3-q014-key",
+     "pdf_page": 126,
+     "printed_page": 126,
+     "y": 391.373,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:38:21+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:38:21+05:30",
+   "section_signal": "III. Choose the correct answer and write it.",
+   "lo_source": "lesson_table",
+   "options": [
+    {
+     "id": "A",
+     "text": "Cloud"
+    },
+    {
+     "id": "B",
+     "text": "Darkness"
+    },
+    {
+     "id": "C",
+     "text": "Cold"
+    }
+   ],
+   "answer_as_printed": "Cloud",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "source_corrections": [
+    {
+     "field": "answer",
+     "printed": "Cloud",
+     "corrected": "A",
+     "basis": "pass 1"
+    }
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:38:21+05:30",
+    "basis": "printed text-only key matched to its option (addendum §4.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 9 / Average 7 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "source notation inconsistent — the question prints three options (A-C), not four",
+     "why_not_corrected": "options kept as printed (v1.4 option count)",
+     "suggested": "none — as printed"
+    }
+   ],
+   "content_hash": "d40819b4393a19c0799cd8bae8bb03d40890c1edce4d259a49960d1ce0912c0d",
+   "topic_ids": [
+    "evs-3-23-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-23-s3-q015",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-23",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "Draws sketches of the Immediate surroundings Identify the directions, Locates the places."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "There is a ___________ direction between the north and east directions",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-23-s3-q015",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-23-s3-q015",
+     "pdf_page": 91,
+     "printed_page": 91,
+     "y": 174.653,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-23-s3-q015-key",
+     "pdf_page": 126,
+     "printed_page": 126,
+     "y": 391.373,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:38:21+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:38:21+05:30",
+   "section_signal": "III. Choose the correct answer and write it.",
+   "lo_source": "lesson_table",
+   "options": [
+    {
+     "id": "A",
+     "text": "Southeast"
+    },
+    {
+     "id": "B",
+     "text": "North"
+    },
+    {
+     "id": "C",
+     "text": "Northeast"
+    }
+   ],
+   "answer_as_printed": "Northeast",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "source_corrections": [
+    {
+     "field": "answer",
+     "printed": "Northeast",
+     "corrected": "C",
+     "basis": "pass 1"
+    }
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:38:21+05:30",
+    "basis": "printed text-only key matched to its option (addendum §4.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 9 / Average 7 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "source notation inconsistent — the question prints three options (A-C), not four",
+     "why_not_corrected": "options kept as printed (v1.4 option count)",
+     "suggested": "none — as printed"
+    }
+   ],
+   "content_hash": "679cd10a2198c09fb1a2647f97b5395280513c58be39283642498c3e8ee150a3",
+   "topic_ids": [
+    "evs-3-23-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-23-s4-q016",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-23",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "Draws sketches of the Immediate surroundings Identify the directions, Locates the places."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "When we stand facing east, name the directions to our left and right.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-23-s4-q016",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-23-s4-q016",
+     "pdf_page": 91,
+     "printed_page": 91,
+     "y": 331.613,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-23-s4-q016-key",
+     "pdf_page": 126,
+     "printed_page": 126,
+     "y": 449.933,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:38:21+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:38:21+05:30",
+   "section_signal": "IV. Answer the following questions in two or three sentences.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "When we stand facing east, the north direction is on our left side. The south direction is on the right."
+   },
+   "answer_as_printed": "When we stand facing east, the north direction is on our left side. The south direction is on the right.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:38:21+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 9 / Average 7 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "b9bdebb52164261c57114862bc0714556d610a6c057a1577a253324a32f2193e",
+   "topic_ids": [
+    "evs-3-23-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-23-s4-q017",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-23",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "Draws sketches of the Immediate surroundings Identify the directions, Locates the places."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Describe the weather forecast for rain.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-23-s4-q017",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-23-s4-q017",
+     "pdf_page": 91,
+     "printed_page": 91,
+     "y": 414.173,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-23-s4-q017-key",
+     "pdf_page": 126,
+     "printed_page": 126,
+     "y": 529.613,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:38:21+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:38:21+05:30",
+   "section_signal": "IV. Answer the following questions in two or three sentences.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Clouds surround us before the rain comes.PoetThe cloud is moving. PoeticIt seems dark because there are thunder and lightning in the sky. Appear"
+   },
+   "answer_as_printed": "Clouds surround us before the rain comes.PoetThe cloud is moving. PoeticIt seems dark because there are thunder and lightning in the sky. Appear",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:38:21+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 9 / Average 7 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "72b54efc029897b1329f6162c0a7950bca72aae1013d437f1e48fa9110b1fec0",
+   "topic_ids": [
+    "evs-3-23-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-23-s4-q018",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-23",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "Draws sketches of the Immediate surroundings Identify the directions, Locates the places."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Mention the advantages of summer.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-23-s4-q018",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-23-s4-q018",
+     "pdf_page": 91,
+     "printed_page": 91,
+     "y": 472.733,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-23-s4-q018-key",
+     "pdf_page": 126,
+     "printed_page": 126,
+     "y": 649.613,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:38:21+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:38:21+05:30",
+   "section_signal": "IV. Answer the following questions in two or three sentences.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Clothes dry quickly in summer, dry food grains Convenient to store."
+   },
+   "answer_as_printed": "Clothes dry quickly in summer, dry food grains Convenient to store.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:38:21+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 9 / Average 7 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "60eab1933f9f618d569add8e1b98ac188122e5524694e64006a2f0357d330c28",
+   "topic_ids": [
+    "evs-3-23-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-23-s4-q019",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-23",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "Draws sketches of the Immediate surroundings Identify the directions, Locates the places."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "What are the benefits of the earthworm \"Ghola\"?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-23-s4-q019",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-23-s4-q019",
+     "pdf_page": 91,
+     "printed_page": 91,
+     "y": 531.053,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-23-s4-q019-key",
+     "pdf_page": 126,
+     "printed_page": 126,
+     "y": 710.813,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:38:21+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:38:21+05:30",
+   "section_signal": "IV. Answer the following questions in two or three sentences.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "A sphere is a model of the Earth and describes the shape of the Earth and its characteristics. Helps to understand. Earth's waters and continents Helps to understand easily"
+   },
+   "answer_as_printed": "A sphere is a model of the Earth and describes the shape of the Earth and its characteristics. Helps to understand. Earth's waters and continents Helps to understand easily",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:38:21+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 9 / Average 7 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key text does not address question — the English stem asks about 'the earthworm \"Ghola\"'; the key describes a sphere (a model of the Earth): 'Ghola' renders the word for globe, so the English stem is the likely defect; reviewer",
+     "why_not_corrected": "key and stem kept as printed; never re-translated at extraction",
+     "suggested": "review — stem (globe)"
+    }
+   ],
+   "content_hash": "eb10340a9d1f9c82f49a4ed38fced629eab79720aa5da26a7145412b65f34016",
+   "topic_ids": [
+    "evs-3-23-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-23-s4-q020",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-23",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "Draws sketches of the Immediate surroundings Identify the directions, Locates the places."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Draw a model of a sphere and identify the latitude and longitude lines.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-23-s4-q020",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-23-s4-q020",
+     "pdf_page": 91,
+     "printed_page": 91,
+     "y": 589.613,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-23-s4-q020-key",
+     "pdf_page": 127,
+     "printed_page": 127,
+     "y": 103.613,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:38:21+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:38:21+05:30",
+   "section_signal": "IV. Answer the following questions in two or three sentences.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Children They draw a picture of the earth according to their own discretion."
+   },
+   "answer_as_printed": "Children They draw a picture of the earth according to their own discretion.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:38:21+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 9 / Average 7 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "69cd5b21ef4d3ffd050adbb970608a57bbf5d839f18445c8e95795738224c198",
+   "topic_ids": [
+    "evs-3-23-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  }
+ ],
+ "pending_summary": {}
+}
