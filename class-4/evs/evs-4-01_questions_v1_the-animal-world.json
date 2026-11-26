@@ -1,0 +1,5190 @@
+{
+ "contract_version": "1.7",
+ "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
+ "procedure_file": "extraction_procedure_social_addendum_v1.4_social science Classes 6-10 on top of procedure v2.md",
+ "machine_name": "evs-4-01_questions",
+ "version": 1,
+ "changelog": "v1 extraction — batch-01 — class-4-evs",
+ "amendments_applied": [],
+ "unit_state": "EXTRACTED",
+ "review_ready": false,
+ "count_gate": {
+  "reference": 61,
+  "reference_source": "audited",
+  "extracted": 61,
+  "paired": 61,
+  "flagged": 3,
+  "gaps": [],
+  "duplicated_numbers": [],
+  "quota_table": "absent",
+  "second_method": {
+   "method": "independent count of answer-side keys (60 numbered keys 1-28, 30-61 + 1 unnumbered match block under 'Match the Following (Easy):' = q29)",
+   "extracted": 61,
+   "agrees": true
+  },
+  "pass": true,
+  "note": "This LBA prints NO difficulty distribution table (searched all 200 pages) -> quota_table 'absent' (differs from the prompt's pinned 'difficulty_only'; reported at READY). Question side numbered 1-61 monotonic, no gaps, no duplicates; answer side 1-28, [match block], 30-61. Difficulty per question: easy 45, average 1, difficult 15, untagged 0."
+ },
+ "extraction": {
+  "source_file": "4thLBA-EVS-EM1.pdf",
+  "source_ref_prefix": "4thLBA-EVS-EM1.pdf",
+  "pdf_pages": [
+   3,
+   4,
+   5,
+   6,
+   7,
+   106,
+   107,
+   108,
+   109,
+   110,
+   111
+  ],
+  "printed_page_offset": 0,
+  "method_notes": [
+   "Pages: Q side lesson heading pdf 3 (LO list), q1-18 pdf 4, q19-31 pdf 5, q32-55 pdf 6, q56-61 + figure pdf 7. A side: 'Key Answers / Lesson 1' heading pdf 106 (below the end of Lesson 25's question side), keys 1-26 pdf 107, 27-41 pdf 108 (q41 bullets spill to 109), 42-51 pdf 109, 52-58 pdf 110, 59-61 pdf 111. The LBA prints no page folios: printed_page = pdf_page (offset 0) by convention so folio_scan can run.",
+   "Sections (no numerals printed; -sN- by printed order): s1 'Choose the correct answers and write them below (Easy)' q1-10 mcq; s2 'Fill in the blanks with suitable answers (Easy)' q11-20 fill; s3 'State true or false to the following questions (Easy)' q21-28 true_false; s4 '29. Match the Following (Easy)' q29 match (heading printed on the question's own numbered line; the answer side prints it as a section heading with no '29.' label); s5 one mark q30-39 vsa; s6 two marks q40-47 sa; s7 three marks q48-55 sa; s8 four marks q56-61 la (q61 picture-labelling task typed sa by form).",
+   "MARKS: s5-s8 headings print '(one/two/three/four marks questions)' -> marks 1/2/3/4, marks_source 'section_header' (v2 §5, addendum §6.7 printed marks win). This DIFFERS from the prompt's pin 'marks not printed per question in any of the three' and is reported at READY for the coordinator's ruling; s1-s4 print none -> null + 'unassigned' + 'marks ambiguous in source — no marks printed'.",
+   "DIFFICULTY: section-heading tags '(Easy)' on s1, s2, s3, s5 -> difficulty_source 'section_header' (v1.4 §14.7); q29 and q40-61 carry their own tags (q47, q51, q56, q60 wrapped to the next line). No untagged question.",
+   "T/F stems print an answer space ' — (__)' after the statement: removed from text (layout, not content), kept in text_as_printed. Fill blanks kept as printed underscores. Stem spacing before '?'/'.' de-glued in text only (text_as_printed verbatim).",
+   "KEYS: MCQ letter+text, all letters agree with their text except q10 'A) Bull' vs option A 'Bull / Ox' (letter kept, 'key text paraphrases option'). Bullet keys: one step per printed bullet; q50 and q52 print 'Examples: …' on a new line inside the last bullet (kept as a line in answer.value, part of that bullet's step); q47 bullet is one sentence wrapped across two lines (joined). q61 key printed as a bracketed instruction '[For this, student should colour a picture of a fish and label: head, fins, tail, gills, body]' -> stored verbatim.",
+   "MATCH q29: key prints each row as 'left-letter) item  right-letter) item' in a two-column table (pdf 108; wrapped cells read from the render); pairs stored with the key's own wording, letters kept in answer_as_printed. Row i) Hawk -> 'h) Eat the dead animals and keep clean' differs from column-B h) -> flagged. Answer locator y = the 'Match the Following (Easy):' heading.",
+   "FIGURE (v1.4 §14.10 inventory): pdfimages lists 6 embedded images in the whole LBA (pdf 1 logo; pdf 7 q61 fish; pdf 16 L3 q80; pdf 28 L6 q74; pdf 51 L11 q63; pdf 106 L25 q79 Karnataka outline); pdfplumber finds no curves/vector figures; answer side carries none. q61 figure -> stimulus st-evs-4-01-q61 with its crop asset (render 150 dpi, crop_bbox = the image box in PDF points). The crop file sits in images/evs-4-01/stimuli/ because gate 2.20's orphan-image scan only counts question-level assets, and a question-level 'figure' asset is a strict v1.4 FAIL — gate gap reported (no description of the picture is stored, prompt §1 types).",
+   "LO: an 8-bullet unnumbered LO list (pdf 3); no question carries an LO number -> learning_outcomes [] + 'no LO mapped' on every question (prompt §1a). TOPIC: topic_ids ['evs-4-01-t00'], topic_source 'chapter', confidence 'high' (ruling R-E3; EVS map v1 evs-4-01 has exactly one section t00).",
+   "No exam-appearance markers, no Kannada, no shifted/displaced keys. Source typos kept verbatim (q6 'frim', q32 'havan snake', option D 'dog' lower-case)."
+  ],
+  "notation_summary": {
+   "render_tokens": 0,
+   "latex_tokens": 0,
+   "damage_flags": []
+  },
+  "excluded_objects": [],
+  "inline_excluded_count": 0,
+  "figure_references": []
+ },
+ "stimuli": [
+  {
+   "id": "st-evs-4-01-q61",
+   "kind": "figure",
+   "note": "61. Colour the picture of fish given below and label the parts. (Difficult)",
+   "assets": [
+    {
+     "id": "st61",
+     "type": "image",
+     "ref": "images/evs-4-01/stimuli/p007-q61_figure.png",
+     "role": "figure",
+     "source_px": {
+      "w": 1032,
+      "h": 496
+     },
+     "quality": "ok",
+     "caption": "Figure printed below q61, pdf 7 — region render at 150 dpi of the embedded image's box",
+     "pdf_page": 7,
+     "crop_bbox": {
+      "pdf_page": 7,
+      "x0": 72.0,
+      "y0": 268.0,
+      "x1": 567.5,
+      "y1": 505.8
+     }
+    }
+   ],
+   "locators": [
+    {
+     "role": "stimulus",
+     "source_ref": "4thLBA-EVS-EM1.pdf#st-evs-4-01-q61",
+     "pdf_page": 7,
+     "printed_page": 7,
+     "y": 268.0,
+     "derived_from": "render_measured"
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "evs-4-01-s1-q001",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The most intelligent animal in the world.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s1-q001",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s1-q001",
+     "pdf_page": 4,
+     "printed_page": 4,
+     "y": 209.632,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s1-q001-key",
+     "pdf_page": 107,
+     "printed_page": 107,
+     "y": 88.588,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "section_signal": "Choose the correct answers and write them below",
+   "options": [
+    {
+     "id": "A",
+     "text": "Elephant"
+    },
+    {
+     "id": "B",
+     "text": "Wolf"
+    },
+    {
+     "id": "C",
+     "text": "Man"
+    },
+    {
+     "id": "D",
+     "text": "Deer"
+    }
+   ],
+   "answer_as_printed": "C) Man",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "9f5a32f13d6a88438a768070d3af093e829314bde39c6bd617b83a481fa1c2f1",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-01-s1-q002",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Ship of the Desert.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s1-q002",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s1-q002",
+     "pdf_page": 4,
+     "printed_page": 4,
+     "y": 246.632,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s1-q002-key",
+     "pdf_page": 107,
+     "printed_page": 107,
+     "y": 112.588,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "section_signal": "Choose the correct answers and write them below",
+   "options": [
+    {
+     "id": "A",
+     "text": "Horse"
+    },
+    {
+     "id": "B",
+     "text": "Camel"
+    },
+    {
+     "id": "C",
+     "text": "Giraffe"
+    },
+    {
+     "id": "D",
+     "text": "Donkey"
+    }
+   ],
+   "answer_as_printed": "B) Camel",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "fffbf1e226dcd58a84a2198789b0c14611eecd6befde5d3547f358c7f8ad25b9",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-01-s1-q003",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Our National Bird.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s1-q003",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s1-q003",
+     "pdf_page": 4,
+     "printed_page": 4,
+     "y": 283.372,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s1-q003-key",
+     "pdf_page": 107,
+     "printed_page": 107,
+     "y": 136.608,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "section_signal": "Choose the correct answers and write them below",
+   "options": [
+    {
+     "id": "A",
+     "text": "Peacock"
+    },
+    {
+     "id": "B",
+     "text": "Pigeon"
+    },
+    {
+     "id": "C",
+     "text": "Parrot"
+    },
+    {
+     "id": "D",
+     "text": "Shark"
+    }
+   ],
+   "answer_as_printed": "A) Peacock",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "d1c76f928634ac7b3a05848c55d97bd1bd4169814dd0323bb00c404b46b009de",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-01-s1-q004",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The largest animal that lives in water.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s1-q004",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s1-q004",
+     "pdf_page": 4,
+     "printed_page": 4,
+     "y": 320.402,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s1-q004-key",
+     "pdf_page": 107,
+     "printed_page": 107,
+     "y": 160.608,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "section_signal": "Choose the correct answers and write them below",
+   "options": [
+    {
+     "id": "A",
+     "text": "Fish"
+    },
+    {
+     "id": "B",
+     "text": "Blue whale"
+    },
+    {
+     "id": "C",
+     "text": "Shark"
+    },
+    {
+     "id": "D",
+     "text": "Frog"
+    }
+   ],
+   "answer_as_printed": "B) Blue whale",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "d490e38bb2c1a02dfa21a64cea2d225e6db224f5bf73b75d0c791e67d721c196",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-01-s1-q005",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "An example for a carnivorous animal.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s1-q005",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s1-q005",
+     "pdf_page": 4,
+     "printed_page": 4,
+     "y": 357.402,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s1-q005-key",
+     "pdf_page": 107,
+     "printed_page": 107,
+     "y": 184.608,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "section_signal": "Choose the correct answers and write them below",
+   "options": [
+    {
+     "id": "A",
+     "text": "Buffalo"
+    },
+    {
+     "id": "B",
+     "text": "Cow"
+    },
+    {
+     "id": "C",
+     "text": "Lion"
+    },
+    {
+     "id": "D",
+     "text": "Deer"
+    }
+   ],
+   "answer_as_printed": "C) Lion",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "27a4d2208557b60daa5882ef0ca0e646f089503086077a8329a4a348133defb2",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-01-s1-q006",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The animal frim which we get the milk that we consume daily.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s1-q006",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s1-q006",
+     "pdf_page": 4,
+     "printed_page": 4,
+     "y": 394.422,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s1-q006-key",
+     "pdf_page": 107,
+     "printed_page": 107,
+     "y": 208.638,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "section_signal": "Choose the correct answers and write them below",
+   "options": [
+    {
+     "id": "A",
+     "text": "Dog"
+    },
+    {
+     "id": "B",
+     "text": "Cow"
+    },
+    {
+     "id": "C",
+     "text": "Ox"
+    },
+    {
+     "id": "D",
+     "text": "Bull"
+    }
+   ],
+   "answer_as_printed": "B) Cow",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "614d7feb530188efcae0a21a8ddc5d04234fa502a5fb044e98f2e16a559197c9",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-01-s1-q007",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Respiratory organ of fish.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s1-q007",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s1-q007",
+     "pdf_page": 4,
+     "printed_page": 4,
+     "y": 431.422,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s1-q007-key",
+     "pdf_page": 107,
+     "printed_page": 107,
+     "y": 232.388,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "section_signal": "Choose the correct answers and write them below",
+   "options": [
+    {
+     "id": "A",
+     "text": "Gills"
+    },
+    {
+     "id": "B",
+     "text": "Eye"
+    },
+    {
+     "id": "C",
+     "text": "Stomach"
+    },
+    {
+     "id": "D",
+     "text": "Wing"
+    }
+   ],
+   "answer_as_printed": "A) Gills",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "cc489c6a2f8402b51d485b7eba95052d2c280964e79a42ee54241e5d89009ec1",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-01-s1-q008",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The animal that gives us eggs.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s1-q008",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s1-q008",
+     "pdf_page": 4,
+     "printed_page": 4,
+     "y": 468.452,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s1-q008-key",
+     "pdf_page": 107,
+     "printed_page": 107,
+     "y": 256.378,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "section_signal": "Choose the correct answers and write them below",
+   "options": [
+    {
+     "id": "A",
+     "text": "Sheep"
+    },
+    {
+     "id": "B",
+     "text": "Bull"
+    },
+    {
+     "id": "C",
+     "text": "Chicken"
+    },
+    {
+     "id": "D",
+     "text": "dog"
+    }
+   ],
+   "answer_as_printed": "C) Chicken",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "aa5b2b49618b781ce519fdc5fe5b3b9dffdb5e89ba10f4590fdf96246ba30b5c",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-01-s1-q009",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The National Animal Of India.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s1-q009",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s1-q009",
+     "pdf_page": 4,
+     "printed_page": 4,
+     "y": 505.452,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s1-q009-key",
+     "pdf_page": 107,
+     "printed_page": 107,
+     "y": 280.388,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "section_signal": "Choose the correct answers and write them below",
+   "options": [
+    {
+     "id": "A",
+     "text": "Cow"
+    },
+    {
+     "id": "B",
+     "text": "Tiger"
+    },
+    {
+     "id": "C",
+     "text": "Lion"
+    },
+    {
+     "id": "D",
+     "text": "Bear"
+    }
+   ],
+   "answer_as_printed": "B) Tiger",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "ff144bddd7c1973c868a2823cad829bef4ff2c764b03d5041e73a42d9b543c5b",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-01-s1-q010",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "An animal that helps the farmer in agriculture.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s1-q010",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s1-q010",
+     "pdf_page": 4,
+     "printed_page": 4,
+     "y": 542.472,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s1-q010-key",
+     "pdf_page": 107,
+     "printed_page": 107,
+     "y": 304.408,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "section_signal": "Choose the correct answers and write them below",
+   "options": [
+    {
+     "id": "A",
+     "text": "Bull / Ox"
+    },
+    {
+     "id": "B",
+     "text": "Horse"
+    },
+    {
+     "id": "C",
+     "text": "Donkey"
+    },
+    {
+     "id": "D",
+     "text": "Dog"
+    }
+   ],
+   "answer_as_printed": "A) Bull",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    },
+    {
+     "issue": "key text paraphrases option",
+     "why_not_corrected": "letter A kept (addendum §4.1); key text 'Bull' vs option A 'Bull / Ox'",
+     "suggested": "A (letter kept)"
+    }
+   ],
+   "content_hash": "8a08a264c6c3d9530b5fc49fe474bc1632283457279a82e9b4c16ce8f25d564f",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-01-s2-q011",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Fishes live in _____________,",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s2-q011",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s2-q011",
+     "pdf_page": 4,
+     "printed_page": 4,
+     "y": 616.472,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s2-q011-key",
+     "pdf_page": 107,
+     "printed_page": 107,
+     "y": 355.908,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "section_signal": "Fill in the blanks with suitable answers",
+   "answer": {
+    "kind": "text",
+    "value": "water"
+   },
+   "answer_as_printed": "water",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "c65f15b044e8d4b1bb385bcea97f0b3e0a149680bee2812131b304f16fba38d1",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-01-s2-q012",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "____________________ live on trees.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s2-q012",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s2-q012",
+     "pdf_page": 4,
+     "printed_page": 4,
+     "y": 635.002,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s2-q012-key",
+     "pdf_page": 107,
+     "printed_page": 107,
+     "y": 379.928,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "section_signal": "Fill in the blanks with suitable answers",
+   "answer": {
+    "kind": "text",
+    "value": "Monkeys"
+   },
+   "answer_as_printed": "Monkeys",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "f8886f71bb672ef63c4d11254eea3567991327c1f3132f4e1447d7d2db048ba8",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-01-s2-q013",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Animals that eat both plants and meat are called ____________.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s2-q013",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s2-q013",
+     "pdf_page": 4,
+     "printed_page": 4,
+     "y": 653.502,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s2-q013-key",
+     "pdf_page": 107,
+     "printed_page": 107,
+     "y": 403.928,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "section_signal": "Fill in the blanks with suitable answers",
+   "answer": {
+    "kind": "text",
+    "value": "omnivores"
+   },
+   "answer_as_printed": "omnivores",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "2b66752f490bd80854ecdb561a801679a10ae5b72b96c816eb9b7fc364d43393",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-01-s2-q014",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "We get ____________ from cows and___________ from sheep.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s2-q014",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s2-q014",
+     "pdf_page": 4,
+     "printed_page": 4,
+     "y": 671.752,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s2-q014-key",
+     "pdf_page": 107,
+     "printed_page": 107,
+     "y": 427.928,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "section_signal": "Fill in the blanks with suitable answers",
+   "answer": {
+    "kind": "text",
+    "value": "milk, wool"
+   },
+   "answer_as_printed": "milk, wool",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "6942e41662ed8bd86c271798d790d9de52618d5d7394586cfcd7e448eef142a2",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-01-s2-q015",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "_______________ is the national animal of our country.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s2-q015",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s2-q015",
+     "pdf_page": 4,
+     "printed_page": 4,
+     "y": 690.252,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s2-q015-key",
+     "pdf_page": 107,
+     "printed_page": 107,
+     "y": 451.928,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "section_signal": "Fill in the blanks with suitable answers",
+   "answer": {
+    "kind": "text",
+    "value": "Tiger"
+   },
+   "answer_as_printed": "Tiger",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "77677e5d25bcea5d9f15b75a7ec1f5c86310de83360ebb7b02263f8afb9d4cee",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-01-s2-q016",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "_______________ animal is the largest animal in the animal kingdom.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s2-q016",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s2-q016",
+     "pdf_page": 4,
+     "printed_page": 4,
+     "y": 708.752,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s2-q016-key",
+     "pdf_page": 107,
+     "printed_page": 107,
+     "y": 475.958,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "section_signal": "Fill in the blanks with suitable answers",
+   "answer": {
+    "kind": "text",
+    "value": "Blue whale"
+   },
+   "answer_as_printed": "Blue whale",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "42ccb7d786845569712510288fc2d55a1ed0743b4349159992072446bd5aebe1",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-01-s2-q017",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "_______________ is the project started by the Government of India to protect tigers.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s2-q017",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s2-q017",
+     "pdf_page": 4,
+     "printed_page": 4,
+     "y": 727.272,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s2-q017-key",
+     "pdf_page": 107,
+     "printed_page": 107,
+     "y": 499.958,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "section_signal": "Fill in the blanks with suitable answers",
+   "answer": {
+    "kind": "text",
+    "value": "Project Tiger"
+   },
+   "answer_as_printed": "Project Tiger",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "ef99070ac05ab0cd7322e78659e54bdee251a15b93f4109fe51e62032e5fc208",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-01-s2-q018",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "______________ animal eats grass and leaves.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s2-q018",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s2-q018",
+     "pdf_page": 4,
+     "printed_page": 4,
+     "y": 745.777,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s2-q018-key",
+     "pdf_page": 107,
+     "printed_page": 107,
+     "y": 523.958,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "section_signal": "Fill in the blanks with suitable answers",
+   "answer": {
+    "kind": "text",
+    "value": "Goat"
+   },
+   "answer_as_printed": "Goat",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "071491f664cd0b3a645fc2a96e73d8bc730b23a62e0968ae83d5f89ef10bac73",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-01-s2-q019",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "_______________ insects can change their colour at a time when they are in danger.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s2-q019",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s2-q019",
+     "pdf_page": 5,
+     "printed_page": 5,
+     "y": 72.082,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s2-q019-key",
+     "pdf_page": 107,
+     "printed_page": 107,
+     "y": 547.978,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "section_signal": "Fill in the blanks with suitable answers",
+   "answer": {
+    "kind": "text",
+    "value": "Chameleon"
+   },
+   "answer_as_printed": "Chameleon",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    },
+    {
+     "issue": "printed key contradicts fact — a chameleon is a reptile, not an insect; the stem asks for 'insects'; reviewer",
+     "why_not_corrected": "the printed key 'Chameleon' is asserted as printed (v1.4 §14.6); the defect may lie in the stem's word 'insects'; never substituted at extraction",
+     "suggested": "review — stem or key"
+    }
+   ],
+   "content_hash": "1017e632c5539e89a98909a5aa814389956574de70e9ddaf2917da07c4571f58",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-01-s2-q020",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "________________animal runs at a speed of 100 km per hour.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s2-q020",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s2-q020",
+     "pdf_page": 5,
+     "printed_page": 5,
+     "y": 90.582,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s2-q020-key",
+     "pdf_page": 107,
+     "printed_page": 107,
+     "y": 571.728,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "section_signal": "Fill in the blanks with suitable answers",
+   "answer": {
+    "kind": "text",
+    "value": "Cheetah"
+   },
+   "answer_as_printed": "Cheetah",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "0942ba390f6b7dab28027c868a9ca903f95411556c0ecfd3897c269900f58280",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-01-s3-q021",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Birds cannot be considered as animals.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s3-q021",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s3-q021",
+     "pdf_page": 5,
+     "printed_page": 5,
+     "y": 146.102,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s3-q021-key",
+     "pdf_page": 107,
+     "printed_page": 107,
+     "y": 623.228,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "text_as_printed": "Birds cannot be considered as animals. — (__)",
+   "section_signal": "State true or false to the following questions",
+   "answer": {
+    "kind": "option",
+    "option_id": "false"
+   },
+   "answer_as_printed": "False",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "bc05d574e8b7b84a17caacf16c390e68acf25177dc88f04cba368d199f01a3f6",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-01-s3-q022",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Cow and buffalo give us milk.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s3-q022",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s3-q022",
+     "pdf_page": 5,
+     "printed_page": 5,
+     "y": 172.602,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s3-q022-key",
+     "pdf_page": 107,
+     "printed_page": 107,
+     "y": 647.258,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "text_as_printed": "Cow and buffalo give us milk. — (__)",
+   "section_signal": "State true or false to the following questions",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "True",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "4de0362337edc5e3987167b1f876505fd5414acea4b564023f20d1f419a76259",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-01-s3-q023",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "A rabbit is larger than a cow.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s3-q023",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s3-q023",
+     "pdf_page": 5,
+     "printed_page": 5,
+     "y": 199.132,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s3-q023-key",
+     "pdf_page": 107,
+     "printed_page": 107,
+     "y": 671.258,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "text_as_printed": "A rabbit is larger than a cow. — (__)",
+   "section_signal": "State true or false to the following questions",
+   "answer": {
+    "kind": "option",
+    "option_id": "false"
+   },
+   "answer_as_printed": "False",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "0622787458759feb5a0f6bc0f3909587b8cacf3f0d8c415ac35bd0a1696b33eb",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-01-s3-q024",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Oxen are used to plough the field.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s3-q024",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s3-q024",
+     "pdf_page": 5,
+     "printed_page": 5,
+     "y": 225.632,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s3-q024-key",
+     "pdf_page": 107,
+     "printed_page": 107,
+     "y": 695.258,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "text_as_printed": "Oxen are used to plough the field. — (__)",
+   "section_signal": "State true or false to the following questions",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "True",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "93b6bdbd2032becb5af379f8ca5e87d9365ba004ff97da3b9ddc3ad77f0d10b7",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-01-s3-q025",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Bees lay eggs.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s3-q025",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s3-q025",
+     "pdf_page": 5,
+     "printed_page": 5,
+     "y": 252.132,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s3-q025-key",
+     "pdf_page": 107,
+     "printed_page": 107,
+     "y": 719.278,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "text_as_printed": "Bees lay eggs. — (__)",
+   "section_signal": "State true or false to the following questions",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "True",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "c0869372a860d9b409a5e368e7b42d217b37b339e950d0d0d5efd942ae30c3a7",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-01-s3-q026",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Vultures eat the dead animals and keep the environment clean.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s3-q026",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s3-q026",
+     "pdf_page": 5,
+     "printed_page": 5,
+     "y": 278.622,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s3-q026-key",
+     "pdf_page": 107,
+     "printed_page": 107,
+     "y": 743.283,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "text_as_printed": "Vultures eat the dead animals and keep the environment clean. — (__)",
+   "section_signal": "State true or false to the following questions",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "True",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "650d17a9426bd95acc646a4e360ed21c4671564bd0b8866f6ad1055d5a2cb1b4",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-01-s3-q027",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The population of tigers in India is increasing rapidly.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s3-q027",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s3-q027",
+     "pdf_page": 5,
+     "printed_page": 5,
+     "y": 305.152,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s3-q027-key",
+     "pdf_page": 108,
+     "printed_page": 108,
+     "y": 72.588,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "text_as_printed": "The population of tigers in India is increasing rapidly. — (__)",
+   "section_signal": "State true or false to the following questions",
+   "answer": {
+    "kind": "option",
+    "option_id": "false"
+   },
+   "answer_as_printed": "False",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "03d1423a6e0c16d89d386fb6f7e2f1fc2775917c881207e538bf4192ada55f45",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-01-s3-q028",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "We get wool from sheep.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s3-q028",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s3-q028",
+     "pdf_page": 5,
+     "printed_page": 5,
+     "y": 331.402,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s3-q028-key",
+     "pdf_page": 108,
+     "printed_page": 108,
+     "y": 96.588,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "text_as_printed": "We get wool from sheep. — (__)",
+   "section_signal": "State true or false to the following questions",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "True",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "c346c758d593b0d211d31946aaeaaecebfe57378588d6f275bd136bb015b7a73",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-01-s4-q029",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Match the Following\nAnimal: a) cow.; b) sheep.; c) monkey; d) Bee; e) hen; f) fish; g) horse; h) butterfly; i) Hawk; j) bull\nUses: a) wool; b) grass; c) honey; d) eggs.; e) plough the field; f) horse carriage (jutka); g) Eat insects and keep the water clean.; h) eat the dead animals and keep the environment clean; i) small, colorful insect.; j) climb trees and eats fruits.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s4-q029",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s4-q029",
+     "pdf_page": 5,
+     "printed_page": 5,
+     "y": 357.744,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s4-q029-key",
+     "pdf_page": 108,
+     "printed_page": 108,
+     "y": 133.858,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "text_as_printed": "29. Match the Following (Easy)",
+   "section_signal": "Match the Following",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "Cow",
+      "right": "Grass"
+     },
+     {
+      "left": "Sheep",
+      "right": "Wool"
+     },
+     {
+      "left": "Monkey",
+      "right": "Climb trees and eats fruits"
+     },
+     {
+      "left": "Bee",
+      "right": "Honey"
+     },
+     {
+      "left": "Hen",
+      "right": "Eggs"
+     },
+     {
+      "left": "Fish",
+      "right": "Eat insects and keep the water clean"
+     },
+     {
+      "left": "Horse",
+      "right": "Horse carriage (jutka)"
+     },
+     {
+      "left": "Butterfly",
+      "right": "Small, colorful insect"
+     },
+     {
+      "left": "Hawk",
+      "right": "Eat the dead animals and keep clean"
+     },
+     {
+      "left": "Bull",
+      "right": "Plough the field"
+     }
+    ]
+   },
+   "answer_as_printed": "a) Cow — b) Grass; b) Sheep — a) Wool; c) Monkey — j) Climb trees and eats fruits; d) Bee — c) Honey; e) Hen — d) Eggs; f) Fish — g) Eat insects and keep the water clean; g) Horse — f) Horse carriage (jutka); h) Butterfly — i) Small, colorful insect; i) Hawk — h) Eat the dead animals and keep clean; j) Bull — e) Plough the field",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed match key (letter + text per row); pairs left/right verbatim from the key (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    },
+    {
+     "issue": "match key value not among column-B items — key row i) Hawk -> 'h) Eat the dead animals and keep clean'; column B prints h) 'eat the dead animals and keep the environment clean'",
+     "why_not_corrected": "key text kept as printed (v1.4 §14.8); the printed letter h names the column-B item",
+     "suggested": "h) eat the dead animals and keep the environment clean (by printed letter) — review"
+    }
+   ],
+   "content_hash": "27eb033619078718878ac6e63c0ba078b8b5738140df67a56bc5e12804a93665",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-01-s5-q030",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Which is the national animal of India?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s5-q030",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s5-q030",
+     "pdf_page": 5,
+     "printed_page": 5,
+     "y": 708.502,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s5-q030-key",
+     "pdf_page": 108,
+     "printed_page": 108,
+     "y": 380.428,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "section_signal": "Answer the following questions (one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Tiger"
+   },
+   "answer_as_printed": "Tiger",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "c9859edd0d87110fc86c5d869d550526300b56bc79af3f1a3fcd35775dcb5b31",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-01-s5-q031",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Which animal can run at a speed of 100 kmph?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s5-q031",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s5-q031",
+     "pdf_page": 5,
+     "printed_page": 5,
+     "y": 735.027,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s5-q031-key",
+     "pdf_page": 108,
+     "printed_page": 108,
+     "y": 404.428,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "section_signal": "Answer the following questions (one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Cheetah"
+   },
+   "answer_as_printed": "Cheetah",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "b142397218e71129fc152900b183fba7864c97c2cdf30bc0b89dcee8d2c1a1fa",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-01-s5-q032",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What does the havan snake do to escape from its enemy?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s5-q032",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s5-q032",
+     "pdf_page": 6,
+     "printed_page": 6,
+     "y": 72.082,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s5-q032-key",
+     "pdf_page": 108,
+     "printed_page": 108,
+     "y": 428.428,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "section_signal": "Answer the following questions (one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Changes its colour and hides"
+   },
+   "answer_as_printed": "Changes its colour and hides",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "8229801e763a229618148fc5182c17742979844a0b5aee0950cc93f3a120a579",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-01-s5-q033",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Which is the largest animal in the world?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s5-q033",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s5-q033",
+     "pdf_page": 6,
+     "printed_page": 6,
+     "y": 98.582,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s5-q033-key",
+     "pdf_page": 108,
+     "printed_page": 108,
+     "y": 452.428,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "section_signal": "Answer the following questions (one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Blue whale"
+   },
+   "answer_as_printed": "Blue whale",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "0de8abd4ab864946e5de93e128a5a81998e7957eca99a02660e83dbb35ac5cc2",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-01-s5-q034",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Name any two animals that live in water.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s5-q034",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s5-q034",
+     "pdf_page": 6,
+     "printed_page": 6,
+     "y": 125.102,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s5-q034-key",
+     "pdf_page": 108,
+     "printed_page": 108,
+     "y": 476.458,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "section_signal": "Answer the following questions (one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Fish, Octopus"
+   },
+   "answer_as_printed": "Fish, Octopus",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "2501e1a36515972b966f4da03d92eb5978b68c32b470c47b0ffc7ed5b4f6d893",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-01-s5-q035",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What are the animals that eat plants and meat called?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s5-q035",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s5-q035",
+     "pdf_page": 6,
+     "printed_page": 6,
+     "y": 151.602,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s5-q035-key",
+     "pdf_page": 108,
+     "printed_page": 108,
+     "y": 500.458,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "text_as_printed": "What are the animals that eat plants and meat called ?",
+   "section_signal": "Answer the following questions (one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Omnivores"
+   },
+   "answer_as_printed": "Omnivores",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "ce628dedfdddeb696cfec84fbd1f2bc7b083fda4ef696642a5630db0ab372210",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-01-s5-q036",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Which insect gives us honey?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s5-q036",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s5-q036",
+     "pdf_page": 6,
+     "printed_page": 6,
+     "y": 178.102,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s5-q036-key",
+     "pdf_page": 108,
+     "printed_page": 108,
+     "y": 524.208,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "section_signal": "Answer the following questions (one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Bee"
+   },
+   "answer_as_printed": "Bee",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "e27875078b8dd09a000a533b3c169cef7599f2943cabafb49b596c0c06e30077",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-01-s5-q037",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What does the cow eat?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s5-q037",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s5-q037",
+     "pdf_page": 6,
+     "printed_page": 6,
+     "y": 204.632,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s5-q037-key",
+     "pdf_page": 108,
+     "printed_page": 108,
+     "y": 548.228,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "section_signal": "Answer the following questions (one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Grass and leaves"
+   },
+   "answer_as_printed": "Grass and leaves",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "b771becc8821f0e8804d84d62ad28d48c867ae18d3b43de73e0678627dab63f9",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-01-s5-q038",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Where do most of the birds live?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s5-q038",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s5-q038",
+     "pdf_page": 6,
+     "printed_page": 6,
+     "y": 231.132,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s5-q038-key",
+     "pdf_page": 108,
+     "printed_page": 108,
+     "y": 572.238,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "text_as_printed": "Where do most of the birds live ?",
+   "section_signal": "Answer the following questions (one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Trees (nests)"
+   },
+   "answer_as_printed": "Trees (nests)",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "5d781f029f9932ed3f9cdb9ff3eb439f9dfe52a9c6024b199278cbc64640e35e",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-01-s5-q039",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Give an example of an animal that eats only plants?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s5-q039",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s5-q039",
+     "pdf_page": 6,
+     "printed_page": 6,
+     "y": 257.632,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s5-q039-key",
+     "pdf_page": 108,
+     "printed_page": 108,
+     "y": 596.228,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "section_signal": "Answer the following questions (one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Goat"
+   },
+   "answer_as_printed": "Goat",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "e9616f66413ff4e45c9e6d3bac06ef9ca1ed5abf0ca00582dad55948a61d7573",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-01-s6-q040",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Mention any two differences between humans and animals?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s6-q040",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s6-q040",
+     "pdf_page": 6,
+     "printed_page": 6,
+     "y": 313.652,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s6-q040-key",
+     "pdf_page": 108,
+     "printed_page": 108,
+     "y": 647.758,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "text_as_printed": "Mention any two differences between humans and animals ? (Difficult)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Humans speak, animals cannot.\nHumans wear clothes, animals do not."
+   },
+   "answer_as_printed": "Humans speak, animals cannot.\nHumans wear clothes, animals do not.",
+   "solution_steps": [
+    "Humans speak, animals cannot.",
+    "Humans wear clothes, animals do not."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "1487613f9d91bd2a943c26af539c516df8f7e954d473dcc4d903e2c009b91da6",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-01-s6-q041",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "How do animals help human beings? Give any two examples.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s6-q041",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s6-q041",
+     "pdf_page": 6,
+     "printed_page": 6,
+     "y": 332.152,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s6-q041-key",
+     "pdf_page": 108,
+     "printed_page": 108,
+     "y": 719.778,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "text_as_printed": "How do animals help human beings? Give any two examples. (Easy)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Cows give milk.\nBulls help in farming."
+   },
+   "answer_as_printed": "Cows give milk.\nBulls help in farming.",
+   "solution_steps": [
+    "Cows give milk.",
+    "Bulls help in farming."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "713347d06eace03ecb4b3fa3c17ebc4ef9c6ed0e61687d3832c7f5da69bbbb7f",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-01-s6-q042",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What are herbivores and carnivores? Give an example for each.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s6-q042",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s6-q042",
+     "pdf_page": 6,
+     "printed_page": 6,
+     "y": 350.652,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s6-q042-key",
+     "pdf_page": 109,
+     "printed_page": 109,
+     "y": 96.588,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "text_as_printed": "What are herbivores and carnivores? Give an example for each. (Average)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Herbivores eat plants (e.g., Cow).\nCarnivores eat meat (e.g., Lion)."
+   },
+   "answer_as_printed": "Herbivores eat plants (e.g., Cow).\nCarnivores eat meat (e.g., Lion).",
+   "solution_steps": [
+    "Herbivores eat plants (e.g., Cow).",
+    "Carnivores eat meat (e.g., Lion)."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "09df8527b7c233b65cec338873c827459fd72ce4446daad7c740fcd13edc8211",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-01-s6-q043",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What are animals that eat plants called?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s6-q043",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s6-q043",
+     "pdf_page": 6,
+     "printed_page": 6,
+     "y": 369.152,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s6-q043-key",
+     "pdf_page": 109,
+     "printed_page": 109,
+     "y": 168.608,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "text_as_printed": "What are animals that eat plants called ? (Easy)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Herbivores are animals that eat only plants products."
+   },
+   "answer_as_printed": "Herbivores are animals that eat only plants products.",
+   "solution_steps": [
+    "Herbivores are animals that eat only plants products."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "1d661387250483f3dc33658707e3a4993af394ba49c4d141d5c9ca2c251d8e68",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-01-s6-q044",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What is the significance and importance of Project Tiger?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s6-q044",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s6-q044",
+     "pdf_page": 6,
+     "printed_page": 6,
+     "y": 387.672,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s6-q044-key",
+     "pdf_page": 109,
+     "printed_page": 109,
+     "y": 216.638,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "text_as_printed": "What is the significance and importance of Project Tiger? (Difficult)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Project Tiger protects tigers. It helps to increase their number and save forests."
+   },
+   "answer_as_printed": "Project Tiger protects tigers. It helps to increase their number and save forests.",
+   "solution_steps": [
+    "Project Tiger protects tigers. It helps to increase their number and save forests."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "865c7ee6afd01fa0f8748fba38e700e112c040ad66c533a321374328cf155b60",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-01-s6-q045",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "How does a chameleon keep itself safe?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s6-q045",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s6-q045",
+     "pdf_page": 6,
+     "printed_page": 6,
+     "y": 406.172,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s6-q045-key",
+     "pdf_page": 109,
+     "printed_page": 109,
+     "y": 264.388,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "text_as_printed": "How does a chameleon keep itself safe? (Difficult)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Chameleon changes its colour to hide from enemies."
+   },
+   "answer_as_printed": "Chameleon changes its colour to hide from enemies.",
+   "solution_steps": [
+    "Chameleon changes its colour to hide from enemies."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "b3efde2a2fc0223e102184bd480435f38927bc347115167cd4b33ee869fbda6d",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-01-s6-q046",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What are Omnivores? Give two examples.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s6-q046",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s6-q046",
+     "pdf_page": 6,
+     "printed_page": 6,
+     "y": 424.672,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s6-q046-key",
+     "pdf_page": 109,
+     "printed_page": 109,
+     "y": 312.408,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "text_as_printed": "What are Omnivores? Give two examples. (Easy)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Omnivores eat both plants and meat. Examples: Bear, Human"
+   },
+   "answer_as_printed": "Omnivores eat both plants and meat. Examples: Bear, Human",
+   "solution_steps": [
+    "Omnivores eat both plants and meat. Examples: Bear, Human"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "f5e14ef641cd9153a2fbd239ccdad93cf693f8040cadc9f4767054cf0df92e1f",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-01-s6-q047",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What is meant by interdependence of human beings and animals? Explain.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s6-q047",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s6-q047",
+     "pdf_page": 6,
+     "printed_page": 6,
+     "y": 443.172,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s6-q047-key",
+     "pdf_page": 109,
+     "printed_page": 109,
+     "y": 360.408,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "text_as_printed": "What is meant by interdependence of human beings and animals? Explain. (Difficult)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Humans depend on animals for food, work, and transport. Animals depend on humans for care and shelter."
+   },
+   "answer_as_printed": "Humans depend on animals for food, work, and transport. Animals depend on humans for care and shelter.",
+   "solution_steps": [
+    "Humans depend on animals for food, work, and transport. Animals depend on humans for care and shelter."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "d5721f1fe66a59f7cb26f5c925bb8fc5129506d5ea3d469a8740a83d780461a7",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-01-s7-q048",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "In what ways are animals useful to human beings?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s7-q048",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s7-q048",
+     "pdf_page": 6,
+     "printed_page": 6,
+     "y": 508.452,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s7-q048-key",
+     "pdf_page": 109,
+     "printed_page": 109,
+     "y": 451.928,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "text_as_printed": "In what ways are animals useful to human beings? (Difficult)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Animals give us milk, wool, and meat.\nHelp in farming and transport.\nKeep the environment clean."
+   },
+   "answer_as_printed": "Animals give us milk, wool, and meat.\nHelp in farming and transport.\nKeep the environment clean.",
+   "solution_steps": [
+    "Animals give us milk, wool, and meat.",
+    "Help in farming and transport.",
+    "Keep the environment clean."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "43c565d4ef03590da7e29189c29740b57cff772a9bdd3e062088b41f2cfca1e9",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-01-s7-q049",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Compare the habitat, food, and size of a cow and a rabbit?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s7-q049",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s7-q049",
+     "pdf_page": 6,
+     "printed_page": 6,
+     "y": 536.202,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s7-q049-key",
+     "pdf_page": 109,
+     "printed_page": 109,
+     "y": 547.978,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "text_as_printed": "Compare the habitat, food, and size of a cow and a rabbit? (Easy)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Cow lives on land, eats grass, and is big.\nRabbit lives in burrows, eats plants, and it is small."
+   },
+   "answer_as_printed": "Cow lives on land, eats grass, and is big.\nRabbit lives in burrows, eats plants, and it is small.",
+   "solution_steps": [
+    "Cow lives on land, eats grass, and is big.",
+    "Rabbit lives in burrows, eats plants, and it is small."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "8894856ff42fd37bf129d897245543e4f030aa763bb3612223566db3caf08f19",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-01-s7-q050",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What are herbivores? Give two examples?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s7-q050",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s7-q050",
+     "pdf_page": 6,
+     "printed_page": 6,
+     "y": 562.722,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s7-q050-key",
+     "pdf_page": 109,
+     "printed_page": 109,
+     "y": 619.738,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "text_as_printed": "What are herbivores ? Give two examples? (Easy)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Herbivores eat only plants.\nExamples: Cow, Goat"
+   },
+   "answer_as_printed": "Herbivores eat only plants.\nExamples: Cow, Goat",
+   "solution_steps": [
+    "Herbivores eat only plants. Examples: Cow, Goat"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "81864c373908606da0d8519398a6bda364dc20a34bb4cc497b51378d16696d86",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-01-s7-q051",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "How do monkeys, birds and insects help in keeping the nature balanced?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s7-q051",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s7-q051",
+     "pdf_page": 6,
+     "printed_page": 6,
+     "y": 589.222,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s7-q051-key",
+     "pdf_page": 109,
+     "printed_page": 109,
+     "y": 683.758,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "text_as_printed": "How do monkeys, birds and insects help in keeping the nature balanced? (Difficult)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Monkeys spread seeds.\nBirds eat harmful insects.\nInsects help in pollination."
+   },
+   "answer_as_printed": "Monkeys spread seeds.\nBirds eat harmful insects.\nInsects help in pollination.",
+   "solution_steps": [
+    "Monkeys spread seeds.",
+    "Birds eat harmful insects.",
+    "Insects help in pollination."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "613caa758d2fce0dc31770fd27f6a127162cc23a33780cdd5adcea998a051e47",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-01-s7-q052",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What are the characteristics of wild animals? Give examples.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s7-q052",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s7-q052",
+     "pdf_page": 6,
+     "printed_page": 6,
+     "y": 632.502,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s7-q052-key",
+     "pdf_page": 110,
+     "printed_page": 110,
+     "y": 72.588,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "text_as_printed": "What are the characteristics of wild animals? Give examples . (Difficult)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Wild animals live in forests.\nThey find their own food.\nExamples: Tiger, Elephant"
+   },
+   "answer_as_printed": "Wild animals live in forests.\nThey find their own food.\nExamples: Tiger, Elephant",
+   "solution_steps": [
+    "Wild animals live in forests.",
+    "They find their own food. Examples: Tiger, Elephant"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "c5b6b7aac8d9b5006f024f33e08cf58010d850cfe3bfee10fa9c14b86eb82b69",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-01-s7-q053",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What is the role of bees in the environment?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s7-q053",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s7-q053",
+     "pdf_page": 6,
+     "printed_page": 6,
+     "y": 659.002,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s7-q053-key",
+     "pdf_page": 110,
+     "printed_page": 110,
+     "y": 160.608,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "text_as_printed": "What is the role of bees in the environment? (Difficult)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Bees help in pollination.\nThey give us honey.\nThey help plants grow."
+   },
+   "answer_as_printed": "Bees help in pollination.\nThey give us honey.\nThey help plants grow.",
+   "solution_steps": [
+    "Bees help in pollination.",
+    "They give us honey.",
+    "They help plants grow."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "8992614ef127233be6e4dcb89724be1e7bcf5766378a972ae44de80b7da5ea5f",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-01-s7-q054",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Make a list of herbivores and carnivores?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s7-q054",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s7-q054",
+     "pdf_page": 6,
+     "printed_page": 6,
+     "y": 685.502,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s7-q054-key",
+     "pdf_page": 110,
+     "printed_page": 110,
+     "y": 256.378,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "text_as_printed": "Make a list of herbivores and carnivores ? (Easy)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Herbivores: Cow, Goat, Deer\nCarnivores: Lion, Tiger, Wolf"
+   },
+   "answer_as_printed": "Herbivores: Cow, Goat, Deer\nCarnivores: Lion, Tiger, Wolf",
+   "solution_steps": [
+    "Herbivores: Cow, Goat, Deer",
+    "Carnivores: Lion, Tiger, Wolf"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "3170ad54afcc0c954d8eec93a547e56d75e4b5c742aa533d8aa6cda78c62fb86",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-01-s7-q055",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Why do animals change their colour?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s7-q055",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s7-q055",
+     "pdf_page": 6,
+     "printed_page": 6,
+     "y": 712.002,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s7-q055-key",
+     "pdf_page": 110,
+     "printed_page": 110,
+     "y": 328.408,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "text_as_printed": "Why do animals change their colour? (Difficult)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Some animals like chameleon change their colour to hide from enemies."
+   },
+   "answer_as_printed": "Some animals like chameleon change their colour to hide from enemies.",
+   "solution_steps": [
+    "Some animals like chameleon change their colour to hide from enemies."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "1ad900c1838a2eaff1eb0a122324591941aa0b38fe7a8e50daa26bcae149c577",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-01-s8-q056",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Explain the different types of animals based on their consumption of food?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s8-q056",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s8-q056",
+     "pdf_page": 7,
+     "printed_page": 7,
+     "y": 72.082,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s8-q056-key",
+     "pdf_page": 110,
+     "printed_page": 110,
+     "y": 403.928,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "text_as_printed": "Explain the different types of animals based on their consumption of food ? (Difficult)",
+   "section_signal": "Answer the following questions (four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Herbivores: Eat plants and plants products (e.g., Cow, Goat)\nCarnivores: Eat meat (e.g., Lion, Tiger)\nOmnivores: Eat both (e.g., Bear, Human)"
+   },
+   "answer_as_printed": "Herbivores: Eat plants and plants products (e.g., Cow, Goat)\nCarnivores: Eat meat (e.g., Lion, Tiger)\nOmnivores: Eat both (e.g., Bear, Human)",
+   "solution_steps": [
+    "Herbivores: Eat plants and plants products (e.g., Cow, Goat)",
+    "Carnivores: Eat meat (e.g., Lion, Tiger)",
+    "Omnivores: Eat both (e.g., Bear, Human)"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "e121165e480d9dfecc681bc2fc12289459d18157574b36d5ad54725bee7ddbb1",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-01-s8-q057",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Write five uses of animals in human life.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s8-q057",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s8-q057",
+     "pdf_page": 7,
+     "printed_page": 7,
+     "y": 117.102,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s8-q057-key",
+     "pdf_page": 110,
+     "printed_page": 110,
+     "y": 499.958,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "text_as_printed": "Write five uses of animals in human life .(Difficult)",
+   "section_signal": "Answer the following questions (four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "It Gives milk\nIt Gives wool\nHelp in farming\nUsed in transport\nHelp in pollination"
+   },
+   "answer_as_printed": "It Gives milk\nIt Gives wool\nHelp in farming\nUsed in transport\nHelp in pollination",
+   "solution_steps": [
+    "It Gives milk",
+    "It Gives wool",
+    "Help in farming",
+    "Used in transport",
+    "Help in pollination"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "6ad24897aee6bb4f3edf56a5af2aa298de7d16e19acc16c317bb262c0461d3b1",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-01-s8-q058",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Why is it necessary to protect animals?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s8-q058",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s8-q058",
+     "pdf_page": 7,
+     "printed_page": 7,
+     "y": 143.602,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s8-q058-key",
+     "pdf_page": 110,
+     "printed_page": 110,
+     "y": 643.758,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "text_as_printed": "Why is it necessary to protect animals ? (Difficult)",
+   "section_signal": "Answer the following questions (four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Animals keep balance in nature.\nThey help us in many ways.\nIf animals disappear, nature will suffer.\nProtecting them is our duty."
+   },
+   "answer_as_printed": "Animals keep balance in nature.\nThey help us in many ways.\nIf animals disappear, nature will suffer.\nProtecting them is our duty.",
+   "solution_steps": [
+    "Animals keep balance in nature.",
+    "They help us in many ways.",
+    "If animals disappear, nature will suffer.",
+    "Protecting them is our duty."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "9fda9049565f39e2bdf8531b62ad097d39e3cd0d5e94ddfdc5cd890dff493033",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-01-s8-q059",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "List the habitat and food of animals?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s8-q059",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s8-q059",
+     "pdf_page": 7,
+     "printed_page": 7,
+     "y": 170.102,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s8-q059-key",
+     "pdf_page": 111,
+     "printed_page": 111,
+     "y": 72.588,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "text_as_printed": "List the habitat and food of animals ? (Difficult)",
+   "section_signal": "Answer the following questions (four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Lion: Forest, meat\nCow: Villages, grass\nFish: Water, insects\nGoat: Land, leaves"
+   },
+   "answer_as_printed": "Lion: Forest, meat\nCow: Villages, grass\nFish: Water, insects\nGoat: Land, leaves",
+   "solution_steps": [
+    "Lion: Forest, meat",
+    "Cow: Villages, grass",
+    "Fish: Water, insects",
+    "Goat: Land, leaves"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "38d56db67cc04f0d7f305bee6abaa07cbbff30d5d2f04086d105284937e18afb",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-01-s8-q060",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Describe the herbivores, carnivores and omnivorous animals with 2 examples for each.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s8-q060",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s8-q060",
+     "pdf_page": 7,
+     "printed_page": 7,
+     "y": 196.602,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s8-q060-key",
+     "pdf_page": 111,
+     "printed_page": 111,
+     "y": 192.608,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "text_as_printed": "Describe the herbivores, carnivores and omnivorous animals with 2 examples for each. (Difficult)",
+   "section_signal": "Answer the following questions (four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Herbivores: Eat only plants (Cow, Deer)\nCarnivores: Eat only meat (Lion, Tiger)\nOmnivores: Eat both (Bear, Human)"
+   },
+   "answer_as_printed": "Herbivores: Eat only plants (Cow, Deer)\nCarnivores: Eat only meat (Lion, Tiger)\nOmnivores: Eat both (Bear, Human)",
+   "solution_steps": [
+    "Herbivores: Eat only plants (Cow, Deer)",
+    "Carnivores: Eat only meat (Lion, Tiger)",
+    "Omnivores: Eat both (Bear, Human)"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "477f4b679ed52b5c33a973fd90f1bf414f35874bcf53d0239f49ac058d1a8efa",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-01-s8-q061",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-01",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Colour the picture of fish given below and label the parts.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s8-q061",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s8-q061",
+     "pdf_page": 7,
+     "printed_page": 7,
+     "y": 241.632,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-01-s8-q061-key",
+     "pdf_page": 111,
+     "printed_page": 111,
+     "y": 288.408,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:50:36+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:50:36+05:30",
+   "text_as_printed": "Colour the picture of fish given below and label the parts. (Difficult)",
+   "section_signal": "Answer the following questions (four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "[For this, student should colour a picture of a fish and label: head, fins, tail, gills, body]"
+   },
+   "answer_as_printed": "[For this, student should colour a picture of a fish and label: head, fins, tail, gills, body]",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:50:36+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "stimulus_id": "st-evs-4-01-q61",
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "3ff677a66289f986d8935161d038ca35f8e84fb7f25c6eefe82ad7a4a4636e74",
+   "topic_ids": [
+    "evs-4-01-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  }
+ ],
+ "pending_summary": {}
+}
