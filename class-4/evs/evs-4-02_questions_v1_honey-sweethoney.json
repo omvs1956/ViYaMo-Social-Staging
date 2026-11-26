@@ -1,0 +1,5908 @@
+{
+ "contract_version": "1.7",
+ "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
+ "procedure_file": "extraction_procedure_social_addendum_v1.4_social science Classes 6-10 on top of procedure v2.md",
+ "machine_name": "evs-4-02_questions",
+ "version": 1,
+ "changelog": "v1 extraction — batch-01 — class-4-evs",
+ "amendments_applied": [],
+ "unit_state": "EXTRACTED",
+ "review_ready": false,
+ "count_gate": {
+  "reference": 71,
+  "reference_source": "audited",
+  "extracted": 71,
+  "paired": 70,
+  "flagged": 3,
+  "gaps": [],
+  "duplicated_numbers": [],
+  "quota_table": "absent",
+  "second_method": {
+   "method": "independent count of answer-side keys (69 numbered keys + 1 unnumbered match block(s)) + 1 question(s) with no printed key",
+   "extracted": 71,
+   "agrees": true
+  },
+  "pass": true,
+  "note": "No difficulty distribution table is printed in this LBA -> quota_table 'absent' (ruling R-E6). Question side labels 1-71 monotonic, no gaps or duplicates; answer side 1-29, [match block], 31-70; q71 (draw) has no key. Difficulty per question: easy 50, average 3, difficult 17, untagged 1."
+ },
+ "extraction": {
+  "source_file": "4thLBA-EVS-EM1.pdf",
+  "source_ref_prefix": "4thLBA-EVS-EM1.pdf",
+  "pdf_pages": [
+   7,
+   8,
+   9,
+   10,
+   11,
+   111,
+   112,
+   113,
+   114,
+   115
+  ],
+  "printed_page_offset": 0,
+  "method_notes": [
+   "Pages: Q pdf 7 (heading, LO) 8-11; A pdf 111 (heading, keys 1-15) 112-115.",
+   "Sections: s1 MCQ q1-10; s2 fill q11-19; s3 T/F q20-29; s4 '30.Match the Following' q30 (own numbered line; key unnumbered under 'Match the Following:'); s5 one mark q31-45 vsa; s6 two marks q46-52 sa; s7 three marks q53-61 sa; s8 four marks q62-71 la (heading tagged '(difficult)' -> section_header).",
+   "No section heading tag on s1-s7; stems carry their own tags except q6 'Types of Bees' (no tag printed -> null + 'no difficulty tag'). Match q30 prints '(Easy)' on every row -> printed Easy.",
+   "Keys: one-line prose keys stored verbatim (SINGLE), bullet keys one step per bullet; q53, q54, q58 wrapped prose joined.",
+   "q71 'Draw a picture of the bee hive and colour it.' — no key printed -> empty + 'no answer printed'.",
+   "Transcription: evs_auto.py rules (as evs-4-01) + the overrides in build file build_02.py; marks per ruling R-E5; topic per R-E3."
+  ],
+  "notation_summary": {
+   "render_tokens": 0,
+   "latex_tokens": 0,
+   "damage_flags": []
+  },
+  "excluded_objects": [],
+  "inline_excluded_count": 0,
+  "figure_references": []
+ },
+ "stimuli": [],
+ "questions": [
+  {
+   "id": "evs-4-02-s1-q001",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Bees build their house here",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s1-q001",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s1-q001",
+     "pdf_page": 8,
+     "printed_page": 8,
+     "y": 198.882,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s1-q001-key",
+     "pdf_page": 111,
+     "printed_page": 111,
+     "y": 395.069,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "Bees build their house here (Easy)",
+   "section_signal": "Choose the correct answers to the following questions and write them",
+   "options": [
+    {
+     "id": "A",
+     "text": "Branch of a tree"
+    },
+    {
+     "id": "B",
+     "text": "On the ground"
+    },
+    {
+     "id": "C",
+     "text": "In the cave"
+    },
+    {
+     "id": "D",
+     "text": "In water"
+    }
+   ],
+   "answer_as_printed": "A) Branch of a tree",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "7455964f846867ac09e5e70992e44793425f061960139e441791f65c2916bbff",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s1-q002",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The shape of the house of bees is.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s1-q002",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s1-q002",
+     "pdf_page": 8,
+     "printed_page": 8,
+     "y": 235.632,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s1-q002-key",
+     "pdf_page": 111,
+     "printed_page": 111,
+     "y": 417.569,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "The shape of the house of bees is. (Easy)",
+   "section_signal": "Choose the correct answers to the following questions and write them",
+   "options": [
+    {
+     "id": "A",
+     "text": "Circle"
+    },
+    {
+     "id": "B",
+     "text": "Triangle"
+    },
+    {
+     "id": "C",
+     "text": "Rectangle"
+    },
+    {
+     "id": "D",
+     "text": "Hexagon"
+    }
+   ],
+   "answer_as_printed": "D) Hexagon",
+   "answer": {
+    "kind": "option",
+    "option_id": "D"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "af52a4d33aea931acf675db90a9824b20e41611698b4185c13d869dae89d51b2",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s1-q003",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Honey is made by",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s1-q003",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s1-q003",
+     "pdf_page": 8,
+     "printed_page": 8,
+     "y": 272.632,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s1-q003-key",
+     "pdf_page": 111,
+     "printed_page": 111,
+     "y": 440.319,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "Honey is made by (Easy)",
+   "section_signal": "Choose the correct answers to the following questions and write them",
+   "options": [
+    {
+     "id": "A",
+     "text": "bird"
+    },
+    {
+     "id": "B",
+     "text": "Butterfly"
+    },
+    {
+     "id": "C",
+     "text": "Bee"
+    },
+    {
+     "id": "D",
+     "text": "Worm"
+    }
+   ],
+   "answer_as_printed": "C) Bee",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "27add1c572aacbd179cb977fc7107b094c19cc293d6d72ef7e8947713095e685",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s1-q004",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The bee community is called.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s1-q004",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s1-q004",
+     "pdf_page": 8,
+     "printed_page": 8,
+     "y": 309.652,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s1-q004-key",
+     "pdf_page": 111,
+     "printed_page": 111,
+     "y": 463.099,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "The bee community is called. (Easy)",
+   "section_signal": "Choose the correct answers to the following questions and write them",
+   "options": [
+    {
+     "id": "A",
+     "text": "Colony"
+    },
+    {
+     "id": "B",
+     "text": "Pond"
+    },
+    {
+     "id": "C",
+     "text": "horn"
+    },
+    {
+     "id": "D",
+     "text": "Herd"
+    }
+   ],
+   "answer_as_printed": "A) Colony",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "422934ef5802ef869fb4859446b7e2b73d2469cfbad11246a1e94e36115cc0d3",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s1-q005",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Bees make honey from",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s1-q005",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s1-q005",
+     "pdf_page": 8,
+     "printed_page": 8,
+     "y": 346.652,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s1-q005-key",
+     "pdf_page": 111,
+     "printed_page": 111,
+     "y": 485.599,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "Bees make honey from (Easy)",
+   "section_signal": "Choose the correct answers to the following questions and write them",
+   "options": [
+    {
+     "id": "A",
+     "text": "Fruit"
+    },
+    {
+     "id": "B",
+     "text": "water"
+    },
+    {
+     "id": "C",
+     "text": "leaf"
+    },
+    {
+     "id": "D",
+     "text": "Flower"
+    }
+   ],
+   "answer_as_printed": "D) Flower",
+   "answer": {
+    "kind": "option",
+    "option_id": "D"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "109a47d381ba7a093e869cd9b53be880615454d5d941f92afcf3c5a88457bbea",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s1-q006",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Types of Bees",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s1-q006",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s1-q006",
+     "pdf_page": 8,
+     "printed_page": 8,
+     "y": 383.672,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s1-q006-key",
+     "pdf_page": 111,
+     "printed_page": 111,
+     "y": 508.349,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "section_signal": "Choose the correct answers to the following questions and write them",
+   "options": [
+    {
+     "id": "A",
+     "text": "4"
+    },
+    {
+     "id": "B",
+     "text": "1"
+    },
+    {
+     "id": "C",
+     "text": "3"
+    },
+    {
+     "id": "D",
+     "text": "2"
+    }
+   ],
+   "answer_as_printed": "C) 3",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "neither the question nor its section heading prints a difficulty tag; assigning one needs subject judgement",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "69b72a03b6c47b5e7ea392a016d7a7769d29707b1b9dcd86d7302ee2175921be",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s1-q007",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The function of worker bees in a community of bees.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s1-q007",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s1-q007",
+     "pdf_page": 8,
+     "printed_page": 8,
+     "y": 420.672,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s1-q007-key",
+     "pdf_page": 111,
+     "printed_page": 111,
+     "y": 531.099,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "The function of worker bees in a community of bees. (Easy)",
+   "section_signal": "Choose the correct answers to the following questions and write them",
+   "options": [
+    {
+     "id": "A",
+     "text": "Rest"
+    },
+    {
+     "id": "B",
+     "text": "Laying eggs"
+    },
+    {
+     "id": "C",
+     "text": "Food storage"
+    },
+    {
+     "id": "D",
+     "text": "Protection."
+    }
+   ],
+   "answer_as_printed": "C) Food storage",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "935a1ecacffcf76e29df7cc2aba800e0b70cac632841881c4950b2bf8c547bf8",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s1-q008",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The function of the queen bee.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s1-q008",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s1-q008",
+     "pdf_page": 8,
+     "printed_page": 8,
+     "y": 457.702,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s1-q008-key",
+     "pdf_page": 111,
+     "printed_page": 111,
+     "y": 553.619,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "The function of the queen bee. (Easy)",
+   "section_signal": "Choose the correct answers to the following questions and write them",
+   "options": [
+    {
+     "id": "A",
+     "text": "Laying eggs"
+    },
+    {
+     "id": "B",
+     "text": "Honey collection"
+    },
+    {
+     "id": "C",
+     "text": "Building a nest"
+    },
+    {
+     "id": "D",
+     "text": "Protection"
+    }
+   ],
+   "answer_as_printed": "A) Laying eggs",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "d02e6ca82794c27bf1b8d6b7c05183e0495a560be98af6cc25ce8f0cb8ba9f9a",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s1-q009",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The ants have besieged",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s1-q009",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s1-q009",
+     "pdf_page": 8,
+     "printed_page": 8,
+     "y": 494.702,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s1-q009-key",
+     "pdf_page": 111,
+     "printed_page": 111,
+     "y": 576.369,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "The ants have besieged (Easy)",
+   "section_signal": "Choose the correct answers to the following questions and write them",
+   "options": [
+    {
+     "id": "A",
+     "text": "sugar"
+    },
+    {
+     "id": "B",
+     "text": "Candy"
+    },
+    {
+     "id": "C",
+     "text": "Jaggery"
+    },
+    {
+     "id": "D",
+     "text": "Rock sugar"
+    }
+   ],
+   "answer_as_printed": "C) Jaggery",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "59db28b8ac9d2b46d02f53a769ea1bef9bbe7d314e945f44a4bc893c4b67d964",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s1-q010",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Tejas saw the herd of deer here.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s1-q010",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s1-q010",
+     "pdf_page": 8,
+     "printed_page": 8,
+     "y": 531.702,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s1-q010-key",
+     "pdf_page": 111,
+     "printed_page": 111,
+     "y": 598.869,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "Tejas saw the herd of deer here. (Easy)",
+   "section_signal": "Choose the correct answers to the following questions and write them",
+   "options": [
+    {
+     "id": "A",
+     "text": "Bandipur"
+    },
+    {
+     "id": "B",
+     "text": "Nagarahol"
+    },
+    {
+     "id": "C",
+     "text": "Kuduremukha"
+    },
+    {
+     "id": "D",
+     "text": "Mysore"
+    }
+   ],
+   "answer_as_printed": "A) Bandipur",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    },
+    {
+     "issue": "printed key contradicts fact — the lesson's own q56 places Tejas in the Nagarahole forest (option B 'Nagarahol'); reviewer",
+     "why_not_corrected": "printed key 'A) Bandipur' asserted as printed (v1.4 §14.6)",
+     "suggested": "B — review"
+    }
+   ],
+   "content_hash": "62364dd54a1126f9f49f142660970833b3ea30a133ca708e719af5c0b60ab8e2",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s2-q011",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "A group of elephants is called _____",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s2-q011",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s2-q011",
+     "pdf_page": 8,
+     "printed_page": 8,
+     "y": 621.482,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s2-q011-key",
+     "pdf_page": 111,
+     "printed_page": 111,
+     "y": 647.649,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "A group of elephants is called _____ (Easy)",
+   "section_signal": "Fill in the blanks with the suitable answers",
+   "answer": {
+    "kind": "text",
+    "value": "herd"
+   },
+   "answer_as_printed": "herd",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "0693d10445607506707f1aac3a09eef948a5c177883183d938e7974d5c5c7e8e",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s2-q012",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Bees collect _____ from flowers.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s2-q012",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s2-q012",
+     "pdf_page": 8,
+     "printed_page": 8,
+     "y": 648.002,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s2-q012-key",
+     "pdf_page": 111,
+     "printed_page": 111,
+     "y": 670.399,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "Bees collect _____ from flowers. (Easy)",
+   "section_signal": "Fill in the blanks with the suitable answers",
+   "answer": {
+    "kind": "text",
+    "value": "nectar"
+   },
+   "answer_as_printed": "nectar",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "19647f120e8c5c2b52617bece35880be507c4881fe8ea6bcaf17098b36872c57",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s2-q013",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The queen bee's job is to _____",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s2-q013",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s2-q013",
+     "pdf_page": 8,
+     "printed_page": 8,
+     "y": 674.502,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s2-q013-key",
+     "pdf_page": 111,
+     "printed_page": 111,
+     "y": 693.149,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "The queen bee's job is to _____ (Easy)",
+   "section_signal": "Fill in the blanks with the suitable answers",
+   "answer": {
+    "kind": "text",
+    "value": "lay eggs"
+   },
+   "answer_as_printed": "lay eggs",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "c24e928342b0d60a194c2a451c0efc7f50220a5240dd3ebc48f318c0bcde60e4",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s2-q014",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Labour bees build a hive using _____",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s2-q014",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s2-q014",
+     "pdf_page": 8,
+     "printed_page": 8,
+     "y": 701.002,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s2-q014-key",
+     "pdf_page": 111,
+     "printed_page": 111,
+     "y": 715.649,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "Labour bees build a hive using _____ (Easy)",
+   "section_signal": "Fill in the blanks with the suitable answers",
+   "answer": {
+    "kind": "text",
+    "value": "wax"
+   },
+   "answer_as_printed": "wax",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "3b278fba607aa3bcec9a581d47f45409e4803e9e9485e6a3f9443f3d25fba69c",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s2-q015",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Bees store nectar in the ________",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s2-q015",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s2-q015",
+     "pdf_page": 8,
+     "printed_page": 8,
+     "y": 727.532,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s2-q015-key",
+     "pdf_page": 111,
+     "printed_page": 111,
+     "y": 738.424,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "Bees store nectar in the ________ (Easy)",
+   "section_signal": "Fill in the blanks with the suitable answers",
+   "answer": {
+    "kind": "text",
+    "value": "honeycomb"
+   },
+   "answer_as_printed": "honeycomb",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "0c10bde5686e958ced6f44025e159612a487d06761e3d1dc384c83c0b8e437d3",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s2-q016",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "______________ can be tested in a glass of water.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s2-q016",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s2-q016",
+     "pdf_page": 8,
+     "printed_page": 8,
+     "y": 754.027,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s2-q016-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 72.479,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "______________ can be tested in a glass of water. (Easy)",
+   "section_signal": "Fill in the blanks with the suitable answers",
+   "answer": {
+    "kind": "text",
+    "value": "Honey purity"
+   },
+   "answer_as_printed": "Honey purity",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "3c3619dd50e27e310b2a2bc8a61675b19ffce8b52a67dfde82527641e4b1bbd4",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s2-q017",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Honey boxes made of wood are kept at ______________",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s2-q017",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s2-q017",
+     "pdf_page": 9,
+     "printed_page": 9,
+     "y": 72.082,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s2-q017-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 95.229,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "Honey boxes made of wood are kept at ______________ (Easy)",
+   "section_signal": "Fill in the blanks with the suitable answers",
+   "answer": {
+    "kind": "text",
+    "value": "bee farms"
+   },
+   "answer_as_printed": "bee farms",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "c1daf8b0db67307dd5c47f3e46d2bb8e476669c8220e28d90d15c52af6f7b41c",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s2-q018",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The baby monkey holds its mother _______________",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s2-q018",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s2-q018",
+     "pdf_page": 9,
+     "printed_page": 9,
+     "y": 98.582,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s2-q018-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 117.749,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "The baby monkey holds its mother _______________ (Easy)",
+   "section_signal": "Fill in the blanks with the suitable answers",
+   "answer": {
+    "kind": "text",
+    "value": "tightly"
+   },
+   "answer_as_printed": "tightly",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "71df0e692e603d87f9aeb1dd78d4a35a0f903196aef9f2ef876fa8188f828bd3",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s2-q019",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "_____ is the only product of insects that humans eat.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s2-q019",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s2-q019",
+     "pdf_page": 9,
+     "printed_page": 9,
+     "y": 125.102,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s2-q019-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 140.499,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "_____ is the only product of insects that humans eat. (Easy)",
+   "section_signal": "Fill in the blanks with the suitable answers",
+   "answer": {
+    "kind": "text",
+    "value": "Honey"
+   },
+   "answer_as_printed": "Honey",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "b36d2936bac12b961f23577ece9047eb82f04f106e7c70bc53c2f1a9e074f524",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s3-q020",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "All animals live alone.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s3-q020",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s3-q020",
+     "pdf_page": 9,
+     "printed_page": 9,
+     "y": 178.102,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s3-q020-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 189.249,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "All animals live alone. ___________ (Easy)",
+   "section_signal": "State whether the following statements are true or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "false"
+   },
+   "answer_as_printed": "False",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "290dd707f9dec6c5e8e723c7e2b4cb3559014777abdfe72116f2840d4ea6b3f4",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s3-q021",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Cows take food cooperatively.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s3-q021",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s3-q021",
+     "pdf_page": 9,
+     "printed_page": 9,
+     "y": 204.632,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s3-q021-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 212.029,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "Cows take food cooperatively. _______________ (Easy)",
+   "section_signal": "State whether the following statements are true or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "True",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "129c7818cbb86796a61eff3ea02973381e4dcdd6bf818a49efe75129b505851e",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s3-q022",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The queen bee collects nectar from flowers.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s3-q022",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s3-q022",
+     "pdf_page": 9,
+     "printed_page": 9,
+     "y": 231.132,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s3-q022-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 234.529,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "The queen bee collects nectar from flowers.__________________ (Easy)",
+   "section_signal": "State whether the following statements are true or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "false"
+   },
+   "answer_as_printed": "False",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "366faf30803fe9a88ecd4f86c7382a80395ed4b3cf41a4781c0132686ac61f0c",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s3-q023",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Bees build a hive of wax.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s3-q023",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s3-q023",
+     "pdf_page": 9,
+     "printed_page": 9,
+     "y": 257.632,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s3-q023-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 257.269,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "Bees build a hive of wax. ____________________ (Easy)",
+   "section_signal": "State whether the following statements are true or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "True",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "1e9ca137ecc4c7967de333809b33823415ab9e9ccef2caf752999eb86c917347",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s3-q024",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Honey is collected only from trees",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s3-q024",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s3-q024",
+     "pdf_page": 9,
+     "printed_page": 9,
+     "y": 284.132,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s3-q024-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 279.769,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "Honey is collected only from trees_____ (Easy)",
+   "section_signal": "State whether the following statements are true or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "false"
+   },
+   "answer_as_printed": "False",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "9d1f505ca7d86dc7d04929157cac9082db1d9e4082459356d9828748b37e9ba3",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s3-q025",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The baby monkey holds its mother tightly.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s3-q025",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s3-q025",
+     "pdf_page": 9,
+     "printed_page": 9,
+     "y": 310.652,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s3-q025-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 302.549,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "The baby monkey holds its mother tightly. __________________ (Easy)",
+   "section_signal": "State whether the following statements are true or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "True",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "a9b1bae0f0d8da40166d0897a91c0f3496272fd735cc997cd91533342acd42ea",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s3-q026",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "We get only honey from the hive.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s3-q026",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s3-q026",
+     "pdf_page": 9,
+     "printed_page": 9,
+     "y": 337.152,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s3-q026-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 325.299,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "We get only honey from the hive.______________ (Easy)",
+   "section_signal": "State whether the following statements are true or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "false"
+   },
+   "answer_as_printed": "False",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "acbbee32e867a5b5a7f6f59fa42341df14786213083ec46bd5e0d7aece058f1d",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s3-q027",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "A cat does not consider its kitten",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s3-q027",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s3-q027",
+     "pdf_page": 9,
+     "printed_page": 9,
+     "y": 363.402,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s3-q027-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 347.799,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "A cat does not consider its kitten ___________ (Easy)",
+   "section_signal": "State whether the following statements are true or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "false"
+   },
+   "answer_as_printed": "False",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "35a9a67e1de9b451456e7fb622ba16faeb59928c5b8a12660a6176ad2103d86e",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s3-q028",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "A dog sometimes fights for food.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s3-q028",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s3-q028",
+     "pdf_page": 9,
+     "printed_page": 9,
+     "y": 389.922,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s3-q028-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 370.549,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "A dog sometimes fights for food._______________ (Easy)",
+   "section_signal": "State whether the following statements are true or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "True",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "dceb677ea29b2d6fd1ce022b0ad38f4b35815c0c8e292f0964811be5518e95dc",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s3-q029",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Honey is beneficial for our health.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s3-q029",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s3-q029",
+     "pdf_page": 9,
+     "printed_page": 9,
+     "y": 416.422,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s3-q029-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 393.069,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "Honey is beneficial for our health.______________ (Easy)",
+   "section_signal": "State whether the following statements are true or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "True",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "c791c5def7cc7f96af7990ff0595c2163be1e16c79885e56f134bf8a0451a166",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s4-q030",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Match the Following\nAnimal: a) Queen bee; b) Paraffin wax; c) Labour bee; d) Wooden box; e) Honey; f) Cat\nActivity / uses: a ) Licks her kitten lovingly; b) Used a food and medicine; c) Used to collect honey; d) Build a hive, Collects food; e) Used to build a hive; f) Lays eggs, collects nectar from flowers",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s4-q030",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s4-q030",
+     "pdf_page": 9,
+     "printed_page": 9,
+     "y": 442.922,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s4-q030-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 429.069,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "Match the Following Animal               Activity / uses a) Queen bee         a ) Licks her kitten lovingly                        (Easy) b) Paraffin wax      b) Used a food and medicine                            (Easy) c) Labour bee       c) Used to collect honey                               (Easy) d) Wooden box        d) Build a hive, Collects food                         (Easy) e) Honey             e) Used to build a hive                                (Easy) f) Cat               f) Lays eggs, collects nectar from flowers                 (Easy)",
+   "section_signal": "Match the Following",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "Queen bee",
+      "right": "Lays eggs, collects nectar from flowers"
+     },
+     {
+      "left": "Paraffin wax",
+      "right": "Used to build a hive"
+     },
+     {
+      "left": "Labour bee",
+      "right": "Build a hive, collects food"
+     },
+     {
+      "left": "Wooden box",
+      "right": "Used to collect honey"
+     },
+     {
+      "left": "Honey",
+      "right": "Used as food and medicine"
+     },
+     {
+      "left": "Cat",
+      "right": "Licks her kitten lovingly"
+     }
+    ]
+   },
+   "answer_as_printed": "a) Queen bee — f) Lays eggs, collects nectar from flowers; b) Paraffin wax — e) Used to build a hive; c) Labour bee — d) Build a hive, collects food; d) Wooden box — c) Used to collect honey; e) Honey — b) Used as food and medicine; f) Cat — a) Licks her kitten lovingly",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed match key (letter + text per row); pairs left/right verbatim from the key (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    },
+    {
+     "issue": "match key value not among column-B items — key row e) Honey -> 'b) Used as food and medicine'; column B prints b) 'Used a food and medicine'",
+     "why_not_corrected": "key text kept as printed (v1.4 §14.8); the printed letter b names the column-B item",
+     "suggested": "b) Used a food and medicine (by printed letter) — review"
+    }
+   ],
+   "content_hash": "649261b4df6f76e1941b1234e4f04001168b99465d2c0a58f91d1a679d74dec7",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s5-q031",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What do buffaloes go around in a village festival?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s5-q031",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s5-q031",
+     "pdf_page": 9,
+     "printed_page": 9,
+     "y": 684.502,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s5-q031-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 581.879,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "What do buffaloes go around in a village festival? (Easy)",
+   "section_signal": "Answer the following questions (one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Bullock cart or jutka"
+   },
+   "answer_as_printed": "Bullock cart or jutka",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "871447ba472835fbe7bbb7837b16c111eec610820267a9f45f9dfca19ad9a412",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s5-q032",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What is the food of bees?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s5-q032",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s5-q032",
+     "pdf_page": 9,
+     "printed_page": 9,
+     "y": 711.002,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s5-q032-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 604.629,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "What is the food of bees? (Easy)",
+   "section_signal": "Answer the following questions (one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Nectar from flowers"
+   },
+   "answer_as_printed": "Nectar from flowers",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "bbb2339d7f56ad4dbc8341919459116fa7b4b41b5bc43ee6781b7bc7970602f9",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s5-q033",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Who do they rub lovingly in the lesson?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s5-q033",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s5-q033",
+     "pdf_page": 9,
+     "printed_page": 9,
+     "y": 737.527,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s5-q033-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 627.379,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "Who do they rub lovingly in the lesson? (Easy)",
+   "section_signal": "Answer the following questions (one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Kitten"
+   },
+   "answer_as_printed": "Kitten",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "55798eb2a3d863ab05d156bee5d0851a842ae0af3955703e95c1a1c21008f997",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s5-q034",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "How do bees make their hives?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s5-q034",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s5-q034",
+     "pdf_page": 10,
+     "printed_page": 10,
+     "y": 72.082,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s5-q034-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 649.899,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "How do bees make their hives? (Easy)",
+   "section_signal": "Answer the following questions (one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Using wax"
+   },
+   "answer_as_printed": "Using wax",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "8efb2df557a6c8b32268630c34c6c2fb4bfd2092a62e29af2c67338b23855bd7",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s5-q035",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What is the main function of the queen bee?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s5-q035",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s5-q035",
+     "pdf_page": 10,
+     "printed_page": 10,
+     "y": 98.582,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s5-q035-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 672.649,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "What is the main function of the queen bee? (Easy)",
+   "section_signal": "Answer the following questions (one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Laying eggs"
+   },
+   "answer_as_printed": "Laying eggs",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "040ffd7e360d3f6717dc64b8e34896c12c0f891b7a44bce09563e811bf3521b0",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s5-q036",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What material do bees use to build hives?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s5-q036",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s5-q036",
+     "pdf_page": 10,
+     "printed_page": 10,
+     "y": 125.102,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s5-q036-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 695.149,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "What material do bees use to build hives ? (Easy)",
+   "section_signal": "Answer the following questions (one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Wax"
+   },
+   "answer_as_printed": "Wax",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "2a013f794b576a1515fd8b5382a5f02ea2ea40e7cd41c28d21bbbc0f7c1bf930",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s5-q037",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Where are the hives of bees found?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s5-q037",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s5-q037",
+     "pdf_page": 10,
+     "printed_page": 10,
+     "y": 151.602,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s5-q037-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 717.919,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "Where are the hives of bees found? (Easy)",
+   "section_signal": "Answer the following questions (one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "On trees or branches"
+   },
+   "answer_as_printed": "On trees or branches",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "92fd618c5d2c990b06b281c71306202d4ac7ce54ff1ff74f36131bb451913d37",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s5-q038",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What do bees store in their hives?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s5-q038",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s5-q038",
+     "pdf_page": 10,
+     "printed_page": 10,
+     "y": 178.102,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s5-q038-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 740.674,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "What do bees store in their hives? (Easy)",
+   "section_signal": "Answer the following questions (one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Honey"
+   },
+   "answer_as_printed": "Honey",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "5ed6e59e64473da38a81c3c2174fd2a8fdf12455af3f74f320cce4aa52e0ccc9",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s5-q039",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What do bees collect from flowers?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s5-q039",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s5-q039",
+     "pdf_page": 10,
+     "printed_page": 10,
+     "y": 204.632,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s5-q039-key",
+     "pdf_page": 113,
+     "printed_page": 113,
+     "y": 72.479,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "What do bees collect from flowers? (Easy)",
+   "section_signal": "Answer the following questions (one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Nectar"
+   },
+   "answer_as_printed": "Nectar",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "7ad280b8f71aac6a8cdcfc6220668d80b1c5e5dcdf9cce3a4a342a27fdd4b117",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s5-q040",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "How do we check if honey is pure?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s5-q040",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s5-q040",
+     "pdf_page": 10,
+     "printed_page": 10,
+     "y": 231.132,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s5-q040-key",
+     "pdf_page": 113,
+     "printed_page": 113,
+     "y": 95.229,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "How do we check if honey is pure? (Easy)",
+   "section_signal": "Answer the following questions (one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "By dropping it in water (pure honey sinks)"
+   },
+   "answer_as_printed": "By dropping it in water (pure honey sinks)",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "d2865da27b57dcb8a70682cf96b0391119866f4dd8db4fdedb423b54b8aee6ae",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s5-q041",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Which food is obtained from insects that man eats?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s5-q041",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s5-q041",
+     "pdf_page": 10,
+     "printed_page": 10,
+     "y": 257.632,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s5-q041-key",
+     "pdf_page": 113,
+     "printed_page": 113,
+     "y": 117.749,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "Which food is obtained from insects that man eats? (Easy)",
+   "section_signal": "Answer the following questions (one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Honey"
+   },
+   "answer_as_printed": "Honey",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "2df704d730f7f3ee046d1bd65a826f763a5f745433303d23d234b0b7d14f67e8",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s5-q042",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What do bees produce other than honey?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s5-q042",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s5-q042",
+     "pdf_page": 10,
+     "printed_page": 10,
+     "y": 284.132,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s5-q042-key",
+     "pdf_page": 113,
+     "printed_page": 113,
+     "y": 140.499,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "What do bees produce other than honey? (Easy)",
+   "section_signal": "Answer the following questions (one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Wax"
+   },
+   "answer_as_printed": "Wax",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "1c8515a75c6c93b841e8eccf5627e9b68e63ae0dd5ccbbd1557259d28d4ca603",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s5-q043",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What does the mother monkey hold?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s5-q043",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s5-q043",
+     "pdf_page": 10,
+     "printed_page": 10,
+     "y": 310.652,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s5-q043-key",
+     "pdf_page": 113,
+     "printed_page": 113,
+     "y": 162.999,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "What does the mother monkey hold? (Easy)",
+   "section_signal": "Answer the following questions (one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Baby monkey"
+   },
+   "answer_as_printed": "Baby monkey",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "7e0023e0aa489b2f58246ac839f9c7d5207414ef0ada5ebec50e11676af72b44",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s5-q044",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What does a hen teach its young?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s5-q044",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s5-q044",
+     "pdf_page": 10,
+     "printed_page": 10,
+     "y": 337.152,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s5-q044-key",
+     "pdf_page": 113,
+     "printed_page": 113,
+     "y": 185.749,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "What does a hen teach its young? (Easy)",
+   "section_signal": "Answer the following questions (one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "How to walk, find food"
+   },
+   "answer_as_printed": "How to walk, find food",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "098e5f880ef3d3fbb8b83c631f3be63f7b5a038ac0df9ea1d4648d378448000e",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s5-q045",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What do bees bring to their hives from the flowers?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s5-q045",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s5-q045",
+     "pdf_page": 10,
+     "printed_page": 10,
+     "y": 363.402,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s5-q045-key",
+     "pdf_page": 113,
+     "printed_page": 113,
+     "y": 208.529,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "What do bees bring to their hives from the flowers? (Easy)",
+   "section_signal": "Answer the following questions (one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Nectar"
+   },
+   "answer_as_printed": "Nectar",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "a002536f83ae571a0c3c4891e96e8ab672656ff5f95d9283bd367b1018bd8957",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s6-q046",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Why do deer and elephants live in groups?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s6-q046",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s6-q046",
+     "pdf_page": 10,
+     "printed_page": 10,
+     "y": 446.172,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s6-q046-key",
+     "pdf_page": 113,
+     "printed_page": 113,
+     "y": 257.269,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "Why do deer and elephants live in groups ? (Easy)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "For safety and to help each other."
+   },
+   "answer_as_printed": "For safety and to help each other.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "0b15840ff5a278820fd459ea373f222d50224baebeb0b9016da6b9ee4e832038",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s6-q047",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "How do bees learn from where to collect the nectar from flowers?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s6-q047",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s6-q047",
+     "pdf_page": 10,
+     "printed_page": 10,
+     "y": 472.702,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s6-q047-key",
+     "pdf_page": 113,
+     "printed_page": 113,
+     "y": 279.769,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "How do bees learn from where to collect the nectar from flowers ? (Difficult)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "By watching other bees and dancing to show flowers."
+   },
+   "answer_as_printed": "By watching other bees and dancing to show flowers.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "c06e0d0e468413270487283a1a829890a9b6b3f69b73655d06a0b80f53b49967",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s6-q048",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Differentiate between worker bee and queen bee.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s6-q048",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s6-q048",
+     "pdf_page": 10,
+     "printed_page": 10,
+     "y": 499.202,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s6-q048-key",
+     "pdf_page": 113,
+     "printed_page": 113,
+     "y": 302.549,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "Differentiate between worker bee and queen bee. (Easy)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Worker bee: Builds hive, stores food.\nQueen bee: Lays eggs."
+   },
+   "answer_as_printed": "Worker bee: Builds hive, stores food.\nQueen bee: Lays eggs.",
+   "solution_steps": [
+    "Worker bee: Builds hive, stores food.",
+    "Queen bee: Lays eggs."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "b93468f2ce60754723b9a01c4c07603a70ed5fa148dbbd88d934461151ad985d",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s6-q049",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Write any two uses of honey?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s6-q049",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s6-q049",
+     "pdf_page": 10,
+     "printed_page": 10,
+     "y": 525.702,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s6-q049-key",
+     "pdf_page": 113,
+     "printed_page": 113,
+     "y": 370.549,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "Write any two uses of honey ? (Easy)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Used in medicine\nUsed as food"
+   },
+   "answer_as_printed": "Used in medicine\nUsed as food",
+   "solution_steps": [
+    "Used in medicine",
+    "Used as food"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "3ad8e8f90c655f0e7f1b759d5e01de416e40eb796fc6be3f9acb78f0cfa6f6e7",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s6-q050",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What is the role of bees in pollination?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s6-q050",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s6-q050",
+     "pdf_page": 10,
+     "printed_page": 10,
+     "y": 551.972,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s6-q050-key",
+     "pdf_page": 113,
+     "printed_page": 113,
+     "y": 438.569,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "What is the role of bees in pollination? (Difficult)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Bees carry pollen from one flower to another, helping in plant growth."
+   },
+   "answer_as_printed": "Bees carry pollen from one flower to another, helping in plant growth.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "86f9eec34ac938b0cf5c0eee72872b0767092031e4aca3cb4298b235ae1882aa",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s6-q051",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "How do you check the purity of honey?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s6-q051",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s6-q051",
+     "pdf_page": 10,
+     "printed_page": 10,
+     "y": 578.472,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s6-q051-key",
+     "pdf_page": 113,
+     "printed_page": 113,
+     "y": 461.099,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "How do you check the purity of honey ? (Average)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Drop honey in water; pure honey settles down without mixing."
+   },
+   "answer_as_printed": "Drop honey in water; pure honey settles down without mixing.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "40daf00d0696c24a9e48ab6e0010ac1fd0bcf917a8f71daf8efe10b2b7b03dbe",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s6-q052",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Why do monkeys and chickens take care of their youngones?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s6-q052",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s6-q052",
+     "pdf_page": 10,
+     "printed_page": 10,
+     "y": 604.972,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s6-q052-key",
+     "pdf_page": 113,
+     "printed_page": 113,
+     "y": 483.849,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "Why do monkeys and chickens take care of their youngones? (Easy)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "To protect and teach their babies survival and food search."
+   },
+   "answer_as_printed": "To protect and teach their babies survival and food search.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "be7492b7a8527e0364756ac4c09f342da5cf4ae3ef859d02b0a5d07910796f7f",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s7-q053",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Explain the process by which bees collect nectar.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s7-q053",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s7-q053",
+     "pdf_page": 10,
+     "printed_page": 10,
+     "y": 661.252,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s7-q053-key",
+     "pdf_page": 113,
+     "printed_page": 113,
+     "y": 532.599,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "Explain the process by which bees collect nectar. (Difficult)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Bees suck nectar from flowers, store it in their stomach, and convert it into honey in the hive."
+   },
+   "answer_as_printed": "Bees suck nectar from flowers, store it in their stomach, and convert it into honey in the hive.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "0cded05f93816fa61624654cf54875cf04b37b886c5f65af17fff5918deb8346",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s7-q054",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Why is it important to conserve bees in the environment?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s7-q054",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s7-q054",
+     "pdf_page": 10,
+     "printed_page": 10,
+     "y": 679.752,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s7-q054-key",
+     "pdf_page": 113,
+     "printed_page": 113,
+     "y": 569.869,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "Why is it important to conserve bees in the environment? (Difficult)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Bees help grow plants. Without bees, many plants won't grow. So, bees must be protected."
+   },
+   "answer_as_printed": "Bees help grow plants. Without bees, many plants won't grow. So, bees must be protected.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "28541dc7b6972bd72f9336ef1827ee17aecd1837d94e98683ea03f143c47a5d8",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s7-q055",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Explain the function of family members of bees.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s7-q055",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s7-q055",
+     "pdf_page": 10,
+     "printed_page": 10,
+     "y": 698.252,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s7-q055-key",
+     "pdf_page": 113,
+     "printed_page": 113,
+     "y": 607.129,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "Explain the function of family members of bees. (easy)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Queen bee lays eggs.\nWorker bee builds the hive and collects nectar.\nDrone bee helps in mating."
+   },
+   "answer_as_printed": "Queen bee lays eggs.\nWorker bee builds the hive and collects nectar.\nDrone bee helps in mating.",
+   "solution_steps": [
+    "Queen bee lays eggs.",
+    "Worker bee builds the hive and collects nectar.",
+    "Drone bee helps in mating."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "a189bc2a2a47a7fa18e6ad8a4a8f2b499857d502b04b7928150e86166d0907f9",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s7-q056",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What did Tejas see in the Nagarahole forest and how is it related to the animals behavior? How is it related to behavior?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s7-q056",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s7-q056",
+     "pdf_page": 10,
+     "printed_page": 10,
+     "y": 716.532,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s7-q056-key",
+     "pdf_page": 113,
+     "printed_page": 113,
+     "y": 697.899,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "What did Tejas see in the Nagarahole forest and how is it related to the animals behavior? How is it related to behavior? (Difficult)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Tejas saw a herd of deer and elephants moving together.\nAnimals live in groups for safety.\nIt shows how they care for each other."
+   },
+   "answer_as_printed": "Tejas saw a herd of deer and elephants moving together.\nAnimals live in groups for safety.\nIt shows how they care for each other.",
+   "solution_steps": [
+    "Tejas saw a herd of deer and elephants moving together.",
+    "Animals live in groups for safety.",
+    "It shows how they care for each other."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "6a3020c5b8b8be98a22ec6471639051c993b3122ed0b9b22f92607567b6140db",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s7-q057",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "How does the behavior of the mother monkey reflect on the bond between the mother and its offspring?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s7-q057",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s7-q057",
+     "pdf_page": 11,
+     "printed_page": 11,
+     "y": 72.082,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s7-q057-key",
+     "pdf_page": 114,
+     "printed_page": 114,
+     "y": 95.229,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "How does the behavior of the mother monkey reflect on the bond between the mother and its offspring ? (Average)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "The baby monkey holds its mother tightly showing love and safety between them."
+   },
+   "answer_as_printed": "The baby monkey holds its mother tightly showing love and safety between them.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "8f4dcc7eefc0e14654891c3869fa88eeb7e275d619886d93bcae1797f0776ee7",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s7-q058",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Explain about the different species of bees and nests that you find in your surroundings.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s7-q058",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s7-q058",
+     "pdf_page": 11,
+     "printed_page": 11,
+     "y": 109.082,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s7-q058-key",
+     "pdf_page": 114,
+     "printed_page": 114,
+     "y": 117.749,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "Explain about the different species of bees and nests that you find in your surroundings. (Easy)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "In villages, we see small hives on trees and house walls. Types include honey bees, rock bees, and small bees."
+   },
+   "answer_as_printed": "In villages, we see small hives on trees and house walls. Types include honey bees, rock bees, and small bees.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "e82093abb4dccc9c5d4d2b1f0a1f494fa904dcdb4c144c4e0ca2e174e1f2d03d",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s7-q059",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "How does honey contribute to human health? State at least two benefits.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s7-q059",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s7-q059",
+     "pdf_page": 11,
+     "printed_page": 11,
+     "y": 146.102,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s7-q059-key",
+     "pdf_page": 114,
+     "printed_page": 114,
+     "y": 154.999,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "How does honey contribute to human health? State at least two benefits. (Difficult)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Gives energy\nUsed for cough and digestion"
+   },
+   "answer_as_printed": "Gives energy\nUsed for cough and digestion",
+   "solution_steps": [
+    "Gives energy",
+    "Used for cough and digestion"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "36c2346230380a5a8967421f289a6ee5cb66ff66112bc809f3e3a5f57208ac53",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s7-q060",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Compare and explain how do animals care for their younones by giving the eamples of monkeys and chicken.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s7-q060",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s7-q060",
+     "pdf_page": 11,
+     "printed_page": 11,
+     "y": 183.102,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s7-q060-key",
+     "pdf_page": 114,
+     "printed_page": 114,
+     "y": 223.029,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "Compare and explain how do animals care for their younones by giving the eamples of monkeys and chicken. (Average)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Monkey carries and feeds baby.\nHen teaches chicks to peck food."
+   },
+   "answer_as_printed": "Monkey carries and feeds baby.\nHen teaches chicks to peck food.",
+   "solution_steps": [
+    "Monkey carries and feeds baby.",
+    "Hen teaches chicks to peck food."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "b51dbbe877e879eb7a58ae51f5ee72b6c22958902af26df2aba0fe24234eb1c2",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s7-q061",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Explain how bees are an important part of honey production and ecological balance.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s7-q061",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s7-q061",
+     "pdf_page": 11,
+     "printed_page": 11,
+     "y": 220.132,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s7-q061-key",
+     "pdf_page": 114,
+     "printed_page": 114,
+     "y": 291.049,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "Explain how bees are an important part of honey production and ecological balance. (Difficult)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Bees collect nectar and make honey.\nThey help plants grow (pollination).\nWithout bees, nature will not be balanced."
+   },
+   "answer_as_printed": "Bees collect nectar and make honey.\nThey help plants grow (pollination).\nWithout bees, nature will not be balanced.",
+   "solution_steps": [
+    "Bees collect nectar and make honey.",
+    "They help plants grow (pollination).",
+    "Without bees, nature will not be balanced."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "52b905f207fde8a7afb38253332cca20fa8df4508e8406cfc155dcd343b91f89",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s8-q062",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Imagine being a bee – collecting nectar from the flowers and returning to the nest. Explain in detail the daily routine.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s8-q062",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s8-q062",
+     "pdf_page": 11,
+     "printed_page": 11,
+     "y": 305.152,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s8-q062-key",
+     "pdf_page": 114,
+     "printed_page": 114,
+     "y": 407.819,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "section_signal": "Answer the following questions (four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "I fly from flower to flower, collect nectar.\nI return to the hive and store it.\nI dance to show others where to go.\nI help the queen and keep the hive clean."
+   },
+   "answer_as_printed": "I fly from flower to flower, collect nectar.\nI return to the hive and store it.\nI dance to show others where to go.\nI help the queen and keep the hive clean.",
+   "solution_steps": [
+    "I fly from flower to flower, collect nectar.",
+    "I return to the hive and store it.",
+    "I dance to show others where to go.",
+    "I help the queen and keep the hive clean."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "cff285440545f65bd1f99582cb1abc648df3b1822c9cf233b655eefb7238dad5",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s8-q063",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Write how the honey and other products are useful to humans.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s8-q063",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s8-q063",
+     "pdf_page": 11,
+     "printed_page": 11,
+     "y": 350.152,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s8-q063-key",
+     "pdf_page": 114,
+     "printed_page": 114,
+     "y": 521.099,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "Write how the honey and other products are useful to humans .",
+   "section_signal": "Answer the following questions (four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Honey is used in food and medicine.\nWax is used in candles and polish.\nBee sting is used in some treatments."
+   },
+   "answer_as_printed": "Honey is used in food and medicine.\nWax is used in candles and polish.\nBee sting is used in some treatments.",
+   "solution_steps": [
+    "Honey is used in food and medicine.",
+    "Wax is used in candles and polish.",
+    "Bee sting is used in some treatments."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "b7e41e9c7a0730a09c84aa4eb9af8c9f02237b3d915653f1e468be6f53524411",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s8-q064",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Explain how animals and their families live in cooperation in nature.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s8-q064",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s8-q064",
+     "pdf_page": 11,
+     "printed_page": 11,
+     "y": 376.672,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s8-q064-key",
+     "pdf_page": 114,
+     "printed_page": 114,
+     "y": 611.629,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "section_signal": "Answer the following questions (four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Animals live in groups to help each other.\nThey protect their babies and share food.\nThey stay safe by being together."
+   },
+   "answer_as_printed": "Animals live in groups to help each other.\nThey protect their babies and share food.\nThey stay safe by being together.",
+   "solution_steps": [
+    "Animals live in groups to help each other.",
+    "They protect their babies and share food.",
+    "They stay safe by being together."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "d1ede811d1520107c25df387c48531d3c0d61f6704fabeb5074a4691625dcf3d",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s8-q065",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Write a comparison of a Human family with a bee family.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s8-q065",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s8-q065",
+     "pdf_page": 11,
+     "printed_page": 11,
+     "y": 403.172,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s8-q065-key",
+     "pdf_page": 114,
+     "printed_page": 114,
+     "y": 702.399,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "Write a comparison of a Human family with a bee family .",
+   "section_signal": "Answer the following questions (four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Bee family has queen, workers, drones.\nHuman family has father, mother, children.\nBoth work together and care for each other."
+   },
+   "answer_as_printed": "Bee family has queen, workers, drones.\nHuman family has father, mother, children.\nBoth work together and care for each other.",
+   "solution_steps": [
+    "Bee family has queen, workers, drones.",
+    "Human family has father, mother, children.",
+    "Both work together and care for each other."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "81cc5429bc843088bb26853968935c1d0f39de4ed3f214de62665530f3fcbd7a",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s8-q066",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Students in the lesson see a deer, herd of elephants and a lonely tiger. Compare the social behaviour of these animals with that of the behaviour of bees.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s8-q066",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s8-q066",
+     "pdf_page": 11,
+     "printed_page": 11,
+     "y": 429.672,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s8-q066-key",
+     "pdf_page": 115,
+     "printed_page": 115,
+     "y": 95.229,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "text_as_printed": "Students in the lesson see a deer , herd of elephants and a lonely tiger. Compare the social behaviour of these animals with that of the behaviour of bees.",
+   "section_signal": "Answer the following questions (four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Deer and elephants live in groups.\nTiger lives alone.\nBees also live in groups, showing unity and work sharing."
+   },
+   "answer_as_printed": "Deer and elephants live in groups.\nTiger lives alone.\nBees also live in groups, showing unity and work sharing.",
+   "solution_steps": [
+    "Deer and elephants live in groups.",
+    "Tiger lives alone.",
+    "Bees also live in groups, showing unity and work sharing."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "98c1ac20905b5aff4e65e52c7a5c74e292e1845793f2647c41154c4944a32309",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s8-q067",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Imagine yourself as a scientist studying bees and explain in detail the special features of bee hive, the role of different bees and the process of production of Honey.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s8-q067",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s8-q067",
+     "pdf_page": 11,
+     "printed_page": 11,
+     "y": 474.452,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s8-q067-key",
+     "pdf_page": 115,
+     "printed_page": 115,
+     "y": 185.749,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "section_signal": "Answer the following questions (four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Bee hive has hexagon cells.\nQueen bee lays eggs, workers do jobs.\nHoney is made by collecting and storing nectar."
+   },
+   "answer_as_printed": "Bee hive has hexagon cells.\nQueen bee lays eggs, workers do jobs.\nHoney is made by collecting and storing nectar.",
+   "solution_steps": [
+    "Bee hive has hexagon cells.",
+    "Queen bee lays eggs, workers do jobs.",
+    "Honey is made by collecting and storing nectar."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "ff32c0d96daffd0ae0bd723d2ead41fe165e699c28c0b9710e1307c0a21d504c",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s8-q068",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "How does the bee teach its youngones about the cleanliness of environment including its role in pollination.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s8-q068",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s8-q068",
+     "pdf_page": 11,
+     "printed_page": 11,
+     "y": 537.952,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s8-q068-key",
+     "pdf_page": 115,
+     "printed_page": 115,
+     "y": 276.279,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "section_signal": "Answer the following questions (four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Bees keep hives clean.\nThey pollinate flowers while collecting nectar.\nThey help plants grow and teach young bees by action."
+   },
+   "answer_as_printed": "Bees keep hives clean.\nThey pollinate flowers while collecting nectar.\nThey help plants grow and teach young bees by action.",
+   "solution_steps": [
+    "Bees keep hives clean.",
+    "They pollinate flowers while collecting nectar.",
+    "They help plants grow and teach young bees by action."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "9fb8a01c7a3dcff3dc90d7eb23f4b859fa28e8c56bbdb19956a67853d58692a5",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s8-q069",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Write a short essay on the importance of bees.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s8-q069",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s8-q069",
+     "pdf_page": 11,
+     "printed_page": 11,
+     "y": 582.972,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s8-q069-key",
+     "pdf_page": 115,
+     "printed_page": 115,
+     "y": 367.049,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "section_signal": "Answer the following questions (four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Bees help nature.\nThey give honey and wax.\nThey help grow fruits and flowers."
+   },
+   "answer_as_printed": "Bees help nature.\nThey give honey and wax.\nThey help grow fruits and flowers.",
+   "solution_steps": [
+    "Bees help nature.",
+    "They give honey and wax.",
+    "They help grow fruits and flowers."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "119aeecae5df6bd29489ffd7b630bd5d5d7819a5e09d47097374ed5b7f24bf8d",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s8-q070",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What can a man learn from the unity of animals.Explain.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s8-q070",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s8-q070",
+     "pdf_page": 11,
+     "printed_page": 11,
+     "y": 609.472,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s8-q070-key",
+     "pdf_page": 115,
+     "printed_page": 115,
+     "y": 457.569,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "section_signal": "Answer the following questions (four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Animals show teamwork, love, sharing, and care.\nHumans can learn unity, hard work, and care from them."
+   },
+   "answer_as_printed": "Animals show teamwork, love, sharing, and care.\nHumans can learn unity, hard work, and care from them.",
+   "solution_steps": [
+    "Animals show teamwork, love, sharing, and care.",
+    "Humans can learn unity, hard work, and care from them."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-26T23:58:58+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "1601d96e20e9e7823be87aed776928a7bd9f8e38870acc117312c039e7f658e4",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-02-s8-q071",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-02",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Draw a picture of the bee hive and colour it.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s8-q071",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s8-q071",
+     "pdf_page": 11,
+     "printed_page": 11,
+     "y": 636.002,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-02-s8-q071-key",
+     "pdf_page": 112,
+     "printed_page": 112,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-26T23:58:58+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-26T23:58:58+05:30",
+   "section_signal": "Answer the following questions (four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 10 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    },
+    {
+     "issue": "no answer printed",
+     "why_not_corrected": "the answer side ends at key 70 (pdf 115) and prints nothing for this drawing task",
+     "suggested": "key absent — review"
+    }
+   ],
+   "content_hash": "b714f10ccbd1670abb77e38289c4feac154d8f91ee779e402d3cc1d9bc389d0c",
+   "topic_ids": [
+    "evs-4-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  }
+ ],
+ "pending_summary": {}
+}
