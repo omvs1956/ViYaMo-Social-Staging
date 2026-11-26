@@ -1,0 +1,2359 @@
+{
+ "contract_version": "1.7",
+ "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
+ "procedure_file": "extraction_procedure_social_addendum_v1.4_social science Classes 6-10 on top of procedure v2.md",
+ "machine_name": "evs-3-02_questions",
+ "version": 1,
+ "changelog": "v1 extraction — batch-01 — class-3-evs",
+ "amendments_applied": [],
+ "unit_state": "EXTRACTED",
+ "review_ready": false,
+ "count_gate": {
+  "reference": 25,
+  "reference_source": "audited",
+  "extracted": 25,
+  "paired": 23,
+  "flagged": 5,
+  "gaps": [],
+  "duplicated_numbers": [],
+  "quota_table": "difficulty_only",
+  "second_method": {
+   "method": "printed BLUE PRINT difficulty table total (Easy 11 + Average 7 + Difficulty 7 = 25), pdf 14; independently, the answer side's keys counted",
+   "extracted": 25,
+   "agrees": true
+  },
+  "pass": true,
+  "note": "Question side labels 1-25 monotonic, no gaps, no duplicates (I 1-10, II 11-14, III 15-17, q18 own heading, IV 19-22, V 23-24, q25 own heading); answer side keys 1-24 (key '4.' printed after a stray '2.' — '2. 4. A) Yellow'; IV printed twice, q23-24 under 'IV.'), q25 restated not keyed. BLUE PRINT 11/7/7 = 25 = audited count. Difficulty per question: easy 0, average 0, difficult 0, untagged 25."
+ },
+ "extraction": {
+  "source_file": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf",
+  "source_ref_prefix": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf",
+  "pdf_pages": [
+   14,
+   15,
+   16,
+   17,
+   99,
+   100
+  ],
+  "printed_page_offset": 0,
+  "method_notes": [
+   "Pages: Q pdf 14 (heading, LO 2, BLUE PRINT; q1-3) 15 (q4-10) 16 (q11-19) 17 (q20-25). A side 'Key Answer: Lesson no 2 Green Wealth' pdf 99 (keys 1-22), pdf 100 (23, 24, restated q25). Folios = pdf page.",
+   "BILINGUAL: Kannada lines dropped (Q side Unicode Kannada; key lines carry Kannada glued after the English on the same line — cut off). Nothing Kannada stored.",
+   "Sections by printed order: s1 I mcq q1-10; s2 II match q11-14 (numbered rows -> one-pair match questions); s3 III T/F q15-17 (answer blanks removed from text, kept in text_as_printed); s4 q18 'Classify …' printed on its own numbered line with its own header '3x1=3'; s5 IV q19-22; s6 V q23-24; s7 q25 draw, own numbered line with header '3x1=3'. Types by key form: one sentence/list -> vsa (q19, q21, q22, q23), 2+ sentences -> sa (q20, q24); q18 three labelled lines -> sa (3 steps; 'Creepers' line wraps once).",
+   "MARKS (R-E9): s1 '10 X 1=10' (10 q) -> 1; s2 '4 X 1=4' (4 q) -> 1; s3 '3x1=3' (3 q) -> 1; s5 '4*2=8' (4 q) -> 2; s4 '3x1=3' over 1 q, s7 '3x1=3' over 1 q -> null; s6 '2 X 3=6' (2 q) -> null because M=3 is not the smaller factor (R-E9 as written; flagged in the reason).",
+   "DIFFICULTY: none printed -> null + 'no difficulty tag' (BLUE PRINT 11/7/7 totals only). quota_table difficulty_only; second method = table total 25 (agrees).",
+   "LO (R-E10): lesson LO row 2 on every question, lo_source 'lesson_table' (text_as_printed verbatim incl. the printed cedilla glyphs).",
+   "KEYS: q6 '6. Tree' prints no letter -> option C by pass-1 match (source_correction). q7 'Aracanut' prints no letter and matches no option (option C 'Ada' is the same Kannada word) -> null + 'key text not among options' (addendum §4.4; review-blocking). q8 'A) Desert' for papaya -> 'printed key contradicts fact' (the stem's Kannada line names a cactus). Match q12 'plants and herbs' vs 'Herbal class', q13 'Broad-oblong leaf' vs 'Broad, long leaf' flagged. q25 draw: no key -> empty + 'no answer printed'.",
+   "Source typos kept verbatim: 'Plant– Herb', 'Ada', 'Lotus-hair', 'Shurbs', 'Pumpkinvine', 'peepletree', key 'Peeple tree'.",
+   "FIGURES: none on pdf 14-17, 99-100 (pdfimages, pdfplumber). TOPIC evs-3-02-t00 / chapter / high (R-E3)."
+  ],
+  "notation_summary": {
+   "render_tokens": 0,
+   "latex_tokens": 0,
+   "damage_flags": []
+  },
+  "excluded_objects": [],
+  "inline_excluded_count": 0,
+  "figure_references": []
+ },
+ "stimuli": [],
+ "questions": [
+  {
+   "id": "evs-3-02-s1-q001",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-02",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "2",
+     "text_as_printed": "Sorts Objects ̧birds ̧animalş plants according to their similarities and differences."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "What colour are plant leaves usually?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s1-q001",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s1-q001",
+     "pdf_page": 14,
+     "printed_page": 14,
+     "y": 564.173,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s1-q001-key",
+     "pdf_page": 99,
+     "printed_page": 99,
+     "y": 184.253,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:02:42+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:02:42+05:30",
+   "section_signal": "I. Choose one appropriate answer out of the four for the following questions",
+   "lo_source": "lesson_table",
+   "options": [
+    {
+     "id": "A",
+     "text": "White"
+    },
+    {
+     "id": "B",
+     "text": "Green"
+    },
+    {
+     "id": "C",
+     "text": "Black"
+    },
+    {
+     "id": "D",
+     "text": "Blue"
+    }
+   ],
+   "answer_as_printed": "B) Green",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:02:42+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 11 / Average 7 / Difficulty 7) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "6aaa1861a59075aeb27dfffb5fbd34fa536ca9a26acf936b3f5b2d11685edc64",
+   "topic_ids": [
+    "evs-3-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-02-s1-q002",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-02",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "2",
+     "text_as_printed": "Sorts Objects ̧birds ̧animalş plants according to their similarities and differences."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "What type of plant does the coconut belong to?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s1-q002",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s1-q002",
+     "pdf_page": 14,
+     "printed_page": 14,
+     "y": 656.333,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s1-q002-key",
+     "pdf_page": 99,
+     "printed_page": 99,
+     "y": 183.626,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:02:42+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:02:42+05:30",
+   "section_signal": "I. Choose one appropriate answer out of the four for the following questions",
+   "lo_source": "lesson_table",
+   "options": [
+    {
+     "id": "A",
+     "text": "Vine"
+    },
+    {
+     "id": "B",
+     "text": "bush"
+    },
+    {
+     "id": "C",
+     "text": "Tree"
+    },
+    {
+     "id": "D",
+     "text": "Plant– Herb"
+    }
+   ],
+   "answer_as_printed": "C) Tree",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:02:42+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 11 / Average 7 / Difficulty 7) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "3f6dfaaca6dc628bd996cc0584281181e87adc5f0e1ba6af1d2aae9a387e68a9",
+   "topic_ids": [
+    "evs-3-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-02-s1-q003",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-02",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "2",
+     "text_as_printed": "Sorts Objects ̧birds ̧animalş plants according to their similarities and differences."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Which of the following fruits grows on a vine?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s1-q003",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s1-q003",
+     "pdf_page": 14,
+     "printed_page": 14,
+     "y": 751.373,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s1-q003-key",
+     "pdf_page": 99,
+     "printed_page": 99,
+     "y": 184.253,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:02:42+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:02:42+05:30",
+   "section_signal": "I. Choose one appropriate answer out of the four for the following questions",
+   "lo_source": "lesson_table",
+   "options": [
+    {
+     "id": "A",
+     "text": "Mango"
+    },
+    {
+     "id": "B",
+     "text": "Guava"
+    },
+    {
+     "id": "C",
+     "text": "Jackfruit"
+    },
+    {
+     "id": "D",
+     "text": "Watermelon"
+    }
+   ],
+   "answer_as_printed": "D) Watermelon",
+   "answer": {
+    "kind": "option",
+    "option_id": "D"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:02:42+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 11 / Average 7 / Difficulty 7) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "47ec5c765d1c4efe96b0008ec4840050c0338eda53889e0d690e9cf39ea4084b",
+   "topic_ids": [
+    "evs-3-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-02-s1-q004",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-02",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "2",
+     "text_as_printed": "Sorts Objects ̧birds ̧animalş plants according to their similarities and differences."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "What color is a ripe banana?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s1-q004",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s1-q004",
+     "pdf_page": 15,
+     "printed_page": 15,
+     "y": 118.973,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s1-q004-key",
+     "pdf_page": 99,
+     "printed_page": 99,
+     "y": 204.413,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:02:42+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:02:42+05:30",
+   "section_signal": "I. Choose one appropriate answer out of the four for the following questions",
+   "lo_source": "lesson_table",
+   "options": [
+    {
+     "id": "A",
+     "text": "Yellow"
+    },
+    {
+     "id": "B",
+     "text": "Red"
+    },
+    {
+     "id": "C",
+     "text": "Green"
+    },
+    {
+     "id": "D",
+     "text": "White"
+    }
+   ],
+   "answer_as_printed": "A) Yellow",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:02:42+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 11 / Average 7 / Difficulty 7) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "351427364ddef3807ba8b27f0d4aead07c6e24129cd3aedd851cf9d5634a054a",
+   "topic_ids": [
+    "evs-3-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-02-s1-q005",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-02",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "2",
+     "text_as_printed": "Sorts Objects ̧birds ̧animalş plants according to their similarities and differences."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "What is a plant that grows in water?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s1-q005",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s1-q005",
+     "pdf_page": 15,
+     "printed_page": 15,
+     "y": 214.013,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s1-q005-key",
+     "pdf_page": 99,
+     "printed_page": 99,
+     "y": 204.413,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:02:42+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:02:42+05:30",
+   "section_signal": "I. Choose one appropriate answer out of the four for the following questions",
+   "lo_source": "lesson_table",
+   "options": [
+    {
+     "id": "A",
+     "text": "Rose"
+    },
+    {
+     "id": "B",
+     "text": "Lotus"
+    },
+    {
+     "id": "C",
+     "text": "Jasmine"
+    },
+    {
+     "id": "D",
+     "text": "Marigold"
+    }
+   ],
+   "answer_as_printed": "B) Lotus",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:02:42+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 11 / Average 7 / Difficulty 7) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "d1b7f7b58abfdf74da56d3f5a42c56daedef5d4cafc46484dcc0bffc5f7c89e9",
+   "topic_ids": [
+    "evs-3-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-02-s1-q006",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-02",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "2",
+     "text_as_printed": "Sorts Objects ̧birds ̧animalş plants according to their similarities and differences."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "A plant that grows tall with very thick and stiff stems______________",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s1-q006",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s1-q006",
+     "pdf_page": 15,
+     "printed_page": 15,
+     "y": 309.053,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s1-q006-key",
+     "pdf_page": 99,
+     "printed_page": 99,
+     "y": 203.786,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:02:42+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:02:42+05:30",
+   "section_signal": "I. Choose one appropriate answer out of the four for the following questions",
+   "lo_source": "lesson_table",
+   "options": [
+    {
+     "id": "A",
+     "text": "Bush"
+    },
+    {
+     "id": "B",
+     "text": "vine"
+    },
+    {
+     "id": "C",
+     "text": "Tree"
+    },
+    {
+     "id": "D",
+     "text": "Herb"
+    }
+   ],
+   "answer_as_printed": "Tree",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "source_corrections": [
+    {
+     "field": "answer",
+     "printed": "Tree",
+     "corrected": "C",
+     "basis": "pass 1"
+    }
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:02:42+05:30",
+    "basis": "printed text-only key matched to its option (addendum §4.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 11 / Average 7 / Difficulty 7) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "9ef0aede91568d255cc9746bcaca95b5d6987c71897075da6e444019a8fa3e71",
+   "topic_ids": [
+    "evs-3-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-02-s1-q007",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-02",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "2",
+     "text_as_printed": "Sorts Objects ̧birds ̧animalş plants according to their similarities and differences."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Which of the following does not belong to the plant family?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s1-q007",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s1-q007",
+     "pdf_page": 15,
+     "printed_page": 15,
+     "y": 401.453,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s1-q007-key",
+     "pdf_page": 99,
+     "printed_page": 99,
+     "y": 232.253,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:02:42+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:02:42+05:30",
+   "section_signal": "I. Choose one appropriate answer out of the four for the following questions",
+   "lo_source": "lesson_table",
+   "options": [
+    {
+     "id": "A",
+     "text": "Rice"
+    },
+    {
+     "id": "B",
+     "text": "Millet"
+    },
+    {
+     "id": "C",
+     "text": "Ada"
+    },
+    {
+     "id": "D",
+     "text": "Wheat"
+    }
+   ],
+   "answer_as_printed": "Aracanut",
+   "answer": {
+    "kind": "option",
+    "option_id": null
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 11 / Average 7 / Difficulty 7) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key text not among options",
+     "why_not_corrected": "printed key '7. Aracanut' prints no letter and matches no option(s) after normalisation (addendum §4.2/§4.4)",
+     "suggested": "C (option 'Ada' sits over the same printed Kannada word as the key 'Aracanut' — arecanut) — review"
+    }
+   ],
+   "content_hash": "4e23aa420635d918a6c40d5001a8c6e28d7e93d55165894f6566e11eeee7bb16",
+   "topic_ids": [
+    "evs-3-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-02-s1-q008",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-02",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "2",
+     "text_as_printed": "Sorts Objects ̧birds ̧animalş plants according to their similarities and differences."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "What is the area where papaya plants are commonly grown?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s1-q008",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s1-q008",
+     "pdf_page": 15,
+     "printed_page": 15,
+     "y": 493.613,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s1-q008-key",
+     "pdf_page": 99,
+     "printed_page": 99,
+     "y": 232.253,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:02:42+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:02:42+05:30",
+   "section_signal": "I. Choose one appropriate answer out of the four for the following questions",
+   "lo_source": "lesson_table",
+   "options": [
+    {
+     "id": "A",
+     "text": "Desert"
+    },
+    {
+     "id": "B",
+     "text": "Coast"
+    },
+    {
+     "id": "C",
+     "text": "Malnad"
+    },
+    {
+     "id": "D",
+     "text": "Plains"
+    }
+   ],
+   "answer_as_printed": "A) Desert",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:02:42+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 11 / Average 7 / Difficulty 7) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "printed key contradicts fact — papaya is not a desert plant; the stem's own Kannada line names a cactus, so the English stem 'papaya' is the likely defect; reviewer",
+     "why_not_corrected": "printed key 'A) Desert' asserted as printed (v1.4 §14.6); stem kept verbatim, never re-translated",
+     "suggested": "review — stem (cactus) or key"
+    }
+   ],
+   "content_hash": "e9fbf5c7730206ea3c68bf82c161565b9d5cb5028b04c480b8025479d17212b1",
+   "topic_ids": [
+    "evs-3-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-02-s1-q009",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-02",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "2",
+     "text_as_printed": "Sorts Objects ̧birds ̧animalş plants according to their similarities and differences."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Which group of plants has long leaves?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s1-q009",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s1-q009",
+     "pdf_page": 15,
+     "printed_page": 15,
+     "y": 586.013,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s1-q009-key",
+     "pdf_page": 99,
+     "printed_page": 99,
+     "y": 255.293,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:02:42+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:02:42+05:30",
+   "section_signal": "I. Choose one appropriate answer out of the four for the following questions",
+   "lo_source": "lesson_table",
+   "options": [
+    {
+     "id": "A",
+     "text": "Lotus-hair"
+    },
+    {
+     "id": "B",
+     "text": "Neem-rose"
+    },
+    {
+     "id": "C",
+     "text": "Chrysanthemum"
+    },
+    {
+     "id": "D",
+     "text": "Sugarcane-maize"
+    }
+   ],
+   "answer_as_printed": "D) Sugarcane-maize",
+   "answer": {
+    "kind": "option",
+    "option_id": "D"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:02:42+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 11 / Average 7 / Difficulty 7) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "6200359131c558c7c9df4df1608aa3d682d5bce6de75ce3df5ce8190d41d5a68",
+   "topic_ids": [
+    "evs-3-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-02-s1-q010",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-02",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "2",
+     "text_as_printed": "Sorts Objects ̧birds ̧animalş plants according to their similarities and differences."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Which part of the curry plant do we use for cooking?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s1-q010",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s1-q010",
+     "pdf_page": 15,
+     "printed_page": 15,
+     "y": 721.853,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s1-q010-key",
+     "pdf_page": 99,
+     "printed_page": 99,
+     "y": 255.293,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:02:42+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:02:42+05:30",
+   "section_signal": "I. Choose one appropriate answer out of the four for the following questions",
+   "lo_source": "lesson_table",
+   "options": [
+    {
+     "id": "A",
+     "text": "Leaf"
+    },
+    {
+     "id": "B",
+     "text": "Stem"
+    },
+    {
+     "id": "C",
+     "text": "Seed"
+    },
+    {
+     "id": "D",
+     "text": "Root"
+    }
+   ],
+   "answer_as_printed": "A) Leaf",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:02:42+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 11 / Average 7 / Difficulty 7) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "871495f301932e1972ce8e2a7c2eb4df7c4ce2615a75389e89b4e0c8ed2778f2",
+   "topic_ids": [
+    "evs-3-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-02-s2-q011",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-02",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "2",
+     "text_as_printed": "Sorts Objects ̧birds ̧animalş plants according to their similarities and differences."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Match the following: Peppercorns\nB: Fragrant leaf; Broad, long leaf; Highland region; Herbal class",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s2-q011",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s2-q011",
+     "pdf_page": 16,
+     "printed_page": 16,
+     "y": 117.773,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s2-q011-key",
+     "pdf_page": 99,
+     "printed_page": 99,
+     "y": 291.293,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:02:42+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:02:42+05:30",
+   "text_as_printed": "Peppercorns",
+   "section_signal": "II Match the following:",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "Peppercorns",
+      "right": "Highland region"
+     }
+    ]
+   },
+   "answer_as_printed": "11. Highland region",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:02:42+05:30",
+    "basis": "printed match key: the right-hand value per printed row number; left = that row's column-A item, right = key wording verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 11 / Average 7 / Difficulty 7) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "9a6e672d6cdeef8818be8ecc9848737d1fd8379693729d8c66e55cba965e4ac9",
+   "topic_ids": [
+    "evs-3-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-02-s2-q012",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-02",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "2",
+     "text_as_printed": "Sorts Objects ̧birds ̧animalş plants according to their similarities and differences."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Match the following: Eggplant\nB: Fragrant leaf; Broad, long leaf; Highland region; Herbal class",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s2-q012",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s2-q012",
+     "pdf_page": 16,
+     "printed_page": 16,
+     "y": 155.213,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s2-q012-key",
+     "pdf_page": 99,
+     "printed_page": 99,
+     "y": 312.653,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:02:42+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:02:42+05:30",
+   "text_as_printed": "Eggplant",
+   "section_signal": "II Match the following:",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "Eggplant",
+      "right": "plants and herbs"
+     }
+    ]
+   },
+   "answer_as_printed": "12 plants and herbs",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:02:42+05:30",
+    "basis": "printed match key: the right-hand value per printed row number; left = that row's column-A item, right = key wording verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 11 / Average 7 / Difficulty 7) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "match key value not among column-B items — key 'plants and herbs'; column B prints 'Herbal class'",
+     "why_not_corrected": "key text kept as printed (v1.4 §14.8); the row is unambiguous",
+     "suggested": "Herbal class — review"
+    }
+   ],
+   "content_hash": "b1b26d82702b3dcf7d395bc4db7a4130c6f1c458fc23db80d6e3377b971a7488",
+   "topic_ids": [
+    "evs-3-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-02-s2-q013",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-02",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "2",
+     "text_as_printed": "Sorts Objects ̧birds ̧animalş plants according to their similarities and differences."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Match the following: Banana\nB: Fragrant leaf; Broad, long leaf; Highland region; Herbal class",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s2-q013",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s2-q013",
+     "pdf_page": 16,
+     "printed_page": 16,
+     "y": 192.653,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s2-q013-key",
+     "pdf_page": 99,
+     "printed_page": 99,
+     "y": 334.013,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:02:42+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:02:42+05:30",
+   "text_as_printed": "Banana",
+   "section_signal": "II Match the following:",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "Banana",
+      "right": "Broad-oblong leaf"
+     }
+    ]
+   },
+   "answer_as_printed": "13. Broad-oblong leaf",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:02:42+05:30",
+    "basis": "printed match key: the right-hand value per printed row number; left = that row's column-A item, right = key wording verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 11 / Average 7 / Difficulty 7) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "match key value not among column-B items — key 'Broad-oblong leaf'; column B prints 'Broad, long leaf'",
+     "why_not_corrected": "key text kept as printed (v1.4 §14.8); the row is unambiguous",
+     "suggested": "Broad, long leaf — review"
+    }
+   ],
+   "content_hash": "1b84b8a6b8896a3ef440bb405542028fe20349c0251eee7db9bf0d24a6fca18a",
+   "topic_ids": [
+    "evs-3-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-02-s2-q014",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-02",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "2",
+     "text_as_printed": "Sorts Objects ̧birds ̧animalş plants according to their similarities and differences."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Match the following: Mint\nB: Fragrant leaf; Broad, long leaf; Highland region; Herbal class",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s2-q014",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s2-q014",
+     "pdf_page": 16,
+     "printed_page": 16,
+     "y": 230.333,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s2-q014-key",
+     "pdf_page": 99,
+     "printed_page": 99,
+     "y": 355.373,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:02:42+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:02:42+05:30",
+   "text_as_printed": "Mint",
+   "section_signal": "II Match the following:",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "Mint",
+      "right": "Fragrant leaf"
+     }
+    ]
+   },
+   "answer_as_printed": "14. Fragrant leaf",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:02:42+05:30",
+    "basis": "printed match key: the right-hand value per printed row number; left = that row's column-A item, right = key wording verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 11 / Average 7 / Difficulty 7) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "f2f6ffb093677ac16f4a7b1e48c63477b527f2d227441c210009fbb184de70cd",
+   "topic_ids": [
+    "evs-3-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-02-s3-q015",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-02",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "2",
+     "text_as_printed": "Sorts Objects ̧birds ̧animalş plants according to their similarities and differences."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Hibiscus plants are examples for bushes.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s3-q015",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s3-q015",
+     "pdf_page": 16,
+     "printed_page": 16,
+     "y": 329.546,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s3-q015-key",
+     "pdf_page": 99,
+     "printed_page": 99,
+     "y": 382.826,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:02:42+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:02:42+05:30",
+   "text_as_printed": "Hibiscus plants are examples for bushes. ________",
+   "section_signal": "III. Tick true or false for the statements :-",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "True",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:02:42+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 11 / Average 7 / Difficulty 7) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "b65b18c07a5eb2bf2a03b6b391c7bbf4b0c65879a4ee7b59e84dad67ca2a0205",
+   "topic_ids": [
+    "evs-3-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-02-s3-q016",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-02",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "2",
+     "text_as_printed": "Sorts Objects ̧birds ̧animalş plants according to their similarities and differences."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "The stems of the creepers are hard.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s3-q016",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s3-q016",
+     "pdf_page": 16,
+     "printed_page": 16,
+     "y": 389.786,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s3-q016-key",
+     "pdf_page": 99,
+     "printed_page": 99,
+     "y": 382.826,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:02:42+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:02:42+05:30",
+   "text_as_printed": "The stems of the creepers are hard. ______",
+   "section_signal": "III. Tick true or false for the statements :-",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "option",
+    "option_id": "false"
+   },
+   "answer_as_printed": "False",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:02:42+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 11 / Average 7 / Difficulty 7) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "554dd5842d7259117b34648f161a9ff27cb944094bbb283d0eac8ff62b48017c",
+   "topic_ids": [
+    "evs-3-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-02-s3-q017",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-02",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "2",
+     "text_as_printed": "Sorts Objects ̧birds ̧animalş plants according to their similarities and differences."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Flower is the beautiful part of a plant.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s3-q017",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s3-q017",
+     "pdf_page": 16,
+     "printed_page": 16,
+     "y": 450.026,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s3-q017-key",
+     "pdf_page": 99,
+     "printed_page": 99,
+     "y": 382.826,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:02:42+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:02:42+05:30",
+   "text_as_printed": "Flower is the beautiful part of a plant. _______",
+   "section_signal": "III. Tick true or false for the statements :-",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "True",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:02:42+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 11 / Average 7 / Difficulty 7) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "1991a6586a81e4044127cdb77059d186d822c2f41b9ce162f9c0ee8b37a65989",
+   "topic_ids": [
+    "evs-3-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-02-s4-q018",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-02",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "2",
+     "text_as_printed": "Sorts Objects ̧birds ̧animalş plants according to their similarities and differences."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Classify the following in to Shurbs, Trees, and Creepers from the following:-\nPumpkinvine, Hibiscus,peepletree,Bitter gourd vine, Rose, neem tree, Jasmine,watermelon vine Banyan tree, cucumber vine, Curry leaves plant and coconut tree",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s4-q018",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s4-q018",
+     "pdf_page": 16,
+     "printed_page": 16,
+     "y": 510.266,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s4-q018-key",
+     "pdf_page": 99,
+     "printed_page": 99,
+     "y": 410.666,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:02:42+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:02:42+05:30",
+   "text_as_printed": "Classify the following in to Shurbs, Trees, and Creepers from the following :-\nPumpkinvine, Hibiscus ,peepletree,Bitter gourd vine, Rose, neem tree, Jasmine,watermelon vine Banyan tree , cucumber vine, Curry leaves plant and coconut tree",
+   "section_signal": "18, Classify the following in to Shurbs, Trees, and Creepers from the following :-",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Shrubs :- hibiscus, Rose plant, Jasmine plant, Curry leaves plant\nTrees :- Banyan tree, Neem tree, Peeple tree and coconut tree\nCreepers :- Pumpkin creepers, bitter gourd creeper,watermelon creeper and cucumber creeper"
+   },
+   "answer_as_printed": "Shrubs :- hibiscus, Rose plant, Jasmine plant, Curry leaves plant\nTrees :- Banyan tree, Neem tree, Peeple tree and coconut tree\nCreepers :- Pumpkin creepers, bitter gourd creeper,watermelon creeper and cucumber creeper",
+   "solution_steps": [
+    "Shrubs :- hibiscus, Rose plant, Jasmine plant, Curry leaves plant",
+    "Trees :- Banyan tree, Neem tree, Peeple tree and coconut tree",
+    "Creepers :- Pumpkin creepers, bitter gourd creeper,watermelon creeper and cucumber creeper"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:02:42+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '3x1=3' — N=3 but 1 question(s) printed in the section (R-E9)"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 11 / Average 7 / Difficulty 7) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "9dc35a12357cf1769a193ecb479562741a263da260468f274b2338890644487c",
+   "topic_ids": [
+    "evs-3-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-02-s5-q019",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-02",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "2",
+     "text_as_printed": "Sorts Objects ̧birds ̧animalş plants according to their similarities and differences."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "How do you use the fallen leaves on the school grounds?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s5-q019",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s5-q019",
+     "pdf_page": 16,
+     "printed_page": 16,
+     "y": 729.533,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s5-q019-key",
+     "pdf_page": 99,
+     "printed_page": 99,
+     "y": 585.293,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:02:42+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:02:42+05:30",
+   "section_signal": "IV. Answer the questions:",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "I will make compost by putting the fallen leaves in a hole"
+   },
+   "answer_as_printed": "I will make compost by putting the fallen leaves in a hole",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:02:42+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 11 / Average 7 / Difficulty 7) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "d1376f3ec4fb1f0eb5b3dc5b8c8d5ff17dab745b15f94772a29999da1d8c8bf5",
+   "topic_ids": [
+    "evs-3-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-02-s5-q020",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-02",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "2",
+     "text_as_printed": "Sorts Objects ̧birds ̧animalş plants according to their similarities and differences."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "What part of the plant is inside the soil? What color is it?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s5-q020",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s5-q020",
+     "pdf_page": 17,
+     "printed_page": 17,
+     "y": 59.453,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s5-q020-key",
+     "pdf_page": 99,
+     "printed_page": 99,
+     "y": 630.893,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:02:42+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:02:42+05:30",
+   "section_signal": "IV. Answer the questions:",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "The root part of plants is inside the soil. The root is brown in color"
+   },
+   "answer_as_printed": "The root part of plants is inside the soil. The root is brown in color",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:02:42+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 11 / Average 7 / Difficulty 7) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "bf42b094408145d41750a1672ca2e92dca83f3a7a3d49a44994335115cce874d",
+   "topic_ids": [
+    "evs-3-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-02-s5-q021",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-02",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "2",
+     "text_as_printed": "Sorts Objects ̧birds ̧animalş plants according to their similarities and differences."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Name two trees with thick bark.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s5-q021",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s5-q021",
+     "pdf_page": 17,
+     "printed_page": 17,
+     "y": 136.973,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s5-q021-key",
+     "pdf_page": 99,
+     "printed_page": 99,
+     "y": 692.333,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:02:42+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:02:42+05:30",
+   "section_signal": "IV. Answer the questions:",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Tamarind, Jali, Mango, Neem tree etc."
+   },
+   "answer_as_printed": "Tamarind, Jali, Mango, Neem tree etc.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:02:42+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 11 / Average 7 / Difficulty 7) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "d88e36b61fde8ebc987f5c5d6f666ec09b74439493e3f3ad1d0f9fd152cc8507",
+   "topic_ids": [
+    "evs-3-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-02-s5-q022",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-02",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "2",
+     "text_as_printed": "Sorts Objects ̧birds ̧animalş plants according to their similarities and differences."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "What does the stem of herbs look like?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s5-q022",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s5-q022",
+     "pdf_page": 17,
+     "printed_page": 17,
+     "y": 191.933,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s5-q022-key",
+     "pdf_page": 99,
+     "printed_page": 99,
+     "y": 732.173,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:02:42+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:02:42+05:30",
+   "section_signal": "IV. Answer the questions:",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "The stems of herbs are short, soft, and green."
+   },
+   "answer_as_printed": "The stems of herbs are short, soft, and green.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:02:42+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 11 / Average 7 / Difficulty 7) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "918c1f2cb7a0cb4da40aefb8d37f133600ad82896374581c29742e17c880bf09",
+   "topic_ids": [
+    "evs-3-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-02-s6-q023",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-02",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "2",
+     "text_as_printed": "Sorts Objects ̧birds ̧animalş plants according to their similarities and differences."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "What objects have you seen pictures of with leaves and flowers on them?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s6-q023",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s6-q023",
+     "pdf_page": 17,
+     "printed_page": 17,
+     "y": 289.373,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s6-q023-key",
+     "pdf_page": 100,
+     "printed_page": 100,
+     "y": 39.293,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:02:42+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:02:42+05:30",
+   "section_signal": "V. Answer the questions in two sentences.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "We see images of leaves and flowers on sarees, various clothes, bed linen, jugs, and floor and wall coverings."
+   },
+   "answer_as_printed": "We see images of leaves and flowers on sarees, various clothes, bed linen, jugs, and floor and wall coverings.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:02:42+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '2 X 3=6' — M=3 is not the smaller factor (R-E9)"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 11 / Average 7 / Difficulty 7) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "99e78b67638797968b8b62324a0d41fa76bc408d8b8f1e7d3a9c3605162776e8",
+   "topic_ids": [
+    "evs-3-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-02-s6-q024",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-02",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "2",
+     "text_as_printed": "Sorts Objects ̧birds ̧animalş plants according to their similarities and differences."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "What are the benefits of plants?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s6-q024",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s6-q024",
+     "pdf_page": 17,
+     "printed_page": 17,
+     "y": 357.053,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s6-q024-key",
+     "pdf_page": 100,
+     "printed_page": 100,
+     "y": 119.213,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:02:42+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:02:42+05:30",
+   "section_signal": "V. Answer the questions in two sentences.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "We get grains, oilseeds, pulses, fruits and vegetables from plants. They also provide medicine, firewood, create a good climate and environment. They also bring rain."
+   },
+   "answer_as_printed": "We get grains, oilseeds, pulses, fruits and vegetables from plants. They also provide medicine, firewood, create a good climate and environment. They also bring rain.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:02:42+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '2 X 3=6' — M=3 is not the smaller factor (R-E9)"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 11 / Average 7 / Difficulty 7) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "4305b004e742dc4f3e4ade312c9ca3a31d543fcfe8aa08446b21fa16e070f330",
+   "topic_ids": [
+    "evs-3-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-02-s7-q025",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-02",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "2",
+     "text_as_printed": "Sorts Objects ̧birds ̧animalş plants according to their similarities and differences."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Draw the picture of a plant and name its parts:-",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s7-q025",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s7-q025",
+     "pdf_page": 17,
+     "printed_page": 17,
+     "y": 415.946,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-02-s7-q025-key",
+     "pdf_page": 99,
+     "printed_page": 99,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:02:42+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:02:42+05:30",
+   "section_signal": "25. Draw the picture of a plant and name its parts:-",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '3x1=3' — N=3 but 1 question(s) printed in the section (R-E9)"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 11 / Average 7 / Difficulty 7) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "no answer printed",
+     "why_not_corrected": "the key side restates the instruction ('V. Draw the picture of a plant and name its parts', pdf 100) and prints no answer",
+     "suggested": "key absent — review"
+    }
+   ],
+   "content_hash": "25de69a2758162dc78790d4acf44cfb28cf3e28c864694c60d1df337234e0649",
+   "topic_ids": [
+    "evs-3-02-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  }
+ ],
+ "pending_summary": {}
+}
