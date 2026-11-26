@@ -1,0 +1,4776 @@
+{
+ "contract_version": "1.7",
+ "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
+ "procedure_file": "extraction_procedure_social_addendum_v1.4_social science Classes 6-10 on top of procedure v2.md",
+ "machine_name": "evs-4-12_questions",
+ "version": 1,
+ "changelog": "v1 extraction — batch-01 — class-4-evs",
+ "amendments_applied": [],
+ "unit_state": "EXTRACTED",
+ "review_ready": false,
+ "count_gate": {
+  "reference": 59,
+  "reference_source": "audited",
+  "extracted": 59,
+  "paired": 51,
+  "flagged": 10,
+  "gaps": [
+   12
+  ],
+  "duplicated_numbers": [],
+  "quota_table": "absent",
+  "second_method": {
+   "method": "independent count of answer-side keys (54 numbered keys + 1 unnumbered match block(s)) + 4 question(s) with no printed key",
+   "extracted": 59,
+   "agrees": true
+  },
+  "pass": true,
+  "note": "No difficulty distribution table is printed in this LBA -> quota_table 'absent' (ruling R-E6). Question side: fill run prints 6-11, 13-16 (label 12 absent -> gap); 59 questions. Answer side: fill keys 6-15 run continuously, so keys 12-15 answer q013-q016 (left EMPTY with 'shifted numbering — see key N', 4 questions); T/F 17-25 aligned; [match block]; 27-59 aligned; q060 no key. Keys restate their questions. Difficulty per question: easy 35, average 5, difficult 19, untagged 0."
+ },
+ "extraction": {
+  "source_file": "4thLBA-EVS-EM1.pdf",
+  "source_ref_prefix": "4thLBA-EVS-EM1.pdf",
+  "pdf_pages": [
+   51,
+   52,
+   53,
+   54,
+   55,
+   150,
+   151,
+   152,
+   153,
+   154
+  ],
+  "printed_page_offset": 0,
+  "method_notes": [
+   "Pages: Q pdf 51 (heading, LO) 52-55; A pdf 150 (heading 'Map Skills Questions', keys 1-8) 151-154.",
+   "Sections: s1 MCQ q1-5; s2 fill q6-16 (no 12); s3 T/F q17-25; s4 '26. Match the following with correct answers (easy)' q26; s5 one mark q27-36 vsa; s6 two marks q37-44 sa; s7 three marks q45-52 sa; s8 four marks q53-60 la (heading tagged '(difficult)'; stems q53-60 untagged -> section_header).",
+   "KEY FORM: every key restates its question before the answer ('27. Which alphabet is used to show the north direction on the map? N'). The restatement is cut mechanically (the stem's last words located in the key line); answer.value = the answer part; answer_as_printed = the whole printed key line. Fill keys print the completed sentence -> stored verbatim as the fill value.",
+   "NUMBERING (ruled shape): label 12 absent on the question side; the fill keys run 6-15 continuously -> keys 12-15 answer q013-q016 (each key restates its question, so the coordinator's content check is direct). Default lane: EMPTY + 'shifted numbering — see key N'.",
+   "MAP QUESTIONS: q48 'Draw a map of your school and show the directions and locate the important places', q53 'Draw a map of the route…', q55 'Draw the design of your classroom from the grid system…' (keys '(To be drawn by student)'), q60 'Prepare a route map…' (no key) — no map printed on either side (figure inventory) -> sourceless: empty + 'no answer printed', no map block, no crop (Class-9 ruling).",
+   "q2 option A printed 'Answer' (flagged). q25 T/F key conflicts with the lesson's other keys on who first drew maps (flagged). q37 key: restated question + 3 bullets -> 3 steps.",
+   "Transcription: evs_auto.py rules (as evs-4-01) + the overrides in build file build_12.py; marks per ruling R-E5; topic per R-E3."
+  ],
+  "notation_summary": {
+   "render_tokens": 0,
+   "latex_tokens": 0,
+   "damage_flags": []
+  },
+  "excluded_objects": [],
+  "inline_excluded_count": 0,
+  "figure_references": []
+ },
+ "stimuli": [],
+ "questions": [
+  {
+   "id": "evs-4-12-s1-q001",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-12",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The direction in which the sun rises.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s1-q001",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s1-q001",
+     "pdf_page": 52,
+     "printed_page": 52,
+     "y": 109.082,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s1-q001-key",
+     "pdf_page": 150,
+     "printed_page": 150,
+     "y": 509.708,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:19:24+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:19:24+05:30",
+   "section_signal": "Choose the correct answers to the following questions and write them",
+   "options": [
+    {
+     "id": "A",
+     "text": "North"
+    },
+    {
+     "id": "B",
+     "text": "South"
+    },
+    {
+     "id": "C",
+     "text": "West"
+    },
+    {
+     "id": "D",
+     "text": "East"
+    }
+   ],
+   "answer_as_printed": "The direction in which the sun rises. D) East",
+   "answer": {
+    "kind": "option",
+    "option_id": "D"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:19:24+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "3a531f72824297756c0b452850635706f0046b5f738133c0f5cf10ac077e81b8",
+   "topic_ids": [
+    "evs-4-12-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-12-s1-q002",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-12",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Karnataka is located in this direction of India.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s1-q002",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s1-q002",
+     "pdf_page": 52,
+     "printed_page": 52,
+     "y": 146.102,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s1-q002-key",
+     "pdf_page": 150,
+     "printed_page": 150,
+     "y": 538.458,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:19:24+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:19:24+05:30",
+   "section_signal": "Choose the correct answers to the following questions and write them",
+   "options": [
+    {
+     "id": "A",
+     "text": "Answer"
+    },
+    {
+     "id": "B",
+     "text": "South"
+    },
+    {
+     "id": "C",
+     "text": "West"
+    },
+    {
+     "id": "D",
+     "text": "East"
+    }
+   ],
+   "answer_as_printed": "Karnataka is located in this direction of India. B) South",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:19:24+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    },
+    {
+     "issue": "source notation inconsistent — option A is printed as 'Answer' (not a direction)",
+     "why_not_corrected": "option kept as printed; the key 'B) South' is unaffected",
+     "suggested": "review — option A misprint"
+    }
+   ],
+   "content_hash": "6362a4be1c2da6bb926c865c7403c6adcb573a073a2bb509bc5542e3fcdcee1d",
+   "topic_ids": [
+    "evs-4-12-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-12-s1-q003",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-12",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The world map is ________.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s1-q003",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s1-q003",
+     "pdf_page": 52,
+     "printed_page": 52,
+     "y": 183.102,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s1-q003-key",
+     "pdf_page": 150,
+     "printed_page": 150,
+     "y": 567.228,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:19:24+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:19:24+05:30",
+   "section_signal": "Choose the correct answers to the following questions and write them",
+   "options": [
+    {
+     "id": "A",
+     "text": "Map of India"
+    },
+    {
+     "id": "B",
+     "text": "Map of oceans"
+    },
+    {
+     "id": "C",
+     "text": "Map of Direction"
+    },
+    {
+     "id": "D",
+     "text": "Map of the Earth"
+    }
+   ],
+   "answer_as_printed": "The world map is ________. D) Map of the Earth",
+   "answer": {
+    "kind": "option",
+    "option_id": "D"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:19:24+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "fff445d2fee7a840e94b5b50dd84945d5b962372a4b1cc68ea078cbc5b9183d7",
+   "topic_ids": [
+    "evs-4-12-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-12-s1-q004",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-12",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The map was drawn for the first time by the",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s1-q004",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s1-q004",
+     "pdf_page": 52,
+     "printed_page": 52,
+     "y": 220.132,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s1-q004-key",
+     "pdf_page": 150,
+     "printed_page": 150,
+     "y": 595.978,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:19:24+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:19:24+05:30",
+   "section_signal": "Choose the correct answers to the following questions and write them",
+   "options": [
+    {
+     "id": "A",
+     "text": "Indians"
+    },
+    {
+     "id": "B",
+     "text": "Egyptians"
+    },
+    {
+     "id": "C",
+     "text": "Americans"
+    },
+    {
+     "id": "D",
+     "text": "The British"
+    }
+   ],
+   "answer_as_printed": "The map was drawn for the first time by the B) Egyptians",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:19:24+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "49005ff23156076bd1b801d129168dbeb51a066cc99d53f57175870aaed6acc8",
+   "topic_ids": [
+    "evs-4-12-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-12-s1-q005",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-12",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The mountain ranges loacted in the northern part of India",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s1-q005",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s1-q005",
+     "pdf_page": 52,
+     "printed_page": 52,
+     "y": 257.132,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s1-q005-key",
+     "pdf_page": 150,
+     "printed_page": 150,
+     "y": 624.478,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:19:24+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:19:24+05:30",
+   "section_signal": "Choose the correct answers to the following questions and write them",
+   "options": [
+    {
+     "id": "A",
+     "text": "Nilgiris"
+    },
+    {
+     "id": "B",
+     "text": "Vindhyas"
+    },
+    {
+     "id": "C",
+     "text": "Himalayas"
+    },
+    {
+     "id": "D",
+     "text": "Aravalli"
+    }
+   ],
+   "answer_as_printed": "The mountain ranges located in the northern part of India C) Himalayas",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:19:24+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "8a2648a7faf59c1910dae563e955999bfe34fff3c781ba10a1e05fbc015f35b8",
+   "topic_ids": [
+    "evs-4-12-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-12-s2-q006",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-12",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The four main directions are __________, __________, __________ and __________.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s2-q006",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s2-q006",
+     "pdf_page": 52,
+     "printed_page": 52,
+     "y": 346.902,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s2-q006-key",
+     "pdf_page": 150,
+     "printed_page": 150,
+     "y": 674.008,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:19:24+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:19:24+05:30",
+   "section_signal": "Fill in the blanks with suitable answers",
+   "answer": {
+    "kind": "text",
+    "value": "The four main directions are North, South, East and West."
+   },
+   "answer_as_printed": "The four main directions are North, South, East and West.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:19:24+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "72dbf87bc3e8d4e1aa269508079ecf2c6adc16ae8145dfd725c75b5d918a88ae",
+   "topic_ids": [
+    "evs-4-12-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-12-s2-q007",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-12",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "In the example given in the lesson, the two steps of Yasmin were equal to __________ meters.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s2-q007",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s2-q007",
+     "pdf_page": 52,
+     "printed_page": 52,
+     "y": 373.422,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s2-q007-key",
+     "pdf_page": 150,
+     "printed_page": 150,
+     "y": 702.758,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:19:24+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:19:24+05:30",
+   "section_signal": "Fill in the blanks with suitable answers",
+   "answer": {
+    "kind": "text",
+    "value": "In the example given in the lesson, the two steps of Yasmin were equal to 1 meter."
+   },
+   "answer_as_printed": "In the example given in the lesson, the two steps of Yasmin were equal to 1 meter.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:19:24+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "ccaf1935a09817991b308c86b3d519a8664bc1d13aee94f3ac8ab3af7e8ee53d",
+   "topic_ids": [
+    "evs-4-12-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-12-s2-q008",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-12",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "A large __________ tree used as a reference point on the village map.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s2-q008",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s2-q008",
+     "pdf_page": 52,
+     "printed_page": 52,
+     "y": 418.422,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s2-q008-key",
+     "pdf_page": 150,
+     "printed_page": 150,
+     "y": 731.533,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:19:24+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:19:24+05:30",
+   "text_as_printed": "A large __________ tree used as a reference point on the village map .",
+   "section_signal": "Fill in the blanks with suitable answers",
+   "answer": {
+    "kind": "text",
+    "value": "A large banyan tree used as a reference point on the village map."
+   },
+   "answer_as_printed": "A large banyan tree used as a reference point on the village map.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:19:24+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "6911fa06ff607e540c9cf572d14c146a735465d1838fc12f4d036da6f0150cdb",
+   "topic_ids": [
+    "evs-4-12-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-12-s2-q009",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-12",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "With reference to Karnataka, Arabian Sea is to the _____________direction",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s2-q009",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s2-q009",
+     "pdf_page": 52,
+     "printed_page": 52,
+     "y": 444.922,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s2-q009-key",
+     "pdf_page": 151,
+     "printed_page": 151,
+     "y": 72.588,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:19:24+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:19:24+05:30",
+   "section_signal": "Fill in the blanks with suitable answers",
+   "answer": {
+    "kind": "text",
+    "value": "With reference to Karnataka, Arabian Sea is to the west direction."
+   },
+   "answer_as_printed": "With reference to Karnataka, Arabian Sea is to the west direction.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:19:24+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "711620a4ec52c2f65e13d8b40d7c6178e6b751169ee46765e450917d136cb0d5",
+   "topic_ids": [
+    "evs-4-12-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-12-s2-q010",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-12",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "All the maps have__________ or __________as the units of measurement.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s2-q010",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s2-q010",
+     "pdf_page": 52,
+     "printed_page": 52,
+     "y": 471.452,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s2-q010-key",
+     "pdf_page": 151,
+     "printed_page": 151,
+     "y": 101.338,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:19:24+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:19:24+05:30",
+   "section_signal": "Fill in the blanks with suitable answers",
+   "answer": {
+    "kind": "text",
+    "value": "All the maps have centimeters or inches as the units of measurement."
+   },
+   "answer_as_printed": "All the maps have centimeters or inches as the units of measurement.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:19:24+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "61ea27263a2928a5efd75f97ffc97874055ed0f532e58c1056b3b8078909a126",
+   "topic_ids": [
+    "evs-4-12-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-12-s2-q011",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-12",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Imaginary lines that help to form the grid on the maps are __________ and __________",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s2-q011",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s2-q011",
+     "pdf_page": 52,
+     "printed_page": 52,
+     "y": 497.952,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s2-q011-key",
+     "pdf_page": 151,
+     "printed_page": 151,
+     "y": 130.108,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:19:24+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:19:24+05:30",
+   "section_signal": "Fill in the blanks with suitable answers",
+   "answer": {
+    "kind": "text",
+    "value": "Imaginary lines that help to form the grid on the maps are longitudes and latitudes."
+   },
+   "answer_as_printed": "Imaginary lines that help to form the grid on the maps are longitudes and latitudes.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:19:24+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "2856cbfe1bf2964fafade75b4daab46dfb9293f2dd450f56e7b1e28338521eb9",
+   "topic_ids": [
+    "evs-4-12-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-12-s2-q013",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-12",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "__________ maps show physical features such as mountains and rivers.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s2-q013",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s2-q013",
+     "pdf_page": 52,
+     "printed_page": 52,
+     "y": 542.972,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s2-q013-key",
+     "pdf_page": 151,
+     "printed_page": 151,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:19:24+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:19:24+05:30",
+   "section_signal": "Fill in the blanks with suitable answers",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    },
+    {
+     "issue": "shifted numbering — see key 12",
+     "why_not_corrected": "answer-side numbering is displaced; extraction does not shift-align (procedure §4.2) — answer left empty, coordinator verifies by content",
+     "suggested": "key 12"
+    }
+   ],
+   "content_hash": "91cc9af873f97579474a5af9830f9004e415d13a6388a68814e19054c536dfc3",
+   "topic_ids": [
+    "evs-4-12-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-12-s2-q014",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-12",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The post office is located in __________ direction on the village map.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s2-q014",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s2-q014",
+     "pdf_page": 52,
+     "printed_page": 52,
+     "y": 569.472,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s2-q014-key",
+     "pdf_page": 151,
+     "printed_page": 151,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:19:24+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:19:24+05:30",
+   "section_signal": "Fill in the blanks with suitable answers",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    },
+    {
+     "issue": "shifted numbering — see key 13",
+     "why_not_corrected": "answer-side numbering is displaced; extraction does not shift-align (procedure §4.2) — answer left empty, coordinator verifies by content",
+     "suggested": "key 13"
+    }
+   ],
+   "content_hash": "78faa5f38df69dcf85ff24fca8cc397ab378cfe00d508d615cb5442574bca9ef",
+   "topic_ids": [
+    "evs-4-12-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-12-s2-q015",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-12",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The landmarks that can be used on the map are ____________, ____________, and ______________",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s2-q015",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s2-q015",
+     "pdf_page": 52,
+     "printed_page": 52,
+     "y": 595.972,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s2-q015-key",
+     "pdf_page": 151,
+     "printed_page": 151,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:19:24+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:19:24+05:30",
+   "section_signal": "Fill in the blanks with suitable answers",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    },
+    {
+     "issue": "shifted numbering — see key 14",
+     "why_not_corrected": "answer-side numbering is displaced; extraction does not shift-align (procedure §4.2) — answer left empty, coordinator verifies by content",
+     "suggested": "key 14"
+    }
+   ],
+   "content_hash": "113f39011ac580dbf74f0b10df9f4ccb7bae3f927ca391a4b9456998c482d2af",
+   "topic_ids": [
+    "evs-4-12-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-12-s2-q016",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-12",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Greeks drew the map of the earth in __________",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s2-q016",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s2-q016",
+     "pdf_page": 52,
+     "printed_page": 52,
+     "y": 641.002,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s2-q016-key",
+     "pdf_page": 151,
+     "printed_page": 151,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:19:24+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:19:24+05:30",
+   "section_signal": "Fill in the blanks with suitable answers",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    },
+    {
+     "issue": "shifted numbering — see key 15",
+     "why_not_corrected": "answer-side numbering is displaced; extraction does not shift-align (procedure §4.2) — answer left empty, coordinator verifies by content",
+     "suggested": "key 15"
+    }
+   ],
+   "content_hash": "102220ad08f8694d3332c11af7a5c03d353f2e7412c3110d69ca7489c09c5ef2",
+   "topic_ids": [
+    "evs-4-12-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-12-s3-q017",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-12",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The north direction is at the bottom of the map.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s3-q017",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s3-q017",
+     "pdf_page": 52,
+     "printed_page": 52,
+     "y": 694.002,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s3-q017-key",
+     "pdf_page": 151,
+     "printed_page": 151,
+     "y": 294.158,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:19:24+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:19:24+05:30",
+   "text_as_printed": "The north direction is at the bottom of the map. –",
+   "section_signal": "State whether the following statements are true or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "false"
+   },
+   "answer_as_printed": "The north direction is at the bottom of the map. – False",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:19:24+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "cdad7c17dfa8bf723ad6612d03d3a258d54cefa85231f9b195bbcd0f6ed30c31",
+   "topic_ids": [
+    "evs-4-12-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-12-s3-q018",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-12",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The length and width of the room can be measured by footsteps.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s3-q018",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s3-q018",
+     "pdf_page": 52,
+     "printed_page": 52,
+     "y": 720.522,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s3-q018-key",
+     "pdf_page": 151,
+     "printed_page": 151,
+     "y": 322.908,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:19:24+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:19:24+05:30",
+   "text_as_printed": "The length and width of the room can be measured by footsteps. –",
+   "section_signal": "State whether the following statements are true or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "The length and width of the room can be measured by footsteps. – True",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:19:24+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "f026ab648a818d1ee17a53b68c1826ec16347677e7ab9f20eb6db110e7f1a8f2",
+   "topic_ids": [
+    "evs-4-12-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-12-s3-q019",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-12",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Important location identification helps in identifying the location on the route map.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s3-q019",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s3-q019",
+     "pdf_page": 53,
+     "printed_page": 53,
+     "y": 72.082,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s3-q019-key",
+     "pdf_page": 151,
+     "printed_page": 151,
+     "y": 351.658,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:19:24+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:19:24+05:30",
+   "text_as_printed": "Important location identification helps in identifying the location on the route map. –",
+   "section_signal": "State whether the following statements are true or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "Important location identification helps in identifying the location on the route map. – True",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:19:24+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "c825fbbf6e6fc97390c391239ca603e34386c913affb14c331bfab7f7e9067a4",
+   "topic_ids": [
+    "evs-4-12-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-12-s3-q020",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-12",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Longitudes and latitudes are the lines drawn on the earth.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s3-q020",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s3-q020",
+     "pdf_page": 53,
+     "printed_page": 53,
+     "y": 117.102,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s3-q020-key",
+     "pdf_page": 151,
+     "printed_page": 151,
+     "y": 401.178,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:19:24+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:19:24+05:30",
+   "text_as_printed": "Longitudes and latitudes are the lines drawn on the earth. –",
+   "section_signal": "State whether the following statements are true or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "Longitudes and latitudes are the lines drawn on the earth. – True",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:19:24+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "9b96859583b28854ce3e55eefc6e4d00c30a3c6ff7e783417dc2fd7c841470ae",
+   "topic_ids": [
+    "evs-4-12-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-12-s3-q021",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-12",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The map shows the direction of the place based on a reference point.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s3-q021",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s3-q021",
+     "pdf_page": 53,
+     "printed_page": 53,
+     "y": 143.602,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s3-q021-key",
+     "pdf_page": 151,
+     "printed_page": 151,
+     "y": 429.678,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:19:24+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:19:24+05:30",
+   "text_as_printed": "The map shows the direction of the place based on a reference point. –",
+   "section_signal": "State whether the following statements are true or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "The map shows the direction of the place based on a reference point. – True",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:19:24+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "0ff96c1133d0d3fb80ac0972c6daefb5beefdbde6f58fba6f59f8cad92aeffd1",
+   "topic_ids": [
+    "evs-4-12-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-12-s3-q022",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-12",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "A mosque can be used as a land mark on the route map.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s3-q022",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s3-q022",
+     "pdf_page": 53,
+     "printed_page": 53,
+     "y": 170.102,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s3-q022-key",
+     "pdf_page": 151,
+     "printed_page": 151,
+     "y": 458.458,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:19:24+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:19:24+05:30",
+   "text_as_printed": "A mosque can be used as a land mark on the route map. -",
+   "section_signal": "State whether the following statements are true or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "A mosque can be used as a land mark on the route map. – True",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:19:24+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "1e88dd3b8fb69e53775ee8839be2dfc7bde05a7fa07a55df72f4056fd94d9b00",
+   "topic_ids": [
+    "evs-4-12-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-12-s3-q023",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-12",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The correct measurement can be converted from the measurement scale of the map to the measurement of the map.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s3-q023",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s3-q023",
+     "pdf_page": 53,
+     "printed_page": 53,
+     "y": 196.602,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s3-q023-key",
+     "pdf_page": 151,
+     "printed_page": 151,
+     "y": 487.208,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:19:24+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:19:24+05:30",
+   "text_as_printed": "The correct measurement can be converted from the measurement scale of the map to the measurement of the map. –",
+   "section_signal": "State whether the following statements are true or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "The correct measurement can be converted from the measurement scale of the map to the measurement of the map. – True",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:19:24+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "8c3e3d691e6ad760e8f8b293918ee9f9f49d534b3d77ffb3f6233c5c6a0adea7",
+   "topic_ids": [
+    "evs-4-12-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-12-s3-q024",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-12",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Maps do not help to understand the populated areas .",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s3-q024",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s3-q024",
+     "pdf_page": 53,
+     "printed_page": 53,
+     "y": 241.632,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s3-q024-key",
+     "pdf_page": 151,
+     "printed_page": 151,
+     "y": 536.458,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:19:24+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:19:24+05:30",
+   "text_as_printed": "Maps do not help to understand the populated areas . –",
+   "section_signal": "State whether the following statements are true or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "false"
+   },
+   "answer_as_printed": "Maps do not help to understand the populated areas. – False",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:19:24+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "87b895559daeea6a53ba78c9d493e57fef28408484ee97cd791d7c6f9a5c5243",
+   "topic_ids": [
+    "evs-4-12-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-12-s3-q025",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-12",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The Greeks were the first to use symbols to create maps.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s3-q025",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s3-q025",
+     "pdf_page": 53,
+     "printed_page": 53,
+     "y": 268.132,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s3-q025-key",
+     "pdf_page": 151,
+     "printed_page": 151,
+     "y": 565.228,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:19:24+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:19:24+05:30",
+   "section_signal": "State whether the following statements are true or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "The Greeks were the first to use symbols to create maps. – True",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:19:24+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    },
+    {
+     "issue": "printed key contradicts fact — the lesson's own q4 key ('the map was drawn for the first time by the Egyptians') and q26 key ('Greeks — first to draw the map of the earth') disagree; this T/F key 'True' asserts the Greeks first used map symbols; reviewer",
+     "why_not_corrected": "asserted as printed (v1.4 §14.6)",
+     "suggested": "review — internal inconsistency on who first drew maps"
+    }
+   ],
+   "content_hash": "2a7f326bdf5d6aae24c41404ccc80438cac2d49b1be8f92e53adca577ab67193",
+   "topic_ids": [
+    "evs-4-12-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-12-s4-q026",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-12",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Match the following with correct answers\nA: a) Karnataka; b) North; c) Longitude-latitudes; d) Foot steps; e) Greeks; f) Landmarks; (g) Banyan tree; h) Units of measurement\nB: a) The main direction of the map; b) south direction of India; c) Used to measure the length and width of the room; d) Imaginary lines to create a square on a map; e) Reference point of village map; f) centimeters or inches; g)Helps in identifying the location of a place; h)first to draw the map of the earth",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s4-q026",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s4-q026",
+     "pdf_page": 53,
+     "printed_page": 53,
+     "y": 321.152,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s4-q026-key",
+     "pdf_page": 151,
+     "printed_page": 151,
+     "y": 593.978,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:19:24+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:19:24+05:30",
+   "text_as_printed": "Match the following with correct answers (easy) A                       B a) Karnataka               a) The main direction of the map b) North                   b) south direction of India c) Longitude-latitudes     c) Used to measure the length and width of the room d) Foot steps              d) Imaginary lines to create a square on a map e) Greeks                  e) Reference point of village map f) Landmarks               f) centimeters or inches (g) Banyan tree            g)Helps in identifying the location of a place h) Units of measurement h)first to draw the map of the earth",
+   "section_signal": "Match the Following",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "Karnataka",
+      "right": "south direction of India"
+     },
+     {
+      "left": "North",
+      "right": "The main direction of the map"
+     },
+     {
+      "left": "Longitude-latitudes",
+      "right": "Imaginary lines to create a square on a map"
+     },
+     {
+      "left": "Foot steps",
+      "right": "Used to measure the length and width of the room"
+     },
+     {
+      "left": "Greeks",
+      "right": "first to draw the map of the earth"
+     },
+     {
+      "left": "Landmarks",
+      "right": "Helps in identifying the location of a place"
+     },
+     {
+      "left": "Banyan tree",
+      "right": "Reference point of village map"
+     },
+     {
+      "left": "Units of measurement",
+      "right": "centimeters or inches"
+     }
+    ]
+   },
+   "answer_as_printed": "a) Karnataka – b) south direction of India; b) North – a) The main direction of the map; c) Longitude-latitudes – d) Imaginary lines to create a square on a map; d) Foot steps – c) Used to measure the length and width of the room; e) Greeks – h) first to draw the map of the earth; f) Landmarks – g) Helps in identifying the location of a place; g) Banyan tree – e) Reference point of village map; h) Units of measurement – f) centimeters or inches",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:19:24+05:30",
+    "basis": "printed match key (letter + text per row); pairs left/right verbatim from the key (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "09e0ee37e2e918d969f366fcfbf9b2dbcfdf094e5eea79c742817299f89042be",
+   "topic_ids": [
+    "evs-4-12-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-12-s5-q027",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-12",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Which alphabet is used to show the north direction on the map?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s5-q027",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s5-q027",
+     "pdf_page": 53,
+     "printed_page": 53,
+     "y": 625.472,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s5-q027-key",
+     "pdf_page": 152,
+     "printed_page": 152,
+     "y": 114.088,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:19:24+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:19:24+05:30",
+   "section_signal": "Answer the following questions (one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "N"
+   },
+   "answer_as_printed": "Which alphabet is used to show the north direction on the map? N",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:19:24+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "0fc5d10444c267c318d4857b93a6d4d3fb7325df2544488bee11d0230607e469",
+   "topic_ids": [
+    "evs-4-12-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-12-s5-q028",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-12",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "How many directions are shown on the map?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s5-q028",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s5-q028",
+     "pdf_page": 53,
+     "printed_page": 53,
+     "y": 652.002,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s5-q028-key",
+     "pdf_page": 152,
+     "printed_page": 152,
+     "y": 142.608,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:19:24+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:19:24+05:30",
+   "section_signal": "Answer the following questions (one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Four"
+   },
+   "answer_as_printed": "How many directions are shown on the map? Four",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:19:24+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "c7312f64618dc16a4bd4314a94612f0ad9bcdba8c6f9c6f93f7a5d773d7365f3",
+   "topic_ids": [
+    "evs-4-12-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-12-s5-q029",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-12",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What is the name of the big tree in the middle of the village map?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s5-q029",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s5-q029",
+     "pdf_page": 53,
+     "printed_page": 53,
+     "y": 678.502,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s5-q029-key",
+     "pdf_page": 152,
+     "printed_page": 152,
+     "y": 171.358,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:19:24+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:19:24+05:30",
+   "section_signal": "Answer the following questions (one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Banyan tree"
+   },
+   "answer_as_printed": "What is the name of the big tree in the middle of the village map? Banyan tree",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:19:24+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "a5df478545d187454306d064cf5afad350a8e5a0b6bf81f38e691449656c24b0",
+   "topic_ids": [
+    "evs-4-12-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-12-s5-q030",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-12",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Name the state which is towards the northern side of Karnataka?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s5-q030",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s5-q030",
+     "pdf_page": 53,
+     "printed_page": 53,
+     "y": 705.002,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s5-q030-key",
+     "pdf_page": 152,
+     "printed_page": 152,
+     "y": 200.108,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:19:24+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:19:24+05:30",
+   "text_as_printed": "Name the state which is towards the northern side of Karnataka ?",
+   "section_signal": "Answer the following questions (one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Maharashtra"
+   },
+   "answer_as_printed": "Name the state which is towards the northern side of Karnataka? Maharashtra",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:19:24+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "8cb12fbb276036def1eb53e7e6faae183a00e530cc80ff92b2ef797e6942786c",
+   "topic_ids": [
+    "evs-4-12-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-12-s5-q031",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-12",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "With reference to the Banyan tree, in which direction is the library located?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s5-q031",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s5-q031",
+     "pdf_page": 53,
+     "printed_page": 53,
+     "y": 731.527,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s5-q031-key",
+     "pdf_page": 152,
+     "printed_page": 152,
+     "y": 228.888,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:19:24+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:19:24+05:30",
+   "section_signal": "Answer the following questions (one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "East"
+   },
+   "answer_as_printed": "With reference to the Banyan tree, in which direction is the library located? East",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:19:24+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "fea703e3990bcb088a3d08025e79fdbc14d2bebbe3f09c438a27e83bfe66a385",
+   "topic_ids": [
+    "evs-4-12-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-12-s5-q032",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-12",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Name some of the symbols used in maps?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s5-q032",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s5-q032",
+     "pdf_page": 54,
+     "printed_page": 54,
+     "y": 72.082,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s5-q032-key",
+     "pdf_page": 152,
+     "printed_page": 152,
+     "y": 257.638,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:19:24+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:19:24+05:30",
+   "section_signal": "Answer the following questions (one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Tree, school, post office, hospital"
+   },
+   "answer_as_printed": "Name some of the symbols used in maps? Tree, school, post office, hospital",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:19:24+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "b2b1790ed8a69e7aef5ab761edc0a4c9a14a68f37173a91d78c6b4a95e15e5a9",
+   "topic_ids": [
+    "evs-4-12-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-12-s5-q033",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-12",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "In which direction is the school located with refrence to the post office?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s5-q033",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s5-q033",
+     "pdf_page": 54,
+     "printed_page": 54,
+     "y": 98.582,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s5-q033-key",
+     "pdf_page": 152,
+     "printed_page": 152,
+     "y": 286.138,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:19:24+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:19:24+05:30",
+   "section_signal": "Answer the following questions (one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "South"
+   },
+   "answer_as_printed": "In which direction is the school located with reference to the post office? South",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:19:24+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "ca0c09c3fbcf3617507b5e9381dcd5b08898134f37638bf392fe8b328c980097",
+   "topic_ids": [
+    "evs-4-12-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-12-s5-q034",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-12",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What is a landmark on a map?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s5-q034",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s5-q034",
+     "pdf_page": 54,
+     "printed_page": 54,
+     "y": 125.102,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s5-q034-key",
+     "pdf_page": 152,
+     "printed_page": 152,
+     "y": 314.908,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:19:24+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:19:24+05:30",
+   "section_signal": "Answer the following questions (one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "A known place used for direction."
+   },
+   "answer_as_printed": "What is a landmark on a map? A known place used for direction.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:19:24+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "2c921bba31aeae684e2fa9fa6145c7bf7ff07b758eb478abde096c178a05148a",
+   "topic_ids": [
+    "evs-4-12-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-12-s5-q035",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-12",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "In which direction should one go to go from the park to the temple?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s5-q035",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s5-q035",
+     "pdf_page": 54,
+     "printed_page": 54,
+     "y": 151.602,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s5-q035-key",
+     "pdf_page": 152,
+     "printed_page": 152,
+     "y": 343.658,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:19:24+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:19:24+05:30",
+   "section_signal": "Answer the following questions (one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "North"
+   },
+   "answer_as_printed": "In which direction should one go to go from the park to the temple? North",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:19:24+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "ee65e85346f26e0ece35742ed336296b58d1759a6d16c06520fee2854c9a222c",
+   "topic_ids": [
+    "evs-4-12-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-12-s5-q036",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-12",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "In which direction is the mosque located with reference to the hospital?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s5-q036",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s5-q036",
+     "pdf_page": 54,
+     "printed_page": 54,
+     "y": 178.102,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s5-q036-key",
+     "pdf_page": 152,
+     "printed_page": 152,
+     "y": 372.408,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:19:24+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:19:24+05:30",
+   "section_signal": "Answer the following questions (one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "West"
+   },
+   "answer_as_printed": "In which direction is the mosque located with reference to the hospital? West",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:19:24+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "ac199fe3532df507fb0ecd2b8dd4a6e67d71c067050936ca8e7be82ad3f78c09",
+   "topic_ids": [
+    "evs-4-12-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-12-s6-q037",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-12",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "In which direction are the following places located with reference to the Banyan tree? • Lake • Library • school",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s6-q037",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s6-q037",
+     "pdf_page": 54,
+     "printed_page": 54,
+     "y": 231.132,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s6-q037-key",
+     "pdf_page": 152,
+     "printed_page": 152,
+     "y": 421.678,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:19:24+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:19:24+05:30",
+   "text_as_printed": "In which direction are the following places located with reference to the Banyan tree? (Difficult) • Lake • Library • school",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Lake: West\nLibrary: East\nSchool: South"
+   },
+   "answer_as_printed": "In which direction are the following places located with reference to the Banyan tree?\nLake: West\nLibrary: East\nSchool: South",
+   "solution_steps": [
+    "Lake: West",
+    "Library: East",
+    "School: South"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:19:24+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "2692f68f81fa891fb5aa24397d577d011aee33cd1e1fb21969452a2d8c810175",
+   "topic_ids": [
+    "evs-4-12-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-12-s6-q038",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-12",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Why are landmarks important while drawing a map?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s6-q038",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s6-q038",
+     "pdf_page": 54,
+     "printed_page": 54,
+     "y": 355.402,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s6-q038-key",
+     "pdf_page": 152,
+     "printed_page": 152,
+     "y": 536.458,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:19:24+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:19:24+05:30",
+   "text_as_printed": "Why are landmarks important while drawing a map? (Difficult)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "They help us to find important places easily and guide us on the route."
+   },
+   "answer_as_printed": "Why are landmarks important while drawing a map? They help us to find important places easily and guide us on the route.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:19:24+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "772bb4966d42392f3ba2057a19ef0b6bd55b8708feccfd398afd5e63f0c27539",
+   "topic_ids": [
+    "evs-4-12-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-12-s6-q039",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-12",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "How can we find the directions with the help of a map?.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s6-q039",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s6-q039",
+     "pdf_page": 54,
+     "printed_page": 54,
+     "y": 381.922,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s6-q039-key",
+     "pdf_page": 152,
+     "printed_page": 152,
+     "y": 585.988,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:19:24+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:19:24+05:30",
+   "text_as_printed": "How can we find the directions with the help of a map? .(Average)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "We can use the symbol 'N' for north and find other directions accordingly."
+   },
+   "answer_as_printed": "How can we find the directions with the help of a map? We can use the symbol 'N' for north and find other directions accordingly.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:19:24+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "f2f7c6f3aa5fdb8fb69e6ee55aa5d0455722eea788a6c6ba0e89c1be3ba98a6d",
+   "topic_ids": [
+    "evs-4-12-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-12-s6-q040",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-12",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What is the difference between local symbol and public symbol on a map?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s6-q040",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s6-q040",
+     "pdf_page": 54,
+     "printed_page": 54,
+     "y": 408.422,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s6-q040-key",
+     "pdf_page": 152,
+     "printed_page": 152,
+     "y": 635.508,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:19:24+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:19:24+05:30",
+   "text_as_printed": "What is the difference between local symbol and public symbol on a map? (Difficult)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Local symbols show local places like wells, while public symbols show public places like post offices."
+   },
+   "answer_as_printed": "What is the difference between local symbol and public symbol on a map? Local symbols show local places like wells, while public symbols show public places like post offices.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:19:24+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "094b5240acf492cde86208a6b69a32342a37a7183a238e22ed13f5b73c18963d",
+   "topic_ids": [
+    "evs-4-12-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-12-s6-q041",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-12",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "How can you find the direction of a place where there is no sign on the map?.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s6-q041",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s6-q041",
+     "pdf_page": 54,
+     "printed_page": 54,
+     "y": 453.422,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s6-q041-key",
+     "pdf_page": 152,
+     "printed_page": 152,
+     "y": 705.508,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:19:24+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:19:24+05:30",
+   "text_as_printed": "How can you find the direction of a place where there is no sign on the map? .(Average)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "By using nearby landmarks and the symbol of 'N' for north."
+   },
+   "answer_as_printed": "How can you find the direction of a place where there is no sign on the map? By using nearby landmarks and the symbol of 'N' for north.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:19:24+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "0bc90a8b9ff05900e7589af8a90a8b40465b79bcc9bdfd4ca61655db6af84408",
+   "topic_ids": [
+    "evs-4-12-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-12-s6-q042",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-12",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Explain the method of measurement required to draw a map of your class.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s6-q042",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s6-q042",
+     "pdf_page": 54,
+     "printed_page": 54,
+     "y": 498.452,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s6-q042-key",
+     "pdf_page": 153,
+     "printed_page": 153,
+     "y": 72.588,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:19:24+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:19:24+05:30",
+   "text_as_printed": "Explain the method of measurement required to draw a map of your class. (Difficult)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Measure length and width with foot steps or scale, mark each object like table or chair."
+   },
+   "answer_as_printed": "Explain the method of measurement required to draw a map of your class. Measure length and width with foot steps or scale, mark each object like table or chair.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:19:24+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "72019e19a23119eac06ee7c63381492ae92bacec043f43fbd1b57bdd643ae41d",
+   "topic_ids": [
+    "evs-4-12-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-12-s6-q043",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-12",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Explain the steps taken by Yasmin to draw a map of her class.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s6-q043",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s6-q043",
+     "pdf_page": 54,
+     "printed_page": 54,
+     "y": 543.472,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s6-q043-key",
+     "pdf_page": 153,
+     "printed_page": 153,
+     "y": 122.108,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:19:24+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:19:24+05:30",
+   "text_as_printed": "Explain the steps taken by Yasmin to draw a map of her class. (Average)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "She took measurements by steps, used landmarks, drew walls and placed objects correctly."
+   },
+   "answer_as_printed": "Explain the steps taken by Yasmin to draw a map of her class. She took measurements by steps, used landmarks, drew walls and placed objects correctly.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:19:24+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "773b7bfcff5a694f1d1bb9f8c52ae5ba7816eba5f9bd8072728c90b48697731a",
+   "topic_ids": [
+    "evs-4-12-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-12-s6-q044",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-12",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What is the benefit of using a scale to draw an accurate map?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s6-q044",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s6-q044",
+     "pdf_page": 54,
+     "printed_page": 54,
+     "y": 569.982,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s6-q044-key",
+     "pdf_page": 153,
+     "printed_page": 153,
+     "y": 192.108,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:19:24+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:19:24+05:30",
+   "text_as_printed": "What is the benefit of using a scale to draw an accurate map? (Difficult)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "It helps to keep correct distance and position of objects on paper."
+   },
+   "answer_as_printed": "What is the benefit of using a scale to draw an accurate map? It helps to keep correct distance and position of objects on paper.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:19:24+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "18e70fa0a37e3dd8fb43e5dffc764bdad463923343e339ff63c2b5009d964614",
+   "topic_ids": [
+    "evs-4-12-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-12-s7-q045",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-12",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Explain the method of drawing a map by drawing the length and width of the room using a measurement.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s7-q045",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s7-q045",
+     "pdf_page": 54,
+     "printed_page": 54,
+     "y": 622.972,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s7-q045-key",
+     "pdf_page": 153,
+     "printed_page": 153,
+     "y": 262.138,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:19:24+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:19:24+05:30",
+   "text_as_printed": "Explain the method of drawing a map by drawing the length and width of the room using a measurement.(Difficult)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Measure the room using a tape or steps, draw a rectangle on paper, mark objects inside like tables, chairs, and door using correct position."
+   },
+   "answer_as_printed": "Explain the method of drawing a map by drawing the length and width of the room using a measurement. Measure the room using a tape or steps, draw a rectangle on paper, mark objects inside like tables, chairs, and door using correct position.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:19:24+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "8c63cb0447956558190463cd7833fe31fcb20285d3c641925822be5d5febee54",
+   "topic_ids": [
+    "evs-4-12-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-12-s7-q046",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-12",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "How can the position of objects be shown on a simple map of a room?.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s7-q046",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s7-q046",
+     "pdf_page": 54,
+     "printed_page": 54,
+     "y": 668.002,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s7-q046-key",
+     "pdf_page": 153,
+     "printed_page": 153,
+     "y": 332.408,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:19:24+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:19:24+05:30",
+   "text_as_printed": "How can the position of objects be shown on a simple map of a room? .(Average)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "By using scale and symbols, like square for table and circle for chair, and placing them as per direction."
+   },
+   "answer_as_printed": "How can the position of objects be shown on a simple map of a room? By using scale and symbols, like square for table and circle for chair, and placing them as per direction.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:19:24+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "21f585cc5b010c15a34bb47089f28051f56e84ffcd8a3723b041ef242ffcaaf6",
+   "topic_ids": [
+    "evs-4-12-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-12-s7-q047",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-12",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What are the advantages of using grid system to locate the position of objects on a map?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s7-q047",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s7-q047",
+     "pdf_page": 54,
+     "printed_page": 54,
+     "y": 694.502,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s7-q047-key",
+     "pdf_page": 153,
+     "printed_page": 153,
+     "y": 402.428,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:19:24+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:19:24+05:30",
+   "text_as_printed": "What are the advantages of using grid system to locate the position of objects on a map? (Difficult)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Grids help to divide the map, find location easily, and place objects exactly."
+   },
+   "answer_as_printed": "What are the advantages of using grid system to locate the position of objects on a map? Grids help to divide the map, find location easily, and place objects exactly.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:19:24+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "5a67569906d493815eb77f88fe3d6224f9d924fae6b773b73640b2e2320d3bc8",
+   "topic_ids": [
+    "evs-4-12-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-12-s7-q048",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-12",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Draw a map of your school and show the directions and locate the important places.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s7-q048",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s7-q048",
+     "pdf_page": 55,
+     "printed_page": 55,
+     "y": 72.082,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s7-q048-key",
+     "pdf_page": 153,
+     "printed_page": 153,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:19:24+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:19:24+05:30",
+   "text_as_printed": "Draw a map of your school and show the directions and locate the important places. (Difficult)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    },
+    {
+     "issue": "no answer printed",
+     "why_not_corrected": "sourceless map question: the stem asks to draw a map and locate places; no map is printed on either side and the key prints only '(To be drawn by student)' (Class-9 ruling: empty + 'no answer printed', no map block, no crop)",
+     "suggested": "key absent — review"
+    }
+   ],
+   "content_hash": "e97e6d48c15cce6013bf9c1f3f2dc5a94ec829a0a167efaf3be4cdcc6b0186f7",
+   "topic_ids": [
+    "evs-4-12-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-12-s7-q049",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-12",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Explain the importance of using symbols while drawing a map.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s7-q049",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s7-q049",
+     "pdf_page": 55,
+     "printed_page": 55,
+     "y": 117.102,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s7-q049-key",
+     "pdf_page": 153,
+     "printed_page": 153,
+     "y": 501.208,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:19:24+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:19:24+05:30",
+   "text_as_printed": "Explain the importance of using symbols while drawing a map. (Difficult)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Symbols help to show places clearly in small space, easy to understand and save time."
+   },
+   "answer_as_printed": "Explain the importance of using symbols while drawing a map. Symbols help to show places clearly in small space, easy to understand and save time.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:19:24+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "83de14f33ad2ff299f33e3cb53b8c76bf0cb354ed817b67a38e25d4ebe0449d6",
+   "topic_ids": [
+    "evs-4-12-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-12-s7-q050",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-12",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Mention the landmarks used by Anwar to guide to the taluk office.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s7-q050",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s7-q050",
+     "pdf_page": 55,
+     "printed_page": 55,
+     "y": 143.602,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s7-q050-key",
+     "pdf_page": 153,
+     "printed_page": 153,
+     "y": 550.728,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:19:24+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:19:24+05:30",
+   "text_as_printed": "Mention the landmarks used by Anwar to guide to the taluk office .(Average)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "School, mosque, post office, and market."
+   },
+   "answer_as_printed": "Mention the landmarks used by Anwar to guide to the taluk office. School, mosque, post office, and market.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:19:24+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "529153590d619d1820681dffaffec7f88bb0b3b2a6efc525d8db020eebdbe910",
+   "topic_ids": [
+    "evs-4-12-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-12-s7-q051",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-12",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Explain the process of distance measurement required to draw a simple map of the route from home to school.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s7-q051",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s7-q051",
+     "pdf_page": 55,
+     "printed_page": 55,
+     "y": 170.102,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s7-q051-key",
+     "pdf_page": 153,
+     "printed_page": 153,
+     "y": 599.978,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:19:24+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:19:24+05:30",
+   "text_as_printed": "Explain the process of distance measurement required to draw a simple map of the route from home to school. (Difficult)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Walk and count steps, note landmarks like tree or shop, use scale to draw on paper showing all directions."
+   },
+   "answer_as_printed": "Explain the process of distance measurement required to draw a simple map of the route from home to school. Walk and count steps, note landmarks like tree or shop, use scale to draw on paper showing all directions.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:19:24+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "f49f50e14c39fa96a47953817eeb6afb534c15d9b44d774ae6648a63a0e2e1c2",
+   "topic_ids": [
+    "evs-4-12-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-12-s7-q052",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-12",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Explain the important differences between a world map and a local map.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s7-q052",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s7-q052",
+     "pdf_page": 55,
+     "printed_page": 55,
+     "y": 215.132,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s7-q052-key",
+     "pdf_page": 153,
+     "printed_page": 153,
+     "y": 670.258,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:19:24+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:19:24+05:30",
+   "text_as_printed": "Explain the important differences between a world map and a local map. (Difficult)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "World map shows countries and oceans, local map shows village or school with roads and landmarks."
+   },
+   "answer_as_printed": "Explain the important differences between a world map and a local map. World map shows countries and oceans, local map shows village or school with roads and landmarks.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:19:24+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "31e3a4bba8dfdcf14b969ca0a67f9947e0f86b0d4987e3783886a78c760beafb",
+   "topic_ids": [
+    "evs-4-12-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-12-s8-q053",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-12",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Draw a map of the route from your homes to school. Show atleast 4 landmarks.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s8-q053",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s8-q053",
+     "pdf_page": 55,
+     "printed_page": 55,
+     "y": 268.132,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s8-q053-key",
+     "pdf_page": 154,
+     "printed_page": 154,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:19:24+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:19:24+05:30",
+   "section_signal": "Answer the following questions ( four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    },
+    {
+     "issue": "no answer printed",
+     "why_not_corrected": "sourceless map question: the stem asks to draw a map and locate places; no map is printed on either side and the key prints only '(To be drawn by student)' (Class-9 ruling: empty + 'no answer printed', no map block, no crop)",
+     "suggested": "key absent — review"
+    }
+   ],
+   "content_hash": "292ca3fa61f2eaff7021e92c9318b945f5b313e73280d5767edc053006b2ca6a",
+   "topic_ids": [
+    "evs-4-12-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-12-s8-q054",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-12",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Explain how can we locate the position of a place using directions on the map.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s8-q054",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s8-q054",
+     "pdf_page": 55,
+     "printed_page": 55,
+     "y": 294.652,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s8-q054-key",
+     "pdf_page": 154,
+     "printed_page": 154,
+     "y": 122.108,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:19:24+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:19:24+05:30",
+   "section_signal": "Answer the following questions ( four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "We use the symbol of north, and find east, west and south. From a known point like a tree or post office, we look where the place is."
+   },
+   "answer_as_printed": "Explain how can we locate the position of a place using directions on the map. We use the symbol of north, and find east, west and south. From a known point like a tree or post office, we look where the place is.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:19:24+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "1acaa676edb5148c016b567d311e05c32fd3881c7d1f1cb869a6ab8c6fef5e40",
+   "topic_ids": [
+    "evs-4-12-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-12-s8-q055",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-12",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Draw the design of your classroom from the grid system and identify the locations of the table, chair, other objects.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s8-q055",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s8-q055",
+     "pdf_page": 55,
+     "printed_page": 55,
+     "y": 321.152,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s8-q055-key",
+     "pdf_page": 154,
+     "printed_page": 154,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:19:24+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:19:24+05:30",
+   "section_signal": "Answer the following questions ( four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    },
+    {
+     "issue": "no answer printed",
+     "why_not_corrected": "sourceless map question: the stem asks to draw the classroom on a grid and locate objects; no map is printed on either side and the key prints only '(To be drawn by student)' (Class-9 ruling: empty + 'no answer printed', no map block, no crop)",
+     "suggested": "key absent — review"
+    }
+   ],
+   "content_hash": "eedc53527cec29bb131b4a8e23a876ad1034b763ac63ee7bbaa8945175222a30",
+   "topic_ids": [
+    "evs-4-12-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-12-s8-q056",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-12",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Explain the process and necessity of converting steps into meters as in example of Yasmin.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s8-q056",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s8-q056",
+     "pdf_page": 55,
+     "printed_page": 55,
+     "y": 365.902,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s8-q056-key",
+     "pdf_page": 154,
+     "printed_page": 154,
+     "y": 241.638,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:19:24+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:19:24+05:30",
+   "section_signal": "Answer the following questions ( four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Yasmin measured the room with her steps. She knew 2 steps = 1 meter. This helps to draw accurate maps with real distance."
+   },
+   "answer_as_printed": "Explain the process and necessity of converting steps into meters as in example of Yasmin. Yasmin measured the room with her steps. She knew 2 steps = 1 meter. This helps to draw accurate maps with real distance.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:19:24+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "c5bff5d5e53feb47dd7a0f93e18a5ece1252ae32007aeefd895abb9a63be2036",
+   "topic_ids": [
+    "evs-4-12-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-12-s8-q057",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-12",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "How do different maps like weather map, railway line map, etc. serve different purposes?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s8-q057",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s8-q057",
+     "pdf_page": 55,
+     "printed_page": 55,
+     "y": 410.922,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s8-q057-key",
+     "pdf_page": 154,
+     "printed_page": 154,
+     "y": 311.658,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:19:24+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:19:24+05:30",
+   "section_signal": "Answer the following questions ( four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Weather map shows rain and sun, railway map shows train lines. Each map gives different information for different uses."
+   },
+   "answer_as_printed": "How do different maps like weather map, railway line map, etc. serve different purposes? Weather map shows rain and sun, railway map shows train lines. Each map gives different information for different uses.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:19:24+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "54d5cc706cf01bd77c103e5ecd8dbf1d726f500ce98b19e2cf02aad7eb8831a4",
+   "topic_ids": [
+    "evs-4-12-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-12-s8-q058",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-12",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "How is a map useful to show the geographical features of your locality? Explain with landmarks and directions.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s8-q058",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s8-q058",
+     "pdf_page": 55,
+     "printed_page": 55,
+     "y": 455.952,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s8-q058-key",
+     "pdf_page": 154,
+     "printed_page": 154,
+     "y": 381.678,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:19:24+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:19:24+05:30",
+   "section_signal": "Answer the following questions ( four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Map shows rivers, hills, roads. With landmarks like temple, school and directions, we can understand the area easily."
+   },
+   "answer_as_printed": "How is a map useful to show the geographical features of your locality? Explain with landmarks and directions. Map shows rivers, hills, roads. With landmarks like temple, school and directions, we can understand the area easily.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:19:24+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "029e9466dd6eadc4781ec54afa617856028152ecdaf75efb8ed465ad4f96a413",
+   "topic_ids": [
+    "evs-4-12-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-12-s8-q059",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-12",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Explain how landmarks and directions are combined to show direction to the Taluk Office.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s8-q059",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s8-q059",
+     "pdf_page": 55,
+     "printed_page": 55,
+     "y": 500.952,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s8-q059-key",
+     "pdf_page": 154,
+     "printed_page": 154,
+     "y": 451.928,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:19:24+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:19:24+05:30",
+   "section_signal": "Answer the following questions ( four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "We start from a landmark like a school, go east to the post office, then turn north to reach Taluk Office. Landmarks and directions help to find the way."
+   },
+   "answer_as_printed": "Explain how landmarks and directions are combined to show direction to the Taluk Office. We start from a landmark like a school, go east to the post office, then turn north to reach Taluk Office. Landmarks and directions help to find the way.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:19:24+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "9db6c055fc08158f8e379dfd9060a7421d7c34f5a87a78427f94ab41e0a90923",
+   "topic_ids": [
+    "evs-4-12-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-12-s8-q060",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-12",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Prepare a route map from your home to school.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s8-q060",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s8-q060",
+     "pdf_page": 55,
+     "printed_page": 55,
+     "y": 545.972,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-12-s8-q060-key",
+     "pdf_page": 151,
+     "printed_page": 151,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:19:24+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:19:24+05:30",
+   "section_signal": "Answer the following questions ( four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints an unnumbered list of 8 learning outcomes and maps none to questions; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    },
+    {
+     "issue": "no answer printed",
+     "why_not_corrected": "sourceless map question: 'Prepare a route map from your home to school.' — the answer side ends at key 59 (pdf 154); no map is printed",
+     "suggested": "key absent — review"
+    }
+   ],
+   "content_hash": "c7062100cd611e8011a72a1bc758b093c09bd777a316aaccaefc03520b64cdf9",
+   "topic_ids": [
+    "evs-4-12-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  }
+ ],
+ "pending_summary": {}
+}
