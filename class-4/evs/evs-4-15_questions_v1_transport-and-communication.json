@@ -1,0 +1,5062 @@
+{
+ "contract_version": "1.7",
+ "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
+ "procedure_file": "extraction_procedure_social_addendum_v1.4_social science Classes 6-10 on top of procedure v2.md",
+ "machine_name": "evs-4-15_questions",
+ "version": 1,
+ "changelog": "v1 extraction — batch-01 — class-4-evs",
+ "amendments_applied": [],
+ "unit_state": "EXTRACTED",
+ "review_ready": false,
+ "count_gate": {
+  "reference": 62,
+  "reference_source": "audited",
+  "extracted": 62,
+  "paired": 61,
+  "flagged": 2,
+  "gaps": [],
+  "duplicated_numbers": [
+   26
+  ],
+  "quota_table": "absent",
+  "second_method": {
+   "method": "independent count of answer-side keys (60 numbered keys + 1 unnumbered match block(s)) + 1 question(s) with no printed key",
+   "extracted": 62,
+   "agrees": true
+  },
+  "pass": true,
+  "note": "No difficulty distribution table is printed in this LBA -> quota_table 'absent' (ruling R-E6). Question side prints label 26 twice (match q026, one-mark q026b); 62 questions. Answer side 1-25, [match block, unnumbered], 26-60 (key 26 restates q026b); q061 (draw) no key. Difficulty per question: easy 41, average 12, difficult 9, untagged 0."
+ },
+ "extraction": {
+  "source_file": "4thLBA-EVS-EM1.pdf",
+  "source_ref_prefix": "4thLBA-EVS-EM1.pdf",
+  "pdf_pages": [
+   64,
+   65,
+   66,
+   67,
+   68,
+   163,
+   164,
+   165,
+   166,
+   167
+  ],
+  "printed_page_offset": 0,
+  "method_notes": [
+   "Pages: Q pdf 64 (heading, LO) 65-68; A pdf 163 (heading, keys 1-20) 164-167.",
+   "Sections: s1 MCQ q1-5; s2 fill q6-15; s3 T/F q16-25; s4 '26. Match the following with correct answers (EASY)' q026; s5 one mark q026b-q035 vsa; s6 two marks q36-45 sa; s7 three marks q46-55 sa; s8 four marks q56-61 la.",
+   "NUMBERING: label 26 printed twice (pdf 66 match, pdf 67 'What is transportation?') -> q026, q026b (v1.4 §14.1). The answer side's match block carries no number and its one-mark run opens '26. What is transportation?' — the same printed label and the restated stem of q026b -> paired by printed label; no band.",
+   "KEY FORM: fill keys print the completed sentence (verbatim; q15's line carried the T/F heading in the text layer, removed). Keys 26-60 restate (or paraphrase) the question on the number line; the answer follows (restated()). Bullet keys one step per bullet; a lead line ending ':' a heading; q59's closing un-bulleted line 'They help us go from place to place.' its own step.",
+   "Tags without '(' read (q47 '?.Easy)'). q61 draw -> 'no answer printed'.",
+   "Transcription: evs_auto.py rules (as evs-4-01) + the overrides in build file build_15.py; marks per ruling R-E5; topic per R-E3."
+  ],
+  "notation_summary": {
+   "render_tokens": 0,
+   "latex_tokens": 0,
+   "damage_flags": []
+  },
+  "excluded_objects": [],
+  "inline_excluded_count": 0,
+  "figure_references": []
+ },
+ "stimuli": [],
+ "questions": [
+  {
+   "id": "evs-4-15-s1-q001",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Transportation means",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s1-q001",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s1-q001",
+     "pdf_page": 65,
+     "printed_page": 65,
+     "y": 75.03,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s1-q001-key",
+     "pdf_page": 163,
+     "printed_page": 163,
+     "y": 221.638,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "section_signal": "Choose the correct answers to the following questions and write them",
+   "options": [
+    {
+     "id": "A",
+     "text": "Sports"
+    },
+    {
+     "id": "B",
+     "text": "Motion Picture"
+    },
+    {
+     "id": "C",
+     "text": "Movement of objects and persons"
+    },
+    {
+     "id": "D",
+     "text": "Dinner"
+    }
+   ],
+   "answer_as_printed": "C) Movement of objects and persons",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "9bd62c4629f7a5c5ef76cb01e0e019577a153af67f90e3232817dfeda1b68e38",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s1-q002",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The commonly used route for transportation",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s1-q002",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s1-q002",
+     "pdf_page": 65,
+     "printed_page": 65,
+     "y": 128.05,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s1-q002-key",
+     "pdf_page": 163,
+     "printed_page": 163,
+     "y": 245.638,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "section_signal": "Choose the correct answers to the following questions and write them",
+   "options": [
+    {
+     "id": "A",
+     "text": "Air"
+    },
+    {
+     "id": "B",
+     "text": "Land"
+    },
+    {
+     "id": "C",
+     "text": "Water"
+    },
+    {
+     "id": "D",
+     "text": "none"
+    }
+   ],
+   "answer_as_printed": "B) Land",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "94a144cfcb8f1635f92c235af96f5efed1fe4540851310a73eb966fc65bde082",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s1-q003",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The train travels on",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s1-q003",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s1-q003",
+     "pdf_page": 65,
+     "printed_page": 65,
+     "y": 180.8,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s1-q003-key",
+     "pdf_page": 163,
+     "printed_page": 163,
+     "y": 269.638,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "section_signal": "Choose the correct answers to the following questions and write them",
+   "options": [
+    {
+     "id": "A",
+     "text": "air"
+    },
+    {
+     "id": "B",
+     "text": "water"
+    },
+    {
+     "id": "C",
+     "text": "Railway tracks"
+    },
+    {
+     "id": "D",
+     "text": "on the road"
+    }
+   ],
+   "answer_as_printed": "C) Railway tracks",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "fe07fa326ef8cd5597005c7790eb4e9ee66246fb1b924cd3a4671213f7878708",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s1-q004",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The vehicle used to go to nearby places.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s1-q004",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s1-q004",
+     "pdf_page": 65,
+     "printed_page": 65,
+     "y": 233.83,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s1-q004-key",
+     "pdf_page": 163,
+     "printed_page": 163,
+     "y": 293.658,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "section_signal": "Choose the correct answers to the following questions and write them",
+   "options": [
+    {
+     "id": "A",
+     "text": "aeroplane"
+    },
+    {
+     "id": "B",
+     "text": "bicycle"
+    },
+    {
+     "id": "C",
+     "text": "Ship"
+    },
+    {
+     "id": "D",
+     "text": "Train"
+    }
+   ],
+   "answer_as_printed": "B) Bicycle",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "d25a7849d1a17862439a90777f8a92658986fadcb36469a8389f2f85de2a592c",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s1-q005",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The vehicle used to go to distant places.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s1-q005",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s1-q005",
+     "pdf_page": 65,
+     "printed_page": 65,
+     "y": 286.58,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s1-q005-key",
+     "pdf_page": 163,
+     "printed_page": 163,
+     "y": 317.408,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "section_signal": "Choose the correct answers to the following questions and write them",
+   "options": [
+    {
+     "id": "A",
+     "text": "bicycle"
+    },
+    {
+     "id": "B",
+     "text": "bullock cart"
+    },
+    {
+     "id": "C",
+     "text": "train"
+    },
+    {
+     "id": "D",
+     "text": "scooter"
+    }
+   ],
+   "answer_as_printed": "C) Train",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "ef4e9c842c0bf100c7013a45215d7de72d82d8d1d2064feb02f8058001f6323a",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s2-q006",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "In olden times people used __________, __________, and __________ animals for transportation.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s2-q006",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s2-q006",
+     "pdf_page": 65,
+     "printed_page": 65,
+     "y": 445.37,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s2-q006-key",
+     "pdf_page": 163,
+     "printed_page": 163,
+     "y": 368.908,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "section_signal": "Fill in the blanks with suitable answers",
+   "answer": {
+    "kind": "text",
+    "value": "In olden times, people used horses, bullocks, and camels for transportation."
+   },
+   "answer_as_printed": "In olden times, people used horses, bullocks, and camels for transportation.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "f7aaf3728c4000e2b2b441ae8fb3f14c281b296784732d98d27271c109ce3f26",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s2-q007",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "__________ is used for transport in desert areas.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s2-q007",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s2-q007",
+     "pdf_page": 65,
+     "printed_page": 65,
+     "y": 490.15,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s2-q007-key",
+     "pdf_page": 163,
+     "printed_page": 163,
+     "y": 392.928,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "section_signal": "Fill in the blanks with suitable answers",
+   "answer": {
+    "kind": "text",
+    "value": "Camel is used for transport in desert areas."
+   },
+   "answer_as_printed": "Camel is used for transport in desert areas.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "e76b1da86c3b46fddb90c703dc47df89a4ea41f5edde27443fef1814eb256e69",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s2-q008",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "In 1853, the first train ran from __________ to__________.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s2-q008",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s2-q008",
+     "pdf_page": 65,
+     "printed_page": 65,
+     "y": 516.65,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s2-q008-key",
+     "pdf_page": 163,
+     "printed_page": 163,
+     "y": 416.928,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "section_signal": "Fill in the blanks with suitable answers",
+   "answer": {
+    "kind": "text",
+    "value": "In 1853, the first train ran from Bombay to Thane."
+   },
+   "answer_as_printed": "In 1853, the first train ran from Bombay to Thane.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "2b39a72bf947a514fff74108d06fd045ff8f85072e1451ee162911f1655dde3c",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s2-q009",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "__________ invented the telephone.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s2-q009",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s2-q009",
+     "pdf_page": 65,
+     "printed_page": 65,
+     "y": 543.15,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s2-q009-key",
+     "pdf_page": 163,
+     "printed_page": 163,
+     "y": 440.928,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "section_signal": "Fill in the blanks with suitable answers",
+   "answer": {
+    "kind": "text",
+    "value": "Alexander Graham Bell invented the telephone."
+   },
+   "answer_as_printed": "Alexander Graham Bell invented the telephone.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "96b73eda7f5738354e274308310b5b90bbadd1685cff8f8298a687024d6f50d2",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s2-q010",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "We use __________ and __________ to send letters.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s2-q010",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s2-q010",
+     "pdf_page": 65,
+     "printed_page": 65,
+     "y": 569.67,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s2-q010-key",
+     "pdf_page": 163,
+     "printed_page": 163,
+     "y": 464.958,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "section_signal": "Fill in the blanks with suitable answers",
+   "answer": {
+    "kind": "text",
+    "value": "We use envelopes and stamps to send letters."
+   },
+   "answer_as_printed": "We use envelopes and stamps to send letters.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "a1463b0e4ed3bf7efa0fbede7cf254379944cf1f3469ce2c445bdb01c0d45834",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s2-q011",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "__________ is a device used to send information to distant places in a short time.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s2-q011",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s2-q011",
+     "pdf_page": 65,
+     "printed_page": 65,
+     "y": 595.92,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s2-q011-key",
+     "pdf_page": 163,
+     "printed_page": 163,
+     "y": 488.958,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "section_signal": "Fill in the blanks with suitable answers",
+   "answer": {
+    "kind": "text",
+    "value": "Telephone is a device used to send information to distant places quickly."
+   },
+   "answer_as_printed": "Telephone is a device used to send information to distant places quickly.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "0dc29c44bb23a2694aa7e5a892f69cf861fbb53f09e79dbb5ff88b1ca61c8426",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s2-q012",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "__________ and __________ are modern tools used for communication.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s2-q012",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s2-q012",
+     "pdf_page": 65,
+     "printed_page": 65,
+     "y": 640.95,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s2-q012-key",
+     "pdf_page": 163,
+     "printed_page": 163,
+     "y": 512.958,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "section_signal": "Fill in the blanks with suitable answers",
+   "answer": {
+    "kind": "text",
+    "value": "Mobile phone and internet are modern tools used for communication."
+   },
+   "answer_as_printed": "Mobile phone and internet are modern tools used for communication.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "a05556d56de8402c8322bd08534c09707ca635267ffc2b0ba13f0b75f1af330f",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s2-q013",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "We travel by ship on __________",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s2-q013",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s2-q013",
+     "pdf_page": 65,
+     "printed_page": 65,
+     "y": 667.45,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s2-q013-key",
+     "pdf_page": 163,
+     "printed_page": 163,
+     "y": 536.958,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "section_signal": "Fill in the blanks with suitable answers",
+   "answer": {
+    "kind": "text",
+    "value": "We travel by ship on water."
+   },
+   "answer_as_printed": "We travel by ship on water.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "9dbb71c41f344a24aad7ae7ae1170ffe4efe85c90d909c0ef95332650fb135e4",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s2-q014",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "__________ is a medium in which regional, national and international news are telecast.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s2-q014",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s2-q014",
+     "pdf_page": 65,
+     "printed_page": 65,
+     "y": 693.95,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s2-q014-key",
+     "pdf_page": 163,
+     "printed_page": 163,
+     "y": 560.978,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "section_signal": "Fill in the blanks with suitable answers",
+   "answer": {
+    "kind": "text",
+    "value": "Television is a medium in which regional, national, and international news are telecast."
+   },
+   "answer_as_printed": "Television is a medium in which regional, national, and international news are telecast.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "479369f318d347871d0adad01af2971c29e35eb2f37aff15ee250afe2f2dbdc7",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s2-q015",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The phone was invented by __________.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s2-q015",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s2-q015",
+     "pdf_page": 65,
+     "printed_page": 65,
+     "y": 738.725,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s2-q015-key",
+     "pdf_page": 163,
+     "printed_page": 163,
+     "y": 600.978,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "text_as_printed": "The phone was invented by __________ .",
+   "section_signal": "Fill in the blanks with suitable answers",
+   "answer": {
+    "kind": "text",
+    "value": "The phone was invented by Graham Bell."
+   },
+   "answer_as_printed": "The phone was invented by Graham Bell.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "364221dfb58618ccee3d4121502803e2b1e6c0ad591e2d35fb3fb12779c625c0",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s3-q016",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Nowadays bullock cart is most commonly used for transportation.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s3-q016",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s3-q016",
+     "pdf_page": 66,
+     "printed_page": 66,
+     "y": 128.05,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s3-q016-key",
+     "pdf_page": 163,
+     "printed_page": 163,
+     "y": 652.258,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "section_signal": "State the following statements are true or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "false"
+   },
+   "answer_as_printed": "False",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "f60933320d69b41e38db4f0cf345d892b4caeb46bfddead9ef89f0a55b3fcdb6",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s3-q017",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Camel is known as \"the ship of the desert\".",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s3-q017",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s3-q017",
+     "pdf_page": 66,
+     "printed_page": 66,
+     "y": 154.3,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s3-q017-key",
+     "pdf_page": 163,
+     "printed_page": 163,
+     "y": 676.258,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "text_as_printed": "Camel is known as \"the ship of the desert\" .",
+   "section_signal": "State the following statements are true or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "True",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "dcb0f6e459cc0fbce06a27f84eea0cf5ba2c86bd37dbdec5792f6f4560deb488",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s3-q018",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The telephone was invented by Graham Bell.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s3-q018",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s3-q018",
+     "pdf_page": 66,
+     "printed_page": 66,
+     "y": 180.8,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s3-q018-key",
+     "pdf_page": 163,
+     "printed_page": 163,
+     "y": 700.258,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "section_signal": "State the following statements are true or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "True",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "184fe95f32fd697ad9a6173f75f05f2f3750e5132fc45f9285b93fd548012ebc",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s3-q019",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The first train ran between Mangalore and Bangalore in 1853.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s3-q019",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s3-q019",
+     "pdf_page": 66,
+     "printed_page": 66,
+     "y": 207.33,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s3-q019-key",
+     "pdf_page": 163,
+     "printed_page": 163,
+     "y": 724.278,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "section_signal": "State the following statements are true or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "false"
+   },
+   "answer_as_printed": "False",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "e1786a105afc8e6aa6a7a50bf88a8af72405b521b0fe0fe83dce5537b44a229d",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s3-q020",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Newspapers are published daily and weekly.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s3-q020",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s3-q020",
+     "pdf_page": 66,
+     "printed_page": 66,
+     "y": 233.83,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s3-q020-key",
+     "pdf_page": 163,
+     "printed_page": 163,
+     "y": 748.283,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "section_signal": "State the following statements are true or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "True",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "ec8c99ea5edbd6a96b207721924e22c3fd8298d70f2556f139b4abcdabcd0f92",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s3-q021",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Ship is used to travel in the sea.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s3-q021",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s3-q021",
+     "pdf_page": 66,
+     "printed_page": 66,
+     "y": 260.08,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s3-q021-key",
+     "pdf_page": 164,
+     "printed_page": 164,
+     "y": 72.588,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "section_signal": "State the following statements are true or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "True",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "7a372ab0cb9d11d01c6e115ecf384d6ccd70a5e56dea46516c0317a4007e8542",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s3-q022",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Spacecraft ia used to travel within the Earth.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s3-q022",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s3-q022",
+     "pdf_page": 66,
+     "printed_page": 66,
+     "y": 286.58,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s3-q022-key",
+     "pdf_page": 164,
+     "printed_page": 164,
+     "y": 96.588,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "section_signal": "State the following statements are true or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "false"
+   },
+   "answer_as_printed": "False",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "7b57cc4e9be1ef97393caca35b74e378d8cf0eeefc752e34c44767431e3a5502",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s3-q023",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "The letters can be sent with the help of the post office.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s3-q023",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s3-q023",
+     "pdf_page": 66,
+     "printed_page": 66,
+     "y": 313.1,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s3-q023-key",
+     "pdf_page": 164,
+     "printed_page": 164,
+     "y": 120.608,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "section_signal": "State the following statements are true or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "True",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "0d4d6bfbb63c956208e578d894b1534ea2ac64079cdbaf68c034c65611675b68",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s3-q024",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "We can watch news and programmes on television.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s3-q024",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s3-q024",
+     "pdf_page": 66,
+     "printed_page": 66,
+     "y": 339.6,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s3-q024-key",
+     "pdf_page": 164,
+     "printed_page": 164,
+     "y": 144.608,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "section_signal": "State the following statements are true or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "True",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "6ea24ec2d762489f5081bc3bd11809b4c642cfe0c556358188a836f0593a2896",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s3-q025",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Trains are commonly used for international travel.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s3-q025",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s3-q025",
+     "pdf_page": 66,
+     "printed_page": 66,
+     "y": 365.85,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s3-q025-key",
+     "pdf_page": 164,
+     "printed_page": 164,
+     "y": 168.608,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "section_signal": "State the following statements are true or false",
+   "answer": {
+    "kind": "option",
+    "option_id": "false"
+   },
+   "answer_as_printed": "False",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "3a8ed7077d31648c6db062143bf4df56b356e8a3f35b4f2b8b43eff0c875a70c",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s4-q026",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "EASY",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Match the following with correct answers\nA: A) first Train; B) Camel; C) Graham Bell; D) Wright Brothers; E) Dog; F) Letters; G) Ship; H) Spacecraft; I) Television; J) Newspaper\nB: a)the ship of the desert; b) travelled from Bombay to Thane in 1853; c) invented the plane; d) invented the telephone device; e) Travel by sea; f) first animal used for transport in the olden days; g) sent from post office; h) Telecast of films and programmes; i) Publish daily news; j) a vehicle that flies in the space",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s4-q026",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s4-q026",
+     "pdf_page": 66,
+     "printed_page": 66,
+     "y": 418.87,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s4-q026-key",
+     "pdf_page": 164,
+     "printed_page": 164,
+     "y": 205.888,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "text_as_printed": "Match the following with correct answers (EASY) A                                                  B A) first Train                   a)the ship of the desert B) Camel                         b) travelled from Bombay to Thane in 1853 C) Graham Bell                   c) invented the plane D) Wright Brothers             d) invented the telephone device E) Dog                          e) Travel by sea F) Letters                    f) first animal used for transport in the olden days G) Ship                       g) sent from post office H) Spacecraft                 h) Telecast of films and programmes I) Television                 i) Publish daily news J) Newspaper                  j) a vehicle that flies in the space",
+   "section_signal": "Match the Following",
+   "answer": {
+    "kind": "match",
+    "pairs": [
+     {
+      "left": "First Train",
+      "right": "Travelled from Bombay to Thane in 1853"
+     },
+     {
+      "left": "Camel",
+      "right": "The ship of the desert"
+     },
+     {
+      "left": "Graham Bell",
+      "right": "Invented the telephone device"
+     },
+     {
+      "left": "Wright Brothers",
+      "right": "Invented the plane"
+     },
+     {
+      "left": "Dog",
+      "right": "First animal used for transport in olden days"
+     },
+     {
+      "left": "Letters",
+      "right": "Sent from post office"
+     },
+     {
+      "left": "Ship",
+      "right": "Travel by sea"
+     },
+     {
+      "left": "Spacecraft",
+      "right": "A vehicle that flies in space"
+     },
+     {
+      "left": "Television",
+      "right": "Telecast of films and programmes"
+     },
+     {
+      "left": "Newspaper",
+      "right": "Publish daily news"
+     }
+    ]
+   },
+   "answer_as_printed": "A) First Train — b) Travelled from Bombay to Thane in 1853; B) Camel — a) The ship of the desert; C) Graham Bell — d) Invented the telephone device; D) Wright Brothers — c) Invented the plane; E) Dog — f) First animal used for transport in olden days; F) Letters — g) Sent from post office; G) Ship — e) Travel by sea; H) Spacecraft — j) A vehicle that flies in space; I) Television — h) Telecast of films and programmes; J) Newspaper — i) Publish daily news",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed match key (letter + text per row); pairs left/right verbatim from the key (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — no marks printed"
+    },
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    },
+    {
+     "issue": "match key value not among column-B items — key rows E) Dog -> 'First animal used for transport in olden days' and H) Spacecraft -> 'A vehicle that flies in space' differ in wording from column B ('… in the olden days', '… in the space')",
+     "why_not_corrected": "key text kept as printed (v1.4 §14.8); the printed letters f) and j) name the column-B items",
+     "suggested": "review — wording variants"
+    }
+   ],
+   "content_hash": "874512202823e1014a0348fd7c60fe7aaa6a7e1619e3efe7c3015e3eb7ee178b",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s5-q026b",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What is transportation?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s5-q026b",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s5-q026b",
+     "pdf_page": 67,
+     "printed_page": 67,
+     "y": 75.03,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s5-q026b-key",
+     "pdf_page": 164,
+     "printed_page": 164,
+     "y": 426.928,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "section_signal": "Answer the following questions (one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Moving people and goods from one place to another."
+   },
+   "answer_as_printed": "What is transportation?\nMoving people and goods from one place to another.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "debd34aee00727295f10af5fe9c23ad4663f97680798dc1c0e73a89e9e5a1909",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s5-q027",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What are the important means of transport?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s5-q027",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s5-q027",
+     "pdf_page": 67,
+     "printed_page": 67,
+     "y": 101.53,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s5-q027-key",
+     "pdf_page": 164,
+     "printed_page": 164,
+     "y": 466.958,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "section_signal": "Answer the following questions (one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Land, water, and air transport."
+   },
+   "answer_as_printed": "What are the important means of transport?\nLand, water, and air transport.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "f3c743b8ba497cc0d010dc34f56fdfc3388b5d3bebdbfcb6437fc6e9a9dc3188",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s5-q028",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What is the important purpose of transportation?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s5-q028",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s5-q028",
+     "pdf_page": 67,
+     "printed_page": 67,
+     "y": 128.05,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s5-q028-key",
+     "pdf_page": 164,
+     "printed_page": 164,
+     "y": 506.958,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "section_signal": "Answer the following questions (one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "To go from one place to another and carry goods."
+   },
+   "answer_as_printed": "What is the important purpose of transportation?\nTo go from one place to another and carry goods.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "e412f632c70c3373fe9208bbe87807e5ce49521618a2ee7822bca003771790f1",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s5-q029",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Give an example of land transport.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s5-q029",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s5-q029",
+     "pdf_page": 67,
+     "printed_page": 67,
+     "y": 154.3,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s5-q029-key",
+     "pdf_page": 164,
+     "printed_page": 164,
+     "y": 546.728,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "section_signal": "Answer the following questions (one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Bus or bicycle."
+   },
+   "answer_as_printed": "Give an example of land transport.\nBus or bicycle.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "779d96d0704e4974aa90a0a9bf8e651f09cdb276d4d50619fa8edc552a814a0d",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s5-q030",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "When is air transport useful?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s5-q030",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s5-q030",
+     "pdf_page": 67,
+     "printed_page": 67,
+     "y": 180.8,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s5-q030-key",
+     "pdf_page": 164,
+     "printed_page": 164,
+     "y": 586.728,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "section_signal": "Answer the following questions (one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "To travel to faraway places quickly."
+   },
+   "answer_as_printed": "When is air transport useful?\nTo travel to faraway places quickly.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "0edf59b36c88b7ebfa6ae54653ab98b8b455de3b76b5fde08a5d6b65fcb4beaf",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s5-q031",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Give an example of water transport.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s5-q031",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s5-q031",
+     "pdf_page": 67,
+     "printed_page": 67,
+     "y": 207.33,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s5-q031-key",
+     "pdf_page": 164,
+     "printed_page": 164,
+     "y": 626.728,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "section_signal": "Answer the following questions (one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Ship or boat."
+   },
+   "answer_as_printed": "Give an example of water transport.\nShip or boat.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "c8c0f9db1ad2e4b8673eb9ac256fd57bd25a610b2886252949c380e442d080e7",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s5-q032",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Who delivers letters to your house?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s5-q032",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s5-q032",
+     "pdf_page": 67,
+     "printed_page": 67,
+     "y": 233.83,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s5-q032-key",
+     "pdf_page": 164,
+     "printed_page": 164,
+     "y": 666.758,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "section_signal": "Answer the following questions (one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Postman."
+   },
+   "answer_as_printed": "Who delivers letters to your house?\nPostman.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "f849fa0bb6e8eb198100b06890466cefd2c0e7581737458c8820cc26fa21e77d",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s5-q033",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Which means of communication do we use to talk to people in distant areas?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s5-q033",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s5-q033",
+     "pdf_page": 67,
+     "printed_page": 67,
+     "y": 260.08,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s5-q033-key",
+     "pdf_page": 164,
+     "printed_page": 164,
+     "y": 706.758,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "section_signal": "Answer the following questions (one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Telephone or mobile phone."
+   },
+   "answer_as_printed": "Which means of communication do we use to talk to people in distant areas?\nTelephone or mobile phone.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "55f3570504637316c6877f7751238900f0779018a9ff2eea770362cec4de9efa",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s5-q034",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Which is the fastest means of sending text to people in distant areas?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s5-q034",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s5-q034",
+     "pdf_page": 67,
+     "printed_page": 67,
+     "y": 305.1,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s5-q034-key",
+     "pdf_page": 165,
+     "printed_page": 165,
+     "y": 72.588,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "section_signal": "Answer the following questions (one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Internet or SMS."
+   },
+   "answer_as_printed": "Which is the fastest means of sending text to people in distant areas?\nInternet or SMS.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "116efdcc63cc04666841581929cbb10594b9588b60d9218fe9080cb4f3d20716",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s5-q035",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "section_header",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Which is the fastest means to send parcels?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s5-q035",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s5-q035",
+     "pdf_page": 67,
+     "printed_page": 67,
+     "y": 331.6,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s5-q035-key",
+     "pdf_page": 165,
+     "printed_page": 165,
+     "y": 112.588,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "section_signal": "Answer the following questions (one mark questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Courier service or speed post."
+   },
+   "answer_as_printed": "Which is the fastest means to send parcels?\nCourier service or speed post.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "e9a8ac17853a2585dcfdad786be9128505b79040192e0eb0fcaa93be07444e8b",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s6-q036",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Name the different types of transport?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s6-q036",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s6-q036",
+     "pdf_page": 67,
+     "printed_page": 67,
+     "y": 384.37,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s6-q036-key",
+     "pdf_page": 165,
+     "printed_page": 165,
+     "y": 180.108,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "text_as_printed": "Name the different types of transport? (Average)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Land transport\nWater transport\nAir transport"
+   },
+   "answer_as_printed": "Name the different types of transport:\nLand transport\nWater transport\nAir transport",
+   "solution_steps": [
+    "Land transport",
+    "Water transport",
+    "Air transport"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "a9835a37f14c85ce31256777f224cb8280fbf308e24f1512558262adf2b3a4bc",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s6-q037",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Name the types of communication devices",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s6-q037",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s6-q037",
+     "pdf_page": 67,
+     "printed_page": 67,
+     "y": 410.87,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s6-q037-key",
+     "pdf_page": 165,
+     "printed_page": 165,
+     "y": 275.888,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "text_as_printed": "Name the types of communication devices (easy)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Telephone\nMobile phone\nTelevision\nRadio\nInternet"
+   },
+   "answer_as_printed": "Name the types of communication devices:\nTelephone\nMobile phone\nTelevision\nRadio\nInternet",
+   "solution_steps": [
+    "Telephone",
+    "Mobile phone",
+    "Television",
+    "Radio",
+    "Internet"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "ef5b49efdda67dbdeb8d0e873c979ae4623564aea01bc35e33cbab94e8aa735a",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s6-q038",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What vehicles are used for land transport?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s6-q038",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s6-q038",
+     "pdf_page": 67,
+     "printed_page": 67,
+     "y": 437.37,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s6-q038-key",
+     "pdf_page": 165,
+     "printed_page": 165,
+     "y": 419.928,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "text_as_printed": "What vehicles are used for land transport? (Average)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Cars, buses, trains, bicycles, and scooters."
+   },
+   "answer_as_printed": "What vehicles are used for land transport?\nCars, buses, trains, bicycles, and scooters.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "d279acebf7b792f773338fd7e1532cef5df523695eaf95c9a784e78da41b5441",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s6-q039",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What vehicles are used for water transport?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s6-q039",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s6-q039",
+     "pdf_page": 67,
+     "printed_page": 67,
+     "y": 463.9,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s6-q039-key",
+     "pdf_page": 165,
+     "printed_page": 165,
+     "y": 459.958,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "text_as_printed": "What vehicles are used for water transport? (Average)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Boats, ships, and steamers."
+   },
+   "answer_as_printed": "What vehicles are used for water transport?\nBoats, ships, and steamers.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "2a8e31693bc780d23d99dbba1c635404c9ca2319a75d109f14178b85ba4e8ec2",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s6-q040",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What vehicles are used for air transport?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s6-q040",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s6-q040",
+     "pdf_page": 67,
+     "printed_page": 67,
+     "y": 490.15,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s6-q040-key",
+     "pdf_page": 165,
+     "printed_page": 165,
+     "y": 499.958,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "text_as_printed": "What vehicles are used for air transport? (Average)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Aeroplanes, helicopters, and jets."
+   },
+   "answer_as_printed": "What vehicles are used for air transport?\nAeroplanes, helicopters, and jets.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "72272006ab346b3e33ccf86e7f97a7c9bfed2357859c7c020a23d5940559eeb4",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s6-q041",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Why do we write letters?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s6-q041",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s6-q041",
+     "pdf_page": 67,
+     "printed_page": 67,
+     "y": 516.65,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s6-q041-key",
+     "pdf_page": 165,
+     "printed_page": 165,
+     "y": 539.958,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "text_as_printed": "Why do we write letters ?(Easy)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "To send messages or information to people far away."
+   },
+   "answer_as_printed": "Why do we write letters?\nTo send messages or information to people far away.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "8e5b685d4d1206dfaebec1ff2f5c892f9ddc40fe64b0e64dec96125e997e7611",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s6-q042",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Why do we use telephone.?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s6-q042",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s6-q042",
+     "pdf_page": 67,
+     "printed_page": 67,
+     "y": 543.15,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s6-q042-key",
+     "pdf_page": 165,
+     "printed_page": 165,
+     "y": 579.728,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "text_as_printed": "Why do we use telephone.? (Average)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "To talk to people who are not near us."
+   },
+   "answer_as_printed": "Why do we use telephone?\nTo talk to people who are not near us.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "f0f87604dfa73a5173b813ff04df236a2065552a67dc06d2825c1baedb654b85",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s6-q043",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What are the uses of internet.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s6-q043",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s6-q043",
+     "pdf_page": 67,
+     "printed_page": 67,
+     "y": 569.67,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s6-q043-key",
+     "pdf_page": 165,
+     "printed_page": 165,
+     "y": 619.738,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "text_as_printed": "What are the uses of internet. (Average)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "To send messages, talk to people, watch videos, learn, and play games."
+   },
+   "answer_as_printed": "What are the uses of internet?\nTo send messages, talk to people, watch videos, learn, and play games.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "f460aa107c8f1514e52bf114e2a3d1d0b194a7edbb9dc5c26856110b9a5b30fd",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s6-q044",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "When is the Road safety week celebrated?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s6-q044",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s6-q044",
+     "pdf_page": 67,
+     "printed_page": 67,
+     "y": 595.92,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s6-q044-key",
+     "pdf_page": 165,
+     "printed_page": 165,
+     "y": 659.758,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "text_as_printed": "When is the Road safety week celebrated?(Easy)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "In January every year."
+   },
+   "answer_as_printed": "When is the Road Safety Week celebrated?\nIn January every year.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "c2c423a234368d8e6621b0584a8984cfd356ec928e747569948df54fe5bd3731",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s6-q045",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Why should we be careful while using electrical instruments?.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s6-q045",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s6-q045",
+     "pdf_page": 67,
+     "printed_page": 67,
+     "y": 622.42,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s6-q045-key",
+     "pdf_page": 165,
+     "printed_page": 165,
+     "y": 699.758,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "text_as_printed": "Why should we be careful while using electrical instruments?. (Easy)",
+   "section_signal": "Answer the following questions (two marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Because they can give shocks or cause fire."
+   },
+   "answer_as_printed": "Why should we be careful with electrical instruments?\nBecause they can give shocks or cause fire.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "ea94cc860434613a3bb9bf8bdbdc681e29d4e51da7b5c9a9b6a7f7a700c59d0d",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s7-q046",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "For what purposes are animals used in your locality?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s7-q046",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s7-q046",
+     "pdf_page": 67,
+     "printed_page": 67,
+     "y": 675.45,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s7-q046-key",
+     "pdf_page": 166,
+     "printed_page": 166,
+     "y": 72.588,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "text_as_printed": "For what purposes are animals used in your locality? (Difficult)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Animals like oxen are used for ploughing, donkeys carry loads, and camels or bullock carts are used for transport in some areas."
+   },
+   "answer_as_printed": "For what purposes are animals used in your locality?\nAnimals like oxen are used for ploughing, donkeys carry loads, and camels or bullock\ncarts are used for transport in some areas.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "0b3d1c723ad7aad8f986fea552701860bdeb5e5b523a51d396109299710fbcc5",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s7-q047",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "easy",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Easy",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What is the difference between air transport and land transport?.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s7-q047",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s7-q047",
+     "pdf_page": 67,
+     "printed_page": 67,
+     "y": 701.95,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s7-q047-key",
+     "pdf_page": 166,
+     "printed_page": 166,
+     "y": 128.608,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "text_as_printed": "What is the difference between air transport and land transport?.Easy)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Air transport uses planes and is faster.\nLand transport uses roads and is cheaper and slower."
+   },
+   "answer_as_printed": "Difference between air and land transport:\nAir transport uses planes and is faster.\nLand transport uses roads and is cheaper and slower.",
+   "solution_steps": [
+    "Air transport uses planes and is faster.",
+    "Land transport uses roads and is cheaper and slower."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "552b846c329fb446f74134a19c122581a8108b7d7b854dd75d7a877fde53e1fc",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s7-q048",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "How should the animals which are used for transport be looked after?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s7-q048",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s7-q048",
+     "pdf_page": 67,
+     "printed_page": 67,
+     "y": 728.23,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s7-q048-key",
+     "pdf_page": 166,
+     "printed_page": 166,
+     "y": 200.608,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "text_as_printed": "How should the animals which are used for transport be looked after? (Difficult)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "They should be fed well, given water, not overworked, and treated kindly."
+   },
+   "answer_as_printed": "How should animals used for transport be cared for?\nThey should be fed well, given water, not overworked, and treated kindly.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "f061bef9356d799fa6002a4349e46e4c7a6f2464f9eb1a2405b60d13200eb521",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s7-q049",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What is the importance of newspapers?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s7-q049",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s7-q049",
+     "pdf_page": 68,
+     "printed_page": 68,
+     "y": 75.03,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s7-q049-key",
+     "pdf_page": 166,
+     "printed_page": 166,
+     "y": 240.388,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "text_as_printed": "What is the importance of newspapers? (Difficult)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "They give daily news, help us know what is happening around the world, and improve our reading."
+   },
+   "answer_as_printed": "Importance of newspapers:\nThey give daily news, help us know what is happening around the world, and improve\nour reading.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "a0315a8cc70d2439f5a4ed0f47a158f14767cfa96406ae3b3ea32aa70a6bf10a",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s7-q050",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Name the means of communication used by you, your friends and your family members.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s7-q050",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s7-q050",
+     "pdf_page": 68,
+     "printed_page": 68,
+     "y": 101.53,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s7-q050-key",
+     "pdf_page": 166,
+     "printed_page": 166,
+     "y": 296.408,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "text_as_printed": "Name the means of communication used by you , your friends and your family members.(Difficult)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Mobile phones for calling\nInternet for chatting\nTV for watching news\nPostcards and letters"
+   },
+   "answer_as_printed": "Means of communication used by you, your friends and family:\nMobile phones for calling\nInternet for chatting\nTV for watching news\nPostcards and letters",
+   "solution_steps": [
+    "Mobile phones for calling",
+    "Internet for chatting",
+    "TV for watching news",
+    "Postcards and letters"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "6f3e4ef8765a6b6875b9354f4c21679d160e752c1b6ef8f8e8414804391536ed",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s7-q051",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Name any three means of communication and write few sentences about them.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s7-q051",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s7-q051",
+     "pdf_page": 68,
+     "printed_page": 68,
+     "y": 146.3,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s7-q051-key",
+     "pdf_page": 166,
+     "printed_page": 166,
+     "y": 416.428,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "text_as_printed": "Name any three means of communication and write few sentences about them. (Average)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Telephone: For speaking to others\nTV: For watching news and shows\nNewspaper: For reading daily events"
+   },
+   "answer_as_printed": "Three means of communication and their uses:\nTelephone: For speaking to others\nTV: For watching news and shows\nNewspaper: For reading daily events",
+   "solution_steps": [
+    "Telephone: For speaking to others",
+    "TV: For watching news and shows",
+    "Newspaper: For reading daily events"
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "d893ce46ca857b1e4c1f563cdfe11cd97c6c55be7e40ba6bc10bfb7101ac266e",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s7-q052",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What are fast moving trains? How are they useful to us?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s7-q052",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s7-q052",
+     "pdf_page": 68,
+     "printed_page": 68,
+     "y": 191.3,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s7-q052-key",
+     "pdf_page": 166,
+     "printed_page": 166,
+     "y": 512.458,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "text_as_printed": "What are fast moving trains? How are they useful to us?(Average)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Trains like express or bullet trains move quickly and help people reach far places faster."
+   },
+   "answer_as_printed": "What are fast-moving trains and how are they useful?\nTrains like express or bullet trains move quickly and help people reach far places\nfaster.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "142e505d30bef1ab0a616983ef0524579718043e126c09e1c7a36eaf9cd20e3d",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s7-q053",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "How are spacecrafts useful?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s7-q053",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s7-q053",
+     "pdf_page": 68,
+     "printed_page": 68,
+     "y": 217.83,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s7-q053-key",
+     "pdf_page": 166,
+     "printed_page": 166,
+     "y": 568.228,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "text_as_printed": "How are spacecrafts useful? (Difficult)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "They help us explore space, launch satellites, and study planets."
+   },
+   "answer_as_printed": "How are spacecrafts useful?\nThey help us explore space, launch satellites, and study planets.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "890d48c9c4b6c04c98f4e917eb598751b100b97d1ed0f60afbee6e65780a2d3d",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s7-q054",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What are the modes of transport used in rural areas?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s7-q054",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s7-q054",
+     "pdf_page": 68,
+     "printed_page": 68,
+     "y": 244.08,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s7-q054-key",
+     "pdf_page": 166,
+     "printed_page": 166,
+     "y": 608.238,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "text_as_printed": "What are the modes of transport used in rural areas? (Average)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Bullock carts, bicycles, tractors, and buses."
+   },
+   "answer_as_printed": "Modes of transport in rural areas:\nBullock carts, bicycles, tractors, and buses.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "092dc9d46a5fc0dbe8bf503d24a4d1981906a91d019e8370019cb78d9efe30e3",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s7-q055",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 3,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Describe your visit to the post office in few setences.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s7-q055",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s7-q055",
+     "pdf_page": 68,
+     "printed_page": 68,
+     "y": 270.58,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s7-q055-key",
+     "pdf_page": 166,
+     "printed_page": 166,
+     "y": 648.258,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "text_as_printed": "Describe your visit to the post office in few setences. (Difficult)",
+   "section_signal": "Answer the following questions (three marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "I went with my father. We saw letter boxes, stamps, and parcels. The postman explained how letters are sent."
+   },
+   "answer_as_printed": "Describe your visit to the post office:\nI went with my father. We saw letter boxes, stamps, and parcels. The postman\nexplained how letters are sent.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "8c03244d123a45c07fe1efeae9aef7a88c0d13fc87d651b95eee1502ddad1351",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s8-q056",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "How did people move from one place to another in olden times?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s8-q056",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s8-q056",
+     "pdf_page": 68,
+     "printed_page": 68,
+     "y": 323.6,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s8-q056-key",
+     "pdf_page": 167,
+     "printed_page": 167,
+     "y": 72.588,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "text_as_printed": "How did people move from one place to another in olden times? (Difficult)",
+   "section_signal": "Answer the following questions (four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "They walked or used animals like horses, bullocks, and camels. Boats were used for rivers. There were no buses or trains."
+   },
+   "answer_as_printed": "How did people move from one place to another in olden times?\nThey walked or used animals like horses, bullocks, and camels. Boats were used for\nrivers. There were no buses or trains.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "5158a13070bd94a9e529984d68c000643cdaabb9257209d86872005435243528",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s8-q057",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "How many types of newspapers are there? Define them.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s8-q057",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s8-q057",
+     "pdf_page": 68,
+     "printed_page": 68,
+     "y": 349.85,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s8-q057-key",
+     "pdf_page": 167,
+     "printed_page": 167,
+     "y": 128.608,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "text_as_printed": "How many types of newspapers are there? Define them. (Average)",
+   "section_signal": "Answer the following questions (four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Daily: Comes every day with news.\nWeekly: Comes once in a week with stories or special articles."
+   },
+   "answer_as_printed": "Types of newspapers and their meaning:\nDaily: Comes every day with news.\nWeekly: Comes once in a week with stories or special articles.",
+   "solution_steps": [
+    "Daily: Comes every day with news.",
+    "Weekly: Comes once in a week with stories or special articles."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "aba652adf37deda2a922c67a4a6a49c0ec0d3adfd45717c6bc818d5c5ce713c3",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s8-q058",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What will a good transport system benefit the country?",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s8-q058",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s8-q058",
+     "pdf_page": 68,
+     "printed_page": 68,
+     "y": 376.37,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s8-q058-key",
+     "pdf_page": 167,
+     "printed_page": 167,
+     "y": 200.608,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "text_as_printed": "What will a good transport system benefit the country? (Difficult)",
+   "section_signal": "Answer the following questions (four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "It helps people and goods move quickly, supports trade, helps in emergencies, and grows the economy."
+   },
+   "answer_as_printed": "How does a good transport system help the country?\nIt helps people and goods move quickly, supports trade, helps in emergencies, and\ngrows the economy.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "ec87b13833da5ce041f9a887eb08611e424ce188e6570f43b3a1154599a848f4",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s8-q059",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "What are the modes of transport?Explain.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s8-q059",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s8-q059",
+     "pdf_page": 68,
+     "printed_page": 68,
+     "y": 402.87,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s8-q059-key",
+     "pdf_page": 167,
+     "printed_page": 167,
+     "y": 256.378,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "text_as_printed": "What are the modes of transport?Explain. (Average)",
+   "section_signal": "Answer the following questions (four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Land: Buses, trains, scooters.\nWater: Ships, boats.\nAir: Planes, helicopters.\nThey help us go from place to place."
+   },
+   "answer_as_printed": "What are the modes of transport? Explain.\nLand: Buses, trains, scooters.\nWater: Ships, boats.\nAir: Planes, helicopters.\nThey help us go from place to place.",
+   "solution_steps": [
+    "Land: Buses, trains, scooters.",
+    "Water: Ships, boats.",
+    "Air: Planes, helicopters.",
+    "They help us go from place to place."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "1a733a34c3c6dc0bb1579c59cdfa355117faa79ccd37ed11315996e14f92513c",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s8-q060",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "difficult",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Difficult",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Describe the faster modes of communication used in the modern days with examples.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s8-q060",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s8-q060",
+     "pdf_page": 68,
+     "printed_page": 68,
+     "y": 429.37,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s8-q060-key",
+     "pdf_page": 167,
+     "printed_page": 167,
+     "y": 368.408,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "text_as_printed": "Describe the faster modes of communication used in the modern days with examples.(Difficult)",
+   "section_signal": "Answer the following questions (four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": "Mobile phone: Calls and messages.\nEmail: Sends letters quickly through internet.\nTV and News apps: Gives updates instantly."
+   },
+   "answer_as_printed": "Faster modes of communication today:\nMobile phone: Calls and messages.\nEmail: Sends letters quickly through internet.\nTV and News apps: Gives updates instantly.",
+   "solution_steps": [
+    "Mobile phone: Calls and messages.",
+    "Email: Sends letters quickly through internet.",
+    "TV and News apps: Gives updates instantly."
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-4-evs",
+    "at": "2026-11-27T00:25:14+05:30",
+    "basis": "printed bullet-list key; one solution_step per printed bullet, a line break inside a bullet kept in answer.value (addendum §5.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    }
+   ],
+   "content_hash": "38ddb426af4caabe8c40a8847c5d691a590cee4eb59f4fc6b14388191e3323db",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-4-15-s8-q061",
+   "class": "4",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-4-15",
+   "syllabus_map_version": "evs-4-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 4,
+   "marks_source": "section_header",
+   "difficulty": "average",
+   "difficulty_source": "printed",
+   "difficulty_as_printed": "Average",
+   "learning_outcomes": [],
+   "out_of_syllabus": false,
+   "text": "Draw a picture of the bullock cart, which is a means of transportation and colour it.",
+   "source": "lba",
+   "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s8-q061",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s8-q061",
+     "pdf_page": 68,
+     "printed_page": 68,
+     "y": 474.15,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "4thLBA-EVS-EM1.pdf#evs-4-15-s8-q061-key",
+     "pdf_page": 164,
+     "printed_page": 164,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-4-evs",
+     "role": "extraction",
+     "at": "2026-11-27T00:25:14+05:30"
+    }
+   ],
+   "created_by": "class-4-evs",
+   "created_at": "2026-11-27T00:25:14+05:30",
+   "text_as_printed": "Draw a picture of the bullock cart, which is a means of transportation and colour it. (Average)",
+   "section_signal": "Answer the following questions (four marks questions)",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "no LO mapped",
+     "why_not_corrected": "the lesson prints a numbered list of learning outcomes (pdf 64-65) but no question carries an LO number; assigning one is authoring (v2 §6)",
+     "suggested": "exempt (1.7) — LO list printed per lesson only"
+    },
+    {
+     "issue": "no answer printed",
+     "why_not_corrected": "the answer side ends at key 60 (pdf 167) and prints nothing for this drawing task",
+     "suggested": "key absent — review"
+    }
+   ],
+   "content_hash": "c7f847aac40e626986209bfd47a9f7f0b3962e8b9fc43ea1511a2cc660ddb617",
+   "topic_ids": [
+    "evs-4-15-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  }
+ ],
+ "pending_summary": {}
+}
