@@ -1,0 +1,2523 @@
+{
+ "contract_version": "1.7",
+ "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
+ "procedure_file": "extraction_procedure_social_addendum_v1.4_social science Classes 6-10 on top of procedure v2.md",
+ "machine_name": "evs-3-13_questions",
+ "version": 1,
+ "changelog": "v1 extraction — batch-01 — class-3-evs",
+ "amendments_applied": [],
+ "unit_state": "EXTRACTED",
+ "review_ready": false,
+ "count_gate": {
+  "reference": 28,
+  "reference_source": "audited",
+  "extracted": 28,
+  "paired": 3,
+  "flagged": 26,
+  "gaps": [],
+  "duplicated_numbers": [],
+  "quota_table": "difficulty_only",
+  "second_method": {
+   "method": "printed BLUE PRINT difficulty table total (Easy 14 + Average 6 + Difficulty 8 = 28), pdf 50; independently, the answer side's keys counted",
+   "extracted": 28,
+   "agrees": true
+  },
+  "pass": true,
+  "note": "Question side labels 1-28 monotonic, no gaps, no duplicates (I 1-4, II 5-11, III 12-15, IV 16-20, V 21, VI 22, VII 23-26, VIII 27, 28 project). BLUE PRINT 14/6/8 = 28 = audited count. Answer side prints keys 1-3 (letters) and 4-20 that answer another question set (analysis file); 21-28 unkeyed. Difficulty per question: easy 0, average 0, difficult 0, untagged 28."
+ },
+ "extraction": {
+  "source_file": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf",
+  "source_ref_prefix": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf",
+  "pdf_pages": [
+   50,
+   51,
+   52,
+   53,
+   54,
+   114,
+   115
+  ],
+  "printed_page_offset": 0,
+  "method_notes": [
+   "Pages: Q pdf 50 (heading, LO 15, BLUE PRINT, q1-2) 51 (q3-13) 52 (q14-21) 53 (q22-27) 54 (q27 pictures A-E, q28). A side 'LESSON 13 / Key Answers:' pdf 114-115 (keys 1-20; 'Sample Answers: 14' follows on pdf 115). Folios = pdf page.",
+   "KEY SIDE (analysis file evs-3-13_key-side_analysis.md): only keys 1-2 (and by number 3) address their printed questions. Keys 4-20 belong to a different question set — schema v7 'key belongs to another paper version': pair only matching keys, the others empty + flag with the content pointer as 'suggested'. Content fits for the coordinator: key 7 -> q12, key 11 -> q23, keys 14-15 -> q26 (partial), keys 16-20 -> q27 pictures A-E.",
+   "Sections: s1 I q1-4 four unlettered bracket options -> mcq (option ids A-D by printed order; keys print letters only '1) B)'); s2 II match q5-11 (numbered rows -> one-pair match questions); s3 III situations q12-15 (vsa); s4 IV T/F q16-20; s5 V q21 (five sub-pairs a-e, part of the question); s6 VI q22 (six sub-items); s7 VII q23-26 (sa); s8 VIII q27 (five pictures -> stimulus st-evs-3-13-q27 with 5 crops, D4 path images/evs-3-13/stimuli/); s9 q28 project work (la).",
+   "MARKS (R-E9, control rev 3): s1 '4*1=4' -> 1; s2 '7*1=7' -> 1; s3 '(4 × 1 = 4)' -> 1; s4 '(5 × 1 = 5)' -> 1; s7 '(4 × 2 = 8)' -> 2; null where N disagrees: s5 '(5 × 1 = 5)' over 1 q, s6 '(½ × 6 = 3)' over 1 q (and not integer), s8 '5*1=5' over 1 q, s9 q28: '(5 Marks)' printed on the question itself -> marks 5 (control rev 4: a per-question printed value beats the header); marks_source 'section_header' because MARKS_SOURCE (gate 2.20) has no value naming a per-question printed mark — as printed on the question, not the section's '5*1=5'.",
+   "DIFFICULTY: none printed -> null + 'no difficulty tag'. quota_table difficulty_only; second method = BLUE PRINT total 28 (agrees). LO (R-E10): lesson LO 15, lo_source 'lesson_table'.",
+   "PARKED (R-E8): the empty answers of the 7 match rows (q5-q11) and 5 true/false items (q16-q20) cannot be encoded under gate 2.20 (T-E1, extended to match at control rev 3). Built file kept in the work dir with its stimulus crops; not committed."
+  ],
+  "notation_summary": {
+   "render_tokens": 0,
+   "latex_tokens": 0,
+   "damage_flags": []
+  },
+  "excluded_objects": [],
+  "inline_excluded_count": 0,
+  "figure_references": []
+ },
+ "stimuli": [
+  {
+   "id": "st-evs-3-13-q27",
+   "kind": "figure",
+   "note": "27. Write the names of the public facilities shown in the picture. — pictures A-E, pdf 54",
+   "assets": [
+    {
+     "id": "st27a",
+     "type": "image",
+     "ref": "images/evs-3-13/stimuli/p054-q27a_figure.png",
+     "role": "figure",
+     "source_px": {
+      "w": 166,
+      "h": 164
+     },
+     "quality": "ok",
+     "caption": "Picture A printed for q27, pdf 54 — region render at 150 dpi of the embedded image's box",
+     "pdf_page": 54,
+     "crop_bbox": {
+      "pdf_page": 54,
+      "x0": 53.0,
+      "y0": 54.3,
+      "x1": 132.5,
+      "y1": 133.0
+     }
+    },
+    {
+     "id": "st27b",
+     "type": "image",
+     "ref": "images/evs-3-13/stimuli/p054-q27b_figure.png",
+     "role": "figure",
+     "source_px": {
+      "w": 197,
+      "h": 145
+     },
+     "quality": "ok",
+     "caption": "Picture B printed for q27, pdf 54 — region render at 150 dpi of the embedded image's box",
+     "pdf_page": 54,
+     "crop_bbox": {
+      "pdf_page": 54,
+      "x0": 49.9,
+      "y0": 157.0,
+      "x1": 144.5,
+      "y1": 226.6
+     }
+    },
+    {
+     "id": "st27c",
+     "type": "image",
+     "ref": "images/evs-3-13/stimuli/p054-q27c_figure.png",
+     "role": "figure",
+     "source_px": {
+      "w": 195,
+      "h": 153
+     },
+     "quality": "ok",
+     "caption": "Picture C printed for q27, pdf 54 — region render at 150 dpi of the embedded image's box",
+     "pdf_page": 54,
+     "crop_bbox": {
+      "pdf_page": 54,
+      "x0": 46.1,
+      "y0": 250.4,
+      "x1": 139.9,
+      "y1": 324.1
+     }
+    },
+    {
+     "id": "st27d",
+     "type": "image",
+     "ref": "images/evs-3-13/stimuli/p054-q27d_figure.png",
+     "role": "figure",
+     "source_px": {
+      "w": 249,
+      "h": 187
+     },
+     "quality": "ok",
+     "caption": "Picture D printed for q27, pdf 54 — region render at 150 dpi of the embedded image's box",
+     "pdf_page": 54,
+     "crop_bbox": {
+      "pdf_page": 54,
+      "x0": 46.1,
+      "y0": 329.6,
+      "x1": 165.4,
+      "y1": 419.6
+     }
+    },
+    {
+     "id": "st27e",
+     "type": "image",
+     "ref": "images/evs-3-13/stimuli/p054-q27e_figure.png",
+     "role": "figure",
+     "source_px": {
+      "w": 281,
+      "h": 222
+     },
+     "quality": "ok",
+     "caption": "Picture E printed for q27, pdf 54 — region render at 150 dpi of the embedded image's box",
+     "pdf_page": 54,
+     "crop_bbox": {
+      "pdf_page": 54,
+      "x0": 52.3,
+      "y0": 443.6,
+      "x1": 187.2,
+      "y1": 549.9
+     }
+    }
+   ],
+   "locators": [
+    {
+     "role": "stimulus",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#st-evs-3-13-q27",
+     "pdf_page": 54,
+     "printed_page": 54,
+     "y": 54.3,
+     "derived_from": "render_measured"
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "evs-3-13-s1-q001",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-13",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "15",
+     "text_as_printed": "Identifies the public facilities and explain the need to protect them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "___ are systematically arranged on the shelves in the library.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s1-q001",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s1-q001",
+     "pdf_page": 50,
+     "printed_page": 50,
+     "y": 538.973,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s1-q001-key",
+     "pdf_page": 114,
+     "printed_page": 114,
+     "y": 190.253,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:23:22+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:23:22+05:30",
+   "section_signal": "I. Fill in the Blanks with choosing correct answer*",
+   "lo_source": "lesson_table",
+   "options": [
+    {
+     "id": "A",
+     "text": "vegetables"
+    },
+    {
+     "id": "B",
+     "text": "Books"
+    },
+    {
+     "id": "C",
+     "text": "Fruits"
+    },
+    {
+     "id": "D",
+     "text": "snakes"
+    }
+   ],
+   "answer_as_printed": "1) B)",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:23:22+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 6 / Difficulty 8) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "b9a3d97b12125f16bc5e25a076d7c49dfb6a78669ea88b1aa0a979a8c0bf1572",
+   "topic_ids": [
+    "evs-3-13-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-13-s1-q002",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-13",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "15",
+     "text_as_printed": "Identifies the public facilities and explain the need to protect them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "The place where a bus stops is called a ___",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s1-q002",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s1-q002",
+     "pdf_page": 50,
+     "printed_page": 50,
+     "y": 637.373,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s1-q002-key",
+     "pdf_page": 114,
+     "printed_page": 114,
+     "y": 190.253,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:23:22+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:23:22+05:30",
+   "section_signal": "I. Fill in the Blanks with choosing correct answer*",
+   "lo_source": "lesson_table",
+   "options": [
+    {
+     "id": "A",
+     "text": "Bus Stand"
+    },
+    {
+     "id": "B",
+     "text": "Railway Station"
+    },
+    {
+     "id": "C",
+     "text": "Airport"
+    },
+    {
+     "id": "D",
+     "text": "Auto Stand"
+    }
+   ],
+   "answer_as_printed": "2) A)",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:23:22+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 6 / Difficulty 8) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "60fda3eb686a2e81d62a692bb05d4f5f2f058a5cb6d3bd0caa2e0aa2c2da73fd",
+   "topic_ids": [
+    "evs-3-13-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-13-s1-q003",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-13",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "15",
+     "text_as_printed": "Identifies the public facilities and explain the need to protect them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Which of the following can not be called a public facility?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s1-q003",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s1-q003",
+     "pdf_page": 51,
+     "printed_page": 51,
+     "y": 57.773,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s1-q003-key",
+     "pdf_page": 114,
+     "printed_page": 114,
+     "y": 190.253,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:23:22+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:23:22+05:30",
+   "section_signal": "I. Fill in the Blanks with choosing correct answer*",
+   "lo_source": "lesson_table",
+   "options": [
+    {
+     "id": "A",
+     "text": "Park"
+    },
+    {
+     "id": "B",
+     "text": "Bank"
+    },
+    {
+     "id": "C",
+     "text": "Home"
+    },
+    {
+     "id": "D",
+     "text": "Library"
+    }
+   ],
+   "answer_as_printed": "3) B)",
+   "answer": {
+    "kind": "option",
+    "option_id": "B"
+   },
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:23:22+05:30",
+    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 6 / Difficulty 8) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "printed key contradicts fact — 'B)' = Bank is a public facility; the question asks which can NOT be called one (Home, option C); the lesson's key side belongs to another question set (see analysis); reviewer",
+     "why_not_corrected": "printed letter asserted by printed number (v1.4 §14.6)",
+     "suggested": "C — review"
+    }
+   ],
+   "content_hash": "8184ef7f616354d447eec2e6443cf0cca4175df3de005be33f991c2740b65759",
+   "topic_ids": [
+    "evs-3-13-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-13-s1-q004",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-13",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "15",
+     "text_as_printed": "Identifies the public facilities and explain the need to protect them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Which of the following public facilities do we visit when we are unwell ___",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s1-q004",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s1-q004",
+     "pdf_page": 51,
+     "printed_page": 51,
+     "y": 177.533,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s1-q004-key",
+     "pdf_page": 114,
+     "printed_page": 114,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:23:22+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:23:22+05:30",
+   "section_signal": "I. Fill in the Blanks with choosing correct answer*",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "option",
+    "option_id": null
+   },
+   "options": [
+    {
+     "id": "A",
+     "text": "Bank"
+    },
+    {
+     "id": "B",
+     "text": "Hospital"
+    },
+    {
+     "id": "C",
+     "text": "post office"
+    },
+    {
+     "id": "D",
+     "text": "Police Station"
+    }
+   ],
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 6 / Difficulty 8) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key belongs to another paper version — the answer side prints no '4)' under I; its '4)' (under II) lists districts",
+     "why_not_corrected": "the answer side of this lesson (pdf 114-115) answers a different question set: keys 4-6, 8-10, 12-15 address no printed question; keys 7, 11, 14-15 and 16-20 fit other printed questions by content (see analysis file); extraction pairs only matching keys (schema v7) and does not re-pair by content",
+     "suggested": "B (Hospital) — review"
+    }
+   ],
+   "content_hash": "2783cf0be4407402c6fdf6c757de89685e59a436f126928b68e01b6a02f88087",
+   "topic_ids": [
+    "evs-3-13-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-13-s2-q005",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-13",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "15",
+     "text_as_printed": "Identifies the public facilities and explain the need to protect them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Match the following: Library\nB: Gold; Vegetables, Fruits, Shops; Books, Newspaper,; Buses, passenger, driver; Postmaster, letters; Doctors, Nurse, Patients; Children, Swing, Slide",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s2-q005",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s2-q005",
+     "pdf_page": 51,
+     "printed_page": 51,
+     "y": 317.933,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s2-q005-key",
+     "pdf_page": 114,
+     "printed_page": 114,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:23:22+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:23:22+05:30",
+   "text_as_printed": "Library",
+   "section_signal": "II. Match the following :-",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 6 / Difficulty 8) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key belongs to another paper version — printed key 5 'Bus stand, hospital, library, post office etc.' does not address this match row",
+     "why_not_corrected": "the answer side of this lesson (pdf 114-115) answers a different question set: keys 4-6, 8-10, 12-15 address no printed question; keys 7, 11, 14-15 and 16-20 fit other printed questions by content (see analysis file); extraction pairs only matching keys (schema v7) and does not re-pair by content",
+     "suggested": "review"
+    }
+   ],
+   "content_hash": "e18e025db3e57bbb9fae6e2d0435df7cffda5b3afa53f63e99cadede5b280589",
+   "topic_ids": [
+    "evs-3-13-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-13-s2-q006",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-13",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "15",
+     "text_as_printed": "Identifies the public facilities and explain the need to protect them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Match the following: Busstand\nB: Gold; Vegetables, Fruits, Shops; Books, Newspaper,; Buses, passenger, driver; Postmaster, letters; Doctors, Nurse, Patients; Children, Swing, Slide",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s2-q006",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s2-q006",
+     "pdf_page": 51,
+     "printed_page": 51,
+     "y": 358.013,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s2-q006-key",
+     "pdf_page": 114,
+     "printed_page": 114,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:23:22+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:23:22+05:30",
+   "text_as_printed": "Busstand",
+   "section_signal": "II. Match the following :-",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 6 / Difficulty 8) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key belongs to another paper version — printed key 6 'People go to the park for jogging, children go to play' does not address this match row",
+     "why_not_corrected": "the answer side of this lesson (pdf 114-115) answers a different question set: keys 4-6, 8-10, 12-15 address no printed question; keys 7, 11, 14-15 and 16-20 fit other printed questions by content (see analysis file); extraction pairs only matching keys (schema v7) and does not re-pair by content",
+     "suggested": "review"
+    }
+   ],
+   "content_hash": "afd4a1ab3cef2a801e465f85044beeeb3374e0c2dafe16ca70cec2c771fd85c1",
+   "topic_ids": [
+    "evs-3-13-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-13-s2-q007",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-13",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "15",
+     "text_as_printed": "Identifies the public facilities and explain the need to protect them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Match the following: Postoffice\nB: Gold; Vegetables, Fruits, Shops; Books, Newspaper,; Buses, passenger, driver; Postmaster, letters; Doctors, Nurse, Patients; Children, Swing, Slide",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s2-q007",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s2-q007",
+     "pdf_page": 51,
+     "printed_page": 51,
+     "y": 397.853,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s2-q007-key",
+     "pdf_page": 114,
+     "printed_page": 114,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:23:22+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:23:22+05:30",
+   "text_as_printed": "Postoffice",
+   "section_signal": "II. Match the following :-",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 6 / Difficulty 8) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key belongs to another paper version — printed key 7 'If the tap is running, you should turn it off.' does not address this match row",
+     "why_not_corrected": "the answer side of this lesson (pdf 114-115) answers a different question set: keys 4-6, 8-10, 12-15 address no printed question; keys 7, 11, 14-15 and 16-20 fit other printed questions by content (see analysis file); extraction pairs only matching keys (schema v7) and does not re-pair by content",
+     "suggested": "review"
+    }
+   ],
+   "content_hash": "d07a595ee956de493c04d506b7710b92fe717f73e5d568c5e529a884dbce26f9",
+   "topic_ids": [
+    "evs-3-13-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-13-s2-q008",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-13",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "15",
+     "text_as_printed": "Identifies the public facilities and explain the need to protect them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Match the following: Hospitals\nB: Gold; Vegetables, Fruits, Shops; Books, Newspaper,; Buses, passenger, driver; Postmaster, letters; Doctors, Nurse, Patients; Children, Swing, Slide",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s2-q008",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s2-q008",
+     "pdf_page": 51,
+     "printed_page": 51,
+     "y": 437.933,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s2-q008-key",
+     "pdf_page": 114,
+     "printed_page": 114,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:23:22+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:23:22+05:30",
+   "text_as_printed": "Hospitals",
+   "section_signal": "II. Match the following :-",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 6 / Difficulty 8) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key belongs to another paper version — printed key 8 'If the toilet smells, you should flush it' does not address this match row",
+     "why_not_corrected": "the answer side of this lesson (pdf 114-115) answers a different question set: keys 4-6, 8-10, 12-15 address no printed question; keys 7, 11, 14-15 and 16-20 fit other printed questions by content (see analysis file); extraction pairs only matching keys (schema v7) and does not re-pair by content",
+     "suggested": "review"
+    }
+   ],
+   "content_hash": "c7827a7b67d7cdff7c7fee973aac3780fef2980946e5c911665f482cee9397d1",
+   "topic_ids": [
+    "evs-3-13-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-13-s2-q009",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-13",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "15",
+     "text_as_printed": "Identifies the public facilities and explain the need to protect them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Match the following: Railway Station\nB: Gold; Vegetables, Fruits, Shops; Books, Newspaper,; Buses, passenger, driver; Postmaster, letters; Doctors, Nurse, Patients; Children, Swing, Slide",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s2-q009",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s2-q009",
+     "pdf_page": 51,
+     "printed_page": 51,
+     "y": 477.773,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s2-q009-key",
+     "pdf_page": 114,
+     "printed_page": 114,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:23:22+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:23:22+05:30",
+   "text_as_printed": "Railway Station",
+   "section_signal": "II. Match the following :-",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 6 / Difficulty 8) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key belongs to another paper version — printed key 9 'Yes, I saw that.' does not address this match row",
+     "why_not_corrected": "the answer side of this lesson (pdf 114-115) answers a different question set: keys 4-6, 8-10, 12-15 address no printed question; keys 7, 11, 14-15 and 16-20 fit other printed questions by content (see analysis file); extraction pairs only matching keys (schema v7) and does not re-pair by content",
+     "suggested": "review"
+    }
+   ],
+   "content_hash": "e62e20e28d857c4d0b393f49319f37088f277154a67e5eef1285a405935e625f",
+   "topic_ids": [
+    "evs-3-13-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-13-s2-q010",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-13",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "15",
+     "text_as_printed": "Identifies the public facilities and explain the need to protect them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Match the following: Park\nB: Gold; Vegetables, Fruits, Shops; Books, Newspaper,; Buses, passenger, driver; Postmaster, letters; Doctors, Nurse, Patients; Children, Swing, Slide",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s2-q010",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s2-q010",
+     "pdf_page": 51,
+     "printed_page": 51,
+     "y": 517.613,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s2-q010-key",
+     "pdf_page": 114,
+     "printed_page": 114,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:23:22+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:23:22+05:30",
+   "text_as_printed": "Park",
+   "section_signal": "II. Match the following :-",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 6 / Difficulty 8) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key belongs to another paper version — printed key 10 'The bus stop in my town is Fine' does not address this match row",
+     "why_not_corrected": "the answer side of this lesson (pdf 114-115) answers a different question set: keys 4-6, 8-10, 12-15 address no printed question; keys 7, 11, 14-15 and 16-20 fit other printed questions by content (see analysis file); extraction pairs only matching keys (schema v7) and does not re-pair by content",
+     "suggested": "review"
+    }
+   ],
+   "content_hash": "6d55e8e07f12429f641b464d684352e79840afdefd2e358841a44517dea050f7",
+   "topic_ids": [
+    "evs-3-13-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-13-s2-q011",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-13",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "15",
+     "text_as_printed": "Identifies the public facilities and explain the need to protect them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Match the following: Market\nB: Gold; Vegetables, Fruits, Shops; Books, Newspaper,; Buses, passenger, driver; Postmaster, letters; Doctors, Nurse, Patients; Children, Swing, Slide",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s2-q011",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s2-q011",
+     "pdf_page": 51,
+     "printed_page": 51,
+     "y": 557.693,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s2-q011-key",
+     "pdf_page": 114,
+     "printed_page": 114,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:23:22+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:23:22+05:30",
+   "text_as_printed": "Market",
+   "section_signal": "II. Match the following :-",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 6 / Difficulty 8) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key belongs to another paper version — printed key 11 'Going around the library without making any noise …' does not address this match row",
+     "why_not_corrected": "the answer side of this lesson (pdf 114-115) answers a different question set: keys 4-6, 8-10, 12-15 address no printed question; keys 7, 11, 14-15 and 16-20 fit other printed questions by content (see analysis file); extraction pairs only matching keys (schema v7) and does not re-pair by content",
+     "suggested": "review"
+    }
+   ],
+   "content_hash": "9cf0c7d8833cb7d5e9fb8a0b8bbab63ccb91b99542c3a16227cde77c3c13bbf5",
+   "topic_ids": [
+    "evs-3-13-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-13-s3-q012",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-13",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "15",
+     "text_as_printed": "Identifies the public facilities and explain the need to protect them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Write what you would do in the following situations? Water is continuously flowing from the tap.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s3-q012",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s3-q012",
+     "pdf_page": 51,
+     "printed_page": 51,
+     "y": 672.413,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s3-q012-key",
+     "pdf_page": 114,
+     "printed_page": 114,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:23:22+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:23:22+05:30",
+   "text_as_printed": "Water is continuously flowing from the tap.",
+   "section_signal": "III. Write what you would do in the following situations?",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 6 / Difficulty 8) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key belongs to another paper version — printed key 12 ('The garden I saw was very clean …') does not address it; key 7 ('If the tap is running, you should turn it off.') fits by content",
+     "why_not_corrected": "the answer side of this lesson (pdf 114-115) answers a different question set: keys 4-6, 8-10, 12-15 address no printed question; keys 7, 11, 14-15 and 16-20 fit other printed questions by content (see analysis file); extraction pairs only matching keys (schema v7) and does not re-pair by content",
+     "suggested": "key 7 — confirm"
+    }
+   ],
+   "content_hash": "0fe88b6301c6d07f2398c77237b79a65ada5f72684e7336cc7974ff446b18023",
+   "topic_ids": [
+    "evs-3-13-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-13-s3-q013",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-13",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "15",
+     "text_as_printed": "Identifies the public facilities and explain the need to protect them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Write what you would do in the following situations? The street light is still burning even though it is 9:00 in the morning.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s3-q013",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s3-q013",
+     "pdf_page": 51,
+     "printed_page": 51,
+     "y": 730.733,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s3-q013-key",
+     "pdf_page": 114,
+     "printed_page": 114,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:23:22+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:23:22+05:30",
+   "text_as_printed": "The street light is still burning even though it is 9:00 in the morning.",
+   "section_signal": "III. Write what you would do in the following situations?",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 6 / Difficulty 8) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key belongs to another paper version — printed key 13 ('My favorite place is the park …') does not address it",
+     "why_not_corrected": "the answer side of this lesson (pdf 114-115) answers a different question set: keys 4-6, 8-10, 12-15 address no printed question; keys 7, 11, 14-15 and 16-20 fit other printed questions by content (see analysis file); extraction pairs only matching keys (schema v7) and does not re-pair by content",
+     "suggested": "review"
+    }
+   ],
+   "content_hash": "ab507106d1c2c6ac3879262bff0454215ba0d4f50d5aa6df548ff3d0e1f389fb",
+   "topic_ids": [
+    "evs-3-13-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-13-s3-q014",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-13",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "15",
+     "text_as_printed": "Identifies the public facilities and explain the need to protect them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "What would you do if someone is littering near your school?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s3-q014",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s3-q014",
+     "pdf_page": 52,
+     "printed_page": 52,
+     "y": 57.773,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s3-q014-key",
+     "pdf_page": 114,
+     "printed_page": 114,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:23:22+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:23:22+05:30",
+   "section_signal": "III. Write what you would do in the following situations?",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 6 / Difficulty 8) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key belongs to another paper version — printed key 14 ('Public places are protected by municipal staff.') does not address it",
+     "why_not_corrected": "the answer side of this lesson (pdf 114-115) answers a different question set: keys 4-6, 8-10, 12-15 address no printed question; keys 7, 11, 14-15 and 16-20 fit other printed questions by content (see analysis file); extraction pairs only matching keys (schema v7) and does not re-pair by content",
+     "suggested": "review"
+    }
+   ],
+   "content_hash": "61878c8ff2793fa8571a8114708c297a9cba9c10bebe26a1dcc6c4b7082a4682",
+   "topic_ids": [
+    "evs-3-13-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-13-s3-q015",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-13",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "15",
+     "text_as_printed": "Identifies the public facilities and explain the need to protect them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Write what you would do in the following situations? Someone is destroying the temple in your village.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s3-q015",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s3-q015",
+     "pdf_page": 52,
+     "printed_page": 52,
+     "y": 116.333,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s3-q015-key",
+     "pdf_page": 114,
+     "printed_page": 114,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:23:22+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:23:22+05:30",
+   "text_as_printed": "Someone is destroying the temple in your village.",
+   "section_signal": "III. Write what you would do in the following situations?",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 6 / Difficulty 8) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key belongs to another paper version — printed key 15 ('Public facilities should be essential …') does not address it",
+     "why_not_corrected": "the answer side of this lesson (pdf 114-115) answers a different question set: keys 4-6, 8-10, 12-15 address no printed question; keys 7, 11, 14-15 and 16-20 fit other printed questions by content (see analysis file); extraction pairs only matching keys (schema v7) and does not re-pair by content",
+     "suggested": "review"
+    }
+   ],
+   "content_hash": "027248f38c2c4c975738df0e6c134150de81854d0c8b2056c3208ca2723af37b",
+   "topic_ids": [
+    "evs-3-13-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-13-s4-q016",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-13",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "15",
+     "text_as_printed": "Identifies the public facilities and explain the need to protect them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Public facilities should be destroyed.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s4-q016",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s4-q016",
+     "pdf_page": 52,
+     "printed_page": 52,
+     "y": 233.213,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s4-q016-key",
+     "pdf_page": 114,
+     "printed_page": 114,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:23:22+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:23:22+05:30",
+   "section_signal": "IV. State whether the following statements are True or False.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "option",
+    "option_id": null
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 6 / Difficulty 8) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key belongs to another paper version — printed key 16 ('Water tank') is a picture name, not True/False; keys 16-20 fit q27's pictures A-E",
+     "why_not_corrected": "the answer side of this lesson (pdf 114-115) answers a different question set: keys 4-6, 8-10, 12-15 address no printed question; keys 7, 11, 14-15 and 16-20 fit other printed questions by content (see analysis file); extraction pairs only matching keys (schema v7) and does not re-pair by content",
+     "suggested": "review"
+    }
+   ],
+   "content_hash": "8323cc850af19a28db368b1b314fe4c06be6908eb79d2c16cdc53ed36c09c174",
+   "topic_ids": [
+    "evs-3-13-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-13-s4-q017",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-13",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "15",
+     "text_as_printed": "Identifies the public facilities and explain the need to protect them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Books should be read silently in the library.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s4-q017",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s4-q017",
+     "pdf_page": 52,
+     "printed_page": 52,
+     "y": 291.533,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s4-q017-key",
+     "pdf_page": 114,
+     "printed_page": 114,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:23:22+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:23:22+05:30",
+   "section_signal": "IV. State whether the following statements are True or False.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "option",
+    "option_id": null
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 6 / Difficulty 8) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key belongs to another paper version — printed key 17 ('Government Primary School') is a picture name, not True/False; keys 16-20 fit q27's pictures A-E",
+     "why_not_corrected": "the answer side of this lesson (pdf 114-115) answers a different question set: keys 4-6, 8-10, 12-15 address no printed question; keys 7, 11, 14-15 and 16-20 fit other printed questions by content (see analysis file); extraction pairs only matching keys (schema v7) and does not re-pair by content",
+     "suggested": "review"
+    }
+   ],
+   "content_hash": "3ee09d3474b801aa76e74efae57399869ca415a52a0d3c05ea19767604f4012a",
+   "topic_ids": [
+    "evs-3-13-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-13-s4-q018",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-13",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "15",
+     "text_as_printed": "Identifies the public facilities and explain the need to protect them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "The hospital premises should not be made dirty.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s4-q018",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s4-q018",
+     "pdf_page": 52,
+     "printed_page": 52,
+     "y": 350.093,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s4-q018-key",
+     "pdf_page": 114,
+     "printed_page": 114,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:23:22+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:23:22+05:30",
+   "section_signal": "IV. State whether the following statements are True or False.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "option",
+    "option_id": null
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 6 / Difficulty 8) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key belongs to another paper version — printed key 18 ('Library') is a picture name, not True/False; keys 16-20 fit q27's pictures A-E",
+     "why_not_corrected": "the answer side of this lesson (pdf 114-115) answers a different question set: keys 4-6, 8-10, 12-15 address no printed question; keys 7, 11, 14-15 and 16-20 fit other printed questions by content (see analysis file); extraction pairs only matching keys (schema v7) and does not re-pair by content",
+     "suggested": "review"
+    }
+   ],
+   "content_hash": "ed9717a53476046d4530f58fb3ad227447050781853492915400b042f370ad3c",
+   "topic_ids": [
+    "evs-3-13-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-13-s4-q019",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-13",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "15",
+     "text_as_printed": "Identifies the public facilities and explain the need to protect them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "The post office is an example of a personal facility.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s4-q019",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s4-q019",
+     "pdf_page": 52,
+     "printed_page": 52,
+     "y": 408.413,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s4-q019-key",
+     "pdf_page": 114,
+     "printed_page": 114,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:23:22+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:23:22+05:30",
+   "section_signal": "IV. State whether the following statements are True or False.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "option",
+    "option_id": null
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 6 / Difficulty 8) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key belongs to another paper version — printed key 19 ('Government Public Hospital') is a picture name, not True/False; keys 16-20 fit q27's pictures A-E",
+     "why_not_corrected": "the answer side of this lesson (pdf 114-115) answers a different question set: keys 4-6, 8-10, 12-15 address no printed question; keys 7, 11, 14-15 and 16-20 fit other printed questions by content (see analysis file); extraction pairs only matching keys (schema v7) and does not re-pair by content",
+     "suggested": "review"
+    }
+   ],
+   "content_hash": "de26b66b6ecdcb754c7ac1cb4de1a65769c80c26f3e552078f5507fc1a4aa7de",
+   "topic_ids": [
+    "evs-3-13-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-13-s4-q020",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-13",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "15",
+     "text_as_printed": "Identifies the public facilities and explain the need to protect them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Protecting public facilities is the responsibility of all of us.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s4-q020",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s4-q020",
+     "pdf_page": 52,
+     "printed_page": 52,
+     "y": 466.973,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s4-q020-key",
+     "pdf_page": 114,
+     "printed_page": 114,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:23:22+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:23:22+05:30",
+   "section_signal": "IV. State whether the following statements are True or False.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "option",
+    "option_id": null
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 6 / Difficulty 8) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key belongs to another paper version — printed key 20 ('Public Park') is a picture name, not True/False; keys 16-20 fit q27's pictures A-E",
+     "why_not_corrected": "the answer side of this lesson (pdf 114-115) answers a different question set: keys 4-6, 8-10, 12-15 address no printed question; keys 7, 11, 14-15 and 16-20 fit other printed questions by content (see analysis file); extraction pairs only matching keys (schema v7) and does not re-pair by content",
+     "suggested": "review"
+    }
+   ],
+   "content_hash": "2a5b3b2f93bb1abb1aef7878aaf2943638df4863dd2d33b222f5d3250747774e",
+   "topic_ids": [
+    "evs-3-13-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-13-s5-q021",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-13",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "15",
+     "text_as_printed": "Identifies the public facilities and explain the need to protect them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Circle the Public Facility.\na) Street Light / House Light\nb) Park / Garden in the House\nc) Government Bus / Your Cycle\nd) Police Station / House\ne) Road / Field near the House",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s5-q021",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s5-q021",
+     "pdf_page": 52,
+     "printed_page": 52,
+     "y": 526.826,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s5-q021-key",
+     "pdf_page": 114,
+     "printed_page": 114,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:23:22+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:23:22+05:30",
+   "section_signal": "V. 21. Circle the Public Facility.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '(5 × 1 = 5)' — N=5 but 1 question(s) printed in the section (R-E9)"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 6 / Difficulty 8) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "no answer printed",
+     "why_not_corrected": "the answer side ends at key 20",
+     "suggested": "key absent — review"
+    }
+   ],
+   "content_hash": "5de54df3f068ea84d896d2663efe9cd9a9125f12394dba776c682a7a9cb6458e",
+   "topic_ids": [
+    "evs-3-13-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-13-s6-q022",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-13",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "15",
+     "text_as_printed": "Identifies the public facilities and explain the need to protect them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Put a Tick Mark (✓) if you have visited and a Cross Mark (✗) if you have not visited.\na) Bank ( )\nb) Park ( )\nc) Temple ( )\nd) Postoffice ( )\ne) Grama Panchayat / Municipal Office ( )\nf) Library ( )",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s6-q022",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s6-q022",
+     "pdf_page": 53,
+     "printed_page": 53,
+     "y": 41.453,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s6-q022-key",
+     "pdf_page": 114,
+     "printed_page": 114,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:23:22+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:23:22+05:30",
+   "section_signal": "VI. 22. Put a Tick Mark (✓) if you have visited and a Cross Mark (✗) if you have not visited.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header prints no 'NxM=T' figure ((½ × 6 = 3))"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 6 / Difficulty 8) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "no answer printed",
+     "why_not_corrected": "the answer side ends at key 20 (personal tick list; no key expected)",
+     "suggested": "key absent — review"
+    }
+   ],
+   "content_hash": "b28e12f4468dd0f9799403433618f38172f67a77a09e90229f73bdf90f5f073b",
+   "topic_ids": [
+    "evs-3-13-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-13-s7-q023",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-13",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "15",
+     "text_as_printed": "Identifies the public facilities and explain the need to protect them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Write the rules to be followed in a library.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s7-q023",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s7-q023",
+     "pdf_page": 53,
+     "printed_page": 53,
+     "y": 475.613,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s7-q023-key",
+     "pdf_page": 114,
+     "printed_page": 114,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:23:22+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:23:22+05:30",
+   "section_signal": "VII. Answer the Following Questions.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 6 / Difficulty 8) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key belongs to another paper version — no key 23 is printed; key 11 ('Going around the library without making any noise, reading their favorite books for a while, and then putting the books back in their place.') fits by content",
+     "why_not_corrected": "the answer side of this lesson (pdf 114-115) answers a different question set: keys 4-6, 8-10, 12-15 address no printed question; keys 7, 11, 14-15 and 16-20 fit other printed questions by content (see analysis file); extraction pairs only matching keys (schema v7) and does not re-pair by content",
+     "suggested": "key 11 — confirm"
+    }
+   ],
+   "content_hash": "ac2192cde24c6968c7f0c15131c5e485c5a34a2a8fe10b45bbeb749d802d0d6e",
+   "topic_ids": [
+    "evs-3-13-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-13-s7-q024",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-13",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "15",
+     "text_as_printed": "Identifies the public facilities and explain the need to protect them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "What facilities are available at your local bus station?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s7-q024",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s7-q024",
+     "pdf_page": 53,
+     "printed_page": 53,
+     "y": 533.933,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s7-q024-key",
+     "pdf_page": 114,
+     "printed_page": 114,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:23:22+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:23:22+05:30",
+   "section_signal": "VII. Answer the Following Questions.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 6 / Difficulty 8) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key belongs to another paper version — no key 24 is printed",
+     "why_not_corrected": "the answer side of this lesson (pdf 114-115) answers a different question set: keys 4-6, 8-10, 12-15 address no printed question; keys 7, 11, 14-15 and 16-20 fit other printed questions by content (see analysis file); extraction pairs only matching keys (schema v7) and does not re-pair by content",
+     "suggested": "review"
+    }
+   ],
+   "content_hash": "4e23a228d5eaaaf1a9f1bce88c6c68e6b1d3a8b636e6252325f75c8bde8e76b1",
+   "topic_ids": [
+    "evs-3-13-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-13-s7-q025",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-13",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "15",
+     "text_as_printed": "Identifies the public facilities and explain the need to protect them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "How do you and your friends keep your school clean?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s7-q025",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s7-q025",
+     "pdf_page": 53,
+     "printed_page": 53,
+     "y": 592.493,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s7-q025-key",
+     "pdf_page": 114,
+     "printed_page": 114,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:23:22+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:23:22+05:30",
+   "section_signal": "VII. Answer the Following Questions.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 6 / Difficulty 8) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key belongs to another paper version — no key 25 is printed",
+     "why_not_corrected": "the answer side of this lesson (pdf 114-115) answers a different question set: keys 4-6, 8-10, 12-15 address no printed question; keys 7, 11, 14-15 and 16-20 fit other printed questions by content (see analysis file); extraction pairs only matching keys (schema v7) and does not re-pair by content",
+     "suggested": "review"
+    }
+   ],
+   "content_hash": "1c9c95ae742c9e177eda996a6d92f9b4b9d04c866a9290dd85a97824106f7ff2",
+   "topic_ids": [
+    "evs-3-13-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-13-s7-q026",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-13",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "15",
+     "text_as_printed": "Identifies the public facilities and explain the need to protect them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Why should we protect public facilities?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s7-q026",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s7-q026",
+     "pdf_page": 53,
+     "printed_page": 53,
+     "y": 650.813,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s7-q026-key",
+     "pdf_page": 114,
+     "printed_page": 114,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:23:22+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:23:22+05:30",
+   "section_signal": "VII. Answer the Following Questions.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 6 / Difficulty 8) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key belongs to another paper version — no key 26 is printed; keys 14-15 touch on protecting public facilities",
+     "why_not_corrected": "the answer side of this lesson (pdf 114-115) answers a different question set: keys 4-6, 8-10, 12-15 address no printed question; keys 7, 11, 14-15 and 16-20 fit other printed questions by content (see analysis file); extraction pairs only matching keys (schema v7) and does not re-pair by content",
+     "suggested": "keys 14-15 — confirm"
+    }
+   ],
+   "content_hash": "c750c714dee68c63cc2c182e740f1a36a2fbf968482951ec3e5c90c92ae4d321",
+   "topic_ids": [
+    "evs-3-13-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-13-s8-q027",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-13",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "15",
+     "text_as_printed": "Identifies the public facilities and explain the need to protect them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Write the names of the public facilities shown in the picture.\nA\nB)\nC\nD\nE",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s8-q027",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s8-q027",
+     "pdf_page": 53,
+     "printed_page": 53,
+     "y": 728.093,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s8-q027-key",
+     "pdf_page": 114,
+     "printed_page": 114,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:23:22+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:23:22+05:30",
+   "section_signal": "VIII. 27. Write the names of the public facilities shown in the picture.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "stimulus_id": "st-evs-3-13-q27",
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '5*1=5' — N=5 but 1 question(s) printed in the section (R-E9)"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 6 / Difficulty 8) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key belongs to another paper version — no key 27 is printed; keys 16-20 ('Water tank', 'Government Primary School', 'Library', 'Government Public Hospital', 'Public Park') name pictures A-E in order",
+     "why_not_corrected": "the answer side of this lesson (pdf 114-115) answers a different question set: keys 4-6, 8-10, 12-15 address no printed question; keys 7, 11, 14-15 and 16-20 fit other printed questions by content (see analysis file); extraction pairs only matching keys (schema v7) and does not re-pair by content",
+     "suggested": "keys 16-20 — confirm"
+    }
+   ],
+   "content_hash": "15ee787369b3e8038f42a80dbcffc6eb261f3bb6dc5cb202c0c0970e4e8bb28a",
+   "topic_ids": [
+    "evs-3-13-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-13-s9-q028",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-13",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "la",
+   "marks": 5,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "15",
+     "text_as_printed": "Identifies the public facilities and explain the need to protect them."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Project Work\nDraw and colour a picture of a park and write 5–6 sentences about the facilities available there.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s9-q028",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s9-q028",
+     "pdf_page": 54,
+     "printed_page": 54,
+     "y": 597.146,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-13-s9-q028-key",
+     "pdf_page": 114,
+     "printed_page": 114,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:23:22+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:23:22+05:30",
+   "section_signal": "28. Project Work (5 Marks)",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 6 / Difficulty 8) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "no answer printed",
+     "why_not_corrected": "the answer side ends at key 20 (project work)",
+     "suggested": "key absent — review"
+    }
+   ],
+   "content_hash": "0bf70b0b5c1ad1e0f5f9d1f74c72e2d59fa179a44be990c8a661c9d1d01ed39b",
+   "topic_ids": [
+    "evs-3-13-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  }
+ ],
+ "pending_summary": {}
+}
