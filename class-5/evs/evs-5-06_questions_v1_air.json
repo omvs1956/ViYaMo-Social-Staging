@@ -853,8 +853,8 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 2,
-   "status": "draft",
+   "revision": 3,
+   "status": "reviewed",
    "status_history": [
     {
      "from": "none",
@@ -870,6 +870,14 @@
      "role": "correction",
      "at": "2026-11-27T07:27:24+05:30",
      "ref": "r1 pass 2026-11-27 (D)"
+    },
+    {
+     "from": "draft",
+     "to": "reviewed",
+     "by": "coordinator-social",
+     "role": "review",
+     "at": "2026-11-27T10:03:29+05:30",
+     "ref": "draft repair v1 (Yash 2026-11-27)"
     }
    ],
    "created_by": "class-5-evs",
@@ -888,7 +896,7 @@
     },
     {
      "id": "C",
-     "text": "Amanakanke"
+     "text": "Asthma, shortness of breath"
     },
     {
      "id": "D",
@@ -898,13 +906,13 @@
    "answer_as_printed": "d) All of the above (including heart disease, cancer)",
    "answer": {
     "kind": "option",
-    "option_id": "D"
+    "option_id": "C"
    },
    "answer_provenance": {
-    "by": "printed",
-    "actor": "class-5-evs",
-    "at": "2026-11-27T02:09:31+05:30",
-    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+    "by": "textbook_excerpt",
+    "actor": "evs-draft-repair, applied by coordinator-social",
+    "at": "2026-11-27T10:03:29+05:30",
+    "basis": "printed key D superseded"
    },
    "source_flags": [],
    "content_hash": "a496b4278d893089a8afa16557fadc392b44f89ae7f97d02b18d385d7a3f3d64",
@@ -912,7 +920,28 @@
     "evs-5-06-t00"
    ],
    "topic_source": "chapter",
-   "topic_confidence": "high"
+   "topic_confidence": "high",
+   "source_corrections": [
+    {
+     "field": "options",
+     "printed": "[{\"id\": \"A\", \"text\": \"Cholera\"}, {\"id\": \"B\", \"text\": \"Malaria\"}, {\"id\": \"C\", \"text\": \"Amanakanke\"}, {\"id\": \"D\", \"text\": \"All of the above (including heart disease, cancer)\"}]",
+     "corrected": "[{\"id\": \"A\", \"text\": \"Cholera\"}, {\"id\": \"B\", \"text\": \"Malaria\"}, {\"id\": \"C\", \"text\": \"Asthma, shortness of breath\"}, {\"id\": \"D\", \"text\": \"All of the above (including heart disease, cancer)\"}]",
+     "basis": "SOURCE_GARBLE: 5thLBA-EVS-EM.pdf pdf 27 rendered: options 'a) Cholera b) Malaria (c) Amanakanke d) All of the above (including heart disease, cancer)' — stored verbatim. 'Amanakanke' is garbled; D wrongly takes in cholera and malaria, so printed key D cannot stand. Repair C from the LBA's own key 49"
+    },
+    {
+     "field": "answer",
+     "printed": "{\"kind\": \"option\", \"option_id\": \"D\"}",
+     "corrected": "{\"kind\": \"option\", \"option_id\": \"C\"}",
+     "basis": "draft repair v1 (textbook_excerpt): printed key D superseded"
+    }
+   ],
+   "review": {
+    "method": "textbook-keyed (answer taken from the 2026-27 textbook; Yash 2026-11-27)",
+    "result": "accepted unreviewed",
+    "label": "machine-verified",
+    "at": "2026-11-27T10:03:29+05:30",
+    "note": "printed key D superseded"
+   }
   },
   {
    "id": "evs-5-06-s2-q006",
@@ -3305,7 +3334,7 @@
     }
    ],
    "out_of_syllabus": false,
-   "text": "Air pressure is inevitable for man.",
+   "text": "Air is essential for man.",
    "source": "lba",
    "source_ref": "5thLBA-EVS-EM.pdf#evs-5-06-s3-q021",
    "locators": [
@@ -3326,8 +3355,8 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 2,
-   "status": "draft",
+   "revision": 3,
+   "status": "reviewed",
    "status_history": [
     {
      "from": "none",
@@ -3343,6 +3372,14 @@
      "role": "correction",
      "at": "2026-11-27T07:27:24+05:30",
      "ref": "r1 pass 2026-11-27 (C+D)"
+    },
+    {
+     "from": "draft",
+     "to": "reviewed",
+     "by": "coordinator-social",
+     "role": "review",
+     "at": "2026-11-27T10:03:29+05:30",
+     "ref": "draft repair v1 (Yash 2026-11-27)"
     }
    ],
    "created_by": "class-5-evs",
@@ -3356,10 +3393,10 @@
    },
    "answer_as_printed": "21. Okay",
    "answer_provenance": {
-    "by": "printed",
-    "actor": "class-5-evs",
-    "at": "2026-11-27T02:09:31+05:30",
-    "basis": "printed True/False key; option implicit"
+    "by": "textbook_excerpt",
+    "actor": "evs-draft-repair, applied by coordinator-social",
+    "at": "2026-11-27T10:03:29+05:30",
+    "basis": "\"5th English EVS Part-1 2026-27.pdf pdf 84 pr 76: 'Air … is very essential for sustaining the life of animals and plants.' Printed key 21 'Okay'.\""
    },
    "source_flags": [
     {
@@ -3368,12 +3405,27 @@
      "suggested": "nearest: key text does not address question — the key is printed and placed, but its wording is a transliteration / mistranslation / label form the reviewer must confirm"
     }
    ],
-   "content_hash": "7d11b75620dc38b1f85a72cff8c1d4bc75169cf2724dc5b4e557194861c57b3b",
+   "content_hash": "6c808386b28eb169d5d330b255aeedde12a984f62bca9b6088bc7f059ac31fcf",
    "topic_ids": [
     "evs-5-06-t00"
    ],
    "topic_source": "chapter",
-   "topic_confidence": "high"
+   "topic_confidence": "high",
+   "source_corrections": [
+    {
+     "field": "text",
+     "printed": "Air pressure is inevitable for man.",
+     "corrected": "Air is essential for man.",
+     "basis": "SOURCE_GARBLE: 5thLBA-EVS-EM.pdf pdf 28 rendered: '21. Air pressure is inevitable for man. (Easy)' — stored verbatim; 'Air pressure … inevitable' is a garble of 'air is indispensable' (LBA key 7: 'Air is very essential for the life of animals and plants')."
+    }
+   ],
+   "review": {
+    "method": "textbook-keyed (answer taken from the 2026-27 textbook; Yash 2026-11-27)",
+    "result": "accepted unreviewed",
+    "label": "machine-verified",
+    "at": "2026-11-27T10:03:29+05:30",
+    "note": ""
+   }
   },
   {
    "id": "evs-5-06-s3-q022",
@@ -4076,7 +4128,7 @@
     }
    ],
    "out_of_syllabus": false,
-   "text": "Match the following.\nA: 1. The main part of the air; 2. Air 78%; 3. Mass of air; 4. Air has weight; 5. Pollution in the air; 6. Use of air; 7. Prevention of air pollution; 8. What is moving air called?\nB: a. oxygen; b. Nitrogen; c. Dust, water vapour; d. A plate filled with air; e. Chemical and fumigation; f. Respiration, burning; g. High chimneys, public transport; h. Wind",
+   "text": "Match the following.\nA: 1. The gas we use for breathing; 2. Air 78%; 3. Particles in the air; 4. Air has weight; 5. Pollution in the air; 6. Use of air; 7. Prevention of air pollution; 8. What is moving air called?\nB: a. oxygen; b. Nitrogen; c. Dust, water vapour; d. A plate filled with air; e. Chemical and fumigation; f. Respiration, burning; g. High chimneys, public transport; h. Wind",
    "source": "lba",
    "source_ref": "5thLBA-EVS-EM.pdf#evs-5-06-s4-q026",
    "locators": [
@@ -4097,8 +4149,8 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 2,
-   "status": "draft",
+   "revision": 3,
+   "status": "reviewed",
    "status_history": [
     {
      "from": "none",
@@ -4114,6 +4166,14 @@
      "role": "correction",
      "at": "2026-11-27T07:27:24+05:30",
      "ref": "r1 pass 2026-11-27 (C+D)"
+    },
+    {
+     "from": "draft",
+     "to": "reviewed",
+     "by": "coordinator-social",
+     "role": "review",
+     "at": "2026-11-27T10:03:29+05:30",
+     "ref": "draft repair v1 (Yash 2026-11-27)"
     }
    ],
    "created_by": "class-5-evs",
@@ -4125,45 +4185,45 @@
     "kind": "match",
     "pairs": [
      {
-      "left": "The main part of the air",
-      "right": "Nitrogen"
+      "left": "The gas we use for breathing",
+      "right": "oxygen"
      },
      {
       "left": "Air 78%",
       "right": "Nitrogen"
      },
      {
-      "left": "Mass of air",
-      "right": "Dust and water vapour"
+      "left": "Particles in the air",
+      "right": "Dust, water vapour"
      },
      {
       "left": "Air has weight",
-      "right": "Glass filled with air"
+      "right": "A plate filled with air"
      },
      {
       "left": "Pollution in the air",
-      "right": "Chemicals and smoke"
+      "right": "Chemical and fumigation"
      },
      {
       "left": "Use of air",
-      "right": "Respiration and fuel burning"
+      "right": "Respiration, burning"
      },
      {
       "left": "Prevention of air pollution",
-      "right": "High smoke legs, public transport"
+      "right": "High chimneys, public transport"
      },
      {
       "left": "What is moving air called?",
-      "right": "Air (Wind)"
+      "right": "Wind"
      }
     ]
    },
    "answer_as_printed": "IV .26.Match Write Answers\n1. Important element of air b. Nitrogen\n2. 78% of air b. Nitrogen\n3. Particles in the air C. Dust and water vapour\n4. Air has weight D. Glass filled with air\nIV .26.Match Write Answers\n5. 30. Air pollution d. Chemicals and smoke\n6. Air Uses F. Respiration and fuel burning\n7. Measures to prevent pollution g. High smoke legs, public transport\n8. 33. Moving air H. Air (Wind)",
    "answer_provenance": {
-    "by": "printed",
-    "actor": "class-5-evs",
-    "at": "2026-11-27T02:09:31+05:30",
-    "basis": "printed match key ('Match Write Answers', printed in two parts across pdf 88-89): each row's matched value; left = the question side's column-A item of that row number, right = the key's value verbatim, row labels dropped (v1.4 §14.8)"
+    "by": "textbook_excerpt",
+    "actor": "evs-draft-repair, applied by coordinator-social",
+    "at": "2026-11-27T10:03:29+05:30",
+    "basis": "\"5th English EVS Part-1 2026-27.pdf pdf 84 pr 76: 'We use oxygen in air for respiration.' Rows 2–8 follow the printed key pdf 88–89, values set to column-B text.\""
    },
    "source_flags": [
     {
@@ -4182,12 +4242,33 @@
      "suggested": "nearest: key text does not address question — the key is printed and placed, but its wording is a transliteration / mistranslation / label form the reviewer must confirm"
     }
    ],
-   "content_hash": "89376d64adae7752bfce37c6d0637fc1e1eae393ef1e49ed404be6c349ca1121",
+   "content_hash": "2c278748b500ba44834ee2c7d581ca1ef9b3971bf6b32249c08c24be6ede32d3",
    "topic_ids": [
     "evs-5-06-t00"
    ],
    "topic_source": "chapter",
-   "topic_confidence": "high"
+   "topic_confidence": "high",
+   "source_corrections": [
+    {
+     "field": "text",
+     "printed": "Match the following.\nA: 1. The main part of the air; 2. Air 78%; 3. Mass of air; 4. Air has weight; 5. Pollution in the air; 6. Use of air; 7. Prevention of air pollution; 8. What is moving air called?\nB: a. oxygen; b. Nitrogen; c. Dust, water vapour; d. A plate filled with air; e. Chemical and fumigation; f. Respiration, burning; g. High chimneys, public transport; h. Wind",
+     "corrected": "Match the following.\nA: 1. The gas we use for breathing; 2. Air 78%; 3. Particles in the air; 4. Air has weight; 5. Pollution in the air; 6. Use of air; 7. Prevention of air pollution; 8. What is moving air called?\nB: a. oxygen; b. Nitrogen; c. Dust, water vapour; d. A plate filled with air; e. Chemical and fumigation; f. Respiration, burning; g. High chimneys, public transport; h. Wind",
+     "basis": "SOURCE_GARBLE: 5thLBA-EVS-EM.pdf pdf 28 rendered: A 1–8 and B a–h match stored text. Row 1 'The main part of the air' and row 2 'Air 78%' both mean nitrogen (key pdf 88 keys both 'b'); 'a. oxygen' is used by no row. Row 3 'Mass of air' is a garble (key's own row label: 'Particles in the air'). Repai"
+    },
+    {
+     "field": "answer",
+     "printed": "{\"kind\": \"match\", \"pairs\": [{\"left\": \"The main part of the air\", \"right\": \"Nitrogen\"}, {\"left\": \"Air 78%\", \"right\": \"Nitrogen\"}, {\"left\": \"Mass of air\", \"right\": \"Dust and water vapour\"}, {\"left\": \"Air has weight\", \"right\": \"Glass filled with air\"}, {\"left\": \"Pollution in the air\", \"right\": \"Chemicals and smoke\"}, {\"left\": \"Use of air\", \"right\": \"Respiration and fuel burning\"}, {\"left\": \"Prevention of air pollution\", \"right\": \"High smoke legs, public transport\"}, {\"left\": \"What is moving air called?\", \"right\": \"Air (Wind)\"}]}",
+     "corrected": "{\"kind\": \"match\", \"pairs\": [{\"left\": \"The gas we use for breathing\", \"right\": \"oxygen\"}, {\"left\": \"Air 78%\", \"right\": \"Nitrogen\"}, {\"left\": \"Particles in the air\", \"right\": \"Dust, water vapour\"}, {\"left\": \"Air has weight\", \"right\": \"A plate filled with air\"}, {\"left\": \"Pollution in the air\", \"right\": \"Chemical and fumigation\"}, {\"left\": \"Use of air\", \"right\": \"Respiration, burning\"}, {\"left\": \"Prevention of air pollution\", \"right\": \"High chimneys, public transport\"}, {\"left\": \"What is moving air called?\", \"right\": \"Wind\"}]}",
+     "basis": "draft repair v1 (textbook_excerpt):"
+    }
+   ],
+   "review": {
+    "method": "textbook-keyed (answer taken from the 2026-27 textbook; Yash 2026-11-27)",
+    "result": "accepted unreviewed",
+    "label": "machine-verified",
+    "at": "2026-11-27T10:03:29+05:30",
+    "note": ""
+   }
   },
   {
    "id": "evs-5-06-s5-q027",
@@ -4426,8 +4507,8 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
-   "status": "draft",
+   "revision": 2,
+   "status": "retired",
    "status_history": [
     {
      "from": "none",
@@ -4435,6 +4516,14 @@
      "by": "class-5-evs",
      "role": "extraction",
      "at": "2026-11-27T02:09:31+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "retired",
+     "by": "coordinator-social",
+     "role": "retire",
+     "at": "2026-11-27T10:03:29+05:30",
+     "ref": "draft repair v1 (Yash 2026-11-27)"
     }
    ],
    "created_by": "class-5-evs",
@@ -4465,7 +4554,8 @@
     "evs-5-06-t00"
    ],
    "topic_source": "chapter",
-   "topic_confidence": "high"
+   "topic_confidence": "high",
+   "retired_reason": "no English synonym in the book; 'atmosphere' is already asked in evs-5-06-s2-q006 and 'wind' in evs-5-06-s5-q036"
   },
   {
    "id": "evs-5-06-s5-q029",
