@@ -234,8 +234,8 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 3,
-   "status": "draft",
+   "revision": 4,
+   "status": "reviewed",
    "status_history": [
     {
      "from": "none",
@@ -259,6 +259,14 @@
      "role": "correction",
      "at": "2026-11-17T16:10+05:30",
      "ref": "spine Phase 2 tagging (map v2, page match)"
+    },
+    {
+     "from": "draft",
+     "to": "reviewed",
+     "by": "coordinator-social",
+     "role": "review",
+     "at": "2026-11-27T18:18:02+05:30",
+     "ref": "draft repair v1 (Yash 2026-11-27)"
     }
    ],
    "created_by": "class-7-social",
@@ -276,7 +284,7 @@
     },
     {
      "id": "C",
-     "text": "Landowners"
+     "text": "Tenants"
     },
     {
      "id": "D",
@@ -285,7 +293,7 @@
    ],
    "answer": {
     "kind": "option",
-    "option_id": null
+    "option_id": "C"
    },
    "source_flags": [
     {
@@ -302,7 +310,34 @@
     "soc-7-20-s01"
    ],
    "topic_source": "section_match",
-   "topic_confidence": "high"
+   "topic_confidence": "high",
+   "source_corrections": [
+    {
+     "field": "options",
+     "printed": "[{\"id\": \"A\", \"text\": \"Laborers\"}, {\"id\": \"B\", \"text\": \"Landlords\"}, {\"id\": \"C\", \"text\": \"Landowners\"}, {\"id\": \"D\", \"text\": \"None\"}]",
+     "corrected": "[{\"id\": \"A\", \"text\": \"Laborers\"}, {\"id\": \"B\", \"text\": \"Landlords\"}, {\"id\": \"C\", \"text\": \"Tenants\"}, {\"id\": \"D\", \"text\": \"None\"}]",
+     "basis": "SOURCE_GARBLE: 7thSS-EM-LBARevised_1787048371.pdf pdf 130 rendered: options A. Laborers B Landlords C. Landowners D None — matches stored. Option C repeats the stem; the printed key (pdf 257) is '2.C, Tenants'. Minimal repair: option C text → 'Tenants'."
+    },
+    {
+     "field": "answer",
+     "printed": "",
+     "corrected": "{\"kind\": \"option\", \"option_id\": \"C\"}",
+     "basis": "draft repair v1 (textbook_excerpt): printed key letter and text now agree"
+    }
+   ],
+   "answer_provenance": {
+    "by": "textbook_excerpt",
+    "actor": "evs-draft-repair, applied by coordinator-social",
+    "at": "2026-11-27T18:18:02+05:30",
+    "basis": "printed key letter and text now agree"
+   },
+   "review": {
+    "method": "textbook-keyed (answer taken from the 2026-27 textbook; Yash 2026-11-27)",
+    "result": "accepted unreviewed",
+    "label": "machine-verified",
+    "at": "2026-11-27T18:18:02+05:30",
+    "note": "printed key letter and text now agree"
+   }
   },
   {
    "id": "soc-7-20-s1-q003",

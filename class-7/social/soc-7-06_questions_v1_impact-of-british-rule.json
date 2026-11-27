@@ -246,8 +246,8 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 4,
-   "status": "draft",
+   "revision": 5,
+   "status": "reviewed",
    "status_history": [
     {
      "from": "none",
@@ -279,6 +279,14 @@
      "role": "correction",
      "at": "2026-11-17T16:10+05:30",
      "ref": "spine Phase 2 tagging (map v2, page match)"
+    },
+    {
+     "from": "draft",
+     "to": "reviewed",
+     "by": "coordinator-social",
+     "role": "review",
+     "at": "2026-11-27T18:18:02+05:30",
+     "ref": "draft repair v1 (Yash 2026-11-27)"
     }
    ],
    "created_by": "class-7-social",
@@ -292,7 +300,7 @@
     },
     {
      "id": "B",
-     "text": "Warren Hastings"
+     "text": "Lord Cornwallis"
     },
     {
      "id": "C",
@@ -309,10 +317,10 @@
     "option_id": "B"
    },
    "answer_provenance": {
-    "by": "printed",
-    "actor": "class-7-social",
-    "at": "2026-10-08T02:17:24+05:30",
-    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+    "by": "textbook_excerpt",
+    "actor": "evs-draft-repair, applied by coordinator-social",
+    "at": "2026-11-27T18:18:02+05:30",
+    "basis": "B now reads Lord Cornwallis; Warren Hastings removed"
    },
    "source_flags": [
     {
@@ -327,7 +335,22 @@
     "soc-7-06-s01"
    ],
    "topic_source": "section_match",
-   "topic_confidence": "high"
+   "topic_confidence": "high",
+   "source_corrections": [
+    {
+     "field": "options",
+     "printed": "[{\"id\": \"A\", \"text\": \"Robert Clive\"}, {\"id\": \"B\", \"text\": \"Warren Hastings\"}, {\"id\": \"C\", \"text\": \"Lord Dalhousie\"}, {\"id\": \"D\", \"text\": \"Lord Wellesley\"}]",
+     "corrected": "[{\"id\": \"A\", \"text\": \"Robert Clive\"}, {\"id\": \"B\", \"text\": \"Lord Cornwallis\"}, {\"id\": \"C\", \"text\": \"Lord Dalhousie\"}, {\"id\": \"D\", \"text\": \"Lord Wellesley\"}]",
+     "basis": "SOURCE_GARBLE: 7thSS-EM-LBARevised_1787048371.pdf pdf 44 rendered: options Robert Clive / Warren Hastings / Lord Dalhousie / Lord Wellesley — matches stored; the right answer (Cornwallis) is not printed. Minimal repair: option B (the printed key letter) becomes 'Lord Cornwallis'."
+    }
+   ],
+   "review": {
+    "method": "textbook-keyed (answer taken from the 2026-27 textbook; Yash 2026-11-27)",
+    "result": "accepted unreviewed",
+    "label": "machine-verified",
+    "at": "2026-11-27T18:18:02+05:30",
+    "note": "B now reads Lord Cornwallis; Warren Hastings removed"
+   }
   },
   {
    "id": "soc-7-06-s1-q003",

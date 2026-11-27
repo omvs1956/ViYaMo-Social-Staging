@@ -1795,8 +1795,8 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 4,
-   "status": "draft",
+   "revision": 5,
+   "status": "reviewed",
    "status_history": [
     {
      "from": "none",
@@ -1828,6 +1828,14 @@
      "role": "correction",
      "at": "2026-11-17T16:10+05:30",
      "ref": "spine Phase 2 tagging (map v2, page match)"
+    },
+    {
+     "from": "draft",
+     "to": "reviewed",
+     "by": "coordinator-social",
+     "role": "review",
+     "at": "2026-11-27T18:18:02+05:30",
+     "ref": "draft repair v1 (Yash 2026-11-27)"
     }
    ],
    "created_by": "class-7-social",
@@ -1841,7 +1849,7 @@
     },
     {
      "id": "B",
-     "text": "1-D 2-C 3-B 4-D"
+     "text": "1-D 2-C 3-B 4-A"
     },
     {
      "id": "C",
@@ -1855,13 +1863,13 @@
    "answer_as_printed": "C.",
    "answer": {
     "kind": "option",
-    "option_id": "C"
+    "option_id": "B"
    },
    "answer_provenance": {
-    "by": "printed",
-    "actor": "class-7-social",
-    "at": "2026-10-08T03:36:32+05:30",
-    "basis": "printed letter+text key; option by printed letter (addendum §4.1)"
+    "by": "textbook_excerpt",
+    "actor": "evs-draft-repair, applied by coordinator-social",
+    "at": "2026-11-27T18:18:02+05:30",
+    "basis": "printed key C overturned (C pairs north with Bangladesh/Myanmar)"
    },
    "source_flags": [
     {
@@ -1876,7 +1884,28 @@
     "soc-7-12-s01"
    ],
    "topic_source": "section_match",
-   "topic_confidence": "high"
+   "topic_confidence": "high",
+   "source_corrections": [
+    {
+     "field": "options",
+     "printed": "[{\"id\": \"A\", \"text\": \"1-A 2-B 3-C 4-D\"}, {\"id\": \"B\", \"text\": \"1-D 2-C 3-B 4-D\"}, {\"id\": \"C\", \"text\": \"1-D 2-B 3-C 4-D\"}, {\"id\": \"D\", \"text\": \"1-A 2-C 3-B 4-D\"}]",
+     "corrected": "[{\"id\": \"A\", \"text\": \"1-A 2-B 3-C 4-D\"}, {\"id\": \"B\", \"text\": \"1-D 2-C 3-B 4-A\"}, {\"id\": \"C\", \"text\": \"1-D 2-B 3-C 4-D\"}, {\"id\": \"D\", \"text\": \"1-A 2-C 3-B 4-D\"}]",
+     "basis": "SOURCE_GARBLE: 7thSS-EM-LBARevised_1787048371.pdf pdf 81 rendered: options A '1-A 2-B 3-C 4_D', B '1-D 2-C 3-B 4- D', C '1-D 2-B 3-C 4-D', D '1-A 2-C 3-B 4-D' — matches stored. No option is right; option B uses D twice. Minimal repair: B's last pair 4-D→4-A."
+    },
+    {
+     "field": "answer",
+     "printed": "{\"kind\": \"option\", \"option_id\": \"C\"}",
+     "corrected": "{\"kind\": \"option\", \"option_id\": \"B\"}",
+     "basis": "draft repair v1 (textbook_excerpt): printed key C overturned (C pairs north with Bangladesh/Myanmar)"
+    }
+   ],
+   "review": {
+    "method": "textbook-keyed (answer taken from the 2026-27 textbook; Yash 2026-11-27)",
+    "result": "accepted unreviewed",
+    "label": "machine-verified",
+    "at": "2026-11-27T18:18:02+05:30",
+    "note": "printed key C overturned (C pairs north with Bangladesh/Myanmar)"
+   }
   },
   {
    "id": "soc-7-12-s1-q014",
