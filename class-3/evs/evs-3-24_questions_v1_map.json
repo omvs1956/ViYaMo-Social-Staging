@@ -1,0 +1,1913 @@
+{
+ "contract_version": "1.7",
+ "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
+ "procedure_file": "extraction_procedure_social_addendum_v1.4_social science Classes 6-10 on top of procedure v2.md",
+ "machine_name": "evs-3-24_questions",
+ "version": 1,
+ "changelog": "v1 extraction — batch-01 — class-3-evs",
+ "amendments_applied": [],
+ "unit_state": "EXTRACTED",
+ "review_ready": false,
+ "count_gate": {
+  "reference": 21,
+  "reference_source": "audited",
+  "extracted": 21,
+  "paired": 12,
+  "flagged": 12,
+  "gaps": [],
+  "duplicated_numbers": [],
+  "quota_table": "difficulty_only",
+  "second_method": {
+   "method": "printed BLUE PRINT difficulty table total (Easy 10 + Average 5 + Difficulty 6 = 21), pdf 92; independently, the answer side's keys counted",
+   "extracted": 21,
+   "agrees": true
+  },
+  "pass": true,
+  "note": "Question side labels 1-21 monotonic, no gaps, no duplicates (I 1-5, II 6-9, III 10-15, IV 16-17, V 18-20, q21 own header). Answer side: one instruction key for I (label 1 only), keys 6-20 by number ('13 and 14' printed as one key), and q21's key printed as a second '20.'. BLUE PRINT 10/5/6 = 21 = audited count. Difficulty per question: easy 0, average 0, difficult 0, untagged 21."
+ },
+ "extraction": {
+  "source_file": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf",
+  "source_ref_prefix": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf",
+  "pdf_pages": [
+   92,
+   93,
+   94,
+   127
+  ],
+  "printed_page_offset": 0,
+  "method_notes": [
+   "Pages: Q pdf 92 (heading, LO 13, BLUE PRINT, q1-4) 93 (q5-13) 94 (q13 options-21). A side 'KeyAnswers Lesson 24 Map' pdf 127 (between Lesson 23's last key and Lesson 25's keys). Folios = pdf page.",
+   "ANSWER SIDE (analysed first): I prints a single instruction '1.as per your classroom direction' -> q1 stores it as a text answer + 'match key not in pair form'; q2-q5 empty + 'no answer printed' only (gate rule 1.6-a2: an unprinted match key carries its defect flag alone; the section key applies to every row and is named in the flag, not copied). II-V keyed by number. '13 and 14 as per the directions' is one key for two MCQs whose answer depends on the locality -> option null + 'key text not among options' on both. q21's key is printed as a second '20.' ('Students draw the picture:-').",
+   "MAP (Class-9 rulings): no map is printed on either side of this lesson. q21 'Draw a map of your school to home and colour it.' is a sourceless draw-map question -> empty + 'no answer printed' (no map block, no crop), as evs-4-12 q48. Section I matches classroom objects to directions (no map).",
+   "Sections: s1 I match q1-5 (numbered rows -> one-pair match questions); s2 II q6-9 (one sentence each -> vsa); s3 III mcq q10-15 (q10-12 and q15 print three options -> 'source notation inconsistent'; text-only keys: q10 'Map' -> A pass 1, q11 'Blue' -> C 'Light blue' pass 2; q12 'Directions' vs option 'Direction' and q15 'Cross' vs 'Pluse (+)' match no option -> null + 'key text not among options' with the suggested letter); s4 IV fill q16-17; s5 V T/F q18-20; s6 q21.",
+   "MARKS (R-E9, rev 3): all six headers' N equals the printed count -> s1 1, s2 1, s3 1, s4 1, s5 1; s6 '3x1=3' over q21 alone -> null.",
+   "DIFFICULTY: none printed -> null + 'no difficulty tag'. quota_table difficulty_only; second method = BLUE PRINT total 21 (agrees). LO (R-E10): lesson LO 13, lo_source 'lesson_table'.",
+   "FIGURES: none on these pages. TOPIC evs-3-24-t00 / chapter / high (R-E3)."
+  ],
+  "notation_summary": {
+   "render_tokens": 0,
+   "latex_tokens": 0,
+   "damage_flags": []
+  },
+  "excluded_objects": [],
+  "inline_excluded_count": 0,
+  "figure_references": []
+ },
+ "stimuli": [],
+ "questions": [
+  {
+   "id": "evs-3-24-s1-q001",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-24",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "-Draws sketches of the Immediate surroundings -Identify the directions, Locates the places"
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Match the following [as per the classroom direction]: BlackBoard\nB: North in the direction; South in the direction; East in the direction; West in the direction; North and South in the direction",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s1-q001",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s1-q001",
+     "pdf_page": 92,
+     "printed_page": 92,
+     "y": 591.293,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s1-q001-key",
+     "pdf_page": 127,
+     "printed_page": 127,
+     "y": 213.773,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:40:06+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:40:06+05:30",
+   "text_as_printed": "BlackBoard",
+   "section_signal": "I.Match the following :-[as per the classroom direction ]",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "as per your classroom direction"
+   },
+   "answer_as_printed": "1.as per your classroom direction",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:40:06+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 6) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "match key not in pair form — the key prints one instruction for the whole section, '1.as per your classroom direction' (the header also says '[as per the classroom direction]'): the right answer depends on each classroom's layout",
+     "why_not_corrected": "printed instruction stored as the text answer of the row it is printed under (label 1)",
+     "suggested": "per classroom — review"
+    }
+   ],
+   "content_hash": "e46290140e8363b26f68176fad728bbc719d82499705afa94be3de9256d0683d",
+   "topic_ids": [
+    "evs-3-24-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-24-s1-q002",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-24",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "-Draws sketches of the Immediate surroundings -Identify the directions, Locates the places"
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Match the following [as per the classroom direction]: Classroom door\nB: North in the direction; South in the direction; East in the direction; West in the direction; North and South in the direction",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s1-q002",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s1-q002",
+     "pdf_page": 92,
+     "printed_page": 92,
+     "y": 642.173,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s1-q002-key",
+     "pdf_page": 127,
+     "printed_page": 127,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:40:06+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:40:06+05:30",
+   "text_as_printed": "Classroom door",
+   "section_signal": "I.Match the following :-[as per the classroom direction ]",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 6) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "no answer printed",
+     "why_not_corrected": "the answer side prints only '1.as per your classroom direction' for the match section (an instruction for every row); nothing under label 2; gate 2.20 (1.6-a2) wants the defect flag alone on an unprinted match key",
+     "suggested": "per classroom — the section key under label 1 applies to every row — review"
+    }
+   ],
+   "content_hash": "a964aef5abf78d98a0f075a522a12fba37ad6841a71b0e72d1d34552f04ca5d8",
+   "topic_ids": [
+    "evs-3-24-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-24-s1-q003",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-24",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "-Draws sketches of the Immediate surroundings -Identify the directions, Locates the places"
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Match the following [as per the classroom direction]: GarbageBasket\nB: North in the direction; South in the direction; East in the direction; West in the direction; North and South in the direction",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s1-q003",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s1-q003",
+     "pdf_page": 92,
+     "printed_page": 92,
+     "y": 693.053,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s1-q003-key",
+     "pdf_page": 127,
+     "printed_page": 127,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:40:06+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:40:06+05:30",
+   "text_as_printed": "GarbageBasket",
+   "section_signal": "I.Match the following :-[as per the classroom direction ]",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 6) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "no answer printed",
+     "why_not_corrected": "the answer side prints only '1.as per your classroom direction' for the match section (an instruction for every row); nothing under label 3; gate 2.20 (1.6-a2) wants the defect flag alone on an unprinted match key",
+     "suggested": "per classroom — the section key under label 1 applies to every row — review"
+    }
+   ],
+   "content_hash": "57dabad82efa0cda679b8bc9322218e58c2965c4d2268a17a4503d454ec053ad",
+   "topic_ids": [
+    "evs-3-24-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-24-s1-q004",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-24",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "-Draws sketches of the Immediate surroundings -Identify the directions, Locates the places"
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Match the following [as per the classroom direction]: Windows\nB: North in the direction; South in the direction; East in the direction; West in the direction; North and South in the direction",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s1-q004",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s1-q004",
+     "pdf_page": 92,
+     "printed_page": 92,
+     "y": 743.933,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s1-q004-key",
+     "pdf_page": 127,
+     "printed_page": 127,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:40:06+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:40:06+05:30",
+   "text_as_printed": "Windows",
+   "section_signal": "I.Match the following :-[as per the classroom direction ]",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 6) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "no answer printed",
+     "why_not_corrected": "the answer side prints only '1.as per your classroom direction' for the match section (an instruction for every row); nothing under label 4; gate 2.20 (1.6-a2) wants the defect flag alone on an unprinted match key",
+     "suggested": "per classroom — the section key under label 1 applies to every row — review"
+    }
+   ],
+   "content_hash": "3c1d5c949149b75f392430ee680bb6d6c5002d1283c4b344960d7c70e4740d84",
+   "topic_ids": [
+    "evs-3-24-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-24-s1-q005",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-24",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "-Draws sketches of the Immediate surroundings -Identify the directions, Locates the places"
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Match the following [as per the classroom direction]: Cards assembly\nB: North in the direction; South in the direction; East in the direction; West in the direction; North and South in the direction",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s1-q005",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s1-q005",
+     "pdf_page": 93,
+     "printed_page": 93,
+     "y": 55.373,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s1-q005-key",
+     "pdf_page": 127,
+     "printed_page": 127,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:40:06+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:40:06+05:30",
+   "text_as_printed": "Cards assembly",
+   "section_signal": "I.Match the following :-[as per the classroom direction ]",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 6) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "no answer printed",
+     "why_not_corrected": "the answer side prints only '1.as per your classroom direction' for the match section (an instruction for every row); nothing under label 5; gate 2.20 (1.6-a2) wants the defect flag alone on an unprinted match key",
+     "suggested": "per classroom — the section key under label 1 applies to every row — review"
+    }
+   ],
+   "content_hash": "785f9343593041923b7dc8ab0a0c0dac6ab5a608e0b9ccc20de3c787d61a2fbe",
+   "topic_ids": [
+    "evs-3-24-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-24-s2-q006",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-24",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "-Draws sketches of the Immediate surroundings -Identify the directions, Locates the places"
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "What is a Map?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s2-q006",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s2-q006",
+     "pdf_page": 93,
+     "printed_page": 93,
+     "y": 150.026,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s2-q006-key",
+     "pdf_page": 127,
+     "printed_page": 127,
+     "y": 257.693,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:40:06+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:40:06+05:30",
+   "text_as_printed": "What is a Map ?",
+   "section_signal": "II. Answer the following :-",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "A map is a drawing of a place that shows where things are"
+   },
+   "answer_as_printed": "A map is a drawing of a place that shows where things are",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:40:06+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 6) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "6402fcedfa452d7192b022ef875fc091085683274bb8623cdbd41b685748ec66",
+   "topic_ids": [
+    "evs-3-24-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-24-s2-q007",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-24",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "-Draws sketches of the Immediate surroundings -Identify the directions, Locates the places"
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "What are the uses of Map?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s2-q007",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s2-q007",
+     "pdf_page": 93,
+     "printed_page": 93,
+     "y": 214.346,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s2-q007-key",
+     "pdf_page": 127,
+     "printed_page": 127,
+     "y": 300.653,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:40:06+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:40:06+05:30",
+   "text_as_printed": "What are the uses of Map ?",
+   "section_signal": "II. Answer the following :-",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "helps to locate the places"
+   },
+   "answer_as_printed": "7.helps to locate the places",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:40:06+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 6) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "bfad63ab0fcddb2d52939ddf73335d81af5acdddb2a18a82d85fd941805895cf",
+   "topic_ids": [
+    "evs-3-24-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-24-s2-q008",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-24",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "-Draws sketches of the Immediate surroundings -Identify the directions, Locates the places"
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "What are the uses of symbols in the Map?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s2-q008",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s2-q008",
+     "pdf_page": 93,
+     "printed_page": 93,
+     "y": 278.666,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s2-q008-key",
+     "pdf_page": 127,
+     "printed_page": 127,
+     "y": 319.853,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:40:06+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:40:06+05:30",
+   "text_as_printed": "What are the uses of symbols in the Map ?",
+   "section_signal": "II. Answer the following :-",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Maps use symbols to show different places and features in a simple way"
+   },
+   "answer_as_printed": "Maps use symbols to show different places and features in a simple way",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:40:06+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 6) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "5c83278e3e15b6762853251096312a9b38c91f9cf3f196714824cdc6da4ac560",
+   "topic_ids": [
+    "evs-3-24-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-24-s2-q009",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-24",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "-Draws sketches of the Immediate surroundings -Identify the directions, Locates the places"
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Name the four main directions.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s2-q009",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s2-q009",
+     "pdf_page": 93,
+     "printed_page": 93,
+     "y": 342.746,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s2-q009-key",
+     "pdf_page": 127,
+     "printed_page": 127,
+     "y": 361.853,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:40:06+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:40:06+05:30",
+   "section_signal": "II. Answer the following :-",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "The four main directions are East, west, north, south"
+   },
+   "answer_as_printed": "The four main directions are East, west, north, south",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:40:06+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 6) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "6bad52f7b40f53b1badd66d3bd5361c7099fba1f5fef3604f4105cbdcc31d380",
+   "topic_ids": [
+    "evs-3-24-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-24-s3-q010",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-24",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "-Draws sketches of the Immediate surroundings -Identify the directions, Locates the places"
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Which helps to locate the places.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s3-q010",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s3-q010",
+     "pdf_page": 93,
+     "printed_page": 93,
+     "y": 449.786,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s3-q010-key",
+     "pdf_page": 127,
+     "printed_page": 127,
+     "y": 423.293,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:40:06+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:40:06+05:30",
+   "section_signal": "III. Choose the correct answer :-",
+   "lo_source": "lesson_table",
+   "options": [
+    {
+     "id": "A",
+     "text": "map"
+    },
+    {
+     "id": "B",
+     "text": "book"
+    },
+    {
+     "id": "C",
+     "text": "pen"
+    }
+   ],
+   "answer_as_printed": "Map",
+   "answer": {
+    "kind": "option",
+    "option_id": "A"
+   },
+   "source_corrections": [
+    {
+     "field": "answer",
+     "printed": "Map",
+     "corrected": "A",
+     "basis": "pass 1"
+    }
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:40:06+05:30",
+    "basis": "printed text-only key matched to its option (addendum §4.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 6) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "source notation inconsistent — the question prints three options (A-C), not four",
+     "why_not_corrected": "options kept as printed (v1.4 option count)",
+     "suggested": "none — as printed"
+    }
+   ],
+   "content_hash": "1969c8ea7edf6b69b6aec987c77d760ad5cc7720789890a19f3bfdd9cb32266e",
+   "topic_ids": [
+    "evs-3-24-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-24-s3-q011",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-24",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "-Draws sketches of the Immediate surroundings -Identify the directions, Locates the places"
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "On the map water recognises in _________ colour",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s3-q011",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s3-q011",
+     "pdf_page": 93,
+     "printed_page": 93,
+     "y": 552.413,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s3-q011-key",
+     "pdf_page": 127,
+     "printed_page": 127,
+     "y": 423.293,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:40:06+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:40:06+05:30",
+   "section_signal": "III. Choose the correct answer :-",
+   "lo_source": "lesson_table",
+   "options": [
+    {
+     "id": "A",
+     "text": "Black"
+    },
+    {
+     "id": "B",
+     "text": "Red"
+    },
+    {
+     "id": "C",
+     "text": "Light blue"
+    }
+   ],
+   "answer_as_printed": "Blue",
+   "answer": {
+    "kind": "option",
+    "option_id": "C"
+   },
+   "source_corrections": [
+    {
+     "field": "answer",
+     "printed": "Blue",
+     "corrected": "C",
+     "basis": "pass 2"
+    }
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:40:06+05:30",
+    "basis": "printed text-only key matched to its option (addendum §4.2)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 6) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "source notation inconsistent — the question prints three options (A-C), not four",
+     "why_not_corrected": "options kept as printed (v1.4 option count)",
+     "suggested": "none — as printed"
+    }
+   ],
+   "content_hash": "183de0eabb64e484a9b6ac4af87a5ec4792240086c1b79e095b3351702bc9fec",
+   "topic_ids": [
+    "evs-3-24-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-24-s3-q012",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-24",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "-Draws sketches of the Immediate surroundings -Identify the directions, Locates the places"
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "When we create a map we must considered ______________",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s3-q012",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s3-q012",
+     "pdf_page": 93,
+     "printed_page": 93,
+     "y": 650.813,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s3-q012-key",
+     "pdf_page": 127,
+     "printed_page": 127,
+     "y": 423.293,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:40:06+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:40:06+05:30",
+   "section_signal": "III. Choose the correct answer :-",
+   "lo_source": "lesson_table",
+   "options": [
+    {
+     "id": "A",
+     "text": "Tree"
+    },
+    {
+     "id": "B",
+     "text": "Direction"
+    },
+    {
+     "id": "C",
+     "text": "Classroom"
+    }
+   ],
+   "answer_as_printed": "Directions",
+   "answer": {
+    "kind": "option",
+    "option_id": null
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 6) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key text not among options",
+     "why_not_corrected": "printed key '12. Directions' prints no letter and matches no option(s) after normalisation (addendum §4.2/§4.4)",
+     "suggested": "B (Direction) — review"
+    },
+    {
+     "issue": "source notation inconsistent — the question prints three options (A-C), not four",
+     "why_not_corrected": "options kept as printed (v1.4 option count)",
+     "suggested": "none — as printed"
+    }
+   ],
+   "content_hash": "e31fcef5c656066fd77805f5172aa8ef42a61d5439891c5b21e73bc9f35d8fd6",
+   "topic_ids": [
+    "evs-3-24-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-24-s3-q013",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-24",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "-Draws sketches of the Immediate surroundings -Identify the directions, Locates the places"
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "To which direction of our school is situated from our village or town.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s3-q013",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s3-q013",
+     "pdf_page": 93,
+     "printed_page": 93,
+     "y": 749.213,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s3-q013-key",
+     "pdf_page": 127,
+     "printed_page": 127,
+     "y": 423.293,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:40:06+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:40:06+05:30",
+   "section_signal": "III. Choose the correct answer :-",
+   "lo_source": "lesson_table",
+   "options": [
+    {
+     "id": "A",
+     "text": "North"
+    },
+    {
+     "id": "B",
+     "text": "East"
+    },
+    {
+     "id": "C",
+     "text": "West"
+    },
+    {
+     "id": "D",
+     "text": "South"
+    }
+   ],
+   "answer_as_printed": "13 and 14 as per the directions",
+   "answer": {
+    "kind": "option",
+    "option_id": null
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 6) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key text not among options",
+     "why_not_corrected": "printed key '13. 13 and 14 as per the directions' prints no letter and matches no option(s) after normalisation (addendum §4.2/§4.4)",
+     "suggested": "local answer — review"
+    }
+   ],
+   "content_hash": "b0a884050d04f605716f3f9843bcefe65c1d497dc2832649442546507dc88b11",
+   "topic_ids": [
+    "evs-3-24-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-24-s3-q014",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-24",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "-Draws sketches of the Immediate surroundings -Identify the directions, Locates the places"
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "The direction of our headmaster room in the school",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s3-q014",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s3-q014",
+     "pdf_page": 94,
+     "printed_page": 94,
+     "y": 119.213,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s3-q014-key",
+     "pdf_page": 127,
+     "printed_page": 127,
+     "y": 423.293,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:40:06+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:40:06+05:30",
+   "section_signal": "III. Choose the correct answer :-",
+   "lo_source": "lesson_table",
+   "options": [
+    {
+     "id": "A",
+     "text": "North"
+    },
+    {
+     "id": "B",
+     "text": "West"
+    },
+    {
+     "id": "C",
+     "text": "East"
+    },
+    {
+     "id": "D",
+     "text": "South"
+    }
+   ],
+   "answer_as_printed": "13 and 14 as per the directions",
+   "answer": {
+    "kind": "option",
+    "option_id": null
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 6) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key text not among options",
+     "why_not_corrected": "printed key '14. 13 and 14 as per the directions' prints no letter and matches no option(s) after normalisation (addendum §4.2/§4.4)",
+     "suggested": "local answer — review"
+    }
+   ],
+   "content_hash": "c8a54815034a3d4c24754c046b52d8dc5c8925ac3e2baa7fc5bc116867f8575d",
+   "topic_ids": [
+    "evs-3-24-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-24-s3-q015",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-24",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "mcq",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "-Draws sketches of the Immediate surroundings -Identify the directions, Locates the places"
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Which symbol usually represent a hospital?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s3-q015",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s3-q015",
+     "pdf_page": 94,
+     "printed_page": 94,
+     "y": 222.026,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s3-q015-key",
+     "pdf_page": 127,
+     "printed_page": 127,
+     "y": 444.653,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:40:06+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:40:06+05:30",
+   "text_as_printed": "Which symbol usually represent a hospital ?",
+   "section_signal": "III. Choose the correct answer :-",
+   "lo_source": "lesson_table",
+   "options": [
+    {
+     "id": "A",
+     "text": "Pluse (+)"
+    },
+    {
+     "id": "B",
+     "text": "Star"
+    },
+    {
+     "id": "C",
+     "text": "Circle"
+    }
+   ],
+   "answer_as_printed": "Cross",
+   "answer": {
+    "kind": "option",
+    "option_id": null
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 6) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key text not among options",
+     "why_not_corrected": "printed key '15. Cross' prints no letter and matches no option(s) after normalisation (addendum §4.2/§4.4)",
+     "suggested": "A (Pluse (+)) — review"
+    },
+    {
+     "issue": "source notation inconsistent — the question prints three options (A-C), not four",
+     "why_not_corrected": "options kept as printed (v1.4 option count)",
+     "suggested": "none — as printed"
+    }
+   ],
+   "content_hash": "23cac10b3df97439bb2a271f996fc78505133a9fd19e3953422fe9364f102b81",
+   "topic_ids": [
+    "evs-3-24-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-24-s4-q016",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-24",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "-Draws sketches of the Immediate surroundings -Identify the directions, Locates the places"
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "A ________ helps to find places.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s4-q016",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s4-q016",
+     "pdf_page": 94,
+     "printed_page": 94,
+     "y": 356.906,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s4-q016-key",
+     "pdf_page": 127,
+     "printed_page": 127,
+     "y": 466.013,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:40:06+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:40:06+05:30",
+   "section_signal": "IV. Fill in the blanks :-",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Map"
+   },
+   "answer_as_printed": "Map",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:40:06+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 6) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "966e62638c3f37c75b8c1daf751566e31c305293bcec3cba6a332f2e13fcd924",
+   "topic_ids": [
+    "evs-3-24-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-24-s4-q017",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-24",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "-Draws sketches of the Immediate surroundings -Identify the directions, Locates the places"
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "The four main directions are North, South, _______ and ________",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s4-q017",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s4-q017",
+     "pdf_page": 94,
+     "printed_page": 94,
+     "y": 421.226,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s4-q017-key",
+     "pdf_page": 127,
+     "printed_page": 127,
+     "y": 466.013,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:40:06+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:40:06+05:30",
+   "section_signal": "IV. Fill in the blanks :-",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "East and western"
+   },
+   "answer_as_printed": "East and western",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:40:06+05:30",
+    "basis": "printed fill key word(s), verbatim (v1.4 §14.8)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 6) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "7fb15f6429f8bda46f2bbd5960a486b7bdd0548323ec40aed57f4d7950d65080",
+   "topic_ids": [
+    "evs-3-24-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-24-s5-q018",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-24",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "-Draws sketches of the Immediate surroundings -Identify the directions, Locates the places"
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "A map helps us find places.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s5-q018",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s5-q018",
+     "pdf_page": 94,
+     "printed_page": 94,
+     "y": 519.866,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s5-q018-key",
+     "pdf_page": 127,
+     "printed_page": 127,
+     "y": 487.373,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:40:06+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:40:06+05:30",
+   "section_signal": "V. Tick true or false :-",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "True",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:40:06+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 6) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "7249af1de8c24b7856263ee0daed2825ab76b32f85a298a52f6122bd0a82c628",
+   "topic_ids": [
+    "evs-3-24-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-24-s5-q019",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-24",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "-Draws sketches of the Immediate surroundings -Identify the directions, Locates the places"
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "South is opposite to north",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s5-q019",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s5-q019",
+     "pdf_page": 94,
+     "printed_page": 94,
+     "y": 562.826,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s5-q019-key",
+     "pdf_page": 127,
+     "printed_page": 127,
+     "y": 487.373,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:40:06+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:40:06+05:30",
+   "section_signal": "V. Tick true or false :-",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "True",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:40:06+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 6) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "74cdf8b9aa963fa77a99ee59acda2b5ae51f9a0b7d327a13c13b091b53749370",
+   "topic_ids": [
+    "evs-3-24-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-24-s5-q020",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-24",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "true_false",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "-Draws sketches of the Immediate surroundings -Identify the directions, Locates the places"
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Map use symbols.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s5-q020",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s5-q020",
+     "pdf_page": 94,
+     "printed_page": 94,
+     "y": 605.546,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s5-q020-key",
+     "pdf_page": 127,
+     "printed_page": 127,
+     "y": 487.373,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:40:06+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:40:06+05:30",
+   "section_signal": "V. Tick true or false :-",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "option",
+    "option_id": "true"
+   },
+   "answer_as_printed": "True",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:40:06+05:30",
+    "basis": "printed True/False key; option implicit"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 6) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "b4697355b1f44a52550f5246c12ac902a443529f10396221662a6a136911705f",
+   "topic_ids": [
+    "evs-3-24-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-24-s6-q021",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-24",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "13",
+     "text_as_printed": "-Draws sketches of the Immediate surroundings -Identify the directions, Locates the places"
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Draw a map of your school to home and colour it.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s6-q021",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s6-q021",
+     "pdf_page": 94,
+     "printed_page": 94,
+     "y": 665.693,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-24-s6-q021-key",
+     "pdf_page": 127,
+     "printed_page": 127,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:40:06+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:40:06+05:30",
+   "section_signal": "21.Draw a map of your school to home and colour it.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '3x1=3' — N=3 but 1 question(s) printed in the section (R-E9)"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 5 / Difficulty 6) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "no answer printed",
+     "why_not_corrected": "sourceless map question: the stem asks to draw a map; no map is printed on either side and the key prints only '20.Students draw the picture:-' (a second '20.' standing for q21). Class-9 ruling: empty + 'no answer printed', no map block, no crop (as evs-4-12 q48)",
+     "suggested": "key absent — review"
+    }
+   ],
+   "content_hash": "0b18fd536162f6848f3124dec4876ca7aa5922087e64e7eea317a9e4222bfac3",
+   "topic_ids": [
+    "evs-3-24-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  }
+ ],
+ "pending_summary": {}
+}
