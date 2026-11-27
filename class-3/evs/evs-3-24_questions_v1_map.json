@@ -1559,8 +1559,8 @@
      "derived_from": "text_layer"
     }
    ],
-   "revision": 1,
-   "status": "draft",
+   "revision": 2,
+   "status": "reviewed",
    "status_history": [
     {
      "from": "none",
@@ -1568,6 +1568,14 @@
      "by": "class-3-evs",
      "role": "extraction",
      "at": "2026-11-27T01:40:06+05:30"
+    },
+    {
+     "from": "draft",
+     "to": "reviewed",
+     "by": "coordinator-social",
+     "role": "review",
+     "at": "2026-11-27T10:03:26+05:30",
+     "ref": "draft repair v1 (Yash 2026-11-27)"
     }
    ],
    "created_by": "class-3-evs",
@@ -1578,7 +1586,7 @@
    "options": [
     {
      "id": "A",
-     "text": "Pluse (+)"
+     "text": "Plus (+)"
     },
     {
      "id": "B",
@@ -1592,7 +1600,7 @@
    "answer_as_printed": "Cross",
    "answer": {
     "kind": "option",
-    "option_id": null
+    "option_id": "A"
    },
    "source_flags": [
     {
@@ -1616,7 +1624,34 @@
     "evs-3-24-t00"
    ],
    "topic_source": "chapter",
-   "topic_confidence": "high"
+   "topic_confidence": "high",
+   "source_corrections": [
+    {
+     "field": "options",
+     "printed": "[{\"id\": \"A\", \"text\": \"Pluse (+)\"}, {\"id\": \"B\", \"text\": \"Star\"}, {\"id\": \"C\", \"text\": \"Circle\"}]",
+     "corrected": "[{\"id\": \"A\", \"text\": \"Plus (+)\"}, {\"id\": \"B\", \"text\": \"Star\"}, {\"id\": \"C\", \"text\": \"Circle\"}]",
+     "basis": "SOURCE_GARBLE: 3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf pdf 94 rendered: options 'A) Pluse (+) B) Star C)Circle' — stored verbatim; 'Pluse' is a misspelling in the print. Three options is as printed."
+    },
+    {
+     "field": "answer",
+     "printed": "",
+     "corrected": "{\"kind\": \"option\", \"option_id\": \"A\"}",
+     "basis": "draft repair v1 (printed): key 'Cross' resolves to A"
+    }
+   ],
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "evs-draft-repair, applied by coordinator-social",
+    "at": "2026-11-27T10:03:26+05:30",
+    "basis": "key 'Cross' resolves to A"
+   },
+   "review": {
+    "method": "machine-verified (printed LBA key / passage, found at repair)",
+    "result": "accepted unreviewed",
+    "label": "machine-verified",
+    "at": "2026-11-27T10:03:26+05:30",
+    "note": "key 'Cross' resolves to A"
+   }
   },
   {
    "id": "evs-3-24-s4-q016",
