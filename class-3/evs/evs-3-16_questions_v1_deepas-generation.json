@@ -1,0 +1,1915 @@
+{
+ "contract_version": "1.7",
+ "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
+ "procedure_file": "extraction_procedure_social_addendum_v1.4_social science Classes 6-10 on top of procedure v2.md",
+ "machine_name": "evs-3-16_questions",
+ "version": 1,
+ "changelog": "v1 extraction — batch-01 — class-3-evs",
+ "amendments_applied": [],
+ "unit_state": "EXTRACTED",
+ "review_ready": false,
+ "count_gate": {
+  "reference": 20,
+  "reference_source": "audited",
+  "extracted": 20,
+  "paired": 4,
+  "flagged": 16,
+  "gaps": [],
+  "duplicated_numbers": [],
+  "quota_table": "difficulty_only",
+  "second_method": {
+   "method": "printed BLUE PRINT difficulty table total (Easy 10 + Average 6 + Difficulty 4 = 20), pdf 64; independently, the answer side's keys counted",
+   "extracted": 20,
+   "agrees": true
+  },
+  "pass": true,
+  "note": "Question side labels 1-20 monotonic (picture labels printed '06'-'09'), no gaps, no duplicates. BLUE PRINT 10/6/4 = 20 = audited count. Answer side prints keys 1-14: 1-4 match by number; 5-14 belong to another version of the questions (analysis file). Difficulty per question: easy 0, average 0, difficult 0, untagged 20."
+ },
+ "extraction": {
+  "source_file": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf",
+  "source_ref_prefix": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf",
+  "pdf_pages": [
+   64,
+   65,
+   66,
+   67,
+   117
+  ],
+  "printed_page_offset": 0,
+  "method_notes": [
+   "Pages: Q pdf 64 (heading, LO 3, BLUE PRINT, q1-4) 65 (q5, pictures 06-09, match q10-13) 66 (q14-19, family-tree picture) 67 (q20 + bird picture). A side 'Key Answers: 16' pdf 117 (keys 1-14). Folios = pdf page.",
+   "KEY SIDE (analysed first): q1-q4 keyed by printed number. q5-q20 empty + 'key belongs to another paper version' with content pointers q5 <- 6, q16 <- 5, q6/q7/q9 <- 11/12/14, q8 <- 13 (doubtful: the picture is a young girl), q20 <- 9 (partial); keys 7, 8, 10 describe pictures this lesson does not print. q17-q19 'no answer printed'.",
+   "Sections: s1 I q1-5 (q2 two-sentence key -> sa, others vsa); s2 II pictures q6-9 (each with its own picture stimulus; text = instruction + picture label); s3 III match q10-13 (numbered rows -> one-pair match questions); s4 IV q14-16; s5 q17 (family-tree picture stimulus); s6 q18 draw; s7 q19; s8 q20 (bird picture stimulus).",
+   "MARKS (R-E9, rev 3): s1-s4 1; null where N disagrees (s5 '2*1=2', s6-s8 '4*1=4', each over 1 question).",
+   "FIGURES (v1.4 §14.10): 6 question-side pictures -> 6 stimuli (pdf 65 x4, pdf 66 family tree, pdf 67 bird family; the last two are each stored as two stacked image strips and cropped as one box). The family-tree picture carries printed English labels (Raju, Deepa, father, mother, grand father, grand mother, 1st-3rd generation) and Kannada labels — the crop is an image; no text is stored from it.",
+   "DIFFICULTY: none printed -> null + 'no difficulty tag'. quota_table difficulty_only; second method = BLUE PRINT total 20 (agrees). LO (R-E10): lesson LO 3, lo_source 'lesson_table'.",
+   "Key typos kept in pointers verbatim ('Mother love har baby', 'Monky safe har baby').",
+   "PARKED (R-E8; T-E1): empty match q10-q13 cannot pass gate 2.20. Built in the work dir with its crops; not committed."
+  ],
+  "notation_summary": {
+   "render_tokens": 0,
+   "latex_tokens": 0,
+   "damage_flags": []
+  },
+  "excluded_objects": [],
+  "inline_excluded_count": 0,
+  "figure_references": []
+ },
+ "stimuli": [
+  {
+   "id": "st-evs-3-16-q6",
+   "kind": "figure",
+   "note": "picture 06 printed for q6, pdf 65",
+   "assets": [
+    {
+     "id": "st6",
+     "type": "image",
+     "ref": "images/evs-3-16/stimuli/p065-q6_figure.png",
+     "role": "figure",
+     "source_px": {
+      "w": 145,
+      "h": 137
+     },
+     "quality": "ok",
+     "caption": "Picture printed for q6, pdf 65 — region render at 150 dpi of the embedded image's box",
+     "pdf_page": 65,
+     "crop_bbox": {
+      "pdf_page": 65,
+      "x0": 96.0,
+      "y0": 180.6,
+      "x1": 165.8,
+      "y1": 246.3
+     }
+    }
+   ],
+   "locators": [
+    {
+     "role": "stimulus",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#st-evs-3-16-q6",
+     "pdf_page": 65,
+     "printed_page": 65,
+     "y": 180.6,
+     "derived_from": "render_measured"
+    }
+   ]
+  },
+  {
+   "id": "st-evs-3-16-q7",
+   "kind": "figure",
+   "note": "picture 07 printed for q7, pdf 65",
+   "assets": [
+    {
+     "id": "st7",
+     "type": "image",
+     "ref": "images/evs-3-16/stimuli/p065-q7_figure.png",
+     "role": "figure",
+     "source_px": {
+      "w": 165,
+      "h": 155
+     },
+     "quality": "ok",
+     "caption": "Picture printed for q7, pdf 65 — region render at 150 dpi of the embedded image's box",
+     "pdf_page": 65,
+     "crop_bbox": {
+      "pdf_page": 65,
+      "x0": 90.7,
+      "y0": 276.6,
+      "x1": 169.9,
+      "y1": 350.7
+     }
+    }
+   ],
+   "locators": [
+    {
+     "role": "stimulus",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#st-evs-3-16-q7",
+     "pdf_page": 65,
+     "printed_page": 65,
+     "y": 276.6,
+     "derived_from": "render_measured"
+    }
+   ]
+  },
+  {
+   "id": "st-evs-3-16-q8",
+   "kind": "figure",
+   "note": "picture 08 printed for q8, pdf 65",
+   "assets": [
+    {
+     "id": "st8",
+     "type": "image",
+     "ref": "images/evs-3-16/stimuli/p065-q8_figure.png",
+     "role": "figure",
+     "source_px": {
+      "w": 127,
+      "h": 163
+     },
+     "quality": "ok",
+     "caption": "Picture printed for q8, pdf 65 — region render at 150 dpi of the embedded image's box",
+     "pdf_page": 65,
+     "crop_bbox": {
+      "pdf_page": 65,
+      "x0": 92.4,
+      "y0": 380.2,
+      "x1": 153.8,
+      "y1": 458.2
+     }
+    }
+   ],
+   "locators": [
+    {
+     "role": "stimulus",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#st-evs-3-16-q8",
+     "pdf_page": 65,
+     "printed_page": 65,
+     "y": 380.2,
+     "derived_from": "render_measured"
+    }
+   ]
+  },
+  {
+   "id": "st-evs-3-16-q9",
+   "kind": "figure",
+   "note": "picture 09 printed for q9, pdf 65",
+   "assets": [
+    {
+     "id": "st9",
+     "type": "image",
+     "ref": "images/evs-3-16/stimuli/p065-q9_figure.png",
+     "role": "figure",
+     "source_px": {
+      "w": 171,
+      "h": 172
+     },
+     "quality": "ok",
+     "caption": "Picture printed for q9, pdf 65 — region render at 150 dpi of the embedded image's box",
+     "pdf_page": 65,
+     "crop_bbox": {
+      "pdf_page": 65,
+      "x0": 84.7,
+      "y0": 483.4,
+      "x1": 166.6,
+      "y1": 566.0
+     }
+    }
+   ],
+   "locators": [
+    {
+     "role": "stimulus",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#st-evs-3-16-q9",
+     "pdf_page": 65,
+     "printed_page": 65,
+     "y": 483.4,
+     "derived_from": "render_measured"
+    }
+   ]
+  },
+  {
+   "id": "st-evs-3-16-q17",
+   "kind": "figure",
+   "note": "17) family-tree picture, pdf 66 (stored as two stacked image strips; cropped as one box)",
+   "assets": [
+    {
+     "id": "st17",
+     "type": "image",
+     "ref": "images/evs-3-16/stimuli/p066-q17_figure.png",
+     "role": "figure",
+     "source_px": {
+      "w": 865,
+      "h": 435
+     },
+     "quality": "ok",
+     "caption": "Picture printed for q17, pdf 66 — region render at 150 dpi of the embedded image's box",
+     "pdf_page": 66,
+     "crop_bbox": {
+      "pdf_page": 66,
+      "x0": 36.0,
+      "y0": 386.5,
+      "x1": 451.2,
+      "y1": 595.3
+     }
+    }
+   ],
+   "locators": [
+    {
+     "role": "stimulus",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#st-evs-3-16-q17",
+     "pdf_page": 66,
+     "printed_page": 66,
+     "y": 386.5,
+     "derived_from": "render_measured"
+    }
+   ]
+  },
+  {
+   "id": "st-evs-3-16-q20",
+   "kind": "figure",
+   "note": "20) bird-family picture, pdf 67 (two stacked strips; one box)",
+   "assets": [
+    {
+     "id": "st20",
+     "type": "image",
+     "ref": "images/evs-3-16/stimuli/p067-q20_figure.png",
+     "role": "figure",
+     "source_px": {
+      "w": 928,
+      "h": 569
+     },
+     "quality": "ok",
+     "caption": "Picture printed for q20, pdf 67 — region render at 150 dpi of the embedded image's box",
+     "pdf_page": 67,
+     "crop_bbox": {
+      "pdf_page": 67,
+      "x0": 74.9,
+      "y0": 123.4,
+      "x1": 520.3,
+      "y1": 396.3
+     }
+    }
+   ],
+   "locators": [
+    {
+     "role": "stimulus",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#st-evs-3-16-q20",
+     "pdf_page": 67,
+     "printed_page": 67,
+     "y": 123.4,
+     "derived_from": "render_measured"
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "evs-3-16-s1-q001",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-16",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "3",
+     "text_as_printed": "Observes the similarities of hereditary factors, Describes the relationship between the members of three generations and constructs a simple family tree."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "What needs does a mother fulfill for her child?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-16-s1-q001",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-16-s1-q001",
+     "pdf_page": 64,
+     "printed_page": 64,
+     "y": 563.066,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-16-s1-q001-key",
+     "pdf_page": 117,
+     "printed_page": 117,
+     "y": 137.693,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:27:27+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:27:27+05:30",
+   "section_signal": "I. Answer the following questions in one sentence",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "She fulfills the needs of love, care, protection, food, etc"
+   },
+   "answer_as_printed": "She fulfills the needs of love, care, protection, food, etc",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:27:27+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 6 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "6bd10c5be9e33ba3cad60ac4f596f785ae2d416a17faa29683588cd2ab3b6ac3",
+   "topic_ids": [
+    "evs-3-16-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-16-s1-q002",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-16",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "3",
+     "text_as_printed": "Observes the similarities of hereditary factors, Describes the relationship between the members of three generations and constructs a simple family tree."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "What is a family tree? What does it look like?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-16-s1-q002",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-16-s1-q002",
+     "pdf_page": 64,
+     "printed_page": 64,
+     "y": 622.733,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-16-s1-q002-key",
+     "pdf_page": 117,
+     "printed_page": 117,
+     "y": 196.013,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:27:27+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:27:27+05:30",
+   "section_signal": "I. Answer the following questions in one sentence",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Vamsha means family, Vriksha means tree. The Vriksha tree looks like a tree."
+   },
+   "answer_as_printed": "Vamsha means family, Vriksha means tree. The Vriksha tree looks like a tree.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:27:27+05:30",
+    "basis": "printed key text, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 6 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "73b5481c41eee4d9b96d04ba2c749785a1603afd7a98437f0d9522cd0fa2f8cf",
+   "topic_ids": [
+    "evs-3-16-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-16-s1-q003",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-16",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "3",
+     "text_as_printed": "Observes the similarities of hereditary factors, Describes the relationship between the members of three generations and constructs a simple family tree."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Who all are there in your house?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-16-s1-q003",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-16-s1-q003",
+     "pdf_page": 64,
+     "printed_page": 64,
+     "y": 681.293,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-16-s1-q003-key",
+     "pdf_page": 117,
+     "printed_page": 117,
+     "y": 254.573,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:27:27+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:27:27+05:30",
+   "section_signal": "I. Answer the following questions in one sentence",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "At home, I, father, mother, brother, sister, grandfather, grandmother are there"
+   },
+   "answer_as_printed": "At home, I, father, mother, brother, sister, grandfather, grandmother are there",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:27:27+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 6 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "95a4db892930526be6332a53bf575a0bd5fb1928fccbb83fede189675923ab0e",
+   "topic_ids": [
+    "evs-3-16-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-16-s1-q004",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-16",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "3",
+     "text_as_printed": "Observes the similarities of hereditary factors, Describes the relationship between the members of three generations and constructs a simple family tree."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "How did Radha pacify the child?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-16-s1-q004",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-16-s1-q004",
+     "pdf_page": 64,
+     "printed_page": 64,
+     "y": 739.613,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-16-s1-q004-key",
+     "pdf_page": 117,
+     "printed_page": 117,
+     "y": 294.413,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:27:27+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:27:27+05:30",
+   "section_signal": "I. Answer the following questions in one sentence",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "Radha sang a Lalali song to calm down the child."
+   },
+   "answer_as_printed": "Radha sang a Lalali song to calm down the child.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:27:27+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 6 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "ee2a84a104e723a0544eeaf70954298e39de2e513d3cda9e25865aaa624c8773",
+   "topic_ids": [
+    "evs-3-16-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-16-s1-q005",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-16",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "3",
+     "text_as_printed": "Observes the similarities of hereditary factors, Describes the relationship between the members of three generations and constructs a simple family tree."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "What similarities can you see between family members?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-16-s1-q005",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-16-s1-q005",
+     "pdf_page": 65,
+     "printed_page": 65,
+     "y": 57.773,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-16-s1-q005-key",
+     "pdf_page": 117,
+     "printed_page": 117,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:27:27+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:27:27+05:30",
+   "section_signal": "I. Answer the following questions in one sentence",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 6 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key belongs to another paper version — printed key 5 'I look like my father/mother.' does not address it; key 6 'Family members may have similarities in hair, body color, eyes, ears, nose, gait, and smile.' fits by content",
+     "why_not_corrected": "the answer side 'Key Answers: 16' (pdf 117) prints keys 1-14 for 20 questions: 1-4 answer q1-q4; 5 and 6 answer q16 and q5 by content; 7-10 describe pictures this lesson does not print (birthday, mother/bird/monkey and baby); 11-14 'Grand father', 'Father', 'Mother', 'Brother' fit pictures 06-09 (or in part the match rows) — see reports/class-3-evs/evs-3-14-18_key-side_analysis.md; extraction pairs only matching keys (schema v7) and does not re-pair by content",
+     "suggested": "key 6 — confirm"
+    }
+   ],
+   "content_hash": "8150e2b0628dd4804c2ce603394ed9504eba8cdcf5861707d60e9e263db5251b",
+   "topic_ids": [
+    "evs-3-16-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-16-s2-q006",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-16",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "3",
+     "text_as_printed": "Observes the similarities of hereditary factors, Describes the relationship between the members of three generations and constructs a simple family tree."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Below are pictures of members of a family. Identify and write the members.\nPicture 06 [ ]",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-16-s2-q006",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-16-s2-q006",
+     "pdf_page": 65,
+     "printed_page": 65,
+     "y": 196.013,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-16-s2-q006-key",
+     "pdf_page": 117,
+     "printed_page": 117,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:27:27+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:27:27+05:30",
+   "section_signal": "II. Below are pictures of members of a family. Identify and write the members.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "stimulus_id": "st-evs-3-16-q6",
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 6 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key belongs to another paper version — printed key 6 (similarities) does not name a family member; key 11 'Grand father' fits picture 06",
+     "why_not_corrected": "the answer side 'Key Answers: 16' (pdf 117) prints keys 1-14 for 20 questions: 1-4 answer q1-q4; 5 and 6 answer q16 and q5 by content; 7-10 describe pictures this lesson does not print (birthday, mother/bird/monkey and baby); 11-14 'Grand father', 'Father', 'Mother', 'Brother' fit pictures 06-09 (or in part the match rows) — see reports/class-3-evs/evs-3-14-18_key-side_analysis.md; extraction pairs only matching keys (schema v7) and does not re-pair by content",
+     "suggested": "key 11 — confirm"
+    }
+   ],
+   "content_hash": "ca32b955937be02d5f4a87842f8f61141fe3569954742d078315eba5632dbcd7",
+   "topic_ids": [
+    "evs-3-16-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-16-s2-q007",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-16",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "3",
+     "text_as_printed": "Observes the similarities of hereditary factors, Describes the relationship between the members of three generations and constructs a simple family tree."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Below are pictures of members of a family. Identify and write the members.\nPicture 07 [ ]",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-16-s2-q007",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-16-s2-q007",
+     "pdf_page": 65,
+     "printed_page": 65,
+     "y": 325.613,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-16-s2-q007-key",
+     "pdf_page": 117,
+     "printed_page": 117,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:27:27+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:27:27+05:30",
+   "section_signal": "II. Below are pictures of members of a family. Identify and write the members.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "stimulus_id": "st-evs-3-16-q7",
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 6 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key belongs to another paper version — printed key 7 'Birth Day Celebration' does not name a family member; key 12 'Father' fits picture 07",
+     "why_not_corrected": "the answer side 'Key Answers: 16' (pdf 117) prints keys 1-14 for 20 questions: 1-4 answer q1-q4; 5 and 6 answer q16 and q5 by content; 7-10 describe pictures this lesson does not print (birthday, mother/bird/monkey and baby); 11-14 'Grand father', 'Father', 'Mother', 'Brother' fit pictures 06-09 (or in part the match rows) — see reports/class-3-evs/evs-3-14-18_key-side_analysis.md; extraction pairs only matching keys (schema v7) and does not re-pair by content",
+     "suggested": "key 12 — confirm"
+    }
+   ],
+   "content_hash": "dfca9e40739fa321f0db5a03a28c6b784e7b5362b212dc93ddf3913724a434a1",
+   "topic_ids": [
+    "evs-3-16-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-16-s2-q008",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-16",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "3",
+     "text_as_printed": "Observes the similarities of hereditary factors, Describes the relationship between the members of three generations and constructs a simple family tree."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Below are pictures of members of a family. Identify and write the members.\nPicture 08 [ ]",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-16-s2-q008",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-16-s2-q008",
+     "pdf_page": 65,
+     "printed_page": 65,
+     "y": 436.733,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-16-s2-q008-key",
+     "pdf_page": 117,
+     "printed_page": 117,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:27:27+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:27:27+05:30",
+   "section_signal": "II. Below are pictures of members of a family. Identify and write the members.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "stimulus_id": "st-evs-3-16-q8",
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 6 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key belongs to another paper version — printed key 8 'Mother love har baby' does not name a family member; key 13 'Mother' is the nearest (the picture shows a young girl)",
+     "why_not_corrected": "the answer side 'Key Answers: 16' (pdf 117) prints keys 1-14 for 20 questions: 1-4 answer q1-q4; 5 and 6 answer q16 and q5 by content; 7-10 describe pictures this lesson does not print (birthday, mother/bird/monkey and baby); 11-14 'Grand father', 'Father', 'Mother', 'Brother' fit pictures 06-09 (or in part the match rows) — see reports/class-3-evs/evs-3-14-18_key-side_analysis.md; extraction pairs only matching keys (schema v7) and does not re-pair by content",
+     "suggested": "key 13 (doubtful) — confirm"
+    }
+   ],
+   "content_hash": "4ae845e55a1fc317608382b811a8eb2f1e1e74ff6953e96e4d3a47f5e912f390",
+   "topic_ids": [
+    "evs-3-16-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-16-s2-q009",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-16",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "3",
+     "text_as_printed": "Observes the similarities of hereditary factors, Describes the relationship between the members of three generations and constructs a simple family tree."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Below are pictures of members of a family. Identify and write the members.\nPicture 09 [ ]",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-16-s2-q009",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-16-s2-q009",
+     "pdf_page": 65,
+     "printed_page": 65,
+     "y": 510.893,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-16-s2-q009-key",
+     "pdf_page": 117,
+     "printed_page": 117,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:27:27+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:27:27+05:30",
+   "section_signal": "II. Below are pictures of members of a family. Identify and write the members.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "stimulus_id": "st-evs-3-16-q9",
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 6 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key belongs to another paper version — printed key 9 'Bird safe har baby' does not name a family member; key 14 'Brother' fits picture 09",
+     "why_not_corrected": "the answer side 'Key Answers: 16' (pdf 117) prints keys 1-14 for 20 questions: 1-4 answer q1-q4; 5 and 6 answer q16 and q5 by content; 7-10 describe pictures this lesson does not print (birthday, mother/bird/monkey and baby); 11-14 'Grand father', 'Father', 'Mother', 'Brother' fit pictures 06-09 (or in part the match rows) — see reports/class-3-evs/evs-3-14-18_key-side_analysis.md; extraction pairs only matching keys (schema v7) and does not re-pair by content",
+     "suggested": "key 14 — confirm"
+    }
+   ],
+   "content_hash": "1b2e28790bdc1db32b062c0fc46260edf8d7b241d0bf3616036f2f90d1200ff3",
+   "topic_ids": [
+    "evs-3-16-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-16-s3-q010",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-16",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "3",
+     "text_as_printed": "Observes the similarities of hereditary factors, Describes the relationship between the members of three generations and constructs a simple family tree."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Match the following: Your father's father\nB: brother; sister; grandmother; grandfather",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-16-s3-q010",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-16-s3-q010",
+     "pdf_page": 65,
+     "printed_page": 65,
+     "y": 627.053,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-16-s3-q010-key",
+     "pdf_page": 117,
+     "printed_page": 117,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:27:27+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:27:27+05:30",
+   "text_as_printed": "Your father's father",
+   "section_signal": "III . Match the following",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 6 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key belongs to another paper version — printed key 10 'Monky safe har baby' does not address this match row (key 11 'Grand father' would)",
+     "why_not_corrected": "the answer side 'Key Answers: 16' (pdf 117) prints keys 1-14 for 20 questions: 1-4 answer q1-q4; 5 and 6 answer q16 and q5 by content; 7-10 describe pictures this lesson does not print (birthday, mother/bird/monkey and baby); 11-14 'Grand father', 'Father', 'Mother', 'Brother' fit pictures 06-09 (or in part the match rows) — see reports/class-3-evs/evs-3-14-18_key-side_analysis.md; extraction pairs only matching keys (schema v7) and does not re-pair by content",
+     "suggested": "grandfather — review"
+    }
+   ],
+   "content_hash": "cb8d836ff729c48429a7578951fb7a0cf0bbfb4c958c74c8eadd2408140fd655",
+   "topic_ids": [
+    "evs-3-16-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-16-s3-q011",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-16",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "3",
+     "text_as_printed": "Observes the similarities of hereditary factors, Describes the relationship between the members of three generations and constructs a simple family tree."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Match the following: Your father's mother\nB: brother; sister; grandmother; grandfather",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-16-s3-q011",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-16-s3-q011",
+     "pdf_page": 65,
+     "printed_page": 65,
+     "y": 648.413,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-16-s3-q011-key",
+     "pdf_page": 117,
+     "printed_page": 117,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:27:27+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:27:27+05:30",
+   "text_as_printed": "Your father's mother",
+   "section_signal": "III . Match the following",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 6 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key belongs to another paper version — printed key 11 'Grand father' does not fit 'Your father's mother'",
+     "why_not_corrected": "the answer side 'Key Answers: 16' (pdf 117) prints keys 1-14 for 20 questions: 1-4 answer q1-q4; 5 and 6 answer q16 and q5 by content; 7-10 describe pictures this lesson does not print (birthday, mother/bird/monkey and baby); 11-14 'Grand father', 'Father', 'Mother', 'Brother' fit pictures 06-09 (or in part the match rows) — see reports/class-3-evs/evs-3-14-18_key-side_analysis.md; extraction pairs only matching keys (schema v7) and does not re-pair by content",
+     "suggested": "grandmother — review"
+    }
+   ],
+   "content_hash": "f3b63e44f00880557b021c09c30ed84f6fb8875ab24a64dedd2805ecfe941a0e",
+   "topic_ids": [
+    "evs-3-16-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-16-s3-q012",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-16",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "3",
+     "text_as_printed": "Observes the similarities of hereditary factors, Describes the relationship between the members of three generations and constructs a simple family tree."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Match the following: Your boy sibling\nB: brother; sister; grandmother; grandfather",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-16-s3-q012",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-16-s3-q012",
+     "pdf_page": 65,
+     "printed_page": 65,
+     "y": 691.133,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-16-s3-q012-key",
+     "pdf_page": 117,
+     "printed_page": 117,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:27:27+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:27:27+05:30",
+   "text_as_printed": "Your boy sibling",
+   "section_signal": "III . Match the following",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 6 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key belongs to another paper version — printed key 12 'Father' does not fit 'Your boy sibling' (key 14 'Brother' would)",
+     "why_not_corrected": "the answer side 'Key Answers: 16' (pdf 117) prints keys 1-14 for 20 questions: 1-4 answer q1-q4; 5 and 6 answer q16 and q5 by content; 7-10 describe pictures this lesson does not print (birthday, mother/bird/monkey and baby); 11-14 'Grand father', 'Father', 'Mother', 'Brother' fit pictures 06-09 (or in part the match rows) — see reports/class-3-evs/evs-3-14-18_key-side_analysis.md; extraction pairs only matching keys (schema v7) and does not re-pair by content",
+     "suggested": "brother — review"
+    }
+   ],
+   "content_hash": "65cce8e459f29af564e38335a48559befac447cea2189c89bab91858f80beed9",
+   "topic_ids": [
+    "evs-3-16-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-16-s3-q013",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-16",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "3",
+     "text_as_printed": "Observes the similarities of hereditary factors, Describes the relationship between the members of three generations and constructs a simple family tree."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Match the following: Your girl sibling\nB: brother; sister; grandmother; grandfather",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-16-s3-q013",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-16-s3-q013",
+     "pdf_page": 65,
+     "printed_page": 65,
+     "y": 731.213,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-16-s3-q013-key",
+     "pdf_page": 117,
+     "printed_page": 117,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:27:27+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:27:27+05:30",
+   "text_as_printed": "Your girl sibling",
+   "section_signal": "III . Match the following",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 6 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key belongs to another paper version — printed key 13 'Mother' does not fit 'Your girl sibling'",
+     "why_not_corrected": "the answer side 'Key Answers: 16' (pdf 117) prints keys 1-14 for 20 questions: 1-4 answer q1-q4; 5 and 6 answer q16 and q5 by content; 7-10 describe pictures this lesson does not print (birthday, mother/bird/monkey and baby); 11-14 'Grand father', 'Father', 'Mother', 'Brother' fit pictures 06-09 (or in part the match rows) — see reports/class-3-evs/evs-3-14-18_key-side_analysis.md; extraction pairs only matching keys (schema v7) and does not re-pair by content",
+     "suggested": "sister — review"
+    }
+   ],
+   "content_hash": "c38ec6a2c4a731be8e2f10ec9e898496e90b6bbd41d33889676a2a42c31213c9",
+   "topic_ids": [
+    "evs-3-16-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-16-s4-q014",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-16",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "3",
+     "text_as_printed": "Observes the similarities of hereditary factors, Describes the relationship between the members of three generations and constructs a simple family tree."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "How many members are there in your family?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-16-s4-q014",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-16-s4-q014",
+     "pdf_page": 66,
+     "printed_page": 66,
+     "y": 97.853,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-16-s4-q014-key",
+     "pdf_page": 117,
+     "printed_page": 117,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:27:27+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:27:27+05:30",
+   "section_signal": "IV.Answer the following questions",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 6 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key belongs to another paper version — printed key 14 'Brother' does not address it",
+     "why_not_corrected": "the answer side 'Key Answers: 16' (pdf 117) prints keys 1-14 for 20 questions: 1-4 answer q1-q4; 5 and 6 answer q16 and q5 by content; 7-10 describe pictures this lesson does not print (birthday, mother/bird/monkey and baby); 11-14 'Grand father', 'Father', 'Mother', 'Brother' fit pictures 06-09 (or in part the match rows) — see reports/class-3-evs/evs-3-14-18_key-side_analysis.md; extraction pairs only matching keys (schema v7) and does not re-pair by content",
+     "suggested": "review"
+    }
+   ],
+   "content_hash": "482d0518722063605c2e4b99cb047c6b058e8e757edb447fb70d79bcb8de8883",
+   "topic_ids": [
+    "evs-3-16-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-16-s4-q015",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-16",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "3",
+     "text_as_printed": "Observes the similarities of hereditary factors, Describes the relationship between the members of three generations and constructs a simple family tree."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "How many generations are there in your family?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-16-s4-q015",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-16-s4-q015",
+     "pdf_page": 66,
+     "printed_page": 66,
+     "y": 156.173,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-16-s4-q015-key",
+     "pdf_page": 117,
+     "printed_page": 117,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:27:27+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:27:27+05:30",
+   "section_signal": "IV.Answer the following questions",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 6 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key belongs to another paper version — no key 15 is printed",
+     "why_not_corrected": "the answer side 'Key Answers: 16' (pdf 117) prints keys 1-14 for 20 questions: 1-4 answer q1-q4; 5 and 6 answer q16 and q5 by content; 7-10 describe pictures this lesson does not print (birthday, mother/bird/monkey and baby); 11-14 'Grand father', 'Father', 'Mother', 'Brother' fit pictures 06-09 (or in part the match rows) — see reports/class-3-evs/evs-3-14-18_key-side_analysis.md; extraction pairs only matching keys (schema v7) and does not re-pair by content",
+     "suggested": "review"
+    }
+   ],
+   "content_hash": "cf1a42e960636bbbc8105d8209479be8a5361da1917b10067003d8c15ed656a5",
+   "topic_ids": [
+    "evs-3-16-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-16-s4-q016",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-16",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "3",
+     "text_as_printed": "Observes the similarities of hereditary factors, Describes the relationship between the members of three generations and constructs a simple family tree."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Whom do you resemble in your family?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-16-s4-q016",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-16-s4-q016",
+     "pdf_page": 66,
+     "printed_page": 66,
+     "y": 214.733,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-16-s4-q016-key",
+     "pdf_page": 117,
+     "printed_page": 117,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:27:27+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:27:27+05:30",
+   "section_signal": "IV.Answer the following questions",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 6 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key belongs to another paper version — no key 16 is printed; key 5 'I look like my father/mother.' fits by content",
+     "why_not_corrected": "the answer side 'Key Answers: 16' (pdf 117) prints keys 1-14 for 20 questions: 1-4 answer q1-q4; 5 and 6 answer q16 and q5 by content; 7-10 describe pictures this lesson does not print (birthday, mother/bird/monkey and baby); 11-14 'Grand father', 'Father', 'Mother', 'Brother' fit pictures 06-09 (or in part the match rows) — see reports/class-3-evs/evs-3-14-18_key-side_analysis.md; extraction pairs only matching keys (schema v7) and does not re-pair by content",
+     "suggested": "key 5 — confirm"
+    }
+   ],
+   "content_hash": "1fc49c578e557d749ec897a6f2467c2ddff998a1a1ff4e1c3e34e8fefa750529",
+   "topic_ids": [
+    "evs-3-16-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-16-s5-q017",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-16",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "3",
+     "text_as_printed": "Observes the similarities of hereditary factors, Describes the relationship between the members of three generations and constructs a simple family tree."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "The picture of a family tree is given below. Identify and write the number of generations in it.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-16-s5-q017",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-16-s5-q017",
+     "pdf_page": 66,
+     "printed_page": 66,
+     "y": 273.053,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-16-s5-q017-key",
+     "pdf_page": 117,
+     "printed_page": 117,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:27:27+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:27:27+05:30",
+   "section_signal": "17) The picture of a family tree is given below. Identify and write the number of generations in it.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "stimulus_id": "st-evs-3-16-q17",
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '2*1=2' — N=2 but 1 question(s) printed in the section (R-E9)"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 6 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "no answer printed",
+     "why_not_corrected": "the answer side prints keys 1-14 only (the family-tree picture shows three generations)",
+     "suggested": "key absent — review"
+    }
+   ],
+   "content_hash": "71f9441211caf5321350e41ed684e9e8d5d43ddf153e6ed14ec6e9e97fc86aa7",
+   "topic_ids": [
+    "evs-3-16-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-16-s6-q018",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-16",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "3",
+     "text_as_printed": "Observes the similarities of hereditary factors, Describes the relationship between the members of three generations and constructs a simple family tree."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Write (Draw) your family tree picture.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-16-s6-q018",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-16-s6-q018",
+     "pdf_page": 66,
+     "printed_page": 66,
+     "y": 638.093,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-16-s6-q018-key",
+     "pdf_page": 117,
+     "printed_page": 117,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:27:27+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:27:27+05:30",
+   "section_signal": "18) Write (Draw) your family tree picture.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '4*1=4' — N=4 but 1 question(s) printed in the section (R-E9)"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 6 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "no answer printed",
+     "why_not_corrected": "the answer side prints keys 1-14 only (drawing task)",
+     "suggested": "key absent — review"
+    }
+   ],
+   "content_hash": "b1a192e418e3649e9a91850b2ea9cd33de9d628db6c21cd3e6d49efc315a5e00",
+   "topic_ids": [
+    "evs-3-16-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-16-s7-q019",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-16",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "3",
+     "text_as_printed": "Observes the similarities of hereditary factors, Describes the relationship between the members of three generations and constructs a simple family tree."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Write a short note on how your mother loves & cares for you.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-16-s7-q019",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-16-s7-q019",
+     "pdf_page": 66,
+     "printed_page": 66,
+     "y": 696.653,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-16-s7-q019-key",
+     "pdf_page": 117,
+     "printed_page": 117,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:27:27+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:27:27+05:30",
+   "section_signal": "19) Write a short note on how your mother loves & cares for you.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '4*1=4' — N=4 but 1 question(s) printed in the section (R-E9)"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 6 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "no answer printed",
+     "why_not_corrected": "the answer side prints keys 1-14 only",
+     "suggested": "key absent — review"
+    }
+   ],
+   "content_hash": "25105c7761f4f36fc32ef7d664e7813c47e8944d521087498ec7d01a5eaae4d6",
+   "topic_ids": [
+    "evs-3-16-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-16-s8-q020",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-16",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "3",
+     "text_as_printed": "Observes the similarities of hereditary factors, Describes the relationship between the members of three generations and constructs a simple family tree."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Look at the picture below, and write a short note on this bird's family.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-16-s8-q020",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-16-s8-q020",
+     "pdf_page": 67,
+     "printed_page": 67,
+     "y": 39.053,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-16-s8-q020-key",
+     "pdf_page": 117,
+     "printed_page": 117,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:27:27+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:27:27+05:30",
+   "section_signal": "20) Look at the picture below, and write a short note on this bird's family.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "stimulus_id": "st-evs-3-16-q20",
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '4*1=4' — N=4 but 1 question(s) printed in the section (R-E9)"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 10 / Average 6 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key belongs to another paper version — no key 20 is printed; key 9 'Bird safe har baby' touches it",
+     "why_not_corrected": "the answer side 'Key Answers: 16' (pdf 117) prints keys 1-14 for 20 questions: 1-4 answer q1-q4; 5 and 6 answer q16 and q5 by content; 7-10 describe pictures this lesson does not print (birthday, mother/bird/monkey and baby); 11-14 'Grand father', 'Father', 'Mother', 'Brother' fit pictures 06-09 (or in part the match rows) — see reports/class-3-evs/evs-3-14-18_key-side_analysis.md; extraction pairs only matching keys (schema v7) and does not re-pair by content",
+     "suggested": "key 9 (partial) — confirm"
+    }
+   ],
+   "content_hash": "244fcc81113b12c064ff70bb59af48ae218dc6c82842b5506eb0c0ccf1d28c0c",
+   "topic_ids": [
+    "evs-3-16-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  }
+ ],
+ "pending_summary": {}
+}

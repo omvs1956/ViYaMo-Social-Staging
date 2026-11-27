@@ -1,0 +1,2221 @@
+{
+ "contract_version": "1.7",
+ "schema_file": "question_schema_v7_file layer with locators stimuli rubric and provenance.json",
+ "procedure_file": "extraction_procedure_social_addendum_v1.4_social science Classes 6-10 on top of procedure v2.md",
+ "machine_name": "evs-3-14_questions",
+ "version": 1,
+ "changelog": "v1 extraction — batch-01 — class-3-evs",
+ "amendments_applied": [],
+ "unit_state": "EXTRACTED",
+ "review_ready": false,
+ "count_gate": {
+  "reference": 24,
+  "reference_source": "audited",
+  "extracted": 24,
+  "paired": 1,
+  "flagged": 23,
+  "gaps": [],
+  "duplicated_numbers": [],
+  "quota_table": "difficulty_only",
+  "second_method": {
+   "method": "printed BLUE PRINT difficulty table total (Easy 14 + Average 6 + Difficulty 4 = 24), pdf 55; independently, the answer side's keys counted",
+   "extracted": 24,
+   "agrees": true
+  },
+  "pass": true,
+  "note": "Question side labels 1-24 monotonic, no gaps, no duplicates. BLUE PRINT 14/6/4 = 24 = audited count. Answer side 'Sample Answers: 14' prints keys 1-16 for another version of the questions; only key 6 matches its printed question by number and content. Difficulty per question: easy 0, average 0, difficult 0, untagged 24."
+ },
+ "extraction": {
+  "source_file": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf",
+  "source_ref_prefix": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf",
+  "pdf_pages": [
+   55,
+   56,
+   57,
+   58,
+   59,
+   115
+  ],
+  "printed_page_offset": 0,
+  "method_notes": [
+   "Pages: Q pdf 55 (heading, LO 6, BLUE PRINT, q1-5) 56 (q6-11, box) 57 (q12-17 + q16's four pictures) 58 (q17 table, q18, q19 a-c) 59 (q19 d-e, q20-24). A side 'Sample Answers: 14' pdf 115 (keys 1-16, below the end of Lesson 13's keys). Folios = pdf page.",
+   "KEY SIDE: see reports/class-3-evs/evs-3-14-18_key-side_analysis.md. Paired by number: q6 <- key 6 only. Empty + 'key belongs to another paper version' with content pointers: q7 <- 5, q16 <- 4 (partial), q19 <- 7-11, q20-22 <- 12-14, q23 <- 15, q24 <- 16. q17, q18: no key ('no answer printed').",
+   "Sections (-sN- by printed order; numbered stand-alone questions with their own header are their own section, as evs-3-02 q18): s1 I match q1-4; s2 II q5-8; s3 III riddles q9-11; s4 IV fill-from-box q12-15; s5 q16; s6 q17; s7 q18; s8 q19; s9 V yes/no q20-22 (open personal answers -> vsa); s10 VI q23-24.",
+   "MARKS (R-E9, rev 3): s1 1, s2 1, s3 1, s4 1, s9 1, s10 2; null where N disagrees with the printed count (s5 '4*1=4', s6 '5*1=5', s7 '5*1=5', s8 '5X1=5', each over 1 question).",
+   "FIGURES (v1.4 §14.10): q16 four vehicle pictures (pdf 57) and q19 five worker pictures (pdf 58-59) -> stimuli with one crop per picture (D4 path images/evs-3-14/stimuli/).",
+   "DIFFICULTY: none printed -> null + 'no difficulty tag'. quota_table difficulty_only; second method = BLUE PRINT total 24 (agrees). LO (R-E10): lesson LO 6, lo_source 'lesson_table'.",
+   "PARKED (R-E8; T-E1 extended to match): empty match answers q1-q4 cannot pass gate 2.20. Built in the work dir with its crops; not committed."
+  ],
+  "notation_summary": {
+   "render_tokens": 0,
+   "latex_tokens": 0,
+   "damage_flags": []
+  },
+  "excluded_objects": [],
+  "inline_excluded_count": 0,
+  "figure_references": []
+ },
+ "stimuli": [
+  {
+   "id": "st-evs-3-14-q16",
+   "kind": "figure",
+   "note": "16) four vehicle pictures printed left to right, pdf 57 (the third is stored in the PDF as two stacked image strips; cropped as one box)",
+   "assets": [
+    {
+     "id": "st16a",
+     "type": "image",
+     "ref": "images/evs-3-14/stimuli/p057-q16a_figure.png",
+     "role": "figure",
+     "source_px": {
+      "w": 170,
+      "h": 80
+     },
+     "quality": "ok",
+     "caption": "Picture a printed for q16, pdf 57 — region render at 150 dpi of the embedded image's box",
+     "pdf_page": 57,
+     "crop_bbox": {
+      "pdf_page": 57,
+      "x0": 36.0,
+      "y0": 391.8,
+      "x1": 117.6,
+      "y1": 429.9
+     }
+    },
+    {
+     "id": "st16b",
+     "type": "image",
+     "ref": "images/evs-3-14/stimuli/p057-q16b_figure.png",
+     "role": "figure",
+     "source_px": {
+      "w": 173,
+      "h": 72
+     },
+     "quality": "ok",
+     "caption": "Picture b printed for q16, pdf 57 — region render at 150 dpi of the embedded image's box",
+     "pdf_page": 57,
+     "crop_bbox": {
+      "pdf_page": 57,
+      "x0": 163.2,
+      "y0": 395.4,
+      "x1": 246.2,
+      "y1": 429.9
+     }
+    },
+    {
+     "id": "st16c",
+     "type": "image",
+     "ref": "images/evs-3-14/stimuli/p057-q16c_figure.png",
+     "role": "figure",
+     "source_px": {
+      "w": 150,
+      "h": 79
+     },
+     "quality": "ok",
+     "caption": "Picture c printed for q16, pdf 57 — region render at 150 dpi of the embedded image's box",
+     "pdf_page": 57,
+     "crop_bbox": {
+      "pdf_page": 57,
+      "x0": 312.7,
+      "y0": 392.2,
+      "x1": 384.7,
+      "y1": 430.2
+     }
+    },
+    {
+     "id": "st16d",
+     "type": "image",
+     "ref": "images/evs-3-14/stimuli/p057-q16d_figure.png",
+     "role": "figure",
+     "source_px": {
+      "w": 183,
+      "h": 85
+     },
+     "quality": "ok",
+     "caption": "Picture d printed for q16, pdf 57 — region render at 150 dpi of the embedded image's box",
+     "pdf_page": 57,
+     "crop_bbox": {
+      "pdf_page": 57,
+      "x0": 434.2,
+      "y0": 389.4,
+      "x1": 522.0,
+      "y1": 429.9
+     }
+    }
+   ],
+   "locators": [
+    {
+     "role": "stimulus",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#st-evs-3-14-q16",
+     "pdf_page": 57,
+     "printed_page": 57,
+     "y": 391.8,
+     "derived_from": "render_measured"
+    }
+   ]
+  },
+  {
+   "id": "st-evs-3-14-q19",
+   "kind": "figure",
+   "note": "19. pictures a-e, pdf 58-59",
+   "assets": [
+    {
+     "id": "st19a",
+     "type": "image",
+     "ref": "images/evs-3-14/stimuli/p058-q19a_figure.png",
+     "role": "figure",
+     "source_px": {
+      "w": 192,
+      "h": 147
+     },
+     "quality": "ok",
+     "caption": "Picture a printed for q19, pdf 58 — region render at 150 dpi of the embedded image's box",
+     "pdf_page": 58,
+     "crop_bbox": {
+      "pdf_page": 58,
+      "x0": 61.2,
+      "y0": 419.8,
+      "x1": 153.4,
+      "y1": 490.4
+     }
+    },
+    {
+     "id": "st19b",
+     "type": "image",
+     "ref": "images/evs-3-14/stimuli/p058-q19b_figure.png",
+     "role": "figure",
+     "source_px": {
+      "w": 185,
+      "h": 122
+     },
+     "quality": "ok",
+     "caption": "Picture b printed for q19, pdf 58 — region render at 150 dpi of the embedded image's box",
+     "pdf_page": 58,
+     "crop_bbox": {
+      "pdf_page": 58,
+      "x0": 66.7,
+      "y0": 535.8,
+      "x1": 155.5,
+      "y1": 594.3
+     }
+    },
+    {
+     "id": "st19c",
+     "type": "image",
+     "ref": "images/evs-3-14/stimuli/p058-q19c_figure.png",
+     "role": "figure",
+     "source_px": {
+      "w": 176,
+      "h": 125
+     },
+     "quality": "ok",
+     "caption": "Picture c printed for q19, pdf 58 — region render at 150 dpi of the embedded image's box",
+     "pdf_page": 58,
+     "crop_bbox": {
+      "pdf_page": 58,
+      "x0": 66.5,
+      "y0": 657.4,
+      "x1": 151.2,
+      "y1": 717.4
+     }
+    },
+    {
+     "id": "st19d",
+     "type": "image",
+     "ref": "images/evs-3-14/stimuli/p059-q19d_figure.png",
+     "role": "figure",
+     "source_px": {
+      "w": 197,
+      "h": 181
+     },
+     "quality": "ok",
+     "caption": "Picture d printed for q19, pdf 59 — region render at 150 dpi of the embedded image's box",
+     "pdf_page": 59,
+     "crop_bbox": {
+      "pdf_page": 59,
+      "x0": 58.8,
+      "y0": 35.6,
+      "x1": 153.1,
+      "y1": 122.2
+     }
+    },
+    {
+     "id": "st19e",
+     "type": "image",
+     "ref": "images/evs-3-14/stimuli/p059-q19e_figure.png",
+     "role": "figure",
+     "source_px": {
+      "w": 164,
+      "h": 178
+     },
+     "quality": "ok",
+     "caption": "Picture e printed for q19, pdf 59 — region render at 150 dpi of the embedded image's box",
+     "pdf_page": 59,
+     "crop_bbox": {
+      "pdf_page": 59,
+      "x0": 64.3,
+      "y0": 146.5,
+      "x1": 143.0,
+      "y1": 231.9
+     }
+    }
+   ],
+   "locators": [
+    {
+     "role": "stimulus",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#st-evs-3-14-q19",
+     "pdf_page": 58,
+     "printed_page": 58,
+     "y": 419.8,
+     "derived_from": "render_measured"
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "evs-3-14-s1-q001",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-14",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "6",
+     "text_as_printed": "Identifies the different modes of transportation, Newer ways of travelling."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Match the following: Bus\nB: moves on water; moves on road; moves on rails; moves in air",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s1-q001",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s1-q001",
+     "pdf_page": 55,
+     "printed_page": 55,
+     "y": 531.293,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s1-q001-key",
+     "pdf_page": 115,
+     "printed_page": 115,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:25:37+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:25:37+05:30",
+   "text_as_printed": "Bus",
+   "section_signal": "I. Match the following.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 6 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key belongs to another paper version — printed key 1) is an option letter ('D)'); this match prints no lettered options",
+     "why_not_corrected": "the answer side 'Sample Answers: 14' (pdf 115) numbers its keys for another version of these questions: keys 1-3 are option letters with no lettered question, keys 4-5 and 7-16 fit other printed questions by content (see reports/class-3-evs/evs-3-14-18_key-side_analysis.md); extraction pairs only matching keys (schema v7) and does not re-pair by content",
+     "suggested": "review"
+    }
+   ],
+   "content_hash": "306d767ae97f54a8a74948edc7f61588dcf660695e448ccbf6033a32006d3217",
+   "topic_ids": [
+    "evs-3-14-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-14-s1-q002",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-14",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "6",
+     "text_as_printed": "Identifies the different modes of transportation, Newer ways of travelling."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Match the following: Train\nB: moves on water; moves on road; moves on rails; moves in air",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s1-q002",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s1-q002",
+     "pdf_page": 55,
+     "printed_page": 55,
+     "y": 571.133,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s1-q002-key",
+     "pdf_page": 115,
+     "printed_page": 115,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:25:37+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:25:37+05:30",
+   "text_as_printed": "Train",
+   "section_signal": "I. Match the following.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 6 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key belongs to another paper version — printed key 2) is an option letter ('D)'); this match prints no lettered options",
+     "why_not_corrected": "the answer side 'Sample Answers: 14' (pdf 115) numbers its keys for another version of these questions: keys 1-3 are option letters with no lettered question, keys 4-5 and 7-16 fit other printed questions by content (see reports/class-3-evs/evs-3-14-18_key-side_analysis.md); extraction pairs only matching keys (schema v7) and does not re-pair by content",
+     "suggested": "review"
+    }
+   ],
+   "content_hash": "ed6e0c0067fcf7115e5f35e4c86082323358f5f9a807e9633267830777060c68",
+   "topic_ids": [
+    "evs-3-14-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-14-s1-q003",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-14",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "6",
+     "text_as_printed": "Identifies the different modes of transportation, Newer ways of travelling."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Match the following: Aeroplane\nB: moves on water; moves on road; moves on rails; moves in air",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s1-q003",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s1-q003",
+     "pdf_page": 55,
+     "printed_page": 55,
+     "y": 610.973,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s1-q003-key",
+     "pdf_page": 115,
+     "printed_page": 115,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:25:37+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:25:37+05:30",
+   "text_as_printed": "Aeroplane",
+   "section_signal": "I. Match the following.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 6 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key belongs to another paper version — printed key 3) is an option letter ('B)'); this match prints no lettered options",
+     "why_not_corrected": "the answer side 'Sample Answers: 14' (pdf 115) numbers its keys for another version of these questions: keys 1-3 are option letters with no lettered question, keys 4-5 and 7-16 fit other printed questions by content (see reports/class-3-evs/evs-3-14-18_key-side_analysis.md); extraction pairs only matching keys (schema v7) and does not re-pair by content",
+     "suggested": "review"
+    }
+   ],
+   "content_hash": "74515587b423917b5bd485949b5475cf09cd8d99a84d7b6b8033062c66526886",
+   "topic_ids": [
+    "evs-3-14-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-14-s1-q004",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-14",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "match",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "6",
+     "text_as_printed": "Identifies the different modes of transportation, Newer ways of travelling."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Match the following: Ship\nB: moves on water; moves on road; moves on rails; moves in air",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s1-q004",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s1-q004",
+     "pdf_page": 55,
+     "printed_page": 55,
+     "y": 651.053,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s1-q004-key",
+     "pdf_page": 115,
+     "printed_page": 115,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:25:37+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:25:37+05:30",
+   "text_as_printed": "Ship",
+   "section_signal": "I. Match the following.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 6 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key belongs to another paper version — printed key 4) 'Auto, car, bus etc.' does not address this match row",
+     "why_not_corrected": "the answer side 'Sample Answers: 14' (pdf 115) numbers its keys for another version of these questions: keys 1-3 are option letters with no lettered question, keys 4-5 and 7-16 fit other printed questions by content (see reports/class-3-evs/evs-3-14-18_key-side_analysis.md); extraction pairs only matching keys (schema v7) and does not re-pair by content",
+     "suggested": "review"
+    }
+   ],
+   "content_hash": "4835c51dd74412ab7c38d4aec6ada8744424a0f5af70cd39406672122d9a5b39",
+   "topic_ids": [
+    "evs-3-14-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-14-s2-q005",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-14",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "6",
+     "text_as_printed": "Identifies the different modes of transportation, Newer ways of travelling."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Name the vehicle which can run without fuel?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s2-q005",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s2-q005",
+     "pdf_page": 55,
+     "printed_page": 55,
+     "y": 744.413,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s2-q005-key",
+     "pdf_page": 115,
+     "printed_page": 115,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:25:37+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:25:37+05:30",
+   "section_signal": "II. Give Answer the following questions in a word or in a sentence.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 6 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key belongs to another paper version — printed key 5) 'Bullock cart, lorry, luggage auto etc.' does not address it",
+     "why_not_corrected": "the answer side 'Sample Answers: 14' (pdf 115) numbers its keys for another version of these questions: keys 1-3 are option letters with no lettered question, keys 4-5 and 7-16 fit other printed questions by content (see reports/class-3-evs/evs-3-14-18_key-side_analysis.md); extraction pairs only matching keys (schema v7) and does not re-pair by content",
+     "suggested": "review"
+    }
+   ],
+   "content_hash": "03103fb7d1130518f074839e00fe2c889a946d05d217a1927f85517f51b436c0",
+   "topic_ids": [
+    "evs-3-14-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-14-s2-q006",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-14",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "6",
+     "text_as_printed": "Identifies the different modes of transportation, Newer ways of travelling."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "How do we travel from India to any other country (Japan)?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s2-q006",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s2-q006",
+     "pdf_page": 56,
+     "printed_page": 56,
+     "y": 57.773,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s2-q006-key",
+     "pdf_page": 115,
+     "printed_page": 115,
+     "y": 398.573,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:25:37+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:25:37+05:30",
+   "section_signal": "II. Give Answer the following questions in a word or in a sentence.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": "We use airplane and ship to travel to other countries."
+   },
+   "answer_as_printed": "We use airplane and ship to travel to other countries.",
+   "answer_provenance": {
+    "by": "printed",
+    "actor": "class-3-evs",
+    "at": "2026-11-27T01:25:37+05:30",
+    "basis": "printed one-line key, verbatim (v2 §4)"
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 6 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    }
+   ],
+   "content_hash": "649435e86bb5b5643b929ecbd88761aa769270c4d949c10cc1a1d2dc2fdca1d4",
+   "topic_ids": [
+    "evs-3-14-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-14-s2-q007",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-14",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "6",
+     "text_as_printed": "Identifies the different modes of transportation, Newer ways of travelling."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Ramu wants to shift his household things to his new house. Suggest him a vehicle.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s2-q007",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s2-q007",
+     "pdf_page": 56,
+     "printed_page": 56,
+     "y": 137.693,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s2-q007-key",
+     "pdf_page": 115,
+     "printed_page": 115,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:25:37+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:25:37+05:30",
+   "section_signal": "II. Give Answer the following questions in a word or in a sentence.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 6 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key belongs to another paper version — printed key 7) 'Driver' does not address it; key 5) 'Bullock cart, lorry, luggage auto etc.' fits by content",
+     "why_not_corrected": "the answer side 'Sample Answers: 14' (pdf 115) numbers its keys for another version of these questions: keys 1-3 are option letters with no lettered question, keys 4-5 and 7-16 fit other printed questions by content (see reports/class-3-evs/evs-3-14-18_key-side_analysis.md); extraction pairs only matching keys (schema v7) and does not re-pair by content",
+     "suggested": "key 5 — confirm"
+    }
+   ],
+   "content_hash": "f72c5a98f288f2d850e6a99bb1edc3c69e12fb1b869050c1cbf73a45013cb1d9",
+   "topic_ids": [
+    "evs-3-14-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-14-s2-q008",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-14",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "6",
+     "text_as_printed": "Identifies the different modes of transportation, Newer ways of travelling."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "If you and your friend were to go to a nearby temple, which mode of transport would you choose? (Without spending any money)",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s2-q008",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s2-q008",
+     "pdf_page": 56,
+     "printed_page": 56,
+     "y": 217.613,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s2-q008-key",
+     "pdf_page": 115,
+     "printed_page": 115,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:25:37+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:25:37+05:30",
+   "section_signal": "II. Give Answer the following questions in a word or in a sentence.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 6 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key belongs to another paper version — printed key 8) 'Auto driver' does not address it",
+     "why_not_corrected": "the answer side 'Sample Answers: 14' (pdf 115) numbers its keys for another version of these questions: keys 1-3 are option letters with no lettered question, keys 4-5 and 7-16 fit other printed questions by content (see reports/class-3-evs/evs-3-14-18_key-side_analysis.md); extraction pairs only matching keys (schema v7) and does not re-pair by content",
+     "suggested": "review"
+    }
+   ],
+   "content_hash": "8fc90f0bfc2bcf3e52e5ca6d92c19a464bdfef98b5d5683f97e84c75bb4227a2",
+   "topic_ids": [
+    "evs-3-14-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-14-s3-q009",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-14",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "6",
+     "text_as_printed": "Identifies the different modes of transportation, Newer ways of travelling."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Solve the riddle:\nI am the land vehicle\nI carry people\nI run on rails\nWho am I?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s3-q009",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s3-q009",
+     "pdf_page": 56,
+     "printed_page": 56,
+     "y": 355.853,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s3-q009-key",
+     "pdf_page": 115,
+     "printed_page": 115,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:25:37+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:25:37+05:30",
+   "section_signal": "III. Solve the riddles",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 6 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key belongs to another paper version — printed key 9) 'Bus conductor' does not answer the riddle",
+     "why_not_corrected": "the answer side 'Sample Answers: 14' (pdf 115) numbers its keys for another version of these questions: keys 1-3 are option letters with no lettered question, keys 4-5 and 7-16 fit other printed questions by content (see reports/class-3-evs/evs-3-14-18_key-side_analysis.md); extraction pairs only matching keys (schema v7) and does not re-pair by content",
+     "suggested": "review"
+    }
+   ],
+   "content_hash": "57bef17002707fe562985e95e01257aacaf13d974f110c9f9541fac719fa40aa",
+   "topic_ids": [
+    "evs-3-14-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-14-s3-q010",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-14",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "6",
+     "text_as_printed": "Identifies the different modes of transportation, Newer ways of travelling."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Solve the riddle:\nI am a vehicle of 4 wheels.\nI bring emergency patients to hospital\nWho am I?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s3-q010",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s3-q010",
+     "pdf_page": 56,
+     "printed_page": 56,
+     "y": 491.213,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s3-q010-key",
+     "pdf_page": 115,
+     "printed_page": 115,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:25:37+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:25:37+05:30",
+   "section_signal": "III. Solve the riddles",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 6 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key belongs to another paper version — printed key 10) 'Garbage collector' does not answer the riddle",
+     "why_not_corrected": "the answer side 'Sample Answers: 14' (pdf 115) numbers its keys for another version of these questions: keys 1-3 are option letters with no lettered question, keys 4-5 and 7-16 fit other printed questions by content (see reports/class-3-evs/evs-3-14-18_key-side_analysis.md); extraction pairs only matching keys (schema v7) and does not re-pair by content",
+     "suggested": "review"
+    }
+   ],
+   "content_hash": "9f785a53a7f1a7a3b442dbd59eb382407f24315f69e86c01eddd0b9fdd74dabc",
+   "topic_ids": [
+    "evs-3-14-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-14-s3-q011",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-14",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "6",
+     "text_as_printed": "Identifies the different modes of transportation, Newer ways of travelling."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Which is your dream vehicle and where you want to travel with it?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s3-q011",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s3-q011",
+     "pdf_page": 56,
+     "printed_page": 56,
+     "y": 608.093,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s3-q011-key",
+     "pdf_page": 115,
+     "printed_page": 115,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:25:37+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:25:37+05:30",
+   "section_signal": "III. Solve the riddles",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 6 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key belongs to another paper version — printed key 11) 'Porter.' does not address it",
+     "why_not_corrected": "the answer side 'Sample Answers: 14' (pdf 115) numbers its keys for another version of these questions: keys 1-3 are option letters with no lettered question, keys 4-5 and 7-16 fit other printed questions by content (see reports/class-3-evs/evs-3-14-18_key-side_analysis.md); extraction pairs only matching keys (schema v7) and does not re-pair by content",
+     "suggested": "review"
+    }
+   ],
+   "content_hash": "5cbf9724a9d96cb1133295a9e1631d5cc1eaf4a2b92b5988e8fa7e646e19ab21",
+   "topic_ids": [
+    "evs-3-14-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-14-s4-q012",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-14",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "6",
+     "text_as_printed": "Identifies the different modes of transportation, Newer ways of travelling."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "---------------cleans the railway station.\n[ T.T.E. , Engine driver , Safai , porter ]",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s4-q012",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s4-q012",
+     "pdf_page": 57,
+     "printed_page": 57,
+     "y": 57.773,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s4-q012-key",
+     "pdf_page": 115,
+     "printed_page": 115,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:25:37+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:25:37+05:30",
+   "text_as_printed": "---------------cleans the railway station.",
+   "section_signal": "IV. Fill in the blanks by choosing correct answers.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 6 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key belongs to another paper version — printed key 12) 'Yes, there is' does not fill the blank",
+     "why_not_corrected": "the answer side 'Sample Answers: 14' (pdf 115) numbers its keys for another version of these questions: keys 1-3 are option letters with no lettered question, keys 4-5 and 7-16 fit other printed questions by content (see reports/class-3-evs/evs-3-14-18_key-side_analysis.md); extraction pairs only matching keys (schema v7) and does not re-pair by content",
+     "suggested": "review"
+    }
+   ],
+   "content_hash": "77cb9094267365fb021f438b3da1c50177262620c2b294c0858fe318090076e7",
+   "topic_ids": [
+    "evs-3-14-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-14-s4-q013",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-14",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "6",
+     "text_as_printed": "Identifies the different modes of transportation, Newer ways of travelling."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "________ carries luggage.\n[ T.T.E. , Engine driver , Safai , porter ]",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s4-q013",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s4-q013",
+     "pdf_page": 57,
+     "printed_page": 57,
+     "y": 119.213,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s4-q013-key",
+     "pdf_page": 115,
+     "printed_page": 115,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:25:37+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:25:37+05:30",
+   "text_as_printed": "________ carries luggage.",
+   "section_signal": "IV. Fill in the blanks by choosing correct answers.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 6 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key belongs to another paper version — printed key 13) 'Yes, I have seen it.' does not fill the blank",
+     "why_not_corrected": "the answer side 'Sample Answers: 14' (pdf 115) numbers its keys for another version of these questions: keys 1-3 are option letters with no lettered question, keys 4-5 and 7-16 fit other printed questions by content (see reports/class-3-evs/evs-3-14-18_key-side_analysis.md); extraction pairs only matching keys (schema v7) and does not re-pair by content",
+     "suggested": "review"
+    }
+   ],
+   "content_hash": "782283a8ef482d337ee35c96360bc001183f9001a049eb5c1099403e8e46c177",
+   "topic_ids": [
+    "evs-3-14-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-14-s4-q014",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-14",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "6",
+     "text_as_printed": "Identifies the different modes of transportation, Newer ways of travelling."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "________ drives the train.\n[ T.T.E. , Engine driver , Safai , porter ]",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s4-q014",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s4-q014",
+     "pdf_page": 57,
+     "printed_page": 57,
+     "y": 177.533,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s4-q014-key",
+     "pdf_page": 115,
+     "printed_page": 115,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:25:37+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:25:37+05:30",
+   "text_as_printed": "________ drives the train.",
+   "section_signal": "IV. Fill in the blanks by choosing correct answers.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 6 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key belongs to another paper version — printed key 14) 'Yes, I have travelled by train.' does not fill the blank",
+     "why_not_corrected": "the answer side 'Sample Answers: 14' (pdf 115) numbers its keys for another version of these questions: keys 1-3 are option letters with no lettered question, keys 4-5 and 7-16 fit other printed questions by content (see reports/class-3-evs/evs-3-14-18_key-side_analysis.md); extraction pairs only matching keys (schema v7) and does not re-pair by content",
+     "suggested": "review"
+    }
+   ],
+   "content_hash": "74ee541647101aa0b829e780ee49f86bec70983341fdfecb71467360d2cf816a",
+   "topic_ids": [
+    "evs-3-14-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-14-s4-q015",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-14",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "fill",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "6",
+     "text_as_printed": "Identifies the different modes of transportation, Newer ways of travelling."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "________ checks the tickets.\n[ T.T.E. , Engine driver , Safai , porter ]",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s4-q015",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s4-q015",
+     "pdf_page": 57,
+     "printed_page": 57,
+     "y": 236.093,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s4-q015-key",
+     "pdf_page": 115,
+     "printed_page": 115,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:25:37+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:25:37+05:30",
+   "text_as_printed": "________ checks the tickets.",
+   "section_signal": "IV. Fill in the blanks by choosing correct answers.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 6 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key belongs to another paper version — printed key 15) (workers at stations) does not fill the blank",
+     "why_not_corrected": "the answer side 'Sample Answers: 14' (pdf 115) numbers its keys for another version of these questions: keys 1-3 are option letters with no lettered question, keys 4-5 and 7-16 fit other printed questions by content (see reports/class-3-evs/evs-3-14-18_key-side_analysis.md); extraction pairs only matching keys (schema v7) and does not re-pair by content",
+     "suggested": "review"
+    }
+   ],
+   "content_hash": "74d6144eda62fe42ce8c3ad63501ee1c454291b05a1b4dd6cbd248e8f60e17fc",
+   "topic_ids": [
+    "evs-3-14-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-14-s5-q016",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-14",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "6",
+     "text_as_printed": "Identifies the different modes of transportation, Newer ways of travelling."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Identify the names of following vehicles and group them as short distance and long distance modes.\nShort distance | Long distance",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s5-q016",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s5-q016",
+     "pdf_page": 57,
+     "printed_page": 57,
+     "y": 294.653,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s5-q016-key",
+     "pdf_page": 115,
+     "printed_page": 115,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:25:37+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:25:37+05:30",
+   "section_signal": "16) Identify the names of following vehicles and group them as short distance and long distance modes.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "stimulus_id": "st-evs-3-14-q16",
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '4*1=4' — N=4 but 1 question(s) printed in the section (R-E9)"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 6 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key belongs to another paper version — printed key 16) (bus-station sights) does not address it; key 4) 'Auto, car, bus etc.' may be a short-distance list",
+     "why_not_corrected": "the answer side 'Sample Answers: 14' (pdf 115) numbers its keys for another version of these questions: keys 1-3 are option letters with no lettered question, keys 4-5 and 7-16 fit other printed questions by content (see reports/class-3-evs/evs-3-14-18_key-side_analysis.md); extraction pairs only matching keys (schema v7) and does not re-pair by content",
+     "suggested": "key 4 (partial) — confirm"
+    }
+   ],
+   "content_hash": "eb51c5395308643a83051d755914415ac3cce6702dba13d70ce91126690f5c30",
+   "topic_ids": [
+    "evs-3-14-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-14-s6-q017",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-14",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "6",
+     "text_as_printed": "Identifies the different modes of transportation, Newer ways of travelling."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Classify the following as modern modes and ancient modes of vehicles.\n(car, Bus, camel cart, donkey, Train, Truck, Horse cart, Aeroplane, Bullock cart, mules )\nAncient modes 1)-5) | Modern modes 1)-5)",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s6-q017",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s6-q017",
+     "pdf_page": 57,
+     "printed_page": 57,
+     "y": 628.013,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s6-q017-key",
+     "pdf_page": 115,
+     "printed_page": 115,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:25:37+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:25:37+05:30",
+   "section_signal": "17. Classify the following as modern modes and ancient modes of vehicles.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '5*1=5' — N=5 but 1 question(s) printed in the section (R-E9)"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 6 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "no answer printed",
+     "why_not_corrected": "the answer side prints keys 1-16 only",
+     "suggested": "key absent — review"
+    }
+   ],
+   "content_hash": "3756a8caec1d4abc5382d1a9af18f31a69a168f8a6777865135d13c034057ec7",
+   "topic_ids": [
+    "evs-3-14-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-14-s7-q018",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-14",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "6",
+     "text_as_printed": "Identifies the different modes of transportation, Newer ways of travelling."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Write a picture of your favourite vehicle and colour it.",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s7-q018",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s7-q018",
+     "pdf_page": 58,
+     "printed_page": 58,
+     "y": 280.493,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s7-q018-key",
+     "pdf_page": 115,
+     "printed_page": 115,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:25:37+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:25:37+05:30",
+   "section_signal": "18. Write a picture of your favourite vehicle and colour it.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '5*1=5' — N=5 but 1 question(s) printed in the section (R-E9)"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 6 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "no answer printed",
+     "why_not_corrected": "the answer side prints keys 1-16 only (drawing task)",
+     "suggested": "key absent — review"
+    }
+   ],
+   "content_hash": "6f5a2bdecf186c8d8bf19e443bd091dfef36fdd229fcb33fb17edb92d56c5581",
+   "topic_ids": [
+    "evs-3-14-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-14-s8-q019",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-14",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": null,
+   "marks_source": "unassigned",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "6",
+     "text_as_printed": "Identifies the different modes of transportation, Newer ways of travelling."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Write who does what work in the picture below:\na\nb\nc\nd\ne",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s8-q019",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s8-q019",
+     "pdf_page": 58,
+     "printed_page": 58,
+     "y": 357.533,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s8-q019-key",
+     "pdf_page": 115,
+     "printed_page": 115,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:25:37+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:25:37+05:30",
+   "section_signal": "19. Write who does what work in the picture below:",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "stimulus_id": "st-evs-3-14-q19",
+   "source_flags": [
+    {
+     "issue": "marks ambiguous in source — section header '5X1=5' — N=5 but 1 question(s) printed in the section (R-E9)"
+    },
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 6 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key belongs to another paper version — no key 19 is printed; keys 7)-11) 'Driver', 'Auto driver', 'Bus conductor', 'Garbage collector', 'Porter.' name pictures a-e in order",
+     "why_not_corrected": "the answer side 'Sample Answers: 14' (pdf 115) numbers its keys for another version of these questions: keys 1-3 are option letters with no lettered question, keys 4-5 and 7-16 fit other printed questions by content (see reports/class-3-evs/evs-3-14-18_key-side_analysis.md); extraction pairs only matching keys (schema v7) and does not re-pair by content",
+     "suggested": "keys 7-11 — confirm"
+    }
+   ],
+   "content_hash": "a6c44468107d178959823e1471542c1855438f115044432a9cb5130004ff41c6",
+   "topic_ids": [
+    "evs-3-14-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-14-s9-q020",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-14",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "6",
+     "text_as_printed": "Identifies the different modes of transportation, Newer ways of travelling."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Is there a train station in your town?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s9-q020",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s9-q020",
+     "pdf_page": 59,
+     "printed_page": 59,
+     "y": 300.413,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s9-q020-key",
+     "pdf_page": 115,
+     "printed_page": 115,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:25:37+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:25:37+05:30",
+   "section_signal": "V. Answer 'Yes' or 'No' to the following questions.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 6 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key belongs to another paper version — no key 20 is printed; key 12) 'Yes, there is' fits by content",
+     "why_not_corrected": "the answer side 'Sample Answers: 14' (pdf 115) numbers its keys for another version of these questions: keys 1-3 are option letters with no lettered question, keys 4-5 and 7-16 fit other printed questions by content (see reports/class-3-evs/evs-3-14-18_key-side_analysis.md); extraction pairs only matching keys (schema v7) and does not re-pair by content",
+     "suggested": "key 12 — confirm"
+    }
+   ],
+   "content_hash": "af8c33921f93126a8e159067419a570d1cbeee5e58481cca80e39ce9441e98e3",
+   "topic_ids": [
+    "evs-3-14-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-14-s9-q021",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-14",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "6",
+     "text_as_printed": "Identifies the different modes of transportation, Newer ways of travelling."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Have you seen the train station?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s9-q021",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s9-q021",
+     "pdf_page": 59,
+     "printed_page": 59,
+     "y": 361.853,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s9-q021-key",
+     "pdf_page": 115,
+     "printed_page": 115,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:25:37+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:25:37+05:30",
+   "section_signal": "V. Answer 'Yes' or 'No' to the following questions.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 6 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key belongs to another paper version — no key 21 is printed; key 13) 'Yes, I have seen it.' fits by content",
+     "why_not_corrected": "the answer side 'Sample Answers: 14' (pdf 115) numbers its keys for another version of these questions: keys 1-3 are option letters with no lettered question, keys 4-5 and 7-16 fit other printed questions by content (see reports/class-3-evs/evs-3-14-18_key-side_analysis.md); extraction pairs only matching keys (schema v7) and does not re-pair by content",
+     "suggested": "key 13 — confirm"
+    }
+   ],
+   "content_hash": "61a2983e051abef123e11cd2080a4327ddbf81747dfa8c904d49c2415e273bf1",
+   "topic_ids": [
+    "evs-3-14-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-14-s9-q022",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-14",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "vsa",
+   "marks": 1,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "6",
+     "text_as_printed": "Identifies the different modes of transportation, Newer ways of travelling."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Have you traveled by train?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s9-q022",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s9-q022",
+     "pdf_page": 59,
+     "printed_page": 59,
+     "y": 423.053,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s9-q022-key",
+     "pdf_page": 115,
+     "printed_page": 115,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:25:37+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:25:37+05:30",
+   "section_signal": "V. Answer 'Yes' or 'No' to the following questions.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 6 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key belongs to another paper version — no key 22 is printed; key 14) 'Yes, I have travelled by train.' fits by content",
+     "why_not_corrected": "the answer side 'Sample Answers: 14' (pdf 115) numbers its keys for another version of these questions: keys 1-3 are option letters with no lettered question, keys 4-5 and 7-16 fit other printed questions by content (see reports/class-3-evs/evs-3-14-18_key-side_analysis.md); extraction pairs only matching keys (schema v7) and does not re-pair by content",
+     "suggested": "key 14 — confirm"
+    }
+   ],
+   "content_hash": "4c9f4b9ac2bc3d9270be4e6cc8749e304be29fac5578cdfeec530f7043d06208",
+   "topic_ids": [
+    "evs-3-14-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-14-s10-q023",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-14",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "6",
+     "text_as_printed": "Identifies the different modes of transportation, Newer ways of travelling."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "Why are workers needed at bus and train stations?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s10-q023",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s10-q023",
+     "pdf_page": 59,
+     "printed_page": 59,
+     "y": 542.813,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s10-q023-key",
+     "pdf_page": 115,
+     "printed_page": 115,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:25:37+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:25:37+05:30",
+   "section_signal": "VI. Answer the following questions in two or three sentences.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 6 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key belongs to another paper version — no key 23 is printed; key 15) (many workers are needed at bus and train stations …) fits by content",
+     "why_not_corrected": "the answer side 'Sample Answers: 14' (pdf 115) numbers its keys for another version of these questions: keys 1-3 are option letters with no lettered question, keys 4-5 and 7-16 fit other printed questions by content (see reports/class-3-evs/evs-3-14-18_key-side_analysis.md); extraction pairs only matching keys (schema v7) and does not re-pair by content",
+     "suggested": "key 15 — confirm"
+    }
+   ],
+   "content_hash": "76ac643106258e55e15a12fbf128f1d48432bf3bd8f83e0360952398b3e097e1",
+   "topic_ids": [
+    "evs-3-14-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  },
+  {
+   "id": "evs-3-14-s10-q024",
+   "class": "3",
+   "subject": "evs",
+   "language": "en",
+   "chapter_id": "evs-3-14",
+   "syllabus_map_version": "evs-3-2026/v1",
+   "audience": "student",
+   "type": "sa",
+   "marks": 2,
+   "marks_source": "section_header",
+   "difficulty": null,
+   "difficulty_source": "unassigned",
+   "difficulty_as_printed": null,
+   "learning_outcomes": [
+    {
+     "number": "6",
+     "text_as_printed": "Identifies the different modes of transportation, Newer ways of travelling."
+    }
+   ],
+   "out_of_syllabus": false,
+   "text": "What have you seen at the bus station in your town?",
+   "source": "lba",
+   "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s10-q024",
+   "locators": [
+    {
+     "role": "question",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s10-q024",
+     "pdf_page": 59,
+     "printed_page": 59,
+     "y": 605.786,
+     "derived_from": "text_layer"
+    },
+    {
+     "role": "answer",
+     "source_ref": "3rd-EVS-Bilingual-LBA-Revised_1787227435.pdf#evs-3-14-s10-q024-key",
+     "pdf_page": 115,
+     "printed_page": 115,
+     "y": 0.0,
+     "derived_from": "text_layer"
+    }
+   ],
+   "revision": 1,
+   "status": "draft",
+   "status_history": [
+    {
+     "from": "none",
+     "to": "draft",
+     "by": "class-3-evs",
+     "role": "extraction",
+     "at": "2026-11-27T01:25:37+05:30"
+    }
+   ],
+   "created_by": "class-3-evs",
+   "created_at": "2026-11-27T01:25:37+05:30",
+   "section_signal": "VI. Answer the following questions in two or three sentences.",
+   "lo_source": "lesson_table",
+   "answer": {
+    "kind": "text",
+    "value": ""
+   },
+   "source_flags": [
+    {
+     "issue": "no difficulty tag",
+     "why_not_corrected": "the LBA prints no per-question or section difficulty tag; the lesson's BLUE PRINT table gives totals only (Easy 14 / Average 6 / Difficulty 4) and names no question — no backfill from the table (prompt §1 pin)",
+     "suggested": "review — assign difficulty"
+    },
+    {
+     "issue": "key belongs to another paper version — no key 24 is printed; key 16) 'I have seen shops, hotels, vendors, small traders, toilets, etc. at the bus station in our town.' fits by content",
+     "why_not_corrected": "the answer side 'Sample Answers: 14' (pdf 115) numbers its keys for another version of these questions: keys 1-3 are option letters with no lettered question, keys 4-5 and 7-16 fit other printed questions by content (see reports/class-3-evs/evs-3-14-18_key-side_analysis.md); extraction pairs only matching keys (schema v7) and does not re-pair by content",
+     "suggested": "key 16 — confirm"
+    }
+   ],
+   "content_hash": "12ba6969d04a9d94c9b94972eb0ad4590efc0641d72f021b040da1d06b0d8fc2",
+   "topic_ids": [
+    "evs-3-14-t00"
+   ],
+   "topic_source": "chapter",
+   "topic_confidence": "high"
+  }
+ ],
+ "pending_summary": {}
+}
